@@ -1,0 +1,205 @@
+[
+ {
+  "his": 186,
+  "rel_sasa": 0.004,
+  "conserved_his": true,
+  "excluded": "no",
+  "patch_identity": 0.0,
+  "hydrophobic": 1,
+  "patch": [
+   185,
+   187,
+   385
+  ],
+  "seq": "QFK",
+  "bindcraft_hotspots": "A185,A187,A385"
+ },
+ {
+  "his": 234,
+  "rel_sasa": 0.0,
+  "conserved_his": true,
+  "excluded": "no",
+  "patch_identity": 0.4,
+  "hydrophobic": 1,
+  "patch": [
+   351,
+   354,
+   359,
+   364,
+   366
+  ],
+  "seq": "GPTRV",
+  "bindcraft_hotspots": "A351,A354,A359,A364,A366"
+ },
+ {
+  "his": 300,
+  "rel_sasa": 0.162,
+  "conserved_his": true,
+  "excluded": "no",
+  "patch_identity": 0.8,
+  "hydrophobic": 2,
+  "patch": [
+   263,
+   300,
+   303,
+   412,
+   538
+  ],
+  "seq": "THLWD",
+  "bindcraft_hotspots": "A263,A300,A303,A412,A538"
+ },
+ {
+  "his": 302,
+  "rel_sasa": 0.035,
+  "conserved_his": true,
+  "excluded": "no",
+  "patch_identity": 0.75,
+  "hydrophobic": 2,
+  "patch": [
+   263,
+   300,
+   303,
+   537
+  ],
+  "seq": "THLL",
+  "bindcraft_hotspots": "A263,A300,A303,A537"
+ },
+ {
+  "his": 318,
+  "rel_sasa": 0.206,
+  "conserved_his": true,
+  "excluded": "YES(HFE)",
+  "patch_identity": 0.0,
+  "hydrophobic": 0,
+  "patch": [],
+  "seq": "",
+  "bindcraft_hotspots": ""
+ },
+ {
+  "his": 401,
+  "rel_sasa": 0.038,
+  "conserved_his": false,
+  "excluded": "no",
+  "patch_identity": 0.833,
+  "hydrophobic": 2,
+  "patch": [
+   397,
+   399,
+   400,
+   476,
+   477,
+   676
+  ],
+  "seq": "VPDLKD",
+  "bindcraft_hotspots": "A397,A399,A400,A476,A477,A676"
+ },
+ {
+  "his": 475,
+  "rel_sasa": 0.13,
+  "conserved_his": true,
+  "excluded": "no",
+  "patch_identity": 1.0,
+  "hydrophobic": 2,
+  "patch": [
+   471,
+   472,
+   476,
+   477
+  ],
+  "seq": "LSLK",
+  "bindcraft_hotspots": "A471,A472,A476,A477"
+ },
+ {
+  "his": 515,
+  "rel_sasa": 0.115,
+  "conserved_his": true,
+  "excluded": "no",
+  "patch_identity": 0.583,
+  "hydrophobic": 4,
+  "patch": [
+   491,
+   492,
+   494,
+   514,
+   517,
+   518,
+   519,
+   520,
+   521,
+   523,
+   524,
+   585
+  ],
+  "seq": "TSFKVTGQFYQK",
+  "bindcraft_hotspots": "A491,A492,A494,A514,A517,A518,A519,A520,A521,A523,A524,A585"
+ },
+ {
+  "his": 603,
+  "rel_sasa": 0.206,
+  "conserved_his": true,
+  "excluded": "no",
+  "patch_identity": 0.875,
+  "hydrophobic": 3,
+  "patch": [
+   122,
+   124,
+   443,
+   600,
+   603,
+   604,
+   605,
+   608
+  ],
+  "seq": "LWQKHDVN",
+  "bindcraft_hotspots": "A122,A124,A443,A600,A603,A604,A605,A608"
+ },
+ {
+  "his": 684,
+  "rel_sasa": 0.1,
+  "conserved_his": true,
+  "excluded": "no",
+  "patch_identity": 0.5,
+  "hydrophobic": 0,
+  "patch": [
+   680,
+   688
+  ],
+  "seq": "RP",
+  "bindcraft_hotspots": "A680,A688"
+ },
+ {
+  "his": 699,
+  "rel_sasa": 0.0,
+  "conserved_his": true,
+  "excluded": "no",
+  "patch_identity": 1.0,
+  "hydrophobic": 0,
+  "patch": [
+   696,
+   704
+  ],
+  "seq": "PS",
+  "bindcraft_hotspots": "A696,A704"
+ },
+ {
+  "his": 707,
+  "rel_sasa": 0.142,
+  "conserved_his": true,
+  "excluded": "no",
+  "patch_identity": 1.0,
+  "hydrophobic": 3,
+  "patch": [
+   688,
+   690,
+   695,
+   704,
+   705,
+   706,
+   711,
+   733,
+   737
+  ],
+  "seq": "PVSSGSANL",
+  "bindcraft_hotspots": "A688,A690,A695,A704,A705,A706,A711,A733,A737"
+ }
+]
