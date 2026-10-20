@@ -1,0 +1,63 @@
+{
+ "threshold": 0.3,
+ "references": [
+  {
+   "pdb": "6WRV",
+   "label": "designed binder 3DS18 (chain D)",
+   "length": 93
+  },
+  {
+   "pdb": "6WRW",
+   "label": "designed binder 2DS25.5 (chain C)",
+   "length": 88
+  },
+  {
+   "pdb": "6WRX",
+   "label": "designed binder 2DS25.1 (chain C)",
+   "length": 88
+  },
+  {
+   "pdb": "3KAS",
+   "label": "Machupo virus GP1 (chain B)",
+   "length": 156
+  },
+  {
+   "pdb": "9GH7",
+   "label": "bicyclic peptide (chain P)",
+   "length": 14
+  },
+  {
+   "pdb": "1DE4",
+   "label": "HFE / beta2-microglobulin (chain A)",
+   "length": 272
+  },
+  {
+   "pdb": "1DE4",
+   "label": "HFE / beta2-microglobulin (chain B)",
+   "length": 99
+  },
+  {
+   "pdb": "3S9L",
+   "label": "transferrin (chain D)",
+   "length": 487
+  }
+ ],
+ "designs": [
+  {
+   "design": "test_decoy_from_designed_binder",
+   "length": 69,
+   "max_identity": 1.0,
+   "closest": "3KAS Machupo virus GP1 (chain B)",
+   "aligned_length": 3,
+   "flagged": true
+  },
+  {
+   "design": "test_random",
+   "length": 81,
+   "max_identity": 1.0,
+   "closest": "6WRV designed binder 3DS18 (chain D)",
+   "aligned_length": 5,
+   "flagged": true
+  }
+ ]
+}
