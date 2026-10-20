@@ -1,0 +1,243 @@
+{
+ "meta": {
+  "construct": [
+   121,
+   760
+  ],
+  "dimer_partner_chain": "B",
+  "dimer_contact_atoms": 336,
+  "chains_in_apo": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E",
+   "F",
+   "G",
+   "H"
+  ],
+  "modeled_range": [
+   122,
+   760
+  ],
+  "n_modeled": 639,
+  "glycosylation_sites": [
+   251,
+   317,
+   727
+  ],
+  "tf_footprint_residues": [
+   123,
+   124,
+   125,
+   126,
+   527,
+   528,
+   529,
+   604,
+   619,
+   622,
+   623,
+   624,
+   626,
+   627,
+   629,
+   640,
+   643,
+   644,
+   646,
+   650,
+   651,
+   658,
+   659,
+   661,
+   662,
+   663,
+   664,
+   665,
+   666,
+   667,
+   668,
+   670,
+   759
+  ],
+  "tf_complex_chain_lengths": {
+   "A": 639,
+   "B": 639,
+   "C": 329,
+   "D": 329,
+   "E": 345,
+   "F": 345
+  },
+  "tfr_chains": [
+   "A",
+   "B"
+  ],
+  "tf_chains": [
+   "C",
+   "D",
+   "E",
+   "F"
+  ],
+  "tag_excluded_residues": [
+   638,
+   639,
+   640,
+   641,
+   642,
+   643,
+   644,
+   645,
+   646,
+   647,
+   648,
+   649,
+   650,
+   651,
+   739,
+   740,
+   742,
+   743,
+   744,
+   746,
+   747,
+   751,
+   754,
+   755,
+   756,
+   757,
+   758,
+   759,
+   760
+  ],
+  "n_candidates": 170,
+  "thresholds": {
+   "exposed_rel_sasa": 0.25,
+   "patch_radius_a": 10.0,
+   "tf_cutoff_a": 5.0,
+   "tag_exclusion_a": 15.0
+  }
+ },
+ "patches": [
+  {
+   "center": 303,
+   "n": 9,
+   "residues": [
+    263,
+    264,
+    266,
+    269,
+    300,
+    303,
+    328,
+    537,
+    704
+   ],
+   "seq": "TFEAHLGLS",
+   "identity": 0.889,
+   "hydrophobic": 4,
+   "charged": 1,
+   "mean_rel_sasa": 0.277,
+   "native_his": [
+    300
+   ],
+   "dist_to_tf_footprint": 26.1,
+   "dist_to_tag_anchor": 41.0,
+   "score": 9.14
+  },
+  {
+   "center": 706,
+   "n": 9,
+   "residues": [
+    690,
+    695,
+    704,
+    705,
+    706,
+    711,
+    714,
+    730,
+    733
+   ],
+   "seq": "VSSGSAELN",
+   "identity": 1.0,
+   "hydrophobic": 3,
+   "charged": 1,
+   "mean_rel_sasa": 0.303,
+   "native_his": [],
+   "dist_to_tf_footprint": 17.3,
+   "dist_to_tag_anchor": 27.3,
+   "score": 8.96
+  },
+  {
+   "center": 318,
+   "n": 7,
+   "residues": [
+    187,
+    318,
+    319,
+    322,
+    381,
+    382,
+    383
+   ],
+   "seq": "FHTPLKE",
+   "identity": 0.857,
+   "hydrophobic": 2,
+   "charged": 2,
+   "mean_rel_sasa": 0.376,
+   "native_his": [
+    318
+   ],
+   "dist_to_tf_footprint": 46.5,
+   "dist_to_tag_anchor": 54.4,
+   "score": 6.0
+  },
+  {
+   "center": 328,
+   "n": 8,
+   "residues": [
+    269,
+    303,
+    311,
+    325,
+    326,
+    327,
+    328,
+    331
+   ],
+   "seq": "ALPRSSGN",
+   "identity": 0.875,
+   "hydrophobic": 2,
+   "charged": 1,
+   "mean_rel_sasa": 0.368,
+   "native_his": [],
+   "dist_to_tf_footprint": 29.6,
+   "dist_to_tag_anchor": 41.7,
+   "score": 5.57
+  },
+  {
+   "center": 532,
+   "n": 8,
+   "residues": [
+    495,
+    503,
+    530,
+    531,
+    532,
+    533,
+    534,
+    613
+   ],
+   "seq": "KYSKVEKE",
+   "identity": 0.875,
+   "hydrophobic": 2,
+   "charged": 5,
+   "mean_rel_sasa": 0.347,
+   "native_his": [],
+   "dist_to_tf_footprint": 9.6,
+   "dist_to_tag_anchor": 34.7,
+   "score": 3.09
+  }
+ ]
+}

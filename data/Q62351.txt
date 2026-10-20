@@ -1,0 +1,405 @@
+ID   TFR1_MOUSE              Reviewed;         763 AA.
+AC   Q62351; Q61560;
+DT   11-FEB-2002, integrated into UniProtKB/Swiss-Prot.
+DT   01-NOV-1996, sequence version 1.
+DT   02-SEP-2026, entry version 207.
+DE   RecName: Full=Transferrin receptor protein 1;
+DE            Short=TR;
+DE            Short=TfR;
+DE            Short=TfR1;
+DE            Short=Trfr;
+DE   AltName: CD_antigen=CD71;
+GN   Name=Tfrc; Synonyms=Trfr;
+OS   Mus musculus (Mouse).
+OC   Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Mammalia;
+OC   Eutheria; Euarchontoglires; Glires; Rodentia; Myomorpha; Muroidea; Muridae;
+OC   Murinae; Mus; Mus.
+OX   NCBI_TaxID=10090;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE [MRNA].
+RC   STRAIN=C57BL/6 X DBA/2; TISSUE=Hematopoietic;
+RA   Trowbridge I.S., Domingo D.L., Thomas M.L., Chain A.;
+RL   Submitted (JAN-1991) to the EMBL/GenBank/DDBJ databases.
+RN   [2]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA].
+RC   STRAIN=C57BL/6J; TISSUE=Brain;
+RX   PubMed=15489334; DOI=10.1101/gr.2596504;
+RG   The MGC Project Team;
+RT   "The status, quality, and expansion of the NIH full-length cDNA project:
+RT   the Mammalian Gene Collection (MGC).";
+RL   Genome Res. 14:2121-2127(2004).
+RN   [3]
+RP   NUCLEOTIDE SEQUENCE [MRNA] OF 25-301.
+RC   TISSUE=Myeloma;
+RX   PubMed=2984291; DOI=10.4049/jimmunol.134.5.3474;
+RA   Stearne P.A., Pietersz G.A., Goding J.W.;
+RT   "cDNA cloning of the murine transferrin receptor: sequence of trans-
+RT   membrane and adjacent regions.";
+RL   J. Immunol. 134:3474-3479(1985).
+RN   [4]
+RP   PROTEIN SEQUENCE OF 7-19; 158-179; 196-208; 450-467 AND 736-759.
+RC   TISSUE=Myeloma;
+RX   PubMed=6092468; DOI=10.4049/jimmunol.133.6.3220;
+RA   van Driel I.R., Stearne P.A., Grego B., Simpson R.J., Goding J.W.;
+RT   "The receptor for transferrin on murine myeloma cells: one-step
+RT   purification based on its physiology, and partial amino acid sequence.";
+RL   J. Immunol. 133:3220-3224(1984).
+RN   [5]
+RP   FUNCTION.
+RX   PubMed=10192390; DOI=10.1038/7727;
+RA   Levy J.E., Jin O., Fujiwara Y., Kuo F., Andrews N.C.;
+RT   "Transferrin receptor is necessary for development of erythrocytes and the
+RT   nervous system.";
+RL   Nat. Genet. 21:396-399(1999).
+RN   [6]
+RP   PHOSPHORYLATION [LARGE SCALE ANALYSIS] AT TYR-20, AND IDENTIFICATION BY
+RP   MASS SPECTROMETRY [LARGE SCALE ANALYSIS].
+RC   TISSUE=Mast cell;
+RX   PubMed=17947660; DOI=10.4049/jimmunol.179.9.5864;
+RA   Cao L., Yu K., Banh C., Nguyen V., Ritz A., Raphael B.J., Kawakami Y.,
+RA   Kawakami T., Salomon A.R.;
+RT   "Quantitative time-resolved phosphoproteomic analysis of mast cell
+RT   signaling.";
+RL   J. Immunol. 179:5864-5876(2007).
+RN   [7]
+RP   PHOSPHORYLATION [LARGE SCALE ANALYSIS] AT TYR-20, AND IDENTIFICATION BY
+RP   MASS SPECTROMETRY [LARGE SCALE ANALYSIS].
+RC   TISSUE=Embryonic fibroblast;
+RX   PubMed=19131326; DOI=10.1074/mcp.m800451-mcp200;
+RA   Sweet S.M., Bailey C.M., Cunningham D.L., Heath J.K., Cooper H.J.;
+RT   "Large scale localization of protein phosphorylation by use of electron
+RT   capture dissociation mass spectrometry.";
+RL   Mol. Cell. Proteomics 8:904-912(2009).
+RN   [8]
+RP   GLYCOSYLATION [LARGE SCALE ANALYSIS] AT ASN-725 AND ASN-730.
+RX   PubMed=19349973; DOI=10.1038/nbt.1532;
+RA   Wollscheid B., Bausch-Fluck D., Henderson C., O'Brien R., Bibel M.,
+RA   Schiess R., Aebersold R., Watts J.D.;
+RT   "Mass-spectrometric identification and relative quantification of N-linked
+RT   cell surface glycoproteins.";
+RL   Nat. Biotechnol. 27:378-386(2009).
+RN   [9]
+RP   PHOSPHORYLATION [LARGE SCALE ANALYSIS] AT SER-19, AND IDENTIFICATION BY
+RP   MASS SPECTROMETRY [LARGE SCALE ANALYSIS].
+RC   TISSUE=Brain, Brown adipose tissue, Heart, Kidney, Liver, Lung,
+RC   Pancreas, Spleen, and Testis;
+RX   PubMed=21183079; DOI=10.1016/j.cell.2010.12.001;
+RA   Huttlin E.L., Jedrychowski M.P., Elias J.E., Goswami T., Rad R.,
+RA   Beausoleil S.A., Villen J., Haas W., Sowa M.E., Gygi S.P.;
+RT   "A tissue-specific atlas of mouse protein phosphorylation and expression.";
+RL   Cell 143:1174-1189(2010).
+RN   [10]
+RP   MUTAGENESIS OF TYR-20, AND FUNCTION.
+RX   PubMed=26642240; DOI=10.1038/ng.3465;
+RA   Jabara H.H., Boyden S.E., Chou J., Ramesh N., Massaad M.J., Benson H.,
+RA   Bainter W., Fraulino D., Rahimov F., Sieff C., Liu Z.J., Alshemmari S.H.,
+RA   Al-Ramadi B.K., Al-Dhekri H., Arnaout R., Abu-Shukair M., Vatsayan A.,
+RA   Silver E., Ahuja S., Davies E.G., Sola-Visner M., Ohsumi T.K.,
+RA   Andrews N.C., Notarangelo L.D., Fleming M.D., Al-Herz W., Kunkel L.M.,
+RA   Geha R.S.;
+RT   "A missense mutation in TFRC, encoding transferrin receptor 1, causes
+RT   combined immunodeficiency.";
+RL   Nat. Genet. 48:74-78(2016).
+RN   [11]
+RP   FUNCTION.
+RX   PubMed=38625739; DOI=10.1172/jci178392;
+RA   Yang J., Zhuang H., Li J., Nunez-Nescolarde A.B., Luo N., Chen H., Li A.,
+RA   Qu X., Wang Q., Fan J., Bai X., Ye Z., Gu B., Meng Y., Zhang X., Wu D.,
+RA   Sia Y., Jiang X., Chen W., Combes A.N., Nikolic-Paterson D.J., Yu X.;
+RT   "The secreted micropeptide C4orf48 enhances renal fibrosis via an RNA-
+RT   binding mechanism.";
+RL   J. Clin. Invest. 0:0-0(2024).
+CC   -!- FUNCTION: Cellular uptake of iron occurs via receptor-mediated
+CC       endocytosis of ligand-occupied transferrin receptor into specialized
+CC       endosomes (By similarity). Endosomal acidification leads to iron
+CC       release. The apotransferrin-receptor complex is then recycled to the
+CC       cell surface with a return to neutral pH and the concomitant loss of
+CC       affinity of apotransferrin for its receptor. Transferrin receptor is
+CC       necessary for development of erythrocytes and the nervous system (By
+CC       similarity). Upon stimulation, positively regulates T and B cell
+CC       proliferation through iron uptake (PubMed:26642240). Acts as a lipid
+CC       sensor that regulates mitochondrial fusion by regulating activation of
+CC       the JNK pathway (By similarity). When dietary levels of stearate
+CC       (C18:0) are low, promotes activation of the JNK pathway, resulting in
+CC       HUWE1-mediated ubiquitination and subsequent degradation of the
+CC       mitofusin MFN2 and inhibition of mitochondrial fusion (By similarity).
+CC       When dietary levels of stearate (C18:0) are high, TFRC stearoylation
+CC       inhibits activation of the JNK pathway and thus degradation of the
+CC       mitofusin MFN2 (By similarity). Mediates uptake of NICOL1 into
+CC       fibroblasts where it may regulate extracellular matrix production
+CC       (PubMed:38625739). {ECO:0000250, ECO:0000269|PubMed:10192390,
+CC       ECO:0000269|PubMed:26642240, ECO:0000269|PubMed:38625739}.
+CC   -!- SUBUNIT: Homodimer; disulfide-linked. Binds one transferrin molecule
+CC       per subunit. Interacts with SH3BP4 (By similarity). Interacts with
+CC       STEAP3; facilitates TFRC endocytosis in erythroid precursor cells (By
+CC       similarity). Interacts with SNX32; the interaction is involved in
+CC       intracellular trafficking of the receptor (By similarity).
+CC       {ECO:0000250, ECO:0000250|UniProtKB:P02786}.
+CC   -!- SUBCELLULAR LOCATION: Cell membrane {ECO:0000250|UniProtKB:P02786};
+CC       Single-pass type II membrane protein {ECO:0000250|UniProtKB:P02786}.
+CC       Melanosome {ECO:0000250|UniProtKB:P02786}.
+CC   -!- PTM: Stearoylated by ZDHHC6 which inhibits TFRC-mediated activation of
+CC       the JNK pathway and promotes mitochondrial fragmentation (By
+CC       similarity). Stearoylation does not affect iron uptake (By similarity).
+CC       {ECO:0000250|UniProtKB:P02786}.
+CC   -!- PTM: N- and O-glycosylated, phosphorylated and palmitoylated.
+CC       {ECO:0000250}.
+CC   -!- PTM: Ubiquitinated via 'Lys-27'-linked chains, leading to enhanced
+CC       degradation. {ECO:0000250|UniProtKB:P02786}.
+CC   -!- SIMILARITY: Belongs to the peptidase M28 family. M28B subfamily.
+CC       {ECO:0000305}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; X57349; CAA40624.1; -; mRNA.
+DR   EMBL; BC054522; AAH54522.1; -; mRNA.
+DR   EMBL; M29618; AAA37616.1; -; mRNA.
+DR   CCDS; CCDS28123.1; -.
+DR   PIR; S29548; S29548.
+DR   RefSeq; NP_001344227.1; NM_001357298.1.
+DR   RefSeq; NP_035768.1; NM_011638.4.
+DR   AlphaFoldDB; Q62351; -.
+DR   SMR; Q62351; -.
+DR   BioGRID; 204314; 20.
+DR   FunCoup; Q62351; 1356.
+DR   IntAct; Q62351; 11.
+DR   MINT; Q62351; -.
+DR   STRING; 10090.ENSMUSP00000023486; -.
+DR   MEROPS; M28.972; -.
+DR   GlyConnect; Q62351; 3 N-Linked glycans (2 sites).
+DR   GlyCosmos; Q62351; 5 sites, 3 glycans.
+DR   GlyGen; Q62351; 6 sites, 6 N-linked glycans (3 sites), 1 O-linked glycan (1 site).
+DR   iPTMnet; Q62351; -.
+DR   PhosphoSitePlus; Q62351; -.
+DR   SwissPalm; Q62351; -.
+DR   jPOST; Q62351; -.
+DR   PaxDb; 10090-ENSMUSP00000023486; -.
+DR   ProteomicsDB; 263168; -.
+DR   Pumba; Q62351; -.
+DR   ABCD; Q62351; 92 sequenced antibodies.
+DR   Antibodypedia; 4559; 3195 antibodies from 51 providers.
+DR   DNASU; 22042; -.
+DR   Ensembl; ENSMUST00000023486.15; ENSMUSP00000023486.9; ENSMUSG00000022797.17.
+DR   GeneID; 22042; -.
+DR   KEGG; mmu:22042; -.
+DR   UCSC; uc007yza.2; mouse.
+DR   AGR; MGI:98822; -.
+DR   CTD; 7037; -.
+DR   MGI; MGI:98822; Tfrc.
+DR   VEuPathDB; HostDB:ENSMUSG00000022797; -.
+DR   eggNOG; KOG2195; Eukaryota.
+DR   GeneTree; ENSGT01030000234598; -.
+DR   HOGENOM; CLU_005688_5_0_1; -.
+DR   InParanoid; Q62351; -.
+DR   OMA; YQDSNWI; -.
+DR   OrthoDB; 5841748at2759; -.
+DR   PhylomeDB; Q62351; -.
+DR   Reactome; R-MMU-432722; Golgi Associated Vesicle Biogenesis.
+DR   Reactome; R-MMU-8856825; Cargo recognition for clathrin-mediated endocytosis.
+DR   Reactome; R-MMU-8856828; Clathrin-mediated endocytosis.
+DR   Reactome; R-MMU-8980692; RHOA GTPase cycle.
+DR   Reactome; R-MMU-9013026; RHOB GTPase cycle.
+DR   Reactome; R-MMU-9013106; RHOC GTPase cycle.
+DR   Reactome; R-MMU-9013149; RAC1 GTPase cycle.
+DR   Reactome; R-MMU-9013404; RAC2 GTPase cycle.
+DR   Reactome; R-MMU-9013406; RHOQ GTPase cycle.
+DR   Reactome; R-MMU-9013407; RHOH GTPase cycle.
+DR   Reactome; R-MMU-9013408; RHOG GTPase cycle.
+DR   Reactome; R-MMU-9013423; RAC3 GTPase cycle.
+DR   Reactome; R-MMU-917977; Transferrin endocytosis and recycling.
+DR   Reactome; R-MMU-9696270; RND2 GTPase cycle.
+DR   Reactome; R-MMU-9696273; RND1 GTPase cycle.
+DR   BioGRID-ORCS; 22042; 40 hits in 117 CRISPR screens.
+DR   PRO; PR:Q62351; -.
+DR   Proteomes; UP000000589; Chromosome 16.
+DR   RNAct; Q62351; protein.
+DR   Bgee; ENSMUSG00000022797; Expressed in placenta labyrinth and 269 other cell types or tissues.
+DR   ExpressionAtlas; Q62351; baseline and differential.
+DR   GO; GO:0016323; C:basolateral plasma membrane; ISO:GO_Central.
+DR   GO; GO:0009986; C:cell surface; IDA:MGI.
+DR   GO; GO:0005905; C:clathrin-coated pit; IDA:MGI.
+DR   GO; GO:0031410; C:cytoplasmic vesicle; ISO:MGI.
+DR   GO; GO:0005769; C:early endosome; IDA:MGI.
+DR   GO; GO:0005768; C:endosome; IDA:MGI.
+DR   GO; GO:0010008; C:endosome membrane; ISO:GO_Central.
+DR   GO; GO:0009897; C:external side of plasma membrane; IDA:MGI.
+DR   GO; GO:0070062; C:extracellular exosome; IDA:MGI.
+DR   GO; GO:0005576; C:extracellular region; ISO:GO_Central.
+DR   GO; GO:0098978; C:glutamatergic synapse; ISO:GO_Central.
+DR   GO; GO:1990712; C:HFE-transferrin receptor complex; IDA:BHF-UCL.
+DR   GO; GO:0005764; C:lysosome; ISO:GO_Central.
+DR   GO; GO:0042470; C:melanosome; ISS:UniProtKB.
+DR   GO; GO:0016020; C:membrane; IMP:ParkinsonsUK-UCL.
+DR   GO; GO:0048471; C:perinuclear region of cytoplasm; IDA:MGI.
+DR   GO; GO:0005886; C:plasma membrane; IDA:MGI.
+DR   GO; GO:0098794; C:postsynapse; IDA:SynGO.
+DR   GO; GO:0098944; C:postsynaptic recycling endosome membrane; ISO:GO_Central.
+DR   GO; GO:0055037; C:recycling endosome; IDA:MGI.
+DR   GO; GO:0055038; C:recycling endosome membrane; ISO:GO_Central.
+DR   GO; GO:0003725; F:double-stranded RNA binding; ISO:MGI.
+DR   GO; GO:0030544; F:Hsp70 protein binding; ISO:GO_Central.
+DR   GO; GO:0042802; F:identical protein binding; ISO:GO_Central.
+DR   GO; GO:0005381; F:iron ion transmembrane transporter activity; TAS:MGI.
+DR   GO; GO:0042803; F:protein homodimerization activity; ISO:GO_Central.
+DR   GO; GO:0019901; F:protein kinase binding; ISO:GO_Central.
+DR   GO; GO:0044877; F:protein-containing complex binding; ISO:GO_Central.
+DR   GO; GO:0051087; F:protein-folding chaperone binding; ISO:GO_Central.
+DR   GO; GO:0004998; F:transferrin receptor activity; ISS:UniProtKB.
+DR   GO; GO:0006953; P:acute-phase response; IEA:Ensembl.
+DR   GO; GO:0007166; P:cell surface receptor signaling pathway; ISO:GO_Central.
+DR   GO; GO:0071281; P:cellular response to iron ion; TAS:BHF-UCL.
+DR   GO; GO:1990830; P:cellular response to leukemia inhibitory factor; IEP:MGI.
+DR   GO; GO:0071466; P:cellular response to xenobiotic stimulus; ISO:MGI.
+DR   GO; GO:0006879; P:intracellular iron ion homeostasis; IMP:MGI.
+DR   GO; GO:0035556; P:intracellular signal transduction; ISO:GO_Central.
+DR   GO; GO:0006826; P:iron ion transport; ISO:GO_Central.
+DR   GO; GO:0060586; P:multicellular organismal-level iron ion homeostasis; ISO:GO_Central.
+DR   GO; GO:0043066; P:negative regulation of apoptotic process; ISO:GO_Central.
+DR   GO; GO:0010637; P:negative regulation of mitochondrial fusion; ISO:GO_Central.
+DR   GO; GO:0030316; P:osteoclast differentiation; IMP:DFLAT.
+DR   GO; GO:0030890; P:positive regulation of B cell proliferation; IDA:UniProtKB.
+DR   GO; GO:0043123; P:positive regulation of canonical NF-kappaB signal transduction; ISO:GO_Central.
+DR   GO; GO:0010628; P:positive regulation of gene expression; ISO:GO_Central.
+DR   GO; GO:0045830; P:positive regulation of isotype switching; ISS:UniProtKB.
+DR   GO; GO:1900182; P:positive regulation of protein localization to nucleus; ISO:GO_Central.
+DR   GO; GO:0031334; P:positive regulation of protein-containing complex assembly; ISO:GO_Central.
+DR   GO; GO:0042102; P:positive regulation of T cell proliferation; IDA:UniProtKB.
+DR   GO; GO:0031623; P:receptor internalization; ISS:UniProtKB.
+DR   GO; GO:0006898; P:receptor-mediated endocytosis; ISO:GO_Central.
+DR   GO; GO:0099072; P:regulation of postsynaptic membrane neurotransmitter receptor levels; IDA:SynGO.
+DR   GO; GO:0046688; P:response to copper ion; IEA:Ensembl.
+DR   GO; GO:0001666; P:response to hypoxia; IEA:Ensembl.
+DR   GO; GO:0010042; P:response to manganese ion; IEA:Ensembl.
+DR   GO; GO:0007584; P:response to nutrient; IEA:Ensembl.
+DR   GO; GO:0032526; P:response to retinoic acid; IEA:Ensembl.
+DR   GO; GO:0033572; P:transferrin transport; ISS:UniProtKB.
+DR   CDD; cd09848; M28_TfR; 1.
+DR   CDD; cd02128; PA_TfR; 1.
+DR   FunFam; 1.20.930.40:FF:000002; Transferrin receptor protein 1; 1.
+DR   FunFam; 3.40.630.10:FF:000045; Transferrin receptor protein 1; 1.
+DR   FunFam; 3.50.30.30:FF:000010; Transferrin receptor protein 1; 1.
+DR   Gene3D; 3.50.30.30; -; 1.
+DR   Gene3D; 1.20.930.40; Transferrin receptor-like, dimerisation domain; 1.
+DR   Gene3D; 3.40.630.10; Zn peptidases; 1.
+DR   InterPro; IPR046450; PA_dom_sf.
+DR   InterPro; IPR003137; PA_domain.
+DR   InterPro; IPR007484; Peptidase_M28.
+DR   InterPro; IPR039373; Peptidase_M28B.
+DR   InterPro; IPR007365; TFR-like_dimer_dom.
+DR   InterPro; IPR036757; TFR-like_dimer_dom_sf.
+DR   InterPro; IPR037324; TfR1/2_PA.
+DR   PANTHER; PTHR10404; N-ACETYLATED-ALPHA-LINKED ACIDIC DIPEPTIDASE; 1.
+DR   PANTHER; PTHR10404:SF26; TRANSFERRIN RECEPTOR PROTEIN 1; 1.
+DR   Pfam; PF02225; PA; 1.
+DR   Pfam; PF04389; Peptidase_M28; 1.
+DR   Pfam; PF04253; TFR_dimer; 1.
+DR   SUPFAM; SSF52025; PA domain; 1.
+DR   SUPFAM; SSF47672; Transferrin receptor-like dimerisation domain; 1.
+DR   SUPFAM; SSF53187; Zn-dependent exopeptidases; 1.
+PE   1: Evidence at protein level;
+KW   Cell membrane; Direct protein sequencing; Disulfide bond; Endocytosis;
+KW   Glycoprotein; Isopeptide bond; Lipoprotein; Membrane; Palmitate;
+KW   Phosphoprotein; Receptor; Reference proteome; Signal-anchor; Transmembrane;
+KW   Transmembrane helix; Ubl conjugation.
+FT   CHAIN           1..763
+FT                   /note="Transferrin receptor protein 1"
+FT                   /id="PRO_0000174133"
+FT   TOPO_DOM        1..67
+FT                   /note="Cytoplasmic"
+FT                   /evidence="ECO:0000255"
+FT   TRANSMEM        68..88
+FT                   /note="Helical; Signal-anchor for type II membrane protein"
+FT                   /evidence="ECO:0000255"
+FT   TOPO_DOM        89..763
+FT                   /note="Extracellular"
+FT                   /evidence="ECO:0000255"
+FT   DOMAIN          225..315
+FT                   /note="PA"
+FT   REGION          1..67
+FT                   /note="Mediates interaction with SH3BP4"
+FT                   /evidence="ECO:0000250"
+FT   REGION          572..763
+FT                   /note="Ligand-binding"
+FT                   /evidence="ECO:0000250"
+FT   MOTIF           20..23
+FT                   /note="Endocytosis signal"
+FT   MOTIF           58..61
+FT                   /note="Stop-transfer sequence"
+FT   MOTIF           649..651
+FT                   /note="Cell attachment site"
+FT                   /evidence="ECO:0000255"
+FT   MOD_RES         10
+FT                   /note="Phosphoserine"
+FT                   /evidence="ECO:0000250|UniProtKB:P02786"
+FT   MOD_RES         19
+FT                   /note="Phosphoserine"
+FT                   /evidence="ECO:0007744|PubMed:21183079"
+FT   MOD_RES         20
+FT                   /note="Phosphotyrosine"
+FT                   /evidence="ECO:0007744|PubMed:17947660,
+FT                   ECO:0007744|PubMed:19131326"
+FT   MOD_RES         21
+FT                   /note="Phosphothreonine"
+FT                   /evidence="ECO:0000250|UniProtKB:P02786"
+FT   MOD_RES         24
+FT                   /note="Phosphoserine"
+FT                   /evidence="ECO:0000250|UniProtKB:P02786"
+FT   LIPID           67
+FT                   /note="S-palmitoyl cysteine"
+FT                   /evidence="ECO:0000250"
+FT   CARBOHYD        104
+FT                   /note="O-linked (GalNAc...) threonine"
+FT                   /evidence="ECO:0000250"
+FT   CARBOHYD        253
+FT                   /note="N-linked (GlcNAc...) asparagine"
+FT                   /evidence="ECO:0000250|UniProtKB:P02786"
+FT   CARBOHYD        319
+FT                   /note="N-linked (GlcNAc...) asparagine"
+FT                   /evidence="ECO:0000250|UniProtKB:P02786"
+FT   CARBOHYD        725
+FT                   /note="N-linked (GlcNAc...) asparagine"
+FT                   /evidence="ECO:0000269|PubMed:19349973"
+FT   CARBOHYD        730
+FT                   /note="N-linked (GlcNAc...) asparagine"
+FT                   /evidence="ECO:0000269|PubMed:19349973"
+FT   DISULFID        89
+FT                   /note="Interchain"
+FT                   /evidence="ECO:0000250"
+FT   DISULFID        98
+FT                   /note="Interchain"
+FT                   /evidence="ECO:0000250"
+FT   CROSSLNK        39
+FT                   /note="Glycyl lysine isopeptide (Lys-Gly) (interchain with
+FT                   G-Cter in ubiquitin)"
+FT                   /evidence="ECO:0000250|UniProtKB:P02786"
+FT   MUTAGEN         20
+FT                   /note="Y->H: Negatively regulates of T and B cell
+FT                   proliferation upon activation. Significantly increases cell
+FT                   surface expression on T and B cells. Impairs
+FT                   internalization."
+FT                   /evidence="ECO:0000269|PubMed:26642240"
+FT   CONFLICT        25..26
+FT                   /note="LA -> AL (in Ref. 3; AAA37616)"
+FT                   /evidence="ECO:0000305"
+FT   CONFLICT        743
+FT                   /note="W -> H (in Ref. 4; AA sequence)"
+FT                   /evidence="ECO:0000305"
+FT   CONFLICT        757
+FT                   /note="W -> I (in Ref. 4; AA sequence)"
+FT                   /evidence="ECO:0000305"
+SQ   SEQUENCE   763 AA;  85731 MW;  832A148CC26CE489 CRC64;
+     MMDQARSAFS NLFGGEPLSY TRFSLARQVD GDNSHVEMKL AADEEENADN NMKASVRKPK
+     RFNGRLCFAA IALVIFFLIG FMSGYLGYCK RVEQKEECVK LAETEETDKS ETMETEDVPT
+     SSRLYWADLK TLLSEKLNSI EFADTIKQLS QNTYTPREAG SQKDESLAYY IENQFHEFKF
+     SKVWRDEHYV KIQVKSSIGQ NMVTIVQSNG NLDPVESPEG YVAFSKPTEV SGKLVHANFG
+     TKKDFEELSY SVNGSLVIVR AGEITFAEKV ANAQSFNAIG VLIYMDKNKF PVVEADLALF
+     GHAHLGTGDP YTPGFPSFNH TQFPPSQSSG LPNIPVQTIS RAAAEKLFGK MEGSCPARWN
+     IDSSCKLELS QNQNVKLIVK NVLKERRILN IFGVIKGYEE PDRYVVVGAQ RDALGAGVAA
+     KSSVGTGLLL KLAQVFSDMI SKDGFRPSRS IIFASWTAGD FGAVGATEWL EGYLSSLHLK
+     AFTYINLDKV VLGTSNFKVS ASPLLYTLMG KIMQDVKHPV DGKSLYRDSN WISKVEKLSF
+     DNAAYPFLAY SGIPAVSFCF CEDADYPYLG TRLDTYEALT QKVPQLNQMV RTAAEVAGQL
+     IIKLTHDVEL NLDYEMYNSK LLSFMKDLNQ FKTDIRDMGL SLQWLYSARG DYFRATSRLT
+     TDFHNAEKTN RFVMREINDR IMKVEYHFLS PYVSPRESPF RHIFWGSGSH TLSALVENLK
+     LRQKNITAFN ETLFRNQLAL ATWTIQGVAN ALSGDIWNID NEF
+//
