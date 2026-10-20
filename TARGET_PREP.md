@@ -92,3 +92,60 @@ buried or poorly conserved.
    every final design against all known TfR1 binders (these three, the bicyclic peptide, HFE,
    transferrin, Machupo GP1) and reports the maximum identity, so the de novo/zero-shot claim is
    demonstrated rather than asserted.
+
+---
+
+## 6. Dimer-occlusion check: the portfolio changes again (2026-10-20, later)
+
+Relative SASA computed in the dimer is not enough. A residue can look exposed and still be
+unreachable, because the partner subunit sits over the approach vector. `scripts/trim_target.py`
+reported the epitope-to-chain-B closest approach, and `scripts/check_dimer_occlusion.py` then
+measured, per residue, the SASA gained when chain B is deleted (how much the partner covers) and
+the distance to chain B. Results (`results/dimer_occlusion.json`):
+
+| Epitope | closest approach to chain B | verdict |
+|---|---|---|
+| E1 as first defined (688-737) | **3.3 A** | **partly occluded** - 688 (0.33 of its surface), 733 (0.16) and 737 (0.19) only appear on the isolated monomer. Drop those three. |
+| **E1' refined: 695,704,705,706,707,711,714 (+730)** | 7.2 A | **usable.** Zero occlusion on every member; His707 is 9.6 A from chain B with rel SASA 0.142 and no occlusion. |
+| E3 (His475: 471,472,475,476,477) | 3.7-5.1 A | **dropped.** 472 loses half its surface to the partner (0.496) and His475 itself is 4.7 A from chain B. |
+| **E4 (His603: 600,603,604,605,608)** | 8.7 A | **usable.** Zero occlusion on all five, all mouse-identical. |
+| E2a (202-213) | 39.2 A | irrelevant - nowhere near the dimer interface. |
+| E2b (340-376) | 30.4 A | irrelevant. |
+
+**The second honest tension: the conserved native-His patches are polar.** E1' reads S,S,G,S,H,A,E
+and E4 reads K,H,D,V,N — one hydrophobic residue each. AF2 is documented to design hydrophilic
+interfaces worse than hydrophobic ones, and the RFdiffusion guidance is to prefer sites with three
+or more hydrophobics and avoid charged polar sites. The apical E2 sites carry 6 hydrophobics and no
+dimer problem, but only 0.59 identity. So:
+
+- **designability** favours E2 (apical, human-specific)
+- **the scoring criteria** favour E1'/E4 (conserved, native His, novel)
+
+That maps cleanly onto the mechanism families instead of forcing a single choice:
+
+| Mechanism families | Epitope | Rationale |
+|---|---|---|
+| 1-5 (the switch lives in the **binder**: His-Asp dyad, His-His pair, buried unpaired His, scaffold fold-switch, charge ladder) | **E2a (202-213)** and **E2b (340-376)** | These families only need a designable interface; the apical sites are the ones the generators can actually hit, and they are the proven-designable, likely-functional epitope class. |
+| 6 (the switch is the **target's own** His) | **E1' (His707)** and **E4 (His603)** | These families require a native, mouse-conserved histidine at the interface. Expect a lower pass rate from the generators and budget more trajectories. |
+
+Trimmed, generator-ready targets are in `targets/` (template 11QC, 12 A neighbourhood, contiguous
+fragments, hydrogens stripped):
+`E1_his707_clean.pdb`, `E2a_apical_202_213.pdb`, `E2b_apical_340_376.pdb`, `E4_his603.pdb`.
+E1' keeps 21 chain-B residues in the trim, so **that run must pass both chains as the target** or
+the design will grow into space the partner subunit occupies.
+
+## 7. Baseline reproduction (the prior-art-first step)
+
+Pod `yy6bbyxlp7vwi7` (A100 80GB PCIe, CA-MTL-3, $1.79/hr), volume `adaptyv-c4` (100 GB) at
+`/workspace`. BindCraft installed from source with mamba (the conda solve stalled for 25 minutes and
+was abandoned); env verified: jax 0.6.0 on `CudaDevice(id=0)`, colabdesign 1.1.3, PyRosetta
+2026.29, biopython 1.88. The AF2 weight extraction "failed" only because `tar` could not chown on
+the network volume; all 15 `.npz` files are present and the 5.6 GB tar was removed afterwards.
+
+Smoke test running: the shipped PDL1 example, `default_4stage_multimer` settings with
+`default_filters`, one accepted design requested. Stage 1 optimisation confirmed on GPU.
+
+**Licensing note for the write-up:** PyRosetta prints that commercial use requires a licence. This
+entry is non-commercial, and the competition terms leave commercialisation rights with the
+designer — so if anything here were ever taken commercial, the PyRosetta licence would have to be
+settled first. BindCraft itself carries the same condition.
