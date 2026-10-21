@@ -2,4 +2,7 @@ venv/
 __pycache__/
 *.pyc
 .venv-rosetta/
+.venv-modal/
+results/modal_campaign_v3/**/driver.lock
+results/modal_campaign_v3/series.lock
 data/*.cif

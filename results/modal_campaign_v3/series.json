@@ -1,0 +1,11 @@
+{
+  "started": 1792618866.112844,
+  "finished_batches": [],
+  "max_batches": 3,
+  "runtime_upper_hourly_usd": 4.649328,
+  "runtime_envelope_usd": 27.895967999999996,
+  "pid": 9144,
+  "status": "active",
+  "current_batch": 0,
+  "current_run": "c4_native_apical_ablation_v3"
+}
