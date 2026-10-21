@@ -1,5 +1,10 @@
 # Current GPU attempt and automatic continuation
 
+**Completed:** zero accepted from three trajectories; pod independently verified
+EXITED. See `RESULTS.md`. Current capacity queue is `../gpu_campaign_v3/queue.json`;
+the waiting queue is not a model run. The continuation's startup race has been
+fixed and replayed. Combined runtime compute estimate so far is $1.7952.
+
 The first full-dimer attempt could not fit in 80 GB even with narrower shards and
 chunked attention. It was mirrored, the POD stopped and EXITED verified. Its
 estimated compute was $0.3855; no accepted scaffold. The old supervisor files in

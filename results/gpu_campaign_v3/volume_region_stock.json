@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"compliance\": [\n    \"GDPR\",\n    \"ISO_IEC_27001\",\n    \"ISO_14001\",\n    \"HIPAA\"\n  ],\n  \"globalNetwork\": false,\n  \"gpuAvailability\": [\n    {\n      \"availability\": \"LOW\",\n      \"id\": \"NVIDIA GeForce RTX 4090\",\n      \"name\": \"RTX 4090\"\n    },\n    {\n      \"availability\": \"LOW\",\n      \"id\": \"NVIDIA RTX PRO 6000 Blackwell Server Edition\",\n      \"name\": \"RTX PRO 6000\"\n    },\n    {\n      \"availability\": \"LOW\",\n      \"id\": \"NVIDIA RTX A4000\",\n      \"name\": \"RTX A4000\"\n    },\n    {\n      \"availability\": \"LOW\",\n      \"id\": \"NVIDIA L4\",\n      \"name\": \"L4\"\n    },\n    {\n      \"availability\": \"LOW\",\n      \"id\": \"NVIDIA RTX PRO 4500 Blackwell\",\n      \"name\": \"RTX PRO 4500\"\n    }\n  ],\n  \"id\": \"EUR-IS-1\",\n  \"name\": \"EUR-IS-1\",\n  \"networkVolumeTypes\": [\n    \"STANDARD\"\n  ],\n  \"region\": \"EUROPE\"\n}"
+    }
+  ],
+  "isError": false
+}

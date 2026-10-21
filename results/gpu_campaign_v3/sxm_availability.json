@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"availability\": \"LOW\",\n  \"community\": true,\n  \"cudaVersions\": [\n    {\n      \"available\": false,\n      \"version\": \"13.1\"\n    },\n    {\n      \"available\": true,\n      \"version\": \"13.2\"\n    }\n  ],\n  \"dataCenters\": [\n    {\n      \"availability\": \"LOW\",\n      \"id\": \"US-KS-2\",\n      \"name\": \"US-KS-2\"\n    },\n    {\n      \"availability\": \"LOW\",\n      \"id\": \"US-MD-1\",\n      \"name\": \"US-MD-1\"\n    },\n    {\n      \"availability\": \"LOW\",\n      \"id\": \"US-WA-1\",\n      \"name\": \"US-WA-1\"\n    }\n  ],\n  \"id\": \"NVIDIA A100-SXM4-80GB\",\n  \"manufacturer\": \"NVIDIA\",\n  \"maxCount\": {\n    \"community\": 8,\n    \"secure\": 8\n  },\n  \"memory\": 80,\n  \"name\": \"A100 SXM\",\n  \"pool\": \"AMPERE_80\",\n  \"price\": {\n    \"community\": 1.39,\n    \"secure\": 1.79,\n    \"serverless\": 2.72\n  },\n  \"secure\": true\n}"
+    }
+  ],
+  "isError": false
+}

@@ -1,0 +1,14 @@
+{
+  "status": "waiting_for_capacity",
+  "pid": 1770,
+  "started": 1792616864.222629,
+  "pod": "2p9x2qea1ietbw",
+  "attempts": 1,
+  "max_hourly_usd": 1.79,
+  "prior_compute_estimate": 1.7952,
+  "total_compute_cap_usd": 3.58,
+  "wait_deadline": 1792638464.222629,
+  "last_attempt": 1792616864.222643,
+  "reason": "host GPU occupied; no compute started",
+  "next_attempt": 1792617466.613028
+}

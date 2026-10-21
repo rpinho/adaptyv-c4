@@ -1,0 +1,22 @@
+{
+  "name": "create-pod",
+  "title": "Create Pod",
+  "description": "Rent a GPU/CPU pod. BILLABLE from creation until stop/terminate: state the hourly price before creating. GPU selection is the gpu object: gpu.id takes a catalog GPU type id (e.g. \"NVIDIA GeForce RTX 4090\"), verified via list-gpu-types, and gpu.count sets the GPU count; cloud/data-center choice constrains stock. Call describe-tool for the full argument schema before the first use.",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "body": {
+        "type": "object"
+      }
+    },
+    "required": [
+      "body"
+    ]
+  },
+  "annotations": {
+    "title": "Create Pod",
+    "readOnlyHint": false,
+    "destructiveHint": false,
+    "openWorldHint": true
+  }
+}

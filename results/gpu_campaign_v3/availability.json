@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"availability\": \"NONE\",\n  \"community\": true,\n  \"cudaVersions\": [\n    {\n      \"available\": false,\n      \"version\": \"12.4\"\n    },\n    {\n      \"available\": false,\n      \"version\": \"13.2\"\n    }\n  ],\n  \"id\": \"NVIDIA A100 80GB PCIe\",\n  \"manufacturer\": \"NVIDIA\",\n  \"maxCount\": {\n    \"community\": 6,\n    \"secure\": 8\n  },\n  \"memory\": 80,\n  \"name\": \"A100 PCIe\",\n  \"pool\": \"AMPERE_80\",\n  \"price\": {\n    \"community\": 1.19,\n    \"secure\": 1.79,\n    \"serverless\": 2.72\n  },\n  \"secure\": true\n}"
+    }
+  ],
+  "isError": false
+}
