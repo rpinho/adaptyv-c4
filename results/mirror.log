@@ -18,3 +18,28 @@
   c3_glp1r: 5 ranked designs mirrored to /Users/ricardo/dev/adaptyv-c4/results/pods/c3_glp1r
 [2026-10-21T01:35:32Z] done
 01:35Z c4[traj ranked procs]=50 0 8  c3[traj ranked procs]=126 5 7
+[2026-10-21T01:50:41Z] pulling campaign results
+  c4_E1_human: 0 ranked designs mirrored to /Users/ricardo/dev/adaptyv-c4/results/pods/c4_E1_human
+  c3_glp1r: 5 ranked designs mirrored to /Users/ricardo/dev/adaptyv-c4/results/pods/c3_glp1r
+[2026-10-21T01:50:41Z] done
+01:50Z c4[traj ranked procs]=10 0 8  c3[traj ranked procs]=140 5 7
+[2026-10-21T02:05:50Z] pulling campaign results
+  c4_E1_human: 0 ranked designs mirrored to /Users/ricardo/dev/adaptyv-c4/results/pods/c4_E1_human
+  c3_glp1r: 5 ranked designs mirrored to /Users/ricardo/dev/adaptyv-c4/results/pods/c3_glp1r
+[2026-10-21T02:05:50Z] done
+02:05Z c4[traj ranked procs]=21 0 8  c3[traj ranked procs]=148 5 7
+[2026-10-21T02:20:59Z] pulling campaign results
+  c4_E1_human: 0 ranked designs mirrored to /Users/ricardo/dev/adaptyv-c4/results/pods/c4_E1_human
+  c3_glp1r: 6 ranked designs mirrored to /Users/ricardo/dev/adaptyv-c4/results/pods/c3_glp1r
+[2026-10-21T02:20:59Z] done
+02:21Z c4[traj ranked procs]=30 0 8  c3[traj ranked procs]=157 6 7
+[2026-10-21T02:36:07Z] pulling campaign results
+  c4_E1_human: 0 ranked designs mirrored to /Users/ricardo/dev/adaptyv-c4/results/pods/c4_E1_human
+  c3_glp1r: 7 ranked designs mirrored to /Users/ricardo/dev/adaptyv-c4/results/pods/c3_glp1r
+[2026-10-21T02:36:07Z] done
+02:36Z c4[traj ranked procs]=43 0 8  c3[traj ranked procs]=165 7 7
+[2026-10-21T02:51:16Z] pulling campaign results
+  c4_E1_human: 0 ranked designs mirrored to /Users/ricardo/dev/adaptyv-c4/results/pods/c4_E1_human
+  c3_glp1r: 8 ranked designs mirrored to /Users/ricardo/dev/adaptyv-c4/results/pods/c3_glp1r
+[2026-10-21T02:51:16Z] done
+02:51Z c4[traj ranked procs]=0 0 8  c3[traj ranked procs]=174 8 7

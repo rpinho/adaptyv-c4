@@ -1,0 +1,8 @@
+BindCraft 2 v1.0.4
+campaign c4_tfr1_groove_human
+binder length 55 to 100, drawn per trajectory
+target hTfR1 (target) | 73 residues | hotspots A685,A701,A702,A709,A707
+losses binder_contacts=1.0 binder_helicity=-0.3 binder_pae=0.4 compactness=0.5 interface_contacts=1.0 interface_pae=0.1 iptm_loss=0.05 plddt_loss=0.1 target_rmsd=1.0
+features forced targeting: everything outside the default Angstrom of the hotspots rebuilt as lysine
+filters Backbone_Clashes <= 0, Binder_RMSD <= 3.5, Hotspot_Contact_Fraction >= 0.5, Interface_Residues >= 7, Unbound_Binder_pLDDT >= 0.7, i_pAE <= 0.35, i_pTM >= 0.7, pTM >= 0.55
+results /workspace/runs/c4_E1_human | 3_Ranked/!_Ranked.csv rewritten as each design is accepted | summary.csv written when the campaign ends

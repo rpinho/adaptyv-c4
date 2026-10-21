@@ -223,3 +223,34 @@ independent APBS arm agrees on the sign.
   sort before it is used. It is next, the moment a design lands.
 - Best achievable pair on the two existing designs scores about -1.4 and -1.65 estimated, short of
   the gate, which is consistent with the budget above: two sites are the floor, not the plan.
+
+## Where the binder actually sits, measured (2026-10-21)
+
+The layer above was built and calibrated before any design had been observed docking. Thirty-seven
+refolded complexes now exist, and they move one assumption from reasoned to measured.
+
+**The epitope is the hydrophobic groove, not the His707 patch.** 37/37 designs contact
+LEU709/LEU713/LEU716/PHE685/PHE701/TRP702/PHE731/LEU735/THR739/ILE742 and 0/37 contact
+SER704/GLY705/SER706/HIS707/ALA711. HIS707 sits 4.0 A from LEU709, at the rim.
+
+**What this changes for the proton budget, and it is an improvement.** The method already concluded
+that the leverage is the *binder's* free-state pKa, not the target's histidines (ceiling -1.01 for
+all three, against a -2.00 gate). A binder histidine buried against a hydrophobic groove loses more
+solvation than one pressed onto a polar patch, so the bound-state pKa drops further and each
+histidine is worth more than the -1.115 estimated against the polar patch. The groove is also
+base-rich (LYS717, LYS720, ARG719, LYS534, ARG732 against GLU714, GLU728, GLU533), and the measured
+rule from the previous section is that bases help and acids fight: this epitope's charge census is
+on the right side of the ledger, which the apical sites were not.
+
+**What must now be re-measured rather than inherited.** Every number in the sections above was
+computed against designs docked on the polar patch, or against the apo target. The per-residue
+contributions, the acid budget and the `switch_sites.py` rankings all have to be recomputed on
+groove-docked designs before any of them is quoted again. The *rules* carry over - sign is set by
+how much of pH 6.0-7.4 a titration crosses, acids can go either way and must be charge-compensated
+rather than excluded - but the magnitudes do not.
+
+**Honest status.** The groove's own effect on a designed histidine's bound pKa is a prediction from
+the desolvation term, not yet a measurement. It is testable the moment designs clear the filters:
+run `ph_linkage.py` on groove-docked complexes and compare the per-residue contributions against
+the -0.52 and -0.39 measured on the polar patch. If the groove does not deepen them, the
+improvement claim in this section is wrong and should be struck.

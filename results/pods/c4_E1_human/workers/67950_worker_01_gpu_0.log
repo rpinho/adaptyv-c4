@@ -1,0 +1,64 @@
+
+=== trajectory 2 | c4_tfr1_his707_human_forced_l60_3f11244d64190dd2 | accepted 0/25 | worker 1 ===
+forced targeting epitope=55 lysinated=17 residues=73
+  passed screen design stage  i_pTM=0.79    pLDDT=0.9   
+  passed refine design stage  i_pTM=0.78    pLDDT=0.9   
+  passed anneal design stage  i_pTM=0.78    pLDDT=0.9   
+  rejected at harden design stage  i_pTM=0.24    pLDDT=0.65   due to [i_pTM]
+
+=== trajectory 9 | c4_tfr1_his707_human_forced_l59_4a964e11690def4d | accepted 0/25 | worker 1 ===
+forced targeting epitope=55 lysinated=17 residues=73
+  passed screen design stage  i_pTM=0.84    pLDDT=0.93  
+  passed refine design stage  i_pTM=0.84    pLDDT=0.94  
+  passed anneal design stage  i_pTM=0.82    pLDDT=0.92  
+  passed harden design stage  i_pTM=0.51    pLDDT=0.69  
+  rejected at mutate design stage  i_pTM=0.37    pLDDT=0.57   due to [i_pTM, pLDDT]
+
+=== trajectory 15 | c4_tfr1_his707_human_forced_l58_2faf22922e047e33 | accepted 0/25 | worker 1 ===
+forced targeting epitope=55 lysinated=17 residues=73
+  passed screen design stage  i_pTM=0.79    pLDDT=0.9   
+  passed refine design stage  i_pTM=0.79    pLDDT=0.89  
+  passed anneal design stage  i_pTM=0.81    pLDDT=0.92  
+  rejected at harden design stage  i_pTM=0.33    pLDDT=0.5    due to [i_pTM, pLDDT]
+
+=== trajectory 20 | c4_tfr1_his707_human_forced_l64_34f76d135adc124f | accepted 0/25 | worker 1 ===
+forced targeting epitope=55 lysinated=17 residues=73
+  passed screen design stage  i_pTM=0.75    pLDDT=0.83  
+  passed refine design stage  i_pTM=0.74    pLDDT=0.84  
+  passed anneal design stage  i_pTM=0.83    pLDDT=0.9   
+  passed harden design stage  i_pTM=0.83    pLDDT=0.89  
+  passed mutate design stage  i_pTM=0.81    pLDDT=0.85  
+  binder hallucination successful
+  binder optimization, 10 MPNN redesigns
+ProteinMPNN: holding 23 of 64 residue(s) of chain binder
+   1/10  rejected  Binder_RMSD=2.3     Hotspot_Contact_Fraction=0.0     Interface_Residues=13   Off_Epitope_Contact_Fraction=0.14    Receptor_Chains_Contacted=1    Target_pLDDT=0.74    i_pAE=0.5     i_pTM=0.39    pLDDT=0.63    pTM=0.6     failed [i_pTM, pLDDT, i_pAE, Hotspot_Contact_Fraction]
+   2/10  rejected  Binder_RMSD=0.52    Hotspot_Contact_Fraction=0.0     Interface_Residues=19   Off_Epitope_Contact_Fraction=0.19    Receptor_Chains_Contacted=2    Target_pLDDT=0.77    i_pAE=0.29    i_pTM=0.74    pLDDT=0.84    pTM=0.73    failed [Hotspot_Contact_Fraction]
+   3/10  rejected  Binder_RMSD=1.7     Hotspot_Contact_Fraction=0.0     Interface_Residues=15   Off_Epitope_Contact_Fraction=0.19    Receptor_Chains_Contacted=2    Target_pLDDT=0.72    i_pAE=0.48    i_pTM=0.41    pLDDT=0.61    pTM=0.59    failed [i_pTM, pLDDT, i_pAE, Hotspot_Contact_Fraction]
+   4/10  rejected  Binder_RMSD=4.9     Hotspot_Contact_Fraction=0.0     Interface_Residues=12   Off_Epitope_Contact_Fraction=0.1     Receptor_Chains_Contacted=1    Target_pLDDT=0.74    i_pAE=0.48    i_pTM=0.41    pLDDT=0.62    pTM=0.61    failed [i_pTM, pLDDT, i_pAE, Hotspot_Contact_Fraction, Binder_RMSD]
+   5/10  rejected  Binder_RMSD=2.0     Hotspot_Contact_Fraction=0.0     Interface_Residues=9    Off_Epitope_Contact_Fraction=0.12    Receptor_Chains_Contacted=1    Target_pLDDT=0.74    i_pAE=0.59    i_pTM=0.28    pLDDT=0.64    pTM=0.55    failed [i_pTM, pLDDT, pTM, i_pAE, Hotspot_Contact_Fraction]
+   6/10  rejected  Binder_RMSD=5.3     Hotspot_Contact_Fraction=0.0     Interface_Residues=13   Off_Epitope_Contact_Fraction=0.25    Receptor_Chains_Contacted=2    Target_pLDDT=0.75    i_pAE=0.44    i_pTM=0.49    pLDDT=0.65    pTM=0.63    failed [i_pTM, pLDDT, i_pAE, Hotspot_Contact_Fraction, Binder_RMSD]
+   7/10  rejected  Binder_RMSD=4.6     Hotspot_Contact_Fraction=0.0     Interface_Residues=7    Off_Epitope_Contact_Fraction=0.33    Receptor_Chains_Contacted=1    Target_pLDDT=0.75    i_pAE=0.64    i_pTM=0.22    pLDDT=0.65    pTM=0.51    failed [i_pTM, pLDDT, pTM, i_pAE, Hotspot_Contact_Fraction, Binder_RMSD]
+   8/10  rejected  Binder_RMSD=3.0     Hotspot_Contact_Fraction=0.0     Interface_Residues=16   Off_Epitope_Contact_Fraction=0.25    Receptor_Chains_Contacted=1    Target_pLDDT=0.75    i_pAE=0.49    i_pTM=0.43    pLDDT=0.61    pTM=0.61    failed [i_pTM, pLDDT, i_pAE, Hotspot_Contact_Fraction]
+   9/10  rejected  Binder_RMSD=7.0     Hotspot_Contact_Fraction=0.0     Interface_Residues=16   Off_Epitope_Contact_Fraction=0.23    Receptor_Chains_Contacted=1    Target_pLDDT=0.77    i_pAE=0.42    i_pTM=0.51    pLDDT=0.65    pTM=0.65    Unbound_Binder_pLDDT=0.68    failed [i_pTM, pLDDT, Unbound_Binder_pLDDT, i_pAE, Hotspot_Contact_Fraction, Binder_RMSD]
+  10/10  rejected  Binder_RMSD=5.3     Hotspot_Contact_Fraction=0.0     Interface_Residues=13   Off_Epitope_Contact_Fraction=0.07    Receptor_Chains_Contacted=1    Target_pLDDT=0.74    i_pAE=0.53    i_pTM=0.36    pLDDT=0.62    pTM=0.58    Unbound_Binder_pLDDT=0.64    failed [i_pTM, pLDDT, Unbound_Binder_pLDDT, i_pAE, Hotspot_Contact_Fraction, Binder_RMSD]
+  0 of 10 redesigns passed
+
+=== trajectory 27 | c4_tfr1_his707_human_forced_l56_0ae8fb7e13262601 | accepted 0/25 | worker 1 ===
+forced targeting epitope=55 lysinated=17 residues=73
+  passed screen design stage  i_pTM=0.75    pLDDT=0.9   
+  passed refine design stage  i_pTM=0.73    pLDDT=0.89  
+  passed anneal design stage  i_pTM=0.76    pLDDT=0.91  
+  passed harden design stage  i_pTM=0.77    pLDDT=0.9   
+  rejected at mutate design stage  i_pTM=0.12    pLDDT=0.49   due to [i_pTM, pLDDT]
+
+=== trajectory 34 | c4_tfr1_his707_human_forced_l62_914a44cd4177017d | accepted 0/25 | worker 1 ===
+forced targeting epitope=55 lysinated=17 residues=73
+  passed screen design stage  i_pTM=0.32    pLDDT=0.69  
+  passed refine design stage  i_pTM=0.46    pLDDT=0.83  
+  passed anneal design stage  i_pTM=0.75    pLDDT=0.91  
+  passed harden design stage  i_pTM=0.56    pLDDT=0.68  
+  rejected at mutate design stage  i_pTM=0.13    pLDDT=0.48   due to [i_pTM, pLDDT]
+
+=== trajectory 40 | c4_tfr1_his707_human_forced_l63_6384dfadf56ba805 | accepted 0/25 | worker 1 ===
+forced targeting epitope=55 lysinated=17 residues=73
+  passed screen design stage  i_pTM=0.66    pLDDT=0.86  

@@ -155,3 +155,55 @@ ProteinMPNN: holding 20 of 98 residue(s) of chain binder
 forced targeting epitope=85 lysinated=24 residues=111
   passed screen design stage  i_pTM=0.51    pLDDT=0.78  
   passed refine design stage  i_pTM=0.56    pLDDT=0.82  
+  passed anneal design stage  i_pTM=0.75    pLDDT=0.88  
+  rejected at harden design stage  i_pTM=0.38    pLDDT=0.62   due to [i_pTM, pLDDT]
+
+=== trajectory 126 | c3_glp1r_ecd_groove_forced_l97_6ed988150879aa5a | accepted 5/20 | worker 2 ===
+forced targeting epitope=85 lysinated=24 residues=111
+  passed screen design stage  i_pTM=0.16    pLDDT=0.68  
+  rejected at refine design stage  i_pTM=0.13    pLDDT=0.58   due to [pLDDT]
+
+=== trajectory 134 | c3_glp1r_ecd_groove_forced_l100_cf291a5817354fa7 | accepted 5/20 | worker 2 ===
+forced targeting epitope=85 lysinated=24 residues=111
+  passed screen design stage  i_pTM=0.67    pLDDT=0.75  
+  passed refine design stage  i_pTM=0.8     pLDDT=0.85  
+  passed anneal design stage  i_pTM=0.79    pLDDT=0.9   
+  passed harden design stage  i_pTM=0.83    pLDDT=0.93  
+  passed mutate design stage  i_pTM=0.67    pLDDT=0.77  
+  trajectory rejected  i_pTM=0.67    pLDDT=0.77   due to [i_pTM]
+
+=== trajectory 144 | c3_glp1r_ecd_groove_forced_l99_47d4f5c464385e6d | accepted 5/20 | worker 2 ===
+forced targeting epitope=85 lysinated=24 residues=111
+  passed screen design stage  i_pTM=0.28    pLDDT=0.64  
+  passed refine design stage  i_pTM=0.51    pLDDT=0.76  
+  passed anneal design stage  i_pTM=0.67    pLDDT=0.86  
+  passed harden design stage  i_pTM=0.64    pLDDT=0.83  
+  passed mutate design stage  i_pTM=0.68    pLDDT=0.77  
+  trajectory rejected  i_pTM=0.68    pLDDT=0.77   due to [i_pTM]
+
+=== trajectory 153 | c3_glp1r_ecd_groove_forced_l100_4bd789837d72a97c | accepted 5/20 | worker 2 ===
+forced targeting epitope=85 lysinated=24 residues=111
+  passed screen design stage  i_pTM=0.8     pLDDT=0.87  
+  passed refine design stage  i_pTM=0.82    pLDDT=0.88  
+  passed anneal design stage  i_pTM=0.85    pLDDT=0.94  
+  passed harden design stage  i_pTM=0.84    pLDDT=0.94  
+  passed mutate design stage  i_pTM=0.79    pLDDT=0.84  
+  binder hallucination successful
+  binder optimization, 10 MPNN redesigns
+ProteinMPNN: holding 27 of 100 residue(s) of chain binder
+   1/10  rejected  Binder_RMSD=0.19    Hotspot_Contact_Fraction=0.73    Interface_Residues=20   Off_Epitope_Contact_Fraction=0.0     Target_pLDDT=0.87    i_pAE=0.32    i_pTM=0.7     pLDDT=0.87    pTM=0.77    failed [i_pTM]
+   2/10  rejected  Binder_RMSD=0.3     Hotspot_Contact_Fraction=0.07    Interface_Residues=7    Off_Epitope_Contact_Fraction=0.0     Target_pLDDT=0.89    i_pAE=0.8     i_pTM=0.15    pLDDT=0.86    pTM=0.5     failed [i_pTM, pTM, i_pAE, Hotspot_Contact_Fraction]
+   3/10  ACCEPTED  Binder_RMSD=0.26    Hotspot_Contact_Fraction=0.8     Interface_Residues=20   Off_Epitope_Contact_Fraction=0.0     Target_pLDDT=0.88    i_pAE=0.27    i_pTM=0.75    pLDDT=0.88    pTM=0.8   
+   4/10  ACCEPTED  Binder_RMSD=0.27    Hotspot_Contact_Fraction=0.8     Interface_Residues=22   Off_Epitope_Contact_Fraction=0.0     Target_pLDDT=0.89    i_pAE=0.26    i_pTM=0.76    pLDDT=0.88    pTM=0.8   
+   5/10  ACCEPTED  Binder_RMSD=1.0     Hotspot_Contact_Fraction=0.8     Interface_Residues=24   Off_Epitope_Contact_Fraction=0.0     Target_pLDDT=0.89    i_pAE=0.26    i_pTM=0.76    pLDDT=0.83    pTM=0.81  
+  3 of 10 redesigns passed, keeping the best 1 by i_pDAE: candidate 5 (0.27)
+
+=== trajectory 161 | c3_glp1r_ecd_groove_forced_l100_54242b8cc766f374 | accepted 7/20 | worker 2 ===
+forced targeting epitope=85 lysinated=24 residues=111
+  passed screen design stage  i_pTM=0.79    pLDDT=0.87  
+  rejected at refine design stage  i_pTM=0.14    pLDDT=0.51   due to [pLDDT]
+
+=== trajectory 167 | c3_glp1r_ecd_groove_forced_l97_1bd0da5b375edc21 | accepted 7/20 | worker 2 ===
+forced targeting epitope=85 lysinated=24 residues=111
+  passed screen design stage  i_pTM=0.16    pLDDT=0.71  
+  passed refine design stage  i_pTM=0.18    pLDDT=0.67  

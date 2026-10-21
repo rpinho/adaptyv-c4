@@ -1,0 +1,52 @@
+BindCraft 2 v1.0.4
+campaign c4_tfr1_his707_human
+binder length 55 to 100, drawn per trajectory
+target hTfR1 (target) | 73 residues | hotspots A704,A705,A706,A707,A711
+losses binder_contacts=1.0 binder_helicity=-0.3 binder_pae=0.4 compactness=0.5 interface_contacts=1.0 interface_pae=0.1 iptm_loss=0.05 plddt_loss=0.1 target_rmsd=1.0
+features forced targeting: everything outside the default Angstrom of the hotspots rebuilt as lysine
+filters Backbone_Clashes <= 0, Binder_RMSD <= 3.5, Hotspot_Contact_Fraction >= 0.4, Interface_Residues >= 7, Unbound_Binder_pLDDT >= 0.7, i_pAE <= 0.35, i_pTM >= 0.7, pTM >= 0.55
+results /workspace/runs/c4_E1_human | 3_Ranked/!_Ranked.csv rewritten as each design is accepted | summary.csv written when the campaign ends
+
+=== trajectory 7 | c4_tfr1_his707_human_forced_l87_d3781f1ae05cca3d | accepted 0/25 | worker 0 ===
+forced targeting epitope=55 lysinated=17 residues=73
+  rejected at screen design stage  i_pTM=0.31    pLDDT=0.59   due to [pLDDT]
+
+=== trajectory 8 | c4_tfr1_his707_human_forced_l76_ed728970bad34f17 | accepted 0/25 | worker 0 ===
+forced targeting epitope=55 lysinated=17 residues=73
+  passed screen design stage  i_pTM=0.79    pLDDT=0.88  
+  passed refine design stage  i_pTM=0.78    pLDDT=0.9   
+  passed anneal design stage  i_pTM=0.76    pLDDT=0.9   
+  rejected at harden design stage  i_pTM=0.17    pLDDT=0.69   due to [i_pTM]
+
+=== trajectory 14 | c4_tfr1_his707_human_forced_l67_eb3d3b7a4795be10 | accepted 0/25 | worker 0 ===
+forced targeting epitope=55 lysinated=17 residues=73
+  passed screen design stage  i_pTM=0.66    pLDDT=0.85  
+  passed refine design stage  i_pTM=0.75    pLDDT=0.86  
+  passed anneal design stage  i_pTM=0.76    pLDDT=0.9   
+  passed harden design stage  i_pTM=0.6     pLDDT=0.78  
+  rejected at mutate design stage  i_pTM=0.2     pLDDT=0.71   due to [i_pTM]
+
+=== trajectory 21 | c4_tfr1_his707_human_forced_l80_1e0f8d5557ce9c95 | accepted 0/25 | worker 0 ===
+forced targeting epitope=55 lysinated=17 residues=73
+  passed screen design stage  i_pTM=0.78    pLDDT=0.91  
+  passed refine design stage  i_pTM=0.67    pLDDT=0.83  
+  passed anneal design stage  i_pTM=0.76    pLDDT=0.91  
+  rejected at harden design stage  i_pTM=0.37    pLDDT=0.8    due to [i_pTM]
+
+=== trajectory 26 | c4_tfr1_his707_human_forced_l74_77f64d36897f5292 | accepted 0/25 | worker 0 ===
+forced targeting epitope=55 lysinated=17 residues=73
+  passed screen design stage  i_pTM=0.74    pLDDT=0.85  
+  passed refine design stage  i_pTM=0.77    pLDDT=0.91  
+  passed anneal design stage  i_pTM=0.74    pLDDT=0.88  
+  rejected at harden design stage  i_pTM=0.35    pLDDT=0.61   due to [i_pTM, pLDDT]
+
+=== trajectory 31 | c4_tfr1_his707_human_forced_l84_3fb39bd8dd5f85a0 | accepted 0/25 | worker 0 ===
+forced targeting epitope=55 lysinated=17 residues=73
+  passed screen design stage  i_pTM=0.2     pLDDT=0.75  
+  passed refine design stage  i_pTM=0.45    pLDDT=0.8   
+  passed anneal design stage  i_pTM=0.52    pLDDT=0.89  
+  rejected at harden design stage  i_pTM=0.27    pLDDT=0.83   due to [i_pTM]
+
+=== trajectory 39 | c4_tfr1_his707_human_forced_l91_877b410b75621835 | accepted 0/25 | worker 0 ===
+forced targeting epitope=55 lysinated=17 residues=73
+  passed screen design stage  i_pTM=0.62    pLDDT=0.82  

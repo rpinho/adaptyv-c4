@@ -58,7 +58,7 @@
       55,
       100
     ],
-    "campaign_name": "c4_tfr1_his707_human",
+    "campaign_name": "c4_tfr1_groove_human",
     "confidence_floor": 0.7,
     "design_dropout": true,
     "design_recycles": 1,
@@ -296,7 +296,7 @@
     "targets": [
       {
         "chains": "A,B",
-        "hotspots": "A695,A704,A705,A706,A707,A711,A714",
+        "hotspots": "A685,A701,A702,A709,A707",
         "name": "hTfR1",
         "target_path": "/workspace/runs/E1_his707_tight.pdb",
         "weight": 1.0
@@ -317,7 +317,7 @@
     "weights_plddt_loss": 0.1,
     "weights_target_rmsd": 1.0
   },
-  "settings_digest": "5514d5392784",
+  "settings_digest": "7cbbb17c6c60",
   "settings_path": "/workspace/runs/c4_E1_human.json",
   "version": "BindCraft 2 v1.0.4"
 }

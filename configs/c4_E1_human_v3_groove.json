@@ -1,0 +1,14 @@
+{
+  "modality": "binder",
+  "campaign_name": "c4_tfr1_groove_human",
+  "project_folder": "/workspace/runs/c4_E1_human",
+  "binder_lengths": [55, 100],
+  "number_of_final_designs": 25,
+  "max_trajectories": 4000,
+  "forced_targeting": true,
+  "min_hotspot_contact_final": 0.5,
+  "save_failed_refolds": true,
+  "targets": [
+    {"name": "hTfR1", "target_path": "/workspace/runs/E1_his707_tight.pdb", "chains": "A,B", "hotspots": "A685,A701,A702,A709,A707", "weight": 1.0}
+  ]
+}
