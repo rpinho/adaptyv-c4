@@ -1,0 +1,3068 @@
+{
+  "status": "ranking_only",
+  "selection": "one best historical-L candidate per ranked backbone; ascending L",
+  "historical_target_chains": "A (chain B omitted)",
+  "target_chains": "AB",
+  "binder_chain": "C",
+  "linkage_comparison": "Use relaxed AB reference; historical L is ordering only.",
+  "min_shift": 0.0,
+  "seed": 20261021,
+  "max_ddg": 3.0,
+  "max_pairs": 3,
+  "max_positions": 8,
+  "runpod_session_gpu_spend_usd": 0,
+  "runpod_last_recorded_total_usd": 33.87,
+  "runpod_pods": "both left stopped; no pod API actions",
+  "designs": [
+    {
+      "rank": 1,
+      "backbone": "c4_tfr1_groove_human_forced_l58_9f94b53776050aad",
+      "source_pdb": "/Users/ricardo/dev/adaptyv-c4/results/v3_all_pdb/c4_tfr1_groove_human_forced_l58_9f94b53776050aad_candidate3.pdb",
+      "historical_L": -1.175,
+      "ranked_design": "c4_tfr1_groove_human_forced_l58_9f94b53776050aad_seq0",
+      "directory": "/Users/ricardo/dev/adaptyv-c4/results/switch_install/planning/01_c4_tfr1_groove_human_forced_l58_9f94b53776050aad",
+      "status": "ranking_only",
+      "pairs": [
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l58_9f94b53776050aad_candidate3.pdb",
+              "chain": "C",
+              "resnum": 24,
+              "resname": "HIS",
+              "burial_free": 0.461,
+              "burial_bound": 0.711,
+              "d_burial": 0.25,
+              "acids_near_free": 3,
+              "bases_near_target": 1,
+              "pka_free_est": 7.43,
+              "pka_bound_est": 6.38,
+              "est_contribution": -0.638,
+              "note": "",
+              "wt": "H"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l58_9f94b53776050aad_candidate3.pdb",
+              "chain": "C",
+              "resnum": 32,
+              "resname": "TYR",
+              "burial_free": 0.311,
+              "burial_bound": 0.544,
+              "d_burial": 0.233,
+              "acids_near_free": 2,
+              "bases_near_target": 1,
+              "pka_free_est": 7.12,
+              "pka_bound_est": 6.11,
+              "est_contribution": -0.629,
+              "note": "",
+              "wt": "Y"
+            }
+          ],
+          "estimated_site_sum": -1.267
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l58_9f94b53776050aad_candidate3.pdb",
+              "chain": "C",
+              "resnum": 24,
+              "resname": "HIS",
+              "burial_free": 0.461,
+              "burial_bound": 0.711,
+              "d_burial": 0.25,
+              "acids_near_free": 3,
+              "bases_near_target": 1,
+              "pka_free_est": 7.43,
+              "pka_bound_est": 6.38,
+              "est_contribution": -0.638,
+              "note": "",
+              "wt": "H"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l58_9f94b53776050aad_candidate3.pdb",
+              "chain": "C",
+              "resnum": 38,
+              "resname": "ARG",
+              "burial_free": 0.578,
+              "burial_bound": 0.922,
+              "d_burial": 0.344,
+              "acids_near_free": 3,
+              "bases_near_target": 0,
+              "pka_free_est": 7.32,
+              "pka_bound_est": 6.43,
+              "est_contribution": -0.557,
+              "note": "",
+              "wt": "R"
+            }
+          ],
+          "estimated_site_sum": -1.195
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l58_9f94b53776050aad_candidate3.pdb",
+              "chain": "C",
+              "resnum": 32,
+              "resname": "TYR",
+              "burial_free": 0.311,
+              "burial_bound": 0.544,
+              "d_burial": 0.233,
+              "acids_near_free": 2,
+              "bases_near_target": 1,
+              "pka_free_est": 7.12,
+              "pka_bound_est": 6.11,
+              "est_contribution": -0.629,
+              "note": "",
+              "wt": "Y"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l58_9f94b53776050aad_candidate3.pdb",
+              "chain": "C",
+              "resnum": 38,
+              "resname": "ARG",
+              "burial_free": 0.578,
+              "burial_bound": 0.922,
+              "d_burial": 0.344,
+              "acids_near_free": 3,
+              "bases_near_target": 0,
+              "pka_free_est": 7.32,
+              "pka_bound_est": 6.43,
+              "est_contribution": -0.557,
+              "note": "",
+              "wt": "R"
+            }
+          ],
+          "estimated_site_sum": -1.186
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "backbone": "c4_tfr1_groove_human_forced_l96_9003044e98f7dfc2",
+      "source_pdb": "/Users/ricardo/dev/adaptyv-c4/results/v3_all_pdb/c4_tfr1_groove_human_forced_l96_9003044e98f7dfc2_candidate1.pdb",
+      "historical_L": -1.104,
+      "ranked_design": "c4_tfr1_groove_human_forced_l96_9003044e98f7dfc2_seq0",
+      "directory": "/Users/ricardo/dev/adaptyv-c4/results/switch_install/planning/02_c4_tfr1_groove_human_forced_l96_9003044e98f7dfc2",
+      "status": "ranking_only",
+      "pairs": [
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l96_9003044e98f7dfc2_candidate1.pdb",
+              "chain": "C",
+              "resnum": 12,
+              "resname": "GLU",
+              "burial_free": 0.328,
+              "burial_bound": 0.422,
+              "d_burial": 0.094,
+              "acids_near_free": 2,
+              "bases_near_target": 2,
+              "pka_free_est": 7.1,
+              "pka_bound_est": 6.06,
+              "est_contribution": -0.647,
+              "note": "",
+              "wt": "E"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l96_9003044e98f7dfc2_candidate1.pdb",
+              "chain": "C",
+              "resnum": 93,
+              "resname": "THR",
+              "burial_free": 0.322,
+              "burial_bound": 0.533,
+              "d_burial": 0.211,
+              "acids_near_free": 1,
+              "bases_near_target": 2,
+              "pka_free_est": 6.66,
+              "pka_bound_est": 5.31,
+              "est_contribution": -0.594,
+              "note": "",
+              "wt": "T"
+            }
+          ],
+          "estimated_site_sum": -1.241
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l96_9003044e98f7dfc2_candidate1.pdb",
+              "chain": "C",
+              "resnum": 12,
+              "resname": "GLU",
+              "burial_free": 0.328,
+              "burial_bound": 0.422,
+              "d_burial": 0.094,
+              "acids_near_free": 2,
+              "bases_near_target": 2,
+              "pka_free_est": 7.1,
+              "pka_bound_est": 6.06,
+              "est_contribution": -0.647,
+              "note": "",
+              "wt": "E"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l96_9003044e98f7dfc2_candidate1.pdb",
+              "chain": "C",
+              "resnum": 8,
+              "resname": "ASP",
+              "burial_free": 0.283,
+              "burial_bound": 0.4,
+              "d_burial": 0.117,
+              "acids_near_free": 2,
+              "bases_near_target": 1,
+              "pka_free_est": 7.14,
+              "pka_bound_est": 6.44,
+              "est_contribution": -0.453,
+              "note": "",
+              "wt": "D"
+            }
+          ],
+          "estimated_site_sum": -1.1
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l96_9003044e98f7dfc2_candidate1.pdb",
+              "chain": "C",
+              "resnum": 12,
+              "resname": "GLU",
+              "burial_free": 0.328,
+              "burial_bound": 0.422,
+              "d_burial": 0.094,
+              "acids_near_free": 2,
+              "bases_near_target": 2,
+              "pka_free_est": 7.1,
+              "pka_bound_est": 6.06,
+              "est_contribution": -0.647,
+              "note": "",
+              "wt": "E"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l96_9003044e98f7dfc2_candidate1.pdb",
+              "chain": "C",
+              "resnum": 40,
+              "resname": "THR",
+              "burial_free": 0.717,
+              "burial_bound": 1.0,
+              "d_burial": 0.283,
+              "acids_near_free": 2,
+              "bases_near_target": 0,
+              "pka_free_est": 6.75,
+              "pka_bound_est": 6.01,
+              "est_contribution": -0.443,
+              "note": "",
+              "wt": "T"
+            }
+          ],
+          "estimated_site_sum": -1.09
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "backbone": "c4_tfr1_groove_human_forced_l99_ac96ee385dcb8613",
+      "source_pdb": "/Users/ricardo/dev/adaptyv-c4/results/v3_all_pdb/c4_tfr1_groove_human_forced_l99_ac96ee385dcb8613_candidate2.pdb",
+      "historical_L": -1.081,
+      "ranked_design": "c4_tfr1_groove_human_forced_l99_ac96ee385dcb8613_seq0",
+      "directory": "/Users/ricardo/dev/adaptyv-c4/results/switch_install/planning/03_c4_tfr1_groove_human_forced_l99_ac96ee385dcb8613",
+      "status": "ranking_only",
+      "pairs": [
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l99_ac96ee385dcb8613_candidate2.pdb",
+              "chain": "C",
+              "resnum": 10,
+              "resname": "LYS",
+              "burial_free": 0.339,
+              "burial_bound": 0.483,
+              "d_burial": 0.144,
+              "acids_near_free": 2,
+              "bases_near_target": 2,
+              "pka_free_est": 7.09,
+              "pka_bound_est": 5.92,
+              "est_contribution": -0.705,
+              "note": "",
+              "wt": "K"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l99_ac96ee385dcb8613_candidate2.pdb",
+              "chain": "C",
+              "resnum": 13,
+              "resname": "SER",
+              "burial_free": 0.594,
+              "burial_bound": 0.861,
+              "d_burial": 0.267,
+              "acids_near_free": 3,
+              "bases_near_target": 1,
+              "pka_free_est": 7.31,
+              "pka_bound_est": 6.22,
+              "est_contribution": -0.677,
+              "note": "",
+              "wt": "S"
+            }
+          ],
+          "estimated_site_sum": -1.382
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l99_ac96ee385dcb8613_candidate2.pdb",
+              "chain": "C",
+              "resnum": 10,
+              "resname": "LYS",
+              "burial_free": 0.339,
+              "burial_bound": 0.483,
+              "d_burial": 0.144,
+              "acids_near_free": 2,
+              "bases_near_target": 2,
+              "pka_free_est": 7.09,
+              "pka_bound_est": 5.92,
+              "est_contribution": -0.705,
+              "note": "",
+              "wt": "K"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l99_ac96ee385dcb8613_candidate2.pdb",
+              "chain": "C",
+              "resnum": 70,
+              "resname": "GLU",
+              "burial_free": 0.639,
+              "burial_bound": 0.833,
+              "d_burial": 0.194,
+              "acids_near_free": 2,
+              "bases_near_target": 1,
+              "pka_free_est": 6.82,
+              "pka_bound_est": 5.91,
+              "est_contribution": -0.533,
+              "note": "",
+              "wt": "E"
+            }
+          ],
+          "estimated_site_sum": -1.238
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l99_ac96ee385dcb8613_candidate2.pdb",
+              "chain": "C",
+              "resnum": 13,
+              "resname": "SER",
+              "burial_free": 0.594,
+              "burial_bound": 0.861,
+              "d_burial": 0.267,
+              "acids_near_free": 3,
+              "bases_near_target": 1,
+              "pka_free_est": 7.31,
+              "pka_bound_est": 6.22,
+              "est_contribution": -0.677,
+              "note": "",
+              "wt": "S"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l99_ac96ee385dcb8613_candidate2.pdb",
+              "chain": "C",
+              "resnum": 70,
+              "resname": "GLU",
+              "burial_free": 0.639,
+              "burial_bound": 0.833,
+              "d_burial": 0.194,
+              "acids_near_free": 2,
+              "bases_near_target": 1,
+              "pka_free_est": 6.82,
+              "pka_bound_est": 5.91,
+              "est_contribution": -0.533,
+              "note": "",
+              "wt": "E"
+            }
+          ],
+          "estimated_site_sum": -1.21
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "backbone": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d",
+      "source_pdb": "/Users/ricardo/dev/adaptyv-c4/results/v3_all_pdb/c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d_candidate1.pdb",
+      "historical_L": -0.851,
+      "ranked_design": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d_seq0",
+      "directory": "/Users/ricardo/dev/adaptyv-c4/results/switch_install/planning/04_c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d",
+      "status": "ranking_only",
+      "pairs": [
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d_candidate1.pdb",
+              "chain": "C",
+              "resnum": 53,
+              "resname": "GLN",
+              "burial_free": 0.428,
+              "burial_bound": 0.728,
+              "d_burial": 0.3,
+              "acids_near_free": 3,
+              "bases_near_target": 3,
+              "pka_free_est": 7.46,
+              "pka_bound_est": 5.48,
+              "est_contribution": -1.033,
+              "note": "",
+              "wt": "Q"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d_candidate1.pdb",
+              "chain": "C",
+              "resnum": 43,
+              "resname": "SER",
+              "burial_free": 0.517,
+              "burial_bound": 0.856,
+              "d_burial": 0.339,
+              "acids_near_free": 2,
+              "bases_near_target": 1,
+              "pka_free_est": 6.93,
+              "pka_bound_est": 5.65,
+              "est_contribution": -0.699,
+              "note": "",
+              "wt": "S"
+            }
+          ],
+          "estimated_site_sum": -1.732
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d_candidate1.pdb",
+              "chain": "C",
+              "resnum": 53,
+              "resname": "GLN",
+              "burial_free": 0.428,
+              "burial_bound": 0.728,
+              "d_burial": 0.3,
+              "acids_near_free": 3,
+              "bases_near_target": 3,
+              "pka_free_est": 7.46,
+              "pka_bound_est": 5.48,
+              "est_contribution": -1.033,
+              "note": "",
+              "wt": "Q"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d_candidate1.pdb",
+              "chain": "C",
+              "resnum": 67,
+              "resname": "ARG",
+              "burial_free": 0.428,
+              "burial_bound": 0.933,
+              "d_burial": 0.506,
+              "acids_near_free": 1,
+              "bases_near_target": 1,
+              "pka_free_est": 6.56,
+              "pka_bound_est": 4.85,
+              "est_contribution": -0.579,
+              "note": "",
+              "wt": "R"
+            }
+          ],
+          "estimated_site_sum": -1.612
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d_candidate1.pdb",
+              "chain": "C",
+              "resnum": 53,
+              "resname": "GLN",
+              "burial_free": 0.428,
+              "burial_bound": 0.728,
+              "d_burial": 0.3,
+              "acids_near_free": 3,
+              "bases_near_target": 3,
+              "pka_free_est": 7.46,
+              "pka_bound_est": 5.48,
+              "est_contribution": -1.033,
+              "note": "",
+              "wt": "Q"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d_candidate1.pdb",
+              "chain": "C",
+              "resnum": 56,
+              "resname": "ALA",
+              "burial_free": 0.628,
+              "burial_bound": 0.883,
+              "d_burial": 0.256,
+              "acids_near_free": 4,
+              "bases_near_target": 1,
+              "pka_free_est": 7.73,
+              "pka_bound_est": 6.66,
+              "est_contribution": -0.565,
+              "note": "",
+              "wt": "A"
+            }
+          ],
+          "estimated_site_sum": -1.598
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "backbone": "c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e",
+      "source_pdb": "/Users/ricardo/dev/adaptyv-c4/results/v3_all_pdb/c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e_candidate2.pdb",
+      "historical_L": -0.789,
+      "ranked_design": "c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e_seq0",
+      "directory": "/Users/ricardo/dev/adaptyv-c4/results/switch_install/planning/05_c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e",
+      "status": "ranking_only",
+      "pairs": [
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e_candidate2.pdb",
+              "chain": "C",
+              "resnum": 93,
+              "resname": "ASP",
+              "burial_free": 0.361,
+              "burial_bound": 0.572,
+              "d_burial": 0.211,
+              "acids_near_free": 2,
+              "bases_near_target": 2,
+              "pka_free_est": 7.07,
+              "pka_bound_est": 5.72,
+              "est_contribution": -0.765,
+              "note": "",
+              "wt": "D"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e_candidate2.pdb",
+              "chain": "C",
+              "resnum": 17,
+              "resname": "HIS",
+              "burial_free": 0.461,
+              "burial_bound": 0.656,
+              "d_burial": 0.194,
+              "acids_near_free": 2,
+              "bases_near_target": 1,
+              "pka_free_est": 6.98,
+              "pka_bound_est": 6.07,
+              "est_contribution": -0.564,
+              "note": "",
+              "wt": "H"
+            }
+          ],
+          "estimated_site_sum": -1.329
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e_candidate2.pdb",
+              "chain": "C",
+              "resnum": 93,
+              "resname": "ASP",
+              "burial_free": 0.361,
+              "burial_bound": 0.572,
+              "d_burial": 0.211,
+              "acids_near_free": 2,
+              "bases_near_target": 2,
+              "pka_free_est": 7.07,
+              "pka_bound_est": 5.72,
+              "est_contribution": -0.765,
+              "note": "",
+              "wt": "D"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e_candidate2.pdb",
+              "chain": "C",
+              "resnum": 10,
+              "resname": "ASP",
+              "burial_free": 0.456,
+              "burial_bound": 0.606,
+              "d_burial": 0.15,
+              "acids_near_free": 2,
+              "bases_near_target": 1,
+              "pka_free_est": 6.99,
+              "pka_bound_est": 6.2,
+              "est_contribution": -0.503,
+              "note": "",
+              "wt": "D"
+            }
+          ],
+          "estimated_site_sum": -1.268
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e_candidate2.pdb",
+              "chain": "C",
+              "resnum": 93,
+              "resname": "ASP",
+              "burial_free": 0.361,
+              "burial_bound": 0.572,
+              "d_burial": 0.211,
+              "acids_near_free": 2,
+              "bases_near_target": 2,
+              "pka_free_est": 7.07,
+              "pka_bound_est": 5.72,
+              "est_contribution": -0.765,
+              "note": "",
+              "wt": "D"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e_candidate2.pdb",
+              "chain": "C",
+              "resnum": 25,
+              "resname": "THR",
+              "burial_free": 0.433,
+              "burial_bound": 0.661,
+              "d_burial": 0.228,
+              "acids_near_free": 1,
+              "bases_near_target": 1,
+              "pka_free_est": 6.56,
+              "pka_bound_est": 5.56,
+              "est_contribution": -0.475,
+              "note": "",
+              "wt": "T"
+            }
+          ],
+          "estimated_site_sum": -1.24
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "backbone": "c4_tfr1_groove_human_forced_l99_2c4541b346f4959d",
+      "source_pdb": "/Users/ricardo/dev/adaptyv-c4/results/v3_all_pdb/c4_tfr1_groove_human_forced_l99_2c4541b346f4959d_candidate4.pdb",
+      "historical_L": -0.754,
+      "ranked_design": "c4_tfr1_groove_human_forced_l99_2c4541b346f4959d_seq0",
+      "directory": "/Users/ricardo/dev/adaptyv-c4/results/switch_install/planning/06_c4_tfr1_groove_human_forced_l99_2c4541b346f4959d",
+      "status": "ranking_only",
+      "pairs": [
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l99_2c4541b346f4959d_candidate4.pdb",
+              "chain": "C",
+              "resnum": 28,
+              "resname": "ASP",
+              "burial_free": 0.45,
+              "burial_bound": 0.744,
+              "d_burial": 0.294,
+              "acids_near_free": 2,
+              "bases_near_target": 2,
+              "pka_free_est": 6.99,
+              "pka_bound_est": 5.42,
+              "est_contribution": -0.792,
+              "note": "",
+              "wt": "D"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l99_2c4541b346f4959d_candidate4.pdb",
+              "chain": "C",
+              "resnum": 22,
+              "resname": "HIS",
+              "burial_free": 0.367,
+              "burial_bound": 0.844,
+              "d_burial": 0.478,
+              "acids_near_free": 1,
+              "bases_near_target": 1,
+              "pka_free_est": 6.62,
+              "pka_bound_est": 4.97,
+              "est_contribution": -0.607,
+              "note": "",
+              "wt": "H"
+            }
+          ],
+          "estimated_site_sum": -1.399
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l99_2c4541b346f4959d_candidate4.pdb",
+              "chain": "C",
+              "resnum": 28,
+              "resname": "ASP",
+              "burial_free": 0.45,
+              "burial_bound": 0.744,
+              "d_burial": 0.294,
+              "acids_near_free": 2,
+              "bases_near_target": 2,
+              "pka_free_est": 6.99,
+              "pka_bound_est": 5.42,
+              "est_contribution": -0.792,
+              "note": "",
+              "wt": "D"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l99_2c4541b346f4959d_candidate4.pdb",
+              "chain": "C",
+              "resnum": 27,
+              "resname": "SER",
+              "burial_free": 0.644,
+              "burial_bound": 0.733,
+              "d_burial": 0.089,
+              "acids_near_free": 4,
+              "bases_near_target": 2,
+              "pka_free_est": 7.71,
+              "pka_bound_est": 6.68,
+              "est_contribution": -0.548,
+              "note": "",
+              "wt": "S"
+            }
+          ],
+          "estimated_site_sum": -1.34
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l99_2c4541b346f4959d_candidate4.pdb",
+              "chain": "C",
+              "resnum": 28,
+              "resname": "ASP",
+              "burial_free": 0.45,
+              "burial_bound": 0.744,
+              "d_burial": 0.294,
+              "acids_near_free": 2,
+              "bases_near_target": 2,
+              "pka_free_est": 6.99,
+              "pka_bound_est": 5.42,
+              "est_contribution": -0.792,
+              "note": "",
+              "wt": "D"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l99_2c4541b346f4959d_candidate4.pdb",
+              "chain": "C",
+              "resnum": 24,
+              "resname": "GLU",
+              "burial_free": 0.506,
+              "burial_bound": 0.778,
+              "d_burial": 0.272,
+              "acids_near_free": 1,
+              "bases_near_target": 1,
+              "pka_free_est": 6.49,
+              "pka_bound_est": 5.38,
+              "est_contribution": -0.472,
+              "note": "",
+              "wt": "E"
+            }
+          ],
+          "estimated_site_sum": -1.264
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "backbone": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8",
+      "source_pdb": "/Users/ricardo/dev/adaptyv-c4/results/v3_all_pdb/c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8_candidate3.pdb",
+      "historical_L": -0.715,
+      "ranked_design": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8_seq0",
+      "directory": "/Users/ricardo/dev/adaptyv-c4/results/switch_install/planning/07_c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8",
+      "status": "ranking_only",
+      "pairs": [
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8_candidate3.pdb",
+              "chain": "C",
+              "resnum": 15,
+              "resname": "GLU",
+              "burial_free": 0.478,
+              "burial_bound": 0.739,
+              "d_burial": 0.261,
+              "acids_near_free": 2,
+              "bases_near_target": 1,
+              "pka_free_est": 6.97,
+              "pka_bound_est": 5.89,
+              "est_contribution": -0.639,
+              "note": "",
+              "wt": "E"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8_candidate3.pdb",
+              "chain": "C",
+              "resnum": 26,
+              "resname": "GLU",
+              "burial_free": 0.356,
+              "burial_bound": 0.528,
+              "d_burial": 0.172,
+              "acids_near_free": 1,
+              "bases_near_target": 2,
+              "pka_free_est": 6.63,
+              "pka_bound_est": 5.38,
+              "est_contribution": -0.562,
+              "note": "",
+              "wt": "E"
+            }
+          ],
+          "estimated_site_sum": -1.201
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8_candidate3.pdb",
+              "chain": "C",
+              "resnum": 15,
+              "resname": "GLU",
+              "burial_free": 0.478,
+              "burial_bound": 0.739,
+              "d_burial": 0.261,
+              "acids_near_free": 2,
+              "bases_near_target": 1,
+              "pka_free_est": 6.97,
+              "pka_bound_est": 5.89,
+              "est_contribution": -0.639,
+              "note": "",
+              "wt": "E"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8_candidate3.pdb",
+              "chain": "C",
+              "resnum": 27,
+              "resname": "GLN",
+              "burial_free": 0.561,
+              "burial_bound": 0.728,
+              "d_burial": 0.167,
+              "acids_near_free": 3,
+              "bases_near_target": 1,
+              "pka_free_est": 7.34,
+              "pka_bound_est": 6.51,
+              "est_contribution": -0.515,
+              "note": "",
+              "wt": "Q"
+            }
+          ],
+          "estimated_site_sum": -1.154
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8_candidate3.pdb",
+              "chain": "C",
+              "resnum": 15,
+              "resname": "GLU",
+              "burial_free": 0.478,
+              "burial_bound": 0.739,
+              "d_burial": 0.261,
+              "acids_near_free": 2,
+              "bases_near_target": 1,
+              "pka_free_est": 6.97,
+              "pka_bound_est": 5.89,
+              "est_contribution": -0.639,
+              "note": "",
+              "wt": "E"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8_candidate3.pdb",
+              "chain": "C",
+              "resnum": 4,
+              "resname": "ARG",
+              "burial_free": 0.272,
+              "burial_bound": 0.433,
+              "d_burial": 0.161,
+              "acids_near_free": 1,
+              "bases_near_target": 1,
+              "pka_free_est": 6.7,
+              "pka_bound_est": 5.88,
+              "est_contribution": -0.468,
+              "note": "",
+              "wt": "R"
+            }
+          ],
+          "estimated_site_sum": -1.107
+        }
+      ]
+    },
+    {
+      "rank": 8,
+      "backbone": "c4_tfr1_groove_human_forced_l70_54a5b53444de2b49",
+      "source_pdb": "/Users/ricardo/dev/adaptyv-c4/results/v3_all_pdb/c4_tfr1_groove_human_forced_l70_54a5b53444de2b49_candidate8.pdb",
+      "historical_L": -0.663,
+      "ranked_design": "c4_tfr1_groove_human_forced_l70_54a5b53444de2b49_seq0",
+      "directory": "/Users/ricardo/dev/adaptyv-c4/results/switch_install/planning/08_c4_tfr1_groove_human_forced_l70_54a5b53444de2b49",
+      "status": "ranking_only",
+      "pairs": [
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l70_54a5b53444de2b49_candidate8.pdb",
+              "chain": "C",
+              "resnum": 12,
+              "resname": "ALA",
+              "burial_free": 0.661,
+              "burial_bound": 1.0,
+              "d_burial": 0.339,
+              "acids_near_free": 4,
+              "bases_near_target": 1,
+              "pka_free_est": 7.7,
+              "pka_bound_est": 6.42,
+              "est_contribution": -0.717,
+              "note": "",
+              "wt": "A"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l70_54a5b53444de2b49_candidate8.pdb",
+              "chain": "C",
+              "resnum": 26,
+              "resname": "ARG",
+              "burial_free": 0.422,
+              "burial_bound": 0.717,
+              "d_burial": 0.294,
+              "acids_near_free": 1,
+              "bases_near_target": 1,
+              "pka_free_est": 6.57,
+              "pka_bound_est": 5.4,
+              "est_contribution": -0.518,
+              "note": "",
+              "wt": "R"
+            }
+          ],
+          "estimated_site_sum": -1.235
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l70_54a5b53444de2b49_candidate8.pdb",
+              "chain": "C",
+              "resnum": 12,
+              "resname": "ALA",
+              "burial_free": 0.661,
+              "burial_bound": 1.0,
+              "d_burial": 0.339,
+              "acids_near_free": 4,
+              "bases_near_target": 1,
+              "pka_free_est": 7.7,
+              "pka_bound_est": 6.42,
+              "est_contribution": -0.717,
+              "note": "",
+              "wt": "A"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l70_54a5b53444de2b49_candidate8.pdb",
+              "chain": "C",
+              "resnum": 23,
+              "resname": "GLU",
+              "burial_free": 0.489,
+              "burial_bound": 0.772,
+              "d_burial": 0.283,
+              "acids_near_free": 1,
+              "bases_near_target": 1,
+              "pka_free_est": 6.51,
+              "pka_bound_est": 5.37,
+              "est_contribution": -0.484,
+              "note": "",
+              "wt": "E"
+            }
+          ],
+          "estimated_site_sum": -1.201
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l70_54a5b53444de2b49_candidate8.pdb",
+              "chain": "C",
+              "resnum": 12,
+              "resname": "ALA",
+              "burial_free": 0.661,
+              "burial_bound": 1.0,
+              "d_burial": 0.339,
+              "acids_near_free": 4,
+              "bases_near_target": 1,
+              "pka_free_est": 7.7,
+              "pka_bound_est": 6.42,
+              "est_contribution": -0.717,
+              "note": "",
+              "wt": "A"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l70_54a5b53444de2b49_candidate8.pdb",
+              "chain": "C",
+              "resnum": 27,
+              "resname": "ARG",
+              "burial_free": 0.344,
+              "burial_bound": 0.533,
+              "d_burial": 0.189,
+              "acids_near_free": 1,
+              "bases_near_target": 1,
+              "pka_free_est": 6.64,
+              "pka_bound_est": 5.75,
+              "est_contribution": -0.475,
+              "note": "",
+              "wt": "R"
+            }
+          ],
+          "estimated_site_sum": -1.192
+        }
+      ]
+    },
+    {
+      "rank": 9,
+      "backbone": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec",
+      "source_pdb": "/Users/ricardo/dev/adaptyv-c4/results/v3_all_pdb/c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate3.pdb",
+      "historical_L": -0.643,
+      "ranked_design": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_seq0",
+      "directory": "/Users/ricardo/dev/adaptyv-c4/results/switch_install/planning/09_c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec",
+      "status": "ranking_only",
+      "pairs": [
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate3.pdb",
+              "chain": "C",
+              "resnum": 7,
+              "resname": "GLN",
+              "burial_free": 0.428,
+              "burial_bound": 0.794,
+              "d_burial": 0.367,
+              "acids_near_free": 2,
+              "bases_near_target": 1,
+              "pka_free_est": 7.01,
+              "pka_bound_est": 5.66,
+              "est_contribution": -0.748,
+              "note": "",
+              "wt": "Q"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate3.pdb",
+              "chain": "C",
+              "resnum": 1,
+              "resname": "ASN",
+              "burial_free": 0.306,
+              "burial_bound": 0.461,
+              "d_burial": 0.156,
+              "acids_near_free": 2,
+              "bases_near_target": 2,
+              "pka_free_est": 7.12,
+              "pka_bound_est": 5.92,
+              "est_contribution": -0.722,
+              "note": "",
+              "wt": "N"
+            }
+          ],
+          "estimated_site_sum": -1.47
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate3.pdb",
+              "chain": "C",
+              "resnum": 7,
+              "resname": "GLN",
+              "burial_free": 0.428,
+              "burial_bound": 0.794,
+              "d_burial": 0.367,
+              "acids_near_free": 2,
+              "bases_near_target": 1,
+              "pka_free_est": 7.01,
+              "pka_bound_est": 5.66,
+              "est_contribution": -0.748,
+              "note": "",
+              "wt": "Q"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate3.pdb",
+              "chain": "C",
+              "resnum": 4,
+              "resname": "GLU",
+              "burial_free": 0.344,
+              "burial_bound": 0.711,
+              "d_burial": 0.367,
+              "acids_near_free": 1,
+              "bases_near_target": 2,
+              "pka_free_est": 6.64,
+              "pka_bound_est": 4.88,
+              "est_contribution": -0.627,
+              "note": "",
+              "wt": "E"
+            }
+          ],
+          "estimated_site_sum": -1.375
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate3.pdb",
+              "chain": "C",
+              "resnum": 7,
+              "resname": "GLN",
+              "burial_free": 0.428,
+              "burial_bound": 0.794,
+              "d_burial": 0.367,
+              "acids_near_free": 2,
+              "bases_near_target": 1,
+              "pka_free_est": 7.01,
+              "pka_bound_est": 5.66,
+              "est_contribution": -0.748,
+              "note": "",
+              "wt": "Q"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate3.pdb",
+              "chain": "C",
+              "resnum": 71,
+              "resname": "GLU",
+              "burial_free": 0.406,
+              "burial_bound": 0.494,
+              "d_burial": 0.089,
+              "acids_near_free": 3,
+              "bases_near_target": 2,
+              "pka_free_est": 7.48,
+              "pka_bound_est": 6.45,
+              "est_contribution": -0.616,
+              "note": "",
+              "wt": "E"
+            }
+          ],
+          "estimated_site_sum": -1.364
+        }
+      ]
+    },
+    {
+      "rank": 10,
+      "backbone": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c",
+      "source_pdb": "/Users/ricardo/dev/adaptyv-c4/results/v3_all_pdb/c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c_candidate8.pdb",
+      "historical_L": -0.609,
+      "ranked_design": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c_seq0",
+      "directory": "/Users/ricardo/dev/adaptyv-c4/results/switch_install/planning/10_c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c",
+      "status": "ranking_only",
+      "pairs": [
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c_candidate8.pdb",
+              "chain": "C",
+              "resnum": 95,
+              "resname": "GLU",
+              "burial_free": 0.328,
+              "burial_bound": 0.756,
+              "d_burial": 0.428,
+              "acids_near_free": 1,
+              "bases_near_target": 2,
+              "pka_free_est": 6.65,
+              "pka_bound_est": 4.74,
+              "est_contribution": -0.646,
+              "note": "",
+              "wt": "E"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c_candidate8.pdb",
+              "chain": "C",
+              "resnum": 80,
+              "resname": "ARG",
+              "burial_free": 0.339,
+              "burial_bound": 0.567,
+              "d_burial": 0.228,
+              "acids_near_free": 2,
+              "bases_near_target": 1,
+              "pka_free_est": 7.09,
+              "pka_bound_est": 6.1,
+              "est_contribution": -0.619,
+              "note": "",
+              "wt": "R"
+            }
+          ],
+          "estimated_site_sum": -1.265
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c_candidate8.pdb",
+              "chain": "C",
+              "resnum": 95,
+              "resname": "GLU",
+              "burial_free": 0.328,
+              "burial_bound": 0.756,
+              "d_burial": 0.428,
+              "acids_near_free": 1,
+              "bases_near_target": 2,
+              "pka_free_est": 6.65,
+              "pka_bound_est": 4.74,
+              "est_contribution": -0.646,
+              "note": "",
+              "wt": "E"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c_candidate8.pdb",
+              "chain": "C",
+              "resnum": 94,
+              "resname": "ASP",
+              "burial_free": 0.461,
+              "burial_bound": 0.572,
+              "d_burial": 0.111,
+              "acids_near_free": 2,
+              "bases_near_target": 1,
+              "pka_free_est": 6.98,
+              "pka_bound_est": 6.29,
+              "est_contribution": -0.445,
+              "note": "",
+              "wt": "D"
+            }
+          ],
+          "estimated_site_sum": -1.091
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c_candidate8.pdb",
+              "chain": "C",
+              "resnum": 80,
+              "resname": "ARG",
+              "burial_free": 0.339,
+              "burial_bound": 0.567,
+              "d_burial": 0.228,
+              "acids_near_free": 2,
+              "bases_near_target": 1,
+              "pka_free_est": 7.09,
+              "pka_bound_est": 6.1,
+              "est_contribution": -0.619,
+              "note": "",
+              "wt": "R"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c_candidate8.pdb",
+              "chain": "C",
+              "resnum": 94,
+              "resname": "ASP",
+              "burial_free": 0.461,
+              "burial_bound": 0.572,
+              "d_burial": 0.111,
+              "acids_near_free": 2,
+              "bases_near_target": 1,
+              "pka_free_est": 6.98,
+              "pka_bound_est": 6.29,
+              "est_contribution": -0.445,
+              "note": "",
+              "wt": "D"
+            }
+          ],
+          "estimated_site_sum": -1.064
+        }
+      ]
+    },
+    {
+      "rank": 11,
+      "backbone": "c4_tfr1_groove_human_forced_l97_2e414f93ff62377a",
+      "source_pdb": "/Users/ricardo/dev/adaptyv-c4/results/v3_all_pdb/c4_tfr1_groove_human_forced_l97_2e414f93ff62377a_candidate1.pdb",
+      "historical_L": -0.602,
+      "ranked_design": "c4_tfr1_groove_human_forced_l97_2e414f93ff62377a_seq0",
+      "directory": "/Users/ricardo/dev/adaptyv-c4/results/switch_install/planning/11_c4_tfr1_groove_human_forced_l97_2e414f93ff62377a",
+      "status": "ranking_only",
+      "pairs": [
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l97_2e414f93ff62377a_candidate1.pdb",
+              "chain": "C",
+              "resnum": 82,
+              "resname": "ASP",
+              "burial_free": 0.483,
+              "burial_bound": 0.794,
+              "d_burial": 0.311,
+              "acids_near_free": 2,
+              "bases_near_target": 2,
+              "pka_free_est": 6.96,
+              "pka_bound_est": 5.35,
+              "est_contribution": -0.787,
+              "note": "",
+              "wt": "D"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l97_2e414f93ff62377a_candidate1.pdb",
+              "chain": "C",
+              "resnum": 86,
+              "resname": "ALA",
+              "burial_free": 0.711,
+              "burial_bound": 1.0,
+              "d_burial": 0.289,
+              "acids_near_free": 4,
+              "bases_near_target": 1,
+              "pka_free_est": 7.65,
+              "pka_bound_est": 6.5,
+              "est_contribution": -0.648,
+              "note": "",
+              "wt": "A"
+            }
+          ],
+          "estimated_site_sum": -1.435
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l97_2e414f93ff62377a_candidate1.pdb",
+              "chain": "C",
+              "resnum": 82,
+              "resname": "ASP",
+              "burial_free": 0.483,
+              "burial_bound": 0.794,
+              "d_burial": 0.311,
+              "acids_near_free": 2,
+              "bases_near_target": 2,
+              "pka_free_est": 6.96,
+              "pka_bound_est": 5.35,
+              "est_contribution": -0.787,
+              "note": "",
+              "wt": "D"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l97_2e414f93ff62377a_candidate1.pdb",
+              "chain": "C",
+              "resnum": 79,
+              "resname": "THR",
+              "burial_free": 0.461,
+              "burial_bound": 0.561,
+              "d_burial": 0.1,
+              "acids_near_free": 3,
+              "bases_near_target": 2,
+              "pka_free_est": 7.43,
+              "pka_bound_est": 6.37,
+              "est_contribution": -0.644,
+              "note": "",
+              "wt": "T"
+            }
+          ],
+          "estimated_site_sum": -1.431
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l97_2e414f93ff62377a_candidate1.pdb",
+              "chain": "C",
+              "resnum": 82,
+              "resname": "ASP",
+              "burial_free": 0.483,
+              "burial_bound": 0.794,
+              "d_burial": 0.311,
+              "acids_near_free": 2,
+              "bases_near_target": 2,
+              "pka_free_est": 6.96,
+              "pka_bound_est": 5.35,
+              "est_contribution": -0.787,
+              "note": "",
+              "wt": "D"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l97_2e414f93ff62377a_candidate1.pdb",
+              "chain": "C",
+              "resnum": 77,
+              "resname": "ARG",
+              "burial_free": 0.272,
+              "burial_bound": 0.506,
+              "d_burial": 0.233,
+              "acids_near_free": 2,
+              "bases_near_target": 1,
+              "pka_free_est": 7.15,
+              "pka_bound_est": 6.15,
+              "est_contribution": -0.631,
+              "note": "",
+              "wt": "R"
+            }
+          ],
+          "estimated_site_sum": -1.418
+        }
+      ]
+    },
+    {
+      "rank": 12,
+      "backbone": "c4_tfr1_groove_human_forced_l56_b9b1bd89e75cae01",
+      "source_pdb": "/Users/ricardo/dev/adaptyv-c4/results/v3_all_pdb/c4_tfr1_groove_human_forced_l56_b9b1bd89e75cae01_candidate3.pdb",
+      "historical_L": -0.537,
+      "ranked_design": "c4_tfr1_groove_human_forced_l56_b9b1bd89e75cae01_seq0",
+      "directory": "/Users/ricardo/dev/adaptyv-c4/results/switch_install/planning/12_c4_tfr1_groove_human_forced_l56_b9b1bd89e75cae01",
+      "status": "ranking_only",
+      "pairs": [
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l56_b9b1bd89e75cae01_candidate3.pdb",
+              "chain": "C",
+              "resnum": 54,
+              "resname": "HIS",
+              "burial_free": 0.3,
+              "burial_bound": 0.872,
+              "d_burial": 0.572,
+              "acids_near_free": 2,
+              "bases_near_target": 2,
+              "pka_free_est": 7.13,
+              "pka_bound_est": 4.84,
+              "est_contribution": -0.945,
+              "note": "",
+              "wt": "H"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l56_b9b1bd89e75cae01_candidate3.pdb",
+              "chain": "C",
+              "resnum": 21,
+              "resname": "GLU",
+              "burial_free": 0.639,
+              "burial_bound": 0.933,
+              "d_burial": 0.294,
+              "acids_near_free": 3,
+              "bases_near_target": 2,
+              "pka_free_est": 7.27,
+              "pka_bound_est": 5.7,
+              "est_contribution": -0.882,
+              "note": "",
+              "wt": "E"
+            }
+          ],
+          "estimated_site_sum": -1.827
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l56_b9b1bd89e75cae01_candidate3.pdb",
+              "chain": "C",
+              "resnum": 54,
+              "resname": "HIS",
+              "burial_free": 0.3,
+              "burial_bound": 0.872,
+              "d_burial": 0.572,
+              "acids_near_free": 2,
+              "bases_near_target": 2,
+              "pka_free_est": 7.13,
+              "pka_bound_est": 4.84,
+              "est_contribution": -0.945,
+              "note": "",
+              "wt": "H"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l56_b9b1bd89e75cae01_candidate3.pdb",
+              "chain": "C",
+              "resnum": 25,
+              "resname": "ARG",
+              "burial_free": 0.583,
+              "burial_bound": 0.789,
+              "d_burial": 0.206,
+              "acids_near_free": 4,
+              "bases_near_target": 2,
+              "pka_free_est": 7.77,
+              "pka_bound_est": 6.43,
+              "est_contribution": -0.727,
+              "note": "",
+              "wt": "R"
+            }
+          ],
+          "estimated_site_sum": -1.672
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l56_b9b1bd89e75cae01_candidate3.pdb",
+              "chain": "C",
+              "resnum": 54,
+              "resname": "HIS",
+              "burial_free": 0.3,
+              "burial_bound": 0.872,
+              "d_burial": 0.572,
+              "acids_near_free": 2,
+              "bases_near_target": 2,
+              "pka_free_est": 7.13,
+              "pka_bound_est": 4.84,
+              "est_contribution": -0.945,
+              "note": "",
+              "wt": "H"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l56_b9b1bd89e75cae01_candidate3.pdb",
+              "chain": "C",
+              "resnum": 24,
+              "resname": "ARG",
+              "burial_free": 0.378,
+              "burial_bound": 0.628,
+              "d_burial": 0.25,
+              "acids_near_free": 4,
+              "bases_near_target": 2,
+              "pka_free_est": 7.96,
+              "pka_bound_est": 6.51,
+              "est_contribution": -0.726,
+              "note": "",
+              "wt": "R"
+            }
+          ],
+          "estimated_site_sum": -1.671
+        }
+      ]
+    },
+    {
+      "rank": 13,
+      "backbone": "c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1",
+      "source_pdb": "/Users/ricardo/dev/adaptyv-c4/results/v3_all_pdb/c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1_candidate1.pdb",
+      "historical_L": -0.481,
+      "ranked_design": "c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1_seq0",
+      "directory": "/Users/ricardo/dev/adaptyv-c4/results/switch_install/planning/13_c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1",
+      "status": "ranking_only",
+      "pairs": [
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1_candidate1.pdb",
+              "chain": "C",
+              "resnum": 26,
+              "resname": "THR",
+              "burial_free": 0.472,
+              "burial_bound": 0.617,
+              "d_burial": 0.144,
+              "acids_near_free": 2,
+              "bases_near_target": 1,
+              "pka_free_est": 6.97,
+              "pka_bound_est": 6.19,
+              "est_contribution": -0.494,
+              "note": "",
+              "wt": "T"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1_candidate1.pdb",
+              "chain": "C",
+              "resnum": 34,
+              "resname": "ASP",
+              "burial_free": 0.478,
+              "burial_bound": 0.594,
+              "d_burial": 0.117,
+              "acids_near_free": 1,
+              "bases_near_target": 1,
+              "pka_free_est": 6.52,
+              "pka_bound_est": 5.81,
+              "est_contribution": -0.372,
+              "note": "",
+              "wt": "D"
+            }
+          ],
+          "estimated_site_sum": -0.866
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1_candidate1.pdb",
+              "chain": "C",
+              "resnum": 26,
+              "resname": "THR",
+              "burial_free": 0.472,
+              "burial_bound": 0.617,
+              "d_burial": 0.144,
+              "acids_near_free": 2,
+              "bases_near_target": 1,
+              "pka_free_est": 6.97,
+              "pka_bound_est": 6.19,
+              "est_contribution": -0.494,
+              "note": "",
+              "wt": "T"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1_candidate1.pdb",
+              "chain": "C",
+              "resnum": 15,
+              "resname": "ARG",
+              "burial_free": 0.444,
+              "burial_bound": 0.639,
+              "d_burial": 0.194,
+              "acids_near_free": 2,
+              "bases_near_target": 0,
+              "pka_free_est": 7.0,
+              "pka_bound_est": 6.49,
+              "est_contribution": -0.332,
+              "note": "",
+              "wt": "R"
+            }
+          ],
+          "estimated_site_sum": -0.826
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1_candidate1.pdb",
+              "chain": "C",
+              "resnum": 26,
+              "resname": "THR",
+              "burial_free": 0.472,
+              "burial_bound": 0.617,
+              "d_burial": 0.144,
+              "acids_near_free": 2,
+              "bases_near_target": 1,
+              "pka_free_est": 6.97,
+              "pka_bound_est": 6.19,
+              "est_contribution": -0.494,
+              "note": "",
+              "wt": "T"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1_candidate1.pdb",
+              "chain": "C",
+              "resnum": 11,
+              "resname": "LYS",
+              "burial_free": 0.589,
+              "burial_bound": 0.756,
+              "d_burial": 0.167,
+              "acids_near_free": 2,
+              "bases_near_target": 0,
+              "pka_free_est": 6.86,
+              "pka_bound_est": 6.43,
+              "est_contribution": -0.285,
+              "note": "",
+              "wt": "K"
+            }
+          ],
+          "estimated_site_sum": -0.779
+        }
+      ]
+    },
+    {
+      "rank": 14,
+      "backbone": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650",
+      "source_pdb": "/Users/ricardo/dev/adaptyv-c4/results/v3_all_pdb/c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate9.pdb",
+      "historical_L": -0.447,
+      "ranked_design": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_seq0",
+      "directory": "/Users/ricardo/dev/adaptyv-c4/results/switch_install/planning/14_c4_tfr1_groove_human_forced_l63_59b0f47ecf134650",
+      "status": "ranking_only",
+      "pairs": [
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate9.pdb",
+              "chain": "C",
+              "resnum": 4,
+              "resname": "ASP",
+              "burial_free": 0.328,
+              "burial_bound": 0.722,
+              "d_burial": 0.394,
+              "acids_near_free": 3,
+              "bases_near_target": 2,
+              "pka_free_est": 7.55,
+              "pka_bound_est": 5.73,
+              "est_contribution": -1.004,
+              "note": "",
+              "wt": "D"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate9.pdb",
+              "chain": "C",
+              "resnum": 46,
+              "resname": "THR",
+              "burial_free": 0.544,
+              "burial_bound": 0.928,
+              "d_burial": 0.383,
+              "acids_near_free": 3,
+              "bases_near_target": 1,
+              "pka_free_est": 7.35,
+              "pka_bound_est": 5.96,
+              "est_contribution": -0.829,
+              "note": "",
+              "wt": "T"
+            }
+          ],
+          "estimated_site_sum": -1.833
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate9.pdb",
+              "chain": "C",
+              "resnum": 4,
+              "resname": "ASP",
+              "burial_free": 0.328,
+              "burial_bound": 0.722,
+              "d_burial": 0.394,
+              "acids_near_free": 3,
+              "bases_near_target": 2,
+              "pka_free_est": 7.55,
+              "pka_bound_est": 5.73,
+              "est_contribution": -1.004,
+              "note": "",
+              "wt": "D"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate9.pdb",
+              "chain": "C",
+              "resnum": 53,
+              "resname": "GLN",
+              "burial_free": 0.478,
+              "burial_bound": 0.694,
+              "d_burial": 0.217,
+              "acids_near_free": 3,
+              "bases_near_target": 1,
+              "pka_free_est": 7.42,
+              "pka_bound_est": 6.45,
+              "est_contribution": -0.586,
+              "note": "",
+              "wt": "Q"
+            }
+          ],
+          "estimated_site_sum": -1.59
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate9.pdb",
+              "chain": "C",
+              "resnum": 4,
+              "resname": "ASP",
+              "burial_free": 0.328,
+              "burial_bound": 0.722,
+              "d_burial": 0.394,
+              "acids_near_free": 3,
+              "bases_near_target": 2,
+              "pka_free_est": 7.55,
+              "pka_bound_est": 5.73,
+              "est_contribution": -1.004,
+              "note": "",
+              "wt": "D"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate9.pdb",
+              "chain": "C",
+              "resnum": 42,
+              "resname": "ASP",
+              "burial_free": 0.478,
+              "burial_bound": 0.678,
+              "d_burial": 0.2,
+              "acids_near_free": 2,
+              "bases_near_target": 1,
+              "pka_free_est": 6.97,
+              "pka_bound_est": 6.05,
+              "est_contribution": -0.569,
+              "note": "",
+              "wt": "D"
+            }
+          ],
+          "estimated_site_sum": -1.573
+        }
+      ]
+    },
+    {
+      "rank": 15,
+      "backbone": "c4_tfr1_groove_human_forced_l99_e7484f3e947890e8",
+      "source_pdb": "/Users/ricardo/dev/adaptyv-c4/results/v3_all_pdb/c4_tfr1_groove_human_forced_l99_e7484f3e947890e8_candidate5.pdb",
+      "historical_L": -0.441,
+      "ranked_design": "c4_tfr1_groove_human_forced_l99_e7484f3e947890e8_seq0",
+      "directory": "/Users/ricardo/dev/adaptyv-c4/results/switch_install/planning/15_c4_tfr1_groove_human_forced_l99_e7484f3e947890e8",
+      "status": "ranking_only",
+      "pairs": [
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l99_e7484f3e947890e8_candidate5.pdb",
+              "chain": "C",
+              "resnum": 28,
+              "resname": "THR",
+              "burial_free": 0.467,
+              "burial_bound": 0.844,
+              "d_burial": 0.378,
+              "acids_near_free": 3,
+              "bases_near_target": 3,
+              "pka_free_est": 7.43,
+              "pka_bound_est": 5.24,
+              "est_contribution": -1.06,
+              "note": "",
+              "wt": "T"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l99_e7484f3e947890e8_candidate5.pdb",
+              "chain": "C",
+              "resnum": 24,
+              "resname": "GLU",
+              "burial_free": 0.478,
+              "burial_bound": 0.817,
+              "d_burial": 0.339,
+              "acids_near_free": 2,
+              "bases_near_target": 2,
+              "pka_free_est": 6.97,
+              "pka_bound_est": 5.28,
+              "est_contribution": -0.801,
+              "note": "",
+              "wt": "E"
+            }
+          ],
+          "estimated_site_sum": -1.861
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l99_e7484f3e947890e8_candidate5.pdb",
+              "chain": "C",
+              "resnum": 28,
+              "resname": "THR",
+              "burial_free": 0.467,
+              "burial_bound": 0.844,
+              "d_burial": 0.378,
+              "acids_near_free": 3,
+              "bases_near_target": 3,
+              "pka_free_est": 7.43,
+              "pka_bound_est": 5.24,
+              "est_contribution": -1.06,
+              "note": "",
+              "wt": "T"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l99_e7484f3e947890e8_candidate5.pdb",
+              "chain": "C",
+              "resnum": 20,
+              "resname": "GLU",
+              "burial_free": 0.678,
+              "burial_bound": 0.856,
+              "d_burial": 0.178,
+              "acids_near_free": 3,
+              "bases_near_target": 1,
+              "pka_free_est": 7.23,
+              "pka_bound_est": 6.37,
+              "est_contribution": -0.546,
+              "note": "",
+              "wt": "E"
+            }
+          ],
+          "estimated_site_sum": -1.606
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l99_e7484f3e947890e8_candidate5.pdb",
+              "chain": "C",
+              "resnum": 28,
+              "resname": "THR",
+              "burial_free": 0.467,
+              "burial_bound": 0.844,
+              "d_burial": 0.378,
+              "acids_near_free": 3,
+              "bases_near_target": 3,
+              "pka_free_est": 7.43,
+              "pka_bound_est": 5.24,
+              "est_contribution": -1.06,
+              "note": "",
+              "wt": "T"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l99_e7484f3e947890e8_candidate5.pdb",
+              "chain": "C",
+              "resnum": 27,
+              "resname": "GLU",
+              "burial_free": 0.506,
+              "burial_bound": 0.633,
+              "d_burial": 0.128,
+              "acids_near_free": 2,
+              "bases_near_target": 1,
+              "pka_free_est": 6.94,
+              "pka_bound_est": 6.21,
+              "est_contribution": -0.468,
+              "note": "",
+              "wt": "E"
+            }
+          ],
+          "estimated_site_sum": -1.528
+        }
+      ]
+    },
+    {
+      "rank": 16,
+      "backbone": "c4_tfr1_groove_human_forced_l80_24ee63503d07a260",
+      "source_pdb": "/Users/ricardo/dev/adaptyv-c4/results/v3_all_pdb/c4_tfr1_groove_human_forced_l80_24ee63503d07a260_candidate2.pdb",
+      "historical_L": -0.42,
+      "ranked_design": "c4_tfr1_groove_human_forced_l80_24ee63503d07a260_seq0",
+      "directory": "/Users/ricardo/dev/adaptyv-c4/results/switch_install/planning/16_c4_tfr1_groove_human_forced_l80_24ee63503d07a260",
+      "status": "ranking_only",
+      "pairs": [
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l80_24ee63503d07a260_candidate2.pdb",
+              "chain": "C",
+              "resnum": 57,
+              "resname": "GLU",
+              "burial_free": 0.461,
+              "burial_bound": 0.739,
+              "d_burial": 0.278,
+              "acids_near_free": 2,
+              "bases_near_target": 3,
+              "pka_free_est": 6.98,
+              "pka_bound_est": 5.06,
+              "est_contribution": -0.839,
+              "note": "",
+              "wt": "E"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l80_24ee63503d07a260_candidate2.pdb",
+              "chain": "C",
+              "resnum": 53,
+              "resname": "GLU",
+              "burial_free": 0.45,
+              "burial_bound": 0.539,
+              "d_burial": 0.089,
+              "acids_near_free": 3,
+              "bases_near_target": 2,
+              "pka_free_est": 7.44,
+              "pka_bound_est": 6.41,
+              "est_contribution": -0.624,
+              "note": "",
+              "wt": "E"
+            }
+          ],
+          "estimated_site_sum": -1.463
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l80_24ee63503d07a260_candidate2.pdb",
+              "chain": "C",
+              "resnum": 57,
+              "resname": "GLU",
+              "burial_free": 0.461,
+              "burial_bound": 0.739,
+              "d_burial": 0.278,
+              "acids_near_free": 2,
+              "bases_near_target": 3,
+              "pka_free_est": 6.98,
+              "pka_bound_est": 5.06,
+              "est_contribution": -0.839,
+              "note": "",
+              "wt": "E"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l80_24ee63503d07a260_candidate2.pdb",
+              "chain": "C",
+              "resnum": 58,
+              "resname": "THR",
+              "burial_free": 0.7,
+              "burial_bound": 0.95,
+              "d_burial": 0.25,
+              "acids_near_free": 4,
+              "bases_near_target": 1,
+              "pka_free_est": 7.66,
+              "pka_bound_est": 6.61,
+              "est_contribution": -0.578,
+              "note": "",
+              "wt": "T"
+            }
+          ],
+          "estimated_site_sum": -1.417
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l80_24ee63503d07a260_candidate2.pdb",
+              "chain": "C",
+              "resnum": 57,
+              "resname": "GLU",
+              "burial_free": 0.461,
+              "burial_bound": 0.739,
+              "d_burial": 0.278,
+              "acids_near_free": 2,
+              "bases_near_target": 3,
+              "pka_free_est": 6.98,
+              "pka_bound_est": 5.06,
+              "est_contribution": -0.839,
+              "note": "",
+              "wt": "E"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l80_24ee63503d07a260_candidate2.pdb",
+              "chain": "C",
+              "resnum": 66,
+              "resname": "GLU",
+              "burial_free": 0.472,
+              "burial_bound": 0.733,
+              "d_burial": 0.261,
+              "acids_near_free": 1,
+              "bases_near_target": 1,
+              "pka_free_est": 6.52,
+              "pka_bound_est": 5.44,
+              "est_contribution": -0.48,
+              "note": "",
+              "wt": "E"
+            }
+          ],
+          "estimated_site_sum": -1.319
+        }
+      ]
+    },
+    {
+      "rank": 17,
+      "backbone": "c4_tfr1_groove_human_forced_l72_d5e9e12c9e56fbea",
+      "source_pdb": "/Users/ricardo/dev/adaptyv-c4/results/v3_all_pdb/c4_tfr1_groove_human_forced_l72_d5e9e12c9e56fbea_candidate1.pdb",
+      "historical_L": -0.365,
+      "ranked_design": "c4_tfr1_groove_human_forced_l72_d5e9e12c9e56fbea_seq0",
+      "directory": "/Users/ricardo/dev/adaptyv-c4/results/switch_install/planning/17_c4_tfr1_groove_human_forced_l72_d5e9e12c9e56fbea",
+      "status": "ranking_only",
+      "pairs": [
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l72_d5e9e12c9e56fbea_candidate1.pdb",
+              "chain": "C",
+              "resnum": 11,
+              "resname": "ARG",
+              "burial_free": 0.383,
+              "burial_bound": 0.839,
+              "d_burial": 0.456,
+              "acids_near_free": 3,
+              "bases_near_target": 1,
+              "pka_free_est": 7.5,
+              "pka_bound_est": 5.92,
+              "est_contribution": -0.913,
+              "note": "",
+              "wt": "R"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l72_d5e9e12c9e56fbea_candidate1.pdb",
+              "chain": "C",
+              "resnum": 68,
+              "resname": "ARG",
+              "burial_free": 0.339,
+              "burial_bound": 0.522,
+              "d_burial": 0.183,
+              "acids_near_free": 2,
+              "bases_near_target": 1,
+              "pka_free_est": 7.09,
+              "pka_bound_est": 6.21,
+              "est_contribution": -0.558,
+              "note": "",
+              "wt": "R"
+            }
+          ],
+          "estimated_site_sum": -1.471
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l72_d5e9e12c9e56fbea_candidate1.pdb",
+              "chain": "C",
+              "resnum": 11,
+              "resname": "ARG",
+              "burial_free": 0.383,
+              "burial_bound": 0.839,
+              "d_burial": 0.456,
+              "acids_near_free": 3,
+              "bases_near_target": 1,
+              "pka_free_est": 7.5,
+              "pka_bound_est": 5.92,
+              "est_contribution": -0.913,
+              "note": "",
+              "wt": "R"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l72_d5e9e12c9e56fbea_candidate1.pdb",
+              "chain": "C",
+              "resnum": 18,
+              "resname": "ASP",
+              "burial_free": 0.572,
+              "burial_bound": 0.739,
+              "d_burial": 0.167,
+              "acids_near_free": 2,
+              "bases_near_target": 1,
+              "pka_free_est": 6.88,
+              "pka_bound_est": 6.05,
+              "est_contribution": -0.513,
+              "note": "",
+              "wt": "D"
+            }
+          ],
+          "estimated_site_sum": -1.426
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l72_d5e9e12c9e56fbea_candidate1.pdb",
+              "chain": "C",
+              "resnum": 11,
+              "resname": "ARG",
+              "burial_free": 0.383,
+              "burial_bound": 0.839,
+              "d_burial": 0.456,
+              "acids_near_free": 3,
+              "bases_near_target": 1,
+              "pka_free_est": 7.5,
+              "pka_bound_est": 5.92,
+              "est_contribution": -0.913,
+              "note": "",
+              "wt": "R"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l72_d5e9e12c9e56fbea_candidate1.pdb",
+              "chain": "C",
+              "resnum": 57,
+              "resname": "ARG",
+              "burial_free": 0.417,
+              "burial_bound": 0.711,
+              "d_burial": 0.294,
+              "acids_near_free": 2,
+              "bases_near_target": 0,
+              "pka_free_est": 7.02,
+              "pka_bound_est": 6.26,
+              "est_contribution": -0.492,
+              "note": "",
+              "wt": "R"
+            }
+          ],
+          "estimated_site_sum": -1.405
+        }
+      ]
+    },
+    {
+      "rank": 18,
+      "backbone": "c4_tfr1_groove_human_forced_l84_9efe91791b587b17",
+      "source_pdb": "/Users/ricardo/dev/adaptyv-c4/results/v3_all_pdb/c4_tfr1_groove_human_forced_l84_9efe91791b587b17_candidate2.pdb",
+      "historical_L": -0.347,
+      "ranked_design": "c4_tfr1_groove_human_forced_l84_9efe91791b587b17_seq0",
+      "directory": "/Users/ricardo/dev/adaptyv-c4/results/switch_install/planning/18_c4_tfr1_groove_human_forced_l84_9efe91791b587b17",
+      "status": "ranking_only",
+      "pairs": [
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l84_9efe91791b587b17_candidate2.pdb",
+              "chain": "C",
+              "resnum": 42,
+              "resname": "GLU",
+              "burial_free": 0.372,
+              "burial_bound": 0.7,
+              "d_burial": 0.328,
+              "acids_near_free": 2,
+              "bases_near_target": 3,
+              "pka_free_est": 7.06,
+              "pka_bound_est": 5.01,
+              "est_contribution": -0.893,
+              "note": "",
+              "wt": "E"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l84_9efe91791b587b17_candidate2.pdb",
+              "chain": "C",
+              "resnum": 84,
+              "resname": "GLN",
+              "burial_free": 0.344,
+              "burial_bound": 0.75,
+              "d_burial": 0.406,
+              "acids_near_free": 1,
+              "bases_near_target": 2,
+              "pka_free_est": 6.64,
+              "pka_bound_est": 4.78,
+              "est_contribution": -0.633,
+              "note": "",
+              "wt": "Q"
+            }
+          ],
+          "estimated_site_sum": -1.526
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l84_9efe91791b587b17_candidate2.pdb",
+              "chain": "C",
+              "resnum": 42,
+              "resname": "GLU",
+              "burial_free": 0.372,
+              "burial_bound": 0.7,
+              "d_burial": 0.328,
+              "acids_near_free": 2,
+              "bases_near_target": 3,
+              "pka_free_est": 7.06,
+              "pka_bound_est": 5.01,
+              "est_contribution": -0.893,
+              "note": "",
+              "wt": "E"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l84_9efe91791b587b17_candidate2.pdb",
+              "chain": "C",
+              "resnum": 57,
+              "resname": "ARG",
+              "burial_free": 0.378,
+              "burial_bound": 0.717,
+              "d_burial": 0.339,
+              "acids_near_free": 2,
+              "bases_near_target": 0,
+              "pka_free_est": 7.06,
+              "pka_bound_est": 6.18,
+              "est_contribution": -0.558,
+              "note": "",
+              "wt": "R"
+            }
+          ],
+          "estimated_site_sum": -1.451
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l84_9efe91791b587b17_candidate2.pdb",
+              "chain": "C",
+              "resnum": 42,
+              "resname": "GLU",
+              "burial_free": 0.372,
+              "burial_bound": 0.7,
+              "d_burial": 0.328,
+              "acids_near_free": 2,
+              "bases_near_target": 3,
+              "pka_free_est": 7.06,
+              "pka_bound_est": 5.01,
+              "est_contribution": -0.893,
+              "note": "",
+              "wt": "E"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l84_9efe91791b587b17_candidate2.pdb",
+              "chain": "C",
+              "resnum": 50,
+              "resname": "GLN",
+              "burial_free": 0.444,
+              "burial_bound": 0.606,
+              "d_burial": 0.161,
+              "acids_near_free": 2,
+              "bases_near_target": 1,
+              "pka_free_est": 7.0,
+              "pka_bound_est": 6.18,
+              "est_contribution": -0.52,
+              "note": "",
+              "wt": "Q"
+            }
+          ],
+          "estimated_site_sum": -1.413
+        }
+      ]
+    },
+    {
+      "rank": 19,
+      "backbone": "c4_tfr1_groove_human_forced_l80_92df4b35cf6da70a",
+      "source_pdb": "/Users/ricardo/dev/adaptyv-c4/results/v3_all_pdb/c4_tfr1_groove_human_forced_l80_92df4b35cf6da70a_candidate1.pdb",
+      "historical_L": -0.344,
+      "ranked_design": "c4_tfr1_groove_human_forced_l80_92df4b35cf6da70a_seq0",
+      "directory": "/Users/ricardo/dev/adaptyv-c4/results/switch_install/planning/19_c4_tfr1_groove_human_forced_l80_92df4b35cf6da70a",
+      "status": "ranking_only",
+      "pairs": [
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l80_92df4b35cf6da70a_candidate1.pdb",
+              "chain": "C",
+              "resnum": 52,
+              "resname": "ARG",
+              "burial_free": 0.372,
+              "burial_bound": 0.778,
+              "d_burial": 0.406,
+              "acids_near_free": 2,
+              "bases_near_target": 1,
+              "pka_free_est": 7.06,
+              "pka_bound_est": 5.61,
+              "est_contribution": -0.793,
+              "note": "",
+              "wt": "R"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l80_92df4b35cf6da70a_candidate1.pdb",
+              "chain": "C",
+              "resnum": 45,
+              "resname": "GLU",
+              "burial_free": 0.444,
+              "burial_bound": 0.744,
+              "d_burial": 0.3,
+              "acids_near_free": 3,
+              "bases_near_target": 1,
+              "pka_free_est": 7.45,
+              "pka_bound_est": 6.27,
+              "est_contribution": -0.713,
+              "note": "",
+              "wt": "E"
+            }
+          ],
+          "estimated_site_sum": -1.506
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l80_92df4b35cf6da70a_candidate1.pdb",
+              "chain": "C",
+              "resnum": 52,
+              "resname": "ARG",
+              "burial_free": 0.372,
+              "burial_bound": 0.778,
+              "d_burial": 0.406,
+              "acids_near_free": 2,
+              "bases_near_target": 1,
+              "pka_free_est": 7.06,
+              "pka_bound_est": 5.61,
+              "est_contribution": -0.793,
+              "note": "",
+              "wt": "R"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l80_92df4b35cf6da70a_candidate1.pdb",
+              "chain": "C",
+              "resnum": 42,
+              "resname": "GLU",
+              "burial_free": 0.461,
+              "burial_bound": 0.639,
+              "d_burial": 0.178,
+              "acids_near_free": 4,
+              "bases_near_target": 2,
+              "pka_free_est": 7.88,
+              "pka_bound_est": 6.62,
+              "est_contribution": -0.636,
+              "note": "",
+              "wt": "E"
+            }
+          ],
+          "estimated_site_sum": -1.429
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l80_92df4b35cf6da70a_candidate1.pdb",
+              "chain": "C",
+              "resnum": 52,
+              "resname": "ARG",
+              "burial_free": 0.372,
+              "burial_bound": 0.778,
+              "d_burial": 0.406,
+              "acids_near_free": 2,
+              "bases_near_target": 1,
+              "pka_free_est": 7.06,
+              "pka_bound_est": 5.61,
+              "est_contribution": -0.793,
+              "note": "",
+              "wt": "R"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l80_92df4b35cf6da70a_candidate1.pdb",
+              "chain": "C",
+              "resnum": 80,
+              "resname": "THR",
+              "burial_free": 0.311,
+              "burial_bound": 0.439,
+              "d_burial": 0.128,
+              "acids_near_free": 1,
+              "bases_near_target": 2,
+              "pka_free_est": 6.67,
+              "pka_bound_est": 5.53,
+              "est_contribution": -0.556,
+              "note": "",
+              "wt": "T"
+            }
+          ],
+          "estimated_site_sum": -1.349
+        }
+      ]
+    },
+    {
+      "rank": 20,
+      "backbone": "c4_tfr1_groove_human_forced_l100_39ede5dc7779065e",
+      "source_pdb": "/Users/ricardo/dev/adaptyv-c4/results/v3_all_pdb/c4_tfr1_groove_human_forced_l100_39ede5dc7779065e_candidate5.pdb",
+      "historical_L": -0.325,
+      "ranked_design": "c4_tfr1_groove_human_forced_l100_39ede5dc7779065e_seq0",
+      "directory": "/Users/ricardo/dev/adaptyv-c4/results/switch_install/planning/20_c4_tfr1_groove_human_forced_l100_39ede5dc7779065e",
+      "status": "ranking_only",
+      "pairs": [
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l100_39ede5dc7779065e_candidate5.pdb",
+              "chain": "C",
+              "resnum": 17,
+              "resname": "LYS",
+              "burial_free": 0.406,
+              "burial_bound": 0.539,
+              "d_burial": 0.133,
+              "acids_near_free": 3,
+              "bases_near_target": 2,
+              "pka_free_est": 7.48,
+              "pka_bound_est": 6.33,
+              "est_contribution": -0.688,
+              "note": "",
+              "wt": "K"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l100_39ede5dc7779065e_candidate5.pdb",
+              "chain": "C",
+              "resnum": 50,
+              "resname": "GLU",
+              "burial_free": 0.561,
+              "burial_bound": 0.661,
+              "d_burial": 0.1,
+              "acids_near_free": 2,
+              "bases_near_target": 1,
+              "pka_free_est": 6.89,
+              "pka_bound_est": 6.23,
+              "est_contribution": -0.423,
+              "note": "",
+              "wt": "E"
+            }
+          ],
+          "estimated_site_sum": -1.111
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l100_39ede5dc7779065e_candidate5.pdb",
+              "chain": "C",
+              "resnum": 17,
+              "resname": "LYS",
+              "burial_free": 0.406,
+              "burial_bound": 0.539,
+              "d_burial": 0.133,
+              "acids_near_free": 3,
+              "bases_near_target": 2,
+              "pka_free_est": 7.48,
+              "pka_bound_est": 6.33,
+              "est_contribution": -0.688,
+              "note": "",
+              "wt": "K"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l100_39ede5dc7779065e_candidate5.pdb",
+              "chain": "C",
+              "resnum": 2,
+              "resname": "SER",
+              "burial_free": 0.422,
+              "burial_bound": 0.717,
+              "d_burial": 0.294,
+              "acids_near_free": 1,
+              "bases_near_target": 0,
+              "pka_free_est": 6.57,
+              "pka_bound_est": 5.8,
+              "est_contribution": -0.409,
+              "note": "",
+              "wt": "S"
+            }
+          ],
+          "estimated_site_sum": -1.097
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l100_39ede5dc7779065e_candidate5.pdb",
+              "chain": "C",
+              "resnum": 17,
+              "resname": "LYS",
+              "burial_free": 0.406,
+              "burial_bound": 0.539,
+              "d_burial": 0.133,
+              "acids_near_free": 3,
+              "bases_near_target": 2,
+              "pka_free_est": 7.48,
+              "pka_bound_est": 6.33,
+              "est_contribution": -0.688,
+              "note": "",
+              "wt": "K"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l100_39ede5dc7779065e_candidate5.pdb",
+              "chain": "C",
+              "resnum": 21,
+              "resname": "GLU",
+              "burial_free": 0.622,
+              "burial_bound": 0.767,
+              "d_burial": 0.144,
+              "acids_near_free": 1,
+              "bases_near_target": 1,
+              "pka_free_est": 6.38,
+              "pka_bound_est": 5.61,
+              "est_contribution": -0.353,
+              "note": "",
+              "wt": "E"
+            }
+          ],
+          "estimated_site_sum": -1.041
+        }
+      ]
+    },
+    {
+      "rank": 21,
+      "backbone": "c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0",
+      "source_pdb": "/Users/ricardo/dev/adaptyv-c4/results/v3_all_pdb/c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0_candidate5.pdb",
+      "historical_L": -0.318,
+      "ranked_design": "c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0_seq0",
+      "directory": "/Users/ricardo/dev/adaptyv-c4/results/switch_install/planning/21_c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0",
+      "status": "ranking_only",
+      "pairs": [
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0_candidate5.pdb",
+              "chain": "C",
+              "resnum": 48,
+              "resname": "ASN",
+              "burial_free": 0.506,
+              "burial_bound": 0.872,
+              "d_burial": 0.367,
+              "acids_near_free": 3,
+              "bases_near_target": 1,
+              "pka_free_est": 7.39,
+              "pka_bound_est": 6.04,
+              "est_contribution": -0.81,
+              "note": "",
+              "wt": "N"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0_candidate5.pdb",
+              "chain": "C",
+              "resnum": 45,
+              "resname": "ASN",
+              "burial_free": 0.439,
+              "burial_bound": 0.633,
+              "d_burial": 0.194,
+              "acids_near_free": 3,
+              "bases_near_target": 2,
+              "pka_free_est": 7.45,
+              "pka_bound_est": 6.15,
+              "est_contribution": -0.783,
+              "note": "",
+              "wt": "N"
+            }
+          ],
+          "estimated_site_sum": -1.593
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0_candidate5.pdb",
+              "chain": "C",
+              "resnum": 48,
+              "resname": "ASN",
+              "burial_free": 0.506,
+              "burial_bound": 0.872,
+              "d_burial": 0.367,
+              "acids_near_free": 3,
+              "bases_near_target": 1,
+              "pka_free_est": 7.39,
+              "pka_bound_est": 6.04,
+              "est_contribution": -0.81,
+              "note": "",
+              "wt": "N"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0_candidate5.pdb",
+              "chain": "C",
+              "resnum": 90,
+              "resname": "GLU",
+              "burial_free": 0.417,
+              "burial_bound": 0.678,
+              "d_burial": 0.261,
+              "acids_near_free": 3,
+              "bases_near_target": 1,
+              "pka_free_est": 7.47,
+              "pka_bound_est": 6.39,
+              "est_contribution": -0.648,
+              "note": "",
+              "wt": "E"
+            }
+          ],
+          "estimated_site_sum": -1.458
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0_candidate5.pdb",
+              "chain": "C",
+              "resnum": 45,
+              "resname": "ASN",
+              "burial_free": 0.439,
+              "burial_bound": 0.633,
+              "d_burial": 0.194,
+              "acids_near_free": 3,
+              "bases_near_target": 2,
+              "pka_free_est": 7.45,
+              "pka_bound_est": 6.15,
+              "est_contribution": -0.783,
+              "note": "",
+              "wt": "N"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0_candidate5.pdb",
+              "chain": "C",
+              "resnum": 90,
+              "resname": "GLU",
+              "burial_free": 0.417,
+              "burial_bound": 0.678,
+              "d_burial": 0.261,
+              "acids_near_free": 3,
+              "bases_near_target": 1,
+              "pka_free_est": 7.47,
+              "pka_bound_est": 6.39,
+              "est_contribution": -0.648,
+              "note": "",
+              "wt": "E"
+            }
+          ],
+          "estimated_site_sum": -1.431
+        }
+      ]
+    },
+    {
+      "rank": 22,
+      "backbone": "c4_tfr1_groove_human_forced_l60_63126a071c041270",
+      "source_pdb": "/Users/ricardo/dev/adaptyv-c4/results/v3_all_pdb/c4_tfr1_groove_human_forced_l60_63126a071c041270_candidate3.pdb",
+      "historical_L": -0.192,
+      "ranked_design": "c4_tfr1_groove_human_forced_l60_63126a071c041270_seq0",
+      "directory": "/Users/ricardo/dev/adaptyv-c4/results/switch_install/planning/22_c4_tfr1_groove_human_forced_l60_63126a071c041270",
+      "status": "ranking_only",
+      "pairs": [
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l60_63126a071c041270_candidate3.pdb",
+              "chain": "C",
+              "resnum": 55,
+              "resname": "GLU",
+              "burial_free": 0.433,
+              "burial_bound": 0.767,
+              "d_burial": 0.333,
+              "acids_near_free": 4,
+              "bases_near_target": 2,
+              "pka_free_est": 7.91,
+              "pka_bound_est": 6.24,
+              "est_contribution": -0.88,
+              "note": "",
+              "wt": "E"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l60_63126a071c041270_candidate3.pdb",
+              "chain": "C",
+              "resnum": 44,
+              "resname": "SER",
+              "burial_free": 0.561,
+              "burial_bound": 0.994,
+              "d_burial": 0.433,
+              "acids_near_free": 4,
+              "bases_near_target": 1,
+              "pka_free_est": 7.79,
+              "pka_bound_est": 6.26,
+              "est_contribution": -0.837,
+              "note": "",
+              "wt": "S"
+            }
+          ],
+          "estimated_site_sum": -1.717
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l60_63126a071c041270_candidate3.pdb",
+              "chain": "C",
+              "resnum": 55,
+              "resname": "GLU",
+              "burial_free": 0.433,
+              "burial_bound": 0.767,
+              "d_burial": 0.333,
+              "acids_near_free": 4,
+              "bases_near_target": 2,
+              "pka_free_est": 7.91,
+              "pka_bound_est": 6.24,
+              "est_contribution": -0.88,
+              "note": "",
+              "wt": "E"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l60_63126a071c041270_candidate3.pdb",
+              "chain": "C",
+              "resnum": 1,
+              "resname": "SER",
+              "burial_free": 0.339,
+              "burial_bound": 0.506,
+              "d_burial": 0.167,
+              "acids_near_free": 2,
+              "bases_near_target": 2,
+              "pka_free_est": 7.09,
+              "pka_bound_est": 5.86,
+              "est_contribution": -0.728,
+              "note": "",
+              "wt": "S"
+            }
+          ],
+          "estimated_site_sum": -1.608
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l60_63126a071c041270_candidate3.pdb",
+              "chain": "C",
+              "resnum": 44,
+              "resname": "SER",
+              "burial_free": 0.561,
+              "burial_bound": 0.994,
+              "d_burial": 0.433,
+              "acids_near_free": 4,
+              "bases_near_target": 1,
+              "pka_free_est": 7.79,
+              "pka_bound_est": 6.26,
+              "est_contribution": -0.837,
+              "note": "",
+              "wt": "S"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l60_63126a071c041270_candidate3.pdb",
+              "chain": "C",
+              "resnum": 1,
+              "resname": "SER",
+              "burial_free": 0.339,
+              "burial_bound": 0.506,
+              "d_burial": 0.167,
+              "acids_near_free": 2,
+              "bases_near_target": 2,
+              "pka_free_est": 7.09,
+              "pka_bound_est": 5.86,
+              "est_contribution": -0.728,
+              "note": "",
+              "wt": "S"
+            }
+          ],
+          "estimated_site_sum": -1.565
+        }
+      ]
+    },
+    {
+      "rank": 23,
+      "backbone": "c4_tfr1_groove_human_forced_l59_a8117845ac23722c",
+      "source_pdb": "/Users/ricardo/dev/adaptyv-c4/results/v3_all_pdb/c4_tfr1_groove_human_forced_l59_a8117845ac23722c_candidate3.pdb",
+      "historical_L": -0.142,
+      "ranked_design": "c4_tfr1_groove_human_forced_l59_a8117845ac23722c_seq0",
+      "directory": "/Users/ricardo/dev/adaptyv-c4/results/switch_install/planning/23_c4_tfr1_groove_human_forced_l59_a8117845ac23722c",
+      "status": "ranking_only",
+      "pairs": [
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l59_a8117845ac23722c_candidate3.pdb",
+              "chain": "C",
+              "resnum": 17,
+              "resname": "ARG",
+              "burial_free": 0.383,
+              "burial_bound": 0.794,
+              "d_burial": 0.411,
+              "acids_near_free": 4,
+              "bases_near_target": 1,
+              "pka_free_est": 7.95,
+              "pka_bound_est": 6.48,
+              "est_contribution": -0.741,
+              "note": "",
+              "wt": "R"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l59_a8117845ac23722c_candidate3.pdb",
+              "chain": "C",
+              "resnum": 14,
+              "resname": "GLU",
+              "burial_free": 0.7,
+              "burial_bound": 1.0,
+              "d_burial": 0.3,
+              "acids_near_free": 2,
+              "bases_near_target": 0,
+              "pka_free_est": 6.76,
+              "pka_bound_est": 5.98,
+              "est_contribution": -0.466,
+              "note": "",
+              "wt": "E"
+            }
+          ],
+          "estimated_site_sum": -1.207
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l59_a8117845ac23722c_candidate3.pdb",
+              "chain": "C",
+              "resnum": 17,
+              "resname": "ARG",
+              "burial_free": 0.383,
+              "burial_bound": 0.794,
+              "d_burial": 0.411,
+              "acids_near_free": 4,
+              "bases_near_target": 1,
+              "pka_free_est": 7.95,
+              "pka_bound_est": 6.48,
+              "est_contribution": -0.741,
+              "note": "",
+              "wt": "R"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l59_a8117845ac23722c_candidate3.pdb",
+              "chain": "C",
+              "resnum": 39,
+              "resname": "ALA",
+              "burial_free": 0.522,
+              "burial_bound": 0.756,
+              "d_burial": 0.233,
+              "acids_near_free": 2,
+              "bases_near_target": 0,
+              "pka_free_est": 6.92,
+              "pka_bound_est": 6.32,
+              "est_contribution": -0.394,
+              "note": "",
+              "wt": "A"
+            }
+          ],
+          "estimated_site_sum": -1.135
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l59_a8117845ac23722c_candidate3.pdb",
+              "chain": "C",
+              "resnum": 17,
+              "resname": "ARG",
+              "burial_free": 0.383,
+              "burial_bound": 0.794,
+              "d_burial": 0.411,
+              "acids_near_free": 4,
+              "bases_near_target": 1,
+              "pka_free_est": 7.95,
+              "pka_bound_est": 6.48,
+              "est_contribution": -0.741,
+              "note": "",
+              "wt": "R"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l59_a8117845ac23722c_candidate3.pdb",
+              "chain": "C",
+              "resnum": 36,
+              "resname": "ASP",
+              "burial_free": 0.306,
+              "burial_bound": 0.694,
+              "d_burial": 0.389,
+              "acids_near_free": 0,
+              "bases_near_target": 2,
+              "pka_free_est": 6.22,
+              "pka_bound_est": 4.41,
+              "est_contribution": -0.388,
+              "note": "",
+              "wt": "D"
+            }
+          ],
+          "estimated_site_sum": -1.129
+        }
+      ]
+    },
+    {
+      "rank": 24,
+      "backbone": "c4_tfr1_groove_human_forced_l100_af9c8433a94467eb",
+      "source_pdb": "/Users/ricardo/dev/adaptyv-c4/results/v3_all_pdb/c4_tfr1_groove_human_forced_l100_af9c8433a94467eb_candidate6.pdb",
+      "historical_L": -0.118,
+      "ranked_design": "c4_tfr1_groove_human_forced_l100_af9c8433a94467eb_seq0",
+      "directory": "/Users/ricardo/dev/adaptyv-c4/results/switch_install/planning/24_c4_tfr1_groove_human_forced_l100_af9c8433a94467eb",
+      "status": "ranking_only",
+      "pairs": [
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l100_af9c8433a94467eb_candidate6.pdb",
+              "chain": "C",
+              "resnum": 60,
+              "resname": "GLU",
+              "burial_free": 0.367,
+              "burial_bound": 0.75,
+              "d_burial": 0.383,
+              "acids_near_free": 2,
+              "bases_near_target": 3,
+              "pka_free_est": 7.07,
+              "pka_bound_est": 4.87,
+              "est_contribution": -0.907,
+              "note": "",
+              "wt": "E"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l100_af9c8433a94467eb_candidate6.pdb",
+              "chain": "C",
+              "resnum": 63,
+              "resname": "ASP",
+              "burial_free": 0.372,
+              "burial_bound": 0.772,
+              "d_burial": 0.4,
+              "acids_near_free": 2,
+              "bases_near_target": 2,
+              "pka_free_est": 7.06,
+              "pka_bound_est": 5.22,
+              "est_contribution": -0.87,
+              "note": "",
+              "wt": "D"
+            }
+          ],
+          "estimated_site_sum": -1.777
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l100_af9c8433a94467eb_candidate6.pdb",
+              "chain": "C",
+              "resnum": 60,
+              "resname": "GLU",
+              "burial_free": 0.367,
+              "burial_bound": 0.75,
+              "d_burial": 0.383,
+              "acids_near_free": 2,
+              "bases_near_target": 3,
+              "pka_free_est": 7.07,
+              "pka_bound_est": 4.87,
+              "est_contribution": -0.907,
+              "note": "",
+              "wt": "E"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l100_af9c8433a94467eb_candidate6.pdb",
+              "chain": "C",
+              "resnum": 59,
+              "resname": "SER",
+              "burial_free": 0.356,
+              "burial_bound": 0.533,
+              "d_burial": 0.178,
+              "acids_near_free": 2,
+              "bases_near_target": 2,
+              "pka_free_est": 7.08,
+              "pka_bound_est": 5.81,
+              "est_contribution": -0.736,
+              "note": "",
+              "wt": "S"
+            }
+          ],
+          "estimated_site_sum": -1.643
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l100_af9c8433a94467eb_candidate6.pdb",
+              "chain": "C",
+              "resnum": 63,
+              "resname": "ASP",
+              "burial_free": 0.372,
+              "burial_bound": 0.772,
+              "d_burial": 0.4,
+              "acids_near_free": 2,
+              "bases_near_target": 2,
+              "pka_free_est": 7.06,
+              "pka_bound_est": 5.22,
+              "est_contribution": -0.87,
+              "note": "",
+              "wt": "D"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l100_af9c8433a94467eb_candidate6.pdb",
+              "chain": "C",
+              "resnum": 59,
+              "resname": "SER",
+              "burial_free": 0.356,
+              "burial_bound": 0.533,
+              "d_burial": 0.178,
+              "acids_near_free": 2,
+              "bases_near_target": 2,
+              "pka_free_est": 7.08,
+              "pka_bound_est": 5.81,
+              "est_contribution": -0.736,
+              "note": "",
+              "wt": "S"
+            }
+          ],
+          "estimated_site_sum": -1.606
+        }
+      ]
+    },
+    {
+      "rank": 25,
+      "backbone": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d",
+      "source_pdb": "/Users/ricardo/dev/adaptyv-c4/results/v3_all_pdb/c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "historical_L": -0.027,
+      "ranked_design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_seq0",
+      "directory": "/Users/ricardo/dev/adaptyv-c4/results/switch_install/planning/25_c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d",
+      "status": "ranking_only",
+      "pairs": [
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+              "chain": "C",
+              "resnum": 22,
+              "resname": "ASN",
+              "burial_free": 0.444,
+              "burial_bound": 0.689,
+              "d_burial": 0.244,
+              "acids_near_free": 2,
+              "bases_near_target": 1,
+              "pka_free_est": 7.0,
+              "pka_bound_est": 5.96,
+              "est_contribution": -0.627,
+              "note": "",
+              "wt": "N"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+              "chain": "C",
+              "resnum": 37,
+              "resname": "GLU",
+              "burial_free": 0.428,
+              "burial_bound": 0.628,
+              "d_burial": 0.2,
+              "acids_near_free": 3,
+              "bases_near_target": 1,
+              "pka_free_est": 7.46,
+              "pka_bound_est": 6.54,
+              "est_contribution": -0.549,
+              "note": "",
+              "wt": "E"
+            }
+          ],
+          "estimated_site_sum": -1.176
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+              "chain": "C",
+              "resnum": 22,
+              "resname": "ASN",
+              "burial_free": 0.444,
+              "burial_bound": 0.689,
+              "d_burial": 0.244,
+              "acids_near_free": 2,
+              "bases_near_target": 1,
+              "pka_free_est": 7.0,
+              "pka_bound_est": 5.96,
+              "est_contribution": -0.627,
+              "note": "",
+              "wt": "N"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+              "chain": "C",
+              "resnum": 24,
+              "resname": "SER",
+              "burial_free": 0.744,
+              "burial_bound": 0.978,
+              "d_burial": 0.233,
+              "acids_near_free": 2,
+              "bases_near_target": 1,
+              "pka_free_est": 6.72,
+              "pka_bound_est": 5.72,
+              "est_contribution": -0.542,
+              "note": "",
+              "wt": "S"
+            }
+          ],
+          "estimated_site_sum": -1.169
+        },
+        {
+          "sites": [
+            {
+              "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+              "chain": "C",
+              "resnum": 37,
+              "resname": "GLU",
+              "burial_free": 0.428,
+              "burial_bound": 0.628,
+              "d_burial": 0.2,
+              "acids_near_free": 3,
+              "bases_near_target": 1,
+              "pka_free_est": 7.46,
+              "pka_bound_est": 6.54,
+              "est_contribution": -0.549,
+              "note": "",
+              "wt": "E"
+            },
+            {
+              "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+              "chain": "C",
+              "resnum": 24,
+              "resname": "SER",
+              "burial_free": 0.744,
+              "burial_bound": 0.978,
+              "d_burial": 0.233,
+              "acids_near_free": 2,
+              "bases_near_target": 1,
+              "pka_free_est": 6.72,
+              "pka_bound_est": 5.72,
+              "est_contribution": -0.542,
+              "note": "",
+              "wt": "S"
+            }
+          ],
+          "estimated_site_sum": -1.091
+        }
+      ]
+    }
+  ]
+}

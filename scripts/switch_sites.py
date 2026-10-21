@@ -49,11 +49,12 @@ W_DESOLV = -2.60       # per unit of fractional burial gained on binding
 
 def atoms(path):
     out = []
-    for line in open(path):
-        if line.startswith("ATOM"):
-            out.append((line[21], int(line[22:26]), line[17:20].strip(),
-                        line[12:16].strip(),
-                        float(line[30:38]), float(line[38:46]), float(line[46:54])))
+    with open(path) as fh:
+        for line in fh:
+            if line.startswith("ATOM"):
+                out.append((line[21], int(line[22:26]), line[17:20].strip(),
+                            line[12:16].strip(),
+                            float(line[30:38]), float(line[38:46]), float(line[46:54])))
     return out
 
 

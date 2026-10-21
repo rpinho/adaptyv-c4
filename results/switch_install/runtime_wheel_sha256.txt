@@ -1,0 +1,1 @@
+10041eca0e9dd5fc62e94e888fda6d593bbfe32ba14e51cab9b2e4cd87cecb4c  /tmp/pyrosetta-2026.29+releasequarterly.80a0635615-cp311-cp311-macosx_12_0_arm64.whl

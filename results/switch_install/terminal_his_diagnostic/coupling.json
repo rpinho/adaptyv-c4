@@ -1,0 +1,33 @@
+{
+  "caveat": "Internal group pKa is diagnostic only. Coupled/suppressed ring is not an independently scored protonation site.",
+  "groups": [
+    {
+      "file": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate3_CQ7__CN1_HH_switch.pdb",
+      "type": "N+",
+      "label": "N+    1 C",
+      "internal_pka": 7.860849023221033,
+      "coupled_to": null
+    },
+    {
+      "file": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate3_CQ7__CN1_HH_switch.pdb",
+      "type": "HIS",
+      "label": "HIS   1 C",
+      "internal_pka": 6.531401288753272,
+      "coupled_to": "N+    1 C"
+    },
+    {
+      "file": "binder.pdb",
+      "type": "N+",
+      "label": "N+    1 C",
+      "internal_pka": 7.785724640786578,
+      "coupled_to": null
+    },
+    {
+      "file": "binder.pdb",
+      "type": "HIS",
+      "label": "HIS   1 C",
+      "internal_pka": 6.404659494895885,
+      "coupled_to": "N+    1 C"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "n_interface_native_histidines": 27,
+  "n_distinct_backbones": 17,
+  "spearman_estimated_vs_propka_contribution": 0.5668041516974979,
+  "mean_absolute_contribution_error": 0.15337037037037035,
+  "mean_absolute_free_pka_error": 0.7111111111111112,
+  "caveat": "Native histidines only, selected best-L source per ranked backbone, dependent structures, coordinate heuristic not mutation validation."
+}

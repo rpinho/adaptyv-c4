@@ -113,8 +113,11 @@ def score_one(pdb, binder_chain, target_chain, ph_low, ph_high, min_shift, verbo
         tp = os.path.join(td, "target.pdb")
         split_chains(pdb, set(binder_chain), bp)
         split_chains(pdb, set(target_chain), tp)
-        fb = run_propka(bp, td) or {}
-        ft = run_propka(tp, td) or {}
+        fb = run_propka(bp, td)
+        ft = run_propka(tp, td)
+        if not fb or not ft:
+            sys.stderr.write("incomplete free-state PROPKA results for %s\n" % pdb)
+            return None
         free = dict(fb); free.update(ft)
         L, rows = linkage(cx, free, ph_low, ph_high, min_shift)
         binder_his = [r for r in rows if r["resname"] == "HIS" and r["chain"] in binder_chain]

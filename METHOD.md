@@ -352,3 +352,78 @@ spoiling the interface is untested.
 designs derive from far fewer distinct backbones, so these are not 66 independent samples. Chain B
 (686-693) is excluded from every sum, as noted above. And no orthogonal estimator has been run:
 every figure here is PROPKA3.
+
+## Ranked two-site installation, now executed on all 25 ranked C4 backbones (2026-10-21)
+
+`scripts/install_switch.py` now uses `switch_sites.score_design` directly. There is
+no second burial sort. The CPU campaign tested the three best estimated pairs
+from eight eligible sites on each ranked backbone, in best historical-L order.
+One best-scored candidate represents each backbone; its sequence can differ from
+ranked seq0, and both identities are recorded. Existing His sites participate in
+HH and QQ twins rather than being dropped as no-op edits.
+
+Real validation exposed two problems the unexecuted installer had concealed:
+
+1. **Reference preparation mattered more than the mutation.** The best raw source
+   gave InterfaceAnalyzer dG +804.75 REU when only separated partners were globally
+   repacked. Common whole-complex repacking and side-chain minimisation, with the
+   backbone fixed, gave -44.66. Local mutation-site packing alone compared a strained
+   bound input with globally repacked free partners. The installer now prepares one
+   common complex, then applies identical local protocols to WT, HH and QQ. Both
+   reference and variant dG must be negative, in addition to ddG <= 3 REU. These
+   remain neutral-state structural surrogates, not pH 7.4 affinity measurements.
+2. **An omitted His is not a zero contribution.** PROPKA suppresses the C1 ring in
+   two variants by coupling it to N+. Those variants retain energy-filter status
+   but are explicitly **unscorable** for complete two-site linkage. Partial sums
+   are preserved only for diagnosis and excluded from ranking. A regression test
+   prevents an apparently passing partial sum from entering selection.
+
+The completed screen uses **AB as target, C as binder**, and all matched groups
+(`min_shift=0`). Historical A-only scores order the substrates; comparisons below
+use matched prepared AB references, not historical campaign numbers.
+
+| Quantity | Result |
+|---|---:|
+| Ranked backbones processed | 25/25 |
+| HH pairs modelled, with matched QQ attempts | 75 |
+| HH passing neutral-energy filters | 38 |
+| HH with complete installed-site linkage | 36 |
+| Complete-linkage HH with retained QQ control | 25 |
+| HH energy-retained but unscorable | 2 |
+| Complete HH with L <= -2 | **0/36** |
+| Complete HH with both selected free pKa >= 7 | **0/36** |
+| Best complete HH L | **-1.530** |
+
+The best pair is **C:D4H/T46H** on `l63_59b0f47ecf134650`: its matched reference L
+is -0.351, HH L -1.530, and QQ L -0.444. HH therefore improves L by **-1.179**
+against its reference and **-1.086** against QQ. Rosetta ddG is **+1.74 REU**,
+inside the 3-REU filter, with negative reference and mutant dG. Selected free pKa
+values are **6.33 and 7.25**: one useful high-free-pKa site, still not two. This is
+a computed screen result, not experimental binding or clearance of the pH gate.
+
+The native-coordinate heuristic has a limited real-data check: on 27 native
+interface histidines across 17 selected backbone IDs, estimated versus PROPKA
+contribution Spearman correlation is 0.567 and mean absolute error 0.153 log units.
+Free-pKa estimate mean absolute error is 0.711. This does not validate a mutation
+pKa prediction. Rotamers also matter: native C24 on the original best source moved
+from free pKa 7.14 to **6.71 in its first prepared reference**, despite unchanged
+backbone coordinates. Native-position ranking is a pre-screen, not evidence that
+mutating its top two sites creates two elevated free pKa values.
+
+Every saved source/output checksum, mutation identity, target sequence, energy
+filter and complete linkage sum was audited. **181 PDBs across all 25 backbones
+passed; maximum backbone atom displacement was 0.000 A.** Seven regression tests
+passed. Diagnostic runs are retained and clearly marked invalidated/superseded.
+
+Limits: three pairs per backbone, not all 28 shortlist combinations; related
+backbones; original trimmed receptor with artificial fragment boundaries; ranking
+on source rotamers before preparation; one pKa estimator. PROPKA warns about
+backbone groups at A683 and A728. Full-context confirmation, APBS, mouse validation
+and orthogonal refolding remain outstanding. No account or entry was created or
+submitted. Both rented pods stayed stopped; **new GPU spend $0.00**, historical
+last recorded pod spend $33.87, persistent storage not freshly reconciled.
+
+Full evidence: `results/switch_install/campaign/RESULTS.md`, `variants.csv`,
+`residues.csv`, `integrity.json`, per-design manifests and PDBs. Protocol diagnostics
+and reproduction commands are in `results/switch_install/VALIDATION.md` and
+`runtime_setup.txt`.

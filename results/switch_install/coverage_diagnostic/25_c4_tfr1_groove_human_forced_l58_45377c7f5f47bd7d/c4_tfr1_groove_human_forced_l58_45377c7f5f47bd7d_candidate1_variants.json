@@ -1,0 +1,3642 @@
+{
+  "source_pdb": "/Users/ricardo/dev/adaptyv-c4/results/v3_all_pdb/c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+  "source_sha256": "bb1ab5d03e68c91ce3d6c22abf20a1de41cb74d3c37d80e3b9e5e4075f79d011",
+  "code_sha256": {
+    "install_switch.py": "e795936ef73d45ebb13cca119710754a1aaf479dbf6c8135126d2da8a7bdf212",
+    "switch_sites.py": "678011ecef9545344f6fb433252539e3abef335e59391b1ab7196ddb20abece4",
+    "ph_linkage.py": "9717d71f7b2d9128996174579aa89f5d4dbb47327da7bb1b5339a412511ea8f6",
+    "run_switch_campaign.py": "f4422b722e375def1f14e50f0ad3a1ae5a352bfec4aae38cf98a1112dafc7a6e"
+  },
+  "binder_chain": "C",
+  "target_chain": "AB",
+  "ranking_method": "switch_sites.score_design",
+  "estimate_caveat": "Coordinate heuristic, not measured pKa or total complex linkage; site sums assume additivity only to order modelling.",
+  "max_positions": 8,
+  "sites_per_variant": 2,
+  "max_pairs": 3,
+  "ranking": [
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 22,
+      "resname": "ASN",
+      "burial_free": 0.444,
+      "burial_bound": 0.689,
+      "d_burial": 0.244,
+      "acids_near_free": 2,
+      "bases_near_target": 1,
+      "pka_free_est": 7.0,
+      "pka_bound_est": 5.96,
+      "est_contribution": -0.627,
+      "note": ""
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 37,
+      "resname": "GLU",
+      "burial_free": 0.428,
+      "burial_bound": 0.628,
+      "d_burial": 0.2,
+      "acids_near_free": 3,
+      "bases_near_target": 1,
+      "pka_free_est": 7.46,
+      "pka_bound_est": 6.54,
+      "est_contribution": -0.549,
+      "note": ""
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 24,
+      "resname": "SER",
+      "burial_free": 0.744,
+      "burial_bound": 0.978,
+      "d_burial": 0.233,
+      "acids_near_free": 2,
+      "bases_near_target": 1,
+      "pka_free_est": 6.72,
+      "pka_bound_est": 5.72,
+      "est_contribution": -0.542,
+      "note": ""
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 26,
+      "resname": "GLN",
+      "burial_free": 0.356,
+      "burial_bound": 0.467,
+      "d_burial": 0.111,
+      "acids_near_free": 2,
+      "bases_near_target": 1,
+      "pka_free_est": 7.08,
+      "pka_bound_est": 6.39,
+      "est_contribution": -0.446,
+      "note": ""
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 11,
+      "resname": "ARG",
+      "burial_free": 0.394,
+      "burial_bound": 0.689,
+      "d_burial": 0.294,
+      "acids_near_free": 3,
+      "bases_near_target": 0,
+      "pka_free_est": 7.49,
+      "pka_bound_est": 6.73,
+      "est_contribution": -0.439,
+      "note": ""
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 47,
+      "resname": "GLU",
+      "burial_free": 0.561,
+      "burial_bound": 0.956,
+      "d_burial": 0.394,
+      "acids_near_free": 1,
+      "bases_near_target": 0,
+      "pka_free_est": 6.44,
+      "pka_bound_est": 5.41,
+      "est_contribution": -0.433,
+      "note": ""
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 14,
+      "resname": "ALA",
+      "burial_free": 0.772,
+      "burial_bound": 1.0,
+      "d_burial": 0.228,
+      "acids_near_free": 3,
+      "bases_near_target": 0,
+      "pka_free_est": 7.15,
+      "pka_bound_est": 6.56,
+      "est_contribution": -0.381,
+      "note": ""
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 29,
+      "resname": "SER",
+      "burial_free": 0.306,
+      "burial_bound": 0.372,
+      "d_burial": 0.067,
+      "acids_near_free": 1,
+      "bases_near_target": 1,
+      "pka_free_est": 6.67,
+      "pka_bound_est": 6.1,
+      "est_contribution": -0.349,
+      "note": ""
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 32,
+      "resname": "SER",
+      "burial_free": 0.5,
+      "burial_bound": 0.561,
+      "d_burial": 0.061,
+      "acids_near_free": 3,
+      "bases_near_target": 1,
+      "pka_free_est": 7.39,
+      "pka_bound_est": 6.84,
+      "est_contribution": -0.323,
+      "note": ""
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 30,
+      "resname": "ALA",
+      "burial_free": 0.522,
+      "burial_bound": 0.561,
+      "d_burial": 0.039,
+      "acids_near_free": 3,
+      "bases_near_target": 1,
+      "pka_free_est": 7.37,
+      "pka_bound_est": 6.87,
+      "est_contribution": -0.289,
+      "note": ""
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 34,
+      "resname": "GLU",
+      "burial_free": 0.306,
+      "burial_bound": 0.361,
+      "d_burial": 0.056,
+      "acids_near_free": 3,
+      "bases_near_target": 1,
+      "pka_free_est": 7.57,
+      "pka_bound_est": 7.03,
+      "est_contribution": -0.275,
+      "note": ""
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 48,
+      "resname": "ARG",
+      "burial_free": 0.389,
+      "burial_bound": 0.572,
+      "d_burial": 0.183,
+      "acids_near_free": 3,
+      "bases_near_target": 0,
+      "pka_free_est": 7.5,
+      "pka_bound_est": 7.02,
+      "est_contribution": -0.25,
+      "note": ""
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 45,
+      "resname": "GLU",
+      "burial_free": 0.533,
+      "burial_bound": 0.617,
+      "d_burial": 0.083,
+      "acids_near_free": 2,
+      "bases_near_target": 0,
+      "pka_free_est": 6.91,
+      "pka_bound_est": 6.7,
+      "est_contribution": -0.143,
+      "note": ""
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 23,
+      "resname": "ALA",
+      "burial_free": 0.65,
+      "burial_bound": 0.722,
+      "d_burial": 0.072,
+      "acids_near_free": 2,
+      "bases_near_target": 0,
+      "pka_free_est": 6.81,
+      "pka_bound_est": 6.62,
+      "est_contribution": -0.125,
+      "note": ""
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 43,
+      "resname": "ALA",
+      "burial_free": 0.844,
+      "burial_bound": 1.0,
+      "d_burial": 0.156,
+      "acids_near_free": 5,
+      "bases_near_target": 0,
+      "pka_free_est": 7.98,
+      "pka_bound_est": 7.58,
+      "est_contribution": -0.114,
+      "note": ""
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 41,
+      "resname": "LYS",
+      "burial_free": 0.439,
+      "burial_bound": 0.572,
+      "d_burial": 0.133,
+      "acids_near_free": 4,
+      "bases_near_target": 0,
+      "pka_free_est": 7.9,
+      "pka_bound_est": 7.55,
+      "est_contribution": -0.105,
+      "note": ""
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 19,
+      "resname": "GLU",
+      "burial_free": 0.467,
+      "burial_bound": 0.528,
+      "d_burial": 0.061,
+      "acids_near_free": 1,
+      "bases_near_target": 0,
+      "pka_free_est": 6.53,
+      "pka_bound_est": 6.37,
+      "est_contribution": -0.101,
+      "note": ""
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 8,
+      "resname": "GLU",
+      "burial_free": 0.439,
+      "burial_bound": 0.511,
+      "d_burial": 0.072,
+      "acids_near_free": 3,
+      "bases_near_target": 0,
+      "pka_free_est": 7.45,
+      "pka_bound_est": 7.26,
+      "est_contribution": -0.091,
+      "note": ""
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 27,
+      "resname": "ASP",
+      "burial_free": 0.35,
+      "burial_bound": 0.4,
+      "d_burial": 0.05,
+      "acids_near_free": 0,
+      "bases_near_target": 0,
+      "pka_free_est": 6.18,
+      "pka_bound_est": 6.05,
+      "est_contribution": -0.067,
+      "note": ""
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 4,
+      "resname": "GLU",
+      "burial_free": 0.35,
+      "burial_bound": 0.378,
+      "d_burial": 0.028,
+      "acids_near_free": 3,
+      "bases_near_target": 0,
+      "pka_free_est": 7.53,
+      "pka_bound_est": 7.46,
+      "est_contribution": -0.03,
+      "note": ""
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 10,
+      "resname": "THR",
+      "burial_free": 0.906,
+      "burial_bound": 1.0,
+      "d_burial": 0.094,
+      "acids_near_free": 6,
+      "bases_near_target": 0,
+      "pka_free_est": 8.38,
+      "pka_bound_est": 8.13,
+      "est_contribution": -0.029,
+      "note": ""
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 12,
+      "resname": "GLU",
+      "burial_free": 0.517,
+      "burial_bound": 0.533,
+      "d_burial": 0.017,
+      "acids_near_free": 2,
+      "bases_near_target": 0,
+      "pka_free_est": 6.93,
+      "pka_bound_est": 6.89,
+      "est_contribution": -0.028,
+      "note": ""
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 52,
+      "resname": "GLU",
+      "burial_free": 0.483,
+      "burial_bound": 0.5,
+      "d_burial": 0.017,
+      "acids_near_free": 3,
+      "bases_near_target": 0,
+      "pka_free_est": 7.41,
+      "pka_bound_est": 7.37,
+      "est_contribution": -0.02,
+      "note": ""
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 35,
+      "resname": "GLU",
+      "burial_free": 0.478,
+      "burial_bound": 0.489,
+      "d_burial": 0.011,
+      "acids_near_free": 3,
+      "bases_near_target": 0,
+      "pka_free_est": 7.42,
+      "pka_bound_est": 7.39,
+      "est_contribution": -0.013,
+      "note": ""
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 49,
+      "resname": "LYS",
+      "burial_free": 0.589,
+      "burial_bound": 0.606,
+      "d_burial": 0.017,
+      "acids_near_free": 4,
+      "bases_near_target": 0,
+      "pka_free_est": 7.76,
+      "pka_bound_est": 7.72,
+      "est_contribution": -0.013,
+      "note": ""
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 50,
+      "resname": "ALA",
+      "burial_free": 0.828,
+      "burial_bound": 0.878,
+      "d_burial": 0.05,
+      "acids_near_free": 6,
+      "bases_near_target": 0,
+      "pka_free_est": 8.45,
+      "pka_bound_est": 8.32,
+      "est_contribution": -0.012,
+      "note": ""
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 38,
+      "resname": "GLU",
+      "burial_free": 0.472,
+      "burial_bound": 0.478,
+      "d_burial": 0.006,
+      "acids_near_free": 3,
+      "bases_near_target": 0,
+      "pka_free_est": 7.42,
+      "pka_bound_est": 7.41,
+      "est_contribution": -0.007,
+      "note": ""
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 55,
+      "resname": "LYS",
+      "burial_free": 0.406,
+      "burial_bound": 0.411,
+      "d_burial": 0.006,
+      "acids_near_free": 4,
+      "bases_near_target": 0,
+      "pka_free_est": 7.93,
+      "pka_bound_est": 7.92,
+      "est_contribution": -0.003,
+      "note": ""
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 33,
+      "resname": "ILE",
+      "burial_free": 0.428,
+      "burial_bound": 0.783,
+      "d_burial": 0.356,
+      "acids_near_free": 3,
+      "bases_near_target": 2,
+      "pka_free_est": 7.46,
+      "pka_bound_est": 5.74,
+      "est_contribution": -0.963,
+      "note": "anchor - mutating costs binding"
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 44,
+      "resname": "MET",
+      "burial_free": 0.533,
+      "burial_bound": 1.0,
+      "d_burial": 0.467,
+      "acids_near_free": 4,
+      "bases_near_target": 1,
+      "pka_free_est": 7.81,
+      "pka_bound_est": 6.2,
+      "est_contribution": -0.879,
+      "note": "anchor - mutating costs binding"
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 25,
+      "resname": "TRP",
+      "burial_free": 0.272,
+      "burial_bound": 0.883,
+      "d_burial": 0.611,
+      "acids_near_free": 1,
+      "bases_near_target": 3,
+      "pka_free_est": 6.7,
+      "pka_bound_est": 3.91,
+      "est_contribution": -0.698,
+      "note": "anchor - mutating costs binding"
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 40,
+      "resname": "MET",
+      "burial_free": 0.622,
+      "burial_bound": 1.0,
+      "d_burial": 0.378,
+      "acids_near_free": 3,
+      "bases_near_target": 0,
+      "pka_free_est": 7.28,
+      "pka_bound_est": 6.3,
+      "est_contribution": -0.615,
+      "note": "anchor - mutating costs binding"
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 28,
+      "resname": "PRO",
+      "burial_free": 0.372,
+      "burial_bound": 0.639,
+      "d_burial": 0.267,
+      "acids_near_free": 1,
+      "bases_near_target": 2,
+      "pka_free_est": 6.61,
+      "pka_bound_est": 5.12,
+      "est_contribution": -0.59,
+      "note": "skip (backbone/cys role)"
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 18,
+      "resname": "LEU",
+      "burial_free": 0.472,
+      "burial_bound": 1.0,
+      "d_burial": 0.528,
+      "acids_near_free": 1,
+      "bases_near_target": 0,
+      "pka_free_est": 6.52,
+      "pka_bound_est": 5.15,
+      "est_contribution": -0.526,
+      "note": "anchor - mutating costs binding"
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 15,
+      "resname": "MET",
+      "burial_free": 0.422,
+      "burial_bound": 0.733,
+      "d_burial": 0.311,
+      "acids_near_free": 2,
+      "bases_near_target": 0,
+      "pka_free_est": 7.02,
+      "pka_bound_est": 6.21,
+      "est_contribution": -0.516,
+      "note": "anchor - mutating costs binding"
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 21,
+      "resname": "MET",
+      "burial_free": 0.683,
+      "burial_bound": 1.0,
+      "d_burial": 0.317,
+      "acids_near_free": 2,
+      "bases_near_target": 0,
+      "pka_free_est": 6.78,
+      "pka_bound_est": 5.95,
+      "est_contribution": -0.488,
+      "note": "anchor - mutating costs binding"
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 36,
+      "resname": "ILE",
+      "burial_free": 0.811,
+      "burial_bound": 1.0,
+      "d_burial": 0.189,
+      "acids_near_free": 5,
+      "bases_near_target": 1,
+      "pka_free_est": 8.01,
+      "pka_bound_est": 7.12,
+      "est_contribution": -0.34,
+      "note": "anchor - mutating costs binding"
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 51,
+      "resname": "LEU",
+      "burial_free": 0.55,
+      "burial_bound": 0.706,
+      "d_burial": 0.156,
+      "acids_near_free": 2,
+      "bases_near_target": 0,
+      "pka_free_est": 6.9,
+      "pka_bound_est": 6.5,
+      "est_contribution": -0.267,
+      "note": "anchor - mutating costs binding"
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 31,
+      "resname": "TRP",
+      "burial_free": 0.606,
+      "burial_bound": 0.622,
+      "d_burial": 0.017,
+      "acids_near_free": 3,
+      "bases_near_target": 1,
+      "pka_free_est": 7.3,
+      "pka_bound_est": 6.86,
+      "est_contribution": -0.264,
+      "note": "anchor - mutating costs binding"
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 17,
+      "resname": "VAL",
+      "burial_free": 0.844,
+      "burial_bound": 1.0,
+      "d_burial": 0.156,
+      "acids_near_free": 5,
+      "bases_near_target": 0,
+      "pka_free_est": 7.98,
+      "pka_bound_est": 7.58,
+      "est_contribution": -0.114,
+      "note": "anchor - mutating costs binding"
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 13,
+      "resname": "LEU",
+      "burial_free": 0.783,
+      "burial_bound": 0.839,
+      "d_burial": 0.056,
+      "acids_near_free": 3,
+      "bases_near_target": 0,
+      "pka_free_est": 7.14,
+      "pka_bound_est": 6.99,
+      "est_contribution": -0.087,
+      "note": "anchor - mutating costs binding"
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 7,
+      "resname": "ILE",
+      "burial_free": 0.672,
+      "burial_bound": 0.822,
+      "d_burial": 0.15,
+      "acids_near_free": 5,
+      "bases_near_target": 0,
+      "pka_free_est": 8.14,
+      "pka_bound_est": 7.75,
+      "est_contribution": -0.083,
+      "note": "anchor - mutating costs binding"
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 20,
+      "resname": "MET",
+      "burial_free": 0.811,
+      "burial_bound": 0.856,
+      "d_burial": 0.044,
+      "acids_near_free": 3,
+      "bases_near_target": 0,
+      "pka_free_est": 7.11,
+      "pka_bound_est": 7.0,
+      "est_contribution": -0.07,
+      "note": "anchor - mutating costs binding"
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 39,
+      "resname": "LEU",
+      "burial_free": 0.828,
+      "burial_bound": 0.85,
+      "d_burial": 0.022,
+      "acids_near_free": 5,
+      "bases_near_target": 0,
+      "pka_free_est": 8.0,
+      "pka_bound_est": 7.94,
+      "est_contribution": -0.012,
+      "note": "anchor - mutating costs binding"
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 54,
+      "resname": "LEU",
+      "burial_free": 0.567,
+      "burial_bound": 0.578,
+      "d_burial": 0.011,
+      "acids_near_free": 5,
+      "bases_near_target": 0,
+      "pka_free_est": 8.23,
+      "pka_bound_est": 8.21,
+      "est_contribution": -0.004,
+      "note": "anchor - mutating costs binding"
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 3,
+      "resname": "ILE",
+      "burial_free": 0.633,
+      "burial_bound": 0.639,
+      "d_burial": 0.006,
+      "acids_near_free": 5,
+      "bases_near_target": 0,
+      "pka_free_est": 8.17,
+      "pka_bound_est": 8.16,
+      "est_contribution": -0.002,
+      "note": "anchor - mutating costs binding"
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 6,
+      "resname": "LEU",
+      "burial_free": 0.789,
+      "burial_bound": 0.8,
+      "d_burial": 0.011,
+      "acids_near_free": 6,
+      "bases_near_target": 0,
+      "pka_free_est": 8.48,
+      "pka_bound_est": 8.45,
+      "est_contribution": -0.002,
+      "note": "anchor - mutating costs binding"
+    }
+  ],
+  "shortlist": [
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 22,
+      "resname": "ASN",
+      "burial_free": 0.444,
+      "burial_bound": 0.689,
+      "d_burial": 0.244,
+      "acids_near_free": 2,
+      "bases_near_target": 1,
+      "pka_free_est": 7.0,
+      "pka_bound_est": 5.96,
+      "est_contribution": -0.627,
+      "note": ""
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 37,
+      "resname": "GLU",
+      "burial_free": 0.428,
+      "burial_bound": 0.628,
+      "d_burial": 0.2,
+      "acids_near_free": 3,
+      "bases_near_target": 1,
+      "pka_free_est": 7.46,
+      "pka_bound_est": 6.54,
+      "est_contribution": -0.549,
+      "note": ""
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 24,
+      "resname": "SER",
+      "burial_free": 0.744,
+      "burial_bound": 0.978,
+      "d_burial": 0.233,
+      "acids_near_free": 2,
+      "bases_near_target": 1,
+      "pka_free_est": 6.72,
+      "pka_bound_est": 5.72,
+      "est_contribution": -0.542,
+      "note": ""
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 26,
+      "resname": "GLN",
+      "burial_free": 0.356,
+      "burial_bound": 0.467,
+      "d_burial": 0.111,
+      "acids_near_free": 2,
+      "bases_near_target": 1,
+      "pka_free_est": 7.08,
+      "pka_bound_est": 6.39,
+      "est_contribution": -0.446,
+      "note": ""
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 11,
+      "resname": "ARG",
+      "burial_free": 0.394,
+      "burial_bound": 0.689,
+      "d_burial": 0.294,
+      "acids_near_free": 3,
+      "bases_near_target": 0,
+      "pka_free_est": 7.49,
+      "pka_bound_est": 6.73,
+      "est_contribution": -0.439,
+      "note": ""
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 47,
+      "resname": "GLU",
+      "burial_free": 0.561,
+      "burial_bound": 0.956,
+      "d_burial": 0.394,
+      "acids_near_free": 1,
+      "bases_near_target": 0,
+      "pka_free_est": 6.44,
+      "pka_bound_est": 5.41,
+      "est_contribution": -0.433,
+      "note": ""
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 14,
+      "resname": "ALA",
+      "burial_free": 0.772,
+      "burial_bound": 1.0,
+      "d_burial": 0.228,
+      "acids_near_free": 3,
+      "bases_near_target": 0,
+      "pka_free_est": 7.15,
+      "pka_bound_est": 6.56,
+      "est_contribution": -0.381,
+      "note": ""
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+      "chain": "C",
+      "resnum": 29,
+      "resname": "SER",
+      "burial_free": 0.306,
+      "burial_bound": 0.372,
+      "d_burial": 0.067,
+      "acids_near_free": 1,
+      "bases_near_target": 1,
+      "pka_free_est": 6.67,
+      "pka_bound_est": 6.1,
+      "est_contribution": -0.349,
+      "note": ""
+    }
+  ],
+  "pairs": [
+    {
+      "sites": [
+        {
+          "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+          "chain": "C",
+          "resnum": 22,
+          "resname": "ASN",
+          "burial_free": 0.444,
+          "burial_bound": 0.689,
+          "d_burial": 0.244,
+          "acids_near_free": 2,
+          "bases_near_target": 1,
+          "pka_free_est": 7.0,
+          "pka_bound_est": 5.96,
+          "est_contribution": -0.627,
+          "note": "",
+          "wt": "N"
+        },
+        {
+          "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+          "chain": "C",
+          "resnum": 37,
+          "resname": "GLU",
+          "burial_free": 0.428,
+          "burial_bound": 0.628,
+          "d_burial": 0.2,
+          "acids_near_free": 3,
+          "bases_near_target": 1,
+          "pka_free_est": 7.46,
+          "pka_bound_est": 6.54,
+          "est_contribution": -0.549,
+          "note": "",
+          "wt": "E"
+        }
+      ],
+      "estimated_site_sum": -1.176
+    },
+    {
+      "sites": [
+        {
+          "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+          "chain": "C",
+          "resnum": 22,
+          "resname": "ASN",
+          "burial_free": 0.444,
+          "burial_bound": 0.689,
+          "d_burial": 0.244,
+          "acids_near_free": 2,
+          "bases_near_target": 1,
+          "pka_free_est": 7.0,
+          "pka_bound_est": 5.96,
+          "est_contribution": -0.627,
+          "note": "",
+          "wt": "N"
+        },
+        {
+          "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+          "chain": "C",
+          "resnum": 24,
+          "resname": "SER",
+          "burial_free": 0.744,
+          "burial_bound": 0.978,
+          "d_burial": 0.233,
+          "acids_near_free": 2,
+          "bases_near_target": 1,
+          "pka_free_est": 6.72,
+          "pka_bound_est": 5.72,
+          "est_contribution": -0.542,
+          "note": "",
+          "wt": "S"
+        }
+      ],
+      "estimated_site_sum": -1.169
+    },
+    {
+      "sites": [
+        {
+          "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+          "chain": "C",
+          "resnum": 37,
+          "resname": "GLU",
+          "burial_free": 0.428,
+          "burial_bound": 0.628,
+          "d_burial": 0.2,
+          "acids_near_free": 3,
+          "bases_near_target": 1,
+          "pka_free_est": 7.46,
+          "pka_bound_est": 6.54,
+          "est_contribution": -0.549,
+          "note": "",
+          "wt": "E"
+        },
+        {
+          "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+          "chain": "C",
+          "resnum": 24,
+          "resname": "SER",
+          "burial_free": 0.744,
+          "burial_bound": 0.978,
+          "d_burial": 0.233,
+          "acids_near_free": 2,
+          "bases_near_target": 1,
+          "pka_free_est": 6.72,
+          "pka_bound_est": 5.72,
+          "est_contribution": -0.542,
+          "note": "",
+          "wt": "S"
+        }
+      ],
+      "estimated_site_sum": -1.091
+    }
+  ],
+  "backbone": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d",
+  "historical_L": -0.027,
+  "ranked_design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_seq0",
+  "status": "completed",
+  "seed": 20261021,
+  "max_ddg": 3.0,
+  "variants": [
+    {
+      "pair": 1,
+      "sites": [
+        {
+          "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+          "chain": "C",
+          "resnum": 22,
+          "resname": "ASN",
+          "burial_free": 0.444,
+          "burial_bound": 0.689,
+          "d_burial": 0.244,
+          "acids_near_free": 2,
+          "bases_near_target": 1,
+          "pka_free_est": 7.0,
+          "pka_bound_est": 5.96,
+          "est_contribution": -0.627,
+          "note": "",
+          "wt": "N"
+        },
+        {
+          "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+          "chain": "C",
+          "resnum": 37,
+          "resname": "GLU",
+          "burial_free": 0.428,
+          "burial_bound": 0.628,
+          "d_burial": 0.2,
+          "acids_near_free": 3,
+          "bases_near_target": 1,
+          "pka_free_est": 7.46,
+          "pka_bound_est": 6.54,
+          "est_contribution": -0.549,
+          "note": "",
+          "wt": "E"
+        }
+      ],
+      "mut": "HH",
+      "kind": "switch",
+      "reference": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1_CN22__CE37_reference.pdb",
+      "base_dG": -49.62425276868534,
+      "kept": true,
+      "pdb": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1_CN22__CE37_HH_switch.pdb",
+      "dG": -49.98321682298075,
+      "dSASA": 2458.221078163876,
+      "ddG": -0.3589640542954129,
+      "reference_binding_ok": true,
+      "status": "kept",
+      "sha256": "bd0c25c9f9f7afd6f32bd5b4c1a27f0cc448fb4b3ba2bb29a1e8124996d082ba",
+      "linkage": {
+        "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1_CN22__CE37_HH_switch.pdb",
+        "L": -0.099,
+        "n_groups": 52,
+        "n_binder_his": 2,
+        "n_target_his": 3,
+        "switch_ok": false,
+        "rows": [
+          {
+            "chain": "A",
+            "resnum": 699,
+            "resname": "HIS",
+            "pka_free": 5.86,
+            "pka_bound": 4.32,
+            "dpka": -1.54,
+            "contribution": -0.216
+          },
+          {
+            "chain": "C",
+            "resnum": 22,
+            "resname": "HIS",
+            "pka_free": 6.28,
+            "pka_bound": 5.92,
+            "dpka": -0.36,
+            "contribution": -0.183
+          },
+          {
+            "chain": "C",
+            "resnum": 37,
+            "resname": "HIS",
+            "pka_free": 6.24,
+            "pka_bound": 5.91,
+            "dpka": -0.33,
+            "contribution": -0.164
+          },
+          {
+            "chain": "A",
+            "resnum": 684,
+            "resname": "HIS",
+            "pka_free": 6.42,
+            "pka_bound": 6.33,
+            "dpka": -0.09,
+            "contribution": -0.056
+          },
+          {
+            "chain": "A",
+            "resnum": 532,
+            "resname": "N+",
+            "pka_free": 7.9,
+            "pka_bound": 7.7,
+            "dpka": -0.2,
+            "contribution": -0.054
+          },
+          {
+            "chain": "A",
+            "resnum": 707,
+            "resname": "HIS",
+            "pka_free": 5.54,
+            "pka_bound": 5.49,
+            "dpka": -0.05,
+            "contribution": -0.012
+          },
+          {
+            "chain": "A",
+            "resnum": 728,
+            "resname": "GLU",
+            "pka_free": 4.59,
+            "pka_bound": 4.38,
+            "dpka": -0.21,
+            "contribution": -0.006
+          },
+          {
+            "chain": "A",
+            "resnum": 533,
+            "resname": "GLU",
+            "pka_free": 4.58,
+            "pka_bound": 4.54,
+            "dpka": -0.04,
+            "contribution": -0.001
+          },
+          {
+            "chain": "C",
+            "resnum": 58,
+            "resname": "GLU",
+            "pka_free": 4.58,
+            "pka_bound": 4.56,
+            "dpka": -0.02,
+            "contribution": -0.001
+          },
+          {
+            "chain": "A",
+            "resnum": 743,
+            "resname": "C-",
+            "pka_free": 3.38,
+            "pka_bound": 2.66,
+            "dpka": -0.72,
+            "contribution": -0.001
+          },
+          {
+            "chain": "A",
+            "resnum": 534,
+            "resname": "LYS",
+            "pka_free": 10.09,
+            "pka_bound": 9.83,
+            "dpka": -0.26,
+            "contribution": -0.001
+          },
+          {
+            "chain": "A",
+            "resnum": 538,
+            "resname": "ASP",
+            "pka_free": 4.02,
+            "pka_bound": 4.02,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 27,
+            "resname": "ASP",
+            "pka_free": 2.55,
+            "pka_bound": 2.53,
+            "dpka": -0.02,
+            "contribution": -0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 694,
+            "resname": "GLU",
+            "pka_free": 4.65,
+            "pka_bound": 4.65,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 2,
+            "resname": "GLU",
+            "pka_free": 4.73,
+            "pka_bound": 4.73,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 4,
+            "resname": "GLU",
+            "pka_free": 3.42,
+            "pka_bound": 3.43,
+            "dpka": 0.01,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 5,
+            "resname": "GLU",
+            "pka_free": 3.54,
+            "pka_bound": 3.54,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 12,
+            "resname": "GLU",
+            "pka_free": 4.26,
+            "pka_bound": 4.27,
+            "dpka": 0.01,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 34,
+            "resname": "GLU",
+            "pka_free": 4.63,
+            "pka_bound": 4.64,
+            "dpka": 0.01,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 35,
+            "resname": "GLU",
+            "pka_free": 3.97,
+            "pka_bound": 3.97,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 38,
+            "resname": "GLU",
+            "pka_free": 3.94,
+            "pka_bound": 3.93,
+            "dpka": -0.01,
+            "contribution": -0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 45,
+            "resname": "GLU",
+            "pka_free": 4.14,
+            "pka_bound": 4.13,
+            "dpka": -0.01,
+            "contribution": -0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 52,
+            "resname": "GLU",
+            "pka_free": 3.6,
+            "pka_bound": 3.63,
+            "dpka": 0.03,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 57,
+            "resname": "GLU",
+            "pka_free": 4.79,
+            "pka_bound": 4.79,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "B",
+            "resnum": 693,
+            "resname": "C-",
+            "pka_free": 3.28,
+            "pka_bound": 3.28,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 58,
+            "resname": "C-",
+            "pka_free": 3.35,
+            "pka_bound": 3.35,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 683,
+            "resname": "TYR",
+            "pka_free": 10.04,
+            "pka_bound": 10.07,
+            "dpka": 0.03,
+            "contribution": 0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 689,
+            "resname": "TYR",
+            "pka_free": 10.51,
+            "pka_bound": 10.52,
+            "dpka": 0.01,
+            "contribution": 0.0
+          },
+          {
+            "chain": "B",
+            "resnum": 689,
+            "resname": "TYR",
+            "pka_free": 10.1,
+            "pka_bound": 10.1,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 46,
+            "resname": "TYR",
+            "pka_free": 9.74,
+            "pka_bound": 9.75,
+            "dpka": 0.01,
+            "contribution": 0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 693,
+            "resname": "LYS",
+            "pka_free": 10.42,
+            "pka_bound": 10.42,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 717,
+            "resname": "LYS",
+            "pka_free": 10.76,
+            "pka_bound": 10.69,
+            "dpka": -0.07,
+            "contribution": -0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 720,
+            "resname": "LYS",
+            "pka_free": 10.44,
+            "pka_bound": 10.25,
+            "dpka": -0.19,
+            "contribution": -0.0
+          },
+          {
+            "chain": "B",
+            "resnum": 693,
+            "resname": "LYS",
+            "pka_free": 10.46,
+            "pka_bound": 10.45,
+            "dpka": -0.01,
+            "contribution": -0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 9,
+            "resname": "LYS",
+            "pka_free": 11.59,
+            "pka_bound": 11.59,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 16,
+            "resname": "LYS",
+            "pka_free": 10.62,
+            "pka_bound": 10.61,
+            "dpka": -0.01,
+            "contribution": -0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 41,
+            "resname": "LYS",
+            "pka_free": 11.07,
+            "pka_bound": 11.03,
+            "dpka": -0.04,
+            "contribution": -0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 42,
+            "resname": "LYS",
+            "pka_free": 10.71,
+            "pka_bound": 10.7,
+            "dpka": -0.01,
+            "contribution": -0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 49,
+            "resname": "LYS",
+            "pka_free": 10.89,
+            "pka_bound": 10.88,
+            "dpka": -0.01,
+            "contribution": -0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 55,
+            "resname": "LYS",
+            "pka_free": 10.67,
+            "pka_bound": 10.48,
+            "dpka": -0.19,
+            "contribution": -0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 698,
+            "resname": "ARG",
+            "pka_free": 11.99,
+            "pka_bound": 11.97,
+            "dpka": -0.02,
+            "contribution": -0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 719,
+            "resname": "ARG",
+            "pka_free": 12.38,
+            "pka_bound": 12.12,
+            "dpka": -0.26,
+            "contribution": -0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 732,
+            "resname": "ARG",
+            "pka_free": 12.4,
+            "pka_bound": 12.42,
+            "dpka": 0.02,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 11,
+            "resname": "ARG",
+            "pka_free": 12.64,
+            "pka_bound": 13.3,
+            "dpka": 0.66,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 48,
+            "resname": "ARG",
+            "pka_free": 13.17,
+            "pka_bound": 13.06,
+            "dpka": -0.11,
+            "contribution": -0.0
+          },
+          {
+            "chain": "B",
+            "resnum": 686,
+            "resname": "N+",
+            "pka_free": 7.89,
+            "pka_bound": 7.89,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 1,
+            "resname": "N+",
+            "pka_free": 9.05,
+            "pka_bound": 9.05,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 714,
+            "resname": "GLU",
+            "pka_free": 4.32,
+            "pka_bound": 4.35,
+            "dpka": 0.03,
+            "contribution": 0.001
+          },
+          {
+            "chain": "C",
+            "resnum": 56,
+            "resname": "GLU",
+            "pka_free": 4.87,
+            "pka_bound": 4.88,
+            "dpka": 0.01,
+            "contribution": 0.001
+          },
+          {
+            "chain": "C",
+            "resnum": 19,
+            "resname": "GLU",
+            "pka_free": 4.64,
+            "pka_bound": 4.68,
+            "dpka": 0.04,
+            "contribution": 0.002
+          },
+          {
+            "chain": "C",
+            "resnum": 8,
+            "resname": "GLU",
+            "pka_free": 4.56,
+            "pka_bound": 4.63,
+            "dpka": 0.07,
+            "contribution": 0.003
+          },
+          {
+            "chain": "C",
+            "resnum": 47,
+            "resname": "GLU",
+            "pka_free": 4.8,
+            "pka_bound": 6.57,
+            "dpka": 1.77,
+            "contribution": 0.588
+          }
+        ]
+      },
+      "delta_L_vs_reference": -0.374
+    },
+    {
+      "pair": 1,
+      "sites": [
+        {
+          "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+          "chain": "C",
+          "resnum": 22,
+          "resname": "ASN",
+          "burial_free": 0.444,
+          "burial_bound": 0.689,
+          "d_burial": 0.244,
+          "acids_near_free": 2,
+          "bases_near_target": 1,
+          "pka_free_est": 7.0,
+          "pka_bound_est": 5.96,
+          "est_contribution": -0.627,
+          "note": "",
+          "wt": "N"
+        },
+        {
+          "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+          "chain": "C",
+          "resnum": 37,
+          "resname": "GLU",
+          "burial_free": 0.428,
+          "burial_bound": 0.628,
+          "d_burial": 0.2,
+          "acids_near_free": 3,
+          "bases_near_target": 1,
+          "pka_free_est": 7.46,
+          "pka_bound_est": 6.54,
+          "est_contribution": -0.549,
+          "note": "",
+          "wt": "E"
+        }
+      ],
+      "mut": "QQ",
+      "kind": "control",
+      "reference": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1_CN22__CE37_reference.pdb",
+      "base_dG": -49.62425276868534,
+      "kept": true,
+      "pdb": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1_CN22__CE37_QQ_control.pdb",
+      "dG": -47.560586502747455,
+      "dSASA": 2419.3772552850373,
+      "ddG": 2.063666265937883,
+      "reference_binding_ok": true,
+      "status": "kept",
+      "sha256": "01af2406f79ed8e64382247bf7e2b466b2a7c9b7b42cdcfbfaddbfe1beedcd48",
+      "linkage": {
+        "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1_CN22__CE37_QQ_control.pdb",
+        "L": 0.27,
+        "n_groups": 50,
+        "n_binder_his": 0,
+        "n_target_his": 3,
+        "switch_ok": false,
+        "rows": [
+          {
+            "chain": "A",
+            "resnum": 699,
+            "resname": "HIS",
+            "pka_free": 5.86,
+            "pka_bound": 4.32,
+            "dpka": -1.54,
+            "contribution": -0.216
+          },
+          {
+            "chain": "A",
+            "resnum": 684,
+            "resname": "HIS",
+            "pka_free": 6.42,
+            "pka_bound": 6.33,
+            "dpka": -0.09,
+            "contribution": -0.056
+          },
+          {
+            "chain": "A",
+            "resnum": 532,
+            "resname": "N+",
+            "pka_free": 7.9,
+            "pka_bound": 7.77,
+            "dpka": -0.13,
+            "contribution": -0.033
+          },
+          {
+            "chain": "A",
+            "resnum": 707,
+            "resname": "HIS",
+            "pka_free": 5.54,
+            "pka_bound": 5.49,
+            "dpka": -0.05,
+            "contribution": -0.012
+          },
+          {
+            "chain": "A",
+            "resnum": 728,
+            "resname": "GLU",
+            "pka_free": 4.59,
+            "pka_bound": 4.38,
+            "dpka": -0.21,
+            "contribution": -0.006
+          },
+          {
+            "chain": "A",
+            "resnum": 533,
+            "resname": "GLU",
+            "pka_free": 4.58,
+            "pka_bound": 4.54,
+            "dpka": -0.04,
+            "contribution": -0.001
+          },
+          {
+            "chain": "C",
+            "resnum": 58,
+            "resname": "GLU",
+            "pka_free": 4.58,
+            "pka_bound": 4.56,
+            "dpka": -0.02,
+            "contribution": -0.001
+          },
+          {
+            "chain": "A",
+            "resnum": 743,
+            "resname": "C-",
+            "pka_free": 3.38,
+            "pka_bound": 2.66,
+            "dpka": -0.72,
+            "contribution": -0.001
+          },
+          {
+            "chain": "A",
+            "resnum": 534,
+            "resname": "LYS",
+            "pka_free": 10.09,
+            "pka_bound": 9.83,
+            "dpka": -0.26,
+            "contribution": -0.001
+          },
+          {
+            "chain": "A",
+            "resnum": 538,
+            "resname": "ASP",
+            "pka_free": 4.02,
+            "pka_bound": 4.02,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 27,
+            "resname": "ASP",
+            "pka_free": 2.55,
+            "pka_bound": 2.53,
+            "dpka": -0.02,
+            "contribution": -0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 694,
+            "resname": "GLU",
+            "pka_free": 4.65,
+            "pka_bound": 4.65,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 2,
+            "resname": "GLU",
+            "pka_free": 4.73,
+            "pka_bound": 4.73,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 4,
+            "resname": "GLU",
+            "pka_free": 3.42,
+            "pka_bound": 3.43,
+            "dpka": 0.01,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 5,
+            "resname": "GLU",
+            "pka_free": 3.54,
+            "pka_bound": 3.54,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 12,
+            "resname": "GLU",
+            "pka_free": 4.25,
+            "pka_bound": 4.27,
+            "dpka": 0.02,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 35,
+            "resname": "GLU",
+            "pka_free": 3.97,
+            "pka_bound": 3.97,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 38,
+            "resname": "GLU",
+            "pka_free": 3.53,
+            "pka_bound": 3.52,
+            "dpka": -0.01,
+            "contribution": -0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 45,
+            "resname": "GLU",
+            "pka_free": 4.16,
+            "pka_bound": 4.15,
+            "dpka": -0.01,
+            "contribution": -0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 52,
+            "resname": "GLU",
+            "pka_free": 3.6,
+            "pka_bound": 3.63,
+            "dpka": 0.03,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 57,
+            "resname": "GLU",
+            "pka_free": 4.79,
+            "pka_bound": 4.79,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "B",
+            "resnum": 693,
+            "resname": "C-",
+            "pka_free": 3.28,
+            "pka_bound": 3.28,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 58,
+            "resname": "C-",
+            "pka_free": 3.35,
+            "pka_bound": 3.35,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 683,
+            "resname": "TYR",
+            "pka_free": 10.04,
+            "pka_bound": 10.07,
+            "dpka": 0.03,
+            "contribution": 0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 689,
+            "resname": "TYR",
+            "pka_free": 10.51,
+            "pka_bound": 10.52,
+            "dpka": 0.01,
+            "contribution": 0.0
+          },
+          {
+            "chain": "B",
+            "resnum": 689,
+            "resname": "TYR",
+            "pka_free": 10.1,
+            "pka_bound": 10.1,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 46,
+            "resname": "TYR",
+            "pka_free": 9.74,
+            "pka_bound": 9.75,
+            "dpka": 0.01,
+            "contribution": 0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 693,
+            "resname": "LYS",
+            "pka_free": 10.42,
+            "pka_bound": 10.42,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 717,
+            "resname": "LYS",
+            "pka_free": 10.76,
+            "pka_bound": 10.68,
+            "dpka": -0.08,
+            "contribution": -0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 720,
+            "resname": "LYS",
+            "pka_free": 10.44,
+            "pka_bound": 10.25,
+            "dpka": -0.19,
+            "contribution": -0.0
+          },
+          {
+            "chain": "B",
+            "resnum": 693,
+            "resname": "LYS",
+            "pka_free": 10.46,
+            "pka_bound": 10.45,
+            "dpka": -0.01,
+            "contribution": -0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 9,
+            "resname": "LYS",
+            "pka_free": 11.59,
+            "pka_bound": 11.59,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 16,
+            "resname": "LYS",
+            "pka_free": 10.71,
+            "pka_bound": 10.7,
+            "dpka": -0.01,
+            "contribution": -0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 41,
+            "resname": "LYS",
+            "pka_free": 11.45,
+            "pka_bound": 11.42,
+            "dpka": -0.03,
+            "contribution": -0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 42,
+            "resname": "LYS",
+            "pka_free": 10.6,
+            "pka_bound": 10.59,
+            "dpka": -0.01,
+            "contribution": -0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 49,
+            "resname": "LYS",
+            "pka_free": 10.9,
+            "pka_bound": 10.88,
+            "dpka": -0.02,
+            "contribution": -0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 55,
+            "resname": "LYS",
+            "pka_free": 10.67,
+            "pka_bound": 10.48,
+            "dpka": -0.19,
+            "contribution": -0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 698,
+            "resname": "ARG",
+            "pka_free": 11.99,
+            "pka_bound": 11.97,
+            "dpka": -0.02,
+            "contribution": -0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 719,
+            "resname": "ARG",
+            "pka_free": 12.38,
+            "pka_bound": 12.13,
+            "dpka": -0.25,
+            "contribution": -0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 732,
+            "resname": "ARG",
+            "pka_free": 12.4,
+            "pka_bound": 12.42,
+            "dpka": 0.02,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 11,
+            "resname": "ARG",
+            "pka_free": 12.64,
+            "pka_bound": 13.3,
+            "dpka": 0.66,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 48,
+            "resname": "ARG",
+            "pka_free": 13.17,
+            "pka_bound": 13.06,
+            "dpka": -0.11,
+            "contribution": -0.0
+          },
+          {
+            "chain": "B",
+            "resnum": 686,
+            "resname": "N+",
+            "pka_free": 7.89,
+            "pka_bound": 7.89,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 1,
+            "resname": "N+",
+            "pka_free": 9.05,
+            "pka_bound": 9.05,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 714,
+            "resname": "GLU",
+            "pka_free": 4.32,
+            "pka_bound": 4.35,
+            "dpka": 0.03,
+            "contribution": 0.001
+          },
+          {
+            "chain": "C",
+            "resnum": 56,
+            "resname": "GLU",
+            "pka_free": 4.87,
+            "pka_bound": 4.88,
+            "dpka": 0.01,
+            "contribution": 0.001
+          },
+          {
+            "chain": "C",
+            "resnum": 19,
+            "resname": "GLU",
+            "pka_free": 4.66,
+            "pka_bound": 4.7,
+            "dpka": 0.04,
+            "contribution": 0.002
+          },
+          {
+            "chain": "C",
+            "resnum": 34,
+            "resname": "GLU",
+            "pka_free": 4.64,
+            "pka_bound": 4.69,
+            "dpka": 0.05,
+            "contribution": 0.002
+          },
+          {
+            "chain": "C",
+            "resnum": 8,
+            "resname": "GLU",
+            "pka_free": 4.56,
+            "pka_bound": 4.63,
+            "dpka": 0.07,
+            "contribution": 0.003
+          },
+          {
+            "chain": "C",
+            "resnum": 47,
+            "resname": "GLU",
+            "pka_free": 4.8,
+            "pka_bound": 6.57,
+            "dpka": 1.77,
+            "contribution": 0.588
+          }
+        ]
+      },
+      "delta_L_vs_reference": -0.005
+    },
+    {
+      "pair": 2,
+      "sites": [
+        {
+          "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+          "chain": "C",
+          "resnum": 22,
+          "resname": "ASN",
+          "burial_free": 0.444,
+          "burial_bound": 0.689,
+          "d_burial": 0.244,
+          "acids_near_free": 2,
+          "bases_near_target": 1,
+          "pka_free_est": 7.0,
+          "pka_bound_est": 5.96,
+          "est_contribution": -0.627,
+          "note": "",
+          "wt": "N"
+        },
+        {
+          "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+          "chain": "C",
+          "resnum": 24,
+          "resname": "SER",
+          "burial_free": 0.744,
+          "burial_bound": 0.978,
+          "d_burial": 0.233,
+          "acids_near_free": 2,
+          "bases_near_target": 1,
+          "pka_free_est": 6.72,
+          "pka_bound_est": 5.72,
+          "est_contribution": -0.542,
+          "note": "",
+          "wt": "S"
+        }
+      ],
+      "mut": "HH",
+      "kind": "switch",
+      "reference": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1_CN22__CS24_reference.pdb",
+      "base_dG": -50.47664603386325,
+      "kept": false,
+      "pdb": null,
+      "dG": -41.073715330932174,
+      "dSASA": 2406.130260561532,
+      "ddG": 9.402930702931073,
+      "reference_binding_ok": true,
+      "status": "discarded",
+      "rejection_reason": "ddG exceeds limit"
+    },
+    {
+      "pair": 2,
+      "sites": [
+        {
+          "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+          "chain": "C",
+          "resnum": 22,
+          "resname": "ASN",
+          "burial_free": 0.444,
+          "burial_bound": 0.689,
+          "d_burial": 0.244,
+          "acids_near_free": 2,
+          "bases_near_target": 1,
+          "pka_free_est": 7.0,
+          "pka_bound_est": 5.96,
+          "est_contribution": -0.627,
+          "note": "",
+          "wt": "N"
+        },
+        {
+          "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+          "chain": "C",
+          "resnum": 24,
+          "resname": "SER",
+          "burial_free": 0.744,
+          "burial_bound": 0.978,
+          "d_burial": 0.233,
+          "acids_near_free": 2,
+          "bases_near_target": 1,
+          "pka_free_est": 6.72,
+          "pka_bound_est": 5.72,
+          "est_contribution": -0.542,
+          "note": "",
+          "wt": "S"
+        }
+      ],
+      "mut": "QQ",
+      "kind": "control",
+      "reference": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1_CN22__CS24_reference.pdb",
+      "base_dG": -50.47664603386325,
+      "kept": false,
+      "pdb": null,
+      "dG": -45.31265911003864,
+      "dSASA": 2411.7942185641423,
+      "ddG": 5.163986923824609,
+      "reference_binding_ok": true,
+      "status": "discarded",
+      "rejection_reason": "ddG exceeds limit"
+    },
+    {
+      "pair": 3,
+      "sites": [
+        {
+          "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+          "chain": "C",
+          "resnum": 37,
+          "resname": "GLU",
+          "burial_free": 0.428,
+          "burial_bound": 0.628,
+          "d_burial": 0.2,
+          "acids_near_free": 3,
+          "bases_near_target": 1,
+          "pka_free_est": 7.46,
+          "pka_bound_est": 6.54,
+          "est_contribution": -0.549,
+          "note": "",
+          "wt": "E"
+        },
+        {
+          "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+          "chain": "C",
+          "resnum": 24,
+          "resname": "SER",
+          "burial_free": 0.744,
+          "burial_bound": 0.978,
+          "d_burial": 0.233,
+          "acids_near_free": 2,
+          "bases_near_target": 1,
+          "pka_free_est": 6.72,
+          "pka_bound_est": 5.72,
+          "est_contribution": -0.542,
+          "note": "",
+          "wt": "S"
+        }
+      ],
+      "mut": "HH",
+      "kind": "switch",
+      "reference": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1_CE37__CS24_reference.pdb",
+      "base_dG": -48.25826135777233,
+      "kept": false,
+      "pdb": null,
+      "dG": -40.01821780429235,
+      "dSASA": 2403.8994505248033,
+      "ddG": 8.240043553479978,
+      "reference_binding_ok": true,
+      "status": "discarded",
+      "rejection_reason": "ddG exceeds limit"
+    },
+    {
+      "pair": 3,
+      "sites": [
+        {
+          "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+          "chain": "C",
+          "resnum": 37,
+          "resname": "GLU",
+          "burial_free": 0.428,
+          "burial_bound": 0.628,
+          "d_burial": 0.2,
+          "acids_near_free": 3,
+          "bases_near_target": 1,
+          "pka_free_est": 7.46,
+          "pka_bound_est": 6.54,
+          "est_contribution": -0.549,
+          "note": "",
+          "wt": "E"
+        },
+        {
+          "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.pdb",
+          "chain": "C",
+          "resnum": 24,
+          "resname": "SER",
+          "burial_free": 0.744,
+          "burial_bound": 0.978,
+          "d_burial": 0.233,
+          "acids_near_free": 2,
+          "bases_near_target": 1,
+          "pka_free_est": 6.72,
+          "pka_bound_est": 5.72,
+          "est_contribution": -0.542,
+          "note": "",
+          "wt": "S"
+        }
+      ],
+      "mut": "QQ",
+      "kind": "control",
+      "reference": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1_CE37__CS24_reference.pdb",
+      "base_dG": -48.25826135777233,
+      "kept": false,
+      "pdb": null,
+      "dG": -44.8136408764088,
+      "dSASA": 2402.0388985141017,
+      "ddG": 3.444620481363529,
+      "reference_binding_ok": true,
+      "status": "discarded",
+      "rejection_reason": "ddG exceeds limit"
+    }
+  ],
+  "pair_references": [
+    {
+      "pair": 1,
+      "dG": -49.62425276868534,
+      "dSASA": 2410.8541144158485,
+      "pdb": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1_CN22__CE37_reference.pdb",
+      "sha256": "0f6d310b82a19286774000de556fe01b37164caa6e11ed1e125137d034e75181",
+      "linkage": {
+        "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1_CN22__CE37_reference.pdb",
+        "L": 0.275,
+        "n_groups": 51,
+        "n_binder_his": 0,
+        "n_target_his": 3,
+        "switch_ok": false,
+        "rows": [
+          {
+            "chain": "A",
+            "resnum": 699,
+            "resname": "HIS",
+            "pka_free": 5.86,
+            "pka_bound": 4.32,
+            "dpka": -1.54,
+            "contribution": -0.216
+          },
+          {
+            "chain": "A",
+            "resnum": 684,
+            "resname": "HIS",
+            "pka_free": 6.42,
+            "pka_bound": 6.33,
+            "dpka": -0.09,
+            "contribution": -0.056
+          },
+          {
+            "chain": "A",
+            "resnum": 532,
+            "resname": "N+",
+            "pka_free": 7.9,
+            "pka_bound": 7.78,
+            "dpka": -0.12,
+            "contribution": -0.03
+          },
+          {
+            "chain": "A",
+            "resnum": 707,
+            "resname": "HIS",
+            "pka_free": 5.54,
+            "pka_bound": 5.49,
+            "dpka": -0.05,
+            "contribution": -0.012
+          },
+          {
+            "chain": "A",
+            "resnum": 728,
+            "resname": "GLU",
+            "pka_free": 4.59,
+            "pka_bound": 4.38,
+            "dpka": -0.21,
+            "contribution": -0.006
+          },
+          {
+            "chain": "A",
+            "resnum": 533,
+            "resname": "GLU",
+            "pka_free": 4.58,
+            "pka_bound": 4.54,
+            "dpka": -0.04,
+            "contribution": -0.001
+          },
+          {
+            "chain": "C",
+            "resnum": 37,
+            "resname": "GLU",
+            "pka_free": 4.58,
+            "pka_bound": 4.56,
+            "dpka": -0.02,
+            "contribution": -0.001
+          },
+          {
+            "chain": "C",
+            "resnum": 58,
+            "resname": "GLU",
+            "pka_free": 4.58,
+            "pka_bound": 4.56,
+            "dpka": -0.02,
+            "contribution": -0.001
+          },
+          {
+            "chain": "A",
+            "resnum": 743,
+            "resname": "C-",
+            "pka_free": 3.38,
+            "pka_bound": 2.66,
+            "dpka": -0.72,
+            "contribution": -0.001
+          },
+          {
+            "chain": "A",
+            "resnum": 534,
+            "resname": "LYS",
+            "pka_free": 10.09,
+            "pka_bound": 9.83,
+            "dpka": -0.26,
+            "contribution": -0.001
+          },
+          {
+            "chain": "A",
+            "resnum": 538,
+            "resname": "ASP",
+            "pka_free": 4.02,
+            "pka_bound": 4.02,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 27,
+            "resname": "ASP",
+            "pka_free": 2.55,
+            "pka_bound": 2.53,
+            "dpka": -0.02,
+            "contribution": -0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 694,
+            "resname": "GLU",
+            "pka_free": 4.65,
+            "pka_bound": 4.65,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 2,
+            "resname": "GLU",
+            "pka_free": 4.73,
+            "pka_bound": 4.73,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 4,
+            "resname": "GLU",
+            "pka_free": 3.42,
+            "pka_bound": 3.43,
+            "dpka": 0.01,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 5,
+            "resname": "GLU",
+            "pka_free": 3.54,
+            "pka_bound": 3.54,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 12,
+            "resname": "GLU",
+            "pka_free": 4.25,
+            "pka_bound": 4.27,
+            "dpka": 0.02,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 35,
+            "resname": "GLU",
+            "pka_free": 3.97,
+            "pka_bound": 3.97,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 38,
+            "resname": "GLU",
+            "pka_free": 3.53,
+            "pka_bound": 3.52,
+            "dpka": -0.01,
+            "contribution": -0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 45,
+            "resname": "GLU",
+            "pka_free": 4.16,
+            "pka_bound": 4.15,
+            "dpka": -0.01,
+            "contribution": -0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 52,
+            "resname": "GLU",
+            "pka_free": 3.6,
+            "pka_bound": 3.63,
+            "dpka": 0.03,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 57,
+            "resname": "GLU",
+            "pka_free": 4.79,
+            "pka_bound": 4.79,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "B",
+            "resnum": 693,
+            "resname": "C-",
+            "pka_free": 3.28,
+            "pka_bound": 3.28,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 58,
+            "resname": "C-",
+            "pka_free": 3.35,
+            "pka_bound": 3.35,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 683,
+            "resname": "TYR",
+            "pka_free": 10.04,
+            "pka_bound": 10.07,
+            "dpka": 0.03,
+            "contribution": 0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 689,
+            "resname": "TYR",
+            "pka_free": 10.51,
+            "pka_bound": 10.52,
+            "dpka": 0.01,
+            "contribution": 0.0
+          },
+          {
+            "chain": "B",
+            "resnum": 689,
+            "resname": "TYR",
+            "pka_free": 10.1,
+            "pka_bound": 10.1,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 46,
+            "resname": "TYR",
+            "pka_free": 9.74,
+            "pka_bound": 9.75,
+            "dpka": 0.01,
+            "contribution": 0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 693,
+            "resname": "LYS",
+            "pka_free": 10.42,
+            "pka_bound": 10.42,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 717,
+            "resname": "LYS",
+            "pka_free": 10.76,
+            "pka_bound": 10.83,
+            "dpka": 0.07,
+            "contribution": 0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 720,
+            "resname": "LYS",
+            "pka_free": 10.44,
+            "pka_bound": 10.25,
+            "dpka": -0.19,
+            "contribution": -0.0
+          },
+          {
+            "chain": "B",
+            "resnum": 693,
+            "resname": "LYS",
+            "pka_free": 10.46,
+            "pka_bound": 10.45,
+            "dpka": -0.01,
+            "contribution": -0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 9,
+            "resname": "LYS",
+            "pka_free": 11.59,
+            "pka_bound": 11.59,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 16,
+            "resname": "LYS",
+            "pka_free": 10.71,
+            "pka_bound": 10.7,
+            "dpka": -0.01,
+            "contribution": -0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 41,
+            "resname": "LYS",
+            "pka_free": 11.65,
+            "pka_bound": 11.62,
+            "dpka": -0.03,
+            "contribution": -0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 42,
+            "resname": "LYS",
+            "pka_free": 10.6,
+            "pka_bound": 10.59,
+            "dpka": -0.01,
+            "contribution": -0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 49,
+            "resname": "LYS",
+            "pka_free": 10.9,
+            "pka_bound": 10.88,
+            "dpka": -0.02,
+            "contribution": -0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 55,
+            "resname": "LYS",
+            "pka_free": 10.67,
+            "pka_bound": 10.48,
+            "dpka": -0.19,
+            "contribution": -0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 698,
+            "resname": "ARG",
+            "pka_free": 11.99,
+            "pka_bound": 11.97,
+            "dpka": -0.02,
+            "contribution": -0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 719,
+            "resname": "ARG",
+            "pka_free": 12.38,
+            "pka_bound": 12.13,
+            "dpka": -0.25,
+            "contribution": -0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 732,
+            "resname": "ARG",
+            "pka_free": 12.4,
+            "pka_bound": 12.42,
+            "dpka": 0.02,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 11,
+            "resname": "ARG",
+            "pka_free": 12.64,
+            "pka_bound": 13.3,
+            "dpka": 0.66,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 48,
+            "resname": "ARG",
+            "pka_free": 13.17,
+            "pka_bound": 13.06,
+            "dpka": -0.11,
+            "contribution": -0.0
+          },
+          {
+            "chain": "B",
+            "resnum": 686,
+            "resname": "N+",
+            "pka_free": 7.89,
+            "pka_bound": 7.89,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 1,
+            "resname": "N+",
+            "pka_free": 9.05,
+            "pka_bound": 9.05,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 714,
+            "resname": "GLU",
+            "pka_free": 4.32,
+            "pka_bound": 4.35,
+            "dpka": 0.03,
+            "contribution": 0.001
+          },
+          {
+            "chain": "C",
+            "resnum": 19,
+            "resname": "GLU",
+            "pka_free": 4.66,
+            "pka_bound": 4.69,
+            "dpka": 0.03,
+            "contribution": 0.001
+          },
+          {
+            "chain": "C",
+            "resnum": 56,
+            "resname": "GLU",
+            "pka_free": 4.87,
+            "pka_bound": 4.88,
+            "dpka": 0.01,
+            "contribution": 0.001
+          },
+          {
+            "chain": "C",
+            "resnum": 8,
+            "resname": "GLU",
+            "pka_free": 4.56,
+            "pka_bound": 4.63,
+            "dpka": 0.07,
+            "contribution": 0.003
+          },
+          {
+            "chain": "C",
+            "resnum": 34,
+            "resname": "GLU",
+            "pka_free": 4.64,
+            "pka_bound": 4.75,
+            "dpka": 0.11,
+            "contribution": 0.005
+          },
+          {
+            "chain": "C",
+            "resnum": 47,
+            "resname": "GLU",
+            "pka_free": 4.8,
+            "pka_bound": 6.57,
+            "dpka": 1.77,
+            "contribution": 0.588
+          }
+        ]
+      }
+    },
+    {
+      "pair": 2,
+      "dG": -50.47664603386325,
+      "dSASA": 2410.8541144158485,
+      "pdb": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1_CN22__CS24_reference.pdb",
+      "sha256": "db675f605bb2baaaeb297aad4ac9345620b1b0a51c809927cca0cddb77d2be9f",
+      "linkage": {
+        "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1_CN22__CS24_reference.pdb",
+        "L": 0.275,
+        "n_groups": 51,
+        "n_binder_his": 0,
+        "n_target_his": 3,
+        "switch_ok": false,
+        "rows": [
+          {
+            "chain": "A",
+            "resnum": 699,
+            "resname": "HIS",
+            "pka_free": 5.86,
+            "pka_bound": 4.32,
+            "dpka": -1.54,
+            "contribution": -0.216
+          },
+          {
+            "chain": "A",
+            "resnum": 684,
+            "resname": "HIS",
+            "pka_free": 6.42,
+            "pka_bound": 6.33,
+            "dpka": -0.09,
+            "contribution": -0.056
+          },
+          {
+            "chain": "A",
+            "resnum": 532,
+            "resname": "N+",
+            "pka_free": 7.9,
+            "pka_bound": 7.78,
+            "dpka": -0.12,
+            "contribution": -0.03
+          },
+          {
+            "chain": "A",
+            "resnum": 707,
+            "resname": "HIS",
+            "pka_free": 5.54,
+            "pka_bound": 5.49,
+            "dpka": -0.05,
+            "contribution": -0.012
+          },
+          {
+            "chain": "A",
+            "resnum": 728,
+            "resname": "GLU",
+            "pka_free": 4.59,
+            "pka_bound": 4.38,
+            "dpka": -0.21,
+            "contribution": -0.006
+          },
+          {
+            "chain": "A",
+            "resnum": 533,
+            "resname": "GLU",
+            "pka_free": 4.58,
+            "pka_bound": 4.54,
+            "dpka": -0.04,
+            "contribution": -0.001
+          },
+          {
+            "chain": "C",
+            "resnum": 37,
+            "resname": "GLU",
+            "pka_free": 4.58,
+            "pka_bound": 4.56,
+            "dpka": -0.02,
+            "contribution": -0.001
+          },
+          {
+            "chain": "C",
+            "resnum": 58,
+            "resname": "GLU",
+            "pka_free": 4.58,
+            "pka_bound": 4.56,
+            "dpka": -0.02,
+            "contribution": -0.001
+          },
+          {
+            "chain": "A",
+            "resnum": 743,
+            "resname": "C-",
+            "pka_free": 3.38,
+            "pka_bound": 2.66,
+            "dpka": -0.72,
+            "contribution": -0.001
+          },
+          {
+            "chain": "A",
+            "resnum": 534,
+            "resname": "LYS",
+            "pka_free": 10.09,
+            "pka_bound": 9.83,
+            "dpka": -0.26,
+            "contribution": -0.001
+          },
+          {
+            "chain": "A",
+            "resnum": 538,
+            "resname": "ASP",
+            "pka_free": 4.02,
+            "pka_bound": 4.02,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 27,
+            "resname": "ASP",
+            "pka_free": 2.55,
+            "pka_bound": 2.53,
+            "dpka": -0.02,
+            "contribution": -0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 694,
+            "resname": "GLU",
+            "pka_free": 4.65,
+            "pka_bound": 4.65,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 2,
+            "resname": "GLU",
+            "pka_free": 4.73,
+            "pka_bound": 4.73,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 4,
+            "resname": "GLU",
+            "pka_free": 3.42,
+            "pka_bound": 3.43,
+            "dpka": 0.01,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 5,
+            "resname": "GLU",
+            "pka_free": 3.54,
+            "pka_bound": 3.54,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 12,
+            "resname": "GLU",
+            "pka_free": 4.25,
+            "pka_bound": 4.27,
+            "dpka": 0.02,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 35,
+            "resname": "GLU",
+            "pka_free": 3.98,
+            "pka_bound": 3.99,
+            "dpka": 0.01,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 38,
+            "resname": "GLU",
+            "pka_free": 3.53,
+            "pka_bound": 3.52,
+            "dpka": -0.01,
+            "contribution": -0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 45,
+            "resname": "GLU",
+            "pka_free": 4.16,
+            "pka_bound": 4.15,
+            "dpka": -0.01,
+            "contribution": -0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 52,
+            "resname": "GLU",
+            "pka_free": 3.6,
+            "pka_bound": 3.63,
+            "dpka": 0.03,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 57,
+            "resname": "GLU",
+            "pka_free": 4.79,
+            "pka_bound": 4.79,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "B",
+            "resnum": 693,
+            "resname": "C-",
+            "pka_free": 3.28,
+            "pka_bound": 3.28,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 58,
+            "resname": "C-",
+            "pka_free": 3.35,
+            "pka_bound": 3.35,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 683,
+            "resname": "TYR",
+            "pka_free": 10.04,
+            "pka_bound": 10.07,
+            "dpka": 0.03,
+            "contribution": 0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 689,
+            "resname": "TYR",
+            "pka_free": 10.51,
+            "pka_bound": 10.52,
+            "dpka": 0.01,
+            "contribution": 0.0
+          },
+          {
+            "chain": "B",
+            "resnum": 689,
+            "resname": "TYR",
+            "pka_free": 10.1,
+            "pka_bound": 10.1,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 46,
+            "resname": "TYR",
+            "pka_free": 9.74,
+            "pka_bound": 9.75,
+            "dpka": 0.01,
+            "contribution": 0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 693,
+            "resname": "LYS",
+            "pka_free": 10.42,
+            "pka_bound": 10.42,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 717,
+            "resname": "LYS",
+            "pka_free": 10.76,
+            "pka_bound": 10.83,
+            "dpka": 0.07,
+            "contribution": 0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 720,
+            "resname": "LYS",
+            "pka_free": 10.44,
+            "pka_bound": 10.25,
+            "dpka": -0.19,
+            "contribution": -0.0
+          },
+          {
+            "chain": "B",
+            "resnum": 693,
+            "resname": "LYS",
+            "pka_free": 10.46,
+            "pka_bound": 10.45,
+            "dpka": -0.01,
+            "contribution": -0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 9,
+            "resname": "LYS",
+            "pka_free": 11.59,
+            "pka_bound": 11.59,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 16,
+            "resname": "LYS",
+            "pka_free": 10.71,
+            "pka_bound": 10.7,
+            "dpka": -0.01,
+            "contribution": -0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 41,
+            "resname": "LYS",
+            "pka_free": 11.65,
+            "pka_bound": 11.62,
+            "dpka": -0.03,
+            "contribution": -0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 42,
+            "resname": "LYS",
+            "pka_free": 10.6,
+            "pka_bound": 10.59,
+            "dpka": -0.01,
+            "contribution": -0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 49,
+            "resname": "LYS",
+            "pka_free": 10.9,
+            "pka_bound": 10.88,
+            "dpka": -0.02,
+            "contribution": -0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 55,
+            "resname": "LYS",
+            "pka_free": 10.67,
+            "pka_bound": 10.48,
+            "dpka": -0.19,
+            "contribution": -0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 698,
+            "resname": "ARG",
+            "pka_free": 11.99,
+            "pka_bound": 11.97,
+            "dpka": -0.02,
+            "contribution": -0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 719,
+            "resname": "ARG",
+            "pka_free": 12.38,
+            "pka_bound": 12.13,
+            "dpka": -0.25,
+            "contribution": -0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 732,
+            "resname": "ARG",
+            "pka_free": 12.4,
+            "pka_bound": 12.42,
+            "dpka": 0.02,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 11,
+            "resname": "ARG",
+            "pka_free": 12.64,
+            "pka_bound": 13.3,
+            "dpka": 0.66,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 48,
+            "resname": "ARG",
+            "pka_free": 13.17,
+            "pka_bound": 13.06,
+            "dpka": -0.11,
+            "contribution": -0.0
+          },
+          {
+            "chain": "B",
+            "resnum": 686,
+            "resname": "N+",
+            "pka_free": 7.89,
+            "pka_bound": 7.89,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 1,
+            "resname": "N+",
+            "pka_free": 9.05,
+            "pka_bound": 9.05,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 714,
+            "resname": "GLU",
+            "pka_free": 4.32,
+            "pka_bound": 4.35,
+            "dpka": 0.03,
+            "contribution": 0.001
+          },
+          {
+            "chain": "C",
+            "resnum": 56,
+            "resname": "GLU",
+            "pka_free": 4.87,
+            "pka_bound": 4.88,
+            "dpka": 0.01,
+            "contribution": 0.001
+          },
+          {
+            "chain": "C",
+            "resnum": 19,
+            "resname": "GLU",
+            "pka_free": 4.65,
+            "pka_bound": 4.69,
+            "dpka": 0.04,
+            "contribution": 0.002
+          },
+          {
+            "chain": "C",
+            "resnum": 8,
+            "resname": "GLU",
+            "pka_free": 4.56,
+            "pka_bound": 4.63,
+            "dpka": 0.07,
+            "contribution": 0.003
+          },
+          {
+            "chain": "C",
+            "resnum": 34,
+            "resname": "GLU",
+            "pka_free": 4.64,
+            "pka_bound": 4.75,
+            "dpka": 0.11,
+            "contribution": 0.005
+          },
+          {
+            "chain": "C",
+            "resnum": 47,
+            "resname": "GLU",
+            "pka_free": 4.8,
+            "pka_bound": 6.57,
+            "dpka": 1.77,
+            "contribution": 0.588
+          }
+        ]
+      }
+    },
+    {
+      "pair": 3,
+      "dG": -48.25826135777233,
+      "dSASA": 2410.8541144158485,
+      "pdb": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1_CE37__CS24_reference.pdb",
+      "sha256": "b42a6aba11a1f76b8752cb55e534c86cd3d40cf775f9f766105e83097f045902",
+      "linkage": {
+        "design": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1_CE37__CS24_reference.pdb",
+        "L": 0.275,
+        "n_groups": 51,
+        "n_binder_his": 0,
+        "n_target_his": 3,
+        "switch_ok": false,
+        "rows": [
+          {
+            "chain": "A",
+            "resnum": 699,
+            "resname": "HIS",
+            "pka_free": 5.86,
+            "pka_bound": 4.32,
+            "dpka": -1.54,
+            "contribution": -0.216
+          },
+          {
+            "chain": "A",
+            "resnum": 684,
+            "resname": "HIS",
+            "pka_free": 6.42,
+            "pka_bound": 6.33,
+            "dpka": -0.09,
+            "contribution": -0.056
+          },
+          {
+            "chain": "A",
+            "resnum": 532,
+            "resname": "N+",
+            "pka_free": 7.9,
+            "pka_bound": 7.78,
+            "dpka": -0.12,
+            "contribution": -0.03
+          },
+          {
+            "chain": "A",
+            "resnum": 707,
+            "resname": "HIS",
+            "pka_free": 5.54,
+            "pka_bound": 5.49,
+            "dpka": -0.05,
+            "contribution": -0.012
+          },
+          {
+            "chain": "A",
+            "resnum": 728,
+            "resname": "GLU",
+            "pka_free": 4.59,
+            "pka_bound": 4.38,
+            "dpka": -0.21,
+            "contribution": -0.006
+          },
+          {
+            "chain": "A",
+            "resnum": 533,
+            "resname": "GLU",
+            "pka_free": 4.58,
+            "pka_bound": 4.54,
+            "dpka": -0.04,
+            "contribution": -0.001
+          },
+          {
+            "chain": "C",
+            "resnum": 37,
+            "resname": "GLU",
+            "pka_free": 4.58,
+            "pka_bound": 4.56,
+            "dpka": -0.02,
+            "contribution": -0.001
+          },
+          {
+            "chain": "C",
+            "resnum": 58,
+            "resname": "GLU",
+            "pka_free": 4.58,
+            "pka_bound": 4.56,
+            "dpka": -0.02,
+            "contribution": -0.001
+          },
+          {
+            "chain": "A",
+            "resnum": 743,
+            "resname": "C-",
+            "pka_free": 3.38,
+            "pka_bound": 2.66,
+            "dpka": -0.72,
+            "contribution": -0.001
+          },
+          {
+            "chain": "A",
+            "resnum": 534,
+            "resname": "LYS",
+            "pka_free": 10.09,
+            "pka_bound": 9.83,
+            "dpka": -0.26,
+            "contribution": -0.001
+          },
+          {
+            "chain": "A",
+            "resnum": 538,
+            "resname": "ASP",
+            "pka_free": 4.02,
+            "pka_bound": 4.02,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 27,
+            "resname": "ASP",
+            "pka_free": 2.55,
+            "pka_bound": 2.53,
+            "dpka": -0.02,
+            "contribution": -0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 694,
+            "resname": "GLU",
+            "pka_free": 4.65,
+            "pka_bound": 4.65,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 2,
+            "resname": "GLU",
+            "pka_free": 4.73,
+            "pka_bound": 4.73,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 4,
+            "resname": "GLU",
+            "pka_free": 3.42,
+            "pka_bound": 3.43,
+            "dpka": 0.01,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 5,
+            "resname": "GLU",
+            "pka_free": 3.54,
+            "pka_bound": 3.54,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 12,
+            "resname": "GLU",
+            "pka_free": 4.25,
+            "pka_bound": 4.27,
+            "dpka": 0.02,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 35,
+            "resname": "GLU",
+            "pka_free": 3.98,
+            "pka_bound": 3.99,
+            "dpka": 0.01,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 38,
+            "resname": "GLU",
+            "pka_free": 3.53,
+            "pka_bound": 3.52,
+            "dpka": -0.01,
+            "contribution": -0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 45,
+            "resname": "GLU",
+            "pka_free": 4.16,
+            "pka_bound": 4.15,
+            "dpka": -0.01,
+            "contribution": -0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 52,
+            "resname": "GLU",
+            "pka_free": 3.6,
+            "pka_bound": 3.63,
+            "dpka": 0.03,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 57,
+            "resname": "GLU",
+            "pka_free": 4.79,
+            "pka_bound": 4.79,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "B",
+            "resnum": 693,
+            "resname": "C-",
+            "pka_free": 3.28,
+            "pka_bound": 3.28,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 58,
+            "resname": "C-",
+            "pka_free": 3.35,
+            "pka_bound": 3.35,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 683,
+            "resname": "TYR",
+            "pka_free": 10.04,
+            "pka_bound": 10.07,
+            "dpka": 0.03,
+            "contribution": 0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 689,
+            "resname": "TYR",
+            "pka_free": 10.51,
+            "pka_bound": 10.52,
+            "dpka": 0.01,
+            "contribution": 0.0
+          },
+          {
+            "chain": "B",
+            "resnum": 689,
+            "resname": "TYR",
+            "pka_free": 10.1,
+            "pka_bound": 10.1,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 46,
+            "resname": "TYR",
+            "pka_free": 9.74,
+            "pka_bound": 9.75,
+            "dpka": 0.01,
+            "contribution": 0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 693,
+            "resname": "LYS",
+            "pka_free": 10.42,
+            "pka_bound": 10.42,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 717,
+            "resname": "LYS",
+            "pka_free": 10.76,
+            "pka_bound": 10.83,
+            "dpka": 0.07,
+            "contribution": 0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 720,
+            "resname": "LYS",
+            "pka_free": 10.44,
+            "pka_bound": 10.25,
+            "dpka": -0.19,
+            "contribution": -0.0
+          },
+          {
+            "chain": "B",
+            "resnum": 693,
+            "resname": "LYS",
+            "pka_free": 10.46,
+            "pka_bound": 10.45,
+            "dpka": -0.01,
+            "contribution": -0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 9,
+            "resname": "LYS",
+            "pka_free": 11.59,
+            "pka_bound": 11.59,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 16,
+            "resname": "LYS",
+            "pka_free": 10.71,
+            "pka_bound": 10.7,
+            "dpka": -0.01,
+            "contribution": -0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 41,
+            "resname": "LYS",
+            "pka_free": 11.65,
+            "pka_bound": 11.62,
+            "dpka": -0.03,
+            "contribution": -0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 42,
+            "resname": "LYS",
+            "pka_free": 10.6,
+            "pka_bound": 10.59,
+            "dpka": -0.01,
+            "contribution": -0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 49,
+            "resname": "LYS",
+            "pka_free": 10.9,
+            "pka_bound": 10.88,
+            "dpka": -0.02,
+            "contribution": -0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 55,
+            "resname": "LYS",
+            "pka_free": 10.67,
+            "pka_bound": 10.48,
+            "dpka": -0.19,
+            "contribution": -0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 698,
+            "resname": "ARG",
+            "pka_free": 11.99,
+            "pka_bound": 11.97,
+            "dpka": -0.02,
+            "contribution": -0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 719,
+            "resname": "ARG",
+            "pka_free": 12.38,
+            "pka_bound": 12.13,
+            "dpka": -0.25,
+            "contribution": -0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 732,
+            "resname": "ARG",
+            "pka_free": 12.4,
+            "pka_bound": 12.42,
+            "dpka": 0.02,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 11,
+            "resname": "ARG",
+            "pka_free": 12.64,
+            "pka_bound": 13.3,
+            "dpka": 0.66,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 48,
+            "resname": "ARG",
+            "pka_free": 13.17,
+            "pka_bound": 13.06,
+            "dpka": -0.11,
+            "contribution": -0.0
+          },
+          {
+            "chain": "B",
+            "resnum": 686,
+            "resname": "N+",
+            "pka_free": 7.89,
+            "pka_bound": 7.89,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "C",
+            "resnum": 1,
+            "resname": "N+",
+            "pka_free": 9.05,
+            "pka_bound": 9.05,
+            "dpka": 0.0,
+            "contribution": 0.0
+          },
+          {
+            "chain": "A",
+            "resnum": 714,
+            "resname": "GLU",
+            "pka_free": 4.32,
+            "pka_bound": 4.35,
+            "dpka": 0.03,
+            "contribution": 0.001
+          },
+          {
+            "chain": "C",
+            "resnum": 56,
+            "resname": "GLU",
+            "pka_free": 4.87,
+            "pka_bound": 4.88,
+            "dpka": 0.01,
+            "contribution": 0.001
+          },
+          {
+            "chain": "C",
+            "resnum": 19,
+            "resname": "GLU",
+            "pka_free": 4.65,
+            "pka_bound": 4.69,
+            "dpka": 0.04,
+            "contribution": 0.002
+          },
+          {
+            "chain": "C",
+            "resnum": 8,
+            "resname": "GLU",
+            "pka_free": 4.56,
+            "pka_bound": 4.63,
+            "dpka": 0.07,
+            "contribution": 0.003
+          },
+          {
+            "chain": "C",
+            "resnum": 34,
+            "resname": "GLU",
+            "pka_free": 4.64,
+            "pka_bound": 4.75,
+            "dpka": 0.11,
+            "contribution": 0.005
+          },
+          {
+            "chain": "C",
+            "resnum": 47,
+            "resname": "GLU",
+            "pka_free": 4.8,
+            "pka_bound": 6.57,
+            "dpka": 1.77,
+            "contribution": 0.588
+          }
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "pyrosetta_version": "\u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\u2502                                  PyRosetta-4                                  \u2502\n\u2502               Created in JHU by Sergey Lyskov and PyRosetta Team              \u2502\n\u2502               (C) Copyright Rosetta Commons Member Institutions               \u2502\n\u2502                                                                               \u2502\n\u2502 NOTE: USE OF PyRosetta FOR COMMERCIAL PURPOSES REQUIRES PURCHASE OF A LICENSE \u2502\n\u2502          See LICENSE.PyRosetta.md or email license@uw.edu for details         \u2502\n\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\nPyRosetta-4 2026 [Rosetta PyRosetta4.Release.python311.m1 2026.29+releasequarterly.80a0635615099e1b918474a63acba7b1de6fd107 2026-07-14T16:24:11] retrieved from: http://www.pyrosetta.org",
+  "scorefunction": "ref2015",
+  "preparation": {
+    "protocol": "whole-complex repack and side-chain minimisation; backbone fixed",
+    "total_energy": -142.80408062547514,
+    "pdb": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1_prepared.pdb",
+    "sha256": "e338548313a21ecc88fc3c71095b4e03bfff0aecebf08313ed93e58377a15e2c",
+    "ranking_geometry": "original source PDB, before side-chain preparation"
+  },
+  "linkage_completed": true
+}

@@ -1,0 +1,14 @@
+test_free_state_failure_cannot_produce_partial_score (test_install_switch.LinkageFailureTests) ... incomplete free-state PROPKA results for /var/folders/7p/z8kq6zz94wj03gxlv_ltjtch0000gn/T/tmp9n5mri9n/input.pdb
+incomplete free-state PROPKA results for /var/folders/7p/z8kq6zz94wj03gxlv_ltjtch0000gn/T/tmp9n5mri9n/input.pdb
+ok
+test_suppressed_histidine_never_becomes_a_complete_gate_score (test_install_switch.LinkageFailureTests) ... ok
+test_campaign_covers_25_ranked_backbones_best_L_first (test_install_switch.RankingTests) ... ok
+test_maps_pdb_number_instead_of_pose_index (test_install_switch.RankingTests) ... ok
+test_missing_fragment_assignment_fails (test_install_switch.RankingTests) ... ok
+test_no_pair_is_not_a_successful_mutation (test_install_switch.RankingTests) ... ok
+test_real_c4_keeps_native_histidine_and_scorer_order (test_install_switch.RankingTests) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.050s
+
+OK

@@ -1,0 +1,23 @@
+┌───────────────────────────────────────────────────────────────────────────────┐
+│                                  PyRosetta-4                                  │
+│               Created in JHU by Sergey Lyskov and PyRosetta Team              │
+│               (C) Copyright Rosetta Commons Member Institutions               │
+│                                                                               │
+│ NOTE: USE OF PyRosetta FOR COMMERCIAL PURPOSES REQUIRES PURCHASE OF A LICENSE │
+│          See LICENSE.PyRosetta.md or email license@uw.edu for details         │
+└───────────────────────────────────────────────────────────────────────────────┘
+PyRosetta-4 2026 [Rosetta PyRosetta4.Release.python311.m1 2026.29+releasequarterly.80a0635615099e1b918474a63acba7b1de6fd107 2026-07-14T16:24:11] retrieved from: http://www.pyrosetta.org
+total_res 131 chains 3
+chainbreaks [(1, 'A', 532, 'V'), (9, 'A', 683, 'Y'), (50, 'A', 728, 'E'), (66, 'B', 686, 'L'), (74, 'C', 1, 'S')]
+foldtree FOLD_TREE  EDGE 1 65 -1  EDGE 1 66 1  EDGE 66 73 -1  EDGE 1 74 2  EDGE 74 131 -1 
+source dg (804.751741384293, 2399.726546694719)
+source total 996.4917045408982
+fa_atr -746.4329617778675 1.0
+fa_rep 1874.319736902909 0.55
+fa_sol 497.3420838659651 1.0
+hbond_sc -3.254141359308698 1.0
+omega 193.9706436944492 0.4
+chainbreak 0.0 0.0
+linear_chainbreak 0.0 0.0
+cart_bonded 0.0 0.0
+heavy clashes [(1.601, 'C', 53, 'TRP', 'A', 719, 'ARG'), (1.788, 'C', 32, 'TYR', 'A', 532, 'VAL')]

@@ -1,0 +1,20 @@
+WARNING:propka.group:Missing atoms or failed protonation for TYR 683 A (BBN) -- please check the structure
+WARNING:propka.group:Group (BBN) for   134-   N   683-TYR (A) [ 126.125  125.562  140.125] N
+WARNING:propka.group:Expected 2 interaction atoms for acids, found:
+WARNING:propka.group:                 0-  H1   683-TYR (A) [ 126.295  124.581  139.955] H
+WARNING:propka.group:                 0-  H2   683-TYR (A) [ 125.158  125.775  139.925] H
+WARNING:propka.group:               134-   N   683-TYR (A) [ 126.125  125.562  140.125] N
+WARNING:propka.group:Expected 2 interaction atoms for bases, found:
+WARNING:propka.group:                 0-  H1   683-TYR (A) [ 126.295  124.581  139.955] H
+WARNING:propka.group:                 0-  H2   683-TYR (A) [ 125.158  125.775  139.925] H
+WARNING:propka.group:               134-   N   683-TYR (A) [ 126.125  125.562  140.125] N
+WARNING:propka.group:Missing atoms or failed protonation for GLU 728 A (BBN) -- please check the structure
+WARNING:propka.group:Group (BBN) for   809-   N   728-GLU (A) [ 130.750  114.500  112.750] N
+WARNING:propka.group:Expected 2 interaction atoms for acids, found:
+WARNING:propka.group:                 0-  H1   728-GLU (A) [ 130.197  115.053  113.389] H
+WARNING:propka.group:                 0-  H2   728-GLU (A) [ 130.138  113.946  112.169] H
+WARNING:propka.group:               809-   N   728-GLU (A) [ 130.750  114.500  112.750] N
+WARNING:propka.group:Expected 2 interaction atoms for bases, found:
+WARNING:propka.group:                 0-  H1   728-GLU (A) [ 130.197  115.053  113.389] H
+WARNING:propka.group:                 0-  H2   728-GLU (A) [ 130.138  113.946  112.169] H
+WARNING:propka.group:               809-   N   728-GLU (A) [ 130.750  114.500  112.750] N
