@@ -19,3 +19,42 @@ forced targeting epitope=62 lysinated=11 residues=73
 === trajectory 13 | c4_tfr1_his707_human_forced_l96_a3d42650246cbcae | accepted 0/25 | worker 6 ===
 forced targeting epitope=62 lysinated=11 residues=73
   passed screen design stage  i_pTM=0.77    pLDDT=0.88  
+  passed refine design stage  i_pTM=0.81    pLDDT=0.91  
+  passed anneal design stage  i_pTM=0.82    pLDDT=0.92  
+  rejected at harden design stage  i_pTM=0.26    pLDDT=0.65   due to [i_pTM]
+
+=== trajectory 20 | c4_tfr1_his707_human_forced_l78_27e4ffe27cf57c17 | accepted 0/25 | worker 6 ===
+forced targeting epitope=62 lysinated=11 residues=73
+  passed screen design stage  i_pTM=0.71    pLDDT=0.83  
+  passed refine design stage  i_pTM=0.79    pLDDT=0.9   
+  passed anneal design stage  i_pTM=0.79    pLDDT=0.89  
+  rejected at harden design stage  i_pTM=0.36    pLDDT=0.74   due to [i_pTM]
+
+=== trajectory 27 | c4_tfr1_his707_human_forced_l94_a010d564cb444e43 | accepted 0/25 | worker 6 ===
+forced targeting epitope=62 lysinated=11 residues=73
+  rejected at screen design stage  i_pTM=0.41    pLDDT=0.55   due to [pLDDT]
+
+=== trajectory 29 | c4_tfr1_his707_human_forced_l69_d363a15d85ba5f9c | accepted 0/25 | worker 6 ===
+forced targeting epitope=62 lysinated=11 residues=73
+  passed screen design stage  i_pTM=0.67    pLDDT=0.88  
+  passed refine design stage  i_pTM=0.67    pLDDT=0.87  
+  passed anneal design stage  i_pTM=0.71    pLDDT=0.91  
+  rejected at harden design stage  i_pTM=0.45    pLDDT=0.86   due to [i_pTM]
+
+=== trajectory 34 | c4_tfr1_his707_human_forced_l80_cbdc8d1bc4ccd6fd | accepted 0/25 | worker 6 ===
+forced targeting epitope=62 lysinated=11 residues=73
+  passed screen design stage  i_pTM=0.71    pLDDT=0.86  
+  passed refine design stage  i_pTM=0.77    pLDDT=0.89  
+  passed anneal design stage  i_pTM=0.84    pLDDT=0.92  
+  rejected at harden design stage  i_pTM=0.21    pLDDT=0.52   due to [i_pTM, pLDDT]
+
+=== trajectory 41 | c4_tfr1_his707_human_forced_l73_b1c008e32318c644 | accepted 0/25 | worker 6 ===
+forced targeting epitope=62 lysinated=11 residues=73
+  passed screen design stage  i_pTM=0.76    pLDDT=0.88  
+  passed refine design stage  i_pTM=0.31    pLDDT=0.77  
+  passed anneal design stage  i_pTM=0.8     pLDDT=0.91  
+  passed harden design stage  i_pTM=0.64    pLDDT=0.79  
+  rejected at mutate design stage  i_pTM=0.14    pLDDT=0.51   due to [i_pTM, pLDDT]
+
+=== trajectory 48 | c4_tfr1_his707_human_forced_l71_27ac9eede8f93ce2 | accepted 0/25 | worker 6 ===
+forced targeting epitope=62 lysinated=11 residues=73

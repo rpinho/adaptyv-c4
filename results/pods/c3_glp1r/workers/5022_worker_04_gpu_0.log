@@ -180,3 +180,38 @@ forced targeting epitope=85 lysinated=24 residues=111
 forced targeting epitope=85 lysinated=24 residues=111
   passed screen design stage  i_pTM=0.52    pLDDT=0.75  
   passed refine design stage  i_pTM=0.29    pLDDT=0.69  
+  rejected at anneal design stage  i_pTM=0.61    pLDDT=0.62   due to [pLDDT]
+
+=== trajectory 98 | c3_glp1r_ecd_groove_forced_l58_9d79cebbfd7a25e2 | accepted 2/20 | worker 4 ===
+forced targeting epitope=85 lysinated=24 residues=111
+  passed screen design stage  i_pTM=0.54    pLDDT=0.81  
+  passed refine design stage  i_pTM=0.77    pLDDT=0.88  
+  passed anneal design stage  i_pTM=0.75    pLDDT=0.87  
+  passed harden design stage  i_pTM=0.67    pLDDT=0.83  
+  rejected at mutate design stage  i_pTM=0.1     pLDDT=0.7    due to [i_pTM]
+
+=== trajectory 107 | c3_glp1r_ecd_groove_forced_l61_a259ea50a7d117f4 | accepted 4/20 | worker 4 ===
+forced targeting epitope=85 lysinated=24 residues=111
+  passed screen design stage  i_pTM=0.18    pLDDT=0.63  
+  passed refine design stage  i_pTM=0.31    pLDDT=0.68  
+  rejected at anneal design stage  i_pTM=0.21    pLDDT=0.7    due to [i_pTM]
+
+=== trajectory 111 | c3_glp1r_ecd_groove_forced_l53_d98460abcd72fd8b | accepted 4/20 | worker 4 ===
+forced targeting epitope=85 lysinated=24 residues=111
+  passed screen design stage  i_pTM=0.33    pLDDT=0.64  
+  passed refine design stage  i_pTM=0.73    pLDDT=0.82  
+  passed anneal design stage  i_pTM=0.62    pLDDT=0.77  
+  passed harden design stage  i_pTM=0.54    pLDDT=0.67  
+  rejected at mutate design stage  i_pTM=0.19    pLDDT=0.55   due to [i_pTM, pLDDT]
+
+=== trajectory 116 | c3_glp1r_ecd_groove_forced_l51_9ae4fa831e4a8df2 | accepted 5/20 | worker 4 ===
+forced targeting epitope=85 lysinated=24 residues=111
+  passed screen design stage  i_pTM=0.1     pLDDT=0.66  
+  passed refine design stage  i_pTM=0.32    pLDDT=0.76  
+  rejected at anneal design stage  i_pTM=0.37    pLDDT=0.78   due to [i_pTM]
+
+=== trajectory 121 | c3_glp1r_ecd_groove_forced_l50_82751b364b0ddebd | accepted 5/20 | worker 4 ===
+forced targeting epitope=85 lysinated=24 residues=111
+  passed screen design stage  i_pTM=0.71    pLDDT=0.76  
+  passed refine design stage  i_pTM=0.69    pLDDT=0.75  
+  passed anneal design stage  i_pTM=0.75    pLDDT=0.79  
