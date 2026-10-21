@@ -6,3 +6,42 @@ losses binder_contacts=1.0 binder_helicity=-0.3 binder_pae=0.4 compactness=0.5 i
 features forced targeting: everything outside the default Angstrom of the hotspots rebuilt as lysine
 filters Backbone_Clashes <= 0, Binder_RMSD <= 3.5, Hotspot_Contact_Fraction >= 0.5, Interface_Residues >= 7, Unbound_Binder_pLDDT >= 0.7, i_pAE <= 0.35, i_pTM >= 0.7, pTM >= 0.55
 results /workspace/runs/c4_E1_human | 3_Ranked/!_Ranked.csv rewritten as each design is accepted | summary.csv written when the campaign ends
+
+=== trajectory 6 | c4_tfr1_groove_human_forced_l67_874654ad31cb337c | accepted 0/25 | worker 0 ===
+forced targeting epitope=57 lysinated=15 residues=73
+  passed screen design stage  i_pTM=0.68    pLDDT=0.84  
+  passed refine design stage  i_pTM=0.74    pLDDT=0.85  
+  passed anneal design stage  i_pTM=0.76    pLDDT=0.89  
+  passed harden design stage  i_pTM=0.62    pLDDT=0.78  
+  passed mutate design stage  i_pTM=0.59    pLDDT=0.74  
+  trajectory rejected  i_pTM=0.59    pLDDT=0.74   due to [i_pTM]
+
+=== trajectory 14 | c4_tfr1_groove_human_forced_l67_a1443b04d9ac58bc | accepted 0/25 | worker 0 ===
+forced targeting epitope=57 lysinated=15 residues=73
+  passed screen design stage  i_pTM=0.69    pLDDT=0.84  
+  passed refine design stage  i_pTM=0.72    pLDDT=0.85  
+  passed anneal design stage  i_pTM=0.78    pLDDT=0.89  
+  passed harden design stage  i_pTM=0.75    pLDDT=0.85  
+  passed mutate design stage  i_pTM=0.67    pLDDT=0.76  
+  trajectory rejected  i_pTM=0.67    pLDDT=0.76   due to [i_pTM]
+
+=== trajectory 20 | c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec | accepted 0/25 | worker 0 ===
+forced targeting epitope=57 lysinated=15 residues=73
+  passed screen design stage  i_pTM=0.74    pLDDT=0.92  
+  passed refine design stage  i_pTM=0.75    pLDDT=0.91  
+  passed anneal design stage  i_pTM=0.8     pLDDT=0.93  
+  passed harden design stage  i_pTM=0.79    pLDDT=0.91  
+  passed mutate design stage  i_pTM=0.79    pLDDT=0.92  
+  binder hallucination successful
+  binder optimization, 10 MPNN redesigns
+ProteinMPNN: holding 18 of 78 residue(s) of chain binder
+   1/10  rejected  Binder_RMSD=0.41    Hotspot_Contact_Fraction=0.8     Interface_Residues=19   Off_Epitope_Contact_Fraction=0.17    Receptor_Chains_Contacted=2    Target_pLDDT=0.78    i_pAE=0.32    i_pTM=0.7     pLDDT=0.86    pTM=0.73    failed [i_pTM]
+   2/10  ACCEPTED  Binder_RMSD=0.48    Hotspot_Contact_Fraction=0.8     Interface_Residues=18   Off_Epitope_Contact_Fraction=0.17    Receptor_Chains_Contacted=2    Target_pLDDT=0.81    i_pAE=0.27    i_pTM=0.73    pLDDT=0.88    pTM=0.77  
+   3/10  ACCEPTED  Binder_RMSD=0.25    Hotspot_Contact_Fraction=0.8     Interface_Residues=20   Off_Epitope_Contact_Fraction=0.17    Receptor_Chains_Contacted=2    Target_pLDDT=0.81    i_pAE=0.26    i_pTM=0.75    pLDDT=0.92    pTM=0.79  
+   4/10  rejected  Binder_RMSD=0.67    Hotspot_Contact_Fraction=0.8     Interface_Residues=18   Off_Epitope_Contact_Fraction=0.17    Receptor_Chains_Contacted=2    Target_pLDDT=0.78    i_pAE=0.33    i_pTM=0.67    pLDDT=0.85    pTM=0.71    failed [i_pTM]
+   5/10  ACCEPTED  Binder_RMSD=0.34    Hotspot_Contact_Fraction=0.8     Interface_Residues=19   Off_Epitope_Contact_Fraction=0.17    Receptor_Chains_Contacted=2    Target_pLDDT=0.81    i_pAE=0.27    i_pTM=0.74    pLDDT=0.91    pTM=0.78  
+  3 of 10 redesigns passed, keeping the best 1 by i_pDAE: candidate 2 (0.37)
+
+=== trajectory 30 | c4_tfr1_groove_human_forced_l81_295559bffcef0a33 | accepted 1/25 | worker 0 ===
+forced targeting epitope=57 lysinated=15 residues=73
+  passed screen design stage  i_pTM=0.47    pLDDT=0.84  

@@ -1,0 +1,25 @@
+
+=== trajectory 1 | c4_tfr1_groove_human_forced_l97_c0e6ce8b12d80bd1 | accepted 0/25 | worker 2 ===
+forced targeting epitope=57 lysinated=15 residues=73
+  passed screen design stage  i_pTM=0.41    pLDDT=0.83  
+  passed refine design stage  i_pTM=0.31    pLDDT=0.75  
+  passed anneal design stage  i_pTM=0.63    pLDDT=0.86  
+  rejected at harden design stage  i_pTM=0.48    pLDDT=0.77   due to [i_pTM]
+
+=== trajectory 11 | c4_tfr1_groove_human_forced_l99_3faf1ae4303308da | accepted 0/25 | worker 2 ===
+forced targeting epitope=57 lysinated=15 residues=73
+  passed screen design stage  i_pTM=0.79    pLDDT=0.91  
+  passed refine design stage  i_pTM=0.78    pLDDT=0.92  
+  passed anneal design stage  i_pTM=0.84    pLDDT=0.94  
+  passed harden design stage  i_pTM=0.82    pLDDT=0.92  
+  passed mutate design stage  i_pTM=0.68    pLDDT=0.77  
+  trajectory rejected  i_pTM=0.68    pLDDT=0.77   due to [i_pTM]
+
+=== trajectory 23 | c4_tfr1_groove_human_forced_l98_1f216116339dbd6b | accepted 0/25 | worker 2 ===
+forced targeting epitope=57 lysinated=15 residues=73
+  passed screen design stage  i_pTM=0.43    pLDDT=0.75  
+  rejected at refine design stage  i_pTM=0.25    pLDDT=0.56   due to [pLDDT]
+
+=== trajectory 28 | c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c | accepted 0/25 | worker 2 ===
+forced targeting epitope=57 lysinated=15 residues=73
+  passed screen design stage  i_pTM=0.66    pLDDT=0.89  

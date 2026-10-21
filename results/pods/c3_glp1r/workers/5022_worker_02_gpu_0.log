@@ -207,3 +207,26 @@ forced targeting epitope=85 lysinated=24 residues=111
 forced targeting epitope=85 lysinated=24 residues=111
   passed screen design stage  i_pTM=0.16    pLDDT=0.71  
   passed refine design stage  i_pTM=0.18    pLDDT=0.67  
+  rejected at anneal design stage  i_pTM=0.16    pLDDT=0.71   due to [i_pTM]
+
+=== trajectory 175 | c3_glp1r_ecd_groove_forced_l99_c94563f74a1dcc42 | accepted 8/20 | worker 2 ===
+forced targeting epitope=85 lysinated=24 residues=111
+  rejected at screen design stage  i_pTM=0.14    pLDDT=0.49   due to [pLDDT]
+
+=== trajectory 180 | c3_glp1r_ecd_groove_forced_l99_1c4f070945aaa3d7 | accepted 8/20 | worker 2 ===
+forced targeting epitope=85 lysinated=24 residues=111
+  rejected at screen design stage  i_pTM=0.12    pLDDT=0.47   due to [pLDDT]
+
+=== trajectory 182 | c3_glp1r_ecd_groove_forced_l97_dc93d764c7e187f1 | accepted 8/20 | worker 2 ===
+forced targeting epitope=85 lysinated=24 residues=111
+  passed screen design stage  i_pTM=0.71    pLDDT=0.73  
+  passed refine design stage  i_pTM=0.72    pLDDT=0.74  
+  passed anneal design stage  i_pTM=0.78    pLDDT=0.85  
+  rejected at harden design stage  i_pTM=0.29    pLDDT=0.74   due to [i_pTM]
+
+=== trajectory 193 | c3_glp1r_ecd_groove_forced_l100_ec18396f8073fbf8 | accepted 9/20 | worker 2 ===
+forced targeting epitope=85 lysinated=24 residues=111
+  rejected at screen design stage  i_pTM=0.52    pLDDT=0.53   due to [pLDDT]
+
+=== trajectory 197 | c3_glp1r_ecd_groove_forced_l99_1d7f4dcee5b2a801 | accepted 10/20 | worker 2 ===
+forced targeting epitope=85 lysinated=24 residues=111

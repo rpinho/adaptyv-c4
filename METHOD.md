@@ -254,3 +254,52 @@ the desolvation term, not yet a measurement. It is testable the moment designs c
 run `ph_linkage.py` on groove-docked complexes and compare the per-residue contributions against
 the -0.52 and -0.39 measured on the polar patch. If the groove does not deepen them, the
 improvement claim in this section is wrong and should be struck.
+
+## The groove prediction was wrong, and the reason is the rule I failed to apply (2026-10-21)
+
+The section above predicted that burying a designed histidine against a hydrophobic groove would
+deepen its contribution beyond the -0.52 and -0.39 measured on the polar patch, and stated that if
+it did not, the claim gets struck. It did not. **Struck.**
+
+Three groove-docked designs, same backbone, same histidine position (C60):
+
+| design | binder His C60 free pKa | bound pKa | dpKa | contribution | total L |
+|---|---|---|---|---|---|
+| cand3 | 6.69 | 6.15 | -0.54 | **-0.335** | -0.643 |
+| cand2 | 5.52 | 5.00 | -0.52 | **-0.079** | -0.452 |
+| cand5 | 5.42 | 4.95 | -0.47 | **-0.061** | -0.399 |
+
+Against -0.52 and -0.39 on the polar patch, the groove made the binder histidine **worse**.
+
+**Why, and it is the method's own measured rule turned back on me.** This layer already established
+that the leverage is the **free-state** pKa, not dpKa. Desolvation does not act only on the bound
+state: a histidine positioned in or beside a hydrophobic groove is *already partly buried in the
+free monomer*, so the same apolar environment that depresses the bound pKa depresses the free pKa
+too. The free pKa lands at 5.42-6.69 instead of near 7.4, the titration therefore barely crosses the
+pH 6.0-7.4 window, and dpKa collapses to -0.47 to -0.54. The two effects cancel, and on net the
+groove loses. I predicted a one-sided benefit from a two-sided mechanism.
+
+**What did work, for a different and already-documented reason.** Total L moved from **+1.20 on the
+polar patch to -0.64 here** - a 1.84-log improvement that also **flips the sign to the required
+direction**. That gain is the **acid budget**, not desolvation: the polar patch's three glutamates
+contributed +1.91 and dominated everything, and the base-rich groove simply does not have them. So
+the epitope change was right, and right for the reason the acid-budget section gave, not the reason
+the groove section guessed.
+
+**Where His707 actually ended up.** It is contacted by none of the designs, yet contributes
+-0.103 to -0.121 in all three, because at 4.0 A from LEU709 the binder perturbs it from the rim.
+HIS699 contributes more (-0.120 to -0.225). Small, consistent, and in the right direction - but
+together the target's histidines still sit inside the -1.01 ceiling measured on the apo structure.
+
+**The gate is still missed and the route to it is now specified by data.** L = -0.64 against a
+-2.00 gate leaves about 1.4 log units. The requirement is explicit: a designed histidine must be
+**solvent-exposed in the free binder** (free pKa near 7.0-7.4) and buried **only** on binding.
+C60 fails the first half. This is exactly the quantity `switch_sites.py` was written to score - free
+-state exposure and acidic neighbours for a high free pKa, against burial and target cations for a
+low bound pKa - and `install_switch.py` has never been wired to use it, still running its own
+burial sort. That wiring is now the highest-value remaining step, and these three accepted
+backbones are the first real substrate for it.
+
+**Caveat on the arithmetic.** The target is split across chains A (532-743) and B (686-693) and this
+run scored chain A only, so chain B's eight residues are absent from the sum. They are not at the
+interface the designs use, but the figures above are chain-A-complete rather than target-complete.
