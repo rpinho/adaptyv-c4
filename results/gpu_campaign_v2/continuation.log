@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/Users/ricardo/dev/adaptyv-c4/scripts/continue_after_gpu.py", line 40, in <module>
+    main(Path(args.state_dir).resolve(),args.followup)
+  File "/Users/ricardo/dev/adaptyv-c4/scripts/continue_after_gpu.py", line 19, in main
+    status=json.loads((out/'supervisor.json').read_text())
+  File "/Applications/Xcode-26.6.0.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+  File "/Applications/Xcode-26.6.0.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+  File "/Applications/Xcode-26.6.0.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
+    return self._accessor.open(self, flags, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/ricardo/dev/adaptyv-c4/results/gpu_campaign_v2/supervisor.json'

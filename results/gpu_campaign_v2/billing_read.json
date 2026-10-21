@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"metadata\": {\n    \"query\": {\n      \"bucketSize\": \"day\",\n      \"endTime\": \"2026-10-22T00:00:00Z\",\n      \"podId\": \"2p9x2qea1ietbw\",\n      \"startTime\": \"2026-10-21T00:00:00Z\"\n    },\n    \"recordCount\": 1,\n    \"totals\": {\n      \"cpuAmount\": 0,\n      \"diskAmount\": 0.009027778753079474,\n      \"gpuAmount\": 1.7366177305812016,\n      \"totalAmount\": 1.745645509334281\n    },\n    \"uniquePodCount\": 1\n  },\n  \"records\": [\n    {\n      \"cpuAmount\": 0,\n      \"diskAmount\": 0.009027778753079474,\n      \"endTime\": \"2026-10-22T00:00:00Z\",\n      \"gpuAmount\": 1.7366177305812016,\n      \"podId\": \"2p9x2qea1ietbw\",\n      \"startTime\": \"2026-10-21T00:00:00Z\",\n      \"totalAmount\": 1.745645509334281\n    }\n  ]\n}"
+    }
+  ],
+  "isError": false
+}

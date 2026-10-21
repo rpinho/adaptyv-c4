@@ -1,5 +1,6 @@
 # Fixed-column scientific outputs intentionally retain their column padding.
 *.pdb -whitespace
 *.pka -whitespace
+*.log -whitespace
 # Python's CSV writer emits the standard CRLF record separator.
 *.csv whitespace=cr-at-eol

@@ -1,0 +1,469 @@
+{
+  "status": "pod_stopped",
+  "pid": 79427,
+  "pod": "2p9x2qea1ietbw",
+  "worker_pid": 794,
+  "started": 1792610132.8765461,
+  "checks": 74,
+  "ssh_failures": 0,
+  "mirrors": [
+    {
+      "time": 1792610135.732085,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792610172.7555919,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792610210.030782,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792610247.489472,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792610285.150604,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792610324.343352,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792610361.785176,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792610400.0067682,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792610438.346973,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792610475.594752,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792610513.544828,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792610551.0174751,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792610589.585719,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792610629.7892091,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792610667.572138,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792610706.2034712,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792610743.571275,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792610780.951807,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792610818.9954822,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792610856.25075,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792610893.456583,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792610930.501477,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792610967.715714,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792611004.78861,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792611041.860103,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792611081.3098931,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792611120.674651,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792611158.342113,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792611195.22887,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792611232.0531,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792611268.7926679,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792611305.514142,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792611342.397843,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792611379.302419,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792611416.175767,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792611453.1164732,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792611490.075722,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792611527.2375019,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792611564.028446,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792611601.0622442,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792611638.02829,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792611676.220801,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792611716.306318,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792611753.564018,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792611790.566057,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792611827.424004,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792611865.448769,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792611903.565313,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792611941.839375,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792611978.74652,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792612015.674391,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792612052.774828,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792612090.076972,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792612127.3057148,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792612164.646933,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792612201.691894,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792612238.6508968,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792612275.723131,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792612313.014996,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792612349.965622,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792612386.933394,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792612423.776055,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792612460.714755,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792612497.8683991,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792612535.316826,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792612573.276758,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792612610.631901,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792612647.918037,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792612687.482244,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792612725.362266,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792612763.742808,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792612801.825096,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792612839.0678778,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792612876.475405,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    }
+  ],
+  "errors": [],
+  "rate_source": "fresh get-pod cost",
+  "max_compute_usd": 3.58,
+  "prior_attempt_estimated_compute_usd": 0.3855,
+  "stop_verified": true,
+  "billing_start": 1792610049.967,
+  "hourly_compute_usd": 1.79,
+  "stop_deadline": 1792616294.6597373,
+  "last_check": 1792612876.471356,
+  "estimated_compute_usd": 1.4097,
+  "total_estimated_compute_usd": 1.7952,
+  "last_gpu_worker_state": "0 %, 0 MiB",
+  "stop_reason": "worker_exited",
+  "stopped_at": 1792612885.191846
+}

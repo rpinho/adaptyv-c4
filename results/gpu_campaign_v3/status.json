@@ -1,0 +1,11 @@
+{
+  "status": "restart_refused_capacity",
+  "pod": "2p9x2qea1ietbw",
+  "gpu_compute_running": false,
+  "new_attempt_compute_usd": 0,
+  "prior_total_runtime_compute_estimate_usd": 1.7952,
+  "total_compute_cap_usd": 3.58,
+  "reason": "There are not enough free GPUs on the host machine to start this pod.",
+  "next_input_prepared": true,
+  "checked": 1792616587.282416
+}
