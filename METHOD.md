@@ -303,3 +303,52 @@ backbones are the first real substrate for it.
 **Caveat on the arithmetic.** The target is split across chains A (532-743) and B (686-693) and this
 run scored chain A only, so chain B's eight residues are absent from the sum. They are not at the
 interface the designs use, but the figures above are chain-A-complete rather than target-complete.
+
+## The free-state pKa rule, now confirmed prospectively on 66 designs (2026-10-21)
+
+The campaign completed on its own at its configured 25 final designs (177 trajectories, 14%
+acceptance, against 0 of 99 on the two mis-aimed epitopes). Sixty-six passing complexes were
+scored. This is the first time the layer has had a population rather than a handful, and the
+population settles the central rule.
+
+| quantity | value |
+|---|---|
+| best L | **-1.175** |
+| median L | -0.387 |
+| designs with L < 0 (correct direction) | **62 / 66** |
+| designs clearing the -2.00 gate | 0 / 66 |
+| binder histidines scored | 68 |
+| their free pKa | 3.54 - 7.16, mean **6.17** |
+| of those, free pKa >= 7.0 | **3** |
+
+**The rule predicts which histidines matter, before looking at their contributions.** The three
+deepest single-histidine contributions in the whole set are **-0.822, -0.659 and -0.658**, and all
+three are the *same position* - C24 on the l58_9f94b53776050aad backbone - at free pKa **7.14, 7.16
+and 7.14**. They are also precisely the three histidines in the set with free pKa >= 7.0. The other
+65 histidines, averaging free pKa 6.17, produce the mediocre bulk. Sorting by free-state pKa and
+sorting by contribution give the same answer, on 68 independent cases. The rule was inferred from
+two residues on 10-20; it now holds on a population, and it is what `switch_sites.py` scores.
+
+**And the design carrying that histidine is the best design overall** (L = -1.175), which is the
+useful form of the result: the single free-state pKa of one residue, computable before any linkage
+sum, ranked the whole campaign.
+
+**Two levers, and the data separates them.** C24 goes 7.14 -> 5.67. The earlier estimate for a
+histidine making the full excursion (7.4 -> 3.5) was -1.115 each. We are getting -0.822 because the
+free pKa is 7.14 rather than 7.4 *and* because the bound state only reaches 5.67 rather than 3.5 -
+the burial is incomplete. So the gap to the gate decomposes into: raise the free pKa toward 7.4
+(position the histidine in a solvent-exposed, acid-flanked site in the free monomer) and deepen the
+bound-state burial (place it where the groove and the target's cations desolvate it). Those are the
+two terms `switch_sites.py` already scores separately, and nothing in the design loop is using
+either yet.
+
+**Honest arithmetic on the gate.** At -0.822 per well-placed histidine, the -2.00 gate needs about
+2.4 of them, or two that make a fuller excursion. Two histidines at the full 7.4 -> 3.5 excursion
+would give -2.23 and clear it. That is a design target, not an achievement: no design in this set
+has two histidines above free pKa 7.0, and whether two can be placed on one backbone without
+spoiling the interface is untested.
+
+**What this does not show.** All 66 designs come from one campaign on one epitope, and the 25 ranked
+designs derive from far fewer distinct backbones, so these are not 66 independent samples. Chain B
+(686-693) is excluded from every sum, as noted above. And no orthogonal estimator has been run:
+every figure here is PROPKA3.
