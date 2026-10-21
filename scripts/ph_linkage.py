@@ -127,7 +127,11 @@ def score_one(pdb, binder_chain, target_chain, ph_low, ph_high, min_shift, verbo
             print("%-44s L=%+.2f  groups=%d  binderHis=%d  targetHis=%d  %s"
                   % (res["design"], L, len(rows), len(binder_his), len(target_his),
                      "PASS" if res["switch_ok"] else ""))
-            for r in rows[:6]:
+            show = rows[:6] + ([None] + rows[-6:] if len(rows) > 12 else rows[6:])
+            for r in show:
+                if r is None:
+                    print("    ... the other end of the sum (these push L the WRONG way) ...")
+                    continue
                 print("    %s%-4d %-4s pKa %5.2f free -> %5.2f bound (d%+.2f)  contributes %+.3f"
                       % (r["chain"], r["resnum"], r["resname"], r["pka_free"],
                          r["pka_bound"], r["dpka"], r["contribution"]))
@@ -175,6 +179,17 @@ def main():
                 w.writerow([r["design"], r["L"], r["n_groups"], r["n_binder_his"],
                             r["n_target_his"], r["switch_ok"]])
         print("wrote %s" % a.csv)
+        rp = os.path.splitext(a.csv)[0] + "_residues.csv"
+        with open(rp, "w", newline="") as fh:
+            w = csv.writer(fh)
+            w.writerow(["design", "chain", "resnum", "resname", "pka_free",
+                        "pka_bound", "dpka", "contribution"])
+            for r in results:
+                for row in r["rows"]:
+                    w.writerow([r["design"], row["chain"], row["resnum"], row["resname"],
+                                row["pka_free"], row["pka_bound"], row["dpka"],
+                                row["contribution"]])
+        print("wrote %s" % rp)
 
 
 if __name__ == "__main__":

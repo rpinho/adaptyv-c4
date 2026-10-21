@@ -1,0 +1,146 @@
+[
+ {
+  "path": "E1_his707_tight.pdb",
+  "n_patch": 49,
+  "n_acid": 2,
+  "n_his": 2,
+  "n_base": 6,
+  "n_tyr_cys": 1,
+  "acid_list": [
+   "A694 GLU",
+   "A714 GLU"
+  ],
+  "his_list": [
+   "A699",
+   "A707"
+  ],
+  "base_list": [
+   "A534 LYS",
+   "A693 LYS",
+   "A698 ARG",
+   "A717 LYS",
+   "A719 ARG",
+   "B693 LYS"
+  ],
+  "missing": [],
+  "net_formal": 4
+ },
+ {
+  "path": "E1_mouse_his710.pdb",
+  "n_patch": 67,
+  "n_acid": 4,
+  "n_his": 2,
+  "n_base": 6,
+  "n_tyr_cys": 3,
+  "acid_list": [
+   "A268 GLU",
+   "A627 ASP",
+   "A697 GLU",
+   "A717 GLU"
+  ],
+  "his_list": [
+   "A702",
+   "A710"
+  ],
+  "base_list": [
+   "A537 LYS",
+   "A696 ARG",
+   "A701 ARG",
+   "A720 LYS",
+   "A722 ARG",
+   "A724 LYS"
+  ],
+  "missing": [],
+  "net_formal": 2
+ },
+ {
+  "path": "E2a_apical_202_213.pdb",
+  "n_patch": 53,
+  "n_acid": 5,
+  "n_his": 0,
+  "n_base": 7,
+  "n_tyr_cys": 1,
+  "acid_list": [
+   "A204 ASP",
+   "A214 GLU",
+   "A294 GLU",
+   "A343 GLU",
+   "A369 GLU"
+  ],
+  "his_list": [],
+  "base_list": [
+   "A205 LYS",
+   "A208 ARG",
+   "A231 LYS",
+   "A339 ARG",
+   "A344 LYS",
+   "A371 LYS",
+   "A374 LYS"
+  ],
+  "missing": [],
+  "net_formal": 2
+ },
+ {
+  "path": "E2b_apical_340_376.pdb",
+  "n_patch": 100,
+  "n_acid": 10,
+  "n_his": 1,
+  "n_base": 11,
+  "n_tyr_cys": 4,
+  "acid_list": [
+   "A194 ASP",
+   "A204 ASP",
+   "A214 GLU",
+   "A284 ASP",
+   "A294 GLU",
+   "A343 GLU",
+   "A350 GLU",
+   "A352 ASP",
+   "A360 ASP",
+   "A369 GLU"
+  ],
+  "his_list": [
+   "A234"
+  ],
+  "base_list": [
+   "A205 LYS",
+   "A224 LYS",
+   "A231 LYS",
+   "A258 ARG",
+   "A287 LYS",
+   "A339 ARG",
+   "A344 LYS",
+   "A358 LYS",
+   "A364 ARG",
+   "A371 LYS",
+   "A374 LYS"
+  ],
+  "missing": [],
+  "net_formal": 1
+ },
+ {
+  "path": "E4_his603.pdb",
+  "n_patch": 33,
+  "n_acid": 5,
+  "n_his": 1,
+  "n_base": 3,
+  "n_tyr_cys": 1,
+  "acid_list": [
+   "A125 ASP",
+   "A126 ASP",
+   "A398 GLU",
+   "A604 ASP",
+   "A606 GLU"
+  ],
+  "his_list": [
+   "A603"
+  ],
+  "base_list": [
+   "A128 LYS",
+   "A446 ARG",
+   "A600 LYS"
+  ],
+  "missing": [],
+  "net_formal": -2
+ }
+]

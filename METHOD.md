@@ -66,3 +66,87 @@ Poisson-Boltzmann at both pH values) is installed in the `phscore` env and must 
 design is submitted. `scripts/install_switch.py` supplies the orthogonal *binding* check: Rosetta
 InterfaceAnalyzer `dG_separated` on the neutral state, so a variant that wins the switch by
 destroying pH 7.4 binding is discarded (`--max-ddg`, default 3.0 REU).
+
+## The acid budget: the term the first two versions of this method missed
+
+**Measured 2026-10-20, on real BindCraft2 output, not assumed.** The pH layer had never been
+executed end to end. Running it on the two ranked Challenge 3 designs (`results/c3_ranked/`, the
+first real designs this project produced) gave the result that changes the selection rule.
+
+Design `c3_glp1r_ecd_groove_forced_l99_e26affcf9b8831e4_seq0`:
+
+| group | pKa free | pKa bound | dpKa | contribution to L |
+|---|---|---|---|---|
+| **B33 HIS** (designed) | 6.43 | 3.76 | **-2.67** | **-0.521** |
+| **B26 HIS** (designed) | 6.20 | 1.87 | **-4.33** | **-0.386** |
+| A29 N+ | 7.96 | 7.76 | -0.20 | -0.049 |
+| B34 GLU | 5.05 | 5.89 | +0.84 | +0.192 |
+| **A127 GLU** (target) | 4.83 | 6.49 | +1.66 | **+0.534** |
+| **A68 GLU** (target) | 4.92 | 7.91 | **+2.99** | **+1.255** |
+| | | | | **total L = +1.20** |
+
+Two buried histidines delivered exactly the mechanism this method is built on - a 2.7 and a 4.3
+unit depression, worth **-0.91** between them - and the design still came out with the **wrong
+sign**, because three carboxylates on the *target* had their pKa pushed **up** on binding and
+contributed **+1.91**.
+
+The physics is symmetric and I had only used half of it. Burying a neutral histidine against a
+desolvated interface depresses its pKa, which releases a proton on binding and makes binding weaker
+at low pH. Burying a *charged* carboxylate does the mirror image: desolvation and neighbouring
+acids raise its pKa, so it **accepts** a proton on binding and makes binding **stronger** at low
+pH. A glutamate whose pKa rises from 4.9 to 7.9 is a proton acceptor sitting right in the
+pH 6.0-7.4 window, and a single one of those outweighed both designed histidines.
+
+Three consequences, all of them acted on:
+
+1. **The design metric is a budget, not a count of histidines.** `scripts/ph_linkage.py` now writes
+   a per-residue CSV (`--csv` also emits `*_residues.csv`) and prints both ends of the sum, because
+   the positive tail is where a design is lost. Never read the His rows alone.
+2. **Epitope choice is the only lever on the target's acids** - the receptor cannot be mutated.
+   `scripts/epitope_charge.py` censuses every titratable group a binder would bury within 10 A of
+   the hotspots. Measured on the candidate set:
+
+   | epitope | patch | Asp/Glu | His | Lys/Arg | formal net | acid:His |
+   |---|---|---|---|---|---|---|
+   | **E1 His707 (human, live campaign)** | 49 | **2** | **2** | 6 | **+4** | **1.0** |
+   | E1 His710 (mouse ortholog) | 67 | 4 | 2 | 6 | +2 | 2.0 |
+   | E2a apical 202-213 | 53 | 5 | **0** | 7 | +2 | 5.0 |
+   | E2b apical 340-376 | 100 | **10** | 1 | 11 | +1 | 10.0 |
+   | E4 His603 | 33 | 5 | 1 | 3 | **-2** | 5.0 |
+
+   The epitope the campaign is running on is the best of the set on this axis, and it is the best by
+   a wide margin: two acids against two target histidines, in a patch carrying six basic residues.
+   A base-rich patch is also what depresses a buried histidine's pKa, so the same property helps
+   twice. This is an **independent confirmation of a choice made for structural reasons** (dimer
+   occlusion and 7/7 human/mouse epitope identity), arrived at from different physics.
+3. **Both apical sites are now dead for a second, independent reason.** They were already
+   compromised by 0.59 human/mouse identity across the patch. E2a carries **no histidine at all**,
+   so there is no lever to install against, and E2b buries ten carboxylates. E4 His603 is
+   acid-dominated and formally negative. Nothing in the portfolio should be spent on them.
+
+Two further things this measurement hands us, both free:
+
+- **A694 and A714 GLU are the two acids to keep out of the interface** on the live epitope. They go
+  in as `coldspots` on the next campaign generation rather than being discovered after the fact.
+- **A699 and A707 HIS are target-supplied levers.** Mechanism family 6 does not need the binder to
+  carry a histidine at all; a binder that depresses the receptor's own His707 wins the same
+  negative contribution for free. Their free-state pKa on the apo receptor is the number to measure
+  next, and it decides how much depression is available.
+
+**Honest statement of what this is.** PROPKA is empirical and single-structure, and these pKa shifts
+are computed on predicted complexes, not crystal structures. The budget is a *ranking* tool for
+selecting among designs and epitopes, not a prediction of the assayed pH ratio. That is why the
+two-estimator rule above is not optional, and why nothing is claimed about a design until the
+independent APBS arm agrees on the sign.
+
+## Status of the layer (2026-10-20)
+
+- `scripts/cif2pdb.py` **new and needed**: BindCraft2 writes an `_atom_site` loop with no
+  `occupancy` column, which Biopython's `MMCIFParser` rejects with a bare `KeyError`. The converter
+  reads the loop by its own header order, never by fixed columns, so it survives a writer change.
+- `scripts/ph_linkage.py` **executed on real designs for the first time**, propka3 3.5.1 in the
+  local CPU venv (`.venv/`, Python 3.9). The pH layer deliberately runs on CPU here rather than on
+  the rented GPUs, which stay on trajectories.
+- `scripts/epitope_charge.py` **new**, see above.
+- `scripts/install_switch.py` remains **untested on real designs** - no Challenge 4 design has been
+  accepted yet. It is next, the moment one lands.
