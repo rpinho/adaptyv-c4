@@ -8,9 +8,12 @@ free-state pKa `pf` and complex pKa `pb`:
     L = log10 Ka(pH_low) - log10 Ka(pH_high)
       = SUM_i [ t(pb,pf,pH_low) - t(pb,pf,pH_high) ],   t(pb,pf,pH) = log10((1+10^(pb-pH))/(1+10^(pf-pH)))
 
-L is in log10 units of affinity, so the challenge's first criterion — measurable at pH 7.4,
-undetectable at pH 6.0 — needs roughly **L <= -2**. pKa values come from PROPKA3 run three times
-(complex, free binder, free target) and matched by chain and residue number.
+L is in log10 units of affinity. **L <= -2 is our internal 100-fold model target,
+not an official challenge cutoff or a calibrated detector limit.** The lab defines
+measurable versus undetectable binding. PROPKA values are computed on complex,
+isolated binder and isolated target and matched by chain and residue number.
+An extracted chain retains the bound conformation; it does not establish the
+independently relaxed free-state ensemble. See `WIN_PLAN.md` for the current strategy.
 
 ## Calibration (this corrects the first version of the plan)
 
@@ -61,11 +64,17 @@ they point at a specific construction:
 
 ## The two-estimator rule still holds
 
-PROPKA is empirical. The second, independent estimator (PDB2PQR titration states feeding APBS
-Poisson-Boltzmann at both pH values) is installed in the `phscore` env and must agree before a
-design is submitted. `scripts/install_switch.py` supplies the orthogonal *binding* check: Rosetta
-InterfaceAnalyzer `dG_separated` on the neutral state, so a variant that wins the switch by
-destroying pH 7.4 binding is discarded (`--max-ddg`, default 3.0 REU).
+PROPKA is empirical. The second-estimator requirement remains, but the previous identification of
+PROPKA-driven PDB2PQR/APBS as an independent pKa estimator was incorrect. PDB2PQR
+can reuse PROPKA's titration assignment; APBS then evaluates electrostatics for
+those charges. A genuinely independent titration calculation must be configured
+and checked before claiming independent agreement. PDB2PQR is available locally;
+an APBS executable was not found on PATH in the strategy review. See the
+[PDB2PQR documentation](https://pdb2pqr.readthedocs.io/en/stable/using/index.html).
+
+`scripts/install_switch.py` supplies a neutral-state structural filter: negative
+reference/variant InterfaceAnalyzer dG and ddG <= 3 REU. It is neither a measured
+pH 7.4 affinity nor a second pKa estimator.
 
 ## The acid budget: the term the first two versions of this method missed
 
