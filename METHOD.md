@@ -124,14 +124,73 @@ Three consequences, all of them acted on:
    so there is no lever to install against, and E2b buries ten carboxylates. E4 His603 is
    acid-dominated and formally negative. Nothing in the portfolio should be spent on them.
 
-Two further things this measurement hands us, both free:
+### What sets the sign, measured rather than reasoned
 
-- **A694 and A714 GLU are the two acids to keep out of the interface** on the live epitope. They go
-  in as `coldspots` on the next campaign generation rather than being discovered after the fact.
-- **A699 and A707 HIS are target-supplied levers.** Mechanism family 6 does not need the binder to
-  carry a histidine at all; a binder that depresses the receptor's own His707 wins the same
-  negative contribution for free. Their free-state pKa on the apo receptor is the number to measure
-  next, and it decides how much depression is available.
+The first draft of this section said to declare the interface acids as `coldspots`. That is wrong
+on its own terms - A714 GLU **is one of the chosen hotspots** - and the per-residue table says
+something sharper. Sorting all 33 groups by contribution:
+
+| group | dpKa | contribution | why |
+|---|---|---|---|
+| A88 TYR | **+3.84** | **+0.000** | pKa 13.2 -> 17.0, never near the window |
+| A67 ASP | **-1.57** | **-0.000** | pKa 2.95 -> 1.38, never near the window |
+| A138 GLU | -0.66 | -0.009 | acid, pKa went DOWN, helps |
+| A68 GLU | +2.99 | **+1.255** | pKa 4.92 -> **7.91**, lands inside the window |
+
+**Size of the shift is almost irrelevant. What counts is how much of the pH 6.0-7.4 window the
+titration crosses.** A 3.8-unit shift outside the window is worth exactly nothing; a 1.7-unit shift
+into it costs half a log unit. Acids are not the enemy - acids whose pKa is pushed *into* the window
+are, and an acid whose pKa goes *down* (salt-bridged to a binder cation) contributes the right sign.
+The rule is therefore **charge-compensate every buried carboxylate**, not exclude it.
+
+### The ceiling on the target's own histidines (this kills mechanism family 6 alone)
+
+propka3 on the apo trimmed human target (`results/apo/E1_his707_tight.pka`) gives the free-state
+pKa values the plan said to measure next:
+
+| group | apo pKa | model | ceiling at total desolvation (pKa -> 2.0) |
+|---|---|---|---|
+| HIS 707 A | **6.09** | 6.50 | -0.328 |
+| HIS 699 A | **5.81** | 6.50 | -0.205 |
+| HIS 684 A | 6.35 | 6.50 | -0.473 |
+| GLU 694 A | 4.60 | 4.50 | (+1.18 if it rises as A68 GLU did) |
+| GLU 714 A | 4.55 | 4.50 | (+1.16 if it rises as A68 GLU did) |
+| GLU 533 A | 4.55 | 4.50 | (+1.16 if it rises as A68 GLU did) |
+| **all three His together** | | | **-1.01** |
+
+The gate needs **L <= -2.00** and the target can supply at most **-1.01**, at a physical limit no
+binder reaches. **Mechanism family 6 cannot clear the gate on its own** - the receptor's histidines
+are a useful bonus of roughly -0.3 each, not a strategy. The plan must not rest on them.
+
+Worse, a *single* interface glutamate rising as far as A68 GLU actually rose in a real design
+(+2.99) contributes **+1.18**, which cancels one whole well-designed histidine. The downside term is
+the same size as the upside term.
+
+### Where the leverage actually is: free-state pKa, not dpKa
+
+The same arithmetic, applied to a binder histidine:
+
+| binder His free pKa | driven to | contribution each | two of them |
+|---|---|---|---|
+| 6.0 | 2.0 | -0.28 | -0.56 |
+| 7.0 | 3.5 | -0.90 | -1.79 |
+| **7.4** | **3.5** | **-1.12** | **-2.23 (clears the gate)** |
+| 7.8 | 3.5 | -1.26 | -2.52 |
+
+This explains the measured design completely. Its histidines were depressed by 2.67 and 4.33 units -
+far more than the 1.5 units needed to saturate - and returned only -0.52 and -0.39, because they
+*started* at 6.43 and 6.20. **The design objective is not a large dpKa. It is a high free-state pKa
+that collapses on binding.** Everything past about 1.5-2.0 units of depression is wasted effort.
+
+So the binder specification is two-state and explicit:
+
+- a histidine whose **free-state pKa is 7.4 or above**, which means siting it where the *unbound
+  binder* presents carboxylate neighbours and solvent exposure;
+- **buried against the target's cations when bound** - and the E1 His707 patch carries six Lys/Arg
+  (net formal +4), which is exactly the environment that collapses a histidine's pKa. The property
+  that makes this epitope acid-poor is the same property that makes it a good switch site;
+- **two such sites minimum**, three if any interface carboxylate cannot be charge-compensated;
+- A699 and A707 HIS counted as a bonus of about -0.5 together, never as load-bearing.
 
 **Honest statement of what this is.** PROPKA is empirical and single-structure, and these pKa shifts
 are computed on predicted complexes, not crystal structures. The budget is a *ranking* tool for
@@ -148,5 +207,19 @@ independent APBS arm agrees on the sign.
   local CPU venv (`.venv/`, Python 3.9). The pH layer deliberately runs on CPU here rather than on
   the rented GPUs, which stay on trajectories.
 - `scripts/epitope_charge.py` **new**, see above.
+- `scripts/switch_sites.py` **new**. `install_switch.py` ranked candidate positions by *interface
+  burial*, which optimises only the bound half of the two-state problem and is precisely the error
+  the measurement exposed. This ranks them on both halves from coordinates alone - exposure plus
+  carboxylate neighbours in the free binder against burial plus target cations in the complex - so
+  the expensive Rosetta pass runs on a short list. On the only two positions where an independent
+  propka answer exists it agrees in order and within about 20% in magnitude (B33 HIS: estimate
+  -0.62, propka -0.52; B26 HIS: estimate -0.50, propka -0.39). Two points is consistency, not
+  validation, and it is a pre-screen, never a pKa claim.
+  It also rated four positions in that design *above* the two histidines BindCraft2 placed, which
+  is the use case: pick switch sites deliberately instead of accepting whichever histidines the
+  generator happened to leave at the interface.
 - `scripts/install_switch.py` remains **untested on real designs** - no Challenge 4 design has been
-  accepted yet. It is next, the moment one lands.
+  accepted yet - and must be re-pointed at `switch_sites.py`'s ranking instead of its own burial
+  sort before it is used. It is next, the moment a design lands.
+- Best achievable pair on the two existing designs scores about -1.4 and -1.65 estimated, short of
+  the gate, which is consistent with the budget above: two sites are the floor, not the plan.
