@@ -1,0 +1,107 @@
+{
+  "status": "pod_stopped",
+  "pid": 77668,
+  "pod": "2p9x2qea1ietbw",
+  "worker_pid": 1349,
+  "started": 1792609437.331182,
+  "checks": 14,
+  "ssh_failures": 0,
+  "mirrors": [
+    {
+      "time": 1792609440.400234,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792609479.67749,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792609516.9633322,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792609554.83508,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792609592.703802,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792609630.2097652,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792609667.3874528,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792609706.132434,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792609744.029539,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792609781.900641,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792609820.225986,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792609857.225766,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792609894.676676,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    },
+    {
+      "time": 1792609932.30176,
+      "rsync_exit": 0,
+      "stderr": "",
+      "tail_exit": 0
+    }
+  ],
+  "errors": [],
+  "rate_source": "fresh get-pod cost",
+  "max_compute_usd": 3.58,
+  "stop_verified": true,
+  "billing_start": 1792609164.783,
+  "hourly_compute_usd": 1.79,
+  "stop_deadline": 1792616184.783,
+  "last_check": 1792609932.2959628,
+  "estimated_compute_usd": 0.3855,
+  "last_gpu_worker_state": "0 %, 0 MiB",
+  "stop_reason": "worker_exited",
+  "stopped_at": 1792609940.106991
+}

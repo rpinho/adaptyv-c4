@@ -1,0 +1,137 @@
+{
+  "method": "Bio.PDB ShrakeRupley100points standardradii; glycans excluded",
+  "rows": [
+    {
+      "resnum": 202,
+      "resname": "ILE",
+      "sasa": 4.830512864159665,
+      "relative_sasa": 0.02452036986883079
+    },
+    {
+      "resnum": 203,
+      "resname": "VAL",
+      "sasa": 5.901971888222386,
+      "relative_sasa": 0.03391937866794475
+    },
+    {
+      "resnum": 204,
+      "resname": "ASP",
+      "sasa": 47.02592237853735,
+      "relative_sasa": 0.24365762890433862
+    },
+    {
+      "resnum": 205,
+      "resname": "LYS",
+      "sasa": 132.87222871733024,
+      "relative_sasa": 0.5630179182937722
+    },
+    {
+      "resnum": 206,
+      "resname": "ASN",
+      "sasa": 128.25950362228807,
+      "relative_sasa": 0.6577410442168619
+    },
+    {
+      "resnum": 207,
+      "resname": "GLY",
+      "sasa": 45.05919741279584,
+      "relative_sasa": 0.4332615135845754
+    },
+    {
+      "resnum": 208,
+      "resname": "ARG",
+      "sasa": 151.49136766728415,
+      "relative_sasa": 0.5528882031652707
+    },
+    {
+      "resnum": 209,
+      "resname": "LEU",
+      "sasa": 116.33223348463396,
+      "relative_sasa": 0.5787673307693232
+    },
+    {
+      "resnum": 210,
+      "resname": "VAL",
+      "sasa": 80.99357613138704,
+      "relative_sasa": 0.46548032259417843
+    },
+    {
+      "resnum": 213,
+      "resname": "VAL",
+      "sasa": 3.350546264165357,
+      "relative_sasa": 0.019256013012444582
+    },
+    {
+      "resnum": 340,
+      "resname": "ALA",
+      "sasa": 21.19263112080971,
+      "relative_sasa": 0.16428396217681945
+    },
+    {
+      "resnum": 343,
+      "resname": "GLU",
+      "sasa": 87.89542899665277,
+      "relative_sasa": 0.3941499058145864
+    },
+    {
+      "resnum": 344,
+      "resname": "LYS",
+      "sasa": 68.17354075980643,
+      "relative_sasa": 0.2888709354229086
+    },
+    {
+      "resnum": 348,
+      "resname": "ASN",
+      "sasa": 23.75252647866082,
+      "relative_sasa": 0.12180782809569651
+    },
+    {
+      "resnum": 371,
+      "resname": "LYS",
+      "sasa": 63.271537813221684,
+      "relative_sasa": 0.26809973649670205
+    },
+    {
+      "resnum": 374,
+      "resname": "LYS",
+      "sasa": 66.5523030213655,
+      "relative_sasa": 0.2820012839888369
+    },
+    {
+      "resnum": 376,
+      "resname": "THR",
+      "sasa": 31.380439105282978,
+      "relative_sasa": 0.182444413402808
+    },
+    {
+      "resnum": 685,
+      "resname": "PHE",
+      "sasa": 1.2076282160399163,
+      "relative_sasa": 0.005031784233499651
+    },
+    {
+      "resnum": 701,
+      "resname": "PHE",
+      "sasa": 19.985002904769793,
+      "relative_sasa": 0.0832708454365408
+    },
+    {
+      "resnum": 702,
+      "resname": "TRP",
+      "sasa": 35.8203389052659,
+      "relative_sasa": 0.12568539966759965
+    },
+    {
+      "resnum": 709,
+      "resname": "LEU",
+      "sasa": 13.28391037643908,
+      "relative_sasa": 0.06608910635044318
+    },
+    {
+      "resnum": 707,
+      "resname": "HIS",
+      "sasa": 28.486894041250025,
+      "relative_sasa": 0.12717363411272334
+    }
+  ]
+}

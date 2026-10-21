@@ -1,0 +1,6602 @@
+{
+  "parents": [
+    {
+      "backbone": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650",
+      "pair": 1,
+      "L": -1.53,
+      "ddG": 1.744274445045363,
+      "matched_QQ_L": -0.444,
+      "HH_minus_QQ": -1.086,
+      "variant_path": "/Users/ricardo/dev/adaptyv-c4/results/switch_install/campaign/14_c4_tfr1_groove_human_forced_l63_59b0f47ecf134650/c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate9_CD4__CT46_HH_switch.pdb",
+      "source_path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all_pdb/c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate9.pdb",
+      "status": "priority for context/ensemble validation; not submission selected",
+      "priority_rank": 1,
+      "parent_index": 1,
+      "sites": [
+        {
+          "design": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate9.pdb",
+          "chain": "C",
+          "resnum": 4,
+          "resname": "ASP",
+          "burial_free": 0.328,
+          "burial_bound": 0.722,
+          "d_burial": 0.394,
+          "acids_near_free": 3,
+          "bases_near_target": 2,
+          "pka_free_est": 7.55,
+          "pka_bound_est": 5.73,
+          "est_contribution": -1.004,
+          "note": "",
+          "wt": "D"
+        },
+        {
+          "design": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate9.pdb",
+          "chain": "C",
+          "resnum": 46,
+          "resname": "THR",
+          "burial_free": 0.544,
+          "burial_bound": 0.928,
+          "d_burial": 0.383,
+          "acids_near_free": 3,
+          "bases_near_target": 1,
+          "pka_free_est": 7.35,
+          "pka_bound_est": 5.96,
+          "est_contribution": -0.829,
+          "note": "",
+          "wt": "T"
+        }
+      ],
+      "context_pdb": "/Users/ricardo/dev/adaptyv-c4/results/context_ensemble_pilot_v2/01_context.pdb",
+      "audit": {
+        "alignment_ca_rmsd": 1.0034478502411865,
+        "aligned_residues": 73,
+        "contacts": [
+          {
+            "chain": "A",
+            "resnum": 479,
+            "resname": "PHE",
+            "distance": 4.20503289028332
+          },
+          {
+            "chain": "A",
+            "resnum": 480,
+            "resname": "THR",
+            "distance": 4.025499815560959
+          },
+          {
+            "chain": "A",
+            "resnum": 481,
+            "resname": "TYR",
+            "distance": 3.8954973564747446
+          },
+          {
+            "chain": "A",
+            "resnum": 482,
+            "resname": "ILE",
+            "distance": 4.87393734720511
+          },
+          {
+            "chain": "A",
+            "resnum": 496,
+            "resname": "VAL",
+            "distance": 4.767225310713469
+          },
+          {
+            "chain": "A",
+            "resnum": 497,
+            "resname": "SER",
+            "distance": 4.694081327675003
+          },
+          {
+            "chain": "A",
+            "resnum": 498,
+            "resname": "ALA",
+            "distance": 1.952674531700499
+          },
+          {
+            "chain": "A",
+            "resnum": 499,
+            "resname": "SER",
+            "distance": 1.4867465088152496
+          },
+          {
+            "chain": "A",
+            "resnum": 500,
+            "resname": "PRO",
+            "distance": 1.0060693898756594
+          },
+          {
+            "chain": "A",
+            "resnum": 501,
+            "resname": "LEU",
+            "distance": 0.6379177613918419
+          },
+          {
+            "chain": "A",
+            "resnum": 502,
+            "resname": "LEU",
+            "distance": 0.8244130291924695
+          },
+          {
+            "chain": "A",
+            "resnum": 503,
+            "resname": "TYR",
+            "distance": 0.8480270495885486
+          },
+          {
+            "chain": "A",
+            "resnum": 504,
+            "resname": "THR",
+            "distance": 1.1986309850056998
+          },
+          {
+            "chain": "A",
+            "resnum": 505,
+            "resname": "LEU",
+            "distance": 0.7390551703897599
+          },
+          {
+            "chain": "A",
+            "resnum": 506,
+            "resname": "ILE",
+            "distance": 2.4367409370950055
+          },
+          {
+            "chain": "A",
+            "resnum": 507,
+            "resname": "GLU",
+            "distance": 4.12650438353313
+          },
+          {
+            "chain": "A",
+            "resnum": 508,
+            "resname": "LYS",
+            "distance": 1.8624185469798398
+          },
+          {
+            "chain": "A",
+            "resnum": 509,
+            "resname": "THR",
+            "distance": 3.586695156410772
+          },
+          {
+            "chain": "A",
+            "resnum": 528,
+            "resname": "TRP",
+            "distance": 2.23256935050001
+          },
+          {
+            "chain": "A",
+            "resnum": 529,
+            "resname": "ALA",
+            "distance": 3.554264369130866
+          },
+          {
+            "chain": "A",
+            "resnum": 530,
+            "resname": "SER",
+            "distance": 3.1204478515280134
+          },
+          {
+            "chain": "A",
+            "resnum": 531,
+            "resname": "LYS",
+            "distance": 3.8489981600085184
+          },
+          {
+            "chain": "A",
+            "resnum": 532,
+            "resname": "VAL",
+            "distance": 3.010258061173187
+          },
+          {
+            "chain": "A",
+            "resnum": 533,
+            "resname": "GLU",
+            "distance": 4.555840538114214
+          },
+          {
+            "chain": "A",
+            "resnum": 545,
+            "resname": "LEU",
+            "distance": 4.58043185380815
+          },
+          {
+            "chain": "A",
+            "resnum": 550,
+            "resname": "ILE",
+            "distance": 2.723798643934908
+          },
+          {
+            "chain": "A",
+            "resnum": 551,
+            "resname": "PRO",
+            "distance": 0.6637953065557535
+          },
+          {
+            "chain": "A",
+            "resnum": 552,
+            "resname": "ALA",
+            "distance": 1.5618981943976316
+          },
+          {
+            "chain": "A",
+            "resnum": 553,
+            "resname": "VAL",
+            "distance": 4.339176258916492
+          },
+          {
+            "chain": "A",
+            "resnum": 597,
+            "resname": "PHE",
+            "distance": 4.7361943851482335
+          },
+          {
+            "chain": "A",
+            "resnum": 600,
+            "resname": "LYS",
+            "distance": 3.7678033798406725
+          },
+          {
+            "chain": "A",
+            "resnum": 601,
+            "resname": "LEU",
+            "distance": 3.532302526590981
+          },
+          {
+            "chain": "A",
+            "resnum": 605,
+            "resname": "VAL",
+            "distance": 4.7338053769726125
+          },
+          {
+            "chain": "A",
+            "resnum": 606,
+            "resname": "GLU",
+            "distance": 0.8646419286428034
+          },
+          {
+            "chain": "A",
+            "resnum": 607,
+            "resname": "LEU",
+            "distance": 0.6113738801803996
+          },
+          {
+            "chain": "A",
+            "resnum": 608,
+            "resname": "ASN",
+            "distance": 0.3336578533109429
+          },
+          {
+            "chain": "A",
+            "resnum": 609,
+            "resname": "LEU",
+            "distance": 1.190926529246756
+          },
+          {
+            "chain": "A",
+            "resnum": 610,
+            "resname": "ASP",
+            "distance": 1.1584822491622206
+          },
+          {
+            "chain": "A",
+            "resnum": 611,
+            "resname": "TYR",
+            "distance": 0.5685565056262117
+          },
+          {
+            "chain": "A",
+            "resnum": 612,
+            "resname": "GLU",
+            "distance": 0.3762029515323243
+          },
+          {
+            "chain": "A",
+            "resnum": 613,
+            "resname": "ARG",
+            "distance": 0.9096637828729643
+          },
+          {
+            "chain": "A",
+            "resnum": 614,
+            "resname": "TYR",
+            "distance": 0.3881886439394568
+          },
+          {
+            "chain": "A",
+            "resnum": 615,
+            "resname": "ASN",
+            "distance": 0.7006351535880072
+          },
+          {
+            "chain": "A",
+            "resnum": 616,
+            "resname": "SER",
+            "distance": 0.7830074192054922
+          },
+          {
+            "chain": "A",
+            "resnum": 617,
+            "resname": "GLN",
+            "distance": 0.5198457382838145
+          },
+          {
+            "chain": "A",
+            "resnum": 618,
+            "resname": "LEU",
+            "distance": 0.7274130912061261
+          },
+          {
+            "chain": "A",
+            "resnum": 619,
+            "resname": "LEU",
+            "distance": 0.5646964171838887
+          },
+          {
+            "chain": "A",
+            "resnum": 620,
+            "resname": "SER",
+            "distance": 0.31990266698831993
+          },
+          {
+            "chain": "A",
+            "resnum": 621,
+            "resname": "PHE",
+            "distance": 1.1134370958949271
+          },
+          {
+            "chain": "A",
+            "resnum": 622,
+            "resname": "VAL",
+            "distance": 0.7204682681242525
+          },
+          {
+            "chain": "A",
+            "resnum": 623,
+            "resname": "ARG",
+            "distance": 0.46119387217688973
+          },
+          {
+            "chain": "A",
+            "resnum": 624,
+            "resname": "ASP",
+            "distance": 0.30207874393857237
+          },
+          {
+            "chain": "A",
+            "resnum": 625,
+            "resname": "LEU",
+            "distance": 0.5949711944423492
+          },
+          {
+            "chain": "A",
+            "resnum": 626,
+            "resname": "ASN",
+            "distance": 0.5103158245944422
+          },
+          {
+            "chain": "A",
+            "resnum": 627,
+            "resname": "GLN",
+            "distance": 0.43055534682683766
+          },
+          {
+            "chain": "A",
+            "resnum": 628,
+            "resname": "TYR",
+            "distance": 0.31147986975246383
+          },
+          {
+            "chain": "A",
+            "resnum": 629,
+            "resname": "ARG",
+            "distance": 0.697600299861866
+          },
+          {
+            "chain": "A",
+            "resnum": 630,
+            "resname": "ALA",
+            "distance": 0.45151009631705014
+          },
+          {
+            "chain": "A",
+            "resnum": 631,
+            "resname": "ASP",
+            "distance": 0.722661660978345
+          },
+          {
+            "chain": "A",
+            "resnum": 632,
+            "resname": "ILE",
+            "distance": 0.28398491739245385
+          },
+          {
+            "chain": "A",
+            "resnum": 633,
+            "resname": "LYS",
+            "distance": 0.819705728373597
+          },
+          {
+            "chain": "A",
+            "resnum": 634,
+            "resname": "GLU",
+            "distance": 2.4397354516161265
+          },
+          {
+            "chain": "A",
+            "resnum": 635,
+            "resname": "MET",
+            "distance": 1.0342606386026814
+          },
+          {
+            "chain": "A",
+            "resnum": 636,
+            "resname": "GLY",
+            "distance": 1.0708248621658631
+          },
+          {
+            "chain": "A",
+            "resnum": 637,
+            "resname": "LEU",
+            "distance": 1.459597134998663
+          },
+          {
+            "chain": "A",
+            "resnum": 638,
+            "resname": "SER",
+            "distance": 1.4680487072894726
+          },
+          {
+            "chain": "A",
+            "resnum": 639,
+            "resname": "LEU",
+            "distance": 0.5114242671236293
+          },
+          {
+            "chain": "A",
+            "resnum": 640,
+            "resname": "GLN",
+            "distance": 0.6754790832202969
+          },
+          {
+            "chain": "A",
+            "resnum": 641,
+            "resname": "TRP",
+            "distance": 1.3913407157432716
+          },
+          {
+            "chain": "A",
+            "resnum": 642,
+            "resname": "LEU",
+            "distance": 0.6154344162942725
+          },
+          {
+            "chain": "A",
+            "resnum": 643,
+            "resname": "TYR",
+            "distance": 0.8423447889456747
+          },
+          {
+            "chain": "A",
+            "resnum": 644,
+            "resname": "SER",
+            "distance": 2.18007362830908
+          },
+          {
+            "chain": "A",
+            "resnum": 645,
+            "resname": "ALA",
+            "distance": 1.1598303993875654
+          },
+          {
+            "chain": "A",
+            "resnum": 646,
+            "resname": "ARG",
+            "distance": 0.4892021968964494
+          },
+          {
+            "chain": "A",
+            "resnum": 647,
+            "resname": "GLY",
+            "distance": 0.9286855993335479
+          },
+          {
+            "chain": "A",
+            "resnum": 648,
+            "resname": "ASP",
+            "distance": 1.8671822808170273
+          },
+          {
+            "chain": "A",
+            "resnum": 649,
+            "resname": "PHE",
+            "distance": 0.3478761948618433
+          },
+          {
+            "chain": "A",
+            "resnum": 650,
+            "resname": "PHE",
+            "distance": 1.7851823450200035
+          },
+          {
+            "chain": "A",
+            "resnum": 651,
+            "resname": "ARG",
+            "distance": 1.4557076948910372
+          },
+          {
+            "chain": "A",
+            "resnum": 652,
+            "resname": "ALA",
+            "distance": 1.5680692143605144
+          },
+          {
+            "chain": "A",
+            "resnum": 653,
+            "resname": "THR",
+            "distance": 0.4825886751772167
+          },
+          {
+            "chain": "A",
+            "resnum": 654,
+            "resname": "SER",
+            "distance": 3.738829356908292
+          },
+          {
+            "chain": "A",
+            "resnum": 655,
+            "resname": "ARG",
+            "distance": 4.194504383639547
+          },
+          {
+            "chain": "A",
+            "resnum": 656,
+            "resname": "LEU",
+            "distance": 1.6191019888930704
+          },
+          {
+            "chain": "A",
+            "resnum": 657,
+            "resname": "THR",
+            "distance": 1.8841321017094836
+          },
+          {
+            "chain": "A",
+            "resnum": 658,
+            "resname": "THR",
+            "distance": 3.9102201597585826
+          },
+          {
+            "chain": "A",
+            "resnum": 660,
+            "resname": "PHE",
+            "distance": 0.8436645610567921
+          },
+          {
+            "chain": "A",
+            "resnum": 661,
+            "resname": "GLY",
+            "distance": 4.218671947584215
+          },
+          {
+            "chain": "A",
+            "resnum": 665,
+            "resname": "LYS",
+            "distance": 4.448655855712743
+          },
+          {
+            "chain": "A",
+            "resnum": 671,
+            "resname": "MET",
+            "distance": 4.7289727584482995
+          },
+          {
+            "chain": "A",
+            "resnum": 674,
+            "resname": "LEU",
+            "distance": 4.1480299830626945
+          },
+          {
+            "chain": "A",
+            "resnum": 675,
+            "resname": "ASN",
+            "distance": 3.459563130032785
+          },
+          {
+            "chain": "A",
+            "resnum": 677,
+            "resname": "ARG",
+            "distance": 4.007708521590683
+          },
+          {
+            "chain": "A",
+            "resnum": 678,
+            "resname": "VAL",
+            "distance": 2.4785272969212806
+          },
+          {
+            "chain": "A",
+            "resnum": 679,
+            "resname": "MET",
+            "distance": 4.278859862152916
+          },
+          {
+            "chain": "A",
+            "resnum": 681,
+            "resname": "VAL",
+            "distance": 2.4377387593910935
+          },
+          {
+            "chain": "A",
+            "resnum": 682,
+            "resname": "GLU",
+            "distance": 3.2035864839411885
+          },
+          {
+            "chain": "A",
+            "resnum": 685,
+            "resname": "PHE",
+            "distance": 2.579593270653574
+          },
+          {
+            "chain": "A",
+            "resnum": 699,
+            "resname": "HIS",
+            "distance": 4.809929927212506
+          },
+          {
+            "chain": "A",
+            "resnum": 700,
+            "resname": "VAL",
+            "distance": 3.9854616671776157
+          },
+          {
+            "chain": "A",
+            "resnum": 701,
+            "resname": "PHE",
+            "distance": 3.4342733925996405
+          },
+          {
+            "chain": "A",
+            "resnum": 702,
+            "resname": "TRP",
+            "distance": 2.5958543228969804
+          },
+          {
+            "chain": "A",
+            "resnum": 709,
+            "resname": "LEU",
+            "distance": 3.645865415888595
+          },
+          {
+            "chain": "A",
+            "resnum": 710,
+            "resname": "PRO",
+            "distance": 4.178826375999339
+          },
+          {
+            "chain": "A",
+            "resnum": 712,
+            "resname": "LEU",
+            "distance": 3.2321320750202895
+          },
+          {
+            "chain": "A",
+            "resnum": 713,
+            "resname": "LEU",
+            "distance": 2.548038721898138
+          },
+          {
+            "chain": "A",
+            "resnum": 716,
+            "resname": "LEU",
+            "distance": 3.0065828737575635
+          },
+          {
+            "chain": "A",
+            "resnum": 717,
+            "resname": "LYS",
+            "distance": 4.2487190208347
+          },
+          {
+            "chain": "A",
+            "resnum": 719,
+            "resname": "ARG",
+            "distance": 2.7742418722036812
+          },
+          {
+            "chain": "A",
+            "resnum": 720,
+            "resname": "LYS",
+            "distance": 2.8075555465996063
+          },
+          {
+            "chain": "A",
+            "resnum": 726,
+            "resname": "PHE",
+            "distance": 4.5917382711250445
+          },
+          {
+            "chain": "A",
+            "resnum": 731,
+            "resname": "PHE",
+            "distance": 2.9625811432364824
+          },
+          {
+            "chain": "A",
+            "resnum": 735,
+            "resname": "LEU",
+            "distance": 2.9201532282714657
+          },
+          {
+            "chain": "A",
+            "resnum": 737,
+            "resname": "LEU",
+            "distance": 4.294178526060181
+          },
+          {
+            "chain": "A",
+            "resnum": 738,
+            "resname": "ALA",
+            "distance": 2.4000917338921086
+          },
+          {
+            "chain": "A",
+            "resnum": 739,
+            "resname": "THR",
+            "distance": 2.616811037260864
+          },
+          {
+            "chain": "A",
+            "resnum": 741,
+            "resname": "THR",
+            "distance": 3.141180161437367
+          },
+          {
+            "chain": "A",
+            "resnum": 742,
+            "resname": "ILE",
+            "distance": 1.0638348600526988
+          },
+          {
+            "chain": "A",
+            "resnum": 743,
+            "resname": "GLN",
+            "distance": 3.365416699219918
+          },
+          {
+            "chain": "A",
+            "resnum": 744,
+            "resname": "GLY",
+            "distance": 4.471516378145708
+          },
+          {
+            "chain": "A",
+            "resnum": 745,
+            "resname": "ALA",
+            "distance": 1.0914940566142926
+          },
+          {
+            "chain": "A",
+            "resnum": 746,
+            "resname": "ALA",
+            "distance": 2.1887701279538443
+          },
+          {
+            "chain": "A",
+            "resnum": 747,
+            "resname": "ASN",
+            "distance": 4.137021883876232
+          },
+          {
+            "chain": "A",
+            "resnum": 748,
+            "resname": "ALA",
+            "distance": 3.697535768589739
+          },
+          {
+            "chain": "A",
+            "resnum": 749,
+            "resname": "LEU",
+            "distance": 2.2251703358124613
+          },
+          {
+            "chain": "A",
+            "resnum": 750,
+            "resname": "SER",
+            "distance": 3.9331228936884446
+          },
+          {
+            "chain": "B",
+            "resnum": 318,
+            "resname": "HIS",
+            "distance": 4.956203434035828
+          },
+          {
+            "chain": "B",
+            "resnum": 320,
+            "resname": "GLN",
+            "distance": 2.6445586909736654
+          }
+        ],
+        "alignment_policy": "all source target CAs; <=2 A transfer; full template replaces refolded target",
+        "newly_restored_target_clashes_under_2A": [
+          {
+            "chain": "A",
+            "resnum": 498,
+            "distance": 1.952674531700499
+          },
+          {
+            "chain": "A",
+            "resnum": 499,
+            "distance": 1.4867465088152496
+          },
+          {
+            "chain": "A",
+            "resnum": 500,
+            "distance": 1.0060693898756594
+          },
+          {
+            "chain": "A",
+            "resnum": 501,
+            "distance": 0.6379177613918419
+          },
+          {
+            "chain": "A",
+            "resnum": 502,
+            "distance": 0.8244130291924695
+          },
+          {
+            "chain": "A",
+            "resnum": 503,
+            "distance": 0.8480270495885486
+          },
+          {
+            "chain": "A",
+            "resnum": 504,
+            "distance": 1.1986309850056998
+          },
+          {
+            "chain": "A",
+            "resnum": 505,
+            "distance": 0.7390551703897599
+          },
+          {
+            "chain": "A",
+            "resnum": 508,
+            "distance": 1.8624185469798398
+          },
+          {
+            "chain": "A",
+            "resnum": 551,
+            "distance": 0.6637953065557535
+          },
+          {
+            "chain": "A",
+            "resnum": 552,
+            "distance": 1.5618981943976316
+          },
+          {
+            "chain": "A",
+            "resnum": 606,
+            "distance": 0.8646419286428034
+          },
+          {
+            "chain": "A",
+            "resnum": 607,
+            "distance": 0.6113738801803996
+          },
+          {
+            "chain": "A",
+            "resnum": 608,
+            "distance": 0.3336578533109429
+          },
+          {
+            "chain": "A",
+            "resnum": 609,
+            "distance": 1.190926529246756
+          },
+          {
+            "chain": "A",
+            "resnum": 610,
+            "distance": 1.1584822491622206
+          },
+          {
+            "chain": "A",
+            "resnum": 611,
+            "distance": 0.5685565056262117
+          },
+          {
+            "chain": "A",
+            "resnum": 612,
+            "distance": 0.3762029515323243
+          },
+          {
+            "chain": "A",
+            "resnum": 613,
+            "distance": 0.9096637828729643
+          },
+          {
+            "chain": "A",
+            "resnum": 614,
+            "distance": 0.3881886439394568
+          },
+          {
+            "chain": "A",
+            "resnum": 615,
+            "distance": 0.7006351535880072
+          },
+          {
+            "chain": "A",
+            "resnum": 616,
+            "distance": 0.7830074192054922
+          },
+          {
+            "chain": "A",
+            "resnum": 617,
+            "distance": 0.5198457382838145
+          },
+          {
+            "chain": "A",
+            "resnum": 618,
+            "distance": 0.7274130912061261
+          },
+          {
+            "chain": "A",
+            "resnum": 619,
+            "distance": 0.5646964171838887
+          },
+          {
+            "chain": "A",
+            "resnum": 620,
+            "distance": 0.31990266698831993
+          },
+          {
+            "chain": "A",
+            "resnum": 621,
+            "distance": 1.1134370958949271
+          },
+          {
+            "chain": "A",
+            "resnum": 622,
+            "distance": 0.7204682681242525
+          },
+          {
+            "chain": "A",
+            "resnum": 623,
+            "distance": 0.46119387217688973
+          },
+          {
+            "chain": "A",
+            "resnum": 624,
+            "distance": 0.30207874393857237
+          },
+          {
+            "chain": "A",
+            "resnum": 625,
+            "distance": 0.5949711944423492
+          },
+          {
+            "chain": "A",
+            "resnum": 626,
+            "distance": 0.5103158245944422
+          },
+          {
+            "chain": "A",
+            "resnum": 627,
+            "distance": 0.43055534682683766
+          },
+          {
+            "chain": "A",
+            "resnum": 628,
+            "distance": 0.31147986975246383
+          },
+          {
+            "chain": "A",
+            "resnum": 629,
+            "distance": 0.697600299861866
+          },
+          {
+            "chain": "A",
+            "resnum": 630,
+            "distance": 0.45151009631705014
+          },
+          {
+            "chain": "A",
+            "resnum": 631,
+            "distance": 0.722661660978345
+          },
+          {
+            "chain": "A",
+            "resnum": 632,
+            "distance": 0.28398491739245385
+          },
+          {
+            "chain": "A",
+            "resnum": 633,
+            "distance": 0.819705728373597
+          },
+          {
+            "chain": "A",
+            "resnum": 635,
+            "distance": 1.0342606386026814
+          },
+          {
+            "chain": "A",
+            "resnum": 636,
+            "distance": 1.0708248621658631
+          },
+          {
+            "chain": "A",
+            "resnum": 637,
+            "distance": 1.459597134998663
+          },
+          {
+            "chain": "A",
+            "resnum": 638,
+            "distance": 1.4680487072894726
+          },
+          {
+            "chain": "A",
+            "resnum": 639,
+            "distance": 0.5114242671236293
+          },
+          {
+            "chain": "A",
+            "resnum": 640,
+            "distance": 0.6754790832202969
+          },
+          {
+            "chain": "A",
+            "resnum": 641,
+            "distance": 1.3913407157432716
+          },
+          {
+            "chain": "A",
+            "resnum": 642,
+            "distance": 0.6154344162942725
+          },
+          {
+            "chain": "A",
+            "resnum": 643,
+            "distance": 0.8423447889456747
+          },
+          {
+            "chain": "A",
+            "resnum": 645,
+            "distance": 1.1598303993875654
+          },
+          {
+            "chain": "A",
+            "resnum": 646,
+            "distance": 0.4892021968964494
+          },
+          {
+            "chain": "A",
+            "resnum": 647,
+            "distance": 0.9286855993335479
+          },
+          {
+            "chain": "A",
+            "resnum": 648,
+            "distance": 1.8671822808170273
+          },
+          {
+            "chain": "A",
+            "resnum": 649,
+            "distance": 0.3478761948618433
+          },
+          {
+            "chain": "A",
+            "resnum": 650,
+            "distance": 1.7851823450200035
+          },
+          {
+            "chain": "A",
+            "resnum": 651,
+            "distance": 1.4557076948910372
+          },
+          {
+            "chain": "A",
+            "resnum": 652,
+            "distance": 1.5680692143605144
+          },
+          {
+            "chain": "A",
+            "resnum": 653,
+            "distance": 0.4825886751772167
+          },
+          {
+            "chain": "A",
+            "resnum": 656,
+            "distance": 1.6191019888930704
+          },
+          {
+            "chain": "A",
+            "resnum": 657,
+            "distance": 1.8841321017094836
+          },
+          {
+            "chain": "A",
+            "resnum": 660,
+            "distance": 0.8436645610567921
+          },
+          {
+            "chain": "A",
+            "resnum": 745,
+            "distance": 1.0914940566142926
+          }
+        ],
+        "glycan_attachment_distances": [
+          {
+            "chain": "A",
+            "site": 251,
+            "distance": 26.966948534102915
+          },
+          {
+            "chain": "A",
+            "site": 317,
+            "distance": 28.30070565692602
+          },
+          {
+            "chain": "A",
+            "site": 727,
+            "distance": 8.288615839359974
+          },
+          {
+            "chain": "B",
+            "site": 251,
+            "distance": 43.17847462502701
+          },
+          {
+            "chain": "B",
+            "site": 317,
+            "distance": 8.002387425181627
+          },
+          {
+            "chain": "B",
+            "site": 727,
+            "distance": 34.66130218510248
+          }
+        ],
+        "observed_NAG_min_distance": 9.87845009365256,
+        "transferrin_footprint_overlap": [
+          619,
+          622,
+          623,
+          626,
+          629,
+          640,
+          643,
+          644,
+          646,
+          647,
+          648,
+          650,
+          651,
+          658,
+          661
+        ],
+        "binder_Cterminal_residue_target_min_distance": 7.494508235392456,
+        "glycan_model": "attachment/observed-NAG proximity audit only; glycans omitted from Rosetta/PROPKA",
+        "terminal_model": "resolved receptor starts122; assay121+GP scar absent; binder tag absent; native charged termini",
+        "source_sha256": "64eef5b38579a16ce8ed093902b02a3e27247316f7ef981ff17ad8dbf856cfad",
+        "context_sha256": "bef19049ea272d46a53a4cd0386b72da3237b4462fb358496f285d2b1ddd5ebc"
+      }
+    },
+    {
+      "backbone": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d",
+      "pair": 1,
+      "L": -1.316,
+      "ddG": -9.482059885725477,
+      "matched_QQ_L": -0.828,
+      "HH_minus_QQ": -0.488,
+      "variant_path": "/Users/ricardo/dev/adaptyv-c4/results/switch_install/campaign/04_c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d/c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d_candidate1_CQ53__CS43_HH_switch.pdb",
+      "source_path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all_pdb/c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d_candidate1.pdb",
+      "status": "priority for context/ensemble validation; not submission selected",
+      "priority_rank": 2,
+      "parent_index": 2,
+      "sites": [
+        {
+          "design": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d_candidate1.pdb",
+          "chain": "C",
+          "resnum": 53,
+          "resname": "GLN",
+          "burial_free": 0.428,
+          "burial_bound": 0.728,
+          "d_burial": 0.3,
+          "acids_near_free": 3,
+          "bases_near_target": 3,
+          "pka_free_est": 7.46,
+          "pka_bound_est": 5.48,
+          "est_contribution": -1.033,
+          "note": "",
+          "wt": "Q"
+        },
+        {
+          "design": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d_candidate1.pdb",
+          "chain": "C",
+          "resnum": 43,
+          "resname": "SER",
+          "burial_free": 0.517,
+          "burial_bound": 0.856,
+          "d_burial": 0.339,
+          "acids_near_free": 2,
+          "bases_near_target": 1,
+          "pka_free_est": 6.93,
+          "pka_bound_est": 5.65,
+          "est_contribution": -0.699,
+          "note": "",
+          "wt": "S"
+        }
+      ],
+      "context_pdb": "/Users/ricardo/dev/adaptyv-c4/results/context_ensemble_pilot_v2/02_context.pdb",
+      "audit": {
+        "alignment_ca_rmsd": 0.8142963973300662,
+        "aligned_residues": 73,
+        "contacts": [
+          {
+            "chain": "A",
+            "resnum": 124,
+            "resname": "TRP",
+            "distance": 3.999142947771389
+          },
+          {
+            "chain": "A",
+            "resnum": 479,
+            "resname": "PHE",
+            "distance": 3.745652704165102
+          },
+          {
+            "chain": "A",
+            "resnum": 480,
+            "resname": "THR",
+            "distance": 3.8982271130866804
+          },
+          {
+            "chain": "A",
+            "resnum": 496,
+            "resname": "VAL",
+            "distance": 3.2891513461105046
+          },
+          {
+            "chain": "A",
+            "resnum": 497,
+            "resname": "SER",
+            "distance": 2.0670325307960744
+          },
+          {
+            "chain": "A",
+            "resnum": 498,
+            "resname": "ALA",
+            "distance": 0.8574022383413447
+          },
+          {
+            "chain": "A",
+            "resnum": 499,
+            "resname": "SER",
+            "distance": 1.0541113693581254
+          },
+          {
+            "chain": "A",
+            "resnum": 500,
+            "resname": "PRO",
+            "distance": 0.5955324348928016
+          },
+          {
+            "chain": "A",
+            "resnum": 501,
+            "resname": "LEU",
+            "distance": 0.6037967422572935
+          },
+          {
+            "chain": "A",
+            "resnum": 502,
+            "resname": "LEU",
+            "distance": 0.3145802952428038
+          },
+          {
+            "chain": "A",
+            "resnum": 503,
+            "resname": "TYR",
+            "distance": 0.5228660842064946
+          },
+          {
+            "chain": "A",
+            "resnum": 504,
+            "resname": "THR",
+            "distance": 1.4237428394360285
+          },
+          {
+            "chain": "A",
+            "resnum": 505,
+            "resname": "LEU",
+            "distance": 0.5581546399291225
+          },
+          {
+            "chain": "A",
+            "resnum": 506,
+            "resname": "ILE",
+            "distance": 0.6392964853672394
+          },
+          {
+            "chain": "A",
+            "resnum": 507,
+            "resname": "GLU",
+            "distance": 0.6368835155367663
+          },
+          {
+            "chain": "A",
+            "resnum": 508,
+            "resname": "LYS",
+            "distance": 0.5314979371636315
+          },
+          {
+            "chain": "A",
+            "resnum": 509,
+            "resname": "THR",
+            "distance": 1.2277888297269768
+          },
+          {
+            "chain": "A",
+            "resnum": 510,
+            "resname": "MET",
+            "distance": 1.760007264271454
+          },
+          {
+            "chain": "A",
+            "resnum": 511,
+            "resname": "GLN",
+            "distance": 0.8748660427432865
+          },
+          {
+            "chain": "A",
+            "resnum": 512,
+            "resname": "ASN",
+            "distance": 4.36253552266011
+          },
+          {
+            "chain": "A",
+            "resnum": 521,
+            "resname": "PHE",
+            "distance": 3.2717955599340165
+          },
+          {
+            "chain": "A",
+            "resnum": 522,
+            "resname": "LEU",
+            "distance": 4.860147374018164
+          },
+          {
+            "chain": "A",
+            "resnum": 523,
+            "resname": "TYR",
+            "distance": 0.7412140996724986
+          },
+          {
+            "chain": "A",
+            "resnum": 524,
+            "resname": "GLN",
+            "distance": 2.9990722398839833
+          },
+          {
+            "chain": "A",
+            "resnum": 525,
+            "resname": "ASP",
+            "distance": 0.6770467181480144
+          },
+          {
+            "chain": "A",
+            "resnum": 526,
+            "resname": "SER",
+            "distance": 1.208684166546443
+          },
+          {
+            "chain": "A",
+            "resnum": 527,
+            "resname": "ASN",
+            "distance": 0.8400795909363526
+          },
+          {
+            "chain": "A",
+            "resnum": 528,
+            "resname": "TRP",
+            "distance": 0.8372477609022564
+          },
+          {
+            "chain": "A",
+            "resnum": 529,
+            "resname": "ALA",
+            "distance": 1.3287790600245055
+          },
+          {
+            "chain": "A",
+            "resnum": 530,
+            "resname": "SER",
+            "distance": 1.8716338608457361
+          },
+          {
+            "chain": "A",
+            "resnum": 531,
+            "resname": "LYS",
+            "distance": 4.029034783097434
+          },
+          {
+            "chain": "A",
+            "resnum": 532,
+            "resname": "VAL",
+            "distance": 4.219054799197496
+          },
+          {
+            "chain": "A",
+            "resnum": 534,
+            "resname": "LYS",
+            "distance": 2.9893107810152126
+          },
+          {
+            "chain": "A",
+            "resnum": 545,
+            "resname": "LEU",
+            "distance": 4.900161994167779
+          },
+          {
+            "chain": "A",
+            "resnum": 550,
+            "resname": "ILE",
+            "distance": 4.969727000906014
+          },
+          {
+            "chain": "A",
+            "resnum": 551,
+            "resname": "PRO",
+            "distance": 1.5706944579746125
+          },
+          {
+            "chain": "A",
+            "resnum": 552,
+            "resname": "ALA",
+            "distance": 3.6811888922042444
+          },
+          {
+            "chain": "A",
+            "resnum": 553,
+            "resname": "VAL",
+            "distance": 1.058895119348133
+          },
+          {
+            "chain": "A",
+            "resnum": 554,
+            "resname": "SER",
+            "distance": 4.078279452035963
+          },
+          {
+            "chain": "A",
+            "resnum": 555,
+            "resname": "PHE",
+            "distance": 4.863678918274112
+          },
+          {
+            "chain": "A",
+            "resnum": 596,
+            "resname": "GLN",
+            "distance": 4.315057639013404
+          },
+          {
+            "chain": "A",
+            "resnum": 597,
+            "resname": "PHE",
+            "distance": 3.387630163806178
+          },
+          {
+            "chain": "A",
+            "resnum": 600,
+            "resname": "LYS",
+            "distance": 1.7771782636301858
+          },
+          {
+            "chain": "A",
+            "resnum": 601,
+            "resname": "LEU",
+            "distance": 4.159521367501315
+          },
+          {
+            "chain": "A",
+            "resnum": 604,
+            "resname": "ASP",
+            "distance": 3.79865694130839
+          },
+          {
+            "chain": "A",
+            "resnum": 606,
+            "resname": "GLU",
+            "distance": 3.5499354943410166
+          },
+          {
+            "chain": "A",
+            "resnum": 607,
+            "resname": "LEU",
+            "distance": 3.7283371879437075
+          },
+          {
+            "chain": "A",
+            "resnum": 608,
+            "resname": "ASN",
+            "distance": 1.66206333157492
+          },
+          {
+            "chain": "A",
+            "resnum": 609,
+            "resname": "LEU",
+            "distance": 1.129942964252284
+          },
+          {
+            "chain": "A",
+            "resnum": 610,
+            "resname": "ASP",
+            "distance": 1.1705894407149984
+          },
+          {
+            "chain": "A",
+            "resnum": 611,
+            "resname": "TYR",
+            "distance": 1.0781189793961845
+          },
+          {
+            "chain": "A",
+            "resnum": 612,
+            "resname": "GLU",
+            "distance": 0.7287442465485967
+          },
+          {
+            "chain": "A",
+            "resnum": 613,
+            "resname": "ARG",
+            "distance": 0.8850956515015244
+          },
+          {
+            "chain": "A",
+            "resnum": 614,
+            "resname": "TYR",
+            "distance": 0.7260932497074929
+          },
+          {
+            "chain": "A",
+            "resnum": 615,
+            "resname": "ASN",
+            "distance": 0.7131856687390762
+          },
+          {
+            "chain": "A",
+            "resnum": 616,
+            "resname": "SER",
+            "distance": 0.5503099566922524
+          },
+          {
+            "chain": "A",
+            "resnum": 617,
+            "resname": "GLN",
+            "distance": 0.45710197503678845
+          },
+          {
+            "chain": "A",
+            "resnum": 618,
+            "resname": "LEU",
+            "distance": 0.6733354511035963
+          },
+          {
+            "chain": "A",
+            "resnum": 619,
+            "resname": "LEU",
+            "distance": 0.6826524581327149
+          },
+          {
+            "chain": "A",
+            "resnum": 620,
+            "resname": "SER",
+            "distance": 0.4961050195356246
+          },
+          {
+            "chain": "A",
+            "resnum": 621,
+            "resname": "PHE",
+            "distance": 0.8274444572277917
+          },
+          {
+            "chain": "A",
+            "resnum": 622,
+            "resname": "VAL",
+            "distance": 1.8080747214549693
+          },
+          {
+            "chain": "A",
+            "resnum": 623,
+            "resname": "ARG",
+            "distance": 0.613262518074778
+          },
+          {
+            "chain": "A",
+            "resnum": 624,
+            "resname": "ASP",
+            "distance": 0.576336648101681
+          },
+          {
+            "chain": "A",
+            "resnum": 625,
+            "resname": "LEU",
+            "distance": 0.5866256787911913
+          },
+          {
+            "chain": "A",
+            "resnum": 626,
+            "resname": "ASN",
+            "distance": 0.52535813990804
+          },
+          {
+            "chain": "A",
+            "resnum": 627,
+            "resname": "GLN",
+            "distance": 0.45480978138311784
+          },
+          {
+            "chain": "A",
+            "resnum": 628,
+            "resname": "TYR",
+            "distance": 0.46542645724237963
+          },
+          {
+            "chain": "A",
+            "resnum": 629,
+            "resname": "ARG",
+            "distance": 0.8125800417101895
+          },
+          {
+            "chain": "A",
+            "resnum": 630,
+            "resname": "ALA",
+            "distance": 0.48750115948753475
+          },
+          {
+            "chain": "A",
+            "resnum": 631,
+            "resname": "ASP",
+            "distance": 0.4840154575711454
+          },
+          {
+            "chain": "A",
+            "resnum": 632,
+            "resname": "ILE",
+            "distance": 0.29389013550247184
+          },
+          {
+            "chain": "A",
+            "resnum": 633,
+            "resname": "LYS",
+            "distance": 1.004565068649573
+          },
+          {
+            "chain": "A",
+            "resnum": 634,
+            "resname": "GLU",
+            "distance": 0.8674287547205278
+          },
+          {
+            "chain": "A",
+            "resnum": 635,
+            "resname": "MET",
+            "distance": 0.7631872614374688
+          },
+          {
+            "chain": "A",
+            "resnum": 636,
+            "resname": "GLY",
+            "distance": 1.0094034154732587
+          },
+          {
+            "chain": "A",
+            "resnum": 637,
+            "resname": "LEU",
+            "distance": 0.607730100476033
+          },
+          {
+            "chain": "A",
+            "resnum": 638,
+            "resname": "SER",
+            "distance": 1.0687634767718903
+          },
+          {
+            "chain": "A",
+            "resnum": 639,
+            "resname": "LEU",
+            "distance": 0.5451129328362518
+          },
+          {
+            "chain": "A",
+            "resnum": 640,
+            "resname": "GLN",
+            "distance": 0.9699990666143496
+          },
+          {
+            "chain": "A",
+            "resnum": 641,
+            "resname": "TRP",
+            "distance": 0.45571884696960335
+          },
+          {
+            "chain": "A",
+            "resnum": 642,
+            "resname": "LEU",
+            "distance": 0.40663811908843744
+          },
+          {
+            "chain": "A",
+            "resnum": 643,
+            "resname": "TYR",
+            "distance": 0.8496086495230856
+          },
+          {
+            "chain": "A",
+            "resnum": 644,
+            "resname": "SER",
+            "distance": 1.9964883775194588
+          },
+          {
+            "chain": "A",
+            "resnum": 645,
+            "resname": "ALA",
+            "distance": 0.5727870789361532
+          },
+          {
+            "chain": "A",
+            "resnum": 646,
+            "resname": "ARG",
+            "distance": 0.5231197088245993
+          },
+          {
+            "chain": "A",
+            "resnum": 647,
+            "resname": "GLY",
+            "distance": 1.9367512813013967
+          },
+          {
+            "chain": "A",
+            "resnum": 648,
+            "resname": "ASP",
+            "distance": 2.7187352680220656
+          },
+          {
+            "chain": "A",
+            "resnum": 649,
+            "resname": "PHE",
+            "distance": 2.058113629301011
+          },
+          {
+            "chain": "A",
+            "resnum": 650,
+            "resname": "PHE",
+            "distance": 1.3555467728329118
+          },
+          {
+            "chain": "A",
+            "resnum": 651,
+            "resname": "ARG",
+            "distance": 1.1947338431727643
+          },
+          {
+            "chain": "A",
+            "resnum": 652,
+            "resname": "ALA",
+            "distance": 3.023995434114561
+          },
+          {
+            "chain": "A",
+            "resnum": 653,
+            "resname": "THR",
+            "distance": 1.0632623086307311
+          },
+          {
+            "chain": "A",
+            "resnum": 654,
+            "resname": "SER",
+            "distance": 3.5095585148241364
+          },
+          {
+            "chain": "A",
+            "resnum": 656,
+            "resname": "LEU",
+            "distance": 4.106750244451303
+          },
+          {
+            "chain": "A",
+            "resnum": 657,
+            "resname": "THR",
+            "distance": 3.162005522550796
+          },
+          {
+            "chain": "A",
+            "resnum": 660,
+            "resname": "PHE",
+            "distance": 4.597740947655859
+          },
+          {
+            "chain": "A",
+            "resnum": 678,
+            "resname": "VAL",
+            "distance": 2.471446332853091
+          },
+          {
+            "chain": "A",
+            "resnum": 681,
+            "resname": "VAL",
+            "distance": 4.478978577718184
+          },
+          {
+            "chain": "A",
+            "resnum": 682,
+            "resname": "GLU",
+            "distance": 1.68921677002861
+          },
+          {
+            "chain": "A",
+            "resnum": 685,
+            "resname": "PHE",
+            "distance": 3.107226098623853
+          },
+          {
+            "chain": "A",
+            "resnum": 699,
+            "resname": "HIS",
+            "distance": 4.99959946046451
+          },
+          {
+            "chain": "A",
+            "resnum": 701,
+            "resname": "PHE",
+            "distance": 2.347754483835056
+          },
+          {
+            "chain": "A",
+            "resnum": 702,
+            "resname": "TRP",
+            "distance": 1.2780269273594165
+          },
+          {
+            "chain": "A",
+            "resnum": 709,
+            "resname": "LEU",
+            "distance": 3.4370641417308643
+          },
+          {
+            "chain": "A",
+            "resnum": 710,
+            "resname": "PRO",
+            "distance": 3.566841664873892
+          },
+          {
+            "chain": "A",
+            "resnum": 712,
+            "resname": "LEU",
+            "distance": 3.236223090079827
+          },
+          {
+            "chain": "A",
+            "resnum": 713,
+            "resname": "LEU",
+            "distance": 3.4799371413877345
+          },
+          {
+            "chain": "A",
+            "resnum": 714,
+            "resname": "GLU",
+            "distance": 4.958092408932547
+          },
+          {
+            "chain": "A",
+            "resnum": 716,
+            "resname": "LEU",
+            "distance": 2.856001336712578
+          },
+          {
+            "chain": "A",
+            "resnum": 717,
+            "resname": "LYS",
+            "distance": 4.883191281861393
+          },
+          {
+            "chain": "A",
+            "resnum": 719,
+            "resname": "ARG",
+            "distance": 2.309422938927977
+          },
+          {
+            "chain": "A",
+            "resnum": 720,
+            "resname": "LYS",
+            "distance": 3.3598546671770464
+          },
+          {
+            "chain": "A",
+            "resnum": 726,
+            "resname": "PHE",
+            "distance": 2.7722842525207803
+          },
+          {
+            "chain": "A",
+            "resnum": 728,
+            "resname": "GLU",
+            "distance": 3.6100591845285552
+          },
+          {
+            "chain": "A",
+            "resnum": 731,
+            "resname": "PHE",
+            "distance": 3.086836778672617
+          },
+          {
+            "chain": "A",
+            "resnum": 732,
+            "resname": "ARG",
+            "distance": 1.4001997631005147
+          },
+          {
+            "chain": "A",
+            "resnum": 735,
+            "resname": "LEU",
+            "distance": 3.360642466903394
+          },
+          {
+            "chain": "A",
+            "resnum": 736,
+            "resname": "ALA",
+            "distance": 4.990876014806948
+          },
+          {
+            "chain": "A",
+            "resnum": 738,
+            "resname": "ALA",
+            "distance": 3.7384227996099306
+          },
+          {
+            "chain": "A",
+            "resnum": 739,
+            "resname": "THR",
+            "distance": 3.2668990093691472
+          },
+          {
+            "chain": "A",
+            "resnum": 742,
+            "resname": "ILE",
+            "distance": 2.9867939306212485
+          },
+          {
+            "chain": "A",
+            "resnum": 743,
+            "resname": "GLN",
+            "distance": 2.173674372189234
+          },
+          {
+            "chain": "A",
+            "resnum": 749,
+            "resname": "LEU",
+            "distance": 2.7684131259961173
+          },
+          {
+            "chain": "B",
+            "resnum": 318,
+            "resname": "HIS",
+            "distance": 3.7716065722389445
+          },
+          {
+            "chain": "B",
+            "resnum": 319,
+            "resname": "THR",
+            "distance": 4.751782515824561
+          },
+          {
+            "chain": "B",
+            "resnum": 320,
+            "resname": "GLN",
+            "distance": 0.8106908214444654
+          }
+        ],
+        "alignment_policy": "all source target CAs; <=2 A transfer; full template replaces refolded target",
+        "newly_restored_target_clashes_under_2A": [
+          {
+            "chain": "A",
+            "resnum": 498,
+            "distance": 0.8574022383413447
+          },
+          {
+            "chain": "A",
+            "resnum": 499,
+            "distance": 1.0541113693581254
+          },
+          {
+            "chain": "A",
+            "resnum": 500,
+            "distance": 0.5955324348928016
+          },
+          {
+            "chain": "A",
+            "resnum": 501,
+            "distance": 0.6037967422572935
+          },
+          {
+            "chain": "A",
+            "resnum": 502,
+            "distance": 0.3145802952428038
+          },
+          {
+            "chain": "A",
+            "resnum": 503,
+            "distance": 0.5228660842064946
+          },
+          {
+            "chain": "A",
+            "resnum": 504,
+            "distance": 1.4237428394360285
+          },
+          {
+            "chain": "A",
+            "resnum": 505,
+            "distance": 0.5581546399291225
+          },
+          {
+            "chain": "A",
+            "resnum": 506,
+            "distance": 0.6392964853672394
+          },
+          {
+            "chain": "A",
+            "resnum": 507,
+            "distance": 0.6368835155367663
+          },
+          {
+            "chain": "A",
+            "resnum": 508,
+            "distance": 0.5314979371636315
+          },
+          {
+            "chain": "A",
+            "resnum": 509,
+            "distance": 1.2277888297269768
+          },
+          {
+            "chain": "A",
+            "resnum": 510,
+            "distance": 1.760007264271454
+          },
+          {
+            "chain": "A",
+            "resnum": 511,
+            "distance": 0.8748660427432865
+          },
+          {
+            "chain": "A",
+            "resnum": 523,
+            "distance": 0.7412140996724986
+          },
+          {
+            "chain": "A",
+            "resnum": 525,
+            "distance": 0.6770467181480144
+          },
+          {
+            "chain": "A",
+            "resnum": 526,
+            "distance": 1.208684166546443
+          },
+          {
+            "chain": "A",
+            "resnum": 527,
+            "distance": 0.8400795909363526
+          },
+          {
+            "chain": "A",
+            "resnum": 528,
+            "distance": 0.8372477609022564
+          },
+          {
+            "chain": "A",
+            "resnum": 529,
+            "distance": 1.3287790600245055
+          },
+          {
+            "chain": "A",
+            "resnum": 530,
+            "distance": 1.8716338608457361
+          },
+          {
+            "chain": "A",
+            "resnum": 551,
+            "distance": 1.5706944579746125
+          },
+          {
+            "chain": "A",
+            "resnum": 553,
+            "distance": 1.058895119348133
+          },
+          {
+            "chain": "A",
+            "resnum": 600,
+            "distance": 1.7771782636301858
+          },
+          {
+            "chain": "A",
+            "resnum": 608,
+            "distance": 1.66206333157492
+          },
+          {
+            "chain": "A",
+            "resnum": 609,
+            "distance": 1.129942964252284
+          },
+          {
+            "chain": "A",
+            "resnum": 610,
+            "distance": 1.1705894407149984
+          },
+          {
+            "chain": "A",
+            "resnum": 611,
+            "distance": 1.0781189793961845
+          },
+          {
+            "chain": "A",
+            "resnum": 612,
+            "distance": 0.7287442465485967
+          },
+          {
+            "chain": "A",
+            "resnum": 613,
+            "distance": 0.8850956515015244
+          },
+          {
+            "chain": "A",
+            "resnum": 614,
+            "distance": 0.7260932497074929
+          },
+          {
+            "chain": "A",
+            "resnum": 615,
+            "distance": 0.7131856687390762
+          },
+          {
+            "chain": "A",
+            "resnum": 616,
+            "distance": 0.5503099566922524
+          },
+          {
+            "chain": "A",
+            "resnum": 617,
+            "distance": 0.45710197503678845
+          },
+          {
+            "chain": "A",
+            "resnum": 618,
+            "distance": 0.6733354511035963
+          },
+          {
+            "chain": "A",
+            "resnum": 619,
+            "distance": 0.6826524581327149
+          },
+          {
+            "chain": "A",
+            "resnum": 620,
+            "distance": 0.4961050195356246
+          },
+          {
+            "chain": "A",
+            "resnum": 621,
+            "distance": 0.8274444572277917
+          },
+          {
+            "chain": "A",
+            "resnum": 622,
+            "distance": 1.8080747214549693
+          },
+          {
+            "chain": "A",
+            "resnum": 623,
+            "distance": 0.613262518074778
+          },
+          {
+            "chain": "A",
+            "resnum": 624,
+            "distance": 0.576336648101681
+          },
+          {
+            "chain": "A",
+            "resnum": 625,
+            "distance": 0.5866256787911913
+          },
+          {
+            "chain": "A",
+            "resnum": 626,
+            "distance": 0.52535813990804
+          },
+          {
+            "chain": "A",
+            "resnum": 627,
+            "distance": 0.45480978138311784
+          },
+          {
+            "chain": "A",
+            "resnum": 628,
+            "distance": 0.46542645724237963
+          },
+          {
+            "chain": "A",
+            "resnum": 629,
+            "distance": 0.8125800417101895
+          },
+          {
+            "chain": "A",
+            "resnum": 630,
+            "distance": 0.48750115948753475
+          },
+          {
+            "chain": "A",
+            "resnum": 631,
+            "distance": 0.4840154575711454
+          },
+          {
+            "chain": "A",
+            "resnum": 632,
+            "distance": 0.29389013550247184
+          },
+          {
+            "chain": "A",
+            "resnum": 633,
+            "distance": 1.004565068649573
+          },
+          {
+            "chain": "A",
+            "resnum": 634,
+            "distance": 0.8674287547205278
+          },
+          {
+            "chain": "A",
+            "resnum": 635,
+            "distance": 0.7631872614374688
+          },
+          {
+            "chain": "A",
+            "resnum": 636,
+            "distance": 1.0094034154732587
+          },
+          {
+            "chain": "A",
+            "resnum": 637,
+            "distance": 0.607730100476033
+          },
+          {
+            "chain": "A",
+            "resnum": 638,
+            "distance": 1.0687634767718903
+          },
+          {
+            "chain": "A",
+            "resnum": 639,
+            "distance": 0.5451129328362518
+          },
+          {
+            "chain": "A",
+            "resnum": 640,
+            "distance": 0.9699990666143496
+          },
+          {
+            "chain": "A",
+            "resnum": 641,
+            "distance": 0.45571884696960335
+          },
+          {
+            "chain": "A",
+            "resnum": 642,
+            "distance": 0.40663811908843744
+          },
+          {
+            "chain": "A",
+            "resnum": 643,
+            "distance": 0.8496086495230856
+          },
+          {
+            "chain": "A",
+            "resnum": 644,
+            "distance": 1.9964883775194588
+          },
+          {
+            "chain": "A",
+            "resnum": 645,
+            "distance": 0.5727870789361532
+          },
+          {
+            "chain": "A",
+            "resnum": 646,
+            "distance": 0.5231197088245993
+          },
+          {
+            "chain": "A",
+            "resnum": 647,
+            "distance": 1.9367512813013967
+          },
+          {
+            "chain": "A",
+            "resnum": 650,
+            "distance": 1.3555467728329118
+          },
+          {
+            "chain": "A",
+            "resnum": 651,
+            "distance": 1.1947338431727643
+          },
+          {
+            "chain": "A",
+            "resnum": 653,
+            "distance": 1.0632623086307311
+          },
+          {
+            "chain": "A",
+            "resnum": 682,
+            "distance": 1.68921677002861
+          },
+          {
+            "chain": "B",
+            "resnum": 320,
+            "distance": 0.8106908214444654
+          }
+        ],
+        "glycan_attachment_distances": [
+          {
+            "chain": "A",
+            "site": 251,
+            "distance": 26.225559246476553
+          },
+          {
+            "chain": "A",
+            "site": 317,
+            "distance": 30.66745944721587
+          },
+          {
+            "chain": "A",
+            "site": 727,
+            "distance": 6.055418699997246
+          },
+          {
+            "chain": "B",
+            "site": 251,
+            "distance": 38.68747879335675
+          },
+          {
+            "chain": "B",
+            "site": 317,
+            "distance": 5.338763215416058
+          },
+          {
+            "chain": "B",
+            "site": 727,
+            "distance": 36.864585853689015
+          }
+        ],
+        "observed_NAG_min_distance": 5.914601518888837,
+        "transferrin_footprint_overlap": [
+          619,
+          622,
+          623,
+          626,
+          629,
+          640,
+          643,
+          644,
+          646,
+          647,
+          648,
+          650,
+          651
+        ],
+        "binder_Cterminal_residue_target_min_distance": 0.5581546399291225,
+        "glycan_model": "attachment/observed-NAG proximity audit only; glycans omitted from Rosetta/PROPKA",
+        "terminal_model": "resolved receptor starts122; assay121+GP scar absent; binder tag absent; native charged termini",
+        "source_sha256": "9525f6be00e976ad6171f697085ffeab71f0bab49e43f7213a24e25905cb5f54",
+        "context_sha256": "8331c2fb96f2b7f22196665c7c5234f05f68ec3920dd40de7f7a38138c0838d0"
+      }
+    },
+    {
+      "backbone": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8",
+      "pair": 2,
+      "L": -1.197,
+      "ddG": 1.9987112552032045,
+      "matched_QQ_L": -0.64,
+      "HH_minus_QQ": -0.557,
+      "variant_path": "/Users/ricardo/dev/adaptyv-c4/results/switch_install/campaign/07_c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8/c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8_candidate3_CE15__CQ27_HH_switch.pdb",
+      "source_path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all_pdb/c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8_candidate3.pdb",
+      "status": "priority for context/ensemble validation; not submission selected",
+      "priority_rank": 3,
+      "parent_index": 3,
+      "sites": [
+        {
+          "design": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8_candidate3.pdb",
+          "chain": "C",
+          "resnum": 15,
+          "resname": "GLU",
+          "burial_free": 0.478,
+          "burial_bound": 0.739,
+          "d_burial": 0.261,
+          "acids_near_free": 2,
+          "bases_near_target": 1,
+          "pka_free_est": 6.97,
+          "pka_bound_est": 5.89,
+          "est_contribution": -0.639,
+          "note": "",
+          "wt": "E"
+        },
+        {
+          "design": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8_candidate3.pdb",
+          "chain": "C",
+          "resnum": 27,
+          "resname": "GLN",
+          "burial_free": 0.561,
+          "burial_bound": 0.728,
+          "d_burial": 0.167,
+          "acids_near_free": 3,
+          "bases_near_target": 1,
+          "pka_free_est": 7.34,
+          "pka_bound_est": 6.51,
+          "est_contribution": -0.515,
+          "note": "",
+          "wt": "Q"
+        }
+      ],
+      "context_pdb": "/Users/ricardo/dev/adaptyv-c4/results/context_ensemble_pilot_v2/03_context.pdb",
+      "audit": {
+        "alignment_ca_rmsd": 1.8418360121874635,
+        "aligned_residues": 73,
+        "contacts": [
+          {
+            "chain": "A",
+            "resnum": 496,
+            "resname": "VAL",
+            "distance": 2.282078727575143
+          },
+          {
+            "chain": "A",
+            "resnum": 497,
+            "resname": "SER",
+            "distance": 3.334055569837431
+          },
+          {
+            "chain": "A",
+            "resnum": 498,
+            "resname": "ALA",
+            "distance": 0.7141078744617282
+          },
+          {
+            "chain": "A",
+            "resnum": 499,
+            "resname": "SER",
+            "distance": 0.9716052958753337
+          },
+          {
+            "chain": "A",
+            "resnum": 500,
+            "resname": "PRO",
+            "distance": 1.2733210588254795
+          },
+          {
+            "chain": "A",
+            "resnum": 501,
+            "resname": "LEU",
+            "distance": 1.696907677092053
+          },
+          {
+            "chain": "A",
+            "resnum": 502,
+            "resname": "LEU",
+            "distance": 3.8109080788800602
+          },
+          {
+            "chain": "A",
+            "resnum": 503,
+            "resname": "TYR",
+            "distance": 0.7687749914698138
+          },
+          {
+            "chain": "A",
+            "resnum": 504,
+            "resname": "THR",
+            "distance": 1.4244857811381209
+          },
+          {
+            "chain": "A",
+            "resnum": 505,
+            "resname": "LEU",
+            "distance": 3.3831482216389492
+          },
+          {
+            "chain": "A",
+            "resnum": 506,
+            "resname": "ILE",
+            "distance": 4.327915478428217
+          },
+          {
+            "chain": "A",
+            "resnum": 507,
+            "resname": "GLU",
+            "distance": 2.889570723307423
+          },
+          {
+            "chain": "A",
+            "resnum": 523,
+            "resname": "TYR",
+            "distance": 3.237458550116822
+          },
+          {
+            "chain": "A",
+            "resnum": 525,
+            "resname": "ASP",
+            "distance": 2.845924831174039
+          },
+          {
+            "chain": "A",
+            "resnum": 526,
+            "resname": "SER",
+            "distance": 2.027318184180908
+          },
+          {
+            "chain": "A",
+            "resnum": 527,
+            "resname": "ASN",
+            "distance": 3.06023125327209
+          },
+          {
+            "chain": "A",
+            "resnum": 528,
+            "resname": "TRP",
+            "distance": 2.1701227800833123
+          },
+          {
+            "chain": "A",
+            "resnum": 529,
+            "resname": "ALA",
+            "distance": 0.7688739822986839
+          },
+          {
+            "chain": "A",
+            "resnum": 530,
+            "resname": "SER",
+            "distance": 0.41767254853167685
+          },
+          {
+            "chain": "A",
+            "resnum": 531,
+            "resname": "LYS",
+            "distance": 2.109338410697326
+          },
+          {
+            "chain": "A",
+            "resnum": 532,
+            "resname": "VAL",
+            "distance": 0.9686846112076646
+          },
+          {
+            "chain": "A",
+            "resnum": 533,
+            "resname": "GLU",
+            "distance": 0.9214346019290705
+          },
+          {
+            "chain": "A",
+            "resnum": 534,
+            "resname": "LYS",
+            "distance": 3.7237418428563682
+          },
+          {
+            "chain": "A",
+            "resnum": 535,
+            "resname": "LEU",
+            "distance": 3.9856972463230433
+          },
+          {
+            "chain": "A",
+            "resnum": 545,
+            "resname": "LEU",
+            "distance": 4.316372136867411
+          },
+          {
+            "chain": "A",
+            "resnum": 552,
+            "resname": "ALA",
+            "distance": 3.3835169581600524
+          },
+          {
+            "chain": "A",
+            "resnum": 608,
+            "resname": "ASN",
+            "distance": 3.418559016881906
+          },
+          {
+            "chain": "A",
+            "resnum": 609,
+            "resname": "LEU",
+            "distance": 2.455821146724562
+          },
+          {
+            "chain": "A",
+            "resnum": 610,
+            "resname": "ASP",
+            "distance": 0.43641098044398785
+          },
+          {
+            "chain": "A",
+            "resnum": 611,
+            "resname": "TYR",
+            "distance": 0.802795617345527
+          },
+          {
+            "chain": "A",
+            "resnum": 612,
+            "resname": "GLU",
+            "distance": 0.6350243154141858
+          },
+          {
+            "chain": "A",
+            "resnum": 613,
+            "resname": "ARG",
+            "distance": 0.41218462450448223
+          },
+          {
+            "chain": "A",
+            "resnum": 614,
+            "resname": "TYR",
+            "distance": 0.1880809074620824
+          },
+          {
+            "chain": "A",
+            "resnum": 615,
+            "resname": "ASN",
+            "distance": 1.461933465166864
+          },
+          {
+            "chain": "A",
+            "resnum": 616,
+            "resname": "SER",
+            "distance": 0.9286835243361402
+          },
+          {
+            "chain": "A",
+            "resnum": 617,
+            "resname": "GLN",
+            "distance": 0.9624625821164456
+          },
+          {
+            "chain": "A",
+            "resnum": 618,
+            "resname": "LEU",
+            "distance": 0.6732738923430776
+          },
+          {
+            "chain": "A",
+            "resnum": 619,
+            "resname": "LEU",
+            "distance": 1.3040600684013068
+          },
+          {
+            "chain": "A",
+            "resnum": 620,
+            "resname": "SER",
+            "distance": 0.7569830246514329
+          },
+          {
+            "chain": "A",
+            "resnum": 621,
+            "resname": "PHE",
+            "distance": 0.8793122427565557
+          },
+          {
+            "chain": "A",
+            "resnum": 622,
+            "resname": "VAL",
+            "distance": 1.1017187373512345
+          },
+          {
+            "chain": "A",
+            "resnum": 623,
+            "resname": "ARG",
+            "distance": 0.5612357313637705
+          },
+          {
+            "chain": "A",
+            "resnum": 624,
+            "resname": "ASP",
+            "distance": 0.42907888444719827
+          },
+          {
+            "chain": "A",
+            "resnum": 625,
+            "resname": "LEU",
+            "distance": 0.5205917196044382
+          },
+          {
+            "chain": "A",
+            "resnum": 626,
+            "resname": "ASN",
+            "distance": 0.3646381886188673
+          },
+          {
+            "chain": "A",
+            "resnum": 627,
+            "resname": "GLN",
+            "distance": 0.8397771069232007
+          },
+          {
+            "chain": "A",
+            "resnum": 628,
+            "resname": "TYR",
+            "distance": 0.5707936447114462
+          },
+          {
+            "chain": "A",
+            "resnum": 629,
+            "resname": "ARG",
+            "distance": 0.49532657210603237
+          },
+          {
+            "chain": "A",
+            "resnum": 630,
+            "resname": "ALA",
+            "distance": 0.8378895556836928
+          },
+          {
+            "chain": "A",
+            "resnum": 631,
+            "resname": "ASP",
+            "distance": 0.9470229765735069
+          },
+          {
+            "chain": "A",
+            "resnum": 632,
+            "resname": "ILE",
+            "distance": 1.0601960228925564
+          },
+          {
+            "chain": "A",
+            "resnum": 633,
+            "resname": "LYS",
+            "distance": 0.5740328429511591
+          },
+          {
+            "chain": "A",
+            "resnum": 634,
+            "resname": "GLU",
+            "distance": 0.5034922689119155
+          },
+          {
+            "chain": "A",
+            "resnum": 635,
+            "resname": "MET",
+            "distance": 0.6685546461541553
+          },
+          {
+            "chain": "A",
+            "resnum": 636,
+            "resname": "GLY",
+            "distance": 0.723801035846198
+          },
+          {
+            "chain": "A",
+            "resnum": 637,
+            "resname": "LEU",
+            "distance": 0.695438852276944
+          },
+          {
+            "chain": "A",
+            "resnum": 638,
+            "resname": "SER",
+            "distance": 0.6785604056746978
+          },
+          {
+            "chain": "A",
+            "resnum": 639,
+            "resname": "LEU",
+            "distance": 0.6292316041961742
+          },
+          {
+            "chain": "A",
+            "resnum": 640,
+            "resname": "GLN",
+            "distance": 1.4869230060463472
+          },
+          {
+            "chain": "A",
+            "resnum": 641,
+            "resname": "TRP",
+            "distance": 0.26505547650251754
+          },
+          {
+            "chain": "A",
+            "resnum": 642,
+            "resname": "LEU",
+            "distance": 0.965071596673922
+          },
+          {
+            "chain": "A",
+            "resnum": 643,
+            "resname": "TYR",
+            "distance": 0.6203517142330558
+          },
+          {
+            "chain": "A",
+            "resnum": 644,
+            "resname": "SER",
+            "distance": 1.3627826792414064
+          },
+          {
+            "chain": "A",
+            "resnum": 645,
+            "resname": "ALA",
+            "distance": 1.384359671776225
+          },
+          {
+            "chain": "A",
+            "resnum": 646,
+            "resname": "ARG",
+            "distance": 0.506099659070986
+          },
+          {
+            "chain": "A",
+            "resnum": 647,
+            "resname": "GLY",
+            "distance": 2.233240565915392
+          },
+          {
+            "chain": "A",
+            "resnum": 648,
+            "resname": "ASP",
+            "distance": 1.7436582530949212
+          },
+          {
+            "chain": "A",
+            "resnum": 649,
+            "resname": "PHE",
+            "distance": 1.4214653167271112
+          },
+          {
+            "chain": "A",
+            "resnum": 650,
+            "resname": "PHE",
+            "distance": 1.093375075042819
+          },
+          {
+            "chain": "A",
+            "resnum": 651,
+            "resname": "ARG",
+            "distance": 4.015385150546497
+          },
+          {
+            "chain": "A",
+            "resnum": 652,
+            "resname": "ALA",
+            "distance": 4.950629901268286
+          },
+          {
+            "chain": "A",
+            "resnum": 653,
+            "resname": "THR",
+            "distance": 2.0281799362520445
+          },
+          {
+            "chain": "A",
+            "resnum": 654,
+            "resname": "SER",
+            "distance": 4.091980252874002
+          },
+          {
+            "chain": "A",
+            "resnum": 657,
+            "resname": "THR",
+            "distance": 3.5012013107147943
+          },
+          {
+            "chain": "A",
+            "resnum": 678,
+            "resname": "VAL",
+            "distance": 4.284770257522665
+          },
+          {
+            "chain": "A",
+            "resnum": 681,
+            "resname": "VAL",
+            "distance": 4.390603421998262
+          },
+          {
+            "chain": "A",
+            "resnum": 685,
+            "resname": "PHE",
+            "distance": 2.582972075599534
+          },
+          {
+            "chain": "A",
+            "resnum": 700,
+            "resname": "VAL",
+            "distance": 4.973404962022306
+          },
+          {
+            "chain": "A",
+            "resnum": 701,
+            "resname": "PHE",
+            "distance": 3.248044094877521
+          },
+          {
+            "chain": "A",
+            "resnum": 702,
+            "resname": "TRP",
+            "distance": 4.220540251803211
+          },
+          {
+            "chain": "A",
+            "resnum": 709,
+            "resname": "LEU",
+            "distance": 3.8135314856256426
+          },
+          {
+            "chain": "A",
+            "resnum": 710,
+            "resname": "PRO",
+            "distance": 4.075936833236761
+          },
+          {
+            "chain": "A",
+            "resnum": 712,
+            "resname": "LEU",
+            "distance": 2.4895361243157446
+          },
+          {
+            "chain": "A",
+            "resnum": 713,
+            "resname": "LEU",
+            "distance": 2.931068955576156
+          },
+          {
+            "chain": "A",
+            "resnum": 716,
+            "resname": "LEU",
+            "distance": 3.4519822101263378
+          },
+          {
+            "chain": "A",
+            "resnum": 717,
+            "resname": "LYS",
+            "distance": 4.955261178062557
+          },
+          {
+            "chain": "A",
+            "resnum": 719,
+            "resname": "ARG",
+            "distance": 1.8390277378434985
+          },
+          {
+            "chain": "A",
+            "resnum": 726,
+            "resname": "PHE",
+            "distance": 3.7882584865477105
+          },
+          {
+            "chain": "A",
+            "resnum": 728,
+            "resname": "GLU",
+            "distance": 3.6417400794502317
+          },
+          {
+            "chain": "A",
+            "resnum": 731,
+            "resname": "PHE",
+            "distance": 3.564293611441369
+          },
+          {
+            "chain": "A",
+            "resnum": 732,
+            "resname": "ARG",
+            "distance": 2.5064916686316616
+          },
+          {
+            "chain": "A",
+            "resnum": 734,
+            "resname": "GLN",
+            "distance": 4.936941831842571
+          },
+          {
+            "chain": "A",
+            "resnum": 735,
+            "resname": "LEU",
+            "distance": 2.9935141464018997
+          },
+          {
+            "chain": "A",
+            "resnum": 736,
+            "resname": "ALA",
+            "distance": 4.1963482504896
+          },
+          {
+            "chain": "A",
+            "resnum": 738,
+            "resname": "ALA",
+            "distance": 3.3857795392539574
+          },
+          {
+            "chain": "A",
+            "resnum": 739,
+            "resname": "THR",
+            "distance": 2.393510592989923
+          },
+          {
+            "chain": "A",
+            "resnum": 740,
+            "resname": "TRP",
+            "distance": 4.369095087623508
+          },
+          {
+            "chain": "A",
+            "resnum": 741,
+            "resname": "THR",
+            "distance": 4.416297832659065
+          },
+          {
+            "chain": "A",
+            "resnum": 742,
+            "resname": "ILE",
+            "distance": 1.615588431729216
+          },
+          {
+            "chain": "A",
+            "resnum": 743,
+            "resname": "GLN",
+            "distance": 1.746726774532146
+          },
+          {
+            "chain": "A",
+            "resnum": 745,
+            "resname": "ALA",
+            "distance": 4.102116713338872
+          },
+          {
+            "chain": "A",
+            "resnum": 746,
+            "resname": "ALA",
+            "distance": 2.215766766635618
+          },
+          {
+            "chain": "A",
+            "resnum": 749,
+            "resname": "LEU",
+            "distance": 4.113871207442343
+          },
+          {
+            "chain": "B",
+            "resnum": 317,
+            "resname": "ASN",
+            "distance": 3.819119311428985
+          },
+          {
+            "chain": "B",
+            "resnum": 318,
+            "resname": "HIS",
+            "distance": 2.86346477844821
+          },
+          {
+            "chain": "B",
+            "resnum": 319,
+            "resname": "THR",
+            "distance": 2.389990651839135
+          },
+          {
+            "chain": "B",
+            "resnum": 320,
+            "resname": "GLN",
+            "distance": 1.16851183334883
+          },
+          {
+            "chain": "B",
+            "resnum": 321,
+            "resname": "PHE",
+            "distance": 1.5382495547214035
+          },
+          {
+            "chain": "B",
+            "resnum": 322,
+            "resname": "PRO",
+            "distance": 3.918016553082865
+          }
+        ],
+        "alignment_policy": "all source target CAs; <=2 A transfer; full template replaces refolded target",
+        "newly_restored_target_clashes_under_2A": [
+          {
+            "chain": "A",
+            "resnum": 498,
+            "distance": 0.7141078744617282
+          },
+          {
+            "chain": "A",
+            "resnum": 499,
+            "distance": 0.9716052958753337
+          },
+          {
+            "chain": "A",
+            "resnum": 500,
+            "distance": 1.2733210588254795
+          },
+          {
+            "chain": "A",
+            "resnum": 501,
+            "distance": 1.696907677092053
+          },
+          {
+            "chain": "A",
+            "resnum": 503,
+            "distance": 0.7687749914698138
+          },
+          {
+            "chain": "A",
+            "resnum": 504,
+            "distance": 1.4244857811381209
+          },
+          {
+            "chain": "A",
+            "resnum": 529,
+            "distance": 0.7688739822986839
+          },
+          {
+            "chain": "A",
+            "resnum": 530,
+            "distance": 0.41767254853167685
+          },
+          {
+            "chain": "A",
+            "resnum": 610,
+            "distance": 0.43641098044398785
+          },
+          {
+            "chain": "A",
+            "resnum": 611,
+            "distance": 0.802795617345527
+          },
+          {
+            "chain": "A",
+            "resnum": 612,
+            "distance": 0.6350243154141858
+          },
+          {
+            "chain": "A",
+            "resnum": 613,
+            "distance": 0.41218462450448223
+          },
+          {
+            "chain": "A",
+            "resnum": 614,
+            "distance": 0.1880809074620824
+          },
+          {
+            "chain": "A",
+            "resnum": 615,
+            "distance": 1.461933465166864
+          },
+          {
+            "chain": "A",
+            "resnum": 616,
+            "distance": 0.9286835243361402
+          },
+          {
+            "chain": "A",
+            "resnum": 617,
+            "distance": 0.9624625821164456
+          },
+          {
+            "chain": "A",
+            "resnum": 618,
+            "distance": 0.6732738923430776
+          },
+          {
+            "chain": "A",
+            "resnum": 619,
+            "distance": 1.3040600684013068
+          },
+          {
+            "chain": "A",
+            "resnum": 620,
+            "distance": 0.7569830246514329
+          },
+          {
+            "chain": "A",
+            "resnum": 621,
+            "distance": 0.8793122427565557
+          },
+          {
+            "chain": "A",
+            "resnum": 622,
+            "distance": 1.1017187373512345
+          },
+          {
+            "chain": "A",
+            "resnum": 623,
+            "distance": 0.5612357313637705
+          },
+          {
+            "chain": "A",
+            "resnum": 624,
+            "distance": 0.42907888444719827
+          },
+          {
+            "chain": "A",
+            "resnum": 625,
+            "distance": 0.5205917196044382
+          },
+          {
+            "chain": "A",
+            "resnum": 626,
+            "distance": 0.3646381886188673
+          },
+          {
+            "chain": "A",
+            "resnum": 627,
+            "distance": 0.8397771069232007
+          },
+          {
+            "chain": "A",
+            "resnum": 628,
+            "distance": 0.5707936447114462
+          },
+          {
+            "chain": "A",
+            "resnum": 629,
+            "distance": 0.49532657210603237
+          },
+          {
+            "chain": "A",
+            "resnum": 630,
+            "distance": 0.8378895556836928
+          },
+          {
+            "chain": "A",
+            "resnum": 631,
+            "distance": 0.9470229765735069
+          },
+          {
+            "chain": "A",
+            "resnum": 632,
+            "distance": 1.0601960228925564
+          },
+          {
+            "chain": "A",
+            "resnum": 633,
+            "distance": 0.5740328429511591
+          },
+          {
+            "chain": "A",
+            "resnum": 634,
+            "distance": 0.5034922689119155
+          },
+          {
+            "chain": "A",
+            "resnum": 635,
+            "distance": 0.6685546461541553
+          },
+          {
+            "chain": "A",
+            "resnum": 636,
+            "distance": 0.723801035846198
+          },
+          {
+            "chain": "A",
+            "resnum": 637,
+            "distance": 0.695438852276944
+          },
+          {
+            "chain": "A",
+            "resnum": 638,
+            "distance": 0.6785604056746978
+          },
+          {
+            "chain": "A",
+            "resnum": 639,
+            "distance": 0.6292316041961742
+          },
+          {
+            "chain": "A",
+            "resnum": 640,
+            "distance": 1.4869230060463472
+          },
+          {
+            "chain": "A",
+            "resnum": 641,
+            "distance": 0.26505547650251754
+          },
+          {
+            "chain": "A",
+            "resnum": 642,
+            "distance": 0.965071596673922
+          },
+          {
+            "chain": "A",
+            "resnum": 643,
+            "distance": 0.6203517142330558
+          },
+          {
+            "chain": "A",
+            "resnum": 644,
+            "distance": 1.3627826792414064
+          },
+          {
+            "chain": "A",
+            "resnum": 645,
+            "distance": 1.384359671776225
+          },
+          {
+            "chain": "A",
+            "resnum": 646,
+            "distance": 0.506099659070986
+          },
+          {
+            "chain": "A",
+            "resnum": 648,
+            "distance": 1.7436582530949212
+          },
+          {
+            "chain": "A",
+            "resnum": 649,
+            "distance": 1.4214653167271112
+          },
+          {
+            "chain": "A",
+            "resnum": 650,
+            "distance": 1.093375075042819
+          },
+          {
+            "chain": "B",
+            "resnum": 320,
+            "distance": 1.16851183334883
+          },
+          {
+            "chain": "B",
+            "resnum": 321,
+            "distance": 1.5382495547214035
+          }
+        ],
+        "glycan_attachment_distances": [
+          {
+            "chain": "A",
+            "site": 251,
+            "distance": 27.731750629418247
+          },
+          {
+            "chain": "A",
+            "site": 317,
+            "distance": 31.862369622722056
+          },
+          {
+            "chain": "A",
+            "site": 727,
+            "distance": 6.897271709737751
+          },
+          {
+            "chain": "B",
+            "site": 251,
+            "distance": 37.56396707950331
+          },
+          {
+            "chain": "B",
+            "site": 317,
+            "distance": 3.819119311428985
+          },
+          {
+            "chain": "B",
+            "site": 727,
+            "distance": 36.48448089447044
+          }
+        ],
+        "observed_NAG_min_distance": 4.2469743535028925,
+        "transferrin_footprint_overlap": [
+          619,
+          622,
+          623,
+          626,
+          629,
+          640,
+          643,
+          644,
+          646,
+          647,
+          648,
+          650,
+          651
+        ],
+        "binder_Cterminal_residue_target_min_distance": 0.43641098044398785,
+        "glycan_model": "attachment/observed-NAG proximity audit only; glycans omitted from Rosetta/PROPKA",
+        "terminal_model": "resolved receptor starts122; assay121+GP scar absent; binder tag absent; native charged termini",
+        "source_sha256": "bb4c92c1d5636dd2a7037462dc803ce6d4e3ec9df12415b787eb04587055286f",
+        "context_sha256": "62596524afc92d5e8de02206551dca0625951081e4eb5d1202b3bb80d81c2125"
+      }
+    },
+    {
+      "backbone": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c",
+      "pair": 1,
+      "L": -1.128,
+      "ddG": 2.228939144150786,
+      "matched_QQ_L": -0.512,
+      "HH_minus_QQ": -0.616,
+      "variant_path": "/Users/ricardo/dev/adaptyv-c4/results/switch_install/campaign/10_c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c/c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c_candidate8_CE95__CR80_HH_switch.pdb",
+      "source_path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all_pdb/c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c_candidate8.pdb",
+      "status": "priority for context/ensemble validation; not submission selected",
+      "priority_rank": 4,
+      "parent_index": 4,
+      "sites": [
+        {
+          "design": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c_candidate8.pdb",
+          "chain": "C",
+          "resnum": 95,
+          "resname": "GLU",
+          "burial_free": 0.328,
+          "burial_bound": 0.756,
+          "d_burial": 0.428,
+          "acids_near_free": 1,
+          "bases_near_target": 2,
+          "pka_free_est": 6.65,
+          "pka_bound_est": 4.74,
+          "est_contribution": -0.646,
+          "note": "",
+          "wt": "E"
+        },
+        {
+          "design": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c_candidate8.pdb",
+          "chain": "C",
+          "resnum": 80,
+          "resname": "ARG",
+          "burial_free": 0.339,
+          "burial_bound": 0.567,
+          "d_burial": 0.228,
+          "acids_near_free": 2,
+          "bases_near_target": 1,
+          "pka_free_est": 7.09,
+          "pka_bound_est": 6.1,
+          "est_contribution": -0.619,
+          "note": "",
+          "wt": "R"
+        }
+      ],
+      "context_pdb": "/Users/ricardo/dev/adaptyv-c4/results/context_ensemble_pilot_v2/04_context.pdb",
+      "audit": {
+        "alignment_ca_rmsd": 1.0761574906995506,
+        "aligned_residues": 73,
+        "contacts": [
+          {
+            "chain": "A",
+            "resnum": 496,
+            "resname": "VAL",
+            "distance": 4.977816192459108
+          },
+          {
+            "chain": "A",
+            "resnum": 500,
+            "resname": "PRO",
+            "distance": 2.647687231879045
+          },
+          {
+            "chain": "A",
+            "resnum": 503,
+            "resname": "TYR",
+            "distance": 3.178424110280027
+          },
+          {
+            "chain": "A",
+            "resnum": 507,
+            "resname": "GLU",
+            "distance": 3.161528336415224
+          },
+          {
+            "chain": "A",
+            "resnum": 510,
+            "resname": "MET",
+            "distance": 3.351283194847771
+          },
+          {
+            "chain": "A",
+            "resnum": 511,
+            "resname": "GLN",
+            "distance": 4.022489071056868
+          },
+          {
+            "chain": "A",
+            "resnum": 522,
+            "resname": "LEU",
+            "distance": 4.0675039274798594
+          },
+          {
+            "chain": "A",
+            "resnum": 523,
+            "resname": "TYR",
+            "distance": 0.8138005780662856
+          },
+          {
+            "chain": "A",
+            "resnum": 524,
+            "resname": "GLN",
+            "distance": 2.1555203936082714
+          },
+          {
+            "chain": "A",
+            "resnum": 525,
+            "resname": "ASP",
+            "distance": 1.1535591524395108
+          },
+          {
+            "chain": "A",
+            "resnum": 526,
+            "resname": "SER",
+            "distance": 1.142458157144522
+          },
+          {
+            "chain": "A",
+            "resnum": 527,
+            "resname": "ASN",
+            "distance": 0.720607620420365
+          },
+          {
+            "chain": "A",
+            "resnum": 528,
+            "resname": "TRP",
+            "distance": 1.1850153545506363
+          },
+          {
+            "chain": "A",
+            "resnum": 529,
+            "resname": "ALA",
+            "distance": 1.9968623138305717
+          },
+          {
+            "chain": "A",
+            "resnum": 530,
+            "resname": "SER",
+            "distance": 0.4320245186942211
+          },
+          {
+            "chain": "A",
+            "resnum": 531,
+            "resname": "LYS",
+            "distance": 0.5773811875006113
+          },
+          {
+            "chain": "A",
+            "resnum": 532,
+            "resname": "VAL",
+            "distance": 0.7618137599109089
+          },
+          {
+            "chain": "A",
+            "resnum": 533,
+            "resname": "GLU",
+            "distance": 1.9574878451911757
+          },
+          {
+            "chain": "A",
+            "resnum": 534,
+            "resname": "LYS",
+            "distance": 2.0313779533226555
+          },
+          {
+            "chain": "A",
+            "resnum": 610,
+            "resname": "ASP",
+            "distance": 4.232481214739096
+          },
+          {
+            "chain": "A",
+            "resnum": 611,
+            "resname": "TYR",
+            "distance": 0.7708005284067208
+          },
+          {
+            "chain": "A",
+            "resnum": 612,
+            "resname": "GLU",
+            "distance": 1.07892986066983
+          },
+          {
+            "chain": "A",
+            "resnum": 613,
+            "resname": "ARG",
+            "distance": 1.172610626564131
+          },
+          {
+            "chain": "A",
+            "resnum": 614,
+            "resname": "TYR",
+            "distance": 1.093801910061108
+          },
+          {
+            "chain": "A",
+            "resnum": 615,
+            "resname": "ASN",
+            "distance": 0.6503008842343877
+          },
+          {
+            "chain": "A",
+            "resnum": 616,
+            "resname": "SER",
+            "distance": 0.5109991777088365
+          },
+          {
+            "chain": "A",
+            "resnum": 617,
+            "resname": "GLN",
+            "distance": 0.9554581312017515
+          },
+          {
+            "chain": "A",
+            "resnum": 618,
+            "resname": "LEU",
+            "distance": 0.8854574106945509
+          },
+          {
+            "chain": "A",
+            "resnum": 619,
+            "resname": "LEU",
+            "distance": 1.33459781417893
+          },
+          {
+            "chain": "A",
+            "resnum": 620,
+            "resname": "SER",
+            "distance": 0.8422519219341533
+          },
+          {
+            "chain": "A",
+            "resnum": 621,
+            "resname": "PHE",
+            "distance": 0.7790168094662655
+          },
+          {
+            "chain": "A",
+            "resnum": 622,
+            "resname": "VAL",
+            "distance": 1.2222647752639209
+          },
+          {
+            "chain": "A",
+            "resnum": 623,
+            "resname": "ARG",
+            "distance": 0.4929502781291488
+          },
+          {
+            "chain": "A",
+            "resnum": 624,
+            "resname": "ASP",
+            "distance": 0.43732247200964003
+          },
+          {
+            "chain": "A",
+            "resnum": 625,
+            "resname": "LEU",
+            "distance": 1.0358599235468045
+          },
+          {
+            "chain": "A",
+            "resnum": 626,
+            "resname": "ASN",
+            "distance": 0.8071736230176476
+          },
+          {
+            "chain": "A",
+            "resnum": 627,
+            "resname": "GLN",
+            "distance": 0.5426513077411393
+          },
+          {
+            "chain": "A",
+            "resnum": 628,
+            "resname": "TYR",
+            "distance": 0.8431976361574265
+          },
+          {
+            "chain": "A",
+            "resnum": 629,
+            "resname": "ARG",
+            "distance": 0.37555328014660144
+          },
+          {
+            "chain": "A",
+            "resnum": 630,
+            "resname": "ALA",
+            "distance": 0.5247218080478238
+          },
+          {
+            "chain": "A",
+            "resnum": 631,
+            "resname": "ASP",
+            "distance": 0.6285762616435919
+          },
+          {
+            "chain": "A",
+            "resnum": 632,
+            "resname": "ILE",
+            "distance": 1.1157548780191835
+          },
+          {
+            "chain": "A",
+            "resnum": 633,
+            "resname": "LYS",
+            "distance": 0.5141520411805031
+          },
+          {
+            "chain": "A",
+            "resnum": 634,
+            "resname": "GLU",
+            "distance": 0.6280054863944325
+          },
+          {
+            "chain": "A",
+            "resnum": 635,
+            "resname": "MET",
+            "distance": 1.708778635842646
+          },
+          {
+            "chain": "A",
+            "resnum": 636,
+            "resname": "GLY",
+            "distance": 4.3328380168429526
+          },
+          {
+            "chain": "A",
+            "resnum": 637,
+            "resname": "LEU",
+            "distance": 2.0332406458948435
+          },
+          {
+            "chain": "A",
+            "resnum": 638,
+            "resname": "SER",
+            "distance": 0.643936655559664
+          },
+          {
+            "chain": "A",
+            "resnum": 639,
+            "resname": "LEU",
+            "distance": 0.6207294295948916
+          },
+          {
+            "chain": "A",
+            "resnum": 640,
+            "resname": "GLN",
+            "distance": 0.7552966625219499
+          },
+          {
+            "chain": "A",
+            "resnum": 641,
+            "resname": "TRP",
+            "distance": 0.5552732122383107
+          },
+          {
+            "chain": "A",
+            "resnum": 642,
+            "resname": "LEU",
+            "distance": 0.6415383910430937
+          },
+          {
+            "chain": "A",
+            "resnum": 643,
+            "resname": "TYR",
+            "distance": 0.7111839056721538
+          },
+          {
+            "chain": "A",
+            "resnum": 644,
+            "resname": "SER",
+            "distance": 1.0160478521183187
+          },
+          {
+            "chain": "A",
+            "resnum": 645,
+            "resname": "ALA",
+            "distance": 1.9324468731967792
+          },
+          {
+            "chain": "A",
+            "resnum": 646,
+            "resname": "ARG",
+            "distance": 1.148827506268157
+          },
+          {
+            "chain": "A",
+            "resnum": 647,
+            "resname": "GLY",
+            "distance": 0.9440357014114483
+          },
+          {
+            "chain": "A",
+            "resnum": 648,
+            "resname": "ASP",
+            "distance": 1.7065281674067576
+          },
+          {
+            "chain": "A",
+            "resnum": 649,
+            "resname": "PHE",
+            "distance": 1.027374111070151
+          },
+          {
+            "chain": "A",
+            "resnum": 650,
+            "resname": "PHE",
+            "distance": 1.7453411548974342
+          },
+          {
+            "chain": "A",
+            "resnum": 651,
+            "resname": "ARG",
+            "distance": 4.169338339770146
+          },
+          {
+            "chain": "A",
+            "resnum": 652,
+            "resname": "ALA",
+            "distance": 4.747043204777515
+          },
+          {
+            "chain": "A",
+            "resnum": 653,
+            "resname": "THR",
+            "distance": 3.136282702379546
+          },
+          {
+            "chain": "A",
+            "resnum": 685,
+            "resname": "PHE",
+            "distance": 4.406684791787947
+          },
+          {
+            "chain": "A",
+            "resnum": 701,
+            "resname": "PHE",
+            "distance": 2.6086557644430983
+          },
+          {
+            "chain": "A",
+            "resnum": 702,
+            "resname": "TRP",
+            "distance": 2.9236221534107982
+          },
+          {
+            "chain": "A",
+            "resnum": 709,
+            "resname": "LEU",
+            "distance": 3.298957340281446
+          },
+          {
+            "chain": "A",
+            "resnum": 710,
+            "resname": "PRO",
+            "distance": 2.983257624894571
+          },
+          {
+            "chain": "A",
+            "resnum": 712,
+            "resname": "LEU",
+            "distance": 3.3206410853384214
+          },
+          {
+            "chain": "A",
+            "resnum": 713,
+            "resname": "LEU",
+            "distance": 1.8451424907314413
+          },
+          {
+            "chain": "A",
+            "resnum": 716,
+            "resname": "LEU",
+            "distance": 3.1762208652941815
+          },
+          {
+            "chain": "A",
+            "resnum": 717,
+            "resname": "LYS",
+            "distance": 4.227719866934329
+          },
+          {
+            "chain": "A",
+            "resnum": 719,
+            "resname": "ARG",
+            "distance": 2.0254975076144284
+          },
+          {
+            "chain": "A",
+            "resnum": 726,
+            "resname": "PHE",
+            "distance": 3.9904318889943453
+          },
+          {
+            "chain": "A",
+            "resnum": 731,
+            "resname": "PHE",
+            "distance": 2.585616239764258
+          },
+          {
+            "chain": "A",
+            "resnum": 735,
+            "resname": "LEU",
+            "distance": 2.9562485731570134
+          },
+          {
+            "chain": "A",
+            "resnum": 736,
+            "resname": "ALA",
+            "distance": 3.9687971677925535
+          },
+          {
+            "chain": "A",
+            "resnum": 738,
+            "resname": "ALA",
+            "distance": 4.095531241395302
+          },
+          {
+            "chain": "A",
+            "resnum": 739,
+            "resname": "THR",
+            "distance": 2.715928115135493
+          },
+          {
+            "chain": "A",
+            "resnum": 742,
+            "resname": "ILE",
+            "distance": 2.2006122146802776
+          },
+          {
+            "chain": "A",
+            "resnum": 743,
+            "resname": "GLN",
+            "distance": 3.943878929634065
+          },
+          {
+            "chain": "A",
+            "resnum": 746,
+            "resname": "ALA",
+            "distance": 4.573613497263893
+          },
+          {
+            "chain": "A",
+            "resnum": 759,
+            "resname": "GLU",
+            "distance": 1.8889362536317045
+          },
+          {
+            "chain": "A",
+            "resnum": 760,
+            "resname": "PHE",
+            "distance": 3.6412165800146634
+          },
+          {
+            "chain": "B",
+            "resnum": 317,
+            "resname": "ASN",
+            "distance": 3.222994679009338
+          },
+          {
+            "chain": "B",
+            "resnum": 318,
+            "resname": "HIS",
+            "distance": 3.1420186370345964
+          },
+          {
+            "chain": "B",
+            "resnum": 319,
+            "resname": "THR",
+            "distance": 2.850501495562656
+          },
+          {
+            "chain": "B",
+            "resnum": 320,
+            "resname": "GLN",
+            "distance": 1.043274952468127
+          }
+        ],
+        "alignment_policy": "all source target CAs; <=2 A transfer; full template replaces refolded target",
+        "newly_restored_target_clashes_under_2A": [
+          {
+            "chain": "A",
+            "resnum": 523,
+            "distance": 0.8138005780662856
+          },
+          {
+            "chain": "A",
+            "resnum": 525,
+            "distance": 1.1535591524395108
+          },
+          {
+            "chain": "A",
+            "resnum": 526,
+            "distance": 1.142458157144522
+          },
+          {
+            "chain": "A",
+            "resnum": 527,
+            "distance": 0.720607620420365
+          },
+          {
+            "chain": "A",
+            "resnum": 528,
+            "distance": 1.1850153545506363
+          },
+          {
+            "chain": "A",
+            "resnum": 529,
+            "distance": 1.9968623138305717
+          },
+          {
+            "chain": "A",
+            "resnum": 530,
+            "distance": 0.4320245186942211
+          },
+          {
+            "chain": "A",
+            "resnum": 531,
+            "distance": 0.5773811875006113
+          },
+          {
+            "chain": "A",
+            "resnum": 611,
+            "distance": 0.7708005284067208
+          },
+          {
+            "chain": "A",
+            "resnum": 612,
+            "distance": 1.07892986066983
+          },
+          {
+            "chain": "A",
+            "resnum": 613,
+            "distance": 1.172610626564131
+          },
+          {
+            "chain": "A",
+            "resnum": 614,
+            "distance": 1.093801910061108
+          },
+          {
+            "chain": "A",
+            "resnum": 615,
+            "distance": 0.6503008842343877
+          },
+          {
+            "chain": "A",
+            "resnum": 616,
+            "distance": 0.5109991777088365
+          },
+          {
+            "chain": "A",
+            "resnum": 617,
+            "distance": 0.9554581312017515
+          },
+          {
+            "chain": "A",
+            "resnum": 618,
+            "distance": 0.8854574106945509
+          },
+          {
+            "chain": "A",
+            "resnum": 619,
+            "distance": 1.33459781417893
+          },
+          {
+            "chain": "A",
+            "resnum": 620,
+            "distance": 0.8422519219341533
+          },
+          {
+            "chain": "A",
+            "resnum": 621,
+            "distance": 0.7790168094662655
+          },
+          {
+            "chain": "A",
+            "resnum": 622,
+            "distance": 1.2222647752639209
+          },
+          {
+            "chain": "A",
+            "resnum": 623,
+            "distance": 0.4929502781291488
+          },
+          {
+            "chain": "A",
+            "resnum": 624,
+            "distance": 0.43732247200964003
+          },
+          {
+            "chain": "A",
+            "resnum": 625,
+            "distance": 1.0358599235468045
+          },
+          {
+            "chain": "A",
+            "resnum": 626,
+            "distance": 0.8071736230176476
+          },
+          {
+            "chain": "A",
+            "resnum": 627,
+            "distance": 0.5426513077411393
+          },
+          {
+            "chain": "A",
+            "resnum": 628,
+            "distance": 0.8431976361574265
+          },
+          {
+            "chain": "A",
+            "resnum": 629,
+            "distance": 0.37555328014660144
+          },
+          {
+            "chain": "A",
+            "resnum": 630,
+            "distance": 0.5247218080478238
+          },
+          {
+            "chain": "A",
+            "resnum": 631,
+            "distance": 0.6285762616435919
+          },
+          {
+            "chain": "A",
+            "resnum": 632,
+            "distance": 1.1157548780191835
+          },
+          {
+            "chain": "A",
+            "resnum": 633,
+            "distance": 0.5141520411805031
+          },
+          {
+            "chain": "A",
+            "resnum": 634,
+            "distance": 0.6280054863944325
+          },
+          {
+            "chain": "A",
+            "resnum": 635,
+            "distance": 1.708778635842646
+          },
+          {
+            "chain": "A",
+            "resnum": 638,
+            "distance": 0.643936655559664
+          },
+          {
+            "chain": "A",
+            "resnum": 639,
+            "distance": 0.6207294295948916
+          },
+          {
+            "chain": "A",
+            "resnum": 640,
+            "distance": 0.7552966625219499
+          },
+          {
+            "chain": "A",
+            "resnum": 641,
+            "distance": 0.5552732122383107
+          },
+          {
+            "chain": "A",
+            "resnum": 642,
+            "distance": 0.6415383910430937
+          },
+          {
+            "chain": "A",
+            "resnum": 643,
+            "distance": 0.7111839056721538
+          },
+          {
+            "chain": "A",
+            "resnum": 644,
+            "distance": 1.0160478521183187
+          },
+          {
+            "chain": "A",
+            "resnum": 645,
+            "distance": 1.9324468731967792
+          },
+          {
+            "chain": "A",
+            "resnum": 646,
+            "distance": 1.148827506268157
+          },
+          {
+            "chain": "A",
+            "resnum": 647,
+            "distance": 0.9440357014114483
+          },
+          {
+            "chain": "A",
+            "resnum": 648,
+            "distance": 1.7065281674067576
+          },
+          {
+            "chain": "A",
+            "resnum": 649,
+            "distance": 1.027374111070151
+          },
+          {
+            "chain": "A",
+            "resnum": 650,
+            "distance": 1.7453411548974342
+          },
+          {
+            "chain": "A",
+            "resnum": 759,
+            "distance": 1.8889362536317045
+          },
+          {
+            "chain": "B",
+            "resnum": 320,
+            "distance": 1.043274952468127
+          }
+        ],
+        "glycan_attachment_distances": [
+          {
+            "chain": "A",
+            "site": 251,
+            "distance": 27.779371694863734
+          },
+          {
+            "chain": "A",
+            "site": 317,
+            "distance": 36.70246624518537
+          },
+          {
+            "chain": "A",
+            "site": 727,
+            "distance": 7.979655442819855
+          },
+          {
+            "chain": "B",
+            "site": 251,
+            "distance": 41.70952255442834
+          },
+          {
+            "chain": "B",
+            "site": 317,
+            "distance": 3.222994679009338
+          },
+          {
+            "chain": "B",
+            "site": 727,
+            "distance": 36.815273838458936
+          }
+        ],
+        "observed_NAG_min_distance": 5.743641870662209,
+        "transferrin_footprint_overlap": [
+          619,
+          622,
+          623,
+          626,
+          629,
+          640,
+          643,
+          644,
+          646,
+          647,
+          648,
+          650,
+          651,
+          759
+        ],
+        "binder_Cterminal_residue_target_min_distance": 0.6280054863944325,
+        "glycan_model": "attachment/observed-NAG proximity audit only; glycans omitted from Rosetta/PROPKA",
+        "terminal_model": "resolved receptor starts122; assay121+GP scar absent; binder tag absent; native charged termini",
+        "source_sha256": "d03b882ea794ffb044fa26e7237339f266c5a5f2898b9b909e9d6575665ea33f",
+        "context_sha256": "28f02f2a9a0bd4c3ce4cf35d7e33dc1cf5bfa8b18e2a61a458393f25a7cec5f9"
+      }
+    },
+    {
+      "backbone": "c4_tfr1_groove_human_forced_l100_39ede5dc7779065e",
+      "pair": 3,
+      "L": -0.992,
+      "ddG": 1.4427005895814773,
+      "matched_QQ_L": -0.284,
+      "HH_minus_QQ": -0.708,
+      "variant_path": "/Users/ricardo/dev/adaptyv-c4/results/switch_install/campaign/20_c4_tfr1_groove_human_forced_l100_39ede5dc7779065e/c4_tfr1_groove_human_forced_l100_39ede5dc7779065e_candidate5_CK17__CE21_HH_switch.pdb",
+      "source_path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all_pdb/c4_tfr1_groove_human_forced_l100_39ede5dc7779065e_candidate5.pdb",
+      "status": "priority for context/ensemble validation; not submission selected",
+      "priority_rank": 5,
+      "parent_index": 5,
+      "sites": [
+        {
+          "design": "c4_tfr1_groove_human_forced_l100_39ede5dc7779065e_candidate5.pdb",
+          "chain": "C",
+          "resnum": 17,
+          "resname": "LYS",
+          "burial_free": 0.406,
+          "burial_bound": 0.539,
+          "d_burial": 0.133,
+          "acids_near_free": 3,
+          "bases_near_target": 2,
+          "pka_free_est": 7.48,
+          "pka_bound_est": 6.33,
+          "est_contribution": -0.688,
+          "note": "",
+          "wt": "K"
+        },
+        {
+          "design": "c4_tfr1_groove_human_forced_l100_39ede5dc7779065e_candidate5.pdb",
+          "chain": "C",
+          "resnum": 21,
+          "resname": "GLU",
+          "burial_free": 0.622,
+          "burial_bound": 0.767,
+          "d_burial": 0.144,
+          "acids_near_free": 1,
+          "bases_near_target": 1,
+          "pka_free_est": 6.38,
+          "pka_bound_est": 5.61,
+          "est_contribution": -0.353,
+          "note": "",
+          "wt": "E"
+        }
+      ],
+      "context_pdb": "/Users/ricardo/dev/adaptyv-c4/results/context_ensemble_pilot_v2/05_context.pdb",
+      "audit": {
+        "alignment_ca_rmsd": 1.0387562816066176,
+        "aligned_residues": 73,
+        "contacts": [
+          {
+            "chain": "A",
+            "resnum": 499,
+            "resname": "SER",
+            "distance": 4.641197025791339
+          },
+          {
+            "chain": "A",
+            "resnum": 500,
+            "resname": "PRO",
+            "distance": 1.6058113232894662
+          },
+          {
+            "chain": "A",
+            "resnum": 501,
+            "resname": "LEU",
+            "distance": 4.705987050272422
+          },
+          {
+            "chain": "A",
+            "resnum": 503,
+            "resname": "TYR",
+            "distance": 1.7145919268035885
+          },
+          {
+            "chain": "A",
+            "resnum": 525,
+            "resname": "ASP",
+            "distance": 3.5817916010763793
+          },
+          {
+            "chain": "A",
+            "resnum": 526,
+            "resname": "SER",
+            "distance": 2.0644448958770565
+          },
+          {
+            "chain": "A",
+            "resnum": 527,
+            "resname": "ASN",
+            "distance": 0.9024702406783263
+          },
+          {
+            "chain": "A",
+            "resnum": 528,
+            "resname": "TRP",
+            "distance": 4.125102350528081
+          },
+          {
+            "chain": "A",
+            "resnum": 529,
+            "resname": "ALA",
+            "distance": 2.0143397752571772
+          },
+          {
+            "chain": "A",
+            "resnum": 530,
+            "resname": "SER",
+            "distance": 0.8386167281336221
+          },
+          {
+            "chain": "A",
+            "resnum": 531,
+            "resname": "LYS",
+            "distance": 1.351954384304024
+          },
+          {
+            "chain": "A",
+            "resnum": 532,
+            "resname": "VAL",
+            "distance": 2.813294944873855
+          },
+          {
+            "chain": "A",
+            "resnum": 533,
+            "resname": "GLU",
+            "distance": 3.4167071083311296
+          },
+          {
+            "chain": "A",
+            "resnum": 534,
+            "resname": "LYS",
+            "distance": 3.052571389007791
+          },
+          {
+            "chain": "A",
+            "resnum": 611,
+            "resname": "TYR",
+            "distance": 3.394148129954616
+          },
+          {
+            "chain": "A",
+            "resnum": 612,
+            "resname": "GLU",
+            "distance": 1.895031224821006
+          },
+          {
+            "chain": "A",
+            "resnum": 613,
+            "resname": "ARG",
+            "distance": 2.2160318828113965
+          },
+          {
+            "chain": "A",
+            "resnum": 614,
+            "resname": "TYR",
+            "distance": 0.3045033475585048
+          },
+          {
+            "chain": "A",
+            "resnum": 615,
+            "resname": "ASN",
+            "distance": 0.5304110089238776
+          },
+          {
+            "chain": "A",
+            "resnum": 616,
+            "resname": "SER",
+            "distance": 0.6107784544757556
+          },
+          {
+            "chain": "A",
+            "resnum": 617,
+            "resname": "GLN",
+            "distance": 0.7046616689275459
+          },
+          {
+            "chain": "A",
+            "resnum": 618,
+            "resname": "LEU",
+            "distance": 0.32307308098456394
+          },
+          {
+            "chain": "A",
+            "resnum": 619,
+            "resname": "LEU",
+            "distance": 0.8126302784494321
+          },
+          {
+            "chain": "A",
+            "resnum": 620,
+            "resname": "SER",
+            "distance": 1.3009749290925419
+          },
+          {
+            "chain": "A",
+            "resnum": 621,
+            "resname": "PHE",
+            "distance": 1.1742335901468344
+          },
+          {
+            "chain": "A",
+            "resnum": 622,
+            "resname": "VAL",
+            "distance": 0.7890829853200307
+          },
+          {
+            "chain": "A",
+            "resnum": 623,
+            "resname": "ARG",
+            "distance": 0.2522212509682454
+          },
+          {
+            "chain": "A",
+            "resnum": 624,
+            "resname": "ASP",
+            "distance": 0.6525198671169337
+          },
+          {
+            "chain": "A",
+            "resnum": 625,
+            "resname": "LEU",
+            "distance": 0.5348063464486035
+          },
+          {
+            "chain": "A",
+            "resnum": 626,
+            "resname": "ASN",
+            "distance": 0.742756777450152
+          },
+          {
+            "chain": "A",
+            "resnum": 627,
+            "resname": "GLN",
+            "distance": 0.5600938464424678
+          },
+          {
+            "chain": "A",
+            "resnum": 628,
+            "resname": "TYR",
+            "distance": 0.7233999292028099
+          },
+          {
+            "chain": "A",
+            "resnum": 629,
+            "resname": "ARG",
+            "distance": 0.5248709424917225
+          },
+          {
+            "chain": "A",
+            "resnum": 630,
+            "resname": "ALA",
+            "distance": 1.1468073504656273
+          },
+          {
+            "chain": "A",
+            "resnum": 631,
+            "resname": "ASP",
+            "distance": 2.266188610729321
+          },
+          {
+            "chain": "A",
+            "resnum": 632,
+            "resname": "ILE",
+            "distance": 0.5353877856583027
+          },
+          {
+            "chain": "A",
+            "resnum": 633,
+            "resname": "LYS",
+            "distance": 0.9563949319205374
+          },
+          {
+            "chain": "A",
+            "resnum": 634,
+            "resname": "GLU",
+            "distance": 2.8039789926503014
+          },
+          {
+            "chain": "A",
+            "resnum": 635,
+            "resname": "MET",
+            "distance": 3.3340509055568943
+          },
+          {
+            "chain": "A",
+            "resnum": 636,
+            "resname": "GLY",
+            "distance": 2.800496309120999
+          },
+          {
+            "chain": "A",
+            "resnum": 637,
+            "resname": "LEU",
+            "distance": 0.7282111280855306
+          },
+          {
+            "chain": "A",
+            "resnum": 638,
+            "resname": "SER",
+            "distance": 1.1246862731435046
+          },
+          {
+            "chain": "A",
+            "resnum": 639,
+            "resname": "LEU",
+            "distance": 0.8836819091284214
+          },
+          {
+            "chain": "A",
+            "resnum": 640,
+            "resname": "GLN",
+            "distance": 0.9424862257350578
+          },
+          {
+            "chain": "A",
+            "resnum": 641,
+            "resname": "TRP",
+            "distance": 0.5929370783986028
+          },
+          {
+            "chain": "A",
+            "resnum": 642,
+            "resname": "LEU",
+            "distance": 0.5405472240316845
+          },
+          {
+            "chain": "A",
+            "resnum": 643,
+            "resname": "TYR",
+            "distance": 0.7311724065653632
+          },
+          {
+            "chain": "A",
+            "resnum": 644,
+            "resname": "SER",
+            "distance": 1.3297874407386416
+          },
+          {
+            "chain": "A",
+            "resnum": 645,
+            "resname": "ALA",
+            "distance": 1.2574368024618603
+          },
+          {
+            "chain": "A",
+            "resnum": 646,
+            "resname": "ARG",
+            "distance": 0.5789043934609625
+          },
+          {
+            "chain": "A",
+            "resnum": 647,
+            "resname": "GLY",
+            "distance": 0.8580818357968726
+          },
+          {
+            "chain": "A",
+            "resnum": 648,
+            "resname": "ASP",
+            "distance": 1.1410417844110303
+          },
+          {
+            "chain": "A",
+            "resnum": 649,
+            "resname": "PHE",
+            "distance": 0.3207732723672754
+          },
+          {
+            "chain": "A",
+            "resnum": 650,
+            "resname": "PHE",
+            "distance": 0.4933305524713779
+          },
+          {
+            "chain": "A",
+            "resnum": 651,
+            "resname": "ARG",
+            "distance": 3.2755254417321793
+          },
+          {
+            "chain": "A",
+            "resnum": 652,
+            "resname": "ALA",
+            "distance": 4.725118566878194
+          },
+          {
+            "chain": "A",
+            "resnum": 653,
+            "resname": "THR",
+            "distance": 1.779307774048271
+          },
+          {
+            "chain": "A",
+            "resnum": 654,
+            "resname": "SER",
+            "distance": 2.8466950552331123
+          },
+          {
+            "chain": "A",
+            "resnum": 682,
+            "resname": "GLU",
+            "distance": 4.6719125284939
+          },
+          {
+            "chain": "A",
+            "resnum": 685,
+            "resname": "PHE",
+            "distance": 3.382006827610475
+          },
+          {
+            "chain": "A",
+            "resnum": 701,
+            "resname": "PHE",
+            "distance": 3.041000903957532
+          },
+          {
+            "chain": "A",
+            "resnum": 702,
+            "resname": "TRP",
+            "distance": 4.703626590909238
+          },
+          {
+            "chain": "A",
+            "resnum": 709,
+            "resname": "LEU",
+            "distance": 3.602489446636516
+          },
+          {
+            "chain": "A",
+            "resnum": 710,
+            "resname": "PRO",
+            "distance": 3.1853758736173052
+          },
+          {
+            "chain": "A",
+            "resnum": 712,
+            "resname": "LEU",
+            "distance": 3.109595730210795
+          },
+          {
+            "chain": "A",
+            "resnum": 713,
+            "resname": "LEU",
+            "distance": 1.4506165640130015
+          },
+          {
+            "chain": "A",
+            "resnum": 714,
+            "resname": "GLU",
+            "distance": 4.051251559715191
+          },
+          {
+            "chain": "A",
+            "resnum": 716,
+            "resname": "LEU",
+            "distance": 3.5170119136248066
+          },
+          {
+            "chain": "A",
+            "resnum": 717,
+            "resname": "LYS",
+            "distance": 4.17389189298523
+          },
+          {
+            "chain": "A",
+            "resnum": 720,
+            "resname": "LYS",
+            "distance": 4.309675218830928
+          },
+          {
+            "chain": "A",
+            "resnum": 731,
+            "resname": "PHE",
+            "distance": 3.6760320741562267
+          },
+          {
+            "chain": "A",
+            "resnum": 732,
+            "resname": "ARG",
+            "distance": 3.067243275412321
+          },
+          {
+            "chain": "A",
+            "resnum": 735,
+            "resname": "LEU",
+            "distance": 3.2266410715880873
+          },
+          {
+            "chain": "A",
+            "resnum": 736,
+            "resname": "ALA",
+            "distance": 3.622670780702636
+          },
+          {
+            "chain": "A",
+            "resnum": 738,
+            "resname": "ALA",
+            "distance": 3.3770630321620163
+          },
+          {
+            "chain": "A",
+            "resnum": 739,
+            "resname": "THR",
+            "distance": 3.12620682156276
+          },
+          {
+            "chain": "A",
+            "resnum": 740,
+            "resname": "TRP",
+            "distance": 1.585479374622063
+          },
+          {
+            "chain": "A",
+            "resnum": 742,
+            "resname": "ILE",
+            "distance": 2.8749873241034654
+          },
+          {
+            "chain": "A",
+            "resnum": 743,
+            "resname": "GLN",
+            "distance": 2.6922217002414257
+          },
+          {
+            "chain": "A",
+            "resnum": 745,
+            "resname": "ALA",
+            "distance": 4.605474244225587
+          },
+          {
+            "chain": "A",
+            "resnum": 746,
+            "resname": "ALA",
+            "distance": 3.4532206534067322
+          },
+          {
+            "chain": "A",
+            "resnum": 749,
+            "resname": "LEU",
+            "distance": 4.43881630246266
+          },
+          {
+            "chain": "A",
+            "resnum": 758,
+            "resname": "ASN",
+            "distance": 4.062200297755073
+          },
+          {
+            "chain": "A",
+            "resnum": 759,
+            "resname": "GLU",
+            "distance": 1.3484393490763962
+          },
+          {
+            "chain": "A",
+            "resnum": 760,
+            "resname": "PHE",
+            "distance": 2.3910582874618274
+          },
+          {
+            "chain": "B",
+            "resnum": 187,
+            "resname": "PHE",
+            "distance": 3.8152196408411743
+          },
+          {
+            "chain": "B",
+            "resnum": 316,
+            "resname": "PHE",
+            "distance": 3.545435701000617
+          },
+          {
+            "chain": "B",
+            "resnum": 317,
+            "resname": "ASN",
+            "distance": 0.5845565475738901
+          },
+          {
+            "chain": "B",
+            "resnum": 318,
+            "resname": "HIS",
+            "distance": 0.7684341848404306
+          },
+          {
+            "chain": "B",
+            "resnum": 319,
+            "resname": "THR",
+            "distance": 1.6668017329572795
+          },
+          {
+            "chain": "B",
+            "resnum": 320,
+            "resname": "GLN",
+            "distance": 0.2951773355792559
+          },
+          {
+            "chain": "B",
+            "resnum": 321,
+            "resname": "PHE",
+            "distance": 2.082412342835211
+          },
+          {
+            "chain": "B",
+            "resnum": 322,
+            "resname": "PRO",
+            "distance": 4.74172463889457
+          }
+        ],
+        "alignment_policy": "all source target CAs; <=2 A transfer; full template replaces refolded target",
+        "newly_restored_target_clashes_under_2A": [
+          {
+            "chain": "A",
+            "resnum": 500,
+            "distance": 1.6058113232894662
+          },
+          {
+            "chain": "A",
+            "resnum": 503,
+            "distance": 1.7145919268035885
+          },
+          {
+            "chain": "A",
+            "resnum": 527,
+            "distance": 0.9024702406783263
+          },
+          {
+            "chain": "A",
+            "resnum": 530,
+            "distance": 0.8386167281336221
+          },
+          {
+            "chain": "A",
+            "resnum": 531,
+            "distance": 1.351954384304024
+          },
+          {
+            "chain": "A",
+            "resnum": 612,
+            "distance": 1.895031224821006
+          },
+          {
+            "chain": "A",
+            "resnum": 614,
+            "distance": 0.3045033475585048
+          },
+          {
+            "chain": "A",
+            "resnum": 615,
+            "distance": 0.5304110089238776
+          },
+          {
+            "chain": "A",
+            "resnum": 616,
+            "distance": 0.6107784544757556
+          },
+          {
+            "chain": "A",
+            "resnum": 617,
+            "distance": 0.7046616689275459
+          },
+          {
+            "chain": "A",
+            "resnum": 618,
+            "distance": 0.32307308098456394
+          },
+          {
+            "chain": "A",
+            "resnum": 619,
+            "distance": 0.8126302784494321
+          },
+          {
+            "chain": "A",
+            "resnum": 620,
+            "distance": 1.3009749290925419
+          },
+          {
+            "chain": "A",
+            "resnum": 621,
+            "distance": 1.1742335901468344
+          },
+          {
+            "chain": "A",
+            "resnum": 622,
+            "distance": 0.7890829853200307
+          },
+          {
+            "chain": "A",
+            "resnum": 623,
+            "distance": 0.2522212509682454
+          },
+          {
+            "chain": "A",
+            "resnum": 624,
+            "distance": 0.6525198671169337
+          },
+          {
+            "chain": "A",
+            "resnum": 625,
+            "distance": 0.5348063464486035
+          },
+          {
+            "chain": "A",
+            "resnum": 626,
+            "distance": 0.742756777450152
+          },
+          {
+            "chain": "A",
+            "resnum": 627,
+            "distance": 0.5600938464424678
+          },
+          {
+            "chain": "A",
+            "resnum": 628,
+            "distance": 0.7233999292028099
+          },
+          {
+            "chain": "A",
+            "resnum": 629,
+            "distance": 0.5248709424917225
+          },
+          {
+            "chain": "A",
+            "resnum": 630,
+            "distance": 1.1468073504656273
+          },
+          {
+            "chain": "A",
+            "resnum": 632,
+            "distance": 0.5353877856583027
+          },
+          {
+            "chain": "A",
+            "resnum": 633,
+            "distance": 0.9563949319205374
+          },
+          {
+            "chain": "A",
+            "resnum": 637,
+            "distance": 0.7282111280855306
+          },
+          {
+            "chain": "A",
+            "resnum": 638,
+            "distance": 1.1246862731435046
+          },
+          {
+            "chain": "A",
+            "resnum": 639,
+            "distance": 0.8836819091284214
+          },
+          {
+            "chain": "A",
+            "resnum": 640,
+            "distance": 0.9424862257350578
+          },
+          {
+            "chain": "A",
+            "resnum": 641,
+            "distance": 0.5929370783986028
+          },
+          {
+            "chain": "A",
+            "resnum": 642,
+            "distance": 0.5405472240316845
+          },
+          {
+            "chain": "A",
+            "resnum": 643,
+            "distance": 0.7311724065653632
+          },
+          {
+            "chain": "A",
+            "resnum": 644,
+            "distance": 1.3297874407386416
+          },
+          {
+            "chain": "A",
+            "resnum": 645,
+            "distance": 1.2574368024618603
+          },
+          {
+            "chain": "A",
+            "resnum": 646,
+            "distance": 0.5789043934609625
+          },
+          {
+            "chain": "A",
+            "resnum": 647,
+            "distance": 0.8580818357968726
+          },
+          {
+            "chain": "A",
+            "resnum": 648,
+            "distance": 1.1410417844110303
+          },
+          {
+            "chain": "A",
+            "resnum": 649,
+            "distance": 0.3207732723672754
+          },
+          {
+            "chain": "A",
+            "resnum": 650,
+            "distance": 0.4933305524713779
+          },
+          {
+            "chain": "A",
+            "resnum": 653,
+            "distance": 1.779307774048271
+          },
+          {
+            "chain": "A",
+            "resnum": 759,
+            "distance": 1.3484393490763962
+          },
+          {
+            "chain": "B",
+            "resnum": 317,
+            "distance": 0.5845565475738901
+          },
+          {
+            "chain": "B",
+            "resnum": 318,
+            "distance": 0.7684341848404306
+          },
+          {
+            "chain": "B",
+            "resnum": 319,
+            "distance": 1.6668017329572795
+          },
+          {
+            "chain": "B",
+            "resnum": 320,
+            "distance": 0.2951773355792559
+          }
+        ],
+        "glycan_attachment_distances": [
+          {
+            "chain": "A",
+            "site": 251,
+            "distance": 22.70024536046491
+          },
+          {
+            "chain": "A",
+            "site": 317,
+            "distance": 35.14991832962593
+          },
+          {
+            "chain": "A",
+            "site": 727,
+            "distance": 9.14980062046429
+          },
+          {
+            "chain": "B",
+            "site": 251,
+            "distance": 39.207926398972965
+          },
+          {
+            "chain": "B",
+            "site": 317,
+            "distance": 0.5845565475738901
+          },
+          {
+            "chain": "B",
+            "site": 727,
+            "distance": 36.299208186988395
+          }
+        ],
+        "observed_NAG_min_distance": 0.9848208934058538,
+        "transferrin_footprint_overlap": [
+          619,
+          622,
+          623,
+          626,
+          629,
+          640,
+          643,
+          644,
+          646,
+          647,
+          648,
+          650,
+          651,
+          758,
+          759
+        ],
+        "binder_Cterminal_residue_target_min_distance": 6.869880133145496,
+        "glycan_model": "attachment/observed-NAG proximity audit only; glycans omitted from Rosetta/PROPKA",
+        "terminal_model": "resolved receptor starts122; assay121+GP scar absent; binder tag absent; native charged termini",
+        "source_sha256": "9c52a683722f30cbd5448ed86b4275a3ba487adc682c854a8500bf33438ea969",
+        "context_sha256": "8f55cc941e60165c4fb5ce22d67ead8f54d154b6239282b35fc60d2d97cffc45"
+      }
+    },
+    {
+      "backbone": "c4_tfr1_groove_human_forced_l58_9f94b53776050aad",
+      "pair": 1,
+      "source_path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all_pdb/c4_tfr1_groove_human_forced_l58_9f94b53776050aad_candidate3.pdb",
+      "calibration": true,
+      "parent_index": 6,
+      "sites": [
+        {
+          "design": "c4_tfr1_groove_human_forced_l58_9f94b53776050aad_candidate3.pdb",
+          "chain": "C",
+          "resnum": 24,
+          "resname": "HIS",
+          "burial_free": 0.461,
+          "burial_bound": 0.711,
+          "d_burial": 0.25,
+          "acids_near_free": 3,
+          "bases_near_target": 1,
+          "pka_free_est": 7.43,
+          "pka_bound_est": 6.38,
+          "est_contribution": -0.638,
+          "note": "",
+          "wt": "H"
+        },
+        {
+          "design": "c4_tfr1_groove_human_forced_l58_9f94b53776050aad_candidate3.pdb",
+          "chain": "C",
+          "resnum": 32,
+          "resname": "TYR",
+          "burial_free": 0.311,
+          "burial_bound": 0.544,
+          "d_burial": 0.233,
+          "acids_near_free": 2,
+          "bases_near_target": 1,
+          "pka_free_est": 7.12,
+          "pka_bound_est": 6.11,
+          "est_contribution": -0.629,
+          "note": "",
+          "wt": "Y"
+        }
+      ],
+      "context_pdb": "/Users/ricardo/dev/adaptyv-c4/results/context_ensemble_pilot_v2/06_context.pdb",
+      "audit": {
+        "alignment_ca_rmsd": 0.824831254796942,
+        "aligned_residues": 73,
+        "contacts": [
+          {
+            "chain": "A",
+            "resnum": 498,
+            "resname": "ALA",
+            "distance": 3.8573966377474584
+          },
+          {
+            "chain": "A",
+            "resnum": 499,
+            "resname": "SER",
+            "distance": 4.160278712999959
+          },
+          {
+            "chain": "A",
+            "resnum": 500,
+            "resname": "PRO",
+            "distance": 1.292963763769031
+          },
+          {
+            "chain": "A",
+            "resnum": 501,
+            "resname": "LEU",
+            "distance": 4.126647382731943
+          },
+          {
+            "chain": "A",
+            "resnum": 503,
+            "resname": "TYR",
+            "distance": 0.7017019856352661
+          },
+          {
+            "chain": "A",
+            "resnum": 529,
+            "resname": "ALA",
+            "distance": 3.6465418807390684
+          },
+          {
+            "chain": "A",
+            "resnum": 530,
+            "resname": "SER",
+            "distance": 2.9240660208040516
+          },
+          {
+            "chain": "A",
+            "resnum": 531,
+            "resname": "LYS",
+            "distance": 4.568184060105186
+          },
+          {
+            "chain": "A",
+            "resnum": 532,
+            "resname": "VAL",
+            "distance": 2.0316399393385582
+          },
+          {
+            "chain": "A",
+            "resnum": 533,
+            "resname": "GLU",
+            "distance": 2.75579324234448
+          },
+          {
+            "chain": "A",
+            "resnum": 534,
+            "resname": "LYS",
+            "distance": 2.8960090028700307
+          },
+          {
+            "chain": "A",
+            "resnum": 610,
+            "resname": "ASP",
+            "distance": 3.046216667115494
+          },
+          {
+            "chain": "A",
+            "resnum": 611,
+            "resname": "TYR",
+            "distance": 1.0385046326269567
+          },
+          {
+            "chain": "A",
+            "resnum": 612,
+            "resname": "GLU",
+            "distance": 0.7701859049578424
+          },
+          {
+            "chain": "A",
+            "resnum": 613,
+            "resname": "ARG",
+            "distance": 0.6377489617309668
+          },
+          {
+            "chain": "A",
+            "resnum": 614,
+            "resname": "TYR",
+            "distance": 0.4727650627101125
+          },
+          {
+            "chain": "A",
+            "resnum": 615,
+            "resname": "ASN",
+            "distance": 0.8644389646812363
+          },
+          {
+            "chain": "A",
+            "resnum": 616,
+            "resname": "SER",
+            "distance": 1.2747841355281992
+          },
+          {
+            "chain": "A",
+            "resnum": 617,
+            "resname": "GLN",
+            "distance": 0.6961643922240723
+          },
+          {
+            "chain": "A",
+            "resnum": 618,
+            "resname": "LEU",
+            "distance": 0.6133164326622126
+          },
+          {
+            "chain": "A",
+            "resnum": 619,
+            "resname": "LEU",
+            "distance": 0.6663425814293458
+          },
+          {
+            "chain": "A",
+            "resnum": 620,
+            "resname": "SER",
+            "distance": 0.9689085701384604
+          },
+          {
+            "chain": "A",
+            "resnum": 621,
+            "resname": "PHE",
+            "distance": 0.6911651151551622
+          },
+          {
+            "chain": "A",
+            "resnum": 622,
+            "resname": "VAL",
+            "distance": 0.9509132641360659
+          },
+          {
+            "chain": "A",
+            "resnum": 623,
+            "resname": "ARG",
+            "distance": 0.5062934401652004
+          },
+          {
+            "chain": "A",
+            "resnum": 624,
+            "resname": "ASP",
+            "distance": 0.5821341221884685
+          },
+          {
+            "chain": "A",
+            "resnum": 625,
+            "resname": "LEU",
+            "distance": 0.7004118939774521
+          },
+          {
+            "chain": "A",
+            "resnum": 626,
+            "resname": "ASN",
+            "distance": 1.7811814833680706
+          },
+          {
+            "chain": "A",
+            "resnum": 627,
+            "resname": "GLN",
+            "distance": 0.5092529975969925
+          },
+          {
+            "chain": "A",
+            "resnum": 628,
+            "resname": "TYR",
+            "distance": 0.7950800668289254
+          },
+          {
+            "chain": "A",
+            "resnum": 629,
+            "resname": "ARG",
+            "distance": 1.0170285248206479
+          },
+          {
+            "chain": "A",
+            "resnum": 630,
+            "resname": "ALA",
+            "distance": 0.9311472161927828
+          },
+          {
+            "chain": "A",
+            "resnum": 631,
+            "resname": "ASP",
+            "distance": 0.702569234485757
+          },
+          {
+            "chain": "A",
+            "resnum": 632,
+            "resname": "ILE",
+            "distance": 0.674966335011765
+          },
+          {
+            "chain": "A",
+            "resnum": 633,
+            "resname": "LYS",
+            "distance": 0.8082739745479466
+          },
+          {
+            "chain": "A",
+            "resnum": 634,
+            "resname": "GLU",
+            "distance": 0.4456949301568265
+          },
+          {
+            "chain": "A",
+            "resnum": 635,
+            "resname": "MET",
+            "distance": 0.5217055485243945
+          },
+          {
+            "chain": "A",
+            "resnum": 636,
+            "resname": "GLY",
+            "distance": 2.4124709611973474
+          },
+          {
+            "chain": "A",
+            "resnum": 637,
+            "resname": "LEU",
+            "distance": 1.7191792652715392
+          },
+          {
+            "chain": "A",
+            "resnum": 638,
+            "resname": "SER",
+            "distance": 1.4293867098137403
+          },
+          {
+            "chain": "A",
+            "resnum": 639,
+            "resname": "LEU",
+            "distance": 0.37413023184522853
+          },
+          {
+            "chain": "A",
+            "resnum": 640,
+            "resname": "GLN",
+            "distance": 2.280166364828175
+          },
+          {
+            "chain": "A",
+            "resnum": 641,
+            "resname": "TRP",
+            "distance": 3.509017175891032
+          },
+          {
+            "chain": "A",
+            "resnum": 642,
+            "resname": "LEU",
+            "distance": 1.0468363948862742
+          },
+          {
+            "chain": "A",
+            "resnum": 643,
+            "resname": "TYR",
+            "distance": 1.4841326386121456
+          },
+          {
+            "chain": "A",
+            "resnum": 644,
+            "resname": "SER",
+            "distance": 1.9322680446261147
+          },
+          {
+            "chain": "A",
+            "resnum": 645,
+            "resname": "ALA",
+            "distance": 1.7824991303180928
+          },
+          {
+            "chain": "A",
+            "resnum": 646,
+            "resname": "ARG",
+            "distance": 0.5738217947898815
+          },
+          {
+            "chain": "A",
+            "resnum": 647,
+            "resname": "GLY",
+            "distance": 3.9274293442918693
+          },
+          {
+            "chain": "A",
+            "resnum": 648,
+            "resname": "ASP",
+            "distance": 4.253805021631358
+          },
+          {
+            "chain": "A",
+            "resnum": 649,
+            "resname": "PHE",
+            "distance": 0.5469291028202476
+          },
+          {
+            "chain": "A",
+            "resnum": 650,
+            "resname": "PHE",
+            "distance": 0.4590356011576626
+          },
+          {
+            "chain": "A",
+            "resnum": 651,
+            "resname": "ARG",
+            "distance": 3.519685863551492
+          },
+          {
+            "chain": "A",
+            "resnum": 652,
+            "resname": "ALA",
+            "distance": 2.569590113980936
+          },
+          {
+            "chain": "A",
+            "resnum": 653,
+            "resname": "THR",
+            "distance": 0.6368572104053225
+          },
+          {
+            "chain": "A",
+            "resnum": 654,
+            "resname": "SER",
+            "distance": 2.076916020313017
+          },
+          {
+            "chain": "A",
+            "resnum": 655,
+            "resname": "ARG",
+            "distance": 3.9173661661960204
+          },
+          {
+            "chain": "A",
+            "resnum": 656,
+            "resname": "LEU",
+            "distance": 4.106986686613543
+          },
+          {
+            "chain": "A",
+            "resnum": 657,
+            "resname": "THR",
+            "distance": 4.103620752363407
+          },
+          {
+            "chain": "A",
+            "resnum": 681,
+            "resname": "VAL",
+            "distance": 1.8722515052115019
+          },
+          {
+            "chain": "A",
+            "resnum": 682,
+            "resname": "GLU",
+            "distance": 3.226856812950369
+          },
+          {
+            "chain": "A",
+            "resnum": 684,
+            "resname": "HIS",
+            "distance": 4.630932103597729
+          },
+          {
+            "chain": "A",
+            "resnum": 685,
+            "resname": "PHE",
+            "distance": 3.363518813126487
+          },
+          {
+            "chain": "A",
+            "resnum": 699,
+            "resname": "HIS",
+            "distance": 4.4888445617871415
+          },
+          {
+            "chain": "A",
+            "resnum": 701,
+            "resname": "PHE",
+            "distance": 2.6867995705131738
+          },
+          {
+            "chain": "A",
+            "resnum": 702,
+            "resname": "TRP",
+            "distance": 1.149206357828372
+          },
+          {
+            "chain": "A",
+            "resnum": 709,
+            "resname": "LEU",
+            "distance": 3.9641785744446003
+          },
+          {
+            "chain": "A",
+            "resnum": 710,
+            "resname": "PRO",
+            "distance": 3.5051783937328307
+          },
+          {
+            "chain": "A",
+            "resnum": 712,
+            "resname": "LEU",
+            "distance": 2.143918635718528
+          },
+          {
+            "chain": "A",
+            "resnum": 713,
+            "resname": "LEU",
+            "distance": 2.2480528595845266
+          },
+          {
+            "chain": "A",
+            "resnum": 714,
+            "resname": "GLU",
+            "distance": 4.930073970554723
+          },
+          {
+            "chain": "A",
+            "resnum": 715,
+            "resname": "ASN",
+            "distance": 4.58327461924721
+          },
+          {
+            "chain": "A",
+            "resnum": 716,
+            "resname": "LEU",
+            "distance": 2.069231093812374
+          },
+          {
+            "chain": "A",
+            "resnum": 717,
+            "resname": "LYS",
+            "distance": 4.406235334392688
+          },
+          {
+            "chain": "A",
+            "resnum": 719,
+            "resname": "ARG",
+            "distance": 2.737213943997034
+          },
+          {
+            "chain": "A",
+            "resnum": 720,
+            "resname": "LYS",
+            "distance": 3.3591036919276616
+          },
+          {
+            "chain": "A",
+            "resnum": 726,
+            "resname": "PHE",
+            "distance": 0.4768949644050688
+          },
+          {
+            "chain": "A",
+            "resnum": 727,
+            "resname": "ASN",
+            "distance": 4.598024531655453
+          },
+          {
+            "chain": "A",
+            "resnum": 728,
+            "resname": "GLU",
+            "distance": 3.4549281033474104
+          },
+          {
+            "chain": "A",
+            "resnum": 731,
+            "resname": "PHE",
+            "distance": 2.945897036061874
+          },
+          {
+            "chain": "A",
+            "resnum": 735,
+            "resname": "LEU",
+            "distance": 2.76811355785262
+          },
+          {
+            "chain": "A",
+            "resnum": 738,
+            "resname": "ALA",
+            "distance": 3.0448729269369634
+          },
+          {
+            "chain": "A",
+            "resnum": 739,
+            "resname": "THR",
+            "distance": 3.0561878564653173
+          },
+          {
+            "chain": "A",
+            "resnum": 742,
+            "resname": "ILE",
+            "distance": 2.965266064225367
+          },
+          {
+            "chain": "A",
+            "resnum": 743,
+            "resname": "GLN",
+            "distance": 3.1467332626505153
+          },
+          {
+            "chain": "A",
+            "resnum": 744,
+            "resname": "GLY",
+            "distance": 4.684583906296494
+          },
+          {
+            "chain": "A",
+            "resnum": 745,
+            "resname": "ALA",
+            "distance": 2.219702912303596
+          },
+          {
+            "chain": "A",
+            "resnum": 746,
+            "resname": "ALA",
+            "distance": 0.6122797146416548
+          },
+          {
+            "chain": "A",
+            "resnum": 747,
+            "resname": "ASN",
+            "distance": 2.8371199726774066
+          },
+          {
+            "chain": "A",
+            "resnum": 748,
+            "resname": "ALA",
+            "distance": 4.7915546815765175
+          },
+          {
+            "chain": "A",
+            "resnum": 749,
+            "resname": "LEU",
+            "distance": 2.4247172531648298
+          },
+          {
+            "chain": "A",
+            "resnum": 750,
+            "resname": "SER",
+            "distance": 4.861480025122843
+          },
+          {
+            "chain": "B",
+            "resnum": 320,
+            "resname": "GLN",
+            "distance": 3.444327739319001
+          }
+        ],
+        "alignment_policy": "all source target CAs; <=2 A transfer; full template replaces refolded target",
+        "newly_restored_target_clashes_under_2A": [
+          {
+            "chain": "A",
+            "resnum": 500,
+            "distance": 1.292963763769031
+          },
+          {
+            "chain": "A",
+            "resnum": 503,
+            "distance": 0.7017019856352661
+          },
+          {
+            "chain": "A",
+            "resnum": 611,
+            "distance": 1.0385046326269567
+          },
+          {
+            "chain": "A",
+            "resnum": 612,
+            "distance": 0.7701859049578424
+          },
+          {
+            "chain": "A",
+            "resnum": 613,
+            "distance": 0.6377489617309668
+          },
+          {
+            "chain": "A",
+            "resnum": 614,
+            "distance": 0.4727650627101125
+          },
+          {
+            "chain": "A",
+            "resnum": 615,
+            "distance": 0.8644389646812363
+          },
+          {
+            "chain": "A",
+            "resnum": 616,
+            "distance": 1.2747841355281992
+          },
+          {
+            "chain": "A",
+            "resnum": 617,
+            "distance": 0.6961643922240723
+          },
+          {
+            "chain": "A",
+            "resnum": 618,
+            "distance": 0.6133164326622126
+          },
+          {
+            "chain": "A",
+            "resnum": 619,
+            "distance": 0.6663425814293458
+          },
+          {
+            "chain": "A",
+            "resnum": 620,
+            "distance": 0.9689085701384604
+          },
+          {
+            "chain": "A",
+            "resnum": 621,
+            "distance": 0.6911651151551622
+          },
+          {
+            "chain": "A",
+            "resnum": 622,
+            "distance": 0.9509132641360659
+          },
+          {
+            "chain": "A",
+            "resnum": 623,
+            "distance": 0.5062934401652004
+          },
+          {
+            "chain": "A",
+            "resnum": 624,
+            "distance": 0.5821341221884685
+          },
+          {
+            "chain": "A",
+            "resnum": 625,
+            "distance": 0.7004118939774521
+          },
+          {
+            "chain": "A",
+            "resnum": 626,
+            "distance": 1.7811814833680706
+          },
+          {
+            "chain": "A",
+            "resnum": 627,
+            "distance": 0.5092529975969925
+          },
+          {
+            "chain": "A",
+            "resnum": 628,
+            "distance": 0.7950800668289254
+          },
+          {
+            "chain": "A",
+            "resnum": 629,
+            "distance": 1.0170285248206479
+          },
+          {
+            "chain": "A",
+            "resnum": 630,
+            "distance": 0.9311472161927828
+          },
+          {
+            "chain": "A",
+            "resnum": 631,
+            "distance": 0.702569234485757
+          },
+          {
+            "chain": "A",
+            "resnum": 632,
+            "distance": 0.674966335011765
+          },
+          {
+            "chain": "A",
+            "resnum": 633,
+            "distance": 0.8082739745479466
+          },
+          {
+            "chain": "A",
+            "resnum": 634,
+            "distance": 0.4456949301568265
+          },
+          {
+            "chain": "A",
+            "resnum": 635,
+            "distance": 0.5217055485243945
+          },
+          {
+            "chain": "A",
+            "resnum": 637,
+            "distance": 1.7191792652715392
+          },
+          {
+            "chain": "A",
+            "resnum": 638,
+            "distance": 1.4293867098137403
+          },
+          {
+            "chain": "A",
+            "resnum": 639,
+            "distance": 0.37413023184522853
+          },
+          {
+            "chain": "A",
+            "resnum": 642,
+            "distance": 1.0468363948862742
+          },
+          {
+            "chain": "A",
+            "resnum": 643,
+            "distance": 1.4841326386121456
+          },
+          {
+            "chain": "A",
+            "resnum": 644,
+            "distance": 1.9322680446261147
+          },
+          {
+            "chain": "A",
+            "resnum": 645,
+            "distance": 1.7824991303180928
+          },
+          {
+            "chain": "A",
+            "resnum": 646,
+            "distance": 0.5738217947898815
+          },
+          {
+            "chain": "A",
+            "resnum": 649,
+            "distance": 0.5469291028202476
+          },
+          {
+            "chain": "A",
+            "resnum": 650,
+            "distance": 0.4590356011576626
+          },
+          {
+            "chain": "A",
+            "resnum": 653,
+            "distance": 0.6368572104053225
+          },
+          {
+            "chain": "A",
+            "resnum": 681,
+            "distance": 1.8722515052115019
+          },
+          {
+            "chain": "A",
+            "resnum": 726,
+            "distance": 0.4768949644050688
+          },
+          {
+            "chain": "A",
+            "resnum": 746,
+            "distance": 0.6122797146416548
+          }
+        ],
+        "glycan_attachment_distances": [
+          {
+            "chain": "A",
+            "site": 251,
+            "distance": 26.28732692890217
+          },
+          {
+            "chain": "A",
+            "site": 317,
+            "distance": 33.84350319470331
+          },
+          {
+            "chain": "A",
+            "site": 727,
+            "distance": 4.598024531655453
+          },
+          {
+            "chain": "B",
+            "site": 251,
+            "distance": 40.51029113111078
+          },
+          {
+            "chain": "B",
+            "site": 317,
+            "distance": 8.032475495713758
+          },
+          {
+            "chain": "B",
+            "site": 727,
+            "distance": 36.08750592106929
+          }
+        ],
+        "observed_NAG_min_distance": 9.988896980701742,
+        "transferrin_footprint_overlap": [
+          619,
+          622,
+          623,
+          626,
+          629,
+          640,
+          643,
+          644,
+          646,
+          647,
+          648,
+          650,
+          651
+        ],
+        "binder_Cterminal_residue_target_min_distance": 3.26440436522908,
+        "glycan_model": "attachment/observed-NAG proximity audit only; glycans omitted from Rosetta/PROPKA",
+        "terminal_model": "resolved receptor starts122; assay121+GP scar absent; binder tag absent; native charged termini",
+        "source_sha256": "4332b17cc997f2f3c72b033e5853febb0c89b5f884c4e5dab10aec92e8cee74e",
+        "context_sha256": "169f36e072e7e2f6baaa7860d81b74010d850a46c62f3fd9e0eb3c6bbed3e689"
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "a": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d",
+      "b": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650",
+      "identity": 0.32894736842105265,
+      "aligned_coverage": 0.6973684210526315,
+      "ca_rmsd": 13.453260244705636,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8",
+      "b": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650",
+      "identity": 0.3968253968253968,
+      "aligned_coverage": 0.6666666666666666,
+      "ca_rmsd": 4.294750843716155,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8",
+      "b": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d",
+      "identity": 0.2894736842105263,
+      "aligned_coverage": 0.631578947368421,
+      "ca_rmsd": 12.302492364616526,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c",
+      "b": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650",
+      "identity": 0.2755102040816326,
+      "aligned_coverage": 0.5204081632653061,
+      "ca_rmsd": 10.032614540714857,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c",
+      "b": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d",
+      "identity": 0.3163265306122449,
+      "aligned_coverage": 0.7448979591836735,
+      "ca_rmsd": 13.653386636111282,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c",
+      "b": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8",
+      "identity": 0.23469387755102042,
+      "aligned_coverage": 0.5102040816326531,
+      "ca_rmsd": 8.891850156376757,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l100_39ede5dc7779065e",
+      "b": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650",
+      "identity": 0.25,
+      "aligned_coverage": 0.55,
+      "ca_rmsd": 11.003016897552008,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l100_39ede5dc7779065e",
+      "b": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d",
+      "identity": 0.26,
+      "aligned_coverage": 0.7,
+      "ca_rmsd": 11.870858662536314,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l100_39ede5dc7779065e",
+      "b": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8",
+      "identity": 0.22,
+      "aligned_coverage": 0.42,
+      "ca_rmsd": 11.220461616907,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l100_39ede5dc7779065e",
+      "b": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c",
+      "identity": 0.35,
+      "aligned_coverage": 0.62,
+      "ca_rmsd": 11.274502148302261,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l84_9efe91791b587b17",
+      "b": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650",
+      "identity": 0.2976190476190476,
+      "aligned_coverage": 0.6309523809523809,
+      "ca_rmsd": 14.716859460677673,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l84_9efe91791b587b17",
+      "b": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d",
+      "identity": 0.3333333333333333,
+      "aligned_coverage": 0.6904761904761905,
+      "ca_rmsd": 12.64702491370368,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l84_9efe91791b587b17",
+      "b": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8",
+      "identity": 0.2619047619047619,
+      "aligned_coverage": 0.5357142857142857,
+      "ca_rmsd": 14.13102081278749,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l84_9efe91791b587b17",
+      "b": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c",
+      "identity": 0.29591836734693877,
+      "aligned_coverage": 0.7040816326530612,
+      "ca_rmsd": 12.85593243063568,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l84_9efe91791b587b17",
+      "b": "c4_tfr1_groove_human_forced_l100_39ede5dc7779065e",
+      "identity": 0.33,
+      "aligned_coverage": 0.76,
+      "ca_rmsd": 11.035082813053581,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l97_2e414f93ff62377a",
+      "b": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650",
+      "identity": 0.24742268041237114,
+      "aligned_coverage": 0.5979381443298969,
+      "ca_rmsd": 14.357326108738476,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l97_2e414f93ff62377a",
+      "b": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d",
+      "identity": 0.28865979381443296,
+      "aligned_coverage": 0.5773195876288659,
+      "ca_rmsd": 13.800601309738607,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l97_2e414f93ff62377a",
+      "b": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8",
+      "identity": 0.23711340206185566,
+      "aligned_coverage": 0.5051546391752577,
+      "ca_rmsd": 13.279939906803813,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l97_2e414f93ff62377a",
+      "b": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c",
+      "identity": 0.3979591836734694,
+      "aligned_coverage": 0.7857142857142857,
+      "ca_rmsd": 11.996558887867664,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l97_2e414f93ff62377a",
+      "b": "c4_tfr1_groove_human_forced_l100_39ede5dc7779065e",
+      "identity": 0.37,
+      "aligned_coverage": 0.73,
+      "ca_rmsd": 11.715321612324612,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l100_af9c8433a94467eb",
+      "b": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650",
+      "identity": 0.26,
+      "aligned_coverage": 0.56,
+      "ca_rmsd": 11.97840445510158,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l100_af9c8433a94467eb",
+      "b": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d",
+      "identity": 0.3,
+      "aligned_coverage": 0.65,
+      "ca_rmsd": 11.142882068509936,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l100_af9c8433a94467eb",
+      "b": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8",
+      "identity": 0.23,
+      "aligned_coverage": 0.54,
+      "ca_rmsd": 11.275108352285466,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l100_af9c8433a94467eb",
+      "b": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c",
+      "identity": 0.33,
+      "aligned_coverage": 0.79,
+      "ca_rmsd": 12.303880309110564,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l100_af9c8433a94467eb",
+      "b": "c4_tfr1_groove_human_forced_l100_39ede5dc7779065e",
+      "identity": 0.33,
+      "aligned_coverage": 0.81,
+      "ca_rmsd": 14.829095082442906,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l59_a8117845ac23722c",
+      "b": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650",
+      "identity": 0.36507936507936506,
+      "aligned_coverage": 0.7936507936507936,
+      "ca_rmsd": 7.725262590141481,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l59_a8117845ac23722c",
+      "b": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d",
+      "identity": 0.3157894736842105,
+      "aligned_coverage": 0.6842105263157895,
+      "ca_rmsd": 9.994831394423404,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l59_a8117845ac23722c",
+      "b": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8",
+      "identity": 0.3559322033898305,
+      "aligned_coverage": 0.6610169491525424,
+      "ca_rmsd": 8.355139917778452,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l59_a8117845ac23722c",
+      "b": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c",
+      "identity": 0.30612244897959184,
+      "aligned_coverage": 0.5510204081632653,
+      "ca_rmsd": 10.93439671108788,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l59_a8117845ac23722c",
+      "b": "c4_tfr1_groove_human_forced_l100_39ede5dc7779065e",
+      "identity": 0.28,
+      "aligned_coverage": 0.56,
+      "ca_rmsd": 11.053626401725014,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e",
+      "b": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650",
+      "identity": 0.2631578947368421,
+      "aligned_coverage": 0.5473684210526316,
+      "ca_rmsd": 13.87293310607399,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e",
+      "b": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d",
+      "identity": 0.25263157894736843,
+      "aligned_coverage": 0.6736842105263158,
+      "ca_rmsd": 14.0676803988284,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e",
+      "b": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8",
+      "identity": 0.2,
+      "aligned_coverage": 0.5894736842105263,
+      "ca_rmsd": 12.357193147330438,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e",
+      "b": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c",
+      "identity": 0.37755102040816324,
+      "aligned_coverage": 0.7142857142857143,
+      "ca_rmsd": 10.92358201779571,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e",
+      "b": "c4_tfr1_groove_human_forced_l100_39ede5dc7779065e",
+      "identity": 0.29,
+      "aligned_coverage": 0.67,
+      "ca_rmsd": 9.6913622677997,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0",
+      "b": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650",
+      "identity": 0.25263157894736843,
+      "aligned_coverage": 0.6,
+      "ca_rmsd": 12.963706622509195,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0",
+      "b": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d",
+      "identity": 0.37894736842105264,
+      "aligned_coverage": 0.6526315789473685,
+      "ca_rmsd": 17.304006763396508,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0",
+      "b": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8",
+      "identity": 0.21052631578947367,
+      "aligned_coverage": 0.5789473684210527,
+      "ca_rmsd": 15.202902770001312,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0",
+      "b": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c",
+      "identity": 0.35714285714285715,
+      "aligned_coverage": 0.7857142857142857,
+      "ca_rmsd": 9.980870380748037,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0",
+      "b": "c4_tfr1_groove_human_forced_l100_39ede5dc7779065e",
+      "identity": 0.39,
+      "aligned_coverage": 0.72,
+      "ca_rmsd": 11.879550920198762,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l58_9f94b53776050aad",
+      "b": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650",
+      "identity": 0.31746031746031744,
+      "aligned_coverage": 0.7142857142857143,
+      "ca_rmsd": 7.516285498681077,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l58_9f94b53776050aad",
+      "b": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d",
+      "identity": 0.27631578947368424,
+      "aligned_coverage": 0.631578947368421,
+      "ca_rmsd": 10.444095642485053,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l58_9f94b53776050aad",
+      "b": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8",
+      "identity": 0.3793103448275862,
+      "aligned_coverage": 0.6724137931034483,
+      "ca_rmsd": 12.849711077357929,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l58_9f94b53776050aad",
+      "b": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c",
+      "identity": 0.30612244897959184,
+      "aligned_coverage": 0.46938775510204084,
+      "ca_rmsd": 9.2113935128459,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l58_9f94b53776050aad",
+      "b": "c4_tfr1_groove_human_forced_l100_39ede5dc7779065e",
+      "identity": 0.28,
+      "aligned_coverage": 0.46,
+      "ca_rmsd": 9.838100703521803,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec",
+      "b": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650",
+      "identity": 0.28205128205128205,
+      "aligned_coverage": 0.6923076923076923,
+      "ca_rmsd": 8.931107733939477,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec",
+      "b": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d",
+      "identity": 0.3076923076923077,
+      "aligned_coverage": 0.7307692307692307,
+      "ca_rmsd": 10.402266013286937,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec",
+      "b": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8",
+      "identity": 0.2948717948717949,
+      "aligned_coverage": 0.6538461538461539,
+      "ca_rmsd": 8.832096997194125,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec",
+      "b": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c",
+      "identity": 0.3469387755102041,
+      "aligned_coverage": 0.6122448979591837,
+      "ca_rmsd": 9.960925809493776,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec",
+      "b": "c4_tfr1_groove_human_forced_l100_39ede5dc7779065e",
+      "identity": 0.3,
+      "aligned_coverage": 0.55,
+      "ca_rmsd": 14.255702707669608,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1",
+      "b": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650",
+      "identity": 0.2976190476190476,
+      "aligned_coverage": 0.5119047619047619,
+      "ca_rmsd": 11.041537233047228,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1",
+      "b": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d",
+      "identity": 0.38095238095238093,
+      "aligned_coverage": 0.6547619047619048,
+      "ca_rmsd": 14.729004605237595,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1",
+      "b": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8",
+      "identity": 0.2857142857142857,
+      "aligned_coverage": 0.5238095238095238,
+      "ca_rmsd": 10.043402271905268,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1",
+      "b": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c",
+      "identity": 0.2857142857142857,
+      "aligned_coverage": 0.673469387755102,
+      "ca_rmsd": 14.361729599163409,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1",
+      "b": "c4_tfr1_groove_human_forced_l100_39ede5dc7779065e",
+      "identity": 0.32,
+      "aligned_coverage": 0.71,
+      "ca_rmsd": 11.969055692075894,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d",
+      "b": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650",
+      "identity": 0.3333333333333333,
+      "aligned_coverage": 0.7619047619047619,
+      "ca_rmsd": 6.099422765808935,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d",
+      "b": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d",
+      "identity": 0.35526315789473684,
+      "aligned_coverage": 0.6710526315789473,
+      "ca_rmsd": 12.287573869026183,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d",
+      "b": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8",
+      "identity": 0.39655172413793105,
+      "aligned_coverage": 0.6551724137931034,
+      "ca_rmsd": 6.472013343160737,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d",
+      "b": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c",
+      "identity": 0.2653061224489796,
+      "aligned_coverage": 0.5408163265306123,
+      "ca_rmsd": 8.808299250779424,
+      "similar": false
+    },
+    {
+      "a": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d",
+      "b": "c4_tfr1_groove_human_forced_l100_39ede5dc7779065e",
+      "identity": 0.29,
+      "aligned_coverage": 0.57,
+      "ca_rmsd": 11.546394962550409,
+      "similar": false
+    }
+  ],
+  "target_topology": [
+    {
+      "chain": "A",
+      "residues": 639,
+      "first": 122,
+      "last": 760,
+      "gaps": []
+    },
+    {
+      "chain": "B",
+      "residues": 639,
+      "first": 122,
+      "last": 760,
+      "gaps": []
+    }
+  ],
+  "target_sequence_mismatches": [],
+  "transferrin_footprint": [
+    121,
+    123,
+    125,
+    195,
+    196,
+    197,
+    199,
+    201,
+    211,
+    212,
+    215,
+    292,
+    294,
+    619,
+    622,
+    623,
+    626,
+    629,
+    640,
+    643,
+    644,
+    646,
+    647,
+    648,
+    650,
+    651,
+    658,
+    661,
+    662,
+    663,
+    664,
+    666,
+    667,
+    670,
+    757,
+    758,
+    759
+  ],
+  "template_sha256": "4eaa5db67ed83a896713c4b42d1dc214c778bdac240fdf3a9a82e86a66f79495",
+  "script_sha256": "265fff1ff405bcbd4cc13f4ffec858fb3e59afbac37705da49f1054d0c13b481",
+  "selection": "greedy priority with aligned sequence/CA redundancy checks; not universal fold clustering"
+}

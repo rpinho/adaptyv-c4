@@ -1,5 +1,14 @@
 # Method: proton-coupled two-state design, with the numbers checked
 
+**Current qualification (2026-10-21):** the old 73-residue receptor crop omitted
+protein that all 65 well-aligned source candidates overlap at backbone level.
+Their linkage results diagnose that crop; they do not validate binding to the
+full receptor. See `results/full_context_audit/RESULTS.md`. Independently
+prepared free-binder sidechains also remove the strongest proposed H46 free-pKa
+advantage in the 72-model scout: `results/free_networks_v3/RESULTS.md`. These
+findings, and fresh full-context generation, supersede advancing the old numerical
+winners directly to submission. The equations below remain model definitions.
+
 ## The metric
 
 `scripts/ph_linkage.py` scores a complex by Wyman linkage. For every titratable group with

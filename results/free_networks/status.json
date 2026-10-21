@@ -1,0 +1,225 @@
+{
+  "status": "failed_native_process",
+  "pid": 76925,
+  "started": 1792609202.372302,
+  "models": [
+    {
+      "seed": 202610210,
+      "label": "HH",
+      "pdb": "/Users/ricardo/dev/adaptyv-c4/results/free_networks/seed0_HH.pdb",
+      "sha256": "947bd60887234f3d4893a3d9e0d4db93033a784e379d2ab559308cace3d7ebb8",
+      "energy_REU": -128.06909547371723,
+      "ddE_vs_HH_REU": 0.0,
+      "neutral_energy_filter": true,
+      "selected_his": [
+        {
+          "resnum": 4,
+          "pka": 6.33
+        },
+        {
+          "resnum": 46,
+          "pka": 6.12
+        }
+      ],
+      "missing_selected_his": false,
+      "rows": [
+        {
+          "chain": "C",
+          "resnum": 33,
+          "resname": "ASP",
+          "pka": 3.96
+        },
+        {
+          "chain": "C",
+          "resnum": 41,
+          "resname": "ASP",
+          "pka": 3.03
+        },
+        {
+          "chain": "C",
+          "resnum": 42,
+          "resname": "ASP",
+          "pka": 3.51
+        },
+        {
+          "chain": "C",
+          "resnum": 48,
+          "resname": "ASP",
+          "pka": 3.92
+        },
+        {
+          "chain": "C",
+          "resnum": 55,
+          "resname": "ASP",
+          "pka": 3.18
+        },
+        {
+          "chain": "C",
+          "resnum": 2,
+          "resname": "GLU",
+          "pka": 4.73
+        },
+        {
+          "chain": "C",
+          "resnum": 6,
+          "resname": "GLU",
+          "pka": 4.93
+        },
+        {
+          "chain": "C",
+          "resnum": 7,
+          "resname": "GLU",
+          "pka": 3.93
+        },
+        {
+          "chain": "C",
+          "resnum": 10,
+          "resname": "GLU",
+          "pka": 4.76
+        },
+        {
+          "chain": "C",
+          "resnum": 13,
+          "resname": "GLU",
+          "pka": 4.57
+        },
+        {
+          "chain": "C",
+          "resnum": 20,
+          "resname": "GLU",
+          "pka": 4.19
+        },
+        {
+          "chain": "C",
+          "resnum": 21,
+          "resname": "GLU",
+          "pka": 4.65
+        },
+        {
+          "chain": "C",
+          "resnum": 36,
+          "resname": "GLU",
+          "pka": 4.33
+        },
+        {
+          "chain": "C",
+          "resnum": 56,
+          "resname": "GLU",
+          "pka": 3.45
+        },
+        {
+          "chain": "C",
+          "resnum": 58,
+          "resname": "GLU",
+          "pka": 4.1
+        },
+        {
+          "chain": "C",
+          "resnum": 63,
+          "resname": "C-",
+          "pka": 3.35
+        },
+        {
+          "chain": "C",
+          "resnum": 4,
+          "resname": "HIS",
+          "pka": 6.33
+        },
+        {
+          "chain": "C",
+          "resnum": 46,
+          "resname": "HIS",
+          "pka": 6.12
+        },
+        {
+          "chain": "C",
+          "resnum": 15,
+          "resname": "TYR",
+          "pka": 10.02
+        },
+        {
+          "chain": "C",
+          "resnum": 40,
+          "resname": "TYR",
+          "pka": 10.97
+        },
+        {
+          "chain": "C",
+          "resnum": 3,
+          "resname": "LYS",
+          "pka": 11.14
+        },
+        {
+          "chain": "C",
+          "resnum": 23,
+          "resname": "LYS",
+          "pka": 11.33
+        },
+        {
+          "chain": "C",
+          "resnum": 52,
+          "resname": "LYS",
+          "pka": 11.54
+        },
+        {
+          "chain": "C",
+          "resnum": 59,
+          "resname": "LYS",
+          "pka": 10.58
+        },
+        {
+          "chain": "C",
+          "resnum": 9,
+          "resname": "ARG",
+          "pka": 13.46
+        },
+        {
+          "chain": "C",
+          "resnum": 16,
+          "resname": "ARG",
+          "pka": 12.9
+        },
+        {
+          "chain": "C",
+          "resnum": 17,
+          "resname": "ARG",
+          "pka": 12.55
+        },
+        {
+          "chain": "C",
+          "resnum": 18,
+          "resname": "ARG",
+          "pka": 12.45
+        },
+        {
+          "chain": "C",
+          "resnum": 39,
+          "resname": "ARG",
+          "pka": 12.62
+        },
+        {
+          "chain": "C",
+          "resnum": 49,
+          "resname": "ARG",
+          "pka": 12.41
+        },
+        {
+          "chain": "C",
+          "resnum": 1,
+          "resname": "N+",
+          "pka": 7.76
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "new_gpu_spend_usd": 0,
+  "source": "/Users/ricardo/dev/adaptyv-c4/results/switch_install/campaign/14_c4_tfr1_groove_human_forced_l63_59b0f47ecf134650/c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate9_CD4__CT46_HH_switch.pdb",
+  "source_sha256": "35344b2dd8c4ab6c02c6abc245aacb842832700862483a9d726ffdaa76b69b38",
+  "script_sha256": "b2e6b14cd1589f7eb777c314358622dfcf636b161b0714e5772fcb55d0f58a4b",
+  "context_status": "old docking rejected; isolated binder scout only",
+  "interpretation": "free-state pKa and fixed-backbone energy only; no receptor affinity or pH selectivity claim",
+  "updated": 1792609205.301863,
+  "exit_code": 139,
+  "reason": "PyRosetta native crash on one-letter MutateResidue; retry uses full three-letter residue types"
+}

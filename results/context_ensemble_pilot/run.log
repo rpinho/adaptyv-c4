@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/ricardo/dev/adaptyv-c4/scripts/run_context_ensemble.py", line 343, in <module>
+    if __name__=='__main__': main()
+                             ^^^^^^
+  File "/Users/ricardo/dev/adaptyv-c4/scripts/run_context_ensemble.py", line 315, in main
+    inputs=prepare_inputs(out)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/ricardo/dev/adaptyv-c4/scripts/run_context_ensemble.py", line 163, in prepare_inputs
+    if rmsd>1: raise ValueError('target alignment exceeds 1 A')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: target alignment exceeds 1 A

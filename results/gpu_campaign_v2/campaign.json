@@ -1,0 +1,33 @@
+{
+  "modality": "binder",
+  "campaign_name": "c4_full_monomer_apical_v2",
+  "project_folder": "/workspace/runs/c4_full_monomer_apical_v2",
+  "binder_lengths": [
+    65,
+    75
+  ],
+  "number_of_final_designs": 2,
+  "max_trajectories": 3,
+  "campaign_seed": 20261021,
+  "forced_targeting": true,
+  "termini_accessible": true,
+  "min_hotspot_contact_final": 0.5,
+  "save_failed_refolds": true,
+  "save_failed_trajectories": true,
+  "save_binder_monomers": true,
+  "relax_accepted_designs": false,
+  "sequence_candidates": 4,
+  "kept_sequences": 2,
+  "use_remat": true,
+  "design_recycles": 1,
+  "validation_recycles": 3,
+  "targets": [
+    {
+      "name": "hTfR1_full_monomer",
+      "target_path": "/workspace/runs/human_11qc_full_monomer.pdb",
+      "chains": "A",
+      "hotspots": "A205,A206,A208,A209,A210",
+      "weight": 1.0
+    }
+  ]
+}

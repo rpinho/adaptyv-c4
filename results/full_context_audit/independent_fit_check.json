@@ -1,0 +1,7 @@
+{
+  "method": "Bio.PDB.Superimposer independent implementation",
+  "source_sha256": "64eef5b38579a16ce8ed093902b02a3e27247316f7ef981ff17ad8dbf856cfad",
+  "rmsd": 1.0034478502411865,
+  "biopython_rmsd": 1.0034478881107138,
+  "binder_transformed_atom_max_difference_A": 2.8957347913584878e-05
+}

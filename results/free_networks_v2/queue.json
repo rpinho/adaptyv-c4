@@ -1,0 +1,268 @@
+{
+  "parent": {
+    "backbone": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650",
+    "pair": 1,
+    "L": -1.53,
+    "ddG": 1.744274445045363,
+    "matched_QQ_L": -0.444,
+    "HH_minus_QQ": -1.086,
+    "variant_path": "/Users/ricardo/dev/adaptyv-c4/results/switch_install/campaign/14_c4_tfr1_groove_human_forced_l63_59b0f47ecf134650/c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate9_CD4__CT46_HH_switch.pdb",
+    "source_path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all_pdb/c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate9.pdb",
+    "status": "priority for context/ensemble validation; not submission selected",
+    "priority_rank": 1
+  },
+  "sites": [
+    {
+      "design": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate9.pdb",
+      "chain": "C",
+      "resnum": 4,
+      "resname": "ASP",
+      "burial_free": 0.328,
+      "burial_bound": 0.722,
+      "d_burial": 0.394,
+      "acids_near_free": 3,
+      "bases_near_target": 2,
+      "pka_free_est": 7.55,
+      "pka_bound_est": 5.73,
+      "est_contribution": -1.004,
+      "note": "",
+      "wt": "D"
+    },
+    {
+      "design": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate9.pdb",
+      "chain": "C",
+      "resnum": 46,
+      "resname": "THR",
+      "burial_free": 0.544,
+      "burial_bound": 0.928,
+      "d_burial": 0.383,
+      "acids_near_free": 3,
+      "bases_near_target": 1,
+      "pka_free_est": 7.35,
+      "pka_bound_est": 5.96,
+      "est_contribution": -0.829,
+      "note": "",
+      "wt": "T"
+    }
+  ],
+  "variants": [
+    [
+      "HH",
+      []
+    ],
+    [
+      "H4Q",
+      [
+        [
+          4,
+          "Q"
+        ]
+      ]
+    ],
+    [
+      "H46Q",
+      [
+        [
+          46,
+          "Q"
+        ]
+      ]
+    ],
+    [
+      "QQ",
+      [
+        [
+          4,
+          "Q"
+        ],
+        [
+          46,
+          "Q"
+        ]
+      ]
+    ],
+    [
+      "A45D",
+      [
+        [
+          45,
+          "D"
+        ]
+      ]
+    ],
+    [
+      "A45E",
+      [
+        [
+          45,
+          "E"
+        ]
+      ]
+    ],
+    [
+      "K3D",
+      [
+        [
+          3,
+          "D"
+        ]
+      ]
+    ],
+    [
+      "K3E",
+      [
+        [
+          3,
+          "E"
+        ]
+      ]
+    ],
+    [
+      "L1D",
+      [
+        [
+          1,
+          "D"
+        ]
+      ]
+    ],
+    [
+      "L1E",
+      [
+        [
+          1,
+          "E"
+        ]
+      ]
+    ],
+    [
+      "I47D",
+      [
+        [
+          47,
+          "D"
+        ]
+      ]
+    ],
+    [
+      "I47E",
+      [
+        [
+          47,
+          "E"
+        ]
+      ]
+    ],
+    [
+      "I5D",
+      [
+        [
+          5,
+          "D"
+        ]
+      ]
+    ],
+    [
+      "I5E",
+      [
+        [
+          5,
+          "E"
+        ]
+      ]
+    ],
+    [
+      "R49D",
+      [
+        [
+          49,
+          "D"
+        ]
+      ]
+    ],
+    [
+      "R49E",
+      [
+        [
+          49,
+          "E"
+        ]
+      ]
+    ],
+    [
+      "E7D",
+      [
+        [
+          7,
+          "D"
+        ]
+      ]
+    ],
+    [
+      "M43D",
+      [
+        [
+          43,
+          "D"
+        ]
+      ]
+    ],
+    [
+      "M43E",
+      [
+        [
+          43,
+          "E"
+        ]
+      ]
+    ],
+    [
+      "V8D",
+      [
+        [
+          8,
+          "D"
+        ]
+      ]
+    ],
+    [
+      "V8E",
+      [
+        [
+          8,
+          "E"
+        ]
+      ]
+    ],
+    [
+      "L50D",
+      [
+        [
+          50,
+          "D"
+        ]
+      ]
+    ],
+    [
+      "L50E",
+      [
+        [
+          50,
+          "E"
+        ]
+      ]
+    ],
+    [
+      "D42E",
+      [
+        [
+          42,
+          "E"
+        ]
+      ]
+    ]
+  ],
+  "seeds": 3,
+  "selection": "nearest binder neighbor atoms <=8A from selected His; D/E support scout",
+  "min_neutral_retention_REU": "ddE <=3 vs same-seed HH; engineering filter only"
+}
