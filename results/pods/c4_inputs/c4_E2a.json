@@ -1,0 +1,9 @@
+{
+    "design_path": "/workspace/runs/c4_E2a/",
+    "binder_name": "c4E2a",
+    "starting_pdb": "/workspace/runs/E2a_apical_202_213.pdb",
+    "chains": "A",
+    "target_hotspot_residues": "A202-210,A213",
+    "lengths": [60, 130],
+    "number_of_final_designs": 30
+}

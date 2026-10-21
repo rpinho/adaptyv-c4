@@ -1,0 +1,25 @@
+
+=== trajectory 6 | c4_tfr1_his707_human_forced_l67_6e51f2378a04f0c6 | accepted 0/25 | worker 3 ===
+forced targeting epitope=62 lysinated=11 residues=73
+  passed screen design stage  i_pTM=0.76    pLDDT=0.9   
+  passed refine design stage  i_pTM=0.79    pLDDT=0.92  
+  passed anneal design stage  i_pTM=0.82    pLDDT=0.94  
+  passed harden design stage  i_pTM=0.73    pLDDT=0.88  
+  passed mutate design stage  i_pTM=0.79    pLDDT=0.91  
+  binder hallucination successful
+  binder optimization, 10 MPNN redesigns
+ProteinMPNN: holding 21 of 67 residue(s) of chain binder
+   1/10  rejected  Binder_RMSD=0.41    Hotspot_Contact_Fraction=0.0     Interface_Residues=17   Off_Epitope_Contact_Fraction=0.21    Receptor_Chains_Contacted=2    Target_pLDDT=0.76    i_pAE=0.32    i_pTM=0.66    pLDDT=0.9     pTM=0.73    failed [i_pTM, Hotspot_Contact_Fraction]
+   2/10  rejected  Binder_RMSD=0.54    Hotspot_Contact_Fraction=0.0     Interface_Residues=18   Off_Epitope_Contact_Fraction=0.2     Receptor_Chains_Contacted=2    Target_pLDDT=0.77    i_pAE=0.31    i_pTM=0.7     pLDDT=0.91    pTM=0.73    failed [i_pTM, Hotspot_Contact_Fraction]
+   3/10  rejected  Binder_RMSD=0.58    Hotspot_Contact_Fraction=0.0     Interface_Residues=19   Off_Epitope_Contact_Fraction=0.26    Receptor_Chains_Contacted=2    Target_pLDDT=0.74    i_pAE=0.34    i_pTM=0.63    pLDDT=0.88    pTM=0.69    failed [i_pTM, Hotspot_Contact_Fraction]
+   4/10  rejected  Binder_RMSD=0.54    Hotspot_Contact_Fraction=0.0     Interface_Residues=17   Off_Epitope_Contact_Fraction=0.26    Receptor_Chains_Contacted=2    Target_pLDDT=0.75    i_pAE=0.33    i_pTM=0.66    pLDDT=0.89    pTM=0.72    failed [i_pTM, Hotspot_Contact_Fraction]
+   5/10  rejected  Binder_RMSD=0.62    Hotspot_Contact_Fraction=0.0     Interface_Residues=18   Off_Epitope_Contact_Fraction=0.22    Receptor_Chains_Contacted=2    Target_pLDDT=0.76    i_pAE=0.32    i_pTM=0.68    pLDDT=0.89    pTM=0.71    failed [i_pTM, Hotspot_Contact_Fraction]
+   6/10  rejected  Binder_RMSD=0.63    Hotspot_Contact_Fraction=0.0     Interface_Residues=19   Off_Epitope_Contact_Fraction=0.18    Receptor_Chains_Contacted=2    Target_pLDDT=0.76    i_pAE=0.32    i_pTM=0.67    pLDDT=0.89    pTM=0.71    failed [i_pTM, Hotspot_Contact_Fraction]
+   7/10  rejected  Binder_RMSD=0.63    Hotspot_Contact_Fraction=0.0     Interface_Residues=19   Off_Epitope_Contact_Fraction=0.26    Receptor_Chains_Contacted=2    Target_pLDDT=0.75    i_pAE=0.33    i_pTM=0.66    pLDDT=0.89    pTM=0.7     failed [i_pTM, Hotspot_Contact_Fraction]
+   8/10  rejected  Binder_RMSD=0.46    Hotspot_Contact_Fraction=0.0     Interface_Residues=17   Off_Epitope_Contact_Fraction=0.24    Receptor_Chains_Contacted=2    Target_pLDDT=0.74    i_pAE=0.35    i_pTM=0.61    pLDDT=0.89    pTM=0.69    failed [i_pTM, Hotspot_Contact_Fraction]
+   9/10  rejected  Binder_RMSD=0.61    Hotspot_Contact_Fraction=0.0     Interface_Residues=19   Off_Epitope_Contact_Fraction=0.21    Receptor_Chains_Contacted=2    Target_pLDDT=0.77    i_pAE=0.31    i_pTM=0.7     pLDDT=0.91    pTM=0.72    failed [Hotspot_Contact_Fraction]
+  10/10  rejected  Binder_RMSD=0.54    Hotspot_Contact_Fraction=0.0     Interface_Residues=19   Off_Epitope_Contact_Fraction=0.21    Receptor_Chains_Contacted=2    Target_pLDDT=0.76    i_pAE=0.31    i_pTM=0.68    pLDDT=0.9     pTM=0.71    failed [i_pTM, Hotspot_Contact_Fraction]
+  0 of 10 redesigns passed
+
+=== trajectory 15 | c4_tfr1_his707_human_forced_l76_1093e067c4e45268 | accepted 0/25 | worker 3 ===
+forced targeting epitope=62 lysinated=11 residues=73

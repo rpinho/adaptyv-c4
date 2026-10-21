@@ -1,0 +1,25 @@
+BindCraft 2 v1.0.4
+campaign c4_tfr1_his707_human
+binder length 55 to 100, drawn per trajectory
+target hTfR1 (target) | 73 residues | hotspots A695,A704,A705,A706,A707,A711,A714
+losses binder_contacts=1.0 binder_helicity=-0.3 binder_pae=0.4 compactness=0.5 interface_contacts=1.0 interface_pae=0.1 iptm_loss=0.05 plddt_loss=0.1 target_rmsd=1.0
+features forced targeting: everything outside the default Angstrom of the hotspots rebuilt as lysine
+filters Backbone_Clashes <= 0, Binder_RMSD <= 3.5, Hotspot_Contact_Fraction >= 0.5, Interface_Residues >= 7, Unbound_Binder_pLDDT >= 0.7, i_pAE <= 0.35, i_pTM >= 0.7, pTM >= 0.55
+results /workspace/runs/c4_E1_human | 3_Ranked/!_Ranked.csv rewritten as each design is accepted | summary.csv written when the campaign ends
+
+=== trajectory 7 | c4_tfr1_his707_human_forced_l87_ab52dd37b6ff39f7 | accepted 0/25 | worker 0 ===
+forced targeting epitope=62 lysinated=11 residues=73
+  passed screen design stage  i_pTM=0.61    pLDDT=0.75  
+  passed refine design stage  i_pTM=0.68    pLDDT=0.75  
+  passed anneal design stage  i_pTM=0.8     pLDDT=0.87  
+  rejected at harden design stage  i_pTM=0.32    pLDDT=0.56   due to [i_pTM, pLDDT]
+
+=== trajectory 8 | c4_tfr1_his707_human_forced_l76_55309831c44621de | accepted 0/25 | worker 0 ===
+forced targeting epitope=62 lysinated=11 residues=73
+  passed screen design stage  i_pTM=0.59    pLDDT=0.88  
+  passed refine design stage  i_pTM=0.61    pLDDT=0.88  
+  passed anneal design stage  i_pTM=0.66    pLDDT=0.89  
+  rejected at harden design stage  i_pTM=0.4     pLDDT=0.83   due to [i_pTM]
+
+=== trajectory 16 | c4_tfr1_his707_human_forced_l73_ef392a1597229cb0 | accepted 0/25 | worker 0 ===
+forced targeting epitope=62 lysinated=11 residues=73

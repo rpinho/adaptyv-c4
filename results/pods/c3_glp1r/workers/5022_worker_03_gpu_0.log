@@ -1,0 +1,149 @@
+
+=== trajectory 6 | c3_glp1r_ecd_groove_forced_l67_5333d2a30d5c920b | accepted 0/20 | worker 3 ===
+forced targeting epitope=85 lysinated=24 residues=111
+  passed screen design stage  i_pTM=0.59    pLDDT=0.69  
+  passed refine design stage  i_pTM=0.71    pLDDT=0.77  
+  passed anneal design stage  i_pTM=0.7     pLDDT=0.82  
+  passed harden design stage  i_pTM=0.66    pLDDT=0.74  
+  passed mutate design stage  i_pTM=0.57    pLDDT=0.7   
+  trajectory rejected  i_pTM=0.57    pLDDT=0.7    due to [i_pTM]
+
+=== trajectory 11 | c3_glp1r_ecd_groove_forced_l71_af5c30648eafc6e4 | accepted 0/20 | worker 3 ===
+forced targeting epitope=85 lysinated=24 residues=111
+  rejected at screen design stage  i_pTM=0.1     pLDDT=0.56   due to [pLDDT]
+
+=== trajectory 13 | c3_glp1r_ecd_groove_forced_l96_e7359d3313c79633 | accepted 0/20 | worker 3 ===
+forced targeting epitope=85 lysinated=24 residues=111
+  passed screen design stage  i_pTM=0.73    pLDDT=0.83  
+  passed refine design stage  i_pTM=0.82    pLDDT=0.9   
+  passed anneal design stage  i_pTM=0.81    pLDDT=0.91  
+  passed harden design stage  i_pTM=0.74    pLDDT=0.88  
+  passed mutate design stage  i_pTM=0.77    pLDDT=0.81  
+  binder hallucination successful
+  binder optimization, 10 MPNN redesigns
+ProteinMPNN: holding 24 of 96 residue(s) of chain binder
+   1/10  rejected  Binder_RMSD=0.5     Hotspot_Contact_Fraction=0.07    Interface_Residues=5    Off_Epitope_Contact_Fraction=0.0     Target_pLDDT=0.89    i_pAE=0.85    i_pTM=0.11    pLDDT=0.81    pTM=0.48    failed [i_pTM, pTM, i_pAE, Interface_Residues, Hotspot_Contact_Fraction]
+   2/10  rejected  Binder_RMSD=1.6     Hotspot_Contact_Fraction=0.0     Interface_Residues=3    Off_Epitope_Contact_Fraction=0.0     Target_pLDDT=0.87    i_pAE=0.84    i_pTM=0.12    pLDDT=0.66    pTM=0.49    Unbound_Binder_pLDDT=0.69    failed [i_pTM, pLDDT, Unbound_Binder_pLDDT, pTM, i_pAE, Interface_Residues, Hotspot_Contact_Fraction]
+   3/10  rejected  Binder_RMSD=0.44    Hotspot_Contact_Fraction=0.0     Interface_Residues=3    Off_Epitope_Contact_Fraction=0.0     Target_pLDDT=0.89    i_pAE=0.88    i_pTM=0.09    pLDDT=0.77    pTM=0.48    failed [i_pTM, pTM, i_pAE, Interface_Residues, Hotspot_Contact_Fraction]
+   4/10  rejected  Binder_RMSD=1.7     Hotspot_Contact_Fraction=0.07    Interface_Residues=6    Off_Epitope_Contact_Fraction=0.0     Target_pLDDT=0.87    i_pAE=0.85    i_pTM=0.12    pLDDT=0.61    pTM=0.49    failed [i_pTM, pLDDT, pTM, i_pAE, Interface_Residues, Hotspot_Contact_Fraction]
+   5/10  rejected  Binder_RMSD=0.35    Hotspot_Contact_Fraction=0.0     Interface_Residues=2    Off_Epitope_Contact_Fraction=0.0     Target_pLDDT=0.89    i_pAE=0.87    i_pTM=0.09    pLDDT=0.8     pTM=0.48    failed [i_pTM, pTM, i_pAE, Interface_Residues, Hotspot_Contact_Fraction]
+   6/10  rejected  Binder_RMSD=0.33    Hotspot_Contact_Fraction=0.07    Interface_Residues=4    Off_Epitope_Contact_Fraction=0.0     Target_pLDDT=0.89    i_pAE=0.86    i_pTM=0.1     pLDDT=0.77    pTM=0.48    failed [i_pTM, pTM, i_pAE, Interface_Residues, Hotspot_Contact_Fraction]
+   7/10  rejected  Binder_RMSD=3.1     Hotspot_Contact_Fraction=0.07    Interface_Residues=5    Off_Epitope_Contact_Fraction=0.0     Target_pLDDT=0.84    i_pAE=0.81    i_pTM=0.15    pLDDT=0.6     pTM=0.5     failed [i_pTM, pLDDT, pTM, i_pAE, Interface_Residues, Hotspot_Contact_Fraction]
+   8/10  rejected  Binder_RMSD=2.8     Hotspot_Contact_Fraction=0.0     Interface_Residues=1    Off_Epitope_Contact_Fraction=0.0     Target_pLDDT=0.89    i_pAE=0.88    i_pTM=0.09    pLDDT=0.77    pTM=0.48    failed [i_pTM, pTM, i_pAE, Interface_Residues, Hotspot_Contact_Fraction]
+   9/10  rejected  Binder_RMSD=11.9    Hotspot_Contact_Fraction=0.07    Interface_Residues=3    Off_Epitope_Contact_Fraction=0.0     Target_pLDDT=0.88    i_pAE=0.88    i_pTM=0.1     pLDDT=0.56    pTM=0.49    failed [i_pTM, pLDDT, pTM, i_pAE, Interface_Residues, Hotspot_Contact_Fraction, Binder_RMSD]
+  10/10  rejected  Binder_RMSD=1.2     Hotspot_Contact_Fraction=0.8     Interface_Residues=21   Off_Epitope_Contact_Fraction=0.0     Target_pLDDT=0.89    i_pAE=0.61    i_pTM=0.4     pLDDT=0.74    pTM=0.62    failed [i_pTM, pLDDT, pTM, i_pAE]
+  0 of 10 redesigns passed
+
+=== trajectory 28 | c3_glp1r_ecd_groove_forced_l70_b7f4bb793a263728 | accepted 1/20 | worker 3 ===
+forced targeting epitope=85 lysinated=24 residues=111
+  rejected at screen design stage  i_pTM=0.19    pLDDT=0.49   due to [pLDDT]
+
+=== trajectory 29 | c3_glp1r_ecd_groove_forced_l69_7f89222566bb6b9d | accepted 1/20 | worker 3 ===
+forced targeting epitope=85 lysinated=24 residues=111
+  passed screen design stage  i_pTM=0.75    pLDDT=0.8   
+  passed refine design stage  i_pTM=0.73    pLDDT=0.8   
+  passed anneal design stage  i_pTM=0.84    pLDDT=0.89  
+  passed harden design stage  i_pTM=0.85    pLDDT=0.89  
+  passed mutate design stage  i_pTM=0.79    pLDDT=0.84  
+  binder hallucination successful
+  binder optimization, 10 MPNN redesigns
+ProteinMPNN: holding 26 of 69 residue(s) of chain binder
+   1/10  rejected  Binder_RMSD=2.7     Hotspot_Contact_Fraction=0.0     Interface_Residues=3    Off_Epitope_Contact_Fraction=0.0     Target_pLDDT=0.88    i_pAE=0.84    i_pTM=0.12    pLDDT=0.65    pTM=0.54    failed [i_pTM, pLDDT, pTM, i_pAE, Interface_Residues, Hotspot_Contact_Fraction]
+   2/10  rejected  Binder_RMSD=1.1     Hotspot_Contact_Fraction=0.0     Interface_Residues=1    Off_Epitope_Contact_Fraction=0.0     Target_pLDDT=0.88    i_pAE=0.85    i_pTM=0.11    pLDDT=0.54    pTM=0.53    Unbound_Binder_pLDDT=0.62    failed [i_pTM, pLDDT, Unbound_Binder_pLDDT, pTM, i_pAE, Interface_Residues, Hotspot_Contact_Fraction]
+   3/10  rejected  Binder_RMSD=0.4     Hotspot_Contact_Fraction=0.73    Interface_Residues=21   Off_Epitope_Contact_Fraction=0.0     Target_pLDDT=0.88    i_pAE=0.31    i_pTM=0.74    pLDDT=0.88    pTM=0.77    failed [i_pTM]
+   4/10  rejected  Binder_RMSD=0.53    Hotspot_Contact_Fraction=0.07    Interface_Residues=3    Off_Epitope_Contact_Fraction=0.0     Target_pLDDT=0.9     i_pAE=0.87    i_pTM=0.09    pLDDT=0.71    pTM=0.53    failed [i_pTM, pTM, i_pAE, Interface_Residues, Hotspot_Contact_Fraction]
+   5/10  rejected  Binder_RMSD=0.25    Hotspot_Contact_Fraction=0.73    Interface_Residues=21   Off_Epitope_Contact_Fraction=0.0     Target_pLDDT=0.87    i_pAE=0.37    i_pTM=0.63    pLDDT=0.88    pTM=0.73    failed [i_pTM, i_pAE]
+   6/10  rejected  Binder_RMSD=8.5     Hotspot_Contact_Fraction=0.73    Interface_Residues=19   Off_Epitope_Contact_Fraction=0.0     Target_pLDDT=0.86    i_pAE=0.34    i_pTM=0.69    pLDDT=0.84    pTM=0.74    Unbound_Binder_pLDDT=0.54    failed [i_pTM, Unbound_Binder_pLDDT, Binder_RMSD]
+   7/10  rejected  Binder_RMSD=3.4     Hotspot_Contact_Fraction=0.0     Interface_Residues=0    Off_Epitope_Contact_Fraction=0.0     Target_pLDDT=0.9     i_pAE=0.89    i_pTM=0.08    pLDDT=0.73    pTM=0.52    Unbound_Binder_pLDDT=0.6     failed [i_pTM, Unbound_Binder_pLDDT, pTM, i_pAE, Interface_Residues, Hotspot_Contact_Fraction]
+   8/10  rejected  Binder_RMSD=7.9     Hotspot_Contact_Fraction=0.07    Interface_Residues=2    Off_Epitope_Contact_Fraction=0.0     Target_pLDDT=0.87    i_pAE=0.85    i_pTM=0.11    pLDDT=0.45    pTM=0.53    failed [i_pTM, pLDDT, pTM, i_pAE, Interface_Residues, Hotspot_Contact_Fraction, Binder_RMSD]
+   9/10  rejected  Binder_RMSD=11.1    Hotspot_Contact_Fraction=0.2     Interface_Residues=4    Off_Epitope_Contact_Fraction=0.0     Target_pLDDT=0.86    i_pAE=0.84    i_pTM=0.14    pLDDT=0.44    pTM=0.54    failed [i_pTM, pLDDT, pTM, i_pAE, Interface_Residues, Hotspot_Contact_Fraction, Binder_RMSD]
+  10/10  rejected  Binder_RMSD=0.79    Hotspot_Contact_Fraction=0.13    Interface_Residues=2    Off_Epitope_Contact_Fraction=0.0     Target_pLDDT=0.88    i_pAE=0.85    i_pTM=0.11    pLDDT=0.62    pTM=0.53    failed [i_pTM, pLDDT, pTM, i_pAE, Interface_Residues, Hotspot_Contact_Fraction]
+  0 of 10 redesigns passed
+
+=== trajectory 37 | c3_glp1r_ecd_groove_forced_l67_320f41dba13937bd | accepted 1/20 | worker 3 ===
+forced targeting epitope=85 lysinated=24 residues=111
+  rejected at screen design stage  i_pTM=0.44    pLDDT=0.48   due to [pLDDT]
+
+=== trajectory 40 | c3_glp1r_ecd_groove_forced_l79_b64b4fd88f285064 | accepted 1/20 | worker 3 ===
+forced targeting epitope=85 lysinated=24 residues=111
+  rejected at screen design stage  i_pTM=0.13    pLDDT=0.53   due to [pLDDT]
+
+=== trajectory 42 | c3_glp1r_ecd_groove_forced_l86_9af4b844a51424f5 | accepted 1/20 | worker 3 ===
+forced targeting epitope=85 lysinated=24 residues=111
+  passed screen design stage  i_pTM=0.8     pLDDT=0.84  
+  passed refine design stage  i_pTM=0.78    pLDDT=0.83  
+  passed anneal design stage  i_pTM=0.82    pLDDT=0.88  
+  passed harden design stage  i_pTM=0.53    pLDDT=0.66  
+  rejected at mutate design stage  i_pTM=0.17    pLDDT=0.49   due to [i_pTM, pLDDT]
+
+=== trajectory 51 | c3_glp1r_ecd_groove_forced_l66_186edd599f1f2e35 | accepted 1/20 | worker 3 ===
+forced targeting epitope=85 lysinated=24 residues=111
+  rejected at screen design stage  i_pTM=0.14    pLDDT=0.51   due to [pLDDT]
+
+=== trajectory 55 | c3_glp1r_ecd_groove_forced_l95_2c0ba634e02e87f0 | accepted 1/20 | worker 3 ===
+forced targeting epitope=85 lysinated=24 residues=111
+  passed screen design stage  i_pTM=0.83    pLDDT=0.92  
+  passed refine design stage  i_pTM=0.81    pLDDT=0.93  
+  passed anneal design stage  i_pTM=0.83    pLDDT=0.94  
+  rejected at harden design stage  i_pTM=0.74    pLDDT=0.58   due to [pLDDT]
+
+=== trajectory 60 | c3_glp1r_ecd_groove_forced_l76_2d813e1aaf142234 | accepted 2/20 | worker 3 ===
+forced targeting epitope=85 lysinated=24 residues=111
+  passed screen design stage  i_pTM=0.75    pLDDT=0.91  
+  passed refine design stage  i_pTM=0.75    pLDDT=0.89  
+  passed anneal design stage  i_pTM=0.83    pLDDT=0.93  
+  passed harden design stage  i_pTM=0.74    pLDDT=0.88  
+  rejected at mutate design stage  i_pTM=0.12    pLDDT=0.71   due to [i_pTM]
+
+=== trajectory 70 | c3_glp1r_ecd_groove_forced_l74_24daa54f90694680 | accepted 2/20 | worker 3 ===
+forced targeting epitope=85 lysinated=24 residues=111
+  passed screen design stage  i_pTM=0.78    pLDDT=0.88  
+  passed refine design stage  i_pTM=0.83    pLDDT=0.9   
+  passed anneal design stage  i_pTM=0.85    pLDDT=0.91  
+  passed harden design stage  i_pTM=0.83    pLDDT=0.9   
+  passed mutate design stage  i_pTM=0.77    pLDDT=0.88  
+  binder hallucination successful
+  binder optimization, 10 MPNN redesigns
+ProteinMPNN: holding 24 of 74 residue(s) of chain binder
+   1/10  rejected  Binder_RMSD=1.6     Hotspot_Contact_Fraction=0.13    Interface_Residues=3    Off_Epitope_Contact_Fraction=0.0     Target_pLDDT=0.87    i_pAE=0.81    i_pTM=0.12    pLDDT=0.63    pTM=0.53    Unbound_Binder_pLDDT=0.68    failed [i_pTM, pLDDT, Unbound_Binder_pLDDT, pTM, i_pAE, Interface_Residues, Hotspot_Contact_Fraction]
+   2/10  rejected  Binder_RMSD=0.27    Hotspot_Contact_Fraction=0.6     Interface_Residues=16   Off_Epitope_Contact_Fraction=0.0     Target_pLDDT=0.85    i_pAE=0.31    i_pTM=0.68    pLDDT=0.87    pTM=0.75    failed [i_pTM]
+   3/10  rejected  Binder_RMSD=0.44    Hotspot_Contact_Fraction=0.2     Interface_Residues=2    Off_Epitope_Contact_Fraction=0.0     Target_pLDDT=0.88    i_pAE=0.82    i_pTM=0.12    pLDDT=0.68    pTM=0.53    failed [i_pTM, pLDDT, pTM, i_pAE, Interface_Residues, Hotspot_Contact_Fraction]
+   4/10  rejected  Binder_RMSD=0.94    Hotspot_Contact_Fraction=0.2     Interface_Residues=5    Off_Epitope_Contact_Fraction=0.0     Target_pLDDT=0.86    i_pAE=0.72    i_pTM=0.19    pLDDT=0.8     pTM=0.55    failed [i_pTM, pTM, i_pAE, Interface_Residues, Hotspot_Contact_Fraction]
+   5/10  rejected  Binder_RMSD=0.57    Hotspot_Contact_Fraction=0.67    Interface_Residues=17   Off_Epitope_Contact_Fraction=0.0     Target_pLDDT=0.86    i_pAE=0.44    i_pTM=0.52    pLDDT=0.84    pTM=0.68    failed [i_pTM, i_pAE]
+   6/10  rejected  Binder_RMSD=0.61    Hotspot_Contact_Fraction=0.07    Interface_Residues=3    Off_Epitope_Contact_Fraction=0.0     Target_pLDDT=0.89    i_pAE=0.85    i_pTM=0.1     pLDDT=0.7     pTM=0.52    failed [i_pTM, pTM, i_pAE, Interface_Residues, Hotspot_Contact_Fraction]
+   7/10  rejected  Binder_RMSD=3.8     Hotspot_Contact_Fraction=0.07    Interface_Residues=2    Off_Epitope_Contact_Fraction=0.0     Target_pLDDT=0.88    i_pAE=0.83    i_pTM=0.11    pLDDT=0.81    pTM=0.52    failed [i_pTM, pTM, i_pAE, Interface_Residues, Hotspot_Contact_Fraction, Binder_RMSD]
+   8/10  rejected  Binder_RMSD=0.65    Hotspot_Contact_Fraction=0.0     Interface_Residues=1    Off_Epitope_Contact_Fraction=0.0     Target_pLDDT=0.89    i_pAE=0.85    i_pTM=0.11    pLDDT=0.65    pTM=0.52    Unbound_Binder_pLDDT=0.69    failed [i_pTM, pLDDT, Unbound_Binder_pLDDT, pTM, i_pAE, Interface_Residues, Hotspot_Contact_Fraction]
+   9/10  rejected  Binder_RMSD=0.7     Hotspot_Contact_Fraction=0.07    Interface_Residues=2    Off_Epitope_Contact_Fraction=0.0     Target_pLDDT=0.9     i_pAE=0.87    i_pTM=0.09    pLDDT=0.74    pTM=0.52    failed [i_pTM, pTM, i_pAE, Interface_Residues, Hotspot_Contact_Fraction]
+  10/10  rejected  Binder_RMSD=0.64    Hotspot_Contact_Fraction=0.0     Interface_Residues=2    Off_Epitope_Contact_Fraction=0.0     Target_pLDDT=0.9     i_pAE=0.85    i_pTM=0.1     pLDDT=0.72    pTM=0.52    failed [i_pTM, pTM, i_pAE, Interface_Residues, Hotspot_Contact_Fraction]
+  0 of 10 redesigns passed
+
+=== trajectory 82 | c3_glp1r_ecd_groove_forced_l95_160652c873a058b3 | accepted 2/20 | worker 3 ===
+forced targeting epitope=85 lysinated=24 residues=111
+  passed screen design stage  i_pTM=0.79    pLDDT=0.87  
+  passed refine design stage  i_pTM=0.78    pLDDT=0.88  
+  passed anneal design stage  i_pTM=0.79    pLDDT=0.92  
+  passed harden design stage  i_pTM=0.66    pLDDT=0.75  
+  passed mutate design stage  i_pTM=0.79    pLDDT=0.87  
+  binder hallucination successful
+  binder optimization, 10 MPNN redesigns
+ProteinMPNN: holding 25 of 95 residue(s) of chain binder
+   1/10  rejected  Binder_RMSD=0.41    Hotspot_Contact_Fraction=0.13    Interface_Residues=7    Off_Epitope_Contact_Fraction=0.0     Target_pLDDT=0.89    i_pAE=0.86    i_pTM=0.09    pLDDT=0.84    pTM=0.48    failed [i_pTM, pTM, i_pAE, Hotspot_Contact_Fraction]
+   2/10  rejected  Binder_RMSD=9.5     Hotspot_Contact_Fraction=0.07    Interface_Residues=6    Off_Epitope_Contact_Fraction=0.0     Target_pLDDT=0.87    i_pAE=0.84    i_pTM=0.13    pLDDT=0.51    pTM=0.5     Unbound_Binder_pLDDT=0.55    failed [i_pTM, pLDDT, Unbound_Binder_pLDDT, pTM, i_pAE, Interface_Residues, Hotspot_Contact_Fraction, Binder_RMSD]
+   3/10  rejected  Binder_RMSD=0.28    Hotspot_Contact_Fraction=0.73    Interface_Residues=24   Off_Epitope_Contact_Fraction=0.0     Target_pLDDT=0.86    i_pAE=0.46    i_pTM=0.49    pLDDT=0.82    pTM=0.67    failed [i_pTM, i_pAE]
+   4/10  rejected  Binder_RMSD=0.18    Hotspot_Contact_Fraction=0.07    Interface_Residues=3    Off_Epitope_Contact_Fraction=0.0     Target_pLDDT=0.9     i_pAE=0.85    i_pTM=0.1     pLDDT=0.88    pTM=0.49    failed [i_pTM, pTM, i_pAE, Interface_Residues, Hotspot_Contact_Fraction]
+   5/10  rejected  Binder_RMSD=0.25    Hotspot_Contact_Fraction=0.07    Interface_Residues=2    Off_Epitope_Contact_Fraction=0.0     Target_pLDDT=0.89    i_pAE=0.84    i_pTM=0.11    pLDDT=0.81    pTM=0.5     failed [i_pTM, pTM, i_pAE, Interface_Residues, Hotspot_Contact_Fraction]
+   6/10  rejected  Binder_RMSD=0.37    Hotspot_Contact_Fraction=0.13    Interface_Residues=10   Off_Epitope_Contact_Fraction=0.0     Target_pLDDT=0.88    i_pAE=0.88    i_pTM=0.09    pLDDT=0.81    pTM=0.48    failed [i_pTM, pTM, i_pAE, Hotspot_Contact_Fraction]
+   7/10  rejected  Binder_RMSD=0.23    Hotspot_Contact_Fraction=0.13    Interface_Residues=5    Off_Epitope_Contact_Fraction=0.0     Target_pLDDT=0.89    i_pAE=0.83    i_pTM=0.11    pLDDT=0.83    pTM=0.5     failed [i_pTM, pTM, i_pAE, Interface_Residues, Hotspot_Contact_Fraction]
+   8/10  rejected  Binder_RMSD=0.58    Hotspot_Contact_Fraction=0.13    Interface_Residues=3    Off_Epitope_Contact_Fraction=0.0     Target_pLDDT=0.88    i_pAE=0.82    i_pTM=0.13    pLDDT=0.71    pTM=0.51    failed [i_pTM, pTM, i_pAE, Interface_Residues, Hotspot_Contact_Fraction]
+   9/10  rejected  Binder_RMSD=0.17    Hotspot_Contact_Fraction=0.07    Interface_Residues=3    Off_Epitope_Contact_Fraction=0.0     Target_pLDDT=0.9     i_pAE=0.86    i_pTM=0.09    pLDDT=0.87    pTM=0.49    failed [i_pTM, pTM, i_pAE, Interface_Residues, Hotspot_Contact_Fraction]
+  10/10  rejected  Binder_RMSD=0.22    Hotspot_Contact_Fraction=0.13    Interface_Residues=3    Off_Epitope_Contact_Fraction=0.0     Target_pLDDT=0.89    i_pAE=0.84    i_pTM=0.11    pLDDT=0.87    pTM=0.49    failed [i_pTM, pTM, i_pAE, Interface_Residues, Hotspot_Contact_Fraction]
+  0 of 10 redesigns passed
+
+=== trajectory 89 | c3_glp1r_ecd_groove_forced_l95_69f2c54b5b89d0a6 | accepted 2/20 | worker 3 ===
+forced targeting epitope=85 lysinated=24 residues=111
+  rejected at screen design stage  i_pTM=0.18    pLDDT=0.44   due to [pLDDT]
+
+=== trajectory 91 | c3_glp1r_ecd_groove_forced_l70_4ac1980afd1c31a2 | accepted 2/20 | worker 3 ===
+forced targeting epitope=85 lysinated=24 residues=111
+  passed screen design stage  i_pTM=0.76    pLDDT=0.78  
+  passed refine design stage  i_pTM=0.71    pLDDT=0.74  

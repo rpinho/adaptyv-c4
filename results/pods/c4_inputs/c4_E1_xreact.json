@@ -1,0 +1,13 @@
+{
+  "modality": "binder",
+  "campaign_name": "c4_tfr1_his707_xreact",
+  "project_folder": "/workspace/runs/c4_E1_xreact",
+  "binder_lengths": [60, 120],
+  "number_of_final_designs": 20,
+  "max_trajectories": 3000,
+  "forced_targeting": true,
+  "targets": [
+    {"name": "hTfR1", "target_path": "/workspace/runs/E1_his707_clean.pdb", "chains": "A,B", "hotspots": "A695,A704,A705,A706,A707,A711,A714", "weight": 1.0},
+    {"name": "mTfR1", "target_path": "/workspace/runs/E1_mouse_his710.pdb", "chains": "A", "hotspots": "A698,A707,A708,A709,A710,A714,A717", "weight": 1.0}
+  ]
+}
