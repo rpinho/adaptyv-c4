@@ -99,18 +99,92 @@ def dry_run():
     `rfd4-generate` builds this in memory anyway; writing it out is how we confirm the
     conditioning landed on the atoms we meant. A wrong label_seq_id does not raise --
     it silently conditions the wrong residues, or reports "A condition matched 0 atoms".
+
+    Note on the image: the repo's .dockerignore whitelists only pyproject.toml, src/,
+    configs/ and data/benchmarks/**, so `scripts/` and `skills/` are NOT present. That
+    is fine -- write_condition_spec_cifs.py is a thin wrapper over
+    resolve_condition_spec_inputs, which the installed package exposes, and checking the
+    emitted annotation columns directly is a sharper test than the generic inspector:
+    it asserts the counts we specifically intended.
     """
     out = f"{RUNS}/cifs_dry_run"
-    sh(f"python scripts/write_condition_spec_cifs.py {INPUTS}/tfr1_apical_binder.yaml "
-       f"--out-dir {out}")
-    sh(f"ls -la {out}", cwd="/")
+    os.makedirs(out, exist_ok=True)
+    sh(f"""python - <<'PY'
+from pathlib import Path
+from rfproteina.inference_utils.condition_spec import resolve_condition_spec_inputs
+from rfproteina.utils.verbosity import configure_verbosity
+configure_verbosity(True)
+for p in resolve_condition_spec_inputs(
+        Path("{INPUTS}/tfr1_apical_binder.yaml"), out_dir=Path("{out}"), validate=True):
+    print("wrote", p)
+PY""")
+    sh(f"ls -la {out}", cwd="/", check=False)
 
-    # Inspect what the conditioning actually selected.
-    for script, args in (("inspect_cif.sh", ""), ("check_annotated_cif.sh", "--strict")):
-        path = f"{REPO_IN_IMAGE}/skills/rfd4-proteina-annotated-cif/scripts/{script}"
-        if os.path.exists(path):
-            for cif in sorted(pathlib.Path(out).glob("*.cif*")):
-                sh(f"bash {path} {cif} {args}", check=False)
+    # Verify the conditioning landed where we meant. Expected, from the spec:
+    #   C_HOT   -> exactly 10 atoms (2 tip-ward atoms on each of 5 epitope residues)
+    #   C_SEQ   -> 195 residues of target sequence
+    #   C_CRDGRP-> target backbone atoms only, no NaN-coordinate atoms
+    sh(f"""python - <<'PY'
+import glob, gzip, io, os
+for path in sorted(glob.glob("{out}/*.cif*")):
+    print("=" * 70); print(path)
+    op = gzip.open if path.endswith(".gz") else open
+    txt = op(path, "rt").read()
+    lines = txt.splitlines()
+    i = 0; cols = []; rows = []
+    while i < len(lines):
+        if lines[i].strip() == "loop_":
+            j = i + 1; hdr = []
+            while j < len(lines) and lines[j].lstrip().startswith("_"):
+                hdr.append(lines[j].strip()); j += 1
+            if hdr and hdr[0].startswith("_atom_site."):
+                cols = [h.split(".", 1)[1] for h in hdr]
+                while j < len(lines) and lines[j].strip() and not lines[j].lstrip().startswith(("_", "loop_", "#")):
+                    rows.append(lines[j].split()); j += 1
+                break
+            i = j
+        else:
+            i += 1
+    idx = {{c: k for k, c in enumerate(cols)}}
+    print("atoms: %d   columns: %d" % (len(rows), len(cols)))
+    cond = [c for c in cols if c.startswith("condition") or c.startswith("sa_") or c.startswith("SA_")]
+    print("annotation columns present:"); [print("   ", c) for c in cond]
+    # Values that mean "not set". 'False' and '-1' matter: a boolean column writes
+    # False on every unmarked atom and CoordinateGroup writes -1, so counting those
+    # as set reports the whole target as a hotspot. (It did, on the first run.)
+    UNSET = {{".", "?", "0", "-1", "nan", "NaN", "False", "false", "UNSPECIFIED", "UNK"}}
+    for c in cond:
+        k = idx[c]
+        vals = {{}}
+        for r in rows:
+            v = r[k] if k < len(r) else "."
+            vals[v] = vals.get(v, 0) + 1
+        set_atoms = sum(n for v, n in vals.items() if v not in UNSET)
+        top = sorted(vals.items(), key=lambda x: -x[1])[:6]
+        print("  %-36s set_on=%-6d values=%s" % (c, set_atoms, top))
+        # Assert the two counts we can state exactly from the spec.
+        if "hotspot" in c.lower():
+            assert set_atoms == 10, "expected 10 hotspot atoms, got %d" % set_atoms
+            print("       OK: 10 hotspot atoms (5 residues x 2 tip-ward atoms)")
+        if "coordinategroup" in c.lower():
+            assert set_atoms == 780, "expected 780 backbone atoms (195x4), got %d" % set_atoms
+            print("       OK: 780 backbone atoms in one rigid group (195 residues x N,CA,C,O)")
+    # which residues carry a hotspot
+    hot = next((c for c in cond if "hotspot" in c.lower()), None)
+    if hot:
+        k = idx[hot]
+        marked = {{}}
+        for r in rows:
+            v = r[k] if k < len(r) else "."
+            if v not in UNSET:
+                key = (r[idx["label_asym_id"]], r[idx["label_seq_id"]], r[idx["label_comp_id"]])
+                marked.setdefault(key, []).append(r[idx["label_atom_id"]])
+        print()
+        print("HOTSPOT-MARKED residues (expect 5 residues / 10 atoms):")
+        for kk, atoms in sorted(marked.items(), key=lambda x: int(x[0][1]) if x[0][1].isdigit() else 0):
+            print("   chain %s  label_seq %-5s %-4s  atoms: %s" % (kk[0], kk[1], kk[2], ",".join(atoms)))
+        print("   TOTAL residues=%d atoms=%d" % (len(marked), sum(len(a) for a in marked.values())))
+PY""", check=False)
     runs_vol.commit()
     return out
 
