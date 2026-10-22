@@ -3,6 +3,16 @@ import json
 import math
 from pathlib import Path
 import sys
+import re
+
+
+def check_first_length(settings,length):
+    match=re.fullmatch(r'c4_repaired_native_v9_replicate_([2-6])',settings['campaign_name'])
+    if match:
+        if settings['campaign_seed']!=20261020+int(match[1]) or settings['binder_lengths']!=[65,75]:
+            raise ValueError('Seed replicate differs from its declared seed/length distribution')
+        if not 65<=length<=75:raise ValueError('Replicate binder outside declared native range')
+    elif length!=69:raise ValueError('Unexpected matched first-trajectory length')
 
 
 def geometry_metrics(ca,patch):
@@ -35,12 +45,12 @@ def preflight(config_path,output_path):
     from bindcraft.af.alphafold.model.quat_affine import make_transform_from_reference
     settings=read_settings(config_path)
     raw_settings=json.loads(Path(config_path).read_text())
-    losses=build_losses(settings,seed=20261021)
+    losses=build_losses(settings,seed=settings['campaign_seed'])
     effective_weight=float(losses['plddt_loss'].weight)
     if effective_weight!=raw_settings['weights_plddt_loss']:
         raise ValueError('Parsed/built pLDDT loss weight differs from declared input')
     if effective_weight==.5:
-        baseline=build_losses(settings|{'weights_plddt_loss':.1},seed=20261021)
+        baseline=build_losses(settings|{'weights_plddt_loss':.1},seed=settings['campaign_seed'])
         if set(baseline)!=set(losses):raise ValueError('Confidence ablation changed active losses')
         for name,entry in losses.items():
             expected=.1 if name=='plddt_loss' else entry.weight
@@ -51,13 +61,13 @@ def preflight(config_path,output_path):
     design=build_design_settings(settings)
     reference=next(iter(Protein.from_structure(settings['targets'][0]['target_path'],chains='A').values()))
     reference_sequence=np.asarray(reference.sequence).argmax(-1)
-    key=jax.random.split(jax.random.fold_in(jax.random.PRNGKey(20261021),1))[0]
+    key=jax.random.split(jax.random.fold_in(jax.random.PRNGKey(settings['campaign_seed']),1))[0]
     states,_,_=initialize_design_trajectory(design,key)
     # run_trajectory applies this AFTER initialization; include the real operation
     # before auditing any claim about the first search representation.
     if settings['forced_targeting']:states=force_epitope_targeting(states,settings)
     proteins=next(iter(states.values()))
-    if len(proteins[design.designed_binder_chain])!=69:raise ValueError('Unexpected matched first-trajectory length')
+    check_first_length(settings,len(proteins[design.designed_binder_chain]))
     report=dict(status='passed',devices=[str(d) for d in jax.devices()],chains={})
     for name,protein in proteins.items():
         safe=safe_initial_atom_positions(protein.atoms,protein.atom_mask,residue_constants.atom_order)
@@ -75,6 +85,7 @@ def preflight(config_path,output_path):
     report['af2_sha256']=hashlib.sha256(Path(af2.__file__).read_bytes()).hexdigest()
     report['forced_targeting']=settings['forced_targeting']
     report['effective_plddt_loss_weight']=effective_weight
+    report['campaign_seed']=settings['campaign_seed']
     report['target_scope']='Complete-target geometry; prepared sequence may be a forced-targeting surrogate. No forward, gradient or binding claim.'
     Path(output_path).write_text(json.dumps(report,indent=2)+'\n')
     print(json.dumps(report),flush=True)
@@ -111,7 +122,7 @@ def main(config_path,output_path):
             if len(others)!=1:raise ValueError('This monitor requires the declared complete monomer target')
             target=others[0]
             ca=np.asarray(binder.atoms[:,1],dtype=float)
-            if calls==1 and len(ca)!=69:raise ValueError('First trajectory length differs from matched v5 control')
+            if calls==1:check_first_length(settings,len(ca))
             patch=np.asarray(target.atoms[:,1])[np.isin(np.asarray(target.residue_index),[205,206,208,209,210])]
             metrics=geometry_metrics(ca,patch)
             record=dict(step=calls,unix=time.time(),loss=float(loss),**metrics)
@@ -142,6 +153,17 @@ def main(config_path,output_path):
         next(iter(entries)).load()()
 
 
+def seed_preflights(config_path,outdir):
+    import search_policy as policy
+    base=json.loads(Path(config_path).read_text())
+    for index in range(2,7):
+        seed=20261020+index
+        config=policy.make_config(base,policy.REPAIRED+f'_replicate_{index}',{'campaign_seed':seed},'/tmp/native-seed-preflight')
+        path=Path(outdir)/f'seed_config_{seed}.json';path.write_text(json.dumps(config))
+        preflight(str(path),str(Path(outdir)/f'seed_preflight_{seed}.json'))
+
+
 if __name__=='__main__':
-    if sys.argv[1]=='--preflight':preflight(*sys.argv[2:])
+    if sys.argv[1]=='--seed-preflights':seed_preflights(*sys.argv[2:])
+    elif sys.argv[1]=='--preflight':preflight(*sys.argv[2:])
     else:main(*sys.argv[1:])

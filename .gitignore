@@ -15,4 +15,6 @@ results/modal_repaired_native_v9/driver.lock
 results/modal_interface8_v10/driver.lock
 results/modal_forced_native_restore_v11/driver.lock
 results/modal_forced_confidence_v12/driver.lock
+results/modal_native_replicates_v14/**/driver.lock
+results/modal_native_replicates_v14/series.lock
 data/*.cif

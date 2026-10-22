@@ -68,6 +68,7 @@ image = (
         "config=p.make_config(json.load(open('/opt/c4/campaign.json')),p.CONFIDENCE,{'campaign_seed':20261021},'/tmp/confidence-preflight-only');"
         "json.dump(config,open('/opt/c4/confidence_preflight.json','w'))\"",
         "JAX_PLATFORMS=cpu python /opt/c4/monitored_design.py --preflight /opt/c4/confidence_preflight.json /opt/c4/confidence_prepared_frame_preflight.json",
+        "JAX_PLATFORMS=cpu python /opt/c4/monitored_design.py --seed-preflights /opt/c4/campaign.json /opt/c4",
     )
 )
 
@@ -156,6 +157,11 @@ def run_campaign(run_name: str = RUN_NAME, overrides: dict | None = None):
         if monitored:
             preflight=('confidence_prepared_frame_preflight.json' if profile==policy.CONFIDENCE else
                        'forced_prepared_frame_preflight.json' if profile==policy.FORCED else 'prepared_frame_preflight.json')
+            if profile==policy.REPAIRED and run_name!=profile:
+                seed=overrides.get('campaign_seed')
+                if seed not in range(20261022,20261027) or run_name!=profile+f'_replicate_{seed-20261020}':
+                    raise ValueError('Unknown native seed replicate')
+                preflight=f'seed_preflight_{seed}.json'
             shutil.copy('/opt/c4/'+preflight,run/'prepared_frame_preflight.json')
         status.update(status="modeling", gpu=gpu, jax=jax.__version__, checkpoints=checksums,
                       container=os.environ.get("MODAL_TASK_ID"), max_runtime_seconds=runtime_limit)

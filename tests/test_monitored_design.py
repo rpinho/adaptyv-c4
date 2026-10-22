@@ -4,7 +4,7 @@ import sys
 import unittest
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
-from monitored_design import geometry_metrics
+from monitored_design import geometry_metrics,check_first_length
 
 
 class PhysicalMonitorTests(unittest.TestCase):
@@ -29,6 +29,13 @@ class PhysicalMonitorTests(unittest.TestCase):
     def test_wrong_hotspot_mapping_stops_instead_of_logging_another_patch(self):
         with self.assertRaisesRegex(ValueError,'hotspot'):
             geometry_metrics([[0.,0.,0.],[3.8,0.,0.]],[[1.,2.,3.]])
+
+    def test_seed_series_keeps_original_length_distribution_and_seed_identity(self):
+        settings=dict(campaign_name='c4_repaired_native_v9_replicate_2',campaign_seed=20261022,binder_lengths=[65,75])
+        check_first_length(settings,72)
+        with self.assertRaises(ValueError):check_first_length(settings,90)
+        with self.assertRaises(ValueError):check_first_length(settings|{'campaign_seed':20261021},69)
+        with self.assertRaises(ValueError):check_first_length(settings|{'campaign_name':'c4_repaired_native_v9'},72)
 
 
 if __name__=='__main__':unittest.main()
