@@ -53,8 +53,10 @@
 # oracle_ppi.min_ipae_coi <= 1.5 directly instead of trusting ppi.pass.
 
 tfr1_apical_binder:
-  # Path resolves against THIS file's directory, not the working directory.
-  input: ../../../adaptyv-c4/data/11qc.cif
+  # Path resolves against THIS file's directory, not the working directory, so
+  # the target CIF is staged alongside this spec (see modal_rfd4.py, which puts
+  # both in /workspace/inputs/).
+  input: 11qc.cif
 
   # 60-130 residue de novo binder on its own chain, chainbreak, then the
   # preserved 195-residue apical domain.
