@@ -1,0 +1,564 @@
+{
+  "status": "completed_cpu_only_public_patent_extension",
+  "retired_pool_local_level_counts": {
+    "None": 66,
+    "3": 5,
+    "4": 2
+  },
+  "retired_designs": 73,
+  "patent_matched_retired_designs": 0,
+  "patent_matches": [],
+  "changed_local_levels": [
+    {
+      "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate1",
+      "old_local_level": 3,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate3",
+      "old_local_level": 3,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate5",
+      "old_local_level": 3,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l99_2c4541b346f4959d_candidate1",
+      "old_local_level": 3,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l99_2c4541b346f4959d_candidate4",
+      "old_local_level": 3,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c_candidate6",
+      "old_local_level": 3,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c_candidate8",
+      "old_local_level": 3,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l99_2c4541b346f4959d_candidate7",
+      "old_local_level": 3,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c_candidate9",
+      "old_local_level": 3,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l72_d5e9e12c9e56fbea_candidate1",
+      "old_local_level": 3,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l72_d5e9e12c9e56fbea_candidate3",
+      "old_local_level": 3,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l72_d5e9e12c9e56fbea_candidate4",
+      "old_local_level": 3,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l84_9efe91791b587b17_candidate1",
+      "old_local_level": 3,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l84_9efe91791b587b17_candidate2",
+      "old_local_level": 3,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l84_9efe91791b587b17_candidate3",
+      "old_local_level": 3,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1_candidate1",
+      "old_local_level": 3,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1_candidate2",
+      "old_local_level": 3,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l100_af9c8433a94467eb_candidate6",
+      "old_local_level": 3,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d_candidate1",
+      "old_local_level": 3,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d_candidate3",
+      "old_local_level": 2,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d_candidate4",
+      "old_local_level": 3,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l56_b9b1bd89e75cae01_candidate3",
+      "old_local_level": 4,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l60_63126a071c041270_candidate1",
+      "old_local_level": 3,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l60_63126a071c041270_candidate2",
+      "old_local_level": 3,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l60_63126a071c041270_candidate3",
+      "old_local_level": 3,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1",
+      "old_local_level": 2,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e_candidate1",
+      "old_local_level": 3,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate2",
+      "old_local_level": 2,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e_candidate2",
+      "old_local_level": 2,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate3",
+      "old_local_level": 2,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e_candidate3",
+      "old_local_level": 2,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l80_24ee63503d07a260_candidate2",
+      "old_local_level": 3,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l80_24ee63503d07a260_candidate3",
+      "old_local_level": 3,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l80_24ee63503d07a260_candidate6",
+      "old_local_level": 3,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l70_54a5b53444de2b49_candidate8",
+      "old_local_level": 3,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l58_9f94b53776050aad_candidate3",
+      "old_local_level": 2,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l97_2e414f93ff62377a_candidate1",
+      "old_local_level": 3,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l58_9f94b53776050aad_candidate5",
+      "old_local_level": 3,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l97_2e414f93ff62377a_candidate2",
+      "old_local_level": 3,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l97_2e414f93ff62377a_candidate3",
+      "old_local_level": 3,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l96_9003044e98f7dfc2_candidate1",
+      "old_local_level": 3,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l59_a8117845ac23722c_candidate1",
+      "old_local_level": 2,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l59_a8117845ac23722c_candidate3",
+      "old_local_level": 2,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l59_a8117845ac23722c_candidate5",
+      "old_local_level": 2,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate6",
+      "old_local_level": 2,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate9",
+      "old_local_level": 2,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate10",
+      "old_local_level": 2,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8_candidate1",
+      "old_local_level": 2,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8_candidate2",
+      "old_local_level": 2,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8_candidate3",
+      "old_local_level": 2,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l80_92df4b35cf6da70a_candidate1",
+      "old_local_level": 3,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l80_92df4b35cf6da70a_candidate2",
+      "old_local_level": 3,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l80_92df4b35cf6da70a_candidate4",
+      "old_local_level": 3,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l99_ac96ee385dcb8613_candidate2",
+      "old_local_level": 3,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0_candidate5",
+      "old_local_level": 4,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l100_39ede5dc7779065e_candidate5",
+      "old_local_level": 3,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l100_39ede5dc7779065e_candidate8",
+      "old_local_level": 3,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l99_e7484f3e947890e8_candidate1",
+      "old_local_level": 3,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l99_e7484f3e947890e8_candidate2",
+      "old_local_level": 3,
+      "new_local_level": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l99_e7484f3e947890e8_candidate5",
+      "old_local_level": 3,
+      "new_local_level": null
+    }
+  ],
+  "changed_structural_evidence_names": [
+    "c4_tfr1_groove_human_forced_l59_f06cf87fd111f355_candidate1",
+    "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate1",
+    "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate3",
+    "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate5",
+    "c4_tfr1_groove_human_forced_l99_2c4541b346f4959d_candidate1",
+    "c4_tfr1_groove_human_forced_l99_2c4541b346f4959d_candidate4",
+    "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c_candidate6",
+    "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c_candidate8",
+    "c4_tfr1_groove_human_forced_l99_2c4541b346f4959d_candidate7",
+    "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c_candidate9",
+    "c4_tfr1_groove_human_forced_l72_d5e9e12c9e56fbea_candidate1",
+    "c4_tfr1_groove_human_forced_l72_d5e9e12c9e56fbea_candidate3",
+    "c4_tfr1_groove_human_forced_l72_d5e9e12c9e56fbea_candidate4",
+    "c4_tfr1_groove_human_forced_l84_9efe91791b587b17_candidate1",
+    "c4_tfr1_groove_human_forced_l84_9efe91791b587b17_candidate2",
+    "c4_tfr1_groove_human_forced_l84_9efe91791b587b17_candidate3",
+    "c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1_candidate1",
+    "c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1_candidate2",
+    "c4_tfr1_groove_human_forced_l100_af9c8433a94467eb_candidate4",
+    "c4_tfr1_groove_human_forced_l100_af9c8433a94467eb_candidate6",
+    "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d_candidate1",
+    "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d_candidate3",
+    "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d_candidate4",
+    "c4_tfr1_groove_human_forced_l56_b9b1bd89e75cae01_candidate3",
+    "c4_tfr1_groove_human_forced_l56_b9b1bd89e75cae01_candidate6",
+    "c4_tfr1_groove_human_forced_l79_e4887d4268e16afe_candidate1",
+    "c4_tfr1_groove_human_forced_l60_63126a071c041270_candidate1",
+    "c4_tfr1_groove_human_forced_l60_63126a071c041270_candidate2",
+    "c4_tfr1_groove_human_forced_l60_63126a071c041270_candidate3",
+    "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1",
+    "c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e_candidate1",
+    "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate2",
+    "c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e_candidate2",
+    "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate3",
+    "c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e_candidate3",
+    "c4_tfr1_groove_human_forced_l80_24ee63503d07a260_candidate2",
+    "c4_tfr1_groove_human_forced_l80_24ee63503d07a260_candidate3",
+    "c4_tfr1_groove_human_forced_l80_24ee63503d07a260_candidate6",
+    "c4_tfr1_groove_human_forced_l70_54a5b53444de2b49_candidate4",
+    "c4_tfr1_groove_human_forced_l70_54a5b53444de2b49_candidate5",
+    "c4_tfr1_groove_human_forced_l70_54a5b53444de2b49_candidate8",
+    "c4_tfr1_groove_human_forced_l58_9f94b53776050aad_candidate3",
+    "c4_tfr1_groove_human_forced_l97_2e414f93ff62377a_candidate1",
+    "c4_tfr1_groove_human_forced_l58_9f94b53776050aad_candidate5",
+    "c4_tfr1_groove_human_forced_l97_2e414f93ff62377a_candidate2",
+    "c4_tfr1_groove_human_forced_l97_2e414f93ff62377a_candidate3",
+    "c4_tfr1_groove_human_forced_l96_9003044e98f7dfc2_candidate1",
+    "c4_tfr1_groove_human_forced_l59_a8117845ac23722c_candidate1",
+    "c4_tfr1_groove_human_forced_l59_a8117845ac23722c_candidate3",
+    "c4_tfr1_groove_human_forced_l59_a8117845ac23722c_candidate5",
+    "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate6",
+    "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate9",
+    "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate10",
+    "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8_candidate1",
+    "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8_candidate2",
+    "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8_candidate3",
+    "c4_tfr1_groove_human_forced_l80_92df4b35cf6da70a_candidate1",
+    "c4_tfr1_groove_human_forced_l80_92df4b35cf6da70a_candidate2",
+    "c4_tfr1_groove_human_forced_l80_92df4b35cf6da70a_candidate4",
+    "c4_tfr1_groove_human_forced_l99_ac96ee385dcb8613_candidate2",
+    "c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0_candidate5",
+    "c4_tfr1_groove_human_forced_l100_39ede5dc7779065e_candidate5",
+    "c4_tfr1_groove_human_forced_l100_39ede5dc7779065e_candidate8",
+    "c4_tfr1_groove_human_forced_l99_e7484f3e947890e8_candidate1",
+    "c4_tfr1_groove_human_forced_l99_e7484f3e947890e8_candidate2",
+    "c4_tfr1_groove_human_forced_l99_e7484f3e947890e8_candidate5"
+  ],
+  "native_positive_control": {
+    "name": "KNOWN_TFR1_POSITIVE_CONTROL",
+    "local_level": 1,
+    "query_tm": 0.9928
+  },
+  "patent_positive_control": {
+    "name": "KNOWN_PATENT_SOURCE_POSITIVE_CONTROL",
+    "source_id": "AKY81501.1",
+    "full_identity_hit": {
+      "query": "q000075",
+      "target": "AKY81501.1",
+      "fident": 1.0,
+      "nident": 110,
+      "alnlen": 110,
+      "qlen": 110,
+      "tlen": 110,
+      "qstart": 1,
+      "qend": 110,
+      "tstart": 1,
+      "tend": 110,
+      "evalue": 2.794e-67,
+      "bits": 226.0,
+      "qcov": 1.0,
+      "tcov": 1.0,
+      "reported_fident": 1.0,
+      "database": "patents"
+    }
+  },
+  "sequence_searches": [
+    {
+      "id": "swissprot",
+      "seconds": 10.383919084,
+      "raw_hit_rows": 32
+    },
+    {
+      "id": "pdb",
+      "seconds": 3.62863675,
+      "raw_hit_rows": 34
+    },
+    {
+      "id": "therapeutic_antibody",
+      "seconds": 1.0372793750000007,
+      "raw_hit_rows": 0
+    },
+    {
+      "id": "plabdab",
+      "seconds": 3.7689893749999985,
+      "raw_hit_rows": 0
+    },
+    {
+      "id": "patents",
+      "seconds": 42.822374833,
+      "raw_hit_rows": 231
+    }
+  ],
+  "structural_search": {
+    "commands": [
+      [
+        "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+        "createdb",
+        "results/novelty_predictor/patent_extension/run/structure/queries",
+        "results/novelty_predictor/patent_extension/run/structure/querydb",
+        "--threads",
+        "4"
+      ],
+      [
+        "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+        "search",
+        "results/novelty_predictor/patent_extension/run/structure/querydb",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+        "results/novelty_predictor/patent_extension/run/structure/discovered_mode0",
+        "results/novelty_predictor/patent_extension/run/structure/tmp_mode0",
+        "--threads",
+        "4",
+        "--gpu",
+        "0",
+        "--split-memory-limit",
+        "4G",
+        "-s",
+        "9.5",
+        "-e",
+        "10.0",
+        "--max-seqs",
+        "50000",
+        "--prefilter-mode",
+        "0",
+        "-a",
+        "1"
+      ],
+      [
+        "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+        "search",
+        "results/novelty_predictor/patent_extension/run/structure/querydb",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+        "results/novelty_predictor/patent_extension/run/structure/discovered_mode1",
+        "results/novelty_predictor/patent_extension/run/structure/tmp_mode1",
+        "--threads",
+        "4",
+        "--gpu",
+        "0",
+        "--split-memory-limit",
+        "4G",
+        "-s",
+        "9.5",
+        "-e",
+        "10.0",
+        "--max-seqs",
+        "50000",
+        "--prefilter-mode",
+        "1",
+        "-a",
+        "1"
+      ],
+      [
+        "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+        "mergedbs",
+        "results/novelty_predictor/patent_extension/run/structure/querydb",
+        "results/novelty_predictor/patent_extension/run/structure/discovered",
+        "results/novelty_predictor/patent_extension/run/structure/discovered_mode0",
+        "results/novelty_predictor/patent_extension/run/structure/discovered_mode1"
+      ],
+      [
+        "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+        "tmalign",
+        "results/novelty_predictor/patent_extension/run/structure/querydb",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+        "results/novelty_predictor/patent_extension/run/structure/discovered",
+        "results/novelty_predictor/patent_extension/run/structure/tmaligned",
+        "--threads",
+        "4",
+        "--tmalign-fast",
+        "0",
+        "--tmscore-threshold",
+        "0",
+        "--tmscore-threshold-mode",
+        "1",
+        "--tmalign-hit-order",
+        "1",
+        "-a",
+        "1"
+      ],
+      [
+        "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+        "convertalis",
+        "results/novelty_predictor/patent_extension/run/structure/querydb",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+        "results/novelty_predictor/patent_extension/run/structure/tmaligned",
+        "results/novelty_predictor/patent_extension/run/structure/hits.tsv",
+        "--threads",
+        "4",
+        "--exact-tmscore",
+        "1",
+        "--format-output",
+        "query,target,qlen,tlen,qstart,qend,tstart,tend,alnlen,qtmscore,ttmscore,qaln,taln"
+      ]
+    ],
+    "elapsed_seconds": 73.62269512499999,
+    "query_domains": 8,
+    "hit_rows": 3236,
+    "raw_alignment_rows": 5653,
+    "repeated_targets": "Deduplicated per query, retaining maximum query-normalized TM",
+    "exact_tmscore_export": 1,
+    "raw_hits_sha256": "a6064f56a71b73a30bfb99f0f1de5cbb6af9d9c249f4dc8e1f7bc9e514a9c149",
+    "alignment": "Foldseek 3Di+AA search -> Foldseek built-in TM-align, fast mode OFF; scores normalized by complete query domain length",
+    "hit_cap_per_discovery_mode": 50000,
+    "prefilter_modes": [
+      0,
+      1
+    ],
+    "evalue": 10.0
+  },
+  "patent_scope_complete": false,
+  "organizer_levels_established": 0,
+  "production_source_unchanged": true,
+  "source_records": 3982722,
+  "source_residues": 787058342,
+  "report_sha256": "1740e8b6f663ee066e55792a4fe3bb3120c633b335c14d533dfa173080aee68d",
+  "spend": {
+    "runpod_recorded_usd": 56.5899880444631,
+    "our_modal_estimate_usd": 10.718947158590089,
+    "combined_recorded_usd": 67.30893520305318,
+    "new_gpu_or_cloud_cpu_usd": 0.0
+  }
+}

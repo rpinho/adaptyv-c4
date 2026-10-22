@@ -1,0 +1,753 @@
+{
+  "method": "Move generated binary intermediates only; keep raw hits/queries/logs/reports",
+  "items": [
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/run/structure/discovered",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/run/discovered",
+      "files": [
+        {
+          "path": "discovered",
+          "bytes": 2786408,
+          "sha256": "c5d771295a997034076a1db204a3c1c3f3848db2b4f01b12bf9ae7dc7ff27659"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/run/structure/discovered.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/run/discovered.dbtype",
+      "files": [
+        {
+          "path": "discovered.dbtype",
+          "bytes": 4,
+          "sha256": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/run/structure/discovered.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/run/discovered.index",
+      "files": [
+        {
+          "path": "discovered.index",
+          "bytes": 1100,
+          "sha256": "8ca7c79447e454532827a080d8019bdb354e9fc9c20aecdeae2a40dafd1dd426"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/run/structure/discovered_mode0.0",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/run/discovered_mode0.0",
+      "files": [
+        {
+          "path": "discovered_mode0.0",
+          "bytes": 369983,
+          "sha256": "a37e4b221fff55275080aeaeefc5a0ddecb9056ebc25cf9108f3cfb724806019"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/run/structure/discovered_mode0.1",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/run/discovered_mode0.1",
+      "files": [
+        {
+          "path": "discovered_mode0.1",
+          "bytes": 519158,
+          "sha256": "83101b6cbdad3c239deb896709300c149b35ce4595276b259a479ca2098683a1"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/run/structure/discovered_mode0.2",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/run/discovered_mode0.2",
+      "files": [
+        {
+          "path": "discovered_mode0.2",
+          "bytes": 348219,
+          "sha256": "86612c21add64f043de83b7c567f6721c8e46986d0910580242eb4096c8318eb"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/run/structure/discovered_mode0.3",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/run/discovered_mode0.3",
+      "files": [
+        {
+          "path": "discovered_mode0.3",
+          "bytes": 142137,
+          "sha256": "aab44e33085ea94675494b4136426c3ddbe0dd8d0d3fa7ec9fe9ea75d75a8144"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/run/structure/discovered_mode0.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/run/discovered_mode0.dbtype",
+      "files": [
+        {
+          "path": "discovered_mode0.dbtype",
+          "bytes": 4,
+          "sha256": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/run/structure/discovered_mode0.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/run/discovered_mode0.index",
+      "files": [
+        {
+          "path": "discovered_mode0.index",
+          "bytes": 1055,
+          "sha256": "41699cecf5e2392e4fda3aa873fd161887074f9aa966821241ad07c97f472f7f"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/run/structure/discovered_mode1.0",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/run/discovered_mode1.0",
+      "files": [
+        {
+          "path": "discovered_mode1.0",
+          "bytes": 380152,
+          "sha256": "4cfab7cf6a56ef7204d2b20a442b7439a82e6e300e17109361fc8e8b73e6aae2"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/run/structure/discovered_mode1.1",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/run/discovered_mode1.1",
+      "files": [
+        {
+          "path": "discovered_mode1.1",
+          "bytes": 549088,
+          "sha256": "e85cd593cc2b7b19abcd790ccf3f2ca04bc4788eecdd4a5d84c68e6477f1507b"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/run/structure/discovered_mode1.2",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/run/discovered_mode1.2",
+      "files": [
+        {
+          "path": "discovered_mode1.2",
+          "bytes": 363566,
+          "sha256": "f103736616f796181a9b85cc1fab9f0820df5a7cf206748601922c027b185ceb"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/run/structure/discovered_mode1.3",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/run/discovered_mode1.3",
+      "files": [
+        {
+          "path": "discovered_mode1.3",
+          "bytes": 114173,
+          "sha256": "73af5a56465bfa31906779b5a97ed0b98ff3c1b6d3c96be5e4794277fce6c299"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/run/structure/discovered_mode1.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/run/discovered_mode1.dbtype",
+      "files": [
+        {
+          "path": "discovered_mode1.dbtype",
+          "bytes": 4,
+          "sha256": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/run/structure/discovered_mode1.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/run/discovered_mode1.index",
+      "files": [
+        {
+          "path": "discovered_mode1.index",
+          "bytes": 1058,
+          "sha256": "c6ba74576d8fdddd763533e6af6b1b21e53cb64c72c758b54d65b2550440d509"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/run/structure/querydb",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/run/querydb",
+      "files": [
+        {
+          "path": "querydb",
+          "bytes": 5695,
+          "sha256": "5688f31fbefc721a12e50a4aac01e2d085d0b80b9797dc1a1003c03aa156f3b5"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/run/structure/querydb.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/run/querydb.dbtype",
+      "files": [
+        {
+          "path": "querydb.dbtype",
+          "bytes": 4,
+          "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/run/structure/querydb.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/run/querydb.index",
+      "files": [
+        {
+          "path": "querydb.index",
+          "bytes": 737,
+          "sha256": "e8c2d88401ccc27dd68bac0ae0f21621a28fd8b24805add16fade9225b7b8bbb"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/run/structure/querydb.lookup",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/run/querydb.lookup",
+      "files": [
+        {
+          "path": "querydb.lookup",
+          "bytes": 1204,
+          "sha256": "8525fbc93b0b7c888f9dd191c94b2c27117608185d7efda9d487a7b8675a50f3"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/run/structure/querydb.source",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/run/querydb.source",
+      "files": [
+        {
+          "path": "querydb.source",
+          "bytes": 1010,
+          "sha256": "74054cdc6596b708327cb5a02131ff46f5c22070a3159342c7305969908167c9"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/run/structure/querydb_ca",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/run/querydb_ca",
+      "files": [
+        {
+          "path": "querydb_ca",
+          "bytes": 33898,
+          "sha256": "c2d7e6fba1ae386e07d532235d3b132bf13666172356faf7aa46b296a00ff84a"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/run/structure/querydb_ca.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/run/querydb_ca.dbtype",
+      "files": [
+        {
+          "path": "querydb_ca.dbtype",
+          "bytes": 4,
+          "sha256": "8fc6cb4a9816d75621652de783118eee13112cda196e61d1bde0460f29b26e3e"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/run/structure/querydb_ca.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/run/querydb_ca.index",
+      "files": [
+        {
+          "path": "querydb_ca.index",
+          "bytes": 850,
+          "sha256": "5d8816e740c8b377fcbfa3edbf0e3675717059322c3ffa4021b86eb55cacf602"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/run/structure/querydb_h",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/run/querydb_h",
+      "files": [
+        {
+          "path": "querydb_h",
+          "bytes": 884,
+          "sha256": "bda2199bd554dedccc2cba51e7552065249cbe545f6d2c5b5140207babf4ce8b"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/run/structure/querydb_h.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/run/querydb_h.dbtype",
+      "files": [
+        {
+          "path": "querydb_h.dbtype",
+          "bytes": 4,
+          "sha256": "42f4aeb81c1ef81f771f3de8abca9dcf66901c575530e7672e4b1146474ae650"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/run/structure/querydb_h.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/run/querydb_h.index",
+      "files": [
+        {
+          "path": "querydb_h.index",
+          "bytes": 661,
+          "sha256": "1966c5b95393f6ceebac86220a72734504895b9147259f06e76594cbae3a03af"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/run/structure/querydb_ss",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/run/querydb_ss",
+      "files": [
+        {
+          "path": "querydb_ss",
+          "bytes": 5695,
+          "sha256": "4d72bf44c02ada130668179e395c7a2ab78f8bf27a54c754c94b17683e0a7fbd"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/run/structure/querydb_ss.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/run/querydb_ss.dbtype",
+      "files": [
+        {
+          "path": "querydb_ss.dbtype",
+          "bytes": 4,
+          "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/run/structure/querydb_ss.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/run/querydb_ss.index",
+      "files": [
+        {
+          "path": "querydb_ss.index",
+          "bytes": 737,
+          "sha256": "e8c2d88401ccc27dd68bac0ae0f21621a28fd8b24805add16fade9225b7b8bbb"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/run/structure/tmaligned",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/run/tmaligned",
+      "files": [
+        {
+          "path": "tmaligned",
+          "bytes": 3452517,
+          "sha256": "dcb169027bcf4df85245435097b91fe12ce9702f357cbb9e77b57fab8ad76264"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/run/structure/tmaligned.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/run/tmaligned.dbtype",
+      "files": [
+        {
+          "path": "tmaligned.dbtype",
+          "bytes": 4,
+          "sha256": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/run/structure/tmaligned.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/run/tmaligned.index",
+      "files": [
+        {
+          "path": "tmaligned.index",
+          "bytes": 1107,
+          "sha256": "63a4c549bb1fd2410a16a533e6efba4c406613af44bf8564f6076c45762c5e78"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/run/structure/tmp_mode0",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/run/tmp_mode0",
+      "files": [
+        {
+          "path": "tmp_mode0/7478536595634631490/structuresearch.sh",
+          "bytes": 6018,
+          "sha256": "a95a4c37412692a02b7c53cc39d82a93ab05d6d37e84007b2f1492eceba02d88"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/run/structure/tmp_mode1",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/run/tmp_mode1",
+      "files": [
+        {
+          "path": "tmp_mode1/11999880487420739461/structuresearch.sh",
+          "bytes": 6018,
+          "sha256": "a95a4c37412692a02b7c53cc39d82a93ab05d6d37e84007b2f1492eceba02d88"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/sequence_and_partial_structure_run/structure/discovered",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/sequence_and_partial_structure_run/discovered",
+      "files": [
+        {
+          "path": "discovered",
+          "bytes": 434603,
+          "sha256": "79d23babc898ce30c133f3a9081948a4ba2bb8f809c01cbcbefe4e04fdcede37"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/sequence_and_partial_structure_run/structure/discovered.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/sequence_and_partial_structure_run/discovered.dbtype",
+      "files": [
+        {
+          "path": "discovered.dbtype",
+          "bytes": 4,
+          "sha256": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/sequence_and_partial_structure_run/structure/discovered.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/sequence_and_partial_structure_run/discovered.index",
+      "files": [
+        {
+          "path": "discovered.index",
+          "bytes": 111,
+          "sha256": "54e7032453c1bb71511f460fd1bb5de4d26ec5939bb6914e10f3ac17c2ef4508"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/sequence_and_partial_structure_run/structure/discovered_mode0.0",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/sequence_and_partial_structure_run/discovered_mode0.0",
+      "files": [
+        {
+          "path": "discovered_mode0.0",
+          "bytes": 60031,
+          "sha256": "1997d3cc95bd4a2e76205fa4b2365cd0c6a5cf73ca066a599faf5ee96b645496"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/sequence_and_partial_structure_run/structure/discovered_mode0.1",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/sequence_and_partial_structure_run/discovered_mode0.1",
+      "files": [
+        {
+          "path": "discovered_mode0.1",
+          "bytes": 3288,
+          "sha256": "72a67c1870d9178e7648e4af6ab842c4a49f7e9f79e95cb7fbbb89b27faf37ba"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/sequence_and_partial_structure_run/structure/discovered_mode0.2",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/sequence_and_partial_structure_run/discovered_mode0.2",
+      "files": [
+        {
+          "path": "discovered_mode0.2",
+          "bytes": 3657,
+          "sha256": "db0503fa0d5c066788024972d8eed5a86de7d212afa9d81cde83d51548fc713d"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/sequence_and_partial_structure_run/structure/discovered_mode0.3",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/sequence_and_partial_structure_run/discovered_mode0.3",
+      "files": [
+        {
+          "path": "discovered_mode0.3",
+          "bytes": 147651,
+          "sha256": "f751fe7a650431def00545cba63c308a488e4928bf57c0b655fff0e41b7ceeeb"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/sequence_and_partial_structure_run/structure/discovered_mode0.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/sequence_and_partial_structure_run/discovered_mode0.dbtype",
+      "files": [
+        {
+          "path": "discovered_mode0.dbtype",
+          "bytes": 4,
+          "sha256": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/sequence_and_partial_structure_run/structure/discovered_mode0.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/sequence_and_partial_structure_run/discovered_mode0.index",
+      "files": [
+        {
+          "path": "discovered_mode0.index",
+          "bytes": 100,
+          "sha256": "2e4a827cd18894ad822cfa92f60c203051ff48616991355201e06340f7c9d771"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/sequence_and_partial_structure_run/structure/discovered_mode1.0",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/sequence_and_partial_structure_run/discovered_mode1.0",
+      "files": [
+        {
+          "path": "discovered_mode1.0",
+          "bytes": 62880,
+          "sha256": "9faf8625d71e15c87c310a480660f0c3d0f8e7b0118f1710f670af587d9b5f16"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/sequence_and_partial_structure_run/structure/discovered_mode1.1",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/sequence_and_partial_structure_run/discovered_mode1.1",
+      "files": [
+        {
+          "path": "discovered_mode1.1",
+          "bytes": 3506,
+          "sha256": "312b7f9faa43a312a60a22e5407325162a9a2b873713ad4d5ed0c86546bbd12e"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/sequence_and_partial_structure_run/structure/discovered_mode1.2",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/sequence_and_partial_structure_run/discovered_mode1.2",
+      "files": [
+        {
+          "path": "discovered_mode1.2",
+          "bytes": 3820,
+          "sha256": "c4b689562ee84e8614417100d208de247fae8f8e508204aa77e15a1993d01b95"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/sequence_and_partial_structure_run/structure/discovered_mode1.3",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/sequence_and_partial_structure_run/discovered_mode1.3",
+      "files": [
+        {
+          "path": "discovered_mode1.3",
+          "bytes": 149778,
+          "sha256": "eccc35a97871887ca6956d43039ec4819abd400519606afbd5adbebc246767c5"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/sequence_and_partial_structure_run/structure/discovered_mode1.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/sequence_and_partial_structure_run/discovered_mode1.dbtype",
+      "files": [
+        {
+          "path": "discovered_mode1.dbtype",
+          "bytes": 4,
+          "sha256": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/sequence_and_partial_structure_run/structure/discovered_mode1.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/sequence_and_partial_structure_run/discovered_mode1.index",
+      "files": [
+        {
+          "path": "discovered_mode1.index",
+          "bytes": 101,
+          "sha256": "b644cb9787537d80b86fc7debd66d07d0b210a8ce3eea4ec59f6f79996d1f6b6"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/sequence_and_partial_structure_run/structure/querydb",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/sequence_and_partial_structure_run/querydb",
+      "files": [
+        {
+          "path": "querydb",
+          "bytes": 813,
+          "sha256": "9c33442446994e1a01036d96c397cfd0c5cba633a13a45be27abff6f310bd095"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/sequence_and_partial_structure_run/structure/querydb.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/sequence_and_partial_structure_run/querydb.dbtype",
+      "files": [
+        {
+          "path": "querydb.dbtype",
+          "bytes": 4,
+          "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/sequence_and_partial_structure_run/structure/querydb.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/sequence_and_partial_structure_run/querydb.index",
+      "files": [
+        {
+          "path": "querydb.index",
+          "bytes": 70,
+          "sha256": "168ba4976f0b07077247d9458df4a51a7ba58f435f871a9b39213c067f962656"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/sequence_and_partial_structure_run/structure/querydb.lookup",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/sequence_and_partial_structure_run/querydb.lookup",
+      "files": [
+        {
+          "path": "querydb.lookup",
+          "bytes": 128,
+          "sha256": "783b729aaf683e3378d3d7a1f8f9f68329619c2e116f444ac9abbdf8c3901dc0"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/sequence_and_partial_structure_run/structure/querydb.source",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/sequence_and_partial_structure_run/querydb.source",
+      "files": [
+        {
+          "path": "querydb.source",
+          "bytes": 112,
+          "sha256": "182e8aae367e2fd7b7d6cecd9350b6eb2459bd55c1959e7ddec2a0dbcdc3c66c"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/sequence_and_partial_structure_run/structure/querydb_ca",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/sequence_and_partial_structure_run/querydb_ca",
+      "files": [
+        {
+          "path": "querydb_ca",
+          "bytes": 4846,
+          "sha256": "7f965d55d39109006ec13ed942bc40587f0e4e2dc81bab149a384e12a1cfe387"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/sequence_and_partial_structure_run/structure/querydb_ca.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/sequence_and_partial_structure_run/querydb_ca.dbtype",
+      "files": [
+        {
+          "path": "querydb_ca.dbtype",
+          "bytes": 4,
+          "sha256": "8fc6cb4a9816d75621652de783118eee13112cda196e61d1bde0460f29b26e3e"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/sequence_and_partial_structure_run/structure/querydb_ca.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/sequence_and_partial_structure_run/querydb_ca.index",
+      "files": [
+        {
+          "path": "querydb_ca.index",
+          "bytes": 84,
+          "sha256": "bb2086332f50570d248cb17dcd89bfd3f09e69ff0ef3d6b333537e22281f72c5"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/sequence_and_partial_structure_run/structure/querydb_h",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/sequence_and_partial_structure_run/querydb_h",
+      "files": [
+        {
+          "path": "querydb_h",
+          "bytes": 104,
+          "sha256": "9d465def03f5e34b3259b6374777a099046b10aa2f582c75b01ef6e0c40e8b78"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/sequence_and_partial_structure_run/structure/querydb_h.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/sequence_and_partial_structure_run/querydb_h.dbtype",
+      "files": [
+        {
+          "path": "querydb_h.dbtype",
+          "bytes": 4,
+          "sha256": "42f4aeb81c1ef81f771f3de8abca9dcf66901c575530e7672e4b1146474ae650"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/sequence_and_partial_structure_run/structure/querydb_h.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/sequence_and_partial_structure_run/querydb_h.index",
+      "files": [
+        {
+          "path": "querydb_h.index",
+          "bytes": 63,
+          "sha256": "16dfeb34454d3cea40d72e8916d3b5f0d95e5469f6635ea749bbf60d243847e0"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/sequence_and_partial_structure_run/structure/querydb_ss",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/sequence_and_partial_structure_run/querydb_ss",
+      "files": [
+        {
+          "path": "querydb_ss",
+          "bytes": 813,
+          "sha256": "9f18e6ab0916ec3a05fbabecee13af23cc961d1374b5407d1337d57f3b8dff6b"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/sequence_and_partial_structure_run/structure/querydb_ss.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/sequence_and_partial_structure_run/querydb_ss.dbtype",
+      "files": [
+        {
+          "path": "querydb_ss.dbtype",
+          "bytes": 4,
+          "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/sequence_and_partial_structure_run/structure/querydb_ss.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/sequence_and_partial_structure_run/querydb_ss.index",
+      "files": [
+        {
+          "path": "querydb_ss.index",
+          "bytes": 70,
+          "sha256": "168ba4976f0b07077247d9458df4a51a7ba58f435f871a9b39213c067f962656"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/sequence_and_partial_structure_run/structure/tmaligned",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/sequence_and_partial_structure_run/tmaligned",
+      "files": [
+        {
+          "path": "tmaligned",
+          "bytes": 633931,
+          "sha256": "720b28518b04920e62c6b6fac114caa6b6e87b39e242af606ec00301f9e5e266"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/sequence_and_partial_structure_run/structure/tmaligned.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/sequence_and_partial_structure_run/tmaligned.dbtype",
+      "files": [
+        {
+          "path": "tmaligned.dbtype",
+          "bytes": 4,
+          "sha256": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/sequence_and_partial_structure_run/structure/tmaligned.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/sequence_and_partial_structure_run/tmaligned.index",
+      "files": [
+        {
+          "path": "tmaligned.index",
+          "bytes": 112,
+          "sha256": "2117ee48feac36d01195359d0c9f4148e1d6a322cafde241e732e022340c5c3c"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/sequence_and_partial_structure_run/structure/tmp_mode0",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/sequence_and_partial_structure_run/tmp_mode0",
+      "files": [
+        {
+          "path": "tmp_mode0/333530456782614261/structuresearch.sh",
+          "bytes": 6018,
+          "sha256": "a95a4c37412692a02b7c53cc39d82a93ab05d6d37e84007b2f1492eceba02d88"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/sequence_and_partial_structure_run/structure/tmp_mode1",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/patent_extension_runtime_20261022/sequence_and_partial_structure_run/tmp_mode1",
+      "files": [
+        {
+          "path": "tmp_mode1/4854874348568722232/structuresearch.sh",
+          "bytes": 6018,
+          "sha256": "a95a4c37412692a02b7c53cc39d82a93ab05d6d37e84007b2f1492eceba02d88"
+        }
+      ]
+    }
+  ]
+}

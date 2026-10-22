@@ -1,0 +1,29 @@
+createdb results/novelty_predictor/patent_extension/run/structure/queries results/novelty_predictor/patent_extension/run/structure/querydb --threads 4 
+
+MMseqs Version:         	463739e0014a1549a527de589102cde98f802f37
+Use GPU                 	0
+Path to ProstT5         	
+Chain name mode         	0
+Model name mode         	0
+Write mapping file      	0
+Write Foldcomp          	0
+Mask b-factor threshold 	0
+Coord store mode        	2
+Save residue indices    	false
+Write lookup file       	1
+Input format            	0
+Input compression format	0
+File Inclusion Regex    	.*
+File Exclusion Regex    	^$
+Threads                 	4
+Verbosity               	3
+
+Output file: results/novelty_predictor/patent_extension/run/structure/querydb
+[=================================================================] 8 0s 2ms
+Time for merging to querydb_ss: 0h 0m 0s 0ms
+Time for merging to querydb_h: 0h 0m 0s 0ms
+Time for merging to querydb_ca: 0h 0m 0s 0ms
+Time for merging to querydb: 0h 0m 0s 0ms
+Ignore 0 out of 8.
+Too short: 0, incorrect: 0, not proteins: 0.
+Time for processing: 0h 0m 0s 13ms

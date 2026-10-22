@@ -1,5 +1,21 @@
 # Method: proton-coupled two-state design, with the numbers checked
 
+## Public patent evidence and CPU domain preflight (Oct22)
+
+NCBI pataa public collection now obtained and searched explicitly:3,982,722
+records/787,058,342 residues,0 qualifying retired-design hits,110/110 identity
+source control. It is not verified as the organizer patent corpus. Full68-domain
+exact rerun is identical to frozen evidence; provisional counts16/47/4/6 unchanged.
+Current report/manifest: results/novelty_predictor/patent_extension/RESULTS.md
+and DATABASES.json. Initial partial-coordinate preparation error preserved;
+corrected setup inherits and checks all68 frozen coordinate domains.
+
+TED-style CPU domain preflight passed all3 tools on native control, consensus
+2-194 of195. Published consensus offset bug reproduced and explicitly corrected
+in an isolated compatibility copy,6 consensus/5 real-filter checks pass; no IoU,
+size or novelty threshold changed. Full census is still in progress; no new
+domain-based novelty level claimed. See domain_consensus/INDEXING_CORRECTION.md.
+
 ## Saved monomer coordinate sensitivity — CPU comparison (Oct22)
 
 results/novelty_predictor/monomer_sensitivity/RESULTS.md preregisters and measures

@@ -1,0 +1,311 @@
+Create directory results/novelty_predictor/patent_extension/run/tmp_patents
+easy-search results/novelty_predictor/patent_extension/run/queries.fasta /Users/ricardo/.cache/adaptyv-c4/novelty/patents_ncbi_pataa_20261021/pataa.fasta results/novelty_predictor/patent_extension/run/patents.hits.tsv results/novelty_predictor/patent_extension/run/tmp_patents --threads 4 --gpu 0 --alignment-mode 3 -a -s 7.5 -e 0.001 --max-seqs 10000 --min-seq-id 0 -c 0.0 --split-memory-limit 4G --remove-tmp-files 1 --format-output query,target,fident,nident,alnlen,qlen,tlen,qstart,qend,tstart,tend,evalue,bits,qcov,tcov 
+
+MMseqs Version:                        	18-8cc5c
+Substitution matrix                    	aa:blosum62.out,nucl:nucleotide.out
+Add backtrace                          	true
+Alignment mode                         	3
+Alignment mode                         	0
+Allow wrapped scoring                  	false
+E-value threshold                      	0.001
+Seq. id. threshold                     	0
+Min alignment length                   	0
+Seq. id. mode                          	0
+Alternative alignments                 	0
+Coverage threshold                     	0
+Coverage mode                          	0
+Max sequence length                    	65535
+Compositional bias                     	1
+Compositional bias scale               	1
+Max reject                             	2147483647
+Max accept                             	2147483647
+Include identical seq. id.             	false
+Preload mode                           	0
+Pseudo count a                         	substitution:1.100,context:1.400
+Pseudo count b                         	substitution:4.100,context:5.800
+Score bias                             	0
+Realign hits                           	false
+Realign score bias                     	-0.2
+Realign max seqs                       	2147483647
+Correlation score weight               	0
+Gap open cost                          	aa:11,nucl:5
+Gap extension cost                     	aa:1,nucl:2
+Zdrop                                  	40
+Threads                                	4
+Compressed                             	0
+Verbosity                              	3
+Seed substitution matrix               	aa:VTML80.out,nucl:nucleotide.out
+Sensitivity                            	7.5
+k-mer length                           	0
+Target search mode                     	0
+k-score                                	seq:2147483647,prof:2147483647
+Alphabet size                          	aa:21,nucl:5
+Max results per query                  	10000
+Split database                         	0
+Split mode                             	2
+Split memory limit                     	4G
+Diagonal scoring                       	true
+Exact k-mer matching                   	0
+Mask residues                          	1
+Mask residues probability              	0.9
+Mask lower case residues               	0
+Mask lower letter repeating N times    	0
+Minimum diagonal score                 	15
+Selected taxa                          	
+Spaced k-mers                          	1
+Spaced k-mer pattern                   	
+Local temporary path                   	
+Use GPU                                	0
+Use GPU server                         	0
+Wait for GPU server                    	600
+Prefilter mode                         	0
+Rescore mode                           	0
+Remove hits by seq. id. and coverage   	false
+Sort results                           	0
+Mask profile                           	1
+Profile E-value threshold              	0.001
+Global sequence weighting              	false
+Allow deletions                        	false
+Filter MSA                             	1
+Use filter only at N seqs              	0
+Maximum seq. id. threshold             	0.9
+Minimum seq. id.                       	0.0
+Minimum score per column               	-20
+Minimum coverage                       	0
+Select N most diverse seqs             	1000
+Pseudo count mode                      	0
+Profile output mode                    	0
+Min codons in orf                      	30
+Max codons in length                   	32734
+Max orf gaps                           	2147483647
+Contig start mode                      	2
+Contig end mode                        	2
+Orf start mode                         	1
+Forward frames                         	1,2,3
+Reverse frames                         	1,2,3
+Translation table                      	1
+Translate orf                          	0
+Use all table starts                   	false
+Offset of numeric ids                  	0
+Create lookup                          	0
+Overlap between sequences              	0
+Sequence split mode                    	1
+Header split mode                      	0
+Chain overlapping alignments           	0
+Merge query                            	1
+Search type                            	0
+Search iterations                      	1
+Start sensitivity                      	4
+Search steps                           	1
+Exhaustive search mode                 	false
+Filter results during exhaustive search	0
+Strand selection                       	1
+LCA search mode                        	false
+Disk space limit                       	0
+MPI runner                             	
+Force restart with latest tmp          	false
+Remove temporary files                 	true
+Translation mode                       	0
+Alignment format                       	0
+Format alignment output                	query,target,fident,nident,alnlen,qlen,tlen,qstart,qend,tstart,tend,evalue,bits,qcov,tcov
+Database output                        	false
+Overlap threshold                      	0
+Database type                          	0
+Shuffle input database                 	true
+Createdb mode                          	0
+Write lookup file                      	0
+Greedy best hits                       	false
+
+createdb results/novelty_predictor/patent_extension/run/queries.fasta results/novelty_predictor/patent_extension/run/tmp_patents/10610430235285475452/query --threads 4 
+
+Converting sequences
+[
+Time for merging to query_h: 0h 0m 0s 4ms
+Time for merging to query: 0h 0m 0s 3ms
+Database type: Aminoacid
+Time for processing: 0h 0m 0s 21ms
+createdb /Users/ricardo/.cache/adaptyv-c4/novelty/patents_ncbi_pataa_20261021/pataa.fasta results/novelty_predictor/patent_extension/run/tmp_patents/10610430235285475452/target --write-lookup 0 --threads 4 --gpu 0 
+
+Converting sequences
+[===================================================================================================	1 Mio. sequences processed
+===================================================================================================	2 Mio. sequences processed
+===================================================================================================	3 Mio. sequences processed
+==================================================================================================
+Time for merging to target_h: 0h 0m 0s 474ms
+Time for merging to target: 0h 0m 1s 190ms
+Database type: Aminoacid
+Time for processing: 0h 0m 5s 779ms
+Create directory results/novelty_predictor/patent_extension/run/tmp_patents/10610430235285475452/search_tmp
+search results/novelty_predictor/patent_extension/run/tmp_patents/10610430235285475452/query results/novelty_predictor/patent_extension/run/tmp_patents/10610430235285475452/target results/novelty_predictor/patent_extension/run/tmp_patents/10610430235285475452/result results/novelty_predictor/patent_extension/run/tmp_patents/10610430235285475452/search_tmp -a 1 --alignment-mode 3 -e 0.001 --min-seq-id 0 -c 0 --threads 4 -s 7.5 --max-seqs 10000 --split-memory-limit 4G --gpu 0 --remove-tmp-files 1 
+
+prefilter results/novelty_predictor/patent_extension/run/tmp_patents/10610430235285475452/query results/novelty_predictor/patent_extension/run/tmp_patents/10610430235285475452/target results/novelty_predictor/patent_extension/run/tmp_patents/10610430235285475452/search_tmp/2363669324860478671/pref_0 --sub-mat 'aa:blosum62.out,nucl:nucleotide.out' --seed-sub-mat 'aa:VTML80.out,nucl:nucleotide.out' -k 0 --target-search-mode 0 --k-score seq:2147483647,prof:2147483647 --alph-size aa:21,nucl:5 --max-seq-len 65535 --max-seqs 10000 --split 0 --split-mode 2 --split-memory-limit 4G -c 0 --cov-mode 0 --comp-bias-corr 1 --comp-bias-corr-scale 1 --diag-score 1 --exact-kmer-matching 0 --mask 1 --mask-prob 0.9 --mask-lower-case 0 --mask-n-repeat 0 --min-ungapped-score 15 --add-self-matches 0 --spaced-kmer-mode 1 --db-load-mode 0 --pca substitution:1.100,context:1.400 --pcb substitution:4.100,context:5.800 --threads 4 --compressed 0 -v 3 -s 7.5 
+
+Query database size: 75 type: Aminoacid
+Target split mode. Searching through 3 splits
+Estimated memory consumption: 3G
+Target database size: 3982722 type: Aminoacid
+Process prefiltering step 1 of 3
+
+Index table k-mer threshold: 96 at k-mer size 6 
+Index table: counting k-mers
+[=================================================================] 1.33M 5s 136ms
+Index table: Masked residues: 7495756
+Index table: fill
+[=================================================================] 1.33M 4s 358ms
+Index statistics
+Entries:          237286595
+DB size:          1846 MB
+Avg k-mer size:   3.707603
+Top 10 k-mers
+    GQTVSS	43985
+    WVQPGL	39681
+    VRAGLE	33203
+    WGGLVS	33034
+    RQPKEW	31982
+    YWQTTV	30614
+    SLLCSG	29436
+    LRETYY	28843
+    LQNLED	28055
+    SGPRGS	27627
+Time for index table init: 0h 0m 10s 765ms
+k-mer similarity threshold: 96
+Starting prefiltering scores calculation (step 1 of 3)
+Query db start 1 to 75
+Target db start 1 to 1328735
+[=================================================================] 75 0s 94ms
+
+1280.942995 k-mers per position
+348356 DB matches per sequence
+0 overflows
+3067 sequences passed prefiltering per query sequence
+3563 median result list length
+0 sequences with 0 size result lists
+Time for merging to pref_0_tmp_0: 0h 0m 0s 0ms
+Time for merging to pref_0_tmp_0_tmp: 0h 0m 0s 1ms
+Process prefiltering step 2 of 3
+
+Index table k-mer threshold: 96 at k-mer size 6 
+Index table: counting k-mers
+[=================================================================] 1.33M 5s 24ms
+Index table: Masked residues: 7376761
+Index table: fill
+[=================================================================] 1.33M 4s 319ms
+Index statistics
+Entries:          237543488
+DB size:          1847 MB
+Avg k-mer size:   3.711617
+Top 10 k-mers
+    GQTVSS	43943
+    WVQPGL	39368
+    VRAGLE	32917
+    WGGLVS	32780
+    RQPKEW	31849
+    YWQTTV	30653
+    SLLCSG	29371
+    LRETYY	28751
+    LQNLED	27943
+    SGPRGS	27810
+Time for index table init: 0h 0m 10s 573ms
+k-mer similarity threshold: 96
+Starting prefiltering scores calculation (step 2 of 3)
+Query db start 1 to 75
+Target db start 1328736 to 2657101
+[=================================================================] 75 0s 90ms
+
+1280.942995 k-mers per position
+348551 DB matches per sequence
+0 overflows
+3058 sequences passed prefiltering per query sequence
+3563 median result list length
+0 sequences with 0 size result lists
+Time for merging to pref_0_tmp_1: 0h 0m 0s 0ms
+Time for merging to pref_0_tmp_1_tmp: 0h 0m 0s 2ms
+Process prefiltering step 3 of 3
+
+Index table k-mer threshold: 96 at k-mer size 6 
+Index table: counting k-mers
+[=================================================================] 1.33M 5s 79ms
+Index table: Masked residues: 7589786
+Index table: fill
+[=================================================================] 1.33M 4s 270ms
+Index statistics
+Entries:          237209681
+DB size:          1845 MB
+Avg k-mer size:   3.706401
+Top 10 k-mers
+    GQTVSS	43503
+    WVQPGL	38930
+    WGGLVS	32521
+    VRAGLE	32505
+    RQPKEW	31601
+    YWQTTV	30700
+    SLLCSG	29239
+    LRETYY	28325
+    LQNLED	27918
+    SGPRGS	27544
+Time for index table init: 0h 0m 10s 579ms
+k-mer similarity threshold: 96
+Starting prefiltering scores calculation (step 3 of 3)
+Query db start 1 to 75
+Target db start 2657102 to 3982722
+[=================================================================] 75 0s 92ms
+
+1280.942995 k-mers per position
+348355 DB matches per sequence
+0 overflows
+3069 sequences passed prefiltering per query sequence
+3563 median result list length
+0 sequences with 0 size result lists
+Time for merging to pref_0_tmp_2: 0h 0m 0s 0ms
+Time for merging to pref_0_tmp_2_tmp: 0h 0m 0s 1ms
+Merging 3 target splits to pref_0
+Preparing offsets for merging: 0h 0m 0s 1ms
+[=================================================================] 75 0s 16ms
+Time for merging to pref_0: 0h 0m 0s 0ms
+Time for merging target splits: 0h 0m 0s 21ms
+Time for merging to pref_0_tmp: 0h 0m 0s 3ms
+Time for processing: 0h 0m 32s 745ms
+align results/novelty_predictor/patent_extension/run/tmp_patents/10610430235285475452/query results/novelty_predictor/patent_extension/run/tmp_patents/10610430235285475452/target results/novelty_predictor/patent_extension/run/tmp_patents/10610430235285475452/search_tmp/2363669324860478671/pref_0 results/novelty_predictor/patent_extension/run/tmp_patents/10610430235285475452/result --sub-mat 'aa:blosum62.out,nucl:nucleotide.out' -a 1 --alignment-mode 3 --alignment-output-mode 0 --wrapped-scoring 0 -e 0.001 --min-seq-id 0 --min-aln-len 0 --seq-id-mode 0 --alt-ali 0 -c 0 --cov-mode 0 --max-seq-len 65535 --comp-bias-corr 1 --comp-bias-corr-scale 1 --max-rejected 2147483647 --max-accept 2147483647 --add-self-matches 0 --db-load-mode 0 --pca substitution:1.100,context:1.400 --pcb substitution:4.100,context:5.800 --score-bias 0 --realign 0 --realign-score-bias -0.2 --realign-max-seqs 2147483647 --corr-score-weight 0 --gap-open aa:11,nucl:5 --gap-extend aa:1,nucl:2 --zdrop 40 --threads 4 --compressed 0 -v 3 
+
+Compute score, coverage and sequence identity
+Query database size: 75 type: Aminoacid
+Target database size: 3982722 type: Aminoacid
+Calculation of alignments
+[=================================================================] 75 2s 857ms
+Time for merging to result: 0h 0m 0s 4ms
+689715 alignments calculated
+231 sequence pairs passed the thresholds (0.000335 of overall calculated)
+3.080000 hits per query sequence
+Time for processing: 0h 0m 3s 222ms
+rmdb results/novelty_predictor/patent_extension/run/tmp_patents/10610430235285475452/search_tmp/2363669324860478671/pref_0 -v 3 
+
+Time for processing: 0h 0m 0s 1ms
+rmdb results/novelty_predictor/patent_extension/run/tmp_patents/10610430235285475452/search_tmp/2363669324860478671/aln_0 -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+rmdb results/novelty_predictor/patent_extension/run/tmp_patents/10610430235285475452/search_tmp/2363669324860478671/input_0 -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+rmdb results/novelty_predictor/patent_extension/run/tmp_patents/10610430235285475452/search_tmp/2363669324860478671/aln_merge -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+convertalis results/novelty_predictor/patent_extension/run/tmp_patents/10610430235285475452/query results/novelty_predictor/patent_extension/run/tmp_patents/10610430235285475452/target results/novelty_predictor/patent_extension/run/tmp_patents/10610430235285475452/result results/novelty_predictor/patent_extension/run/patents.hits.tsv --sub-mat 'aa:blosum62.out,nucl:nucleotide.out' --format-mode 0 --format-output query,target,fident,nident,alnlen,qlen,tlen,qstart,qend,tstart,tend,evalue,bits,qcov,tcov --translation-table 1 --gap-open aa:11,nucl:5 --gap-extend aa:1,nucl:2 --db-output 0 --db-load-mode 0 --search-type 0 --threads 4 --compressed 0 -v 3 
+
+=[================================================================] 75 0s 0ms
+Time for merging to patents.hits.tsv: 0h 0m 0s 0ms
+Time for processing: 0h 0m 0s 449ms
+rmdb results/novelty_predictor/patent_extension/run/tmp_patents/10610430235285475452/result -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+rmdb results/novelty_predictor/patent_extension/run/tmp_patents/10610430235285475452/target -v 3 
+
+Time for processing: 0h 0m 0s 14ms
+rmdb results/novelty_predictor/patent_extension/run/tmp_patents/10610430235285475452/target_h -v 3 
+
+Time for processing: 0h 0m 0s 48ms
+rmdb results/novelty_predictor/patent_extension/run/tmp_patents/10610430235285475452/query -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+rmdb results/novelty_predictor/patent_extension/run/tmp_patents/10610430235285475452/query_h -v 3 
+
+Time for processing: 0h 0m 0s 0ms

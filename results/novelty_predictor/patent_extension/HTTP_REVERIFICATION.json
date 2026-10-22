@@ -1,0 +1,51 @@
+{
+  "reason": "Original download headers were not retained by reused-cache receipts; fresh HEAD headers are labeled as later verification",
+  "files": [
+    {
+      "kind": "exporter",
+      "url": "https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.17.0/ncbi-blast-2.17.0+-aarch64-macosx.tar.gz",
+      "verification_http_headers": {
+        "Date": "Thu, 22 Oct 2026 23:51:00 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Tue, 01 Jul 2025 17:15:21 GMT",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "205531226",
+        "Cache-Control": "public, max-age=86400",
+        "Expires": "Thu, 29 Oct 2026 23:51:00 GMT",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,POST,PUT,OPTIONS",
+        "Access-Control-Allow-Headers": "RANGE, Cache-control, If-None-Match, Content-Type",
+        "Access-Control-Expose-Headers": "Content-Length, Content-Range, Content-Type",
+        "Connection": "close",
+        "Content-Type": "application/x-gzip"
+      },
+      "headers_observed_after_verified_download": true,
+      "local_archive_sha256": "8d6739fa133107bce91dbb6b143ec993c9983416244fe502f9c36d585850dc00",
+      "publisher_md5": "8dc685eb284713db76de41a4dabf96ad"
+    },
+    {
+      "kind": "patents",
+      "url": "https://ftp.ncbi.nlm.nih.gov/blast/db/pataa.tar.gz",
+      "verification_http_headers": {
+        "Date": "Thu, 22 Oct 2026 23:51:00 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Thu, 22 Oct 2026 19:44:58 GMT",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "843504877",
+        "Cache-Control": "public, max-age=86400",
+        "Expires": "Thu, 29 Oct 2026 23:51:00 GMT",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,POST,PUT,OPTIONS",
+        "Access-Control-Allow-Headers": "RANGE, Cache-control, If-None-Match, Content-Type",
+        "Access-Control-Expose-Headers": "Content-Length, Content-Range, Content-Type",
+        "Connection": "close",
+        "Content-Type": "application/x-gzip"
+      },
+      "headers_observed_after_verified_download": true,
+      "local_archive_sha256": "9fa62affdac605d3135e009a4ebb6e97771ab55dd3621890668f28e06b4147dc",
+      "publisher_md5": "2f80e79e4db3a376fafcd65e99372e37"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+Database: Protein sequences derived from the Patent division of GenBank
+	3,982,722 sequences; 787,058,342 total residues
+
+Date: Oct 21, 2026  5:54 AM	Longest sequence: 187,500 residues
+
+BLASTDB Version: 5
+
+Volumes:
+	/Users/ricardo/.cache/adaptyv-c4/novelty/patents_ncbi_pataa_20261021/db/pataa

@@ -1,0 +1,16 @@
+{
+  "dbname": "pataa",
+  "version": "1.1",
+  "dbtype": "Protein",
+  "description": "Protein sequences derived from the Patent division of GenBank",
+  "number-of-letters": 787058342,
+  "number-of-sequences": 3982722,
+  "files": [
+    "ftp://ftp.ncbi.nlm.nih.gov/blast/db/pataa.tar.gz"
+  ],
+  "last-updated": "2026-10-21T00:00:00",
+  "bytes-total": 2308834559,
+  "bytes-to-cache": 822902985,
+  "number-of-volumes": 1,
+  "bytes-total-compressed": 843504877
+}

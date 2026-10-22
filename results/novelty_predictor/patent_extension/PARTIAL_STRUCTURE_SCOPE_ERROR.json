@@ -1,0 +1,12 @@
+{
+  "status": "Invalid full-pool structure comparison; sequence searches remain valid",
+  "reason": "Preparation copied the small sensitivity subset instead of inheriting all frozen exact-score coordinate inputs",
+  "expected_coordinate_domains": 68,
+  "observed_coordinate_domains": 8,
+  "retired_designs_with_patent_hits": 0,
+  "partial_report_sha256": "1740e8b6f663ee066e55792a4fe3bb3120c633b335c14d533dfa173080aee68d",
+  "invalid_summary_sha256": "6e732c51d7acf8203cf12bc99f97c88b550d2a90a6388dd86946b4b63bb58e84",
+  "original_prepare_sha256": "fa34af3151f51d520837f7a830301bad7734c975314409826ea94696be0af76a",
+  "correction": "Inherit every available structure input from frozen baseline; verify coordinate coverage before search; reuse valid sequence evidence without rerunning five database searches",
+  "new_gpu_or_cloud_cpu_spend_usd": 0
+}

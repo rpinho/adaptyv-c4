@@ -1,0 +1,197 @@
+{
+  "status": "completed_cpu_only_public_patent_extension",
+  "retired_pool_local_level_counts": {
+    "3": 47,
+    "4": 4,
+    "2": 16,
+    "None": 6
+  },
+  "retired_designs": 73,
+  "patent_matched_retired_designs": 0,
+  "patent_matches": [],
+  "changed_local_levels": [],
+  "changed_structural_evidence_names": [],
+  "native_positive_control": {
+    "name": "KNOWN_TFR1_POSITIVE_CONTROL",
+    "local_level": 1,
+    "query_tm": 0.9928
+  },
+  "patent_positive_control": {
+    "name": "KNOWN_PATENT_SOURCE_POSITIVE_CONTROL",
+    "source_id": "AKY81501.1",
+    "full_identity_hit": {
+      "query": "q000075",
+      "target": "AKY81501.1",
+      "fident": 1.0,
+      "nident": 110,
+      "alnlen": 110,
+      "qlen": 110,
+      "tlen": 110,
+      "qstart": 1,
+      "qend": 110,
+      "tstart": 1,
+      "tend": 110,
+      "evalue": 2.794e-67,
+      "bits": 226.0,
+      "qcov": 1.0,
+      "tcov": 1.0,
+      "reported_fident": 1.0,
+      "database": "patents"
+    }
+  },
+  "sequence_searches": [
+    {
+      "id": "swissprot",
+      "seconds": 10.383919084,
+      "raw_hit_rows": 32
+    },
+    {
+      "id": "pdb",
+      "seconds": 3.62863675,
+      "raw_hit_rows": 34
+    },
+    {
+      "id": "therapeutic_antibody",
+      "seconds": 1.0372793750000007,
+      "raw_hit_rows": 0
+    },
+    {
+      "id": "plabdab",
+      "seconds": 3.7689893749999985,
+      "raw_hit_rows": 0
+    },
+    {
+      "id": "patents",
+      "seconds": 42.822374833,
+      "raw_hit_rows": 231
+    }
+  ],
+  "structural_search": {
+    "commands": [
+      [
+        "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+        "createdb",
+        "results/novelty_predictor/patent_extension/run/structure/queries",
+        "results/novelty_predictor/patent_extension/run/structure/querydb",
+        "--threads",
+        "4"
+      ],
+      [
+        "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+        "search",
+        "results/novelty_predictor/patent_extension/run/structure/querydb",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+        "results/novelty_predictor/patent_extension/run/structure/discovered_mode0",
+        "results/novelty_predictor/patent_extension/run/structure/tmp_mode0",
+        "--threads",
+        "4",
+        "--gpu",
+        "0",
+        "--split-memory-limit",
+        "4G",
+        "-s",
+        "9.5",
+        "-e",
+        "10.0",
+        "--max-seqs",
+        "50000",
+        "--prefilter-mode",
+        "0",
+        "-a",
+        "1"
+      ],
+      [
+        "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+        "search",
+        "results/novelty_predictor/patent_extension/run/structure/querydb",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+        "results/novelty_predictor/patent_extension/run/structure/discovered_mode1",
+        "results/novelty_predictor/patent_extension/run/structure/tmp_mode1",
+        "--threads",
+        "4",
+        "--gpu",
+        "0",
+        "--split-memory-limit",
+        "4G",
+        "-s",
+        "9.5",
+        "-e",
+        "10.0",
+        "--max-seqs",
+        "50000",
+        "--prefilter-mode",
+        "1",
+        "-a",
+        "1"
+      ],
+      [
+        "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+        "mergedbs",
+        "results/novelty_predictor/patent_extension/run/structure/querydb",
+        "results/novelty_predictor/patent_extension/run/structure/discovered",
+        "results/novelty_predictor/patent_extension/run/structure/discovered_mode0",
+        "results/novelty_predictor/patent_extension/run/structure/discovered_mode1"
+      ],
+      [
+        "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+        "tmalign",
+        "results/novelty_predictor/patent_extension/run/structure/querydb",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+        "results/novelty_predictor/patent_extension/run/structure/discovered",
+        "results/novelty_predictor/patent_extension/run/structure/tmaligned",
+        "--threads",
+        "4",
+        "--tmalign-fast",
+        "0",
+        "--tmscore-threshold",
+        "0",
+        "--tmscore-threshold-mode",
+        "1",
+        "--tmalign-hit-order",
+        "1",
+        "-a",
+        "1"
+      ],
+      [
+        "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+        "convertalis",
+        "results/novelty_predictor/patent_extension/run/structure/querydb",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+        "results/novelty_predictor/patent_extension/run/structure/tmaligned",
+        "results/novelty_predictor/patent_extension/run/structure/hits.tsv",
+        "--threads",
+        "4",
+        "--exact-tmscore",
+        "1",
+        "--format-output",
+        "query,target,qlen,tlen,qstart,qend,tstart,tend,alnlen,qtmscore,ttmscore,qaln,taln"
+      ]
+    ],
+    "elapsed_seconds": 216.380307042,
+    "query_domains": 68,
+    "hit_rows": 24653,
+    "raw_alignment_rows": 42718,
+    "repeated_targets": "Deduplicated per query, retaining maximum query-normalized TM",
+    "exact_tmscore_export": 1,
+    "raw_hits_sha256": "fe9280f2e2e47ece6b4f9cc3f19eb28624f7b4ad8ff1255674b4df58985bdddd",
+    "alignment": "Foldseek 3Di+AA search -> Foldseek built-in TM-align, fast mode OFF; scores normalized by complete query domain length",
+    "hit_cap_per_discovery_mode": 50000,
+    "prefilter_modes": [
+      0,
+      1
+    ],
+    "evalue": 10.0
+  },
+  "patent_scope_complete": false,
+  "organizer_levels_established": 0,
+  "production_source_unchanged": true,
+  "source_records": 3982722,
+  "source_residues": 787058342,
+  "report_sha256": "610af36756571f9da52b68762c8c002f30c12d1c78a3d352acd04c4d5d66b76c",
+  "spend": {
+    "runpod_recorded_usd": 56.5899880444631,
+    "our_modal_estimate_usd": 10.718947158590089,
+    "combined_recorded_usd": 67.30893520305318,
+    "new_gpu_or_cloud_cpu_usd": 0.0
+  }
+}

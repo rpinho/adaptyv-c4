@@ -1,13 +1,19 @@
-# CPU novelty predictor: sequence half delivered; full levels unestablished
+# CPU novelty predictor: current evidence and limits
 
-Superseded scoring notice: this report used approximate TM export. Current exact
-score results are in exact_score/RESULTS.md.
-Corrected retired local counts:16 level2,47 level3,4 level4,6 unestablished.
-Prior counts and score values remain below as historical evidence.
+Current five-source sequence + exact structural comparison:
+[patent_extension/RESULTS.md](patent_extension/RESULTS.md). Public NCBI pataa was
+obtained and searched; it is not verified as the organizer's patent corpus.
+Retired local counts remain16 level2,47 level3,4 level4,6 coordinate-unavailable.
+Exact organizer levels established:0. Updated sequence-source manifest:
+patent_extension/DATABASES.json. Earlier manifests are preserved as history.
 
-Current CPU follow-up supersedes the earlier search counts: see sensitivity/RESULTS.md.
-The predictor now combines both discovery modes; current retired local counts are
-29 level2,37 level3,1 level4,6 unestablished. All levels remain provisional.
+The exact-export correction and residual numerical disagreement are documented
+in exact_score/RESULTS.md. Four paired saved-monomer calls remain local3 in
+monomer_sensitivity/RESULTS.md. Domain-consensus CPU feasibility work is separate
+under domain_consensus/; no unmeasured consensus is assumed in these counts.
+
+Everything below describes earlier sequence-only/approximate-score checkpoints.
+Its missing-source statements and old counts are historical, not current results.
 
 ## Task1: existing6W3H real-gate result reviewed first
 

@@ -1,0 +1,77 @@
+[
+  {
+    "name": "taxdb.btd",
+    "bytes": 177180067,
+    "regular": true
+  },
+  {
+    "name": "taxdb.bti",
+    "bytes": 18519720,
+    "regular": true
+  },
+  {
+    "name": "taxonomy4blast.sqlite3",
+    "bytes": 98840576,
+    "regular": true
+  },
+  {
+    "name": "pataa.pin",
+    "bytes": 31861920,
+    "regular": true
+  },
+  {
+    "name": "pataa.phr",
+    "bytes": 873146808,
+    "regular": true
+  },
+  {
+    "name": "pataa.psq",
+    "bytes": 791041065,
+    "regular": true
+  },
+  {
+    "name": "pataa.ppi",
+    "bytes": 124508,
+    "regular": true
+  },
+  {
+    "name": "pataa.ppd",
+    "bytes": 31861776,
+    "regular": true
+  },
+  {
+    "name": "pataa.pog",
+    "bytes": 15930920,
+    "regular": true
+  },
+  {
+    "name": "pataa.pdb",
+    "bytes": 377475072,
+    "regular": true
+  },
+  {
+    "name": "pataa.pos",
+    "bytes": 120656347,
+    "regular": true
+  },
+  {
+    "name": "pataa.pot",
+    "bytes": 49166432,
+    "regular": true
+  },
+  {
+    "name": "pataa.ptf",
+    "bytes": 237568,
+    "regular": true
+  },
+  {
+    "name": "pataa.pto",
+    "bytes": 17331548,
+    "regular": true
+  },
+  {
+    "name": "pataa.pjs",
+    "bytes": 595,
+    "regular": true
+  }
+]

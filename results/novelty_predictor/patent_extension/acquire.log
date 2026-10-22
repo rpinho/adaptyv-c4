@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/acquire.py", line 172, in <module>
+    main()
+  File "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/acquire.py", line 114, in main
+    raise ValueError('Unexpected archive entry: '+member.name)
+ValueError: Unexpected archive entry: taxdb.btd

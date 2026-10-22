@@ -1,0 +1,222 @@
+{
+  "generated_at": "2026-10-22T23:33:54.583849+00:00",
+  "source_metadata": {
+    "dbname": "pataa",
+    "version": "1.1",
+    "dbtype": "Protein",
+    "description": "Protein sequences derived from the Patent division of GenBank",
+    "number-of-letters": 787058342,
+    "number-of-sequences": 3982722,
+    "files": [
+      "ftp://ftp.ncbi.nlm.nih.gov/blast/db/pataa.tar.gz"
+    ],
+    "last-updated": "2026-10-21T00:00:00",
+    "bytes-total": 2308834559,
+    "bytes-to-cache": 822902985,
+    "number-of-volumes": 1,
+    "bytes-total-compressed": 843504877
+  },
+  "metadata_http_headers": {
+    "Date": "Thu, 22 Oct 2026 23:32:54 GMT",
+    "Server": "Apache",
+    "Last-Modified": "Thu, 22 Oct 2026 19:44:58 GMT",
+    "Accept-Ranges": "bytes",
+    "Content-Length": "456",
+    "Cache-Control": "public, max-age=86400",
+    "Expires": "Thu, 29 Oct 2026 23:32:54 GMT",
+    "Vary": "Accept-Encoding",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Methods": "GET,POST,PUT,OPTIONS",
+    "Access-Control-Allow-Headers": "RANGE, Cache-control, If-None-Match, Content-Type",
+    "Access-Control-Expose-Headers": "Content-Length, Content-Range, Content-Type",
+    "Connection": "close",
+    "Content-Type": "application/json"
+  },
+  "downloads": {
+    "exporter": {
+      "url": "https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.17.0/ncbi-blast-2.17.0+-aarch64-macosx.tar.gz",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/patents_ncbi_pataa_20261021/blast_tools.tar.gz",
+      "reused": true,
+      "bytes": 205531226,
+      "md5": "8dc685eb284713db76de41a4dabf96ad",
+      "sha256": "8d6739fa133107bce91dbb6b143ec993c9983416244fe502f9c36d585850dc00",
+      "checksum_http_headers": {
+        "Date": "Thu, 22 Oct 2026 23:32:54 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Tue, 01 Jul 2025 17:16:46 GMT",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "75",
+        "Cache-Control": "public, max-age=86400",
+        "Expires": "Thu, 29 Oct 2026 23:32:54 GMT",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,POST,PUT,OPTIONS",
+        "Access-Control-Allow-Headers": "RANGE, Cache-control, If-None-Match, Content-Type",
+        "Access-Control-Expose-Headers": "Content-Length, Content-Range, Content-Type",
+        "Connection": "close",
+        "Content-Type": "application/x-gzip"
+      }
+    },
+    "patents": {
+      "url": "https://ftp.ncbi.nlm.nih.gov/blast/db/pataa.tar.gz",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/patents_ncbi_pataa_20261021/pataa.tar.gz",
+      "reused": true,
+      "bytes": 843504877,
+      "md5": "2f80e79e4db3a376fafcd65e99372e37",
+      "sha256": "9fa62affdac605d3135e009a4ebb6e97771ab55dd3621890668f28e06b4147dc",
+      "checksum_http_headers": {
+        "Date": "Thu, 22 Oct 2026 23:32:54 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Thu, 22 Oct 2026 19:44:58 GMT",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "47",
+        "Cache-Control": "public, max-age=86400",
+        "Expires": "Thu, 29 Oct 2026 23:32:54 GMT",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,POST,PUT,OPTIONS",
+        "Access-Control-Allow-Headers": "RANGE, Cache-control, If-None-Match, Content-Type",
+        "Access-Control-Expose-Headers": "Content-Length, Content-Range, Content-Type",
+        "Connection": "close",
+        "Content-Type": "application/x-gzip"
+      }
+    }
+  },
+  "extracted_files": [
+    {
+      "name": "taxdb.btd",
+      "bytes": 177180067,
+      "sha256": "055c34ed5e5d5d3f0874e559a29f33574fb7c0d9c437c94ab2600293bb796ff7"
+    },
+    {
+      "name": "taxdb.bti",
+      "bytes": 18519720,
+      "sha256": "d7d99e32f7c8ebe4a5ecfac78a1ab9ca93491433b6e2b0ae195a5f78693591a3"
+    },
+    {
+      "name": "taxonomy4blast.sqlite3",
+      "bytes": 98840576,
+      "sha256": "8e3641fa3fb0b04c2d3c028c99880eaaf3249d987110a56f5b886c1c649056ac"
+    },
+    {
+      "name": "pataa.pin",
+      "bytes": 31861920,
+      "sha256": "6ba443030eafa3b920b6acf49fb3ce45cb07e950298728cc4e1511926825c520"
+    },
+    {
+      "name": "pataa.phr",
+      "bytes": 873146808,
+      "sha256": "88fb870433b66c3d145c56966f9cbf2c49f0b2be7899e8be262d1e99d1a422e1"
+    },
+    {
+      "name": "pataa.psq",
+      "bytes": 791041065,
+      "sha256": "d27a9f68604e2598bc1d9de312e79d6935fa0ad32985c9236d9379636cd6bb78"
+    },
+    {
+      "name": "pataa.ppi",
+      "bytes": 124508,
+      "sha256": "7fd5e9016cb11afe70f0df467a3d26cf43c23ba989b31cb3788236e950658f07"
+    },
+    {
+      "name": "pataa.ppd",
+      "bytes": 31861776,
+      "sha256": "95099eb52b577091d8b383366554da1800a505fd47b5aadf405d5ae0a9e91274"
+    },
+    {
+      "name": "pataa.pog",
+      "bytes": 15930920,
+      "sha256": "89f131217bcb23c7799203df7c69e8d8e30495023496364883218ff74524409c"
+    },
+    {
+      "name": "pataa.pdb",
+      "bytes": 377475072,
+      "sha256": "28d68090c822612aecd4533405f416ba75a23d23951f70f0fd0bbdc507807ec7"
+    },
+    {
+      "name": "pataa.pos",
+      "bytes": 120656347,
+      "sha256": "4f0bfbc6120805937626c343ec2385b48eeca49ea713dccb721e4e13c73dc5a7"
+    },
+    {
+      "name": "pataa.pot",
+      "bytes": 49166432,
+      "sha256": "935afd53750480e59c371ca1b63d3da8f2860408d18df85c89520c39e6de7442"
+    },
+    {
+      "name": "pataa.ptf",
+      "bytes": 237568,
+      "sha256": "0ee9e246f678961e397e947794892e5ea27e21acbf7318226e4dda6ae7cf6602"
+    },
+    {
+      "name": "pataa.pto",
+      "bytes": 17331548,
+      "sha256": "f7706c5ee7083477fd026b1e45a3c729807e1bb414d048dc55b37da7dde0f909"
+    },
+    {
+      "name": "pataa.pjs",
+      "bytes": 595,
+      "sha256": "56430e325136a6312b6082ea3e56d7a5a86796b4847b1948fce80990ef69f3c4"
+    }
+  ],
+  "fasta_path": "/Users/ricardo/.cache/adaptyv-c4/novelty/patents_ncbi_pataa_20261021/pataa.fasta",
+  "fasta_sha256": "3528dae234063a56d2bf4841c9335d69742851771aa48ffab2e84d3c81b0d289",
+  "fasta_bytes": 1213622499,
+  "exported_records": 3982722,
+  "exported_residues": 787058342,
+  "canonical_records": 3694389,
+  "alphabet": {
+    "A": 62176757,
+    "B": 2204,
+    "C": 13979142,
+    "D": 40450675,
+    "E": 47276595,
+    "F": 30623772,
+    "G": 59943053,
+    "H": 18342943,
+    "I": 39473943,
+    "J": 103,
+    "K": 43990367,
+    "L": 70734337,
+    "M": 16307656,
+    "N": 32534511,
+    "O": 769,
+    "P": 40362072,
+    "Q": 31035930,
+    "R": 42217253,
+    "S": 59626197,
+    "T": 46126749,
+    "U": 687,
+    "V": 52191713,
+    "W": 10813893,
+    "X": 2778722,
+    "Y": 26064290,
+    "Z": 4009
+  },
+  "duplicates": "Preserved; no unique-sequence count claimed",
+  "sequence_transformations": "None; official blastdbcmd FASTA export passed unchanged to MMseqs2",
+  "exporter": {
+    "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/patents_ncbi_pataa_20261021/blastdbcmd",
+    "sha256": "5f0736c6464bd914c4cf8bf7fcea873bdc9545d6f296de3bdf2f9a4ffeae4808",
+    "version": "blastdbcmd: 2.17.0+\n Package: blast 2.17.0, build Jul  1 2025 08:59:26",
+    "command": [
+      "/Users/ricardo/.cache/adaptyv-c4/novelty/patents_ncbi_pataa_20261021/blastdbcmd",
+      "-db",
+      "/Users/ricardo/.cache/adaptyv-c4/novelty/patents_ncbi_pataa_20261021/db/pataa",
+      "-entry",
+      "all",
+      "-outfmt",
+      "%f",
+      "-out",
+      "/Users/ricardo/.cache/adaptyv-c4/novelty/patents_ncbi_pataa_20261021/pataa.fasta"
+    ]
+  },
+  "positive_control": {
+    "source_header": "AKY81501.1 Sequence 168442 from patent US 9012723",
+    "sequence": "MGLSKVKGGISRGRGSGSSSPFASPSFTPCSSPPFTPWVVAAGCSGSRAAGSEAGCRGRGWFRGRAVLKLRGLQQRSERKPLRNSAMAPPWPPFNNTACNMNLMKIAGLQ",
+    "source_ordinal": 3
+  },
+  "scope_complete": false,
+  "scope": "NCBI pataa Patent-division protein records only; not verified as organizer patent corpus"
+}

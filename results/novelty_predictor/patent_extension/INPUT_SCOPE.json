@@ -1,0 +1,19 @@
+{
+  "inherited_analysis_inputs_sha256": "652d6e8257b777dccb0de81eb4a789fd030c2b249006d288fbbc0062ecbafe2c",
+  "inherited_count": 74,
+  "inherited_designs": "73 retired designs + native receptor positive control, unchanged",
+  "added_control": "KNOWN_PATENT_SOURCE_POSITIVE_CONTROL",
+  "added_control_provenance": {
+    "source_header": "AKY81501.1 Sequence 168442 from patent US 9012723",
+    "sequence": "MGLSKVKGGISRGRGSGSSSPFASPSFTPCSSPPFTPWVVAAGCSGSRAAGSEAGCRGRGWFRGRAVLKLRGLQQRSERKPLRNSAMAPPWPPFNNTACNMNLMKIAGLQ",
+    "source_ordinal": 3
+  },
+  "total_rows": 75,
+  "submission_candidates_created": 0,
+  "inherited_structure_report_sha256": "815d12f4c363d499aacb48a2810fd870c4c779c58d6d9d2e4f34523c18fb5cbc",
+  "expected_coordinate_domains": 68,
+  "database_manifest_sha256": "dac0471efe750638c2bbcca79a21fb86ba046d1cd0b1514d8fb2428bae429848",
+  "analysis_inputs_sha256": "292fc5031b6bb7bfe83f2d4274f0434397d5d9d779cb757e9220986a8bf3552b",
+  "structure_manifest_sha256": "42e6c26f25a1024361e57c64500946eb6f5bb8a069ef393bd5c7f706a2490fd1",
+  "protocol_sha256": "ea7d57e2c6afe344c9db25f1ba83217c4237d310ebee563c915ea70a884c238e"
+}
