@@ -46,6 +46,8 @@ image = (
     .add_local_file(ROOT / "results/gpu_campaign_v3/campaign.json", "/opt/c4/campaign.json", copy=True)
     .add_local_file(ROOT / "results/gpu_campaign_v2/human_11qc_full_monomer.pdb", "/opt/c4/target.pdb", copy=True)
     .add_local_file(ROOT / "results/gpu_campaign_v2/mirrored/campaign_metadata.json", "/opt/c4/reference_metadata.json", copy=True)
+    .add_local_file(ROOT / "results/modal_campaign_v5/human_11qc_local_frame.pdb", "/opt/c4/local-frame-target.pdb", copy=True)
+    .add_local_file(ROOT / "scripts/modal_search_policy.py", "/opt/c4/search_policy.py", copy=True)
 )
 
 
@@ -65,6 +67,7 @@ image = (
 )
 def run_campaign(run_name: str = RUN_NAME, overrides: dict | None = None):
     import hashlib
+    import importlib.util
     import json
     import os
     import re
@@ -75,8 +78,10 @@ def run_campaign(run_name: str = RUN_NAME, overrides: dict | None = None):
     import jax
     from bindcraft.model_weights import alphafold_parameter_file, alphafold_parameters
 
-    if not re.fullmatch(r"(?:" + RUN_NAME + "|" + LARGE_INIT_RUN + r")(?:_replicate_[23])?", run_name):
-        raise ValueError("Unknown bounded campaign name")
+    spec = importlib.util.spec_from_file_location('search_policy','/opt/c4/search_policy.py')
+    policy = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(policy)
+    policy.profile_for_name(run_name)
     overrides = overrides or {}
     if set(overrides) - {"campaign_seed"}:
         raise ValueError("Only a new independent seed is allowed in this series")
@@ -121,14 +126,9 @@ def run_campaign(run_name: str = RUN_NAME, overrides: dict | None = None):
             checksums[name] = actual
 
         config = json.loads(Path("/opt/c4/campaign.json").read_text())
-        config.update(overrides)
-        config["campaign_name"] = run_name
-        if run_name.startswith(LARGE_INIT_RUN):
-            config["large_complex_initialization"] = True
-        config["project_folder"] = str(run / "campaign")
-        config["targets"][0]["target_path"] = "/opt/c4/target.pdb"
+        config = policy.make_config(config,run_name,overrides,str(run / 'campaign'))
         (run / "campaign.json").write_text(json.dumps(config, indent=2) + "\n")
-        shutil.copy("/opt/c4/target.pdb", run / "target.pdb")
+        shutil.copy(config['targets'][0]['target_path'], run / "target.pdb")
         shutil.copy("/opt/bindcraft-runtime-freeze.txt", run / "runtime-freeze.txt")
         status.update(status="modeling", gpu=gpu, jax=jax.__version__, checkpoints=checksums,
                       container=os.environ.get("MODAL_TASK_ID"), max_runtime_seconds=7200)

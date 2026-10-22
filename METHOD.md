@@ -445,3 +445,21 @@ Full evidence: `results/switch_install/campaign/RESULTS.md`, `variants.csv`,
 `residues.csv`, `integrity.json`, per-design manifests and PDBs. Protocol diagnostics
 and reproduction commands are in `results/switch_install/VALIDATION.md` and
 `runtime_setup.txt`.
+
+## Coordinate initialization needs an explicit relative-placement preflight
+
+The v4 attempt exposed a separate initialization problem, not evidence for the
+cause of v3 rejection: enabling upstream initial_atom_pos retained native target
+coordinates while unresolved binder atoms stayed at origin,188.816A from the
+hotspot centroid. That attempt was cancelled and its GPU released. No comparison
+of accepted-model quality is inferred from the aborted attempt.
+
+The replacement target is the same entire639-residue monomer, rigidly translated
+so origin lies15A outward from the hotspot centroid, with7.955A nearest-atom
+clearance against the complete native dimer. Atom identities, residue numbers,
+sequence and all CA pair distances are preserved to PDB precision. This changes
+the relative starting placement of the unresolved binder, not receptor shape.
+It remains an optimization hypothesis, not a physical binding measurement.
+Opposite-subunit restoration/native-sequence and clash checks remain mandatory
+before any accepted structure receives CPU linkage scoring. Exact transform and
+integrity measurements: results/modal_campaign_v5/human_11qc_local_frame.audit.json.

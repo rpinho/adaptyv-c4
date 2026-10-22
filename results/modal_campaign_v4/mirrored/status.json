@@ -1,5 +1,5 @@
 {
-  "status": "modeling",
+  "status": "failed",
   "started": 1792627272.2747529,
   "revision": "b6fb3ae15ab6a702f1156cffc11bcc3323c2fd06",
   "gpu": "NVIDIA H100 80GB HBM3, 81559 MiB, 610.57.04",
@@ -16,6 +16,9 @@
   },
   "container": "ta-01M5GEJP9PPGVCNGFV2075Q94R",
   "max_runtime_seconds": 7200,
-  "elapsed_seconds": 6.415271759033203,
-  "worker_pid": 31
+  "elapsed_seconds": 218.8320074081421,
+  "worker_pid": 31,
+  "error": "InputCancellation('Input was cancelled by user')",
+  "finished": 1792627491.10676,
+  "shutdown": "function returning; single-use container must terminate"
 }

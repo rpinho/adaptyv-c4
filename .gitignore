@@ -7,4 +7,6 @@ results/modal_campaign_v3/**/driver.lock
 results/modal_campaign_v3/series.lock
 results/modal_campaign_v4/**/driver.lock
 results/modal_campaign_v4/series.lock
+results/modal_campaign_v5/**/driver.lock
+results/modal_campaign_v5/search.lock
 data/*.cif

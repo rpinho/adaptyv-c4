@@ -1,0 +1,12 @@
+{
+  "started": 1792627696.030018,
+  "profile": "c4_local_frame_v5",
+  "completed": [],
+  "accepted": 0,
+  "runtime_estimate_upper_usd": 3.1319149497777934,
+  "budget_usd": 27.9,
+  "max_batches": 6,
+  "status": "active",
+  "current_batch": 1,
+  "current_run": "c4_local_frame_v5"
+}
