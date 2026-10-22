@@ -71,5 +71,39 @@ class NoveltyTests(unittest.TestCase):
                 w=csv.writer(f);w.writerow(['name','sequence']);w.writerow(['bad','ACD:efg'])
             with self.assertRaisesRegex(ValueError,'silent repairs'): novelty.load_designs(path)
 
+    def test_domains_matching_different_targets_aggregate_without_averaging_tm(self):
+        matches = [dict(start=1,end=40,tm_score=.51,normalization='query_domain_length'),
+                   dict(start=41,end=80,tm_score=.81,normalization='query_domain_length')]
+        result = novelty.structural_class(100,matches)
+        self.assertEqual(result['category'],'moderate')
+        self.assertEqual(result['moderate_coverage'],.8)
+        self.assertEqual(result['high_coverage'],.4)
+
+    def test_structure_hit_ranking_uses_query_normalized_not_target_normalized_tm(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as tmp:
+            path=Path(tmp)/'hits.tsv'
+            path.write_text('q\tshort\t100\t40\t1\t40\t1\t40\t40\t0.4\t1.0\tAAAA\tAAAA\n'
+                            'q\tfull\t100\t100\t1\t100\t1\t100\t100\t0.81\t0.81\tAAAA\tAAAA\n')
+            hits=novelty.parse_structure_hits(path,{'q':dict(start=1,end=100)})['q']
+            self.assertEqual(hits[0]['target'],'full')
+            self.assertEqual(hits[0]['qtmscore'],.81)
+
+    def test_mismatched_domain_length_rejected_before_classification(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as tmp:
+            path=Path(tmp)/'hits.tsv'
+            path.write_text('q\tref\t40\t40\t1\t40\t1\t40\t40\t1.0\t1.0\tAAAA\tAAAA\n')
+            with self.assertRaisesRegex(ValueError,'domain length'):
+                novelty.parse_structure_hits(path,{'q':dict(start=1,end=100)})
+
+    def test_ca_extraction_preserves_chain_identity(self):
+        path=Path(__file__).resolve().parents[1]/'data/11qc.cif'
+        rr=novelty.ca_residues(path,'A')
+        by_number={r[0]:r for r in rr}
+        self.assertEqual([(p,by_number[p][1]) for p in (205,206,208,209,210)],
+                         [(205,'K'),(206,'N'),(208,'R'),(209,'L'),(210,'V')])
+        self.assertEqual(len(rr),639)
+
 
 if __name__ == '__main__': unittest.main()

@@ -1,0 +1,86 @@
+Create directory /Users/ricardo/.cache/adaptyv-c4/novelty_structures/tmp
+databases PDB /Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb /Users/ricardo/.cache/adaptyv-c4/novelty_structures/tmp --threads 4 
+
+MMseqs Version:              	463739e0014a1549a527de589102cde98f802f37
+Tsv                          	false
+Force restart with latest tmp	false
+Remove temporary files       	false
+Use GPU                      	0
+Compressed                   	0
+Threads                      	4
+Verbosity                    	3
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0 2219M    0 19.5M    0     0  18.6M      0  0:01:58  0:00:01  0:01:57 18.6M  2 2219M    2 60.6M    0     0  29.6M      0  0:01:14  0:00:02  0:01:12 29.6M  4 2219M    4 99.5M    0     0  32.6M      0  0:01:07  0:00:03  0:01:04 32.6M  6 2219M    6  138M    0     0  34.2M      0  0:01:04  0:00:04  0:01:00 34.2M  7 2219M    7  174M    0     0  34.4M      0  0:01:04  0:00:05  0:00:59 34.8M  9 2219M    9  206M    0     0  34.1M      0  0:01:04  0:00:06  0:00:58 37.4M 10 2219M   10  239M    0     0  33.9M      0  0:01:05  0:00:07  0:00:58 35.7M 12 2219M   12  275M    0     0  34.1M      0  0:01:04  0:00:08  0:00:56 35.0M 14 2219M   14  317M    0     0  35.0M      0  0:01:03  0:00:09  0:00:54 35.7M 15 2219M   15  354M    0     0  35.2M      0  0:01:02  0:00:10  0:00:52 36.0M 17 2219M   17  393M    0     0  35.5M      0  0:01:02  0:00:11  0:00:51 37.3M 19 2219M   19  428M    0     0  35.5M      0  0:01:02  0:00:12  0:00:50 37.8M 20 2219M   20  457M    0     0  35.0M      0  0:01:03  0:00:13  0:00:50 36.5M 22 2219M   22  489M    0     0  34.8M      0  0:01:03  0:00:14  0:00:49 34.5M 23 2219M   23  525M    0     0  34.9M      0  0:01:03  0:00:15  0:00:48 34.2M 25 2219M   25  561M    0     0  35.0M      0  0:01:03  0:00:16  0:00:47 33.7M 26 2219M   26  594M    0     0  34.8M      0  0:01:03  0:00:17  0:00:46 33.1M 27 2219M   27  620M    0     0  34.3M      0  0:01:04  0:00:18  0:00:46 32.5M 29 2219M   29  656M    0     0  34.4M      0  0:01:04  0:00:19  0:00:45 33.3M 31 2219M   31  695M    0     0  34.7M      0  0:01:03  0:00:20  0:00:43 33.9M 33 2219M   33  734M    0     0  34.8M      0  0:01:03  0:00:21  0:00:42 34.4M 34 2219M   34  769M    0     0  34.9M      0  0:01:03  0:00:22  0:00:41 35.0M 36 2219M   36  807M    0     0  35.0M      0  0:01:03  0:00:23  0:00:40 37.4M 38 2219M   38  845M    0     0  35.1M      0  0:01:03  0:00:24  0:00:39 37.8M 39 2219M   39  879M    0     0  35.1M      0  0:01:03  0:00:25  0:00:38 36.7M 41 2219M   41  918M    0     0  35.2M      0  0:01:02  0:00:26  0:00:36 36.9M 43 2219M   43  956M    0     0  35.3M      0  0:01:02  0:00:27  0:00:35 37.3M 44 2219M   44  993M    0     0  35.4M      0  0:01:02  0:00:28  0:00:34 37.0M 46 2219M   46 1032M    0     0  35.5M      0  0:01:02  0:00:29  0:00:33 37.3M 48 2219M   48 1076M    0     0  35.8M      0  0:01:01  0:00:30  0:00:31 39.4M 49 2219M   49 1103M    0     0  35.5M      0  0:01:02  0:00:31  0:00:31 37.0M 51 2219M   51 1143M    0     0  35.6M      0  0:01:02  0:00:32  0:00:30 37.4M 53 2219M   53 1183M    0     0  35.8M      0  0:01:01  0:00:33  0:00:28 38.1M 55 2219M   55 1223M    0     0  35.9M      0  0:01:01  0:00:34  0:00:27 38.3M 57 2219M   57 1265M    0     0  36.1M      0  0:01:01  0:00:35  0:00:26 37.7M 58 2219M   58 1305M    0     0  36.2M      0  0:01:01  0:00:36  0:00:25 40.4M 60 2219M   60 1343M    0     0  36.2M      0  0:01:01  0:00:37  0:00:24 39.9M 62 2219M   62 1383M    0     0  36.3M      0  0:01:01  0:00:38  0:00:23 39.9M 63 2219M   63 1415M    0     0  36.2M      0  0:01:01  0:00:39  0:00:22 38.2M 65 2219M   65 1452M    0     0  36.2M      0  0:01:01  0:00:40  0:00:21 37.3M 67 2219M   67 1488M    0     0  36.2M      0  0:01:01  0:00:41  0:00:20 36.4M 68 2219M   68 1526M    0     0  36.3M      0  0:01:01  0:00:42  0:00:19 36.5M 70 2219M   70 1564M    0     0  36.3M      0  0:01:01  0:00:43  0:00:18 36.3M 72 2219M   72 1601M    0     0  36.3M      0  0:01:01  0:00:44  0:00:17 37.2M 73 2219M   73 1637M    0     0  36.3M      0  0:01:01  0:00:45  0:00:16 36.9M 75 2219M   75 1671M    0     0  36.3M      0  0:01:01  0:00:46  0:00:15 36.6M 76 2219M   76 1706M    0     0  36.2M      0  0:01:01  0:00:47  0:00:14 35.9M 78 2219M   78 1744M    0     0  36.3M      0  0:01:01  0:00:48  0:00:13 35.8M 80 2219M   80 1785M    0     0  36.4M      0  0:01:00  0:00:49  0:00:11 36.8M 82 2219M   82 1821M    0     0  36.3M      0  0:01:00  0:00:50  0:00:10 36.8M 83 2219M   83 1856M    0     0  36.3M      0  0:01:01  0:00:51  0:00:10 36.9M 85 2219M   85 1898M    0     0  36.4M      0  0:01:00  0:00:52  0:00:08 38.4M 87 2219M   87 1940M    0     0  36.5M      0  0:01:00  0:00:53  0:00:07 39.1M 89 2219M   89 1981M    0     0  36.6M      0  0:01:00  0:00:54  0:00:06 39.0M 90 2219M   90 2018M    0     0  36.6M      0  0:01:00  0:00:55  0:00:05 39.4M 92 2219M   92 2060M    0     0  36.7M      0  0:01:00  0:00:56  0:00:04 40.8M 94 2219M   94 2093M    0     0  36.6M      0  0:01:00  0:00:57  0:00:03 38.9M 96 2219M   96 2135M    0     0  36.7M      0  0:01:00  0:00:58  0:00:02 39.0M 98 2219M   98 2175M    0     0  36.8M      0  0:01:00  0:00:59  0:00:01 38.9M100 2219M  100 2219M    0     0  36.9M      0  0:00:59  0:00:59 --:--:-- 40.5M
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   121  100   121    0     0    342      0 --:--:-- --:--:-- --:--:--   341
+x pdb
+x pdb_ca
+x pdb_ca.dbtype
+x pdb_ca.index
+x pdb_clu
+x pdb_clu.dbtype
+x pdb_clu.index
+x pdb.dbtype
+x pdb_h
+x pdb_h.dbtype
+x pdb_h.index
+x pdb.index
+x pdb.lookup
+x pdb.lookup.tsv
+x pdb_mapping
+x pdb.md5sum
+x pdb_seq.0
+x pdb_seq.1
+x pdb_seq_ca.0
+x pdb_seq_ca.1
+x pdb_seq_ca.dbtype
+x pdb_seq_ca.index
+x pdb_seq.dbtype
+x pdb_seq_h.0
+x pdb_seq_h.1
+x pdb_seq_h.dbtype
+x pdb_seq_h.index
+x pdb_seq.index
+x pdb_seq.lookup
+x pdb_seq_mapping
+x pdb_seq.source
+x pdb_seq_ss.0
+x pdb_seq_ss.1
+x pdb_seq_ss.dbtype
+x pdb_seq_ss.index
+x pdb_seq_taxonomy
+x pdb.source
+x pdb_ss
+x pdb_ss.dbtype
+x pdb_ss.index
+x pdb_taxonomy
+mvdb /Users/ricardo/.cache/adaptyv-c4/novelty_structures/tmp/11760364602334815934/pdb_seq /Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq -v 3 
+
+Time for processing: 0h 0m 0s 3ms
+mvdb /Users/ricardo/.cache/adaptyv-c4/novelty_structures/tmp/11760364602334815934/pdb /Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb -v 3 
+
+Time for processing: 0h 0m 0s 1ms
+mvdb /Users/ricardo/.cache/adaptyv-c4/novelty_structures/tmp/11760364602334815934/pdb_seq_ss /Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_ss -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+mvdb /Users/ricardo/.cache/adaptyv-c4/novelty_structures/tmp/11760364602334815934/pdb_ss /Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_ss -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+mvdb /Users/ricardo/.cache/adaptyv-c4/novelty_structures/tmp/11760364602334815934/pdb_seq_h /Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_h -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+mvdb /Users/ricardo/.cache/adaptyv-c4/novelty_structures/tmp/11760364602334815934/pdb_h /Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_h -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+mvdb /Users/ricardo/.cache/adaptyv-c4/novelty_structures/tmp/11760364602334815934/pdb_seq_ca /Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_ca -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+mvdb /Users/ricardo/.cache/adaptyv-c4/novelty_structures/tmp/11760364602334815934/pdb_ca /Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_ca -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+mvdb /Users/ricardo/.cache/adaptyv-c4/novelty_structures/tmp/11760364602334815934/pdb_clu /Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_clu -v 3 
+
+Time for processing: 0h 0m 0s 0ms

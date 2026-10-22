@@ -1,0 +1,11 @@
+{
+  "source": "https://mmseqs.com/foldseek/foldseek-osx-universal.tar.gz",
+  "installed_binary": "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+  "version": "463739e0014a1549a527de589102cde98f802f37",
+  "archive_sha256": "9469cf695760c8d25fb555e395b72c085c81b66c31c3b7d973c155d7ed642435",
+  "binary_sha256": "07c05879cd5f3b2e37b26fde503e8bd458357de0ba05ca5c65b769bd55b8def3",
+  "platform": "macOS arm64",
+  "cpu_threads": 4,
+  "cloud_compute": false,
+  "gpu": false
+}

@@ -1,0 +1,26 @@
+{
+  "retired_designs": 73,
+  "coordinate_verified_retired": 67,
+  "missing_retired_coordinates": 6,
+  "local_level_counts": {
+    "missing": 6,
+    "3": 37,
+    "2": 26,
+    "4": 4
+  },
+  "no_candidate_match_queries": 1,
+  "raw_tm_align_rows": 12715,
+  "control_query_tm": 0.9946,
+  "control_target_tm": 0.3045,
+  "control_domain_coverage": 1.0,
+  "control_local_level": 1,
+  "exact_organizer_levels_established": 0,
+  "all_local_predictions_caveated": true,
+  "predictor_fingerprint_matches_executed_code": true,
+  "archive_publisher_md5_matches": true,
+  "unit_tests": 14,
+  "forbidden_paths_and_novelty_audit_unchanged": true,
+  "measured_stage_seconds": 43.51086675,
+  "cpu_threads": 4,
+  "new_gpu_spend_usd": 0
+}

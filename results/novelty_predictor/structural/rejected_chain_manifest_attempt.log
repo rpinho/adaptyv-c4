@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/ricardo/dev/adaptyv-c4/scripts/novelty_level_predictor.py", line 466, in <module>
+    if __name__ == '__main__': main()
+  File "/Users/ricardo/dev/adaptyv-c4/scripts/novelty_level_predictor.py", line 360, in main
+    run_structural_half(records,report,args)
+  File "/Users/ricardo/dev/adaptyv-c4/scripts/novelty_level_predictor.py", line 252, in run_structural_half
+    raise ValueError('Coordinate/sequence mismatch: '+design['name'])
+ValueError: Coordinate/sequence mismatch: c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate1

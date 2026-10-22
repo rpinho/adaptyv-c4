@@ -1,0 +1,990 @@
+{
+  "structures": [
+    {
+      "name": "c4_tfr1_groove_human_forced_l59_f06cf87fd111f355_candidate1",
+      "status": "unavailable",
+      "reason": "No exact-named coordinate model found in local retired-pool Complexes; no sequence-to-structure inference run"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate1",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_refolds/Complexes/c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate1.cif",
+      "sha256": "21ce741f197e4859bd4c3c3db30c05a998dc575f8773d4c16e8b2c642f81c68e",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 78,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate2",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate2.cif",
+      "sha256": "3282a3b1ea117397935b36ac3052cb5682cc8f0b66763566196e1e4c3558d6fc",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 78,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate3",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate3.cif",
+      "sha256": "954c236f45e9ae984f643206674b1bb7fad33e95b964a154368ff3f645003c01",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 78,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate5",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate5.cif",
+      "sha256": "c3c2e1f413da8bb836cff45c6ee1526ecde9563c491699989c244ee09dbb440c",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 78,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l99_2c4541b346f4959d_candidate1",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l99_2c4541b346f4959d_candidate1.cif",
+      "sha256": "1d805e94aa58ba59b6bbb57bf3efb29a77d111068952386887fc7cf108540312",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 99,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l99_2c4541b346f4959d_candidate4",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l99_2c4541b346f4959d_candidate4.cif",
+      "sha256": "b7f37d8b8b42dc43ee515b42139e60f7766fa7fe5e16aa04392ce412284edfca",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 99,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c_candidate6",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c_candidate6.cif",
+      "sha256": "ac2bd8df713722ef73ab3f0f6a1f00c5b79f160bdd5cba7945b480ffbf58d258",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 98,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c_candidate8",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c_candidate8.cif",
+      "sha256": "ef5ec948428b45a496275ef954fccae477a16cc2e059d54acfd0a5776bf01ba5",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 98,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l99_2c4541b346f4959d_candidate7",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l99_2c4541b346f4959d_candidate7.cif",
+      "sha256": "ea1f4ad0ad30cc35e07e1849b3e5abbc50881a8cbdb12fa25a87683d4d4c2fbd",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 99,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c_candidate9",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c_candidate9.cif",
+      "sha256": "09cf96954cfa0b56a9e2a1b37d9cadcb390091eb2e99912e18296090d5e7d2b7",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 98,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l72_d5e9e12c9e56fbea_candidate1",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l72_d5e9e12c9e56fbea_candidate1.cif",
+      "sha256": "a91d1917b6a7d5be2089606e66f7a650b5a4205738bda698b42901b01d9efef0",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 72,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l72_d5e9e12c9e56fbea_candidate3",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l72_d5e9e12c9e56fbea_candidate3.cif",
+      "sha256": "2c3159bdd62ff14fbef2db27ba49f2475407ebdea3693685ec23b00b8ee54616",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 72,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l72_d5e9e12c9e56fbea_candidate4",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l72_d5e9e12c9e56fbea_candidate4.cif",
+      "sha256": "7b49a08ad043a1e1c55569bbab2206e43795eb186745738a09a3b7541e18e70d",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 72,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l84_9efe91791b587b17_candidate1",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l84_9efe91791b587b17_candidate1.cif",
+      "sha256": "f70787b628e6a8575cf1cea39b34f72bdab5063baca70d88191df953da2cfd52",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 84,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l84_9efe91791b587b17_candidate2",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l84_9efe91791b587b17_candidate2.cif",
+      "sha256": "0b510ec961d717e4e9c81a520fa73f76483c0d52d6198596d2f2a70ddbe72833",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 84,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l84_9efe91791b587b17_candidate3",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l84_9efe91791b587b17_candidate3.cif",
+      "sha256": "eb689067fc6555dfd46cfafd38fffc49bdee4e52428326210847cbbebcf46bb9",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 84,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1_candidate1",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1_candidate1.cif",
+      "sha256": "9dfd8d34194c5ac91a1fe0053f71ab91c89b901b0b3756f3a4e63743f2bcb296",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 84,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1_candidate2",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1_candidate2.cif",
+      "sha256": "1eb543a200526730b993cd8af7ab1003b73a3abd4ac56eb8ac53f7016b89dd47",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 84,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1_candidate4",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1_candidate4.cif",
+      "sha256": "aa511c0b48778cbbc5a90721a1fa881032f7cd8cb2e71c69ae8e1519aecf839d",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 84,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l100_af9c8433a94467eb_candidate4",
+      "status": "unavailable",
+      "reason": "No exact-named coordinate model found in local retired-pool Complexes; no sequence-to-structure inference run"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l100_af9c8433a94467eb_candidate6",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l100_af9c8433a94467eb_candidate6.cif",
+      "sha256": "eb893650556f85c14a6c70639ddb6ab7ec8511e3293bf58fab7d172afd5bb26a",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 100,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d_candidate1",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d_candidate1.cif",
+      "sha256": "4095967f2009b4f81d9449bbb776e5f521e44e3c397ef0d7259e67c0f865f186",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 76,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d_candidate3",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d_candidate3.cif",
+      "sha256": "c4d22914080a6d9f098145cfb08398fd1030134390c480876c1074ae1d483de4",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 76,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d_candidate4",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d_candidate4.cif",
+      "sha256": "5f509b7c1b5d5f95c671ecdc32d3d585d292de25c9b762a8d27802440d080f04",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 76,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l56_b9b1bd89e75cae01_candidate3",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l56_b9b1bd89e75cae01_candidate3.cif",
+      "sha256": "aff9f488002fc10c80a5739967e334e72b80807e0dc4657903839554159aca91",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 56,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l56_b9b1bd89e75cae01_candidate6",
+      "status": "unavailable",
+      "reason": "No exact-named coordinate model found in local retired-pool Complexes; no sequence-to-structure inference run"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l79_e4887d4268e16afe_candidate1",
+      "status": "unavailable",
+      "reason": "No exact-named coordinate model found in local retired-pool Complexes; no sequence-to-structure inference run"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l60_63126a071c041270_candidate1",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l60_63126a071c041270_candidate1.cif",
+      "sha256": "99a10667f7b13a7a2594d9a6eb0a90834b3db915bb4fc1b9aff31c9e7cbde803",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 60,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l60_63126a071c041270_candidate2",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l60_63126a071c041270_candidate2.cif",
+      "sha256": "c79b278f580f2dec14c291ef69dee717832bfaa8e2ffcebbcd17ad21ce8a4a2c",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 60,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l60_63126a071c041270_candidate3",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l60_63126a071c041270_candidate3.cif",
+      "sha256": "60f5a058762e5ad94d24adc71de27207074b61dd6ffe73d8c4a6e2fb519072c9",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 60,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.cif",
+      "sha256": "8378780e51417aff422b461f40392322cf9b5f46698f56e5471789b5b2657d3a",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 58,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e_candidate1",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e_candidate1.cif",
+      "sha256": "0004b065f208ed8104d6b638ad5607b955887ff96005d6e3e69927fa489bef18",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 95,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate2",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate2.cif",
+      "sha256": "407a6481fd82e865aa8c50eeb9df24d73c5aaaa71c7a54bdc466870cc962d496",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 58,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e_candidate2",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e_candidate2.cif",
+      "sha256": "b1b14304e3dba516a3dba588bf4b45cbd538dea7a304fb3908a800edd81ec6ea",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 95,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate3",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate3.cif",
+      "sha256": "d995ad809948ad9de2df14582034eeebbd520dec3d006a7cff7039a57a7719df",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 58,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e_candidate3",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e_candidate3.cif",
+      "sha256": "381ee54c31cbe38f1c9f13c5cbe30e1e6a9b6472f2a4ba04722cd3af90778b7d",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 95,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l80_24ee63503d07a260_candidate2",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l80_24ee63503d07a260_candidate2.cif",
+      "sha256": "f6b76f88d03d897d1b2261085e25b63568c25cac2add987e4b2fbcfc11c1c092",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 80,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l80_24ee63503d07a260_candidate3",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l80_24ee63503d07a260_candidate3.cif",
+      "sha256": "ce25b00d17a00580306e12d6d447c2f13d64fa9432051ece9ffe46c534ce4582",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 80,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l80_24ee63503d07a260_candidate6",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l80_24ee63503d07a260_candidate6.cif",
+      "sha256": "f305efdaf677d341bb643cb7e60297540266a0b4b425e9fe3d553bd410668b3a",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 80,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l70_54a5b53444de2b49_candidate4",
+      "status": "unavailable",
+      "reason": "No exact-named coordinate model found in local retired-pool Complexes; no sequence-to-structure inference run"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l70_54a5b53444de2b49_candidate5",
+      "status": "unavailable",
+      "reason": "No exact-named coordinate model found in local retired-pool Complexes; no sequence-to-structure inference run"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l70_54a5b53444de2b49_candidate8",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l70_54a5b53444de2b49_candidate8.cif",
+      "sha256": "95a6736d3f1dacf8bf0eb370f5d8ae77b0d5e464dad2b911dcf180c8e373b247",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 70,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l58_9f94b53776050aad_candidate3",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l58_9f94b53776050aad_candidate3.cif",
+      "sha256": "c38eb2ffc12f38ec0b3e5d3d714ce2d00ac68e97c922f54ae875c546670b57e7",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 58,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l58_9f94b53776050aad_candidate4",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l58_9f94b53776050aad_candidate4.cif",
+      "sha256": "632beb7c354d757b46fdefdde0f3f1509abec4ba73bcdeb23ef4899ae79e74e9",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 58,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l97_2e414f93ff62377a_candidate1",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l97_2e414f93ff62377a_candidate1.cif",
+      "sha256": "2aa966e707bbc18ccab0f1c70dbdcb3d4fb2c98d080420888c4c895b0bb66bc1",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 97,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l58_9f94b53776050aad_candidate5",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l58_9f94b53776050aad_candidate5.cif",
+      "sha256": "a538ffb84f85881d6843a43eb88dda8a21d942cf39e9534062e68fc7e7144159",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 58,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l97_2e414f93ff62377a_candidate2",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l97_2e414f93ff62377a_candidate2.cif",
+      "sha256": "c27b387d98368590a322eb1d40657e6e41e5dc25ee5bc31021795e39e54ae916",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 97,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l97_2e414f93ff62377a_candidate3",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l97_2e414f93ff62377a_candidate3.cif",
+      "sha256": "a1f028bc7858f0aeaba6c2ae5fe4df64f8920dbc2933ad53d958e98f8eba1fe0",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 97,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l96_9003044e98f7dfc2_candidate1",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l96_9003044e98f7dfc2_candidate1.cif",
+      "sha256": "e0bdc0159708105625454c063bb651c98960fd99193d5822228d9b60d0bdce91",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 96,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l59_a8117845ac23722c_candidate1",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l59_a8117845ac23722c_candidate1.cif",
+      "sha256": "b3a502c295ab9055f517917daeac3efa1e8167378839628d11d71db8f3fffd9a",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 59,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l59_a8117845ac23722c_candidate3",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l59_a8117845ac23722c_candidate3.cif",
+      "sha256": "878d808cdef44d9b5ef53d9724e5623d8dcb3475f2a3e9c9a77448c184d26cee",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 59,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l96_9003044e98f7dfc2_candidate6",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l96_9003044e98f7dfc2_candidate6.cif",
+      "sha256": "6fa95dae0e615cf54b2f8dda1cce8ccbd3c9a07184ff1d1fc9c7caa1da61fb3d",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 96,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l59_a8117845ac23722c_candidate5",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l59_a8117845ac23722c_candidate5.cif",
+      "sha256": "8160e2f7a668be9cd5c9c2fd396edb4ddc03b63d37fffcb395467df5c4cb584b",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 59,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l96_9003044e98f7dfc2_candidate10",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l96_9003044e98f7dfc2_candidate10.cif",
+      "sha256": "6185563d0e2e6396ce66fd5cae1e58bceb51e956c958b6843d6fb5f853a1a943",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 96,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate6",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate6.cif",
+      "sha256": "bb8107f71cf3f278e949e1cca8c48c6e6723a40f6035eca6916e7314dbc0741c",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 63,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate9",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate9.cif",
+      "sha256": "bc3c1c27dac7e46fbb76a72f1caa01c09cd97c9f76122f72ef5a8e85a67a22c4",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 63,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate10",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate10.cif",
+      "sha256": "c8da701b364277d79a1600faf002f629e7cd33d586b1ce7b432f37404b2a8131",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 63,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8_candidate1",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8_candidate1.cif",
+      "sha256": "77fc846280a2ec30036dd5145320d4de5c5d0f8b981ddb84edb130403b6fbe21",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 56,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8_candidate2",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8_candidate2.cif",
+      "sha256": "d1f96a9a0a6c30153d23ff598402231ecdd4b1b3be1a6f19b84af35ab82a4667",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 56,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8_candidate3",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8_candidate3.cif",
+      "sha256": "1083ffa804ff5619b8aa7ede6b2c3e83493c30904b596a6da2f87d7102a649b0",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 56,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l80_92df4b35cf6da70a_candidate1",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l80_92df4b35cf6da70a_candidate1.cif",
+      "sha256": "8cb5945d385739edd7d7afc6c43e59ad85082e4f969cce515b90458cda20a000",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 80,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l80_92df4b35cf6da70a_candidate2",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l80_92df4b35cf6da70a_candidate2.cif",
+      "sha256": "1bd220a34ce1c9f4b2f9e527e6fd48f32566d73b619607a72dc778fc2bf395ac",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 80,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l80_92df4b35cf6da70a_candidate4",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l80_92df4b35cf6da70a_candidate4.cif",
+      "sha256": "d1b4e9fec4a8ed85a20368133df79dc409fa9eb8ae84133ba1e7b5f2471bc018",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 80,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l99_ac96ee385dcb8613_candidate2",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l99_ac96ee385dcb8613_candidate2.cif",
+      "sha256": "852875ea86211aca1d0518e328b7726b03b1c2f5cbaec31f46e4c43a13293052",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 99,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0_candidate4",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0_candidate4.cif",
+      "sha256": "3063cc5f1fed1360479fa9bd583197a02a6feb8b50871172290b0cabf85f11cc",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 95,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0_candidate5",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0_candidate5.cif",
+      "sha256": "d5fa9eb030e55972ffff08242ec1ef0050487e54f173931693b063499399974e",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 95,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0_candidate7",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0_candidate7.cif",
+      "sha256": "8b53c005ee6f74e340cd8ee79244ed74c33250bc8f075c580c1ff22c2cc26690",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 95,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l100_39ede5dc7779065e_candidate5",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l100_39ede5dc7779065e_candidate5.cif",
+      "sha256": "48df648e37488c46e2b2e1cf0de10c6feb6bc78d42dcc1df596a070ede8dd1da",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 100,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l100_39ede5dc7779065e_candidate8",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l100_39ede5dc7779065e_candidate8.cif",
+      "sha256": "5e6024f2175f53fc3ba2cb43bed75b7153dfd78f2127dc31a937c174c2486427",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 100,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l99_e7484f3e947890e8_candidate1",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l99_e7484f3e947890e8_candidate1.cif",
+      "sha256": "90d8e64e7b67cbc890cbc00b6759f6fe21d49647974492372c6252fc11147fd2",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 99,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l99_e7484f3e947890e8_candidate2",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l99_e7484f3e947890e8_candidate2.cif",
+      "sha256": "5c5da64e4d9c7100ae47fafe159280ce63603da02a884f50ca6af070c21f915d",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 99,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l99_e7484f3e947890e8_candidate5",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l99_e7484f3e947890e8_candidate5.cif",
+      "sha256": "a13afc6a44f06b5bd53e19c31862580ca5cbb59f8a58844e44af41e9aa1afa2c",
+      "chain": "C",
+      "domains": [
+        {
+          "start": 1,
+          "end": 99,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "KNOWN_TFR1_POSITIVE_CONTROL",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/data/11qc.cif",
+      "sha256": "4eaa5db67ed83a896713c4b42d1dc214c778bdac240fdf3a9a82e86a66f79495",
+      "chain": "A",
+      "author_residue_range": [
+        189,
+        383
+      ],
+      "domains": [
+        {
+          "start": 1,
+          "end": 195,
+          "source": "Known native apical-domain control, human author189-383"
+        }
+      ]
+    }
+  ]
+}
