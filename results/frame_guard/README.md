@@ -29,6 +29,12 @@ optimization campaign. It records finite gradients, noncollapse, physical
 hotspot distance and patch/source hashes. It never enters candidate pH scoring.
 No automatic design successor is queued. A software pass is not a binder pass.
 
+Completion update: the real forward/gradient passed the narrow software check,
+and its GPU was released. Full measurements and limits are in `GPU_RESULTS.md`.
+The output is still off-patch and has abnormal adjacent-CA geometry. Follow-up
+Opus/Fable consultation and stronger CPU regressions are recorded in
+`../consultations/REVIEW.md`; no new helper patch was justified by that review.
+
 H100 GPU$3.9492/hour; requested CPU/RAM runtime upper$4.649328/hour. One
 25-minute subprocess timeout inside a30-minute function, with5-minute startup
 allowance, single-use container, zero retries, exact-call cancellation and

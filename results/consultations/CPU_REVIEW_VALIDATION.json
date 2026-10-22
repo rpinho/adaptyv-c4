@@ -1,0 +1,105 @@
+{
+  "status": "passed",
+  "jax": "0.11.2",
+  "devices": [
+    "cpu:0"
+  ],
+  "cases": [
+    "unresolved",
+    "valid template",
+    "partial CA",
+    "collinear",
+    "nonfinite",
+    "padding",
+    "recycled valid prediction"
+  ],
+  "actual_upstream_frame_functions": {
+    "multimer": {
+      "determinants": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "finite": true
+    },
+    "monomer": {
+      "determinants": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "finite": true
+    }
+  },
+  "old_zero_frame_determinant": 0.0,
+  "old_zero_frame_update_norm": 0.0,
+  "repaired_translation_update_norms": [
+    1.7320507764816284,
+    1.7320507764816284,
+    1.7320507764816284,
+    1.7320507764816284,
+    1.7320507764816284,
+    1.7320507764816284
+  ],
+  "actual_inputs_masks_unchanged": true,
+  "valid_template_frame_unchanged": true,
+  "both_converters_preserve_CA_translation": true,
+  "degenerate_recycled_coordinates_repaired_with_sequence_mask": true,
+  "guard_coordinate_gradient_checks": {
+    "monomer:zero": {
+      "finite": true,
+      "norm": 1.7320507764816284
+    },
+    "multimer:zero": {
+      "finite": true,
+      "norm": 1.7320507764816284
+    },
+    "monomer:nan_N": {
+      "finite": true,
+      "norm": 1.7320507764816284
+    },
+    "multimer:nan_N": {
+      "finite": true,
+      "norm": 1.7320507764816284
+    },
+    "monomer:nan_CA": {
+      "finite": true,
+      "norm": 0.0
+    },
+    "multimer:nan_CA": {
+      "finite": true,
+      "norm": 0.0
+    },
+    "monomer:valid": {
+      "finite": true,
+      "norm": 1.7320507764816284
+    },
+    "multimer:valid": {
+      "finite": true,
+      "norm": 1.7320507764816284
+    }
+  },
+  "initial_path_atoms_and_mask_are_function_arguments": true,
+  "patch": {
+    "original_af2_sha256": "aa185971676c5b6e3d2ebcef920e3b78acf16879b48b9073e74a527401ef79ae",
+    "patched_af2_sha256": "fc5e8aa9528d79b569a00d0cbab0c3fed283bdb9fb8df2ee940f8256d2c1a2bf",
+    "helper_sha256": "9ff2a4bccd4a310ba0881c8dbf40b833d78b3d2b962528dbcc12649087186412",
+    "repaired_paths": [
+      "initial input",
+      "recycled previous prediction"
+    ],
+    "actual_atom_positions_masks_templates_modified": false
+  },
+  "source_sha256": {
+    "bindcraft/af/alphafold/model/all_atom_multimer.py": "ce467f53f58407f5121f5d69596261d445d7a5c65cd042a57ba18b8ad95f30ec",
+    "bindcraft/af/alphafold/model/quat_affine.py": "c45b585f2d098eb91b7cc4e8afe9042524334fbbb4b0cdf857413fe3f4baa183",
+    "bindcraft/af/alphafold/model/geometry/rotation_matrix.py": "b54456f64e2cdd3a6d8742a997dadb306fad39e6a25739bbfbe456b27fbd5097"
+  },
+  "limitation": "Numerical frame regression, not an AlphaFold forward/gradient or affinity validation"
+}
