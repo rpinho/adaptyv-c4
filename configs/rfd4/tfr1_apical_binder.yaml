@@ -1,0 +1,83 @@
+# RFD4-Proteina condition spec: de novo binder against the human TfR1 apical domain.
+#
+# NUMBERING. Every res_id below is label_seq_id, NOT author numbering, because
+# contig and conditions both resolve against the original mmCIF label_seq_id
+# before contig renumbers the output. The offset was measured from
+# data/11qc.cif, not assumed:
+#
+#   auth 189 -> label  68   LYS      auth 209 -> label  88   LEU
+#   auth 205 -> label  84   LYS      auth 210 -> label  89   VAL
+#   auth 206 -> label  85   ASN      auth 383 -> label 262   GLU
+#   auth 208 -> label  87   ARG
+#
+# offset is exactly 121 for all seven, i.e. label = auth - 121. Verified, not
+# inferred: it only holds because chain A's entity sequence begins at auth 122
+# with no preceding unmodelled residues. Re-measure if the input file changes.
+#
+# So the apical domain auth 189-383 is label 68-262 (195 residues, all present,
+# no gaps), and the epitope K205/N206/R208/L209/V210 is label 84/85/87/88/89.
+#
+# TARGET. data/11qc.cif is the human TfR1 homodimer with glycans. The contig
+# preserves only label chain A residues 68-262; everything else -- the second
+# subunit, the glycans, the ions -- is dropped, since "any input atom not
+# covered by a preserved segment is dropped". That crop is deliberate: it is
+# what the authors do (24_SpCas9 is reduced from ~1368 residues to 220), it is
+# on-distribution, and the apical patch sits remote from the dimer interface.
+#
+# CONDITIONING, per the upstream PPI recommendation: target backbone-only
+# INTERNAL coordinates (C_CRDGRP, not C_CRD) so the global pose stays free and
+# target-like binder outputs are suppressed, the full target sequence (C_SEQ),
+# and a sparse hotspot patch (C_HOT). Anything not mentioned is not provided.
+#
+# HOTSPOT ATOMS are real atom names read out of the file, all at full
+# occupancy, chosen tip-ward two per residue to keep the patch sparse:
+#   LYS84 N,CA,C,O,CB,CG,CD,CE,NZ      -> CD,NZ
+#   ASN85 N,CA,C,O,CB,CG,OD1,ND2       -> CG,ND2
+#   ARG87 N,CA,C,O,CB,CG,CD,NE,CZ,NH1,NH2 -> CZ,NH1
+#   LEU88 N,CA,C,O,CB,CG,CD1,CD2       -> CG,CD1
+#   VAL89 N,CA,C,O,CB,CG1,CG2          -> CB,CG1
+# Ten atoms against ~1560 eligible is well inside the training distribution,
+# where hotspot counts are geometric(p=0.2) capped at 10% of eligible atoms.
+# Marking every exposed atom instead of a sparse patch moves off-distribution.
+#
+# BEFORE SPENDING GPU TIME, materialise and inspect this spec:
+#   python scripts/write_condition_spec_cifs.py \
+#       configs/rfd4/tfr1_apical_binder.yaml --out-dir ./cifs
+# and pass prevalidate_inputs=true on the real run. "A condition matched 0
+# atoms" is what a wrong label_seq_id looks like.
+#
+# KNOWN UPSTREAM BUG: with a C_CRDGRP-conditioned target, ppi.pass reads 0.0
+# for every design regardless of quality, because
+# refolded_target_backbone_aligned_binder_rmsd.rmsd is never produced (issue
+# #59, PR #60 unmerged). Score on oracle_ppi.ptm_coi >= 80 and
+# oracle_ppi.min_ipae_coi <= 1.5 directly instead of trusting ppi.pass.
+
+tfr1_apical_binder:
+  # Path resolves against THIS file's directory, not the working directory.
+  input: ../../../adaptyv-c4/data/11qc.cif
+
+  # 60-130 residue de novo binder on its own chain, chainbreak, then the
+  # preserved 195-residue apical domain.
+  contig: "60-130, /0, A68-262"
+
+  conditions:
+    # Target backbone internal geometry as one rigid group. Global pose free.
+    # has_nan_coord() guard is upstream convention: unobserved atoms keep their
+    # rows with NaN coordinates, and conditioning on NaN is a silent error.
+    C_CRDGRP:
+      1:
+        - select: "sel('A/*/[68-262]') and is_protein_backbone and not has_nan_coord()"
+
+    # Target sequence is fully known.
+    C_SEQ:
+      true:
+        - select: "sel('A/*/[68-262]')"
+
+    # Sparse epitope patch. auth K205 N206 R208 L209 V210.
+    C_HOT:
+      true:
+        - select: "sel('A/*/84/[CD,NZ]')"
+        - select: "sel('A/*/85/[CG,ND2]')"
+        - select: "sel('A/*/87/[CZ,NH1]')"
+        - select: "sel('A/*/88/[CG,CD1]')"
+        - select: "sel('A/*/89/[CB,CG1]')"
