@@ -307,3 +307,91 @@ def fetch(path: str = ""):
     """List or dump what is on the runs volume, so results can be pulled down."""
     sh(f"find {RUNS}/{path} -maxdepth 4 | head -100", cwd="/", check=False)
     sh(f"du -sh {RUNS}/*", cwd="/", check=False)
+
+
+@app.function(image=image, volumes=VOLUMES, timeout=1800, cpu=2.0)
+def sequences(run: str = "tfr1_probe"):
+    """Extract the designed chain's sequence from each generated CIF on the volume.
+
+    The generated CIF holds both chains. The designed chain is the one whose residues
+    were NOT sequence-conditioned, so it is identified by the absence of the target's
+    conditioning rather than by chain letter.
+    """
+    sh(f"""python - <<'PY2'
+import glob, gzip
+THREE = {{'ALA':'A','ARG':'R','ASN':'N','ASP':'D','CYS':'C','GLN':'Q','GLU':'E','GLY':'G',
+          'HIS':'H','ILE':'I','LEU':'L','LYS':'K','MET':'M','PHE':'F','PRO':'P','SER':'S',
+          'THR':'T','TRP':'W','TYR':'Y','VAL':'V'}}
+for path in sorted(glob.glob("{RUNS}/{run}/inference_samples/*/*_generated.cif*")):
+    op = gzip.open if path.endswith('.gz') else open
+    lines = op(path, 'rt').read().splitlines()
+    i=0; cols=[]; rows=[]
+    while i < len(lines):
+        if lines[i].strip()=='loop_':
+            j=i+1; hdr=[]
+            while j<len(lines) and lines[j].lstrip().startswith('_'):
+                hdr.append(lines[j].strip()); j+=1
+            if hdr and hdr[0].startswith('_atom_site.'):
+                cols=[h.split('.',1)[1] for h in hdr]
+                while j<len(lines) and lines[j].strip() and not lines[j].lstrip().startswith(('_','loop_','#')):
+                    rows.append(lines[j].split()); j+=1
+                break
+            i=j
+        else: i+=1
+    idx={{c:k for k,c in enumerate(cols)}}
+    def g(r,c): return r[idx[c]] if c in idx else '?'
+    chains={{}}
+    for r in rows:
+        ch=g(r,'label_asym_id'); rid=g(r,'label_seq_id'); comp=g(r,'label_comp_id')
+        chains.setdefault(ch,{{}})[rid]=comp
+    print('='*70); print(path.split('/')[-1])
+    for ch, res in sorted(chains.items()):
+        order=sorted(res, key=lambda x: int(x) if x.lstrip('-').isdigit() else 0)
+        seq=''.join(THREE.get(res[k],'X') for k in order)
+        print('  chain %s  len %d' % (ch, len(seq)))
+        print('    %s' % seq)
+PY2""", check=False)
+
+
+@app.function(image=image, gpu=GPU_CHEAP, volumes=VOLUMES, timeout=14400)
+def evaluate(run: str = "tfr1_c200",
+             tags: str = "design,hotspot_conditioning,developability"):
+    """Score an existing run offline, with NO refolding oracle.
+
+    Every *_refolding tag runs the AF3/OpenFold3 oracle, which needs an apptainer
+    container we have not built (and apptainer inside Modal's sandbox is doubtful). But
+    the metrics that matter most for ranking are pure geometry or physics and need no
+    container at all:
+
+      hotspot_obedience   -- is the designed chain within 4.5 A of the conditioned
+                             epitope. This is the exact failure the retired pipeline hid:
+                             its binder sat 54-57 A away for 250 gradient steps.
+                             rfproteina.metrics.hotspots imports only numpy/atomworks/
+                             biotite -- no oracle.
+      clash / bond_length -- geometric sanity on the generated structure
+      developability      -- sequence and Rosetta developability, which maps onto the
+                             competition's FIRST criterion, "a real chance to express
+                             (cell-free) and bind"
+
+    Note the known upstream bug: ppi.pass reads 0.0 for every C_CRDGRP-conditioned
+    design because refolded_target_backbone_aligned_binder_rmsd is never produced
+    (issue #59, PR #60 unmerged). We are not relying on ppi.pass.
+    """
+    out = f"{RUNS}/{run}_eval"
+    rc, o, elapsed, peak = sh_timed(
+        f"rfd4-evaluate inputs={RUNS}/{run} metrics_tags='[{tags}]' out_dir={out}",
+        check=False)
+    sh(f"find {out} -name '*.csv' | head", cwd="/", check=False)
+    sh(f"""python - <<'PY2'
+import csv, glob
+for p in sorted(glob.glob("{out}/**/per_example_metrics.csv", recursive=True)):
+    rows = list(csv.DictReader(open(p)))
+    if not rows: continue
+    print("=" * 70); print(p); print("rows:", len(rows))
+    keys = [k for k in rows[0] if not k.startswith("generation.")]
+    interesting = [k for k in keys if any(t in k.lower() for t in
+                   ("hotspot", "clash", "ddg", "developab", "bond", "obedien", "rmsd"))]
+    print("metric columns of interest:")
+    for k in interesting: print("   ", k)
+PY2""", cwd="/", check=False)
+    runs_vol.commit()

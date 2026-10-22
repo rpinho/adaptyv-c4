@@ -27,6 +27,7 @@ preserves input order exactly and never re-sorts.
 """
 import argparse
 import csv
+import hashlib
 import json
 import os
 import re
@@ -171,6 +172,8 @@ def main():
                     help="treat an unrecognised molecule_class as fatal rather than a warning")
     ap.add_argument("--format-test", action="store_true",
                     help="mark the output as a FORMAT TEST, not a submission candidate")
+    ap.add_argument("--force", action="store_true",
+                    help="replace an existing output file (refused by default)")
     a = ap.parse_args()
 
     cap = TRACK_ROW_CAP[a.track]
@@ -231,6 +234,12 @@ def main():
                  % len(problems))
 
     fieldnames = list(REQUIRED_COLUMNS) + extras
+    # Overwrite protection: this file goes out under Ricardo's name, and a silent
+    # clobber of a reviewed submission is exactly the mistake worth refusing.
+    if os.path.exists(a.out) and not a.force:
+        sys.exit("error: %s already exists. Pass --force to replace it, or choose a new "
+                 "path. Refusing to overwrite a submission file silently." % a.out)
+
     outdir = os.path.dirname(os.path.abspath(a.out))
     if outdir:
         os.makedirs(outdir, exist_ok=True)
@@ -240,8 +249,17 @@ def main():
         for row in rows:
             w.writerow({k: row.get(k, "") for k in fieldnames})
 
+    def sha256(path):
+        h = hashlib.sha256()
+        with open(path, "rb") as fh:
+            for chunk in iter(lambda: fh.read(65536), b""):
+                h.update(chunk)
+        return h.hexdigest()
+
     manifest = {
         "generated_utc": datetime.now(timezone.utc).isoformat(),
+        "sha256_shortlist_in": sha256(a.shortlist),
+        "sha256_submission_out": sha256(a.out),
         "generator": "scripts/build_submission.py",
         "is_format_test": bool(a.format_test),
         "source_shortlist": os.path.relpath(a.shortlist),

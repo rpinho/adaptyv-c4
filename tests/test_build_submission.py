@@ -82,6 +82,41 @@ class Conformant(unittest.TestCase):
         self.assertEqual(code, 0, out)
 
 
+class Overwrite(unittest.TestCase):
+    def test_refuses_to_clobber_an_existing_submission(self):
+        """A submission goes out under Ricardo's name; a silent clobber is the mistake
+        most worth refusing, so the guard is on by default and --force is explicit."""
+        sl = shortlist([row('d1', OK)])
+        code, out, path = build(sl)
+        self.assertEqual(code, 0, out)
+        first = Path(path).read_text()
+
+        # same output path, different content -> must refuse
+        sl2 = shortlist([row('d2', OK[:-1] + 'G')])
+        p = subprocess.run([sys.executable, str(BUILDER), sl2, '-o', str(path)],
+                           capture_output=True, text=True)
+        self.assertNotEqual(p.returncode, 0)
+        self.assertIn('already exists', p.stdout + p.stderr)
+        self.assertEqual(Path(path).read_text(), first, 'file must be untouched')
+
+        # --force replaces it
+        p = subprocess.run([sys.executable, str(BUILDER), sl2, '-o', str(path), '--force'],
+                           capture_output=True, text=True)
+        self.assertEqual(p.returncode, 0, p.stdout + p.stderr)
+        self.assertNotEqual(Path(path).read_text(), first)
+
+    def test_manifest_fingerprints_input_and_output(self):
+        code, out, path = build(shortlist([row('d1', OK)]))
+        self.assertEqual(code, 0, out)
+        man = json.load(open(str(path).replace('.csv', '.manifest.json')))
+        for k in ('sha256_shortlist_in', 'sha256_submission_out'):
+            self.assertRegex(man[k], r'^[0-9a-f]{64}$')
+        # the recorded output digest must match the file actually written
+        import hashlib
+        self.assertEqual(man['sha256_submission_out'],
+                         hashlib.sha256(Path(path).read_bytes()).hexdigest())
+
+
 class Rejected(unittest.TestCase):
     def assert_refused(self, rows, needle, *extra, **kw):
         code, out, path = build(shortlist(rows, **kw), *extra)
