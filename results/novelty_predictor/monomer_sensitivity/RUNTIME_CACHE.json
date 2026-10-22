@@ -1,0 +1,379 @@
+{
+  "method": "Move only generated binary intermediates; preserve raw hits, queries, manifests and logs",
+  "items": [
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/monomer_sensitivity/run/structure/discovered",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/monomer_sensitivity_runtime_20261022/discovered",
+      "files": [
+        {
+          "path": "discovered",
+          "bytes": 609967,
+          "sha256": "e8c09a74cc0ee7cc837e53d3d4be73cd0e3c85cb68e96e58769621d01dc526b4"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/monomer_sensitivity/run/structure/discovered.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/monomer_sensitivity_runtime_20261022/discovered.dbtype",
+      "files": [
+        {
+          "path": "discovered.dbtype",
+          "bytes": 4,
+          "sha256": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/monomer_sensitivity/run/structure/discovered.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/monomer_sensitivity_runtime_20261022/discovered.index",
+      "files": [
+        {
+          "path": "discovered.index",
+          "bytes": 72,
+          "sha256": "c5fda0917144d2e80f99841e5fd3ab0b85c416497a5c6edccdca01bc9a79be99"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/monomer_sensitivity/run/structure/discovered_mode0.0",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/monomer_sensitivity_runtime_20261022/discovered_mode0.0",
+      "files": [
+        {
+          "path": "discovered_mode0.0",
+          "bytes": 64278,
+          "sha256": "9deccdf00c44a55d5aee525d5e01fb2cca66ca1782a508c45a7d85c2fa4bbf25"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/monomer_sensitivity/run/structure/discovered_mode0.1",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/monomer_sensitivity_runtime_20261022/discovered_mode0.1",
+      "files": [
+        {
+          "path": "discovered_mode0.1",
+          "bytes": 30908,
+          "sha256": "3890461fff22b63ab87cd189dfed930f8b240d58f378f6a2aad60763ae288ecd"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/monomer_sensitivity/run/structure/discovered_mode0.2",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/monomer_sensitivity_runtime_20261022/discovered_mode0.2",
+      "files": [
+        {
+          "path": "discovered_mode0.2",
+          "bytes": 60864,
+          "sha256": "396cd8d947fd9caf6c07bb56c76ed6b1a7630f161e7a970175976a50931aa256"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/monomer_sensitivity/run/structure/discovered_mode0.3",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/monomer_sensitivity_runtime_20261022/discovered_mode0.3",
+      "files": [
+        {
+          "path": "discovered_mode0.3",
+          "bytes": 146134,
+          "sha256": "c6f22902c221e7390bd9a607048c9d334be0c4b51e4ca4be8f7608dce17e8d3b"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/monomer_sensitivity/run/structure/discovered_mode0.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/monomer_sensitivity_runtime_20261022/discovered_mode0.dbtype",
+      "files": [
+        {
+          "path": "discovered_mode0.dbtype",
+          "bytes": 4,
+          "sha256": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/monomer_sensitivity/run/structure/discovered_mode0.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/monomer_sensitivity_runtime_20261022/discovered_mode0.index",
+      "files": [
+        {
+          "path": "discovered_mode0.index",
+          "bytes": 69,
+          "sha256": "3118957cf894c1ee9661560a092704c09b5e98947d8744b2cbe03733192f8d02"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/monomer_sensitivity/run/structure/discovered_mode1.0",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/monomer_sensitivity_runtime_20261022/discovered_mode1.0",
+      "files": [
+        {
+          "path": "discovered_mode1.0",
+          "bytes": 64981,
+          "sha256": "47c436e0384e5e555187ca7f5a25fca194f971b11a97eb277e5166e5052b94e8"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/monomer_sensitivity/run/structure/discovered_mode1.1",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/monomer_sensitivity_runtime_20261022/discovered_mode1.1",
+      "files": [
+        {
+          "path": "discovered_mode1.1",
+          "bytes": 31441,
+          "sha256": "f7764cb8091863b9fcb8e4075be11a3b1614f8096a9d08d3606234b221614d9f"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/monomer_sensitivity/run/structure/discovered_mode1.2",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/monomer_sensitivity_runtime_20261022/discovered_mode1.2",
+      "files": [
+        {
+          "path": "discovered_mode1.2",
+          "bytes": 62859,
+          "sha256": "d48a3be62d483accb45999c8b2a27d963b503fdedb795a10cf6d54a29f01e211"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/monomer_sensitivity/run/structure/discovered_mode1.3",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/monomer_sensitivity_runtime_20261022/discovered_mode1.3",
+      "files": [
+        {
+          "path": "discovered_mode1.3",
+          "bytes": 148507,
+          "sha256": "0872b40741c6a5db080bae1af523aaa58790524c9b8d8d9e9bcd28b4c8bea64a"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/monomer_sensitivity/run/structure/discovered_mode1.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/monomer_sensitivity_runtime_20261022/discovered_mode1.dbtype",
+      "files": [
+        {
+          "path": "discovered_mode1.dbtype",
+          "bytes": 4,
+          "sha256": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/monomer_sensitivity/run/structure/discovered_mode1.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/monomer_sensitivity_runtime_20261022/discovered_mode1.index",
+      "files": [
+        {
+          "path": "discovered_mode1.index",
+          "bytes": 69,
+          "sha256": "5520969ced1179585d23ed423601f62c75fe2e4a384b75c722e671a3435ba2cb"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/monomer_sensitivity/run/structure/querydb",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/monomer_sensitivity_runtime_20261022/querydb",
+      "files": [
+        {
+          "path": "querydb",
+          "bytes": 517,
+          "sha256": "1f0f80c73d7889a9b090e905c780e7706632a8750c991264f58ca94d3645d854"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/monomer_sensitivity/run/structure/querydb.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/monomer_sensitivity_runtime_20261022/querydb.dbtype",
+      "files": [
+        {
+          "path": "querydb.dbtype",
+          "bytes": 4,
+          "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/monomer_sensitivity/run/structure/querydb.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/monomer_sensitivity_runtime_20261022/querydb.index",
+      "files": [
+        {
+          "path": "querydb.index",
+          "bytes": 43,
+          "sha256": "78eeaed6e424efe294a7dd58c82be1dc1033ae247996a2f1ddd3990b989e7218"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/monomer_sensitivity/run/structure/querydb.lookup",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/monomer_sensitivity_runtime_20261022/querydb.lookup",
+      "files": [
+        {
+          "path": "querydb.lookup",
+          "bytes": 80,
+          "sha256": "4a65f3460a2e6ba6e2b4316c540bb70e2534ec4bf8da6398a3b91f3f8b6c60c0"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/monomer_sensitivity/run/structure/querydb.source",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/monomer_sensitivity_runtime_20261022/querydb.source",
+      "files": [
+        {
+          "path": "querydb.source",
+          "bytes": 70,
+          "sha256": "d3408387ff74f541a134fae575605d205d2bf37121b4676269c6f4adfb3ac0b4"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/monomer_sensitivity/run/structure/querydb_ca",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/monomer_sensitivity_runtime_20261022/querydb_ca",
+      "files": [
+        {
+          "path": "querydb_ca",
+          "bytes": 3082,
+          "sha256": "14971291526a9c207ad0236a7e86f5d23c979ec61acda8277785cbb1cae0e9c4"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/monomer_sensitivity/run/structure/querydb_ca.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/monomer_sensitivity_runtime_20261022/querydb_ca.dbtype",
+      "files": [
+        {
+          "path": "querydb_ca.dbtype",
+          "bytes": 4,
+          "sha256": "8fc6cb4a9816d75621652de783118eee13112cda196e61d1bde0460f29b26e3e"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/monomer_sensitivity/run/structure/querydb_ca.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/monomer_sensitivity_runtime_20261022/querydb_ca.index",
+      "files": [
+        {
+          "path": "querydb_ca.index",
+          "bytes": 51,
+          "sha256": "6ba7a8a0e2537140dceb6dbde4d916746269f97f72d8650917987695022b5ed1"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/monomer_sensitivity/run/structure/querydb_h",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/monomer_sensitivity_runtime_20261022/querydb_h",
+      "files": [
+        {
+          "path": "querydb_h",
+          "bytes": 65,
+          "sha256": "31da42095df8d9de18b542c25632eb1776a5d448100e8a61f5794f977bb702d8"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/monomer_sensitivity/run/structure/querydb_h.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/monomer_sensitivity_runtime_20261022/querydb_h.dbtype",
+      "files": [
+        {
+          "path": "querydb_h.dbtype",
+          "bytes": 4,
+          "sha256": "42f4aeb81c1ef81f771f3de8abca9dcf66901c575530e7672e4b1146474ae650"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/monomer_sensitivity/run/structure/querydb_h.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/monomer_sensitivity_runtime_20261022/querydb_h.index",
+      "files": [
+        {
+          "path": "querydb_h.index",
+          "bytes": 39,
+          "sha256": "0137064ad55329f12986d90e0aab794d6271e70f5539f51e8f777e353d94c8c6"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/monomer_sensitivity/run/structure/querydb_ss",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/monomer_sensitivity_runtime_20261022/querydb_ss",
+      "files": [
+        {
+          "path": "querydb_ss",
+          "bytes": 517,
+          "sha256": "bebe49ef05a344d941ad1ff4f41f8d39a0ee1b6143e69d9436467fd7021ec6cf"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/monomer_sensitivity/run/structure/querydb_ss.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/monomer_sensitivity_runtime_20261022/querydb_ss.dbtype",
+      "files": [
+        {
+          "path": "querydb_ss.dbtype",
+          "bytes": 4,
+          "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/monomer_sensitivity/run/structure/querydb_ss.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/monomer_sensitivity_runtime_20261022/querydb_ss.index",
+      "files": [
+        {
+          "path": "querydb_ss.index",
+          "bytes": 43,
+          "sha256": "78eeaed6e424efe294a7dd58c82be1dc1033ae247996a2f1ddd3990b989e7218"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/monomer_sensitivity/run/structure/tmaligned",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/monomer_sensitivity_runtime_20261022/tmaligned",
+      "files": [
+        {
+          "path": "tmaligned",
+          "bytes": 822184,
+          "sha256": "c77bfc3302a31fff14f3518b5bfa06c52de34156f9578fa1c9ae922dddaa426e"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/monomer_sensitivity/run/structure/tmaligned.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/monomer_sensitivity_runtime_20261022/tmaligned.dbtype",
+      "files": [
+        {
+          "path": "tmaligned.dbtype",
+          "bytes": 4,
+          "sha256": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/monomer_sensitivity/run/structure/tmaligned.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/monomer_sensitivity_runtime_20261022/tmaligned.index",
+      "files": [
+        {
+          "path": "tmaligned.index",
+          "bytes": 72,
+          "sha256": "dd7c576e76b189aa7676718b9e45fe08b0e763d4081616ddc478f72db927c52a"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/monomer_sensitivity/run/structure/tmp_mode0",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/monomer_sensitivity_runtime_20261022/tmp_mode0",
+      "files": [
+        {
+          "path": "tmp_mode0/6692332609711919344/structuresearch.sh",
+          "bytes": 6018,
+          "sha256": "a95a4c37412692a02b7c53cc39d82a93ab05d6d37e84007b2f1492eceba02d88"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/monomer_sensitivity/run/structure/tmp_mode1",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/monomer_sensitivity_runtime_20261022/tmp_mode1",
+      "files": [
+        {
+          "path": "tmp_mode1/5744120248044904593/structuresearch.sh",
+          "bytes": 6018,
+          "sha256": "a95a4c37412692a02b7c53cc39d82a93ab05d6d37e84007b2f1492eceba02d88"
+        }
+      ]
+    }
+  ]
+}

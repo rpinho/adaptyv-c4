@@ -1,5 +1,15 @@
 # Method: proton-coupled two-state design, with the numbers checked
 
+## Saved monomer coordinate sensitivity — CPU comparison (Oct22)
+
+results/novelty_predictor/monomer_sensitivity/RESULTS.md preregisters and measures
+an unchanged-predictor comparison using every exact saved-monomer sequence match.
+51 CIFs examined;4 matched variants of one78aa parent. All4 remain local3 versus
+their complex coordinates,0 changed levels, paired CA RMSD.256–.480A; native
+control remains local1/qTM.9928. This is sample stability only, not organizer
+monomer-policy validation. Full-pool exact-score analysis remains authoritative;
+no favorable conformer selection, new prediction or design promotion occurred.
+
 ## Current CPU novelty checkpoint — exact score-export defect corrected (Oct22)
 
 Generation, RFD4 files, Modal apps and GPU campaigns belong to

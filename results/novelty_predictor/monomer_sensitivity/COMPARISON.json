@@ -1,0 +1,329 @@
+{
+  "status": "completed_cpu_only",
+  "pairs": [
+    {
+      "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate1",
+      "length": 78,
+      "sequence_sha256": "19c467779adb9f680b0ae6b3617ac58b67b7f8ae3f8c8a19369947fb91a0ae6d",
+      "complex_source": {
+        "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate1",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_refolds/Complexes/c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate1.cif",
+        "sha256": "21ce741f197e4859bd4c3c3db30c05a998dc575f8773d4c16e8b2c642f81c68e",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 78,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "monomer_source": {
+        "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate1",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_refolds/BinderMonomer/c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate1_monomer.cif",
+        "sha256": "bbeb5af5e5089f893b0ce84f90119cf26649f3f5f175611f8ec9ee1dbfede62d",
+        "chain": "A",
+        "domains": [
+          {
+            "start": 1,
+            "end": 78,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "paired_ca_rmsd_angstrom": 0.4088012344440417,
+      "complex_best_query_tm": 0.6967,
+      "monomer_best_query_tm": 0.7017,
+      "complex_best_target": "5da9-assembly1_A",
+      "monomer_best_target": "5lbq-assembly1_A",
+      "complex_local_level": 3,
+      "monomer_local_level": 3,
+      "level_changed": false,
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate2",
+      "length": 78,
+      "sequence_sha256": "c456b40f81d0a4bc3f4fc5a05f2d4b051b865c9c11db7615ffe21320c0aeccc6",
+      "complex_source": {
+        "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate2",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate2.cif",
+        "sha256": "3282a3b1ea117397935b36ac3052cb5682cc8f0b66763566196e1e4c3558d6fc",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 78,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "monomer_source": {
+        "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate2",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_refolds/BinderMonomer/c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate2_monomer.cif",
+        "sha256": "7140c7806ed352f0bdc11bc0b6a4caf27d49962ec843b0aff079b5250042b8d9",
+        "chain": "A",
+        "domains": [
+          {
+            "start": 1,
+            "end": 78,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "paired_ca_rmsd_angstrom": 0.48022942728235524,
+      "complex_best_query_tm": 0.7537,
+      "monomer_best_query_tm": 0.6961,
+      "complex_best_target": "6nd4-assembly1_a",
+      "monomer_best_target": "4czz-assembly1_A",
+      "complex_local_level": 3,
+      "monomer_local_level": 3,
+      "level_changed": false,
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate3",
+      "length": 78,
+      "sequence_sha256": "2fafc962f7c6976ddb0fc18e0911bad2916ad622a329a2bafc9877814413c98b",
+      "complex_source": {
+        "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate3",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate3.cif",
+        "sha256": "954c236f45e9ae984f643206674b1bb7fad33e95b964a154368ff3f645003c01",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 78,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "monomer_source": {
+        "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate3",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_refolds/BinderMonomer/c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate3_monomer.cif",
+        "sha256": "dbead8f6b25ad602d78e08669df3c15c7dbe1f4957f6ec93e6164b68bece7205",
+        "chain": "A",
+        "domains": [
+          {
+            "start": 1,
+            "end": 78,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "paired_ca_rmsd_angstrom": 0.25555871426478005,
+      "complex_best_query_tm": 0.678,
+      "monomer_best_query_tm": 0.6691,
+      "complex_best_target": "2ic6-assembly2_B",
+      "monomer_best_target": "4waf-assembly1_B",
+      "complex_local_level": 3,
+      "monomer_local_level": 3,
+      "level_changed": false,
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate5",
+      "length": 78,
+      "sequence_sha256": "e9b94fa8c509cd65afc1bbe2f9cdfb4caa86d47c6103e042572bf00be66478a9",
+      "complex_source": {
+        "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate5",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate5.cif",
+        "sha256": "c3c2e1f413da8bb836cff45c6ee1526ecde9563c491699989c244ee09dbb440c",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 78,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "monomer_source": {
+        "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate5",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_refolds/BinderMonomer/c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate5_monomer.cif",
+        "sha256": "4ce4a057715d2ca575febee1d959d48275b9426e0e09c15c05e8bdbd7ffa75ac",
+        "chain": "A",
+        "domains": [
+          {
+            "start": 1,
+            "end": 78,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "paired_ca_rmsd_angstrom": 0.3447584286888119,
+      "complex_best_query_tm": 0.7071,
+      "monomer_best_query_tm": 0.71,
+      "complex_best_target": "2ic6-assembly2_B",
+      "monomer_best_target": "2ic6-assembly2_B",
+      "complex_local_level": 3,
+      "monomer_local_level": 3,
+      "level_changed": false,
+      "organizer_level_established": false
+    }
+  ],
+  "changed_level_count": 0,
+  "paired_design_count": 4,
+  "positive_control": {
+    "name": "KNOWN_TFR1_POSITIVE_CONTROL",
+    "local_level": 1,
+    "query_tm": 0.9928
+  },
+  "files_examined": 51,
+  "parse_error_count": 0,
+  "unmatched_design_count": 69,
+  "full_pool_missing_complex_coordinates_recovered": 0,
+  "structural_search": {
+    "commands": [
+      [
+        "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+        "createdb",
+        "results/novelty_predictor/monomer_sensitivity/run/structure/queries",
+        "results/novelty_predictor/monomer_sensitivity/run/structure/querydb",
+        "--threads",
+        "4"
+      ],
+      [
+        "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+        "search",
+        "results/novelty_predictor/monomer_sensitivity/run/structure/querydb",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+        "results/novelty_predictor/monomer_sensitivity/run/structure/discovered_mode0",
+        "results/novelty_predictor/monomer_sensitivity/run/structure/tmp_mode0",
+        "--threads",
+        "4",
+        "--gpu",
+        "0",
+        "--split-memory-limit",
+        "4G",
+        "-s",
+        "9.5",
+        "-e",
+        "10.0",
+        "--max-seqs",
+        "50000",
+        "--prefilter-mode",
+        "0",
+        "-a",
+        "1"
+      ],
+      [
+        "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+        "search",
+        "results/novelty_predictor/monomer_sensitivity/run/structure/querydb",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+        "results/novelty_predictor/monomer_sensitivity/run/structure/discovered_mode1",
+        "results/novelty_predictor/monomer_sensitivity/run/structure/tmp_mode1",
+        "--threads",
+        "4",
+        "--gpu",
+        "0",
+        "--split-memory-limit",
+        "4G",
+        "-s",
+        "9.5",
+        "-e",
+        "10.0",
+        "--max-seqs",
+        "50000",
+        "--prefilter-mode",
+        "1",
+        "-a",
+        "1"
+      ],
+      [
+        "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+        "mergedbs",
+        "results/novelty_predictor/monomer_sensitivity/run/structure/querydb",
+        "results/novelty_predictor/monomer_sensitivity/run/structure/discovered",
+        "results/novelty_predictor/monomer_sensitivity/run/structure/discovered_mode0",
+        "results/novelty_predictor/monomer_sensitivity/run/structure/discovered_mode1"
+      ],
+      [
+        "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+        "tmalign",
+        "results/novelty_predictor/monomer_sensitivity/run/structure/querydb",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+        "results/novelty_predictor/monomer_sensitivity/run/structure/discovered",
+        "results/novelty_predictor/monomer_sensitivity/run/structure/tmaligned",
+        "--threads",
+        "4",
+        "--tmalign-fast",
+        "0",
+        "--tmscore-threshold",
+        "0",
+        "--tmscore-threshold-mode",
+        "1",
+        "--tmalign-hit-order",
+        "1",
+        "-a",
+        "1"
+      ],
+      [
+        "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+        "convertalis",
+        "results/novelty_predictor/monomer_sensitivity/run/structure/querydb",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+        "results/novelty_predictor/monomer_sensitivity/run/structure/tmaligned",
+        "results/novelty_predictor/monomer_sensitivity/run/structure/hits.tsv",
+        "--threads",
+        "4",
+        "--exact-tmscore",
+        "1",
+        "--format-output",
+        "query,target,qlen,tlen,qstart,qend,tstart,tend,alnlen,qtmscore,ttmscore,qaln,taln"
+      ]
+    ],
+    "elapsed_seconds": 76.08556137500001,
+    "query_domains": 5,
+    "hit_rows": 4585,
+    "raw_alignment_rows": 8437,
+    "repeated_targets": "Deduplicated per query, retaining maximum query-normalized TM",
+    "exact_tmscore_export": 1,
+    "raw_hits_sha256": "80f51fb576da671bb291d2f0b9fc71a3d3e832ae37f2a9ac3526165993420237",
+    "alignment": "Foldseek 3Di+AA search -> Foldseek built-in TM-align, fast mode OFF; scores normalized by complete query domain length",
+    "hit_cap_per_discovery_mode": 50000,
+    "prefilter_modes": [
+      0,
+      1
+    ],
+    "evalue": 10.0
+  },
+  "input_fingerprints": {
+    "preregistration": "07e969b486abc2f053b11a27a4db75c963e09ed9275793db90805b911410a03a",
+    "inventory": "c78ffb187f0b75c6bbf3496d4185397a8c4c515111b6eac076a56a587503a10e",
+    "structures": "940485c4297c2ab2cf797bbd5a86772272ec8ef1b54c678471483a8879e33cf6",
+    "baseline": "815d12f4c363d499aacb48a2810fd870c4c779c58d6d9d2e4f34523c18fb5cbc",
+    "run": "465663ebf8abe67f0fed6ca6da6638ddc312645eff5c499c8ad709dc707abc73"
+  },
+  "checks": {
+    "sequence_evidence_unchanged": true,
+    "paired_full_sequences_equal": true,
+    "unchanged_database_and_search_settings": true,
+    "unchanged_positive_control": true,
+    "predictor_unchanged": true,
+    "coordinate_fingerprints_verified": true,
+    "all_inputs_accounted": true
+  },
+  "limitations": [
+    "Four related retired designs from one parent; not a representative sample",
+    "Saved monomer prediction is not organizer ESMFold/ESMFold2-Fast prediction",
+    "Whole-chain domain assumption, historical structural snapshot, finite discovery, missing patents",
+    "Residual standalone TM-align numeric disagreement is not resolved by this experiment",
+    "No official novelty level or binding/physical qualification established"
+  ],
+  "spend": {
+    "runpod_recorded_usd": 56.5899880444631,
+    "our_modal_estimate_usd": 10.718947158590089,
+    "combined_recorded_usd": 67.30893520305318,
+    "new_gpu_or_cloud_cpu_usd": 0.0
+  }
+}

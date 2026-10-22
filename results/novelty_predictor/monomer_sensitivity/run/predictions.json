@@ -1,0 +1,4339 @@
+{
+  "status": "cpu_sequence_and_structure_screen_complete_with_scope_caveats",
+  "rule_source": "https://www.adaptyvbio.com/blog/novelty",
+  "generated_at": "2026-10-22T23:21:46.440083+00:00",
+  "organizer_score": false,
+  "general_scale_only": true,
+  "antibody_detection": "not_implemented",
+  "input_csv_sha256": "652d6e8257b777dccb0de81eb4a789fd030c2b249006d288fbbc0062ecbafe2c",
+  "database_manifest_sha256": "69f3d30674494f403b249129e0fa576af29cf02898c1dfee163508a11fbe86ab",
+  "predictor_sha256": "97daa68918b7a30935b006497c8235f1ffad79ce834d27c71ee13d47a0cdc689",
+  "mmseqs_version": "18-8cc5c",
+  "constants": {
+    "SEQUENCE_MODERATE_THRESHOLD": 0.3,
+    "SEQUENCE_HIGH_THRESHOLD": 0.7,
+    "SEQUENCE_THRESHOLD_EQUALITY_COUNTS_AS_HIGHER": false,
+    "STRUCTURE_MODERATE_TM": 0.5,
+    "STRUCTURE_HIGH_TM": 0.8,
+    "STRUCTURE_TM_EQUALITY_COUNTS_AS_MATCH": true,
+    "STRUCTURE_MODERATE_COVERAGE": 0.7,
+    "STRUCTURE_MODERATE_COVERAGE_INCLUSIVE": false,
+    "STRUCTURE_HIGH_COVERAGE": 0.7,
+    "STRUCTURE_HIGH_COVERAGE_INCLUSIVE": true,
+    "MMSEQS_EVALUE": 0.001,
+    "MMSEQS_SENSITIVITY": 7.5,
+    "MMSEQS_MAX_SEQS": 10000,
+    "MMSEQS_MIN_QUERY_COVERAGE": 0.0,
+    "MMSEQS_MEMORY_LIMIT": "4G"
+  },
+  "database_searches": [
+    {
+      "id": "swissprot",
+      "status": "available",
+      "fasta_path": "/Users/ricardo/.cache/adaptyv-c4/novelty/swissprot.fasta",
+      "fasta_sha256": "169a9f4573466ed6aa5ea0bb762b4e858ee387c3601c3f87483a142cd6bc58ae",
+      "scope_complete": true,
+      "scope": "Public downloaded snapshot only; organizer snapshot/version unknown",
+      "normalization": {
+        "emitted": 487476,
+        "duplicates_removed": 88272,
+        "placeholder_fields": 0,
+        "nonprotein_records": 0,
+        "invalid_sequences": 0,
+        "uppercased": 0
+      },
+      "sources": [
+        {
+          "database": "swissprot",
+          "url": "https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.fasta.gz",
+          "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/swissprot.fasta.gz",
+          "http_headers": {
+            "Date": "Thu, 22 Oct 2026 17:15:13 GMT",
+            "Server": "Apache/2.4.68 (Ubuntu) OpenSSL/3.0.13",
+            "Last-Modified": "Thu, 03 Sep 2026 18:00:00 GMT",
+            "ETag": "\"5974c5a-65a97eba0a800\"",
+            "Accept-Ranges": "bytes",
+            "Content-Length": "93801562",
+            "Strict-Transport-Security": "max-age=31536000",
+            "Access-Control-Allow-Origin": "*",
+            "Connection": "close",
+            "Content-Type": "application/x-gzip"
+          },
+          "status": "downloaded",
+          "bytes": 93801562,
+          "sha256": "a9c3496aa727e61d25d9e1291c9ba28d2c2ad19c0e26569dc083d53ec4169536"
+        }
+      ],
+      "command": [
+        "/opt/homebrew/bin/mmseqs",
+        "easy-search",
+        "results/novelty_predictor/retired_pool_run/queries.fasta",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty/swissprot.fasta",
+        "results/novelty_predictor/retired_pool_run/swissprot.hits.tsv",
+        "results/novelty_predictor/retired_pool_run/tmp_swissprot",
+        "--threads",
+        "4",
+        "--gpu",
+        "0",
+        "--alignment-mode",
+        "3",
+        "-a",
+        "-s",
+        "7.5",
+        "-e",
+        "0.001",
+        "--max-seqs",
+        "10000",
+        "--min-seq-id",
+        "0",
+        "-c",
+        "0.0",
+        "--split-memory-limit",
+        "4G",
+        "--remove-tmp-files",
+        "1",
+        "--format-output",
+        "query,target,fident,nident,alnlen,qlen,tlen,qstart,qend,tstart,tend,evalue,bits,qcov,tcov"
+      ],
+      "search_status": "completed",
+      "elapsed_seconds": 11.421919749999999,
+      "hit_rows": 32,
+      "raw_hits_sha256": "f1b229fc0ff4ff76090d1e296546ebc9cdc26d5c3325d4e81ce3bb42e46db761"
+    },
+    {
+      "id": "pdb",
+      "status": "available",
+      "fasta_path": "/Users/ricardo/.cache/adaptyv-c4/novelty/pdb.fasta",
+      "fasta_sha256": "d35760cd082a7d9b65b661e0d5e5306501d20987a98caf18d30f39a3e3c57a42",
+      "scope_complete": true,
+      "scope": "Public downloaded snapshot only; organizer snapshot/version unknown",
+      "normalization": {
+        "emitted": 188017,
+        "duplicates_removed": 921675,
+        "placeholder_fields": 0,
+        "nonprotein_records": 66135,
+        "invalid_sequences": 0,
+        "uppercased": 0
+      },
+      "sources": [
+        {
+          "database": "pdb",
+          "url": "https://files.rcsb.org/pub/pdb/derived_data/pdb_seqres.txt.gz",
+          "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/pdb.fasta.gz",
+          "http_headers": {
+            "Content-Type": "application/gzip",
+            "Content-Length": "67782770",
+            "Connection": "close",
+            "Accept-Ranges": "bytes",
+            "Date": "Thu, 22 Oct 2026 17:15:13 GMT",
+            "Server": "AmazonS3",
+            "Last-Modified": "Sat, 17 Oct 2026 12:00:58 GMT",
+            "ETag": "\"c329c82f87f7ac2ecfc571beffab19aa-9\"",
+            "x-amz-server-side-encryption": "AES256",
+            "X-Cache": "Miss from cloudfront",
+            "Via": "1.1 cc3da0075e7848e02a2908b63df452d2.cloudfront.net (CloudFront)",
+            "X-Amz-Cf-Pop": "TPA52-P1",
+            "X-Amz-Cf-Id": "DNSAG56IL8HX30fhDkXrzfj6dB_N7fKdV4tegO8cMmV4h0gIYdCJDg=="
+          },
+          "status": "downloaded",
+          "bytes": 67782770,
+          "sha256": "c64ee94edf68f37771bf3dfaf71a322d66c92765c18e3c3379376c2c815cd03c"
+        }
+      ],
+      "command": [
+        "/opt/homebrew/bin/mmseqs",
+        "easy-search",
+        "results/novelty_predictor/retired_pool_run/queries.fasta",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty/pdb.fasta",
+        "results/novelty_predictor/retired_pool_run/pdb.hits.tsv",
+        "results/novelty_predictor/retired_pool_run/tmp_pdb",
+        "--threads",
+        "4",
+        "--gpu",
+        "0",
+        "--alignment-mode",
+        "3",
+        "-a",
+        "-s",
+        "7.5",
+        "-e",
+        "0.001",
+        "--max-seqs",
+        "10000",
+        "--min-seq-id",
+        "0",
+        "-c",
+        "0.0",
+        "--split-memory-limit",
+        "4G",
+        "--remove-tmp-files",
+        "1",
+        "--format-output",
+        "query,target,fident,nident,alnlen,qlen,tlen,qstart,qend,tstart,tend,evalue,bits,qcov,tcov"
+      ],
+      "search_status": "completed",
+      "elapsed_seconds": 3.947995166,
+      "hit_rows": 34,
+      "raw_hits_sha256": "ca3a6e5c8b2dc8d4154cb9fa74bd25773f47ab7be7caf278683846ae27fe16d6"
+    },
+    {
+      "id": "therapeutic_antibody",
+      "status": "available",
+      "fasta_path": "/Users/ricardo/.cache/adaptyv-c4/novelty/therapeutic_antibody.fasta",
+      "fasta_sha256": "8d6ac8a8915d18dec31917164f5749834594dd4b005686bcbdc35017f96cfdac",
+      "scope_complete": true,
+      "scope": "Public downloaded snapshot only; organizer snapshot/version unknown",
+      "normalization": {
+        "emitted": 2211,
+        "duplicates_removed": 322,
+        "placeholder_fields": 1999,
+        "nonprotein_records": 0,
+        "invalid_sequences": 0,
+        "uppercased": 0
+      },
+      "sources": [
+        {
+          "database": "therapeutic_antibody",
+          "url": "https://opig.stats.ox.ac.uk/webapps/sabdab-sabpred/static/downloads/TheraSAbDab_SeqStruc_OnlineDownload.csv",
+          "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/therapeutic_antibody.csv",
+          "http_headers": {
+            "Server": "nginx/1.26.3",
+            "Date": "Thu, 22 Oct 2026 17:15:13 GMT",
+            "Content-Type": "text/csv; charset=utf-8",
+            "Content-Length": "636357",
+            "Connection": "close",
+            "Content-Disposition": "inline; filename=TheraSAbDab_SeqStruc_OnlineDownload.csv",
+            "Last-Modified": "Tue, 18 Mar 2025 14:35:02 GMT",
+            "Cache-Control": "no-cache",
+            "ETag": "\"1742308502.0-636357-3209240168\""
+          },
+          "status": "downloaded",
+          "bytes": 636357,
+          "sha256": "cc9402788297ed7b6ab3d676daa21953a6d28ebbd9cc78ec7248b19f74d49d6d"
+        }
+      ],
+      "command": [
+        "/opt/homebrew/bin/mmseqs",
+        "easy-search",
+        "results/novelty_predictor/retired_pool_run/queries.fasta",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty/therapeutic_antibody.fasta",
+        "results/novelty_predictor/retired_pool_run/therapeutic_antibody.hits.tsv",
+        "results/novelty_predictor/retired_pool_run/tmp_therapeutic_antibody",
+        "--threads",
+        "4",
+        "--gpu",
+        "0",
+        "--alignment-mode",
+        "3",
+        "-a",
+        "-s",
+        "7.5",
+        "-e",
+        "0.001",
+        "--max-seqs",
+        "10000",
+        "--min-seq-id",
+        "0",
+        "-c",
+        "0.0",
+        "--split-memory-limit",
+        "4G",
+        "--remove-tmp-files",
+        "1",
+        "--format-output",
+        "query,target,fident,nident,alnlen,qlen,tlen,qstart,qend,tstart,tend,evalue,bits,qcov,tcov"
+      ],
+      "search_status": "completed",
+      "elapsed_seconds": 0.9866219589999989,
+      "hit_rows": 0,
+      "raw_hits_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": "plabdab",
+      "status": "available",
+      "fasta_path": "/Users/ricardo/.cache/adaptyv-c4/novelty/plabdab.fasta",
+      "fasta_sha256": "03c0386ab75e16fe2aae5681b1b6c975f3293d820b87c44ff027c8685ff9dc2c",
+      "scope_complete": true,
+      "scope": "Public downloaded snapshot only; organizer snapshot/version unknown",
+      "normalization": {
+        "emitted": 372631,
+        "duplicates_removed": 655116,
+        "placeholder_fields": 0,
+        "nonprotein_records": 0,
+        "invalid_sequences": 0,
+        "uppercased": 673959
+      },
+      "sources": [
+        {
+          "database": "plabdab_paired",
+          "url": "https://opig.stats.ox.ac.uk/webapps/plabdab/static/downloads/paired_sequences.csv.gz",
+          "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/plabdab_paired.csv.gz",
+          "http_headers": {
+            "Server": "nginx/1.26.3",
+            "Date": "Thu, 22 Oct 2026 17:15:14 GMT",
+            "Content-Type": "text/csv; charset=utf-8",
+            "Content-Length": "11392439",
+            "Connection": "close",
+            "Content-Encoding": "gzip",
+            "Content-Disposition": "inline; filename=paired_sequences.csv.gz",
+            "Last-Modified": "Wed, 28 Aug 2024 23:20:12 GMT",
+            "Cache-Control": "no-cache",
+            "ETag": "\"1724887212.0-11392439-1915491820\""
+          },
+          "status": "downloaded",
+          "bytes": 11392439,
+          "sha256": "10f0fb3b82ddee09209adaff51340380294e3782ba90034af16c9f1d56c458a5"
+        },
+        {
+          "database": "plabdab_unpaired",
+          "url": "https://opig.stats.ox.ac.uk/webapps/plabdab/static/downloads/unpaired_sequences.csv.gz",
+          "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/plabdab_unpaired.csv.gz",
+          "http_headers": {
+            "Server": "nginx/1.26.3",
+            "Date": "Thu, 22 Oct 2026 17:15:19 GMT",
+            "Content-Type": "text/csv; charset=utf-8",
+            "Content-Length": "43960421",
+            "Connection": "close",
+            "Content-Encoding": "gzip",
+            "Content-Disposition": "inline; filename=unpaired_sequences.csv.gz",
+            "Last-Modified": "Wed, 28 Aug 2024 15:06:36 GMT",
+            "Cache-Control": "no-cache",
+            "ETag": "\"1724857596.0-43960421-2708412111\""
+          },
+          "status": "downloaded",
+          "bytes": 43960421,
+          "sha256": "fc1b726b6bad656021d32b7fb120f78e976f2fb1b908e3b3e61f26528715b448"
+        }
+      ],
+      "command": [
+        "/opt/homebrew/bin/mmseqs",
+        "easy-search",
+        "results/novelty_predictor/retired_pool_run/queries.fasta",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty/plabdab.fasta",
+        "results/novelty_predictor/retired_pool_run/plabdab.hits.tsv",
+        "results/novelty_predictor/retired_pool_run/tmp_plabdab",
+        "--threads",
+        "4",
+        "--gpu",
+        "0",
+        "--alignment-mode",
+        "3",
+        "-a",
+        "-s",
+        "7.5",
+        "-e",
+        "0.001",
+        "--max-seqs",
+        "10000",
+        "--min-seq-id",
+        "0",
+        "-c",
+        "0.0",
+        "--split-memory-limit",
+        "4G",
+        "--remove-tmp-files",
+        "1",
+        "--format-output",
+        "query,target,fident,nident,alnlen,qlen,tlen,qstart,qend,tstart,tend,evalue,bits,qcov,tcov"
+      ],
+      "search_status": "completed",
+      "elapsed_seconds": 4.001548667000002,
+      "hit_rows": 0,
+      "raw_hits_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": "patents",
+      "status": "unavailable",
+      "reason": "Organizer names patent sequences without identifying the database/provider/release. No exact corpus obtained; PLAbDab is not substituted.",
+      "search_status": "not_run"
+    }
+  ],
+  "designs": [
+    {
+      "name": "c4_tfr1_groove_human_forced_l59_f06cf87fd111f355_candidate1",
+      "length": 59,
+      "sequence_sha256": "8fe6e19464f8270191c5f200e50c16a7fc3124deff63b51e3d9b8b8641a30066",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate1",
+      "length": 78,
+      "sequence_sha256": "19c467779adb9f680b0ae6b3617ac58b67b7f8ae3f8c8a19369947fb91a0ae6d",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "foldseek_then_tmalign_completed",
+      "predicted_level": 3,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "provisional_local_level_3",
+      "explanation": "Level applies only to searched databases, supplied coordinates and declared domain segmentation. Not an organizer score; see confidence and possible_levels.",
+      "structure_evidence": {
+        "status": "coordinates_verified",
+        "input": {
+          "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate1",
+          "status": "available",
+          "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_refolds/BinderMonomer/c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate1_monomer.cif",
+          "sha256": "bbeb5af5e5089f893b0ce84f90119cf26649f3f5f175611f8ec9ee1dbfede62d",
+          "chain": "A",
+          "domains": [
+            {
+              "start": 1,
+              "end": 78,
+              "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+            }
+          ]
+        },
+        "domains": [
+          {
+            "start": 1,
+            "end": 78,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus",
+            "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate1",
+            "query_id": "q000002d001",
+            "best_hit": {
+              "query": "q000002d001",
+              "target": "5lbq-assembly1_A",
+              "qlen": 78,
+              "tlen": 666,
+              "qstart": 1,
+              "qend": 78,
+              "tstart": 267,
+              "tend": 336,
+              "alnlen": 79,
+              "qtmscore": 0.7017,
+              "ttmscore": 0.09679,
+              "qaln": "NTEELQQLQMLIDGLQRIIDSQPPELREWAKMSPEEW-EKVLAKLPEEIREELRAQWELYHRMREIRDALQEVLQELQQ",
+              "taln": "TQEELKELLNKMVNLKEKIKELHQQYKEA-------SE--VKPPRDITAEFLVKSKHRDLTALCKEYDELAETQGKLEE"
+            },
+            "hit_count": 1052,
+            "top_hits": [
+              {
+                "query": "q000002d001",
+                "target": "5lbq-assembly1_A",
+                "qlen": 78,
+                "tlen": 666,
+                "qstart": 1,
+                "qend": 78,
+                "tstart": 267,
+                "tend": 336,
+                "alnlen": 79,
+                "qtmscore": 0.7017,
+                "ttmscore": 0.09679,
+                "qaln": "NTEELQQLQMLIDGLQRIIDSQPPELREWAKMSPEEW-EKVLAKLPEEIREELRAQWELYHRMREIRDALQEVLQELQQ",
+                "taln": "TQEELKELLNKMVNLKEKIKELHQQYKEA-------SE--VKPPRDITAEFLVKSKHRDLTALCKEYDELAETQGKLEE"
+              },
+              {
+                "query": "q000002d001",
+                "target": "5da9-assembly1_A",
+                "qlen": 78,
+                "tlen": 433,
+                "qstart": 1,
+                "qend": 78,
+                "tstart": 184,
+                "tend": 260,
+                "alnlen": 86,
+                "qtmscore": 0.6983,
+                "ttmscore": 0.1464,
+                "qaln": "NTEELQQLQMLIDGLQRIIDSQPPELREWAKMSPEEW-EKVLAKL-------PEEIREELRAQWELYHRMREIRDALQEVLQELQQ",
+                "taln": "YTKVIENIRLLKKKKGDELKILKEREVQD-------KA--NKERAEKVDELDLKDAKAKYKETHIKVETTKAAIEDLGRGMAAVDH"
+              },
+              {
+                "query": "q000002d001",
+                "target": "4waf-assembly1_B",
+                "qlen": 78,
+                "tlen": 250,
+                "qstart": 1,
+                "qend": 78,
+                "tstart": 125,
+                "tend": 220,
+                "alnlen": 113,
+                "qtmscore": 0.6974,
+                "ttmscore": 0.2315,
+                "qaln": "NTEELQQLQMLIDGLQRIIDSQ-P-PEL---------------------------------REWAKMSPEEWEKVLAKLPEEIREELRAQWELYHRMREIRDALQEVLQELQQ",
+                "taln": "LYEEYTRTSQEIQMKRTAIEAFNETIKIFEEQCQTQERYSKEYIEKFKREGNEKEIQRIMH-----------------NYDKLKSRISEIIDSRRRLEEDLKKQAAEYREIDK"
+              },
+              {
+                "query": "q000002d001",
+                "target": "8v8v-assembly2_D",
+                "qlen": 78,
+                "tlen": 271,
+                "qstart": 1,
+                "qend": 78,
+                "tstart": 144,
+                "tend": 225,
+                "alnlen": 98,
+                "qtmscore": 0.6962,
+                "ttmscore": 0.2147,
+                "qaln": "NTEELQQLQMLIDGLQRIIDS-QP-PEL-----------------REWAKMSPEEWEKVLA-KLPEEIREELRAQWELYHRMREIRDALQEVLQELQQ",
+                "taln": "TSQEIQMKRTAIEAFNETIKIFEEQCQTQERYSKEYIEKFKREGN---------------EK-EIQRIMHNYDKLKSRISEIIDSRRRLEEDLKKQAA"
+              },
+              {
+                "query": "q000002d001",
+                "target": "7dny-assembly1_B",
+                "qlen": 78,
+                "tlen": 575,
+                "qstart": 1,
+                "qend": 78,
+                "tstart": 122,
+                "tend": 306,
+                "alnlen": 185,
+                "qtmscore": 0.694,
+                "ttmscore": 0.1259,
+                "qaln": "NTEELQQLQMLID-GLQRIIDSQ--P-PE-L--------RE-WAKM---------------------------------------------------------------------------------------SPEEWEKVLA-K-----LPEEIREELRAQWELYHRMREIRDALQEVLQELQQ",
+                "taln": "RGTSSVTGLLSYLVFNVIPTLADIIIGIIYFSMFFNAWFGLIVFLCMSLYLTLTIVVTEWRTKFRRAMNTQENATRARAVDSLLNFETVKYYNAESYEVERYREAIIKYQGLEWKSSASLVLLNQTQNLVIGLGLLAGSLLCAYFVTEQKLQVGDYVLFGTYIIQLYMPLNWFGTYYRMIQTNFI"
+              },
+              {
+                "query": "q000002d001",
+                "target": "8dcx-assembly1_B",
+                "qlen": 78,
+                "tlen": 236,
+                "qstart": 1,
+                "qend": 78,
+                "tstart": 127,
+                "tend": 208,
+                "alnlen": 98,
+                "qtmscore": 0.6936,
+                "ttmscore": 0.2449,
+                "qaln": "NTEELQQLQMLIDGLQRIIDSQPPELR--------------------EWAKMSPEEWEKVLAKLPEEIREELRAQWELYHRMREIRDALQEVLQELQQ",
+                "taln": "TSQEIQMKRTAIEAFNETIKIFEEQCQTQERYSKEYIEKFKREGNEK----------------EIQRIMHNYDKLKSRISEIIDSRRRLEEDLKKQAA"
+              },
+              {
+                "query": "q000002d001",
+                "target": "5sxi-assembly1_B",
+                "qlen": 78,
+                "tlen": 209,
+                "qstart": 1,
+                "qend": 78,
+                "tstart": 92,
+                "tend": 173,
+                "alnlen": 99,
+                "qtmscore": 0.6916,
+                "ttmscore": 0.2741,
+                "qaln": "NTEELQQLQMLIDGLQRIIDS-QP-PEL-------------------REWAKMSPEEWEKVLAKLPEEIREELRAQWELYHRMREIRDALQEVLQELQQ",
+                "taln": "TSQEIQMKRTAIEAFNETIKIFEEQCQTQERYSKEYIEKFKREGNEK-----------------EIQRIMHNYDKLKSRISEIIDSRRRLEEDLKKQAA"
+              },
+              {
+                "query": "q000002d001",
+                "target": "3hhm-assembly1_B",
+                "qlen": 78,
+                "tlen": 247,
+                "qstart": 1,
+                "qend": 78,
+                "tstart": 141,
+                "tend": 222,
+                "alnlen": 99,
+                "qtmscore": 0.6908,
+                "ttmscore": 0.2333,
+                "qaln": "NTEELQQLQMLIDGLQRIIDS-QPPEL--------------------REWAKMSPEEWEKVLAKLPEEIREELRAQWELYHRMREIRDALQEVLQELQQ",
+                "taln": "TSQEIQMKRTAIEAFNETIKIFEEQCQTQERYSKEYIEKFKREGNEK-----------------EIQRIMHNYDKLKSRISEIIDSRRRLEEDLKKQAA"
+              },
+              {
+                "query": "q000002d001",
+                "target": "8v8j-assembly1_B",
+                "qlen": 78,
+                "tlen": 239,
+                "qstart": 1,
+                "qend": 78,
+                "tstart": 125,
+                "tend": 206,
+                "alnlen": 97,
+                "qtmscore": 0.6892,
+                "ttmscore": 0.2431,
+                "qaln": "NTEELQQLQMLIDGLQRIIDSQPPELR------------------EWAKMSPEEWEKVLA-KLPEEIREELRAQWELYHRMREIRDALQEVLQELQQ",
+                "taln": "TSQEIQMKRTAIEAFNETIKIFEEQCQTQERYSKEYIEKFKREGN--------------EK-EIQRIMHNYDKLKSRISEIIDSRRRLEEDLKKQAA"
+              },
+              {
+                "query": "q000002d001",
+                "target": "5t8f-assembly1_B",
+                "qlen": 78,
+                "tlen": 169,
+                "qstart": 1,
+                "qend": 78,
+                "tstart": 29,
+                "tend": 138,
+                "alnlen": 126,
+                "qtmscore": 0.6841,
+                "ttmscore": 0.3363,
+                "qaln": "NTEELQQLQMLIDGLQRIIDSQPPELR------------------------------------------------EWAKMSPEEWEKVLAKLPEEIREELRAQWELYHRMREIRDALQEVLQELQQ",
+                "taln": "KSREYDRLYEDYTRTSQEIQMKRTAIEAFNETIKIFEEQCQTQERYSKEYIEKFKREGNETEIQRIMHNYEKLKS----------------RISEIVDSRRRLEEDLKKQAAEYREIDKRMNSIKP"
+              }
+            ]
+          }
+        ]
+      },
+      "structural_similarity": {
+        "category": "moderate",
+        "high_coverage": 0.0,
+        "moderate_coverage": 1.0,
+        "evidence_status": "matches_measured",
+        "domain_segmentation_coverage": 1.0,
+        "tm_boundary_precision_caveat": false
+      },
+      "local_predicted_level": 3,
+      "organizer_level_established": false,
+      "level_status": "provisional_local_prediction",
+      "possible_levels_if_structure_policy_accepted": [
+        1,
+        2,
+        3
+      ],
+      "prediction_confidence": "low: public historical PDB snapshot; provided coordinates; declared domains, no organizer three-predictor consensus; missing patent sequences; no-hit sequence class is provisional"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate2",
+      "length": 78,
+      "sequence_sha256": "c456b40f81d0a4bc3f4fc5a05f2d4b051b865c9c11db7615ffe21320c0aeccc6",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "foldseek_then_tmalign_completed",
+      "predicted_level": 3,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "provisional_local_level_3",
+      "explanation": "Level applies only to searched databases, supplied coordinates and declared domain segmentation. Not an organizer score; see confidence and possible_levels.",
+      "structure_evidence": {
+        "status": "coordinates_verified",
+        "input": {
+          "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate2",
+          "status": "available",
+          "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_refolds/BinderMonomer/c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate2_monomer.cif",
+          "sha256": "7140c7806ed352f0bdc11bc0b6a4caf27d49962ec843b0aff079b5250042b8d9",
+          "chain": "A",
+          "domains": [
+            {
+              "start": 1,
+              "end": 78,
+              "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+            }
+          ]
+        },
+        "domains": [
+          {
+            "start": 1,
+            "end": 78,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus",
+            "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate2",
+            "query_id": "q000003d001",
+            "best_hit": {
+              "query": "q000003d001",
+              "target": "4czz-assembly1_A",
+              "qlen": 78,
+              "tlen": 666,
+              "qstart": 1,
+              "qend": 78,
+              "tstart": 267,
+              "tend": 336,
+              "alnlen": 79,
+              "qtmscore": 0.6961,
+              "ttmscore": 0.09663,
+              "qaln": "NTEELQQLQMLIDGLDRIINSQPEELRKWA-ELSPEEFLKVLATKPEEIREELLETWQLYHRMREIRDALQEVLQELQQ",
+              "taln": "TQEELKELLNKMVNLKEKIKELHQQYKEASE---------VKPPRDITAEFLVKSKHRDLTALCKEYDELAETQGKLEE"
+            },
+            "hit_count": 417,
+            "top_hits": [
+              {
+                "query": "q000003d001",
+                "target": "4czz-assembly1_A",
+                "qlen": 78,
+                "tlen": 666,
+                "qstart": 1,
+                "qend": 78,
+                "tstart": 267,
+                "tend": 336,
+                "alnlen": 79,
+                "qtmscore": 0.6961,
+                "ttmscore": 0.09663,
+                "qaln": "NTEELQQLQMLIDGLDRIINSQPEELRKWA-ELSPEEFLKVLATKPEEIREELLETWQLYHRMREIRDALQEVLQELQQ",
+                "taln": "TQEELKELLNKMVNLKEKIKELHQQYKEASE---------VKPPRDITAEFLVKSKHRDLTALCKEYDELAETQGKLEE"
+              },
+              {
+                "query": "q000003d001",
+                "target": "4uxn-assembly1_A",
+                "qlen": 78,
+                "tlen": 666,
+                "qstart": 1,
+                "qend": 78,
+                "tstart": 267,
+                "tend": 336,
+                "alnlen": 79,
+                "qtmscore": 0.6944,
+                "ttmscore": 0.0966,
+                "qaln": "NTEELQQLQMLIDGLDRIINSQPEELRKWA-ELSPEEFLKVLATKPEEIREELLETWQLYHRMREIRDALQEVLQELQQ",
+                "taln": "TQEELKELLNKMVNLKEKIKELHQQYKEASE---------VKPPRDITAEFLVKSKHRDLTALCKEYDELAETQGKLEE"
+              },
+              {
+                "query": "q000003d001",
+                "target": "2ic6-assembly2_B",
+                "qlen": 78,
+                "tlen": 76,
+                "qstart": 1,
+                "qend": 78,
+                "tstart": 1,
+                "tend": 71,
+                "alnlen": 81,
+                "qtmscore": 0.6941,
+                "ttmscore": 0.7097,
+                "qaln": "NTEELQQLQMLIDGLDRIINSQPEELRKWAELSPEEF--LKVL-ATKPEEIREELLETWQLYHRMREIRDALQEVLQELQQ",
+                "taln": "HMSTLKEVQDNITLHEQRLVTTRQKLKDA-------ERA--VEL-DPDDVNKSTLQSRRAAVSALETKLGELKRELADLIA"
+              },
+              {
+                "query": "q000003d001",
+                "target": "5l3g-assembly1_A",
+                "qlen": 78,
+                "tlen": 666,
+                "qstart": 1,
+                "qend": 78,
+                "tstart": 267,
+                "tend": 336,
+                "alnlen": 79,
+                "qtmscore": 0.6932,
+                "ttmscore": 0.09649,
+                "qaln": "NTEELQQLQMLIDGLDRIINSQPEELRKWAELSPEEF-LKVLATKPEEIREELLETWQLYHRMREIRDALQEVLQELQQ",
+                "taln": "TQEELKELLNKMVNLKEKIKELHQQYKEA-------SE--VKPPRDITAEFLVKSKHRDLTALCKEYDELAETQGKLEE"
+              },
+              {
+                "query": "q000003d001",
+                "target": "5l3f-assembly1_A",
+                "qlen": 78,
+                "tlen": 666,
+                "qstart": 1,
+                "qend": 78,
+                "tstart": 267,
+                "tend": 336,
+                "alnlen": 79,
+                "qtmscore": 0.6923,
+                "ttmscore": 0.09642,
+                "qaln": "NTEELQQLQMLIDGLDRIINSQPEELRKWA-ELSPEEFLKVLATKPEEIREELLETWQLYHRMREIRDALQEVLQELQQ",
+                "taln": "TQEELKELLNKMVNLKEKIKELHQQYKEASE---------VKPPRDITAEFLVKSKHRDLTALCKEYDELAETQGKLEE"
+              },
+              {
+                "query": "q000003d001",
+                "target": "4xbf-assembly1_A",
+                "qlen": 78,
+                "tlen": 666,
+                "qstart": 1,
+                "qend": 78,
+                "tstart": 267,
+                "tend": 336,
+                "alnlen": 79,
+                "qtmscore": 0.6918,
+                "ttmscore": 0.09646,
+                "qaln": "NTEELQQLQMLIDGLDRIINSQPEELRKWA-ELSPEEFLKVLATKPEEIREELLETWQLYHRMREIRDALQEVLQELQQ",
+                "taln": "TQEELKELLNKMVNLKEKIKELHQQYKEASE---------VKPPRDITAEFLVKSKHRDLTALCKEYDELAETQGKLEE"
+              },
+              {
+                "query": "q000003d001",
+                "target": "4xbf-assembly1_A-2",
+                "qlen": 78,
+                "tlen": 666,
+                "qstart": 1,
+                "qend": 78,
+                "tstart": 267,
+                "tend": 336,
+                "alnlen": 79,
+                "qtmscore": 0.6918,
+                "ttmscore": 0.09646,
+                "qaln": "NTEELQQLQMLIDGLDRIINSQPEELRKWA-ELSPEEFLKVLATKPEEIREELLETWQLYHRMREIRDALQEVLQELQQ",
+                "taln": "TQEELKELLNKMVNLKEKIKELHQQYKEASE---------VKPPRDITAEFLVKSKHRDLTALCKEYDELAETQGKLEE"
+              },
+              {
+                "query": "q000003d001",
+                "target": "4xbf-assembly1_A-3",
+                "qlen": 78,
+                "tlen": 666,
+                "qstart": 1,
+                "qend": 78,
+                "tstart": 267,
+                "tend": 336,
+                "alnlen": 79,
+                "qtmscore": 0.6918,
+                "ttmscore": 0.09646,
+                "qaln": "NTEELQQLQMLIDGLDRIINSQPEELRKWA-ELSPEEFLKVLATKPEEIREELLETWQLYHRMREIRDALQEVLQELQQ",
+                "taln": "TQEELKELLNKMVNLKEKIKELHQQYKEASE---------VKPPRDITAEFLVKSKHRDLTALCKEYDELAETQGKLEE"
+              },
+              {
+                "query": "q000003d001",
+                "target": "4xbf-assembly1_A-4",
+                "qlen": 78,
+                "tlen": 666,
+                "qstart": 1,
+                "qend": 78,
+                "tstart": 267,
+                "tend": 336,
+                "alnlen": 79,
+                "qtmscore": 0.6918,
+                "ttmscore": 0.09646,
+                "qaln": "NTEELQQLQMLIDGLDRIINSQPEELRKWA-ELSPEEFLKVLATKPEEIREELLETWQLYHRMREIRDALQEVLQELQQ",
+                "taln": "TQEELKELLNKMVNLKEKIKELHQQYKEASE---------VKPPRDITAEFLVKSKHRDLTALCKEYDELAETQGKLEE"
+              },
+              {
+                "query": "q000003d001",
+                "target": "8fj7-assembly1_A",
+                "qlen": 78,
+                "tlen": 666,
+                "qstart": 1,
+                "qend": 78,
+                "tstart": 267,
+                "tend": 336,
+                "alnlen": 79,
+                "qtmscore": 0.6917,
+                "ttmscore": 0.09643,
+                "qaln": "NTEELQQLQMLIDGLDRIINSQPEELRKWA-ELSPEEFLKVLATKPEEIREELLETWQLYHRMREIRDALQEVLQELQQ",
+                "taln": "TQEELKELLNKMVNLKEKIKELHQQYKEASE---------VKPPRDITAEFLVKSKHRDLTALCKEYDELAETQGKLEE"
+              }
+            ]
+          }
+        ]
+      },
+      "structural_similarity": {
+        "category": "moderate",
+        "high_coverage": 0.0,
+        "moderate_coverage": 1.0,
+        "evidence_status": "matches_measured",
+        "domain_segmentation_coverage": 1.0,
+        "tm_boundary_precision_caveat": false
+      },
+      "local_predicted_level": 3,
+      "organizer_level_established": false,
+      "level_status": "provisional_local_prediction",
+      "possible_levels_if_structure_policy_accepted": [
+        1,
+        2,
+        3
+      ],
+      "prediction_confidence": "low: public historical PDB snapshot; provided coordinates; declared domains, no organizer three-predictor consensus; missing patent sequences; no-hit sequence class is provisional"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate3",
+      "length": 78,
+      "sequence_sha256": "2fafc962f7c6976ddb0fc18e0911bad2916ad622a329a2bafc9877814413c98b",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "foldseek_then_tmalign_completed",
+      "predicted_level": 3,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "provisional_local_level_3",
+      "explanation": "Level applies only to searched databases, supplied coordinates and declared domain segmentation. Not an organizer score; see confidence and possible_levels.",
+      "structure_evidence": {
+        "status": "coordinates_verified",
+        "input": {
+          "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate3",
+          "status": "available",
+          "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_refolds/BinderMonomer/c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate3_monomer.cif",
+          "sha256": "dbead8f6b25ad602d78e08669df3c15c7dbe1f4957f6ec93e6164b68bece7205",
+          "chain": "A",
+          "domains": [
+            {
+              "start": 1,
+              "end": 78,
+              "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+            }
+          ]
+        },
+        "domains": [
+          {
+            "start": 1,
+            "end": 78,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus",
+            "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate3",
+            "query_id": "q000004d001",
+            "best_hit": {
+              "query": "q000004d001",
+              "target": "4waf-assembly1_B",
+              "qlen": 78,
+              "tlen": 250,
+              "qstart": 1,
+              "qend": 78,
+              "tstart": 125,
+              "tend": 220,
+              "alnlen": 112,
+              "qtmscore": 0.6691,
+              "ttmscore": 0.2288,
+              "qaln": "NTEELQQLQMLIDGLERIINSQPEELR---------RWSRMSPEEFLKELAKL-------------------------PEEVREERLAQWQLLHRMREIRDALQEVLDELQQ",
+              "taln": "LYEEYTRTSQEIQMKRTAIEAFNETIKIFEEQCQTQ----------------ERYSKEYIEKFKREGNEKEIQRIMHNYDKLKSRISEIIDSRRRLEEDLKKQAAEYREIDK"
+            },
+            "hit_count": 494,
+            "top_hits": [
+              {
+                "query": "q000004d001",
+                "target": "4waf-assembly1_B",
+                "qlen": 78,
+                "tlen": 250,
+                "qstart": 1,
+                "qend": 78,
+                "tstart": 125,
+                "tend": 220,
+                "alnlen": 112,
+                "qtmscore": 0.6691,
+                "ttmscore": 0.2288,
+                "qaln": "NTEELQQLQMLIDGLERIINSQPEELR---------RWSRMSPEEFLKELAKL-------------------------PEEVREERLAQWQLLHRMREIRDALQEVLDELQQ",
+                "taln": "LYEEYTRTSQEIQMKRTAIEAFNETIKIFEEQCQTQ----------------ERYSKEYIEKFKREGNEKEIQRIMHNYDKLKSRISEIIDSRRRLEEDLKKQAAEYREIDK"
+              },
+              {
+                "query": "q000004d001",
+                "target": "1set-assembly1_B",
+                "qlen": 78,
+                "tlen": 421,
+                "qstart": 1,
+                "qend": 78,
+                "tstart": 26,
+                "tend": 99,
+                "alnlen": 89,
+                "qtmscore": 0.6653,
+                "ttmscore": 0.1406,
+                "qaln": "NTEELQQLQMLIDGLERIINSQPEELR------RWSRMSPEEFLKELAK-L----PEEVREERLAQWQLLHRMREIRDALQEVLDELQQ",
+                "taln": "DLEALLALDREVQELKKRLQEVQTERNQVAKRV---------------PKAPPEEKEALIARGKALGEEAKRLEEALREKEARLEALLL"
+              },
+              {
+                "query": "q000004d001",
+                "target": "5da9-assembly1_A",
+                "qlen": 78,
+                "tlen": 433,
+                "qstart": 1,
+                "qend": 78,
+                "tstart": 184,
+                "tend": 260,
+                "alnlen": 90,
+                "qtmscore": 0.6614,
+                "ttmscore": 0.139,
+                "qaln": "NTEELQQLQMLIDGLERIINSQPEELR--RWSRMSPEEFLKEL-AKL-PE------E--VREERLAQWQLLHRMREIRDALQEVLDELQQ",
+                "taln": "YTKVIENIRLLKKKKGDELKILKEREVQD------------KAN-KERAEKVDELDLKDAKAKYKETHIKVETTKAAIEDLGRGMAAVDH"
+              },
+              {
+                "query": "q000004d001",
+                "target": "1sry-assembly1_B",
+                "qlen": 78,
+                "tlen": 421,
+                "qstart": 1,
+                "qend": 78,
+                "tstart": 26,
+                "tend": 99,
+                "alnlen": 89,
+                "qtmscore": 0.6603,
+                "ttmscore": 0.1408,
+                "qaln": "NTEELQQLQMLIDGLERIINSQPEELR--RWSRMSPEEFLKE--LAKL-------PEEVREERLAQWQLLHRMREIRDALQEVLDELQQ",
+                "taln": "DLEALLALDREVQELKKRLQEVQTERNQV------------AKR---VPKAPPEEKEALIARGKALGEEAKRLEEALREKEARLEALLL"
+              },
+              {
+                "query": "q000004d001",
+                "target": "5mto-assembly1_B",
+                "qlen": 78,
+                "tlen": 107,
+                "qstart": 1,
+                "qend": 78,
+                "tstart": 19,
+                "tend": 96,
+                "alnlen": 95,
+                "qtmscore": 0.66,
+                "ttmscore": 0.4989,
+                "qaln": "NTEELQQLQMLIDGLERIINSQPEELR-----------------RWSRMSPEEFLKELAKLPEEVREERLAQWQLLHRMREIRDALQEVLDELQQ",
+                "taln": "LPSELQRNFQLMRELDQRTEDKKAEIDILAAEYISTVKTLSPDQ-----------------RVERLQKIQNAYSKCKEYSDDKVQLAMQTYEMVD"
+              },
+              {
+                "query": "q000004d001",
+                "target": "4ijj-assembly1_A",
+                "qlen": 78,
+                "tlen": 129,
+                "qstart": 1,
+                "qend": 78,
+                "tstart": 19,
+                "tend": 89,
+                "alnlen": 88,
+                "qtmscore": 0.6571,
+                "ttmscore": 0.4203,
+                "qaln": "NTEELQQLQMLIDGLERIINSQPEELR----------RWSRMSPEEFLKELAKLPEEVREERLAQWQLLHRMREIRDALQEVLDELQQ",
+                "taln": "QDFFRDLLLRQRQELQARIEGEFGELRDLERPSDEAD-----------------LASREEQRQWQLRLLEREKKLLDKIDEALERLAR"
+              },
+              {
+                "query": "q000004d001",
+                "target": "5me8-assembly1_B",
+                "qlen": 78,
+                "tlen": 107,
+                "qstart": 1,
+                "qend": 78,
+                "tstart": 19,
+                "tend": 96,
+                "alnlen": 95,
+                "qtmscore": 0.6551,
+                "ttmscore": 0.4959,
+                "qaln": "NTEELQQLQMLIDGLERIINSQPEELR-----------------RWSRMSPEEFLKELAKLPEEVREERLAQWQLLHRMREIRDALQEVLDELQQ",
+                "taln": "LPCELQRNFQLMRELDQRTEDKKAEIDILAAEYISTVKTLSPDQ-----------------RVERLQKIQNAYSKCKEYSDDKVQLAMQTYEMVD"
+              },
+              {
+                "query": "q000004d001",
+                "target": "8qi0-assembly1_D",
+                "qlen": 78,
+                "tlen": 192,
+                "qstart": 1,
+                "qend": 78,
+                "tstart": 20,
+                "tend": 97,
+                "alnlen": 96,
+                "qtmscore": 0.6539,
+                "ttmscore": 0.2873,
+                "qaln": "NTEELQQLQMLIDGLERIINSQ-PEEL-----------------RRWSRMSPEEFLKELAKLPEEVREERLAQWQLLHRMREIRDALQEVLDELQQ",
+                "taln": "LRQAVARTIAEEKRTEQRLNQDTQEAKKWEDRAKLALTNGEENL------------------AREALARKKSLTDTAAAYQTQLAQQRTMSENLRR"
+              },
+              {
+                "query": "q000004d001",
+                "target": "8qi0-assembly1_D-10",
+                "qlen": 78,
+                "tlen": 192,
+                "qstart": 1,
+                "qend": 78,
+                "tstart": 20,
+                "tend": 97,
+                "alnlen": 96,
+                "qtmscore": 0.6539,
+                "ttmscore": 0.2873,
+                "qaln": "NTEELQQLQMLIDGLERIINSQ-PEEL-----------------RRWSRMSPEEFLKELAKLPEEVREERLAQWQLLHRMREIRDALQEVLDELQQ",
+                "taln": "LRQAVARTIAEEKRTEQRLNQDTQEAKKWEDRAKLALTNGEENL------------------AREALARKKSLTDTAAAYQTQLAQQRTMSENLRR"
+              },
+              {
+                "query": "q000004d001",
+                "target": "8qi0-assembly1_D-11",
+                "qlen": 78,
+                "tlen": 192,
+                "qstart": 1,
+                "qend": 78,
+                "tstart": 20,
+                "tend": 97,
+                "alnlen": 96,
+                "qtmscore": 0.6539,
+                "ttmscore": 0.2873,
+                "qaln": "NTEELQQLQMLIDGLERIINSQ-PEEL-----------------RRWSRMSPEEFLKELAKLPEEVREERLAQWQLLHRMREIRDALQEVLDELQQ",
+                "taln": "LRQAVARTIAEEKRTEQRLNQDTQEAKKWEDRAKLALTNGEENL------------------AREALARKKSLTDTAAAYQTQLAQQRTMSENLRR"
+              }
+            ]
+          }
+        ]
+      },
+      "structural_similarity": {
+        "category": "moderate",
+        "high_coverage": 0.0,
+        "moderate_coverage": 1.0,
+        "evidence_status": "matches_measured",
+        "domain_segmentation_coverage": 1.0,
+        "tm_boundary_precision_caveat": false
+      },
+      "local_predicted_level": 3,
+      "organizer_level_established": false,
+      "level_status": "provisional_local_prediction",
+      "possible_levels_if_structure_policy_accepted": [
+        1,
+        2,
+        3
+      ],
+      "prediction_confidence": "low: public historical PDB snapshot; provided coordinates; declared domains, no organizer three-predictor consensus; missing patent sequences; no-hit sequence class is provisional"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate5",
+      "length": 78,
+      "sequence_sha256": "e9b94fa8c509cd65afc1bbe2f9cdfb4caa86d47c6103e042572bf00be66478a9",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "foldseek_then_tmalign_completed",
+      "predicted_level": 3,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "provisional_local_level_3",
+      "explanation": "Level applies only to searched databases, supplied coordinates and declared domain segmentation. Not an organizer score; see confidence and possible_levels.",
+      "structure_evidence": {
+        "status": "coordinates_verified",
+        "input": {
+          "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate5",
+          "status": "available",
+          "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_refolds/BinderMonomer/c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate5_monomer.cif",
+          "sha256": "4ce4a057715d2ca575febee1d959d48275b9426e0e09c15c05e8bdbd7ffa75ac",
+          "chain": "A",
+          "domains": [
+            {
+              "start": 1,
+              "end": 78,
+              "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+            }
+          ]
+        },
+        "domains": [
+          {
+            "start": 1,
+            "end": 78,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus",
+            "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate5",
+            "query_id": "q000005d001",
+            "best_hit": {
+              "query": "q000005d001",
+              "target": "2ic6-assembly2_B",
+              "qlen": 78,
+              "tlen": 76,
+              "qstart": 1,
+              "qend": 78,
+              "tstart": 1,
+              "tend": 71,
+              "alnlen": 84,
+              "qtmscore": 0.71,
+              "ttmscore": 0.7265,
+              "qaln": "NTEELQQLQMLIDGLEDIINSQ-P-KEL-KEW--AKMSPEEFLKVL-EKKPEEIREELLEKWQLYHRMREIREALREVLEELQQ",
+              "taln": "HMSTLKEVQDNITLHEQRLVTTRQKLKDA--ERA----------VEL-DPDDVNKSTLQSRRAAVSALETKLGELKRELADLIA"
+            },
+            "hit_count": 568,
+            "top_hits": [
+              {
+                "query": "q000005d001",
+                "target": "2ic6-assembly2_B",
+                "qlen": 78,
+                "tlen": 76,
+                "qstart": 1,
+                "qend": 78,
+                "tstart": 1,
+                "tend": 71,
+                "alnlen": 84,
+                "qtmscore": 0.71,
+                "ttmscore": 0.7265,
+                "qaln": "NTEELQQLQMLIDGLEDIINSQ-P-KEL-KEW--AKMSPEEFLKVL-EKKPEEIREELLEKWQLYHRMREIREALREVLEELQQ",
+                "taln": "HMSTLKEVQDNITLHEQRLVTTRQKLKDA--ERA----------VEL-DPDDVNKSTLQSRRAAVSALETKLGELKRELADLIA"
+              },
+              {
+                "query": "q000005d001",
+                "target": "5da9-assembly1_A",
+                "qlen": 78,
+                "tlen": 433,
+                "qstart": 1,
+                "qend": 78,
+                "tstart": 184,
+                "tend": 260,
+                "alnlen": 86,
+                "qtmscore": 0.6945,
+                "ttmscore": 0.1467,
+                "qaln": "NTEELQQLQMLIDGLEDIINSQPKELKEWAKMSPEEF-LKVLEKK-------PEEIREELLEKWQLYHRMREIREALREVLEELQQ",
+                "taln": "YTKVIENIRLLKKKKGDELKILKEREVQD-------KA--NKERAEKVDELDLKDAKAKYKETHIKVETTKAAIEDLGRGMAAVDH"
+              },
+              {
+                "query": "q000005d001",
+                "target": "5me8-assembly1_A",
+                "qlen": 78,
+                "tlen": 107,
+                "qstart": 1,
+                "qend": 78,
+                "tstart": 19,
+                "tend": 96,
+                "alnlen": 92,
+                "qtmscore": 0.6849,
+                "ttmscore": 0.5153,
+                "qaln": "NTEELQQLQMLIDGLEDIINSQ-P-KEL-KE---WAKMSPEEFLKV--LEK--K----PEEIREELLEKWQLYHRMREIREALREVLEELQQ",
+                "taln": "LPCELQRNFQLMRELDQRTEDKKAEIDIL-AAEY-----------IST--VKTLSPDQRVERLQKIQNAYSKCKEYSDDKVQLAMQTYEMVD"
+              },
+              {
+                "query": "q000005d001",
+                "target": "2v1d-assembly1_A",
+                "qlen": 78,
+                "tlen": 666,
+                "qstart": 1,
+                "qend": 78,
+                "tstart": 267,
+                "tend": 336,
+                "alnlen": 79,
+                "qtmscore": 0.6784,
+                "ttmscore": 0.09644,
+                "qaln": "NTEELQQLQMLIDGLEDIINSQPKELKEWAKMSPEEF-LKVLEKKPEEIREELLEKWQLYHRMREIREALREVLEELQQ",
+                "taln": "TQEELKELLNKMVNLKEKIKELHQQYKEA-------SE--VKPPRDITAEFLVKSKHRDLTALCKEYDELAETQGKLEE"
+              },
+              {
+                "query": "q000005d001",
+                "target": "5mto-assembly1_A",
+                "qlen": 78,
+                "tlen": 107,
+                "qstart": 1,
+                "qend": 78,
+                "tstart": 19,
+                "tend": 96,
+                "alnlen": 92,
+                "qtmscore": 0.6708,
+                "ttmscore": 0.5082,
+                "qaln": "NTEELQQLQMLIDGLEDIINSQPKELK------EWAKMSPEEFLKV--LEK--K----PEEIREELLEKWQLYHRMREIREALREVLEELQQ",
+                "taln": "LPSELQRNFQLMRELDQRTEDKKAEIDILAAEY------------IST--VKTLSPDQRVERLQKIQNAYSKCKEYSDDKVQLAMQTYEMVD"
+              },
+              {
+                "query": "q000005d001",
+                "target": "8t8f-assembly1_E",
+                "qlen": 78,
+                "tlen": 353,
+                "qstart": 1,
+                "qend": 78,
+                "tstart": 155,
+                "tend": 231,
+                "alnlen": 92,
+                "qtmscore": 0.6604,
+                "ttmscore": 0.166,
+                "qaln": "NTEELQQLQMLIDGLEDIINSQPKELK---------EWAKMSPEEFLKVLEK---K--PEEIREELLEKWQLYHRMREIREALREVLEELQQ",
+                "taln": "ITENLLYASAIHDSAQENMALHLENLKSLKAEYEDA---------------KEEVIALFEKCRNKYKEGQKKYMEIDEALNRLHNSLKARDQ"
+              },
+              {
+                "query": "q000005d001",
+                "target": "8qi0-assembly1_D-13",
+                "qlen": 78,
+                "tlen": 192,
+                "qstart": 1,
+                "qend": 78,
+                "tstart": 20,
+                "tend": 97,
+                "alnlen": 95,
+                "qtmscore": 0.6469,
+                "ttmscore": 0.2883,
+                "qaln": "NTEELQQLQMLIDGLEDIINSQ-PK-EL---------------KEWAKMSPEEFLKVLEKKPEEIREELLEKWQLYHRMREIREALREVLEELQQ",
+                "taln": "LRQAVARTIAEEKRTEQRLNQDTQEAKKWEDRAKLALTNGEEN-----------------LAREALARKKSLTDTAAAYQTQLAQQRTMSENLRR"
+              },
+              {
+                "query": "q000005d001",
+                "target": "8qi0-assembly1_D-27",
+                "qlen": 78,
+                "tlen": 192,
+                "qstart": 1,
+                "qend": 78,
+                "tstart": 20,
+                "tend": 97,
+                "alnlen": 95,
+                "qtmscore": 0.6469,
+                "ttmscore": 0.2883,
+                "qaln": "NTEELQQLQMLIDGLEDIINSQ-PK-EL---------------KEWAKMSPEEFLKVLEKKPEEIREELLEKWQLYHRMREIREALREVLEELQQ",
+                "taln": "LRQAVARTIAEEKRTEQRLNQDTQEAKKWEDRAKLALTNGEEN-----------------LAREALARKKSLTDTAAAYQTQLAQQRTMSENLRR"
+              },
+              {
+                "query": "q000005d001",
+                "target": "8qi0-assembly1_D",
+                "qlen": 78,
+                "tlen": 192,
+                "qstart": 1,
+                "qend": 78,
+                "tstart": 20,
+                "tend": 97,
+                "alnlen": 95,
+                "qtmscore": 0.6468,
+                "ttmscore": 0.2883,
+                "qaln": "NTEELQQLQMLIDGLEDIINSQ-PK-EL---------------KEWAKMSPEEFLKVLEKKPEEIREELLEKWQLYHRMREIREALREVLEELQQ",
+                "taln": "LRQAVARTIAEEKRTEQRLNQDTQEAKKWEDRAKLALTNGEEN-----------------LAREALARKKSLTDTAAAYQTQLAQQRTMSENLRR"
+              },
+              {
+                "query": "q000005d001",
+                "target": "8qi0-assembly1_D-10",
+                "qlen": 78,
+                "tlen": 192,
+                "qstart": 1,
+                "qend": 78,
+                "tstart": 20,
+                "tend": 97,
+                "alnlen": 95,
+                "qtmscore": 0.6468,
+                "ttmscore": 0.2883,
+                "qaln": "NTEELQQLQMLIDGLEDIINSQ-PK-EL---------------KEWAKMSPEEFLKVLEKKPEEIREELLEKWQLYHRMREIREALREVLEELQQ",
+                "taln": "LRQAVARTIAEEKRTEQRLNQDTQEAKKWEDRAKLALTNGEEN-----------------LAREALARKKSLTDTAAAYQTQLAQQRTMSENLRR"
+              }
+            ]
+          }
+        ]
+      },
+      "structural_similarity": {
+        "category": "moderate",
+        "high_coverage": 0.0,
+        "moderate_coverage": 1.0,
+        "evidence_status": "matches_measured",
+        "domain_segmentation_coverage": 1.0,
+        "tm_boundary_precision_caveat": false
+      },
+      "local_predicted_level": 3,
+      "organizer_level_established": false,
+      "level_status": "provisional_local_prediction",
+      "possible_levels_if_structure_policy_accepted": [
+        1,
+        2,
+        3
+      ],
+      "prediction_confidence": "low: public historical PDB snapshot; provided coordinates; declared domains, no organizer three-predictor consensus; missing patent sequences; no-hit sequence class is provisional"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l99_2c4541b346f4959d_candidate1",
+      "length": 99,
+      "sequence_sha256": "b384d5d0e93ef3ca1ec8ce6a2c31a1e9fd57bb8508d37f6e52d932c5f3234a3a",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l99_2c4541b346f4959d_candidate4",
+      "length": 99,
+      "sequence_sha256": "f0a52fbd8d50ec39f2f1debb305d5a1cd5f52cedfe6f8cceb2a80ff33edcdf05",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c_candidate6",
+      "length": 98,
+      "sequence_sha256": "ec1e7bdce4a6102f2ed5e35f055f6d6731c621bfec5da652e771e51643abb921",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c_candidate8",
+      "length": 98,
+      "sequence_sha256": "518686fabe922396d5a9c4191881d16012a22813e2755ca083816394c97f9aff",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l99_2c4541b346f4959d_candidate7",
+      "length": 99,
+      "sequence_sha256": "d96dcb373ea5b853523e1643652b671001455f83c0d833ad11fc984fa5f87b94",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c_candidate9",
+      "length": 98,
+      "sequence_sha256": "f680dcaaaa49a224ff174db0ccb7e5998d9f1466f8554303e3dc4eb76545e33a",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l72_d5e9e12c9e56fbea_candidate1",
+      "length": 72,
+      "sequence_sha256": "f0c4d745bbc95ea371ff98c0b9d6a8e8b93ba7cac619d74120444655484348ab",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l72_d5e9e12c9e56fbea_candidate3",
+      "length": 72,
+      "sequence_sha256": "a886d610687913e97277fca911cc1e504d5fa03499eccc175e09fdc97a2e1f01",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l72_d5e9e12c9e56fbea_candidate4",
+      "length": 72,
+      "sequence_sha256": "782ba01557a945fe818e398e4a3a93762844bc2f49c64262ec96c721d3f7c524",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l84_9efe91791b587b17_candidate1",
+      "length": 84,
+      "sequence_sha256": "5fede7c4002c0fd34ae15181d5bb74e5d8da44e80b4283c93a661294bbc368fd",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l84_9efe91791b587b17_candidate2",
+      "length": 84,
+      "sequence_sha256": "6595cea3463d2d205aec4fdd78172d98b66a085a792eecfee673eeb91dbb6264",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l84_9efe91791b587b17_candidate3",
+      "length": 84,
+      "sequence_sha256": "71326404bae2c8ae3d2b3c8e61dedfdefbe08ed5be2d12e7e4e37d47757e81b6",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1_candidate1",
+      "length": 84,
+      "sequence_sha256": "c97fec0807e1a5e73ff723552ad45327f84c88333de830bd5f07c42f1c221c6b",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1_candidate2",
+      "length": 84,
+      "sequence_sha256": "1c44d94c6d3909cba62249af5cba2d3e028ab64f95d9da38d656e3509fd87311",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1_candidate4",
+      "length": 84,
+      "sequence_sha256": "91af8d9036c2b4c9c3761b32974efcb05eca394561daaaa25757bcbfc3a3560d",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l100_af9c8433a94467eb_candidate4",
+      "length": 100,
+      "sequence_sha256": "20236bc589b9b14e16bd4e7be574e22c900c336dfcd49a721f7be69ff46cbf1b",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l100_af9c8433a94467eb_candidate6",
+      "length": 100,
+      "sequence_sha256": "75b7d5937a9514d8d6a49935997ff046d11679463a50013be4c6d41bb9af11a2",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d_candidate1",
+      "length": 76,
+      "sequence_sha256": "2716af4f70c1808c684508eda100674970c77a8cec224443b4d863c0139b30a8",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d_candidate3",
+      "length": 76,
+      "sequence_sha256": "12aa9ff2df3097b0bd887a34af65badc244716a6a9c67e2de19a6e9ea16a6e41",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d_candidate4",
+      "length": 76,
+      "sequence_sha256": "e0c32f799c685f987435f8bc4385db1e1397020e9227eba8835317bced737422",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l56_b9b1bd89e75cae01_candidate3",
+      "length": 56,
+      "sequence_sha256": "d5b7ea9179525699e76e373eedf062cc01badd1b1d7ec90736aba7ac14a27f24",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l56_b9b1bd89e75cae01_candidate6",
+      "length": 56,
+      "sequence_sha256": "062df04ee0911bdb2ef5b010f48343af1753001942f357668f56be3a77f59ac8",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l79_e4887d4268e16afe_candidate1",
+      "length": 79,
+      "sequence_sha256": "e3540d12a46bc1ec22260b1efea3d5e079abb10b61ede8ade41a053c1fff157b",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l60_63126a071c041270_candidate1",
+      "length": 60,
+      "sequence_sha256": "3b170d40ca3f927fab726e52818fc6a2a4fe03907fc9c69ab2bca9e9fa789e08",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l60_63126a071c041270_candidate2",
+      "length": 60,
+      "sequence_sha256": "c9b2adc91bd91f6965bbd8653c79c4ef7130f05e96b500d859107e1edb87e0c2",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l60_63126a071c041270_candidate3",
+      "length": 60,
+      "sequence_sha256": "86b396a4d7c73f57e27027e3ad6b24cc79ecb129fad22f39a2f4031656e615f7",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1",
+      "length": 58,
+      "sequence_sha256": "dd2318e08da81c0665ea55933528df8935d86cf054d67ba36e1d11aafa2a8a3c",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e_candidate1",
+      "length": 95,
+      "sequence_sha256": "579372f82106c42aea929bb0031493b573e870e66f6192caaa05909bce38405b",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate2",
+      "length": 58,
+      "sequence_sha256": "cc2092d30aa2eae14057c5af76cdab8e67573d61a29d906009c574fb6c9cb571",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e_candidate2",
+      "length": 95,
+      "sequence_sha256": "86ae7e1935c8958f10f59ba5f6380c7c70295918060f20527d274a7889a179cd",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate3",
+      "length": 58,
+      "sequence_sha256": "859758e2f1cb535511306e36a1e25f32985d878ec450f88f21121a530d885ad1",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e_candidate3",
+      "length": 95,
+      "sequence_sha256": "3599423be7459521e1b0840dc95e6e6c40cd8a79d9273486efb759fbb9ac58c2",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l80_24ee63503d07a260_candidate2",
+      "length": 80,
+      "sequence_sha256": "99379359fb865db269b28079b5d58117d49160648f715471d9d1c78f27d765b3",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l80_24ee63503d07a260_candidate3",
+      "length": 80,
+      "sequence_sha256": "21e2c42230c74dc56fda62104d1dc9c8f6cf062d10c496ccb1466495e0a9b2c1",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l80_24ee63503d07a260_candidate6",
+      "length": 80,
+      "sequence_sha256": "740fe80e4e1f84fae0e0370760fd96ac00d191a00b0cce586ce4d856a54a19fe",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l70_54a5b53444de2b49_candidate4",
+      "length": 70,
+      "sequence_sha256": "645ed33fa27cb3781f88911e7fab49cedbee19bd014c20f479514b58a8b39ea9",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l70_54a5b53444de2b49_candidate5",
+      "length": 70,
+      "sequence_sha256": "ae15fef89aafd247bc9811150df089c1d69a696919d0c3cd17f5145e2dacba66",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l70_54a5b53444de2b49_candidate8",
+      "length": 70,
+      "sequence_sha256": "8bfe0963a51c8fcdfe2ccc2e2c4515e1cfbecadc5db515bf56bde47df9c548c1",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l58_9f94b53776050aad_candidate3",
+      "length": 58,
+      "sequence_sha256": "50968118b07699556691a0f74a187cd8c6d64c226185b615848d5ea83a46e5d4",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l58_9f94b53776050aad_candidate4",
+      "length": 58,
+      "sequence_sha256": "72f4ad02d0037aa4ad05d15adcc8a528586e1d877c0862d705bccfe8c7f2b0f7",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l97_2e414f93ff62377a_candidate1",
+      "length": 97,
+      "sequence_sha256": "30ab40db2f99c03681618aeab5d8ad0f9f22e46def735b1188a0a170d5100b58",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l58_9f94b53776050aad_candidate5",
+      "length": 58,
+      "sequence_sha256": "83b182242fdf835d4018976dc54c0c491032be8745dae6bb92c38cdc46a0f795",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l97_2e414f93ff62377a_candidate2",
+      "length": 97,
+      "sequence_sha256": "595790efe8386897c434b2b838c2f2ad2e1d51c93b3257206e8c5c549b8530b9",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l97_2e414f93ff62377a_candidate3",
+      "length": 97,
+      "sequence_sha256": "ea1f9901cb2ca3e1994e8298cb20e77549f02063293be3c59f5348246a76bc07",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l96_9003044e98f7dfc2_candidate1",
+      "length": 96,
+      "sequence_sha256": "ac450298e1cba143cf0f6cf04c959ed618936552a4723f914553bd4580e03253",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l59_a8117845ac23722c_candidate1",
+      "length": 59,
+      "sequence_sha256": "ca956ae7c0524b2973555b1fdf3fa4f252a03d2b670ed9ef1a8838caf7c6a10b",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l59_a8117845ac23722c_candidate3",
+      "length": 59,
+      "sequence_sha256": "bf1a706ed5db0e6d82f8f89637e1d73d99c0b5b5e0c37b56692f18b4ac665386",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l96_9003044e98f7dfc2_candidate6",
+      "length": 96,
+      "sequence_sha256": "1f9e44d555d51b12d1803f6e22522d9bf095b1906adf72985896419120348c62",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l59_a8117845ac23722c_candidate5",
+      "length": 59,
+      "sequence_sha256": "6a271ed10f4295d9ca77f581e632289042eea3e31cfcedf407e579590c0d2ca7",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l96_9003044e98f7dfc2_candidate10",
+      "length": 96,
+      "sequence_sha256": "5732d4b71664255a46bb9608192a6447853b0a19357d4b47c7fd767cda4db375",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate6",
+      "length": 63,
+      "sequence_sha256": "f73b1d02179877c7d744cf8e41e99d7a33bce35c34a5593dd70b3295edb47151",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate9",
+      "length": 63,
+      "sequence_sha256": "19946c43e1948fdf075c5ab6cefbecc3ec0a6827ecf32bd44d4ab3b4d3fff0e3",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate10",
+      "length": 63,
+      "sequence_sha256": "c5a0172c5bc940d8e04c5ce221331c6d3b48d9f0e1e6f2d2751ed1d65e4e6f84",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8_candidate1",
+      "length": 56,
+      "sequence_sha256": "b86bcf710e4346915eb404eb23e26d4195ccb0c9eed3e44e91c130681f7b1560",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8_candidate2",
+      "length": 56,
+      "sequence_sha256": "99012adfc4c5833d6326359430bf9a672246968641c6f4e803f20705c12e7704",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8_candidate3",
+      "length": 56,
+      "sequence_sha256": "45f85bcc55f05447f7b1e8d0f9c2327d7a0996768408ec42e9a1d517f69138f0",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l80_92df4b35cf6da70a_candidate1",
+      "length": 80,
+      "sequence_sha256": "09aaaf17156394023c1edc859599bfe15d0ba1d73d5ff832f55eaf957da3f021",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l80_92df4b35cf6da70a_candidate2",
+      "length": 80,
+      "sequence_sha256": "8ac527af489ca61d9f4cb14f4f5fc4ba1e9d901deb16eb6acc52303f16b1b9ab",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l80_92df4b35cf6da70a_candidate4",
+      "length": 80,
+      "sequence_sha256": "4b6fe8ae7d32c3ba73cdef63d36f51b010fb70bb19562f05aae615778ca4c639",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l99_ac96ee385dcb8613_candidate2",
+      "length": 99,
+      "sequence_sha256": "2b07dc97c81eac3902592f1eae17c5cec4f7053586e13952d2e6df0e3f0c5d26",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0_candidate4",
+      "length": 95,
+      "sequence_sha256": "1d65aa9654c352ac4e70cffbf130d69a228e269c11c8dfec49c57bf265fe88e3",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0_candidate5",
+      "length": 95,
+      "sequence_sha256": "5a060fa33ef0d797aeaf63d21cbeb8de9404f45e641c34034f24622af598fe54",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0_candidate7",
+      "length": 95,
+      "sequence_sha256": "25da9c00822ddbec6af4e40bbe8f3fa4076f4390d45e70cc2dd661efc1cb113e",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l100_39ede5dc7779065e_candidate5",
+      "length": 100,
+      "sequence_sha256": "dfafe797ea77105d035e725aac76854f250dbbf5050b1c76bb5a9992b372a7c8",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l100_39ede5dc7779065e_candidate8",
+      "length": 100,
+      "sequence_sha256": "95955315004176274c5cbe9647b917d8297bfee2950c67075495c2ba0f4635e8",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l99_e7484f3e947890e8_candidate1",
+      "length": 99,
+      "sequence_sha256": "61a17a1ef52a9ab1b846aeb0a7d83319eb07c784bc0a874f31b21fb80fd6f0be",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l99_e7484f3e947890e8_candidate2",
+      "length": 99,
+      "sequence_sha256": "84b11e8fb87c38da1de4baa6fde162b69452e65715faef399099a39e5276ca44",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l99_e7484f3e947890e8_candidate5",
+      "length": 99,
+      "sequence_sha256": "92cb69e9bda4ac63eff66608182ae10fd1342fea2f7e26801064230feaf6f963",
+      "best_detected_identity": null,
+      "sequence_evidence_class": "no_significant_hit",
+      "best_hit": null,
+      "hit_count": 0,
+      "top_identity_hits": [],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "coordinates_unavailable",
+      "predicted_level": null,
+      "possible_levels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 4,
+        "moderate": 3,
+        "high": 2
+      },
+      "local_gate_assessment": "unestablished",
+      "explanation": "Level withheld: structural prediction, consensus domain segmentation, Foldseek and TM-align not run. Missing databases can raise detected sequence similarity. Local MMseqs parameters may differ from ProteinTyper.",
+      "structure_evidence": {
+        "status": "coordinates_unavailable",
+        "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+      },
+      "local_predicted_level": null,
+      "prediction_confidence": "unestablished: coordinates unavailable",
+      "organizer_level_established": false
+    },
+    {
+      "name": "KNOWN_TFR1_POSITIVE_CONTROL",
+      "length": 195,
+      "sequence_sha256": "439e6a3ac85d86bb4caf97c1942740a2c0ca1feb25ba7dfeab08d5ce369962a4",
+      "best_detected_identity": 1.0,
+      "sequence_evidence_class": "high",
+      "best_hit": {
+        "query": "q000074",
+        "target": "11qc_A",
+        "fident": 1.0,
+        "nident": 195,
+        "alnlen": 195,
+        "qlen": 195,
+        "tlen": 639,
+        "qstart": 1,
+        "qend": 195,
+        "tstart": 68,
+        "tend": 262,
+        "evalue": 5.458e-127,
+        "bits": 399.0,
+        "qcov": 1.0,
+        "tcov": 0.305,
+        "reported_fident": 1.0,
+        "database": "pdb"
+      },
+      "hit_count": 66,
+      "top_identity_hits": [
+        {
+          "query": "q000074",
+          "target": "11qc_A",
+          "fident": 1.0,
+          "nident": 195,
+          "alnlen": 195,
+          "qlen": 195,
+          "tlen": 639,
+          "qstart": 1,
+          "qend": 195,
+          "tstart": 68,
+          "tend": 262,
+          "evalue": 5.458e-127,
+          "bits": 399.0,
+          "qcov": 1.0,
+          "tcov": 0.305,
+          "reported_fident": 1.0,
+          "database": "pdb"
+        },
+        {
+          "query": "q000074",
+          "target": "11rn_A",
+          "fident": 1.0,
+          "nident": 195,
+          "alnlen": 195,
+          "qlen": 195,
+          "tlen": 637,
+          "qstart": 1,
+          "qend": 195,
+          "tstart": 68,
+          "tend": 262,
+          "evalue": 5.458e-127,
+          "bits": 399.0,
+          "qcov": 1.0,
+          "tcov": 0.306,
+          "reported_fident": 1.0,
+          "database": "pdb"
+        },
+        {
+          "query": "q000074",
+          "target": "1cx8_A",
+          "fident": 1.0,
+          "nident": 195,
+          "alnlen": 195,
+          "qlen": 195,
+          "tlen": 639,
+          "qstart": 1,
+          "qend": 195,
+          "tstart": 68,
+          "tend": 262,
+          "evalue": 5.458e-127,
+          "bits": 399.0,
+          "qcov": 1.0,
+          "tcov": 0.305,
+          "reported_fident": 1.0,
+          "database": "pdb"
+        },
+        {
+          "query": "q000074",
+          "target": "1de4_C",
+          "fident": 1.0,
+          "nident": 195,
+          "alnlen": 195,
+          "qlen": 195,
+          "tlen": 640,
+          "qstart": 1,
+          "qend": 195,
+          "tstart": 69,
+          "tend": 263,
+          "evalue": 5.458e-127,
+          "bits": 399.0,
+          "qcov": 1.0,
+          "tcov": 0.305,
+          "reported_fident": 1.0,
+          "database": "pdb"
+        },
+        {
+          "query": "q000074",
+          "target": "3s9l_A",
+          "fident": 1.0,
+          "nident": 195,
+          "alnlen": 195,
+          "qlen": 195,
+          "tlen": 654,
+          "qstart": 1,
+          "qend": 195,
+          "tstart": 83,
+          "tend": 277,
+          "evalue": 5.458e-127,
+          "bits": 399.0,
+          "qcov": 1.0,
+          "tcov": 0.298,
+          "reported_fident": 1.0,
+          "database": "pdb"
+        },
+        {
+          "query": "q000074",
+          "target": "6d03_A",
+          "fident": 1.0,
+          "nident": 195,
+          "alnlen": 195,
+          "qlen": 195,
+          "tlen": 659,
+          "qstart": 1,
+          "qend": 195,
+          "tstart": 88,
+          "tend": 282,
+          "evalue": 5.458e-127,
+          "bits": 399.0,
+          "qcov": 1.0,
+          "tcov": 0.296,
+          "reported_fident": 1.0,
+          "database": "pdb"
+        },
+        {
+          "query": "q000074",
+          "target": "6okd_A",
+          "fident": 1.0,
+          "nident": 195,
+          "alnlen": 195,
+          "qlen": 195,
+          "tlen": 670,
+          "qstart": 1,
+          "qend": 195,
+          "tstart": 71,
+          "tend": 265,
+          "evalue": 5.458e-127,
+          "bits": 399.0,
+          "qcov": 1.0,
+          "tcov": 0.291,
+          "reported_fident": 1.0,
+          "database": "pdb"
+        },
+        {
+          "query": "q000074",
+          "target": "6wrv_A",
+          "fident": 1.0,
+          "nident": 195,
+          "alnlen": 195,
+          "qlen": 195,
+          "tlen": 639,
+          "qstart": 1,
+          "qend": 195,
+          "tstart": 69,
+          "tend": 263,
+          "evalue": 5.458e-127,
+          "bits": 399.0,
+          "qcov": 1.0,
+          "tcov": 0.305,
+          "reported_fident": 1.0,
+          "database": "pdb"
+        },
+        {
+          "query": "q000074",
+          "target": "7zqs_B",
+          "fident": 1.0,
+          "nident": 195,
+          "alnlen": 195,
+          "qlen": 195,
+          "tlen": 760,
+          "qstart": 1,
+          "qend": 195,
+          "tstart": 189,
+          "tend": 383,
+          "evalue": 5.458e-127,
+          "bits": 399.0,
+          "qcov": 1.0,
+          "tcov": 0.257,
+          "reported_fident": 1.0,
+          "database": "pdb"
+        },
+        {
+          "query": "q000074",
+          "target": "9gh7_A",
+          "fident": 1.0,
+          "nident": 195,
+          "alnlen": 195,
+          "qlen": 195,
+          "tlen": 678,
+          "qstart": 1,
+          "qend": 195,
+          "tstart": 107,
+          "tend": 301,
+          "evalue": 5.458e-127,
+          "bits": 399.0,
+          "qcov": 1.0,
+          "tcov": 0.288,
+          "reported_fident": 1.0,
+          "database": "pdb"
+        }
+      ],
+      "sequence_database_gaps": [
+        "patents"
+      ],
+      "structure_status": "foldseek_then_tmalign_completed",
+      "predicted_level": 1,
+      "possible_levels": [
+        1,
+        2
+      ],
+      "levels_if_complete_sequence_search_and_structure_class": {
+        "low": 2,
+        "moderate": 1,
+        "high": 1
+      },
+      "local_gate_assessment": "provisional_local_level_1",
+      "explanation": "Level applies only to searched databases, supplied coordinates and declared domain segmentation. Not an organizer score; see confidence and possible_levels.",
+      "structure_evidence": {
+        "status": "coordinates_verified",
+        "input": {
+          "name": "KNOWN_TFR1_POSITIVE_CONTROL",
+          "status": "available",
+          "path": "/Users/ricardo/dev/adaptyv-c4/data/11qc.cif",
+          "sha256": "4eaa5db67ed83a896713c4b42d1dc214c778bdac240fdf3a9a82e86a66f79495",
+          "chain": "A",
+          "author_residue_range": [
+            189,
+            383
+          ],
+          "domains": [
+            {
+              "start": 1,
+              "end": 195,
+              "source": "Known native apical-domain control, human author189-383"
+            }
+          ]
+        },
+        "domains": [
+          {
+            "start": 1,
+            "end": 195,
+            "source": "Known native apical-domain control, human author189-383",
+            "name": "KNOWN_TFR1_POSITIVE_CONTROL",
+            "query_id": "q000074d001",
+            "best_hit": {
+              "query": "q000074d001",
+              "target": "7zqs-assembly1_B",
+              "qlen": 195,
+              "tlen": 639,
+              "qstart": 1,
+              "qend": 195,
+              "tstart": 70,
+              "tend": 264,
+              "alnlen": 195,
+              "qtmscore": 0.9928,
+              "ttmscore": 0.3044,
+              "qaln": "KIQVKDSAQNSVIIVDKNGRLVYLVENPGGYVAYSKAATVTGKLVHANFGTKKDFEDLYTPVNGSIVIVRAGKITFAEKVANAESLNAIGVLIYMDQTKFPIVNAELSFFGHAHLGTGDPYTPGFPSFNHTQFPPSRSSGLPNIPVQTISRAAAEKLFGNMEGDCPSDWKTDSTCRMVTSESKNVKLTVSNVLKE",
+              "taln": "KIQVKDSAQNSVIIVDKNGRLVYLVENPGGYVAYSKAATVTGKLVHANFGTKKDFEDLYTPVNGSIVIVRAGKITFAEKVANAESLNAIGVLIYMDQTKFPIVNAELSFFGHAHLGTGDPYTPGFPSFNHTQFPPSRSSGLPNIPVQTISRAAAEKLFGNMEGDCPSDWKTDSTCRMVTSESKNVKLTVSNVLKE"
+            },
+            "hit_count": 2054,
+            "top_hits": [
+              {
+                "query": "q000074d001",
+                "target": "7zqs-assembly1_B",
+                "qlen": 195,
+                "tlen": 639,
+                "qstart": 1,
+                "qend": 195,
+                "tstart": 70,
+                "tend": 264,
+                "alnlen": 195,
+                "qtmscore": 0.9928,
+                "ttmscore": 0.3044,
+                "qaln": "KIQVKDSAQNSVIIVDKNGRLVYLVENPGGYVAYSKAATVTGKLVHANFGTKKDFEDLYTPVNGSIVIVRAGKITFAEKVANAESLNAIGVLIYMDQTKFPIVNAELSFFGHAHLGTGDPYTPGFPSFNHTQFPPSRSSGLPNIPVQTISRAAAEKLFGNMEGDCPSDWKTDSTCRMVTSESKNVKLTVSNVLKE",
+                "taln": "KIQVKDSAQNSVIIVDKNGRLVYLVENPGGYVAYSKAATVTGKLVHANFGTKKDFEDLYTPVNGSIVIVRAGKITFAEKVANAESLNAIGVLIYMDQTKFPIVNAELSFFGHAHLGTGDPYTPGFPSFNHTQFPPSRSSGLPNIPVQTISRAAAEKLFGNMEGDCPSDWKTDSTCRMVTSESKNVKLTVSNVLKE"
+              },
+              {
+                "query": "q000074d001",
+                "target": "7zqs-assembly1_D",
+                "qlen": 195,
+                "tlen": 639,
+                "qstart": 1,
+                "qend": 195,
+                "tstart": 70,
+                "tend": 264,
+                "alnlen": 195,
+                "qtmscore": 0.9928,
+                "ttmscore": 0.3044,
+                "qaln": "KIQVKDSAQNSVIIVDKNGRLVYLVENPGGYVAYSKAATVTGKLVHANFGTKKDFEDLYTPVNGSIVIVRAGKITFAEKVANAESLNAIGVLIYMDQTKFPIVNAELSFFGHAHLGTGDPYTPGFPSFNHTQFPPSRSSGLPNIPVQTISRAAAEKLFGNMEGDCPSDWKTDSTCRMVTSESKNVKLTVSNVLKE",
+                "taln": "KIQVKDSAQNSVIIVDKNGRLVYLVENPGGYVAYSKAATVTGKLVHANFGTKKDFEDLYTPVNGSIVIVRAGKITFAEKVANAESLNAIGVLIYMDQTKFPIVNAELSFFGHAHLGTGDPYTPGFPSFNHTQFPPSRSSGLPNIPVQTISRAAAEKLFGNMEGDCPSDWKTDSTCRMVTSESKNVKLTVSNVLKE"
+              },
+              {
+                "query": "q000074d001",
+                "target": "1de4-assembly1_F",
+                "qlen": 195,
+                "tlen": 635,
+                "qstart": 1,
+                "qend": 195,
+                "tstart": 68,
+                "tend": 262,
+                "alnlen": 195,
+                "qtmscore": 0.9911,
+                "ttmscore": 0.3061,
+                "qaln": "KIQVKDSAQNSVIIVDKNGRLVYLVENPGGYVAYSKAATVTGKLVHANFGTKKDFEDLYTPVNGSIVIVRAGKITFAEKVANAESLNAIGVLIYMDQTKFPIVNAELSFFGHAHLGTGDPYTPGFPSFNHTQFPPSRSSGLPNIPVQTISRAAAEKLFGNMEGDCPSDWKTDSTCRMVTSESKNVKLTVSNVLKE",
+                "taln": "KIQVKDSAQNSVIIVDKNGRLVYLVENPGGYVAYSKAATVTGKLVHANFGTKKDFEDLYTPVNGSIVIVRAGKITFAEKVANAESLNAIGVLIYMDQTKFPIVNAELSFFGHAHLGTGDPYTPGFPSFNHTQFPPSRSSGLPNIPVQTISRAAAEKLFGNMEGDCPSDWKTDSTCRMVTSESKNVKLTVSNVLKE"
+              },
+              {
+                "query": "q000074d001",
+                "target": "1de4-assembly2_I",
+                "qlen": 195,
+                "tlen": 635,
+                "qstart": 1,
+                "qend": 195,
+                "tstart": 68,
+                "tend": 262,
+                "alnlen": 195,
+                "qtmscore": 0.9908,
+                "ttmscore": 0.3061,
+                "qaln": "KIQVKDSAQNSVIIVDKNGRLVYLVENPGGYVAYSKAATVTGKLVHANFGTKKDFEDLYTPVNGSIVIVRAGKITFAEKVANAESLNAIGVLIYMDQTKFPIVNAELSFFGHAHLGTGDPYTPGFPSFNHTQFPPSRSSGLPNIPVQTISRAAAEKLFGNMEGDCPSDWKTDSTCRMVTSESKNVKLTVSNVLKE",
+                "taln": "KIQVKDSAQNSVIIVDKNGRLVYLVENPGGYVAYSKAATVTGKLVHANFGTKKDFEDLYTPVNGSIVIVRAGKITFAEKVANAESLNAIGVLIYMDQTKFPIVNAELSFFGHAHLGTGDPYTPGFPSFNHTQFPPSRSSGLPNIPVQTISRAAAEKLFGNMEGDCPSDWKTDSTCRMVTSESKNVKLTVSNVLKE"
+              },
+              {
+                "query": "q000074d001",
+                "target": "1de4-assembly2_I-2",
+                "qlen": 195,
+                "tlen": 635,
+                "qstart": 1,
+                "qend": 195,
+                "tstart": 68,
+                "tend": 262,
+                "alnlen": 195,
+                "qtmscore": 0.9908,
+                "ttmscore": 0.3061,
+                "qaln": "KIQVKDSAQNSVIIVDKNGRLVYLVENPGGYVAYSKAATVTGKLVHANFGTKKDFEDLYTPVNGSIVIVRAGKITFAEKVANAESLNAIGVLIYMDQTKFPIVNAELSFFGHAHLGTGDPYTPGFPSFNHTQFPPSRSSGLPNIPVQTISRAAAEKLFGNMEGDCPSDWKTDSTCRMVTSESKNVKLTVSNVLKE",
+                "taln": "KIQVKDSAQNSVIIVDKNGRLVYLVENPGGYVAYSKAATVTGKLVHANFGTKKDFEDLYTPVNGSIVIVRAGKITFAEKVANAESLNAIGVLIYMDQTKFPIVNAELSFFGHAHLGTGDPYTPGFPSFNHTQFPPSRSSGLPNIPVQTISRAAAEKLFGNMEGDCPSDWKTDSTCRMVTSESKNVKLTVSNVLKE"
+              },
+              {
+                "query": "q000074d001",
+                "target": "3s9n-assembly1_A",
+                "qlen": 195,
+                "tlen": 638,
+                "qstart": 1,
+                "qend": 195,
+                "tstart": 69,
+                "tend": 263,
+                "alnlen": 195,
+                "qtmscore": 0.9896,
+                "ttmscore": 0.3045,
+                "qaln": "KIQVKDSAQNSVIIVDKNGRLVYLVENPGGYVAYSKAATVTGKLVHANFGTKKDFEDLYTPVNGSIVIVRAGKITFAEKVANAESLNAIGVLIYMDQTKFPIVNAELSFFGHAHLGTGDPYTPGFPSFNHTQFPPSRSSGLPNIPVQTISRAAAEKLFGNMEGDCPSDWKTDSTCRMVTSESKNVKLTVSNVLKE",
+                "taln": "KIQVKDSAQNSVIIVDKNGRLVYLVENPGGYVAYSKAATVTGKLVHANFGTKKDFEDLYTPVNGSIVIVRAGKITFAEKVANAESLNAIGVLIYMDQTKFPIVNAELSFFGHAHLGTGDPYTPGFPSFNHTQFPPSRSSGLPNIPVQTISRAAAEKLFGNMEGDCPSDWKTDSTCRMVTSESKNVKLTVSNVLKE"
+              },
+              {
+                "query": "q000074d001",
+                "target": "3s9n-assembly1_A-2",
+                "qlen": 195,
+                "tlen": 638,
+                "qstart": 1,
+                "qend": 195,
+                "tstart": 69,
+                "tend": 263,
+                "alnlen": 195,
+                "qtmscore": 0.9896,
+                "ttmscore": 0.3045,
+                "qaln": "KIQVKDSAQNSVIIVDKNGRLVYLVENPGGYVAYSKAATVTGKLVHANFGTKKDFEDLYTPVNGSIVIVRAGKITFAEKVANAESLNAIGVLIYMDQTKFPIVNAELSFFGHAHLGTGDPYTPGFPSFNHTQFPPSRSSGLPNIPVQTISRAAAEKLFGNMEGDCPSDWKTDSTCRMVTSESKNVKLTVSNVLKE",
+                "taln": "KIQVKDSAQNSVIIVDKNGRLVYLVENPGGYVAYSKAATVTGKLVHANFGTKKDFEDLYTPVNGSIVIVRAGKITFAEKVANAESLNAIGVLIYMDQTKFPIVNAELSFFGHAHLGTGDPYTPGFPSFNHTQFPPSRSSGLPNIPVQTISRAAAEKLFGNMEGDCPSDWKTDSTCRMVTSESKNVKLTVSNVLKE"
+              },
+              {
+                "query": "q000074d001",
+                "target": "3s9n-assembly2_B",
+                "qlen": 195,
+                "tlen": 639,
+                "qstart": 1,
+                "qend": 195,
+                "tstart": 69,
+                "tend": 263,
+                "alnlen": 195,
+                "qtmscore": 0.9877,
+                "ttmscore": 0.3038,
+                "qaln": "KIQVKDSAQNSVIIVDKNGRLVYLVENPGGYVAYSKAATVTGKLVHANFGTKKDFEDLYTPVNGSIVIVRAGKITFAEKVANAESLNAIGVLIYMDQTKFPIVNAELSFFGHAHLGTGDPYTPGFPSFNHTQFPPSRSSGLPNIPVQTISRAAAEKLFGNMEGDCPSDWKTDSTCRMVTSESKNVKLTVSNVLKE",
+                "taln": "KIQVKDSAQNSVIIVDKNGRLVYLVENPGGYVAYSKAATVTGKLVHANFGTKKDFEDLYTPVNGSIVIVRAGKITFAEKVANAESLNAIGVLIYMDQTKFPIVNAELSFFGHAHLGTGDPYTPGFPSFNHTQFPPSRSSGLPNIPVQTISRAAAEKLFGNMEGDCPSDWKTDSTCRMVTSESKNVKLTVSNVLKE"
+              },
+              {
+                "query": "q000074d001",
+                "target": "3s9n-assembly2_B-3",
+                "qlen": 195,
+                "tlen": 639,
+                "qstart": 1,
+                "qend": 195,
+                "tstart": 69,
+                "tend": 263,
+                "alnlen": 195,
+                "qtmscore": 0.9877,
+                "ttmscore": 0.3038,
+                "qaln": "KIQVKDSAQNSVIIVDKNGRLVYLVENPGGYVAYSKAATVTGKLVHANFGTKKDFEDLYTPVNGSIVIVRAGKITFAEKVANAESLNAIGVLIYMDQTKFPIVNAELSFFGHAHLGTGDPYTPGFPSFNHTQFPPSRSSGLPNIPVQTISRAAAEKLFGNMEGDCPSDWKTDSTCRMVTSESKNVKLTVSNVLKE",
+                "taln": "KIQVKDSAQNSVIIVDKNGRLVYLVENPGGYVAYSKAATVTGKLVHANFGTKKDFEDLYTPVNGSIVIVRAGKITFAEKVANAESLNAIGVLIYMDQTKFPIVNAELSFFGHAHLGTGDPYTPGFPSFNHTQFPPSRSSGLPNIPVQTISRAAAEKLFGNMEGDCPSDWKTDSTCRMVTSESKNVKLTVSNVLKE"
+              },
+              {
+                "query": "q000074d001",
+                "target": "3s9m-assembly1_A",
+                "qlen": 195,
+                "tlen": 638,
+                "qstart": 1,
+                "qend": 195,
+                "tstart": 69,
+                "tend": 263,
+                "alnlen": 195,
+                "qtmscore": 0.9868,
+                "ttmscore": 0.3042,
+                "qaln": "KIQVKDSAQNSVIIVDKNGRLVYLVENPGGYVAYSKAATVTGKLVHANFGTKKDFEDLYTPVNGSIVIVRAGKITFAEKVANAESLNAIGVLIYMDQTKFPIVNAELSFFGHAHLGTGDPYTPGFPSFNHTQFPPSRSSGLPNIPVQTISRAAAEKLFGNMEGDCPSDWKTDSTCRMVTSESKNVKLTVSNVLKE",
+                "taln": "KIQVKDSAQNSVIIVDKNGRLVYLVENPGGYVAYSKAATVTGKLVHANFGTKKDFEDLYTPVNGSIVIVRAGKITFAEKVANAESLNAIGVLIYMDQTKFPIVNAELSFFGHAHLGTGDPYTPGFPSFNHTQFPPSRSSGLPNIPVQTISRAAAEKLFGNMEGDCPSDWKTDSTCRMVTSESKNVKLTVSNVLKE"
+              }
+            ]
+          }
+        ]
+      },
+      "structural_similarity": {
+        "category": "high",
+        "high_coverage": 1.0,
+        "moderate_coverage": 1.0,
+        "evidence_status": "matches_measured",
+        "domain_segmentation_coverage": 1.0,
+        "tm_boundary_precision_caveat": false
+      },
+      "local_predicted_level": 1,
+      "organizer_level_established": false,
+      "level_status": "provisional_local_prediction",
+      "possible_levels_if_structure_policy_accepted": [
+        1
+      ],
+      "prediction_confidence": "low: public historical PDB snapshot; provided coordinates; declared domains, no organizer three-predictor consensus; missing patent sequences; no-hit sequence class is provisional"
+    }
+  ],
+  "new_gpu_spend_usd": 0,
+  "limitations": [
+    "Public historical PDB snapshot, not the unpublished organizer structural corpus/version",
+    "Existing verified coordinates used; organizer ESMFold/ESMFold2-Fast structures not reproduced",
+    "Explicit domain intervals or whole-chain assumption; no consensus of three domain predictors",
+    "Foldseek finite candidate search may miss matches; no-hit is not proof of new fold",
+    "Missing patent sequence corpus and unpublished search settings persist",
+    "Antibody detection and separate CDR novelty scale not implemented",
+    "All numeric levels are local provisional predictions; organizer levels remain unestablished"
+  ],
+  "sequence_report_sha256": "eaa88de6da4991d5d13a10f65865dfde16083205b90b9f7cdc5425409e26bb9b",
+  "structure_database": {
+    "id": "Foldseek_public_PDB100_all_member_chains",
+    "prefix": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+    "status": "available",
+    "scope_complete": false,
+    "source_url": "https://foldseek.steineggerlab.workers.dev/pdb100.tar.gz",
+    "version_url": "https://foldseek.steineggerlab.workers.dev/pdb100.version",
+    "archive_bytes": 2326827389,
+    "download_date": "2026-10-22",
+    "pdb_date": "2025-01-01",
+    "file_build_date": "2025-07-25",
+    "http_last_modified": "2025-12-19T12:46:03Z",
+    "version_text": "aefd75e0a5d6acbe8a2b7791b53eb479  pdb100.tar.gz\n250101\tPDB_DATE\n1815f0d76d7b5807e63b13f9d446dcef43c1f3b1\tFOLDSEEK_COMMIT\n",
+    "representatives": 324204,
+    "searched_chains": 1562678,
+    "scope": "Search full pdb_seq member-chain DB, not just 324204 representatives; historical snapshot. Organizer structural corpus/snapshot unspecified.",
+    "files": {
+      ".0": "fdcd08940cdf515b3806d8fb118fafd447954b65568f2ac51e102a58a4873a19",
+      ".1": "421f1cc9b114079deedec5f58a13e2a6b799852a08352f618cc91d49e3953cf7",
+      ".dbtype": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+      ".index": "8742e1be18ffb59d8bff1005291e171e25de6130cdc4bd5109bbf9cd6109c2de",
+      ".lookup": "91d62f5f28cfb5930de8f03b6a77b6d76b5e46a8249e64992b6afba41efc705a",
+      ".source": "a83bdefafcfb4cb3389d903100356e55c2c8ee45a26c725360cf13a3059c7ed1",
+      "_ca.0": "84042d15219607ed76430d1bf8abc6db3be69f9b1c9dde4ce69f88aa4e506262",
+      "_ca.1": "624a27feeee35e64317ad925534546bad7006236a297fe5952149b383f1fc40a",
+      "_ca.dbtype": "8fc6cb4a9816d75621652de783118eee13112cda196e61d1bde0460f29b26e3e",
+      "_ca.index": "45517f39d9078801a20bc70918975e6e7d7ad60122e1e55be97ea6f2c53e07c6",
+      "_h.0": "74c7d9f96fbe1431836d8ed7a2690080e90f5196151e3bd340c43a05fc8671fb",
+      "_h.1": "01a838a0b36748df3feb191770721ef766c963b1b3ef4595f90561ab6e7c3f38",
+      "_h.dbtype": "42f4aeb81c1ef81f771f3de8abca9dcf66901c575530e7672e4b1146474ae650",
+      "_h.index": "0d8c8ecf38999fbd9205dc4a247f1b84a2f25c5cac42e12ec6500d0697f54974",
+      "_ss.0": "8e3df38ac21d6907f9de79681a2b9abefb37ca7fd5bae58ddc8e312892b68135",
+      "_ss.1": "188475ae430196be698e7c7b6948ab6072cdc7a5a1a98e2b3a0427c676173341",
+      "_ss.dbtype": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+      "_ss.index": "8742e1be18ffb59d8bff1005291e171e25de6130cdc4bd5109bbf9cd6109c2de"
+    },
+    "searched_database_bytes": 3725663586
+  },
+  "structure_manifest_sha256": "940485c4297c2ab2cf797bbd5a86772272ec8ef1b54c678471483a8879e33cf6",
+  "foldseek_version": "463739e0014a1549a527de589102cde98f802f37",
+  "structural_search": {
+    "commands": [
+      [
+        "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+        "createdb",
+        "results/novelty_predictor/monomer_sensitivity/run/structure/queries",
+        "results/novelty_predictor/monomer_sensitivity/run/structure/querydb",
+        "--threads",
+        "4"
+      ],
+      [
+        "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+        "search",
+        "results/novelty_predictor/monomer_sensitivity/run/structure/querydb",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+        "results/novelty_predictor/monomer_sensitivity/run/structure/discovered_mode0",
+        "results/novelty_predictor/monomer_sensitivity/run/structure/tmp_mode0",
+        "--threads",
+        "4",
+        "--gpu",
+        "0",
+        "--split-memory-limit",
+        "4G",
+        "-s",
+        "9.5",
+        "-e",
+        "10.0",
+        "--max-seqs",
+        "50000",
+        "--prefilter-mode",
+        "0",
+        "-a",
+        "1"
+      ],
+      [
+        "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+        "search",
+        "results/novelty_predictor/monomer_sensitivity/run/structure/querydb",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+        "results/novelty_predictor/monomer_sensitivity/run/structure/discovered_mode1",
+        "results/novelty_predictor/monomer_sensitivity/run/structure/tmp_mode1",
+        "--threads",
+        "4",
+        "--gpu",
+        "0",
+        "--split-memory-limit",
+        "4G",
+        "-s",
+        "9.5",
+        "-e",
+        "10.0",
+        "--max-seqs",
+        "50000",
+        "--prefilter-mode",
+        "1",
+        "-a",
+        "1"
+      ],
+      [
+        "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+        "mergedbs",
+        "results/novelty_predictor/monomer_sensitivity/run/structure/querydb",
+        "results/novelty_predictor/monomer_sensitivity/run/structure/discovered",
+        "results/novelty_predictor/monomer_sensitivity/run/structure/discovered_mode0",
+        "results/novelty_predictor/monomer_sensitivity/run/structure/discovered_mode1"
+      ],
+      [
+        "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+        "tmalign",
+        "results/novelty_predictor/monomer_sensitivity/run/structure/querydb",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+        "results/novelty_predictor/monomer_sensitivity/run/structure/discovered",
+        "results/novelty_predictor/monomer_sensitivity/run/structure/tmaligned",
+        "--threads",
+        "4",
+        "--tmalign-fast",
+        "0",
+        "--tmscore-threshold",
+        "0",
+        "--tmscore-threshold-mode",
+        "1",
+        "--tmalign-hit-order",
+        "1",
+        "-a",
+        "1"
+      ],
+      [
+        "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+        "convertalis",
+        "results/novelty_predictor/monomer_sensitivity/run/structure/querydb",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+        "results/novelty_predictor/monomer_sensitivity/run/structure/tmaligned",
+        "results/novelty_predictor/monomer_sensitivity/run/structure/hits.tsv",
+        "--threads",
+        "4",
+        "--exact-tmscore",
+        "1",
+        "--format-output",
+        "query,target,qlen,tlen,qstart,qend,tstart,tend,alnlen,qtmscore,ttmscore,qaln,taln"
+      ]
+    ],
+    "elapsed_seconds": 76.08556137500001,
+    "query_domains": 5,
+    "hit_rows": 4585,
+    "raw_alignment_rows": 8437,
+    "repeated_targets": "Deduplicated per query, retaining maximum query-normalized TM",
+    "exact_tmscore_export": 1,
+    "raw_hits_sha256": "80f51fb576da671bb291d2f0b9fc71a3d3e832ae37f2a9ac3526165993420237",
+    "alignment": "Foldseek 3Di+AA search -> Foldseek built-in TM-align, fast mode OFF; scores normalized by complete query domain length",
+    "hit_cap_per_discovery_mode": 50000,
+    "prefilter_modes": [
+      0,
+      1
+    ],
+    "evalue": 10.0
+  }
+}

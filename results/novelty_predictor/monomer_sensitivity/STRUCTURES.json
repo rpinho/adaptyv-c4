@@ -1,0 +1,423 @@
+{
+  "structures": [
+    {
+      "name": "c4_tfr1_groove_human_forced_l59_f06cf87fd111f355_candidate1",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate1",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_refolds/BinderMonomer/c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate1_monomer.cif",
+      "sha256": "bbeb5af5e5089f893b0ce84f90119cf26649f3f5f175611f8ec9ee1dbfede62d",
+      "chain": "A",
+      "domains": [
+        {
+          "start": 1,
+          "end": 78,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate2",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_refolds/BinderMonomer/c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate2_monomer.cif",
+      "sha256": "7140c7806ed352f0bdc11bc0b6a4caf27d49962ec843b0aff079b5250042b8d9",
+      "chain": "A",
+      "domains": [
+        {
+          "start": 1,
+          "end": 78,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate3",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_refolds/BinderMonomer/c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate3_monomer.cif",
+      "sha256": "dbead8f6b25ad602d78e08669df3c15c7dbe1f4957f6ec93e6164b68bece7205",
+      "chain": "A",
+      "domains": [
+        {
+          "start": 1,
+          "end": 78,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate5",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_refolds/BinderMonomer/c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate5_monomer.cif",
+      "sha256": "4ce4a057715d2ca575febee1d959d48275b9426e0e09c15c05e8bdbd7ffa75ac",
+      "chain": "A",
+      "domains": [
+        {
+          "start": 1,
+          "end": 78,
+          "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+        }
+      ]
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l99_2c4541b346f4959d_candidate1",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l99_2c4541b346f4959d_candidate4",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c_candidate6",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c_candidate8",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l99_2c4541b346f4959d_candidate7",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c_candidate9",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l72_d5e9e12c9e56fbea_candidate1",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l72_d5e9e12c9e56fbea_candidate3",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l72_d5e9e12c9e56fbea_candidate4",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l84_9efe91791b587b17_candidate1",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l84_9efe91791b587b17_candidate2",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l84_9efe91791b587b17_candidate3",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1_candidate1",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1_candidate2",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1_candidate4",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l100_af9c8433a94467eb_candidate4",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l100_af9c8433a94467eb_candidate6",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d_candidate1",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d_candidate3",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d_candidate4",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l56_b9b1bd89e75cae01_candidate3",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l56_b9b1bd89e75cae01_candidate6",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l79_e4887d4268e16afe_candidate1",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l60_63126a071c041270_candidate1",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l60_63126a071c041270_candidate2",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l60_63126a071c041270_candidate3",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e_candidate1",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate2",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e_candidate2",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate3",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e_candidate3",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l80_24ee63503d07a260_candidate2",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l80_24ee63503d07a260_candidate3",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l80_24ee63503d07a260_candidate6",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l70_54a5b53444de2b49_candidate4",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l70_54a5b53444de2b49_candidate5",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l70_54a5b53444de2b49_candidate8",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l58_9f94b53776050aad_candidate3",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l58_9f94b53776050aad_candidate4",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l97_2e414f93ff62377a_candidate1",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l58_9f94b53776050aad_candidate5",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l97_2e414f93ff62377a_candidate2",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l97_2e414f93ff62377a_candidate3",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l96_9003044e98f7dfc2_candidate1",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l59_a8117845ac23722c_candidate1",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l59_a8117845ac23722c_candidate3",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l96_9003044e98f7dfc2_candidate6",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l59_a8117845ac23722c_candidate5",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l96_9003044e98f7dfc2_candidate10",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate6",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate9",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate10",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8_candidate1",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8_candidate2",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8_candidate3",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l80_92df4b35cf6da70a_candidate1",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l80_92df4b35cf6da70a_candidate2",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l80_92df4b35cf6da70a_candidate4",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l99_ac96ee385dcb8613_candidate2",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0_candidate4",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0_candidate5",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0_candidate7",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l100_39ede5dc7779065e_candidate5",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l100_39ede5dc7779065e_candidate8",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l99_e7484f3e947890e8_candidate1",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l99_e7484f3e947890e8_candidate2",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l99_e7484f3e947890e8_candidate5",
+      "status": "unavailable",
+      "reason": "No exact full-chain sequence match in saved monomer CIF inventory; not a new folding failure"
+    },
+    {
+      "name": "KNOWN_TFR1_POSITIVE_CONTROL",
+      "status": "available",
+      "path": "/Users/ricardo/dev/adaptyv-c4/data/11qc.cif",
+      "sha256": "4eaa5db67ed83a896713c4b42d1dc214c778bdac240fdf3a9a82e86a66f79495",
+      "chain": "A",
+      "author_residue_range": [
+        189,
+        383
+      ],
+      "domains": [
+        {
+          "start": 1,
+          "end": 195,
+          "source": "Known native apical-domain control, human author189-383"
+        }
+      ]
+    }
+  ]
+}

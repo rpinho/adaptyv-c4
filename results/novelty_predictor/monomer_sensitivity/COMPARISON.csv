@@ -1,0 +1,5 @@
+name,length,paired_ca_rmsd_angstrom,complex_best_query_tm,monomer_best_query_tm,complex_local_level,monomer_local_level,level_changed
+c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate1,78,0.4088012344440417,0.6967,0.7017,3,3,False
+c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate2,78,0.48022942728235524,0.7537,0.6961,3,3,False
+c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate3,78,0.25555871426478005,0.678,0.6691,3,3,False
+c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate5,78,0.3447584286888119,0.7071,0.71,3,3,False

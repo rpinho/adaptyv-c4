@@ -1,0 +1,186 @@
+Create directory results/novelty_predictor/monomer_sensitivity/run/structure/tmp_mode0
+search results/novelty_predictor/monomer_sensitivity/run/structure/querydb /Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq results/novelty_predictor/monomer_sensitivity/run/structure/discovered_mode0 results/novelty_predictor/monomer_sensitivity/run/structure/tmp_mode0 --threads 4 --gpu 0 --split-memory-limit 4G -s 9.5 -e 10.0 --max-seqs 50000 --prefilter-mode 0 -a 1 
+
+MMseqs Version:                    	463739e0014a1549a527de589102cde98f802f37
+TMscore threshold                  	0
+TMscore threshold mode             	0
+LDDT threshold                     	0
+Sort by structure bit score        	1
+Alignment type                     	2
+Exact TMscore                      	0
+Substitution matrix                	aa:3di.out,nucl:3di.out
+Add backtrace                      	true
+Alignment mode                     	3
+Alignment mode                     	0
+E-value threshold                  	10
+Seq. id. threshold                 	0
+Min alignment length               	0
+Seq. id. mode                      	0
+Alternative alignments             	0
+Coverage threshold                 	0
+Coverage mode                      	0
+Max sequence length                	65535
+Compositional bias                 	1
+Compositional bias scale           	1
+Max reject                         	2147483647
+Max accept                         	2147483647
+Preload mode                       	0
+Gap open cost                      	aa:10,nucl:10
+Gap extension cost                 	aa:1,nucl:1
+Threads                            	4
+Compressed                         	0
+Verbosity                          	3
+Seed substitution matrix           	aa:3di.out,nucl:3di.out
+Sensitivity                        	9.5
+k-mer length                       	0
+Target search mode                 	0
+k-score                            	seq:2147483647,prof:2147483647
+Max results per query              	50000
+Split database                     	0
+Split mode                         	2
+Split memory limit                 	4G
+Diagonal scoring                   	true
+Exact k-mer matching               	0
+Mask residues                      	0
+Mask residues probability          	0.999995
+Mask lower case residues           	1
+Mask lower letter repeating N times	6
+Minimum diagonal score             	30
+Selected taxa                      	
+Spaced k-mers                      	1
+Spaced k-mer pattern               	
+Local temporary path               	
+Use GPU                            	0
+Use GPU server                     	0
+Wait for GPU server                	600
+Prefilter mode                     	0
+TMalign hit order                  	0
+TMalign fast                       	1
+MultiDomain Mode                   	1
+Candidate seeds                    	10
+Refine seeds                       	3
+Block length                       	16
+Mask profile                       	1
+Profile E-value threshold          	0.1
+Global sequence weighting          	false
+Allow deletions                    	false
+Filter MSA                         	1
+Use filter only at N seqs          	0
+Maximum seq. id. threshold         	0.9
+Minimum seq. id.                   	0.0
+Minimum score per column           	-20
+Minimum coverage                   	0
+Select N most diverse seqs         	1000
+Pseudo count mode                  	0
+Profile output mode                	0
+Cluster search                     	0
+Exhaustive search mode             	false
+Search iterations                  	1
+Remove temporary files             	true
+Force restart with latest tmp      	false
+MPI runner                         	
+
+prefilter results/novelty_predictor/monomer_sensitivity/run/structure/querydb_ss /Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_ss results/novelty_predictor/monomer_sensitivity/run/structure/tmp_mode0/6692332609711919344/pref --sub-mat 'aa:3di.out,nucl:3di.out' --seed-sub-mat 'aa:3di.out,nucl:3di.out' -s 9.5 -k 0 --target-search-mode 0 --k-score seq:2147483647,prof:2147483647 --alph-size aa:21,nucl:5 --max-seq-len 65535 --max-seqs 50000 --split 0 --split-mode 2 --split-memory-limit 4G -c 0 --cov-mode 0 --comp-bias-corr 1 --comp-bias-corr-scale 0.15 --diag-score 1 --exact-kmer-matching 0 --mask 0 --mask-prob 0.999995 --mask-lower-case 1 --mask-n-repeat 6 --min-ungapped-score 30 --add-self-matches 0 --spaced-kmer-mode 1 --db-load-mode 0 --pca substitution:1.100,context:1.400 --pcb substitution:4.100,context:5.800 --threads 4 --compressed 0 -v 3 
+
+Query database size: 5 type: Aminoacid
+Target split mode. Searching through 2 splits
+Estimated memory consumption: 2G
+Target database size: 1562678 type: Aminoacid
+Process prefiltering step 1 of 2
+
+Index table k-mer threshold: 78 at k-mer size 6 
+Index table: counting k-mers
+[=================================================================] 774.45K 1s 41ms
+Index table: Masked residues: 6166017
+Index table: fill
+[=================================================================] 774.45K 2s 59ms
+Index statistics
+Entries:          174718173
+DB size:          1488 MB
+Avg k-mer size:   2.729971
+Top 10 k-mers
+    LVLVVV	157390
+    VVLVVV	139780
+    SVSVVV	127392
+    VVSVVV	118307
+    LVVVVV	104277
+    SVVVVV	91497
+    VVVSVS	82039
+    VVVVVS	81573
+    NVSVVV	77200
+    VLVLLL	66096
+Time for index table init: 0h 0m 4s 253ms
+k-mer similarity threshold: 78
+Starting prefiltering scores calculation (step 1 of 2)
+Query db start 1 to 5
+Target db start 1 to 774446
+[=================================================================] 5 0s 29ms
+
+1446.998974 k-mers per position
+7380872 DB matches per sequence
+5 overflows
+25632 sequences passed prefiltering per query sequence
+25632 median result list length
+0 sequences with 0 size result lists
+Time for merging to pref_tmp_0: 0h 0m 0s 0ms
+Time for merging to pref_tmp_0_tmp: 0h 0m 0s 0ms
+Process prefiltering step 2 of 2
+
+Index table k-mer threshold: 78 at k-mer size 6 
+Index table: counting k-mers
+[=================================================================] 788.23K 1s 7ms
+Index table: Masked residues: 6183959
+Index table: fill
+[=================================================================] 788.23K 2s 181ms
+Index statistics
+Entries:          200279790
+DB size:          1634 MB
+Avg k-mer size:   3.129372
+Top 10 k-mers
+    LVLVVV	157723
+    VVLVVV	147973
+    SVSVVV	133113
+    VVSVVV	116429
+    LVVVVV	100006
+    SVVVVV	97071
+    DDDDDD	82788
+    VVVSVS	80280
+    VVVVVS	78644
+    NVSVVV	78109
+Time for index table init: 0h 0m 4s 183ms
+k-mer similarity threshold: 78
+Starting prefiltering scores calculation (step 2 of 2)
+Query db start 1 to 5
+Target db start 774447 to 1562678
+[=================================================================] 5 0s 36ms
+
+1446.998974 k-mers per position
+8595284 DB matches per sequence
+5 overflows
+25632 sequences passed prefiltering per query sequence
+25632 median result list length
+0 sequences with 0 size result lists
+Time for merging to pref_tmp_1: 0h 0m 0s 0ms
+Time for merging to pref_tmp_1_tmp: 0h 0m 0s 0ms
+Merging 2 target splits to pref
+Preparing offsets for merging: 0h 0m 0s 0ms
+[=================================================================] 5 0s 4ms
+Time for merging to pref: 0h 0m 0s 0ms
+Time for merging target splits: 0h 0m 0s 9ms
+Time for merging to pref_tmp: 0h 0m 0s 1ms
+Time for processing: 0h 0m 9s 458ms
+structurealign results/novelty_predictor/monomer_sensitivity/run/structure/querydb /Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq results/novelty_predictor/monomer_sensitivity/run/structure/tmp_mode0/6692332609711919344/pref results/novelty_predictor/monomer_sensitivity/run/structure/tmp_mode0/6692332609711919344/strualn --tmscore-threshold 0 --tmscore-threshold-mode 0 --lddt-threshold 0 --sort-by-structure-bits 1 --alignment-type 2 --exact-tmscore 0 --sub-mat 'aa:3di.out,nucl:3di.out' -a 1 --alignment-mode 3 --alignment-output-mode 0 --wrapped-scoring 0 -e 10 --min-seq-id 0 --min-aln-len 0 --seq-id-mode 0 --alt-ali 0 -c 0 --cov-mode 0 --max-seq-len 65535 --comp-bias-corr 1 --comp-bias-corr-scale 0.5 --max-rejected 2147483647 --max-accept 2147483647 --add-self-matches 0 --db-load-mode 0 --pca substitution:1.100,context:1.400 --pcb substitution:4.100,context:5.800 --score-bias 0 --realign 0 --realign-score-bias -0.2 --realign-max-seqs 2147483647 --corr-score-weight 0 --gap-open aa:10,nucl:10 --gap-extend aa:1,nucl:1 --zdrop 40 --threads 4 --compressed 0 -v 3 
+
+=========[========================================================] 5 1s 75ms
+Time for merging to strualn: 0h 0m 0s 0ms
+Time for processing: 0h 0m 5s 439ms
+mvdb results/novelty_predictor/monomer_sensitivity/run/structure/tmp_mode0/6692332609711919344/strualn results/novelty_predictor/monomer_sensitivity/run/structure/tmp_mode0/6692332609711919344/aln -v 3 
+
+Time for processing: 0h 0m 0s 1ms
+mvdb results/novelty_predictor/monomer_sensitivity/run/structure/tmp_mode0/6692332609711919344/aln results/novelty_predictor/monomer_sensitivity/run/structure/discovered_mode0 -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+Removing temporary files
+rmdb results/novelty_predictor/monomer_sensitivity/run/structure/tmp_mode0/6692332609711919344/pref -v 3 
+
+Time for processing: 0h 0m 0s 0ms

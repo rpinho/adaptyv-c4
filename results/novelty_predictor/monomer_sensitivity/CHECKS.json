@@ -1,0 +1,13 @@
+{
+  "protected_files_unchanged": {
+    "scripts/build_submission.py": "a6a73ed2e352f60859e32b84dd7ca187243a39813500b0a0c3eab21b25126a65",
+    "scripts/novelty_audit.py": "f881f728c6cd839374a516ad313070bf56b819df2994b1715fbd2fc7ce598b10",
+    "scripts/audit_full_context.py": "2f8f453ac6e90cca7c29c03b58d61a9c5ecde0c533ff7f6b3bc42ccf0dd76251",
+    "scripts/run_context_ensemble.py": "0f408034f943a03bb34558ce8222666af5fb9276d62397e39fc4738bab75b3d2",
+    "scripts/postprocess_gpu_campaign.py": "e2a8b8e6a9bf01872e9d2a3c4867abe4e23367c5d8485c861369dbf93d227472"
+  },
+  "branch_must_not_be_main": true,
+  "new_gpu_or_cloud_cpu_spend_usd": 0.0,
+  "pair_verification": "summarize.py completed all assertions",
+  "production_source_changed": false
+}

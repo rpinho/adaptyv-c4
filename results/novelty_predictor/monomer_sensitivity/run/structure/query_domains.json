@@ -1,0 +1,32 @@
+{
+  "q000002d001": {
+    "start": 1,
+    "end": 78,
+    "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus",
+    "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate1"
+  },
+  "q000003d001": {
+    "start": 1,
+    "end": 78,
+    "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus",
+    "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate2"
+  },
+  "q000004d001": {
+    "start": 1,
+    "end": 78,
+    "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus",
+    "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate3"
+  },
+  "q000005d001": {
+    "start": 1,
+    "end": 78,
+    "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus",
+    "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate5"
+  },
+  "q000074d001": {
+    "start": 1,
+    "end": 195,
+    "source": "Known native apical-domain control, human author189-383",
+    "name": "KNOWN_TFR1_POSITIVE_CONTROL"
+  }
+}
