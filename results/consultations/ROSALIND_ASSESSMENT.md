@@ -39,6 +39,25 @@ access, with individual Research-mode access coming later. We have not verified
 Ricardo's entitlement. Existing Codex access does not establish Rosalind access.
 Any account creation or access application remains Ricardo's action.
 
+### Application route verified on 2026-10-22 UTC
+
+1. Open [Rosalind Workbench](https://chatgpt.com/rosalind-workbench/) in the
+   ChatGPT app and complete its setup.
+2. Request Research-mode access through Workbench if eligible. Official guidance
+   currently limits requests to verified organization members; individual access
+   is described as forthcoming.
+3. The documentation's separate organizational
+   [request-access link](https://chatgpt.com/r/b749fb02595e04c3007a54375f3f4374)
+   requires sign-in. Its private application fields were not inspected.
+4. For an independent application or eligibility uncertainty, ask
+   support@openai.com which route applies. Describe the actual personal Adaptyv
+   research project and affiliation accurately; do not infer organizational
+   eligibility from a paid subscription.
+
+Sources: [official access guidance](https://developers.openai.com/blog/rosalind-workbench)
+and the opened Workbench landing page. No application was submitted or account
+created. Approval timing and outcome are unknown. Spend unchanged.
+
 ## Application to this repository
 
 Our immediate limiting evidence is concrete: the repaired single forward has
