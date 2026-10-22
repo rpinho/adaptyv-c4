@@ -1,0 +1,47 @@
+{
+  "scope": "Post-primary-screen CPU diagnosis only; does not revise the declared pilot outcome",
+  "source_sha256": "5e49621780781dbc1a424796044eac44427e842adc570e8c0183dfeee9c845c2",
+  "primary_screen": "Rejected .4 CA coverage vs declared .5; actual geometry passed",
+  "qualified_candidates": 0,
+  "restoration": {
+    "residues": 195,
+    "author_range": [
+      189,
+      383
+    ],
+    "native_sequence_verified": true,
+    "minimum_peptide_CN_A": 1.063833236694336,
+    "maximum_peptide_CN_A": 1.6182769536972046,
+    "stage": "restored_staging_only",
+    "source_sha256": "5e49621780781dbc1a424796044eac44427e842adc570e8c0183dfeee9c845c2",
+    "native_template_sha256": "4eaa5db67ed83a896713c4b42d1dc214c778bdac240fdf3a9a82e86a66f79495",
+    "output_sha256": "df6f692123e25d02b1919d8962699f850f5c3a76487734a2b10feb481f5094e9",
+    "alignment_residues": 195,
+    "domain_CA_rmsd_A": 0.0886708012598124,
+    "patch_CA_rmsd_A": 0.07784359290855962,
+    "maximum_domain_CA_displacement_A": 0.2613260493797529,
+    "minimum_binder_full_target_backbone_distance_A": 4.14356545994741,
+    "observed_NAG_min_distance_A": 24.08578799255809,
+    "restored_target_residues": 1278,
+    "rotation_determinant": 1.0000000000000004,
+    "qualified_candidate": false,
+    "requires_native_full_context_refold": true,
+    "limitations": [
+      "Rigid context restoration is not native-complex prediction or binding validation",
+      "No pH scoring allowed before native refolding and existing admission gates",
+      "Observed NAG clearance checked; glycans are not retained in output PDB",
+      "Human only; residue121/unresolved glycans/assay tag absent"
+    ]
+  },
+  "native_context_geometry": "staging_passed",
+  "native_hotspot_heavy_atom_min_A": {
+    "205": 11.218909163502177,
+    "206": 12.689429438796637,
+    "208": 8.111551173177698,
+    "209": 5.7915871268621775,
+    "210": 4.143635075475116
+  },
+  "hotspot_heavy_atom_fraction_within4A": 0.0,
+  "hotspot_heavy_atom_fraction_within5A": 0.2,
+  "full_native_protein_heavy_atom_min_A": 4.143635075475116
+}

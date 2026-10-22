@@ -1,5 +1,30 @@
 # Method: proton-coupled two-state design, with the numbers checked
 
+## Latest instruction — generator lane STOPPED; CPU real-gate control COMPLETE (Oct22)
+
+Ricardo explicitly superseded this generator lane with the separate approved
+RFD4-Proteina work on claude/submission-and-control. Do not restart RFdiffusion,
+MPNN, AF2 successors or any GPU from earlier plans below. No generator duplication.
+All our Modal functions zero runners/inputs/backlog; all3 Runpod pods EXITED.
+Release occurred before replying. No successor is authorized in this lane.
+
+New CPU-only task completed: results/real_gate_control/RESULTS.md. Independent
+P02786 annotation accounting:157 mapped residues plus9 unresolved tag/linker
+residues=166. Actual fit() used; unchanged audit_full_context.main() exercised
+in isolated fixtures; all source/helper gate hashes unchanged. GATE VINDICATED
+for FcB/TfRC, CA RMSD.963/.950, zero omitted-context BB pairs<2A, min10.717/10.737A;
+full-native BB min2.884/2.899A. Alternate FcA/TfRD is INCONCLUSIVE, fit3.709A.
+All copies/orientations retained, no outlier trimming or threshold adjustment.
+The66 remain retired; originalone>2A fit is an inconclusive context transfer.
+
+Our lane Modal10.718947 estimated +Runpod56.589988 posted =~67.31 total;
+new control GPU0.00. Other RFD4 lane/consultations/builds/storage excluded.
+V18 did complete50 real diffusion steps,0 generator-accepted backbones; its
+sparse-contact rejection and exploratory-only coordinates are historical.
+No MPNN sequence generated. Earlier pending/next-run plans below are superseded.
+Portal: single_chain; once/24h; novelty>=3/4; closesNov2 11:59UTC.
+Ricardo handles every account and entry. No main or KB-main writes.
+
 ## Current checkpoint — sequence-only refolds completed; native-domain experiment prepared
 
 V15 completed eight coordinate-free fixed-sequence prediction jobs; actual GPU

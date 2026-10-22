@@ -1,0 +1,146 @@
+[
+  {
+    "design": "assembly1_FcA_TfRD_nativeA",
+    "assembly": "1",
+    "receptor_label": "C",
+    "partner_label": "A",
+    "receptor_author": "D",
+    "partner_author": "A",
+    "native_chain": "A",
+    "observed_mapped_CA": 147,
+    "source_to_native_CA_rmsd": 3.708710494530027,
+    "partner_fit": 3.70871050399454,
+    "sequence_mismatches": [],
+    "rotation": [
+      [
+        0.5652571758732525,
+        -0.2214156149069879,
+        -0.7946442285086697
+      ],
+      [
+        -0.6599055979858474,
+        0.45665179134746303,
+        -0.5966521669495712
+      ],
+      [
+        0.4949838124707158,
+        0.8616520984816773,
+        0.11201223754773881
+      ]
+    ],
+    "translation": [
+      66.32366105080551,
+      134.76472813352694,
+      110.36233370577273
+    ],
+    "partner_observed_residues": 208
+  },
+  {
+    "design": "assembly1_FcA_TfRD_nativeB",
+    "assembly": "1",
+    "receptor_label": "C",
+    "partner_label": "A",
+    "receptor_author": "D",
+    "partner_author": "A",
+    "native_chain": "B",
+    "observed_mapped_CA": 147,
+    "source_to_native_CA_rmsd": 3.708305220888369,
+    "partner_fit": 3.70830566176178,
+    "sequence_mismatches": [],
+    "rotation": [
+      [
+        -0.5659831428246394,
+        0.2202815290455059,
+        -0.794442772616555
+      ],
+      [
+        0.6595810062254139,
+        -0.4571195534534046,
+        -0.596652915796861
+      ],
+      [
+        -0.49458700451043286,
+        -0.8616946948776711,
+        0.11342843340313649
+      ]
+    ],
+    "translation": [
+      197.67227473131243,
+      129.24043345449343,
+      110.33925995692066
+    ],
+    "partner_observed_residues": 208
+  },
+  {
+    "design": "assembly2_FcB_TfRC_nativeA",
+    "assembly": "2",
+    "receptor_label": "B",
+    "partner_label": "D",
+    "receptor_author": "C",
+    "partner_author": "B",
+    "native_chain": "A",
+    "observed_mapped_CA": 144,
+    "source_to_native_CA_rmsd": 0.9627103380971039,
+    "partner_fit": 0.962710420379604,
+    "sequence_mismatches": [],
+    "rotation": [
+      [
+        0.0864414820232545,
+        -0.01003986165398135,
+        -0.9962062786540731
+      ],
+      [
+        0.8051756653636966,
+        -0.5881730250992925,
+        0.07579333476355697
+      ],
+      [
+        -0.5867026669799253,
+        -0.808672751944679,
+        -0.04275871804376442
+      ]
+    ],
+    "translation": [
+      70.40868112193654,
+      172.46141143333824,
+      110.93409943230422
+    ],
+    "partner_observed_residues": 190
+  },
+  {
+    "design": "assembly2_FcB_TfRC_nativeB",
+    "assembly": "2",
+    "receptor_label": "B",
+    "partner_label": "D",
+    "receptor_author": "C",
+    "partner_author": "B",
+    "native_chain": "B",
+    "observed_mapped_CA": 144,
+    "source_to_native_CA_rmsd": 0.9496413840161027,
+    "partner_fit": 0.9496413229493882,
+    "sequence_mismatches": [],
+    "rotation": [
+      [
+        -0.08719114999150596,
+        0.008696548140878946,
+        -0.9961536519410981
+      ],
+      [
+        -0.8052740231660136,
+        0.5880609505352936,
+        0.07561767772268979
+      ],
+      [
+        0.5864566393147909,
+        0.8087699158564337,
+        -0.044270595128873325
+      ]
+    ],
+    "translation": [
+      193.59662885217588,
+      91.54177760146709,
+      110.96689245329429
+    ],
+    "partner_observed_residues": 190
+  }
+]

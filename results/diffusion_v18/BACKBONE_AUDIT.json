@@ -1,0 +1,43 @@
+{
+  "status": "structural_rejection",
+  "source": "results/diffusion_v18/mirrored/backbone_20261022.pdb",
+  "source_sha256": "5e49621780781dbc1a424796044eac44427e842adc570e8c0183dfeee9c845c2",
+  "qualified_candidates": 0,
+  "sequence_design_allowed": false,
+  "binder_geometry": {
+    "ranges_A": {
+      "N_CA": [
+        1.4571669518964105,
+        1.4585999983551765
+      ],
+      "CA_C": [
+        1.5223034290024837,
+        1.5242659389951463
+      ],
+      "C_O": [
+        1.2301926264216287,
+        1.231794739016732
+      ],
+      "peptide_C_N": [
+        1.227541107996815,
+        1.3881476255729668
+      ],
+      "adjacent_CA": [
+        3.770171196670272,
+        3.8267299371731305
+      ]
+    },
+    "nonadjacent_backbone_min_A": 2.756716458791545,
+    "passed": true,
+    "failed": []
+  },
+  "hotspot_nearest_binder_CA_A": [
+    12.568353652954102,
+    13.399491310119629,
+    9.33443832397461,
+    7.705954074859619,
+    5.657541751861572
+  ],
+  "hotspot_CA_fraction_within8A": 0.4,
+  "reason": "Insufficient declared-patch backbone contact"
+}

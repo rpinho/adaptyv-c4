@@ -1,0 +1,2378 @@
+[
+  {
+    "tensor_index": 0,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 1
+  },
+  {
+    "tensor_index": 1,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 2
+  },
+  {
+    "tensor_index": 2,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 3
+  },
+  {
+    "tensor_index": 3,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 4
+  },
+  {
+    "tensor_index": 4,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 5
+  },
+  {
+    "tensor_index": 5,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 6
+  },
+  {
+    "tensor_index": 6,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 7
+  },
+  {
+    "tensor_index": 7,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 8
+  },
+  {
+    "tensor_index": 8,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 9
+  },
+  {
+    "tensor_index": 9,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 10
+  },
+  {
+    "tensor_index": 10,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 11
+  },
+  {
+    "tensor_index": 11,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 12
+  },
+  {
+    "tensor_index": 12,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 13
+  },
+  {
+    "tensor_index": 13,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 14
+  },
+  {
+    "tensor_index": 14,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 15
+  },
+  {
+    "tensor_index": 15,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 16
+  },
+  {
+    "tensor_index": 16,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 17
+  },
+  {
+    "tensor_index": 17,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 18
+  },
+  {
+    "tensor_index": 18,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 19
+  },
+  {
+    "tensor_index": 19,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 20
+  },
+  {
+    "tensor_index": 20,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 21
+  },
+  {
+    "tensor_index": 21,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 22
+  },
+  {
+    "tensor_index": 22,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 23
+  },
+  {
+    "tensor_index": 23,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 24
+  },
+  {
+    "tensor_index": 24,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 25
+  },
+  {
+    "tensor_index": 25,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 26
+  },
+  {
+    "tensor_index": 26,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 27
+  },
+  {
+    "tensor_index": 27,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 28
+  },
+  {
+    "tensor_index": 28,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 29
+  },
+  {
+    "tensor_index": 29,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 30
+  },
+  {
+    "tensor_index": 30,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 31
+  },
+  {
+    "tensor_index": 31,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 32
+  },
+  {
+    "tensor_index": 32,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 33
+  },
+  {
+    "tensor_index": 33,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 34
+  },
+  {
+    "tensor_index": 34,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 35
+  },
+  {
+    "tensor_index": 35,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 36
+  },
+  {
+    "tensor_index": 36,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 37
+  },
+  {
+    "tensor_index": 37,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 38
+  },
+  {
+    "tensor_index": 38,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 39
+  },
+  {
+    "tensor_index": 39,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 40
+  },
+  {
+    "tensor_index": 40,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 41
+  },
+  {
+    "tensor_index": 41,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 42
+  },
+  {
+    "tensor_index": 42,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 43
+  },
+  {
+    "tensor_index": 43,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 44
+  },
+  {
+    "tensor_index": 44,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 45
+  },
+  {
+    "tensor_index": 45,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 46
+  },
+  {
+    "tensor_index": 46,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 47
+  },
+  {
+    "tensor_index": 47,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 48
+  },
+  {
+    "tensor_index": 48,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 49
+  },
+  {
+    "tensor_index": 49,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 50
+  },
+  {
+    "tensor_index": 50,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 51
+  },
+  {
+    "tensor_index": 51,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 52
+  },
+  {
+    "tensor_index": 52,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 53
+  },
+  {
+    "tensor_index": 53,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 54
+  },
+  {
+    "tensor_index": 54,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 55
+  },
+  {
+    "tensor_index": 55,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 56
+  },
+  {
+    "tensor_index": 56,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 57
+  },
+  {
+    "tensor_index": 57,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 58
+  },
+  {
+    "tensor_index": 58,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 59
+  },
+  {
+    "tensor_index": 59,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 60
+  },
+  {
+    "tensor_index": 60,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 61
+  },
+  {
+    "tensor_index": 61,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 62
+  },
+  {
+    "tensor_index": 62,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 63
+  },
+  {
+    "tensor_index": 63,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 64
+  },
+  {
+    "tensor_index": 64,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 65
+  },
+  {
+    "tensor_index": 65,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 66
+  },
+  {
+    "tensor_index": 66,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 67
+  },
+  {
+    "tensor_index": 67,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 68
+  },
+  {
+    "tensor_index": 68,
+    "input_reference": [
+      "_",
+      "_"
+    ],
+    "output_chain": "B",
+    "output_author_id": 69
+  },
+  {
+    "tensor_index": 69,
+    "input_reference": [
+      "A",
+      189
+    ],
+    "output_chain": "A",
+    "output_author_id": 189
+  },
+  {
+    "tensor_index": 70,
+    "input_reference": [
+      "A",
+      190
+    ],
+    "output_chain": "A",
+    "output_author_id": 190
+  },
+  {
+    "tensor_index": 71,
+    "input_reference": [
+      "A",
+      191
+    ],
+    "output_chain": "A",
+    "output_author_id": 191
+  },
+  {
+    "tensor_index": 72,
+    "input_reference": [
+      "A",
+      192
+    ],
+    "output_chain": "A",
+    "output_author_id": 192
+  },
+  {
+    "tensor_index": 73,
+    "input_reference": [
+      "A",
+      193
+    ],
+    "output_chain": "A",
+    "output_author_id": 193
+  },
+  {
+    "tensor_index": 74,
+    "input_reference": [
+      "A",
+      194
+    ],
+    "output_chain": "A",
+    "output_author_id": 194
+  },
+  {
+    "tensor_index": 75,
+    "input_reference": [
+      "A",
+      195
+    ],
+    "output_chain": "A",
+    "output_author_id": 195
+  },
+  {
+    "tensor_index": 76,
+    "input_reference": [
+      "A",
+      196
+    ],
+    "output_chain": "A",
+    "output_author_id": 196
+  },
+  {
+    "tensor_index": 77,
+    "input_reference": [
+      "A",
+      197
+    ],
+    "output_chain": "A",
+    "output_author_id": 197
+  },
+  {
+    "tensor_index": 78,
+    "input_reference": [
+      "A",
+      198
+    ],
+    "output_chain": "A",
+    "output_author_id": 198
+  },
+  {
+    "tensor_index": 79,
+    "input_reference": [
+      "A",
+      199
+    ],
+    "output_chain": "A",
+    "output_author_id": 199
+  },
+  {
+    "tensor_index": 80,
+    "input_reference": [
+      "A",
+      200
+    ],
+    "output_chain": "A",
+    "output_author_id": 200
+  },
+  {
+    "tensor_index": 81,
+    "input_reference": [
+      "A",
+      201
+    ],
+    "output_chain": "A",
+    "output_author_id": 201
+  },
+  {
+    "tensor_index": 82,
+    "input_reference": [
+      "A",
+      202
+    ],
+    "output_chain": "A",
+    "output_author_id": 202
+  },
+  {
+    "tensor_index": 83,
+    "input_reference": [
+      "A",
+      203
+    ],
+    "output_chain": "A",
+    "output_author_id": 203
+  },
+  {
+    "tensor_index": 84,
+    "input_reference": [
+      "A",
+      204
+    ],
+    "output_chain": "A",
+    "output_author_id": 204
+  },
+  {
+    "tensor_index": 85,
+    "input_reference": [
+      "A",
+      205
+    ],
+    "output_chain": "A",
+    "output_author_id": 205
+  },
+  {
+    "tensor_index": 86,
+    "input_reference": [
+      "A",
+      206
+    ],
+    "output_chain": "A",
+    "output_author_id": 206
+  },
+  {
+    "tensor_index": 87,
+    "input_reference": [
+      "A",
+      207
+    ],
+    "output_chain": "A",
+    "output_author_id": 207
+  },
+  {
+    "tensor_index": 88,
+    "input_reference": [
+      "A",
+      208
+    ],
+    "output_chain": "A",
+    "output_author_id": 208
+  },
+  {
+    "tensor_index": 89,
+    "input_reference": [
+      "A",
+      209
+    ],
+    "output_chain": "A",
+    "output_author_id": 209
+  },
+  {
+    "tensor_index": 90,
+    "input_reference": [
+      "A",
+      210
+    ],
+    "output_chain": "A",
+    "output_author_id": 210
+  },
+  {
+    "tensor_index": 91,
+    "input_reference": [
+      "A",
+      211
+    ],
+    "output_chain": "A",
+    "output_author_id": 211
+  },
+  {
+    "tensor_index": 92,
+    "input_reference": [
+      "A",
+      212
+    ],
+    "output_chain": "A",
+    "output_author_id": 212
+  },
+  {
+    "tensor_index": 93,
+    "input_reference": [
+      "A",
+      213
+    ],
+    "output_chain": "A",
+    "output_author_id": 213
+  },
+  {
+    "tensor_index": 94,
+    "input_reference": [
+      "A",
+      214
+    ],
+    "output_chain": "A",
+    "output_author_id": 214
+  },
+  {
+    "tensor_index": 95,
+    "input_reference": [
+      "A",
+      215
+    ],
+    "output_chain": "A",
+    "output_author_id": 215
+  },
+  {
+    "tensor_index": 96,
+    "input_reference": [
+      "A",
+      216
+    ],
+    "output_chain": "A",
+    "output_author_id": 216
+  },
+  {
+    "tensor_index": 97,
+    "input_reference": [
+      "A",
+      217
+    ],
+    "output_chain": "A",
+    "output_author_id": 217
+  },
+  {
+    "tensor_index": 98,
+    "input_reference": [
+      "A",
+      218
+    ],
+    "output_chain": "A",
+    "output_author_id": 218
+  },
+  {
+    "tensor_index": 99,
+    "input_reference": [
+      "A",
+      219
+    ],
+    "output_chain": "A",
+    "output_author_id": 219
+  },
+  {
+    "tensor_index": 100,
+    "input_reference": [
+      "A",
+      220
+    ],
+    "output_chain": "A",
+    "output_author_id": 220
+  },
+  {
+    "tensor_index": 101,
+    "input_reference": [
+      "A",
+      221
+    ],
+    "output_chain": "A",
+    "output_author_id": 221
+  },
+  {
+    "tensor_index": 102,
+    "input_reference": [
+      "A",
+      222
+    ],
+    "output_chain": "A",
+    "output_author_id": 222
+  },
+  {
+    "tensor_index": 103,
+    "input_reference": [
+      "A",
+      223
+    ],
+    "output_chain": "A",
+    "output_author_id": 223
+  },
+  {
+    "tensor_index": 104,
+    "input_reference": [
+      "A",
+      224
+    ],
+    "output_chain": "A",
+    "output_author_id": 224
+  },
+  {
+    "tensor_index": 105,
+    "input_reference": [
+      "A",
+      225
+    ],
+    "output_chain": "A",
+    "output_author_id": 225
+  },
+  {
+    "tensor_index": 106,
+    "input_reference": [
+      "A",
+      226
+    ],
+    "output_chain": "A",
+    "output_author_id": 226
+  },
+  {
+    "tensor_index": 107,
+    "input_reference": [
+      "A",
+      227
+    ],
+    "output_chain": "A",
+    "output_author_id": 227
+  },
+  {
+    "tensor_index": 108,
+    "input_reference": [
+      "A",
+      228
+    ],
+    "output_chain": "A",
+    "output_author_id": 228
+  },
+  {
+    "tensor_index": 109,
+    "input_reference": [
+      "A",
+      229
+    ],
+    "output_chain": "A",
+    "output_author_id": 229
+  },
+  {
+    "tensor_index": 110,
+    "input_reference": [
+      "A",
+      230
+    ],
+    "output_chain": "A",
+    "output_author_id": 230
+  },
+  {
+    "tensor_index": 111,
+    "input_reference": [
+      "A",
+      231
+    ],
+    "output_chain": "A",
+    "output_author_id": 231
+  },
+  {
+    "tensor_index": 112,
+    "input_reference": [
+      "A",
+      232
+    ],
+    "output_chain": "A",
+    "output_author_id": 232
+  },
+  {
+    "tensor_index": 113,
+    "input_reference": [
+      "A",
+      233
+    ],
+    "output_chain": "A",
+    "output_author_id": 233
+  },
+  {
+    "tensor_index": 114,
+    "input_reference": [
+      "A",
+      234
+    ],
+    "output_chain": "A",
+    "output_author_id": 234
+  },
+  {
+    "tensor_index": 115,
+    "input_reference": [
+      "A",
+      235
+    ],
+    "output_chain": "A",
+    "output_author_id": 235
+  },
+  {
+    "tensor_index": 116,
+    "input_reference": [
+      "A",
+      236
+    ],
+    "output_chain": "A",
+    "output_author_id": 236
+  },
+  {
+    "tensor_index": 117,
+    "input_reference": [
+      "A",
+      237
+    ],
+    "output_chain": "A",
+    "output_author_id": 237
+  },
+  {
+    "tensor_index": 118,
+    "input_reference": [
+      "A",
+      238
+    ],
+    "output_chain": "A",
+    "output_author_id": 238
+  },
+  {
+    "tensor_index": 119,
+    "input_reference": [
+      "A",
+      239
+    ],
+    "output_chain": "A",
+    "output_author_id": 239
+  },
+  {
+    "tensor_index": 120,
+    "input_reference": [
+      "A",
+      240
+    ],
+    "output_chain": "A",
+    "output_author_id": 240
+  },
+  {
+    "tensor_index": 121,
+    "input_reference": [
+      "A",
+      241
+    ],
+    "output_chain": "A",
+    "output_author_id": 241
+  },
+  {
+    "tensor_index": 122,
+    "input_reference": [
+      "A",
+      242
+    ],
+    "output_chain": "A",
+    "output_author_id": 242
+  },
+  {
+    "tensor_index": 123,
+    "input_reference": [
+      "A",
+      243
+    ],
+    "output_chain": "A",
+    "output_author_id": 243
+  },
+  {
+    "tensor_index": 124,
+    "input_reference": [
+      "A",
+      244
+    ],
+    "output_chain": "A",
+    "output_author_id": 244
+  },
+  {
+    "tensor_index": 125,
+    "input_reference": [
+      "A",
+      245
+    ],
+    "output_chain": "A",
+    "output_author_id": 245
+  },
+  {
+    "tensor_index": 126,
+    "input_reference": [
+      "A",
+      246
+    ],
+    "output_chain": "A",
+    "output_author_id": 246
+  },
+  {
+    "tensor_index": 127,
+    "input_reference": [
+      "A",
+      247
+    ],
+    "output_chain": "A",
+    "output_author_id": 247
+  },
+  {
+    "tensor_index": 128,
+    "input_reference": [
+      "A",
+      248
+    ],
+    "output_chain": "A",
+    "output_author_id": 248
+  },
+  {
+    "tensor_index": 129,
+    "input_reference": [
+      "A",
+      249
+    ],
+    "output_chain": "A",
+    "output_author_id": 249
+  },
+  {
+    "tensor_index": 130,
+    "input_reference": [
+      "A",
+      250
+    ],
+    "output_chain": "A",
+    "output_author_id": 250
+  },
+  {
+    "tensor_index": 131,
+    "input_reference": [
+      "A",
+      251
+    ],
+    "output_chain": "A",
+    "output_author_id": 251
+  },
+  {
+    "tensor_index": 132,
+    "input_reference": [
+      "A",
+      252
+    ],
+    "output_chain": "A",
+    "output_author_id": 252
+  },
+  {
+    "tensor_index": 133,
+    "input_reference": [
+      "A",
+      253
+    ],
+    "output_chain": "A",
+    "output_author_id": 253
+  },
+  {
+    "tensor_index": 134,
+    "input_reference": [
+      "A",
+      254
+    ],
+    "output_chain": "A",
+    "output_author_id": 254
+  },
+  {
+    "tensor_index": 135,
+    "input_reference": [
+      "A",
+      255
+    ],
+    "output_chain": "A",
+    "output_author_id": 255
+  },
+  {
+    "tensor_index": 136,
+    "input_reference": [
+      "A",
+      256
+    ],
+    "output_chain": "A",
+    "output_author_id": 256
+  },
+  {
+    "tensor_index": 137,
+    "input_reference": [
+      "A",
+      257
+    ],
+    "output_chain": "A",
+    "output_author_id": 257
+  },
+  {
+    "tensor_index": 138,
+    "input_reference": [
+      "A",
+      258
+    ],
+    "output_chain": "A",
+    "output_author_id": 258
+  },
+  {
+    "tensor_index": 139,
+    "input_reference": [
+      "A",
+      259
+    ],
+    "output_chain": "A",
+    "output_author_id": 259
+  },
+  {
+    "tensor_index": 140,
+    "input_reference": [
+      "A",
+      260
+    ],
+    "output_chain": "A",
+    "output_author_id": 260
+  },
+  {
+    "tensor_index": 141,
+    "input_reference": [
+      "A",
+      261
+    ],
+    "output_chain": "A",
+    "output_author_id": 261
+  },
+  {
+    "tensor_index": 142,
+    "input_reference": [
+      "A",
+      262
+    ],
+    "output_chain": "A",
+    "output_author_id": 262
+  },
+  {
+    "tensor_index": 143,
+    "input_reference": [
+      "A",
+      263
+    ],
+    "output_chain": "A",
+    "output_author_id": 263
+  },
+  {
+    "tensor_index": 144,
+    "input_reference": [
+      "A",
+      264
+    ],
+    "output_chain": "A",
+    "output_author_id": 264
+  },
+  {
+    "tensor_index": 145,
+    "input_reference": [
+      "A",
+      265
+    ],
+    "output_chain": "A",
+    "output_author_id": 265
+  },
+  {
+    "tensor_index": 146,
+    "input_reference": [
+      "A",
+      266
+    ],
+    "output_chain": "A",
+    "output_author_id": 266
+  },
+  {
+    "tensor_index": 147,
+    "input_reference": [
+      "A",
+      267
+    ],
+    "output_chain": "A",
+    "output_author_id": 267
+  },
+  {
+    "tensor_index": 148,
+    "input_reference": [
+      "A",
+      268
+    ],
+    "output_chain": "A",
+    "output_author_id": 268
+  },
+  {
+    "tensor_index": 149,
+    "input_reference": [
+      "A",
+      269
+    ],
+    "output_chain": "A",
+    "output_author_id": 269
+  },
+  {
+    "tensor_index": 150,
+    "input_reference": [
+      "A",
+      270
+    ],
+    "output_chain": "A",
+    "output_author_id": 270
+  },
+  {
+    "tensor_index": 151,
+    "input_reference": [
+      "A",
+      271
+    ],
+    "output_chain": "A",
+    "output_author_id": 271
+  },
+  {
+    "tensor_index": 152,
+    "input_reference": [
+      "A",
+      272
+    ],
+    "output_chain": "A",
+    "output_author_id": 272
+  },
+  {
+    "tensor_index": 153,
+    "input_reference": [
+      "A",
+      273
+    ],
+    "output_chain": "A",
+    "output_author_id": 273
+  },
+  {
+    "tensor_index": 154,
+    "input_reference": [
+      "A",
+      274
+    ],
+    "output_chain": "A",
+    "output_author_id": 274
+  },
+  {
+    "tensor_index": 155,
+    "input_reference": [
+      "A",
+      275
+    ],
+    "output_chain": "A",
+    "output_author_id": 275
+  },
+  {
+    "tensor_index": 156,
+    "input_reference": [
+      "A",
+      276
+    ],
+    "output_chain": "A",
+    "output_author_id": 276
+  },
+  {
+    "tensor_index": 157,
+    "input_reference": [
+      "A",
+      277
+    ],
+    "output_chain": "A",
+    "output_author_id": 277
+  },
+  {
+    "tensor_index": 158,
+    "input_reference": [
+      "A",
+      278
+    ],
+    "output_chain": "A",
+    "output_author_id": 278
+  },
+  {
+    "tensor_index": 159,
+    "input_reference": [
+      "A",
+      279
+    ],
+    "output_chain": "A",
+    "output_author_id": 279
+  },
+  {
+    "tensor_index": 160,
+    "input_reference": [
+      "A",
+      280
+    ],
+    "output_chain": "A",
+    "output_author_id": 280
+  },
+  {
+    "tensor_index": 161,
+    "input_reference": [
+      "A",
+      281
+    ],
+    "output_chain": "A",
+    "output_author_id": 281
+  },
+  {
+    "tensor_index": 162,
+    "input_reference": [
+      "A",
+      282
+    ],
+    "output_chain": "A",
+    "output_author_id": 282
+  },
+  {
+    "tensor_index": 163,
+    "input_reference": [
+      "A",
+      283
+    ],
+    "output_chain": "A",
+    "output_author_id": 283
+  },
+  {
+    "tensor_index": 164,
+    "input_reference": [
+      "A",
+      284
+    ],
+    "output_chain": "A",
+    "output_author_id": 284
+  },
+  {
+    "tensor_index": 165,
+    "input_reference": [
+      "A",
+      285
+    ],
+    "output_chain": "A",
+    "output_author_id": 285
+  },
+  {
+    "tensor_index": 166,
+    "input_reference": [
+      "A",
+      286
+    ],
+    "output_chain": "A",
+    "output_author_id": 286
+  },
+  {
+    "tensor_index": 167,
+    "input_reference": [
+      "A",
+      287
+    ],
+    "output_chain": "A",
+    "output_author_id": 287
+  },
+  {
+    "tensor_index": 168,
+    "input_reference": [
+      "A",
+      288
+    ],
+    "output_chain": "A",
+    "output_author_id": 288
+  },
+  {
+    "tensor_index": 169,
+    "input_reference": [
+      "A",
+      289
+    ],
+    "output_chain": "A",
+    "output_author_id": 289
+  },
+  {
+    "tensor_index": 170,
+    "input_reference": [
+      "A",
+      290
+    ],
+    "output_chain": "A",
+    "output_author_id": 290
+  },
+  {
+    "tensor_index": 171,
+    "input_reference": [
+      "A",
+      291
+    ],
+    "output_chain": "A",
+    "output_author_id": 291
+  },
+  {
+    "tensor_index": 172,
+    "input_reference": [
+      "A",
+      292
+    ],
+    "output_chain": "A",
+    "output_author_id": 292
+  },
+  {
+    "tensor_index": 173,
+    "input_reference": [
+      "A",
+      293
+    ],
+    "output_chain": "A",
+    "output_author_id": 293
+  },
+  {
+    "tensor_index": 174,
+    "input_reference": [
+      "A",
+      294
+    ],
+    "output_chain": "A",
+    "output_author_id": 294
+  },
+  {
+    "tensor_index": 175,
+    "input_reference": [
+      "A",
+      295
+    ],
+    "output_chain": "A",
+    "output_author_id": 295
+  },
+  {
+    "tensor_index": 176,
+    "input_reference": [
+      "A",
+      296
+    ],
+    "output_chain": "A",
+    "output_author_id": 296
+  },
+  {
+    "tensor_index": 177,
+    "input_reference": [
+      "A",
+      297
+    ],
+    "output_chain": "A",
+    "output_author_id": 297
+  },
+  {
+    "tensor_index": 178,
+    "input_reference": [
+      "A",
+      298
+    ],
+    "output_chain": "A",
+    "output_author_id": 298
+  },
+  {
+    "tensor_index": 179,
+    "input_reference": [
+      "A",
+      299
+    ],
+    "output_chain": "A",
+    "output_author_id": 299
+  },
+  {
+    "tensor_index": 180,
+    "input_reference": [
+      "A",
+      300
+    ],
+    "output_chain": "A",
+    "output_author_id": 300
+  },
+  {
+    "tensor_index": 181,
+    "input_reference": [
+      "A",
+      301
+    ],
+    "output_chain": "A",
+    "output_author_id": 301
+  },
+  {
+    "tensor_index": 182,
+    "input_reference": [
+      "A",
+      302
+    ],
+    "output_chain": "A",
+    "output_author_id": 302
+  },
+  {
+    "tensor_index": 183,
+    "input_reference": [
+      "A",
+      303
+    ],
+    "output_chain": "A",
+    "output_author_id": 303
+  },
+  {
+    "tensor_index": 184,
+    "input_reference": [
+      "A",
+      304
+    ],
+    "output_chain": "A",
+    "output_author_id": 304
+  },
+  {
+    "tensor_index": 185,
+    "input_reference": [
+      "A",
+      305
+    ],
+    "output_chain": "A",
+    "output_author_id": 305
+  },
+  {
+    "tensor_index": 186,
+    "input_reference": [
+      "A",
+      306
+    ],
+    "output_chain": "A",
+    "output_author_id": 306
+  },
+  {
+    "tensor_index": 187,
+    "input_reference": [
+      "A",
+      307
+    ],
+    "output_chain": "A",
+    "output_author_id": 307
+  },
+  {
+    "tensor_index": 188,
+    "input_reference": [
+      "A",
+      308
+    ],
+    "output_chain": "A",
+    "output_author_id": 308
+  },
+  {
+    "tensor_index": 189,
+    "input_reference": [
+      "A",
+      309
+    ],
+    "output_chain": "A",
+    "output_author_id": 309
+  },
+  {
+    "tensor_index": 190,
+    "input_reference": [
+      "A",
+      310
+    ],
+    "output_chain": "A",
+    "output_author_id": 310
+  },
+  {
+    "tensor_index": 191,
+    "input_reference": [
+      "A",
+      311
+    ],
+    "output_chain": "A",
+    "output_author_id": 311
+  },
+  {
+    "tensor_index": 192,
+    "input_reference": [
+      "A",
+      312
+    ],
+    "output_chain": "A",
+    "output_author_id": 312
+  },
+  {
+    "tensor_index": 193,
+    "input_reference": [
+      "A",
+      313
+    ],
+    "output_chain": "A",
+    "output_author_id": 313
+  },
+  {
+    "tensor_index": 194,
+    "input_reference": [
+      "A",
+      314
+    ],
+    "output_chain": "A",
+    "output_author_id": 314
+  },
+  {
+    "tensor_index": 195,
+    "input_reference": [
+      "A",
+      315
+    ],
+    "output_chain": "A",
+    "output_author_id": 315
+  },
+  {
+    "tensor_index": 196,
+    "input_reference": [
+      "A",
+      316
+    ],
+    "output_chain": "A",
+    "output_author_id": 316
+  },
+  {
+    "tensor_index": 197,
+    "input_reference": [
+      "A",
+      317
+    ],
+    "output_chain": "A",
+    "output_author_id": 317
+  },
+  {
+    "tensor_index": 198,
+    "input_reference": [
+      "A",
+      318
+    ],
+    "output_chain": "A",
+    "output_author_id": 318
+  },
+  {
+    "tensor_index": 199,
+    "input_reference": [
+      "A",
+      319
+    ],
+    "output_chain": "A",
+    "output_author_id": 319
+  },
+  {
+    "tensor_index": 200,
+    "input_reference": [
+      "A",
+      320
+    ],
+    "output_chain": "A",
+    "output_author_id": 320
+  },
+  {
+    "tensor_index": 201,
+    "input_reference": [
+      "A",
+      321
+    ],
+    "output_chain": "A",
+    "output_author_id": 321
+  },
+  {
+    "tensor_index": 202,
+    "input_reference": [
+      "A",
+      322
+    ],
+    "output_chain": "A",
+    "output_author_id": 322
+  },
+  {
+    "tensor_index": 203,
+    "input_reference": [
+      "A",
+      323
+    ],
+    "output_chain": "A",
+    "output_author_id": 323
+  },
+  {
+    "tensor_index": 204,
+    "input_reference": [
+      "A",
+      324
+    ],
+    "output_chain": "A",
+    "output_author_id": 324
+  },
+  {
+    "tensor_index": 205,
+    "input_reference": [
+      "A",
+      325
+    ],
+    "output_chain": "A",
+    "output_author_id": 325
+  },
+  {
+    "tensor_index": 206,
+    "input_reference": [
+      "A",
+      326
+    ],
+    "output_chain": "A",
+    "output_author_id": 326
+  },
+  {
+    "tensor_index": 207,
+    "input_reference": [
+      "A",
+      327
+    ],
+    "output_chain": "A",
+    "output_author_id": 327
+  },
+  {
+    "tensor_index": 208,
+    "input_reference": [
+      "A",
+      328
+    ],
+    "output_chain": "A",
+    "output_author_id": 328
+  },
+  {
+    "tensor_index": 209,
+    "input_reference": [
+      "A",
+      329
+    ],
+    "output_chain": "A",
+    "output_author_id": 329
+  },
+  {
+    "tensor_index": 210,
+    "input_reference": [
+      "A",
+      330
+    ],
+    "output_chain": "A",
+    "output_author_id": 330
+  },
+  {
+    "tensor_index": 211,
+    "input_reference": [
+      "A",
+      331
+    ],
+    "output_chain": "A",
+    "output_author_id": 331
+  },
+  {
+    "tensor_index": 212,
+    "input_reference": [
+      "A",
+      332
+    ],
+    "output_chain": "A",
+    "output_author_id": 332
+  },
+  {
+    "tensor_index": 213,
+    "input_reference": [
+      "A",
+      333
+    ],
+    "output_chain": "A",
+    "output_author_id": 333
+  },
+  {
+    "tensor_index": 214,
+    "input_reference": [
+      "A",
+      334
+    ],
+    "output_chain": "A",
+    "output_author_id": 334
+  },
+  {
+    "tensor_index": 215,
+    "input_reference": [
+      "A",
+      335
+    ],
+    "output_chain": "A",
+    "output_author_id": 335
+  },
+  {
+    "tensor_index": 216,
+    "input_reference": [
+      "A",
+      336
+    ],
+    "output_chain": "A",
+    "output_author_id": 336
+  },
+  {
+    "tensor_index": 217,
+    "input_reference": [
+      "A",
+      337
+    ],
+    "output_chain": "A",
+    "output_author_id": 337
+  },
+  {
+    "tensor_index": 218,
+    "input_reference": [
+      "A",
+      338
+    ],
+    "output_chain": "A",
+    "output_author_id": 338
+  },
+  {
+    "tensor_index": 219,
+    "input_reference": [
+      "A",
+      339
+    ],
+    "output_chain": "A",
+    "output_author_id": 339
+  },
+  {
+    "tensor_index": 220,
+    "input_reference": [
+      "A",
+      340
+    ],
+    "output_chain": "A",
+    "output_author_id": 340
+  },
+  {
+    "tensor_index": 221,
+    "input_reference": [
+      "A",
+      341
+    ],
+    "output_chain": "A",
+    "output_author_id": 341
+  },
+  {
+    "tensor_index": 222,
+    "input_reference": [
+      "A",
+      342
+    ],
+    "output_chain": "A",
+    "output_author_id": 342
+  },
+  {
+    "tensor_index": 223,
+    "input_reference": [
+      "A",
+      343
+    ],
+    "output_chain": "A",
+    "output_author_id": 343
+  },
+  {
+    "tensor_index": 224,
+    "input_reference": [
+      "A",
+      344
+    ],
+    "output_chain": "A",
+    "output_author_id": 344
+  },
+  {
+    "tensor_index": 225,
+    "input_reference": [
+      "A",
+      345
+    ],
+    "output_chain": "A",
+    "output_author_id": 345
+  },
+  {
+    "tensor_index": 226,
+    "input_reference": [
+      "A",
+      346
+    ],
+    "output_chain": "A",
+    "output_author_id": 346
+  },
+  {
+    "tensor_index": 227,
+    "input_reference": [
+      "A",
+      347
+    ],
+    "output_chain": "A",
+    "output_author_id": 347
+  },
+  {
+    "tensor_index": 228,
+    "input_reference": [
+      "A",
+      348
+    ],
+    "output_chain": "A",
+    "output_author_id": 348
+  },
+  {
+    "tensor_index": 229,
+    "input_reference": [
+      "A",
+      349
+    ],
+    "output_chain": "A",
+    "output_author_id": 349
+  },
+  {
+    "tensor_index": 230,
+    "input_reference": [
+      "A",
+      350
+    ],
+    "output_chain": "A",
+    "output_author_id": 350
+  },
+  {
+    "tensor_index": 231,
+    "input_reference": [
+      "A",
+      351
+    ],
+    "output_chain": "A",
+    "output_author_id": 351
+  },
+  {
+    "tensor_index": 232,
+    "input_reference": [
+      "A",
+      352
+    ],
+    "output_chain": "A",
+    "output_author_id": 352
+  },
+  {
+    "tensor_index": 233,
+    "input_reference": [
+      "A",
+      353
+    ],
+    "output_chain": "A",
+    "output_author_id": 353
+  },
+  {
+    "tensor_index": 234,
+    "input_reference": [
+      "A",
+      354
+    ],
+    "output_chain": "A",
+    "output_author_id": 354
+  },
+  {
+    "tensor_index": 235,
+    "input_reference": [
+      "A",
+      355
+    ],
+    "output_chain": "A",
+    "output_author_id": 355
+  },
+  {
+    "tensor_index": 236,
+    "input_reference": [
+      "A",
+      356
+    ],
+    "output_chain": "A",
+    "output_author_id": 356
+  },
+  {
+    "tensor_index": 237,
+    "input_reference": [
+      "A",
+      357
+    ],
+    "output_chain": "A",
+    "output_author_id": 357
+  },
+  {
+    "tensor_index": 238,
+    "input_reference": [
+      "A",
+      358
+    ],
+    "output_chain": "A",
+    "output_author_id": 358
+  },
+  {
+    "tensor_index": 239,
+    "input_reference": [
+      "A",
+      359
+    ],
+    "output_chain": "A",
+    "output_author_id": 359
+  },
+  {
+    "tensor_index": 240,
+    "input_reference": [
+      "A",
+      360
+    ],
+    "output_chain": "A",
+    "output_author_id": 360
+  },
+  {
+    "tensor_index": 241,
+    "input_reference": [
+      "A",
+      361
+    ],
+    "output_chain": "A",
+    "output_author_id": 361
+  },
+  {
+    "tensor_index": 242,
+    "input_reference": [
+      "A",
+      362
+    ],
+    "output_chain": "A",
+    "output_author_id": 362
+  },
+  {
+    "tensor_index": 243,
+    "input_reference": [
+      "A",
+      363
+    ],
+    "output_chain": "A",
+    "output_author_id": 363
+  },
+  {
+    "tensor_index": 244,
+    "input_reference": [
+      "A",
+      364
+    ],
+    "output_chain": "A",
+    "output_author_id": 364
+  },
+  {
+    "tensor_index": 245,
+    "input_reference": [
+      "A",
+      365
+    ],
+    "output_chain": "A",
+    "output_author_id": 365
+  },
+  {
+    "tensor_index": 246,
+    "input_reference": [
+      "A",
+      366
+    ],
+    "output_chain": "A",
+    "output_author_id": 366
+  },
+  {
+    "tensor_index": 247,
+    "input_reference": [
+      "A",
+      367
+    ],
+    "output_chain": "A",
+    "output_author_id": 367
+  },
+  {
+    "tensor_index": 248,
+    "input_reference": [
+      "A",
+      368
+    ],
+    "output_chain": "A",
+    "output_author_id": 368
+  },
+  {
+    "tensor_index": 249,
+    "input_reference": [
+      "A",
+      369
+    ],
+    "output_chain": "A",
+    "output_author_id": 369
+  },
+  {
+    "tensor_index": 250,
+    "input_reference": [
+      "A",
+      370
+    ],
+    "output_chain": "A",
+    "output_author_id": 370
+  },
+  {
+    "tensor_index": 251,
+    "input_reference": [
+      "A",
+      371
+    ],
+    "output_chain": "A",
+    "output_author_id": 371
+  },
+  {
+    "tensor_index": 252,
+    "input_reference": [
+      "A",
+      372
+    ],
+    "output_chain": "A",
+    "output_author_id": 372
+  },
+  {
+    "tensor_index": 253,
+    "input_reference": [
+      "A",
+      373
+    ],
+    "output_chain": "A",
+    "output_author_id": 373
+  },
+  {
+    "tensor_index": 254,
+    "input_reference": [
+      "A",
+      374
+    ],
+    "output_chain": "A",
+    "output_author_id": 374
+  },
+  {
+    "tensor_index": 255,
+    "input_reference": [
+      "A",
+      375
+    ],
+    "output_chain": "A",
+    "output_author_id": 375
+  },
+  {
+    "tensor_index": 256,
+    "input_reference": [
+      "A",
+      376
+    ],
+    "output_chain": "A",
+    "output_author_id": 376
+  },
+  {
+    "tensor_index": 257,
+    "input_reference": [
+      "A",
+      377
+    ],
+    "output_chain": "A",
+    "output_author_id": 377
+  },
+  {
+    "tensor_index": 258,
+    "input_reference": [
+      "A",
+      378
+    ],
+    "output_chain": "A",
+    "output_author_id": 378
+  },
+  {
+    "tensor_index": 259,
+    "input_reference": [
+      "A",
+      379
+    ],
+    "output_chain": "A",
+    "output_author_id": 379
+  },
+  {
+    "tensor_index": 260,
+    "input_reference": [
+      "A",
+      380
+    ],
+    "output_chain": "A",
+    "output_author_id": 380
+  },
+  {
+    "tensor_index": 261,
+    "input_reference": [
+      "A",
+      381
+    ],
+    "output_chain": "A",
+    "output_author_id": 381
+  },
+  {
+    "tensor_index": 262,
+    "input_reference": [
+      "A",
+      382
+    ],
+    "output_chain": "A",
+    "output_author_id": 382
+  },
+  {
+    "tensor_index": 263,
+    "input_reference": [
+      "A",
+      383
+    ],
+    "output_chain": "A",
+    "output_author_id": 383
+  }
+]
