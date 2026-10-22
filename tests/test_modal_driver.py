@@ -28,7 +28,7 @@ class ModalDriverTests(unittest.TestCase):
             spec.loader.exec_module(module)
         return module, fake
 
-    def exercise(self, stats, cancel=False):
+    def exercise(self, stats, cancel=False, cancel_at_series_root=False):
         driver, fake = self.driver()
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
@@ -36,12 +36,14 @@ class ModalDriverTests(unittest.TestCase):
             state.mkdir(parents=True)
             if cancel:
                 (state / "CANCEL").touch()
+            if cancel_at_series_root:
+                (root / "CANCEL").touch()
             fn = fake.Function.from_name.return_value
             call = fn.spawn.return_value
             call.object_id = "fc-test"
             call.get.return_value = {"status": "completed"}
             fn.get_current_stats.side_effect = stats
-            with patch.object(driver, "ROOT", root), patch.object(driver, "STATE", state), \
+            with patch.object(driver, "ROOT", root), patch.object(driver, "STATE", state), patch.object(driver, "CANCEL_ROOT", root), \
                     patch.object(driver, "mirror"), patch.object(driver.time, "sleep"), \
                     patch.object(driver.subprocess, "run", return_value=subprocess.CompletedProcess([], 0)) as followup:
                 driver.main()
@@ -67,6 +69,11 @@ class ModalDriverTests(unittest.TestCase):
             with patch.object(driver, "STATE", state), self.assertRaisesRegex(RuntimeError, "uncertain outcome"):
                 driver.main()
             fake.Function.from_name.return_value.spawn.assert_not_called()
+
+    def test_series_root_cancel_also_terminates_a_later_batch(self):
+        status, call, followup = self.exercise([Stats(), Stats()], cancel_at_series_root=True)
+        call.cancel.assert_called_once_with(terminate_containers=True)
+        self.assertTrue(status["gpu_released_verified"])
 
 
 if __name__ == "__main__":

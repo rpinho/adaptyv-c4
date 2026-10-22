@@ -1,11 +1,22 @@
 {
   "started": 1792618866.112844,
-  "finished_batches": [],
+  "finished_batches": [
+    0,
+    1,
+    2
+  ],
   "max_batches": 3,
   "runtime_upper_hourly_usd": 4.649328,
   "runtime_envelope_usd": 27.895967999999996,
   "pid": 9144,
-  "status": "active",
-  "current_batch": 0,
-  "current_run": "c4_native_apical_ablation_v3"
+  "status": "series_completed",
+  "current_batch": 2,
+  "current_run": "c4_native_apical_ablation_v3_replicate_3",
+  "batch_runtime_estimates_upper_usd": {
+    "0": 0.8702514591940497,
+    "1": 0.9057746765777969,
+    "2": 1.0999814311305236
+  },
+  "runtime_estimate_upper_usd": 2.87600756690237,
+  "updated": 1792621220.063391
 }

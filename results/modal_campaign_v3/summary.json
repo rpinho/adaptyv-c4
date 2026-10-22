@@ -1,0 +1,100 @@
+{
+  "batches": [
+    {
+      "folder": "results/modal_campaign_v3",
+      "trajectories": 2,
+      "accepted": 0,
+      "stopped_at": [
+        "screen",
+        "screen"
+      ],
+      "autotuned": [
+        "",
+        ""
+      ],
+      "stage_readings": [
+        {
+          "outcome": "rejected",
+          "stage": "screen",
+          "iptm": 0.16,
+          "plddt": 0.54
+        },
+        {
+          "outcome": "rejected",
+          "stage": "screen",
+          "iptm": 0.16,
+          "plddt": 0.42
+        }
+      ],
+      "gpu_released_verified": true,
+      "runtime_estimate_upper_usd": 0.8702514591940497,
+      "finished": 1792619544.980962
+    },
+    {
+      "folder": "results/modal_campaign_v3/replicate_2",
+      "trajectories": 2,
+      "accepted": 0,
+      "stopped_at": [
+        "screen",
+        "screen"
+      ],
+      "autotuned": [
+        "",
+        ""
+      ],
+      "stage_readings": [
+        {
+          "outcome": "rejected",
+          "stage": "screen",
+          "iptm": 0.16,
+          "plddt": 0.4
+        },
+        {
+          "outcome": "rejected",
+          "stage": "screen",
+          "iptm": 0.19,
+          "plddt": 0.48
+        }
+      ],
+      "gpu_released_verified": true,
+      "runtime_estimate_upper_usd": 0.9057746765777969,
+      "finished": 1792620281.9341388
+    },
+    {
+      "folder": "results/modal_campaign_v3/replicate_3",
+      "trajectories": 2,
+      "accepted": 0,
+      "stopped_at": [
+        "refine",
+        "screen"
+      ],
+      "autotuned": [
+        "",
+        ""
+      ],
+      "stage_readings": [
+        {
+          "outcome": "rejected",
+          "stage": "refine",
+          "iptm": 0.12,
+          "plddt": 0.55
+        },
+        {
+          "outcome": "rejected",
+          "stage": "screen",
+          "iptm": 0.16,
+          "plddt": 0.48
+        }
+      ],
+      "gpu_released_verified": true,
+      "runtime_estimate_upper_usd": 1.0999814311305236,
+      "finished": 1792621179.2147255
+    }
+  ],
+  "trajectories": 6,
+  "accepted": 0,
+  "modal_runtime_estimate_upper_usd": 2.87600756690237,
+  "runpod_supervised_runtime_estimate_usd": 1.7952,
+  "billing_excludes": "CPU image build, startup/teardown, storage, older campaigns",
+  "gpu_released_verified": true
+}

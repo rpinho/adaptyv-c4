@@ -1,0 +1,15 @@
+✓ Created objects.
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/modal_campaign.py
+├── ✓ Uploaded 
+│   /Users/ricardo/dev/adaptyv-c4/results/gpu_campaign_v3/campaign.json
+├── ✓ Uploaded 
+│   /Users/ricardo/dev/adaptyv-c4/results/gpu_campaign_v2/human_11qc_full_monome
+│   r.pdb
+├── ✓ Uploaded 
+│   /Users/ricardo/dev/adaptyv-c4/results/gpu_campaign_v2/mirrored/campaign_meta
+│   data.json
+└── ✓ Created Function run_campaign.
+✓ App deployed in 3.369s! 🎉
+
+View Deployment: 
+https://modal.com/apps/pinho-ricardo/main/deployed/adaptyv-c4-native-control

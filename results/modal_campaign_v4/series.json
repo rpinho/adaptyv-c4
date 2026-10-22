@@ -1,0 +1,11 @@
+{
+  "started": 1792627267.22102,
+  "finished_batches": [],
+  "max_batches": 3,
+  "runtime_upper_hourly_usd": 4.649328,
+  "runtime_envelope_usd": 27.895967999999996,
+  "pid": 35688,
+  "status": "active",
+  "current_batch": 0,
+  "current_run": "c4_native_largeinit_v4"
+}

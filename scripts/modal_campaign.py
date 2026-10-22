@@ -12,6 +12,7 @@ REVISION = "b6fb3ae15ab6a702f1156cffc11bcc3323c2fd06"
 APP_NAME = "adaptyv-c4-native-control"
 VOLUME_NAME = "adaptyv-c4-results"
 RUN_NAME = "c4_native_apical_ablation_v3"
+LARGE_INIT_RUN = "c4_native_largeinit_v4"
 app = modal.App(APP_NAME)
 volume = modal.Volume.from_name(VOLUME_NAME, create_if_missing=True)
 
@@ -74,7 +75,7 @@ def run_campaign(run_name: str = RUN_NAME, overrides: dict | None = None):
     import jax
     from bindcraft.model_weights import alphafold_parameter_file, alphafold_parameters
 
-    if not re.fullmatch(RUN_NAME + r"(?:_replicate_[23])?", run_name):
+    if not re.fullmatch(r"(?:" + RUN_NAME + "|" + LARGE_INIT_RUN + r")(?:_replicate_[23])?", run_name):
         raise ValueError("Unknown bounded campaign name")
     overrides = overrides or {}
     if set(overrides) - {"campaign_seed"}:
@@ -122,6 +123,8 @@ def run_campaign(run_name: str = RUN_NAME, overrides: dict | None = None):
         config = json.loads(Path("/opt/c4/campaign.json").read_text())
         config.update(overrides)
         config["campaign_name"] = run_name
+        if run_name.startswith(LARGE_INIT_RUN):
+            config["large_complex_initialization"] = True
         config["project_folder"] = str(run / "campaign")
         config["targets"][0]["target_path"] = "/opt/c4/target.pdb"
         (run / "campaign.json").write_text(json.dumps(config, indent=2) + "\n")

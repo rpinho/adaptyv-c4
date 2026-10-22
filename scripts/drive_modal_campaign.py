@@ -11,6 +11,7 @@ import modal
 
 ROOT = Path(__file__).resolve().parents[1]
 STATE = ROOT / "results/modal_campaign_v3"
+CANCEL_ROOT = STATE
 RUN = "c4_native_apical_ablation_v3"
 HOURLY_MAX = 3.9492 + 4 * 0.04716 + 64 * 0.007992
 
@@ -63,7 +64,7 @@ def main(run_name=RUN, overrides=None):
         deadline = status["submitted"] + 7800
         completed = False
         while not completed:
-            if (STATE / "CANCEL").exists() or (ROOT / "results/modal_campaign_v3/CANCEL").exists() or time.time() > deadline:
+            if (STATE / "CANCEL").exists() or (CANCEL_ROOT / "CANCEL").exists() or time.time() > deadline:
                 call.cancel(terminate_containers=True)
                 status.update(status="cancelled", cancelled=time.time())
                 completed = True
@@ -111,7 +112,7 @@ def main(run_name=RUN, overrides=None):
         atomic(status_path, status)
         mirror(vol, run_name)
         if status.get("gpu_released_verified"):
-            followup = ROOT / "results" / ("modal_followup_v3" if run_name == RUN else "modal_followup_" + run_name)
+            followup = ROOT / "results" / ("modal_followup_v3" if run_name == "c4_native_apical_ablation_v3" else "modal_followup_" + run_name)
             followup.mkdir(exist_ok=True)
             with (followup / "postprocess.log").open("a") as log:
                 result = subprocess.run([

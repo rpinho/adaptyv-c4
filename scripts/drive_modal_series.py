@@ -1,5 +1,6 @@
 """Three bounded seed replicates with actual GPU release and CPU checks between them."""
 import fcntl
+import argparse
 import json
 import os
 from pathlib import Path
@@ -13,6 +14,7 @@ STATE = ROOT / "results/modal_campaign_v3"
 
 def main():
     STATE.mkdir(parents=True, exist_ok=True)
+    driver.CANCEL_ROOT = STATE
     with (STATE / "series.lock").open("w") as lock:
         fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
         path = STATE / "series.json"
@@ -52,4 +54,10 @@ def main():
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--state-dir", default="results/modal_campaign_v3")
+    parser.add_argument("--run-name", default=driver.RUN)
+    args = parser.parse_args()
+    STATE = (ROOT / args.state_dir).resolve()
+    driver.RUN = args.run_name
     main()
