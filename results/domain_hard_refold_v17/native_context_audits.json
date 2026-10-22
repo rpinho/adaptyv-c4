@@ -1,0 +1,8 @@
+{
+  "status": "completed",
+  "models": [],
+  "expected_complex_jobs": 0,
+  "qualified_candidates": 0,
+  "new_gpu_spend_usd": 0,
+  "interpretation": "Structural diagnostic only; all final quality/pose/novelty criteria require review before pH/submission"
+}

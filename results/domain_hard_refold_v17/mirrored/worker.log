@@ -1,0 +1,2 @@
+REFOLD_JOB {"sequence": "domain_primary", "phase": "monomer", "checkpoint": "model_1_ptm", "binder_pLDDT": 0.7216721220292907, "geometry_passed": true}
+REFOLD_JOB {"sequence": "domain_primary", "phase": "monomer", "checkpoint": "model_2_ptm", "binder_pLDDT": 0.6899574813635453, "geometry_passed": true}

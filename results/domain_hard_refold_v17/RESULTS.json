@@ -1,0 +1,16 @@
+{
+  "status": "completed",
+  "prediction_jobs": 2,
+  "complex_jobs": 0,
+  "monomer_pLDDT": [
+    0.7216721220292907,
+    0.6899574813635453
+  ],
+  "monomer_CA_agreement_A": 1.1626774283670633,
+  "monomer_advance": false,
+  "credible_TfR1_binders": 0,
+  "gpu_released_verified": true,
+  "conservative_runtime_usd": 0.13104648733763694,
+  "cumulative_modal_runtime_usd": 9.906563282469483,
+  "interpretation": "Borderline free-fold confidence (.722/.690); second checkpoint below predeclared .70 triage. Not proof of nonfolding/nonbinding. Complex prediction not performed. Original malformed domain pose provides no credible binding evidence; change interface generator rather than repeat seed/weight rescue."
+}

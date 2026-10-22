@@ -1,0 +1,180 @@
+{
+  "scope": "CPU mouse-risk triage, not mouse affinity or a definitive residue mapping",
+  "inputs": [
+    {
+      "path": "data/P02786.txt",
+      "sha256": "10146384989397c524f3f7a04f6c9e65396dd1d3e83a5d945fd71570280ceb09"
+    },
+    {
+      "path": "data/Q62351.txt",
+      "sha256": "351c6ada7ed4f293c81f26d8e07c388b9d23019dfb8fea09f6197b3db25a4c86"
+    },
+    {
+      "path": "results/modal_campaign_v5/human_11qc_local_frame.pdb",
+      "sha256": "b34e2885ae49ad16b464883405660ed5aa0c1c1ba21a6faf66be1b26ab5fb128"
+    },
+    {
+      "path": "data/AF-Q62351.pdb",
+      "sha256": "2d68254a883f74fe38534b65a72c658ef7ae5bb22f0d27ea8c1826950e133574"
+    }
+  ],
+  "alignment": {
+    "method": "global BLOSUM62",
+    "open_gap_score": -10,
+    "extend_gap_score": -0.5,
+    "best_score": 3100.5,
+    "equally_best_alignments": 6
+  },
+  "domain_fit_CA_rmsd_A": 1.717545025232603,
+  "hotspots": [
+    {
+      "human_position": 205,
+      "human_aa": "K",
+      "sequence_alignment_mouse_positions": [
+        208
+      ],
+      "sequence_alignment_mouse_aa": [
+        "S"
+      ],
+      "uniform_plus3_hypothesis_mouse_position": 208,
+      "uniform_plus3_hypothesis_mouse_aa": "S",
+      "mouse_CA_nearest_after_domain_fit": [
+        {
+          "mouse_position": 208,
+          "resname": "SER",
+          "distance_A": 2.8851980026375466
+        },
+        {
+          "mouse_position": 207,
+          "resname": "GLN",
+          "distance_A": 5.341869992883901
+        },
+        {
+          "mouse_position": 209,
+          "resname": "ASN",
+          "distance_A": 5.8703886899238045
+        }
+      ]
+    },
+    {
+      "human_position": 206,
+      "human_aa": "N",
+      "sequence_alignment_mouse_positions": [
+        209
+      ],
+      "sequence_alignment_mouse_aa": [
+        "N"
+      ],
+      "uniform_plus3_hypothesis_mouse_position": 209,
+      "uniform_plus3_hypothesis_mouse_aa": "N",
+      "mouse_CA_nearest_after_domain_fit": [
+        {
+          "mouse_position": 210,
+          "resname": "GLY",
+          "distance_A": 4.037308494050745
+        },
+        {
+          "mouse_position": 208,
+          "resname": "SER",
+          "distance_A": 4.936467672596182
+        },
+        {
+          "mouse_position": 209,
+          "resname": "ASN",
+          "distance_A": 5.086818891971057
+        }
+      ]
+    },
+    {
+      "human_position": 208,
+      "human_aa": "R",
+      "sequence_alignment_mouse_positions": [
+        211
+      ],
+      "sequence_alignment_mouse_aa": [
+        "N"
+      ],
+      "uniform_plus3_hypothesis_mouse_position": 211,
+      "uniform_plus3_hypothesis_mouse_aa": "N",
+      "mouse_CA_nearest_after_domain_fit": [
+        {
+          "mouse_position": 210,
+          "resname": "GLY",
+          "distance_A": 1.8390276760598114
+        },
+        {
+          "mouse_position": 211,
+          "resname": "ASN",
+          "distance_A": 2.3495119849774815
+        },
+        {
+          "mouse_position": 212,
+          "resname": "LEU",
+          "distance_A": 4.803835758797187
+        }
+      ]
+    },
+    {
+      "human_position": 209,
+      "human_aa": "L",
+      "sequence_alignment_mouse_positions": [
+        212
+      ],
+      "sequence_alignment_mouse_aa": [
+        "L"
+      ],
+      "uniform_plus3_hypothesis_mouse_position": 212,
+      "uniform_plus3_hypothesis_mouse_aa": "L",
+      "mouse_CA_nearest_after_domain_fit": [
+        {
+          "mouse_position": 212,
+          "resname": "LEU",
+          "distance_A": 1.3730840479273172
+        },
+        {
+          "mouse_position": 211,
+          "resname": "ASN",
+          "distance_A": 2.4682496265037104
+        },
+        {
+          "mouse_position": 213,
+          "resname": "ASP",
+          "distance_A": 4.436553290596883
+        }
+      ]
+    },
+    {
+      "human_position": 210,
+      "human_aa": "V",
+      "sequence_alignment_mouse_positions": [
+        null,
+        213
+      ],
+      "sequence_alignment_mouse_aa": [
+        null,
+        "D"
+      ],
+      "uniform_plus3_hypothesis_mouse_position": 213,
+      "uniform_plus3_hypothesis_mouse_aa": "D",
+      "mouse_CA_nearest_after_domain_fit": [
+        {
+          "mouse_position": 213,
+          "resname": "ASP",
+          "distance_A": 3.7908328455833544
+        },
+        {
+          "mouse_position": 211,
+          "resname": "ASN",
+          "distance_A": 4.426605518586553
+        },
+        {
+          "mouse_position": 212,
+          "resname": "LEU",
+          "distance_A": 4.437516433262438
+        }
+      ]
+    }
+  ],
+  "finding": "Two of five hotspot identities match under uniform +3 hypothesis; sequence alignment is locally ambiguous/gapped at human210. Nearby mouse-loop geometry differs. No claim of a validated offset or conserved binding surface.",
+  "decision": "Preserve V16 fixed hotspot experiment. Before spending on cross-species optimization, build a separately verified mouse mapping/model and require actual mouse-context validation. Human confidence cannot establish mouse binding."
+}

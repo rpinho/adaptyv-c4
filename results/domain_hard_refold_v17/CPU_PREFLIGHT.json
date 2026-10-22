@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "sequence_lengths": [
+    69
+  ],
+  "binder_atoms_all_zero": true,
+  "binder_masks_all_false": true,
+  "binder_flags": "SEQUENCE only",
+  "hard_one_hot_sequences": true,
+  "target_residues": 639,
+  "target_native_identity_verified": true,
+  "prediction_models": [
+    "model_1_ptm",
+    "model_2_ptm"
+  ],
+  "recycles": 3,
+  "designed_coordinates_supplied": false,
+  "checkpoint_scope": "AF2 monomer checkpoints may already have selected accepted domain designs; additional native-context test, not independent architecture",
+  "interface": "bindcraft.MPNN_stage.predict_validation_ensemble",
+  "scope": "Complete639-residue native monomer prediction; restore/check dimer B afterward; not dimer-aware refolding",
+  "monomer_output_chain": "A",
+  "complex_output_chains": "A target/B binder",
+  "worker_sha256": "5a759c8a9a032407d31bed46ddaafab52194c1ad8f296c7568916df0aa921714",
+  "manifest_sha256": "b9ab3fe423cf3abcade30cb984c90a7a21d6deb401e3fb1efad56455c72ad1a7"
+}

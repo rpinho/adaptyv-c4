@@ -1,0 +1,8 @@
+{
+  "pid": 19888,
+  "started_at": "2026-10-22T14:54:23.160683+00:00",
+  "run": "c4_domain_hard_refold_v17",
+  "manifest_sha256": "b9ab3fe423cf3abcade30cb984c90a7a21d6deb401e3fb1efad56455c72ad1a7",
+  "hourly_requested_upper_usd": 4.649328,
+  "maximum_prediction_jobs": 4
+}

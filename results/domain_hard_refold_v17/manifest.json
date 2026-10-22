@@ -1,0 +1,25 @@
+{
+  "protocol": 2,
+  "source_campaign": "c4_native_domain_v16",
+  "models": [
+    "model_1_ptm",
+    "model_2_ptm"
+  ],
+  "recycles": 3,
+  "max_prediction_jobs": 4,
+  "designed_binder_coordinates_supplied": false,
+  "checkpoint_scope": "AF2 monomer checkpoints may already have selected accepted domain designs; additional native-context test, not independent architecture",
+  "sequences": [
+    {
+      "name": "domain_primary",
+      "sequence": "PMSTGEIMRAIMLHMRDYVGTWRKVNFTRTVTKNGNLPAWNHWDQYYFDKAKEMVERVVERVMGSQDEE",
+      "length": 69,
+      "sequence_sha256": "cd66fa39ff0067a905e807155f9de499e21d85298001412dd9000fc650796a6e",
+      "source": "results/native_domain_v16/mirrored/campaign/1_Trajectories/c4_native_domain_v16_denovo_l69_ea0a7aa81143f838/c4_native_domain_v16_denovo_l69_ea0a7aa81143f838_trajectory.cif",
+      "source_sha256": "740d24b819b176104591c28bef13942ef887c3d7766dd33c06d6d7b36cc0f091"
+    }
+  ],
+  "native_target_sha256": "b34e2885ae49ad16b464883405660ed5aa0c1c1ba21a6faf66be1b26ab5fb128",
+  "native_sequence_sha256": "db91580718a41b54055733b9908187df76f9c3b9450a87f769d98e005031db93",
+  "complex_scope": "Complete639-residue native monomer prediction; restore/check dimer B afterward; not dimer-aware refolding"
+}
