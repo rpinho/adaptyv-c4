@@ -1,0 +1,11 @@
+{
+  "requested_path": "/Users/ricardo/.worktrees/personal-kb/claude-adaptyv-c4/outbox/adaptyv-c4-fable-second-read.html",
+  "requested_path_exists": false,
+  "located_report": "/Users/ricardo/.worktrees/adaptyv-c4/claude-submission/reviews/2026-10-22-fable-second-read.html",
+  "sha256": "7c27bb61f6f8e52c9c0ea1823b516bc134cbed85e1fe20a6e82c9458f07f68d4",
+  "reviewed_repo_commit": "f9ea09d",
+  "review_cli_reported_usd": 0.6863525,
+  "prior_consultation_cli_usd": 1.1922999,
+  "cumulative_consultation_cli_usd": 1.8786524,
+  "scope": "Existing externally commissioned report; no new consultation executed by this copy/read; reported mixed Fable/Opus usage."
+}

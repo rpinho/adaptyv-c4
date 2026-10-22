@@ -1,0 +1,24 @@
+{
+  "status": "source_prepared_not_executed",
+  "source_directory": "/Users/ricardo/.cache/adaptyv-c4/ProteinMPNN-8907e6671bfbfc92303b5f79c4b5e6ce47cdef57",
+  "revision": "8907e6671bfbfc92303b5f79c4b5e6ce47cdef57",
+  "files": {
+    "protein_mpnn_run.py": "61f2c519a7f73fa12da9eb90da97b97ec2f8d5f31d42605639c7600cbd321cbe",
+    "protein_mpnn_utils.py": "74c8f9b7553422a7a0bbd705874844ee103c8926c2c96f154a87e0b824071e1b",
+    "vanilla_model_weights/v_48_020.pt": "c9cb4a671d79604111231f8dbfc7c590e06f1197453b7a6854ac6661a642f5bd"
+  },
+  "planned_samples": 2,
+  "seed": 20261022,
+  "sampling_temperature": 0.1,
+  "design_chain": "C",
+  "fixed_chains": [
+    "A",
+    "B"
+  ],
+  "omit_AAs": "CX",
+  "scope": "Original weights; entire restored native receptor fixed, binder only designed; CPU execution planned after backbone passes. No sequence sampled yet.",
+  "torch": "2.6.0",
+  "local_execution_device": "cpu",
+  "checkpoint_num_edges": 48,
+  "checkpoint_loaded_cpu": true
+}

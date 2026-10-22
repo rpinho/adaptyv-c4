@@ -1,0 +1,21 @@
+{
+  "status": "diagnostic_only_not_for_upload",
+  "designs": [
+    {
+      "name": "DRY_RUN_v9",
+      "sequence": "RRDWAMQEVNTQMDEAEDQIGEYKMFIPAVRSTRDEGARKYWMVEVHDEINEAREKLKSYKMQKKWFMG",
+      "molecule_class": "single_chain",
+      "recommendation_status": "rejected_interface",
+      "source": "results/modal_repaired_native_v9/mirrored/campaign/1_Trajectories/c4_repaired_native_v9_denovo_l69_487e943cff8955d6/c4_repaired_native_v9_denovo_l69_487e943cff8955d6_trajectory.cif",
+      "source_sha256": "8311b87eff4d30aa7c4323d4ed4051cf4ef7d50d6f631af9a3d609fd85949a5d"
+    },
+    {
+      "name": "DRY_RUN_seed23",
+      "sequence": "ENIMTVTGVMFIPTDYEVNENGEIIFTGAEIYVFENGNVHEVPVNVDSIVMRANENKQPVYVVEVTN",
+      "molecule_class": "single_chain",
+      "recommendation_status": "rejected_interface",
+      "source": "results/modal_native_replicates_v14/replicate_3/mirrored/campaign/1_Trajectories/c4_repaired_native_v9_replicate_3_denovo_l67_a207b66be0c44216/c4_repaired_native_v9_replicate_3_denovo_l67_a207b66be0c44216_trajectory.cif",
+      "source_sha256": "a5e467a235cfa2237c36740e0d036c6bc8d6985332a72fe0ea4ddb2de5beaf69"
+    }
+  ]
+}

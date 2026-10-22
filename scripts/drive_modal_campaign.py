@@ -29,7 +29,7 @@ def mirror(vol, run_name=RUN):
         if item.type != modal.types.FileEntryType.FILE or item.size > 25 * 1024**2:
             continue
         relative = Path(item.path).relative_to(run_name)
-        if relative.suffix not in {".json", ".jsonl", ".log", ".txt", ".csv", ".cif", ".pdb"}:
+        if relative.suffix not in {".json", ".jsonl", ".log", ".txt", ".csv", ".cif", ".pdb", ".trb"}:
             continue
         target = STATE / "mirrored" / relative
         target.parent.mkdir(parents=True, exist_ok=True)

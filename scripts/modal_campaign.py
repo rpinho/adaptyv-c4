@@ -6,6 +6,7 @@ Launch/monitor series: .venv-modal/bin/python scripts/drive_modal_series.py
 from pathlib import Path
 
 import modal
+from modal_diffusion_image import image as diffusion_image
 
 ROOT = Path(__file__).resolve().parents[1]
 REVISION = "b6fb3ae15ab6a702f1156cffc11bcc3323c2fd06"
@@ -297,6 +298,48 @@ def sequence_refold(run_name,overrides):
                     try:proc.wait(timeout=30)
                     except subprocess.TimeoutExpired:proc.kill();proc.wait(timeout=10)
                     raise TimeoutError('Finite refold allocation reached its stop point')
+                status.update(elapsed_seconds=time.time()-started,worker_pid=proc.pid);save();time.sleep(15)
+        status.update(status='completed' if proc.returncode==0 else 'worker_failed',returncode=proc.returncode)
+    except BaseException as exc:
+        status.update(status='failed',error=repr(exc));raise
+    finally:
+        if proc is not None and proc.poll() is None:proc.kill();proc.wait(timeout=10)
+        status.update(finished=time.time(),elapsed_seconds=time.time()-started);save()
+    return status
+
+
+@app.function(image=diffusion_image,gpu='A100-80GB',cpu=(4,4),memory=(65536,65536),
+              volumes={'/results':volume},timeout=2100,startup_timeout=300,retries=0,
+              max_containers=1,min_containers=0,scaledown_window=2,single_use_containers=True)
+def diffusion_generate(run_name,overrides):
+    import json
+    import os
+    import shutil
+    import subprocess
+    import time
+    if run_name!='c4_diffusion_v18' or overrides:raise ValueError('Only the declared single-backbone pilot is allowed')
+    out=Path('/results')/run_name
+    if out.exists():raise RuntimeError('Fresh diffusion directory required')
+    out.mkdir();started=time.time();proc=None
+    status=dict(status='starting',started=started,container=os.environ.get('MODAL_TASK_ID'),
+                worker_limit_seconds=1800,requested_runtime_upper_usd_per_hour=3.198528)
+    def save():
+        (out/'status.json').write_text(json.dumps(status,indent=2)+'\n');volume.commit()
+    try:
+        status['gpu']=subprocess.check_output(['nvidia-smi','--query-gpu=name,memory.total,driver_version','--format=csv,noheader'],text=True).strip()
+        if 'A100' not in status['gpu']:raise RuntimeError('A100 compatibility envelope required')
+        shutil.copy('/opt/c4/rfdiffusion_preflight.json',out/'CPU_PREFLIGHT.json')
+        shutil.copy('/opt/rfd-runtime-freeze.txt',out/'runtime-freeze.txt')
+        status['status']='diffusing';save()
+        with (out/'worker.log').open('w') as log:
+            proc=subprocess.Popen(['/app/RFdiffusion/.venv/bin/python','/opt/c4/diffusion_worker.py',str(out)],
+                                  cwd='/app/RFdiffusion',stdout=log,stderr=subprocess.STDOUT)
+            while proc.poll() is None:
+                if time.time()-started>1740:
+                    proc.terminate()
+                    try:proc.wait(timeout=30)
+                    except subprocess.TimeoutExpired:proc.kill();proc.wait(timeout=10)
+                    raise TimeoutError('Finite diffusion allocation reached stop point')
                 status.update(elapsed_seconds=time.time()-started,worker_pid=proc.pid);save();time.sleep(15)
         status.update(status='completed' if proc.returncode==0 else 'worker_failed',returncode=proc.returncode)
     except BaseException as exc:

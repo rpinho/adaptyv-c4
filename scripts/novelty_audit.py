@@ -1,11 +1,9 @@
 #!/usr/bin/env python
-"""Novelty audit: prove the de novo / zero-shot claim instead of asserting it.
+"""Limited local-reference similarity screen; not proof of de novo novelty.
 
-The challenges accept de novo designs only, and explicitly forbid taking an existing
-binder and modifying it. Several binders to our targets are already in the PDB, so the
-honest way to make that claim is to measure it: for every design we intend to submit,
-compute the best local (Smith-Waterman) identity against every known binder of the same
-target and report the maximum.
+Compare project sequences to explicitly available reference binders. The finite
+reference list and local sequence metric cannot establish organizer novelty scores,
+structural diversity or whether a design was made from scratch.
 
 Reference binders are pulled straight out of the complex structures in data/: whichever
 chain is NOT the target is a known binder, plus any sequence listed in EXTRA.
@@ -120,10 +118,12 @@ def main():
     ap.add_argument("--min-aln", type=int, default=20,
                     help="ignore local alignments shorter than this; a 4-residue perfect match is noise, not homology")
     ap.add_argument("--json", help="write the full table here")
+    ap.add_argument("--complex-ids",help="Explicit comma-separated subset of the configured PDB reference set")
     a = ap.parse_args()
 
     refs = []
     for code, label in COMPLEXES.items():
+        if a.complex_ids and code not in a.complex_ids.lower().split(','):continue
         seqs = chain_seqs(code)
         if not seqs:
             print("note: %s.cif not in data/, skipped" % code)
@@ -166,9 +166,11 @@ def main():
     print("\n%d of %d designs exceed %.0f%% local identity to a known binder"
           % (flagged, len(rows), a.max_identity * 100))
     if flagged == 0:
-        print("de novo claim holds at this threshold: no design resembles a known binder")
+        print("No flags against this limited reference set; external/structural novelty remains unestablished")
     if a.json:
-        json.dump(dict(threshold=a.max_identity, references=[{"pdb": p, "label": l, "length": len(s)}
+        json.dump(dict(threshold=a.max_identity,organizer_novelty_score=False,
+                       scope='Limited local-sequence reference screen; highest-scoring alignment identity, not maximum identity over every alignment; no de novo/structural novelty proof',
+                       references=[{"pdb": p, "label": l, "length": len(s)}
                                                              for p, l, s in refs], designs=rows),
                   open(a.json, "w"), indent=1)
         print("wrote %s" % a.json)

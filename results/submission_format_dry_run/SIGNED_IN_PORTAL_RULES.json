@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-10-22T15:14:16.118460+00:00",
+  "url": "https://proteinbase.com/competitions/anthropic-adaptyv-2026/rounds/4/submit",
+  "signed_in_account_display": "Ricardo Pinho",
+  "observed_rules": [
+    "Up to 20 proteins per submission.",
+    "Each chain must be between 10 and 250 AA long.",
+    "You can submit once every 24 hours.",
+    "Designs need a novelty score 3/4 or higher (checked automatically after upload)."
+  ],
+  "observed_classes": [
+    "single_chain",
+    "nanobody",
+    "scfv",
+    "fab_kappa",
+    "fab_lambda"
+  ],
+  "sequence_format_antibody": "{VH}:{VL}",
+  "template_url": "https://proteinbase.com/templates/competition-submission-template.csv",
+  "template_sha256": "79f6b3caf48df71ad2a33ecf26444d07ad8e8255d8871ccf902d6c4ed17c6948",
+  "replacement_or_edit_rules": "Not visible on initial upload step; unverified. Daily submission permission does not establish cumulative entry counting or replacement.",
+  "upload_performed": false,
+  "check_designs_clicked": false,
+  "entry_submitted": false
+}

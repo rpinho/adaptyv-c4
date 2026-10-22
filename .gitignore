@@ -4,6 +4,7 @@ __pycache__/
 .venv-rosetta/
 .venv-modal/
 .venv-frameguard/
+.venv-mpnn/
 results/modal_campaign_v3/**/driver.lock
 results/modal_campaign_v3/series.lock
 results/modal_campaign_v4/**/driver.lock
@@ -20,4 +21,5 @@ results/modal_native_replicates_v14/series.lock
 results/hard_sequence_refold_v15/driver.lock
 results/native_domain_v16/driver.lock
 results/domain_hard_refold_v17/driver.lock
+results/diffusion_v18/driver.lock
 data/*.cif

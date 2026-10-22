@@ -1,0 +1,110 @@
+Building image im-Ki5Tf9xVrPWdus6SUkSWb1
+
+=> Step 0: FROM rosettacommons/rfdiffusion@sha256:fa8bbf2fd51291c861369adbf246c4909c5757763d1478cafacadcc76c4584c1
+Getting image source signatures
+Copying blob sha256:fd16bf3b236d5da579a7609888d42789afc8125192f75bf4da8b4d1130435d11
+Copying blob sha256:b05f735a8d36dd8deb11dd6429ceadd62dc9e4a39853b522a52ba8d81cde20ec
+Copying blob sha256:bfdf8ce43b671936d3ff95ddbbf98c7e5a6fcf9c30b391ff68a1f5bd8f2542f0
+Copying blob sha256:ad14f66bfcf925d4d3845f273afe5a865b9d9e9facf722b88416b30ac62071a0
+Copying blob sha256:1056ff735c5934cffc31a621d8f362eb3ecaee0667227fe735dfaaa1165286f3
+Copying blob sha256:96d54c3075c9eeaed5561fd620828fd6bb5d80ecae7cb25f9ba5f7d88ea6e15c
+Copying blob sha256:8c4ce707255a82dced22e91a2d7d348ef8ced091ac6bff3c9a988f74f172aeeb
+Copying blob sha256:a3d20efe6db8b46becf9f41b997b53a8b8165d6bfeee0a5ff49a7be97bdf2233
+Copying blob sha256:2ca2acc6de6fb15b50b8fb872e242fd21a9aab9ebb28e6438f5f2d4f99f601e1
+Copying blob sha256:a08e157987cd9fc3e8d38ceeaf215714d570bd31c907f95789149406cf533488
+Copying blob sha256:e2656b42ba8bbb33ae9842d877d83f583017e58fc1b7ebbcdf97e42dc654a408
+Copying blob sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1
+Copying blob sha256:dfcecc336a1f5ede7311be83acd9bfd643277a43dd07b549930826d5a106fd9d
+Copying blob sha256:e43f260cd81300f3cafd4fb54713bfc641cb22b5909d5c7975b574f76853981a
+Copying blob sha256:a5f96919abbf7212577a68604528951c76e98558582f83236e7e6f0fb2a24f54
+Copying blob sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1
+Copying config sha256:33d5041095097f26c5b8d87c82f9dfe067724078ba81457d7855435eb7aacba0
+Writing manifest to image destination
+Unpacking OCI image
+   • unpacking rootfs ...     
+   • ... done                 
+   • unpacked image rootfs: /tmp/task-data/ta-01M5J22Y506YE39PAFE6JG50HB/registry-unpackKKfFK5
+Copied image in 12.80s
+
+=> Step 1: COPY /python/. /usr/local
+
+=> Step 2: RUN ln -s /usr/local/bin/python3 /usr/local/bin/python
+
+=> Step 3: ENV TERMINFO_DIRS=/etc/terminfo:/lib/terminfo:/usr/share/terminfo:/usr/lib/terminfo
+Saving image...
+Image saved, took 7.41s
+
+Built image im-Ki5Tf9xVrPWdus6SUkSWb1 in 120.47s
+
+
+Building image im-2sdpmxwfrwdg6snEHyIJvU
+
+=> Step 0: FROM base
+
+=> Step 1: ENTRYPOINT []
+Saving image...
+Image saved, took 1.09s
+
+Built image im-2sdpmxwfrwdg6snEHyIJvU in 4.22s
+
+
+Building image im-LdykIZG6gbD7NkirR7yU0G
+
+=> Step 0: FROM base
+
+=> Step 1: RUN apt-get update
+Get:1 http://archive.ubuntu.com/ubuntu focal InRelease [265 kB]
+Get:2 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64  InRelease [1578 B]
+Get:3 http://security.ubuntu.com/ubuntu focal-security InRelease [128 kB]
+Get:4 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64  Packages [2831 kB]
+Get:5 http://archive.ubuntu.com/ubuntu focal-updates InRelease [128 kB]
+Get:6 http://archive.ubuntu.com/ubuntu focal-backports InRelease [128 kB]
+Get:7 http://archive.ubuntu.com/ubuntu focal/universe amd64 Packages [11.3 MB]
+Get:8 http://archive.ubuntu.com/ubuntu focal/restricted amd64 Packages [33.4 kB]
+Get:9 http://archive.ubuntu.com/ubuntu focal/multiverse amd64 Packages [177 kB]
+Get:10 http://archive.ubuntu.com/ubuntu focal/main amd64 Packages [1275 kB]
+Get:11 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [4850 kB]
+Get:12 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [32.5 kB]
+Get:13 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [1300 kB]
+Get:14 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [4904 kB]
+Get:15 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [36.2 kB]
+Get:16 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [1588 kB]
+Get:17 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 Packages [54.7 kB]
+Get:18 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [28.4 kB]
+Get:19 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [4368 kB]
+Get:20 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [4710 kB]
+Fetched 38.2 MB in 3s (12.0 MB/s)
+Reading package lists...
+
+=> Step 2: RUN apt-get install -y git curl ca-certificates
+Reading package lists...
+Building dependency tree...
+Reading state information...
+ca-certificates is already the newest version (20240203~20.04.1).
+curl is already the newest version (7.68.0-1ubuntu2.25).
+git is already the newest version (1:2.25.1-1ubuntu3.14).
+0 upgraded, 0 newly installed, 0 to remove and 51 not upgraded.
+Saving image...
+Image saved, took 841.64ms
+
+Built image im-LdykIZG6gbD7NkirR7yU0G in 8.50s
+
+
+Building image im-ezKkxHBEnulEEuZgz9ZLUB
+
+=> Step 0: FROM base
+
+=> Step 1: RUN git init /app/RFdiffusion && cd /app/RFdiffusion && git remote add c4 https://github.com/RosettaCommons/RFdiffusion.git && git fetch --depth 1 c4 86507b6538f51fce57b5a72477165f03999ed7ae && git checkout --force --detach FETCH_HEAD
+Reinitialized existing Git repository in /app/RFdiffusion/.git/
+From https://github.com/RosettaCommons/RFdiffusion
+ * branch            86507b6538f51fce57b5a72477165f03999ed7ae -> FETCH_HEAD
+HEAD is now at 86507b6 Fix github workflow tests (#458)
+
+=> Step 2: RUN /app/RFdiffusion/.venv/bin/python -m pip install numpy==1.26.4 biopython==1.85
+/app/RFdiffusion/.venv/bin/python: No module named pip
+Terminating task due to error: failed to run builder command "/app/RFdiffusion/.venv/bin/python -m pip install numpy==1.26.4 biopython==1.85": container exit status: 1
+╭─ Error ──────────────────────────────────────────────────────────────────────╮
+│ Image build for im-ezKkxHBEnulEEuZgz9ZLUB failed.                            │
+│ View the build logs:                                                         │
+│   modal image logs im-ezKkxHBEnulEEuZgz9ZLUB                                 │
+╰──────────────────────────────────────────────────────────────────────────────╯

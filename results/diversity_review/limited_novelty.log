@@ -1,0 +1,84 @@
+reference binders: 3
+  6WRV   designed binder 3DS18 (chain D)     93 aa
+  6WRW   designed binder 2DS25.5 (chain C)   88 aa
+  6WRX   designed binder 2DS25.1 (chain C)   88 aa
+
+designs: 73 (identity is judged only over alignments of at least 20 residues)
+
+design                       ident  closest known binder               aln
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.50   6WRW designed binder 2DS25.5 (chai 20 aa, score 8
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.57   6WRV designed binder 3DS18 (chain  23 aa, score 12
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.47   6WRV designed binder 3DS18 (chain  36 aa, score 14
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.44   6WRV designed binder 3DS18 (chain  36 aa, score 11
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.50   6WRW designed binder 2DS25.5 (chai 24 aa, score 9
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.55   6WRW designed binder 2DS25.5 (chai 20 aa, score 11
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.48   6WRW designed binder 2DS25.5 (chai 21 aa, score 7
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.55   6WRV designed binder 3DS18 (chain  22 aa, score 13
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+c4_tfr1_groove_human_forced_ 0.00   -                                  0 aa, score 0
+
+8 of 73 designs exceed 30% local identity to a known binder
+wrote results/diversity_review/retired_pool_limited_reference_novelty.json

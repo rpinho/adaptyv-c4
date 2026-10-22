@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "scope": "CPU preparation/features/writer only; no neural forward",
+  "revision": "86507b6538f51fce57b5a72477165f03999ed7ae",
+  "target_sha256": "03abdb9bc5536396de3489e7a6cf3eec88066a1a5f36d5d1d78b7342ec1ec0b2",
+  "checkpoint": "/opt/rfd-models/Complex_base_ckpt.pt",
+  "checkpoint_sha256": "76e4e260aefee3b582bd76b77ab95d2592e64f00c51bf344968ab9239f3250bc",
+  "target_residues": 195,
+  "binder_residues": 69,
+  "seed": 20261022,
+  "hotspot_author_ids": [
+    205,
+    206,
+    208,
+    209,
+    210
+  ],
+  "actual_hotspot_tensor_indices": [
+    85,
+    86,
+    88,
+    89,
+    90
+  ],
+  "fixed_target_sequence_and_structure": true,
+  "hotspot_receptor_local_indices": [
+    16,
+    17,
+    19,
+    20,
+    21
+  ],
+  "diffusion_steps": 50,
+  "final_step": 1,
+  "partial_T": null,
+  "actual_output_target_chain": "A",
+  "actual_output_target_author_range": [
+    189,
+    383
+  ],
+  "actual_output_binder_chain": "B",
+  "actual_output_binder_author_range": [
+    1,
+    69
+  ],
+  "legacy_contig_output_mapping_not_used": true,
+  "torch": "1.12.1+cu116",
+  "cuda_build": "11.6",
+  "worker_sha256": "84bda1f30be41bc0d9526b658050cff1ae4bc5d764dd0722b26630cffbb951e2"
+}

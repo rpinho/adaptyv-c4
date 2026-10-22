@@ -18,7 +18,17 @@
         "engineering_advance_trajectory_ids": [],
         "followup_completed_without_errors": true,
         "rejected_records": [],
-        "interpretation": "Native-context structural and pH proxies only; not binding, affinity, diversity or experimental validation"
+        "interpretation": "Native-context structural and pH proxies only; not binding, affinity, diversity or experimental validation",
+        "generator_stage_records": [
+          {
+            "outcome": "rejected",
+            "stage": "screen",
+            "iptm": 0.19,
+            "plddt": 0.31,
+            "detail": "due to [pLDDT]"
+          }
+        ],
+        "rejected_records_scope": "CPU admission records only; generator-stage decisions are separate"
       }
     },
     "3": {
@@ -31,7 +41,17 @@
         "engineering_advance_trajectory_ids": [],
         "followup_completed_without_errors": true,
         "rejected_records": [],
-        "interpretation": "Native-context structural and pH proxies only; not binding, affinity, diversity or experimental validation"
+        "interpretation": "Native-context structural and pH proxies only; not binding, affinity, diversity or experimental validation",
+        "generator_stage_records": [
+          {
+            "outcome": "rejected",
+            "stage": "screen",
+            "iptm": 0.16,
+            "plddt": 0.35,
+            "detail": "due to [pLDDT]"
+          }
+        ],
+        "rejected_records_scope": "CPU admission records only; generator-stage decisions are separate"
       }
     },
     "4": {
@@ -44,7 +64,17 @@
         "engineering_advance_trajectory_ids": [],
         "followup_completed_without_errors": true,
         "rejected_records": [],
-        "interpretation": "Native-context structural and pH proxies only; not binding, affinity, diversity or experimental validation"
+        "interpretation": "Native-context structural and pH proxies only; not binding, affinity, diversity or experimental validation",
+        "generator_stage_records": [
+          {
+            "outcome": "rejected",
+            "stage": "screen",
+            "iptm": 0.16,
+            "plddt": 0.36,
+            "detail": "due to [pLDDT]"
+          }
+        ],
+        "rejected_records_scope": "CPU admission records only; generator-stage decisions are separate"
       }
     },
     "5": {
@@ -57,7 +87,17 @@
         "engineering_advance_trajectory_ids": [],
         "followup_completed_without_errors": true,
         "rejected_records": [],
-        "interpretation": "Native-context structural and pH proxies only; not binding, affinity, diversity or experimental validation"
+        "interpretation": "Native-context structural and pH proxies only; not binding, affinity, diversity or experimental validation",
+        "generator_stage_records": [
+          {
+            "outcome": "rejected",
+            "stage": "screen",
+            "iptm": 0.18,
+            "plddt": 0.34,
+            "detail": "due to [pLDDT]"
+          }
+        ],
+        "rejected_records_scope": "CPU admission records only; generator-stage decisions are separate"
       }
     },
     "6": {
@@ -70,7 +110,17 @@
         "engineering_advance_trajectory_ids": [],
         "followup_completed_without_errors": true,
         "rejected_records": [],
-        "interpretation": "Native-context structural and pH proxies only; not binding, affinity, diversity or experimental validation"
+        "interpretation": "Native-context structural and pH proxies only; not binding, affinity, diversity or experimental validation",
+        "generator_stage_records": [
+          {
+            "outcome": "rejected",
+            "stage": "screen",
+            "iptm": 0.17,
+            "plddt": 0.28,
+            "detail": "due to [pLDDT]"
+          }
+        ],
+        "rejected_records_scope": "CPU admission records only; generator-stage decisions are separate"
       }
     }
   },

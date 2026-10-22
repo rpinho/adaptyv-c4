@@ -43,7 +43,17 @@ def read_outcome(campaign,followup):
     rows=[]
     if table.exists():
         with table.open() as fh:rows=list(csv.DictReader(fh))
-    return _evaluate(rows,followup)
+    report=_evaluate(rows,followup)
+    log=campaign.parent/'worker.log'
+    report['generator_stage_records']=generator_stages(log.read_text() if log.exists() else '')
+    report['rejected_records_scope']='CPU admission records only; generator-stage decisions are separate'
+    return report
+
+
+def generator_stages(log):
+    pattern=r'(passed|rejected) at (\w+) design stage\s+i_pTM=([\d.eE+-]+)\s+pLDDT=([\d.eE+-]+)([^\n]*)'
+    return [dict(outcome=a,stage=b,iptm=float(c),plddt=float(d),detail=e.strip())
+            for a,b,c,d,e in re.findall(pattern,log)]
 
 
 def _evaluate(rows,followup):

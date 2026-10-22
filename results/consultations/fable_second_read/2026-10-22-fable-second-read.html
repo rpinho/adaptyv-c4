@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Adaptyv C4 - Second Read</title>
+<style>
+  :root {
+    --bg: #fbfaf8; --fg: #1a1a18; --muted: #6b6a66; --rule: #e2e0da;
+    --card: #ffffff; --accent: #8a5a2b; --warn: #a33; --ok: #2f6b4f;
+    --mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #16151300; --bg: #161513; --fg: #ece9e3; --muted: #9b9890; --rule: #302e2a;
+      --card: #1e1c19; --accent: #d9a46b; --warn: #e08a84; --ok: #7fc0a0;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #161513; --fg: #ece9e3; --muted: #9b9890; --rule: #302e2a;
+    --card: #1e1c19; --accent: #d9a46b; --warn: #e08a84; --ok: #7fc0a0;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    padding: 0 16px;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 48px 0 96px; }
+  header { border-bottom: 2px solid var(--fg); padding-bottom: 20px; margin-bottom: 36px; }
+  .kicker { font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+  h1 { font-size: 30px; line-height: 1.15; margin: 10px 0 8px; font-weight: 650; letter-spacing: -.01em; }
+  .sub { color: var(--muted); font-size: 14px; }
+  h2 { font-size: 20px; margin: 44px 0 14px; letter-spacing: -.01em; }
+  h3 { font-size: 16px; margin: 28px 0 8px; }
+  p { margin: 0 0 14px; }
+  .verdict {
+    background: var(--card); border: 1px solid var(--rule); border-left: 4px solid var(--accent);
+    border-radius: 6px; padding: 20px 22px; margin: 0 0 8px;
+  }
+  .verdict .label { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); font-weight: 700; }
+  .verdict h2 { margin: 6px 0 12px; font-size: 22px; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0 22px; font-size: 13.5px; display: block; overflow-x: auto; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { font-size: 11.5px; letter-spacing: .07em; text-transform: uppercase; color: var(--muted); font-weight: 600; white-space: nowrap; }
+  td.num, th.num { font-variant-numeric: tabular-nums; font-family: var(--mono); font-size: 12.5px; }
+  code { font-family: var(--mono); font-size: 13px; background: color-mix(in srgb, var(--fg) 7%, transparent); padding: 1px 5px; border-radius: 3px; }
+  pre { background: var(--card); border: 1px solid var(--rule); border-radius: 6px; padding: 14px; overflow-x: auto; font-family: var(--mono); font-size: 12px; line-height: 1.5; }
+  ul, ol { margin: 0 0 14px; padding-left: 22px; }
+  li { margin-bottom: 7px; }
+  .tag { display: inline-block; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; font-weight: 700; padding: 2px 7px; border-radius: 3px; vertical-align: middle; }
+  .tag-agree { background: color-mix(in srgb, var(--ok) 16%, transparent); color: var(--ok); }
+  .tag-dis { background: color-mix(in srgb, var(--warn) 16%, transparent); color: var(--warn); }
+  .tag-part { background: color-mix(in srgb, var(--accent) 16%, transparent); color: var(--accent); }
+  .missing { background: var(--card); border: 1px solid var(--warn); border-radius: 6px; padding: 16px 18px; margin: 20px 0; }
+  .missing .label { color: var(--warn); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; font-weight: 700; }
+  footer { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 13px; }
+  a { color: var(--accent); }
+  .lede { font-size: 17px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">Adaptyv / Anthropic Challenge 4 &middot; TfR1 &middot; Track 3</div>
+  <h1>Second read on the generation pivot</h1>
+  <div class="sub">Cross-model review by Fable 5.1 of the Codex (GPT-6.1) recommendation in <code>NEXT_MOVES.md</code> &middot; October 22, 2026</div>
+</header>
+
+<div class="verdict">
+  <div class="label">Verdict</div>
+  <h2>Green-light with changes &mdash; the direction is right, the order is wrong, and one non-negotiable deliverable doesn't exist</h2>
+  <p class="lede">The pivot's direction is correct. But Codex treats the five-seed failure as diagnostically open when the repo's own data closes it: switching from the 73-residue crop to the full 639-residue native monomer destroyed epitope acquisition. So point 2 isn't the second move, it's the <em>whole</em> move, and it should go first. Point 1 is worth doing but is scoped to re-ask a question the data already answered; re-scope it to the admission gate and it costs $0 GPU. Point 3's leniency is legal under the rules but defends the wrong axis &mdash; the binding constraint is <strong>diversity</strong>, not threshold strictness. Point 4's Oct 24 is unrealistic for new designs yet far too late for the thing that genuinely doesn't exist: <strong>there is no submission-CSV builder anywhere in this repo.</strong></p>
+</div>
+
+<h2>The central question: generation, or miscalibrated screen?</h2>
+<p>Both &mdash; in different pools, and that distinction is the whole story. <code>NEXT_MOVES.md</code> collapses them.</p>
+
+<h3>Pool A &mdash; the five v14 native-target seeds: generation, catastrophically</h3>
+<p>From <code>results/modal_native_replicates_v14/replicate_*/mirrored/physical_steps.jsonl</code>, 50 steps each, 250 total:</p>
+<table>
+  <thead><tr>
+    <th>Rep</th><th class="num">Hotspot dist 1&rarr;50</th><th class="num">Median</th><th class="num">Steps &lt;10 &Aring;</th><th class="num">Adj. C&alpha; min</th><th class="num">interface_contacts 1&rarr;50</th><th class="num">Grad norm 1&rarr;50</th>
+  </tr></thead>
+  <tbody>
+    <tr><td>2</td><td class="num">56.1 &rarr; 56.4 &Aring;</td><td class="num">56.0</td><td class="num"><strong>0</strong></td><td class="num">0.26 &Aring;</td><td class="num">7.146 &rarr; 7.081</td><td class="num">58.1 &rarr; 2.0</td></tr>
+    <tr><td>3</td><td class="num">53.7 &rarr; 51.7 &Aring;</td><td class="num">55.3</td><td class="num"><strong>0</strong></td><td class="num">0.40 &Aring;</td><td class="num">6.974 &rarr; 6.441</td><td class="num">89.6 &rarr; 0.5</td></tr>
+    <tr><td>4</td><td class="num">21.3 &rarr; 57.7 &Aring;</td><td class="num">57.4</td><td class="num"><strong>0</strong></td><td class="num">0.16 &Aring;</td><td class="num">7.069 &rarr; 7.482</td><td class="num">17.2 &rarr; 2.2</td></tr>
+    <tr><td>5</td><td class="num">30.1 &rarr; 24.3 &Aring;</td><td class="num">54.2</td><td class="num"><strong>0</strong></td><td class="num">0.79 &Aring;</td><td class="num">6.767 &rarr; 6.971</td><td class="num">11.4 &rarr; 2.1</td></tr>
+    <tr><td>6</td><td class="num">51.4 &rarr; 35.7 &Aring;</td><td class="num">53.9</td><td class="num"><strong>0</strong></td><td class="num">0.20 &Aring;</td><td class="num">7.494 &rarr; 6.281</td><td class="num">18.7 &rarr; 5.8</td></tr>
+  </tbody>
+</table>
+<p>Three things make this generation and not thresholds:</p>
+<ol>
+  <li><strong>The binder never reaches the epitope.</strong> <code>interface_contacts</code> uses a 20 &Aring; cutoff (<code>campaign.json</code>). At 50&ndash;57 &Aring; that term is saturated &mdash; <em>identically zero gradient</em> toward the epitope. Confirmed empirically: flat or worse at step 50 in 3 of 5 replicates.</li>
+  <li><strong>The binder isn't a protein.</strong> <code>adjacent_CA_min_A</code> bottoms out at 0.16&ndash;0.79 &Aring;. Real backbone C&alpha;&ndash;C&alpha; is ~3.8 &Aring;. Residues are collapsing onto each other.</li>
+  <li><strong>The loss that fell is the wrong one.</strong> Replicate 2: total 17.55 &rarr; 12.34, of which <code>compactness</code> 5.53 &rarr; 0.56 is nearly all of it. <code>plddt_loss</code> 0.0761 &rarr; 0.0754 &mdash; implied pLDDT <strong>0.239 &rarr; 0.246</strong> over fifty steps. The optimizer converged (grad norm 58 &rarr; 2.0) on a collapsed blob floating 56 &Aring; off the receptor.</li>
+</ol>
+<p>No threshold change rescues this. The gate is <code>i_pTM &gt;= 0.7</code>; observed is 0.16&ndash;0.19. Not a near-miss.</p>
+
+<h3>Pool B &mdash; the old 73-residue crop pool: the screen was roughly right, the <em>target</em> was wrong</h3>
+<p><code>results/v3_all/!_Refolded.csv</code>, 313 designs, scored against the exact gates in <code>campaign.json</code>:</p>
+<ul>
+  <li><strong>73 designs pass all eight gates.</strong> Not zero.</li>
+  <li>72 more fail <em>only</em> <code>i_pTM</code> (median 0.64 vs the 0.70 gate; 85 are already &ge;0.70; max 0.84).</li>
+  <li><code>Unbound_Binder_pLDDT</code> median 0.91, max 0.97. <code>Hotspot_Contact_Fraction</code> median 0.8.</li>
+</ul>
+<p>So the forward model sees interfaces fine and the generator can build confident folds burying 18 interface residues with zero clashes. <strong>The screen had plenty to accept.</strong></p>
+<p>What killed Pool B is the target. Per <code>results/full_context_audit/RESULTS.md</code>: <em>"66 source candidates audited; 0 have no restored backbone clashes below 2 &Aring;."</em> And worse: all 73 passing designs are <code>c4_tfr1_groove_human_forced_l*</code> &mdash; the <strong>groove</strong>, not the apical domain. <code>DECISIONS.md:288</code> records full-dimer SASA for exactly those residues: <strong>Phe685 at 0.005</strong>, Phe701 0.083, Trp702 0.126, Leu709 0.066. The groove epitope is buried in the homodimer the assay actually uses. Pool B binds a surface that does not exist on the target.</p>
+
+<h2>Point by point</h2>
+
+<h3>1. Calibrate against a known binder <span class="tag tag-dis">disagree on scope</span></h3>
+<p><code>NEXT_MOVES.md</code> wants to establish <em>"whether our setup recognizes a real binding geometry."</em> The repo already answered that: 85 designs at i_pTM &ge; 0.70, 73 clearing every gate, binder pLDDT to 0.97. A pipeline blind to real interfaces cannot produce that. Re-asking it with GPU is the detour.</p>
+<p>What <em>is</em> unvalidated is the <strong>native-context admission gate</strong> &mdash; <code>canonicalize()</code> in <code>scripts/postprocess_gpu_campaign.py:27-57</code>, which hard-rejects anything that isn't the complete native 639-residue chain A, then applies the &lt;2 &Aring; clash test. That gate rejected all 66 candidates and will gate every future domain-route design. <code>results/astra_review/ALTERNATIVES.md</code> says it outright: <em>"A failed known-complex restoration must be diagnosed before candidate rejection thresholds are interpreted."</em> Codex's point 1 is a garbled restatement of Astra's sharper version.</p>
+<p><strong>Cheapest version &mdash; CPU only, $0 GPU, a few hours:</strong></p>
+<ol>
+  <li>Take <strong>PDB 6W3H</strong> (Denali TV35&ndash;TfR Fc transport vehicle), already flagged in <code>ALTERNATIVES.md</code> as the best verified apical control.</li>
+  <li>Map its receptor entity to native 11QC <strong>by sequence/reference annotation, not author residue IDs</strong> &mdash; Astra verified the trap: that entity is a rearranged 166-residue fragment whose mappings run native 326&ndash;379 then 194&ndash;296.</li>
+  <li>Superpose, transform the antibody, push it through <code>scripts/restore_apical_context.py</code> and then the <code>canonicalize()</code> + clash gates <em>unchanged</em>.</li>
+</ol>
+<p><strong>What falsifies the pipeline:</strong> the control being <em>rejected</em>. A real crystallographic complex, restored into the receptor it was solved against, must not register backbone clashes &lt;2 &Aring;. If it does, the gate is too strict and all 66 rejections become suspect. If it passes, the gate is sound &mdash; which is exactly the permission needed before spending GPU on point 2.</p>
+
+<h3>2. Domain search, then full-receptor validation <span class="tag tag-agree">agree &mdash; promote to first</span></h3>
+<p>Codex frames this as a search-space change. The mechanism is sharper: a 195-residue apical domain leaves AF2 nowhere to put the binder except near the epitope, so <code>interface_contacts</code> lands inside its 20 &Aring; cutoff and the gradient comes alive. That is <em>why</em> BindCraft crops targets. The crop was retired for a real defect, but the fix for a too-small crop is a <strong>correct</strong> crop, not no crop.</p>
+<p>Supporting evidence already in the record, uncited by Codex: <strong>V11</strong> (<code>forced_targeting=true</code>) <em>"entered the patch region but reached 1.255 &Aring; CA overlap and malformed binder geometry"</em> &mdash; acquisition is solvable. <strong>V12</strong> (pLDDT weight 0.1&rarr;0.5) lifted pLDDT 0.31 &rarr; <strong>0.51</strong> while i_pTM stayed at <strong>0.16</strong> &mdash; fold confidence is tunable, the interface isn't until the geometry is fixed. Both say the bottleneck is acquisition, full stop.</p>
+<p>TfR1-specific soundness: the apical domain is residues <strong>189&ndash;383</strong>, a contiguous 195-residue insertion, and hotspots <code>A205,206,208,209,210</code> sit inside it. Target PDB uses native numbering (chain A, 122&ndash;760) and <strong>residue 142 is GLY</strong>, correct per the challenge page's Ser142/Gly142 warning &mdash; no off-by-one. <code>results/dimer_occlusion.json</code> shows the apical patch is remote from the dimer interface, so monomer search is defensible even though the assay target is the homodimer.</p>
+<table>
+  <thead><tr><th>File</th><th>Change</th><th>Status</th></tr></thead>
+  <tbody>
+    <tr><td><code>scripts/restore_apical_context.py</code></td><td>None &mdash; <code>DOMAIN=tuple(range(189,384))</code>, prep + 11QC A/B restoration, SHA-pinned, tested</td><td><strong>Done</strong></td></tr>
+    <tr><td><code>results/apical_context/native_189_383_search_only.pdb</code></td><td>None &mdash; 195 residues, peptide C&ndash;N 1.322&ndash;1.349 &Aring;, audited</td><td><strong>Done</strong></td></tr>
+    <tr><td><code>tests/test_apical_restoration.py</code></td><td>None &mdash; positive/negative fixtures pass</td><td><strong>Done</strong></td></tr>
+    <tr><td><code>scripts/modal_campaign.py:49</code></td><td>Hardcoded local-frame target file. Add the domain PDB to the image (keep both) and parameterize</td><td>~10 lines + image rebuild</td></tr>
+    <tr><td>campaign config (<code>targets[0].target_path</code>, hotspots)</td><td>Point at the domain file</td><td>Config only</td></tr>
+    <tr><td><code>scripts/postprocess_gpu_campaign.py:27-57</code></td><td><code>canonicalize()</code> must accept a domain-frame input <em>upstream</em> of the strict 639-residue check. Per Astra: <strong>keep the strict check</strong>, add a tested adapter in front</td><td><strong>The real work</strong></td></tr>
+    <tr><td><em>Native full-target refold</em></td><td><code>grep -l refold scripts/</code> hits only summarize/audit/restore/context-ensemble. Nothing runs a full-target AF2 refold</td><td><strong>Does not exist</strong></td></tr>
+  </tbody>
+</table>
+<p><strong>One execution disagreement.</strong> <code>NEXT_MOVES.md</code> says <em>"Complete the missing refold path on CPU before new allocation."</em> If that means building and unit-testing the path on CPU, fine. If it means <em>running</em> the refold on CPU, no &mdash; a ~708-residue AF2-multimer forward pass is hours per design on CPU. Budget it as GPU. Codex should say which it means.</p>
+<p><strong>And the operational point neither Codex nor the study acknowledges:</strong> <code>max_trajectories: 1</code>, <code>number_of_final_designs: 2</code>. Five seeds = five trajectories. For a hard target, BindCraft's accepted-design yield per trajectory is low single-digit percent. <strong>The study was underpowered to detect success even with a perfectly healthy pipeline.</strong> <code>NEXT_MOVES.md</code> gets the epistemics right (<em>"9 unsuccessful search attempts, not 9 experimentally disproven proteins"</em>) but doesn't draw the conclusion: the next campaign needs <strong>tens to low hundreds</strong> of trajectories. The five v14 runs cost <strong>$2.91</strong> total (<code>series.json: runtime_upper_usd</code>) &mdash; about <strong>$0.58/trajectory</strong>. A hundred trajectories is ~$58 against $46.16 spent to date.</p>
+
+<h3>3. Keep promising-but-imperfect designs <span class="tag tag-part">partial &mdash; right call, wrong axis</span></h3>
+<p>Codex is factually correct that no threshold is imposed. Selection weighs <em>"method novelty, design diversity and a small set of confidence metrics, with no single metric deciding."</em> FAQ 8: the prompt <em>"does not rank on a single in silico metric, because most metrics do not account for the conditions we set."</em> No pLDDT/i_pTM/PAE cutoff appears anywhere. So <code>NEXT_MOVES.md</code>'s claim that the internal PROPKA L&le;&minus;2 is <em>"a target rather than an official submission condition"</em> is <strong>correct</strong>, and consistent with <code>WIN_PLAN.md</code>.</p>
+<p><strong>But Codex is relaxing the constraint that wasn't binding.</strong> The hard filters per FAQ 8 are length, nanobody/antibody annotation (ANARCI), <strong>uniqueness, and de novo zero-shot design with adequate sequence and structural diversity.</strong> Diversity is a <em>gate</em>, not a preference &mdash; and it's exactly where the only existing pool dies. All 73 passing designs are one epitope, one scaffold family. Three, verbatim:</p>
+<pre>APEPSLEELLEKLRELHKRWVEAHRRLEAGEISEEEYRKIVEELGPQLREMASWLAERIPDPHIQVFYRMLAEEVLRDPRVFEMLWEIIELLEDEMNL
+APPLSVEELLRRLDELFRRHVEAHERLEAGEISEEEYRRIVEELGPQLREMAGWLAQVIPDPHVQVFFRMMAEEVERDPRVFAMLWEIVRLLLDEMNL
+APPPSMEELEEELDRLVEELVRAHEELEAGKLSEEEYERIVRRLGPRIREKLGWLAEHEPNPHLRVFYRMMAEMVERDIRVFRMLWEIIKLLKDEMNL</pre>
+<p>73 "unique" sequences; one design. <code>EAGEISEEEY</code>, <code>GPQLREM</code>, <code>IPDPH</code>, <code>QVFYRM</code>, <code>RDPRVF</code>, <code>LWEII</code>, <code>DEMNL</code> &mdash; the same motif skeleton throughout. This reads as a single family to any diversity filter. <code>scripts/novelty_audit.py</code> exists but <code>results/novelty_audit_selftest.json</code> is a self-test only; <strong>no novelty/diversity report has ever been run over a real candidate set.</strong></p>
+<p>So: keeping imperfect designs is defensible and endorsed. Rationalizing a weak shortlist would be submitting 20 near-identical groove binders. <strong>Rank leniently on confidence metrics, strictly on diversity.</strong></p>
+<p><strong>Second disagreement, on deferring pH.</strong> Mouse &mdash; yes, defer. But <strong>pH selectivity is the top-ranked objective</strong>: a measurable K<sub>D</sub> at 7.4 and no detectable binding at 6.0 ranks above everything, and each objective carries its own honourable mention. Deferring it entirely means competing only in the lowest-ranked lane (raw affinity) against ~1,500 screened designs. Don't defer &mdash; <strong>portfolio it</strong>: most of the 20 slots on plain human binders, a few reserved for pH variants of the best scaffold. The machinery exists: <code>results/next_campaign/sensitivity.csv</code>, and <code>WIN_PLAN.md</code>'s best matched pair D4H/T46H on <code>l63_59b0f47ecf134650</code> (HH L &minus;1.530, HH&minus;QQ &minus;1.086).</p>
+
+<h3>4. Oct 24 / Oct 31 timeline <span class="tag tag-dis">disagree &mdash; both too late and too early</span></h3>
+<p><strong>The real deadline.</strong> Submissions close <strong>Sunday November 1, 23:59 Anywhere on Earth</strong>; FAQ 6 gives AoE as UTC&minus;12 &rarr; <strong>Nov 2, 11:59 UTC = Mon Nov 2, ~06:59 EST</strong> (US DST ends Nov 1). So ~11 days, about a day more than "Nov 1" sounds. <code>SUBMISSION_STATUS.md</code> has this right. Codex's Oct 31 internal deadline leaves ~1.3 days of slack &mdash; thin but defensible.</p>
+<p><strong>Oct 24 is unrealistic for a package of new, context-valid designs.</strong> Critical path: 6W3H control &rarr; image rebuild with domain target &rarr; adapter in front of <code>canonicalize()</code> &rarr; a real multi-trajectory GPU campaign &rarr; restoration &rarr; a native full-target refold path <em>that does not exist</em>. Not two days.</p>
+<p><strong>But Oct 24 is far too late for the artifact that actually doesn't exist.</strong> <code>grep -rl molecule_class</code> across the whole repo returns exactly one hit: <code>SUBMISSION_STATUS.md</code> &mdash; prose.</p>
+
+<div class="missing">
+  <div class="label">The one non-negotiable gap</div>
+  <p style="margin:8px 0 0">There is no script that emits the required <code>name,sequence,molecule_class</code> CSV, and the submission format has never been dry-run. It is the cheapest thing in the project and it should exist today.</p>
+</div>
+
+<p>Also unverified and worth resolving early: <code>SUBMISSION_STATUS.md</code> says <em>"The public submit route exposes no editing/replacement terms; authenticated replacement/versioning remains unverified."</em> Independently confirmed &mdash; none of the three public pages states whether submissions can be edited or replaced. So <strong>assume the first upload is final</strong> until the authenticated portal says otherwise. That makes an early placeholder upload <em>risky</em>, not safe, and inverts Codex's framing of early submission as pure risk reduction. Create the Proteinbase account now and read the portal's replacement terms &mdash; that single answer determines whether to submit early or hold.</p>
+
+<h2>What the Codex plan is missing (table stakes)</h2>
+<ol>
+  <li><strong>A submission CSV builder.</strong> Zero code. Needs <code>name,sequence,molecule_class</code> (&isin; protein/nanobody/scfv/fab_kappa/fab_lambda), rows best-first, 10&ndash;250 aa, &le;20 designs for Track 3. Build it today against whatever the current best designs are, even bad ones, so the format is proven.</li>
+  <li><strong>A diversity/novelty report over a real candidate set.</strong> It's a <em>hard filter</em> per FAQ 8, and the only pool is one scaffold family. Point <code>scripts/novelty_audit.py</code> at real candidates and make diversity a ranking axis.</li>
+  <li><strong>Trajectory count.</strong> <code>max_trajectories: 1</code> cannot produce 20 diverse designs. Next campaign needs 10&sup2;-scale trajectories at ~$0.58 each.</li>
+  <li><strong>Multiple epitopes.</strong> Everything so far is one groove patch (now known occluded in the dimer) plus one apical hotspot set. The apical domain is a hint, <em>not a rule</em> &mdash; designs elsewhere are still measured and ranked. Diversity across epitopes is free insurance.</li>
+  <li><strong>The methods write-up as a selection asset.</strong> Tracks 2/3 go to Claude, which weighs <strong>method novelty</strong>. The 29 KB <code>METHOD.md</code> and the honest negative record &mdash; the singular-frame bug, the full-context clash audit, the acquisition diagnosis &mdash; are genuinely unusual rigor. That's a competitive advantage <em>if written for the selector</em>. Right now it's written for you.</li>
+  <li><strong>Fix the <code>series.json</code> logging bug.</strong> All five replicates record <code>"rejected_records": []</code> while <code>worker.log</code> plainly says <code>rejected at screen design stage i_pTM=0.19 pLDDT=0.31 due to [pLDDT]</code>. The aggregator drops rejections &mdash; and <code>series.json</code> is what the next session will read.</li>
+</ol>
+
+<h2>Credit where it's due</h2>
+<p>The numbers in <code>NEXT_MOVES.md</code> check out. pLDDT .31 / i_pTM .19 for replicate 2 match <code>worker.log</code> exactly, and <code>$9.30</code> matches <code>series.json: cumulative_modal_runtime_upper_usd = 9.296</code>. <code>C_Terminus_Away_Cosine</code> is mandatory in the filters and <code>termini_accessible: true</code> &mdash; the Twin-Strep tag constraint is correctly handled. Residue 142 is GLY. The epistemic discipline in <code>SUBMISSION_STATUS.md</code> (separating software checks / search attempts / generator-accepted / screened / recommendations / experimental) is genuinely good and rare. <strong>The problem with the plan is sequencing and a missing deliverable, not honesty.</strong></p>
+
+<h2>What I'd do in the next 48 hours</h2>
+<ol>
+  <li><strong>Write the submission CSV builder. Today.</strong> Populate with current best designs however weak, validate end-to-end. Create the Proteinbase account and read the portal's replacement/versioning terms &mdash; that answer decides the whole submission strategy.</li>
+  <li><strong>Run the 6W3H control on CPU. $0 GPU.</strong> Map by sequence annotation, restore into native 11QC A/B, push through <code>canonicalize()</code> and the clash gates unchanged. If a real crystal complex gets rejected, stop everything and fix the gate before spending another dollar on GPU.</li>
+  <li><strong>In parallel, wire the domain route.</strong> Add <code>results/apical_context/native_189_383_search_only.pdb</code> to the Modal image (<code>scripts/modal_campaign.py:49</code>), parameterize the target path, put the tested adapter in front of <code>canonicalize()</code>. Keep the strict 639-residue check.</li>
+  <li><strong>Then launch one bounded domain campaign with a real trajectory count</strong> &mdash; 20&ndash;40 trajectories, not 1. Falsifiable endpoint: does <code>minimum_hotspot_to_binder_CA_A</code> drop below 10 &Aring;, and does <code>interface_contacts</code> actually fall? If acquisition still fails on a 195-residue target, the problem is not target size and this whole diagnosis is wrong &mdash; treat that as the stopping condition.</li>
+  <li><strong>Scope the native full-target refold path now</strong>, CPU for correctness, GPU for execution. It's the gate between a domain hit and anything submittable, and right now it doesn't exist.</li>
+  <li><strong>Don't defer pH entirely.</strong> Reserve slots. Top-ranked objective, and the sensitivity analysis already exists.</li>
+</ol>
+<p>Spend to date: <strong>$46.16</strong> ($9.30 Modal + $35.67 Runpod + $1.19 consultations). A 100-trajectory campaign at the measured $0.58/trajectory is ~$58 &mdash; <strong>the money is not the constraint.</strong> The constraint is that six of the eleven remaining days are on the critical path of code that isn't written yet.</p>
+
+<footer>
+  Fable 5.1 independent review, commissioned 2026-10-22, reading <code>~/dev/adaptyv-c4</code> @ <code>f9ea09d</code> (branch <code>codex/install-two-state-switch</code>). No files were modified.<br>
+  Official selection criteria: <a href="https://proteinbase.com/competitions/anthropic-adaptyv-2026/selection">proteinbase.com/competitions/anthropic-adaptyv-2026/selection</a>
+</footer>
+
+</div>
+</body>
+</html>

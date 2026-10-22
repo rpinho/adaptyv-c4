@@ -1,0 +1,47 @@
+{
+  "source": "results/v3_all/!_Refolded.csv",
+  "total_rows": 313,
+  "eight_metric_passing_rows": 73,
+  "metric_definition": {
+    "Backbone_Clashes": [
+      0,
+      "le"
+    ],
+    "Binder_RMSD": [
+      3.5,
+      "le"
+    ],
+    "Hotspot_Contact_Fraction": [
+      0.5,
+      "ge"
+    ],
+    "Interface_Residues": [
+      7,
+      "ge"
+    ],
+    "Unbound_Binder_pLDDT": [
+      0.7,
+      "ge"
+    ],
+    "i_pAE": [
+      0.35,
+      "le"
+    ],
+    "i_pTM": [
+      0.7,
+      "ge"
+    ],
+    "pTM": [
+      0.55,
+      "ge"
+    ]
+  },
+  "status": "Retired disconnected-crop/groove diagnostics only; every row remains ineligible for recommendation without full native physical evidence. These eight historical metrics are not complete current admission.",
+  "generator_search_stage_records_recovered": [
+    1,
+    1,
+    1,
+    1,
+    1
+  ]
+}
