@@ -7,6 +7,7 @@ import time
 
 import drive_modal_campaign as driver
 import modal_search_policy as policy
+from campaign_admission import followup_path, read_outcome
 
 ROOT=Path(__file__).resolve().parents[1]
 STATE=ROOT/'results/modal_campaign_v5'
@@ -15,13 +16,11 @@ MAX_BATCHES=6
 PRIOR_MODAL_RUNTIME=2.87600756690237+0.2559073828754234
 
 
-def outcome(folder):
+def outcome(folder,run_name):
     campaign=folder/'mirrored/campaign'
-    table=campaign/'3_Ranked/!_Ranked.csv'
-    accepted=len(list(csv.DictReader(table.open()))) if table.exists() else 0
     trajectories=campaign/'1_Trajectories/!_Trajectories.csv'
     stages=[r['terminated'] for r in csv.DictReader(trajectories.open())] if trajectories.exists() else []
-    return accepted,stages
+    return read_outcome(campaign,followup_path(ROOT,run_name)),stages
 
 
 def abort_after_driver_error(folder):
@@ -52,6 +51,13 @@ def main():
             print(json.dumps(state),flush=True)
             return
         state['status']='active'
+        # Legacy raw-row counts are never reused as scientific admission counts.
+        if state.get('completed') and 'native_context_trajectory_ids' not in state:
+            state.update(status='legacy_acceptance_accounting_requires_review')
+            driver.atomic(path,state)
+            return
+        state.setdefault('native_context_trajectory_ids',[])
+        state['accepted']=len(set(state['native_context_trajectory_ids']))
         driver.atomic(path,state)
         for index in range(len(state['completed']),MAX_BATCHES):
             if (STATE/'CANCEL').exists():
@@ -83,15 +89,25 @@ def main():
                 state.update(status='stopped_on_execution_or_release_failure',last_result=result);break
             if result.get('cpu_followup_returncode')!=0:
                 state.update(status='stopped_on_cpu_followup_failure',last_result=result);break
-            accepted,stages=outcome(folder)
-            state['accepted']+=accepted
+            evidence,stages=outcome(folder,run_name)
+            if not evidence['followup_completed_without_errors']:
+                state.update(status='stopped_on_scientific_followup_failure',admission=evidence);break
+            identities=set(state['native_context_trajectory_ids'])
+            batch_ids=set(evidence['native_context_admitted_trajectory_ids'])
+            accepted=len(batch_ids-identities)
+            state['native_context_trajectory_ids']=sorted(identities|batch_ids)
+            state['accepted']=len(state['native_context_trajectory_ids'])
+            # Native-context admission alone is not patch acquisition. Never route
+            # more paid sampling from an admitted structure without acquisition review.
+            if batch_ids:
+                state.update(status='native_context_outputs_require_acquisition_review',admission=evidence)
+                driver.atomic(path,state)
+                break
             next_choice,reason=policy.next_profile(profile,accepted,stages)
             state['completed'].append(dict(run_name=run_name,folder=str(folder),accepted=accepted,
-                                           terminated_stages=stages,runtime_estimate_upper_usd=spend,next_reason=reason))
+                                           admission=evidence,terminated_stages=stages,runtime_estimate_upper_usd=spend,next_reason=reason))
             state.update(profile=next_choice,updated=time.time())
             driver.atomic(path,state)
-            if state['accepted']>=3:
-                state.update(status='scaffold_set_ready_for_review');break
             if next_choice is None:
                 state.update(status=reason);break
         else:

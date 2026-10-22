@@ -14,6 +14,7 @@ from Bio.PDB import PDBParser,MMCIFParser
 from Bio.Data.PDBData import protein_letters_3to1 as AA
 from cif2pdb import convert
 import install_switch as install
+from campaign_admission import unique_parents
 from run_context_ensemble import ROOT, residues, atoms, fit, min_dist, write_protein, model_triplet, dump, sha
 
 
@@ -91,7 +92,7 @@ def main():
     table=ranked/'!_Ranked.csv'
     if not table.exists():
         status['status']='no_accepted_scaffolds';dump(out/'status.json',status);return
-    records=list(csv.DictReader(table.open()))[:2]
+    with table.open() as fh:records=unique_parents(list(csv.DictReader(fh)),limit=2)
     if not records:
         status['status']='no_accepted_scaffolds';dump(out/'status.json',status);return
     deadline=time.monotonic()+7200

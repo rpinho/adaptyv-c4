@@ -39,15 +39,24 @@ class FrameAndPolicyTests(unittest.TestCase):
                 self.assertEqual(changed['max_trajectories'],2)
                 self.assertEqual(base['targets'][0]['target_path'],'/workspace/runs/human_11qc_full_monomer.pdb')
 
-    def test_fold_failures_change_config_and_exhaust_without_repeating(self):
-        first=policy.PROFILES[0]
-        second,reason=policy.next_profile(first,0,['screen','refine'])
-        self.assertEqual(second,policy.PROFILES[1])
-        third,_=policy.next_profile(second,0,['screen','screen'])
-        self.assertEqual(third,policy.PROFILES[2])
-        final,reason=policy.next_profile(third,0,['screen'])
-        self.assertIsNone(final)
-        self.assertEqual(reason,'declared_fold_hypotheses_exhausted')
+    def test_screen_and_refine_labels_do_not_prove_a_fold_confidence_failure(self):
+        for profile in policy.PROFILES:
+            selected,reason=policy.next_profile(profile,0,['screen','refine'])
+            self.assertIsNone(selected)
+            self.assertEqual(reason,'physical_failure_review_required')
+
+    def test_repaired_test_changes_only_initialization_and_trajectory_limit(self):
+        base=json.loads((ROOT/'results/gpu_campaign_v3/campaign.json').read_text())
+        changed=policy.make_config(base,policy.REPAIRED,{'campaign_seed':20261021},'/results/test')
+        expected=base|dict(large_complex_initialization=True,max_trajectories=1,
+                           campaign_name=policy.REPAIRED,project_folder='/results/test')
+        expected['targets']=[dict(base['targets'][0],target_path='/opt/c4/local-frame-target.pdb')]
+        self.assertEqual(changed,expected)
+
+    def test_structural_admission_alone_never_triggers_more_gpu_sampling(self):
+        selected,reason=policy.next_profile(policy.PROFILES[0],1,['screen'])
+        self.assertIsNone(selected)
+        self.assertEqual(reason,'native_context_outputs_require_acquisition_review')
 
     def test_later_stage_failure_requires_different_diagnosis(self):
         selected,reason=policy.next_profile(policy.PROFILES[0],0,['anneal'])

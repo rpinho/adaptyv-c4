@@ -8,6 +8,7 @@ import subprocess
 import time
 
 import modal
+from campaign_admission import followup_path
 
 ROOT = Path(__file__).resolve().parents[1]
 STATE = ROOT / "results/modal_campaign_v3"
@@ -28,7 +29,7 @@ def mirror(vol, run_name=RUN):
         if item.type != modal.types.FileEntryType.FILE or item.size > 25 * 1024**2:
             continue
         relative = Path(item.path).relative_to(run_name)
-        if relative.suffix not in {".json", ".log", ".txt", ".csv", ".cif", ".pdb"}:
+        if relative.suffix not in {".json", ".jsonl", ".log", ".txt", ".csv", ".cif", ".pdb"}:
             continue
         target = STATE / "mirrored" / relative
         target.parent.mkdir(parents=True, exist_ok=True)
@@ -41,7 +42,7 @@ def mirror(vol, run_name=RUN):
         temp.replace(target)
 
 
-def main(run_name=RUN, overrides=None, function_name='run_campaign', perform_cpu_followup=True):
+def main(run_name=RUN, overrides=None, function_name='run_campaign', perform_cpu_followup=True,max_runtime_seconds=7800):
     STATE.mkdir(parents=True, exist_ok=True)
     with (STATE / "driver.lock").open("w") as lock:
         fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
@@ -61,7 +62,7 @@ def main(run_name=RUN, overrides=None, function_name='run_campaign', perform_cpu
             call = modal.FunctionCall.from_id(status["call_id"])
         status["pid"] = os.getpid()
         print(json.dumps(status), flush=True)
-        deadline = status["submitted"] + 7800
+        deadline = status["submitted"] + max_runtime_seconds
         completed = False
         while not completed:
             if (STATE / "CANCEL").exists() or (CANCEL_ROOT / "CANCEL").exists() or time.time() > deadline:
@@ -112,7 +113,7 @@ def main(run_name=RUN, overrides=None, function_name='run_campaign', perform_cpu
         atomic(status_path, status)
         mirror(vol, run_name)
         if status.get("gpu_released_verified") and perform_cpu_followup:
-            followup = ROOT / "results" / ("modal_followup_v3" if run_name == "c4_native_apical_ablation_v3" else "modal_followup_" + run_name)
+            followup = followup_path(ROOT, run_name)
             followup.mkdir(exist_ok=True)
             with (followup / "postprocess.log").open("a") as log:
                 result = subprocess.run([
@@ -121,6 +122,7 @@ def main(run_name=RUN, overrides=None, function_name='run_campaign', perform_cpu
                     "--source", str(STATE / "mirrored/campaign"), "--out", str(followup)
                 ], cwd=ROOT, stdout=log, stderr=subprocess.STDOUT)
             status["cpu_followup_returncode"] = result.returncode
+            status["cpu_followup_directory"] = str(followup)
             atomic(status_path, status)
         print(json.dumps(status), flush=True)
         return status

@@ -52,9 +52,14 @@ image = (
     .add_local_file(ROOT / "scripts/patch_frame_guard.py", "/opt/c4/patch_frame_guard.py", copy=True)
     .add_local_file(ROOT / "scripts/validate_frame_guard.py", "/opt/c4/validate_frame_guard.py", copy=True)
     .add_local_file(ROOT / "scripts/frame_gpu_diagnostic.py", "/opt/c4/frame_gpu_diagnostic.py", copy=True)
+    .add_local_file(ROOT / "scripts/monitored_design.py", "/opt/c4/monitored_design.py", copy=True)
     .run_commands(
         "python /opt/c4/patch_frame_guard.py --upstream /opt/bindcraft --helper /opt/c4/frame_guard.py",
         "JAX_PLATFORMS=cpu python /opt/c4/validate_frame_guard.py --upstream /opt/bindcraft --out /opt/c4/cpu_frame_validation.json",
+        "python -c \"import sys,json;sys.path.insert(0,'/opt/c4');import search_policy as p;"
+        "config=p.make_config(json.load(open('/opt/c4/campaign.json')),p.REPAIRED,{'campaign_seed':20261021},'/tmp/preflight-only');"
+        "json.dump(config,open('/opt/c4/repaired_preflight.json','w'))\"",
+        "JAX_PLATFORMS=cpu python /opt/c4/monitored_design.py --preflight /opt/c4/repaired_preflight.json /opt/c4/prepared_frame_preflight.json",
     )
 )
 
@@ -89,7 +94,8 @@ def run_campaign(run_name: str = RUN_NAME, overrides: dict | None = None):
     spec = importlib.util.spec_from_file_location('search_policy','/opt/c4/search_policy.py')
     policy = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(policy)
-    policy.profile_for_name(run_name)
+    profile=policy.profile_for_name(run_name)
+    runtime_limit=1800 if profile==policy.REPAIRED else 7200
     overrides = overrides or {}
     if set(overrides) - {"campaign_seed"}:
         raise ValueError("Only a new independent seed is allowed in this series")
@@ -138,15 +144,19 @@ def run_campaign(run_name: str = RUN_NAME, overrides: dict | None = None):
         (run / "campaign.json").write_text(json.dumps(config, indent=2) + "\n")
         shutil.copy(config['targets'][0]['target_path'], run / "target.pdb")
         shutil.copy("/opt/bindcraft-runtime-freeze.txt", run / "runtime-freeze.txt")
+        if profile==policy.REPAIRED:
+            shutil.copy('/opt/c4/prepared_frame_preflight.json',run/'prepared_frame_preflight.json')
         status.update(status="modeling", gpu=gpu, jax=jax.__version__, checkpoints=checksums,
-                      container=os.environ.get("MODAL_TASK_ID"), max_runtime_seconds=7200)
+                      container=os.environ.get("MODAL_TASK_ID"), max_runtime_seconds=runtime_limit)
         save("status.json", status)
         volume.commit()
         print(json.dumps(status), flush=True)
         with (run / "worker.log").open("w") as log:
-            proc = subprocess.Popen(["bindcraft", "design", str(run / "campaign.json")],
+            command=(["python","/opt/c4/monitored_design.py",str(run/'campaign.json'),str(run/'physical_steps.jsonl')]
+                     if profile==policy.REPAIRED else ["bindcraft","design",str(run/'campaign.json')])
+            proc = subprocess.Popen(command,
                                     cwd="/opt/bindcraft", stdout=log, stderr=subprocess.STDOUT)
-            deadline = started + 6900
+            deadline = started + runtime_limit-60
             while proc.poll() is None:
                 if time.time() >= deadline:
                     proc.terminate()

@@ -1,0 +1,16 @@
+{
+  "checked_local": "2026-10-22T07:17:46.878523-04:00",
+  "status": "modeling",
+  "gpu": "NVIDIA H100 80GB HBM3, 81559 MiB, 610.57.04",
+  "call_id": "fc-01M5HN7HYP3ZEQ188GS1CVX0YN",
+  "function_stats": {
+    "backlog": 0,
+    "num_total_runners": 1,
+    "num_running_inputs": 1,
+    "input_headroom": 0
+  },
+  "submission_elapsed_seconds": 69.37602710723877,
+  "current_run_runtime_estimate_upper_usd": 0.08959775148845671,
+  "cumulative_modal_runtime_estimate_upper_usd": 4.1427815792955105,
+  "estimate_basis": "Submission elapsed conservatively includes queue/startup; setup/storage and prior campaigns separate"
+}

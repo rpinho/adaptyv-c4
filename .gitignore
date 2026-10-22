@@ -11,4 +11,5 @@ results/modal_campaign_v4/series.lock
 results/modal_campaign_v5/**/driver.lock
 results/modal_campaign_v5/search.lock
 results/modal_frame_diagnostic_v8/driver.lock
+results/modal_repaired_native_v9/driver.lock
 data/*.cif

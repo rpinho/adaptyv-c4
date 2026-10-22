@@ -4,6 +4,7 @@ import re
 
 REFERENCE = 'c4_native_apical_ablation_v3'
 UNCENTERED = 'c4_native_largeinit_v4'
+REPAIRED = 'c4_repaired_native_v9'
 PROFILES = (
     'c4_local_frame_v5',
     'c4_local_frame_longer_v6',
@@ -12,6 +13,7 @@ PROFILES = (
 CHANGES = {
     REFERENCE: {},
     UNCENTERED: {'large_complex_initialization': True},
+    REPAIRED: {'large_complex_initialization': True,'max_trajectories':1},
     PROFILES[0]: {'large_complex_initialization': True},
     PROFILES[1]: {'large_complex_initialization': True, 'binder_lengths': [90,110]},
     PROFILES[2]: {'large_complex_initialization': True, 'binder_lengths': [90,110], 'weights_plddt_loss': 0.5},
@@ -33,7 +35,7 @@ def make_config(base, run_name, overrides, project_folder):
     config.update(copy.deepcopy(CHANGES[profile]))
     config.update(overrides)
     config.update(campaign_name=run_name, project_folder=project_folder)
-    if profile in PROFILES:
+    if profile in PROFILES or profile==REPAIRED:
         config['targets'][0]['target_path']='/opt/c4/local-frame-target.pdb'
     else:
         config['targets'][0]['target_path']='/opt/c4/target.pdb'
@@ -44,10 +46,10 @@ def make_config(base, run_name, overrides, project_folder):
 
 def next_profile(current, accepted, terminated_stages):
     if accepted:
-        return current, 'sample_additional_scaffolds_from_passing_configuration'
+        return None, 'native_context_outputs_require_acquisition_review'
     if not terminated_stages or any(stage not in {'screen','refine'} for stage in terminated_stages):
         return None, 'needs_interface_or_later_stage_diagnosis'
-    index=PROFILES.index(current)
-    if index+1==len(PROFILES):
-        return None, 'declared_fold_hypotheses_exhausted'
-    return PROFILES[index+1], 'change_configuration_after_fold_confidence_failure'
+    # A stage name does not distinguish singular frames, off-patch geometry,
+    # confidence failures or individual filters. Changing length/weight here
+    # previously spent money without that causal evidence.
+    return None, 'physical_failure_review_required'

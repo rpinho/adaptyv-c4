@@ -1,0 +1,22 @@
+{
+  "launch_intent": 1792667797.041004,
+  "runtime_envelope_seconds": 2100,
+  "runtime_upper_hourly_usd": 4.649328,
+  "prior_modal_runtime_estimate_usd": 4.053183827807054,
+  "prelaunch_function_stats": {
+    "run_campaign": {
+      "backlog": 0,
+      "num_total_runners": 0,
+      "num_running_inputs": 0,
+      "input_headroom": 0
+    },
+    "frame_diagnostic": {
+      "backlog": 0,
+      "num_total_runners": 0,
+      "num_running_inputs": 0,
+      "input_headroom": 0
+    }
+  },
+  "pid": 58537,
+  "launched": 1792667797.0494452
+}
