@@ -1,0 +1,25 @@
+{
+  "checked_unix": 1792667066.5476532,
+  "modal_functions": {
+    "run_campaign": {
+      "backlog": 0,
+      "num_total_runners": 0,
+      "num_running_inputs": 0,
+      "input_headroom": 0
+    },
+    "frame_diagnostic": {
+      "backlog": 0,
+      "num_total_runners": 0,
+      "num_running_inputs": 0,
+      "input_headroom": 0
+    }
+  },
+  "rosalind_application": "Not submitted; Persona status Created; biometric consent unchecked; Research and Continue disabled",
+  "candidate_status": "No qualified candidate; latest completed diagnostic is software-only",
+  "spend": {
+    "newly_supervised_runpod_runtime_estimate_usd": 1.7952,
+    "modal_cumulative_runtime_estimate_usd": 4.0531838,
+    "consultation_reported_usage_usd": 1.1922999,
+    "excludes": "historical campaigns and unreconciled setup/storage"
+  }
+}
