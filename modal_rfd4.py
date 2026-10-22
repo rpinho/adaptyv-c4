@@ -73,6 +73,8 @@ image = (
     .env({"HF_HOME": "/cache/huggingface", "DATA_PATH": "/data"})
     .add_local_file(str(TARGET_CIF), f"{INPUTS}/11qc.cif")
     .add_local_file(str(SPEC), f"{INPUTS}/tfr1_apical_binder.yaml")
+    .add_local_file(str(SPEC.parent / "tfr1_apical_his.yaml"),
+                    f"{INPUTS}/tfr1_apical_his.yaml")
 )
 
 VOLUMES = {"/cache/huggingface": hf_cache, RUNS: runs_vol}
@@ -123,7 +125,7 @@ def sh_timed(cmd, cwd=REPO_IN_IMAGE, check=True):
 # 1. CPU-only validation. Run this first, every time the spec changes.
 # --------------------------------------------------------------------------------------
 @app.function(image=image, volumes=VOLUMES, timeout=1800, cpu=2.0, memory=8192)
-def dry_run():
+def dry_run(spec: str = "tfr1_apical_binder"):
     """Materialise the annotated CIF our spec describes. No GPU, no weights.
 
     `rfd4-generate` builds this in memory anyway; writing it out is how we confirm the
@@ -137,7 +139,7 @@ def dry_run():
     emitted annotation columns directly is a sharper test than the generic inspector:
     it asserts the counts we specifically intended.
     """
-    out = f"{RUNS}/cifs_dry_run"
+    out = f"{RUNS}/cifs_dry_run_{spec}"
     os.makedirs(out, exist_ok=True)
     sh(f"""python - <<'PY'
 from pathlib import Path
@@ -145,7 +147,7 @@ from rfproteina.inference_utils.condition_spec import resolve_condition_spec_inp
 from rfproteina.utils.verbosity import configure_verbosity
 configure_verbosity(True)
 for p in resolve_condition_spec_inputs(
-        Path("{INPUTS}/tfr1_apical_binder.yaml"), out_dir=Path("{out}"), validate=True):
+        Path("{INPUTS}/{spec}.yaml"), out_dir=Path("{out}"), validate=True):
     print("wrote", p)
 PY""")
     sh(f"ls -la {out}", cwd="/", check=False)
@@ -278,7 +280,7 @@ def baseline(num_replicates: int = 4):
 @app.function(image=image, gpu=GPU_CHEAP, volumes=VOLUMES, timeout=86400)
 def generate(num_replicates: int = 8, batch_size: int = 1, seed: int = 42,
              recycle_strategy: str = "medium/front_loaded", out_name: str = "tfr1",
-             metrics: bool = False):
+             metrics: bool = False, spec: str = "tfr1_apical_binder"):
     """Design binders against the TfR1 apical epitope.
 
     batch_size defaults to 1 because upstream says to confirm the longest input fits at
@@ -288,7 +290,7 @@ def generate(num_replicates: int = 8, batch_size: int = 1, seed: int = 42,
     metrics_arg = ("metrics_tags='[ppi_refolding,hotspot_conditioning]'" if metrics
                    else "'~metrics'")
     rc, out, elapsed, peak = sh_timed(
-       f"rfd4-generate inputs={INPUTS}/tfr1_apical_binder.yaml "
+       f"rfd4-generate inputs={INPUTS}/{spec}.yaml "
        f"recycle_strategy={recycle_strategy} "
        f"num_replicates={num_replicates} batch_size={batch_size} seed={seed} "
        f"save_chain_of_interest=true prevalidate_inputs=true "

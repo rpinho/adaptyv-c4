@@ -1,0 +1,88 @@
+# Switch-oriented variant of tfr1_apical_binder.yaml.
+#
+# WHY THIS EXISTS. Two independent reviews (Fable, Astra) disagreed on much but
+# converged on running this arm concurrently with plain generation rather than
+# sequentially after it. Astra's argument is the stronger one: selecting "best
+# parents" early concentrates uncertainty, because at that point "best" means
+# computationally promising rather than experimentally binding, and a parent
+# interface may simply not tolerate the chemistry. Co-designing the chemistry
+# while the interface is being built is a different bet, not a worse one.
+#
+# WHAT CHANGED from the plain spec, and only this:
+#
+#   1. The binder segment is NAMED (E1) instead of unnamed. A named expandable
+#      segment takes its name as its res_name, which is what makes it
+#      selectable in `conditions:`. An unnamed segment cannot be conditioned,
+#      so the plain spec's "60-130" could not carry this at all.
+#
+#   2. C_SEQ_PROB_HIS is raised on the designed chain.
+#
+# TARGET CONDITIONING IS IDENTICAL to the plain spec: same preserved domain
+# (label 68-262), same backbone-only internal coordinates, same full target
+# sequence, same ten hotspot atoms. Keeping it byte-identical means a yield
+# difference between the two arms is attributable to the sequence prior and
+# nothing else.
+#
+# ON THE VALUE 0.10. Histidine occurs at roughly 2.3% in natural proteins, so
+# 0.10 is about a fourfold elevation. It is deliberately moderate:
+#   - the condition is per residue and applies across the whole designed chain,
+#     because the interface does not exist yet and cannot be targeted in
+#     advance. A high global value buys histidines in places that do nothing
+#     and costs interface quality everywhere.
+#   - specified probabilities on a residue may not sum above 1; omitted
+#     identities share the remaining mass, so 0.10 leaves 0.90 flexible.
+#   - over a 60-130 residue chain this biases toward roughly 6-13 histidines,
+#     which is the right order for the 2-3 titratable sites the thermodynamics
+#     imply, without saturating the sequence.
+#
+# IMPORTANT, and the reason this needs checking rather than trusting: upstream
+# is explicit that these "are model conditions, not hard output constraints:
+# inspect sequence-probability adherence when exclusions matter". So the number
+# of histidines actually produced must be MEASURED on the output, not assumed
+# from this file. Neither does a histidine near a contact establish pH
+# sensitivity -- Astra's point, and it is correct. This arm produces candidates
+# with a plausible mechanism; it does not produce evidence of a switch.
+#
+# NOT SET HERE, on purpose: C_RAS (buried/exposed) and C_HB (donor/acceptor).
+# Both are tempting for placing titratable sites where protonation would
+# disrupt contact, but each additional condition narrows the distribution the
+# model is acting in, and the plain-vs-this comparison is only clean while this
+# is a one-variable change. Add them in a later arm if this one yields.
+
+tfr1_apical_his:
+  input: 11qc.cif
+
+  # E1 names the binder segment so `conditions:` can select it by res_name.
+  # Same 60-130 length range as the plain arm.
+  contig: "E1:60-130, /0, A68-262"
+
+  conditions:
+    # --- target: identical to the plain spec ---
+    C_CRDGRP:
+      1:
+        - select: "sel('A/*/[68-262]') and is_protein_backbone and not has_nan_coord()"
+
+    C_SEQ:
+      true:
+        - select: "sel('A/*/[68-262]')"
+
+    C_HOT:
+      true:
+        - select: "sel('A/*/84/[CD,NZ]')"
+        - select: "sel('A/*/85/[CG,ND2]')"
+        - select: "sel('A/*/87/[CZ,NH1]')"
+        - select: "sel('A/*/88/[CG,CD1]')"
+        - select: "sel('A/*/89/[CB,CG1]')"
+
+    # --- the one change: raise histidine on the designed chain ---
+    # Selected by the segment's res_name, which is its contig name.
+    C_SEQ_PROB_HIS:
+      0.10:
+        - select: "sel('*/E1')"
+
+    # Free cysteines are an expression and developability liability, and the
+    # competition's first criterion is a real chance to express. An explicit
+    # 0.0 excludes the identity outright, which is different from omitting it.
+    C_SEQ_PROB_CYS:
+      0.0:
+        - select: "sel('*/E1')"
