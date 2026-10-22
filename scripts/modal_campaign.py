@@ -330,7 +330,7 @@ def diffusion_generate(run_name,overrides):
     import shutil
     import subprocess
     import time
-    if run_name!='c4_diffusion_v18' or overrides:raise ValueError('Only the declared single-backbone pilot is allowed')
+    if run_name not in ('c4_diffusion_v18','c4_diffusion_v18_retry4') or overrides:raise ValueError('Only the declared single-backbone pilot and failed-preparation retry are allowed')
     out=Path('/results')/run_name
     if out.exists():raise RuntimeError('Fresh diffusion directory required')
     out.mkdir();started=time.time();proc=None
@@ -374,4 +374,5 @@ def diffusion_runtime_check():
         'import sys,json,torch;print(json.dumps(dict(python=list(sys.version_info[:2]),torch=torch.__version__,cuda_available=torch.cuda.is_available())))'],text=True))
     if child['python']!=[3,9] or child['cuda_available']:raise RuntimeError('CPU bootstrap check differs')
     return dict(status='passed',modal_runner_python=list(sys.version_info[:2]),runner_executable=sys.executable,
-                rf_runtime=child,scope='Actual serverless CPU bootstrap; no GPU requested')
+                rf_runtime=child,scope='Actual serverless CPU bootstrap; no GPU requested',
+                generation_worker_sha256=json.loads(Path('/opt/c4/rfdiffusion_preflight.json').read_text())['generation_worker_sha256'])

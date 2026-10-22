@@ -1,0 +1,13 @@
+{
+  "pid": 34706,
+  "started_at": "2026-10-22T15:33:01.162793+00:00",
+  "run": "c4_diffusion_v18",
+  "resource_attempt": 3,
+  "actual_cpu_bootstrap_passed": true,
+  "gpu_preferences": [
+    "A100-80GB",
+    "A100-40GB"
+  ],
+  "hourly_requested_upper_usd": 3.198528,
+  "prior_failed_starts_upper_usd": 0.6079231528658294
+}

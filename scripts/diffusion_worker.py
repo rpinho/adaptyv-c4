@@ -5,6 +5,11 @@ import sys
 import time
 from rfdiffusion_preflight import configuration,sha,TARGET,TARGET_SHA,REVISION
 
+def tensor_mapping(sampler):
+    return [dict(tensor_index=int(i),input_reference=[str(ref[0]),int(ref[1]) if ref[0]!='_' else str(ref[1])],
+                 output_chain=str(sampler.chain_idx[i]),output_author_id=int(sampler.idx_pdb[i]))
+            for i,ref in enumerate(sampler.contig_map.ref)]
+
 def main(destination):
     import torch
     from omegaconf import OmegaConf
@@ -15,6 +20,7 @@ def main(destination):
     root=Path(destination)
     proof=json.loads(Path('/opt/c4/rfdiffusion_preflight.json').read_text())
     if proof['status']!='passed' or sha(TARGET)!=TARGET_SHA:raise RuntimeError('Input CPU proof mismatch')
+    if proof['generation_worker_sha256']!=sha(__file__):raise RuntimeError('CPU-audited worker identity differs')
     if sha(proof['checkpoint'])!=proof['checkpoint_sha256']:raise RuntimeError('Checkpoint identity changed')
     conf=configuration();conf.inference.output_prefix=str(root/'backbone')
     # Upstream checkpoint assembly can overwrite defaults. Inspect actual resolved sampler.
@@ -29,8 +35,10 @@ def main(destination):
     (root/'effective_config.json').write_text(json.dumps(OmegaConf.to_container(sampler._conf,resolve=True),indent=2)+'\n')
     torch.manual_seed(SEED);np.random.seed(SEED);random.seed(SEED)
     started=time.time();xyz,seq=sampler.sample_init()
-    mapping=[dict(tensor_index=i,input_reference=list(ref),output_chain=sampler.chain_idx[i],
-                  output_author_id=sampler.idx_pdb[i]) for i,ref in enumerate(sampler.contig_map.ref)]
+    mapping=tensor_mapping(sampler)
+    import hashlib
+    if hashlib.sha256(json.dumps(mapping,sort_keys=True).encode()).hexdigest()!=proof['tensor_mapping_sha256']:
+        raise RuntimeError('CPU/GPU mapping differs')
     (root/'tensor_mapping.json').write_text(json.dumps(mapping,indent=2)+'\n')
     expected_hotspots=[i for i,x in enumerate(sampler.contig_map.ref) if x in [('A',n) for n in HOTSPOTS]]
     actual=torch.where(sampler._preprocess(seq,xyz,50)[5][0,0,:,-1]==1)[0].tolist()

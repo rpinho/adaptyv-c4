@@ -13,5 +13,6 @@
     "torch": "1.12.1+cu116",
     "cuda_available": false
   },
-  "scope": "Actual serverless CPU bootstrap; no GPU requested"
+  "scope": "Actual serverless CPU bootstrap; no GPU requested",
+  "generation_worker_sha256": "da28c8f619000810b2f95e6907c33cb8e379eef3210ad60c4c232ed9a3ff1297"
 }

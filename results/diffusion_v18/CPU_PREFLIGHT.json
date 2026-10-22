@@ -46,5 +46,7 @@
   "legacy_contig_output_mapping_not_used": true,
   "torch": "1.12.1+cu116",
   "cuda_build": "11.6",
-  "worker_sha256": "84bda1f30be41bc0d9526b658050cff1ae4bc5d764dd0722b26630cffbb951e2"
+  "worker_sha256": "c4b58e2382f80b7e838cbac6fefe60233979d86686fe41c609ee247e5fa8e9e5",
+  "generation_worker_sha256": "da28c8f619000810b2f95e6907c33cb8e379eef3210ad60c4c232ed9a3ff1297",
+  "tensor_mapping_sha256": "1b8394b3cc200c3c618f89c288cb23e5b9dcd0ab5d490b849bd4c16787beb5e0"
 }

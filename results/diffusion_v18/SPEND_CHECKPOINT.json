@@ -12,8 +12,16 @@
       "model_forward_steps": 0,
       "gpu_released_verified": true,
       "submission_to_release_upper_usd": 0.24296750802108763
+    },
+    {
+      "attempt": 3,
+      "model_forward_steps": 0,
+      "gpu": "A100-SXM4-40GB",
+      "gpu_released_verified": true,
+      "submission_to_release_upper_usd": 0.059213419389953614,
+      "failure": "NumPy int64 in JSON tensor_mapping; no model forward"
     }
   ],
-  "cumulative_modal_submission_upper_usd": 10.514486435335312,
+  "cumulative_modal_submission_upper_usd": 10.573699854725266,
   "scope": "Conservative submission-to-release envelope includes queuing; actual bootstrap/GPU billing not reconciled. Zero model steps does not mean zero billed resource time. CPU builds/storage extra."
 }

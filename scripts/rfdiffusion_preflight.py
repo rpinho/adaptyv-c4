@@ -88,6 +88,8 @@ def main(destination):
         for atom in ('N','CA','C','O'):
             assert atom in r and np.isfinite(r[atom].coord).all()
     checkpoint = Path(sampler.ckpt_path)
+    from diffusion_worker import tensor_mapping
+    mapping_payload=json.dumps(tensor_mapping(sampler),sort_keys=True)
     result = dict(status='passed',scope='CPU preparation/features/writer only; no neural forward',
         revision=actual,target_sha256=sha(TARGET),checkpoint=str(checkpoint),checkpoint_sha256=sha(checkpoint),
         target_residues=195,binder_residues=69,seed=SEED,hotspot_author_ids=list(HOTSPOTS),
@@ -97,6 +99,8 @@ def main(destination):
         actual_output_binder_chain='B',actual_output_binder_author_range=[1,69],
         legacy_contig_output_mapping_not_used=True,torch=torch.__version__,cuda_build=torch.version.cuda,
         worker_sha256=sha(__file__),config=OmegaConf.to_container(sampler._conf,resolve=True))
+    result['generation_worker_sha256']=sha('/opt/c4/diffusion_worker.py')
+    result['tensor_mapping_sha256']=hashlib.sha256(mapping_payload.encode()).hexdigest()
     Path(destination).write_text(json.dumps(result,indent=2)+'\n')
     print(json.dumps({k:v for k,v in result.items() if k!='config'}),flush=True)
 
