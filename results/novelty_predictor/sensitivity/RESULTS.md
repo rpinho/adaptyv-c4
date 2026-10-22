@@ -1,5 +1,10 @@
 # CPU follow-up: candidate discovery sensitivity
 
+Superseded scoring notice: this report used approximate TM export. Current exact
+score results are in ../exact_score/RESULTS.md.
+Corrected retired local counts:16 level2,47 level3,4 level4,6 unestablished.
+Prior counts and score values remain below as historical evidence.
+
 The earlier single-discovery structural calls were too optimistic for some retired designs. A focused eight-query test found two of four local level4 calls drop to3, and one local3 drop to2. This is a measured change between local methods, not an organizer false-positive rate.
 
 The predictor now defaults to the union of Foldseek kmer0 and all-reference ungapped1 discovery, with50000 candidates per mode/query. mergedbs combines candidates for the same query database, then the existing full TM-align stage runs. Repeated target hits retain their highest query-domain TM and do not count as additional evidence. The old coordinates, domain intervals, thresholds and historical1,562,678-chain public PDB snapshot are unchanged.

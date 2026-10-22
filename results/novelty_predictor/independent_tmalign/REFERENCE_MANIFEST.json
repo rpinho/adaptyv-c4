@@ -1,0 +1,1114 @@
+{
+  "status": "verified",
+  "records": [
+    {
+      "database_key": 432417,
+      "target": "8gzu-assembly1_69",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/432417.pdb",
+      "CA_count": 129,
+      "header": "8gzu-assembly1_69 Cryo-EM structure of Tetrahymena thermophila respiratory Megacomplex MC (IV2+I+III2+II)2",
+      "sha256": "88d96e9fb9db919d9fdeec0674e95b6b6b3fab5db44c0e31d6b9de0b4ce7d5c2",
+      "commands": [
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/432417/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/432417/db"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/432417/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_h",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/432417/db_h"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/432417/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_ca",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/432417/db_ca"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "convert2pdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/432417/db",
+          "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/432417.pdb",
+          "--pdb-output-mode",
+          "0",
+          "--threads",
+          "1"
+        ]
+      ]
+    },
+    {
+      "database_key": 432677,
+      "target": "8gzu-assembly1_o",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/432677.pdb",
+      "CA_count": 129,
+      "header": "8gzu-assembly1_o Cryo-EM structure of Tetrahymena thermophila respiratory Megacomplex MC (IV2+I+III2+II)2",
+      "sha256": "262ed442f52a952d37ff2b7e84d496fdb9b4b4fb0e60b32908a2de9b99074816",
+      "commands": [
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/432677/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/432677/db"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/432677/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_h",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/432677/db_h"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/432677/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_ca",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/432677/db_ca"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "convert2pdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/432677/db",
+          "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/432677.pdb",
+          "--pdb-output-mode",
+          "0",
+          "--threads",
+          "1"
+        ]
+      ]
+    },
+    {
+      "database_key": 497699,
+      "target": "4i9o-assembly1_A",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/497699.pdb",
+      "CA_count": 78,
+      "header": "4i9o-assembly1_A Crystal Structure of GACKIX L664C Tethered to 1-10",
+      "sha256": "335c6b27e786472cfe9585a767d8654cdf0d266eee65335143d3b2b7937087f9",
+      "commands": [
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/497699/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/497699/db"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/497699/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_h",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/497699/db_h"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/497699/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_ca",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/497699/db_ca"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "convert2pdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/497699/db",
+          "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/497699.pdb",
+          "--pdb-output-mode",
+          "0",
+          "--threads",
+          "1"
+        ]
+      ]
+    },
+    {
+      "database_key": 497700,
+      "target": "4i9o-assembly2_A",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/497700.pdb",
+      "CA_count": 78,
+      "header": "4i9o-assembly2_A Crystal Structure of GACKIX L664C Tethered to 1-10",
+      "sha256": "d5175d14f3e486ab214b4428f643b98aaece6a225cb097c45b0f8c9fab26d0e9",
+      "commands": [
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/497700/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/497700/db"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/497700/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_h",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/497700/db_h"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/497700/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_ca",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/497700/db_ca"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "convert2pdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/497700/db",
+          "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/497700.pdb",
+          "--pdb-output-mode",
+          "0",
+          "--threads",
+          "1"
+        ]
+      ]
+    },
+    {
+      "database_key": 497701,
+      "target": "4i9o-assembly2_A-2",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/497701.pdb",
+      "CA_count": 78,
+      "header": "4i9o-assembly2_A-2 Crystal Structure of GACKIX L664C Tethered to 1-10",
+      "sha256": "5efc00fe1692e778c5b882f7beecf8ef4a9df2f173619401c7a383f3b1c04eb3",
+      "commands": [
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/497701/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/497701/db"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/497701/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_h",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/497701/db_h"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/497701/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_ca",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/497701/db_ca"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "convert2pdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/497701/db",
+          "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/497701.pdb",
+          "--pdb-output-mode",
+          "0",
+          "--threads",
+          "1"
+        ]
+      ]
+    },
+    {
+      "database_key": 262697,
+      "target": "5e6g-assembly1_A",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/262697.pdb",
+      "CA_count": 113,
+      "header": "5e6g-assembly1_A Crystal Structure of De Novo Designed Protein CA01",
+      "sha256": "1c712b8ee2e8cc074295298605a99efbad546fd8e7c701a09b0008d78eb57b46",
+      "commands": [
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/262697/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/262697/db"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/262697/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_h",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/262697/db_h"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/262697/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_ca",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/262697/db_ca"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "convert2pdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/262697/db",
+          "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/262697.pdb",
+          "--pdb-output-mode",
+          "0",
+          "--threads",
+          "1"
+        ]
+      ]
+    },
+    {
+      "database_key": 262699,
+      "target": "5e6g-assembly3_A",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/262699.pdb",
+      "CA_count": 113,
+      "header": "5e6g-assembly3_A Crystal Structure of De Novo Designed Protein CA01",
+      "sha256": "74a5c2295d1c9d6aeefc2ecb421d68fec5cec483af0dc6c95e0aab48690e6978",
+      "commands": [
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/262699/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/262699/db"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/262699/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_h",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/262699/db_h"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/262699/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_ca",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/262699/db_ca"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "convert2pdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/262699/db",
+          "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/262699.pdb",
+          "--pdb-output-mode",
+          "0",
+          "--threads",
+          "1"
+        ]
+      ]
+    },
+    {
+      "database_key": 262701,
+      "target": "5e6g-assembly3_A-2",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/262701.pdb",
+      "CA_count": 113,
+      "header": "5e6g-assembly3_A-2 Crystal Structure of De Novo Designed Protein CA01",
+      "sha256": "e1988b04d411708006b937cc279bc85bb15da059e5391fdf4dead6d852c64903",
+      "commands": [
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/262701/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/262701/db"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/262701/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_h",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/262701/db_h"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/262701/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_ca",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/262701/db_ca"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "convert2pdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/262701/db",
+          "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/262701.pdb",
+          "--pdb-output-mode",
+          "0",
+          "--threads",
+          "1"
+        ]
+      ]
+    },
+    {
+      "database_key": 262703,
+      "target": "5e6g-assembly3_A-3",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/262703.pdb",
+      "CA_count": 113,
+      "header": "5e6g-assembly3_A-3 Crystal Structure of De Novo Designed Protein CA01",
+      "sha256": "4dc50bad0896091aaca128ecb305bc95d2c01983d9c4d5e369b5f486d10feac7",
+      "commands": [
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/262703/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/262703/db"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/262703/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_h",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/262703/db_h"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/262703/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_ca",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/262703/db_ca"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "convert2pdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/262703/db",
+          "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/262703.pdb",
+          "--pdb-output-mode",
+          "0",
+          "--threads",
+          "1"
+        ]
+      ]
+    },
+    {
+      "database_key": 235391,
+      "target": "6dnq-assembly1_D",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/235391.pdb",
+      "CA_count": 87,
+      "header": "6dnq-assembly1_D HBZ77 in complex with KIX and c-Myb",
+      "sha256": "139de1045ef81b912a4ed56acfb969bff3ef992cc4eb3681ee8d2cb2d8797deb",
+      "commands": [
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/235391/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/235391/db"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/235391/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_h",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/235391/db_h"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/235391/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_ca",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/235391/db_ca"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "convert2pdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/235391/db",
+          "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/235391.pdb",
+          "--pdb-output-mode",
+          "0",
+          "--threads",
+          "1"
+        ]
+      ]
+    },
+    {
+      "database_key": 235393,
+      "target": "6dnq-assembly1_B",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/235393.pdb",
+      "CA_count": 87,
+      "header": "6dnq-assembly1_B HBZ77 in complex with KIX and c-Myb",
+      "sha256": "dd14144bbb2bd45efa65d893af8548c07141c0282aef56061e68b46a5fa5f393",
+      "commands": [
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/235393/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/235393/db"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/235393/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_h",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/235393/db_h"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/235393/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_ca",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/235393/db_ca"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "convert2pdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/235393/db",
+          "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/235393.pdb",
+          "--pdb-output-mode",
+          "0",
+          "--threads",
+          "1"
+        ]
+      ]
+    },
+    {
+      "database_key": 234526,
+      "target": "6dmx-assembly2_I",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/234526.pdb",
+      "CA_count": 81,
+      "header": "6dmx-assembly2_I HBZ56 in complex with KIX and c-Myb",
+      "sha256": "a0165bc4040dc1f7da9737203da2caa55e5355254add2de3cc3c07d6d43cc0a1",
+      "commands": [
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/234526/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/234526/db"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/234526/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_h",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/234526/db_h"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/234526/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_ca",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/234526/db_ca"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "convert2pdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/234526/db",
+          "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/234526.pdb",
+          "--pdb-output-mode",
+          "0",
+          "--threads",
+          "1"
+        ]
+      ]
+    },
+    {
+      "database_key": 234528,
+      "target": "6dmx-assembly2_G",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/234528.pdb",
+      "CA_count": 83,
+      "header": "6dmx-assembly2_G HBZ56 in complex with KIX and c-Myb",
+      "sha256": "0f443904aec49269be61631004bee2b8eca40e4dac327799cd80e330df0cce72",
+      "commands": [
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/234528/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/234528/db"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/234528/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_h",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/234528/db_h"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/234528/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_ca",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/234528/db_ca"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "convert2pdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/234528/db",
+          "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/234528.pdb",
+          "--pdb-output-mode",
+          "0",
+          "--threads",
+          "1"
+        ]
+      ]
+    },
+    {
+      "database_key": 234523,
+      "target": "6dmx-assembly1_B",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/234523.pdb",
+      "CA_count": 84,
+      "header": "6dmx-assembly1_B HBZ56 in complex with KIX and c-Myb",
+      "sha256": "886bdad4b6033700cfa909617154865c16388fa96d0b6c82dee9b1d3db964291",
+      "commands": [
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/234523/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/234523/db"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/234523/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_h",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/234523/db_h"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/234523/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_ca",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/234523/db_ca"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "convert2pdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/234523/db",
+          "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/234523.pdb",
+          "--pdb-output-mode",
+          "0",
+          "--threads",
+          "1"
+        ]
+      ]
+    },
+    {
+      "database_key": 507948,
+      "target": "8ie3-assembly1_4",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/507948.pdb",
+      "CA_count": 608,
+      "header": "8ie3-assembly1_4 human nuclear pre-60S ribosomal particle - State E",
+      "sha256": "4b18eae5ec65303933256603f6ea25303365d0f31ad91dc2dbf19df9ccf9c8d3",
+      "commands": [
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/507948/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/507948/db"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/507948/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_h",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/507948/db_h"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/507948/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_ca",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/507948/db_ca"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "convert2pdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/507948/db",
+          "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/507948.pdb",
+          "--pdb-output-mode",
+          "0",
+          "--threads",
+          "1"
+        ]
+      ]
+    },
+    {
+      "database_key": 228093,
+      "target": "6dg6-assembly4_D",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/228093.pdb",
+      "CA_count": 100,
+      "header": "6dg6-assembly4_D Structure of a de novo designed Interleukin-2/Interleukin-15 mimetic",
+      "sha256": "ccb8992959729d9e90ff22c2b487716993ce9a1f647dfb8c4ced495345d6b5ea",
+      "commands": [
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/228093/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/228093/db"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/228093/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_h",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/228093/db_h"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/228093/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_ca",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/228093/db_ca"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "convert2pdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/228093/db",
+          "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/228093.pdb",
+          "--pdb-output-mode",
+          "0",
+          "--threads",
+          "1"
+        ]
+      ]
+    },
+    {
+      "database_key": 228095,
+      "target": "6dg6-assembly6_F",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/228095.pdb",
+      "CA_count": 97,
+      "header": "6dg6-assembly6_F Structure of a de novo designed Interleukin-2/Interleukin-15 mimetic",
+      "sha256": "a7e946b0dd428b463d2beb5a6ad43fcea4a3cf2f687c711cb0ac93f328bff783",
+      "commands": [
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/228095/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/228095/db"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/228095/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_h",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/228095/db_h"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/228095/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_ca",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/228095/db_ca"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "convert2pdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/228095/db",
+          "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/228095.pdb",
+          "--pdb-output-mode",
+          "0",
+          "--threads",
+          "1"
+        ]
+      ]
+    },
+    {
+      "database_key": 228090,
+      "target": "6dg6-assembly1_A",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/228090.pdb",
+      "CA_count": 100,
+      "header": "6dg6-assembly1_A Structure of a de novo designed Interleukin-2/Interleukin-15 mimetic",
+      "sha256": "fe25dec8231ea83e756fbe909f334dabb29237dd26be038312eaa8044ffc38db",
+      "commands": [
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/228090/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/228090/db"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/228090/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_h",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/228090/db_h"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/228090/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_ca",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/228090/db_ca"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "convert2pdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/228090/db",
+          "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/228090.pdb",
+          "--pdb-output-mode",
+          "0",
+          "--threads",
+          "1"
+        ]
+      ]
+    },
+    {
+      "database_key": 234521,
+      "target": "6dmx-assembly1_D",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/234521.pdb",
+      "CA_count": 81,
+      "header": "6dmx-assembly1_D HBZ56 in complex with KIX and c-Myb",
+      "sha256": "00a391ba3a5350fdb418cd2b2047ba0df8c82c8e5ca0b45c635646a4a0bb12e6",
+      "commands": [
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/234521/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/234521/db"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/234521/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_h",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/234521/db_h"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/234521/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_ca",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/234521/db_ca"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "convert2pdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/234521/db",
+          "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/234521.pdb",
+          "--pdb-output-mode",
+          "0",
+          "--threads",
+          "1"
+        ]
+      ]
+    },
+    {
+      "database_key": 1181478,
+      "target": "5u4k-assembly1_A",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/1181478.pdb",
+      "CA_count": 87,
+      "header": "5u4k-assembly1_A NMR structure of the complex between the KIX domain of CBP and the transactivation domain 1 of p65",
+      "sha256": "617493520b92badbadbb8dd8c963cbbd0a459e96d3eda92619caa1bdf31da973",
+      "commands": [
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/1181478/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/1181478/db"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/1181478/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_h",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/1181478/db_h"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/1181478/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_ca",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/1181478/db_ca"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "convert2pdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/1181478/db",
+          "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/1181478.pdb",
+          "--pdb-output-mode",
+          "0",
+          "--threads",
+          "1"
+        ]
+      ]
+    },
+    {
+      "database_key": 228091,
+      "target": "6dg6-assembly2_B",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/228091.pdb",
+      "CA_count": 100,
+      "header": "6dg6-assembly2_B Structure of a de novo designed Interleukin-2/Interleukin-15 mimetic",
+      "sha256": "c17084f213c01d058fd5f5764fa398daa25f5f8d13387b354bb6b020b17685eb",
+      "commands": [
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/228091/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/228091/db"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/228091/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_h",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/228091/db_h"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/228091/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_ca",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/228091/db_ca"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "convert2pdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/228091/db",
+          "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/228091.pdb",
+          "--pdb-output-mode",
+          "0",
+          "--threads",
+          "1"
+        ]
+      ]
+    },
+    {
+      "database_key": 253244,
+      "target": "8dz8-assembly6_F",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/253244.pdb",
+      "CA_count": 95,
+      "header": "8dz8-assembly6_F Neoleukin 4, a de novo designed IL-4 mimetic",
+      "sha256": "74c586aab72b9046d15168567003823546afff985c07eef2d9bfcf3e1eac049f",
+      "commands": [
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/253244/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/253244/db"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/253244/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_h",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/253244/db_h"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/253244/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_ca",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/253244/db_ca"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "convert2pdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/253244/db",
+          "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/253244.pdb",
+          "--pdb-output-mode",
+          "0",
+          "--threads",
+          "1"
+        ]
+      ]
+    },
+    {
+      "database_key": 683820,
+      "target": "2lfd-assembly1_A",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/683820.pdb",
+      "CA_count": 115,
+      "header": "2lfd-assembly1_A Solution NMR structure of Diiron protein in presence of 2 eq Zn2+, Northeast Structural Genomics Consortium Target OR21",
+      "sha256": "2ba5509be15a3b008a2f30410eaffd08637c3bcd16c4d8845df6a2154322487f",
+      "commands": [
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/683820/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/683820/db"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/683820/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_h",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/683820/db_h"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/683820/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_ca",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/683820/db_ca"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "convert2pdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/683820/db",
+          "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/683820.pdb",
+          "--pdb-output-mode",
+          "0",
+          "--threads",
+          "1"
+        ]
+      ]
+    },
+    {
+      "database_key": 228092,
+      "target": "6dg6-assembly3_C",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/228092.pdb",
+      "CA_count": 100,
+      "header": "6dg6-assembly3_C Structure of a de novo designed Interleukin-2/Interleukin-15 mimetic",
+      "sha256": "a3707e14b61b87ea434f304a0b73050152dd2420f59888619c37c75ebbefac86",
+      "commands": [
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/228092/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/228092/db"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/228092/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_h",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/228092/db_h"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/228092/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_ca",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/228092/db_ca"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "convert2pdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/228092/db",
+          "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/228092.pdb",
+          "--pdb-output-mode",
+          "0",
+          "--threads",
+          "1"
+        ]
+      ]
+    },
+    {
+      "database_key": 683866,
+      "target": "3lf9-assembly1_A",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/683866.pdb",
+      "CA_count": 120,
+      "header": "3lf9-assembly1_A Crystal structure of HIV epitope-scaffold 4E10_D0_1IS1A_001_C",
+      "sha256": "fb678ab2a66cc0e1ae620e014d6f2665a43acced5d6f1061a02dc3516f603690",
+      "commands": [
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/683866/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/683866/db"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/683866/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_h",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/683866/db_h"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/683866/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_ca",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/683866/db_ca"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "convert2pdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/683866/db",
+          "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/683866.pdb",
+          "--pdb-output-mode",
+          "0",
+          "--threads",
+          "1"
+        ]
+      ]
+    },
+    {
+      "database_key": 187726,
+      "target": "4cs8-assembly1_B",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/187726.pdb",
+      "CA_count": 164,
+      "header": "4cs8-assembly1_B Crystal structure of the asymmetric human metapneumovirus M2-1 tetramer, form 2",
+      "sha256": "57ee0c63d157c3556d1960c0eebeaadd55ae5e80b60966957384c6c72ca195e2",
+      "commands": [
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/187726/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/187726/db"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/187726/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_h",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/187726/db_h"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/187726/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_ca",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/187726/db_ca"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "convert2pdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/187726/db",
+          "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/187726.pdb",
+          "--pdb-output-mode",
+          "0",
+          "--threads",
+          "1"
+        ]
+      ]
+    },
+    {
+      "database_key": 1544214,
+      "target": "7zqs-assembly1_B",
+      "path": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/1544214.pdb",
+      "CA_count": 639,
+      "header": "7zqs-assembly1_B Cryo-EM Structure of Human Transferrin Receptor 1 bound to DNA Aptamer",
+      "sha256": "74593780684ee026ef741f158cf6517bf2e9d92644aafe54412a469e40331db2",
+      "commands": [
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/1544214/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/1544214/db"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/1544214/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_h",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/1544214/db_h"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "createsubdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/1544214/id.txt",
+          "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_ca",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/1544214/db_ca"
+        ],
+        [
+          "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+          "convert2pdb",
+          "/Users/ricardo/.cache/adaptyv-c4/standalone_tm_reference_export/1544214/db",
+          "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/1544214.pdb",
+          "--pdb-output-mode",
+          "0",
+          "--threads",
+          "1"
+        ]
+      ]
+    }
+  ],
+  "filename_policy": "Numeric database keys, one entry per export; no interpretation of chain-letter filenames",
+  "rejected_batch_export": "convert2pdb mode1 produced filename collisions/merged records; CA count guard rejected before scoring"
+}

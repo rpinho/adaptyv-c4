@@ -46,6 +46,7 @@ FOLDSEEK_FIELDS = ('query', 'target', 'qlen', 'tlen', 'qstart', 'qend',
 FOLDSEEK_MAX_SEQS = 50000
 FOLDSEEK_EVALUE = 10.0  # permissive candidate discovery; final rule uses TM only
 FOLDSEEK_SENSITIVITY = 9.5
+FOLDSEEK_EXACT_TM_SCORE = 1  # convertalis otherwise recomputes approximate TM, even after tmalign
 
 
 def digest(path):
@@ -291,7 +292,8 @@ def run_structural_half(records, report, args):
          '--threads',str(args.threads),'--tmalign-fast','0','--tmscore-threshold','0',
          '--tmscore-threshold-mode','1','--tmalign-hit-order','1','-a','1'],
         [binary,'convertalis',str(querydb),str(base),str(realigned),str(out/'hits.tsv'),
-         '--threads',str(args.threads),'--format-output',','.join(FOLDSEEK_FIELDS)]])
+         '--threads',str(args.threads),'--exact-tmscore',str(FOLDSEEK_EXACT_TM_SCORE),
+         '--format-output',','.join(FOLDSEEK_FIELDS)]])
     start = time.monotonic()
     for i, cmd in enumerate(commands):
         with (out/f'stage_{i}.log').open('w') as log:
@@ -338,6 +340,7 @@ def run_structural_half(records, report, args):
             query_domains=len(domains), hit_rows=sum(map(len,hits.values())),
             raw_alignment_rows=sum(1 for _ in (out/'hits.tsv').open()),
             repeated_targets='Deduplicated per query, retaining maximum query-normalized TM',
+            exact_tmscore_export=FOLDSEEK_EXACT_TM_SCORE,
             raw_hits_sha256=digest(out/'hits.tsv'),
             alignment='Foldseek 3Di+AA search -> Foldseek built-in TM-align, fast mode OFF; scores normalized by complete query domain length',
             hit_cap_per_discovery_mode=args.structure_max_seqs, prefilter_modes=modes,

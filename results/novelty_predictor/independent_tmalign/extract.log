@@ -1,0 +1,28 @@
+createsubdb results/novelty_predictor/independent_tmalign/TARGET_IDS.txt /Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq results/novelty_predictor/independent_tmalign/references_db 
+
+MMseqs Version: 	463739e0014a1549a527de589102cde98f802f37
+Subdb mode      	0
+Database ID mode	0
+Verbosity       	3
+
+createsubdb results/novelty_predictor/independent_tmalign/TARGET_IDS.txt /Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq results/novelty_predictor/independent_tmalign/references_db --subdb-mode 0 --id-mode 0 -v 3 
+
+Time for merging to references_db: 0h 0m 0s 0ms
+Time for processing: 0h 0m 0s 97ms
+createsubdb results/novelty_predictor/independent_tmalign/references_db.indextmp /Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_ss results/novelty_predictor/independent_tmalign/references_db_ss --subdb-mode 0 --id-mode 0 -v 3 
+
+Time for merging to references_db_ss: 0h 0m 0s 0ms
+Time for processing: 0h 0m 0s 91ms
+createsubdb results/novelty_predictor/independent_tmalign/references_db.indextmp /Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq_ca results/novelty_predictor/independent_tmalign/references_db_ca --subdb-mode 0 --id-mode 0 -v 3 
+
+Time for merging to references_db_ca: 0h 0m 0s 0ms
+Time for processing: 0h 0m 0s 99ms
+convert2pdb results/novelty_predictor/independent_tmalign/references_db results/novelty_predictor/independent_tmalign/references --pdb-output-mode 1 --threads 4 
+
+MMseqs Version:  	463739e0014a1549a527de589102cde98f802f37
+PDB output mode  	1
+PDB output format	0
+Threads          	4
+Verbosity        	3
+
+No datafile could be found for results/novelty_predictor/independent_tmalign/references_db_h!

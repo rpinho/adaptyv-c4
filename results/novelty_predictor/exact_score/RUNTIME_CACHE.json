@@ -1,0 +1,265 @@
+{
+  "reason": "Completed disposable DBs and rejected filename exports cached; verified numeric references, all raw score/alignment evidence, query files, logs and reports remain in repo",
+  "moved": [
+    {
+      "original": "results/novelty_predictor/exact_score/run/structure/tmp_mode1",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/exact_run/tmp_mode1",
+      "sha256": null
+    },
+    {
+      "original": "results/novelty_predictor/exact_score/run/structure/querydb.source",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/exact_run/querydb.source",
+      "sha256": "74054cdc6596b708327cb5a02131ff46f5c22070a3159342c7305969908167c9"
+    },
+    {
+      "original": "results/novelty_predictor/exact_score/run/structure/querydb.index",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/exact_run/querydb.index",
+      "sha256": "e8c2d88401ccc27dd68bac0ae0f21621a28fd8b24805add16fade9225b7b8bbb"
+    },
+    {
+      "original": "results/novelty_predictor/exact_score/run/structure/querydb.dbtype",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/exact_run/querydb.dbtype",
+      "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+    },
+    {
+      "original": "results/novelty_predictor/exact_score/run/structure/discovered_mode1.1",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/exact_run/discovered_mode1.1",
+      "sha256": "e85cd593cc2b7b19abcd790ccf3f2ca04bc4788eecdd4a5d84c68e6477f1507b"
+    },
+    {
+      "original": "results/novelty_predictor/exact_score/run/structure/tmp_mode0",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/exact_run/tmp_mode0",
+      "sha256": null
+    },
+    {
+      "original": "results/novelty_predictor/exact_score/run/structure/querydb_ss.dbtype",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/exact_run/querydb_ss.dbtype",
+      "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+    },
+    {
+      "original": "results/novelty_predictor/exact_score/run/structure/discovered_mode1.0",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/exact_run/discovered_mode1.0",
+      "sha256": "4cfab7cf6a56ef7204d2b20a442b7439a82e6e300e17109361fc8e8b73e6aae2"
+    },
+    {
+      "original": "results/novelty_predictor/exact_score/run/structure/querydb_h.index",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/exact_run/querydb_h.index",
+      "sha256": "1966c5b95393f6ceebac86220a72734504895b9147259f06e76594cbae3a03af"
+    },
+    {
+      "original": "results/novelty_predictor/exact_score/run/structure/discovered.index",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/exact_run/discovered.index",
+      "sha256": "8ca7c79447e454532827a080d8019bdb354e9fc9c20aecdeae2a40dafd1dd426"
+    },
+    {
+      "original": "results/novelty_predictor/exact_score/run/structure/querydb_ss.index",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/exact_run/querydb_ss.index",
+      "sha256": "e8c2d88401ccc27dd68bac0ae0f21621a28fd8b24805add16fade9225b7b8bbb"
+    },
+    {
+      "original": "results/novelty_predictor/exact_score/run/structure/querydb.lookup",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/exact_run/querydb.lookup",
+      "sha256": "8525fbc93b0b7c888f9dd191c94b2c27117608185d7efda9d487a7b8675a50f3"
+    },
+    {
+      "original": "results/novelty_predictor/exact_score/run/structure/discovered_mode0.dbtype",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/exact_run/discovered_mode0.dbtype",
+      "sha256": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910"
+    },
+    {
+      "original": "results/novelty_predictor/exact_score/run/structure/discovered_mode0.2",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/exact_run/discovered_mode0.2",
+      "sha256": "86612c21add64f043de83b7c567f6721c8e46986d0910580242eb4096c8318eb"
+    },
+    {
+      "original": "results/novelty_predictor/exact_score/run/structure/querydb_ca",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/exact_run/querydb_ca",
+      "sha256": "c2d7e6fba1ae386e07d532235d3b132bf13666172356faf7aa46b296a00ff84a"
+    },
+    {
+      "original": "results/novelty_predictor/exact_score/run/structure/discovered_mode0.3",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/exact_run/discovered_mode0.3",
+      "sha256": "aab44e33085ea94675494b4136426c3ddbe0dd8d0d3fa7ec9fe9ea75d75a8144"
+    },
+    {
+      "original": "results/novelty_predictor/exact_score/run/structure/tmaligned.index",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/exact_run/tmaligned.index",
+      "sha256": "63a4c549bb1fd2410a16a533e6efba4c406613af44bf8564f6076c45762c5e78"
+    },
+    {
+      "original": "results/novelty_predictor/exact_score/run/structure/tmaligned",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/exact_run/tmaligned",
+      "sha256": "dcb169027bcf4df85245435097b91fe12ce9702f357cbb9e77b57fab8ad76264"
+    },
+    {
+      "original": "results/novelty_predictor/exact_score/run/structure/discovered.dbtype",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/exact_run/discovered.dbtype",
+      "sha256": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910"
+    },
+    {
+      "original": "results/novelty_predictor/exact_score/run/structure/discovered_mode1.2",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/exact_run/discovered_mode1.2",
+      "sha256": "f103736616f796181a9b85cc1fab9f0820df5a7cf206748601922c027b185ceb"
+    },
+    {
+      "original": "results/novelty_predictor/exact_score/run/structure/discovered_mode0.index",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/exact_run/discovered_mode0.index",
+      "sha256": "41699cecf5e2392e4fda3aa873fd161887074f9aa966821241ad07c97f472f7f"
+    },
+    {
+      "original": "results/novelty_predictor/exact_score/run/structure/discovered_mode1.3",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/exact_run/discovered_mode1.3",
+      "sha256": "73af5a56465bfa31906779b5a97ed0b98ff3c1b6d3c96be5e4794277fce6c299"
+    },
+    {
+      "original": "results/novelty_predictor/exact_score/run/structure/querydb_ss",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/exact_run/querydb_ss",
+      "sha256": "4d72bf44c02ada130668179e395c7a2ab78f8bf27a54c754c94b17683e0a7fbd"
+    },
+    {
+      "original": "results/novelty_predictor/exact_score/run/structure/querydb_h.dbtype",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/exact_run/querydb_h.dbtype",
+      "sha256": "42f4aeb81c1ef81f771f3de8abca9dcf66901c575530e7672e4b1146474ae650"
+    },
+    {
+      "original": "results/novelty_predictor/exact_score/run/structure/querydb",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/exact_run/querydb",
+      "sha256": "5688f31fbefc721a12e50a4aac01e2d085d0b80b9797dc1a1003c03aa156f3b5"
+    },
+    {
+      "original": "results/novelty_predictor/exact_score/run/structure/discovered",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/exact_run/discovered",
+      "sha256": "c5d771295a997034076a1db204a3c1c3f3848db2b4f01b12bf9ae7dc7ff27659"
+    },
+    {
+      "original": "results/novelty_predictor/exact_score/run/structure/querydb_ca.dbtype",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/exact_run/querydb_ca.dbtype",
+      "sha256": "8fc6cb4a9816d75621652de783118eee13112cda196e61d1bde0460f29b26e3e"
+    },
+    {
+      "original": "results/novelty_predictor/exact_score/run/structure/querydb_ca.index",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/exact_run/querydb_ca.index",
+      "sha256": "5d8816e740c8b377fcbfa3edbf0e3675717059322c3ffa4021b86eb55cacf602"
+    },
+    {
+      "original": "results/novelty_predictor/exact_score/run/structure/discovered_mode0.1",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/exact_run/discovered_mode0.1",
+      "sha256": "83101b6cbdad3c239deb896709300c149b35ce4595276b259a479ca2098683a1"
+    },
+    {
+      "original": "results/novelty_predictor/exact_score/run/structure/discovered_mode1.index",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/exact_run/discovered_mode1.index",
+      "sha256": "c6ba74576d8fdddd763533e6af6b1b21e53cb64c72c758b54d65b2550440d509"
+    },
+    {
+      "original": "results/novelty_predictor/exact_score/run/structure/discovered_mode1.dbtype",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/exact_run/discovered_mode1.dbtype",
+      "sha256": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910"
+    },
+    {
+      "original": "results/novelty_predictor/exact_score/run/structure/discovered_mode0.0",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/exact_run/discovered_mode0.0",
+      "sha256": "a37e4b221fff55275080aeaeefc5a0ddecb9056ebc25cf9108f3cfb724806019"
+    },
+    {
+      "original": "results/novelty_predictor/exact_score/run/structure/tmaligned.dbtype",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/exact_run/tmaligned.dbtype",
+      "sha256": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910"
+    },
+    {
+      "original": "results/novelty_predictor/exact_score/run/structure/querydb_h",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/exact_run/querydb_h",
+      "sha256": "bda2199bd554dedccc2cba51e7552065249cbe545f6d2c5b5140207babf4ce8b"
+    },
+    {
+      "original": "results/novelty_predictor/independent_tmalign/references_db_ss.index",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/independent_debug/references_db_ss.index",
+      "sha256": "76d2b31d233022d7435f67a6c0378691f088d383b7d4a6af0e2503b17c1dea32"
+    },
+    {
+      "original": "results/novelty_predictor/independent_tmalign/references_db",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/independent_debug/references_db",
+      "sha256": "ca68e03eed227f68f1e4ccd61cd2539f679703d80acc25da9f3a96f141a589ca"
+    },
+    {
+      "original": "results/novelty_predictor/independent_tmalign/references_db_ca.dbtype",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/independent_debug/references_db_ca.dbtype",
+      "sha256": "8fc6cb4a9816d75621652de783118eee13112cda196e61d1bde0460f29b26e3e"
+    },
+    {
+      "original": "results/novelty_predictor/independent_tmalign/references_db_ca",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/independent_debug/references_db_ca",
+      "sha256": "53865939662398ba9f9f7325cb86ab143d1c7aa2bb873917bc427c9311134c1e"
+    },
+    {
+      "original": "results/novelty_predictor/independent_tmalign/references_db.dbtype",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/independent_debug/references_db.dbtype",
+      "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+    },
+    {
+      "original": "results/novelty_predictor/independent_tmalign/references",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/independent_debug/references",
+      "sha256": null
+    },
+    {
+      "original": "results/novelty_predictor/independent_tmalign/references_db.source",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/independent_debug/references_db.source",
+      "sha256": "a83bdefafcfb4cb3389d903100356e55c2c8ee45a26c725360cf13a3059c7ed1"
+    },
+    {
+      "original": "results/novelty_predictor/independent_tmalign/references_db.index",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/independent_debug/references_db.index",
+      "sha256": "76d2b31d233022d7435f67a6c0378691f088d383b7d4a6af0e2503b17c1dea32"
+    },
+    {
+      "original": "results/novelty_predictor/independent_tmalign/references_db_taxonomy",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/independent_debug/references_db_taxonomy",
+      "sha256": "8cf7b0c90902861d4a9dd23a67e663dc55d61e39be74326d4953ab116fbf6662"
+    },
+    {
+      "original": "results/novelty_predictor/independent_tmalign/key_probe",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/independent_debug/key_probe",
+      "sha256": null
+    },
+    {
+      "original": "results/novelty_predictor/independent_tmalign/references_db.lookup",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/independent_debug/references_db.lookup",
+      "sha256": "91d62f5f28cfb5930de8f03b6a77b6d76b5e46a8249e64992b6afba41efc705a"
+    },
+    {
+      "original": "results/novelty_predictor/independent_tmalign/references_db_ss.dbtype",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/independent_debug/references_db_ss.dbtype",
+      "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+    },
+    {
+      "original": "results/novelty_predictor/independent_tmalign/references_db_mapping",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/independent_debug/references_db_mapping",
+      "sha256": "6ebfd8072e1210eb9e674335c0b604290bbfc681138611d84a7e11976fbe0a39"
+    },
+    {
+      "original": "results/novelty_predictor/independent_tmalign/references_db_h",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/independent_debug/references_db_h",
+      "sha256": "e2fe6292dc464326ea590658394b50c317c0e34cc452ae3644b5d5d3fab8c6bf"
+    },
+    {
+      "original": "results/novelty_predictor/independent_tmalign/references_db_h.dbtype",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/independent_debug/references_db_h.dbtype",
+      "sha256": "42f4aeb81c1ef81f771f3de8abca9dcf66901c575530e7672e4b1146474ae650"
+    },
+    {
+      "original": "results/novelty_predictor/independent_tmalign/references_db_h.index",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/independent_debug/references_db_h.index",
+      "sha256": "5fe97c37cfa95fe4b3c2af740df7c7aaa6fd0c57b152d655454c41c75d571296"
+    },
+    {
+      "original": "results/novelty_predictor/independent_tmalign/references_db_ss",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/independent_debug/references_db_ss",
+      "sha256": "ae1ffa2ae0bb25f24a71cf17085d30e8c816beb8aae202fa6004e8380fce2d2f"
+    },
+    {
+      "original": "results/novelty_predictor/independent_tmalign/references_db_ca.index",
+      "cache_path": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/exact_score_runtime_20261022T194756/independent_debug/references_db_ca.index",
+      "sha256": "26b561c4c6166781d11b7f8daa6b5eb619fb8ed239952b88d7a2ad4a8e71289d"
+    }
+  ]
+}

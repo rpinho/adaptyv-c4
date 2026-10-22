@@ -1,0 +1,70 @@
+In file included from /Users/ricardo/.cache/adaptyv-c4/USalign_cpu/TMalign.cpp:3:
+/Users/ricardo/.cache/adaptyv-c4/USalign_cpu/TMalign.h:114:15: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  114 |     int k_ali[kmax], ka, k;
+      |               ^~~~
+/Users/ricardo/.cache/adaptyv-c4/USalign_cpu/TMalign.h:114:15: note: initializer of 'kmax' is not a constant expression
+/Users/ricardo/.cache/adaptyv-c4/USalign_cpu/TMalign.h:113:15: note: declared here
+  113 |     const int kmax = Lali;
+      |               ^
+/Users/ricardo/.cache/adaptyv-c4/USalign_cpu/TMalign.h:122:15: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  122 |     int L_ini[n_init_max]; // fragment lengths, Lali, Lali/2, Lali/4 ... 4
+      |               ^~~~~~~~~~
+/Users/ricardo/.cache/adaptyv-c4/USalign_cpu/TMalign.h:122:15: note: read of non-const variable 'n_init_max' is not allowed in a constant expression
+/Users/ricardo/.cache/adaptyv-c4/USalign_cpu/TMalign.h:121:9: note: declared here
+  121 |     int n_init_max = 6;    // maximum number of different fragment length
+      |         ^
+/Users/ricardo/.cache/adaptyv-c4/USalign_cpu/TMalign.h:146:15: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  146 |     int i_ali[kmax], n_cut;
+      |               ^~~~
+/Users/ricardo/.cache/adaptyv-c4/USalign_cpu/TMalign.h:146:15: note: initializer of 'kmax' is not a constant expression
+/Users/ricardo/.cache/adaptyv-c4/USalign_cpu/TMalign.h:113:15: note: declared here
+  113 |     const int kmax = Lali;
+      |               ^
+/Users/ricardo/.cache/adaptyv-c4/USalign_cpu/TMalign.h:272:15: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  272 |     int k_ali[kmax], ka, k;
+      |               ^~~~
+/Users/ricardo/.cache/adaptyv-c4/USalign_cpu/TMalign.h:272:15: note: initializer of 'kmax' is not a constant expression
+/Users/ricardo/.cache/adaptyv-c4/USalign_cpu/TMalign.h:271:15: note: declared here
+  271 |     const int kmax = Lali;
+      |               ^
+/Users/ricardo/.cache/adaptyv-c4/USalign_cpu/TMalign.h:280:15: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  280 |     int L_ini[n_init_max]; // fragment lengths, Lali, Lali/2, Lali/4 ... 4
+      |               ^~~~~~~~~~
+/Users/ricardo/.cache/adaptyv-c4/USalign_cpu/TMalign.h:280:15: note: read of non-const variable 'n_init_max' is not allowed in a constant expression
+/Users/ricardo/.cache/adaptyv-c4/USalign_cpu/TMalign.h:279:9: note: declared here
+  279 |     int n_init_max = 6;    // maximum number of different fragment length
+      |         ^
+/Users/ricardo/.cache/adaptyv-c4/USalign_cpu/TMalign.h:304:15: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  304 |     int i_ali[kmax], n_cut;
+      |               ^~~~
+/Users/ricardo/.cache/adaptyv-c4/USalign_cpu/TMalign.h:304:15: note: initializer of 'kmax' is not a constant expression
+/Users/ricardo/.cache/adaptyv-c4/USalign_cpu/TMalign.h:271:15: note: declared here
+  271 |     const int kmax = Lali;
+      |               ^
+/Users/ricardo/.cache/adaptyv-c4/USalign_cpu/TMalign.h:540:16: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  540 |     double dis[len];
+      |                ^~~
+/Users/ricardo/.cache/adaptyv-c4/USalign_cpu/TMalign.h:540:16: note: initializer of 'len' is not a constant expression
+/Users/ricardo/.cache/adaptyv-c4/USalign_cpu/TMalign.h:539:15: note: declared here
+  539 |     const int len = k;
+      |               ^
+/Users/ricardo/.cache/adaptyv-c4/USalign_cpu/TMalign.h:3052:5: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+ 3052 |     sprintf(dest, "m %18s %14s %14s %14s\n", "t[m]", "u[m][0]", "u[m][1]", "u[m][2]");
+      |     ^
+/Applications/Xcode-26.6.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Applications/Xcode-26.6.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
+  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+In file included from /Users/ricardo/.cache/adaptyv-c4/USalign_cpu/TMalign.cpp:3:
+/Users/ricardo/.cache/adaptyv-c4/USalign_cpu/TMalign.h:3056:9: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+ 3056 |         sprintf(dest, "%d %18.10f %14.10f %14.10f %14.10f\n", k, t[k], u[k][0], u[k][1], u[k][2]);
+      |         ^
+/Applications/Xcode-26.6.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Applications/Xcode-26.6.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
+  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+9 warnings generated.

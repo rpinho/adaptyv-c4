@@ -1,0 +1,24 @@
+
+ **********************************************************************
+ * TM-align (Version 20240303): protein and RNA structure alignment   *
+ * References: Y Zhang, J Skolnick. Nucl Acids Res 33, 2302-9 (2005)  *
+ *             S Gong, C Zhang, Y Zhang. Bioinformatics, bz282 (2019) *
+ * Please email comments and suggestions to zhanglab@zhanggroup.org   *
+ **********************************************************************
+
+Name of Structure_1: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/sensitivity/full_pool_union/structure/queries/q000068d001.pdb (to be superimposed onto Structure_2)
+Name of Structure_2: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/507948.pdb
+Length of Structure_1: 95 residues
+Length of Structure_2: 608 residues
+
+Aligned length= 62, RMSD=   3.78, Seq_ID=n_identical/n_aligned= 0.065
+TM-score= 0.40324 (normalized by length of Structure_1: L=95, d0=3.54)
+TM-score= 0.08796 (normalized by length of Structure_2: L=608, d0=8.62)
+(You should use TM-score normalized by length of the reference structure)
+
+(":" denotes residue pairs of d < 5.0 Angstrom, "." denotes other aligned residues)
+VPLSEKEKKLKETLERVIELMKKV--------------------------------------GN-ASEEEIRMFEMNIWYIESN-PDNG-----------------------------E--ILREIISEN-SEEL--MKPV---EEKA-------KSPEEVHRLFWLELLKLIELEWDK------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                              .. ::::::::::::::::::: ::..                             .  : .::.:.. ..    .      .          .:::::::::::::::::::::..                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+------------------------AHYNFKKITVVPSAKDFIDLTLSKTQRKTPTVIHKHYQIHRIRHFYMRKVKFTQQNYHDRLSQILTDFPKLDDIHPFYADLMNILYDKDHYKLALGQI-NIAKNLVDNV--AKD---YVRL---MKYGDSLYRCKQLKRAALGRMCTVIKRQKQSLEYLEQVRQHLSRLPTIDPNTRTLLLCGYPNVGKSSFINKVTRADVDVQPYAFTTKSLFVGHMDYKYLRWQVVDTPGILDHPLEDRNTIEMQAITALAHLRAAVLYVMDLSEQCGHGLREQLELFQNIRPLFINKPLIVVANKCDVKRIAELSEDDQKIFTDLQSEGFPVIETSTLTEEGVIKVKTEACDRLLAHRVETKMKGNKVNEVLNRLHLAIPTRRDDKERPPFIPEGVVARRKRMETEESRKKRERDLELEMGDDYILDLQKYWDLMNLSEKHDKIPEIWEGHNIADYIDPAIMKKLEELEKEEELRTAAGEYDSVSESEDEEMLEIRQLAKQIREKKKLKILESKEKNTQGPRMPRTAKKVQRTVLEKEMRSLGVDMDDKDDAHYAVQARRSRSPRDVSGLRDVKMVKKAKTMMKNAQKKMNRLGKKGEADRHVFDMKPKHLLSGKRKAGKKDRR
+
+#Total CPU time is  0.05 seconds

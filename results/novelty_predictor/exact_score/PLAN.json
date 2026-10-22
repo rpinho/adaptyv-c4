@@ -1,0 +1,59 @@
+{
+  "registered_at": "2026-10-22T19:37:51.877125+00:00",
+  "reason": "Final convertalis export recomputes approximate TM by default; full preceding TM-align does not change that default. Confirmed in pinned source and CLI help.",
+  "change": "convertalis --exact-tmscore1 for identical saved full-pool TM-align records; no new candidate search, coordinates, domain intervals, sequence searches or thresholds",
+  "scope": "All42718 saved raw alignments for68 coordinate-bearing queries; deduplicate and reclassify through existing shared rule functions",
+  "expected_interpretation": "Report new counts and direct exact-score comparison to standalone fixed correspondence. Numeric match is measured, not assumed. Prior approximate scores remain preserved as superseded.",
+  "inputs": {
+    "tmp_mode1": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/sensitivity_runtime_20261022T191651/full_pool_union/tmp_mode1",
+    "querydb.source": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/sensitivity_runtime_20261022T191651/full_pool_union/querydb.source",
+    "querydb.index": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/sensitivity_runtime_20261022T191651/full_pool_union/querydb.index",
+    "querydb.dbtype": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/sensitivity_runtime_20261022T191651/full_pool_union/querydb.dbtype",
+    "discovered_mode1.1": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/sensitivity_runtime_20261022T191651/full_pool_union/discovered_mode1.1",
+    "tmp_mode0": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/sensitivity_runtime_20261022T191651/full_pool_union/tmp_mode0",
+    "querydb_ss.dbtype": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/sensitivity_runtime_20261022T191651/full_pool_union/querydb_ss.dbtype",
+    "discovered_mode1.0": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/sensitivity_runtime_20261022T191651/full_pool_union/discovered_mode1.0",
+    "querydb_h.index": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/sensitivity_runtime_20261022T191651/full_pool_union/querydb_h.index",
+    "discovered.index": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/sensitivity_runtime_20261022T191651/full_pool_union/discovered.index",
+    "querydb_ss.index": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/sensitivity_runtime_20261022T191651/full_pool_union/querydb_ss.index",
+    "querydb.lookup": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/sensitivity_runtime_20261022T191651/full_pool_union/querydb.lookup",
+    "discovered_mode0.dbtype": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/sensitivity_runtime_20261022T191651/full_pool_union/discovered_mode0.dbtype",
+    "discovered_mode0.2": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/sensitivity_runtime_20261022T191651/full_pool_union/discovered_mode0.2",
+    "querydb_ca": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/sensitivity_runtime_20261022T191651/full_pool_union/querydb_ca",
+    "discovered_mode0.3": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/sensitivity_runtime_20261022T191651/full_pool_union/discovered_mode0.3",
+    "tmaligned.index": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/sensitivity_runtime_20261022T191651/full_pool_union/tmaligned.index",
+    "tmaligned": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/sensitivity_runtime_20261022T191651/full_pool_union/tmaligned",
+    "discovered.dbtype": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/sensitivity_runtime_20261022T191651/full_pool_union/discovered.dbtype",
+    "discovered_mode1.2": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/sensitivity_runtime_20261022T191651/full_pool_union/discovered_mode1.2",
+    "discovered_mode0.index": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/sensitivity_runtime_20261022T191651/full_pool_union/discovered_mode0.index",
+    "discovered_mode1.3": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/sensitivity_runtime_20261022T191651/full_pool_union/discovered_mode1.3",
+    "querydb_ss": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/sensitivity_runtime_20261022T191651/full_pool_union/querydb_ss",
+    "querydb_h.dbtype": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/sensitivity_runtime_20261022T191651/full_pool_union/querydb_h.dbtype",
+    "querydb": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/sensitivity_runtime_20261022T191651/full_pool_union/querydb",
+    "discovered": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/sensitivity_runtime_20261022T191651/full_pool_union/discovered",
+    "querydb_ca.dbtype": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/sensitivity_runtime_20261022T191651/full_pool_union/querydb_ca.dbtype",
+    "querydb_ca.index": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/sensitivity_runtime_20261022T191651/full_pool_union/querydb_ca.index",
+    "discovered_mode0.1": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/sensitivity_runtime_20261022T191651/full_pool_union/discovered_mode0.1",
+    "discovered_mode1.index": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/sensitivity_runtime_20261022T191651/full_pool_union/discovered_mode1.index",
+    "discovered_mode1.dbtype": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/sensitivity_runtime_20261022T191651/full_pool_union/discovered_mode1.dbtype",
+    "discovered_mode0.0": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/sensitivity_runtime_20261022T191651/full_pool_union/discovered_mode0.0",
+    "tmaligned.dbtype": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/sensitivity_runtime_20261022T191651/full_pool_union/tmaligned.dbtype",
+    "querydb_h": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/sensitivity_runtime_20261022T191651/full_pool_union/querydb_h"
+  },
+  "limits": {
+    "threads": 4,
+    "timeout_seconds": 300,
+    "new_gpu_spend_usd": 0
+  },
+  "validation_amendment": {
+    "registered_at": "2026-10-22T19:38:50.699673+00:00",
+    "fresh_cli": "Same full68-query discovery/TM-align pipeline rerun solely to validate production exact-export flag. No new scientific settings besides score export.",
+    "cached_rescore": "Separate cache-only exact export to isolate scoring from candidate discovery and preserve input comparability. Raw diagnostic export kept in local cache; final fresh run evidence in repo."
+  },
+  "agreement_test_registered_before_result_inspection": {
+    "at": "2026-10-22T19:39:52.617063+00:00",
+    "test": "For the26 remaining-local4 matches, compare exact convertalis query-normalized scores against standalone-I fixed correspondence on sequence-verified coordinates.",
+    "maximum_absolute_TM_tolerance": 0.001,
+    "interpretation": "Agreement within0.001 supports fixed-alignment score consistency; otherwise preserve unresolved discrepancy. This is an audit tolerance, not a novelty threshold."
+  }
+}

@@ -1,0 +1,18 @@
+convertalis /Users/ricardo/.cache/adaptyv-c4/novelty_structures/sensitivity_runtime_20261022T191651/full_pool_union/querydb /Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq /Users/ricardo/.cache/adaptyv-c4/novelty_structures/sensitivity_runtime_20261022T191651/full_pool_union/tmaligned /Users/ricardo/.cache/adaptyv-c4/exact_tm_score_audit/cached_exact_hits.tsv --threads 4 --exact-tmscore 1 --format-output query,target,qlen,tlen,qstart,qend,tstart,tend,alnlen,qtmscore,ttmscore,qaln,taln 
+
+MMseqs Version:        	463739e0014a1549a527de589102cde98f802f37
+Substitution matrix    	aa:3di.out,nucl:3di.out
+Alignment format       	0
+Format alignment output	query,target,qlen,tlen,qstart,qend,tstart,tend,alnlen,qtmscore,ttmscore,qaln,taln
+Gap open cost          	aa:10,nucl:10
+Gap extension cost     	aa:1,nucl:1
+Database output        	false
+Preload mode           	0
+Threads                	4
+Compressed             	0
+Verbosity              	3
+Exact TMscore          	1
+
+=[================================================================] 68 30s 995ms
+Time for merging to cached_exact_hits.tsv: 0h 0m 0s 6ms
+Time for processing: 0h 0m 32s 940ms

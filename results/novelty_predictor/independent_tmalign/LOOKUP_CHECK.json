@@ -1,0 +1,5 @@
+{
+  "expected_entries": 27,
+  "mismatches": [],
+  "interpretation": "Never infer identifier equality from lookup entries when the actual header differs"
+}

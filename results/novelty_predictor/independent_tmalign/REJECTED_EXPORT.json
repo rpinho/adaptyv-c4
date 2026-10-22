@@ -1,0 +1,85 @@
+{
+  "status": "rejected_before_reference_scoring",
+  "observed_mismatches": [
+    {
+      "target": "8gzu-assembly1_69",
+      "expected_CA": 129,
+      "exported_CA": 258,
+      "exported_sha256": "ccd8587704087b5fa8dbefaf9ba0ec328a132c3caef379137dc25252ee1ab120"
+    },
+    {
+      "target": "8gzu-assembly1_o",
+      "expected_CA": 129,
+      "exported_CA": null,
+      "exported_sha256": null
+    },
+    {
+      "target": "4i9o-assembly2_A",
+      "expected_CA": 78,
+      "exported_CA": 156,
+      "exported_sha256": "c728a1b1ef68a3971aa61fb9e26bbb7960ca37606287de0a9feb8b1875947067"
+    },
+    {
+      "target": "4i9o-assembly2_A-2",
+      "expected_CA": 78,
+      "exported_CA": null,
+      "exported_sha256": null
+    },
+    {
+      "target": "5e6g-assembly3_A",
+      "expected_CA": 113,
+      "exported_CA": 339,
+      "exported_sha256": "0ecf3fefd9212bee057395a3adea7025c7d5f60d09415bd82e43dac04a9f6428"
+    },
+    {
+      "target": "5e6g-assembly3_A-2",
+      "expected_CA": 113,
+      "exported_CA": null,
+      "exported_sha256": null
+    },
+    {
+      "target": "5e6g-assembly3_A-3",
+      "expected_CA": 113,
+      "exported_CA": null,
+      "exported_sha256": null
+    },
+    {
+      "target": "6dnq-assembly1_D",
+      "expected_CA": 87,
+      "exported_CA": 174,
+      "exported_sha256": "a5a4eafb04742acbce3d98b437a782ca311929353d007adbfb6c9326fc68cd7b"
+    },
+    {
+      "target": "6dnq-assembly1_B",
+      "expected_CA": 87,
+      "exported_CA": null,
+      "exported_sha256": null
+    },
+    {
+      "target": "6dmx-assembly2_I",
+      "expected_CA": 81,
+      "exported_CA": 164,
+      "exported_sha256": "8bc8697d39278ede09c32fa9414e8109faede338a0fba88c9d85ed57ced8f0df"
+    },
+    {
+      "target": "6dmx-assembly2_G",
+      "expected_CA": 83,
+      "exported_CA": null,
+      "exported_sha256": null
+    },
+    {
+      "target": "6dmx-assembly1_B",
+      "expected_CA": 84,
+      "exported_CA": null,
+      "exported_sha256": null
+    },
+    {
+      "target": "6dmx-assembly1_D",
+      "expected_CA": 81,
+      "exported_CA": 165,
+      "exported_sha256": "1ee4aa69e1fb69967430e34d1f78f67bd5aafbab3d2673a2089b830f99155fde"
+    }
+  ],
+  "corrective_method": "Export individual numeric keys; verify actual header, CA count and aligned sequences",
+  "score_outputs_used": false
+}

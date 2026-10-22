@@ -1,0 +1,18 @@
+{
+  "source": "https://github.com/pylelab/USalign",
+  "commit": "23f14ffcf8647f2dc1c0e01043db3a7f3a661c28",
+  "binary": "/Users/ricardo/.cache/adaptyv-c4/USalign_cpu/TMalign",
+  "source_sha256": "ba817485efc2b09119959b68d8ebd45f8d9ceae9352516cfc960e9e3c651cb33",
+  "binary_sha256": "6687ac8820a5ffb1519fe26276ffc081356824eb31cafffa797014bd511d3e4e",
+  "compile_command": [
+    "/usr/bin/c++",
+    "-O3",
+    "-std=c++11",
+    "/Users/ricardo/.cache/adaptyv-c4/USalign_cpu/TMalign.cpp",
+    "-o",
+    "/Users/ricardo/.cache/adaptyv-c4/USalign_cpu/TMalign"
+  ],
+  "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)\nTarget: arm64-apple-darwin25.5.0\nThread model: posix\nInstalledDir: /Applications/Xcode-26.6.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin\n",
+  "license_path": "/Users/ricardo/.cache/adaptyv-c4/USalign_cpu/LICENSE",
+  "gpu": false
+}

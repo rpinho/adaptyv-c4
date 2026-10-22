@@ -1,5 +1,10 @@
 # CPU novelty predictor: sequence half delivered; full levels unestablished
 
+Superseded scoring notice: this report used approximate TM export. Current exact
+score results are in exact_score/RESULTS.md.
+Corrected retired local counts:16 level2,47 level3,4 level4,6 unestablished.
+Prior counts and score values remain below as historical evidence.
+
 Current CPU follow-up supersedes the earlier search counts: see sensitivity/RESULTS.md.
 The predictor now combines both discovery modes; current retired local counts are
 29 level2,37 level3,1 level4,6 unestablished. All levels remain provisional.

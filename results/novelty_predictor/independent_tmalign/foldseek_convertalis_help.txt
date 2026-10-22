@@ -1,0 +1,55 @@
+usage: foldseek convertalis <i:queryDb> <i:targetDb> <i:alignmentDB> <o:alignmentFile> [options]
+ By Martin Steinegger <martin.steinegger@snu.ac.kr>
+options: align:               
+ --gap-open TWIN       Gap open cost [aa:10,nucl:10]
+ --gap-extend TWIN     Gap extension cost [aa:1,nucl:1]
+misc:                
+ --format-mode INT     Output format:
+                       0: BLAST-TAB
+                       1: SAM
+                       2: BLAST-TAB + query/db length
+                       3: Pretty HTML
+                       4: BLAST-TAB + column headers
+                       5: Calpha only PDB super-posed to query
+                       BLAST-TAB (0) and BLAST-TAB + column headers (4)support custom output formats (--format-output)
+                       (5) Superposed PDB files (Calpha only) [0]
+ --format-output STR   Choose comma separated list of output columns from: query,target,evalue,gapopen,pident,fident,nident,qstart,qend,qlen
+                       tstart,tend,tlen,alnlen,raw,bits,cigar,qseq,tseq,q3di,t3di,qheader,theader,qaln,taln,q3dialn,t3dialn,mismatch,qcov,tcov
+                       qset,qsetid,tset,tsetid,taxid,taxname,taxlineage,
+                       lddt,lddtfull,qca,tca,t,u,qtmscore,ttmscore,alntmscore,rmsd,prob
+                       complexqtmscore,complexttmscore,complexu,complext,qcomplexcoverage,tcomplexcoverage,qchaintms,tchaintms,qchains,tchains,interfacelddt,complexassignid
+                       qkey,tkey
+                        [query,target,fident,alnlen,mismatch,gapopen,qstart,qend,tstart,tend,evalue,bits]
+ --exact-tmscore INT   turn on fast exact TMscore (slow), default is approximate [0]
+common:              
+ --sub-mat TWIN        Substitution matrix file [aa:3di.out,nucl:3di.out]
+ --db-load-mode INT    Database preload mode 0: auto, 1: fread, 2: mmap, 3: mmap+touch [0]
+ --threads INT         Number of CPU-cores used (all by default) [10]
+ --compressed INT      Write compressed output [0]
+ -v INT                Verbosity level: 0: quiet, 1: +errors, 2: +warnings, 3: +info [3]
+expert:              
+ --db-output BOOL      Return a result DB instead of a text file [0]
+
+examples:
+ # Create output in BLAST M8 format (12 columns):
+ #  (1,2) identifiers for query and target sequences/profiles,
+ #  (3) sequence identity, (4) alignment length, (5) number of mismatches,
+ #  (6) number of gap openings, (7-8, 9-10) alignment start and end-position in query and in target,
+ #  (11) E-value, and (12) bit score
+ foldseek convertalis queryDB targetDB result.m8
+ 
+ # Create a TSV containing pairwise alignments
+ foldseek convertalis queryDB targetDB result.tsv --format-output query,target,qaln,taln
+ 
+ # Annotate a alignment result with taxonomy information from targetDB
+ foldseek convertalis queryDB targetDB result.tsv --format-output query,target,taxid,taxname,taxlineage
+ 
+  Create SAM output
+ foldseek convertalis queryDB targetDB result.sam --format-mode 1
+ 
+ # Create a TSV containing which query file a result comes from
+ foldseek createdb euk_queries.fasta bac_queries.fasta queryDB
+ foldseek convertalis queryDB targetDB result.tsv --format-output qset,query,target
+ 
+references:
+ - Steinegger M, Soding J: MMseqs2 enables sensitive protein sequence searching for the analysis of massive data sets. Nature Biotechnology, 35(11), 1026-1028 (2017)

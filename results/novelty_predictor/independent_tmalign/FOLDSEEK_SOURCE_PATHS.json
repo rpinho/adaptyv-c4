@@ -1,0 +1,22 @@
+{
+  "url": "https://api.github.com/repos/steineggerlab/foldseek/git/trees/463739e0014a1549a527de589102cde98f802f37?recursive=1",
+  "commit": "463739e0014a1549a527de589102cde98f802f37",
+  "paths": [
+    "lib/tmalign",
+    "lib/tmalign/CMakeLists.txt",
+    "lib/tmalign/Coordinates.h",
+    "lib/tmalign/Kabsch.h",
+    "lib/tmalign/LICENSE",
+    "lib/tmalign/TMalign.cpp",
+    "lib/tmalign/TMalign.h",
+    "lib/tmalign/affineneedlemanwunsch.cpp",
+    "lib/tmalign/affineneedlemanwunsch.h",
+    "lib/tmalign/basic_fun.h",
+    "src/commons/TMaligner.cpp",
+    "src/commons/TMaligner.h",
+    "src/strucclustutils/aln2tmscore.cpp",
+    "src/strucclustutils/convert2pdb.cpp",
+    "src/strucclustutils/structurealign.cpp",
+    "src/strucclustutils/tmalign.cpp"
+  ]
+}

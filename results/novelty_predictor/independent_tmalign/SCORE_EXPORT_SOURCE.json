@@ -1,0 +1,10 @@
+{
+  "source_url": "https://raw.githubusercontent.com/steineggerlab/foldseek/463739e0014a1549a527de589102cde98f802f37/src/strucclustutils/structureconvertalis.cpp",
+  "source_sha256": "0422995fe3704db53568f57d819746622a5b7bced4155b2a54679832db97da83",
+  "source_commit": "463739e0014a1549a527de589102cde98f802f37",
+  "help_fact": "convertalis --exact-tmscore defaults0 (approximate), independent of prior tmalign fast flag",
+  "local_source_path": "/Users/ricardo/.cache/adaptyv-c4/foldseek_source_audit/src/strucclustutils/structureconvertalis.cpp",
+  "dispatcher_url": "https://github.com/steineggerlab/foldseek/blob/463739e0014a1549a527de589102cde98f802f37/src/commons/TMaligner.cpp",
+  "dispatcher_sha256": "314f3d5f98a9e6880266023290230f3b9600a44f1be02e4fb7c20d16fa58f8b1",
+  "help_sha256": "457ef99537dfc4fa2a94e59f19ce08965bc43bad31190dc484e76004afe679ba"
+}

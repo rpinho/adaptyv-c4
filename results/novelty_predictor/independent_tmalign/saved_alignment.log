@@ -1,0 +1,1 @@
+{"status": "completed", "comparisons": 54, "query_and_reference_sequences_verified": true, "fixed_best_query_TM": 0.4477, "seeded_best_query_TM": 0.4286, "fixed_maximum_absolute_difference": 0.053690000000000015, "seeded_pairs_at_least_0p5": 0, "elapsed_seconds": 0.272993959, "new_gpu_spend_usd": 0}

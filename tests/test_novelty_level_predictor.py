@@ -115,5 +115,49 @@ class NoveltyTests(unittest.TestCase):
                          [(205,'K'),(206,'N'),(208,'R'),(209,'L'),(210,'V')])
         self.assertEqual(len(rr),639)
 
+    def test_exact_export_contract_changes_the_observed_novelty_level(self):
+        """Upstream-like exporter defaults approximate; missing exact flag changes level.
+
+        This exercises the full structural command path through a local tool stub,
+        rather than inspecting whether a command happens to contain a string.
+        The numbers/coordinates are synthetic fixtures, not scientific evidence.
+        """
+        import argparse
+        import json
+        import tempfile
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);out=root/'out';out.mkdir()
+            pdb=root/'fixture.pdb'
+            pdb.write_text(''.join(f'ATOM  {i:5d}  CA  ALA A{i:4d}    {3.8*i:8.3f}{0.:8.3f}{0.:8.3f}  1.00  0.00           C\n'
+                                   for i in range(1,11))+'TER\nEND\n')
+            db=root/'db';db.write_bytes(b'test-only database fingerprint')
+            db_manifest=root/'db.json'
+            db_manifest.write_text(json.dumps(dict(prefix=str(db),files={'':novelty.digest(db)})))
+            structures=root/'structures.json'
+            structures.write_text(json.dumps(dict(structures=[dict(name='fixture',status='available',
+                path=str(pdb),sha256=novelty.digest(pdb),chain='A',
+                domains=[dict(start=1,end=10,source='synthetic test-only domain')])])) )
+            binary=root/'foldseek_fixture'
+            binary.write_text('''#!/usr/bin/env python3
+import sys
+from pathlib import Path
+if sys.argv[1] == 'version':
+    print('test-only external export contract')
+elif sys.argv[1] == 'convertalis':
+    exact = '--exact-tmscore' in sys.argv and sys.argv[sys.argv.index('--exact-tmscore')+1]=='1'
+    score = '0.79' if exact else '0.81'
+    Path(sys.argv[5]).write_text('q000001d001\\tref\\t10\\t10\\t1\\t10\\t1\\t10\\t10\\t'+score+'\\t'+score+'\\tAAAAAAAAAA\\tAAAAAAAAAA\\n')
+''')
+            binary.chmod(0o755)
+            args=argparse.Namespace(out=out,structures=structures,structure_database=db_manifest,
+                foldseek=str(binary),threads=1,timeout_structure=10,
+                structure_prefilter_mode='union',structure_max_seqs=50000)
+            records=[dict(name='fixture',sequence='A'*10)]
+            report=dict(designs=[dict(name='fixture',sequence_evidence_class='no_significant_hit',
+                                     sequence_database_gaps=['patents'])])
+            novelty.run_structural_half(records,report,args)
+            self.assertEqual(report['designs'][0]['local_predicted_level'],3)
+            self.assertEqual(report['designs'][0]['structural_similarity']['category'],'moderate')
+
 
 if __name__ == '__main__': unittest.main()

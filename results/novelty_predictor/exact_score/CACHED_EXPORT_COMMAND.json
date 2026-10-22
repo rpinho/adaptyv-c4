@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+    "convertalis",
+    "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/sensitivity_runtime_20261022T191651/full_pool_union/querydb",
+    "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+    "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/sensitivity_runtime_20261022T191651/full_pool_union/tmaligned",
+    "/Users/ricardo/.cache/adaptyv-c4/exact_tm_score_audit/cached_exact_hits.tsv",
+    "--threads",
+    "4",
+    "--exact-tmscore",
+    "1",
+    "--format-output",
+    "query,target,qlen,tlen,qstart,qend,tstart,tend,alnlen,qtmscore,ttmscore,qaln,taln"
+  ],
+  "output": "/Users/ricardo/.cache/adaptyv-c4/exact_tm_score_audit/cached_exact_hits.tsv"
+}

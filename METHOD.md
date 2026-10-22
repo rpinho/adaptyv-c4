@@ -1,35 +1,40 @@
 # Method: proton-coupled two-state design, with the numbers checked
 
-## Current CPU novelty checkpoint — broader discovery validated (Oct22)
+## Current CPU novelty checkpoint — exact score-export defect corrected (Oct22)
 
-Generation, all RFD4 files, Modal apps and GPU campaigns belong to
+Generation, RFD4 files, Modal apps and GPU campaigns belong to
 claude/submission-and-control. Do not edit/duplicate its build_submission.py,
-rank_candidates.py, modal_rfd4.py or configs/rfd4/. Our exporter is superseded;
-its read-only comparison is complete. NO GPU without Ricardo yes and hourly quote.
+rank_candidates.py, modal_rfd4.py or configs/rfd4/. Exporter comparison done;
+our emitter is superseded. NO GPU without Ricardo yes and quoted hourly rate.
 
-6W3H control remains GATE VINDICATED for compatiblecopy, alternatecopy
-INCONCLUSIVE. Complete mapping and unchanged gate proof: results/real_gate_control/.
+6W3H remains GATE VINDICATED for compatiblecopy, alternatecopy INCONCLUSIVE.
+Its complete mapping/unchanged gate proof is in results/real_gate_control/.
 
-CPU novelty predictor now has measured sequence +Foldseek->TM-align stages.
-New sensitivity test found candidate discovery was understating similarity.
-Default is now union of kmer0 and ungapped1,50000 candidates per mode/query,
-followed by full TM-align with duplicate targets counted once. Full68-structure
-validation214.201s: every previous best TM retained/improved;6 retired local
-novelty calls downgraded. Current67 retired calls:29 local2,37 local3,1 local4;
-6 lack exact coordinates. Positivecontrol local1,TM.9946.15 focused tests pass.
-Current evidence: results/novelty_predictor/sensitivity/RESULTS.md and
-full_pool_union/predictions.json. Earlier26/37/4 counts are historical.
+A standalone TM-align audit exposed our score-export defect: convertalis defaults
+approximate even after full TM-align. Production now forces --exact-tmscore1.
+Do NOT use earlier approximate-score structural/sensitivity counts for ranking.
+Current evidence: results/novelty_predictor/exact_score/RESULTS.md and
+run/predictions.json. Cached score-only rescore preserves every alignment record;
+a fresh full pipeline265.026s gives exactly the same24653 query/target scores.
+Current67 retired local calls:16 level2,47 level3,4 level4;6 missing coordinates.
+Positivecontrol local1,exact queryTM.9928.16 local calls changed because of the
+export correction. This creates/qualifies no candidate; retired pool stays retired.
 
-These are PROVISIONAL local levels, not organizer scores or candidate admission.
-Unidentified patent corpus, historical public structure DB, older antibody
-snapshots, provided coordinates, whole-chain domain assumption vs unpublished
-three-predictor consensus, and finite discovery remain limitations. No exact
-organizer level established. Retired candidates remain retired. Existing
-novelty_audit.py, exporters/ranker and generation files unchanged.
+16 focused unit tests pass, including behavioral exact/default export regression;
+negative control fails with approximate0 and passes exact1. Separate cross-tool
+fixed-alignment agreement check still FAILS: max difference.00225 vs prereg.001,
+down from.05369. Winner's exact.4477 matches standalone fixed.4477, but numerical
+equivalence across all26 pairs is not established. See independent_tmalign/.
+No thresholds or agreement tolerance were relaxed.
 
-No new GPU/cloud CPU spend. Recorded Runpod56.589988 posted +our Modal10.718947
+All levels remain provisional: missing patent corpus, older public snapshots,
+supplied coordinates, whole-chain domains vs unnamed consensus, finite discovery
+and organizer-policy/antibody gaps persist. No exact organizer level established.
+Existing novelty_audit.py, exporters/ranker and all generation files unchanged.
+
+New GPU/cloud CPU spend0.00. Recorded Runpod56.589988 posted +our Modal10.718947
 estimate =~67.31, excluding separate RFD4 lane/storage/builds/consultations.
-No account, submission, main or KB-main writes. No automatic GPU successor.
+No account, submission, main or KB-main write. No automatic GPU successor.
 
 ## Latest instruction — generator lane STOPPED; CPU real-gate control COMPLETE (Oct22)
 

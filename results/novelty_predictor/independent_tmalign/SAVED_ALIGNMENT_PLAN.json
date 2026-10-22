@@ -1,0 +1,7 @@
+{
+  "registered_at": "2026-10-22T19:34:15.493762+00:00",
+  "trigger": "Default standalone best0.4286 vs bundled0.476; same broad class but >0.01 difference",
+  "procedure": "All27 same pairs: validate full query/target sequences against reported aligned substrings; pad only unaligned termini with gaps; run standalone-I fixed correspondence and-i starting-seed options; retain all outcomes and original free runs.",
+  "interpretation": "Fixed recovery diagnoses scoring/coordinate consistency for a known alignment. Seeded recovery with lower free default implicates optimizer initialization. Any category crossing is reported, never threshold-adjusted.",
+  "new_gpu_spend_usd": 0
+}

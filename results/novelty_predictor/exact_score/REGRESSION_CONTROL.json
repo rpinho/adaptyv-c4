@@ -1,0 +1,22 @@
+{
+  "description": "Same behavioral pipeline regression fails with approximate export0 and passes exact export1; no source file edits",
+  "results": {
+    "0": {
+      "tests": 1,
+      "failures": 1,
+      "errors": 0,
+      "passed": false
+    },
+    "1": {
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "passed": true
+    }
+  },
+  "new_gpu_spend_usd": 0,
+  "logs": {
+    "approximate_expected_failure": "export_contract_flag0_EXPECTED_FAILURE.log",
+    "exact_pass": "export_contract_flag1.log"
+  }
+}

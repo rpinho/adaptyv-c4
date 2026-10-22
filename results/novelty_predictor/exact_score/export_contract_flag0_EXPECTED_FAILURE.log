@@ -1,0 +1,14 @@
+F
+======================================================================
+FAIL: test_exact_export_contract_changes_the_observed_novelty_level (test_export_contract.NoveltyTests)
+Upstream-like exporter defaults approximate; missing exact flag changes level.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "tests/test_novelty_level_predictor.py", line 159, in test_exact_export_contract_changes_the_observed_novelty_level
+    self.assertEqual(report['designs'][0]['local_predicted_level'],3)
+AssertionError: 2 != 3
+
+----------------------------------------------------------------------
+Ran 1 test in 0.528s
+
+FAILED (failures=1)

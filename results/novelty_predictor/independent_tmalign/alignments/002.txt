@@ -1,0 +1,24 @@
+
+ **********************************************************************
+ * TM-align (Version 20240303): protein and RNA structure alignment   *
+ * References: Y Zhang, J Skolnick. Nucl Acids Res 33, 2302-9 (2005)  *
+ *             S Gong, C Zhang, Y Zhang. Bioinformatics, bz282 (2019) *
+ * Please email comments and suggestions to zhanglab@zhanggroup.org   *
+ **********************************************************************
+
+Name of Structure_1: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/sensitivity/full_pool_union/structure/queries/q000068d001.pdb (to be superimposed onto Structure_2)
+Name of Structure_2: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/independent_tmalign/references_by_key/432677.pdb
+Length of Structure_1: 95 residues
+Length of Structure_2: 129 residues
+
+Aligned length= 68, RMSD=   3.94, Seq_ID=n_identical/n_aligned= 0.044
+TM-score= 0.42860 (normalized by length of Structure_1: L=95, d0=3.54)
+TM-score= 0.34620 (normalized by length of Structure_2: L=129, d0=4.21)
+(You should use TM-score normalized by length of the reference structure)
+
+(":" denotes residue pairs of d < 5.0 Angstrom, "." denotes other aligned residues)
+---------------------------------------V-P-LSEKEKKLKETLERVIELMKKVGNASEEEIRMFEMNIWYIESN--PDNG--------------E--ILREIISENSEELMKP--VEEKAKSPEEVHRLFWLELLKLIELEWDK
+                                       . . .:::::::::::::::::::: :::::::::::::::::::::  ::..              .  ..:::::...  :.    :       ..:::.               
+NVEEMDTIQKMNYEATVNMGRQDLITREYTFYSDYEFIPIQEDRKQQMEDALNNLHKIIHPTVT-QLKKKANVQEIQDRVFRKLQGWEGELNTCVFSAKNVRDSNFCADRFTNRINTEG--VE--FVK-------QILREY---------------
+
+#Total CPU time is  0.01 seconds

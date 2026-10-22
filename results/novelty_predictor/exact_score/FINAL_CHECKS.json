@@ -1,0 +1,11 @@
+{
+  "protected_files_unchanged": true,
+  "production_source_matches_run": true,
+  "raw_exact_scores_verified": true,
+  "reference_exports_verified": 27,
+  "regression_positive_and_negative_controls_verified": true,
+  "unit_tests_passed": 16,
+  "numeric_agreement_check_passed": false,
+  "numeric_agreement_failure_disclosed": true,
+  "new_gpu_spend_usd": 0
+}

@@ -1,0 +1,18 @@
+{
+  "registered_at": "2026-10-22T19:27:51.196693+00:00",
+  "purpose": "CPU implementation-sensitivity audit of the remaining provisional local4, not search for a predetermined level",
+  "queries": [
+    "All26 returned reference matches for the sole remaining local4",
+    "Native195aa control best returned reference",
+    "Query self-alignment as a numerical positive control"
+  ],
+  "coordinate_policy": "Use unchanged saved query CA PDBs and convert2pdb from the same fingerprinted Foldseek database. No PDB-version substitution or coordinate relaxation.",
+  "method": "Official standalone TMalign.cpp from pylelab/USalign, pinned commit and compiled locally; defaults including no fast flag. Query is Chain_1, use its normalized TM. Foldseek built-in scores remain preserved.",
+  "interpretation": "Report every pair and maximum. Same categories with absolute best-score difference<=0.01 supports implementation repeatability for this finite set. A threshold crossing or larger difference is implementation-sensitive, not proof of organizer misclassification. Never alter thresholds or retire/reinstate a design based on this software check.",
+  "limits": {
+    "parallel_pairs": 4,
+    "timeout_seconds_per_pair": 30,
+    "new_gpu_spend_usd": 0
+  },
+  "scope": "Existing retired binder/control only; no generator, inference, exporter, account or submission work"
+}
