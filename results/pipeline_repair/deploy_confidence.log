@@ -190,3 +190,47 @@ Building image im-ty77QRikviFUfYueivJv9p
 => Step 3: RUN python -c "import sys,json;sys.path.insert(0,'/opt/c4');import search_policy as p;config=p.make_config(json.load(open('/opt/c4/campaign.json')),p.REPAIRED,{'campaign_seed':20261021},'/tmp/preflight-only');json.dump(config,open('/opt/c4/repaired_preflight.json','w'))"
 
 => Step 4: RUN JAX_PLATFORMS=cpu python /opt/c4/monitored_design.py --preflight /opt/c4/repaired_preflight.json /opt/c4/prepared_frame_preflight.json
+{"status": "passed", "devices": ["cpu:0"], "chains": {"binder": {"residues": 69, "fully_observed_backbone_residues": 0}, "target_hTfR1_full_monomer": {"residues": 639, "fully_observed_backbone_residues": 639, "sequence_differences_from_native_reference": 0}}, "af2_sha256": "fc5e8aa9528d79b569a00d0cbab0c3fed283bdb9fb8df2ee940f8256d2c1a2bf", "forced_targeting": false, "effective_plddt_loss_weight": 0.1, "target_scope": "Complete-target geometry; prepared sequence may be a forced-targeting surrogate. No forward, gradient or binding claim."}
+
+=> Step 5: RUN python -c "import sys,json;sys.path.insert(0,'/opt/c4');import search_policy as p;config=p.make_config(json.load(open('/opt/c4/campaign.json')),p.FORCED,{'campaign_seed':20261021},'/tmp/forced-preflight-only');json.dump(config,open('/opt/c4/forced_preflight.json','w'))"
+
+=> Step 6: RUN JAX_PLATFORMS=cpu python /opt/c4/monitored_design.py --preflight /opt/c4/forced_preflight.json /opt/c4/forced_prepared_frame_preflight.json
+forced targeting epitope=30 lysinated=375 residues=639
+{"status": "passed", "devices": ["cpu:0"], "chains": {"binder": {"residues": 69, "fully_observed_backbone_residues": 0}, "target_hTfR1_full_monomer": {"residues": 639, "fully_observed_backbone_residues": 639, "sequence_differences_from_native_reference": 375}}, "af2_sha256": "fc5e8aa9528d79b569a00d0cbab0c3fed283bdb9fb8df2ee940f8256d2c1a2bf", "forced_targeting": true, "effective_plddt_loss_weight": 0.1, "target_scope": "Complete-target geometry; prepared sequence may be a forced-targeting surrogate. No forward, gradient or binding claim."}
+
+=> Step 7: RUN python -c "import sys,json;sys.path.insert(0,'/opt/c4');import search_policy as p;config=p.make_config(json.load(open('/opt/c4/campaign.json')),p.CONFIDENCE,{'campaign_seed':20261021},'/tmp/confidence-preflight-only');json.dump(config,open('/opt/c4/confidence_preflight.json','w'))"
+
+=> Step 8: RUN JAX_PLATFORMS=cpu python /opt/c4/monitored_design.py --preflight /opt/c4/confidence_preflight.json /opt/c4/confidence_prepared_frame_preflight.json
+forced targeting epitope=30 lysinated=375 residues=639
+{"status": "passed", "devices": ["cpu:0"], "chains": {"binder": {"residues": 69, "fully_observed_backbone_residues": 0}, "target_hTfR1_full_monomer": {"residues": 639, "fully_observed_backbone_residues": 639, "sequence_differences_from_native_reference": 375}}, "af2_sha256": "fc5e8aa9528d79b569a00d0cbab0c3fed283bdb9fb8df2ee940f8256d2c1a2bf", "forced_targeting": true, "effective_plddt_loss_weight": 0.5, "target_scope": "Complete-target geometry; prepared sequence may be a forced-targeting surrogate. No forward, gradient or binding claim."}
+Saving image...
+Image saved, took 516.48ms
+
+Built image im-ty77QRikviFUfYueivJv9p in 80.77s
+
+
+✓ Created objects.
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/modal_campaign.py
+├── ✓ Uploaded 
+│   /Users/ricardo/dev/adaptyv-c4/results/gpu_campaign_v3/campaign.json
+├── ✓ Uploaded 
+│   /Users/ricardo/dev/adaptyv-c4/results/gpu_campaign_v2/human_11qc_full_monome
+│   r.pdb
+├── ✓ Uploaded 
+│   /Users/ricardo/dev/adaptyv-c4/results/gpu_campaign_v2/mirrored/campaign_meta
+│   data.json
+├── ✓ Uploaded 
+│   /Users/ricardo/dev/adaptyv-c4/results/modal_campaign_v5/human_11qc_local_fra
+│   me.pdb
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/modal_search_policy.py
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/frame_guard.py
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/patch_frame_guard.py
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/validate_frame_guard.py
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/frame_gpu_diagnostic.py
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/monitored_design.py
+├── ✓ Created Function run_campaign.
+└── ✓ Created Function frame_diagnostic.
+✓ App deployed in 103.617s! 🎉
+
+View Deployment: 
+https://modal.com/apps/pinho-ricardo/main/deployed/adaptyv-c4-native-control
