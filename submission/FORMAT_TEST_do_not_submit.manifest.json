@@ -1,0 +1,148 @@
+{
+  "generated_utc": "2026-10-22T14:21:30.256828+00:00",
+  "generator": "scripts/build_submission.py",
+  "is_format_test": true,
+  "source_shortlist": "../../../../../tmp/shortlist_formattest.csv",
+  "track": "3",
+  "row_cap": 20,
+  "rows": 20,
+  "row_order_is_rank": true,
+  "columns": [
+    "name",
+    "sequence",
+    "molecule_class",
+    "rank_score",
+    "source_id"
+  ],
+  "twin_strep_tag": "excluded",
+  "twin_strep_status": "UNVERIFIED against the official rules -- confirm on the authenticated submit page before submission",
+  "unverified_spec_items": [
+    "molecule_class spellings are paraphrased from a capped fetch",
+    "header-row requirement is inferred, not documented",
+    "residue alphabet restrictions are inferred",
+    "name charset/length/uniqueness is our own convention",
+    "whether an uploaded submission can be edited or replaced is unknown -- assume the first upload is final"
+  ],
+  "designs": [
+    {
+      "rank": 1,
+      "name": "c4_tfr1_01",
+      "length": 100,
+      "molecule_class": "protein"
+    },
+    {
+      "rank": 2,
+      "name": "c4_tfr1_02",
+      "length": 84,
+      "molecule_class": "protein"
+    },
+    {
+      "rank": 3,
+      "name": "c4_tfr1_03",
+      "length": 56,
+      "molecule_class": "protein"
+    },
+    {
+      "rank": 4,
+      "name": "c4_tfr1_04",
+      "length": 95,
+      "molecule_class": "protein"
+    },
+    {
+      "rank": 5,
+      "name": "c4_tfr1_05",
+      "length": 58,
+      "molecule_class": "protein"
+    },
+    {
+      "rank": 6,
+      "name": "c4_tfr1_06",
+      "length": 58,
+      "molecule_class": "protein"
+    },
+    {
+      "rank": 7,
+      "name": "c4_tfr1_07",
+      "length": 95,
+      "molecule_class": "protein"
+    },
+    {
+      "rank": 8,
+      "name": "c4_tfr1_08",
+      "length": 58,
+      "molecule_class": "protein"
+    },
+    {
+      "rank": 9,
+      "name": "c4_tfr1_09",
+      "length": 84,
+      "molecule_class": "protein"
+    },
+    {
+      "rank": 10,
+      "name": "c4_tfr1_10",
+      "length": 58,
+      "molecule_class": "protein"
+    },
+    {
+      "rank": 11,
+      "name": "c4_tfr1_11",
+      "length": 97,
+      "molecule_class": "protein"
+    },
+    {
+      "rank": 12,
+      "name": "c4_tfr1_12",
+      "length": 84,
+      "molecule_class": "protein"
+    },
+    {
+      "rank": 13,
+      "name": "c4_tfr1_13",
+      "length": 58,
+      "molecule_class": "protein"
+    },
+    {
+      "rank": 14,
+      "name": "c4_tfr1_14",
+      "length": 99,
+      "molecule_class": "protein"
+    },
+    {
+      "rank": 15,
+      "name": "c4_tfr1_15",
+      "length": 58,
+      "molecule_class": "protein"
+    },
+    {
+      "rank": 16,
+      "name": "c4_tfr1_16",
+      "length": 56,
+      "molecule_class": "protein"
+    },
+    {
+      "rank": 17,
+      "name": "c4_tfr1_17",
+      "length": 99,
+      "molecule_class": "protein"
+    },
+    {
+      "rank": 18,
+      "name": "c4_tfr1_18",
+      "length": 59,
+      "molecule_class": "protein"
+    },
+    {
+      "rank": 19,
+      "name": "c4_tfr1_19",
+      "length": 80,
+      "molecule_class": "protein"
+    },
+    {
+      "rank": 20,
+      "name": "c4_tfr1_20",
+      "length": 95,
+      "molecule_class": "protein"
+    }
+  ]
+}

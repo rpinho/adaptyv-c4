@@ -15,8 +15,9 @@ Usage:
   python novelty_audit.py designs.fasta --max-identity 0.30
 """
 import argparse, csv, json, os, sys
-from Bio.PDB import MMCIFParser
-from Bio.PDB.Polypeptide import is_aa
+# Bio is imported lazily inside chain_seqs(): smith_waterman() below is pure stdlib and
+# is reused by scripts/rank_candidates.py, which must not require BioPython to rank
+# sequences.
 
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(HERE, "data")
@@ -46,6 +47,8 @@ if os.path.exists(_cfg):
 
 
 def chain_seqs(code):
+    from Bio.PDB import MMCIFParser
+    from Bio.PDB.Polypeptide import is_aa
     path = os.path.join(DATA, code + ".cif")
     if not os.path.exists(path):
         return {}
