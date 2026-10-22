@@ -11,7 +11,7 @@
     "num_running_inputs": 1,
     "input_headroom": 0
   },
-  "checked": 1792669884.44781,
+  "checked": 1792669916.37511,
   "remote": {
     "status": "modeling",
     "started": 1792669855.189278,
@@ -30,9 +30,9 @@
     },
     "container": "ta-01M5HQ66KANTCQBKCTT8EB5C6R",
     "max_runtime_seconds": 1800,
-    "elapsed_seconds": 6.593935489654541,
+    "elapsed_seconds": 38.32531380653381,
     "worker_pid": 31
   },
-  "compute_estimate_upper_usd": 0.008515935806179046,
+  "compute_estimate_upper_usd": 0.04949637627486229,
   "estimate_excludes": "image build, container startup/teardown, storage, other apps"
 }

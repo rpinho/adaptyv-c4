@@ -1,0 +1,12 @@
+compiled graphs cached in /tmp/bindcraft_xla_cache
+campaign preflight: design model_1_multimer_v3,model_2_multimer_v3,model_3_multimer_v3,model_4_multimer_v3,model_5_multimer_v3 | validation model_1_ptm,model_2_ptm | redesign negative/v_48_020 | targets hTfR1_full_monomer | output /results/c4_forced_confidence_v12/campaign
+campaign metadata: BindCraft 2 v1.0.4 | settings /__modal/volumes/vo-JNaT2eQNW5Pj0xdiD4wlAz/c4_forced_confidence_v12/campaign.json | written /results/c4_forced_confidence_v12/campaign/campaign_metadata.json
+campaign fan-out held to 1 design worker(s) by a budget of 1 trajectories: a worker beyond the budget claims none
+BindCraft 2 v1.0.4
+campaign c4_forced_confidence_v12
+binder length 65 to 75, drawn per trajectory
+target hTfR1_full_monomer (target) | 639 residues | hotspots A205,A206,A208,A209,A210
+losses binder_contacts=1.0 binder_helicity=-0.3 binder_pae=0.4 c_terminus_away=0.5 compactness=0.5 interface_contacts=1.0 interface_pae=0.1 iptm_loss=0.05 n_terminus_away=0.5 plddt_loss=0.5 target_rmsd=1.0 termini_angle=0.1
+features large complex: the gradient stages start from the coordinates on hand, which for a binder folded from nothing is the origin, forced targeting: everything outside the default Angstrom of the hotspots rebuilt as lysine
+filters Backbone_Clashes <= 0, Binder_RMSD <= 3.5, Hotspot_Contact_Fraction >= 0.5, Interface_Residues >= 7, Unbound_Binder_pLDDT >= 0.7, i_pAE <= 0.35, i_pTM >= 0.7, pTM >= 0.55
+results /results/c4_forced_confidence_v12/campaign | 3_Ranked/!_Ranked.csv rewritten as each design is accepted | summary.csv written when the campaign ends
