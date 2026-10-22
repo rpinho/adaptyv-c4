@@ -43,7 +43,7 @@ FIELDS = ('query', 'target', 'fident', 'nident', 'alnlen', 'qlen', 'tlen',
           'qstart', 'qend', 'tstart', 'tend', 'evalue', 'bits', 'qcov', 'tcov')
 FOLDSEEK_FIELDS = ('query', 'target', 'qlen', 'tlen', 'qstart', 'qend',
                    'tstart', 'tend', 'alnlen', 'qtmscore', 'ttmscore', 'qaln', 'taln')
-FOLDSEEK_MAX_SEQS = 10000
+FOLDSEEK_MAX_SEQS = 50000
 FOLDSEEK_EVALUE = 10.0  # permissive candidate discovery; final rule uses TM only
 FOLDSEEK_SENSITIVITY = 9.5
 
@@ -211,7 +211,14 @@ def parse_structure_hits(path, domains):
             if not 1 <= r['qstart'] <= r['qend'] <= r['qlen']:
                 raise ValueError('Invalid structural alignment coordinates')
             hits[r['query']].append(r)
-    for hs in hits.values(): hs.sort(key=lambda h: (-h['qtmscore'], h['target']))
+    # Two discovery modes may return the same target. A repeated hit is not
+    # independent evidence or additional domain coverage; retain its best qTM.
+    for q, hs in hits.items():
+        unique = {}
+        for h in hs:
+            if h['target'] not in unique or h['qtmscore'] > unique[h['target']]['qtmscore']:
+                unique[h['target']] = h
+        hits[q] = sorted(unique.values(), key=lambda h: (-h['qtmscore'], h['target']))
     return hits
 
 
@@ -268,17 +275,23 @@ def run_structural_half(records, report, args):
     if not domains: raise ValueError('No verified coordinate domains to search')
     querydb, found, realigned = out/'querydb', out/'discovered', out/'tmaligned'
     # No GPU inference or GPU search; explicit 4G search memory and <=4 threads.
-    commands = [
-        [binary,'createdb',str(folder),str(querydb),'--threads',str(args.threads)],
-        [binary,'search',str(querydb),str(base),str(found),str(out/'tmp'),
+    modes = [0,1] if args.structure_prefilter_mode == 'union' else [int(args.structure_prefilter_mode)]
+    commands = [[binary,'createdb',str(folder),str(querydb),'--threads',str(args.threads)]]
+    for mode in modes:
+        discovery = out/f'discovered_mode{mode}'
+        commands.append([binary,'search',str(querydb),str(base),str(discovery),str(out/f'tmp_mode{mode}'),
          '--threads',str(args.threads),'--gpu','0','--split-memory-limit','4G',
          '-s',str(FOLDSEEK_SENSITIVITY),'-e',str(FOLDSEEK_EVALUE),
-         '--max-seqs',str(FOLDSEEK_MAX_SEQS),'-a','1'],
+         '--max-seqs',str(args.structure_max_seqs),
+         '--prefilter-mode',str(mode),'-a','1'])
+    commands.append([binary,'mergedbs',str(querydb),str(found),
+                     *[str(out/f'discovered_mode{mode}') for mode in modes]])
+    commands.extend([
         [binary,'tmalign',str(querydb),str(base),str(found),str(realigned),
          '--threads',str(args.threads),'--tmalign-fast','0','--tmscore-threshold','0',
          '--tmscore-threshold-mode','1','--tmalign-hit-order','1','-a','1'],
         [binary,'convertalis',str(querydb),str(base),str(realigned),str(out/'hits.tsv'),
-         '--threads',str(args.threads),'--format-output',','.join(FOLDSEEK_FIELDS)]]
+         '--threads',str(args.threads),'--format-output',','.join(FOLDSEEK_FIELDS)]])
     start = time.monotonic()
     for i, cmd in enumerate(commands):
         with (out/f'stage_{i}.log').open('w') as log:
@@ -323,9 +336,12 @@ def run_structural_half(records, report, args):
         foldseek_version=subprocess.check_output([binary,'version'],text=True).strip(),
         structural_search=dict(commands=commands, elapsed_seconds=time.monotonic()-start,
             query_domains=len(domains), hit_rows=sum(map(len,hits.values())),
+            raw_alignment_rows=sum(1 for _ in (out/'hits.tsv').open()),
+            repeated_targets='Deduplicated per query, retaining maximum query-normalized TM',
             raw_hits_sha256=digest(out/'hits.tsv'),
             alignment='Foldseek 3Di+AA search -> Foldseek built-in TM-align, fast mode OFF; scores normalized by complete query domain length',
-            hit_cap=FOLDSEEK_MAX_SEQS, evalue=FOLDSEEK_EVALUE),
+            hit_cap_per_discovery_mode=args.structure_max_seqs, prefilter_modes=modes,
+            evalue=FOLDSEEK_EVALUE),
         limitations=['Public historical PDB snapshot, not the unpublished organizer structural corpus/version',
             'Existing verified coordinates used; organizer ESMFold/ESMFold2-Fast structures not reproduced',
             'Explicit domain intervals or whole-chain assumption; no consensus of three domain predictors',
@@ -343,6 +359,10 @@ def main(argv=None):
     ap.add_argument('--structures', type=Path, help='Sequence-matched coordinate + disjoint domain manifest')
     ap.add_argument('--structure-database', type=Path, help='Foldseek DB prefix, date, size and fingerprints')
     ap.add_argument('--foldseek', default='foldseek')
+    ap.add_argument('--structure-prefilter-mode', choices=('0','1','union'), default='union',
+                    help='Default union: both kmer0 and all-reference ungapped1 discovery; CPU only')
+    ap.add_argument('--structure-max-seqs', type=int, default=FOLDSEEK_MAX_SEQS,
+                    help='Structural candidate cap per query, maximum50000')
     ap.add_argument('--timeout-structure', type=int, default=3600, help='Seconds per CPU structural stage')
     ap.add_argument('--out', type=Path, required=True, help='Fresh output directory')
     ap.add_argument('--mmseqs', default='mmseqs')
@@ -351,6 +371,8 @@ def main(argv=None):
     args = ap.parse_args(argv)
     if not 1 <= args.threads <= 4: ap.error('CPU-only task budget:1–4 threads')
     if args.timeout_per_database <= 0: ap.error('Timeout must be positive')
+    if not 1 <= args.structure_max_seqs <= 50000: ap.error('Structural candidate cap must be1–50000')
+    if args.timeout_structure <= 0: ap.error('Structural stage timeout must be positive')
     if bool(args.structures) != bool(args.structure_database): ap.error('Provide both structural manifests')
     records = load_designs(args.designs)
     if args.sequence_report:

@@ -97,6 +97,16 @@ class NoveltyTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError,'domain length'):
                 novelty.parse_structure_hits(path,{'q':dict(start=1,end=100)})
 
+    def test_discovery_union_repeated_targets_do_not_add_evidence(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as tmp:
+            path=Path(tmp)/'hits.tsv'
+            path.write_text('q\tsame\t100\t100\t1\t100\t1\t100\t100\t0.7\t0.7\tAAAA\tAAAA\n'
+                            'q\tsame\t100\t100\t1\t100\t1\t100\t100\t0.81\t0.81\tAAAA\tAAAA\n')
+            hits=novelty.parse_structure_hits(path,{'q':dict(start=1,end=100)})['q']
+            self.assertEqual(len(hits),1)
+            self.assertEqual(hits[0]['qtmscore'],.81)
+
     def test_ca_extraction_preserves_chain_identity(self):
         path=Path(__file__).resolve().parents[1]/'data/11qc.cif'
         rr=novelty.ca_residues(path,'A')

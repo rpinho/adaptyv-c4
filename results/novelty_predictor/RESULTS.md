@@ -1,5 +1,9 @@
 # CPU novelty predictor: sequence half delivered; full levels unestablished
 
+Current CPU follow-up supersedes the earlier search counts: see sensitivity/RESULTS.md.
+The predictor now combines both discovery modes; current retired local counts are
+29 level2,37 level3,1 level4,6 unestablished. All levels remain provisional.
+
 ## Task1: existing6W3H real-gate result reviewed first
 
 GATE VINDICATED for deposited FcB/TfRC: unchanged audit target CA RMSDs0.963/0.950 Å,

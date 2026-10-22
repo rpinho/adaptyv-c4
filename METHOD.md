@@ -1,34 +1,35 @@
 # Method: proton-coupled two-state design, with the numbers checked
 
-## Latest lane boundaries — CPU novelty sequence half complete (Oct22)
+## Current CPU novelty checkpoint — broader discovery validated (Oct22)
 
-Ricardo assigned all generation, RFD4 files, Modal apps and GPU campaigns to
-claude/submission-and-control. Do not create, edit or duplicate its canonical
-scripts/build_submission.py, scripts/rank_candidates.py, modal_rfd4.py or configs/rfd4/.
-Our old exporter is superseded. Read-only three-line comparison saved in
-results/novelty_predictor/EXPORTER_COMPARISON.md; no further exporter work.
-NO GPU WITHOUT RICARDO SAYING YES and a quoted hourly rate.
+Generation, all RFD4 files, Modal apps and GPU campaigns belong to
+claude/submission-and-control. Do not edit/duplicate its build_submission.py,
+rank_candidates.py, modal_rfd4.py or configs/rfd4/. Our exporter is superseded;
+its read-only comparison is complete. NO GPU without Ricardo yes and hourly quote.
 
-Task1 already complete: GATE VINDICATED for compatible6W3H, alternatecopy
-INCONCLUSIVE (>2A fit). Complete mapping and unchanged real-gate outputs in
-results/real_gate_control/RESULTS.md. Original66 stay retired with prior caveats.
+6W3H control remains GATE VINDICATED for compatiblecopy, alternatecopy
+INCONCLUSIVE. Complete mapping and unchanged gate proof: results/real_gate_control/.
 
-Task2 new scripts/novelty_level_predictor.py supplies local CPU MMseqs2 sequence
-search plus explicit level bounds; existing novelty_audit.py unchanged. Four public
-sequence families downloaded/fingerprinted: SwissProt, PDB, Thera-SAbDab, both
-paired/unpaired PLAbDab. Separate patent corpus unidentified/unavailable; antibody
-bulk snapshots are older (2025/2024) and organizer versions unknown. Structural
-prediction/domain consensus/Foldseek/TM-align not implemented; do NOT claim exact
-novelty levels3/4 from no sequence hits. Report results/novelty_predictor/RESULTS.md.
-Actual73 retired sequences had no significant hits at declared settings; known
-195aa nativeTfR1 positivecontrol100% identity. Finallevels withheld, not guessed.
-New output/manifest/rule tests cover boundaries and missing evidence. CLI runs
-only local CPU searches, never downloads/uploads or allocates cloud services.
+CPU novelty predictor now has measured sequence +Foldseek->TM-align stages.
+New sensitivity test found candidate discovery was understating similarity.
+Default is now union of kmer0 and ungapped1,50000 candidates per mode/query,
+followed by full TM-align with duplicate targets counted once. Full68-structure
+validation214.201s: every previous best TM retained/improved;6 retired local
+novelty calls downgraded. Current67 retired calls:29 local2,37 local3,1 local4;
+6 lack exact coordinates. Positivecontrol local1,TM.9946.15 focused tests pass.
+Current evidence: results/novelty_predictor/sensitivity/RESULTS.md and
+full_pool_union/predictions.json. Earlier26/37/4 counts are historical.
 
-No new GPU spend. Recorded Runpod56.589988 posted +our Modal10.718947 estimate
-=~67.31, excluding separate RFD4 lane/storage/CPUbuilds/consultations. Current
-lane ends with documented structural/database gaps; no automatic successor.
-No account, entry, main or KB-main write. Earlier plans below are historical.
+These are PROVISIONAL local levels, not organizer scores or candidate admission.
+Unidentified patent corpus, historical public structure DB, older antibody
+snapshots, provided coordinates, whole-chain domain assumption vs unpublished
+three-predictor consensus, and finite discovery remain limitations. No exact
+organizer level established. Retired candidates remain retired. Existing
+novelty_audit.py, exporters/ranker and generation files unchanged.
+
+No new GPU/cloud CPU spend. Recorded Runpod56.589988 posted +our Modal10.718947
+estimate =~67.31, excluding separate RFD4 lane/storage/builds/consultations.
+No account, submission, main or KB-main writes. No automatic GPU successor.
 
 ## Latest instruction — generator lane STOPPED; CPU real-gate control COMPLETE (Oct22)
 

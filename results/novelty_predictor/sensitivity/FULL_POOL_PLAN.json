@@ -1,0 +1,63 @@
+{
+  "registered_at": "2026-10-22T19:08:28.674231+00:00",
+  "purpose": "CPU sensitivity to finite Foldseek kmer candidate discovery. Not a new generator, not organizer validation.",
+  "baseline_report_sha256": "65cf206121393c57e94692bbfb3d0e48ba82d38cd343bd7b1a181cea4f35aa66",
+  "selection_rule": "All baseline local level4 calls; all returned maxima within0.01 of0.5 or0.8; native positive control. Selection is exploratory based on already-known baseline results.",
+  "selected": [
+    {
+      "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate2",
+      "baseline_local_level": 2,
+      "baseline_maximum_TM": 0.8031
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1_candidate4",
+      "baseline_local_level": 3,
+      "baseline_maximum_TM": 0.7917
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l58_9f94b53776050aad_candidate4",
+      "baseline_local_level": 3,
+      "baseline_maximum_TM": 0.791
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l96_9003044e98f7dfc2_candidate6",
+      "baseline_local_level": 4,
+      "baseline_maximum_TM": 0.4668
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l96_9003044e98f7dfc2_candidate10",
+      "baseline_local_level": 4,
+      "baseline_maximum_TM": 0.4945
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0_candidate4",
+      "baseline_local_level": 4,
+      "baseline_maximum_TM": null
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0_candidate7",
+      "baseline_local_level": 4,
+      "baseline_maximum_TM": 0.476
+    },
+    {
+      "name": "KNOWN_TFR1_POSITIVE_CONTROL",
+      "baseline_local_level": 1,
+      "baseline_maximum_TM": 0.9946
+    }
+  ],
+  "change": "Foldseek ungapped all-reference prefilter mode1 instead of kmer mode0; candidate cap50000 instead of10000. Same public1,562,678-chain DB, same query coordinates/domains, same Evalue10, same full TM-align stage and thresholds.",
+  "limits": {
+    "threads": 4,
+    "memory": "4G",
+    "seconds_per_stage": 300,
+    "new_gpu_spend_usd": 0
+  },
+  "interpretation": "Compare best query-normalized TM and provisional local level; increased hits/scores can downgrade novelty. No-hit remains unestablished as a maximum. Do not reinstate retired designs or claim organizer levels.",
+  "followup_after_measured_sensitivity": {
+    "trigger": "Two of four local4 calls became3; one local3 became2 after ungapped discovery",
+    "scope": "All68 existing coordinate-bearing queries, no new structures or inference",
+    "method": "Union of kmer0 and ungapped1 discovery at50000 candidates each, identical queryDB, mergedbs then full TM-align; duplicate targets do not add evidence",
+    "validation": "Check each previous best TM is retained or improved; compare all67 retired local calls; positive-control qTM>=0.98",
+    "limits": "4CPUthreads,4G search memory,300seconds per stage,zeroGPU"
+  }
+}

@@ -1,5 +1,9 @@
 # CPU structural novelty screen completed; levels are provisional
 
+Current CPU follow-up supersedes the earlier search counts: see ../sensitivity/RESULTS.md.
+The predictor now combines both discovery modes; current retired local counts are
+29 level2,37 level3,1 level4,6 unestablished. All levels remain provisional.
+
 The existing sequence predictor now runs **Foldseek candidate discovery followed
 by real TM-align**, in the same `scripts/novelty_level_predictor.py`. The finite
 database, supplied coordinates and declared domains are explicit in every result.

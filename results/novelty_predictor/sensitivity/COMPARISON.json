@@ -1,0 +1,87 @@
+{
+  "elapsed_seconds": 35.810338459,
+  "hit_rows": 2868,
+  "comparisons": [
+    {
+      "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate2",
+      "old_level": 2,
+      "new_level": 2,
+      "old_TM": 0.8031,
+      "new_TM": 0.8031,
+      "old_hits": 725,
+      "new_hits": 827,
+      "new_target": "6nd4-assembly1_a"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1_candidate4",
+      "old_level": 3,
+      "new_level": 3,
+      "old_TM": 0.7917,
+      "new_TM": 0.7954,
+      "old_hits": 59,
+      "new_hits": 152,
+      "new_target": "6zif-assembly1_A"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l58_9f94b53776050aad_candidate4",
+      "old_level": 3,
+      "new_level": 2,
+      "old_TM": 0.791,
+      "new_TM": 0.8196,
+      "old_hits": 39,
+      "new_hits": 48,
+      "new_target": "5h78-assembly1_B"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l96_9003044e98f7dfc2_candidate6",
+      "old_level": 4,
+      "new_level": 3,
+      "old_TM": 0.4668,
+      "new_TM": 0.625,
+      "old_hits": 3,
+      "new_hits": 13,
+      "new_target": "5w93-assembly2_B"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l96_9003044e98f7dfc2_candidate10",
+      "old_level": 4,
+      "new_level": 4,
+      "old_TM": 0.4945,
+      "new_TM": 0.4967,
+      "old_hits": 50,
+      "new_hits": 64,
+      "new_target": "8uh7-assembly1_B"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0_candidate4",
+      "old_level": 4,
+      "new_level": 3,
+      "old_TM": null,
+      "new_TM": 0.5546,
+      "old_hits": 0,
+      "new_hits": 2,
+      "new_target": "8tm9-assembly1_B"
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0_candidate7",
+      "old_level": 4,
+      "new_level": 4,
+      "old_TM": 0.476,
+      "new_TM": 0.476,
+      "old_hits": 14,
+      "new_hits": 20,
+      "new_target": "8gzu-assembly1_69"
+    },
+    {
+      "name": "KNOWN_TFR1_POSITIVE_CONTROL",
+      "old_level": 1,
+      "new_level": 1,
+      "old_TM": 0.9946,
+      "new_TM": 0.9946,
+      "old_hits": 764,
+      "new_hits": 1742,
+      "new_target": "7zqs-assembly1_B"
+    }
+  ],
+  "new_gpu_spend_usd": 0
+}

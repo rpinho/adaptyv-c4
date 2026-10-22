@@ -1,0 +1,415 @@
+{
+  "method": "Exploratory broad CA-spacing diagnostic, not a folding validator",
+  "structures": 68,
+  "flagged": 0,
+  "records": [
+    {
+      "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate1",
+      "minimum_adjacent_CA_A": 3.657718722099883,
+      "maximum_adjacent_CA_A": 4.006342627634337,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate2",
+      "minimum_adjacent_CA_A": 3.6336104634371584,
+      "maximum_adjacent_CA_A": 3.9710869104062683,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate3",
+      "minimum_adjacent_CA_A": 3.662521330995903,
+      "maximum_adjacent_CA_A": 3.9548230048890938,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate5",
+      "minimum_adjacent_CA_A": 3.6811385806568055,
+      "maximum_adjacent_CA_A": 3.9975578482368457,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l99_2c4541b346f4959d_candidate1",
+      "minimum_adjacent_CA_A": 3.6763602924631855,
+      "maximum_adjacent_CA_A": 3.9493868194948947,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l99_2c4541b346f4959d_candidate4",
+      "minimum_adjacent_CA_A": 3.6039258108346237,
+      "maximum_adjacent_CA_A": 3.9769845674832585,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c_candidate6",
+      "minimum_adjacent_CA_A": 3.6896180357863604,
+      "maximum_adjacent_CA_A": 3.9548230048890938,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c_candidate8",
+      "minimum_adjacent_CA_A": 3.670511715006506,
+      "maximum_adjacent_CA_A": 3.9926690634211095,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l99_2c4541b346f4959d_candidate7",
+      "minimum_adjacent_CA_A": 3.666252344015616,
+      "maximum_adjacent_CA_A": 3.9804208320226646,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c_candidate9",
+      "minimum_adjacent_CA_A": 3.642736780224451,
+      "maximum_adjacent_CA_A": 4.00195264839553,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l72_d5e9e12c9e56fbea_candidate1",
+      "minimum_adjacent_CA_A": 3.700190028903921,
+      "maximum_adjacent_CA_A": 4.036938815488786,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l72_d5e9e12c9e56fbea_candidate3",
+      "minimum_adjacent_CA_A": 3.659853992989338,
+      "maximum_adjacent_CA_A": 4.047086143140519,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l72_d5e9e12c9e56fbea_candidate4",
+      "minimum_adjacent_CA_A": 3.6571847095819483,
+      "maximum_adjacent_CA_A": 3.952847075210474,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l84_9efe91791b587b17_candidate1",
+      "minimum_adjacent_CA_A": 3.6174490321219452,
+      "maximum_adjacent_CA_A": 3.947408168659532,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l84_9efe91791b587b17_candidate2",
+      "minimum_adjacent_CA_A": 3.6678501877803025,
+      "maximum_adjacent_CA_A": 3.9750196540394613,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l84_9efe91791b587b17_candidate3",
+      "minimum_adjacent_CA_A": 3.6293077852394937,
+      "maximum_adjacent_CA_A": 3.9863046797754937,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1_candidate1",
+      "minimum_adjacent_CA_A": 3.6571847095819483,
+      "maximum_adjacent_CA_A": 4.025795728796979,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1_candidate2",
+      "minimum_adjacent_CA_A": 3.6507704666275584,
+      "maximum_adjacent_CA_A": 3.9548230048890938,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1_candidate4",
+      "minimum_adjacent_CA_A": 3.6534444364188707,
+      "maximum_adjacent_CA_A": 3.9011216335818086,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l100_af9c8433a94467eb_candidate6",
+      "minimum_adjacent_CA_A": 3.6422005710833663,
+      "maximum_adjacent_CA_A": 3.9493868194948947,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d_candidate1",
+      "minimum_adjacent_CA_A": 3.636297051947214,
+      "maximum_adjacent_CA_A": 3.990222424878092,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d_candidate3",
+      "minimum_adjacent_CA_A": 3.676891520020682,
+      "maximum_adjacent_CA_A": 4.074501503251655,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d_candidate4",
+      "minimum_adjacent_CA_A": 3.659853992989338,
+      "maximum_adjacent_CA_A": 4.019483797703382,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l56_b9b1bd89e75cae01_candidate3",
+      "minimum_adjacent_CA_A": 3.6125865041546064,
+      "maximum_adjacent_CA_A": 3.9225908211283014,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l60_63126a071c041270_candidate1",
+      "minimum_adjacent_CA_A": 3.6017573835559773,
+      "maximum_adjacent_CA_A": 3.977966660242391,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l60_63126a071c041270_candidate2",
+      "minimum_adjacent_CA_A": 3.6875,
+      "maximum_adjacent_CA_A": 3.9730537688282044,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l60_63126a071c041270_candidate3",
+      "minimum_adjacent_CA_A": 3.5995876499954824,
+      "maximum_adjacent_CA_A": 4.006830106206151,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1",
+      "minimum_adjacent_CA_A": 3.6986061563783728,
+      "maximum_adjacent_CA_A": 4.00975373308636,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e_candidate1",
+      "minimum_adjacent_CA_A": 3.662521330995903,
+      "maximum_adjacent_CA_A": 3.9730537688282044,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate2",
+      "minimum_adjacent_CA_A": 3.69173485640559,
+      "maximum_adjacent_CA_A": 3.969611127050104,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e_candidate2",
+      "minimum_adjacent_CA_A": 3.659853992989338,
+      "maximum_adjacent_CA_A": 3.985324641732465,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate3",
+      "minimum_adjacent_CA_A": 3.683790507072844,
+      "maximum_adjacent_CA_A": 3.990222424878092,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e_candidate3",
+      "minimum_adjacent_CA_A": 3.6120458191999725,
+      "maximum_adjacent_CA_A": 3.996580569687042,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l80_24ee63503d07a260_candidate2",
+      "minimum_adjacent_CA_A": 3.6470236152237896,
+      "maximum_adjacent_CA_A": 3.989243349308237,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l80_24ee63503d07a260_candidate3",
+      "minimum_adjacent_CA_A": 3.6811385806568055,
+      "maximum_adjacent_CA_A": 3.9533411502171174,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l80_24ee63503d07a260_candidate6",
+      "minimum_adjacent_CA_A": 3.670511715006506,
+      "maximum_adjacent_CA_A": 3.9250796170268956,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l70_54a5b53444de2b49_candidate8",
+      "minimum_adjacent_CA_A": 3.621765798612605,
+      "maximum_adjacent_CA_A": 3.903624117406798,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l58_9f94b53776050aad_candidate3",
+      "minimum_adjacent_CA_A": 3.6464880364537056,
+      "maximum_adjacent_CA_A": 3.9355153728577914,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l58_9f94b53776050aad_candidate4",
+      "minimum_adjacent_CA_A": 3.700190028903921,
+      "maximum_adjacent_CA_A": 3.9710869104062683,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l97_2e414f93ff62377a_candidate1",
+      "minimum_adjacent_CA_A": 3.628231318424998,
+      "maximum_adjacent_CA_A": 3.9355153728577914,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l58_9f94b53776050aad_candidate5",
+      "minimum_adjacent_CA_A": 3.681669118755785,
+      "maximum_adjacent_CA_A": 3.9548230048890938,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l97_2e414f93ff62377a_candidate2",
+      "minimum_adjacent_CA_A": 3.629845898932901,
+      "maximum_adjacent_CA_A": 3.978457615709887,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l97_2e414f93ff62377a_candidate3",
+      "minimum_adjacent_CA_A": 3.6368341314940387,
+      "maximum_adjacent_CA_A": 4.039840652798078,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l96_9003044e98f7dfc2_candidate1",
+      "minimum_adjacent_CA_A": 3.6104232785090447,
+      "maximum_adjacent_CA_A": 3.9814020771582466,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l59_a8117845ac23722c_candidate1",
+      "minimum_adjacent_CA_A": 3.6125865041546064,
+      "maximum_adjacent_CA_A": 3.993158211240822,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l59_a8117845ac23722c_candidate3",
+      "minimum_adjacent_CA_A": 3.6752976069972894,
+      "maximum_adjacent_CA_A": 4.021912635799042,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l96_9003044e98f7dfc2_candidate6",
+      "minimum_adjacent_CA_A": 3.6683826477072974,
+      "maximum_adjacent_CA_A": 4.037422599877303,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l59_a8117845ac23722c_candidate5",
+      "minimum_adjacent_CA_A": 3.6555822039724397,
+      "maximum_adjacent_CA_A": 3.969119077326857,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l96_9003044e98f7dfc2_candidate10",
+      "minimum_adjacent_CA_A": 3.631997556441909,
+      "maximum_adjacent_CA_A": 4.008292186205991,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate6",
+      "minimum_adjacent_CA_A": 3.6710437888971033,
+      "maximum_adjacent_CA_A": 3.9597585153642894,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate9",
+      "minimum_adjacent_CA_A": 3.679015663190359,
+      "maximum_adjacent_CA_A": 3.9745282738961616,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate10",
+      "minimum_adjacent_CA_A": 3.676891520020682,
+      "maximum_adjacent_CA_A": 4.025310547026154,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8_candidate1",
+      "minimum_adjacent_CA_A": 3.6507704666275584,
+      "maximum_adjacent_CA_A": 4.025795728796979,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8_candidate2",
+      "minimum_adjacent_CA_A": 3.6012150727219834,
+      "maximum_adjacent_CA_A": 3.955810599611665,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8_candidate3",
+      "minimum_adjacent_CA_A": 3.6673176505451504,
+      "maximum_adjacent_CA_A": 3.910123079904263,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l80_92df4b35cf6da70a_candidate1",
+      "minimum_adjacent_CA_A": 3.64916514424875,
+      "maximum_adjacent_CA_A": 4.003904344511741,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l80_92df4b35cf6da70a_candidate2",
+      "minimum_adjacent_CA_A": 3.6641208017749634,
+      "maximum_adjacent_CA_A": 3.990222424878092,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l80_92df4b35cf6da70a_candidate4",
+      "minimum_adjacent_CA_A": 3.6464880364537056,
+      "maximum_adjacent_CA_A": 3.996091840786445,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l99_ac96ee385dcb8613_candidate2",
+      "minimum_adjacent_CA_A": 3.578363802074909,
+      "maximum_adjacent_CA_A": 3.9493868194948947,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0_candidate4",
+      "minimum_adjacent_CA_A": 3.670511715006506,
+      "maximum_adjacent_CA_A": 3.960744879438715,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0_candidate5",
+      "minimum_adjacent_CA_A": 3.643272910447418,
+      "maximum_adjacent_CA_A": 3.9789485105992513,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0_candidate7",
+      "minimum_adjacent_CA_A": 3.670511715006506,
+      "maximum_adjacent_CA_A": 3.9488922497328285,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l100_39ede5dc7779065e_candidate5",
+      "minimum_adjacent_CA_A": 3.6673176505451504,
+      "maximum_adjacent_CA_A": 3.947408168659532,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l100_39ede5dc7779065e_candidate8",
+      "minimum_adjacent_CA_A": 3.666252344015616,
+      "maximum_adjacent_CA_A": 3.9533411502171174,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l99_e7484f3e947890e8_candidate1",
+      "minimum_adjacent_CA_A": 3.659853992989338,
+      "maximum_adjacent_CA_A": 3.9789485105992513,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l99_e7484f3e947890e8_candidate2",
+      "minimum_adjacent_CA_A": 3.6422005710833663,
+      "maximum_adjacent_CA_A": 3.947408168659532,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l99_e7484f3e947890e8_candidate5",
+      "minimum_adjacent_CA_A": 3.588719304988898,
+      "maximum_adjacent_CA_A": 4.023854650704968,
+      "outside_broad_2p5_to_4p5_A": 0
+    },
+    {
+      "name": "KNOWN_TFR1_POSITIVE_CONTROL",
+      "minimum_adjacent_CA_A": 3.756566783647008,
+      "maximum_adjacent_CA_A": 3.8481531934162874,
+      "outside_broad_2p5_to_4p5_A": 0
+    }
+  ]
+}

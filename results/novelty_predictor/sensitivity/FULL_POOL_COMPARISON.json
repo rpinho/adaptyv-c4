@@ -1,0 +1,617 @@
+{
+  "baseline_report_sha256": "65cf206121393c57e94692bbfb3d0e48ba82d38cd343bd7b1a181cea4f35aa66",
+  "current_report_sha256": "1cfeb2a285545fb90e78f88225682ef3627e98147cbce1ea8c27fd7aab9b4667",
+  "compared_retired": 73,
+  "before_counts": {
+    "None": 6,
+    "3": 37,
+    "2": 26,
+    "4": 4
+  },
+  "after_counts": {
+    "None": 6,
+    "3": 37,
+    "2": 29,
+    "4": 1
+  },
+  "downgraded": 6,
+  "all_previous_best_TMs_retained": true,
+  "elapsed_seconds": 214.201473459,
+  "unique_query_target_matches": 24653,
+  "raw_alignment_rows": 42718,
+  "comparisons": [
+    {
+      "name": "c4_tfr1_groove_human_forced_l59_f06cf87fd111f355_candidate1",
+      "old_local_level": null,
+      "new_local_level": null,
+      "old_best_TM": null,
+      "new_best_TM": null,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate1",
+      "old_local_level": 3,
+      "new_local_level": 3,
+      "old_best_TM": 0.7013,
+      "new_best_TM": 0.7319,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate2",
+      "old_local_level": 2,
+      "new_local_level": 2,
+      "old_best_TM": 0.8031,
+      "new_best_TM": 0.8031,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate3",
+      "old_local_level": 3,
+      "new_local_level": 3,
+      "old_best_TM": 0.7076,
+      "new_best_TM": 0.7076,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate5",
+      "old_local_level": 3,
+      "new_local_level": 3,
+      "old_best_TM": 0.7341,
+      "new_best_TM": 0.7356,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l99_2c4541b346f4959d_candidate1",
+      "old_local_level": 3,
+      "new_local_level": 3,
+      "old_best_TM": 0.7087,
+      "new_best_TM": 0.71,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l99_2c4541b346f4959d_candidate4",
+      "old_local_level": 3,
+      "new_local_level": 3,
+      "old_best_TM": 0.7081,
+      "new_best_TM": 0.7129,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c_candidate6",
+      "old_local_level": 2,
+      "new_local_level": 2,
+      "old_best_TM": 0.8101,
+      "new_best_TM": 0.8101,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c_candidate8",
+      "old_local_level": 3,
+      "new_local_level": 2,
+      "old_best_TM": 0.7871,
+      "new_best_TM": 0.8058,
+      "novelty_downgraded": true
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l99_2c4541b346f4959d_candidate7",
+      "old_local_level": 3,
+      "new_local_level": 3,
+      "old_best_TM": 0.6706,
+      "new_best_TM": 0.7096,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c_candidate9",
+      "old_local_level": 3,
+      "new_local_level": 3,
+      "old_best_TM": 0.7458,
+      "new_best_TM": 0.7647,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l72_d5e9e12c9e56fbea_candidate1",
+      "old_local_level": 3,
+      "new_local_level": 3,
+      "old_best_TM": 0.7113,
+      "new_best_TM": 0.7113,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l72_d5e9e12c9e56fbea_candidate3",
+      "old_local_level": 3,
+      "new_local_level": 3,
+      "old_best_TM": 0.7128,
+      "new_best_TM": 0.7128,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l72_d5e9e12c9e56fbea_candidate4",
+      "old_local_level": 3,
+      "new_local_level": 3,
+      "old_best_TM": 0.6922,
+      "new_best_TM": 0.6922,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l84_9efe91791b587b17_candidate1",
+      "old_local_level": 3,
+      "new_local_level": 3,
+      "old_best_TM": 0.7305,
+      "new_best_TM": 0.7827,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l84_9efe91791b587b17_candidate2",
+      "old_local_level": 3,
+      "new_local_level": 3,
+      "old_best_TM": 0.7022,
+      "new_best_TM": 0.7816,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l84_9efe91791b587b17_candidate3",
+      "old_local_level": 3,
+      "new_local_level": 3,
+      "old_best_TM": 0.7554,
+      "new_best_TM": 0.7877,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1_candidate1",
+      "old_local_level": 3,
+      "new_local_level": 2,
+      "old_best_TM": 0.7869,
+      "new_best_TM": 0.8232,
+      "novelty_downgraded": true
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1_candidate2",
+      "old_local_level": 3,
+      "new_local_level": 3,
+      "old_best_TM": 0.6608,
+      "new_best_TM": 0.7647,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1_candidate4",
+      "old_local_level": 3,
+      "new_local_level": 3,
+      "old_best_TM": 0.7917,
+      "new_best_TM": 0.7954,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l100_af9c8433a94467eb_candidate4",
+      "old_local_level": null,
+      "new_local_level": null,
+      "old_best_TM": null,
+      "new_best_TM": null,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l100_af9c8433a94467eb_candidate6",
+      "old_local_level": 3,
+      "new_local_level": 3,
+      "old_best_TM": 0.7691,
+      "new_best_TM": 0.7763,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d_candidate1",
+      "old_local_level": 2,
+      "new_local_level": 2,
+      "old_best_TM": 0.821,
+      "new_best_TM": 0.8366,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d_candidate3",
+      "old_local_level": 2,
+      "new_local_level": 2,
+      "old_best_TM": 0.851,
+      "new_best_TM": 0.851,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d_candidate4",
+      "old_local_level": 2,
+      "new_local_level": 2,
+      "old_best_TM": 0.8429,
+      "new_best_TM": 0.8429,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l56_b9b1bd89e75cae01_candidate3",
+      "old_local_level": 3,
+      "new_local_level": 3,
+      "old_best_TM": 0.5545,
+      "new_best_TM": 0.556,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l56_b9b1bd89e75cae01_candidate6",
+      "old_local_level": null,
+      "new_local_level": null,
+      "old_best_TM": null,
+      "new_best_TM": null,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l79_e4887d4268e16afe_candidate1",
+      "old_local_level": null,
+      "new_local_level": null,
+      "old_best_TM": null,
+      "new_best_TM": null,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l60_63126a071c041270_candidate1",
+      "old_local_level": 2,
+      "new_local_level": 2,
+      "old_best_TM": 0.8234,
+      "new_best_TM": 0.8234,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l60_63126a071c041270_candidate2",
+      "old_local_level": 2,
+      "new_local_level": 2,
+      "old_best_TM": 0.8303,
+      "new_best_TM": 0.8334,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l60_63126a071c041270_candidate3",
+      "old_local_level": 2,
+      "new_local_level": 2,
+      "old_best_TM": 0.8347,
+      "new_best_TM": 0.8405,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1",
+      "old_local_level": 2,
+      "new_local_level": 2,
+      "old_best_TM": 0.9165,
+      "new_best_TM": 0.9165,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e_candidate1",
+      "old_local_level": 2,
+      "new_local_level": 2,
+      "old_best_TM": 0.835,
+      "new_best_TM": 0.8395,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate2",
+      "old_local_level": 2,
+      "new_local_level": 2,
+      "old_best_TM": 0.9058,
+      "new_best_TM": 0.9094,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e_candidate2",
+      "old_local_level": 2,
+      "new_local_level": 2,
+      "old_best_TM": 0.8341,
+      "new_best_TM": 0.8341,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate3",
+      "old_local_level": 2,
+      "new_local_level": 2,
+      "old_best_TM": 0.9181,
+      "new_best_TM": 0.9181,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e_candidate3",
+      "old_local_level": 2,
+      "new_local_level": 2,
+      "old_best_TM": 0.8348,
+      "new_best_TM": 0.8348,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l80_24ee63503d07a260_candidate2",
+      "old_local_level": 3,
+      "new_local_level": 3,
+      "old_best_TM": 0.7767,
+      "new_best_TM": 0.7767,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l80_24ee63503d07a260_candidate3",
+      "old_local_level": 3,
+      "new_local_level": 3,
+      "old_best_TM": 0.7616,
+      "new_best_TM": 0.7616,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l80_24ee63503d07a260_candidate6",
+      "old_local_level": 3,
+      "new_local_level": 3,
+      "old_best_TM": 0.765,
+      "new_best_TM": 0.765,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l70_54a5b53444de2b49_candidate4",
+      "old_local_level": null,
+      "new_local_level": null,
+      "old_best_TM": null,
+      "new_best_TM": null,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l70_54a5b53444de2b49_candidate5",
+      "old_local_level": null,
+      "new_local_level": null,
+      "old_best_TM": null,
+      "new_best_TM": null,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l70_54a5b53444de2b49_candidate8",
+      "old_local_level": 2,
+      "new_local_level": 2,
+      "old_best_TM": 0.8352,
+      "new_best_TM": 0.8352,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l58_9f94b53776050aad_candidate3",
+      "old_local_level": 2,
+      "new_local_level": 2,
+      "old_best_TM": 0.8764,
+      "new_best_TM": 0.8764,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l58_9f94b53776050aad_candidate4",
+      "old_local_level": 3,
+      "new_local_level": 2,
+      "old_best_TM": 0.791,
+      "new_best_TM": 0.8196,
+      "novelty_downgraded": true
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l97_2e414f93ff62377a_candidate1",
+      "old_local_level": 3,
+      "new_local_level": 3,
+      "old_best_TM": 0.7165,
+      "new_best_TM": 0.7165,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l58_9f94b53776050aad_candidate5",
+      "old_local_level": 2,
+      "new_local_level": 2,
+      "old_best_TM": 0.8185,
+      "new_best_TM": 0.8227,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l97_2e414f93ff62377a_candidate2",
+      "old_local_level": 3,
+      "new_local_level": 3,
+      "old_best_TM": 0.7226,
+      "new_best_TM": 0.7258,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l97_2e414f93ff62377a_candidate3",
+      "old_local_level": 3,
+      "new_local_level": 3,
+      "old_best_TM": 0.7064,
+      "new_best_TM": 0.7064,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l96_9003044e98f7dfc2_candidate1",
+      "old_local_level": 3,
+      "new_local_level": 3,
+      "old_best_TM": 0.5904,
+      "new_best_TM": 0.5904,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l59_a8117845ac23722c_candidate1",
+      "old_local_level": 2,
+      "new_local_level": 2,
+      "old_best_TM": 0.9684,
+      "new_best_TM": 0.9684,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l59_a8117845ac23722c_candidate3",
+      "old_local_level": 2,
+      "new_local_level": 2,
+      "old_best_TM": 0.9699,
+      "new_best_TM": 0.9699,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l96_9003044e98f7dfc2_candidate6",
+      "old_local_level": 4,
+      "new_local_level": 3,
+      "old_best_TM": 0.4668,
+      "new_best_TM": 0.625,
+      "novelty_downgraded": true
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l59_a8117845ac23722c_candidate5",
+      "old_local_level": 2,
+      "new_local_level": 2,
+      "old_best_TM": 0.9687,
+      "new_best_TM": 0.9687,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l96_9003044e98f7dfc2_candidate10",
+      "old_local_level": 4,
+      "new_local_level": 3,
+      "old_best_TM": 0.4945,
+      "new_best_TM": 0.5384,
+      "novelty_downgraded": true
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate6",
+      "old_local_level": 2,
+      "new_local_level": 2,
+      "old_best_TM": 0.9334,
+      "new_best_TM": 0.9334,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate9",
+      "old_local_level": 2,
+      "new_local_level": 2,
+      "old_best_TM": 0.9163,
+      "new_best_TM": 0.9261,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate10",
+      "old_local_level": 2,
+      "new_local_level": 2,
+      "old_best_TM": 0.9245,
+      "new_best_TM": 0.9245,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8_candidate1",
+      "old_local_level": 2,
+      "new_local_level": 2,
+      "old_best_TM": 0.8298,
+      "new_best_TM": 0.8872,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8_candidate2",
+      "old_local_level": 2,
+      "new_local_level": 2,
+      "old_best_TM": 0.8338,
+      "new_best_TM": 0.8868,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8_candidate3",
+      "old_local_level": 2,
+      "new_local_level": 2,
+      "old_best_TM": 0.8372,
+      "new_best_TM": 0.8758,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l80_92df4b35cf6da70a_candidate1",
+      "old_local_level": 3,
+      "new_local_level": 3,
+      "old_best_TM": 0.6712,
+      "new_best_TM": 0.6787,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l80_92df4b35cf6da70a_candidate2",
+      "old_local_level": 3,
+      "new_local_level": 3,
+      "old_best_TM": 0.6816,
+      "new_best_TM": 0.6816,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l80_92df4b35cf6da70a_candidate4",
+      "old_local_level": 3,
+      "new_local_level": 3,
+      "old_best_TM": 0.6702,
+      "new_best_TM": 0.6961,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l99_ac96ee385dcb8613_candidate2",
+      "old_local_level": 3,
+      "new_local_level": 3,
+      "old_best_TM": 0.5213,
+      "new_best_TM": 0.5875,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0_candidate4",
+      "old_local_level": 4,
+      "new_local_level": 3,
+      "old_best_TM": null,
+      "new_best_TM": 0.5546,
+      "novelty_downgraded": true
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0_candidate5",
+      "old_local_level": 3,
+      "new_local_level": 3,
+      "old_best_TM": 0.5273,
+      "new_best_TM": 0.5273,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0_candidate7",
+      "old_local_level": 4,
+      "new_local_level": 4,
+      "old_best_TM": 0.476,
+      "new_best_TM": 0.476,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l100_39ede5dc7779065e_candidate5",
+      "old_local_level": 3,
+      "new_local_level": 3,
+      "old_best_TM": 0.634,
+      "new_best_TM": 0.6363,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l100_39ede5dc7779065e_candidate8",
+      "old_local_level": 3,
+      "new_local_level": 3,
+      "old_best_TM": 0.6228,
+      "new_best_TM": 0.6369,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l99_e7484f3e947890e8_candidate1",
+      "old_local_level": 3,
+      "new_local_level": 3,
+      "old_best_TM": 0.7449,
+      "new_best_TM": 0.7449,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l99_e7484f3e947890e8_candidate2",
+      "old_local_level": 3,
+      "new_local_level": 3,
+      "old_best_TM": 0.7671,
+      "new_best_TM": 0.7671,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "c4_tfr1_groove_human_forced_l99_e7484f3e947890e8_candidate5",
+      "old_local_level": 3,
+      "new_local_level": 3,
+      "old_best_TM": 0.7428,
+      "new_best_TM": 0.7428,
+      "novelty_downgraded": false
+    },
+    {
+      "name": "KNOWN_TFR1_POSITIVE_CONTROL",
+      "old_local_level": 1,
+      "new_local_level": 1,
+      "old_best_TM": 0.9946,
+      "new_best_TM": 0.9946,
+      "novelty_downgraded": false
+    }
+  ],
+  "new_gpu_spend_usd": 0
+}
