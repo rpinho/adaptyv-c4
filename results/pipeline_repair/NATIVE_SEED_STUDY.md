@@ -39,9 +39,10 @@ each allocation; after the fifth, GPU resources must be zero. No idle keepalive.
 Exact-call cancellation is the emergency path. Global CANCEL file is in the
 series directory. Process/call/state evidence must be read fresh before claims.
 
-Current72 regressions include finite count/unique seeds, physical-release failure,
+Current73 regressions include finite count/unique seeds, physical-release failure,
 scientific error, admitted-output stop and terminal-resume prevention. Source
-review requested from authorized Astra reviewer before launch. CPU domain
+review completed before launch: `../astra_review/NATIVE_SEED_QUEUE_REVIEW.md`,
+no remaining blocker after corrections. CPU domain
 preparation/restoration stays separate and requires future full-native refolding;
 it is not being switched into this study.
 
@@ -57,4 +58,6 @@ outages. Actual submission-to-verified-release time is recorded conservatively;
 remaining complete reserve is required before every successor. Setup/storage
 remain extra. Existing explicit
 continued-modeling/spend authorization applies. No accounts, submissions or
-main-branch writes. This decision is not evidence the queue has launched.
+main-branch writes. The queue launched08:08:55EDT, PID71597, first call
+fc-01M5HR7B9KNAFWX9SEFFPR7HT9 initiallyqueued. Fresh evidence belongs in
+results/modal_native_replicates_v14/, not assumptions from this decision.

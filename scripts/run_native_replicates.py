@@ -19,10 +19,13 @@ SEEDS=tuple(range(20261022,20261027))
 
 
 def require_idle():
+    snapshot={}
     for name in ('run_campaign','frame_diagnostic'):
         stats=driver.modal.Function.from_name('adaptyv-c4-native-control',name).get_current_stats()
+        snapshot[name]=dict(runners=stats.num_total_runners,inputs=stats.num_running_inputs,backlog=stats.backlog)
         if stats.num_total_runners or stats.num_running_inputs or stats.backlog:
             raise RuntimeError('Another input/container exists; no new spawn')
+    return dict(checked=time.time(),functions=snapshot)
 
 
 def main():
@@ -55,7 +58,8 @@ def main():
             result=json.loads(prior.read_text()) if prior.exists() else {}
             try:
                 if not (result.get('gpu_released_verified') and result.get('cpu_followup_returncode')==0):
-                    if not result.get('call_id'):require_idle()
+                    if not result.get('call_id'):
+                        state['pre_spawn_idle_snapshot']=require_idle();driver.atomic(path,state)
                     result=driver.main(run,{'campaign_seed':seed},max_runtime_seconds=LIMIT_SECONDS)
                 if not result.get('gpu_released_verified') or result.get('status')!='returned' or result.get('result',{}).get('status')!='completed':
                     raise RuntimeError('Model execution or actual GPU release failed')

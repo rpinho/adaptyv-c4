@@ -23,7 +23,7 @@ Tests include a rigidly moved native domain with a deliberately distant
 nonbinding30-residue fixture, an omitted-receptor-protein overlap, a local patch
 deformation, wrong chemistry, deleted internal residue and atom-preserving
 preparation. The positive fixture tests restoration only; it is not an engineered
-binder. The expanded project suite currently passes72 tests in `.venv-rosetta`;
+binder. The expanded project suite currently passes73 tests in `.venv-rosetta`;
 the log is in
 `../pipeline_repair/regression_tests.log`.
 
