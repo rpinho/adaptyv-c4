@@ -78,3 +78,53 @@ $3.9492/hour; A10080GB fallback $2.4984/hour. Requested4physicalCPUcores and64Gi
 add at most$0.700128/hour. H100 runtime upper **$4.649328/hour**; the35min local
 envelope is approximately **$2.7121**, plus setup/storage. Existing continued
 modeling/spending authorization applies; no repeated permission wait.
+
+## Completed v9 / conditional v10 follow-up
+
+V9 completed50 actual gradient rounds on H100 with finite gradients and no exact
+collapse. It yielded **0 accepted designs**, rejected at screen for pLDDT0.54
+(i_pTM0.17). No round approached the requested patch: closest CA distance38.512A
+was the initial prediction; final54.747A. The lowest-loss round was24, not the
+final round. Minimum adjacent-CA distance over the run fell to0.376A, so
+noncollapse must not be described as a physically valid fold. Raw round evidence
+and summary: `../modal_repaired_native_v9/mirrored/physical_steps.jsonl`
+and `../modal_repaired_native_v9/RESULTS.json`.
+
+Actual GPU release was verified at07:24:09EDT with zero runners/inputs/backlog;
+CPU follow-up returned0 and explicitly no accepted scaffolds. Conservative
+submission-through-release runtime estimate **$0.5836719**, Modal cumulative
+**$4.6368557**. This morning run is separate from the overnight gap.
+
+Astra supported a conditional **single-variable objective test**, not a promised
+fix or proven superior hit-rate strategy: narrow interface_contacts cutoff20→8A.
+Its exact CPU loss check found this removes the low-cost19A loophole, but does
+not establish a new far-distance gradient or solve acquisition. Therefore the
+motivation is stricter proximity, not rescuing absent/saturated guidance.
+
+Prepared `c4_interface8_v10` only after the completed off-patch v9 result. Same
+native target/local frame, first seed/length, repaired frames, all other loss
+weights and acceptance gates; one trajectory and identical runtime/release caps.
+Monitoring now also records already-weighted scalar loss components. These
+describe numerical loss reduction, not gradient dominance. Raw loss values
+cannot be compared across different objective cutoffs as if unchanged.
+All **56** local regressions pass including the exact configuration delta.
+New image deployment builds on CPU before any new allocation; live state for
+this prospective test will be `../modal_interface8_v10/supervisor.json`.
+
+V10 completion:50 gradients,0 accepted, screen rejectionpLDDT.31/i_pTM.20.
+Closest requested-patch distance38.806A was again the initial round; final48.779A.
+Actual GPU release and CPU no-acceptance follow-up verified. Runtime upper
+$0.5815800, Modal cumulative$5.2184357. Next single targeting-heuristic rationale
+and explicit surrogate/native-restoration limits are in
+`FORCED_TARGETING_DECISION.md`; all57 local regressions pass. CPU image build
+must finish before any new allocation. No early surrogate result may qualify.
+# Latest completed checkpoint: 2026-10-22 07:45 EDT
+
+All three morning tests completed: v9/v10/v11 each50 gradients, each0 accepted,
+all pLDDT screen rejection. V11 .36pLDDT/.13iPTM; forced surrogate sequence375
+changes in every observed call. Its1.255A patch CA minimum is overlap, not
+binding, and no native restoration occurred. See the run's RESULTS.json.
+Actual resource release verified07:45:29EDT (zero runners/inputs/backlog).
+Modal cumulative runtime upper estimate$5.8023551; newly supervised Runpod
+$1.7952 plus historical$33.87; consultations$1.1922999. Other billing remains
+unreconciled. No overnight execution is claimed. No automatic next GPU job.

@@ -60,6 +60,14 @@ image = (
         "config=p.make_config(json.load(open('/opt/c4/campaign.json')),p.REPAIRED,{'campaign_seed':20261021},'/tmp/preflight-only');"
         "json.dump(config,open('/opt/c4/repaired_preflight.json','w'))\"",
         "JAX_PLATFORMS=cpu python /opt/c4/monitored_design.py --preflight /opt/c4/repaired_preflight.json /opt/c4/prepared_frame_preflight.json",
+        "python -c \"import sys,json;sys.path.insert(0,'/opt/c4');import search_policy as p;"
+        "config=p.make_config(json.load(open('/opt/c4/campaign.json')),p.FORCED,{'campaign_seed':20261021},'/tmp/forced-preflight-only');"
+        "json.dump(config,open('/opt/c4/forced_preflight.json','w'))\"",
+        "JAX_PLATFORMS=cpu python /opt/c4/monitored_design.py --preflight /opt/c4/forced_preflight.json /opt/c4/forced_prepared_frame_preflight.json",
+        "python -c \"import sys,json;sys.path.insert(0,'/opt/c4');import search_policy as p;"
+        "config=p.make_config(json.load(open('/opt/c4/campaign.json')),p.CONFIDENCE,{'campaign_seed':20261021},'/tmp/confidence-preflight-only');"
+        "json.dump(config,open('/opt/c4/confidence_preflight.json','w'))\"",
+        "JAX_PLATFORMS=cpu python /opt/c4/monitored_design.py --preflight /opt/c4/confidence_preflight.json /opt/c4/confidence_prepared_frame_preflight.json",
     )
 )
 
@@ -95,7 +103,8 @@ def run_campaign(run_name: str = RUN_NAME, overrides: dict | None = None):
     policy = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(policy)
     profile=policy.profile_for_name(run_name)
-    runtime_limit=1800 if profile==policy.REPAIRED else 7200
+    monitored=profile in {policy.REPAIRED,policy.INTERFACE8,policy.FORCED,policy.CONFIDENCE}
+    runtime_limit=1800 if monitored else 7200
     overrides = overrides or {}
     if set(overrides) - {"campaign_seed"}:
         raise ValueError("Only a new independent seed is allowed in this series")
@@ -144,8 +153,10 @@ def run_campaign(run_name: str = RUN_NAME, overrides: dict | None = None):
         (run / "campaign.json").write_text(json.dumps(config, indent=2) + "\n")
         shutil.copy(config['targets'][0]['target_path'], run / "target.pdb")
         shutil.copy("/opt/bindcraft-runtime-freeze.txt", run / "runtime-freeze.txt")
-        if profile==policy.REPAIRED:
-            shutil.copy('/opt/c4/prepared_frame_preflight.json',run/'prepared_frame_preflight.json')
+        if monitored:
+            preflight=('confidence_prepared_frame_preflight.json' if profile==policy.CONFIDENCE else
+                       'forced_prepared_frame_preflight.json' if profile==policy.FORCED else 'prepared_frame_preflight.json')
+            shutil.copy('/opt/c4/'+preflight,run/'prepared_frame_preflight.json')
         status.update(status="modeling", gpu=gpu, jax=jax.__version__, checkpoints=checksums,
                       container=os.environ.get("MODAL_TASK_ID"), max_runtime_seconds=runtime_limit)
         save("status.json", status)
@@ -153,7 +164,7 @@ def run_campaign(run_name: str = RUN_NAME, overrides: dict | None = None):
         print(json.dumps(status), flush=True)
         with (run / "worker.log").open("w") as log:
             command=(["python","/opt/c4/monitored_design.py",str(run/'campaign.json'),str(run/'physical_steps.jsonl')]
-                     if profile==policy.REPAIRED else ["bindcraft","design",str(run/'campaign.json')])
+                     if monitored else ["bindcraft","design",str(run/'campaign.json')])
             proc = subprocess.Popen(command,
                                     cwd="/opt/bindcraft", stdout=log, stderr=subprocess.STDOUT)
             deadline = started + runtime_limit-60

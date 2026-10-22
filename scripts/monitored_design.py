@@ -26,13 +26,36 @@ def preflight(config_path,output_path):
     import numpy as np
     import bindcraft.af2 as af2
     from bindcraft.settings import read_settings,build_design_settings
+    from bindcraft.loss import build_losses
     from bindcraft.protein_preparation import initialize_design_trajectory
+    from bindcraft.protein import Protein
+    from bindcraft.epitope_targeting import force_epitope_targeting
     from bindcraft.frame_guard import safe_initial_atom_positions
     from bindcraft.af.alphafold.common import residue_constants
     from bindcraft.af.alphafold.model.quat_affine import make_transform_from_reference
-    design=build_design_settings(read_settings(config_path))
+    settings=read_settings(config_path)
+    raw_settings=json.loads(Path(config_path).read_text())
+    losses=build_losses(settings,seed=20261021)
+    effective_weight=float(losses['plddt_loss'].weight)
+    if effective_weight!=raw_settings['weights_plddt_loss']:
+        raise ValueError('Parsed/built pLDDT loss weight differs from declared input')
+    if effective_weight==.5:
+        baseline=build_losses(settings|{'weights_plddt_loss':.1},seed=20261021)
+        if set(baseline)!=set(losses):raise ValueError('Confidence ablation changed active losses')
+        for name,entry in losses.items():
+            expected=.1 if name=='plddt_loss' else entry.weight
+            if baseline[name].weight!=expected or baseline[name].required_states!=entry.required_states:
+                raise ValueError('Confidence ablation changed another built objective')
+            if baseline[name].function.keywords!=entry.function.keywords:
+                raise ValueError('Confidence ablation changed bound loss parameters')
+    design=build_design_settings(settings)
+    reference=next(iter(Protein.from_structure(settings['targets'][0]['target_path'],chains='A').values()))
+    reference_sequence=np.asarray(reference.sequence).argmax(-1)
     key=jax.random.split(jax.random.fold_in(jax.random.PRNGKey(20261021),1))[0]
     states,_,_=initialize_design_trajectory(design,key)
+    # run_trajectory applies this AFTER initialization; include the real operation
+    # before auditing any claim about the first search representation.
+    if settings['forced_targeting']:states=force_epitope_targeting(states,settings)
     proteins=next(iter(states.values()))
     if len(proteins[design.designed_binder_chain])!=69:raise ValueError('Unexpected matched first-trajectory length')
     report=dict(status='passed',devices=[str(d) for d in jax.devices()],chains={})
@@ -42,11 +65,17 @@ def preflight(config_path,output_path):
         np.testing.assert_allclose(np.linalg.det(np.asarray(rotation)),1,atol=1e-5)
         if not np.isfinite(np.asarray(translation)).all():raise ValueError('Nonfinite real prepared translation')
         report['chains'][name]=dict(residues=len(protein),fully_observed_backbone_residues=int(np.asarray(protein.atom_mask)[:,:3].all(-1).sum()))
+        if name!=design.designed_binder_chain:
+            changes=int((np.asarray(protein.sequence).argmax(-1)!=reference_sequence).sum())
+            if bool(changes)!=bool(settings['forced_targeting']):raise ValueError('Prepared target representation does not match the declared native/surrogate mode')
+            report['chains'][name]['sequence_differences_from_native_reference']=changes
     entries=importlib.metadata.entry_points(group='console_scripts',name='bindcraft')
     if len(entries)!=1:raise ValueError('Ambiguous CLI')
     next(iter(entries)).load()
     report['af2_sha256']=hashlib.sha256(Path(af2.__file__).read_bytes()).hexdigest()
-    report['target_scope']='Real first native-target/binder preparation; no model forward, sequence gradient or binding claim'
+    report['forced_targeting']=settings['forced_targeting']
+    report['effective_plddt_loss_weight']=effective_weight
+    report['target_scope']='Complete-target geometry; prepared sequence may be a forced-targeting surrogate. No forward, gradient or binding claim.'
     Path(output_path).write_text(json.dumps(report,indent=2)+'\n')
     print(json.dumps(report),flush=True)
 
@@ -57,9 +86,13 @@ def main(config_path,output_path):
     import time
     import numpy as np
     import bindcraft.af2 as af2
+    from bindcraft.protein import Protein
     from bindcraft.settings import read_settings,build_design_settings
 
-    design=build_design_settings(read_settings(config_path))
+    settings=read_settings(config_path)
+    design=build_design_settings(settings)
+    reference=next(iter(Protein.from_structure(settings['targets'][0]['target_path'],chains='A').values()))
+    reference_sequence=np.asarray(reference.sequence).argmax(-1)
     binder_name=design.designed_binder_chain
     original=af2.AlphaFoldDesignModel.sequence_gradients
     calls=0
@@ -82,6 +115,11 @@ def main(config_path,output_path):
             patch=np.asarray(target.atoms[:,1])[np.isin(np.asarray(target.residue_index),[205,206,208,209,210])]
             metrics=geometry_metrics(ca,patch)
             record=dict(step=calls,unix=time.time(),loss=float(loss),**metrics)
+            record['target_sequence_differences_from_native']=int((np.asarray(target.sequence).argmax(-1)!=reference_sequence).sum())
+            record['search_target_is_native']=record['target_sequence_differences_from_native']==0
+            active_losses=args[1] if len(args)>1 else kwargs['losses']
+            record['weighted_loss_components']={name:float(np.asarray(value)) for name,value in prediction.metrics.items()
+                if name in active_losses and np.asarray(value).ndim==0}
             if calls==1:
                 states=args[0] if args else kwargs['protein_states']
                 logits=np.asarray(next(iter(states.values()))[binder_name].sequence)

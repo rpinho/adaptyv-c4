@@ -1,16 +1,17 @@
 {
-  "checked_local": "2026-10-22T07:17:46.878523-04:00",
-  "status": "modeling",
-  "gpu": "NVIDIA H100 80GB HBM3, 81559 MiB, 610.57.04",
-  "call_id": "fc-01M5HN7HYP3ZEQ188GS1CVX0YN",
+  "checked": 1792669762.985226,
+  "status": "completed",
+  "actual_gradient_calls": 50,
+  "generator_accepted_designs": 0,
+  "qualified_candidates": 0,
+  "gpu_released_verified": true,
   "function_stats": {
     "backlog": 0,
-    "num_total_runners": 1,
-    "num_running_inputs": 1,
+    "num_total_runners": 0,
+    "num_running_inputs": 0,
     "input_headroom": 0
   },
-  "submission_elapsed_seconds": 69.37602710723877,
-  "current_run_runtime_estimate_upper_usd": 0.08959775148845671,
-  "cumulative_modal_runtime_estimate_upper_usd": 4.1427815792955105,
-  "estimate_basis": "Submission elapsed conservatively includes queue/startup; setup/storage and prior campaigns separate"
+  "result_file": "results/modal_repaired_native_v9/RESULTS.json",
+  "conservative_runtime_estimate_usd": 0.5836718690972709,
+  "cumulative_modal_runtime_estimate_usd": 4.636855696904325
 }

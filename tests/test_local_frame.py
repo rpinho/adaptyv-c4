@@ -53,10 +53,36 @@ class FrameAndPolicyTests(unittest.TestCase):
         expected['targets']=[dict(base['targets'][0],target_path='/opt/c4/local-frame-target.pdb')]
         self.assertEqual(changed,expected)
 
+    def test_interface8_changes_only_the_contact_objective_from_repaired_control(self):
+        base=json.loads((ROOT/'results/gpu_campaign_v3/campaign.json').read_text())
+        reference=policy.make_config(base,policy.REPAIRED,{'campaign_seed':20261021},'/results/test')
+        changed=policy.make_config(base,policy.INTERFACE8,{'campaign_seed':20261021},'/results/test')
+        reference['campaign_name']=policy.INTERFACE8
+        reference['losses']['interface_contacts']['params']['cutoff']=8.0
+        self.assertEqual(changed,reference)
+        self.assertEqual(base['losses']['interface_contacts']['params']['cutoff'],20.0)
+
+    def test_forced_search_changes_only_targeting_mode_from_native_control(self):
+        base=json.loads((ROOT/'results/gpu_campaign_v3/campaign.json').read_text())
+        reference=policy.make_config(base,policy.REPAIRED,{'campaign_seed':20261021},'/results/test')
+        changed=policy.make_config(base,policy.FORCED,{'campaign_seed':20261021},'/results/test')
+        reference.update(campaign_name=policy.FORCED,forced_targeting=True)
+        self.assertEqual(changed,reference)
+        self.assertEqual(changed['losses']['interface_contacts']['params']['cutoff'],20.0)
+        self.assertFalse(base['forced_targeting'])
+
     def test_structural_admission_alone_never_triggers_more_gpu_sampling(self):
         selected,reason=policy.next_profile(policy.PROFILES[0],1,['screen'])
         self.assertIsNone(selected)
         self.assertEqual(reason,'native_context_outputs_require_acquisition_review')
+
+    def test_confidence_profile_changes_only_effective_weight_from_forced_control(self):
+        base=json.loads((ROOT/'results/gpu_campaign_v3/campaign.json').read_text())
+        reference=policy.make_config(base,policy.FORCED,{'campaign_seed':20261021},'/results/test')
+        changed=policy.make_config(base,policy.CONFIDENCE,{'campaign_seed':20261021},'/results/test')
+        reference.update(campaign_name=policy.CONFIDENCE,weights_plddt_loss=.5)
+        self.assertEqual(changed,reference)
+        self.assertEqual(base['weights_plddt_loss'],.1)
 
     def test_later_stage_failure_requires_different_diagnosis(self):
         selected,reason=policy.next_profile(policy.PROFILES[0],0,['anneal'])

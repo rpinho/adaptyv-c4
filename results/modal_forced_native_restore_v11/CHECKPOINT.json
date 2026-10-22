@@ -1,0 +1,17 @@
+{
+  "checked": 1792669762.986408,
+  "status": "completed",
+  "actual_gradient_calls": 50,
+  "generator_accepted_designs": 0,
+  "qualified_candidates": 0,
+  "gpu_released_verified": true,
+  "function_stats": {
+    "backlog": 0,
+    "num_total_runners": 0,
+    "num_running_inputs": 0,
+    "input_headroom": 0
+  },
+  "result_file": "results/modal_forced_native_restore_v11/RESULTS.json",
+  "conservative_runtime_estimate_usd": 0.5839193872861862,
+  "cumulative_modal_runtime_estimate_usd": 5.8023551003900335
+}

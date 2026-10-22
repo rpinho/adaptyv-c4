@@ -1,0 +1,6 @@
+{
+  "af2_import_path": "/opt/bindcraft/bindcraft/af2.py",
+  "af2_sha256": "fc5e8aa9528d79b569a00d0cbab0c3fed283bdb9fb8df2ee940f8256d2c1a2bf",
+  "monitor_sha256": "ae867fb92a63e1f9c298fa179b81348814615d4ec8cb84559484b3ac2870a933",
+  "scope": "Observation and numerical-abort wrapper; no loss/optimizer/acceptance changes"
+}

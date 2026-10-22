@@ -12,4 +12,7 @@ results/modal_campaign_v5/**/driver.lock
 results/modal_campaign_v5/search.lock
 results/modal_frame_diagnostic_v8/driver.lock
 results/modal_repaired_native_v9/driver.lock
+results/modal_interface8_v10/driver.lock
+results/modal_forced_native_restore_v11/driver.lock
+results/modal_forced_confidence_v12/driver.lock
 data/*.cif

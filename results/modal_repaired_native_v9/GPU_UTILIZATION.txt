@@ -1,0 +1,2 @@
+2026/10/22 11:19:12.847 UTC, NVIDIA H100 80GB HBM3, GPU utilization 100%, memory used 42445 MiB
+Source: modal container exec nvidia-smi query in the existing run container, no second GPU allocation.

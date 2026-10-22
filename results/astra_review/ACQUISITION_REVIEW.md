@@ -104,3 +104,94 @@ Only this new review file was written. No pipeline settings, running processes o
 Reviewed `scripts/monitored_design.py`, the repaired-v9 policy, Modal invocation and one-run driver. No additional critical execution or sampling blocker was found. The wrapper calls the original `sequence_gradients` once with unchanged arguments and returns its original values; observation does not consume RNG or change objectives. Default binder-alone validation uses `predict`, so it does not hit the complex-only gradient observer. The repaired profile retains the native local-frame target, seed, length distribution, losses and acceptance gates, with one trajectory and no automatic successor.
 
 The necessary `compile_only` passthrough and Python3.12-safe `next(iter(entries))` entry-point access were verified after correction. The first true step now asserts69 residues and records initial sequence-array provenance; imported AF2 and monitor hashes are recorded. I also flagged structured `.jsonl` mirroring and unguarded selection of a complex from future binder-alone gradient calls; the parent reports the former added and the latter receiving explicit non-complex handling. These do not justify delaying the current native one-target experiment. This was a CPU/source review, not a full installed CLI integration execution or GPU launch by the reviewer.
+
+## Conditional follow-up — contact cutoff20→8Å
+
+At the reviewed partial v9 checkpoint,32 true gradient calls had been mirrored; the trajectory was incomplete. The parent reported total loss falling15.68→best10.24 while no step approached the patch more closely than the initial38.512Å. This is not yet a completed rejection. Parent's preceding runtime checkpoint was cumulative Modal upper estimate$4.389; this CPU review adds no GPU usage.
+
+**If v9 finishes off-patch, one matched cutoff8 trajectory is a defensible objective ablation. It is not an established remedy or demonstrably a better hit-rate bet than additional seeds.** Preserve native target, frames, initial sequence/model sampling, seed, length, contacts-per-residue2, every other weight, final acceptance gates and finite stop limits. Its advantage over another unchanged seed is diagnostic information about the broad contact objective. More seeds instead probe stochastic variability; neither has a proven success advantage from this sample size.
+
+I executed the exact pinned `distogram_pair_loss(binary=False)` and its JAX gradient on synthetic64-bin logits. A20Å cutoff selects58 bins;8Å selects20. These are single-pair synthetic values, not real v9 network-gradient measurements:
+
+| Predicted logits | Loss at20 /8Å | Logit-gradient norm at20 /8Å |
+|---|---:|---:|
+| Uniform | 4.15888 /4.15888 | 0.04020 /0.18541 |
+| Strong peak in far/overflow bin | 12.00039 /12.00039 | 1.00819 /1.02431 |
+| Strong peak at19.19Å | 0.00459 /12.00039 | 0.00427 /1.02431 |
+| Strong peak near5Å | 0.00459 /0.00179 | 0.00427 /0.00170 |
+
+The narrower cutoff closes the19Å proximity loophole and redistributes encouragement into shorter bins. It **does not fix a demonstrated vanishing far-distance gradient**: both cutoffs already have nonzero, similar logit gradients when the distribution strongly predicts far separation. For this loss, the sum of selected-bin logit derivatives is `P(selected bins)−1`, so small selected probability does not by itself imply saturation. Gradients through the actual network to sequence can still be weak, conflicting or unhelpful. The distogram's far bin also does not distinguish a38Å Cartesian miss from a63Å miss as a smooth physical distance restraint would. Changing the cutoff may make optimization harder; predicted short-range mass need not produce a physical interface.
+
+Judge the conditional experiment by actual approach/contact and retained geometry/confidence, followed by unchanged native qualification. Do not compare raw total losses between the20Å and8Å runs as if they were the same objective. A cutoff8 result that lowers its objective while remaining off-patch would argue against further blind weight/cutoff escalation.
+
+**Logging weighted scalar loss components is useful, but does not establish gradient dominance.** In `af2.py`, `weighted_losses` are summed into the returned loss and individually inserted into `prediction.metrics`; these values are already weighted. Record the exact active loss keys, without multiplying weights again or mixing confidence metrics such as iPTM into the sum. For this one-state run, their sum should reproduce the total within numerical tolerance. This identifies which numeric terms account for improvement while the patch remains distant. It cannot reveal individual sequence-gradient norms, gradient cancellation or causal control of geometry. Those require a separate derivative decomposition; an aggregate nonzero gradient is insufficient. In future multi-state use, avoid summing a duplicated shared loss from multiple prediction dictionaries.
+
+No root code or running computation was changed for this follow-up. Recommendation remains conditional on v9 completion, with at most one declared successor experiment rather than an automatic sweep.
+
+## Conditional forced-targeting preparation — native restoration and admission
+
+V9 subsequently completed50 rounds and failed screen (pLDDT0.54/iPTM0.17), with no patch acquisition. Its GPU release was verified by the parent. V10 is a separate cutoff8 test underway; **this note neither predicts its result nor authorizes a forced-targeting successor**. Prior completed Modal runtime upper estimate is$4.6368557, with v10 accruing separately; this consultation adds no GPU usage. Runpod$1.7952 and other/consultation costs remain separate.
+
+For the declared single-target, ordinary binder configuration, the pinned source's normal success path restores native target chemistry before later qualification:
+
+1. `run_trajectory()` saves `wild_type_states` before constructing the lysinated representation. Screen, refine and anneal therefore optimize and filter the artificial target; failures saved there are **not native candidates**.
+2. Restoration is the **prepare operation at the start of harden**, before its gradient calls and stage filters (`trajectory.py:170–173,220–221,308`). It replaces the complete target Protein objects and the schedule's target-state reference with the originals, including sequence, atom positions, masks and flags. It retains the designed binder.
+3. `build_design_schedule()` calls `restart_for_stage()` with those restored targets. The schedule replaces its target entries and clears cached predictions (`target_schedule.py:20–24,155–160`). I found no stale lysinated-target cache feeding harden in this path.
+4. Harden predictions are newly generated; earlier best-round predictions are not reused across the new gradient-stage call. Optional mutation polish and the trajectory final gate follow native restoration. A failure in an earlier stage blocks the MPNN branch (`campaign.py:203`).
+5. MPNN preparation explicitly clears target DESIGN flags. Candidate validation inserts only the redesigned binder into the supplied restored target states. The complete PDB target does not take the FASTA-cropping path. Complex refolds and their final filters therefore use the restored target; binder-alone validation has no receptor. Only candidates without failed filters are returned, and accepted structures are written from those validated predictions.
+
+Sources: pinned [trajectory flow](https://raw.githubusercontent.com/PacesaLab/BindCraft2/b6fb3ae15ab6a702f1156cffc11bcc3323c2fd06/bindcraft/trajectory.py), [schedule restart](https://raw.githubusercontent.com/PacesaLab/BindCraft2/b6fb3ae15ab6a702f1156cffc11bcc3323c2fd06/bindcraft/target_schedule.py), [MPNN preparation and refold validation](https://raw.githubusercontent.com/PacesaLab/BindCraft2/b6fb3ae15ab6a702f1156cffc11bcc3323c2fd06/bindcraft/MPNN_stage.py), and [accepted-output writing](https://raw.githubusercontent.com/PacesaLab/BindCraft2/b6fb3ae15ab6a702f1156cffc11bcc3323c2fd06/bindcraft/campaign.py).
+
+**This is a source-backed success-path expectation, not an independent native-identity guarantee at every output boundary.** Upstream treats its supplied original target as the reference and does not explicitly compare the final receptor sequence with the expected UniProt122–760 sequence immediately before acceptance. Early saved files can legitimately remain lysinated. Keep the explicit local `canonicalize()` sequence/numbering/connectivity/full-context admission guard authoritative, and require native identity in the actual refold/output before counting a qualifying parent or running pH scoring. A native-sequence/hash assertion at restoration and on final prediction/output would make a future representation test easier to audit; physical backbone/dimer/glycan checks remain necessary regardless of identity.
+
+The conditional hypothesis is valid only with accurate labeling: **artificial off-patch chemistry during search, complete receptor backbone retained, native restoration and qualification afterward**. It satisfies a native-context admission requirement only when the actual restored output passes that admission. It does not preserve native chemistry throughout optimization, and a surrogate-only confidence or acquisition improvement cannot be counted as native binding. No code, setting or GPU state was changed by this source review.
+
+## Existing COM loss is not local-patch guidance
+
+The pinned `com_distance_loss` (`loss.py:457–466`) uses **all resolved predicted target Cα atoms**, without a HOTSPOT mask or a patch-selector parameter. Its expression is `ReLU(distance(binder_CA_centroid, whole_target_CA_centroid) − radius_ratio × binder_radius_of_gyration)`, with default `radius_ratio=0.9`. Despite the name, these are geometric Cα centroids, not atom-mass-weighted centers.
+
+Do not enable this term as though it attracts the binder to the apical hotspot. It can reward movement toward the whole receptor's interior or another surface; a larger binder radius can also reduce the penalty. A hotspot-specific Cartesian guidance term would be a new objective requiring separate numerical checks for mapping/padding, rigid-transform invariance, finite gradients, and size/clash loopholes. It should not be added simultaneously with the proposed single-variable forced-targeting experiment.
+
+The parent's partial v10 component comparison (first→step26: compactness3.961→−0.495, binder_contacts4.783→3.706, interface_contacts8.085→8.167) supports attributing much of the **numerical** objective reduction to compactness, without establishing sequence-gradient dominance. V10 was incomplete at this checkpoint. This COM assessment used source/CPU only and incurred no new GPU usage or code changes.
+
+## V11 follow-up: confidence-weight sensitivity test
+
+V11 completed50 gradients and failed screen (parent-reported pLDDT0.36/iPTM0.13); none of its50 predictions reached native restoration. All retained375 surrogate target substitutions. The closest hotspot approach was an overlap (Cα1.255Å), and the best-loss round also had malformed adjacent binder Cα spacing0.769Å. This is neither productive native acquisition nor evidence of a valid fold. GPU release was verified by the parent; this review used no GPU.
+
+**A single matched0.1→0.5 pLDDT-weight test is defensible, with a configuration correction: use top-level `weights_plddt_loss` for the pinned revision.** It is not obsolete. `settings.py` accepts only `params`/`prediction_state` within a loss entry; `build_losses()` reads `settings['weights_plddt_loss']`. V11's actual campaign metadata records that key at0.1 and binds the loss to `prediction_state='complex', chain='binder'`. CPU execution of the exact pinned schema-validation functions produced:
+
+- `losses.plddt_loss.weight=0.5`: `ValueError: unrecognized campaign settings: losses.plddt_loss.weight`.
+- Top-level `weights_plddt_loss=0.5` with existing loss parameters: accepted by the schema check.
+
+This CPU extraction is not a full installed-stack settings load. Before allocation, run the following in the actual pinned image, passing the archived V11 campaign path; it checks the effective objective rather than merely the JSON spelling:
+
+```python
+import copy, json
+from pathlib import Path
+from bindcraft.settings import load_settings
+from bindcraft.loss import build_losses
+
+raw = json.loads(Path(V11_CAMPAIGN_PATH).read_text())
+changed = copy.deepcopy(raw)
+changed['weights_plddt_loss'] = 0.5
+a = build_losses(load_settings(raw), seed=20261021)
+b = build_losses(load_settings(changed), seed=20261021)
+assert a.keys() == b.keys()
+assert a['plddt_loss'].weight == 0.1
+assert b['plddt_loss'].weight == 0.5
+for name in a:
+    assert a[name].required_states == b[name].required_states
+    assert a[name].function.keywords == b[name].function.keywords
+    if name != 'plddt_loss':
+        assert a[name].weight == b[name].weight
+assert b['plddt_loss'].function.keywords['prediction_state'] == 'complex'
+assert b['plddt_loss'].function.keywords['chain'] == 'binder'
+print({name: {'before': a[name].weight, 'after': b[name].weight,
+              'params': b[name].function.keywords} for name in a})
+```
+
+The pinned loss minimizes the DESIGN-residue mean of `1−predicted_pLDDT`; in this configuration it evaluates the binder in the complex, not an independent free-binder refold. Increasing the coefficient multiplies **this term's contribution to the sequence derivative by five at an identical model/sequence state**. It does not establish that the term dominates the aggregate gradient or that later updates will be five times larger. Scalar loss magnitudes, including compactness accounting for most numerical improvement, cannot establish gradient dominance, cancellation or relative control of geometry. [Pinned loss implementation](https://raw.githubusercontent.com/PacesaLab/BindCraft2/b6fb3ae15ab6a702f1156cffc11bcc3323c2fd06/bindcraft/loss.py); [pinned settings parser](https://raw.githubusercontent.com/PacesaLab/BindCraft2/b6fb3ae15ab6a702f1156cffc11bcc3323c2fd06/bindcraft/settings.py).
+
+This is an **indirect fold-confidence hypothesis**, not a direct geometry-repair objective: there is no peptide-bond, adjacent-Cα, nonbonded-clash or hotspot-distance term inside `plddt_loss`. It could favor a better folded binder, merely raise predicted confidence in an incorrect pose, or trade away approach to the patch. The value0.5 is a declared sensitivity level, not a calibrated optimum.
+
+Keep V11's complete scientific profile, initial logit draw/length69, seed, forced representation, target, other weights/cutoff, sampling, gates and finite limits unchanged. The archived V11 interface-contact cutoff is20Å; do not silently substitute V10's8Å while calling this a one-variable test. Compare unweighted pLDDT, actual geometry and valid patch contacts, not raw totals across differently weighted objectives. Confidence improvement with continued geometry defects or surrogate-only overlap does not support advancement. Any later output must actually restore native chemistry and pass existing full-context qualification before admission. One trajectory can reveal sensitivity for this initialization; it cannot estimate hit rate or justify an automatic weight ladder.
