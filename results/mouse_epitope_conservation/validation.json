@@ -1,0 +1,30 @@
+{
+  "independent_neighbour_search": "Bio.PDB.NeighborSearch KD-tree over all protein heavy atoms of native dimer",
+  "sites": [
+    {
+      "human_auth": 205,
+      "independent_kdtree_same_chain_neighbours": 15,
+      "other_chain_neighbours": 0
+    },
+    {
+      "human_auth": 206,
+      "independent_kdtree_same_chain_neighbours": 8,
+      "other_chain_neighbours": 0
+    },
+    {
+      "human_auth": 208,
+      "independent_kdtree_same_chain_neighbours": 12,
+      "other_chain_neighbours": 0
+    },
+    {
+      "human_auth": 209,
+      "independent_kdtree_same_chain_neighbours": 15,
+      "other_chain_neighbours": 0
+    },
+    {
+      "human_auth": 210,
+      "independent_kdtree_same_chain_neighbours": 15,
+      "other_chain_neighbours": 0
+    }
+  ]
+}
