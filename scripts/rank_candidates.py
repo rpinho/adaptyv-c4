@@ -151,7 +151,7 @@ def main():
     ap.add_argument("candidates", nargs="+")
     ap.add_argument("-o", "--out", required=True, help="ranked shortlist CSV to write")
     ap.add_argument("--max-rows", type=int, default=20, help="shortlist length (Track 3 cap)")
-    ap.add_argument("--molecule-class", default="protein")
+    ap.add_argument("--molecule-class", default="single_chain")
     ap.add_argument("--gates", default=None, help="campaign.json whose filters classify rows")
     ap.add_argument("--require-gates", action="store_true",
                     help="drop rows failing any evaluable gate (default: keep and report)")

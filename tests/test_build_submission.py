@@ -38,7 +38,7 @@ def build(path, *extra):
     return p.returncode, p.stdout + p.stderr, out
 
 
-def row(name, seq, cls='protein'):
+def row(name, seq, cls='single_chain'):
     return {'name': name, 'sequence': seq, 'molecule_class': cls}
 
 

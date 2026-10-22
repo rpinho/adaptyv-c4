@@ -41,26 +41,38 @@ from datetime import datetime, timezone
 # never retrieved the selection page's prompt body, and got only navigation from the
 # submit page. So:
 #
-#   [DOC] reported as page content (still second-hand -- re-fetch before freezing)
-#   [INF] inference, defensible but not stated anywhere
-#   [UNK] not present in anything read; MUST NOT be encoded as a rule
+#   [FORM] read first-hand from the AUTHENTICATED submit page or the official template
+#   [DOC]  read first-hand from a public competition page
+#   [INF]  inference, defensible but not stated anywhere
+#   [UNK]  not present in anything read; MUST NOT be encoded as a rule
 #
-# Re-verify [DOC] directly, and resolve every [UNK] from the AUTHENTICATED submit page
-# once Ricardo's Proteinbase account exists. Four unknowns collapse in that one visit:
-# upload mechanics, file naming, whether a submission can be replaced, and the
-# Twin-Strep convention.
+# The authenticated submit page has now been read, which collapsed three unknowns:
+# the upload is a CSV or FASTA file drop, a resubmission is allowed ONCE EVERY 24 HOURS
+# (so the first upload is NOT final), and novelty is screened automatically after upload.
+# It also corrected molecule_class. The Twin-Strep convention is still unresolved.
 # --------------------------------------------------------------------------------------
-REQUIRED_COLUMNS = ("name", "sequence", "molecule_class")  # [DOC] FAQ 5: "at least" these
-EXTRA_COLUMNS_ALLOWED = True        # [DOC] "at least" implies extras are permitted
-HEADER_ROW_REQUIRED = True          # [INF] columns referred to by name; near-certain
-LENGTH_MIN, LENGTH_MAX = 10, 250    # [DOC] challenge page hard requirement
-TRACK_ROW_CAP = {"1": 40, "2": 20, "3": 20}  # [DOC] 40 for Track 1, 20 for Tracks 2/3
+REQUIRED_COLUMNS = ("name", "sequence", "molecule_class")  # [FORM] template header row
+EXTRA_COLUMNS_ALLOWED = True        # [DOC] FAQ 5 says "at minimum" these columns
+HEADER_ROW_REQUIRED = True          # [FORM] submit page: "CSV (with headers)"
+LENGTH_MIN, LENGTH_MAX = 10, 250    # [FORM] "Each chain must be between 10 and 250 AA long"
+TRACK_ROW_CAP = {"1": 40, "2": 20, "3": 20}  # [FORM] "Up to 20 proteins per submission"
 ROW_ORDER_IS_RANK = True            # [DOC] FAQ 5: ordered by rank, top row higher
 
-# [DOC] with a paraphrase caveat -- medium-high confidence, not verbatim-certain.
-# One named constant so re-verification is a one-line edit.
-MOLECULE_CLASSES = ("protein", "nanobody", "scfv", "fab_kappa", "fab_lambda")
-MOLECULE_CLASS_DEFAULT = "protein"  # our Track 3 designs are de novo single chains
+# [FORM] "You can submit once every 24 hours." A submission is therefore REPLACEABLE on a
+# daily cadence, which inverts the earlier prudent assumption that the first upload was
+# final: submitting early is now a cheap option, not a one-way door.
+RESUBMIT_INTERVAL_HOURS = 24
+
+# [FORM] "Designs need a novelty score 3/4 or higher (checked automatically after upload)."
+# Enforced server-side AFTER upload, so a design can be accepted by this emitter and still
+# be rejected there. Levels run 1-4; the selection prompt prefers 4 over 3.
+NOVELTY_LEVEL_MIN = 3
+
+# [FORM] Verified against the authenticated submit page AND the official template at
+# /templates/competition-submission-template.csv. The public FAQ 5 says "protein" -- the
+# form and template both say "single_chain". THE FAQ IS WRONG. Trust the form.
+MOLECULE_CLASSES = ("single_chain", "nanobody", "scfv", "fab_kappa", "fab_lambda")
+MOLECULE_CLASS_DEFAULT = "single_chain"  # our Track 3 designs are de novo single chains
 
 # [DOC] Fab rows carry VH and VL joined by ":". Any other class must not contain one --
 # a stray colon is a malformed row, never something to silently strip.
@@ -239,15 +251,21 @@ def main():
         "row_order_is_rank": ROW_ORDER_IS_RANK,
         "columns": fieldnames,
         "twin_strep_tag": a.twin_strep,
-        "twin_strep_status": "UNVERIFIED against the official rules -- confirm on the "
-                             "authenticated submit page before submission",
+        "twin_strep_status": "UNVERIFIED -- the challenge page says only that the "
+                             "C-terminal Twin-Strep tag 'must not be part of the "
+                             "binding'; the authenticated submit page does not mention "
+                             "it. Excluding it is supported by the selection prompt's "
+                             "'novelty is judged on the binding part alone, so padding, "
+                             "linkers and extra domains do not help', but is still an "
+                             "inference",
+        "resubmit_interval_hours": RESUBMIT_INTERVAL_HOURS,
+        "novelty_level_min": NOVELTY_LEVEL_MIN,
+        "novelty_screen": "enforced server-side after upload; this emitter cannot "
+                          "predict it",
         "unverified_spec_items": [
-            "molecule_class spellings are paraphrased from a capped fetch",
-            "header-row requirement is inferred, not documented",
-            "residue alphabet restrictions are inferred",
-            "name charset/length/uniqueness is our own convention",
-            "whether an uploaded submission can be edited or replaced is unknown "
-            "-- assume the first upload is final",
+            "whether the Twin-Strep tag belongs in the submitted sequence",
+            "name charset and length is our own convention (the form documents only "
+            "that name is a unique identifier)",
         ],
         "designs": [{"rank": i, "name": r["name"], "length": len(r["sequence"]),
                      "molecule_class": r["molecule_class"]}
