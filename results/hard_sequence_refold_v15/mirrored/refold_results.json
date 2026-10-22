@@ -1,0 +1,313 @@
+{
+  "status": "completed",
+  "started": 1792679359.0034935,
+  "prediction_jobs": 8,
+  "prediction_jobs_scheduled": 8,
+  "models": [
+    "model_1_ptm",
+    "model_2_ptm"
+  ],
+  "network_evaluations_per_prediction": 4,
+  "scope": "Complete639-residue native monomer prediction; restore/check dimer B afterward; not dimer-aware refolding",
+  "sequences": [
+    {
+      "name": "v9",
+      "sequence_sha256": "2699888c00c9c6af76b61c8547687cce87ccb0152754ae0d0a32c10e5f42b85d",
+      "monomer": {
+        "models": [
+          {
+            "checkpoint": "model_1_ptm",
+            "binder_pLDDT": 0.8294123532115549,
+            "geometry": {
+              "ranges_A": {
+                "N_CA": [
+                  1.4477505302711482,
+                  1.4670712230947796
+                ],
+                "CA_C": [
+                  1.515403495411783,
+                  1.5335577099180349
+                ],
+                "C_O": [
+                  1.2270910982794074,
+                  1.239955984995662
+                ],
+                "peptide_C_N": [
+                  1.2010433469409334,
+                  1.4288454337966863
+                ],
+                "adjacent_CA": [
+                  3.69636581925753,
+                  3.9548620697160244
+                ]
+              },
+              "nonadjacent_backbone_min_A": 2.7000435370891087,
+              "passed": true,
+              "failed": []
+            },
+            "pTM": 0.5589762926101685
+          },
+          {
+            "checkpoint": "model_2_ptm",
+            "binder_pLDDT": 0.9345331563465837,
+            "geometry": {
+              "ranges_A": {
+                "N_CA": [
+                  1.4510759242336788,
+                  1.4705617565688334
+                ],
+                "CA_C": [
+                  1.5142148723637276,
+                  1.5371032482059042
+                ],
+                "C_O": [
+                  1.2248569950011001,
+                  1.2396298354372768
+                ],
+                "peptide_C_N": [
+                  1.1667339214739865,
+                  1.3947870783864516
+                ],
+                "adjacent_CA": [
+                  3.7044453902593926,
+                  3.9315819240836443
+                ]
+              },
+              "nonadjacent_backbone_min_A": 2.7471271160503097,
+              "passed": true,
+              "failed": []
+            },
+            "pTM": 0.7458839416503906
+          }
+        ],
+        "mutual_internal_fold_CA_rmsd_A": 0.9808638993237053,
+        "monomer_advance": true
+      },
+      "complex": {
+        "models": [
+          {
+            "checkpoint": "model_1_ptm",
+            "binder_pLDDT": 0.8044783637143563,
+            "geometry": {
+              "ranges_A": {
+                "N_CA": [
+                  1.4049473132914985,
+                  1.4971489832762135
+                ],
+                "CA_C": [
+                  1.5064963491492438,
+                  1.5665572324367854
+                ],
+                "C_O": [
+                  1.199365066399718,
+                  1.2555540671850813
+                ],
+                "peptide_C_N": [
+                  1.2612772544131603,
+                  1.5646859708900058
+                ],
+                "adjacent_CA": [
+                  3.7234738904012743,
+                  4.085392231781423
+                ]
+              },
+              "nonadjacent_backbone_min_A": 2.8260092223841027,
+              "passed": true,
+              "failed": []
+            },
+            "pTM": 0.8683786988258362,
+            "i_pTM": 0.19374842941761017,
+            "minimum_hotspot_to_binder_CA_A": 57.46875
+          },
+          {
+            "checkpoint": "model_2_ptm",
+            "binder_pLDDT": 0.8719615253849305,
+            "geometry": {
+              "ranges_A": {
+                "N_CA": [
+                  1.417624355559879,
+                  1.5232572008692427
+                ],
+                "CA_C": [
+                  1.479133507083777,
+                  1.5665572324367854
+                ],
+                "C_O": [
+                  1.1899645477912357,
+                  1.2751378601939478
+                ],
+                "peptide_C_N": [
+                  1.19773549354605,
+                  1.46875
+                ],
+                "adjacent_CA": [
+                  3.721145499456451,
+                  3.961114702643689
+                ]
+              },
+              "nonadjacent_backbone_min_A": 2.8517337277358576,
+              "passed": true,
+              "failed": []
+            },
+            "pTM": 0.8727747797966003,
+            "i_pTM": 0.1480141282081604,
+            "minimum_hotspot_to_binder_CA_A": 70.5
+          }
+        ],
+        "mutual_internal_fold_CA_rmsd_A": 0.48766306627593764,
+        "target_template_frame_binder_CA_rmsd_A": 15.9140625
+      }
+    },
+    {
+      "name": "seed23",
+      "sequence_sha256": "8b0e2189b54820dd47b3d25e26969dd1a519f6c9a7267aee9d6f50a67fefa2b3",
+      "monomer": {
+        "models": [
+          {
+            "checkpoint": "model_1_ptm",
+            "binder_pLDDT": 0.7959670228744621,
+            "geometry": {
+              "ranges_A": {
+                "N_CA": [
+                  1.4467265042588389,
+                  1.465349686035455
+                ],
+                "CA_C": [
+                  1.5167839102789022,
+                  1.5353006775453437
+                ],
+                "C_O": [
+                  1.2269605245916635,
+                  1.2373755960837807
+                ],
+                "peptide_C_N": [
+                  1.2190770419577737,
+                  1.5143811342348934
+                ],
+                "adjacent_CA": [
+                  3.673009851275786,
+                  3.993204065776942
+                ]
+              },
+              "nonadjacent_backbone_min_A": 2.520785946374343,
+              "passed": true,
+              "failed": []
+            },
+            "pTM": 0.5875067114830017
+          },
+          {
+            "checkpoint": "model_2_ptm",
+            "binder_pLDDT": 0.8441961447694408,
+            "geometry": {
+              "ranges_A": {
+                "N_CA": [
+                  1.4514649455916082,
+                  1.4653799677745656
+                ],
+                "CA_C": [
+                  1.5130719577295648,
+                  1.537455537975001
+                ],
+                "C_O": [
+                  1.2284535208865315,
+                  1.239473268553813
+                ],
+                "peptide_C_N": [
+                  1.2492001835705968,
+                  1.5185468372988409
+                ],
+                "adjacent_CA": [
+                  3.66557440239083,
+                  3.9598145106251037
+                ]
+              },
+              "nonadjacent_backbone_min_A": 2.5777114074026044,
+              "passed": true,
+              "failed": []
+            },
+            "pTM": 0.5948121547698975
+          }
+        ],
+        "mutual_internal_fold_CA_rmsd_A": 1.2800542530849568,
+        "monomer_advance": true
+      },
+      "complex": {
+        "models": [
+          {
+            "checkpoint": "model_1_ptm",
+            "binder_pLDDT": 0.5805332491646952,
+            "geometry": {
+              "ranges_A": {
+                "N_CA": [
+                  1.4245339150051852,
+                  1.5149805330845014
+                ],
+                "CA_C": [
+                  1.4657549249448218,
+                  1.5625
+                ],
+                "C_O": [
+                  1.1925263689432615,
+                  1.2721667355834296
+                ],
+                "peptide_C_N": [
+                  1.2086924753633572,
+                  1.5540395948945445
+                ],
+                "adjacent_CA": [
+                  3.7158602217387027,
+                  4.058441482345779
+                ]
+              },
+              "nonadjacent_backbone_min_A": 2.054494406326043,
+              "passed": true,
+              "failed": []
+            },
+            "pTM": 0.8702253699302673,
+            "i_pTM": 0.19727540016174316,
+            "minimum_hotspot_to_binder_CA_A": 52.375
+          },
+          {
+            "checkpoint": "model_2_ptm",
+            "binder_pLDDT": 0.6140775738367393,
+            "geometry": {
+              "ranges_A": {
+                "N_CA": [
+                  1.4160250538479184,
+                  1.489874680132527
+                ],
+                "CA_C": [
+                  1.481988212672422,
+                  1.5687375497513916
+                ],
+                "C_O": [
+                  1.1862658060063942,
+                  1.2808688457449497
+                ],
+                "peptide_C_N": [
+                  1.231503780952377,
+                  1.5161886838385255
+                ],
+                "adjacent_CA": [
+                  3.67064474070973,
+                  4.038510902857636
+                ]
+              },
+              "nonadjacent_backbone_min_A": 2.442103025570379,
+              "passed": true,
+              "failed": []
+            },
+            "pTM": 0.8748130798339844,
+            "i_pTM": 0.14988717436790466,
+            "minimum_hotspot_to_binder_CA_A": 66.8125
+          }
+        ],
+        "mutual_internal_fold_CA_rmsd_A": 0.6820557676506502,
+        "target_template_frame_binder_CA_rmsd_A": 18.09375
+      }
+    }
+  ],
+  "qualification": "Diagnostic only; no automatic generator/native admission or pH scoring",
+  "finished": 1792679485.0202577,
+  "plausible_monomer_sequences": 2
+}

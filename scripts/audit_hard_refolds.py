@@ -1,5 +1,6 @@
 """After verified GPU release only: structural staging, never automatic qualification."""
 import json
+import sys
 from pathlib import Path
 from cif2pdb import convert
 from postprocess_gpu_campaign import canonicalize
@@ -7,8 +8,9 @@ from hard_sequence_refold import dump
 
 ROOT=Path(__file__).resolve().parents[1]
 
-def main():
-    out=ROOT/'results/hard_sequence_refold_v15'
+def main(name='hard_sequence_refold_v15'):
+    if name not in ('hard_sequence_refold_v15','domain_hard_refold_v17'):raise ValueError('Unknown diagnostic output')
+    out=ROOT/'results'/name
     status=json.loads((out/'supervisor.json').read_text())
     if not status.get('gpu_released_verified'):raise RuntimeError('Actual GPU release required first')
     predictions=json.loads((out/'mirrored/refold_results.json').read_text())
@@ -30,4 +32,4 @@ def main():
         qualified_candidates=0,new_gpu_spend_usd=0,
         interpretation='Structural diagnostic only; all final quality/pose/novelty criteria require review before pH/submission'))
 
-if __name__=='__main__':main()
+if __name__=='__main__':main(*sys.argv[1:])

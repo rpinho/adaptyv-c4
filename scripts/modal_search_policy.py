@@ -8,6 +8,7 @@ REPAIRED = 'c4_repaired_native_v9'
 INTERFACE8 = 'c4_interface8_v10'
 FORCED = 'c4_forced_native_restore_v11'
 CONFIDENCE = 'c4_forced_confidence_v12'
+DOMAIN = 'c4_native_domain_v16'
 PROFILES = (
     'c4_local_frame_v5',
     'c4_local_frame_longer_v6',
@@ -20,6 +21,7 @@ CHANGES = {
     INTERFACE8: {'large_complex_initialization': True,'max_trajectories':1},
     FORCED: {'large_complex_initialization': True,'max_trajectories':1,'forced_targeting':True},
     CONFIDENCE: {'large_complex_initialization': True,'max_trajectories':1,'forced_targeting':True,'weights_plddt_loss':0.5},
+    DOMAIN: {'large_complex_initialization':True,'max_trajectories':1},
     PROFILES[0]: {'large_complex_initialization': True},
     PROFILES[1]: {'large_complex_initialization': True, 'binder_lengths': [90,110]},
     PROFILES[2]: {'large_complex_initialization': True, 'binder_lengths': [90,110], 'weights_plddt_loss': 0.5},
@@ -43,7 +45,9 @@ def make_config(base, run_name, overrides, project_folder):
     if profile==INTERFACE8:
         config['losses']['interface_contacts']['params']['cutoff']=8.0
     config.update(campaign_name=run_name, project_folder=project_folder)
-    if profile in PROFILES or profile in {REPAIRED,INTERFACE8,FORCED,CONFIDENCE}:
+    if profile==DOMAIN:
+        config['targets'][0].update(target_path='/opt/c4/native-apical-search-only.pdb',name='hTfR1_native_apical_189_383')
+    elif profile in PROFILES or profile in {REPAIRED,INTERFACE8,FORCED,CONFIDENCE}:
         config['targets'][0]['target_path']='/opt/c4/local-frame-target.pdb'
     else:
         config['targets'][0]['target_path']='/opt/c4/target.pdb'

@@ -73,7 +73,19 @@ image = (
     .add_local_file(ROOT/'scripts/hard_sequence_refold.py','/opt/c4/hard_sequence_refold.py',copy=True)
     .add_local_file(ROOT/'results/hard_sequence_refold_v15/manifest.json','/opt/c4/hard_refold_manifest.json',copy=True)
     .run_commands('JAX_PLATFORMS=cpu python /opt/c4/hard_sequence_refold.py --preflight /opt/c4/hard_refold_manifest.json /opt/c4/hard_refold_preflight.json')
+    .add_local_file(ROOT/'results/apical_context/native_189_383_search_only.pdb','/opt/c4/native-apical-search-only.pdb',copy=True)
+    .add_local_file(ROOT/'results/apical_context/PREPARED_INPUT.json','/opt/c4/native-apical-preparation.json',copy=True)
+    .add_local_file(ROOT/'scripts/cif2pdb.py','/opt/c4/cif2pdb.py',copy=True)
+    .run_commands(
+        "python -c \"import sys,json;sys.path.insert(0,'/opt/c4');import search_policy as p;"
+        "config=p.make_config(json.load(open('/opt/c4/campaign.json')),p.DOMAIN,{'campaign_seed':20261021},'/tmp/domain-preflight-only');"
+        "json.dump(config,open('/opt/c4/domain_preflight.json','w'))\"",
+        'JAX_PLATFORMS=cpu python /opt/c4/monitored_design.py --preflight /opt/c4/domain_preflight.json /opt/c4/domain_prepared_frame_preflight.json')
 )
+
+if (ROOT/'results/domain_hard_refold_v17/manifest.json').exists():
+    image=(image.add_local_file(ROOT/'results/domain_hard_refold_v17/manifest.json','/opt/c4/domain_refold_manifest.json',copy=True)
+        .run_commands('JAX_PLATFORMS=cpu python /opt/c4/hard_sequence_refold.py --preflight /opt/c4/domain_refold_manifest.json /opt/c4/domain_refold_preflight.json'))
 
 
 @app.function(
@@ -107,7 +119,7 @@ def run_campaign(run_name: str = RUN_NAME, overrides: dict | None = None):
     policy = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(policy)
     profile=policy.profile_for_name(run_name)
-    monitored=profile in {policy.REPAIRED,policy.INTERFACE8,policy.FORCED,policy.CONFIDENCE}
+    monitored=profile in {policy.REPAIRED,policy.INTERFACE8,policy.FORCED,policy.CONFIDENCE,policy.DOMAIN}
     runtime_limit=1800 if monitored else 7200
     overrides = overrides or {}
     if set(overrides) - {"campaign_seed"}:
@@ -160,6 +172,7 @@ def run_campaign(run_name: str = RUN_NAME, overrides: dict | None = None):
         if monitored:
             preflight=('confidence_prepared_frame_preflight.json' if profile==policy.CONFIDENCE else
                        'forced_prepared_frame_preflight.json' if profile==policy.FORCED else 'prepared_frame_preflight.json')
+            if profile==policy.DOMAIN:preflight='domain_prepared_frame_preflight.json'
             if profile==policy.REPAIRED and run_name!=profile:
                 seed=overrides.get('campaign_seed')
                 if seed not in range(20261022,20261027) or run_name!=profile+f'_replicate_{seed-20261020}':
@@ -251,7 +264,11 @@ def sequence_refold(run_name,overrides):
     import os
     import jax
     from bindcraft.model_weights import alphafold_parameters,alphafold_parameter_file
-    if run_name!='c4_hard_sequence_refold_v15' or overrides:raise ValueError('Only the fixed two-sequence diagnostic')
+    routes={'c4_hard_sequence_refold_v15':('hard_refold_manifest.json','hard_refold_preflight.json')}
+    if Path('/opt/c4/domain_refold_manifest.json').exists():
+        routes['c4_domain_hard_refold_v17']=('domain_refold_manifest.json','domain_refold_preflight.json')
+    if run_name not in routes or overrides:raise ValueError('Only an image-prepared fixed sequence diagnostic is allowed')
+    manifest_name,preflight_name=routes[run_name]
     if any(d.platform!='gpu' for d in jax.devices()):raise ValueError('CPU fallback refused')
     out=Path('/results')/run_name
     if out.exists():raise RuntimeError('Fresh diagnostic directory required')
@@ -269,11 +286,11 @@ def sequence_refold(run_name,overrides):
             if actual!=expected:raise ValueError('Held-out checkpoint identity differs')
             checks[filename]=actual
         status.update(checkpoints=checks,status='refolding')
-        for source in ('hard_refold_manifest.json','hard_refold_preflight.json'):
+        for source in (manifest_name,preflight_name):
             shutil.copy('/opt/c4/'+source,out/source)
         save()
         with (out/'worker.log').open('w') as log:
-            proc=subprocess.Popen(['python','/opt/c4/hard_sequence_refold.py',str(out)],cwd='/opt/bindcraft',stdout=log,stderr=subprocess.STDOUT)
+            proc=subprocess.Popen(['python','/opt/c4/hard_sequence_refold.py',str(out),'/opt/c4/'+manifest_name],cwd='/opt/bindcraft',stdout=log,stderr=subprocess.STDOUT)
             while proc.poll() is None:
                 if time.time()-started>1740:
                     proc.terminate()

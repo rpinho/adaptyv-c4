@@ -1,5 +1,34 @@
 # Method: proton-coupled two-state design, with the numbers checked
 
+## Current checkpoint — sequence-only refolds completed; native-domain experiment prepared
+
+V15 completed eight coordinate-free fixed-sequence prediction jobs; actual GPU
+release independently verified. Both free folds pass both checkpoint geometry
+checks (pLDDT .796-.935; internal model agreement .98/1.28 A). Native receptor
+complexes remain off-patch (52.38-70.50 A), iPTM .148-.197; three restored-context
+clashes, zero credible TfR1 binders. This separates plausible sequence folding
+from failed interface generation. No pH or mouse-binding claim.
+
+Astra's outcome and domain review are in results/astra_review/. Exactly one
+native contiguous A189-383 generation experiment is prepared: only the target
+representation changes vs native v9; same seed, lengths, losses and gates.
+Installed-image CPU frames, native identity, exact hotspots and author-numbered
+CIF->PDB output roundtrip pass; 80 local checks pass. A direct CIF reader uses
+label IDs and failed the first CPU build; the corrected test uses the actual
+CIF->PDB author-ID downstream path. No GPU was allocated during this correction.
+Protocol: results/apical_context/DOMAIN_PROBE_DECISION.md. Launch/live evidence
+belongs in results/native_domain_v16/. The post-release extraction prepares one
+predeclared hard sequence even if its raw search pose fails; full-native refolding
+still requires its own manifest-specific CPU image preflight. Nothing is admitted
+or submitted automatically. No same-recipe seed successor is scheduled.
+
+Modal completed runtime estimate $9.5172782; Runpod runtime/history estimate
+$35.6652; consultation usage $1.1922999, setup/storage unreconciled. H100 GPU
+$3.9492/hr, requested CPU/RAM upper $4.649328/hr combined. Continued spending is
+already explicitly authorized. Runpod remains stopped. Earlier live states below
+are historical; use current supervisor files for actual allocation/execution.
+
+
 **Current qualification (2026-10-21):** the old 73-residue receptor crop omitted
 protein that all 65 well-aligned source candidates overlap at backbone level.
 Their linkage results diagnose that crop; they do not validate binding to the

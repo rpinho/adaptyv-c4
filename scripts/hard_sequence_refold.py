@@ -1,4 +1,4 @@
-"""Two fixed sequences, both held-out monomer models first; no sequence optimization."""
+"""Fixed image-prepared sequences, both monomer models first; no optimization."""
 import hashlib
 import json
 from pathlib import Path
@@ -12,12 +12,20 @@ FIXED_SEQUENCES=(('v9','2699888c00c9c6af76b61c8547687cce87ccb0152754ae0d0a32c10e
                  ('seed23','8b0e2189b54820dd47b3d25e26969dd1a519f6c9a7267aee9d6f50a67fefa2b3'))
 
 def validate_manifest(manifest):
-    if manifest['models']!=list(MODELS) or manifest['recycles']!=3 or manifest['max_prediction_jobs']!=8:
+    protocol=manifest['protocol'];expected_cap={1:8,2:4}.get(protocol)
+    if expected_cap is None or manifest['models']!=list(MODELS) or manifest['recycles']!=3 or manifest['max_prediction_jobs']!=expected_cap:
         raise ValueError('Declared prediction scope differs')
     if manifest['designed_binder_coordinates_supplied'] is not False:raise ValueError('Coordinate-free declaration differs')
     entries=manifest['sequences']
-    if tuple((e['name'],e['sequence_sha256']) for e in entries)!=FIXED_SEQUENCES:
-        raise ValueError('Exactly the two predeclared sequences are required')
+    if protocol==1:
+        if tuple((e['name'],e['sequence_sha256']) for e in entries)!=FIXED_SEQUENCES:
+            raise ValueError('Exactly the two predeclared sequences are required')
+    elif len(entries)!=1 or entries[0]['name']!='domain_primary' or entries[0]['length']!=69 or manifest.get('source_campaign')!='c4_native_domain_v16':
+        raise ValueError('Only the declared one-sequence domain follow-up is supported')
+    if protocol==2:
+        entry=entries[0]
+        if not entry['source'].startswith('results/native_domain_v16/mirrored/campaign/') or len(entry['source_sha256'])!=64:
+            raise ValueError('Domain source provenance differs')
     for entry in entries:
         if len(entry['sequence'])!=entry['length'] or hashlib.sha256(entry['sequence'].encode()).hexdigest()!=entry['sequence_sha256']:
             raise ValueError('Sequence identity differs')
@@ -91,31 +99,33 @@ def preflight(manifest_path,out):
     report=dict(status='passed',sequence_lengths=[len(b) for _,b,_ in items],
         binder_atoms_all_zero=True,binder_masks_all_false=True,binder_flags='SEQUENCE only',
         hard_one_hot_sequences=True,target_residues=639,target_native_identity_verified=True,
-        held_out_models=list(MODELS),recycles=3,designed_coordinates_supplied=False,
+        prediction_models=list(MODELS),recycles=3,designed_coordinates_supplied=False,
+        checkpoint_scope=manifest.get('checkpoint_scope','Held-out AF2 monomer family from original multimer design; same architecture lineage'),
         interface=predict_validation_ensemble.__module__+'.'+predict_validation_ensemble.__name__,
         scope=manifest['complex_scope'],monomer_output_chain='A',complex_output_chains='A target/B binder',
         worker_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
         manifest_sha256=hashlib.sha256(Path(manifest_path).read_bytes()).hexdigest())
     dump(out,report);print(json.dumps(report),flush=True)
 
-def main(out):
+def main(out,manifest_path='/opt/c4/hard_refold_manifest.json'):
     import jax
     from bindcraft.af2 import AlphaFoldDesignModel
     from bindcraft.MPNN_stage import predict_validation_ensemble
     from bindcraft.model_weights import alphafold_parameters
     from bindcraft.protein import BINDER_ALONE,ATOM_INDEX,write_structure
     if any(d.platform!='gpu' for d in jax.devices()):raise ValueError('Refusing CPU inference fallback')
-    out=Path(out);manifest=json.loads(Path('/opt/c4/hard_refold_manifest.json').read_text())
+    out=Path(out);manifest=json.loads(Path(manifest_path).read_text())
     design,binder,items=prepared(manifest)
     model=AlphaFoldDesignModel(presets=MODELS,models=MODELS,data_dir=alphafold_parameters(download=False),
         num_recycle=3,dropout=False,large_complex_initialization=False,use_remat=True,max_cache_size=4)
     report=dict(status='running',started=time.time(),prediction_jobs=0,prediction_jobs_scheduled=0,models=list(MODELS),
         network_evaluations_per_prediction=4,scope=manifest['complex_scope'],sequences=[],
-        qualification='Diagnostic only; no automatic generator/native admission or pH scoring')
+        qualification='Diagnostic only; no automatic generator/native admission or pH scoring',
+        max_prediction_jobs=manifest['max_prediction_jobs'],checkpoint_scope=manifest.get('checkpoint_scope','Held-out AF2 monomer family, same architecture lineage'))
     dump(out/'refold_results.json',report)
     selected=[]
     def predict(states):
-        if report['prediction_jobs_scheduled']+len(MODELS)>8:raise ValueError('Prediction job cap would be exceeded')
+        if report['prediction_jobs_scheduled']+len(MODELS)>manifest['max_prediction_jobs']:raise ValueError('Prediction job cap would be exceeded')
         report['prediction_jobs_scheduled']+=len(MODELS);dump(out/'refold_results.json',report)
         return predict_validation_ensemble(model,states,MODELS)
     def observe(entry,phase,predictions):
@@ -164,10 +174,10 @@ def main(out):
         ensemble=predict(complex_states)
         result['complex']=observe(entry,'complex',ensemble.model_predictions)
         dump(out/'refold_results.json',report)
-    if report['prediction_jobs']>8:raise ValueError('Prediction job cap exceeded')
+    if report['prediction_jobs']>manifest['max_prediction_jobs']:raise ValueError('Prediction job cap exceeded')
     report.update(status='completed',finished=time.time(),plausible_monomer_sequences=len(selected))
     dump(out/'refold_results.json',report)
 
 if __name__=='__main__':
     if sys.argv[1]=='--preflight':preflight(*sys.argv[2:])
-    else:main(sys.argv[1])
+    else:main(*sys.argv[1:])

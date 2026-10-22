@@ -45,4 +45,12 @@ class HardRefoldTests(unittest.TestCase):
         changed=copy.deepcopy(manifest);changed['sequences'][0]['sequence']='A'*69
         with self.assertRaises(ValueError):validate_manifest(changed)
 
+    def test_domain_followup_is_only_one_fixed_source_with_four_job_cap(self):
+        original=json.loads((Path(__file__).resolve().parents[1]/'results/hard_sequence_refold_v15/manifest.json').read_text())
+        entry=original['sequences'][0]|dict(name='domain_primary',source='results/native_domain_v16/mirrored/campaign/fixture.cif')
+        manifest=original|dict(protocol=2,source_campaign='c4_native_domain_v16',max_prediction_jobs=4,sequences=[entry])
+        validate_manifest(manifest)
+        with self.assertRaises(ValueError):validate_manifest(manifest|{'sequences':[entry,entry]})
+        with self.assertRaises(ValueError):validate_manifest(manifest|{'source_campaign':'another_campaign'})
+
 if __name__=='__main__':unittest.main()

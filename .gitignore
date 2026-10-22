@@ -18,4 +18,6 @@ results/modal_forced_confidence_v12/driver.lock
 results/modal_native_replicates_v14/**/driver.lock
 results/modal_native_replicates_v14/series.lock
 results/hard_sequence_refold_v15/driver.lock
+results/native_domain_v16/driver.lock
+results/domain_hard_refold_v17/driver.lock
 data/*.cif

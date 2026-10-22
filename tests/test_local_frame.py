@@ -84,6 +84,15 @@ class FrameAndPolicyTests(unittest.TestCase):
         self.assertEqual(changed,reference)
         self.assertEqual(base['weights_plddt_loss'],.1)
 
+    def test_domain_changes_target_representation_only_from_native_control(self):
+        base=json.loads((ROOT/'results/gpu_campaign_v3/campaign.json').read_text())
+        reference=policy.make_config(base,policy.REPAIRED,{'campaign_seed':20261021},'/results/test')
+        changed=policy.make_config(base,policy.DOMAIN,{'campaign_seed':20261021},'/results/test')
+        reference['campaign_name']=policy.DOMAIN
+        reference['targets'][0].update(name='hTfR1_native_apical_189_383',target_path='/opt/c4/native-apical-search-only.pdb')
+        self.assertEqual(changed,reference)
+        self.assertFalse(changed['forced_targeting'])
+
     def test_later_stage_failure_requires_different_diagnosis(self):
         selected,reason=policy.next_profile(policy.PROFILES[0],0,['anneal'])
         self.assertIsNone(selected)

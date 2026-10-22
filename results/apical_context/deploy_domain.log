@@ -1,0 +1,315 @@
+Building image im-cvMAlBRphYqU6uYeqzqtUW
+
+=> Step 0: FROM base
+
+=> Step 1: COPY . /
+Saving image...
+Image saved, took 708.35ms
+
+Built image im-cvMAlBRphYqU6uYeqzqtUW in 1.36s
+
+
+Building image im-L2fiEdr5uRjCYMJfVN1emY
+
+=> Step 0: FROM base
+
+=> Step 1: COPY . /
+Saving image...
+Image saved, took 1.18s
+
+Built image im-L2fiEdr5uRjCYMJfVN1emY in 2.46s
+
+
+Building image im-0OxF9ElcPcnoPphvqtQABp
+
+=> Step 0: FROM base
+
+=> Step 1: COPY . /
+Saving image...
+Image saved, took 1.30s
+
+Built image im-0OxF9ElcPcnoPphvqtQABp in 2.60s
+
+
+Building image im-QcdDmiKry0l0LeC2iCwEpg
+
+=> Step 0: FROM base
+
+=> Step 1: COPY . /
+Saving image...
+Image saved, took 1.32s
+
+Built image im-QcdDmiKry0l0LeC2iCwEpg in 2.32s
+
+
+Building image im-tM8URsU9NFdh7VCxBBgRVt
+
+=> Step 0: FROM base
+
+=> Step 1: COPY . /
+Saving image...
+Image saved, took 1.22s
+
+Built image im-tM8URsU9NFdh7VCxBBgRVt in 3.66s
+
+
+Building image im-PipociiSkMp8UtIbKSfVMU
+
+=> Step 0: FROM base
+
+=> Step 1: COPY . /
+Saving image...
+Image saved, took 1.12s
+
+Built image im-PipociiSkMp8UtIbKSfVMU in 2.02s
+
+
+Building image im-sBJp0J8qEVkcjYb977hSwL
+
+=> Step 0: FROM base
+
+=> Step 1: RUN python /opt/c4/patch_frame_guard.py --upstream /opt/bindcraft --helper /opt/c4/frame_guard.py
+{
+  "original_af2_sha256": "aa185971676c5b6e3d2ebcef920e3b78acf16879b48b9073e74a527401ef79ae",
+  "patched_af2_sha256": "fc5e8aa9528d79b569a00d0cbab0c3fed283bdb9fb8df2ee940f8256d2c1a2bf",
+  "helper_sha256": "9ff2a4bccd4a310ba0881c8dbf40b833d78b3d2b962528dbcc12649087186412",
+  "repaired_paths": [
+    "initial input",
+    "recycled previous prediction"
+  ],
+  "actual_atom_positions_masks_templates_modified": false
+}
+
+=> Step 2: RUN JAX_PLATFORMS=cpu python /opt/c4/validate_frame_guard.py --upstream /opt/bindcraft --out /opt/c4/cpu_frame_validation.json
+{
+  "status": "passed",
+  "jax": "0.11.2",
+  "devices": [
+    "cpu:0"
+  ],
+  "cases": [
+    "unresolved",
+    "valid template",
+    "partial CA",
+    "collinear",
+    "nonfinite",
+    "padding",
+    "recycled valid prediction"
+  ],
+  "actual_upstream_frame_functions": {
+    "multimer": {
+      "determinants": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "finite": true
+    },
+    "monomer": {
+      "determinants": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "finite": true
+    }
+  },
+  "old_zero_frame_determinant": 0.0,
+  "old_zero_frame_update_norm": 0.0,
+  "repaired_translation_update_norms": [
+    1.7320507764816284,
+    1.7320507764816284,
+    1.7320507764816284,
+    1.7320507764816284,
+    1.7320507764816284,
+    1.7320507764816284
+  ],
+  "actual_inputs_masks_unchanged": true,
+  "valid_template_frame_unchanged": true,
+  "both_converters_preserve_CA_translation": true,
+  "degenerate_recycled_coordinates_repaired_with_sequence_mask": true,
+  "guard_coordinate_gradient_checks": {
+    "monomer:zero": {
+      "finite": true,
+      "norm": 1.7320507764816284
+    },
+    "multimer:zero": {
+      "finite": true,
+      "norm": 1.7320507764816284
+    },
+    "monomer:nan_N": {
+      "finite": true,
+      "norm": 1.7320507764816284
+    },
+    "multimer:nan_N": {
+      "finite": true,
+      "norm": 1.7320507764816284
+    },
+    "monomer:nan_CA": {
+      "finite": true,
+      "norm": 0.0
+    },
+    "multimer:nan_CA": {
+      "finite": true,
+      "norm": 0.0
+    },
+    "monomer:valid": {
+      "finite": true,
+      "norm": 1.7320507764816284
+    },
+    "multimer:valid": {
+      "finite": true,
+      "norm": 1.7320507764816284
+    }
+  },
+  "initial_path_atoms_and_mask_are_function_arguments": true,
+  "patch": {
+    "original_af2_sha256": "aa185971676c5b6e3d2ebcef920e3b78acf16879b48b9073e74a527401ef79ae",
+    "patched_af2_sha256": "fc5e8aa9528d79b569a00d0cbab0c3fed283bdb9fb8df2ee940f8256d2c1a2bf",
+    "helper_sha256": "9ff2a4bccd4a310ba0881c8dbf40b833d78b3d2b962528dbcc12649087186412",
+    "repaired_paths": [
+      "initial input",
+      "recycled previous prediction"
+    ],
+    "actual_atom_positions_masks_templates_modified": false
+  },
+  "source_sha256": {
+    "bindcraft/af/alphafold/model/all_atom_multimer.py": "ce467f53f58407f5121f5d69596261d445d7a5c65cd042a57ba18b8ad95f30ec",
+    "bindcraft/af/alphafold/model/quat_affine.py": "c45b585f2d098eb91b7cc4e8afe9042524334fbbb4b0cdf857413fe3f4baa183",
+    "bindcraft/af/alphafold/model/geometry/rotation_matrix.py": "b54456f64e2cdd3a6d8742a997dadb306fad39e6a25739bbfbe456b27fbd5097"
+  },
+  "limitation": "Numerical frame regression, not an AlphaFold forward/gradient or affinity validation"
+}
+
+=> Step 3: RUN python -c "import sys,json;sys.path.insert(0,'/opt/c4');import search_policy as p;config=p.make_config(json.load(open('/opt/c4/campaign.json')),p.REPAIRED,{'campaign_seed':20261021},'/tmp/preflight-only');json.dump(config,open('/opt/c4/repaired_preflight.json','w'))"
+
+=> Step 4: RUN JAX_PLATFORMS=cpu python /opt/c4/monitored_design.py --preflight /opt/c4/repaired_preflight.json /opt/c4/prepared_frame_preflight.json
+{"status": "passed", "devices": ["cpu:0"], "chains": {"binder": {"residues": 69, "fully_observed_backbone_residues": 0}, "target_hTfR1_full_monomer": {"residues": 639, "fully_observed_backbone_residues": 639, "sequence_differences_from_native_reference": 0}}, "af2_sha256": "fc5e8aa9528d79b569a00d0cbab0c3fed283bdb9fb8df2ee940f8256d2c1a2bf", "forced_targeting": false, "effective_plddt_loss_weight": 0.1, "campaign_seed": 20261021, "target_scope": "Complete-target geometry; prepared sequence may be a forced-targeting surrogate. No forward, gradient or binding claim."}
+
+=> Step 5: RUN python -c "import sys,json;sys.path.insert(0,'/opt/c4');import search_policy as p;config=p.make_config(json.load(open('/opt/c4/campaign.json')),p.FORCED,{'campaign_seed':20261021},'/tmp/forced-preflight-only');json.dump(config,open('/opt/c4/forced_preflight.json','w'))"
+
+=> Step 6: RUN JAX_PLATFORMS=cpu python /opt/c4/monitored_design.py --preflight /opt/c4/forced_preflight.json /opt/c4/forced_prepared_frame_preflight.json
+forced targeting epitope=30 lysinated=375 residues=639
+{"status": "passed", "devices": ["cpu:0"], "chains": {"binder": {"residues": 69, "fully_observed_backbone_residues": 0}, "target_hTfR1_full_monomer": {"residues": 639, "fully_observed_backbone_residues": 639, "sequence_differences_from_native_reference": 375}}, "af2_sha256": "fc5e8aa9528d79b569a00d0cbab0c3fed283bdb9fb8df2ee940f8256d2c1a2bf", "forced_targeting": true, "effective_plddt_loss_weight": 0.1, "campaign_seed": 20261021, "target_scope": "Complete-target geometry; prepared sequence may be a forced-targeting surrogate. No forward, gradient or binding claim."}
+
+=> Step 7: RUN python -c "import sys,json;sys.path.insert(0,'/opt/c4');import search_policy as p;config=p.make_config(json.load(open('/opt/c4/campaign.json')),p.CONFIDENCE,{'campaign_seed':20261021},'/tmp/confidence-preflight-only');json.dump(config,open('/opt/c4/confidence_preflight.json','w'))"
+
+=> Step 8: RUN JAX_PLATFORMS=cpu python /opt/c4/monitored_design.py --preflight /opt/c4/confidence_preflight.json /opt/c4/confidence_prepared_frame_preflight.json
+forced targeting epitope=30 lysinated=375 residues=639
+{"status": "passed", "devices": ["cpu:0"], "chains": {"binder": {"residues": 69, "fully_observed_backbone_residues": 0}, "target_hTfR1_full_monomer": {"residues": 639, "fully_observed_backbone_residues": 639, "sequence_differences_from_native_reference": 375}}, "af2_sha256": "fc5e8aa9528d79b569a00d0cbab0c3fed283bdb9fb8df2ee940f8256d2c1a2bf", "forced_targeting": true, "effective_plddt_loss_weight": 0.5, "campaign_seed": 20261021, "target_scope": "Complete-target geometry; prepared sequence may be a forced-targeting surrogate. No forward, gradient or binding claim."}
+
+=> Step 9: RUN JAX_PLATFORMS=cpu python /opt/c4/monitored_design.py --seed-preflights /opt/c4/campaign.json /opt/c4
+{"status": "passed", "devices": ["cpu:0"], "chains": {"binder": {"residues": 69, "fully_observed_backbone_residues": 0}, "target_hTfR1_full_monomer": {"residues": 639, "fully_observed_backbone_residues": 639, "sequence_differences_from_native_reference": 0}}, "af2_sha256": "fc5e8aa9528d79b569a00d0cbab0c3fed283bdb9fb8df2ee940f8256d2c1a2bf", "forced_targeting": false, "effective_plddt_loss_weight": 0.1, "campaign_seed": 20261022, "target_scope": "Complete-target geometry; prepared sequence may be a forced-targeting surrogate. No forward, gradient or binding claim."}
+{"status": "passed", "devices": ["cpu:0"], "chains": {"binder": {"residues": 67, "fully_observed_backbone_residues": 0}, "target_hTfR1_full_monomer": {"residues": 639, "fully_observed_backbone_residues": 639, "sequence_differences_from_native_reference": 0}}, "af2_sha256": "fc5e8aa9528d79b569a00d0cbab0c3fed283bdb9fb8df2ee940f8256d2c1a2bf", "forced_targeting": false, "effective_plddt_loss_weight": 0.1, "campaign_seed": 20261023, "target_scope": "Complete-target geometry; prepared sequence may be a forced-targeting surrogate. No forward, gradient or binding claim."}
+{"status": "passed", "devices": ["cpu:0"], "chains": {"binder": {"residues": 68, "fully_observed_backbone_residues": 0}, "target_hTfR1_full_monomer": {"residues": 639, "fully_observed_backbone_residues": 639, "sequence_differences_from_native_reference": 0}}, "af2_sha256": "fc5e8aa9528d79b569a00d0cbab0c3fed283bdb9fb8df2ee940f8256d2c1a2bf", "forced_targeting": false, "effective_plddt_loss_weight": 0.1, "campaign_seed": 20261024, "target_scope": "Complete-target geometry; prepared sequence may be a forced-targeting surrogate. No forward, gradient or binding claim."}
+{"status": "passed", "devices": ["cpu:0"], "chains": {"binder": {"residues": 74, "fully_observed_backbone_residues": 0}, "target_hTfR1_full_monomer": {"residues": 639, "fully_observed_backbone_residues": 639, "sequence_differences_from_native_reference": 0}}, "af2_sha256": "fc5e8aa9528d79b569a00d0cbab0c3fed283bdb9fb8df2ee940f8256d2c1a2bf", "forced_targeting": false, "effective_plddt_loss_weight": 0.1, "campaign_seed": 20261025, "target_scope": "Complete-target geometry; prepared sequence may be a forced-targeting surrogate. No forward, gradient or binding claim."}
+{"status": "passed", "devices": ["cpu:0"], "chains": {"binder": {"residues": 75, "fully_observed_backbone_residues": 0}, "target_hTfR1_full_monomer": {"residues": 639, "fully_observed_backbone_residues": 639, "sequence_differences_from_native_reference": 0}}, "af2_sha256": "fc5e8aa9528d79b569a00d0cbab0c3fed283bdb9fb8df2ee940f8256d2c1a2bf", "forced_targeting": false, "effective_plddt_loss_weight": 0.1, "campaign_seed": 20261026, "target_scope": "Complete-target geometry; prepared sequence may be a forced-targeting surrogate. No forward, gradient or binding claim."}
+Saving image...
+Image saved, took 811.47ms
+
+Built image im-sBJp0J8qEVkcjYb977hSwL in 70.35s
+
+
+Building image im-mm6eJYEyPVUTByMMszFpyC
+
+=> Step 0: FROM base
+
+=> Step 1: COPY . /
+Saving image...
+Image saved, took 673.40ms
+
+Built image im-mm6eJYEyPVUTByMMszFpyC in 1.68s
+
+
+Building image im-ne0m11lXfK5dRqSrLWXBBr
+
+=> Step 0: FROM base
+
+=> Step 1: COPY . /
+Saving image...
+Image saved, took 893.22ms
+
+Built image im-ne0m11lXfK5dRqSrLWXBBr in 2.23s
+
+
+Building image im-56HHdJ0rEhRllZyxBAZikv
+
+=> Step 0: FROM base
+
+=> Step 1: RUN JAX_PLATFORMS=cpu python /opt/c4/hard_sequence_refold.py --preflight /opt/c4/hard_refold_manifest.json /opt/c4/hard_refold_preflight.json
+{"status": "passed", "sequence_lengths": [69, 67], "binder_atoms_all_zero": true, "binder_masks_all_false": true, "binder_flags": "SEQUENCE only", "hard_one_hot_sequences": true, "target_residues": 639, "target_native_identity_verified": true, "held_out_models": ["model_1_ptm", "model_2_ptm"], "recycles": 3, "designed_coordinates_supplied": false, "interface": "bindcraft.MPNN_stage.predict_validation_ensemble", "scope": "Complete639-residue native monomer prediction; restore/check dimer B afterward; not dimer-aware refolding", "monomer_output_chain": "A", "complex_output_chains": "A target/B binder", "worker_sha256": "2db197cb99a918571ca01d2bdf6f071a2ec7994adae5dee68eda456f94e2ea3f", "manifest_sha256": "57abe8b559d7595a451c11064dfdc3dccc373bbcbd8b2e0c70a53f8c69efd91a"}
+Saving image...
+Image saved, took 671.98ms
+
+Built image im-56HHdJ0rEhRllZyxBAZikv in 9.06s
+
+
+Building image im-pwTBw0XksLFHpltu2AvE3s
+
+=> Step 0: FROM base
+
+=> Step 1: COPY . /
+Saving image...
+Image saved, took 768.12ms
+
+Built image im-pwTBw0XksLFHpltu2AvE3s in 1.86s
+
+
+Building image im-wxLoFiYtQeIDSO3pEGTlMs
+
+=> Step 0: FROM base
+
+=> Step 1: COPY . /
+Saving image...
+Image saved, took 671.41ms
+
+Built image im-wxLoFiYtQeIDSO3pEGTlMs in 1.90s
+
+
+Building image im-sB9wPgcfRi881Xqz76VHTu
+
+=> Step 0: FROM base
+
+=> Step 1: RUN python -c "import sys,json;sys.path.insert(0,'/opt/c4');import search_policy as p;config=p.make_config(json.load(open('/opt/c4/campaign.json')),p.DOMAIN,{'campaign_seed':20261021},'/tmp/domain-preflight-only');json.dump(config,open('/opt/c4/domain_preflight.json','w'))"
+
+=> Step 2: RUN JAX_PLATFORMS=cpu python /opt/c4/monitored_design.py --preflight /opt/c4/domain_preflight.json /opt/c4/domain_prepared_frame_preflight.json
+Traceback (most recent call last):
+  File "/opt/c4/monitored_design.py", line 186, in <module>
+    elif sys.argv[1]=='--preflight':preflight(*sys.argv[2:])
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/c4/monitored_design.py", line 100, in preflight
+    np.testing.assert_array_equal(np.asarray(roundtrip.residue_index),np.arange(189,384))
+  File "/usr/local/lib/python3.12/site-packages/numpy/testing/_private/utils.py", line 1128, in assert_array_equal
+    assert_array_compare(operator.__eq__, actual, desired, err_msg=err_msg,
+  File "/usr/local/lib/python3.12/site-packages/numpy/testing/_private/utils.py", line 988, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError: 
+Arrays are not equal
+
+Mismatched elements: 195 / 195 (100%)
+First 5 mismatches are at indices:
+ [0]: 1 (ACTUAL), 189 (DESIRED)
+ [1]: 2 (ACTUAL), 190 (DESIRED)
+ [2]: 3 (ACTUAL), 191 (DESIRED)
+ [3]: 4 (ACTUAL), 192 (DESIRED)
+ [4]: 5 (ACTUAL), 193 (DESIRED)
+Max absolute difference among violations: 188
+Max relative difference among violations: 0.99470899
+ ACTUAL: array([  1,   2,   3,   4,   5,   6,   7,   8,   9,  10,  11,  12,  13,
+        14,  15,  16,  17,  18,  19,  20,  21,  22,  23,  24,  25,  26,
+        27,  28,  29,  30,  31,  32,  33,  34,  35,  36,  37,  38,  39,...
+ DESIRED: array([189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201,
+       202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214,
+       215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227,...
+Terminating task due to error: failed to run builder command "JAX_PLATFORMS=cpu python /opt/c4/monitored_design.py --preflight /opt/c4/domain_preflight.json /opt/c4/domain_prepared_frame_preflight.json": container exit status: 1
+╭─ Error ──────────────────────────────────────────────────────────────────────╮
+│ Image build for im-sB9wPgcfRi881Xqz76VHTu failed.                            │
+│ View the build logs:                                                         │
+│   modal image logs im-sB9wPgcfRi881Xqz76VHTu                                 │
+╰──────────────────────────────────────────────────────────────────────────────╯

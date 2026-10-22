@@ -38,7 +38,7 @@ def preflight(config_path,output_path):
     from bindcraft.settings import read_settings,build_design_settings
     from bindcraft.loss import build_losses
     from bindcraft.protein_preparation import initialize_design_trajectory
-    from bindcraft.protein import Protein
+    from bindcraft.protein import Protein,ResidueFlags
     from bindcraft.epitope_targeting import force_epitope_targeting
     from bindcraft.frame_guard import safe_initial_atom_positions
     from bindcraft.af.alphafold.common import residue_constants
@@ -76,6 +76,9 @@ def preflight(config_path,output_path):
         if not np.isfinite(np.asarray(translation)).all():raise ValueError('Nonfinite real prepared translation')
         report['chains'][name]=dict(residues=len(protein),fully_observed_backbone_residues=int(np.asarray(protein.atom_mask)[:,:3].all(-1).sum()))
         if name!=design.designed_binder_chain:
+            hotspot_ids=np.asarray(protein.residue_index)[(np.asarray(protein.flags)&int(ResidueFlags.HOTSPOT))!=0]
+            np.testing.assert_array_equal(hotspot_ids,np.array([205,206,208,209,210]))
+            report['chains'][name]['hotspot_author_ids']=hotspot_ids.tolist()
             changes=int((np.asarray(protein.sequence).argmax(-1)!=reference_sequence).sum())
             if bool(changes)!=bool(settings['forced_targeting']):raise ValueError('Prepared target representation does not match the declared native/surrogate mode')
             report['chains'][name]['sequence_differences_from_native_reference']=changes
@@ -86,7 +89,29 @@ def preflight(config_path,output_path):
     report['forced_targeting']=settings['forced_targeting']
     report['effective_plddt_loss_weight']=effective_weight
     report['campaign_seed']=settings['campaign_seed']
-    report['target_scope']='Complete-target geometry; prepared sequence may be a forced-targeting surrogate. No forward, gradient or binding claim.'
+    report['target_scope']=('Reduced native contiguous apical domain; no full-context qualification.' if len(reference)==195 else
+                            'Complete-target geometry; prepared sequence may be a forced-targeting surrogate. No forward, gradient or binding claim.')
+    if len(reference)==195:
+        from bindcraft.protein import write_structure
+        from cif2pdb import read_atom_site,convert
+        preparation=json.loads(Path('/opt/c4/native-apical-preparation.json').read_text())
+        actual_hash=hashlib.sha256(Path(settings['targets'][0]['target_path']).read_bytes()).hexdigest()
+        if actual_hash!=preparation['output_sha256'] or preparation.get('native_sequence_verified') is not True:
+            raise ValueError('Domain input differs from audited native preparation')
+        report['native_domain_input_sha256']=actual_hash
+        path=Path('/tmp/domain-roundtrip.cif');write_structure({'target':reference},str(path))
+        residues={}
+        for atom in read_atom_site(path):residues[int(atom['auth_seq_id'])]=atom['auth_comp_id']
+        if list(residues)!=list(range(189,384)):raise ValueError('Domain output author numbering changed')
+        pdb=Path('/tmp/domain-roundtrip.pdb');convert(str(path),str(pdb))
+        roundtrip=next(iter(Protein.from_structure(str(pdb)).values()))
+        np.testing.assert_array_equal(np.asarray(roundtrip.sequence),np.asarray(reference.sequence))
+        np.testing.assert_array_equal(np.asarray(roundtrip.residue_index),np.arange(189,384))
+        report['output_roundtrip_author_range']=[189,383]
+        report['output_roundtrip_residues']=len(residues)
+        report['output_roundtrip_sequence_verified']=True
+        report['output_roundtrip_reader']='cif2pdb(auth IDs) -> Protein(PDB); direct CIF label IDs may restart at1'
+        report['full_native_context']=False
     Path(output_path).write_text(json.dumps(report,indent=2)+'\n')
     print(json.dumps(report),flush=True)
 
@@ -127,7 +152,10 @@ def main(config_path,output_path):
             metrics=geometry_metrics(ca,patch)
             record=dict(step=calls,unix=time.time(),loss=float(loss),**metrics)
             record['target_sequence_differences_from_native']=int((np.asarray(target.sequence).argmax(-1)!=reference_sequence).sum())
-            record['search_target_is_native']=record['target_sequence_differences_from_native']==0
+            record['target_matches_input_sequence']=record['target_sequence_differences_from_native']==0
+            record['target_residue_count']=len(target)
+            record['complete_native_monomer_context']=len(target)==639
+            record['search_target_is_native']=record['target_matches_input_sequence'] and len(target)==639
             active_losses=args[1] if len(args)>1 else kwargs['losses']
             record['weighted_loss_components']={name:float(np.asarray(value)) for name,value in prediction.metrics.items()
                 if name in active_losses and np.asarray(value).ndim==0}
