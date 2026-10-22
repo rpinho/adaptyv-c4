@@ -1,5 +1,5 @@
 {
-  "status": "modeling",
+  "status": "completed",
   "started": 1792670946.6817746,
   "revision": "b6fb3ae15ab6a702f1156cffc11bcc3323c2fd06",
   "gpu": "NVIDIA H100 80GB HBM3, 81559 MiB, 610.57.04",
@@ -16,6 +16,9 @@
   },
   "container": "ta-01M5HR7BS42MR6W0G94P7QDBDR",
   "max_runtime_seconds": 1800,
-  "elapsed_seconds": 9.167062997817993,
-  "worker_pid": 31
+  "elapsed_seconds": 506.6145541667938,
+  "worker_pid": 31,
+  "returncode": 0,
+  "finished": 1792671453.2963278,
+  "shutdown": "function returning; single-use container must terminate"
 }

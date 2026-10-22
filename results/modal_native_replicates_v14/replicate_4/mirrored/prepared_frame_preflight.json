@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "devices": [
+    "cpu:0"
+  ],
+  "chains": {
+    "binder": {
+      "residues": 68,
+      "fully_observed_backbone_residues": 0
+    },
+    "target_hTfR1_full_monomer": {
+      "residues": 639,
+      "fully_observed_backbone_residues": 639,
+      "sequence_differences_from_native_reference": 0
+    }
+  },
+  "af2_sha256": "fc5e8aa9528d79b569a00d0cbab0c3fed283bdb9fb8df2ee940f8256d2c1a2bf",
+  "forced_targeting": false,
+  "effective_plddt_loss_weight": 0.1,
+  "campaign_seed": 20261024,
+  "target_scope": "Complete-target geometry; prepared sequence may be a forced-targeting surrogate. No forward, gradient or binding claim."
+}
