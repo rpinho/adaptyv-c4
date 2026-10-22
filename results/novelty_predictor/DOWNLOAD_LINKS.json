@@ -1,0 +1,14 @@
+{
+  "https://opig.stats.ox.ac.uk/webapps/plabdab/": [
+    "https://opig.stats.ox.ac.uk/webapps/plabdab/static/downloads/paired_sequences.csv.gz",
+    "https://opig.stats.ox.ac.uk/webapps/plabdab/static/downloads/unpaired_sequences.csv.gz",
+    "https://opig.stats.ox.ac.uk/webapps/plabdab/static/downloads/plabdab_models.tar.gz",
+    "https://opig.stats.ox.ac.uk/webapps/plabdab/static/downloads/plabdab_data.tar.gz"
+  ],
+  "https://opig.stats.ox.ac.uk/webapps/sabdab-sabpred/therasabdab/search/": [
+    "https://opig.stats.ox.ac.uk/webapps/sabdab-sabpred/static/downloads/TheraSAbDab_SeqStruc_OnlineDownload.xlsx",
+    "https://opig.stats.ox.ac.uk/webapps/sabdab-sabpred/static/downloads/TheraSAbDab_SeqStruc_OnlineDownload.csv",
+    "https://opig.stats.ox.ac.uk/webapps/sabdab-sabpred/static/downloads/TheraSAbDab_INNwithnoSeq.xlsx",
+    "https://opig.stats.ox.ac.uk/webapps/sabdab-sabpred/static/downloads/TheraSAbDab_INNwithnoSeq.csv"
+  ]
+}

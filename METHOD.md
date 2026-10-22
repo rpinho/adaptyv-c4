@@ -1,5 +1,35 @@
 # Method: proton-coupled two-state design, with the numbers checked
 
+## Latest lane boundaries — CPU novelty sequence half complete (Oct22)
+
+Ricardo assigned all generation, RFD4 files, Modal apps and GPU campaigns to
+claude/submission-and-control. Do not create, edit or duplicate its canonical
+scripts/build_submission.py, scripts/rank_candidates.py, modal_rfd4.py or configs/rfd4/.
+Our old exporter is superseded. Read-only three-line comparison saved in
+results/novelty_predictor/EXPORTER_COMPARISON.md; no further exporter work.
+NO GPU WITHOUT RICARDO SAYING YES and a quoted hourly rate.
+
+Task1 already complete: GATE VINDICATED for compatible6W3H, alternatecopy
+INCONCLUSIVE (>2A fit). Complete mapping and unchanged real-gate outputs in
+results/real_gate_control/RESULTS.md. Original66 stay retired with prior caveats.
+
+Task2 new scripts/novelty_level_predictor.py supplies local CPU MMseqs2 sequence
+search plus explicit level bounds; existing novelty_audit.py unchanged. Four public
+sequence families downloaded/fingerprinted: SwissProt, PDB, Thera-SAbDab, both
+paired/unpaired PLAbDab. Separate patent corpus unidentified/unavailable; antibody
+bulk snapshots are older (2025/2024) and organizer versions unknown. Structural
+prediction/domain consensus/Foldseek/TM-align not implemented; do NOT claim exact
+novelty levels3/4 from no sequence hits. Report results/novelty_predictor/RESULTS.md.
+Actual73 retired sequences had no significant hits at declared settings; known
+195aa nativeTfR1 positivecontrol100% identity. Finallevels withheld, not guessed.
+New output/manifest/rule tests cover boundaries and missing evidence. CLI runs
+only local CPU searches, never downloads/uploads or allocates cloud services.
+
+No new GPU spend. Recorded Runpod56.589988 posted +our Modal10.718947 estimate
+=~67.31, excluding separate RFD4 lane/storage/CPUbuilds/consultations. Current
+lane ends with documented structural/database gaps; no automatic successor.
+No account, entry, main or KB-main write. Earlier plans below are historical.
+
 ## Latest instruction — generator lane STOPPED; CPU real-gate control COMPLETE (Oct22)
 
 Ricardo explicitly superseded this generator lane with the separate approved

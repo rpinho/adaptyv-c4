@@ -1,0 +1,107 @@
+{
+  "checked_at": "2026-10-22T17:18:16.434728+00:00",
+  "sources": [
+    {
+      "database": "swissprot",
+      "url": "https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.fasta.gz",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/swissprot.fasta.gz",
+      "http_headers": {
+        "Date": "Thu, 22 Oct 2026 17:15:13 GMT",
+        "Server": "Apache/2.4.68 (Ubuntu) OpenSSL/3.0.13",
+        "Last-Modified": "Thu, 03 Sep 2026 18:00:00 GMT",
+        "ETag": "\"5974c5a-65a97eba0a800\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "93801562",
+        "Strict-Transport-Security": "max-age=31536000",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "close",
+        "Content-Type": "application/x-gzip"
+      },
+      "status": "downloaded",
+      "bytes": 93801562,
+      "sha256": "a9c3496aa727e61d25d9e1291c9ba28d2c2ad19c0e26569dc083d53ec4169536"
+    },
+    {
+      "database": "pdb",
+      "url": "https://files.rcsb.org/pub/pdb/derived_data/pdb_seqres.txt.gz",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/pdb.fasta.gz",
+      "http_headers": {
+        "Content-Type": "application/gzip",
+        "Content-Length": "67782770",
+        "Connection": "close",
+        "Accept-Ranges": "bytes",
+        "Date": "Thu, 22 Oct 2026 17:15:13 GMT",
+        "Server": "AmazonS3",
+        "Last-Modified": "Sat, 17 Oct 2026 12:00:58 GMT",
+        "ETag": "\"c329c82f87f7ac2ecfc571beffab19aa-9\"",
+        "x-amz-server-side-encryption": "AES256",
+        "X-Cache": "Miss from cloudfront",
+        "Via": "1.1 cc3da0075e7848e02a2908b63df452d2.cloudfront.net (CloudFront)",
+        "X-Amz-Cf-Pop": "TPA52-P1",
+        "X-Amz-Cf-Id": "DNSAG56IL8HX30fhDkXrzfj6dB_N7fKdV4tegO8cMmV4h0gIYdCJDg=="
+      },
+      "status": "downloaded",
+      "bytes": 67782770,
+      "sha256": "c64ee94edf68f37771bf3dfaf71a322d66c92765c18e3c3379376c2c815cd03c"
+    },
+    {
+      "database": "therapeutic_antibody",
+      "url": "https://opig.stats.ox.ac.uk/webapps/sabdab-sabpred/static/downloads/TheraSAbDab_SeqStruc_OnlineDownload.csv",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/therapeutic_antibody.csv",
+      "http_headers": {
+        "Server": "nginx/1.26.3",
+        "Date": "Thu, 22 Oct 2026 17:15:13 GMT",
+        "Content-Type": "text/csv; charset=utf-8",
+        "Content-Length": "636357",
+        "Connection": "close",
+        "Content-Disposition": "inline; filename=TheraSAbDab_SeqStruc_OnlineDownload.csv",
+        "Last-Modified": "Tue, 18 Mar 2025 14:35:02 GMT",
+        "Cache-Control": "no-cache",
+        "ETag": "\"1742308502.0-636357-3209240168\""
+      },
+      "status": "downloaded",
+      "bytes": 636357,
+      "sha256": "cc9402788297ed7b6ab3d676daa21953a6d28ebbd9cc78ec7248b19f74d49d6d"
+    },
+    {
+      "database": "plabdab_paired",
+      "url": "https://opig.stats.ox.ac.uk/webapps/plabdab/static/downloads/paired_sequences.csv.gz",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/plabdab_paired.csv.gz",
+      "http_headers": {
+        "Server": "nginx/1.26.3",
+        "Date": "Thu, 22 Oct 2026 17:15:14 GMT",
+        "Content-Type": "text/csv; charset=utf-8",
+        "Content-Length": "11392439",
+        "Connection": "close",
+        "Content-Encoding": "gzip",
+        "Content-Disposition": "inline; filename=paired_sequences.csv.gz",
+        "Last-Modified": "Wed, 28 Aug 2024 23:20:12 GMT",
+        "Cache-Control": "no-cache",
+        "ETag": "\"1724887212.0-11392439-1915491820\""
+      },
+      "status": "downloaded",
+      "bytes": 11392439,
+      "sha256": "10f0fb3b82ddee09209adaff51340380294e3782ba90034af16c9f1d56c458a5"
+    },
+    {
+      "database": "plabdab_unpaired",
+      "url": "https://opig.stats.ox.ac.uk/webapps/plabdab/static/downloads/unpaired_sequences.csv.gz",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/plabdab_unpaired.csv.gz",
+      "http_headers": {
+        "Server": "nginx/1.26.3",
+        "Date": "Thu, 22 Oct 2026 17:15:19 GMT",
+        "Content-Type": "text/csv; charset=utf-8",
+        "Content-Length": "43960421",
+        "Connection": "close",
+        "Content-Encoding": "gzip",
+        "Content-Disposition": "inline; filename=unpaired_sequences.csv.gz",
+        "Last-Modified": "Wed, 28 Aug 2024 15:06:36 GMT",
+        "Cache-Control": "no-cache",
+        "ETag": "\"1724857596.0-43960421-2708412111\""
+      },
+      "status": "downloaded",
+      "bytes": 43960421,
+      "sha256": "fc1b726b6bad656021d32b7fb120f78e976f2fb1b908e3b3e61f26528715b448"
+    }
+  ]
+}

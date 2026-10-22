@@ -1,0 +1,20 @@
+{
+  "database": "swissprot",
+  "url": "https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.fasta.gz",
+  "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/swissprot.fasta.gz",
+  "http_headers": {
+    "Date": "Thu, 22 Oct 2026 17:15:13 GMT",
+    "Server": "Apache/2.4.68 (Ubuntu) OpenSSL/3.0.13",
+    "Last-Modified": "Thu, 03 Sep 2026 18:00:00 GMT",
+    "ETag": "\"5974c5a-65a97eba0a800\"",
+    "Accept-Ranges": "bytes",
+    "Content-Length": "93801562",
+    "Strict-Transport-Security": "max-age=31536000",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "close",
+    "Content-Type": "application/x-gzip"
+  },
+  "status": "downloaded",
+  "bytes": 93801562,
+  "sha256": "a9c3496aa727e61d25d9e1291c9ba28d2c2ad19c0e26569dc083d53ec4169536"
+}

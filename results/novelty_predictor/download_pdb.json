@@ -1,0 +1,23 @@
+{
+  "database": "pdb",
+  "url": "https://files.rcsb.org/pub/pdb/derived_data/pdb_seqres.txt.gz",
+  "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/pdb.fasta.gz",
+  "http_headers": {
+    "Content-Type": "application/gzip",
+    "Content-Length": "67782770",
+    "Connection": "close",
+    "Accept-Ranges": "bytes",
+    "Date": "Thu, 22 Oct 2026 17:15:13 GMT",
+    "Server": "AmazonS3",
+    "Last-Modified": "Sat, 17 Oct 2026 12:00:58 GMT",
+    "ETag": "\"c329c82f87f7ac2ecfc571beffab19aa-9\"",
+    "x-amz-server-side-encryption": "AES256",
+    "X-Cache": "Miss from cloudfront",
+    "Via": "1.1 cc3da0075e7848e02a2908b63df452d2.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Pop": "TPA52-P1",
+    "X-Amz-Cf-Id": "DNSAG56IL8HX30fhDkXrzfj6dB_N7fKdV4tegO8cMmV4h0gIYdCJDg=="
+  },
+  "status": "downloaded",
+  "bytes": 67782770,
+  "sha256": "c64ee94edf68f37771bf3dfaf71a322d66c92765c18e3c3379376c2c815cd03c"
+}

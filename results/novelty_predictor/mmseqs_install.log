@@ -1,0 +1,51 @@
+==> Downloading bottle manifests
+✔︎ Bottle Manifest mmseqs2 (18-8cc5c)
+==> Would install 1 formula:
+mmseqs2 18-8cc5c
+==> Would install 6 dependencies for mmseqs2:
+libidn2
+libpsl
+ca-certificates
+openssl@4
+wget
+libomp
+==> Would upgrade 1 dependency for mmseqs2:
+libunistring
+==> Fetching downloads for: mmseqs2
+✔︎ Bottle Manifest libunistring (1.5)
+✔︎ Bottle Manifest ca-certificates (2026-10-20)
+✔︎ Bottle Manifest libidn2 (2.3.8)
+✔︎ Bottle Manifest libpsl (0.23.3)
+✔︎ Bottle Manifest openssl@4 (4.0.3)
+✔︎ Bottle Manifest wget (1.25.0_2)
+✔︎ Bottle Manifest libomp (23.1.4)
+✔︎ Bottle libidn2 (2.3.8)
+✔︎ Bottle libpsl (0.23.3)
+✔︎ Bottle libomp (23.1.4)
+✔︎ Bottle ca-certificates (2026-10-20)
+✔︎ Bottle libunistring (1.5)
+✔︎ Bottle wget (1.25.0_2)
+✔︎ Bottle mmseqs2 (18-8cc5c)
+✔︎ Bottle openssl@4 (4.0.3)
+==> Installing dependencies for mmseqs2: libidn2, libpsl, ca-certificates, openssl@4, wget and libomp
+==> Installing mmseqs2 dependency: libidn2 (2.3.8)
+==> Pouring libidn2--2.3.8.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/libidn2/2.3.8: 80 files, 908.5KB
+==> Installing mmseqs2 dependency: libpsl (0.23.3)
+==> Pouring libpsl--0.23.3.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/libpsl/0.23.3: 18 files, 286.4KB
+==> Installing mmseqs2 dependency: ca-certificates (2026-10-20)
+==> Pouring ca-certificates--2026-10-20.all.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/ca-certificates/2026-10-20: 5 files, 196.1KB
+==> Installing mmseqs2 dependency: openssl@4 (4.0.3)
+==> Pouring openssl@4--4.0.3.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/openssl@4/4.0.3: 6,820 files, 23.8MB
+==> Installing mmseqs2 dependency: wget (1.25.0_2)
+==> Pouring wget--1.25.0_2.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/wget/1.25.0_2: 92 files, 4.7MB
+==> Installing mmseqs2 dependency: libomp (23.1.4)
+==> Pouring libomp--23.1.4.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/libomp/23.1.4: 11 files, 1.8MB
+==> Installing mmseqs2
+==> Pouring mmseqs2--18-8cc5c.arm64_tahoe.bottle.2.tar.gz
+🍺  /opt/homebrew/Cellar/mmseqs2/18-8cc5c: 10 files, 23MB

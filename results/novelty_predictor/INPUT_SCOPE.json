@@ -1,0 +1,10 @@
+{
+  "retired_sequences": 73,
+  "known_positive_controls": 1,
+  "submission_candidate_count": 0,
+  "source": "results/diversity_review/retired_eight_metric_pool.csv",
+  "source_sha256": "3aadf4cd7142a51a61a0e3069660d0de97594b7b3137673ae3c1ee2ad3940921",
+  "control": "Exact195aa native11QC authorA189-383; benign known-sequence positive control, not a candidate",
+  "purpose": "Retired-pool screen and real-tool validation only; no generation or submission",
+  "original_emitter_unchanged": true
+}

@@ -1,0 +1,20 @@
+{
+  "database": "plabdab_unpaired",
+  "url": "https://opig.stats.ox.ac.uk/webapps/plabdab/static/downloads/unpaired_sequences.csv.gz",
+  "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/plabdab_unpaired.csv.gz",
+  "http_headers": {
+    "Server": "nginx/1.26.3",
+    "Date": "Thu, 22 Oct 2026 17:15:19 GMT",
+    "Content-Type": "text/csv; charset=utf-8",
+    "Content-Length": "43960421",
+    "Connection": "close",
+    "Content-Encoding": "gzip",
+    "Content-Disposition": "inline; filename=unpaired_sequences.csv.gz",
+    "Last-Modified": "Wed, 28 Aug 2024 15:06:36 GMT",
+    "Cache-Control": "no-cache",
+    "ETag": "\"1724857596.0-43960421-2708412111\""
+  },
+  "status": "downloaded",
+  "bytes": 43960421,
+  "sha256": "fc1b726b6bad656021d32b7fb120f78e976f2fb1b908e3b3e61f26528715b448"
+}

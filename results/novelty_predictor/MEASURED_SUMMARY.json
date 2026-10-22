@@ -1,0 +1,42 @@
+{
+  "retired_designs": 73,
+  "retired_sequence_classes": {
+    "no_significant_hit": 73
+  },
+  "retired_hits": 0,
+  "retired_with_any_hit": 0,
+  "retired_exact_levels_established": 0,
+  "control_best_identity": 1.0,
+  "control_best_hit": {
+    "query": "q000074",
+    "target": "11qc_A",
+    "fident": 1.0,
+    "nident": 195,
+    "alnlen": 195,
+    "qlen": 195,
+    "tlen": 639,
+    "qstart": 1,
+    "qend": 195,
+    "tstart": 68,
+    "tend": 262,
+    "evalue": 5.458e-127,
+    "bits": 399.0,
+    "qcov": 1.0,
+    "tcov": 0.305,
+    "reported_fident": 1.0,
+    "database": "pdb"
+  },
+  "control_possible_levels": [
+    1,
+    2
+  ],
+  "database_hit_rows": {
+    "swissprot": 32,
+    "pdb": 34,
+    "therapeutic_antibody": 0,
+    "plabdab": 0,
+    "patents": null
+  },
+  "search_elapsed_seconds": 20.358085541999998,
+  "new_gpu_spend_usd": 0
+}
