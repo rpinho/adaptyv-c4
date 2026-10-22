@@ -1,0 +1,126 @@
+Building image im-aO6V6qrdLMUa9k7YGRyAX1
+
+=> Step 0: FROM base
+
+=> Step 1: COPY . /
+Saving image...
+Image saved, took 1.39s
+
+Built image im-aO6V6qrdLMUa9k7YGRyAX1 in 4.27s
+
+
+Building image im-4cnPPFMsrMlV8CmuaHi2BT
+
+=> Step 0: FROM base
+
+=> Step 1: RUN python /opt/c4/patch_frame_guard.py --upstream /opt/bindcraft --helper /opt/c4/frame_guard.py
+{
+  "original_af2_sha256": "aa185971676c5b6e3d2ebcef920e3b78acf16879b48b9073e74a527401ef79ae",
+  "patched_af2_sha256": "fc5e8aa9528d79b569a00d0cbab0c3fed283bdb9fb8df2ee940f8256d2c1a2bf",
+  "helper_sha256": "9ff2a4bccd4a310ba0881c8dbf40b833d78b3d2b962528dbcc12649087186412",
+  "repaired_paths": [
+    "initial input",
+    "recycled previous prediction"
+  ],
+  "actual_atom_positions_masks_templates_modified": false
+}
+
+=> Step 2: RUN JAX_PLATFORMS=cpu python /opt/c4/validate_frame_guard.py --upstream /opt/bindcraft --out /opt/c4/cpu_frame_validation.json
+{
+  "status": "passed",
+  "jax": "0.11.2",
+  "devices": [
+    "cpu:0"
+  ],
+  "cases": [
+    "unresolved",
+    "valid template",
+    "partial CA",
+    "collinear",
+    "nonfinite",
+    "padding",
+    "recycled valid prediction"
+  ],
+  "actual_upstream_frame_functions": {
+    "multimer": {
+      "determinants": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "finite": true
+    },
+    "monomer": {
+      "determinants": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "finite": true
+    }
+  },
+  "old_zero_frame_determinant": 0.0,
+  "old_zero_frame_update_norm": 0.0,
+  "repaired_translation_update_norms": [
+    1.7320507764816284,
+    1.7320507764816284,
+    1.7320507764816284,
+    1.7320507764816284,
+    1.7320507764816284,
+    1.7320507764816284
+  ],
+  "actual_inputs_masks_unchanged": true,
+  "valid_template_frame_unchanged": true,
+  "patch": {
+    "original_af2_sha256": "aa185971676c5b6e3d2ebcef920e3b78acf16879b48b9073e74a527401ef79ae",
+    "patched_af2_sha256": "fc5e8aa9528d79b569a00d0cbab0c3fed283bdb9fb8df2ee940f8256d2c1a2bf",
+    "helper_sha256": "9ff2a4bccd4a310ba0881c8dbf40b833d78b3d2b962528dbcc12649087186412",
+    "repaired_paths": [
+      "initial input",
+      "recycled previous prediction"
+    ],
+    "actual_atom_positions_masks_templates_modified": false
+  },
+  "source_sha256": {
+    "bindcraft/af/alphafold/model/all_atom_multimer.py": "ce467f53f58407f5121f5d69596261d445d7a5c65cd042a57ba18b8ad95f30ec",
+    "bindcraft/af/alphafold/model/quat_affine.py": "c45b585f2d098eb91b7cc4e8afe9042524334fbbb4b0cdf857413fe3f4baa183",
+    "bindcraft/af/alphafold/model/geometry/rotation_matrix.py": "b54456f64e2cdd3a6d8742a997dadb306fad39e6a25739bbfbe456b27fbd5097"
+  },
+  "limitation": "Numerical frame regression, not an AlphaFold forward/gradient or affinity validation"
+}
+Saving image...
+Image saved, took 1.76s
+
+Built image im-4cnPPFMsrMlV8CmuaHi2BT in 9.55s
+
+
+✓ Created objects.
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/modal_campaign.py
+├── ✓ Uploaded 
+│   /Users/ricardo/dev/adaptyv-c4/results/gpu_campaign_v3/campaign.json
+├── ✓ Uploaded 
+│   /Users/ricardo/dev/adaptyv-c4/results/gpu_campaign_v2/human_11qc_full_monome
+│   r.pdb
+├── ✓ Uploaded 
+│   /Users/ricardo/dev/adaptyv-c4/results/gpu_campaign_v2/mirrored/campaign_meta
+│   data.json
+├── ✓ Uploaded 
+│   /Users/ricardo/dev/adaptyv-c4/results/modal_campaign_v5/human_11qc_local_fra
+│   me.pdb
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/modal_search_policy.py
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/frame_guard.py
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/patch_frame_guard.py
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/validate_frame_guard.py
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/frame_gpu_diagnostic.py
+├── ✓ Created Function run_campaign.
+└── ✓ Created Function frame_diagnostic.
+✓ App deployed in 21.545s! 🎉
+
+View Deployment: 
+https://modal.com/apps/pinho-ricardo/main/deployed/adaptyv-c4-native-control

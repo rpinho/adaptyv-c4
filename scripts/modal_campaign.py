@@ -48,6 +48,14 @@ image = (
     .add_local_file(ROOT / "results/gpu_campaign_v2/mirrored/campaign_metadata.json", "/opt/c4/reference_metadata.json", copy=True)
     .add_local_file(ROOT / "results/modal_campaign_v5/human_11qc_local_frame.pdb", "/opt/c4/local-frame-target.pdb", copy=True)
     .add_local_file(ROOT / "scripts/modal_search_policy.py", "/opt/c4/search_policy.py", copy=True)
+    .add_local_file(ROOT / "scripts/frame_guard.py", "/opt/c4/frame_guard.py", copy=True)
+    .add_local_file(ROOT / "scripts/patch_frame_guard.py", "/opt/c4/patch_frame_guard.py", copy=True)
+    .add_local_file(ROOT / "scripts/validate_frame_guard.py", "/opt/c4/validate_frame_guard.py", copy=True)
+    .add_local_file(ROOT / "scripts/frame_gpu_diagnostic.py", "/opt/c4/frame_gpu_diagnostic.py", copy=True)
+    .run_commands(
+        "python /opt/c4/patch_frame_guard.py --upstream /opt/bindcraft --helper /opt/c4/frame_guard.py",
+        "JAX_PLATFORMS=cpu python /opt/c4/validate_frame_guard.py --upstream /opt/bindcraft --out /opt/c4/cpu_frame_validation.json",
+    )
 )
 
 
@@ -165,4 +173,37 @@ def run_campaign(run_name: str = RUN_NAME, overrides: dict | None = None):
         save("status.json", status)
         volume.commit()
         print(json.dumps(status), flush=True)
+    return status
+
+
+@app.function(image=image,gpu=['H100','A100-80GB'],cpu=(4,4),memory=(65536,65536),
+              volumes={'/results':volume},timeout=1800,startup_timeout=300,retries=0,
+              max_containers=1,min_containers=0,scaledown_window=2,single_use_containers=True)
+def frame_diagnostic(run_name, overrides):
+    import json
+    import shutil
+    import subprocess
+    import time
+    if run_name!='c4_frame_guard_diagnostic_v8' or overrides:
+        raise ValueError('Only the declared one-call diagnostic is permitted')
+    out=Path('/results')/run_name
+    if out.exists():raise RuntimeError('Diagnostic output already exists; inspect before any repeated allocation')
+    out.mkdir()
+    status=dict(status='diagnostic_running',started=time.time())
+    (out/'status.json').write_text(json.dumps(status,indent=2)+'\n')
+    shutil.copy('/opt/c4/cpu_frame_validation.json',out/'cpu_frame_validation.json')
+    shutil.copy('/opt/bindcraft/frame_guard_manifest.json',out/'frame_guard_manifest.json')
+    volume.commit()
+    try:
+        with (out/'worker.log').open('w') as log:
+            result=subprocess.run(['python','/opt/c4/frame_gpu_diagnostic.py',str(out)],
+                cwd='/opt/bindcraft',stdout=log,stderr=subprocess.STDOUT,timeout=1500)
+        status.update(status='completed' if result.returncode==0 else 'diagnostic_failed',returncode=result.returncode)
+    except BaseException as exc:
+        status.update(status='diagnostic_failed',error=repr(exc))
+        raise
+    finally:
+        status.update(finished=time.time(),elapsed_seconds=time.time()-status['started'])
+        (out/'status.json').write_text(json.dumps(status,indent=2)+'\n')
+        volume.commit()
     return status

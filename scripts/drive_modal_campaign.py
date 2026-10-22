@@ -41,13 +41,13 @@ def mirror(vol, run_name=RUN):
         temp.replace(target)
 
 
-def main(run_name=RUN, overrides=None):
+def main(run_name=RUN, overrides=None, function_name='run_campaign', perform_cpu_followup=True):
     STATE.mkdir(parents=True, exist_ok=True)
     with (STATE / "driver.lock").open("w") as lock:
         fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
         status_path = STATE / "supervisor.json"
         status = json.loads(status_path.read_text()) if status_path.exists() else {}
-        function = modal.Function.from_name("adaptyv-c4-native-control", "run_campaign")
+        function = modal.Function.from_name("adaptyv-c4-native-control", function_name)
         vol = modal.Volume.from_name("adaptyv-c4-results")
         if not status.get("call_id"):
             if status.get("spawn_intent"):
@@ -111,7 +111,7 @@ def main(run_name=RUN, overrides=None):
             status.update(gpu_released_verified=False, status="REQUIRES_CONTAINER_SHUTDOWN")
         atomic(status_path, status)
         mirror(vol, run_name)
-        if status.get("gpu_released_verified"):
+        if status.get("gpu_released_verified") and perform_cpu_followup:
             followup = ROOT / "results" / ("modal_followup_v3" if run_name == "c4_native_apical_ablation_v3" else "modal_followup_" + run_name)
             followup.mkdir(exist_ok=True)
             with (followup / "postprocess.log").open("a") as log:

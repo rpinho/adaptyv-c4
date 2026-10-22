@@ -1,0 +1,10 @@
+{
+  "original_af2_sha256": "aa185971676c5b6e3d2ebcef920e3b78acf16879b48b9073e74a527401ef79ae",
+  "patched_af2_sha256": "fc5e8aa9528d79b569a00d0cbab0c3fed283bdb9fb8df2ee940f8256d2c1a2bf",
+  "helper_sha256": "9ff2a4bccd4a310ba0881c8dbf40b833d78b3d2b962528dbcc12649087186412",
+  "repaired_paths": [
+    "initial input",
+    "recycled previous prediction"
+  ],
+  "actual_atom_positions_masks_templates_modified": false
+}

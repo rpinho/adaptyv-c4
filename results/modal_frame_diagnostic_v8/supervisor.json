@@ -1,0 +1,21 @@
+{
+  "spawn_intent": 1792628805.6307662,
+  "pid": 43681,
+  "status": "submitted",
+  "call_id": "fc-01M5GG1MCW8TB2BP8RN6B9B6FP",
+  "submitted": 1792628806.1327639,
+  "last_mirror_error": "NotFoundError('No such file or directory')",
+  "function_stats": {
+    "backlog": 0,
+    "num_total_runners": 1,
+    "num_running_inputs": 1,
+    "input_headroom": 0
+  },
+  "checked": 1792628870.207136,
+  "remote": {
+    "status": "diagnostic_running",
+    "started": 1792628811.9258249
+  },
+  "compute_estimate_upper_usd": 0.0,
+  "estimate_excludes": "image build, container startup/teardown, storage, other apps"
+}

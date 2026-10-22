@@ -28,7 +28,7 @@ class ModalDriverTests(unittest.TestCase):
             spec.loader.exec_module(module)
         return module, fake
 
-    def exercise(self, stats, cancel=False, cancel_at_series_root=False):
+    def exercise(self, stats, cancel=False, cancel_at_series_root=False, diagnostic=False):
         driver, fake = self.driver()
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
@@ -46,7 +46,7 @@ class ModalDriverTests(unittest.TestCase):
             with patch.object(driver, "ROOT", root), patch.object(driver, "STATE", state), patch.object(driver, "CANCEL_ROOT", root), \
                     patch.object(driver, "mirror"), patch.object(driver.time, "sleep"), \
                     patch.object(driver.subprocess, "run", return_value=subprocess.CompletedProcess([], 0)) as followup:
-                driver.main()
+                driver.main(function_name='frame_diagnostic' if diagnostic else 'run_campaign',perform_cpu_followup=not diagnostic)
             return json.loads((state / "supervisor.json").read_text()), call, followup
 
     def test_result_waits_for_container_shutdown_before_cpu(self):
@@ -74,6 +74,11 @@ class ModalDriverTests(unittest.TestCase):
         status, call, followup = self.exercise([Stats(), Stats()], cancel_at_series_root=True)
         call.cancel.assert_called_once_with(terminate_containers=True)
         self.assertTrue(status["gpu_released_verified"])
+
+    def test_software_diagnostic_never_enters_candidate_ph_scoring(self):
+        status, call, followup = self.exercise([Stats(),Stats()],diagnostic=True)
+        self.assertTrue(status['gpu_released_verified'])
+        followup.assert_not_called()
 
 
 if __name__ == "__main__":
