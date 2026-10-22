@@ -23,13 +23,13 @@ def outcome(folder,run_name):
     return read_outcome(campaign,followup_path(ROOT,run_name)),stages
 
 
-def abort_after_driver_error(folder):
+def abort_after_driver_error(folder,function_name='run_campaign'):
     record=folder/'supervisor.json'
     snapshot=json.loads(record.read_text()) if record.exists() else {}
     if not snapshot.get('call_id'):
         return dict(gpu_released_verified=False,error='No confirmed call ID; inspect app before any next allocation')
     driver.modal.FunctionCall.from_id(snapshot['call_id']).cancel(terminate_containers=True)
-    function=driver.modal.Function.from_name('adaptyv-c4-native-control','run_campaign')
+    function=driver.modal.Function.from_name('adaptyv-c4-native-control',function_name)
     for _ in range(30):
         stats=function.get_current_stats()
         if stats.num_total_runners==stats.num_running_inputs==stats.backlog==0:

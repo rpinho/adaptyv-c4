@@ -1,0 +1,63 @@
+Building image im-ftecXdUo8YFhLD4Jo7sI81
+
+=> Step 0: FROM base
+
+=> Step 1: COPY . /
+Saving image...
+Image saved, took 569.06ms
+
+Built image im-ftecXdUo8YFhLD4Jo7sI81 in 1.61s
+
+
+Building image im-qwN0P5f0XKXQdQzsR6AG2d
+
+=> Step 0: FROM base
+
+=> Step 1: COPY . /
+Saving image...
+Image saved, took 1.42s
+
+Built image im-qwN0P5f0XKXQdQzsR6AG2d in 2.66s
+
+
+Building image im-DknOedspVCaOTNR7IPSsvF
+
+=> Step 0: FROM base
+
+=> Step 1: RUN JAX_PLATFORMS=cpu python /opt/c4/hard_sequence_refold.py --preflight /opt/c4/hard_refold_manifest.json /opt/c4/hard_refold_preflight.json
+{"status": "passed", "sequence_lengths": [69, 67], "binder_atoms_all_zero": true, "binder_masks_all_false": true, "binder_flags": "SEQUENCE only", "hard_one_hot_sequences": true, "target_residues": 639, "target_native_identity_verified": true, "held_out_models": ["model_1_ptm", "model_2_ptm"], "recycles": 3, "designed_coordinates_supplied": false, "interface": "bindcraft.MPNN_stage.predict_validation_ensemble", "scope": "Complete639-residue native monomer prediction; restore/check dimer B afterward; not dimer-aware refolding"}
+Saving image...
+Image saved, took 1.59s
+
+Built image im-DknOedspVCaOTNR7IPSsvF in 8.48s
+
+
+✓ Created objects.
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/modal_campaign.py
+├── ✓ Uploaded 
+│   /Users/ricardo/dev/adaptyv-c4/results/gpu_campaign_v3/campaign.json
+├── ✓ Uploaded 
+│   /Users/ricardo/dev/adaptyv-c4/results/gpu_campaign_v2/human_11qc_full_monome
+│   r.pdb
+├── ✓ Uploaded 
+│   /Users/ricardo/dev/adaptyv-c4/results/gpu_campaign_v2/mirrored/campaign_meta
+│   data.json
+├── ✓ Uploaded 
+│   /Users/ricardo/dev/adaptyv-c4/results/modal_campaign_v5/human_11qc_local_fra
+│   me.pdb
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/modal_search_policy.py
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/frame_guard.py
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/patch_frame_guard.py
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/validate_frame_guard.py
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/frame_gpu_diagnostic.py
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/monitored_design.py
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/hard_sequence_refold.py
+├── ✓ Uploaded 
+│   /Users/ricardo/dev/adaptyv-c4/results/hard_sequence_refold_v15/manifest.json
+├── ✓ Created Function run_campaign.
+├── ✓ Created Function frame_diagnostic.
+└── ✓ Created Function sequence_refold.
+✓ App deployed in 25.507s! 🎉
+
+View Deployment: 
+https://modal.com/apps/pinho-ricardo/main/deployed/adaptyv-c4-native-control

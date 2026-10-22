@@ -70,6 +70,9 @@ image = (
         "JAX_PLATFORMS=cpu python /opt/c4/monitored_design.py --preflight /opt/c4/confidence_preflight.json /opt/c4/confidence_prepared_frame_preflight.json",
         "JAX_PLATFORMS=cpu python /opt/c4/monitored_design.py --seed-preflights /opt/c4/campaign.json /opt/c4",
     )
+    .add_local_file(ROOT/'scripts/hard_sequence_refold.py','/opt/c4/hard_sequence_refold.py',copy=True)
+    .add_local_file(ROOT/'results/hard_sequence_refold_v15/manifest.json','/opt/c4/hard_refold_manifest.json',copy=True)
+    .run_commands('JAX_PLATFORMS=cpu python /opt/c4/hard_sequence_refold.py --preflight /opt/c4/hard_refold_manifest.json /opt/c4/hard_refold_preflight.json')
 )
 
 
@@ -233,4 +236,55 @@ def frame_diagnostic(run_name, overrides):
         status.update(finished=time.time(),elapsed_seconds=time.time()-status['started'])
         (out/'status.json').write_text(json.dumps(status,indent=2)+'\n')
         volume.commit()
+    return status
+
+
+@app.function(image=image,gpu=['H100','A100-80GB'],cpu=(4,4),memory=(65536,65536),
+              volumes={'/results':volume},timeout=2100,startup_timeout=300,retries=0,
+              max_containers=1,min_containers=0,scaledown_window=2,single_use_containers=True)
+def sequence_refold(run_name,overrides):
+    import hashlib
+    import json
+    import shutil
+    import subprocess
+    import time
+    import os
+    import jax
+    from bindcraft.model_weights import alphafold_parameters,alphafold_parameter_file
+    if run_name!='c4_hard_sequence_refold_v15' or overrides:raise ValueError('Only the fixed two-sequence diagnostic')
+    if any(d.platform!='gpu' for d in jax.devices()):raise ValueError('CPU fallback refused')
+    out=Path('/results')/run_name
+    if out.exists():raise RuntimeError('Fresh diagnostic directory required')
+    out.mkdir();started=time.time();proc=None
+    gpu=subprocess.check_output(['nvidia-smi','--query-gpu=name,memory.total,driver_version','--format=csv,noheader'],text=True).strip()
+    status=dict(status='preflight',started=started,gpu=gpu,container=os.environ.get('MODAL_TASK_ID'),worker_limit_seconds=1800)
+    def save():
+        (out/'status.json').write_text(json.dumps(status,indent=2)+'\n');volume.commit()
+    try:
+        reference=json.loads(Path('/opt/c4/reference_metadata.json').read_text())['checkpoints']
+        params=alphafold_parameters(download=False);checks={}
+        for name in ('model_1_ptm','model_2_ptm'):
+            filename='params_'+name+'.npz';expected=next(v for k,v in reference.items() if Path(k).name==filename)
+            actual=hashlib.sha256(Path(alphafold_parameter_file(params,name)).read_bytes()).hexdigest()
+            if actual!=expected:raise ValueError('Held-out checkpoint identity differs')
+            checks[filename]=actual
+        status.update(checkpoints=checks,status='refolding')
+        for source in ('hard_refold_manifest.json','hard_refold_preflight.json'):
+            shutil.copy('/opt/c4/'+source,out/source)
+        save()
+        with (out/'worker.log').open('w') as log:
+            proc=subprocess.Popen(['python','/opt/c4/hard_sequence_refold.py',str(out)],cwd='/opt/bindcraft',stdout=log,stderr=subprocess.STDOUT)
+            while proc.poll() is None:
+                if time.time()-started>1740:
+                    proc.terminate()
+                    try:proc.wait(timeout=30)
+                    except subprocess.TimeoutExpired:proc.kill();proc.wait(timeout=10)
+                    raise TimeoutError('Finite refold allocation reached its stop point')
+                status.update(elapsed_seconds=time.time()-started,worker_pid=proc.pid);save();time.sleep(15)
+        status.update(status='completed' if proc.returncode==0 else 'worker_failed',returncode=proc.returncode)
+    except BaseException as exc:
+        status.update(status='failed',error=repr(exc));raise
+    finally:
+        if proc is not None and proc.poll() is None:proc.kill();proc.wait(timeout=10)
+        status.update(finished=time.time(),elapsed_seconds=time.time()-started);save()
     return status
