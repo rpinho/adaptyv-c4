@@ -1,0 +1,25 @@
+{
+  "status": "Awaiting user completion of existing-account sign-in verification; not submitted",
+  "authorization": "Ricardo explicitly instructed the agent to submit the Rosalind access request. This is limited to this application; existing restrictions on challenge entries and account creation remain.",
+  "application_url": "https://chatgpt.com/r/b749fb02595e04c3007a54375f3f4374",
+  "applicant_name": "Ricardo Pinho",
+  "organization": null,
+  "applicant_description": "Personal independent research project; organizational eligibility has not been established.",
+  "research_summary": "Computational protein-design research for the Adaptyv Challenge 4: investigating human transferrin receptor 1 (TfR1) binders with pH-dependent binding and release. The current work evaluates structure-prediction and optimization software, native receptor context, model quality, and evidence needed to distinguish computational hypotheses from experimentally established binding.",
+  "requested_support": "Scientific literature synthesis, review of computational methods and numerical failures, analysis of candidate structures, and design of reproducible computational evaluations.",
+  "evidence_limitations": "No qualified candidate or experimentally validated binding/pH-release result has been established. Current model outputs have unresolved physical geometry and target-patch acquisition failures.",
+  "unknown_required_fields": [
+    "Verified OpenAI organization and authority to apply for it",
+    "Location information requested by the actual form",
+    "Any persona qualifications not established from the project",
+    "Final terms and attestations, not yet inspected"
+  ],
+  "browser_checkpoint": "The initial form was signed into a different household member account. Switched to Ricardo using his existing Google identity. OpenAI now requires authenticator or device verification; the device-notification option is pending.",
+  "spend": {
+    "new_gpu_this_application_usd": 0,
+    "newly_supervised_runpod_runtime_estimate_usd": 1.7952,
+    "modal_cumulative_runtime_estimate_usd": 4.0531838,
+    "consultation_reported_usage_usd": 1.1922999,
+    "exclusions": "Historical campaigns and unreconciled setup/storage"
+  }
+}
