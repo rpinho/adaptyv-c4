@@ -89,6 +89,36 @@ def sh(cmd, cwd=REPO_IN_IMAGE, check=True):
     return p.returncode, p.stdout
 
 
+def sh_timed(cmd, cwd=REPO_IN_IMAGE, check=True):
+    """Run a command while sampling GPU memory, and report peak use and wall time.
+
+    Querying nvidia-smi after the command exits reports an idle GPU, which is how the
+    first baseline run came back claiming 3 MiB. Upstream states no VRAM figure at all
+    ("Peak GPU memory depends on token count, batch size and recycle depth rather than
+    on the weights"), so this is the only way we get a real number to size a campaign.
+    """
+    import time
+    sampler = subprocess.Popen(
+        "nvidia-smi --query-gpu=memory.used --format=csv,noheader,nounits -l 2",
+        shell=True, text=True, stdout=subprocess.PIPE, stderr=subprocess.DEVNULL)
+    t0 = time.time()
+    try:
+        rc, out = sh(cmd, cwd=cwd, check=check)
+    finally:
+        elapsed = time.time() - t0
+        sampler.terminate()
+        try:
+            samples = [int(x) for x in (sampler.stdout.read() or "").split() if x.isdigit()]
+        except Exception:
+            samples = []
+    peak = max(samples) if samples else None
+    print("", flush=True)
+    print("TIMING  wall=%.1fs" % elapsed, flush=True)
+    print("VRAM    peak=%s MiB  (of 46068 on L40S)  samples=%d"
+          % (peak if peak is not None else "UNMEASURED", len(samples)), flush=True)
+    return rc, out, elapsed, peak
+
+
 # --------------------------------------------------------------------------------------
 # 1. CPU-only validation. Run this first, every time the spec changes.
 # --------------------------------------------------------------------------------------
@@ -257,12 +287,15 @@ def generate(num_replicates: int = 8, batch_size: int = 1, seed: int = 42,
     """
     metrics_arg = ("metrics_tags='[ppi_refolding,hotspot_conditioning]'" if metrics
                    else "'~metrics'")
-    sh(f"rfd4-generate inputs={INPUTS}/tfr1_apical_binder.yaml "
+    rc, out, elapsed, peak = sh_timed(
+       f"rfd4-generate inputs={INPUTS}/tfr1_apical_binder.yaml "
        f"recycle_strategy={recycle_strategy} "
        f"num_replicates={num_replicates} batch_size={batch_size} seed={seed} "
        f"save_chain_of_interest=true prevalidate_inputs=true "
        f"out_dir={RUNS}/{out_name} {metrics_arg}")
-    sh("nvidia-smi --query-gpu=memory.used,memory.total --format=csv", cwd="/", check=False)
+    if num_replicates:
+        print("PER DESIGN  %.1fs  -> $%.4f at L40S $1.95/hr"
+              % (elapsed / num_replicates, elapsed / num_replicates / 3600 * 1.95), flush=True)
     sh(f"find {RUNS}/{out_name} -name '*.cif*' | head -20", cwd="/", check=False)
     sh(f"find {RUNS}/{out_name} -name 'per_example_metrics.csv' -exec head -3 {{}} +",
        cwd="/", check=False)
