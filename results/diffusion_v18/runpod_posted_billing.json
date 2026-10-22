@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"detail\": \"startTime and endTime must be provided together\",\n  \"status\": 400,\n  \"title\": \"Bad Request\",\n  \"hint\": \"Input shape mismatch: check this tool's schema for required fields. For job payloads, the worker's release config defines the expected input object \\u2014 fix the payload and retry; don't abandon the task.\"\n}"
+    }
+  ],
+  "isError": true
+}

@@ -9,7 +9,7 @@ from hard_sequence_refold import dump
 ROOT=Path(__file__).resolve().parents[1]
 
 def main(name='hard_sequence_refold_v15'):
-    if name not in ('hard_sequence_refold_v15','domain_hard_refold_v17'):raise ValueError('Unknown diagnostic output')
+    if name not in ('hard_sequence_refold_v15','domain_hard_refold_v17','diffusion_hard_refold_v19'):raise ValueError('Unknown diagnostic output')
     out=ROOT/'results'/name
     status=json.loads((out/'supervisor.json').read_text())
     if not status.get('gpu_released_verified'):raise RuntimeError('Actual GPU release required first')

@@ -6,7 +6,11 @@ Launch/monitor series: .venv-modal/bin/python scripts/drive_modal_series.py
 from pathlib import Path
 
 import modal
-from modal_diffusion_image import image as diffusion_image
+if modal.is_local():
+    from modal_diffusion_image import image as diffusion_image
+else:
+    # Image construction is local; the deployed function already carries its image.
+    diffusion_image=modal.Image.debian_slim(python_version='3.11')
 
 ROOT = Path(__file__).resolve().parents[1]
 REVISION = "b6fb3ae15ab6a702f1156cffc11bcc3323c2fd06"
@@ -87,6 +91,10 @@ image = (
 if (ROOT/'results/domain_hard_refold_v17/manifest.json').exists():
     image=(image.add_local_file(ROOT/'results/domain_hard_refold_v17/manifest.json','/opt/c4/domain_refold_manifest.json',copy=True)
         .run_commands('JAX_PLATFORMS=cpu python /opt/c4/hard_sequence_refold.py --preflight /opt/c4/domain_refold_manifest.json /opt/c4/domain_refold_preflight.json'))
+
+if (ROOT/'results/diffusion_hard_refold_v19/manifest.json').exists():
+    image=(image.add_local_file(ROOT/'results/diffusion_hard_refold_v19/manifest.json','/opt/c4/diffusion_refold_manifest.json',copy=True)
+        .run_commands('JAX_PLATFORMS=cpu python /opt/c4/hard_sequence_refold.py --preflight /opt/c4/diffusion_refold_manifest.json /opt/c4/diffusion_refold_preflight.json'))
 
 
 @app.function(
@@ -268,8 +276,13 @@ def sequence_refold(run_name,overrides):
     routes={'c4_hard_sequence_refold_v15':('hard_refold_manifest.json','hard_refold_preflight.json')}
     if Path('/opt/c4/domain_refold_manifest.json').exists():
         routes['c4_domain_hard_refold_v17']=('domain_refold_manifest.json','domain_refold_preflight.json')
+    if Path('/opt/c4/diffusion_refold_manifest.json').exists():
+        routes['c4_diffusion_hard_refold_v19']=('diffusion_refold_manifest.json','diffusion_refold_preflight.json')
     if run_name not in routes or overrides:raise ValueError('Only an image-prepared fixed sequence diagnostic is allowed')
     manifest_name,preflight_name=routes[run_name]
+    proof=json.loads(Path('/opt/c4',preflight_name).read_text())
+    if proof.get('status')!='passed' or proof['manifest_sha256']!=hashlib.sha256(Path('/opt/c4',manifest_name).read_bytes()).hexdigest() or proof['worker_sha256']!=hashlib.sha256(Path('/opt/c4/hard_sequence_refold.py').read_bytes()).hexdigest():
+        raise ValueError('Image proof/manifest/worker identity mismatch')
     if any(d.platform!='gpu' for d in jax.devices()):raise ValueError('CPU fallback refused')
     out=Path('/results')/run_name
     if out.exists():raise RuntimeError('Fresh diagnostic directory required')
@@ -308,7 +321,7 @@ def sequence_refold(run_name,overrides):
     return status
 
 
-@app.function(image=diffusion_image,gpu='A100-80GB',cpu=(4,4),memory=(65536,65536),
+@app.function(image=diffusion_image,gpu=['A100-80GB','A100-40GB'],cpu=(4,4),memory=(65536,65536),
               volumes={'/results':volume},timeout=2100,startup_timeout=300,retries=0,
               max_containers=1,min_containers=0,scaledown_window=2,single_use_containers=True)
 def diffusion_generate(run_name,overrides):
@@ -348,3 +361,17 @@ def diffusion_generate(run_name,overrides):
         if proc is not None and proc.poll() is None:proc.kill();proc.wait(timeout=10)
         status.update(finished=time.time(),elapsed_seconds=time.time()-started);save()
     return status
+
+
+@app.function(image=diffusion_image,cpu=1,memory=2048,timeout=120,startup_timeout=300,
+              retries=0,max_containers=1,min_containers=0,scaledown_window=2,single_use_containers=True)
+def diffusion_runtime_check():
+    import sys
+    import json
+    import subprocess
+    if sys.version_info<(3,10):raise RuntimeError('Modal runner Python is too old')
+    child=json.loads(subprocess.check_output(['/app/RFdiffusion/.venv/bin/python','-c',
+        'import sys,json,torch;print(json.dumps(dict(python=list(sys.version_info[:2]),torch=torch.__version__,cuda_available=torch.cuda.is_available())))'],text=True))
+    if child['python']!=[3,9] or child['cuda_available']:raise RuntimeError('CPU bootstrap check differs')
+    return dict(status='passed',modal_runner_python=list(sys.version_info[:2]),runner_executable=sys.executable,
+                rf_runtime=child,scope='Actual serverless CPU bootstrap; no GPU requested')

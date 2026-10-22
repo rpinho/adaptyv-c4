@@ -1,0 +1,12 @@
+{
+  "pid": 27264,
+  "started_at": "2026-10-22T15:20:30.407182+00:00",
+  "run": "c4_diffusion_v18",
+  "resource_attempt": 2,
+  "gpu_preferences": [
+    "A100-80GB",
+    "A100-40GB"
+  ],
+  "hourly_requested_upper_usd": 3.198528,
+  "scientific_protocol_unchanged": true
+}

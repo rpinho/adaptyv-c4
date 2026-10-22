@@ -8,6 +8,8 @@ REVISION='86507b6538f51fce57b5a72477165f03999ed7ae'
 PYTHON='/app/RFdiffusion/.venv/bin/python'
 image=(modal.Image.from_registry('rosettacommons/rfdiffusion@'+DIGEST,add_python='3.11')
     .entrypoint([])
+    .env({'PATH':'/usr/local/bin:/usr/local/sbin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/sbin:/usr/bin:/sbin:/bin'})
+    .run_commands("python -c 'import sys; assert sys.version_info[:2] == (3,11)' ")
     .apt_install('git','curl','ca-certificates')
     .run_commands(
         'git init /app/RFdiffusion && cd /app/RFdiffusion && git remote add c4 https://github.com/RosettaCommons/RFdiffusion.git && '

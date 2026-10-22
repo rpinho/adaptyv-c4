@@ -1,0 +1,67 @@
+  File "/pkg/modal/__init__.py", line 5, in <module>
+    raise RuntimeError("This version of Modal requires at least Python 3.10")
+RuntimeError: This version of Modal requires at least Python 3.10
+Runner failed with exit code: 1
+Traceback (most recent call last):
+  File "/root/.local/share/uv/python/cpython-3.9.23-linux-x86_64-gnu/lib/python3.9/runpy.py", line 188, in _run_module_as_main
+    mod_name, mod_spec, code = _get_module_details(mod_name, _Error)
+  File "/root/.local/share/uv/python/cpython-3.9.23-linux-x86_64-gnu/lib/python3.9/runpy.py", line 111, in _get_module_details
+    __import__(pkg_name)
+  File "/pkg/modal/__init__.py", line 5, in <module>
+    raise RuntimeError("This version of Modal requires at least Python 3.10")
+RuntimeError: This version of Modal requires at least Python 3.10
+Runner failed with exit code: 1
+Traceback (most recent call last):
+  File "/root/.local/share/uv/python/cpython-3.9.23-linux-x86_64-gnu/lib/python3.9/runpy.py", line 188, in _run_module_as_main
+    mod_name, mod_spec, code = _get_module_details(mod_name, _Error)
+  File "/root/.local/share/uv/python/cpython-3.9.23-linux-x86_64-gnu/lib/python3.9/runpy.py", line 111, in _get_module_details
+    __import__(pkg_name)
+  File "/pkg/modal/__init__.py", line 5, in <module>
+    raise RuntimeError("This version of Modal requires at least Python 3.10")
+RuntimeError: This version of Modal requires at least Python 3.10
+Runner failed with exit code: 1
+Traceback (most recent call last):
+  File "/root/.local/share/uv/python/cpython-3.9.23-linux-x86_64-gnu/lib/python3.9/runpy.py", line 188, in _run_module_as_main
+    mod_name, mod_spec, code = _get_module_details(mod_name, _Error)
+  File "/root/.local/share/uv/python/cpython-3.9.23-linux-x86_64-gnu/lib/python3.9/runpy.py", line 111, in _get_module_details
+    __import__(pkg_name)
+  File "/pkg/modal/__init__.py", line 5, in <module>
+    raise RuntimeError("This version of Modal requires at least Python 3.10")
+RuntimeError: This version of Modal requires at least Python 3.10
+Runner failed with exit code: 1
+Traceback (most recent call last):
+  File "/root/.local/share/uv/python/cpython-3.9.23-linux-x86_64-gnu/lib/python3.9/runpy.py", line 188, in _run_module_as_main
+    mod_name, mod_spec, code = _get_module_details(mod_name, _Error)
+  File "/root/.local/share/uv/python/cpython-3.9.23-linux-x86_64-gnu/lib/python3.9/runpy.py", line 111, in _get_module_details
+    __import__(pkg_name)
+  File "/pkg/modal/__init__.py", line 5, in <module>
+    raise RuntimeError("This version of Modal requires at least Python 3.10")
+RuntimeError: This version of Modal requires at least Python 3.10
+Runner failed with exit code: 1
+Traceback (most recent call last):
+  File "/root/.local/share/uv/python/cpython-3.9.23-linux-x86_64-gnu/lib/python3.9/runpy.py", line 188, in _run_module_as_main
+    mod_name, mod_spec, code = _get_module_details(mod_name, _Error)
+  File "/root/.local/share/uv/python/cpython-3.9.23-linux-x86_64-gnu/lib/python3.9/runpy.py", line 111, in _get_module_details
+    __import__(pkg_name)
+  File "/pkg/modal/__init__.py", line 5, in <module>
+    raise RuntimeError("This version of Modal requires at least Python 3.10")
+RuntimeError: This version of Modal requires at least Python 3.10
+Runner failed with exit code: 1
+Traceback (most recent call last):
+  File "/root/.local/share/uv/python/cpython-3.9.23-linux-x86_64-gnu/lib/python3.9/runpy.py", line 188, in _run_module_as_main
+    mod_name, mod_spec, code = _get_module_details(mod_name, _Error)
+  File "/root/.local/share/uv/python/cpython-3.9.23-linux-x86_64-gnu/lib/python3.9/runpy.py", line 111, in _get_module_details
+    __import__(pkg_name)
+  File "/pkg/modal/__init__.py", line 5, in <module>
+    raise RuntimeError("This version of Modal requires at least Python 3.10")
+RuntimeError: This version of Modal requires at least Python 3.10
+Runner failed with exit code: 1
+Traceback (most recent call last):
+  File "/root/.local/share/uv/python/cpython-3.9.23-linux-x86_64-gnu/lib/python3.9/runpy.py", line 188, in _run_module_as_main
+    mod_name, mod_spec, code = _get_module_details(mod_name, _Error)
+  File "/root/.local/share/uv/python/cpython-3.9.23-linux-x86_64-gnu/lib/python3.9/runpy.py", line 111, in _get_module_details
+    __import__(pkg_name)
+  File "/pkg/modal/__init__.py", line 5, in <module>
+    raise RuntimeError("This version of Modal requires at least Python 3.10")
+RuntimeError: This version of Modal requires at least Python 3.10
+Runner failed with exit code: 1

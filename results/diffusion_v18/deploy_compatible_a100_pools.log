@@ -1,0 +1,40 @@
+✓ Created objects.
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/modal_campaign.py
+├── ✓ Uploaded 
+│   /Users/ricardo/dev/adaptyv-c4/results/gpu_campaign_v3/campaign.json
+├── ✓ Uploaded 
+│   /Users/ricardo/dev/adaptyv-c4/results/apical_context/native_189_383_search_o
+│   nly.pdb
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/rfdiffusion_preflight.py
+├── ✓ Uploaded 
+│   /Users/ricardo/dev/adaptyv-c4/results/gpu_campaign_v2/human_11qc_full_monome
+│   r.pdb
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/diffusion_worker.py
+├── ✓ Uploaded 
+│   /Users/ricardo/dev/adaptyv-c4/results/gpu_campaign_v2/mirrored/campaign_meta
+│   data.json
+├── ✓ Uploaded 
+│   /Users/ricardo/dev/adaptyv-c4/results/modal_campaign_v5/human_11qc_local_fra
+│   me.pdb
+├── ✓ Created Function diffusion_generate.
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/modal_search_policy.py
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/frame_guard.py
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/patch_frame_guard.py
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/validate_frame_guard.py
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/frame_gpu_diagnostic.py
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/monitored_design.py
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/hard_sequence_refold.py
+├── ✓ Uploaded 
+│   /Users/ricardo/dev/adaptyv-c4/results/hard_sequence_refold_v15/manifest.json
+├── ✓ Uploaded 
+│   /Users/ricardo/dev/adaptyv-c4/results/apical_context/PREPARED_INPUT.json
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/cif2pdb.py
+├── ✓ Uploaded 
+│   /Users/ricardo/dev/adaptyv-c4/results/domain_hard_refold_v17/manifest.json
+├── ✓ Created Function run_campaign.
+├── ✓ Created Function frame_diagnostic.
+└── ✓ Created Function sequence_refold.
+✓ App deployed in 6.202s! 🎉
+
+View Deployment: 
+https://modal.com/apps/pinho-ricardo/main/deployed/adaptyv-c4-native-control

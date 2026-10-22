@@ -1,0 +1,19 @@
+{
+  "completed_prior_model_runtime_usd": 9.906563282469483,
+  "startup_resource_attempts": [
+    {
+      "attempt": 1,
+      "model_forward_steps": 0,
+      "gpu_released_verified": true,
+      "submission_to_release_upper_usd": 0.3649556448447418
+    },
+    {
+      "attempt": 2,
+      "model_forward_steps": 0,
+      "gpu_released_verified": true,
+      "submission_to_release_upper_usd": 0.24296750802108763
+    }
+  ],
+  "cumulative_modal_submission_upper_usd": 10.514486435335312,
+  "scope": "Conservative submission-to-release envelope includes queuing; actual bootstrap/GPU billing not reconciled. Zero model steps does not mean zero billed resource time. CPU builds/storage extra."
+}

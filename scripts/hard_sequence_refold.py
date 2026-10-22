@@ -12,7 +12,7 @@ FIXED_SEQUENCES=(('v9','2699888c00c9c6af76b61c8547687cce87ccb0152754ae0d0a32c10e
                  ('seed23','8b0e2189b54820dd47b3d25e26969dd1a519f6c9a7267aee9d6f50a67fefa2b3'))
 
 def validate_manifest(manifest):
-    protocol=manifest['protocol'];expected_cap={1:8,2:4}.get(protocol)
+    protocol=manifest['protocol'];expected_cap={1:8,2:4,3:8}.get(protocol)
     if expected_cap is None or manifest['models']!=list(MODELS) or manifest['recycles']!=3 or manifest['max_prediction_jobs']!=expected_cap:
         raise ValueError('Declared prediction scope differs')
     if manifest['designed_binder_coordinates_supplied'] is not False:raise ValueError('Coordinate-free declaration differs')
@@ -20,12 +20,19 @@ def validate_manifest(manifest):
     if protocol==1:
         if tuple((e['name'],e['sequence_sha256']) for e in entries)!=FIXED_SEQUENCES:
             raise ValueError('Exactly the two predeclared sequences are required')
-    elif len(entries)!=1 or entries[0]['name']!='domain_primary' or entries[0]['length']!=69 or manifest.get('source_campaign')!='c4_native_domain_v16':
+    elif protocol==2 and (len(entries)!=1 or entries[0]['name']!='domain_primary' or entries[0]['length']!=69 or manifest.get('source_campaign')!='c4_native_domain_v16'):
         raise ValueError('Only the declared one-sequence domain follow-up is supported')
     if protocol==2:
         entry=entries[0]
         if not entry['source'].startswith('results/native_domain_v16/mirrored/campaign/') or len(entry['source_sha256'])!=64:
             raise ValueError('Domain source provenance differs')
+    if protocol==3:
+        if tuple(e['name'] for e in entries)!=('rfd_mpnn_1','rfd_mpnn_2') or any(e['length']!=69 for e in entries):
+            raise ValueError('Exactly the two declared69-residue diffusion/MPNN samples are required')
+        if manifest.get('source_campaign')!='c4_diffusion_v18' or manifest.get('mpnn_native_target_fixed_verified') is not True or manifest.get('independent_backbones')!=1:
+            raise ValueError('Diffusion/MPNN provenance differs')
+        if len(manifest.get('backbone_source_sha256',''))!=64 or any(not e['source'].startswith('results/diffusion_v18/mpnn/seqs/') or len(e['source_sha256'])!=64 for e in entries):
+            raise ValueError('Diffusion source identity differs')
     for entry in entries:
         if len(entry['sequence'])!=entry['length'] or hashlib.sha256(entry['sequence'].encode()).hexdigest()!=entry['sequence_sha256']:
             raise ValueError('Sequence identity differs')

@@ -1,0 +1,4 @@
+{
+  "app_id": "ap-KHVG2IH2Clh4RLi16vb0kL",
+  "reason": "Actual runner invokes RF virtualenv Python3.9 instead of added Modal Python3.11; no diffusion worker started"
+}

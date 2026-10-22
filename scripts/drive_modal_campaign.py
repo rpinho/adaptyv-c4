@@ -42,7 +42,7 @@ def mirror(vol, run_name=RUN):
         temp.replace(target)
 
 
-def main(run_name=RUN, overrides=None, function_name='run_campaign', perform_cpu_followup=True,max_runtime_seconds=7800):
+def main(run_name=RUN, overrides=None, function_name='run_campaign', perform_cpu_followup=True,max_runtime_seconds=7800,max_startup_seconds=None):
     STATE.mkdir(parents=True, exist_ok=True)
     with (STATE / "driver.lock").open("w") as lock:
         fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
@@ -65,9 +65,11 @@ def main(run_name=RUN, overrides=None, function_name='run_campaign', perform_cpu
         deadline = status["submitted"] + max_runtime_seconds
         completed = False
         while not completed:
-            if (STATE / "CANCEL").exists() or (CANCEL_ROOT / "CANCEL").exists() or time.time() > deadline:
+            startup_stalled=max_startup_seconds is not None and not status.get('remote') and time.time()-status['submitted']>max_startup_seconds
+            if (STATE / "CANCEL").exists() or (CANCEL_ROOT / "CANCEL").exists() or time.time() > deadline or startup_stalled:
                 call.cancel(terminate_containers=True)
                 status.update(status="cancelled", cancelled=time.time())
+                if startup_stalled:status['stop_reason']='No durable worker-start status within startup envelope'
                 completed = True
             else:
                 try:

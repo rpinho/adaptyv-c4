@@ -1,0 +1,7 @@
+{
+  "attempt": 3,
+  "state": "CPU_bootstrap_validation_required_before_GPU",
+  "prior_attempts_released_verified": true,
+  "science_unchanged": true,
+  "diagnosis": "Python3.9 was ahead of injected3.11 on base image PATH; this was not established GPU-capacity failure"
+}

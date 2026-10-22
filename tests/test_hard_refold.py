@@ -53,4 +53,13 @@ class HardRefoldTests(unittest.TestCase):
         with self.assertRaises(ValueError):validate_manifest(manifest|{'sequences':[entry,entry]})
         with self.assertRaises(ValueError):validate_manifest(manifest|{'source_campaign':'another_campaign'})
 
+    def test_diffusion_validation_keeps_two_samples_and_one_backbone_identity(self):
+        original=json.loads((Path(__file__).resolve().parents[1]/'results/hard_sequence_refold_v15/manifest.json').read_text())
+        entries=[original['sequences'][0]|dict(name='rfd_mpnn_'+str(i),source='results/diffusion_v18/mpnn/seqs/fixed.fa') for i in [1,2]]
+        manifest=original|dict(protocol=3,source_campaign='c4_diffusion_v18',max_prediction_jobs=8,sequences=entries,
+            mpnn_native_target_fixed_verified=True,independent_backbones=1,backbone_source_sha256='a'*64)
+        validate_manifest(manifest)
+        for change in [dict(independent_backbones=2),dict(mpnn_native_target_fixed_verified=False),dict(max_prediction_jobs=12),dict(sequences=entries[:1])]:
+            with self.subTest(change=change),self.assertRaises(ValueError):validate_manifest(manifest|change)
+
 if __name__=='__main__':unittest.main()

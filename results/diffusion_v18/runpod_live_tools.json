@@ -1,0 +1,236 @@
+[
+  {
+    "name": "get-pod",
+    "title": "Get Pod",
+    "description": "Get a pod. Returns a single pod by ID.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Pod identifier"
+        }
+      },
+      "required": [
+        "id"
+      ]
+    },
+    "annotations": {
+      "title": "Get Pod",
+      "readOnlyHint": true,
+      "destructiveHint": false,
+      "idempotentHint": true,
+      "openWorldHint": true
+    }
+  },
+  {
+    "name": "list-billing",
+    "title": "List billing",
+    "description": "Get aggregated billing history. Returns time-bucketed total spend across all billable Runpod resources for the authenticated user. Use startTime/endTime with bucketSize for an explicit range, or lastN with bucketSize for the most recent buckets. Each record reports one bucket's total plus pod, serverless, storage, public endpoint, and Instant Cluster cost components. The metadata block echoes the resolved query window, record count, and totals across all returned buckets.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "startTime": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Start of the billing period (RFC 3339). Defaults to 30 days ago."
+        },
+        "endTime": {
+          "type": "string",
+          "format": "date-time",
+          "description": "End of the billing period (RFC 3339), exclusive. Defaults to now. Snapped up to the end of the bucketSize bucket it lands in (unless already on a boundary) so the window aligns with the returned records."
+        },
+        "bucketSize": {
+          "$ref": "#/$defs/BillingBucketSize",
+          "description": "Length of each billing time bucket. Defaults to day.",
+          "type": "string"
+        },
+        "lastN": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Return the last N buckets of bucketSize, ending with the current (in-progress) bucket \u2014 e.g. lastN=100 with bucketSize=day is \"last 100 days\"."
+        }
+      },
+      "$defs": {
+        "BillingBucketSize": {
+          "type": "string",
+          "enum": [
+            "hour",
+            "day",
+            "week",
+            "month",
+            "year"
+          ],
+          "x-enum-varnames": [
+            "BillingBucketSizeHour",
+            "BillingBucketSizeDay",
+            "BillingBucketSizeWeek",
+            "BillingBucketSizeMonth",
+            "BillingBucketSizeYear"
+          ],
+          "default": "day",
+          "description": "Length of each billing time bucket.",
+          "examples": [
+            "day"
+          ]
+        }
+      }
+    },
+    "annotations": {
+      "title": "List billing",
+      "readOnlyHint": true,
+      "destructiveHint": false,
+      "idempotentHint": true,
+      "openWorldHint": true
+    }
+  },
+  {
+    "name": "list-pod-billing",
+    "title": "List Pod billing",
+    "description": "Get pod billing history. Returns pod-only billing detail for the authenticated user, split into time buckets by startTime/endTime with bucketSize or by lastN recent buckets. Use podId to narrow the response to one GPU or CPU pod; without it, records are emitted per pod per bucket. Each record includes podId, GPU, CPU, disk, and total amounts, while metadata echoes the resolved query and totals across the pod records. Use listBilling when you need aggregate spend across every billable resource family.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "startTime": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Start of the billing period (RFC 3339). Defaults to 30 days ago."
+        },
+        "endTime": {
+          "type": "string",
+          "format": "date-time",
+          "description": "End of the billing period (RFC 3339), exclusive. Defaults to now. Snapped up to the end of the bucketSize bucket it lands in (unless already on a boundary) so the window aligns with the returned records."
+        },
+        "bucketSize": {
+          "$ref": "#/$defs/BillingBucketSize",
+          "description": "Length of each billing time bucket. Defaults to day.",
+          "type": "string"
+        },
+        "lastN": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Return the last N buckets of bucketSize, ending with the current (in-progress) bucket \u2014 e.g. lastN=100 with bucketSize=day is \"last 100 days\"."
+        },
+        "podId": {
+          "type": "string",
+          "description": "Filter to a specific pod (GPU or CPU)."
+        }
+      },
+      "$defs": {
+        "BillingBucketSize": {
+          "type": "string",
+          "enum": [
+            "hour",
+            "day",
+            "week",
+            "month",
+            "year"
+          ],
+          "x-enum-varnames": [
+            "BillingBucketSizeHour",
+            "BillingBucketSizeDay",
+            "BillingBucketSizeWeek",
+            "BillingBucketSizeMonth",
+            "BillingBucketSizeYear"
+          ],
+          "default": "day",
+          "description": "Length of each billing time bucket.",
+          "examples": [
+            "day"
+          ]
+        }
+      }
+    },
+    "annotations": {
+      "title": "List Pod billing",
+      "readOnlyHint": true,
+      "destructiveHint": false,
+      "idempotentHint": true,
+      "openWorldHint": true
+    }
+  },
+  {
+    "name": "list-pods",
+    "title": "List Pods",
+    "description": "List pods. Returns pods owned by the authenticated user. Cluster member pods are excluded by default; set `includeClusterPods=true` to include them (each carries a non-null `cluster` membership block). Results are cursor-paginated newest-first; an omitted `limit` defaults to 1000. The cluster-member exclusion is applied before the page is cut, so a page holds `limit` pods whenever that many remain. Follow `pagination.nextCursor` until `hasNextPage` is false.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "includeClusterPods": {
+          "type": "boolean",
+          "default": false,
+          "description": "Include cluster member pods in the result. Defaults to false."
+        },
+        "cursor": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Opaque resume cursor \u2014 pass the previous response's `pagination.nextCursor` through verbatim; omit for the first page. A cursor is only valid for the operation and parameters that issued it; a malformed or foreign cursor is rejected."
+        },
+        "limit": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 1000,
+          "description": "Page size, 1\u20131000. Defaults to 1000 when omitted."
+        }
+      }
+    },
+    "annotations": {
+      "title": "List Pods",
+      "readOnlyHint": true,
+      "destructiveHint": false,
+      "idempotentHint": true,
+      "openWorldHint": true
+    }
+  },
+  {
+    "name": "pod-action",
+    "title": "Start, stop, restart, or terminate a Pod",
+    "description": "Trigger a pod state transition. Triggers a state transition on a pod. Send a JSON body with a single `action` field, e.g. `{ \"action\": \"stop\" }`. Valid actions: - `start` \u2014 boot a stopped pod (`EXITED` or `ERROR`) back toward `RUNNING`. - `stop` \u2014 stop a running or provisioning pod, releasing GPU/CPU compute while keeping its disk. The pod moves to `EXITED`. - `restart` \u2014 restart a `RUNNING` pod's container in place. - `terminate` \u2014 permanently delete the pod and release its resources (equivalent to `deletePod`). Which actions are valid depends on the pod's current status, and the currently permitted set is published in the pod's `actions` field: `RUNNING` allows `stop`/`restart`/`terminate`; `EXITED` and `ERROR` allow `start`/`terminate`; `PROVISIONING` and `STARTING` allow `stop`/`terminate`. `start`, `stop`, and `restart` return `200` with the updated pod. `terminate` returns `204` with no body. Requesting an action that is not valid for the pod's current status returns `409`.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "body": {
+          "$ref": "#/$defs/PodActionRequest",
+          "type": "object"
+        }
+      },
+      "required": [
+        "id",
+        "body"
+      ],
+      "$defs": {
+        "PodAction": {
+          "type": "string",
+          "description": "State transition to trigger on a pod.",
+          "enum": [
+            "start",
+            "stop",
+            "restart",
+            "terminate"
+          ]
+        },
+        "PodActionRequest": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "action"
+          ],
+          "properties": {
+            "action": {
+              "$ref": "#/$defs/PodAction"
+            }
+          }
+        }
+      }
+    },
+    "annotations": {
+      "title": "Start, stop, restart, or terminate a Pod",
+      "readOnlyHint": false,
+      "destructiveHint": true,
+      "openWorldHint": true
+    }
+  }
+]
