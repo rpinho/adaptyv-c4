@@ -280,15 +280,20 @@ def baseline(num_replicates: int = 4):
 @app.function(image=image, gpu=GPU_CHEAP, volumes=VOLUMES, timeout=86400)
 def generate(num_replicates: int = 8, batch_size: int = 1, seed: int = 42,
              recycle_strategy: str = "medium/front_loaded", out_name: str = "tfr1",
-             metrics: bool = False, spec: str = "tfr1_apical_binder"):
+             metrics: str = "geom", spec: str = "tfr1_apical_binder"):
     """Design binders against the TfR1 apical epitope.
 
     batch_size defaults to 1 because upstream says to confirm the longest input fits at
     1 before raising it. save_chain_of_interest is on so designs can be foldseek-
     clustered later -- diversity is a selection criterion we intend to compete on.
     """
-    metrics_arg = ("metrics_tags='[ppi_refolding,hotspot_conditioning]'" if metrics
-                   else "'~metrics'")
+    # metrics must run INLINE: hotspot_obedience reads the C_HOT conditioning, which is
+    # in scope during generation but absent from the generated CIF, so offline
+    # rfd4-evaluate cannot compute it. design+hotspot_conditioning are geometric and
+    # need no oracle container; only *_refolding tags do.
+    metrics_arg = {"none": "'~metrics'",
+                   "geom": "metrics_tags='[design,hotspot_conditioning]'",
+                   "full": "metrics_tags='[ppi_refolding,hotspot_conditioning]'"}[metrics]
     rc, out, elapsed, peak = sh_timed(
        f"rfd4-generate inputs={INPUTS}/{spec}.yaml "
        f"recycle_strategy={recycle_strategy} "
@@ -380,8 +385,17 @@ def evaluate(run: str = "tfr1_c200",
     (issue #59, PR #60 unmerged). We are not relying on ppi.pass.
     """
     out = f"{RUNS}/{run}_eval"
+    staged = f"{RUNS}/{run}_eval_inputs"
+    # Stage only the two-chain generated structures. A recursive scan of the run dir
+    # also finds the *_chain_* single-chain exports written by save_chain_of_interest,
+    # and every interface metric fails on those because the target is absent -- which is
+    # what produced 200 empty "Unexpected error in context:" warnings.
+    sh(f"rm -rf {staged} && mkdir -p {staged}", cwd="/")
+    sh(f"for f in {RUNS}/{run}/inference_samples/*/*_generated.cif*; do "
+       f"ln -s \"$f\" {staged}/$(basename $f); done", cwd="/", check=False)
+    sh(f"ls {staged} | wc -l", cwd="/", check=False)
     rc, o, elapsed, peak = sh_timed(
-        f"rfd4-evaluate inputs={RUNS}/{run} metrics_tags='[{tags}]' out_dir={out}",
+        f"rfd4-evaluate inputs={staged} metrics_tags='[{tags}]' out_dir={out}",
         check=False)
     sh(f"find {out} -name '*.csv' | head", cwd="/", check=False)
     sh(f"""python - <<'PY2'
@@ -395,5 +409,155 @@ for p in sorted(glob.glob("{out}/**/per_example_metrics.csv", recursive=True)):
                    ("hotspot", "clash", "ddg", "developab", "bond", "obedien", "rmsd"))]
     print("metric columns of interest:")
     for k in interesting: print("   ", k)
+    hot = next((k for k in interesting if "obedien" in k.lower() or "hotspot" in k.lower()), None)
+    if hot:
+        def num(v):
+            try: return float(v)
+            except Exception: return None
+        vals = [(num(r.get(hot)), r.get("name") or r.get("example") or "?") for r in rows]
+        vals = [(v, n) for v, n in vals if v is not None]
+        print()
+        print("%s: %d of %d rows numeric" % (hot, len(vals), len(rows)))
+        if vals:
+            vals.sort(reverse=True)
+            import statistics
+            print("  max %.3f  median %.3f  min %.3f"
+                  % (vals[0][0], statistics.median([v for v, _ in vals]), vals[-1][0]))
+            print("  top 10:")
+            for v, n in vals[:10]: print("    %.3f  %s" % (v, n))
 PY2""", cwd="/", check=False)
     runs_vol.commit()
+
+
+@app.function(image=image, gpu=GPU_CHEAP, volumes=VOLUMES, timeout=3600)
+def debug_eval(run: str = "tfr1_c200"):
+    """Score ONE design with full output captured to the volume.
+
+    Modal truncates stdout ("Logs may not be continuous"), and rfd4-evaluate reports
+    "Unexpected error in context:" with an empty message, so the real exception has to
+    be captured to a file and read back.
+    """
+    import glob, os
+    gen = sorted(glob.glob(f"{RUNS}/{run}/inference_samples/*/*_generated.cif*"))
+    print("generated files: %d" % len(gen))
+    chains = sorted(glob.glob(f"{RUNS}/{run}/inference_samples/*/*_chain_*.cif*"))
+    print("chain-of-interest files: %d" % len(chains))
+    if not gen:
+        print("NO GENERATED FILES"); return
+    one = os.path.dirname(gen[0])
+    print("evaluating only:", one)
+    log = f"{RUNS}/{run}_debug.log"
+    sh(f"rfd4-evaluate inputs={one} metrics_tags='[design,hotspot_conditioning]' "
+       f"out_dir={RUNS}/{run}_debug_eval --config-dir configs > {log} 2>&1 || true",
+       check=False)
+    runs_vol.commit()
+    sh(f"tail -60 {log}", cwd="/", check=False)
+    sh(f"grep -iE -A12 'traceback|error' {log} | head -40", cwd="/", check=False)
+
+
+@app.function(image=image, volumes=VOLUMES, timeout=3600, cpu=2.0)
+def export_sequences(run: str = "tfr1_c200", out: str = ""):
+    """Write every designed chain's sequence to a CSV on the volume, for offline screening.
+
+    The designed chain is the shorter one: the target is the preserved 195-residue apical
+    domain, identical in every output, so the other chain is what was generated.
+    Emits name,sequence so scripts/novelty_level_predictor.py and the diversity audit can
+    consume it directly, and counts histidines so the switch arm's actual adherence can be
+    checked against what the spec requested (upstream: these are model conditions, not
+    hard output constraints).
+    """
+    dest = out or f"{RUNS}/{run}_sequences.csv"
+    sh(f"""python - <<'PY2'
+import csv, glob, gzip, os
+THREE = {{'ALA':'A','ARG':'R','ASN':'N','ASP':'D','CYS':'C','GLN':'Q','GLU':'E','GLY':'G',
+          'HIS':'H','ILE':'I','LEU':'L','LYS':'K','MET':'M','PHE':'F','PRO':'P','SER':'S',
+          'THR':'T','TRP':'W','TYR':'Y','VAL':'V'}}
+rows=[]
+for path in sorted(glob.glob("{RUNS}/{run}/inference_samples/*/*_generated.cif*")):
+    op = gzip.open if path.endswith('.gz') else open
+    lines = op(path,'rt').read().splitlines()
+    i=0; cols=[]; ats=[]
+    while i < len(lines):
+        if lines[i].strip()=='loop_':
+            j=i+1; hdr=[]
+            while j<len(lines) and lines[j].lstrip().startswith('_'):
+                hdr.append(lines[j].strip()); j+=1
+            if hdr and hdr[0].startswith('_atom_site.'):
+                cols=[h.split('.',1)[1] for h in hdr]
+                while j<len(lines) and lines[j].strip() and not lines[j].lstrip().startswith(('_','loop_','#')):
+                    ats.append(lines[j].split()); j+=1
+                break
+            i=j
+        else: i+=1
+    idx={{c:k for k,c in enumerate(cols)}}
+    def g(r,c): return r[idx[c]] if c in idx else '?'
+    ch={{}}
+    for r in ats:
+        ch.setdefault(g(r,'label_asym_id'),{{}})[g(r,'label_seq_id')]=g(r,'label_comp_id')
+    seqs={{}}
+    for c,res in ch.items():
+        order=sorted(res,key=lambda x:int(x) if x.lstrip('-').isdigit() else 0)
+        seqs[c]=''.join(THREE.get(res[k],'X') for k in order)
+    if not seqs: continue
+    # designed chain = the one that is not the 195-residue preserved target
+    cand = sorted(seqs.items(), key=lambda kv: len(kv[1]))
+    designed = next((v for k,v in cand if len(v)!=195), cand[0][1])
+    name = os.path.basename(path).split('_generated')[0]
+    rows.append({{'name':name,'sequence':designed,'length':len(designed),
+                  'n_his':designed.count('H'),
+                  'pct_his':round(100.0*designed.count('H')/max(1,len(designed)),2),
+                  'n_cys':designed.count('C')}})
+with open("{dest}",'w',newline='') as fh:
+    w=csv.DictWriter(fh,fieldnames=['name','sequence','length','n_his','pct_his','n_cys'],lineterminator=chr(10))
+    w.writeheader(); w.writerows(rows)
+print('wrote {dest}  rows=%d' % len(rows))
+if rows:
+    import statistics
+    L=[r['length'] for r in rows]; H=[r['pct_his'] for r in rows]; C=[r['n_cys'] for r in rows]
+    print('length   min %d  median %d  max %d' % (min(L),statistics.median(L),max(L)))
+    print('%%His     min %.2f median %.2f max %.2f  (natural ~2.3%%)' % (min(H),statistics.median(H),max(H)))
+    print('designs with >=3 His: %d/%d' % (sum(1 for r in rows if r['n_his']>=3), len(rows)))
+    print('free Cys present in: %d/%d designs' % (sum(1 for c in C if c>0), len(rows)))
+PY2""", check=False)
+    runs_vol.commit()
+    return dest
+
+
+@app.function(image=image, gpu=GPU_CHEAP, volumes=VOLUMES, timeout=3600)
+def trace_eval(run: str = "tfr1_c200"):
+    """Get the ACTUAL exception. rfd4-evaluate swallows it into an empty
+    'Unexpected error in context:' and Modal truncates stdout, so call the metric
+    directly in-process on one structure and let Python raise."""
+    import glob
+    gen = sorted(glob.glob(f"{RUNS}/{run}/inference_samples/*/*_generated.cif*"))
+    target = gen[0]
+    print("target:", target)
+    sh(f"""python - <<'PY2' 2>&1 | tail -60
+import traceback
+path = "{target}"
+from atomworks.io.parser import parse
+try:
+    out = parse(path)
+    aa = out["atom_array"] if isinstance(out, dict) else out
+    print("parsed OK:", type(aa))
+    import numpy as np
+    for attr in ("chain_id", "res_id", "res_name", "atom_name"):
+        if hasattr(aa, attr):
+            v = getattr(aa, attr)
+            print("  %-10s n=%d uniq=%s" % (attr, len(v), sorted(set(map(str, v)))[:6]))
+    anns = [a for a in getattr(aa, "_annot", {{}}).keys()] if hasattr(aa, "_annot") else []
+    print("annotations:", [a for a in anns if "ondition" in a or a.startswith("C_") or a.startswith("SA_")][:12])
+except Exception:
+    traceback.print_exc()
+
+# now the metric itself
+try:
+    from rfproteina.metrics.hotspots import HotspotObedience, hotspot_obedience
+    import inspect
+    print()
+    print("hotspot_obedience signature:", inspect.signature(hotspot_obedience))
+    print("HotspotObedience.kwargs_to_compute_args:")
+    print(inspect.getsource(HotspotObedience.kwargs_to_compute_args))
+except Exception:
+    traceback.print_exc()
+PY2""", check=False)
