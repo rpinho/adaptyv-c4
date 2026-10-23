@@ -1,0 +1,23 @@
+{
+  "source": "/Users/ricardo/.worktrees/adaptyv-c4/claude-submission/modal_rfd4.py",
+  "source_sha256": "3554f595c0c20a98aff02356d81800828d22619e569acda99777a4f1b348e609",
+  "arms": [
+    [
+      "tfr1_c200m_20261023",
+      "tfr1_apical_binder"
+    ],
+    [
+      "tfr1_his200m_20261023",
+      "tfr1_apical_his"
+    ]
+  ],
+  "replicates_each": 200,
+  "batch_size": 8,
+  "seed": 42,
+  "metrics": "geom",
+  "function_timeout_seconds": 9000,
+  "max_gpu_containers": 2,
+  "gpu_usd_per_hour": 1.9511999999999998,
+  "cpu_ram_charges_additional": true,
+  "contains_generator": false
+}

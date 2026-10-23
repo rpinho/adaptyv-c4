@@ -1,5 +1,18 @@
 # Method: proton-coupled two-state design, with the numbers checked
 
+## Oct23 export recovery and generation priority
+
+Full native alignment completed; its exact-score export exceeded1200s.
+run_completion.py now supports guarded --resume-export with7200s export
+timeout, preserves the failed attempt and fingerprints the completed native
+cache. Export-only retry is active;31 focused tests pass. Do not repeat the
+alignment or declare resolved levels before validation. After committing
+this report, stop expanding novelty work and follow the existing generation
+handoff. Read-only geometry preflight and bounded invocation are prepared
+under results/generation_pivot/. GPU yes-after-quote remains required and
+pending. Runpod$56.589988 +own Modal estimate$10.718947 =~$67.31; new cloud
+compute$0.00, other-lane/account-wide billing excluded.
+
 ## Current CPU classification: measured bounds, then remaining full pairs
 
 Actual400-input bounded screen completed:73 local1/70 local2/257 unknown,

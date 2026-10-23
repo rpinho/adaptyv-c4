@@ -1,0 +1,37 @@
+{
+  "rows": 4,
+  "measurements": [
+    {
+      "example_id": "tfr1_apical_binder_0",
+      "hotspot_obedience.hotspot_obedience": "0.8",
+      "clash_metrics.frac_atoms_clashing_1p5A": "0.0",
+      "bond_length_metrics.bond_length.frac_unreasonable": "0.0",
+      "pre_oracle_pass": "1.0"
+    },
+    {
+      "example_id": "tfr1_apical_binder_1",
+      "hotspot_obedience.hotspot_obedience": "0.7",
+      "clash_metrics.frac_atoms_clashing_1p5A": "0.0",
+      "bond_length_metrics.bond_length.frac_unreasonable": "0.0",
+      "pre_oracle_pass": "1.0"
+    },
+    {
+      "example_id": "tfr1_apical_binder_2",
+      "hotspot_obedience.hotspot_obedience": "0.7",
+      "clash_metrics.frac_atoms_clashing_1p5A": "0.0",
+      "bond_length_metrics.bond_length.frac_unreasonable": "0.0",
+      "pre_oracle_pass": "1.0"
+    },
+    {
+      "example_id": "tfr1_apical_binder_3",
+      "hotspot_obedience.hotspot_obedience": "0.7",
+      "clash_metrics.frac_atoms_clashing_1p5A": "0.0",
+      "bond_length_metrics.bond_length.frac_unreasonable": "0.0",
+      "pre_oracle_pass": "1.0"
+    }
+  ],
+  "ranker_legacy_confidence_columns_present": false,
+  "ppi_ddg_present": false,
+  "organizer_acceptance_measured": false,
+  "new_gpu_or_remote_cpu_spend_usd": 0
+}
