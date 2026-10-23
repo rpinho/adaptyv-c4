@@ -1,11 +1,13 @@
 """Finite sequential local CPU control or complete supplied-coordinate census."""
 from datetime import datetime,timezone
+import argparse
 import hashlib
 import json
 import os
 from pathlib import Path
 import shutil
 import signal
+import re
 import subprocess
 import sys
 import time
@@ -45,16 +47,21 @@ def verify_rows(path,expected):
 
 
 def main():
-    phase=sys.argv[1]
-    if phase not in ('control','all'): raise ValueError('Expected control or all')
+    ap=argparse.ArgumentParser(description=__doc__)
+    ap.add_argument('phase',choices=('control','all'))
+    ap.add_argument('--input-manifest',type=Path,default=HERE/'INPUTS.json')
+    ap.add_argument('--output-dir',type=Path)
+    args=ap.parse_args();phase=args.phase
     if phase=='all':
         preflight=json.loads((HERE/'control/STATUS.json').read_text())
         assert preflight['state']=='complete'
         assert json.loads((HERE/'INDEXING_CHECKS.json').read_text())['all_passed']
-    output=HERE/phase
+    output=(args.output_dir or HERE/phase).resolve()
+    if not re.fullmatch(r'/[A-Za-z0-9_./-]+',str(output)):
+        raise ValueError('Third-party shell wrappers require a safe private runtime directory')
     output.mkdir()
     inputs=output/'inputs'; inputs.mkdir()
-    manifest=json.loads((HERE/'INPUTS.json').read_text())
+    manifest=json.loads(args.input_manifest.read_text())
     available=[r for r in manifest['inputs'] if r['status']=='full_backbone_verified'
                and (phase=='all' or r['name']=='KNOWN_TFR1_POSITIVE_CONTROL')]
     expected={}
@@ -63,8 +70,9 @@ def main():
         target=inputs/(item['query']+'.pdb'); shutil.copy2(item['path'],target)
         expected[item['query']]=dict(**item)
     import csv
-    sequences={r['name']:r['sequence'] for r in csv.DictReader((HERE.parents[2]/'results/novelty_predictor/analysis_inputs.csv').open())}
-    for value in expected.values(): value['sequence_md5']=hashlib.md5(sequences[value['name']].encode()).hexdigest()
+    if any('sequence_md5' not in value for value in expected.values()):
+        sequences={r['name']:r['sequence'] for r in csv.DictReader((HERE.parents[2]/'results/novelty_predictor/analysis_inputs.csv').open())}
+        for value in expected.values():value['sequence_md5']=hashlib.md5(sequences[value['name']].encode()).hexdigest()
     targets=output/'targets.txt'; targets.write_text(''.join(str(inputs/(q+'.pdb'))+'\n' for q in expected))
     state=dict(state='prepared',phase=phase,controller_pid=os.getpid(),inputs=len(expected),steps=[],new_gpu_or_cloud_cpu_spend_usd=0)
     def save(): (output/'STATUS.json').write_text(json.dumps(state,indent=2)+'\n')

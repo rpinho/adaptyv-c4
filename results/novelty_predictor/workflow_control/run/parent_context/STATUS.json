@@ -1,0 +1,63 @@
+{
+  "state": "complete",
+  "steps": [
+    {
+      "command": [
+        "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+        "tsv2db",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/parent_context/structure/parent_candidates.tsv",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/parent_context/structure/parent_prefilter",
+        "--output-dbtype",
+        "7"
+      ],
+      "started_at": "2026-10-23T00:23:42.150026+00:00",
+      "pid": 83202,
+      "completed": true
+    },
+    {
+      "command": [
+        "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+        "tmalign",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/querydb",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/parent_context/structure/parent_prefilter",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/parent_context/structure/parent_tmaligned",
+        "--threads",
+        "4",
+        "--tmalign-fast",
+        "0",
+        "--tmscore-threshold",
+        "0",
+        "--tmscore-threshold-mode",
+        "1",
+        "--tmalign-hit-order",
+        "1",
+        "-a",
+        "1"
+      ],
+      "started_at": "2026-10-23T00:23:42.162444+00:00",
+      "pid": 83203,
+      "completed": true
+    },
+    {
+      "command": [
+        "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+        "convertalis",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/querydb",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/parent_context/structure/parent_tmaligned",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/parent_context/structure/parent_hits.tsv",
+        "--threads",
+        "4",
+        "--exact-tmscore",
+        "1",
+        "--format-output",
+        "query,target,qlen,tlen,qstart,qend,tstart,tend,alnlen,qtmscore,ttmscore,qaln,taln"
+      ],
+      "started_at": "2026-10-23T00:23:57.643190+00:00",
+      "pid": 83265,
+      "completed": true
+    }
+  ],
+  "new_gpu_or_cloud_cpu_spend_usd": 0
+}

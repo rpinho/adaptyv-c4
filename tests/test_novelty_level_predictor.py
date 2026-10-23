@@ -198,12 +198,16 @@ elif sys.argv[1] == 'convertalis':
             args=argparse.Namespace(out=out,structures=structures,structure_database=db_manifest,
                 foldseek=str(binary),threads=1,timeout_structure=10,
                 structure_prefilter_mode='union',structure_max_seqs=50000)
-            records=[dict(name='fixture',sequence='A'*10)]
+            records=[dict(name='fixture',sequence='A'*10),dict(name='missing',sequence='A'*10)]
             report=dict(designs=[dict(name='fixture',sequence_evidence_class='no_significant_hit',
-                                     sequence_database_gaps=['patents'])])
+                                     sequence_database_gaps=['patents']),
+                                dict(name='missing',sequence_evidence_class='no_significant_hit',
+                                     sequence_database_gaps=['patents'],local_predicted_level=2,predicted_level=2)])
             novelty.run_structural_half(records,report,args)
             self.assertEqual(report['designs'][0]['local_predicted_level'],3)
             self.assertEqual(report['designs'][0]['structural_similarity']['category'],'moderate')
+            self.assertIsNone(report['designs'][1]['local_predicted_level'])
+            self.assertIsNone(report['designs'][1]['predicted_level'])
 
 
 if __name__ == '__main__': unittest.main()

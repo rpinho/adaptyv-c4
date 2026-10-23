@@ -1,0 +1,893 @@
+{
+  "method": "Move generated binary DBs/model scratch only; retain raw scores/model tables/manifests/logs",
+  "items": [
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/discovered",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/discovered",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/discovered",
+          "bytes": 294640,
+          "sha256": "745844ba44686b396e94d6d7a64defd3fae68c63431d1915d773f6515d00253a",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/discovered"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/discovered.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/discovered.dbtype",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/discovered.dbtype",
+          "bytes": 4,
+          "sha256": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/discovered.dbtype"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/discovered.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/discovered.index",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/discovered.index",
+          "bytes": 11,
+          "sha256": "0d7bd9afe77963112a43f936b31d835acfdbe80b5c9e2b169eeb284c90b27561",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/discovered.index"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/discovered_mode0.0",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/discovered_mode0.0",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/discovered_mode0.0",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/discovered_mode0.0"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/discovered_mode0.1",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/discovered_mode0.1",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/discovered_mode0.1",
+          "bytes": 146134,
+          "sha256": "c6f22902c221e7390bd9a607048c9d334be0c4b51e4ca4be8f7608dce17e8d3b",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/discovered_mode0.1"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/discovered_mode0.2",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/discovered_mode0.2",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/discovered_mode0.2",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/discovered_mode0.2"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/discovered_mode0.3",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/discovered_mode0.3",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/discovered_mode0.3",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/discovered_mode0.3"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/discovered_mode0.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/discovered_mode0.dbtype",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/discovered_mode0.dbtype",
+          "bytes": 4,
+          "sha256": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/discovered_mode0.dbtype"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/discovered_mode0.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/discovered_mode0.index",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/discovered_mode0.index",
+          "bytes": 11,
+          "sha256": "026092b220b934e01d60b4c102ea956157adbd9768e01f62684aa35e0d8e98a0",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/discovered_mode0.index"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/discovered_mode1.0",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/discovered_mode1.0",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/discovered_mode1.0",
+          "bytes": 148507,
+          "sha256": "0872b40741c6a5db080bae1af523aaa58790524c9b8d8d9e9bcd28b4c8bea64a",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/discovered_mode1.0"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/discovered_mode1.1",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/discovered_mode1.1",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/discovered_mode1.1",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/discovered_mode1.1"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/discovered_mode1.2",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/discovered_mode1.2",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/discovered_mode1.2",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/discovered_mode1.2"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/discovered_mode1.3",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/discovered_mode1.3",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/discovered_mode1.3",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/discovered_mode1.3"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/discovered_mode1.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/discovered_mode1.dbtype",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/discovered_mode1.dbtype",
+          "bytes": 4,
+          "sha256": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/discovered_mode1.dbtype"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/discovered_mode1.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/discovered_mode1.index",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/discovered_mode1.index",
+          "bytes": 11,
+          "sha256": "fae3b4c3c4865f2bf1b6d79318b3825d85ecaa466295c6323c701113dda5a3e9",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/discovered_mode1.index"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/querydb",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/querydb",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/querydb",
+          "bytes": 197,
+          "sha256": "6b92a0a6449527dc1e1c71c6ca782b8863ec00b0c584d0a293855b62f446db1f",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/querydb"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/querydb.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/querydb.dbtype",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/querydb.dbtype",
+          "bytes": 4,
+          "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/querydb.dbtype"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/querydb.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/querydb.index",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/querydb.index",
+          "bytes": 8,
+          "sha256": "8a4e981654a53b94b92db4eb8c1bccc44bb00c840f9fb11a9bb6c0c5bae2fce6",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/querydb.index"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/querydb.lookup",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/querydb.lookup",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/querydb.lookup",
+          "bytes": 16,
+          "sha256": "1ae56255ef1e69bfa9b21d55381d897c1b823f3c1e50790a525c18039e22f0ce",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/querydb.lookup"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/querydb.source",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/querydb.source",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/querydb.source",
+          "bytes": 14,
+          "sha256": "2e2728b8d0220a0adbed4f43567bcf7e645afb9d4369fda6b5d5312ecdc70225",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/querydb.source"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/querydb_ca",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/querydb_ca",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/querydb_ca",
+          "bytes": 1178,
+          "sha256": "9eb2c1cad2026367eb480ea1e90e7f735d5a59ed15f0074d09d82822ca1a7f8c",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/querydb_ca"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/querydb_ca.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/querydb_ca.dbtype",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/querydb_ca.dbtype",
+          "bytes": 4,
+          "sha256": "8fc6cb4a9816d75621652de783118eee13112cda196e61d1bde0460f29b26e3e",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/querydb_ca.dbtype"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/querydb_ca.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/querydb_ca.index",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/querydb_ca.index",
+          "bytes": 9,
+          "sha256": "51692dc1cfe37bebf10825911c8a8e33a10801686e144365cbd295ca35103159",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/querydb_ca.index"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/querydb_h",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/querydb_h",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/querydb_h",
+          "bytes": 13,
+          "sha256": "25eb27cbf4b19b111b66e9b65209b00966e7527136a7bb9b36cf85e7de4165fc",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/querydb_h"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/querydb_h.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/querydb_h.dbtype",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/querydb_h.dbtype",
+          "bytes": 4,
+          "sha256": "42f4aeb81c1ef81f771f3de8abca9dcf66901c575530e7672e4b1146474ae650",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/querydb_h.dbtype"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/querydb_h.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/querydb_h.index",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/querydb_h.index",
+          "bytes": 7,
+          "sha256": "ef06c61676d3f04c6df55cfbda34bddb5ef07b9dd053b6177f3a01b286a7690a",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/querydb_h.index"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/querydb_ss",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/querydb_ss",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/querydb_ss",
+          "bytes": 197,
+          "sha256": "17d2f86b06b6414641186d8dde274679d7f4dd6accba1735c3a10e99c89b96f7",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/querydb_ss"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/querydb_ss.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/querydb_ss.dbtype",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/querydb_ss.dbtype",
+          "bytes": 4,
+          "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/querydb_ss.dbtype"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/querydb_ss.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/querydb_ss.index",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/querydb_ss.index",
+          "bytes": 8,
+          "sha256": "8a4e981654a53b94b92db4eb8c1bccc44bb00c840f9fb11a9bb6c0c5bae2fce6",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/querydb_ss.index"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/tmaligned",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/tmaligned",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/tmaligned",
+          "bytes": 476349,
+          "sha256": "2d420fab9bcfe997052ea905f2be280fbe4ca111f5745ed68d9ba98e4b001b92",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/tmaligned"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/tmaligned.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/tmaligned.dbtype",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/tmaligned.dbtype",
+          "bytes": 4,
+          "sha256": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/tmaligned.dbtype"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/tmaligned.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/tmaligned.index",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/tmaligned.index",
+          "bytes": 11,
+          "sha256": "bf40f238691d25243234e1c77620779dbe7b551a34ad2a67e77f83e710ff7abf",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/tmaligned.index"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/tmp_mode0",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/tmp_mode0",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/tmp_mode0/16607063982414010538/structuresearch.sh",
+          "bytes": 6018,
+          "sha256": "a95a4c37412692a02b7c53cc39d82a93ab05d6d37e84007b2f1492eceba02d88",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/tmp_mode0/16607063982414010538/structuresearch.sh"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/tmp_mode1",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/tmp_mode1",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/structure/tmp_mode1/15842700397106459565/structuresearch.sh",
+          "bytes": 6018,
+          "sha256": "a95a4c37412692a02b7c53cc39d82a93ab05d6d37e84007b2f1492eceba02d88",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/whole_chain/structure/tmp_mode1/15842700397106459565/structuresearch.sh"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/discovered",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/discovered",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/discovered",
+          "bytes": 327660,
+          "sha256": "ba8f1bab7fe3ebb6d4e4e65e498a411a90b4d52cccb12a402088e259b1c13f27",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/discovered"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/discovered.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/discovered.dbtype",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/discovered.dbtype",
+          "bytes": 4,
+          "sha256": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/discovered.dbtype"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/discovered.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/discovered.index",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/discovered.index",
+          "bytes": 11,
+          "sha256": "d8aea3276386140be62eab111c5c00c497deb9b7e84111c72a310d6d2c662436",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/discovered.index"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/discovered_mode0.0",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/discovered_mode0.0",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/discovered_mode0.0",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/discovered_mode0.0"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/discovered_mode0.1",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/discovered_mode0.1",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/discovered_mode0.1",
+          "bytes": 162517,
+          "sha256": "1237d21ce1e77aff02a545b8d2f14f6073bb370febc4dccceac06333ba83cd09",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/discovered_mode0.1"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/discovered_mode0.2",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/discovered_mode0.2",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/discovered_mode0.2",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/discovered_mode0.2"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/discovered_mode0.3",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/discovered_mode0.3",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/discovered_mode0.3",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/discovered_mode0.3"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/discovered_mode0.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/discovered_mode0.dbtype",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/discovered_mode0.dbtype",
+          "bytes": 4,
+          "sha256": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/discovered_mode0.dbtype"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/discovered_mode0.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/discovered_mode0.index",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/discovered_mode0.index",
+          "bytes": 11,
+          "sha256": "1b2be88b102429d9490f643ab52c00db603642fc123363f793831ead40e5d1f7",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/discovered_mode0.index"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/discovered_mode1.0",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/discovered_mode1.0",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/discovered_mode1.0",
+          "bytes": 165144,
+          "sha256": "d1ed3d89cdeae86b4d4f0302d8fdec14807d7cadb426ae6122a5c6977be57448",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/discovered_mode1.0"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/discovered_mode1.1",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/discovered_mode1.1",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/discovered_mode1.1",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/discovered_mode1.1"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/discovered_mode1.2",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/discovered_mode1.2",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/discovered_mode1.2",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/discovered_mode1.2"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/discovered_mode1.3",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/discovered_mode1.3",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/discovered_mode1.3",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/discovered_mode1.3"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/discovered_mode1.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/discovered_mode1.dbtype",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/discovered_mode1.dbtype",
+          "bytes": 4,
+          "sha256": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/discovered_mode1.dbtype"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/discovered_mode1.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/discovered_mode1.index",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/discovered_mode1.index",
+          "bytes": 11,
+          "sha256": "ab3f3048e3c34a4d17ef557a0705ad57e1400976f0cfac1d570af7715e709059",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/discovered_mode1.index"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/querydb",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/querydb",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/querydb",
+          "bytes": 195,
+          "sha256": "a4576a314659adf4233b1dfea3e21b6dce76d5a7e4beaee18ef14a0069ec4974",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/querydb"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/querydb.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/querydb.dbtype",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/querydb.dbtype",
+          "bytes": 4,
+          "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/querydb.dbtype"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/querydb.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/querydb.index",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/querydb.index",
+          "bytes": 8,
+          "sha256": "90e22af7d49012d5653012c26f4e9cca2f92e268a60a1cbaf42b561c98a01cc0",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/querydb.index"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/querydb.lookup",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/querydb.lookup",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/querydb.lookup",
+          "bytes": 16,
+          "sha256": "1ae56255ef1e69bfa9b21d55381d897c1b823f3c1e50790a525c18039e22f0ce",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/querydb.lookup"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/querydb.source",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/querydb.source",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/querydb.source",
+          "bytes": 14,
+          "sha256": "2e2728b8d0220a0adbed4f43567bcf7e645afb9d4369fda6b5d5312ecdc70225",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/querydb.source"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/querydb_ca",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/querydb_ca",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/querydb_ca",
+          "bytes": 1166,
+          "sha256": "93386cb4d1bf2992add16dcfe1c429dda65369a9b19c2f5c99648ab1e21e80ba",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/querydb_ca"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/querydb_ca.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/querydb_ca.dbtype",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/querydb_ca.dbtype",
+          "bytes": 4,
+          "sha256": "8fc6cb4a9816d75621652de783118eee13112cda196e61d1bde0460f29b26e3e",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/querydb_ca.dbtype"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/querydb_ca.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/querydb_ca.index",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/querydb_ca.index",
+          "bytes": 9,
+          "sha256": "3bf22e1badc5f0f66f3fa95cdb528f44cb31f69d4b3a1103e0a2a399717c3ca4",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/querydb_ca.index"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/querydb_h",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/querydb_h",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/querydb_h",
+          "bytes": 13,
+          "sha256": "25eb27cbf4b19b111b66e9b65209b00966e7527136a7bb9b36cf85e7de4165fc",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/querydb_h"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/querydb_h.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/querydb_h.dbtype",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/querydb_h.dbtype",
+          "bytes": 4,
+          "sha256": "42f4aeb81c1ef81f771f3de8abca9dcf66901c575530e7672e4b1146474ae650",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/querydb_h.dbtype"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/querydb_h.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/querydb_h.index",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/querydb_h.index",
+          "bytes": 7,
+          "sha256": "ef06c61676d3f04c6df55cfbda34bddb5ef07b9dd053b6177f3a01b286a7690a",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/querydb_h.index"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/querydb_ss",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/querydb_ss",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/querydb_ss",
+          "bytes": 195,
+          "sha256": "1f9fdb1690b86006aaf465ed438540a77e8bfb525433b67270c23560ea649746",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/querydb_ss"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/querydb_ss.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/querydb_ss.dbtype",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/querydb_ss.dbtype",
+          "bytes": 4,
+          "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/querydb_ss.dbtype"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/querydb_ss.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/querydb_ss.index",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/querydb_ss.index",
+          "bytes": 8,
+          "sha256": "90e22af7d49012d5653012c26f4e9cca2f92e268a60a1cbaf42b561c98a01cc0",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/querydb_ss.index"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/tmaligned",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/tmaligned",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/tmaligned",
+          "bytes": 537364,
+          "sha256": "7240fa10087aa1947adb98eef446f7a812bb3ad2cbfca0b10ecbe452c7618ac1",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/tmaligned"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/tmaligned.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/tmaligned.dbtype",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/tmaligned.dbtype",
+          "bytes": 4,
+          "sha256": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/tmaligned.dbtype"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/tmaligned.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/tmaligned.index",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/tmaligned.index",
+          "bytes": 11,
+          "sha256": "94cf1a35ed8a46c3615a4f83e6353701876c9cb14a975a230f71aaa4171feea4",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/tmaligned.index"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/tmp_mode0",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/tmp_mode0",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/tmp_mode0/1259466505066349317/structuresearch.sh",
+          "bytes": 6018,
+          "sha256": "a95a4c37412692a02b7c53cc39d82a93ab05d6d37e84007b2f1492eceba02d88",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/tmp_mode0/1259466505066349317/structuresearch.sh"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/tmp_mode1",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/tmp_mode1",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/tmp_mode1/4021477268828230088/structuresearch.sh",
+          "bytes": 6018,
+          "sha256": "a95a4c37412692a02b7c53cc39d82a93ab05d6d37e84007b2f1492eceba02d88",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/domain_search/structure/tmp_mode1/4021477268828230088/structuresearch.sh"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/parent_context/structure/parent_prefilter",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/parent_context/structure/parent_prefilter",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/parent_context/structure/parent_prefilter",
+          "bytes": 23110,
+          "sha256": "b8a8bd08bc83225f48e218ebb096af51a690393cde4312f20bb6840071a5c6fc",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/parent_context/structure/parent_prefilter"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/parent_context/structure/parent_prefilter.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/parent_context/structure/parent_prefilter.dbtype",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/parent_context/structure/parent_prefilter.dbtype",
+          "bytes": 4,
+          "sha256": "e8613f5a5bc9f9feeda32a8e7c80b69dd4878e47b6a91723fb15eb84236b6a2b",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/parent_context/structure/parent_prefilter.dbtype"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/parent_context/structure/parent_prefilter.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/parent_context/structure/parent_prefilter.index",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/parent_context/structure/parent_prefilter.index",
+          "bytes": 10,
+          "sha256": "c02fd8cb619e89d14615e4ef3a6816c7a2973622700886852f2176a6f21bcedc",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/parent_context/structure/parent_prefilter.index"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/parent_context/structure/parent_tmaligned",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/parent_context/structure/parent_tmaligned",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/parent_context/structure/parent_tmaligned",
+          "bytes": 286783,
+          "sha256": "5b4de04060345b07a7ec61f471f538b8ce3b9e4026a3771ad326703d00b27be5",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/parent_context/structure/parent_tmaligned"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/parent_context/structure/parent_tmaligned.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/parent_context/structure/parent_tmaligned.dbtype",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/parent_context/structure/parent_tmaligned.dbtype",
+          "bytes": 4,
+          "sha256": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/parent_context/structure/parent_tmaligned.dbtype"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/parent_context/structure/parent_tmaligned.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/parent_context/structure/parent_tmaligned.index",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/parent_context/structure/parent_tmaligned.index",
+          "bytes": 11,
+          "sha256": "efd7de3ecd835a383be609c5a045a0173b969da18641247110ae2120ab018742",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/workflow_control/run/parent_context/structure/parent_tmaligned.index"
+        }
+      ]
+    }
+  ]
+}

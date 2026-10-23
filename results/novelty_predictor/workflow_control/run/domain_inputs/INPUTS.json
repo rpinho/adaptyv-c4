@@ -1,0 +1,47 @@
+{
+  "source_report_sha256": "cc958f0609b14833312ea033b951e69778b7ed96d5ce1db42d294d611afa13ff",
+  "designs_csv_sha256": "bfdb130c9d41408926844920f44166bfe20038cb64d1f31b7bdd1c11568324c6",
+  "protocol_sha256": "6f0e0003de8660505f0170cb0cfbfb03608daa1c850567f30f02aee3f6410d4b",
+  "coordinate_models": 1,
+  "unavailable": 0,
+  "source_backbone_or_sequence_repaired": false,
+  "inputs": [
+    {
+      "query": "q000001",
+      "name": "GENERIC_NATIVE_CONTROL",
+      "sequence_sha256": "439e6a3ac85d86bb4caf97c1942740a2c0ca1feb25ba7dfeab08d5ce369962a4",
+      "sequence_md5": "494007da9ec8bd372f8607dcf87e14f6",
+      "length": 195,
+      "pdb_to_cif_format_conversion": {
+        "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/workflow_runtime/9b49b1b63b6848399f247c9f271c7edd/full_backbones/q000001_source.cif",
+        "sha256": "bdd8f532cf2c0b752226c2453a8df0da8c9b77312a777a0b47d5ba6e6ad89f75"
+      },
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/workflow_runtime/9b49b1b63b6848399f247c9f271c7edd/full_backbones/q000001.pdb",
+      "sha256": "8099f7da6f11c826bd5f5001a61d87b1c478d26b106c93d797c21cc010c8c5d4",
+      "source": {
+        "name": "GENERIC_NATIVE_CONTROL",
+        "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones_complete_ter/q000074.pdb",
+        "source_hash_was_supplied": false,
+        "sha256": "8099f7da6f11c826bd5f5001a61d87b1c478d26b106c93d797c21cc010c8c5d4",
+        "status": "available",
+        "chain": "A",
+        "chain_inferred_by_unique_full_sequence": true,
+        "domains": [
+          {
+            "start": 1,
+            "end": 195,
+            "source": "Whole-chain baseline used for parent-context candidate discovery"
+          }
+        ]
+      },
+      "atoms": 1487,
+      "backbone_atoms": 780,
+      "max_ca_rounding_angstrom": 0.0,
+      "max_biopython_float32_parser_error_angstrom": 7.568359364995558e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": false,
+      "missing_bfactor_defaulted_to_zero": false
+    }
+  ]
+}

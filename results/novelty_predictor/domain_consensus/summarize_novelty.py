@@ -1,15 +1,27 @@
 """Check real domain-search evidence, then compare both fixed local policies."""
 from collections import Counter
 import argparse
+import hashlib
 import csv
 import json
 from pathlib import Path
 import sys
+import subprocess
 
 HERE=Path(__file__).resolve().parent
 ROOT=HERE.parents[2]
 sys.path.insert(0,str(ROOT/'scripts'))
 import novelty_level_predictor as n
+
+
+def runtime_file(path):
+    path=Path(path)
+    if path.exists():return path
+    receipt=json.loads((HERE/'RUNTIME_CACHE.json').read_text())
+    for item in receipt['items']:
+        for record in item['files']:
+            if record['original']==str(path.resolve()):return Path(record['cached'])
+    raise FileNotFoundError('Runtime source absent from retained cache: '+str(path))
 
 
 def main():
@@ -22,7 +34,13 @@ def main():
     old=json.loads(old_path.read_text());new=json.loads(new_path.read_text())
     assert old['input_csv_sha256']==new['input_csv_sha256']
     assert new['sequence_report_sha256']==n.digest(old_path)
-    assert new['predictor_sha256']==n.digest(ROOT/'scripts/novelty_level_predictor.py')
+    current_source=n.digest(ROOT/'scripts/novelty_level_predictor.py')
+    recorded_source=new['predictor_sha256']
+    recorded_commit=None
+    if recorded_source!=current_source:
+        recorded_commit='b32bdba'
+        frozen=subprocess.check_output(['git','-C',str(ROOT),'show',recorded_commit+':scripts/novelty_level_predictor.py'])
+        assert hashlib.sha256(frozen).hexdigest()==recorded_source
     assert new['structure_manifest_sha256']==n.digest(HERE/'STRUCTURES.json')
     assert old['structure_database']==new['structure_database']
     assert old['constants']==new['constants']
@@ -92,6 +110,8 @@ def main():
             domain_query_sequences_and_exact_score_denominators_verified=True),
         source_sha256=dict(old_report=n.digest(old_path),new_report=n.digest(new_path),
             comparison_policy=n.digest(HERE/'COMPARISON_POLICY.md'),indexing_checks=n.digest(HERE/'INDEXING_CHECKS.json')),
+        predictor_source_provenance=dict(recorded_sha256=recorded_source,recorded_git_commit=recorded_commit,
+            current_sha256=current_source,recorded_version_verified=True),
         spend=dict(runpod_recorded_usd=56.5899880444631,our_modal_estimate_usd=10.718947158590089,
             combined_recorded_usd=67.30893520305318,new_gpu_or_cloud_cpu_usd=0))
     if args.parent_context:
@@ -104,7 +124,7 @@ def main():
         assert provenance['applies_to_all_query_domains']==70
         assert n.digest(run_folder/'structure/parent_candidates.tsv')==provenance['raw_seed_tsv_sha256']
         assert n.digest(run_folder/'structure/parent_hits.tsv')==provenance['raw_parent_hits_sha256']
-        for path,fingerprint in provenance['query_db_fingerprints'].items():assert n.digest(path)==fingerprint
+        for path,fingerprint in provenance['query_db_fingerprints'].items():assert n.digest(runtime_file(path))==fingerprint
         prior_domains=json.loads((HERE/'novelty_run/structure/query_domains.json').read_text())
         assert raw_domains==prior_domains
         prior_hits=n.parse_structure_hits(HERE/'novelty_run/structure/hits.tsv',prior_domains)

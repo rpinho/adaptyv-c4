@@ -1,0 +1,2 @@
+name,query,length,accepted_domains,accepted_residues,domain_coverage,discontinuous_domain,high,medium,low_excluded
+GENERIC_NATIVE_CONTROL,q000001,195,1,193,0.9897435897435898,False,2-194,na,na

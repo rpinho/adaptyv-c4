@@ -1,0 +1,29 @@
+createdb /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/queries /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/querydb --threads 4 
+
+MMseqs Version:         	463739e0014a1549a527de589102cde98f802f37
+Use GPU                 	0
+Path to ProstT5         	
+Chain name mode         	0
+Model name mode         	0
+Write mapping file      	0
+Write Foldcomp          	0
+Mask b-factor threshold 	0
+Coord store mode        	2
+Save residue indices    	false
+Write lookup file       	1
+Input format            	0
+Input compression format	0
+File Inclusion Regex    	.*
+File Exclusion Regex    	^$
+Threads                 	4
+Verbosity               	3
+
+Output file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/querydb
+[=================================================================] 1 0s 0ms
+Time for merging to querydb_ss: 0h 0m 0s 0ms
+Time for merging to querydb_h: 0h 0m 0s 0ms
+Time for merging to querydb_ca: 0h 0m 0s 0ms
+Time for merging to querydb: 0h 0m 0s 0ms
+Ignore 0 out of 1.
+Too short: 0, incorrect: 0, not proteins: 0.
+Time for processing: 0h 0m 0s 6ms

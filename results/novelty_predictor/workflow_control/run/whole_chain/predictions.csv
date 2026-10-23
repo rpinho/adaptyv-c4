@@ -1,0 +1,2 @@
+name,length,best_detected_identity,sequence_evidence_class,predicted_level,possible_levels,local_gate_assessment,structure_status,sequence_database_gaps,best_hit_database,best_hit_target,local_predicted_level,prediction_confidence,organizer_level_established
+GENERIC_NATIVE_CONTROL,195,1.0,high,1,1|2,provisional_local_level_1,foldseek_then_tmalign_completed,patents,patents,AAC11676.1,1,low: public historical PDB snapshot; provided coordinates; declared domains; organizer consensus/versions and patent corpus unverified; no-hit sequence class is provisional,False

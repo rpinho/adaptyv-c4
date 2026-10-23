@@ -1,0 +1,8 @@
+......../Users/ricardo/dev/adaptyv-c4/scripts/novelty_level_predictor.py:388: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/7p/z8kq6zz94wj03gxlv_ltjtch0000gn/T/tmp5x6ooc0v/out/structure/hits.tsv' mode='r' encoding='UTF-8'>
+  raw_alignment_rows=sum(1 for _ in (out/'hits.tsv').open()),
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.............
+----------------------------------------------------------------------
+Ran 21 tests in 0.818s
+
+OK

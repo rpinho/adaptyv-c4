@@ -1,0 +1,29 @@
+{
+  "protected_files_unchanged": {
+    "scripts/build_submission.py": "a6a73ed2e352f60859e32b84dd7ca187243a39813500b0a0c3eab21b25126a65",
+    "scripts/novelty_audit.py": "f881f728c6cd839374a516ad313070bf56b819df2994b1715fbd2fc7ce598b10",
+    "scripts/audit_full_context.py": "2f8f453ac6e90cca7c29c03b58d61a9c5ecde0c533ff7f6b3bc42ccf0dd76251",
+    "scripts/run_context_ensemble.py": "0f408034f943a03bb34558ce8222666af5fb9276d62397e39fc4738bab75b3d2",
+    "scripts/postprocess_gpu_campaign.py": "e2a8b8e6a9bf01872e9d2a3c4867abe4e23367c5d8485c861369dbf93d227472"
+  },
+  "software_tests_passed": 23,
+  "real_generic_pdb_control_passed": true,
+  "current_retired_domain_evidence_revalidated": true,
+  "no_live_recorded_cpu_workers": true,
+  "recorded_worker_pids_checked": 24,
+  "current_branch": "codex/install-two-state-switch",
+  "raw_upstream_crlf_preserved": true,
+  "git_whitespace_check": "cr-at-eol permits original upstream CSV line endings",
+  "unresolved_standalone_tm_numeric_agreement": {
+    "passed": false,
+    "measured_max_difference": 0.00225,
+    "preregistered_tolerance": 0.001
+  },
+  "organizer_novelty_validated": false,
+  "new_generator_accepted_designs_produced_by_this_cpu_lane": 0,
+  "runpod_recorded_usd": 56.5899880444631,
+  "our_modal_estimate_usd": 10.718947158590089,
+  "combined_recorded_usd": 67.30893520305318,
+  "new_gpu_or_cloud_cpu_spend_usd": 0,
+  "excluded_costs": "Separate RFD4 lane, storage/builds and consultations"
+}

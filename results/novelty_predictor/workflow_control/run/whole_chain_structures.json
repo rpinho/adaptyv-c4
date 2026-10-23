@@ -1,0 +1,20 @@
+{
+  "structures": [
+    {
+      "name": "GENERIC_NATIVE_CONTROL",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones_complete_ter/q000074.pdb",
+      "source_hash_was_supplied": false,
+      "sha256": "8099f7da6f11c826bd5f5001a61d87b1c478d26b106c93d797c21cc010c8c5d4",
+      "status": "available",
+      "chain": "A",
+      "chain_inferred_by_unique_full_sequence": true,
+      "domains": [
+        {
+          "start": 1,
+          "end": 195,
+          "source": "Whole-chain baseline used for parent-context candidate discovery"
+        }
+      ]
+    }
+  ]
+}

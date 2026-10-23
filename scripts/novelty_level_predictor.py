@@ -354,6 +354,7 @@ def run_structural_half(records, report, args):
         e = evidence[r['name']]; r['structure_evidence'] = e
         if e['status'] == 'coordinates_unavailable':
             r.update(structure_status=e['status'], local_predicted_level=None,
+                     predicted_level=None, level_status='unestablished_missing_coordinates_or_domains',
                      prediction_confidence='unestablished: coordinates unavailable', organizer_level_established=False)
             continue
         matches = [dict(**domain_coordinates(d),tm_score=(d['best_hit'] or {}).get('qtmscore',0.),

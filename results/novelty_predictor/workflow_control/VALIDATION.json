@@ -1,0 +1,23 @@
+{
+  "status": "passed_real_end_to_end_cpu_workflow",
+  "arbitrary_input_name": true,
+  "pdb_input_supported": true,
+  "chain_identified_by_unique_full_sequence": true,
+  "source_fingerprint_acquired_and_verified": true,
+  "complete_backbone_atoms": 780,
+  "all_three_cpu_domain_methods_completed": true,
+  "domain_search_and_parent_context_completed": true,
+  "sequence_identity": 1.0,
+  "local_level": 1,
+  "native_domain_best_tm": 0.9927,
+  "domain_coverage": 0.9897435897435898,
+  "final_report": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/parent_context/predictions.json",
+  "final_report_sha256": "11675c155101c3102b9fc8fe4ef8656165070624420de45e082b90668a0bc87c",
+  "organizer_level_established": false,
+  "workflow_source_sha256": "4a63bb10e4c89664e97752287d990f03a7c646884830faad85aba79bcfc1292a",
+  "predictor_source_sha256": "50d8ea6c0a647c1ebf0802a1c4ae53301dadf38181c197632fc0b36f9e0696cf",
+  "new_gpu_or_cloud_cpu_spend_usd": 0,
+  "runpod_recorded_usd": 56.5899880444631,
+  "our_modal_estimate_usd": 10.718947158590089,
+  "combined_recorded_usd": 67.30893520305318
+}

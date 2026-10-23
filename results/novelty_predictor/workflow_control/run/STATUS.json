@@ -1,0 +1,148 @@
+{
+  "state": "complete",
+  "controller_pid": 81933,
+  "inputs": 1,
+  "coordinate_inputs": 1,
+  "started_at": "2026-10-23T00:20:17.159390+00:00",
+  "steps": [
+    {
+      "name": "whole_chain",
+      "command": [
+        "/Users/ricardo/dev/adaptyv-c4/.venv/bin/python",
+        "/Users/ricardo/dev/adaptyv-c4/scripts/novelty_level_predictor.py",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/inputs.csv",
+        "--databases",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/DATABASES.json",
+        "--mmseqs",
+        "/opt/homebrew/bin/mmseqs",
+        "--threads",
+        "4",
+        "--timeout-per-database",
+        "600",
+        "--out",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain",
+        "--structures",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain_structures.json",
+        "--structure-database",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/structural/DATABASE.json",
+        "--foldseek",
+        "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+        "--timeout-structure",
+        "300"
+      ],
+      "started_at": "2026-10-23T00:20:17.159827+00:00",
+      "pid": 81934,
+      "completed": true
+    },
+    {
+      "name": "prepare_backbones",
+      "command": [
+        "/Users/ricardo/dev/adaptyv-c4/.venv/bin/python",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/prepare_inputs.py",
+        "--report",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/predictions.json",
+        "--designs",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/inputs.csv",
+        "--out",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_inputs",
+        "--coordinate-cache",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/workflow_runtime/9b49b1b63b6848399f247c9f271c7edd/full_backbones"
+      ],
+      "started_at": "2026-10-23T00:22:24.781604+00:00",
+      "pid": 82821,
+      "completed": true
+    },
+    {
+      "name": "domain_models",
+      "command": [
+        "/Users/ricardo/dev/adaptyv-c4/.venv/bin/python",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/run_models.py",
+        "all",
+        "--input-manifest",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_inputs/INPUTS.json",
+        "--output-dir",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/workflow_runtime/9b49b1b63b6848399f247c9f271c7edd/models"
+      ],
+      "started_at": "2026-10-23T00:22:24.968902+00:00",
+      "pid": 82822,
+      "completed": true
+    },
+    {
+      "name": "make_domains",
+      "command": [
+        "/Users/ricardo/dev/adaptyv-c4/.venv/bin/python",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/make_structure_manifest.py",
+        "--input-manifest",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_inputs/INPUTS.json",
+        "--model-run",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_models",
+        "--designs",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/inputs.csv",
+        "--parent-structures",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain_structures.json",
+        "--out",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/consensus_structures.json"
+      ],
+      "started_at": "2026-10-23T00:22:32.206428+00:00",
+      "pid": 82928,
+      "completed": true
+    },
+    {
+      "name": "domain_search",
+      "command": [
+        "/Users/ricardo/dev/adaptyv-c4/.venv/bin/python",
+        "/Users/ricardo/dev/adaptyv-c4/scripts/novelty_level_predictor.py",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/inputs.csv",
+        "--sequence-report",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/predictions.json",
+        "--structures",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/consensus_structures.json",
+        "--structure-database",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/structural/DATABASE.json",
+        "--foldseek",
+        "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+        "--threads",
+        "4",
+        "--timeout-structure",
+        "300",
+        "--out",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search"
+      ],
+      "started_at": "2026-10-23T00:22:32.243986+00:00",
+      "pid": 82929,
+      "completed": true
+    },
+    {
+      "name": "parent_context",
+      "command": [
+        "/Users/ricardo/dev/adaptyv-c4/.venv/bin/python",
+        "/Users/ricardo/dev/adaptyv-c4/scripts/augment_novelty_parent_context.py",
+        "--base-report",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/predictions.json",
+        "--parent-report",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/whole_chain/predictions.json",
+        "--foldseek",
+        "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+        "--threads",
+        "4",
+        "--timeout-stage",
+        "300",
+        "--out",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/parent_context"
+      ],
+      "started_at": "2026-10-23T00:23:40.489208+00:00",
+      "pid": 83200,
+      "completed": true
+    }
+  ],
+  "new_gpu_or_cloud_cpu_spend_usd": 0,
+  "design_csv_sha256": "bfdb130c9d41408926844920f44166bfe20038cb64d1f31b7bdd1c11568324c6",
+  "workflow_sha256": "4a63bb10e4c89664e97752287d990f03a7c646884830faad85aba79bcfc1292a",
+  "domain_runtime": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/workflow_runtime/9b49b1b63b6848399f247c9f271c7edd",
+  "final_report": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/parent_context/predictions.json",
+  "final_csv": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/parent_context/predictions.csv",
+  "final_report_sha256": "11675c155101c3102b9fc8fe4ef8656165070624420de45e082b90668a0bc87c",
+  "organizer_levels_established": 0,
+  "local_levels_predicted": 1,
+  "missing_structure_inference": "No structures are generated; supplied coordinates only"
+}

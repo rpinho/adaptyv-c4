@@ -1,0 +1,929 @@
+{
+  "method": "Move generated binary DBs/model scratch only; retain raw scores/model tables/manifests/logs",
+  "items": [
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/discovered",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/discovered",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/discovered",
+          "bytes": 2187018,
+          "sha256": "f5066bbc55df1f32cda669e3323436f2a996912541a72d36066dc1c3cf896a2f",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/discovered"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/discovered.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/discovered.dbtype",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/discovered.dbtype",
+          "bytes": 4,
+          "sha256": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/discovered.dbtype"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/discovered.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/discovered.index",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/discovered.index",
+          "bytes": 1076,
+          "sha256": "ed725ccf0871f288527609195c0169b0f225117c7e8a33ceb5c2f5c2b5de216a",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/discovered.index"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/discovered_mode0.0",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/discovered_mode0.0",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/discovered_mode0.0",
+          "bytes": 161061,
+          "sha256": "10582dd15cf6e6e7c2445bb836f9edd9c06f83b851c046f68c8d43fdcb5b0235",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/discovered_mode0.0"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/discovered_mode0.1",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/discovered_mode0.1",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/discovered_mode0.1",
+          "bytes": 509771,
+          "sha256": "c0f43ea6aa04f3503c850e282650a793ff5bc490e4fc28a0fffc2762b1c31277",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/discovered_mode0.1"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/discovered_mode0.2",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/discovered_mode0.2",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/discovered_mode0.2",
+          "bytes": 302283,
+          "sha256": "78bb1af18b6b08a88e201d7b70044c096bb8c9e44de378318637412698fb7511",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/discovered_mode0.2"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/discovered_mode0.3",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/discovered_mode0.3",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/discovered_mode0.3",
+          "bytes": 107049,
+          "sha256": "4cf41c6c546be7eca4db71c19fe48088213ec0b0601f322e98b7cf4a3b1085a4",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/discovered_mode0.3"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/discovered_mode0.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/discovered_mode0.dbtype",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/discovered_mode0.dbtype",
+          "bytes": 4,
+          "sha256": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/discovered_mode0.dbtype"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/discovered_mode0.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/discovered_mode0.index",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/discovered_mode0.index",
+          "bytes": 1030,
+          "sha256": "e82a672a32c2e8fb1ad49d53c39ec0feb909a673fa1c614d36861ca2b3df90db",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/discovered_mode0.index"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/discovered_mode1.0",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/discovered_mode1.0",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/discovered_mode1.0",
+          "bytes": 167581,
+          "sha256": "dbf9ae9b2695e4b62b8250833ade84f0b2b529e6b476283f74086eba20debeaa",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/discovered_mode1.0"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/discovered_mode1.1",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/discovered_mode1.1",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/discovered_mode1.1",
+          "bytes": 516825,
+          "sha256": "98e4409d234cdbaf66e76294fcee2c01590e6a4a0e7ed7f12e82f80a43bb4746",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/discovered_mode1.1"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/discovered_mode1.2",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/discovered_mode1.2",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/discovered_mode1.2",
+          "bytes": 326977,
+          "sha256": "7af2d2424afc0fff7f689440ac2b0d7041d2901df27ce51b1229989d46b19765",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/discovered_mode1.2"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/discovered_mode1.3",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/discovered_mode1.3",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/discovered_mode1.3",
+          "bytes": 95541,
+          "sha256": "4c80f236b0abc78a10dcd1be68bf21b96ca895b7135d24420b9ea7a025cef5eb",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/discovered_mode1.3"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/discovered_mode1.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/discovered_mode1.dbtype",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/discovered_mode1.dbtype",
+          "bytes": 4,
+          "sha256": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/discovered_mode1.dbtype"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/discovered_mode1.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/discovered_mode1.index",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/discovered_mode1.index",
+          "bytes": 1035,
+          "sha256": "b1b02fa4b322899d693ec1194423ffa35d6a01fa0f3aa4aa0876c5fbf772bea7",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/discovered_mode1.index"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/querydb",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/querydb",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/querydb",
+          "bytes": 5172,
+          "sha256": "921b19a891533ad0c9db22368885421fff7f7b246d11431d6e7aca75ed964abc",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/querydb"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/querydb.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/querydb.dbtype",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/querydb.dbtype",
+          "bytes": 4,
+          "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/querydb.dbtype"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/querydb.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/querydb.index",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/querydb.index",
+          "bytes": 746,
+          "sha256": "e05d77468b37e4ac80654291a8658ae885fd3ae7238a98ff29152345ddc82a4b",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/querydb.index"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/querydb.lookup",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/querydb.lookup",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/querydb.lookup",
+          "bytes": 1240,
+          "sha256": "ba1799c9b01e56898b4b17d9ec902a52bd49d497dca64e54bd22ae63aa5aab66",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/querydb.lookup"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/querydb.source",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/querydb.source",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/querydb.source",
+          "bytes": 1040,
+          "sha256": "b38a53da3b3828810e8f4755641210c4b239bfcf446aa505f1a3a63503fbf061",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/querydb.source"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/querydb_ca",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/querydb_ca",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/querydb_ca",
+          "bytes": 30752,
+          "sha256": "7363c9e2dd2c2edad3dc70b23638f15241fb4b446c0bb23b401bb6d5820c5e98",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/querydb_ca"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/querydb_ca.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/querydb_ca.dbtype",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/querydb_ca.dbtype",
+          "bytes": 4,
+          "sha256": "8fc6cb4a9816d75621652de783118eee13112cda196e61d1bde0460f29b26e3e",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/querydb_ca.dbtype"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/querydb_ca.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/querydb_ca.index",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/querydb_ca.index",
+          "bytes": 872,
+          "sha256": "0d36ebf16fff084d934e0460fe8fc65b71d06b2eb28d14d5717c102f2744648f",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/querydb_ca.index"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/querydb_h",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/querydb_h",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/querydb_h",
+          "bytes": 910,
+          "sha256": "5885a662e976e4cfd91a723709783a5f04e01f16c5f59aa2181179ff2d1babc6",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/querydb_h"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/querydb_h.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/querydb_h.dbtype",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/querydb_h.dbtype",
+          "bytes": 4,
+          "sha256": "42f4aeb81c1ef81f771f3de8abca9dcf66901c575530e7672e4b1146474ae650",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/querydb_h.dbtype"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/querydb_h.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/querydb_h.index",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/querydb_h.index",
+          "bytes": 681,
+          "sha256": "6324414ae58d60994f804c2add321529ad41047a2e82f154ee9bcfdb6c600ef2",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/querydb_h.index"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/querydb_ss",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/querydb_ss",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/querydb_ss",
+          "bytes": 5172,
+          "sha256": "2093a12f0f009c0365dc04ce9646333e348c47dba3874944841537cd15a0fd1b",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/querydb_ss"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/querydb_ss.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/querydb_ss.dbtype",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/querydb_ss.dbtype",
+          "bytes": 4,
+          "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/querydb_ss.dbtype"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/querydb_ss.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/querydb_ss.index",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/querydb_ss.index",
+          "bytes": 746,
+          "sha256": "e05d77468b37e4ac80654291a8658ae885fd3ae7238a98ff29152345ddc82a4b",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/querydb_ss.index"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/tmaligned",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/tmaligned",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/tmaligned",
+          "bytes": 2790682,
+          "sha256": "e7099d15657d6483160d8e4fda062f408aef582fbf53461233c122f85b246003",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/tmaligned"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/tmaligned.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/tmaligned.dbtype",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/tmaligned.dbtype",
+          "bytes": 4,
+          "sha256": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/tmaligned.dbtype"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/tmaligned.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/tmaligned.index",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/tmaligned.index",
+          "bytes": 1087,
+          "sha256": "f240157a82e31ff02f49c983a3d84b6901211861c2051979cbf22ebf04834205",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/tmaligned.index"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/tmp_mode0",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/tmp_mode0",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/tmp_mode0/18309331652790148208/structuresearch.sh",
+          "bytes": 6018,
+          "sha256": "a95a4c37412692a02b7c53cc39d82a93ab05d6d37e84007b2f1492eceba02d88",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/tmp_mode0/18309331652790148208/structuresearch.sh"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/tmp_mode1",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/tmp_mode1",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/tmp_mode1/5821551031499511731/structuresearch.sh",
+          "bytes": 6018,
+          "sha256": "a95a4c37412692a02b7c53cc39d82a93ab05d6d37e84007b2f1492eceba02d88",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/novelty_run/structure/tmp_mode1/5821551031499511731/structuresearch.sh"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/parent_context_run/structure/parent_prefilter",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/parent_context_run/structure/parent_prefilter",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/parent_context_run/structure/parent_prefilter",
+          "bytes": 301514,
+          "sha256": "e56095083167d01bcabc3a98f8ce35334936aef2e9df0a1eb69834336e7620af",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/parent_context_run/structure/parent_prefilter"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/parent_context_run/structure/parent_prefilter.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/parent_context_run/structure/parent_prefilter.dbtype",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/parent_context_run/structure/parent_prefilter.dbtype",
+          "bytes": 4,
+          "sha256": "e8613f5a5bc9f9feeda32a8e7c80b69dd4878e47b6a91723fb15eb84236b6a2b",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/parent_context_run/structure/parent_prefilter.dbtype"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/parent_context_run/structure/parent_prefilter.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/parent_context_run/structure/parent_prefilter.index",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/parent_context_run/structure/parent_prefilter.index",
+          "bytes": 994,
+          "sha256": "da8699e2182d555fb6816bfb5011b68b825a49c81281834060a523faeffecb06",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/parent_context_run/structure/parent_prefilter.index"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/parent_context_run/structure/parent_tmaligned",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/parent_context_run/structure/parent_tmaligned",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/parent_context_run/structure/parent_tmaligned",
+          "bytes": 2120109,
+          "sha256": "c63c19eeb1a917280b23a5e85009ca2d8eddc6b1af91378e1b3d7f0e38af50f8",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/parent_context_run/structure/parent_tmaligned"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/parent_context_run/structure/parent_tmaligned.dbtype",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/parent_context_run/structure/parent_tmaligned.dbtype",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/parent_context_run/structure/parent_tmaligned.dbtype",
+          "bytes": 4,
+          "sha256": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/parent_context_run/structure/parent_tmaligned.dbtype"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/parent_context_run/structure/parent_tmaligned.index",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/parent_context_run/structure/parent_tmaligned.index",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/parent_context_run/structure/parent_tmaligned.index",
+          "bytes": 1114,
+          "sha256": "a25eded29bec86ca4a39da338bc827ed56786f95fa758436c22ab8362ee32bfa",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/parent_context_run/structure/parent_tmaligned.index"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000002.pdb",
+          "bytes": 52961,
+          "sha256": "469205a496b5056c3612cc3a9a754442f5873e838d790f4839dc096bc51eb7de",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000002.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000003.pdb",
+          "bytes": 52566,
+          "sha256": "2e54cfd16224143a48ecc6a9e67cb52727bf38fee0c93d03289dd809ca864366",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000003.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000004.pdb",
+          "bytes": 52882,
+          "sha256": "4635e06856566a3c2f0cab2c054fc9bfbd865ec22dccf0099a0bb0a83a67677f",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000004.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000005.pdb",
+          "bytes": 53119,
+          "sha256": "57a2605b4816afd4ef6f4c2e51f5c69d5b82d2bff92d1c61f7f52686fde230ea",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000005.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000006.pdb",
+          "bytes": 64811,
+          "sha256": "f9592d92260e4346442696f1df23f464958f57d9ba33dbc7b10f2e35b2ffdaf9",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000006.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000007.pdb",
+          "bytes": 65127,
+          "sha256": "25db7eea008432c8e629af8aa9b1735b7fd04451b350c860f3a6d8387b774637",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000007.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000008.pdb",
+          "bytes": 66075,
+          "sha256": "148b130148cbc204c629054e6cb006fa6ab92ffe761c4ba7b25c3ae0402c397d",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000008.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000009.pdb",
+          "bytes": 65917,
+          "sha256": "c06de2306fd047c90f21f28199b2688a048f587bc91cedddb622e1acab123476",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000009.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000010.pdb",
+          "bytes": 65443,
+          "sha256": "c7de7d3479f41742ed990474cbd72926e3090e7de99e9134eec5ca0b32662182",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000010.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000011.pdb",
+          "bytes": 65048,
+          "sha256": "a59f47aec52431a818b6c2963c2be6cac44709c0cd7197884f9cba145e832ba2",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000011.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000012.pdb",
+          "bytes": 47115,
+          "sha256": "0f45486cffbd2bdef46e01f50e16de578f308f44351c35b8ef4687cff2c0fa8f",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000012.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000013.pdb",
+          "bytes": 47589,
+          "sha256": "2dd76405aa48e99d8e3f06f98c0a9a5db52592affcbf68238f734bdb1b7e4834",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000013.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000014.pdb",
+          "bytes": 46878,
+          "sha256": "3f7635980dbb5b4dad1583f6083f2fbe7c2af053fcd0f39c49025bc39c45c679",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000014.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000015.pdb",
+          "bytes": 53988,
+          "sha256": "dfc5b512363bab9362fd1b670900775f0dcfdd67e4ff023c0930638ae0dbc075",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000015.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000016.pdb",
+          "bytes": 53435,
+          "sha256": "60dbf8bcf4d4eeffce30bde08ccd92b2bc83f63e37a62e5189dd3f07ae6428d2",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000016.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000017.pdb",
+          "bytes": 54699,
+          "sha256": "7b91a303ae9d6c1cc920a064f37f9ae9fcb48e5e71f6a8fbe9204696790e9dce",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000017.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000018.pdb",
+          "bytes": 55568,
+          "sha256": "e34569c4792fb8aa99f70c49675069a44af680a0bb874829a7b7ea2fd8337b94",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000018.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000019.pdb",
+          "bytes": 55568,
+          "sha256": "e7fa5901e49c2f609a50293f206c99538bebab3dd84ef2460c34fcc392b7bad8",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000019.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000020.pdb",
+          "bytes": 55884,
+          "sha256": "d6b5d42e6475867d5e4887fc061a2c2da120d8bb2a73e2d0865b7b5ffeeb7591",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000020.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000022.pdb",
+          "bytes": 68682,
+          "sha256": "39c3eaee6d266b46d1c1f52baa7ddbb3c1799fed85d51d9affd3759cb977b183",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000022.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000023.pdb",
+          "bytes": 52013,
+          "sha256": "c3d9a9f4b414e53f885b1601a280c43c51ceabda929325c0e3bd40184d670838",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000023.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000024.pdb",
+          "bytes": 51302,
+          "sha256": "f79cce8f4da5871df58f755753e0a26875638a843d4091e40eee354a8bb9b409",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000024.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000025.pdb",
+          "bytes": 51223,
+          "sha256": "9b3a0401b8c5ef5911b1914377d48a93f54f7010332c27c96e75e3d98af02861",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000025.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000026.pdb",
+          "bytes": 38978,
+          "sha256": "3d851f495d1e5be7f81c9da747f97ab50beabdc3d56a9c964d981001f74d0433",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000026.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000029.pdb",
+          "bytes": 40005,
+          "sha256": "6e2e47ce19b3c87c84a84f874c4e7190ce76d930e822cabe9c526cac4bba5bcd",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000029.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000030.pdb",
+          "bytes": 39689,
+          "sha256": "685540aece455d28a575470a6501be18921ebb500b2e0bda15a2568bb9f6cfd0",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000030.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000031.pdb",
+          "bytes": 40795,
+          "sha256": "6ecadaf336162eb2454e14f0c64d2baf4f2becea05aaa3f53775f08c6813f770",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000031.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000032.pdb",
+          "bytes": 38188,
+          "sha256": "e9dcf012c9262a53d03a3c13abaf0f23adba228042ef5f0871babd46aff3ec01",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000032.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000033.pdb",
+          "bytes": 63310,
+          "sha256": "c8b6c87f6eab1e2d0d939b6b7e96399975f1625a7272b8cab288e46f616356f5",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000033.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000034.pdb",
+          "bytes": 38425,
+          "sha256": "7951bef2d9d9956e2f471dfb45f16816be30d574401c14628416b98af73325f2",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000034.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000035.pdb",
+          "bytes": 61098,
+          "sha256": "ae0d1e51e09116cbd181c15a82222e15c10fc784cfa686b7494eeb81c4114134",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000035.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000036.pdb",
+          "bytes": 37793,
+          "sha256": "849974eac8a9ff25ebf27de75f3c50ed93f7e1613e196f22489652a4ceb4bb69",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000036.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000037.pdb",
+          "bytes": 61888,
+          "sha256": "74fe021d27442d0a15d6d8d3bedaae77f32742220dbebf2b51f742547ece4f1b",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000037.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000038.pdb",
+          "bytes": 51618,
+          "sha256": "c4fa4a9bd3400ae33460fba64360a2cd76aab9bf85ce5d690d64679bf5c7e537",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000038.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000039.pdb",
+          "bytes": 52645,
+          "sha256": "13c26e24975363d028608ceb89869b5591ead91194bb299f4a62d339b7523499",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000039.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000040.pdb",
+          "bytes": 53514,
+          "sha256": "842cbcf356197b7cf9e78f91bfc21ec8812885fe1aa898fddf636681dd68fec7",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000040.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000043.pdb",
+          "bytes": 47747,
+          "sha256": "ffd21402b7f7f28e061ea6f5c68be93ecd25ce9af5527519b3ef7e5b450e2167",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000043.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000044.pdb",
+          "bytes": 38583,
+          "sha256": "718529bd5a50541e8b2fd88ca6242bfb4ed5bcf8776b5a474e89a8847f033049",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000044.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000045.pdb",
+          "bytes": 38583,
+          "sha256": "325180a040f8ba905cc6bc1a6f76e4cfa6e107ff038eca1b7f77524b86945d22",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000045.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000046.pdb",
+          "bytes": 65048,
+          "sha256": "ff14cf7b03a77563fbaf8cc21c596aca27ade62b2063b36445ac2fdeaa6ccc84",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000046.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000047.pdb",
+          "bytes": 38662,
+          "sha256": "d87767d135966eeeee37382635226f970f6ba0e9019e757acb4d2a4257ee308f",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000047.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000048.pdb",
+          "bytes": 64574,
+          "sha256": "ac01e6f3d993d66d8584f6639c7f2f06831bfdd665fc13dedd9be56454b6ae5c",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000048.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000049.pdb",
+          "bytes": 64653,
+          "sha256": "4c43d40f2fa7ceb642fffed16c4494eccb8b438f663603a92a99af0da6094b12",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000049.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000050.pdb",
+          "bytes": 62283,
+          "sha256": "522525f13b018c9c6374b4bacd056de356ed113773a46c26defa89e16fd09653",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000050.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000051.pdb",
+          "bytes": 39926,
+          "sha256": "fbe79c31a10b3bc210cf60094ca9c685fa802930281c941aa86ed2c2110f5f7e",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000051.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000052.pdb",
+          "bytes": 40558,
+          "sha256": "dc60a64618c31bf722840422bdf9cff21daf516869213da04cf5b820781dedeb",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000052.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000053.pdb",
+          "bytes": 61967,
+          "sha256": "e57aced3d68a12dd118803a481c84098614e382c2795793197321bdbb7ee6917",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000053.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000054.pdb",
+          "bytes": 40874,
+          "sha256": "f9c40b63c77a46e4a1ca494fd75d2b488d8bcc8f57a204067877a69b436b1589",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000054.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000055.pdb",
+          "bytes": 61493,
+          "sha256": "09694b97e9604e365d57c63f973f82006548701e3ef08086d918a9d52fa9a489",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000055.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000056.pdb",
+          "bytes": 41743,
+          "sha256": "e42b4a272f7bead34f25b70b7d5c6c1ae59d06ee26f9db6540a979a3b3294d25",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000056.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000057.pdb",
+          "bytes": 41743,
+          "sha256": "8d25edc7a4d7eb95fedd63a16045b0a3de01ccc5571b6a022f7737391e35a23e",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000057.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000058.pdb",
+          "bytes": 42533,
+          "sha256": "005b2d1adbaf989f93170c1f1086d1489547bd2c9dfbd1ee29b61eef8681936a",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000058.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000059.pdb",
+          "bytes": 37872,
+          "sha256": "e6d1ed3accbd8b75a63837624818bdbd71841d0f61a4fcf279c364fc84aa8595",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000059.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000060.pdb",
+          "bytes": 38267,
+          "sha256": "09a651c190da8818ba196304028d5c13eca69106db5909039c03434d63748627",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000060.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000061.pdb",
+          "bytes": 38267,
+          "sha256": "c80d47df4176999cb20f018a6d33b7f818e30a71668fa72b070d141ad9c346a5",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000061.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000062.pdb",
+          "bytes": 52645,
+          "sha256": "95d251d085ec64c428531dc3db0a5c581d76ae6d087c4ca6e3042daeb1223636",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000062.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000063.pdb",
+          "bytes": 52250,
+          "sha256": "1f888c9d634a5cf82e804d11d1411d413800fdfb618232ef4e35f3a74eaee0ce",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000063.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000064.pdb",
+          "bytes": 52171,
+          "sha256": "2a9be2fb81d17aabeb6e8244ea85a97f8da4dfc26fdcc0abf9d3a271ef99cff0",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000064.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000065.pdb",
+          "bytes": 62915,
+          "sha256": "e5c4bd7e0503d29ce8623c1473a527581d1c626be619accaa82c1d96d24b07b4",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000065.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000066.pdb",
+          "bytes": 63705,
+          "sha256": "df35bff87cc12d8027eb4cb22d3fbb14a0b19f3d08e8058611e35c234108b8fb",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000066.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000067.pdb",
+          "bytes": 63547,
+          "sha256": "2200e0daf5890323e81ec3add29f79ca2456a2f509410802686703ac96224a98",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000067.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000068.pdb",
+          "bytes": 63152,
+          "sha256": "7129e650e4d449f1d12ebdf2e9c6308ea3875c0193e7ccb47b03b4ce192f301a",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000068.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000069.pdb",
+          "bytes": 64732,
+          "sha256": "dc0fa74773bdfdee98d46449e95773aa84c65c77827ad81d78d8215e6e913dad",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000069.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000070.pdb",
+          "bytes": 65522,
+          "sha256": "72a24e47cf4b94a48c8d8ff69cd5066c787fd7e19bb6823c8b658f7531c95b35",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000070.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000071.pdb",
+          "bytes": 66628,
+          "sha256": "f2a43a4b755d9636dddd5095f59669d3bc9c8f15efd8390de9f975d17ae42da1",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000071.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000072.pdb",
+          "bytes": 66865,
+          "sha256": "0cf5fc6259f216aa0ec1542c379e3037a588b293b5d3c99446f8b448a0174c50",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000072.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000073.pdb",
+          "bytes": 66470,
+          "sha256": "edb25ae85a2ab89cd97226c34af018c7299665243039d01347c28711d59ac25f",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000073.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000074.pdb",
+          "bytes": 117504,
+          "sha256": "8099f7da6f11c826bd5f5001a61d87b1c478d26b106c93d797c21cc010c8c5d4",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/all/inputs/q000074.pdb"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/inputs",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/control/inputs",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/inputs/q000074.pdb",
+          "bytes": 117504,
+          "sha256": "8099f7da6f11c826bd5f5001a61d87b1c478d26b106c93d797c21cc010c8c5d4",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/control/inputs/q000074.pdb"
+        }
+      ]
+    },
+    {
+      "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control_initial_pdb_footer_failure/inputs",
+      "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/control_initial_pdb_footer_failure/inputs",
+      "files": [
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control_initial_pdb_footer_failure/inputs/q000074.pdb",
+          "bytes": 117481,
+          "sha256": "fb39cb753718ce9dd18450b0589c8581a47e2f1ea2b2b6308918f4fdf83662e9",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/control_initial_pdb_footer_failure/inputs/q000074.pdb"
+        },
+        {
+          "original": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control_initial_pdb_footer_failure/inputs/q000074_chopped.pdb",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "cached": "/Users/ricardo/.cache/adaptyv-c4/novelty_runtime_archives/cpu_domain_delivery_20261022/domain_consensus/control_initial_pdb_footer_failure/inputs/q000074_chopped.pdb"
+        }
+      ]
+    }
+  ]
+}

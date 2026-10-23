@@ -1,0 +1,13 @@
+mergedbs /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/querydb /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/discovered /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/discovered_mode0 /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/discovered_mode1 
+
+MMseqs Version:              	463739e0014a1549a527de589102cde98f802f37
+Merge prefixes               	
+Stop merge after empty       	false
+Filter merged lines by key DB	false
+Compressed                   	0
+Verbosity                    	3
+
+Merging the results to /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/workflow_control/run/domain_search/structure/discovered
+[=================================================================] 1 0s 0ms
+Time for merging to discovered: 0h 0m 0s 0ms
+Time for processing: 0h 0m 0s 1ms

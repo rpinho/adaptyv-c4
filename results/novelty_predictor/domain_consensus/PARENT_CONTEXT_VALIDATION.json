@@ -3,15 +3,15 @@
   "retired_design_count": 73,
   "whole_chain_local_counts": {
     "3": 47,
-    "None": 6,
     "2": 16,
+    "None": 6,
     "4": 4
   },
   "consensus_domain_local_counts": {
     "3": 40,
+    "4": 7,
     "2": 20,
-    "None": 6,
-    "4": 7
+    "None": 6
   },
   "changed_retired_calls": 10,
   "changed_calls": [
@@ -7915,6 +7915,12 @@
     "new_report": "a93a49e0a08890170ef60c06ee2957a3d04ee0026a69013be2110c4e96beac8d",
     "comparison_policy": "5caa97091aaa56d2ca7efbce189bc9b74b48a82b8d7d48f72ef9fe7dd6ad9679",
     "indexing_checks": "3df12955fbc3661af2be685d76d797f0fc91812dfb198153dd6d2f8f80cd3ace"
+  },
+  "predictor_source_provenance": {
+    "recorded_sha256": "7281ed907fec3fc4ceb49fd0d6fb3b529183257316e420068e2d7d6056878cc9",
+    "recorded_git_commit": "b32bdba",
+    "current_sha256": "50d8ea6c0a647c1ebf0802a1c4ae53301dadf38181c197632fc0b36f9e0696cf",
+    "recorded_version_verified": true
   },
   "spend": {
     "runpod_recorded_usd": 56.5899880444631,

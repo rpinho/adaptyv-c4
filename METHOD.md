@@ -1,5 +1,16 @@
 # Method: proton-coupled two-state design, with the numbers checked
 
+## Arbitrary-input CPU novelty workflow verified
+
+scripts/run_cpu_novelty.py now accepts CSV+saved PDB/CIF coordinates and performs
+the demonstrated sequence, whole-chain-context,3-method domain and expanded-domain
+alignment workflow. Renamed native PDB control passes end to end: local1,
+qTM.9927,193/195 domain coverage,780 verified backbone atoms.23 tests pass;
+missing coordinates/consensus clear numeric levels rather than retaining stale
+whole-chain values. No structure inference, GPU/cloud resource or organizer-score
+claim. See results/novelty_predictor/USAGE.md and workflow_control/RESULTS.md.
+Retired-pool measured counts below remain unchanged; no design promoted.
+
 ## Current measured CPU domain policy (Oct22)
 
 See results/novelty_predictor/domain_consensus/RESULTS.md. All3 domain tools ran

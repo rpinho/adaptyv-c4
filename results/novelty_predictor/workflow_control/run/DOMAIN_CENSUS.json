@@ -1,0 +1,42 @@
+{
+  "inputs": [
+    {
+      "name": "GENERIC_NATIVE_CONTROL",
+      "query": "q000001",
+      "length": 195,
+      "accepted_domains": 1,
+      "accepted_residues": 193,
+      "domain_coverage": 0.9897435897435898,
+      "discontinuous_domain": false,
+      "high": "2-194",
+      "medium": "na",
+      "low_excluded": "na"
+    }
+  ],
+  "provenance": {
+    "method": "Local three-method TED-style consensus",
+    "ted_source_commit": "f07e24ef4a19a722f2c3c3001cbd03d477ba3f31",
+    "merizo_weights_commit": "41d12fb84e6e8fdb586c2c859d12161dc7bb5bfd",
+    "chainsaw_weights_sha256": "6e8b9459f66bf2af04f652083e8b1991bf870f368f424691ae48a8445c09ba37",
+    "unidoc_source_url": "https://yanglab.qd.sdu.edu.cn/UniDoc/download/UniDoc_20250514.tgz",
+    "native_build_receipt_sha256": "968bdff523a10874819eba52d25881e72e68b793aece261cf14a9c5f03ce217b",
+    "indexing_check_receipt_sha256": "3df12955fbc3661af2be685d76d797f0fc91812dfb198153dd6d2f8f80cd3ace",
+    "consensus_sha256": "a734d6c1b039145b2b031076378a7d52021924680d6a4a4a52db79d75a3fee99",
+    "predictor_tables_sha256": {
+      "chainsaw": "08343c46f013b2f819e42f3277d239c9c82103c00ad7e609ec7633c1b00c390f",
+      "merizo": "b1052a2dcee0849155246237387884379604a9eec37d14b940ce65cc53917561",
+      "unidoc": "5dfb0b56715989d0b877144f3808658d50479adb2e3fcb9c406e0396d4e373c3"
+    },
+    "accepted_consensus_levels": [
+      "high_3_methods",
+      "medium_2_methods"
+    ],
+    "excluded": "Low one-method domains",
+    "model_inputs": "Provided sequence-verified coordinates; no structure inference",
+    "merizo_unidoc_dependency": "UniDoc receives Merizo non-domain-residue filtering",
+    "input_models": 1,
+    "query_domains": 1,
+    "inputs_with_discontinuous_domains": 0,
+    "organizer_implementation_equivalence_established": false
+  }
+}

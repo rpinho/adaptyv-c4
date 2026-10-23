@@ -1,0 +1,10 @@
+Processing chopping for q000001: 1-195
+Extracting residues 1:195 from /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/workflow_runtime/9b49b1b63b6848399f247c9f271c7edd/models/inputs/q000001.pdb
+Successfully created chopped PDB file: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/workflow_runtime/9b49b1b63b6848399f247c9f271c7edd/models/inputs/q000001_chopped.pdb
+Running STRIDE on /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/workflow_runtime/9b49b1b63b6848399f247c9f271c7edd/models/inputs/q000001_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/workflow_runtime/9b49b1b63b6848399f247c9f271c7edd/models/inputs/q000001_chopped.pdb
+UniDoc output: 1-195
+Found 1 domains: 1-195
+Cleaned up temporary file: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/workflow_runtime/9b49b1b63b6848399f247c9f271c7edd/models/inputs/q000001.pdb.ss
+Cleaned up temporary file: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/workflow_runtime/9b49b1b63b6848399f247c9f271c7edd/models/inputs/q000001_chopped.pdb
+--------------------------------------------------------------

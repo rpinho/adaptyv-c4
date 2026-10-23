@@ -1,0 +1,9 @@
+{"runtime_device": "cpu", "method": "chainsaw", "torch": "2.0.1", "threads": 4, "seed": 0}
+10/22/2026 08:22:26 PM | INFO | Using device: cpu
+10/22/2026 08:22:26 PM | INFO | Learner kwargs: {'max_recycles': 1, 'save_val_best': True, 'x_has_padding_mask': False, 'remove_disordered_domain_threshold': 0.35, 'post_process_domains': True, 'min_ss_components': 2, 'min_domain_length': 30}
+10/22/2026 08:22:26 PM | INFO | Loading weights from: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/ted-pinned/programs/chainsaw/saved_models/secondary_structure_epoch17/version_2/weights.pt
+10/22/2026 08:22:26 PM | INFO | Making prediction for file q000001.pdb (chain 'q000001')
+10/22/2026 08:22:26 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/workflow_runtime/9b49b1b63b6848399f247c9f271c7edd/models/inputs/q000001_renum.pdb -rA
+10/22/2026 08:22:26 PM | INFO | Distance matrix shape: (1, 195, 195), SS matrix shape: (195, 195)
+10/22/2026 08:22:27 PM | INFO | Runtime: 0.806s
+10/22/2026 08:22:27 PM | INFO | DONE

@@ -1,5 +1,6 @@
 """Extract verified full-backbone analysis inputs; never repair missing atoms."""
 from collections import Counter
+import argparse
 import hashlib
 import json
 import math
@@ -14,18 +15,29 @@ from Bio.PDB.MMCIF2Dict import MMCIF2Dict
 
 
 def main():
-    if (HERE/'INPUTS.json').exists(): raise FileExistsError('Input inventory already frozen')
-    source_report=ROOT/'results/novelty_predictor/exact_score/run/predictions.json'
+    ap=argparse.ArgumentParser(description=__doc__)
+    ap.add_argument('--report',type=Path)
+    ap.add_argument('--designs',type=Path)
+    ap.add_argument('--out',type=Path,default=HERE)
+    ap.add_argument('--coordinate-cache',type=Path)
+    args=ap.parse_args()
+    benchmark=args.report is None and args.designs is None
+    output=args.out.resolve();output.mkdir(parents=True,exist_ok=True)
+    if (output/'INPUTS.json').exists(): raise FileExistsError('Input inventory already frozen')
+    source_report=args.report or ROOT/'results/novelty_predictor/exact_score/run/predictions.json'
     baseline=json.loads(source_report.read_text())
-    rows=n.load_designs(ROOT/'results/novelty_predictor/analysis_inputs.csv')
-    folder=Path.home()/'.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones_complete_ter'
-    folder.mkdir()
+    designs=args.designs or ROOT/'results/novelty_predictor/analysis_inputs.csv'
+    rows=n.load_designs(designs)
+    assert len(rows)==len(baseline['designs'])
+    folder=args.coordinate_cache or Path.home()/'.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones_complete_ter'
+    folder=folder.resolve();folder.mkdir(parents=True)
     inventory=[]
     for i,(row,result) in enumerate(zip(rows,baseline['designs']),1):
         assert row['name']==result['name']
         query=f'q{i:06d}'
         evidence=result['structure_evidence']
-        record=dict(query=query,name=row['name'],sequence_sha256=result['sequence_sha256'],length=len(row['sequence']))
+        record=dict(query=query,name=row['name'],sequence_sha256=result['sequence_sha256'],
+            sequence_md5=hashlib.md5(row['sequence'].encode()).hexdigest(),length=len(row['sequence']))
         if evidence['status']!='coordinates_verified':
             record.update(status='coordinates_unavailable',reason=evidence.get('reason','Frozen coordinates unavailable'))
             inventory.append(record); continue
@@ -37,7 +49,14 @@ def main():
         assert ''.join(r[1] for r in residues)==row['sequence']
         numbering={r[0]:j for j,r in enumerate(residues,1)}
         comps={r[0]:r[3] for r in residues}
-        data=MMCIF2Dict(str(source))
+        model_source=source
+        if source.suffix.lower()!='.cif':
+            from Bio.PDB import PDBParser,MMCIFIO
+            structure=PDBParser(QUIET=True).get_structure(query,str(source))
+            model_source=folder/(query+'_source.cif')
+            writer=MMCIFIO();writer.set_structure(structure);writer.save(str(model_source))
+            record['pdb_to_cif_format_conversion']=dict(path=str(model_source),sha256=n.digest(model_source))
+        data=MMCIF2Dict(str(model_source))
         def column(auth,label): return data.get('_atom_site.'+auth,data.get('_atom_site.'+label))
         atom_names=column('auth_atom_id','label_atom_id')
         atom_chains=column('auth_asym_id','label_asym_id')
@@ -89,15 +108,17 @@ def main():
             missing_bfactor_defaulted_to_zero='_atom_site.B_iso_or_equiv' not in data)
         inventory.append(record)
     available=[r for r in inventory if r['status']=='full_backbone_verified']
-    assert len(inventory)==74 and len(available)==68
-    native=next(r for r in inventory if r['name']=='KNOWN_TFR1_POSITIVE_CONTROL')
-    assert native['status']=='full_backbone_verified' and native['length']==195
-    (HERE/'all_targets.txt').write_text(''.join(r['path']+'\n' for r in available))
-    (HERE/'control_targets.txt').write_text(native['path']+'\n')
-    n.write_json(HERE/'INPUTS.json',dict(source_report_sha256=n.digest(source_report),
-        protocol_sha256=n.digest(HERE/'PROTOCOL.md'),coordinate_models=68,unavailable=6,
+    assert len(available)==baseline['structural_search']['query_domains'], 'Parent must use one full domain per available protein'
+    if benchmark:
+        assert len(inventory)==74 and len(available)==68
+        native=next(r for r in inventory if r['name']=='KNOWN_TFR1_POSITIVE_CONTROL')
+        assert native['status']=='full_backbone_verified' and native['length']==195
+        (output/'control_targets.txt').write_text(native['path']+'\n')
+    (output/'all_targets.txt').write_text(''.join(r['path']+'\n' for r in available))
+    n.write_json(output/'INPUTS.json',dict(source_report_sha256=n.digest(source_report),designs_csv_sha256=n.digest(designs),
+        protocol_sha256=n.digest(HERE/'PROTOCOL.md'),coordinate_models=len(available),unavailable=len(inventory)-len(available),
         source_backbone_or_sequence_repaired=False,inputs=inventory))
-    print(json.dumps(dict(verified_full_backbones=len(available),unavailable=6,atoms_repaired=0)))
+    print(json.dumps(dict(verified_full_backbones=len(available),unavailable=len(inventory)-len(available),atoms_repaired=0)))
 
 
 if __name__=='__main__': main()
