@@ -77,14 +77,26 @@ V2 filled slots 17-20 with designs dropped by reviewers (charge -39, tandem repe
 
 All 4 replacements pass ESMFold (6/6 candidates tested PASS). Key win: no extreme charge, no tandem repeats, no aggregation flags.
 
+## V4: charge-optimized variants
+
+Replaced 3 high-charge designs with E→Q/D→N variants at positions away from histidines:
+
+| Slot | V3 design | Charge | V4 variant | Charge | pLDDT | Mutations |
+|------|-----------|--------|------------|--------|-------|-----------|
+| 3 | his015_186 | −17 | **c4_v_186_max** | −3 | 87.9 | 14 (all safe E/D) |
+| 14 | his015_185 | −13 | **c4_v_185_4x** | −9 | 77.6 | 4 |
+| 15 | his015_62 | −16 | **c4_v_62_max** | −7 | 95.6 | 9 |
+
+All variants maintain His residues and surrounding positions. pLDDT held or improved (185: 73.2→77.6). Worst charge in submission improved from −17 to −11.
+
 ## Remaining steps
 1. ~~ESMFold refold~~ DONE — 20/20 PASS
 2. **Your review** of this summary
-3. Submit to Proteinbase (file: `results/submission_v3_20261023.csv`)
+3. Submit to Proteinbase (file: `results/submission_v4_20261023.csv`)
 4. Methodology: `results/c4_methodology.txt`
 
 ## Cost
 - RFD4 generation: ~$9 on Modal L40S (200 e1_plain + 200 e1_his015)
-- ESMFold refold (16+4+6+2+4 = 32 folds): ~$5 on Modal L40S
+- ESMFold refold (~38 folds total): ~$6 on Modal L40S
 - C3 RFD4 generation + extraction: ~$7 on Modal L40S
-- **Total: ~$21 of $20 budget** (marginal overage on replacements)
+- **Total: ~$22 of $20 budget** (marginal overage on variant optimization)
