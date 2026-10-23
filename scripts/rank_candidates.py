@@ -29,6 +29,7 @@ accessibility constraint. That absence is printed loudly rather than rounded up.
 import argparse
 import csv
 import json
+import math
 import os
 import re
 import sys
@@ -52,10 +53,18 @@ RANK_WEIGHTS = {
     "Off_Epitope_Contact_Fraction":  (0.05, False),
 }
 
+# Ordinal triage of measured RFD4 geometry; not an affinity/pH composite.
+GEOMETRY_ORDER = (
+    ('hotspot_obedience.hotspot_obedience', True),
+    ('clash_metrics.frac_atoms_clashing_1p5A', False),
+    ('bond_length_metrics.bond_length.frac_unreasonable', False),
+)
+
 
 def fnum(row, key):
     try:
-        return float(row[key])
+        value = float(row[key])
+        return value if math.isfinite(value) else None
     except (KeyError, TypeError, ValueError):
         return None
 
@@ -118,6 +127,20 @@ def rank_scores(records):
         rec["rank_parts"] = parts
 
 
+def rank_geometry(records):
+    for rec in records:
+        parts = {key: fnum(rec['metrics'], key) for key, _ in GEOMETRY_ORDER}
+        rec.update(rank_score=None, rank_parts=parts,
+                   ranking_missing_fields=[key for key, value in parts.items() if value is None])
+
+
+def geometry_sort_key(rec):
+    return (bool(rec['ranking_missing_fields']), *(
+        math.inf if rec['rank_parts'][key] is None else
+        -rec['rank_parts'][key] if higher else rec['rank_parts'][key]
+        for key, higher in GEOMETRY_ORDER), rec['source_file'], rec['source_id'])
+
+
 def identity(a, b, min_aln):
     """Best local identity fraction, ignoring alignments too short to mean anything."""
     _, ids, aln = smith_waterman(a, b)
@@ -161,6 +184,8 @@ def main():
     ap.add_argument("--min-aln", type=int, default=20)
     ap.add_argument("--name-prefix", default="c4_tfr1")
     ap.add_argument("--keep-source-names", action="store_true")
+    ap.add_argument("--ranking-policy", choices=('confidence', 'rfd4-geom'), default='confidence',
+                    help='rfd4-geom is ordinal geometry triage; it estimates no affinity or pH score')
     a = ap.parse_args()
 
     records = load_candidates(a.candidates)
@@ -210,8 +235,14 @@ def main():
     if not unique:
         sys.exit("error: no rows survived filtering")
 
-    rank_scores(unique)
-    unique.sort(key=lambda r: (-r["rank_score"], r["source_id"]))
+    if a.ranking_policy == 'rfd4-geom':
+        rank_geometry(unique)
+        unique.sort(key=geometry_sort_key)
+        print('RFD4 ordinal geometry triage: hotspot obedience descending, clashes/bad bonds ascending.')
+        print('Missing geometry stays unknown; no confidence, affinity, pH or official-acceptance score inferred.')
+    else:
+        rank_scores(unique)
+        unique.sort(key=lambda r: (-r["rank_score"], r["source_id"]))
     clusters = cluster(unique, a.cluster_identity, a.min_aln)
     print("ranked %d rows into %d sequence famil%s at >=%.0f%% local identity"
           % (len(unique), len(clusters), "y" if len(clusters) == 1 else "ies",
@@ -219,6 +250,10 @@ def main():
 
     selected, per_cluster, deferred = [], {}, []
     for rec in unique:
+        if a.ranking_policy == 'rfd4-geom' and rec['ranking_missing_fields']:
+            rec['deferred_reason'] = 'incomplete geometry ranking: '+', '.join(rec['ranking_missing_fields'])
+            deferred.append(rec)
+            continue
         if len(selected) >= a.max_rows:
             deferred.append(rec)
             continue
@@ -231,7 +266,10 @@ def main():
         per_cluster[rec["cluster"]] = used + 1
         selected.append(rec)
 
-    short = min(a.max_rows, len(unique)) - len(selected)
+    incomplete = sum(bool(r.get('ranking_missing_fields')) for r in unique)
+    if incomplete:
+        print('%d rows retain incomplete geometry in provenance and are deferred from geometry triage.' % incomplete)
+    short = min(a.max_rows, len(unique)-incomplete) - len(selected)
     if short > 0:
         print("")
         print("!! the diversity cap held back %d row(s) of a %d-row package: this pool is too"
@@ -261,6 +299,7 @@ def main():
         w.writerows(rows)
 
     prov = os.path.splitext(a.out)[0] + ".provenance.json"
+    metric_keys = [key for key, _ in GEOMETRY_ORDER] if a.ranking_policy == 'rfd4-geom' else list(RANK_WEIGHTS)
     with open(prov, "w") as fh:
         json.dump({
             "generated_utc": datetime.now(timezone.utc).isoformat(),
@@ -270,15 +309,20 @@ def main():
             "gates_enforced": bool(a.gates and a.require_gates),
             "gates_not_evaluable": uncheckable_global,
             "mandatory_gates_not_evaluable": mandatory_missing,
-            "ranking_weights": {k: {"weight": v[0], "higher_is_better": v[1]}
-                                for k, v in RANK_WEIGHTS.items()},
+            "ranking_policy": a.ranking_policy,
+            "ranking_weights": ({k: {"weight": v[0], "higher_is_better": v[1]}
+                                 for k, v in RANK_WEIGHTS.items()} if a.ranking_policy == 'confidence' else {}),
+            "geometry_order": ([{"field": key, "higher_is_better": higher}
+                                for key, higher in GEOMETRY_ORDER] if a.ranking_policy == 'rfd4-geom' else []),
+            "ranking_is_official_acceptance": False,
             "diversity": {"cluster_identity": a.cluster_identity,
                           "max_per_cluster": a.max_per_cluster,
                           "min_alignment": a.min_aln,
                           "families_found": len(clusters),
                           "slots_held_back_by_cap": max(0, short)},
             "counts": {"loaded": len(records), "unique": len(unique),
-                       "shortlisted": len(rows), "deferred": len(deferred)},
+                       "shortlisted": len(rows), "deferred": len(deferred),
+                       "ranking_incomplete": incomplete},
             "shortlist": [{
                 "rank": r["submission_rank"], "name": r["submission_name"],
                 "sequence": r["sequence"], "length": len(r["sequence"]),
@@ -287,24 +331,29 @@ def main():
                 "rank_components": r["rank_parts"],
                 "gates_passed": r["gates_passed"], "gates_failed": r["gates_failed"],
                 "gates_not_evaluable": r["gates_uncheckable"],
-                "metrics": {k: r["metrics"].get(k) for k in RANK_WEIGHTS},
+                "metrics": {k: r["metrics"].get(k) for k in metric_keys},
             } for r in selected],
             "deferred": [{"source_id": r["source_id"], "cluster": r.get("cluster"),
                           "rank_score": r.get("rank_score"),
                           "reason": r.get("deferred_reason", "below the row cap")}
-                         for r in deferred[:50]],
+                         for r in deferred],
         }, fh, indent=2)
 
     print("wrote %s  (%d row%s)" % (a.out, len(rows), "" if len(rows) == 1 else "s"))
     print("wrote %s" % prov)
     print("")
-    print("rank  name                   len  family  score  i_pTM  pLDDT  gates_failed")
+    print("rank  name                   len  family  score  i_pTM  pLDDT  gates_failed" if a.ranking_policy == 'confidence'
+          else "rank  name                   len  family  hotspot  clash_fraction  bad_bond_fraction")
     for r in selected:
         m = r["metrics"]
-        print("%4d  %-20s  %4d  %6d  %5.3f  %5s  %5s  %d" % (
-            r["submission_rank"], r["submission_name"], len(r["sequence"]), r["cluster"],
-            r["rank_score"], (m.get("i_pTM") or "-")[:5],
-            (m.get("Unbound_Binder_pLDDT") or "-")[:5], len(r["gates_failed"])))
+        if a.ranking_policy == 'confidence':
+            print("%4d  %-20s  %4d  %6d  %5.3f  %5s  %5s  %d" % (
+                r["submission_rank"], r["submission_name"], len(r["sequence"]), r["cluster"],
+                r["rank_score"], (m.get("i_pTM") or "-")[:5],
+                (m.get("Unbound_Binder_pLDDT") or "-")[:5], len(r["gates_failed"])))
+        else:
+            print('%4d  %-20s  %4d  %6d  %s' % (r['submission_rank'], r['submission_name'],
+                  len(r['sequence']), r['cluster'], '  '.join(str(r['rank_parts'][key]) for key, _ in GEOMETRY_ORDER)))
     print("")
     print("next: python scripts/build_submission.py %s -o submission/round4.csv" % a.out)
 
