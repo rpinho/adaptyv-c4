@@ -33,6 +33,13 @@ def apps_released(snapshot,app_ids):
                for row in snapshot if row.get('app_id') in app_ids)
 
 
+def release_verified_after_stop(snapshot,app_ids,stop_returncode):
+    # The CLI returns nonzero for "already stopped". A positive owned row in
+    # stopped/zero-task state is sufficient; an empty wrong-account listing is not.
+    return apps_released(snapshot,app_ids) and (stop_returncode==0 or any(
+        row.get('app_id') in app_ids for row in snapshot))
+
+
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--execute',action='store_true')
@@ -116,18 +123,17 @@ def main():
                 try:
                     result=subprocess.run([str(MODAL),'app','stop','--yes',app_id],capture_output=True,text=True,timeout=60)
                     (output/('stop_'+str(attempt)+'.log')).write_text(result.stdout+result.stderr)
-                    if result.returncode==0:
-                        for poll in range(6):
-                            snapshot=subprocess.run([str(MODAL),'app','list','--json'],capture_output=True,text=True,timeout=30)
-                            (output/'apps_after_stop.json').write_text(snapshot.stdout)
-                            if snapshot.returncode==0:
-                                rows=json.loads(snapshot.stdout)
-                                if apps_released(rows,[app_id]):
-                                    stopped=True
-                                    state['app_absent_from_active_listing']=not any(r.get('app_id')==app_id for r in rows)
-                                    break
-                            time.sleep(3)
-                        if stopped:break
+                    for poll in range(6):
+                        snapshot=subprocess.run([str(MODAL),'app','list','--json'],capture_output=True,text=True,timeout=30)
+                        (output/'apps_after_stop.json').write_text(snapshot.stdout)
+                        if snapshot.returncode==0:
+                            rows=json.loads(snapshot.stdout)
+                            if release_verified_after_stop(rows,[app_id],result.returncode):
+                                stopped=True
+                                state['app_absent_from_active_listing']=not any(r.get('app_id')==app_id for r in rows)
+                                break
+                        time.sleep(3)
+                    if stopped:break
                 except Exception as stop_error:
                     (output/('stop_'+str(attempt)+'.log')).write_text(repr(stop_error))
                 time.sleep(5)

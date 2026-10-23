@@ -14,6 +14,11 @@ import run_metric_arms as runner
 
 
 class MetricCampaignControl(unittest.TestCase):
+    def test_already_stopped_cli_error_still_accepts_positive_release_evidence(self):
+        self.assertTrue(runner.release_verified_after_stop([dict(app_id='owned',state='stopped',tasks='0')],['owned'],1))
+        self.assertFalse(runner.release_verified_after_stop([],['owned'],1))
+        self.assertFalse(runner.release_verified_after_stop([dict(app_id='owned',state='ephemeral',tasks='2')],['owned'],0))
+
     def test_release_requires_app_stop_as_well_as_zero_tasks(self):
         self.assertTrue(runner.apps_released([dict(app_id='owned',state='stopped',tasks='0')],['owned']))
         self.assertFalse(runner.apps_released([dict(app_id='owned',state='ephemeral',tasks='0')],['owned']))

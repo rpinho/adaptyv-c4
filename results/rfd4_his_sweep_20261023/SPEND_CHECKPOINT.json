@@ -1,0 +1,10 @@
+{
+  "recorded_at": "2026-10-23T12:54:35.371971+00:00",
+  "state": "generation_finished_exporting_sequences",
+  "recorded_runpod_usd": 56.5899880444631,
+  "prior_own_modal_estimate_usd": 10.718947158590089,
+  "first_pair_gpu_time_upper_usd": 3.1298,
+  "current_pair_gpu_time_upper_usd": 2.8345905492039996,
+  "host_charges_unreconciled": true,
+  "account_wide_bill_verified": false
+}

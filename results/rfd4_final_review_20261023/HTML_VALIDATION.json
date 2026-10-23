@@ -1,0 +1,11 @@
+{
+  "state": "source_and_links_checked",
+  "checked_at": "2026-10-23T13:23:20.418504+00:00",
+  "html_sha256": "a1b51983ca5a88add41583cfd926755e8394e7d5adceea314e06383e58694f8c",
+  "tables": 2,
+  "table_rows_including_headers": 26,
+  "local_links": 8,
+  "all_links_exist": true,
+  "visual_render_verified": false,
+  "reason": "Chrome for Testing headless screenshot timed out at 40s; process exited and no task-profile browser remains"
+}

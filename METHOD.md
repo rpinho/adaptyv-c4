@@ -1,41 +1,47 @@
 # Method: proton-coupled two-state design, with the numbers checked
 
-## Oct23 measured generation and active higher-prior pair
+## Oct23 generation and CPU review complete; all owned GPU apps released
 
-The first two200-design inline-geom arms completed and persisted400 unique
-sequences plus400 metric rows, with all three ranking geometry fields finite.
-Their wrapper blocked after generation in unbounded sampler cleanup; the
-completed app was explicitly stopped with --yes and stopped/zero-task state
-verified. No completed models were regenerated. Canonical CPU export recovered
-all sequences. Raw failure and complete recovery remain separately recorded in
-results/rfd4_geom_20261023/{STATUS,RECOVERY_COMPLETE,RELEASE_VERIFIED}.json.
-Sampler cleanup is now bounded and shell-free; app shutdown uses --yes plus
-state polling. The canonical emitter is unchanged.
+Four approved inline-geom arms completed200 outputs each,800 total and798
+unique amino-acid sequences. All three ranking geometry fields are finite
+for800/800 outputs; target sequence violation count is0. Designs with at least
+three His: plain7/200, prior0.10 33/200, prior0.20 135/200, prior0.30 183/200.
+Mean His count rises0.66/1.28/6.325/24.97. This measures conditioning response,
+not improved binding, pH selectivity or a benchmark pass rate.
 
-Canonical geometry ranking found171 declared families and selected20; all20
-passed the unchanged omitted-context gate and existing full-native staging.
-Only4 have His-ring/receptor proximity and3 His-N/basic-group proximity at4.5A;
-these are geometry descriptions, not pH predictions. First-pair review CSV and
-evidence are under results/rfd4_geom_20261023/review/. All20 are new sequences
-relative to the earlier novelty-screened cohort; no old point label transferred.
-No experimental binding/pH, independent refolding or organizer acceptance is
-established by this work.
+Canonical per-arm geometry ranking retained20 rows each for an80-pose pool.
+All80 passed the UNCHANGED omitted-context gate and full-native staging;
+target CA fit RMSD range0.2127–0.3467A. The registered adaptive contact-hypothesis
+policy selected20 with global sequence-family cap3, retaining all80 annotations
+and every final-ranker deferral. All20 have descriptive His-N/basic-receptor
+proximity within4.5A; this is not an energy, protonation or affinity calculation.
+Seven selected sequences contain at least30% His, a visible composition concern,
+not a validated developability threshold. Many geometry ties remain.
+The canonical emitter is unchanged; its format-valid CSV, workflow draft,
+full evidence and limitations are linked in outbox/adaptyv-c4-generation-review.html.
+This review set is not a final recommendation to consume20 competition slots.
+No independent native-complex refolding, interface ddG/His scan, pH-binding assay,
+mouse-binding validation or fresh complete novelty screen of these800 outputs
+has been performed. Organizer acceptance and novelty remain unmeasured.
+Ricardo alone decides and uploads any actual submission; none was uploaded.
 
-The additional0.20/0.30 pair is explicitly approved and running under
-results/rfd4_his_sweep_20261023/STATUS.json:200 designs per arm, inline geom,
-L40S$1.9512/GPU-hour plus host, max2 containers,9000s per call, no paid successor.
-CPU materialization independently verified10 hotspot atoms,780 target backbone
-atoms,195 residues; the two atom_site tables differ only in His probability.
-Both CPU preflight apps stopped. The final adaptive review policy, registered
-before inspecting higher-prior outcomes, retains20 geometry rows per arm and
-uses the same canonical ranker for explicit contact-hypothesis triage with a
-global family cap3. See results/generation_pivot/FINAL_REVIEW_POLICY.md.
+The first pair finished generation but blocked in sampler cleanup; raw failure
+and completed-output recovery are preserved separately. The canonical sampler
+now has bounded shell-free cleanup. The higher pair returned successfully and
+automatically stopped its app. Its raw controller status incorrectly treated
+CLI “already stopped” as failed release; independent positive stopped/zero-task
+state is saved in RELEASE_VERIFIED.json. The controller now accepts that positive
+state even when the CLI returns nonzero, without accepting empty-account evidence.
+Both OWNED generation apps are verified stopped with zero tasks. No paid successor
+was launched. Four shutdown-control tests pass; the CPU runtime switch has numeric
+parity on overlapping audited poses. See results/rfd4_final_review_20261023/VALIDATION.json.
 
-Recorded Runpod$56.589988; prior own Modal estimate$10.718947. First new pair's
-GPU-time upper estimate after verified release is$3.13, including cleanup delay;
-host charges remain unreconciled. The active higher pair accrues separately.
-These figures exclude Claude's prior lane and account-wide billing. Ricardo
-retains accounts and final submission. Nothing was uploaded to the portal.
+Recorded Runpod$56.589988; prior own Modal estimate$10.718947. Four-arm GPU-time
+upper estimate after release$6.002892: first pair$3.129680, higher pair$2.873211.
+Prior tracked total plus that GPU estimate$73.311827, PLUS unreconciled host
+CPU/RAM/build/storage charges. These are own-lane estimates, exclude Claude's
+separate lane and are not an account-wide invoice. The final review used local
+CPU only. New GPU spend for the CPU review$0.00.
 
 ## Oct23 measured completion; novelty work stops here
 
