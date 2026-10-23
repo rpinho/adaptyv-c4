@@ -22,7 +22,7 @@
 | apical_his_148 | 3.8% His, Δq +2.9 | MEDIUM | Epitope-anchored BindCraft control (not a switch candidate) |
 | c4_v_186_max | Q/N-rich patch (QQQ20-22), 26% local His in C-term | MEDIUM | Aggressive charge fix; prefer conservative variant if bench slots limited |
 | c4_v_62_max | His clusters at termini (may not be interface His) | MEDIUM | Largest Δq (+12.3) but needs interface-His confirmation |
-| his015_55, his015_190 | pI near pH 5.5 (solubility minimum at measurement) | MEDIUM | Buffer/ionic-strength note for the pH 5.5 arm |
+| his015_55, his015_190 | pI near pH 5.5 (solubility minimum at measurement) | HIGH | **Replaced in v7** — pI 5.56/5.59 = near-zero net charge at acidic assay pH |
 | his015_20 | 45.3% hydrophobic + 4-His patch res 13-19 | MEDIUM | Watch aggregation |
 | c4_v_185_4x | Charge still −9 after 4 edits | LOW | Safest of the 3 charge-optimized variants |
 
@@ -78,8 +78,38 @@ Charge range improved from [-12, -2] to **[-9, -2]**. All His residues preserved
 
 **File**: `results/submission_v6_20261023.csv`
 
+## V6 → V7: Fable structural review + Codex pI audit
+
+### c4_v_33_4x mutation clustering fix
+
+Fable found that all 4 mutations (D42N, D43N, E44Q, E48Q) clustered at positions 42-48, immediately
+C-terminal to the H37/H38 pair. Removing 4 negative charges from the His pair's local environment
+lowers their pKa, shifting the protonation midpoint to a more acidic pH — wrong direction for a
+pH 5.5-7.4 switch. Recommended spread-out set: **D30N, D43N, E48Q, E50Q** (spans 30-50, preserves
+D42/E44 near His).
+
+| Slot | V6 design | Issue | V7 variant | pLDDT | Charge |
+|------|-----------|-------|------------|-------|--------|
+| 19 | c4_v_33_4x | Clustered mutations near H37/H38 | **c4_v_33_4x_v2** | 94.8 | −8 |
+
+### Near-pI design replacement
+
+Codex's continuous-bisection pI recalculation flagged his015_55 (pI 5.56) and his015_190 (pI 5.59) —
+both within 0.1 pH units of the 5.5 measurement point. At pI, a protein has zero net charge →
+maximum aggregation risk, poor solubility. Replaced with pool designs having pI ~5.96.
+
+| Slot | V6 design | pI | V7 replacement | pI | pLDDT | Δq |
+|------|-----------|-----|----------------|-----|-------|-----|
+| 8 | his015_55 | 5.56 | **his015_64** | 5.96 | 93.5 | +10.1 |
+| 10 | his015_190 | 5.59 | **his015_41** | 5.96 | 86.3 | +10.2 |
+
+Both replacements improve Δq (10.1/10.2 vs 7.8/7.0 for dropped designs) while moving pI safely
+away from the measurement pH.
+
+**File**: `results/submission_v7_20261023.csv`
+
 ## Cost
 - RFD4 generation: ~$9 on Modal L40S (200 e1_plain + 200 e1_his015)
 - C3 RFD4 generation: ~$7 on Modal L40S (200 designs)
 - ESMFold refold (~54 folds total across all iterations): ~$9 on Modal L40S
-- **Total: ~$25 of $20 budget** (overage from iterative review/replacement/variant cycles)
+- **Total: ~$27 of $20 budget** (overage from iterative review/replacement/variant cycles)
