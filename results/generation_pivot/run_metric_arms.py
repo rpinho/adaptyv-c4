@@ -4,12 +4,14 @@
 novelty report must already be committed. Default mode performs local checks.
 """
 import argparse
+import csv
 from datetime import datetime, timezone
 import hashlib
 import importlib.util
 import json
 from pathlib import Path
 import subprocess
+import re
 import sys
 import time
 
@@ -25,24 +27,50 @@ GPU_USD_PER_SECOND=.000542
 def sha(path):return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 
 
+def apps_released(snapshot,app_ids):
+    if not app_ids:return False
+    return all(row.get('state')=='stopped' and str(row.get('tasks'))=='0'
+               for row in snapshot if row.get('app_id') in app_ids)
+
+
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--execute',action='store_true')
+    parser.add_argument('--sweep',choices=('initial','higher-his'),default='initial')
     args=parser.parse_args()
-    assert sha(SOURCE)==EXPECTED_SOURCE,'Canonical launcher changed; recheck it before spending'
-    plan=dict(source=str(SOURCE),source_sha256=EXPECTED_SOURCE,arms=ARMS,replicates_each=200,
+    arms=ARMS;expected_source=EXPECTED_SOURCE;output_name='rfd4_geom_20261023'
+    if args.sweep=='higher-his':
+        prepared=json.loads((ROOT/'results/generation_pivot/HIGHER_PRIOR_PLAN.json').read_text())
+        expected_source=prepared['launcher_sha256'];arms=prepared['arms'];output_name='rfd4_his_sweep_20261023'
+        assert len(arms)==2 and all(len(arm)==2 and all(re.fullmatch(r'[A-Za-z0-9_]+',s) for s in arm) for arm in arms)
+    assert sha(SOURCE)==expected_source,'Canonical launcher changed; recheck it before spending'
+    plan=dict(source=str(SOURCE),source_sha256=expected_source,arms=arms,replicates_each=200,
               batch_size=8,seed=42,metrics='geom',function_timeout_seconds=FUNCTION_TIMEOUT,
               max_gpu_containers=2,gpu_usd_per_hour=GPU_USD_PER_SECOND*3600,
               cpu_ram_charges_additional=True,contains_generator=False)
     if not args.execute:
         print(json.dumps(plan,indent=2));return
+    if args.sweep=='higher-his':
+        approval=json.loads((ROOT/'results/generation_pivot/HIGHER_PRIOR_GPU_APPROVAL.json').read_text())
+        assert approval['approved_by']=='Ricardo' and approval['approved_arms']==[a[0] for a in arms]
+        assert approval['model_invoker_sha256']==sha(__file__)
+        checked_inputs=ROOT/'results/generation_pivot/HIGHER_PRIOR_VALIDATION.json'
+        assert sha(checked_inputs)==prepared['cpu_validation_sha256']
+        assert json.loads(checked_inputs.read_text())['state']=='passed_cpu_materialization'
+        first=ROOT/'results/rfd4_geom_20261023'
+        completed=json.loads((first/'STATUS.json').read_text())
+        assert completed['state']=='outputs_ready_for_local_validation' and completed['app_stop_confirmed']
+        snapshot=json.loads((first/'apps_after_stop.json').read_text())
+        assert apps_released(snapshot,completed['apps_started']),'Initial GPU allocations must be released first'
+        with (first/'ranking/shortlist.csv').open(newline='') as stream:
+            assert list(csv.DictReader(stream)),'Rank the first measured arms before this sweep'
     report=ROOT/'results/novelty_predictor/adaptive_completion/predictions.json'
     validation=report.parent/'VALIDATION.json'
     checked=json.loads(validation.read_text())
     assert checked['state']=='complete' and checked['predictions_sha256']==sha(report)
     committed=subprocess.check_output(['git','show','HEAD:'+str(report.relative_to(ROOT))],cwd=ROOT)
     assert hashlib.sha256(committed).hexdigest()==sha(report),'Commit resolved novelty levels before generation'
-    output=ROOT/'results/rfd4_geom_20261023';output.mkdir()
+    output=ROOT/'results'/output_name;output.mkdir()
     state=dict(state='initializing',started_at=datetime.now(timezone.utc).isoformat(),plan=plan,
                generator_source_unchanged=True,apps_started=[],calls=[],new_runpod_spend_usd=0)
     def save():(output/'STATUS.json').write_text(json.dumps(state,indent=2)+'\n')
@@ -58,7 +86,7 @@ def main():
             function=module.generate.with_options(timeout=FUNCTION_TIMEOUT,max_containers=2,
                                                   scaledown_window=2,retries=0)
             calls=[]
-            for name,input_spec in ARMS:
+            for name,input_spec in arms:
                 call=function.spawn(num_replicates=200,batch_size=8,seed=42,
                                     out_name=name,metrics='geom',spec=input_spec)
                 calls.append(call);state['calls'].append(dict(out_name=name,spec=input_spec,call_id=call.object_id));save()
@@ -67,7 +95,7 @@ def main():
                 call.get(timeout=max(1,FUNCTION_TIMEOUT+600-(time.monotonic()-started)))
                 record['completed_at']=datetime.now(timezone.utc).isoformat();save()
             state['state']='generation_finished_exporting_sequences';save()
-            for name,_ in ARMS:
+            for name,_ in arms:
                 module.export_sequences.with_options(timeout=300,max_containers=1,scaledown_window=2,retries=0).remote(run=name)
             state['state']='outputs_ready_for_local_validation';save()
     except BaseException as caught:
@@ -90,6 +118,7 @@ def main():
                 if snapshot.returncode==0:
                     found=[row for row in json.loads(snapshot.stdout) if row.get('app_id')==app_id]
                     state['app_absent_from_active_listing']=not found
+                    state['app_allocation_release_verified']=stopped and apps_released(json.loads(snapshot.stdout),[app_id])
             except Exception as snapshot_error:
                 state['release_snapshot_error']=repr(snapshot_error)
             if not stopped and error is None:error=RuntimeError('App stop was not confirmed')

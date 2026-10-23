@@ -1,0 +1,25 @@
+{
+  "scope": "Two additional higher-prior arms, after first measured arms finish, release and ranking",
+  "arms": [
+    [
+      "tfr1_his020_200m_20261023",
+      "tfr1_apical_his020"
+    ],
+    [
+      "tfr1_his030_200m_20261023",
+      "tfr1_apical_his030"
+    ]
+  ],
+  "replicates_each": 200,
+  "batch_size": 8,
+  "seed": 42,
+  "metrics": "geom",
+  "function_timeout_seconds": 9000,
+  "max_concurrent_gpu_containers": 2,
+  "gpu_usd_per_hour": 1.9512,
+  "cpu_ram_additional": true,
+  "launcher_sha256": "94240d0ce29415253de456d10af0a132dfc25313e7f83c010e05d9318c59535b",
+  "cpu_validation_sha256": "682900280e8386468f47612bd2f1c27443a2ba55c8ee5198a3b9d40c615b936a",
+  "approval_state": "pending",
+  "invocation": "results/generation_pivot/run_metric_arms.py --sweep higher-his --execute"
+}

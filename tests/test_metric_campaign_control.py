@@ -14,6 +14,13 @@ import run_metric_arms as runner
 
 
 class MetricCampaignControl(unittest.TestCase):
+    def test_release_requires_app_stop_as_well_as_zero_tasks(self):
+        self.assertTrue(runner.apps_released([dict(app_id='owned',state='stopped',tasks='0')],['owned']))
+        self.assertFalse(runner.apps_released([dict(app_id='owned',state='ephemeral',tasks='0')],['owned']))
+        self.assertFalse(runner.apps_released([dict(app_id='owned',state='stopped',tasks='1')],['owned']))
+        self.assertTrue(runner.apps_released([dict(app_id='other',state='ephemeral',tasks='9')],['owned']))
+        self.assertFalse(runner.apps_released([],[]))
+
     def test_remote_code_is_not_loaded_before_completed_report_is_committed(self):
         with tempfile.TemporaryDirectory() as folder:
             root=Path(folder);source=root/'source.py';source.write_text('source only')

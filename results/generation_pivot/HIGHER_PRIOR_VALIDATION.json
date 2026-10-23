@@ -1,0 +1,51 @@
+{
+  "state": "passed_cpu_materialization",
+  "recorded_at": "2026-10-23T11:38:37.592389+00:00",
+  "variants": [
+    {
+      "prior": 0.2,
+      "path": "/Users/ricardo/.cache/adaptyv-c4/rfd4_geom_20261023/prior_preflight/his020.cif",
+      "sha256": "af59effb72896a9b87822937e8a9ff728177b685c081e3fd5705cccdc755ecbd",
+      "hotspot_atoms": 10,
+      "target_backbone_atoms": 780,
+      "target_residues": 195,
+      "his_annotation_values": [
+        "0.2"
+      ],
+      "his_annotation_placeholder_atoms": 1,
+      "cys_annotation_values": [
+        "0.0"
+      ],
+      "selected_design_placeholder_outside_target": true
+    },
+    {
+      "prior": 0.3,
+      "path": "/Users/ricardo/.cache/adaptyv-c4/rfd4_geom_20261023/prior_preflight/his030.cif",
+      "sha256": "d6c80eaf86944c81480ac8932e6cadff6e97b930745f653c19dd25fc888bfe5d",
+      "hotspot_atoms": 10,
+      "target_backbone_atoms": 780,
+      "target_residues": 195,
+      "his_annotation_values": [
+        "0.3"
+      ],
+      "his_annotation_placeholder_atoms": 1,
+      "cys_annotation_values": [
+        "0.0"
+      ],
+      "selected_design_placeholder_outside_target": true
+    }
+  ],
+  "atom_site_columns_differing": [
+    "_atom_site.condition_sequence-probability-HIS_1_residue"
+  ],
+  "only_his_probability_changed": true,
+  "cpu_preflight_app_ids": {
+    "020": "ap-pT0Am692iI9U1gIsQVptuQ",
+    "030": "ap-RFWxgzRRBoacrf2PlEP9gZ"
+  },
+  "canonical_cli_exit_not_used_as_sole_validation": true,
+  "new_gpu_spend_usd": 0,
+  "host_cpu_charges_unreconciled": true,
+  "recorded_runpod_usd": 56.5899880444631,
+  "scope": "Input materialization only; no higher-prior designs generated or pH behavior established"
+}

@@ -1,0 +1,30 @@
+{
+  "recorded_at": "2026-10-23T11:42:34.166736+00:00",
+  "cpu_preflight_apps": {
+    "020": "ap-pT0Am692iI9U1gIsQVptuQ",
+    "030": "ap-RFWxgzRRBoacrf2PlEP9gZ"
+  },
+  "both_canonical_cli_runs_completed": true,
+  "listed_owned_apps": [
+    {
+      "app_id": "ap-RFWxgzRRBoacrf2PlEP9gZ",
+      "description": "rfd4-tfr1",
+      "state": "stopped",
+      "tasks": "0",
+      "created_at": "2026-10-23 07:35:49-04:00",
+      "stopped_at": "2026-10-23 07:36:38-04:00"
+    },
+    {
+      "app_id": "ap-pT0Am692iI9U1gIsQVptuQ",
+      "description": "rfd4-tfr1",
+      "state": "stopped",
+      "tasks": "0",
+      "created_at": "2026-10-23 07:34:44-04:00",
+      "stopped_at": "2026-10-23 07:35:26-04:00"
+    }
+  ],
+  "both_apps_stopped_with_zero_tasks": true,
+  "original_paid_app_not_stopped": true,
+  "new_gpu_spend_for_cpu_preflight_usd": 0,
+  "host_cpu_charges_unreconciled": true
+}

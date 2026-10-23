@@ -8,7 +8,7 @@
       "his_prior": 0.2,
       "one_noncomment_value_changed": true,
       "materialized_cif_validation": "pending before paid run",
-      "wired_into_generator_image": false
+      "wired_into_generator_image": true
     },
     {
       "path": "/Users/ricardo/.worktrees/adaptyv-c4/claude-submission/configs/rfd4/tfr1_apical_his030.yaml",
@@ -16,9 +16,13 @@
       "his_prior": 0.3,
       "one_noncomment_value_changed": true,
       "materialized_cif_validation": "pending before paid run",
-      "wired_into_generator_image": false
+      "wired_into_generator_image": true
     }
   ],
   "current_paid_campaign_unchanged": true,
-  "new_gpu_or_remote_cpu_spend_usd": 0
+  "new_gpu_or_remote_cpu_spend_usd": 0,
+  "future_launcher_sha256": "94240d0ce29415253de456d10af0a132dfc25313e7f83c010e05d9318c59535b",
+  "active_campaign_deployed_launcher_sha256": "3554f595c0c20a98aff02356d81800828d22619e569acda99777a4f1b348e609",
+  "function_bodies_and_decorators_unchanged": true,
+  "active_deployment_not_reloaded": true
 }
