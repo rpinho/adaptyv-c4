@@ -1,5 +1,18 @@
 # Method: proton-coupled two-state design, with the numbers checked
 
+## Current measured CPU domain policy (Oct22)
+
+See results/novelty_predictor/domain_consensus/RESULTS.md. All3 domain tools ran
+on all68 available models;70 domains include4 discontinuous inputs. Explicit
+index correction/source checks and21 predictor tests pass. Whole-chain code
+compatibility checked on all68 frozen cases. Additional whole-parent targets
+were aligned against every domain,26,998 pairs, removing8 retrieval no-hits.
+Current provisional retired counts20 local2/40 local3/7 local4/6 missing; native
+control remains1/qTM.9927.5 local4 calls arise from insufficient whole-query
+domain coverage despite matching domains; do not equate them with new folds.
+All thresholds/reference/sequence evidence/coordinates remain fixed. No official
+score or qualified design established. Earlier counts below are frozen alternatives.
+
 ## Public patent evidence and CPU domain preflight (Oct22)
 
 NCBI pataa public collection now obtained and searched explicitly:3,982,722

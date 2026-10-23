@@ -1,0 +1,357 @@
+{
+  "all_requested_targets_scored": true,
+  "queries": 70,
+  "requested_target_pairs": 26998,
+  "checks": [
+    {
+      "query": "q000002d001",
+      "requested_targets": 925,
+      "returned_targets": 925
+    },
+    {
+      "query": "q000002d002",
+      "requested_targets": 925,
+      "returned_targets": 925
+    },
+    {
+      "query": "q000003d001",
+      "requested_targets": 834,
+      "returned_targets": 834
+    },
+    {
+      "query": "q000004d001",
+      "requested_targets": 989,
+      "returned_targets": 989
+    },
+    {
+      "query": "q000005d001",
+      "requested_targets": 1420,
+      "returned_targets": 1420
+    },
+    {
+      "query": "q000005d002",
+      "requested_targets": 1420,
+      "returned_targets": 1420
+    },
+    {
+      "query": "q000006d001",
+      "requested_targets": 270,
+      "returned_targets": 270
+    },
+    {
+      "query": "q000007d001",
+      "requested_targets": 284,
+      "returned_targets": 284
+    },
+    {
+      "query": "q000008d001",
+      "requested_targets": 131,
+      "returned_targets": 131
+    },
+    {
+      "query": "q000009d001",
+      "requested_targets": 558,
+      "returned_targets": 558
+    },
+    {
+      "query": "q000010d001",
+      "requested_targets": 208,
+      "returned_targets": 208
+    },
+    {
+      "query": "q000011d001",
+      "requested_targets": 133,
+      "returned_targets": 133
+    },
+    {
+      "query": "q000012d001",
+      "requested_targets": 77,
+      "returned_targets": 77
+    },
+    {
+      "query": "q000013d001",
+      "requested_targets": 144,
+      "returned_targets": 144
+    },
+    {
+      "query": "q000014d001",
+      "requested_targets": 11,
+      "returned_targets": 11
+    },
+    {
+      "query": "q000015d001",
+      "requested_targets": 68,
+      "returned_targets": 68
+    },
+    {
+      "query": "q000016d001",
+      "requested_targets": 68,
+      "returned_targets": 68
+    },
+    {
+      "query": "q000017d001",
+      "requested_targets": 140,
+      "returned_targets": 140
+    },
+    {
+      "query": "q000018d001",
+      "requested_targets": 379,
+      "returned_targets": 379
+    },
+    {
+      "query": "q000019d001",
+      "requested_targets": 111,
+      "returned_targets": 111
+    },
+    {
+      "query": "q000020d001",
+      "requested_targets": 181,
+      "returned_targets": 181
+    },
+    {
+      "query": "q000022d001",
+      "requested_targets": 2693,
+      "returned_targets": 2693
+    },
+    {
+      "query": "q000023d001",
+      "requested_targets": 171,
+      "returned_targets": 171
+    },
+    {
+      "query": "q000024d001",
+      "requested_targets": 267,
+      "returned_targets": 267
+    },
+    {
+      "query": "q000025d001",
+      "requested_targets": 628,
+      "returned_targets": 628
+    },
+    {
+      "query": "q000026d001",
+      "requested_targets": 8,
+      "returned_targets": 8
+    },
+    {
+      "query": "q000029d001",
+      "requested_targets": 11,
+      "returned_targets": 11
+    },
+    {
+      "query": "q000030d001",
+      "requested_targets": 85,
+      "returned_targets": 85
+    },
+    {
+      "query": "q000031d001",
+      "requested_targets": 33,
+      "returned_targets": 33
+    },
+    {
+      "query": "q000032d001",
+      "requested_targets": 326,
+      "returned_targets": 326
+    },
+    {
+      "query": "q000033d001",
+      "requested_targets": 675,
+      "returned_targets": 675
+    },
+    {
+      "query": "q000034d001",
+      "requested_targets": 260,
+      "returned_targets": 260
+    },
+    {
+      "query": "q000035d001",
+      "requested_targets": 2770,
+      "returned_targets": 2770
+    },
+    {
+      "query": "q000036d001",
+      "requested_targets": 322,
+      "returned_targets": 322
+    },
+    {
+      "query": "q000037d001",
+      "requested_targets": 799,
+      "returned_targets": 799
+    },
+    {
+      "query": "q000038d001",
+      "requested_targets": 338,
+      "returned_targets": 338
+    },
+    {
+      "query": "q000039d001",
+      "requested_targets": 164,
+      "returned_targets": 164
+    },
+    {
+      "query": "q000040d001",
+      "requested_targets": 104,
+      "returned_targets": 104
+    },
+    {
+      "query": "q000043d001",
+      "requested_targets": 401,
+      "returned_targets": 401
+    },
+    {
+      "query": "q000044d001",
+      "requested_targets": 59,
+      "returned_targets": 59
+    },
+    {
+      "query": "q000045d001",
+      "requested_targets": 48,
+      "returned_targets": 48
+    },
+    {
+      "query": "q000046d001",
+      "requested_targets": 395,
+      "returned_targets": 395
+    },
+    {
+      "query": "q000047d001",
+      "requested_targets": 32,
+      "returned_targets": 32
+    },
+    {
+      "query": "q000048d001",
+      "requested_targets": 230,
+      "returned_targets": 230
+    },
+    {
+      "query": "q000049d001",
+      "requested_targets": 291,
+      "returned_targets": 291
+    },
+    {
+      "query": "q000050d001",
+      "requested_targets": 17,
+      "returned_targets": 17
+    },
+    {
+      "query": "q000051d001",
+      "requested_targets": 394,
+      "returned_targets": 394
+    },
+    {
+      "query": "q000052d001",
+      "requested_targets": 449,
+      "returned_targets": 449
+    },
+    {
+      "query": "q000053d001",
+      "requested_targets": 19,
+      "returned_targets": 19
+    },
+    {
+      "query": "q000054d001",
+      "requested_targets": 398,
+      "returned_targets": 398
+    },
+    {
+      "query": "q000055d001",
+      "requested_targets": 72,
+      "returned_targets": 72
+    },
+    {
+      "query": "q000056d001",
+      "requested_targets": 469,
+      "returned_targets": 469
+    },
+    {
+      "query": "q000057d001",
+      "requested_targets": 546,
+      "returned_targets": 546
+    },
+    {
+      "query": "q000058d001",
+      "requested_targets": 500,
+      "returned_targets": 500
+    },
+    {
+      "query": "q000059d001",
+      "requested_targets": 51,
+      "returned_targets": 51
+    },
+    {
+      "query": "q000060d001",
+      "requested_targets": 56,
+      "returned_targets": 56
+    },
+    {
+      "query": "q000061d001",
+      "requested_targets": 36,
+      "returned_targets": 36
+    },
+    {
+      "query": "q000062d001",
+      "requested_targets": 12,
+      "returned_targets": 12
+    },
+    {
+      "query": "q000063d001",
+      "requested_targets": 52,
+      "returned_targets": 52
+    },
+    {
+      "query": "q000064d001",
+      "requested_targets": 47,
+      "returned_targets": 47
+    },
+    {
+      "query": "q000065d001",
+      "requested_targets": 211,
+      "returned_targets": 211
+    },
+    {
+      "query": "q000066d001",
+      "requested_targets": 2,
+      "returned_targets": 2
+    },
+    {
+      "query": "q000067d001",
+      "requested_targets": 4,
+      "returned_targets": 4
+    },
+    {
+      "query": "q000068d001",
+      "requested_targets": 26,
+      "returned_targets": 26
+    },
+    {
+      "query": "q000069d001",
+      "requested_targets": 146,
+      "returned_targets": 146
+    },
+    {
+      "query": "q000070d001",
+      "requested_targets": 188,
+      "returned_targets": 188
+    },
+    {
+      "query": "q000071d001",
+      "requested_targets": 456,
+      "returned_targets": 456
+    },
+    {
+      "query": "q000072d001",
+      "requested_targets": 185,
+      "returned_targets": 185
+    },
+    {
+      "query": "q000073d001",
+      "requested_targets": 222,
+      "returned_targets": 222
+    },
+    {
+      "query": "q000074d001",
+      "requested_targets": 2054,
+      "returned_targets": 2054
+    }
+  ]
+}

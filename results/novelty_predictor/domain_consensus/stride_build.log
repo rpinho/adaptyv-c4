@@ -1,0 +1,4 @@
+/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/hydrbond.c:345:16: warning: passing arguments to a function without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  345 |           HBOND_Energy(Acc[ac]->Chain->Rsd[Acc[ac]->AA2_Res]->Coord[Acc[ac]->AA2_At],
+      |                       ^
+1 warning generated.

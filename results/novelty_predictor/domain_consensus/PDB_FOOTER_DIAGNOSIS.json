@@ -1,0 +1,7 @@
+{
+  "cause": "pdb-tools residue selector parses TER residue-number fields; bare TER record lacked those fields",
+  "correction": "Emit complete standard TER metadata matching the actual last residue; no ATOM coordinate/sequence change",
+  "earlier_control": "Two models completed; UniDoc wrapper failed before invoking classifier",
+  "earlier_inputs": "results/novelty_predictor/domain_consensus/initial_pdb_footer_inputs",
+  "new_gpu_or_cloud_cpu_spend_usd": 0
+}

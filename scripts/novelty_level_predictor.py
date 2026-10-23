@@ -77,10 +77,59 @@ def general_level(seq_class, structure_class):
     return 4
 
 
+def domain_intervals(domain):
+    """One domain may contain multiple ordered, disjoint sequence fragments."""
+    if 'segments' in domain:
+        if 'start' in domain or 'end' in domain:
+            raise ValueError('Use segments OR start/end, not both')
+        intervals = domain['segments']
+        if not isinstance(intervals, (list, tuple)) or not intervals:
+            raise ValueError('Domain segments must be nonempty')
+    else:
+        if 'start' not in domain or 'end' not in domain:
+            raise ValueError('Domain requires start/end or segments')
+        intervals = [(domain['start'], domain['end'])]
+    previous_end = 0
+    checked = []
+    for interval in intervals:
+        if not isinstance(interval, (list, tuple)) or len(interval) != 2:
+            raise ValueError('Invalid domain coordinates')
+        start, end = interval
+        if (any(not isinstance(x, int) or isinstance(x, bool) for x in (start, end))
+                or not 1 <= start <= end or start <= previous_end):
+            raise ValueError('Invalid, overlapping or unordered domain coordinates')
+        checked.append((start, end))
+        previous_end = end
+    return checked
+
+
+def domain_coordinates(domain):
+    intervals = domain_intervals(domain)
+    if 'segments' in domain:
+        return dict(segments=[list(pair) for pair in intervals])
+    return dict(start=intervals[0][0], end=intervals[0][1])
+
+
+def domain_positions(domain, protein_length):
+    positions = [i for start, end in domain_intervals(domain) for i in range(start, end+1)]
+    if positions[-1] > protein_length: raise ValueError('Invalid domain coordinates')
+    return positions
+
+
+def domain_query_pdb(residues, domain):
+    """Copy existing CAs, retaining full-query residue IDs across domain gaps."""
+    positions = domain_positions(domain, len(residues))
+    lines = []
+    for serial, position in enumerate(positions, 1):
+        _, _, (x,y,z), comp = residues[position-1]
+        lines.append(f'ATOM  {serial:5d}  CA  {comp:3s} A{position:4d}    {x:8.3f}{y:8.3f}{z:8.3f}  1.00  0.00           C\n')
+    return ''.join(lines)+'TER\nEND\n'
+
+
 def structural_class(protein_length, domain_matches):
     """Rule evaluator only, NOT a structural search or domain predictor.
 
-    Inputs are disjoint query-domain intervals (1-based inclusive), with TM-score
+    Inputs are disjoint query domains (1-based inclusive intervals or segments), with TM-score
     normalized by that query domain's length. Coverage is summed over qualifying
     domains, never over redundant hits and never from an average of TM-scores.
     """
@@ -88,12 +137,10 @@ def structural_class(protein_length, domain_matches):
         raise ValueError('Invalid protein length')
     occupied, high, moderate = set(), set(), set()
     for d in domain_matches:
-        start, end, tm = d['start'], d['end'], d['tm_score']
-        if not isinstance(start, int) or not isinstance(end, int) or not 1 <= start <= end <= protein_length:
-            raise ValueError('Invalid domain coordinates')
+        span = set(domain_positions(d, protein_length))
+        tm = d['tm_score']
         if not 0 <= tm <= 1 or d.get('normalization') != 'query_domain_length':
             raise ValueError('Require query-domain-normalized TM-score in[0,1]')
-        span = set(range(start, end+1))
         if span & occupied: raise ValueError('Overlapping domains would double-count coverage')
         occupied |= span
         if tm >= STRUCTURE_MODERATE_TM: moderate |= span
@@ -207,7 +254,8 @@ def parse_structure_hits(path, domains):
             for k in ('qlen','tlen','qstart','qend','tstart','tend','alnlen'): r[k] = int(r[k])
             for k in ('qtmscore','ttmscore'): r[k] = float(r[k])
             d = domains[r['query']]
-            if r['qlen'] != d['end']-d['start']+1 or not 0 <= r['qtmscore'] <= 1:
+            expected_length = sum(end-start+1 for start,end in domain_intervals(d))
+            if r['qlen'] != expected_length or not 0 <= r['qtmscore'] <= 1:
                 raise ValueError('Wrong query domain length or TM-score normalization')
             if not 1 <= r['qstart'] <= r['qend'] <= r['qlen']:
                 raise ValueError('Invalid structural alignment coordinates')
@@ -261,16 +309,13 @@ def run_structural_half(records, report, args):
         intervals = spec['domains']
         if not intervals: raise ValueError('At least one declared domain is required')
         # Reuse interval validation, rejecting overlaps before any external search.
-        structural_class(len(rr), [dict(**{k:d[k] for k in ('start','end')}, tm_score=0., normalization='query_domain_length') for d in intervals])
+        structural_class(len(rr), [dict(**domain_coordinates(d), tm_score=0., normalization='query_domain_length') for d in intervals])
         for j, d in enumerate(intervals, 1):
             if not d.get('source'): raise ValueError('Domain provenance is required')
             q = f'q{i:06d}d{j:03d}'
-            domains[q] = dict(**d, name=design['name'])
-            lines = []
-            for number, (_, _, xyz, comp) in enumerate(rr[d['start']-1:d['end']], 1):
-                x,y,z = xyz
-                lines.append(f'ATOM  {number:5d}  CA  {comp:3s} A{number:4d}    {x:8.3f}{y:8.3f}{z:8.3f}  1.00  0.00           C\n')
-            (folder/(q+'.pdb')).write_text(''.join(lines)+'TER\nEND\n')
+            domains[q] = dict(**d, name=design['name'],
+                query_residue_positions=domain_positions(d, len(rr)))
+            (folder/(q+'.pdb')).write_text(domain_query_pdb(rr, d))
         evidence[design['name']] = dict(status='coordinates_verified', input=spec, domains=[])
     write_json(out/'query_domains.json', domains)
     if not domains: raise ValueError('No verified coordinate domains to search')
@@ -311,12 +356,12 @@ def run_structural_half(records, report, args):
             r.update(structure_status=e['status'], local_predicted_level=None,
                      prediction_confidence='unestablished: coordinates unavailable', organizer_level_established=False)
             continue
-        matches = [dict(start=d['start'],end=d['end'],tm_score=(d['best_hit'] or {}).get('qtmscore',0.),
+        matches = [dict(**domain_coordinates(d),tm_score=(d['best_hit'] or {}).get('qtmscore',0.),
                         normalization='query_domain_length') for d in e['domains']]
         measured = structural_class(len(design['sequence']), matches)
         measured['evidence_status'] = ('matches_measured' if any(d['best_hit'] for d in e['domains'])
                                        else 'no_candidate_match_detected_not_zero_TM')
-        measured['domain_segmentation_coverage'] = sum(d['end']-d['start']+1 for d in e['domains'])/len(design['sequence'])
+        measured['domain_segmentation_coverage'] = sum(len(domain_positions(d, len(design['sequence']))) for d in e['domains'])/len(design['sequence'])
         measured['tm_boundary_precision_caveat'] = any(
             (d['best_hit'] or {}).get('qtmscore') in (.5,.8) for d in e['domains'])
         observed = r['sequence_evidence_class']
@@ -330,11 +375,12 @@ def run_structural_half(records, report, args):
             level_status='provisional_local_prediction',
             possible_levels=possible_levels(observed,r['sequence_database_gaps']),
             possible_levels_if_structure_policy_accepted=possible_levels(observed,r['sequence_database_gaps'],measured['category']),
-            prediction_confidence='low: public historical PDB snapshot; provided coordinates; declared domains, no organizer three-predictor consensus; missing patent sequences; no-hit sequence class is provisional',
+            prediction_confidence='low: public historical PDB snapshot; provided coordinates; declared domains; organizer consensus/versions and patent corpus unverified; no-hit sequence class is provisional',
             local_gate_assessment='provisional_local_level_'+str(local),
             explanation='Level applies only to searched databases, supplied coordinates and declared domain segmentation. Not an organizer score; see confidence and possible_levels.')
     report.update(status='cpu_sequence_and_structure_screen_complete_with_scope_caveats',
         structure_database=db, structure_manifest_sha256=digest(args.structures),
+        domain_segmentation_provenance=structures.get('segmentation_provenance'),
         foldseek_version=subprocess.check_output([binary,'version'],text=True).strip(),
         structural_search=dict(commands=commands, elapsed_seconds=time.monotonic()-start,
             query_domains=len(domains), hit_rows=sum(map(len,hits.values())),
@@ -347,9 +393,9 @@ def run_structural_half(records, report, args):
             evalue=FOLDSEEK_EVALUE),
         limitations=['Public historical PDB snapshot, not the unpublished organizer structural corpus/version',
             'Existing verified coordinates used; organizer ESMFold/ESMFold2-Fast structures not reproduced',
-            'Explicit domain intervals or whole-chain assumption; no consensus of three domain predictors',
+            'Domain provenance is supplied; organizer domain-consensus implementation/version not verified',
             'Foldseek finite candidate search may miss matches; no-hit is not proof of new fold',
-            'Missing patent sequence corpus and unpublished search settings persist',
+            'Organizer patent collection/snapshot and unpublished search settings remain unverified',
             'Antibody detection and separate CDR novelty scale not implemented',
             'All numeric levels are local provisional predictions; organizer levels remain unestablished'])
 

@@ -1,0 +1,1256 @@
+{
+  "repository": "psipred/ted-tools",
+  "commit": "f07e24ef4a19a722f2c3c3001cbd03d477ba3f31",
+  "verified_unchanged_published_files": 208,
+  "files": [
+    {
+      "path": "ted_consensus_1.0/README.md",
+      "bytes": 4100,
+      "git_blob_sha1": "232dca9ef905c5056290b0d9cc8cf5518c95d41f",
+      "sha256": "57274ab46e0c3cb804000046bc9fed6acaeb9589795851ccf8e3f0112e372a18"
+    },
+    {
+      "path": "ted_consensus_1.0/example/1bg5A03.pdb",
+      "bytes": 21507,
+      "git_blob_sha1": "d7ccdfcbcb0a508886cb343dffddcc57e17b0e6f",
+      "sha256": "b7e6cfa9ebbddba7beed8153844ba42f36fb4c4e3abe391c42b5b27cd8669382"
+    },
+    {
+      "path": "ted_consensus_1.0/example/AF-A0A0N5ATQ5-F1-model_v4.pdb",
+      "bytes": 334448,
+      "git_blob_sha1": "d90d4477e6daef29b5fac2ba75b08d6a7f4def42",
+      "sha256": "6c76bb9d1dca7dbc9821839acadfca571b969cff70cf529138170789887d9050"
+    },
+    {
+      "path": "ted_consensus_1.0/example/AF-A0A1V6M2Y0-F1-model_v4.pdb",
+      "bytes": 781244,
+      "git_blob_sha1": "768a79dd2c5d77351b5f23f84e67f2cbfb26be6f",
+      "sha256": "8f3159ed9782468ad020c23590f4c0fa0f61fb0eb74082b68f885126b69b9e29"
+    },
+    {
+      "path": "ted_consensus_1.0/example/AF-A0A1X0B8H0-F1-model_v4.pdb",
+      "bytes": 427841,
+      "git_blob_sha1": "b888c2d238439c06e2002d7e9e5bae8833f9f0f5",
+      "sha256": "3d99fd336ac91bcb3cc823251d0cc5139c1786fcf0a2486bbbf3253e69d7c5b7"
+    },
+    {
+      "path": "ted_consensus_1.0/example/AF-A0A6C0L9V9-F1-model_v4.pdb",
+      "bytes": 283094,
+      "git_blob_sha1": "ca9eb3d1091ee33659fe4f9bb51d2cd019cdaa97",
+      "sha256": "579e1681062f8b11fa210e1b6884751ba2d444b754455daf6abd4340ba06bcf0"
+    },
+    {
+      "path": "ted_consensus_1.0/example/AF-A0A6C0LIE9-F1-model_v4.pdb",
+      "bytes": 217484,
+      "git_blob_sha1": "42ab55401ba7cad793b2ae3aabd94f2a45c31225",
+      "sha256": "2c61d9a1ebc0916feb5d258778abb27b4e4330f6e6cf164874cf667bc28e4958"
+    },
+    {
+      "path": "ted_consensus_1.0/example_output/chopping_chainsaw.log",
+      "bytes": 3508,
+      "git_blob_sha1": "58f55657350c6b9aa797698b119c33c0ce4162f2",
+      "sha256": "d6b91773809dbf3820d652d87d988731f87191329846d0c22da2359023e89a55"
+    },
+    {
+      "path": "ted_consensus_1.0/example_output/chopping_chainsaw.txt",
+      "bytes": 512,
+      "git_blob_sha1": "927a76eef787cb588544a7b0350dcbe6b40c2a48",
+      "sha256": "f0340a45165f1cc4e639c7d233a6970e925b95a99ca59d5f395b551b4776bff5"
+    },
+    {
+      "path": "ted_consensus_1.0/example_output/chopping_merizo.log",
+      "bytes": 84,
+      "git_blob_sha1": "e66d61147673c9c9cd73f63eb03d2e6e45753f66",
+      "sha256": "75a59f116c1ecfc45a9a9e89234678a5d82dab06b64a5103a22cbe377b773754"
+    },
+    {
+      "path": "ted_consensus_1.0/example_output/chopping_merizo.txt",
+      "bytes": 565,
+      "git_blob_sha1": "535544fe1d295fe73e379d822483ed2aca329c12",
+      "sha256": "820b48c012dea9782972ef92e10d0a349f49f54867bfaef47c8d142bc7f74ef8"
+    },
+    {
+      "path": "ted_consensus_1.0/example_output/chopping_unidoc.log",
+      "bytes": 5243,
+      "git_blob_sha1": "b3da68464954d9e24db72c9f3dc451a78142849f",
+      "sha256": "c205731cd99087c9fc28b13b597af7054b42f5a8b1e0f302157d9e1b0405d249"
+    },
+    {
+      "path": "ted_consensus_1.0/example_output/chopping_unidoc.txt",
+      "bytes": 665,
+      "git_blob_sha1": "def0b4d67479e4f7231e981c14fc427914122d2a",
+      "sha256": "14b35ec93464f66c4ebfe11fdbc8af54686b4dfa4b21a4314513ffdb0a723182"
+    },
+    {
+      "path": "ted_consensus_1.0/example_output/consensus.log",
+      "bytes": 168,
+      "git_blob_sha1": "4ff2896deb9349a4550f9cf7971b9970a1ff1c82",
+      "sha256": "4ae1ce437e5a218e1d3c29d8e3e5bd5604561ef8033234385747d36888cf5193"
+    },
+    {
+      "path": "ted_consensus_1.0/example_output/consensus.tsv",
+      "bytes": 793,
+      "git_blob_sha1": "85a3a8bea2652bb70131864cd7924572e9a73bff",
+      "sha256": "40522cf07bd933da039f2bbd6dca59160f2f11f346a4f1da1948559e54553301"
+    },
+    {
+      "path": "ted_consensus_1.0/example_output/consensus.tsv.changed.txt",
+      "bytes": 0,
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/README.md",
+      "bytes": 1174,
+      "git_blob_sha1": "1c90a94c744634bfeb897f6bc021bb9415727f39",
+      "sha256": "ee048b4129261c91b20bfc4dd9b08636db843cbd8fa9f93206508feb6d8a91a3"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/example_files/AF-A0A1W2PQ64-F1-model_v4.pdb",
+      "bytes": 132353,
+      "git_blob_sha1": "738f0a6994e0bddd40e8a14c34d1346862138513",
+      "sha256": "882619402336796e5a52e3f39cfbe764454cd124f2612c671af89abc9106c86e"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/example_files/AF-Q5T5X7-F1-model_v4.pdb",
+      "bytes": 547397,
+      "git_blob_sha1": "67e91c48f83aef65ef85ef96d614a6c81e4fdb7b",
+      "sha256": "01720526b692020d5175d7753a45c08c7169d393e3b8e722c4d77875ed9814b8"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/experiments/chop_newfolds_cluster.py",
+      "bytes": 3339,
+      "git_blob_sha1": "1c33b5141782b9eebb0c083067821bab1a953ffb",
+      "sha256": "63a2f625e951ea7cba6e5ba4c29a663c48b230d2315c64392d83802b9a83b013"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/experiments/speed_test_human200.py",
+      "bytes": 1911,
+      "git_blob_sha1": "1cd4328e66f1621561023dd423fa7aa252de4178",
+      "sha256": "c612548e4c733634f5145958843c46abd2c6ab0eed8f3b1980ef71e1329501f5"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/get_predictions.py",
+      "bytes": 12683,
+      "git_blob_sha1": "7dea5d8d03414cf66601d7d14295ae286c01a3c4",
+      "sha256": "90df08559100196be1990a17131bb2c60671fcf5d0cea922fe198671fccbb3a3"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/notebooks/InteractiveUsageExample.ipynb",
+      "bytes": 72861,
+      "git_blob_sha1": "2de1d34fe3af98165e4bf18cd6bf66551fbeba57",
+      "sha256": "00a2db7a628e5fe8708b3ec48cd33a73c9628d0327fa43c9e2282b5643d7f415"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/pyproject.toml",
+      "bytes": 29,
+      "git_blob_sha1": "6faf54859adcb78f1796226b0d3d9aefb31bcd30",
+      "sha256": "dd3b03f9d41e0effb906878d84dcb095a50ab162e0b707d3db9bfb9e61aa914e"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/requirements.txt",
+      "bytes": 572,
+      "git_blob_sha1": "594ecb256b70664739e244f1a686d44b7594c42c",
+      "sha256": "a4da0f0c69be2fffb7faf3abd0bb2584396043845ab7f0e97db17099bf686913"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/requirements_to_freeze.dev.txt",
+      "bytes": 6,
+      "git_blob_sha1": "55b033e901cdda93a26ac64b418f260224260a39",
+      "sha256": "2b01214d32c382dbc73bf6b493bedb7926324af27bad3ee888f66774b9b114c8"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/requirements_to_freeze.txt",
+      "bytes": 63,
+      "git_blob_sha1": "cbe033d4a96c9ea4236098b1df7570e74360ec3d",
+      "sha256": "18962dbd2998744de9737aa6aaf7ce87585d035e06c49422a0f0bd0e894f814c"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/saved_models/secondary_structure_epoch17/version_2/best_val_metrics.json",
+      "bytes": 1786,
+      "git_blob_sha1": "dca087bee9ce90bf14ad2e3c482f058571326edc",
+      "sha256": "1c9524288ae797faf43f4c82973ad91af89f75c774be5f3fdc633e6264a5aff4"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/saved_models/secondary_structure_epoch17/version_2/chains.json",
+      "bytes": 2833360,
+      "git_blob_sha1": "e80e1f29ce9650ca293e9c3879c791245eb0dd38",
+      "sha256": "5b4711a08e97a8de716fe093a66cca523071a5d49477d2fd7c32d25eb4dfe585"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/saved_models/secondary_structure_epoch17/version_2/config.json",
+      "bytes": 1582,
+      "git_blob_sha1": "5549015593d43bff111d1bacc172f3fa46ee9f10",
+      "sha256": "23d97d37f86ea0a812f11eecd9dc22fd27af54ae2af81981438faf4fe273e576"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/saved_models/secondary_structure_epoch17/version_2/weights.pt",
+      "bytes": 2396293,
+      "git_blob_sha1": "67d676a0037da0be9c970d42275f9d8d40ccade6",
+      "sha256": "6e8b9459f66bf2af04f652083e8b1991bf870f368f424691ae48a8445c09ba37"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/saved_models/ss_c_base_no_excl/version_2/epoch_11/best_val_metrics.json",
+      "bytes": 2603,
+      "git_blob_sha1": "38794730671c124e7a5653f2140f4d1afdf366af",
+      "sha256": "bbaa568a993274857ad33dd7069ff257d24480c1861b89086f10fb9b5f892ae0"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/saved_models/ss_c_base_no_excl/version_2/epoch_11/chains.json",
+      "bytes": 2977860,
+      "git_blob_sha1": "5a63b293b5b0d9f571f087311777edfcd53cf2aa",
+      "sha256": "d6b78b238cd00ed0d71da10e37e592cff19c59085217a0cc78898e74d30139f9"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/saved_models/ss_c_base_no_excl/version_2/epoch_11/config.json",
+      "bytes": 1718,
+      "git_blob_sha1": "e014876d4aa89fc297d78775594c96a6ede8911a",
+      "sha256": "182cc72b36b5fd7321cae3942174938ac18aa304df853341506f095bb40b5509"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/saved_models/ss_c_base_no_excl/version_2/epoch_11/weights.pt",
+      "bytes": 2396549,
+      "git_blob_sha1": "4bc8e8e4b143fe71d405982a772d527243dcd426",
+      "sha256": "1fca05a2a64a80990e7dfb6013c26fe00c53fd78b39d85ab3c9973939781b183"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/scripts/chainsaw_submit.ucl_cs.sh",
+      "bytes": 3346,
+      "git_blob_sha1": "66c98eb0c82f9960a5986f522868c3caf659bc1b",
+      "sha256": "5c9b3780fb63fe15d78c2c5c95aa00f2093f97208ff08beb2dee2bafde1aa9b4"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/scripts/qsub_ss_mod_chainsaw_submit.ucl_cs.qsub.sh",
+      "bytes": 385,
+      "git_blob_sha1": "d250ed7039a3c1d469b7f23130812ff66e0a3674",
+      "sha256": "7f21819709950e4659a43cb7f8e8155ad68906c1ed0a648d371b98345d8a1e33"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/scripts/ss_mod_chainsaw_submit.ucl_cs.sh",
+      "bytes": 2713,
+      "git_blob_sha1": "9a23172182bd1ab0ab685ee8fbfef4728c976a47",
+      "sha256": "1b6ffe445907b7cdd6f52127ead48d4ef56efd4b4a5f87cee3a80f8ddeb62ddc"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/scripts/test_zip_extract.py",
+      "bytes": 2094,
+      "git_blob_sha1": "6815bf54606155f7136a54d95f1a2ba013aa6ca1",
+      "sha256": "0377d6abc85b48f20b417edd7de672a8e90a51fe103b7f92f5e3f4bb776aaf9a"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/scripts/zip_extract.py",
+      "bytes": 1743,
+      "git_blob_sha1": "9a50df6013618634a9685559c615b8411b1fef60",
+      "sha256": "8b0f33c8ccbfacc2960cd715eae18422d6b7664fce1c6ab16f3c8a5a8151145e"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/src/constants.py",
+      "bytes": 276,
+      "git_blob_sha1": "4fd20b4d576efd74776500684358c41bccc0a4e6",
+      "sha256": "de45de8c3cf4a02f146a8360b5dcf4005999574acbb49a9f0612dea1fb7a65f8"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/src/domain_assignment/assigners.py",
+      "bytes": 2483,
+      "git_blob_sha1": "87d541ebeab4aaeaf9d22e7435fb6b40300542fb",
+      "sha256": "3121a9aa2dfc0a14614997b74db222e9b8cc2dd98f142de5cac015ae361da647"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/src/domain_assignment/sparse_lowrank.py",
+      "bytes": 5006,
+      "git_blob_sha1": "a78b52636e3b47446a1f609a0ee2d8ce237687f6",
+      "sha256": "bb080c93ba86f6bbab1f18c949e2d03335a9a62f914ab260be052148acf6e8b6"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/src/domain_assignment/util.py",
+      "bytes": 4708,
+      "git_blob_sha1": "17945d25a9321dd7a5473ac1ea967d3f693172fc",
+      "sha256": "007718b5575d2078a5fc14c126ca56d21ace273756c5ecbc96d219d458fc05ff"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/src/domain_chop.py",
+      "bytes": 13610,
+      "git_blob_sha1": "028bde028ca9fb06f3242447c956c1a23ca5e2d4",
+      "sha256": "105a2aec2c56dceb11e612a9254e02582624fec2f0153b17c8952185239e8cde"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/src/errors.py",
+      "bytes": 211,
+      "git_blob_sha1": "3c2ddabe5ee0650152e3e968a17cf6970c8691b3",
+      "sha256": "a7975fbfc65fc42493728d5505da08ea5178eaf736c696ea87c1102948fca4f5"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/src/factories.py",
+      "bytes": 1863,
+      "git_blob_sha1": "2689ca3fdc91dfd73e75b01baac05a4162b975b5",
+      "sha256": "0a0fef30ad02fb746a53487815b53bcf7a055c7b9225188b0512f60cf6ca041a"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/src/featurisers.py",
+      "bytes": 5089,
+      "git_blob_sha1": "25e15ffa273efa1d94b86c5487abecd0589e6bac",
+      "sha256": "06c7eb9fa3f242f7dd00c9b8216dc3a4384fbdd38c2c64930063c401d3874c6e"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/src/loggers.py",
+      "bytes": 4644,
+      "git_blob_sha1": "16c5040c59b33eeff30af02cff1b7c5079c08246",
+      "sha256": "e7d3eb982b79b182136fa85941664a219eb4b8999c8e42fb916aa47e1437694f"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/src/models/results.py",
+      "bytes": 558,
+      "git_blob_sha1": "f193f7a583c9f1d0829e6f6578fd1d50c12fbc64",
+      "sha256": "de94c58f4e8f84af92e1d0ce4cf9d254839d4f3d4267e3664c2d9ea47e22aa2e"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/src/models/rosetta.py",
+      "bytes": 2031,
+      "git_blob_sha1": "63ea0506976651b1948b7f839a8f46dee7c27f63",
+      "sha256": "0b41e495d69128f10466111285f240e9af29bb00ea0b617a843d11355529ec5f"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/src/prediction_result_file.py",
+      "bytes": 5486,
+      "git_blob_sha1": "886487caf29b6d98fa2b430f4108f4be15d1c092",
+      "sha256": "95f62415ac0f7730ff7f2f6a1dcf27f6d7431ad5e4ee90cff302fcccfcba4158"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/src/utils/cif2pdb.py",
+      "bytes": 4247,
+      "git_blob_sha1": "f8901dcdbf81d0cfbc4115e4691b6d8b76a10a4e",
+      "sha256": "4c3848a69a1968a918ce8700950dc4173533f74945ebebbe6153e1423d82e130"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/src/utils/common.py",
+      "bytes": 1211,
+      "git_blob_sha1": "29328b34e622ef3081bca37af431c8836538e17e",
+      "sha256": "a9e038aea8a5deea761e7653c779c55c2dc811ce3ad98e9c2bb5f8efb9ed651e"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/src/utils/domain_boundary_distance_score.py",
+      "bytes": 3575,
+      "git_blob_sha1": "14ebbe8d42e21fd2e5a05a2cb9c9d0ac4bf2f03a",
+      "sha256": "ce6fb5667f735080e8696de71b0b8618becb720adfca798ea8293bbb5c3d4a84"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/src/utils/ndo_score.py",
+      "bytes": 4073,
+      "git_blob_sha1": "1a997db14e72a38f7d3d7d26971489e78c9f5d6a",
+      "sha256": "c3e2e8a6882dd3c8dc612ffeaf3355c499821c3e9926b66a81747830701e4215"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/src/utils/pdb_reres.py",
+      "bytes": 5821,
+      "git_blob_sha1": "ab6dcb346bb25ab596bf0b16b652410f5c25bf37",
+      "sha256": "56e828c67312e9ee1eae28dd45617dbdf0154499399d1c045eeb0ae30ff0ffc6"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/src/utils/pymol_3d_visuals.py",
+      "bytes": 2030,
+      "git_blob_sha1": "46fd5d314344f210ab0fa6c6bc8e6e0c77c2058b",
+      "sha256": "7160d84de8be8804e5888c102e4d1ba54cff2d85587dae3cdd40fb7d7d2dd30f"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/src/utils/secondary_structure.py",
+      "bytes": 3892,
+      "git_blob_sha1": "2105046878470c4418ef12c610d725fdb467aa45",
+      "sha256": "5ab494f228e0302058fdcec65dda2b8dd54a26d8255706dfb2a0dfd4116f55d8"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/HOW_TO_USER_STRIDE_FOR_CONTACT_ORDER_CALCULATIONS",
+      "bytes": 202,
+      "git_blob_sha1": "44d66ac1d33d432387021c1d32d1a3449b3be8d3",
+      "sha256": "10dfdc1e94eafd7435d14075450a2e505f6a84f1f19c388e1ff9c0c506e3bfa3"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/Makefile",
+      "bytes": 925,
+      "git_blob_sha1": "71d0103905232cccc16730d25772b7272991755c",
+      "sha256": "0efb55ccd799f2ae7632b69e0ef6ef1d8c4b92c541c2cef1ba430fefc96fe88f"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/README_stride",
+      "bytes": 673,
+      "git_blob_sha1": "d8233f949a5c2b29bf46fdce3d633a0c49ee286e",
+      "sha256": "0ba2a69c96b50bef1d908010c617633aed7c5319f3298c862cb3b91da658f9ad"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/area.c",
+      "bytes": 1600,
+      "git_blob_sha1": "8bfade77f89b7b3a64345339033be25ced9197e9",
+      "sha256": "ee285275d48379741aeced57e3afb00b024cdb727fc6532790de340b898b0532"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/area.o",
+      "bytes": 2928,
+      "git_blob_sha1": "f33f2a68eaeb62e09e36a707c975d28132409fc4",
+      "sha256": "0bd7d5a6a91762e2987cfb5ddbd05d03366fdedb1f890daae920c82a1d4cb8cc"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/asngener.c",
+      "bytes": 7801,
+      "git_blob_sha1": "589ebac8924f0b80449fbe8bc3bafebf2ff58f55",
+      "sha256": "0438899e50e1f0cf715d5c91731fe8062fcc972978c54061e74f88003f86f2dc"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/asngener.o",
+      "bytes": 3008,
+      "git_blob_sha1": "ec2dcfebd0e9712e47cf9d9d74869d19a906ce7b",
+      "sha256": "1cbb8f477db5684b072f75d03635c8f2b30f48aab9fe57ce035eda18053aa85f"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/chk_atom.c",
+      "bytes": 984,
+      "git_blob_sha1": "899cc4e0bb365e300a139413e6219b4c93313238",
+      "sha256": "21999523fd68a670d7cade5e655d97cb72496dc98015ebe9916ede5b6d1b56c6"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/chk_atom.o",
+      "bytes": 6048,
+      "git_blob_sha1": "152b9e4e1250360f70640442b20fe8eae070525c",
+      "sha256": "4345f240619f65e05acfe4e79c93a5d74faf40eacd8825cf24c662b2f17366c4"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/chk_res.c",
+      "bytes": 825,
+      "git_blob_sha1": "d8c164a51dbd228ecc23c1e9b83b0c39c3355be7",
+      "sha256": "02cc23e3b0cd7a3a7c5a99a622f3ad5ee10c4881a111a0dd9ac4658bbf4ffda2"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/chk_res.o",
+      "bytes": 3456,
+      "git_blob_sha1": "b8a90aeed615ba71c86fa85094369b130f8c31a7",
+      "sha256": "3444090f9cc73ab9e412c53a45e3c94cd13fc9f8a7dda7c822e08a30cfdc617f"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/chkchain.c",
+      "bytes": 6000,
+      "git_blob_sha1": "33813fafae2a05ec856dac16211605e063b6d6ce",
+      "sha256": "49d857f08256a879fdbeac3144596963bed8de9f34bd0504829cb14266e56382"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/chkchain.o",
+      "bytes": 7352,
+      "git_blob_sha1": "f1ad59ecaf2d87e1c572554ecfc10bfe1290eab2",
+      "sha256": "836371b8625a0981b4b56a6d8eac94ea466d55ee82ad1cf0650b8731db39ac38"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/command.c",
+      "bytes": 1249,
+      "git_blob_sha1": "0a1df98f339e047b018b183804b39b8303cf9d2d",
+      "sha256": "eafacda54f66755faf348de51f885f5f33f650bd13e59e5f5cce8a78d9aa9595"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/command.o",
+      "bytes": 2896,
+      "git_blob_sha1": "4d2a06af5257590c6d87bb30335b5ee3eb4e6ba2",
+      "sha256": "be64f91d21f29335ae3fc98995083bf0115d26d3266a3f23702d3a2727df6f36"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/contact_map.c",
+      "bytes": 787,
+      "git_blob_sha1": "5a4cad5568d9fc933011286c526d1870139c88ab",
+      "sha256": "3555165f745053062ee2fc0c0c5ff8ee7081eabf01aa864904bd4d8af0a468b6"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/contact_map.o",
+      "bytes": 2256,
+      "git_blob_sha1": "acb8206d3f8edb954d997a1ae7f892603752bad0",
+      "sha256": "4f122064d9fc5be0ac549a11c8caab9bb26c66fa78377321a864734d0513a176"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/contact_order.c",
+      "bytes": 1934,
+      "git_blob_sha1": "265be192c8fa9c7a1f3ad43b3111ff5f69a1ac89",
+      "sha256": "bd6c6a6796ffc03eaae35c2e3e416a969b8b033432c571f85f4d65a8195b22b8"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/contact_order.o",
+      "bytes": 3440,
+      "git_blob_sha1": "e33dc9e60190c5e0cdb0c70ab04d9a64febaa614",
+      "sha256": "fc22a195fd58ab747858cbcd72ef97d20249ba0a2fa7a8a5bd9fb6bddd8874ac"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/die.c",
+      "bytes": 188,
+      "git_blob_sha1": "30495f4b73b42ec3fc5273a4519a71f1de68834e",
+      "sha256": "74c2d8e5e80663e2e84c227835d768b7d33cf94117736c3b0e4d5bace6484926"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/die.o",
+      "bytes": 1600,
+      "git_blob_sha1": "7b4cc579551b6788767a1469d1b41e3a9fa7cd0c",
+      "sha256": "e3f66551898cbc81b799b57bc8571396b5b6bb52ff6dbd1828a953d2999f3da9"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/doc/notes.dos",
+      "bytes": 570,
+      "git_blob_sha1": "11812bf0389cb98543b2f1a6e1f89bda04a71c3f",
+      "sha256": "0fb128c77d6131fd9476fc00156b4f20b1aaafaf660955ce31538a47c3a8a3c7"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/doc/notes.mac",
+      "bytes": 2430,
+      "git_blob_sha1": "c34889de87e3cd26e52d45f9652a56224aed10be",
+      "sha256": "fb80241a3c68c28f783f2540dca9a0082cb6cc4911cc9cc00a98a94ca11aef07"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/dssp.c",
+      "bytes": 7785,
+      "git_blob_sha1": "db31797d614e7cb6990a9fa42897450e2903946f",
+      "sha256": "b93ccc30472c27d733e4aab3e15be9adce37e4d6c2dd4ab0ef073c0c6db2e91c"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/dssp.o",
+      "bytes": 6464,
+      "git_blob_sha1": "9928426c1fec21b3315477557649d84671dc3d17",
+      "sha256": "1488ea041c7ff570ce60bded3198d2365818d239738c44f0704d3e29740e3200"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/elem.c",
+      "bytes": 4675,
+      "git_blob_sha1": "e87dcf84961411cacfac2da38c16c4224a5c572d",
+      "sha256": "17664a1f184ef6f424f68f1de80c004744e60413c12f3481f2ffdd5120f2d6dc"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/elem.o",
+      "bytes": 3040,
+      "git_blob_sha1": "cf74ed825992de173867a726e6f6291332dbedf5",
+      "sha256": "b4c75661385e9b6526926e1e6d37715db3a1e99390fbb2d6b142d44a8e00b08f"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/escape.c",
+      "bytes": 182,
+      "git_blob_sha1": "1bad7d5119f24464b0339e48cd3c2fbe765212ed",
+      "sha256": "2f14f876bf7069e7bba869bdfff219e893a15b90e196791c14aeb20921252a24"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/escape.o",
+      "bytes": 1576,
+      "git_blob_sha1": "fb8dba5006da9353d49e33fdb7db4ba8a72fa6ef",
+      "sha256": "13292f6232fb337838f708457a81163a82e0e5575d7e588584c5f7b904e5d006"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/filename.c",
+      "bytes": 522,
+      "git_blob_sha1": "7ca7e9183a42bc7c2d68858b5622dd7ebc48bb6b",
+      "sha256": "cbfc56f86386e195a967590ebceb30ba3fe2763b743b4e4750e70c560b1b601d"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/filename.o",
+      "bytes": 1928,
+      "git_blob_sha1": "f1d6c1372fcc3110c2677e386739d18daea6a217",
+      "sha256": "4db63332429d231bbc1486b6c0e3236d082c610df81d3c40b7a3f31b4212584b"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/fillasn.c",
+      "bytes": 17051,
+      "git_blob_sha1": "210e87433903de1a3d55b6dbd8604cfe9a34fb91",
+      "sha256": "9dcaf7d638312e7d0c38f52924bd6443906f86beeb734b318931a1d64aa6e950"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/fillasn.o",
+      "bytes": 18112,
+      "git_blob_sha1": "8bcfddb7d454551aa3982c28b10a91eba96b405a",
+      "sha256": "53db1068cd329ca2af0a730b6007a2d0cfc5c8d2e160fb118bc1325bd58d227d"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/geometry.c",
+      "bytes": 14030,
+      "git_blob_sha1": "4e8683f69f6e5c6308cc076d8f63be23ea0c6966",
+      "sha256": "e025c3d64bece4a94da6cc23a1e880223926462c34ebf824bb8af30cb7e8a76e"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/geometry.o",
+      "bytes": 8600,
+      "git_blob_sha1": "366a22acf6247d090e9741b48a3d470c3d0ef080",
+      "sha256": "da0d384bdaec3f8d74fc0e45b846554aa61171f6c198d29ba265d1f636dfe9f9"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/hbenergy.c",
+      "bytes": 1981,
+      "git_blob_sha1": "f2a453c73b30c3f60e4035af3498054e7797ebc3",
+      "sha256": "af086801284711d9a3bad271a499a58d5a553b3efeacd36ff40185c681d2d36f"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/hbenergy.o",
+      "bytes": 4944,
+      "git_blob_sha1": "8df5be01913ef99111a2d8839854fa6ccaaabd67",
+      "sha256": "7ebe5835dc6676b9482101bdad2853124418443db2c4ecc9606f3c970633a33e"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/helix.c",
+      "bytes": 3126,
+      "git_blob_sha1": "8a8271421c21691c8f67fd11fc2d2771dc6e954d",
+      "sha256": "6ee65307867be8c9351fb3349d0cee9d583cded15cec2307779815952e12e7ce"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/helix.o",
+      "bytes": 3896,
+      "git_blob_sha1": "acd43a4c3db01a375e9cb814d99c4a4c0cbd14eb",
+      "sha256": "2cc764116f1a4d526b3e86fda8b42e25b91ff5775849c3c4e03b1312caa94971"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/hydrbond.c",
+      "bytes": 19373,
+      "git_blob_sha1": "47d53972ecf9a81dd5ba08fb9efa7b02943d7372",
+      "sha256": "0ae7e41e4705aefa131045de9894484d6869aed78d8841b3e68f3c462bd51376"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/hydrbond.o",
+      "bytes": 18552,
+      "git_blob_sha1": "3a2eb42d2ec3e33bea2b7d9583099a7910a36890",
+      "sha256": "62ba7fc607fd94f09be9ce337da0cdc6bc33707cb28c94d3f2ae61eefe0c5d39"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/initchn.c",
+      "bytes": 1616,
+      "git_blob_sha1": "3738a617bceb20ffb9a488634da6c4278c18769a",
+      "sha256": "95083f51264540a8b0cc3ab982063201ed5b94355f75cc81fe9bb936832285af"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/initchn.o",
+      "bytes": 1960,
+      "git_blob_sha1": "ecbb597762ab5451dea9de74b97ab28814005154",
+      "sha256": "dcc786a67dae4fcd42bdccce063d5ef5a3c7ca8e3f7abee4774132354be1956a"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/measure.c",
+      "bytes": 9578,
+      "git_blob_sha1": "832adb832955ecb2f46fb767b5795c0d68d62bb5",
+      "sha256": "fd65acb9116a2055fea8a53c26acf4aaf123b7ce9ae6ad5044b003566990a3c9"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/measure.o",
+      "bytes": 9864,
+      "git_blob_sha1": "123799ad220140eb2e82d787c743c14c436ba9c8",
+      "sha256": "bdf170c94a1bfe380b25ef03528f89cff5cadc022eeaf4534f0ebe2e70732a8b"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/memory.c",
+      "bytes": 3448,
+      "git_blob_sha1": "429dd89ef009d1a8f5bd2a904601dc3c492f7205",
+      "sha256": "3b00d3d6d9b3e475427f586d6aa42f761e37542b26e8bbb226bbe1d97f2d57d7"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/memory.o",
+      "bytes": 5936,
+      "git_blob_sha1": "8b1fdbddb0c28778beec512db86c920fc8ece25b",
+      "sha256": "36a9ed1a75f2002cb5a651ab6087e2312c86fc2744c4d220379f27725ff645a0"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/mergepat.c",
+      "bytes": 15433,
+      "git_blob_sha1": "c3ed2ed55ddd75c3a6534161a884255a163320fc",
+      "sha256": "0c72e01b8283971c758a55039e97d3e9b97cab519066d439b433abec832db181"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/mergepat.o",
+      "bytes": 20632,
+      "git_blob_sha1": "a7f6400f17b0bb1bb6b81c9f0f449e6251584fd4",
+      "sha256": "1883944f54c05f3a918a10f105e5ac97dabab3caf838d9261895eec5443f98c0"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/molscr.c",
+      "bytes": 2138,
+      "git_blob_sha1": "3b605915fec660d48338784dbd0f9dae64055ee6",
+      "sha256": "aaea89e67ba7d368dde129b31968b6c07f53f45829a9816eef980487b28b55cc"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/molscr.o",
+      "bytes": 3840,
+      "git_blob_sha1": "f82e6e1468c9feecd3d21dcfb33ba74b0220aaf9",
+      "sha256": "b9957a3e036311cac6dc78b50419b91cc343e6df067e9876931d6b2e1854576b"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/nsc.c",
+      "bytes": 28965,
+      "git_blob_sha1": "92b282c83a9260c4deba8608703b3aa8800b1012",
+      "sha256": "a8af9d77e7554b8bee70375ea08be6bfa741192b827f4e5b0201bb5a583adbb5"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/nsc.h",
+      "bytes": 5697,
+      "git_blob_sha1": "486881454433be634461bb47124861e3aa4eec5f",
+      "sha256": "7ea7ec08b2faa5b5b2608e8156d6ee854f83c1ecf8f8436ecd1747bb0f16a682"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/nsc.o",
+      "bytes": 27864,
+      "git_blob_sha1": "68d4ddff29423582fa1d3deacde2dbb48e89d3a3",
+      "sha256": "b5c94f96db5fc76e3f106fff9f7fb1824c4fdd809982931a6626c25c5756c00a"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/one2thr.c",
+      "bytes": 986,
+      "git_blob_sha1": "aa795079f31921dd5b3eacb8102249b0437ca8fc",
+      "sha256": "a1aae2c370ac6b8b5d244d81f44ca257e8331d06a6a48efc3335dd8a2b86ab49"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/one2thr.o",
+      "bytes": 2560,
+      "git_blob_sha1": "d590690b8bafab0daca4216f697a87c92229a95b",
+      "sha256": "7693318313882481bf66a7b7ff0d6a8d5dff5648f3730003d94aab24da51b627"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/outseq.c",
+      "bytes": 751,
+      "git_blob_sha1": "f917660774e560be431f79580a890f52ebbdbccc",
+      "sha256": "7c8c97b675cd6604f604a648791e43b0954f6bfc7d313cf66d2abac0b4feb6d5"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/outseq.o",
+      "bytes": 2624,
+      "git_blob_sha1": "18409fb66b6946eb3f72f3e000335e77fce8e753",
+      "sha256": "6343df9bcb5c641a65baa7aeeed02cef5a54c1691a29e0a0fc213fed2bdbf515"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/p_atom.c",
+      "bytes": 2764,
+      "git_blob_sha1": "2038c8353ad95cb90cda75371834830b8c805683",
+      "sha256": "857286c25dbf21debeeaec0e504535916984b0412f98b1c70a2e308c8d89d4bd"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/p_atom.o",
+      "bytes": 4424,
+      "git_blob_sha1": "a588062ffd653c6ca315733d6daad415fff82458",
+      "sha256": "f5b6dfc193a2b450728aa1736fcf97eecb87e0243f21a17e38f04dd0e367fbf6"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/p_compnd.c",
+      "bytes": 236,
+      "git_blob_sha1": "bcd82d508e5875e7b234178731106d4457a68b63",
+      "sha256": "617256e2c91b1932a1bb086673a784845c6393b3c7b9dd611ba11cce9fd4da47"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/p_compnd.o",
+      "bytes": 1624,
+      "git_blob_sha1": "ffc4712f1b2d89a6823e634ccd4bca482a422fea",
+      "sha256": "e4fdfa5a29d3ae0e21f4b4f5fb4baf77987b9ffb4f75a6d4ecf4118d06576f3e"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/p_endmdl.c",
+      "bytes": 189,
+      "git_blob_sha1": "392feb41f58f77f92303150f2ff93a07803da5c1",
+      "sha256": "44e5584b7f07e519cfe43438a654547201ac892f846ceec0f7907d7d38bcced5"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/p_endmdl.o",
+      "bytes": 1272,
+      "git_blob_sha1": "6418d983062e8c0cb088ad7e797821e02adfff55",
+      "sha256": "051ee91714e39a658e23e7d9d1d7259a5e3ebdcc5a20c87f4d22021bf68c6859"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/p_expdta.c",
+      "bytes": 381,
+      "git_blob_sha1": "a1d422a1ec48f27a0fdd28431934073c85dc1d30",
+      "sha256": "f3d034be520b7e92ac138b4ca9cba76a42b261c1c188ad50e9881d094429056f"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/p_expdta.o",
+      "bytes": 1712,
+      "git_blob_sha1": "8f446cbcf423eecec14141e346540f00ea548dc4",
+      "sha256": "1a6cc18a419ecd7366cf52fe9164f0a953e5af90a203353744b17eb2fce704ff"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/p_helix.c",
+      "bytes": 1163,
+      "git_blob_sha1": "210cd5a07cf85f60f1064496ce73f3f3ac535d4a",
+      "sha256": "052760462ca9a990af93f915ad3356a3fd4b130546563f930df7101176df9201"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/p_helix.o",
+      "bytes": 2552,
+      "git_blob_sha1": "6b2d5d922ada7f764e427a7eaab9471f95d53a85",
+      "sha256": "e235b9a7d79ca4585354494a81c70914db55e6975d5e4fc527c3744e3b75017a"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/p_jrnl.c",
+      "bytes": 318,
+      "git_blob_sha1": "c4b40ff5a0dcdb7a538f9c1af853d2ffe1529e4a",
+      "sha256": "af3f53b6f485ec0714f102450f73806dfa570b5c13d7e0f041daccb720568825"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/p_jrnl.o",
+      "bytes": 1704,
+      "git_blob_sha1": "3b48cc3ad419f4b965aad5535d25d6943d6f9504",
+      "sha256": "0092fd3a3fc00445d4b232393338d1ab217b063d0af952e3ea25bd0a9b96a240"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/p_model.c",
+      "bytes": 133,
+      "git_blob_sha1": "db5eda874b665fa30d37f90bb9477833efe008a6",
+      "sha256": "948c57ce4029e64b2000df75d524081a3984b7d7c1dbb85379cce0a38d74c65a"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/p_model.o",
+      "bytes": 1240,
+      "git_blob_sha1": "b9d0e8957afb45681d0339bb6cb814fafd9ed801",
+      "sha256": "7458511cb2513c2e94ac094d4c86f01634107b05efe64a4741c718a4e666f4e1"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/p_rem.c",
+      "bytes": 960,
+      "git_blob_sha1": "d9ade683566305bb9da628865d7ea3696580a6fc",
+      "sha256": "7f2324af196b9a78f43540e55417643af6425d849d7904041712cf8a1568a554"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/p_rem.o",
+      "bytes": 2960,
+      "git_blob_sha1": "92fd8bf571f9247af58b3a4ac399f0b1415112e1",
+      "sha256": "c382bf84b534f252586036880d79f624b554664cc1c1068692333f95ab25d0cb"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/p_sheet.c",
+      "bytes": 2875,
+      "git_blob_sha1": "a8e151b3257be27d6431f83ae41791f81fa7cc55",
+      "sha256": "f137e9b1e73e228322e1a94476172b77b0e3bb0745be28ffaa9cb908663f65bf"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/p_sheet.o",
+      "bytes": 4024,
+      "git_blob_sha1": "422cabc0ae4281ca797f1a5fdd837478a8e27cef",
+      "sha256": "c9aea98836d6b8e4f1039f75241f0a901f85b08351c266d208f257bca47e7414"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/p_ssbond.c",
+      "bytes": 979,
+      "git_blob_sha1": "03398b2cefb274a1bb26c7ffb68cdf3c5313056f",
+      "sha256": "279cafac1c7d0f07a40a2ed55d2ba2a63c6c838f4e25a64c7ac46e0fbad2cfd7"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/p_ssbond.o",
+      "bytes": 2192,
+      "git_blob_sha1": "71db4771f94560fa79f4d27082e93f09eddace14",
+      "sha256": "96c126bac3814fbea5816a47ae42523a6731a376619a59be04da29f9774bda64"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/p_turn.c",
+      "bytes": 1046,
+      "git_blob_sha1": "1d5be21295520c217adf131a70a94a0641e69848",
+      "sha256": "ca0cd408b570aed9959af78cef6017e82267b1ec8a591c3976f4a648da59f4ea"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/p_turn.o",
+      "bytes": 2400,
+      "git_blob_sha1": "43e1fc4caf2bde2e4fda4566141dd9c4b5f80f7a",
+      "sha256": "2f1b7a5f70c3bdcd2bc0d2bd9f0676465fc11d7c8f03cdb3f7a5e703107e58a5"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/pdb1fmc.pdb",
+      "bytes": 377622,
+      "git_blob_sha1": "a052e217210508737ca7e54f9210368b2550a973",
+      "sha256": "5e8efb8bce02af061a2be14eb4f15118422506aa4cd4406083fdd7f5377017cb"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/pdb1mjh.pdb",
+      "bytes": 247779,
+      "git_blob_sha1": "a8f01444b7e63df2a34b1f4be34c282a02327a7e",
+      "sha256": "8881b97b8e05043608cf050a4657d32f3723879c50ae2355c6338fe2871cc65f"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/pdb1res.pdb",
+      "bytes": 62937,
+      "git_blob_sha1": "e4512cceb75435853bb884944dcda2ff8c2ec4c9",
+      "sha256": "d9c33efa05bf1a39dbaf576a6e034eaee1a8194b686f106cf207ca104f4465f4"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/pdb2btm.pdb",
+      "bytes": 347166,
+      "git_blob_sha1": "c9d08cd740cf894965101aba998f82412bca7ee9",
+      "sha256": "eeee8a49a5078c955a17346f402d8d28124b51e45618dba52f83c00f180352b5"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/pdbasn.c",
+      "bytes": 1596,
+      "git_blob_sha1": "1c39766d3da4c65eae929cb42f7c1190df891233",
+      "sha256": "69d499b32c25069790c64b23101ca7b49d798ec77263b65b24d080698f6fb435"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/pdbasn.o",
+      "bytes": 2304,
+      "git_blob_sha1": "63c15bade29faa4648230064d64e37eff2108d8b",
+      "sha256": "8cd092a297c3efcc41200b4531d4f4ba9f6bdc9390acdbe9ec2ed3d22becf3ed"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/phipsi.c",
+      "bytes": 1362,
+      "git_blob_sha1": "c1ed710ccc5c85be5cdbb4180a0dae08af6a31fe",
+      "sha256": "01519c52a8f8512930b2ad8685d7b74ce473b997d19bf1096f34eef3338ed8f0"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/phipsi.o",
+      "bytes": 2368,
+      "git_blob_sha1": "d0e3c2ad49fd06a3b53a7222939b3953d1d6dad2",
+      "sha256": "da8396c5857178638d5659125ba8c9a0b0e0f597d6f7124d6fa410e976dfb444"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/place_h.c",
+      "bytes": 1133,
+      "git_blob_sha1": "3f646817a50d6a16809865a989c84caacd5b5ad2",
+      "sha256": "9f2a529f561d88916030cb3a668d46af5be7a2e94936f56863de5ec921591267"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/place_h.o",
+      "bytes": 2504,
+      "git_blob_sha1": "8a8ab05a843ad154d4f54c3ecd838caedf568f4c",
+      "sha256": "af6b0f9d6310640e5a23888e138ae93e39c13965a5974e31f60b608d6cdeeeff"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/protot.h",
+      "bytes": 10132,
+      "git_blob_sha1": "3845e0e1b1a49ea7827e4aa3a2031ed81c8cb115",
+      "sha256": "a06bf6616ddedeb269af2bdc0af84a515751d3070cb07141d67cbbda7c5a7580"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/rdmap.c",
+      "bytes": 11643,
+      "git_blob_sha1": "2bc6d3b94603094a2c7a09c3711214163be16f3f",
+      "sha256": "df41c31438be1c2763a6d46774f18a5101626b0e82d0e6dfe8ed2135a88df145"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/rdmap.o",
+      "bytes": 6416,
+      "git_blob_sha1": "b19d60e693d8681ba644b7e6eacdf0ba5fa2f20a",
+      "sha256": "54f027c1d5bc9d7827609081d76dd55b4b5dc10414145420ba1456ca2ef43c9b"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/rdpdb.o",
+      "bytes": 4856,
+      "git_blob_sha1": "13050a3bde51a3cc4fb305c54c3f961c717592e9",
+      "sha256": "191af7e9c866e9bc4d02d7047262bf6f302ce0e272ec6d35d71c6210a78be36c"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/report.c",
+      "bytes": 10236,
+      "git_blob_sha1": "d8fcd27a731d719c99655edae7185c925dedd6d8",
+      "sha256": "48d13dda3b1e4e95c1776f82698c2c0b850bec25b6e1c4e118446f9ccaacf27c"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/report.o",
+      "bytes": 15184,
+      "git_blob_sha1": "8bd30dca2778589f946a236f07b9e93eefb8f56c",
+      "sha256": "28f2a03b7cb4d5f0fdf3602477973f88f12600ddc5a5dcf3e70cc1df33eb6a1d"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/sheet.o",
+      "bytes": 12728,
+      "git_blob_sha1": "c12fbc80483d4a5aa633b496161c2e83a7f155f7",
+      "sha256": "f17c4edddc574c4d2e7eb63316a0f1ebfd32ad80901632c68c8c4f362c4893d0"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/splitstr.c",
+      "bytes": 981,
+      "git_blob_sha1": "e69a2a9bb57665e88df90fc22a8fb2187cf8e575",
+      "sha256": "d7206158c3de524844cc2c3104cfbe07ed1ae504a1ea28836ce662f6851fe78d"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/splitstr.o",
+      "bytes": 1920,
+      "git_blob_sha1": "4d9d6f9f39bfa04fb57f411ed40930ad5039b43a",
+      "sha256": "48aba396ba67c9be05dbf524f619ee0c90ebf43f3f7face8f19e3dc62b12f199"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/ssbond.c",
+      "bytes": 1891,
+      "git_blob_sha1": "772870d5df6443263533687ef77c85842b7a8a38",
+      "sha256": "eebae52935d4a558dd633bb0c1c2f1c415f8d99f876a1a9772b7d4366bdb101d"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/ssbond.o",
+      "bytes": 3424,
+      "git_blob_sha1": "d33b147385aaf27eb1000f6c6812b086aa32c084",
+      "sha256": "41711ad67accbf240504a3d68c0bd789567df07aea2ac12cfc6188ca4ff7f268"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/stred.c",
+      "bytes": 581,
+      "git_blob_sha1": "4d40c335eb15e619c3713bccdaa34670b784e8a8",
+      "sha256": "dbfcb177e4888c4d2e836a75503aa05e4102bbed7397681407b95d9ba8002460"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/stred.o",
+      "bytes": 1440,
+      "git_blob_sha1": "cd3797b1c2d417229af367d7995ca50ab6f67de8",
+      "sha256": "179a91f17389f8663ee388078eda514895b3d82d916ff9c624087bc6d0831963"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/stride",
+      "bytes": 160560,
+      "git_blob_sha1": "9cfacabbf62bb1b3ef627cb032c1417b31c708c5",
+      "sha256": "85a1ed11a95ecd4e665d78d8fe7fe28d937c8138069c473268c8022042b06900"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/stride.c",
+      "bytes": 10286,
+      "git_blob_sha1": "5186d2b51f3c93ce891f07981a1b86c8d9b581cb",
+      "sha256": "64377dc2f8695ff468f811e51fb1a1513750211d2500be45fd0e0719bab0fa9c"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/stride.o",
+      "bytes": 13776,
+      "git_blob_sha1": "16cd990c6fed7219fe9b2ddb502707f4f7e0fe65",
+      "sha256": "23fe5c3815675539d21aac4285afd67dc1d9b9bca9f99058e3cfd4714429bee8"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/stride.tgz",
+      "bytes": 316993,
+      "git_blob_sha1": "00f1c587b4131f95c83f0ce0d71ad5a59e5da67e",
+      "sha256": "d7481f3c84375af7381f11decd62227fc9dd253e074edabd23f9f6ca77769c54"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/strutil.c",
+      "bytes": 8851,
+      "git_blob_sha1": "93262b9931d16d2be00c3fc266d6e131ab6aedcd",
+      "sha256": "065ab47823715976c773b4ceea2bea3ea109a9b00a7085dd9cc2c3998e76e954"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/strutil.o",
+      "bytes": 7816,
+      "git_blob_sha1": "be1a3af81a9316ccacdcca0468111f62bb01b59f",
+      "sha256": "252cdc1609cfe006b3426fec79365902bae55acbd592f6be110383da19e32ea0"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/thr2one.c",
+      "bytes": 1132,
+      "git_blob_sha1": "2373e7902d860fa01af1882b57399b48c1ae80bc",
+      "sha256": "8643f78cd9a937f7ddf6ef2c0197f326b28ae8d8048401a383e3b266b2b00880"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/thr2one.o",
+      "bytes": 1864,
+      "git_blob_sha1": "a96d2faf5a238f089d8e240babdc17df935940fa",
+      "sha256": "b96c94a3650f8dcf02e6fd707a8b8694bef819f60562a71b766d06dda8c473aa"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/tolostr.c",
+      "bytes": 360,
+      "git_blob_sha1": "4718b0794388eb53047c5473181ec7089fb82f2b",
+      "sha256": "f2576e1e83f6f9d8bf65f13d3b56f71962227fa09fb6cecd78955b8b2b1c19ff"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/tolostr.o",
+      "bytes": 1672,
+      "git_blob_sha1": "52c1a6141b17b6cf8129f7b6dae268f3b97e785e",
+      "sha256": "e51d37dce1ad9fca018795c4aa52806e9ac5c46175a010e96c92bb6955736225"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/turn.c",
+      "bytes": 4204,
+      "git_blob_sha1": "d38f036fd157b5ab115a8942054ce2fdec509dcf",
+      "sha256": "a484c24f0cb975cc9d2a3b7c51911a29de1dfe122bdaec1451a92d7a1f8b4b0b"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/stride/turn.o",
+      "bytes": 5752,
+      "git_blob_sha1": "a87edec6ce7b04bff187c7cf371827a6ff1a6262",
+      "sha256": "b2c27ade32b1784e79e3c3ff9fe9e48a45c9806f45b1d1da1c42c6f4bd8e1f4a"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/tests/e2e/test_basic_usage.py",
+      "bytes": 2720,
+      "git_blob_sha1": "0e264a4413d19271e0c25d9a1975361859946031",
+      "sha256": "9f52b926398c700bfc8b67234fce5c7a53788bfb7a37bd0e603b5b24abb485c9"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/tests/e2e/test_stride_error.py",
+      "bytes": 1799,
+      "git_blob_sha1": "421850a1c5bc15cb23926d692e098613a0be995e",
+      "sha256": "d5e0bcd424552f9fe6513c39421c11a75a9cae6ae56308daad38a2e0396a3095"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/tests/fixtures/AF-A0A0A9LVA1-F1-model_v4.pdb",
+      "bytes": 9558,
+      "git_blob_sha1": "b458b8d61dd3aa3dc5498ad69645a94351720d45",
+      "sha256": "bf693d9fc876e48afdc27669105217041e1056f066b0929e7170149ae34e06ea"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/tests/unit/test_get_predictions.py",
+      "bytes": 1854,
+      "git_blob_sha1": "7b61cd2d46c8ca3e269dedd5eef947ca9d1d1370",
+      "sha256": "74d728b2aa395de0969056c37f4c31df2a37ed1ff67e22197059bdf5a6e928a4"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/tests/unit/test_model_results.py",
+      "bytes": 547,
+      "git_blob_sha1": "70ea78e12a503634f839df823c75e6a0f0ca3a45",
+      "sha256": "f3276a9095c14f01d053eb2742fcb7b202c7fbed22183752e959e56858e0c8a4"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/tests/unit/test_prediction_result_file.py",
+      "bytes": 3347,
+      "git_blob_sha1": "34eb18268ab71f666981e84b88828dc0356c847f",
+      "sha256": "b26866a6aff2ea344ac0b6a3e43ca2f3cb6475606ea056287b9f2af892fc212d"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/chainsaw/tests/unit/test_write_results.py",
+      "bytes": 1165,
+      "git_blob_sha1": "30deeb897eb6527d432074579f515866dae653f7",
+      "sha256": "e85bb5ed4bd5d95fd6b8658ef096a16c8008c57bc3588159a5926c67814d93c8"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/merizo/LICENSE",
+      "bytes": 35149,
+      "git_blob_sha1": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/merizo/README.md",
+      "bytes": 7233,
+      "git_blob_sha1": "ea53b800a0749fcdbb42cc4fc3f9835738fc3d26",
+      "sha256": "5d7491d9573316c11e9f71b9fc8421c30c772f44339dbf65bd2a44715e5317b6"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/merizo/model/decoders/mask_decoder.py",
+      "bytes": 6261,
+      "git_blob_sha1": "b887a9f24401ed68b4081e9a72791c9777e8c6c8",
+      "sha256": "70ef68106dcac9128ba11fbde21ca55e6288253ec98d28e66a83ad1370acc7af"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/merizo/model/ipa/ipa_encoder.py",
+      "bytes": 1719,
+      "git_blob_sha1": "6d6fdaea3f3bba6c3ea3fe3a79ddf5b61f9a2163",
+      "sha256": "ff9c65f63ebbffbee99c4ed5c2030c706a96a318f564e2f658f6975bf14d404c"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/merizo/model/ipa/nndef_ipa.py",
+      "bytes": 8550,
+      "git_blob_sha1": "26d4f94b61a9b1d1890a1e478be024f181bdd79d",
+      "sha256": "ccc885c209741975c1f6694f40a6a1b352fa4c2a09f4149d12225c9679515d0f"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/merizo/model/ipa/nndef_ipa_primitives.py",
+      "bytes": 48308,
+      "git_blob_sha1": "4a45aa1786cdc1741752a4df7683f9784a228639",
+      "sha256": "dc4db98361bffcb27fe8f58db540d04e965f2a1cd3975e3c07fb9df76ad6f0ac"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/merizo/model/network.py",
+      "bytes": 1391,
+      "git_blob_sha1": "6315dab22a3873f7bb1f99e6b1c55a0c1aaf894c",
+      "sha256": "70e98a72c2a2b7cb504d81d4d4bb38d55e0cd5b7894f9449e484469bc4748158"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/merizo/model/posenc/alibi.py",
+      "bytes": 1468,
+      "git_blob_sha1": "350d494235d483bf6deed95d596feb813f823464",
+      "sha256": "5c02a6ba5248fc659e763281bc79266e179af4c07094c2b669b316c94da466dc"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/merizo/model/utils/build_info.py",
+      "bytes": 4391,
+      "git_blob_sha1": "02238934b861121bc0cf274472ecc0f63cd71e09",
+      "sha256": "fb55febdb17fd5697547791d5bb5172b8e1532238df0e2c38147edcb57cdd11e"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/merizo/model/utils/constants.py",
+      "bytes": 1136,
+      "git_blob_sha1": "f43849aaf8e3621d68eedcd4b99c6815141d9bf2",
+      "sha256": "c6bd3a036074997815e27d6ac09da349c0217dddca305c84b96bb20c3cc815c0"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/merizo/model/utils/features.py",
+      "bytes": 7321,
+      "git_blob_sha1": "117c539cd8bb3980ae05da4be8022000b8592e01",
+      "sha256": "e3385bdc8f2ddf4cd3f0f9af5342ea89589a772701e4e32fb63299262f9bd6d0"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/merizo/model/utils/frames.py",
+      "bytes": 2996,
+      "git_blob_sha1": "5b92f274233510cc25ec8d86e0a244b4de690c3e",
+      "sha256": "8b542e89c00bf6751d6cfd615aeb6621b70386783c6f94f274e1c0fd242b95aa"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/merizo/model/utils/pdb_parser.py",
+      "bytes": 9283,
+      "git_blob_sha1": "5f1583e916d615ca66d943cbc2e0fe988ff94dfe",
+      "sha256": "42890b73c437ee76bfb02ed9200681cf36cf4e00579d0951b1809008eae0965d"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/merizo/model/utils/utils.py",
+      "bytes": 15025,
+      "git_blob_sha1": "b30ee3a30a17ef5299e01b1a570c444273da2a7d",
+      "sha256": "29396721f63d7b14d2c02bc5d5737223dd998bc554164b05877dca2c64c5931d"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/merizo/predict.py",
+      "bytes": 11279,
+      "git_blob_sha1": "8a26729a3f7b0e02811a14e90d06558390e87f38",
+      "sha256": "acd5a485fcbfa3437a9ffef684996162c705421368a0baee637e53da39e96dc3"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/merizo/predict_afdb.py",
+      "bytes": 18130,
+      "git_blob_sha1": "bb819e7f87346a3d487bc8c10a60167aa6f65b22",
+      "sha256": "fffc8df01c4b17fcb65bd4bf510c7c9bbfae859cb917a1ce2644c2d53cf95973"
+    },
+    {
+      "path": "ted_consensus_1.0/programs/merizo/requirements.txt",
+      "bytes": 150,
+      "git_blob_sha1": "3a42aa05922a61684b119a4312a6e849524ca907",
+      "sha256": "2aa933df98efd819192beed2e53404f7cda58b275863339b2451794be14e8d61"
+    },
+    {
+      "path": "ted_consensus_1.0/requirements.txt",
+      "bytes": 660,
+      "git_blob_sha1": "508abc0dc9f3de66da285ea712da342f8d73cece",
+      "sha256": "8ffc3653d4f752c9d16cf3f6e7b9fe4f29b3c2d04d6ec9c887117da8cdbef4c9"
+    },
+    {
+      "path": "ted_consensus_1.0/run_segmentation.sh",
+      "bytes": 3369,
+      "git_blob_sha1": "5e76daba5ac2a862fec9a29421535e64013d0696",
+      "sha256": "ff002c85d6d5919618ffc577e65bfcb166594fc584a25829508223cf4f53b3c0"
+    },
+    {
+      "path": "ted_consensus_1.0/scripts/Run_UniDoc_from_scratch_structure_afdb.py",
+      "bytes": 6788,
+      "git_blob_sha1": "b44fcd9b6af10be998eff01e3dd539cd23face0b",
+      "sha256": "c85a9984cba0b47c680c30330efd51b4cb9bc2ef43e00ff15332836d8e4adbad"
+    },
+    {
+      "path": "ted_consensus_1.0/scripts/domain_consensus.py",
+      "bytes": 13664,
+      "git_blob_sha1": "391776673a0b594b8215a76e3e96112bf0f1ed2c",
+      "sha256": "61b80e08a6fdf23a454ee08d74e16629d099f6ab4b831d3a115d5d75a78c2256"
+    },
+    {
+      "path": "ted_consensus_1.0/scripts/filter_domains.py",
+      "bytes": 4056,
+      "git_blob_sha1": "a982654bd92a97511bd7e9c0bdf408f40a110c55",
+      "sha256": "4f42e246b9307c0132cc409a086d1d2ae8c043e44c0e3d44517848c04bebd165"
+    },
+    {
+      "path": "ted_consensus_1.0/scripts/filter_domains_consensus.py",
+      "bytes": 5615,
+      "git_blob_sha1": "e65a4339de199269674a4bbf4ba3de261d95725e",
+      "sha256": "f871659f79e182ccf0bc5b869c2ec63249a505d3d66456a8f08c983b4014ec3c"
+    },
+    {
+      "path": "ted_consensus_1.0/scripts/get_consensus.py",
+      "bytes": 3636,
+      "git_blob_sha1": "376e9a3b760ab7f6e6123524edd3ad8ad00a6532",
+      "sha256": "965c348bed343a4f23c06582b8936e3fabac3c02b0c903d67bbddc95d07c0c57"
+    },
+    {
+      "path": "ted_consensus_1.0/scripts/score_utils.py",
+      "bytes": 7582,
+      "git_blob_sha1": "f4ead98df4e76891697a86eebe8e60c28a85b8da",
+      "sha256": "33825fa1ad0cb302561d4a8569e3e630ba2a9fc53bbe8577ee689feb8cf6dfff"
+    },
+    {
+      "path": "ted_consensus_1.0/scripts/segment.sh",
+      "bytes": 2909,
+      "git_blob_sha1": "6cbfabd0a6ee3baa2151344b899a316dfb9dd4c6",
+      "sha256": "67e2899d17dd8e55d18a4d2da4f97739d890883acd6efab141f75bd78aea5fbd"
+    },
+    {
+      "path": "ted_consensus_1.0/setup.sh",
+      "bytes": 4235,
+      "git_blob_sha1": "87deccec0f059cd111e1eff5fa4b1d1a3ce5c04b",
+      "sha256": "9f01aaef5156664a10ab7067f3c14e702a089c40cc74227d04ec80eefe2f4e5b"
+    }
+  ],
+  "local_indexing_fix_is_separate": true
+}

@@ -1,0 +1,147 @@
+{
+  "state": "complete",
+  "phase": "control",
+  "inputs": 1,
+  "steps": [
+    {
+      "name": "chainsaw",
+      "command": [
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/venv/bin/python",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/cpu_entry.py",
+        "chainsaw",
+        "--structure_directory",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/inputs",
+        "--output",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/raw_chainsaw.txt",
+        "--save_dir",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/chainsaw_cache"
+      ],
+      "started_at": "2026-10-22T23:50:11.799539+00:00",
+      "completed": true,
+      "elapsed_seconds": 2.3562658340000002
+    },
+    {
+      "name": "filter_chainsaw",
+      "command": [
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/venv/bin/python",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/ted-pinned/scripts/filter_domains.py",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/raw_chainsaw.txt",
+        "-o",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/chopping_chainsaw.txt",
+        "--offset_resi",
+        "1"
+      ],
+      "started_at": "2026-10-22T23:50:14.156384+00:00",
+      "completed": true,
+      "elapsed_seconds": 0.024206749999999833,
+      "verified_rows": 1
+    },
+    {
+      "name": "merizo",
+      "command": [
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/venv/bin/python",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/cpu_entry.py",
+        "merizo",
+        "-l",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/targets.txt",
+        "--out",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/raw_merizo.txt",
+        "-d",
+        "cpu"
+      ],
+      "started_at": "2026-10-22T23:50:14.181152+00:00",
+      "completed": true,
+      "elapsed_seconds": 4.08219225
+    },
+    {
+      "name": "filter_merizo",
+      "command": [
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/venv/bin/python",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/ted-pinned/scripts/filter_domains.py",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/raw_merizo.txt",
+        "-o",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/chopping_merizo.txt",
+        "--offset_resi",
+        "0"
+      ],
+      "started_at": "2026-10-22T23:50:18.267219+00:00",
+      "completed": true,
+      "elapsed_seconds": 0.049789083999999484,
+      "verified_rows": 1
+    },
+    {
+      "name": "unidoc",
+      "command": [
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/venv/bin/python",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/unidoc/Run_UniDoc_from_scratch_structure_afdb.py",
+        "-l",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/targets.txt",
+        "--out",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/raw_unidoc.txt",
+        "--inherit_chopping",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/chopping_merizo.txt"
+      ],
+      "started_at": "2026-10-22T23:50:18.317725+00:00",
+      "completed": true,
+      "elapsed_seconds": 0.666576708
+    },
+    {
+      "name": "filter_unidoc",
+      "command": [
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/venv/bin/python",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/ted-pinned/scripts/filter_domains.py",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/raw_unidoc.txt",
+        "-o",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/chopping_unidoc.txt",
+        "--offset_resi",
+        "0"
+      ],
+      "started_at": "2026-10-22T23:50:18.984840+00:00",
+      "completed": true,
+      "elapsed_seconds": 0.04792437500000002,
+      "verified_rows": 1
+    },
+    {
+      "name": "consensus",
+      "command": [
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/venv/bin/python",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/consensus_indexing_compat/get_consensus.py",
+        "-c",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/chopping_merizo.txt",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/chopping_chainsaw.txt",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/chopping_unidoc.txt",
+        "-o",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/raw_consensus.tsv"
+      ],
+      "started_at": "2026-10-22T23:50:19.034514+00:00",
+      "completed": true,
+      "elapsed_seconds": 0.9268246659999999
+    },
+    {
+      "name": "filter_consensus",
+      "command": [
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/venv/bin/python",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/consensus_indexing_compat/filter_domains_consensus.py",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/raw_consensus.tsv",
+        "-o",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/consensus.tsv"
+      ],
+      "started_at": "2026-10-22T23:50:19.962135+00:00",
+      "completed": true,
+      "elapsed_seconds": 0.047637791999999735
+    }
+  ],
+  "new_gpu_or_cloud_cpu_spend_usd": 0,
+  "original_inputs_unchanged": true,
+  "outputs_sha256": {
+    "chopping_chainsaw.txt": "8c4db266c71245aa1cb8b8f74b9303c21c7406998a6d2eb458d6185bed31cdd5",
+    "chopping_merizo.txt": "3eb5832dcf1bff6e04193fd64c057c905b6dd93c7613fe98e01d87e9ac170b49",
+    "raw_merizo.txt": "3eb5832dcf1bff6e04193fd64c057c905b6dd93c7613fe98e01d87e9ac170b49",
+    "targets.txt": "643a866247bfded1a27d3f38cbc113dacd6f8495d8b0fd3c3119230635bd1d5a",
+    "raw_unidoc.txt": "c5d0a9fce87b9e884f87013f77c144651e4ca00012710474df94e43d96e2a578",
+    "chopping_unidoc.txt": "c5d0a9fce87b9e884f87013f77c144651e4ca00012710474df94e43d96e2a578",
+    "consensus.changed.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "raw_chainsaw.txt": "45fb96e1b858e5d4d0ddb7cd9887b46f8fa03482502c810b6f781cbfb5c3ec89"
+  },
+  "consensus_sha256": "7881296a6699d5f5126869a90273dbcc73f96e8d0fbff42bc0a9dddd98072aa3"
+}

@@ -1,0 +1,63 @@
+In file included from /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/ted-pinned/programs/unidoc/src/UniDoc_struct.cpp:1:
+/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/ted-pinned/programs/unidoc/src/utils_struct.h:342:13: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+  342 |                         if (V[k] = 1) {
+      |                             ~~~~~^~~
+/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/ted-pinned/programs/unidoc/src/utils_struct.h:342:13: note: place parentheses around the assignment to silence this warning
+  342 |                         if (V[k] = 1) {
+      |                                  ^  
+      |                             (       )
+/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/ted-pinned/programs/unidoc/src/utils_struct.h:342:13: note: use '==' to turn this assignment into an equality comparison
+  342 |                         if (V[k] = 1) {
+      |                                  ^
+      |                                  ==
+/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/ted-pinned/programs/unidoc/src/utils_struct.h:363:14: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+  363 |                         if (V[k1] = 1  ) {
+      |                             ~~~~~~^~~
+/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/ted-pinned/programs/unidoc/src/utils_struct.h:363:14: note: place parentheses around the assignment to silence this warning
+  363 |                         if (V[k1] = 1  ) {
+      |                                   ^
+      |                             (        )
+/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/ted-pinned/programs/unidoc/src/utils_struct.h:363:14: note: use '==' to turn this assignment into an equality comparison
+  363 |                         if (V[k1] = 1  ) {
+      |                                   ^
+      |                                   ==
+/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/ted-pinned/programs/unidoc/src/utils_struct.h:365:16: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+  365 |                                         if (V[k2] = 1 ) {
+      |                                             ~~~~~~^~~
+/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/ted-pinned/programs/unidoc/src/utils_struct.h:365:16: note: place parentheses around the assignment to silence this warning
+  365 |                                         if (V[k2] = 1 ) {
+      |                                                   ^
+      |                                             (        )
+/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/ted-pinned/programs/unidoc/src/utils_struct.h:365:16: note: use '==' to turn this assignment into an equality comparison
+  365 |                                         if (V[k2] = 1 ) {
+      |                                                   ^
+      |                                                   ==
+/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/ted-pinned/programs/unidoc/src/UniDoc_struct.cpp:86:12: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+   86 |         double X0[length], Y0[length], Z0[length];
+      |                   ^~~~~~
+/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/ted-pinned/programs/unidoc/src/UniDoc_struct.cpp:86:12: note: read of non-const variable 'length' is not allowed in a constant expression
+/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/ted-pinned/programs/unidoc/src/UniDoc_struct.cpp:61:6: note: declared here
+   61 |         int length = 0;
+      |             ^
+/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/ted-pinned/programs/unidoc/src/UniDoc_struct.cpp:86:24: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+   86 |         double X0[length], Y0[length], Z0[length];
+      |                               ^~~~~~
+/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/ted-pinned/programs/unidoc/src/UniDoc_struct.cpp:86:24: note: read of non-const variable 'length' is not allowed in a constant expression
+/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/ted-pinned/programs/unidoc/src/UniDoc_struct.cpp:61:6: note: declared here
+   61 |         int length = 0;
+      |             ^
+/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/ted-pinned/programs/unidoc/src/UniDoc_struct.cpp:86:36: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+   86 |         double X0[length], Y0[length], Z0[length];
+      |                                           ^~~~~~
+/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/ted-pinned/programs/unidoc/src/UniDoc_struct.cpp:86:36: note: read of non-const variable 'length' is not allowed in a constant expression
+/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/ted-pinned/programs/unidoc/src/UniDoc_struct.cpp:61:6: note: declared here
+   61 |         int length = 0;
+      |             ^
+/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/ted-pinned/programs/unidoc/src/UniDoc_struct.cpp:87:9: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+   87 |         int N0[length];
+      |                ^~~~~~
+/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/ted-pinned/programs/unidoc/src/UniDoc_struct.cpp:87:9: note: read of non-const variable 'length' is not allowed in a constant expression
+/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/ted-pinned/programs/unidoc/src/UniDoc_struct.cpp:61:6: note: declared here
+   61 |         int length = 0;
+      |             ^
+7 warnings generated.

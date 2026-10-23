@@ -1,0 +1,89 @@
+{
+  "state": "failed",
+  "phase": "control",
+  "inputs": 1,
+  "steps": [
+    {
+      "name": "chainsaw",
+      "command": [
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/venv/bin/python",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/cpu_entry.py",
+        "chainsaw",
+        "--structure_directory",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/inputs",
+        "--output",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/raw_chainsaw.txt",
+        "--save_dir",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/chainsaw_cache"
+      ],
+      "started_at": "2026-10-22T23:47:16.595679+00:00",
+      "completed": true,
+      "elapsed_seconds": 15.352198625
+    },
+    {
+      "name": "filter_chainsaw",
+      "command": [
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/venv/bin/python",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/ted-pinned/scripts/filter_domains.py",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/raw_chainsaw.txt",
+        "-o",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/chopping_chainsaw.txt",
+        "--offset_resi",
+        "1"
+      ],
+      "started_at": "2026-10-22T23:47:31.948273+00:00",
+      "completed": true,
+      "elapsed_seconds": 0.023902542000000082,
+      "verified_rows": 1
+    },
+    {
+      "name": "merizo",
+      "command": [
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/venv/bin/python",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/cpu_entry.py",
+        "merizo",
+        "-l",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/targets.txt",
+        "--out",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/raw_merizo.txt",
+        "-d",
+        "cpu"
+      ],
+      "started_at": "2026-10-22T23:47:31.972726+00:00",
+      "completed": true,
+      "elapsed_seconds": 12.587435542000001
+    },
+    {
+      "name": "filter_merizo",
+      "command": [
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/venv/bin/python",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/ted-pinned/scripts/filter_domains.py",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/raw_merizo.txt",
+        "-o",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/chopping_merizo.txt",
+        "--offset_resi",
+        "0"
+      ],
+      "started_at": "2026-10-22T23:47:44.560604+00:00",
+      "completed": true,
+      "elapsed_seconds": 0.02391225000000219,
+      "verified_rows": 1
+    },
+    {
+      "name": "unidoc",
+      "command": [
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/venv/bin/python",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/unidoc/Run_UniDoc_from_scratch_structure_afdb.py",
+        "-l",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/targets.txt",
+        "--out",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/raw_unidoc.txt",
+        "--inherit_chopping",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/chopping_merizo.txt"
+      ],
+      "started_at": "2026-10-22T23:47:44.585095+00:00"
+    }
+  ],
+  "new_gpu_or_cloud_cpu_spend_usd": 0,
+  "error": "CalledProcessError(1, ['/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/venv/bin/python', '/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/unidoc/Run_UniDoc_from_scratch_structure_afdb.py', '-l', '/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/targets.txt', '--out', '/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/raw_unidoc.txt', '--inherit_chopping', '/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/chopping_merizo.txt'])"
+}

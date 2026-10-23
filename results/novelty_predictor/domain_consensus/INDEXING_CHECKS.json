@@ -1,0 +1,173 @@
+{
+  "all_passed": true,
+  "unmodified_consensus_negative_control_failed": true,
+  "correction": "Only domstr_to_assignment input offset 1->0; input strings already use one-based inclusive residue IDs",
+  "exact_old_line": "assign = domstr_to_assignment(c, nres, offset=1)",
+  "exact_new_line": "assign = domstr_to_assignment(c, nres, offset=0)",
+  "original_sha256": "61b80e08a6fdf23a454ee08d74e16629d099f6ab4b831d3a115d5d75a78c2256",
+  "corrected_sha256": "1c7a263ae488a3208985f8626bbc46c474a9f9f6e79429f05547e5de5cccd0a5",
+  "original_source": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/ted-pinned/scripts/domain_consensus.py",
+  "corrected_source": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/consensus_indexing_compat/domain_consensus.py",
+  "consensus_cases": [
+    {
+      "inputs": [
+        "1-100",
+        "1-100",
+        "1-100"
+      ],
+      "expected": [
+        "1-100",
+        "na",
+        "na"
+      ],
+      "original": [
+        "2-100",
+        "na",
+        "na"
+      ],
+      "corrected": [
+        "1-100",
+        "na",
+        "na"
+      ]
+    },
+    {
+      "inputs": [
+        "25-74",
+        "25-74",
+        "25-74"
+      ],
+      "expected": [
+        "25-74",
+        "na",
+        "na"
+      ],
+      "original": [
+        "26-75",
+        "na",
+        "na"
+      ],
+      "corrected": [
+        "25-74",
+        "na",
+        "na"
+      ]
+    },
+    {
+      "inputs": [
+        "1-100",
+        "1-100"
+      ],
+      "expected": [
+        "na",
+        "1-100",
+        "na"
+      ],
+      "original": [
+        "na",
+        "2-100",
+        "na"
+      ],
+      "corrected": [
+        "na",
+        "1-100",
+        "na"
+      ]
+    },
+    {
+      "inputs": [
+        "1-40_61-100",
+        "1-40_61-100",
+        "1-40_61-100"
+      ],
+      "expected": [
+        "1-40_61-100",
+        "na",
+        "na"
+      ],
+      "original": [
+        "2-41_62-100",
+        "na",
+        "na"
+      ],
+      "corrected": [
+        "1-40_61-100",
+        "na",
+        "na"
+      ]
+    },
+    {
+      "inputs": [
+        "1-50",
+        "51-100",
+        "1-50"
+      ],
+      "expected": [
+        "na",
+        "1-50",
+        "51-100"
+      ],
+      "original": [
+        "na",
+        "2-51",
+        "52-100"
+      ],
+      "corrected": [
+        "na",
+        "1-50",
+        "51-100"
+      ]
+    },
+    {
+      "inputs": [],
+      "expected": [
+        "na",
+        "na",
+        "na"
+      ],
+      "original": [
+        "na",
+        "na",
+        "na"
+      ],
+      "corrected": [
+        "na",
+        "na",
+        "na"
+      ]
+    }
+  ],
+  "published_filter_cases": [
+    {
+      "input": "1-24",
+      "offset": 0,
+      "expected": "NULL",
+      "measured": "NULL"
+    },
+    {
+      "input": "1-25",
+      "offset": 0,
+      "expected": "1-25",
+      "measured": "1-25"
+    },
+    {
+      "input": "1-4_10-34",
+      "offset": 0,
+      "expected": "10-34",
+      "measured": "10-34"
+    },
+    {
+      "input": "1-5_10-29",
+      "offset": 0,
+      "expected": "1-5_10-29",
+      "measured": "1-5_10-29"
+    },
+    {
+      "input": "0-99",
+      "offset": 1,
+      "expected": "1-100",
+      "measured": "1-100"
+    }
+  ],
+  "iou_or_size_or_novelty_thresholds_changed": false
+}

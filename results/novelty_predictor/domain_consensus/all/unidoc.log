@@ -1,0 +1,680 @@
+Processing chopping for q000002: 1-23_65-78,24-64
+Extracting residues 1:23,65:78,24:64 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000002.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000002_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000002_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000002_chopped.pdb
+UniDoc output: 23-58,1-22_59-78
+Found 2 domains: 1-22_59-78,23-58
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000002.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000002_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000003: 1-78
+Extracting residues 1:78 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000003.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000003_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000003_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000003_chopped.pdb
+UniDoc output: 23-58,1-22_59-78
+Found 2 domains: 1-22_59-78,23-58
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000003.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000003_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000004: 1-78
+Extracting residues 1:78 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000004.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000004_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000004_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000004_chopped.pdb
+UniDoc output: 1-78
+Found 1 domains: 1-78
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000004.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000004_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000005: 1-23_65-78,24-64
+Extracting residues 1:23,65:78,24:64 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000005.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000005_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000005_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000005_chopped.pdb
+UniDoc output: 23-58,1-22_59-78
+Found 2 domains: 1-22_59-78,23-58
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000005.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000005_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000006: 1-99
+Extracting residues 1:99 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000006.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000006_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000006_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000006_chopped.pdb
+UniDoc output: 1-99
+Found 1 domains: 1-99
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000006.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000006_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000007: 1-99
+Extracting residues 1:99 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000007.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000007_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000007_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000007_chopped.pdb
+UniDoc output: 1-99
+Found 1 domains: 1-99
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000007.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000007_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000008: 1-98
+Extracting residues 1:98 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000008.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000008_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000008_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000008_chopped.pdb
+UniDoc output: 1-98
+Found 1 domains: 1-98
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000008.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000008_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000009: 1-98
+Extracting residues 1:98 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000009.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000009_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000009_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000009_chopped.pdb
+UniDoc output: 1-98
+Found 1 domains: 1-98
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000009.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000009_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000010: 1-99
+Extracting residues 1:99 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000010.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000010_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000010_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000010_chopped.pdb
+UniDoc output: 1-99
+Found 1 domains: 1-99
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000010.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000010_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000011: 1-98
+Extracting residues 1:98 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000011.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000011_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000011_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000011_chopped.pdb
+UniDoc output: 1-98
+Found 1 domains: 1-98
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000011.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000011_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000012: 1-72
+Extracting residues 1:72 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000012.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000012_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000012_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000012_chopped.pdb
+UniDoc output: 1-72
+Found 1 domains: 1-72
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000012.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000012_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000013: 1-72
+Extracting residues 1:72 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000013.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000013_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000013_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000013_chopped.pdb
+UniDoc output: 1-72
+Found 1 domains: 1-72
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000013.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000013_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000014: 1-72
+Extracting residues 1:72 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000014.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000014_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000014_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000014_chopped.pdb
+UniDoc output: 1-72
+Found 1 domains: 1-72
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000014.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000014_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000015: 1-84
+Extracting residues 1:84 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000015.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000015_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000015_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000015_chopped.pdb
+UniDoc output: 1-84
+Found 1 domains: 1-84
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000015.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000015_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000016: 1-84
+Extracting residues 1:84 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000016.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000016_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000016_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000016_chopped.pdb
+UniDoc output: 1-84
+Found 1 domains: 1-84
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000016.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000016_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000017: 43-84
+Extracting residues 43:84 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000017.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000017_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000017_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000017_chopped.pdb
+UniDoc output: 43-84
+Found 1 domains: 43-84
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000017.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000017_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000018: 1-84
+Extracting residues 1:84 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000018.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000018_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000018_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000018_chopped.pdb
+UniDoc output: 1-84
+Found 1 domains: 1-84
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000018.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000018_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000019: 1-84
+Extracting residues 1:84 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000019.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000019_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000019_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000019_chopped.pdb
+UniDoc output: 1-84
+Found 1 domains: 1-84
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000019.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000019_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000020: 1-84
+Extracting residues 1:84 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000020.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000020_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000020_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000020_chopped.pdb
+UniDoc output: 1-84
+Found 1 domains: 1-84
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000020.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000020_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000022: 1-100
+Extracting residues 1:100 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000022.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000022_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000022_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000022_chopped.pdb
+UniDoc output: 1-100
+Found 1 domains: 1-100
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000022.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000022_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000023: 15-76
+Extracting residues 15:76 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000023.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000023_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000023_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000023_chopped.pdb
+UniDoc output: 15-76
+Found 1 domains: 15-76
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000023.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000023_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000024: 14-76
+Extracting residues 14:76 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000024.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000024_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000024_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000024_chopped.pdb
+UniDoc output: 14-76
+Found 1 domains: 14-76
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000024.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000024_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000025: 8-76
+Extracting residues 8:76 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000025.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000025_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000025_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000025_chopped.pdb
+UniDoc output: 8-76
+Found 1 domains: 8-76
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000025.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000025_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000026: 1-56
+Extracting residues 1:56 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000026.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000026_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000026_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000026_chopped.pdb
+UniDoc output: 1-56
+Found 1 domains: 1-56
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000026.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000026_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000029: 1-29
+Extracting residues 1:29 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000029.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000029_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000029_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000029_chopped.pdb
+UniDoc output: 1-29
+Found 1 domains: 1-29
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000029.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000029_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000030: 1-60
+Extracting residues 1:60 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000030.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000030_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000030_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000030_chopped.pdb
+UniDoc output: 1-60
+Found 1 domains: 1-60
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000030.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000030_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000031: 1-60
+Extracting residues 1:60 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000031.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000031_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000031_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000031_chopped.pdb
+UniDoc output: 1-60
+Found 1 domains: 1-60
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000031.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000031_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000032: 1-58
+Extracting residues 1:58 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000032.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000032_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000032_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000032_chopped.pdb
+UniDoc output: 1-58
+Found 1 domains: 1-58
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000032.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000032_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000033: 1-95
+Extracting residues 1:95 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000033.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000033_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000033_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000033_chopped.pdb
+UniDoc output: 1-95
+Found 1 domains: 1-95
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000033.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000033_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000034: 1-58
+Extracting residues 1:58 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000034.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000034_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000034_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000034_chopped.pdb
+UniDoc output: 1-58
+Found 1 domains: 1-58
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000034.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000034_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000035: 1-95
+Extracting residues 1:95 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000035.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000035_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000035_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000035_chopped.pdb
+UniDoc output: 1-95
+Found 1 domains: 1-95
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000035.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000035_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000036: 1-58
+Extracting residues 1:58 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000036.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000036_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000036_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000036_chopped.pdb
+UniDoc output: 1-58
+Found 1 domains: 1-58
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000036.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000036_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000037: 1-95
+Extracting residues 1:95 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000037.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000037_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000037_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000037_chopped.pdb
+UniDoc output: 1-95
+Found 1 domains: 1-95
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000037.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000037_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000038: 1-80
+Extracting residues 1:80 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000038.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000038_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000038_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000038_chopped.pdb
+UniDoc output: 1-80
+Found 1 domains: 1-80
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000038.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000038_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000039: 19-80
+Extracting residues 19:80 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000039.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000039_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000039_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000039_chopped.pdb
+UniDoc output: 19-80
+Found 1 domains: 19-80
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000039.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000039_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000040: 1-80
+Extracting residues 1:80 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000040.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000040_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000040_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000040_chopped.pdb
+UniDoc output: 1-80
+Found 1 domains: 1-80
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000040.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000040_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000043: 1-70
+Extracting residues 1:70 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000043.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000043_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000043_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000043_chopped.pdb
+UniDoc output: 1-70
+Found 1 domains: 1-70
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000043.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000043_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000044: 1-58
+Extracting residues 1:58 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000044.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000044_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000044_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000044_chopped.pdb
+UniDoc output: 1-58
+Found 1 domains: 1-58
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000044.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000044_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000045: 1-58
+Extracting residues 1:58 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000045.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000045_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000045_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000045_chopped.pdb
+UniDoc output: 1-58
+Found 1 domains: 1-58
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000045.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000045_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000046: 1-97
+Extracting residues 1:97 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000046.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000046_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000046_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000046_chopped.pdb
+UniDoc output: 1-97
+Found 1 domains: 1-97
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000046.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000046_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000047: 1-58
+Extracting residues 1:58 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000047.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000047_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000047_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000047_chopped.pdb
+UniDoc output: 1-58
+Found 1 domains: 1-58
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000047.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000047_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000048: 1-97
+Extracting residues 1:97 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000048.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000048_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000048_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000048_chopped.pdb
+UniDoc output: 1-97
+Found 1 domains: 1-97
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000048.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000048_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000049: 1-97
+Extracting residues 1:97 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000049.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000049_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000049_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000049_chopped.pdb
+UniDoc output: 1-97
+Found 1 domains: 1-97
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000049.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000049_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000050: 19-96
+Extracting residues 19:96 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000050.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000050_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000050_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000050_chopped.pdb
+UniDoc output: 19-96
+Found 1 domains: 19-96
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000050.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000050_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000051: 1-59
+Extracting residues 1:59 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000051.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000051_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000051_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000051_chopped.pdb
+UniDoc output: 1-59
+Found 1 domains: 1-59
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000051.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000051_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000052: 1-59
+Extracting residues 1:59 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000052.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000052_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000052_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000052_chopped.pdb
+UniDoc output: 1-59
+Found 1 domains: 1-59
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000052.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000052_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000053: 33-89
+Extracting residues 33:89 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000053.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000053_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000053_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000053_chopped.pdb
+UniDoc output: 33-89
+Found 1 domains: 33-89
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000053.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000053_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000054: 1-59
+Extracting residues 1:59 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000054.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000054_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000054_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000054_chopped.pdb
+UniDoc output: 1-59
+Found 1 domains: 1-59
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000054.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000054_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000055: 38-88
+Extracting residues 38:88 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000055.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000055_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000055_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000055_chopped.pdb
+UniDoc output: 38-88
+Found 1 domains: 38-88
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000055.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000055_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000056: 1-29
+Extracting residues 1:29 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000056.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000056_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000056_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000056_chopped.pdb
+UniDoc output: 1-29
+Found 1 domains: 1-29
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000056.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000056_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000057: 1-63
+Extracting residues 1:63 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000057.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000057_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000057_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000057_chopped.pdb
+UniDoc output: 1-63
+Found 1 domains: 1-63
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000057.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000057_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000058: 1-63
+Extracting residues 1:63 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000058.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000058_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000058_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000058_chopped.pdb
+UniDoc output: 1-63
+Found 1 domains: 1-63
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000058.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000058_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000059: 1-56
+Extracting residues 1:56 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000059.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000059_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000059_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000059_chopped.pdb
+UniDoc output: 1-56
+Found 1 domains: 1-56
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000059.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000059_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000060: 1-56
+Extracting residues 1:56 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000060.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000060_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000060_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000060_chopped.pdb
+UniDoc output: 1-56
+Found 1 domains: 1-56
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000060.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000060_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000061: 1-56
+Extracting residues 1:56 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000061.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000061_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000061_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000061_chopped.pdb
+UniDoc output: 1-56
+Found 1 domains: 1-56
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000061.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000061_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000062: 1-80
+Extracting residues 1:80 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000062.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000062_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000062_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000062_chopped.pdb
+UniDoc output: 1-80
+Found 1 domains: 1-80
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000062.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000062_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000063: 1-80
+Extracting residues 1:80 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000063.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000063_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000063_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000063_chopped.pdb
+UniDoc output: 1-80
+Found 1 domains: 1-80
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000063.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000063_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000064: 1-80
+Extracting residues 1:80 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000064.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000064_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000064_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000064_chopped.pdb
+UniDoc output: 1-80
+Found 1 domains: 1-80
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000064.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000064_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000065: 19-44_51-99
+Extracting residues 19:44,51:99 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000065.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000065_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000065_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000065_chopped.pdb
+UniDoc output: 19-44_51-99
+Found 1 domains: 19-44_51-99
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000065.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000065_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000066: 1-13_31-95
+Extracting residues 1:13,31:95 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000066.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000066_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000066_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000066_chopped.pdb
+UniDoc output: 1-13_31-95
+Found 1 domains: 1-13_31-95
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000066.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000066_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000067: 1-95
+Extracting residues 1:95 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000067.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000067_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000067_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000067_chopped.pdb
+UniDoc output: 1-95
+Found 1 domains: 1-95
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000067.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000067_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000068: 1-95
+Extracting residues 1:95 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000068.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000068_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000068_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000068_chopped.pdb
+UniDoc output: 1-95
+Found 1 domains: 1-95
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000068.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000068_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000069: 1-100
+Extracting residues 1:100 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000069.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000069_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000069_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000069_chopped.pdb
+UniDoc output: 1-100
+Found 1 domains: 1-100
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000069.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000069_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000070: 1-100
+Extracting residues 1:100 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000070.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000070_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000070_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000070_chopped.pdb
+UniDoc output: 1-100
+Found 1 domains: 1-100
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000070.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000070_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000071: 1-99
+Extracting residues 1:99 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000071.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000071_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000071_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000071_chopped.pdb
+UniDoc output: 1-99
+Found 1 domains: 1-99
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000071.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000071_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000072: 1-99
+Extracting residues 1:99 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000072.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000072_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000072_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000072_chopped.pdb
+UniDoc output: 1-99
+Found 1 domains: 1-99
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000072.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000072_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000073: 1-99
+Extracting residues 1:99 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000073.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000073_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000073_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000073_chopped.pdb
+UniDoc output: 1-99
+Found 1 domains: 1-99
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000073.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000073_chopped.pdb
+--------------------------------------------------------------
+Processing chopping for q000074: 1-195
+Extracting residues 1:195 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000074.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000074_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000074_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000074_chopped.pdb
+UniDoc output: 1-195
+Found 1 domains: 1-195
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000074.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000074_chopped.pdb
+--------------------------------------------------------------

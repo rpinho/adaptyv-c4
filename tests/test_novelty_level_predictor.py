@@ -79,6 +79,52 @@ class NoveltyTests(unittest.TestCase):
         self.assertEqual(result['moderate_coverage'],.8)
         self.assertEqual(result['high_coverage'],.4)
 
+    def test_discontinuous_domain_coverage_counts_its_residues_once(self):
+        d=dict(segments=[[1,35],[66,100]],tm_score=.8,normalization='query_domain_length')
+        result=novelty.structural_class(100,[d])
+        self.assertEqual(result['category'],'high')
+        self.assertEqual(result['high_coverage'],.7)
+        d['tm_score']=.5
+        self.assertEqual(novelty.structural_class(100,[d])['category'],'low')
+        d['segments'][0][1]=36
+        self.assertEqual(novelty.structural_class(100,[d])['category'],'moderate')
+
+    def test_another_domain_can_occupy_a_discontinuous_domains_gap(self):
+        matches=[dict(segments=[[1,20],[81,100]],tm_score=.8,normalization='query_domain_length'),
+                 dict(start=21,end=80,tm_score=.5,normalization='query_domain_length')]
+        result=novelty.structural_class(100,matches)
+        self.assertEqual(result['category'],'moderate')
+        self.assertEqual(result['moderate_coverage'],1.)
+        self.assertEqual(result['high_coverage'],.4)
+        matches[1]['start']=20
+        with self.assertRaisesRegex(ValueError,'Overlapping'): novelty.structural_class(100,matches)
+
+    def test_discontinuous_domains_reject_ambiguous_or_reordered_ranges(self):
+        for d in [dict(segments=[]),dict(segments=[[1,20],[20,30]]),dict(segments=[[21,30],[1,20]]),
+                  dict(segments=[[1,101]]),dict(segments=[[True,10]]),dict(segments=[[1,20]],start=1,end=20)]:
+            with self.subTest(domain=d),self.assertRaises(ValueError):
+                novelty.structural_class(100,[dict(**d,tm_score=.8,normalization='query_domain_length')])
+
+    def test_discontinuous_query_keeps_gaps_and_coordinates(self):
+        import tempfile
+        residues=[(100+i,'A',(float(i),float(i+1),float(i+2)),'ALA') for i in range(1,11)]
+        d=dict(segments=[[1,3],[8,10]])
+        with tempfile.TemporaryDirectory() as tmp:
+            path=Path(tmp)/'domain.pdb';path.write_text(novelty.domain_query_pdb(residues,d))
+            rr=novelty.ca_residues(path,'A')
+        self.assertEqual([r[0] for r in rr],[1,2,3,8,9,10])
+        self.assertEqual([r[2] for r in rr],[(float(i),float(i+1),float(i+2)) for i in [1,2,3,8,9,10]])
+
+    def test_discontinuous_query_tm_denominator_excludes_gap(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as tmp:
+            path=Path(tmp)/'hits.tsv'
+            path.write_text('q\tref\t40\t40\t1\t40\t1\t40\t40\t0.8\t0.8\tAAAA\tAAAA\n')
+            d=dict(segments=[[1,20],[81,100]])
+            self.assertEqual(novelty.parse_structure_hits(path,{'q':d})['q'][0]['qlen'],40)
+            path.write_text(path.read_text().replace('\t40\t40\t1','\t100\t40\t1',1))
+            with self.assertRaisesRegex(ValueError,'domain length'): novelty.parse_structure_hits(path,{'q':d})
+
     def test_structure_hit_ranking_uses_query_normalized_not_target_normalized_tm(self):
         import tempfile
         with tempfile.TemporaryDirectory() as tmp:

@@ -1,0 +1,1 @@
+/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/inputs/q000074.pdb

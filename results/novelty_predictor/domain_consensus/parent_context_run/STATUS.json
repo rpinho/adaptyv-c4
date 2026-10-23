@@ -1,0 +1,63 @@
+{
+  "state": "complete",
+  "steps": [
+    {
+      "command": [
+        "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+        "tsv2db",
+        "results/novelty_predictor/domain_consensus/parent_context_run/structure/parent_candidates.tsv",
+        "results/novelty_predictor/domain_consensus/parent_context_run/structure/parent_prefilter",
+        "--output-dbtype",
+        "7"
+      ],
+      "started_at": "2026-10-23T00:04:11.206740+00:00",
+      "pid": 74588,
+      "completed": true
+    },
+    {
+      "command": [
+        "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+        "tmalign",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/querydb",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+        "results/novelty_predictor/domain_consensus/parent_context_run/structure/parent_prefilter",
+        "results/novelty_predictor/domain_consensus/parent_context_run/structure/parent_tmaligned",
+        "--threads",
+        "4",
+        "--tmalign-fast",
+        "0",
+        "--tmscore-threshold",
+        "0",
+        "--tmscore-threshold-mode",
+        "1",
+        "--tmalign-hit-order",
+        "1",
+        "-a",
+        "1"
+      ],
+      "started_at": "2026-10-23T00:04:11.256852+00:00",
+      "pid": 74591,
+      "completed": true
+    },
+    {
+      "command": [
+        "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+        "convertalis",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/querydb",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+        "results/novelty_predictor/domain_consensus/parent_context_run/structure/parent_tmaligned",
+        "results/novelty_predictor/domain_consensus/parent_context_run/structure/parent_hits.tsv",
+        "--threads",
+        "4",
+        "--exact-tmscore",
+        "1",
+        "--format-output",
+        "query,target,qlen,tlen,qstart,qend,tstart,tend,alnlen,qtmscore,ttmscore,qaln,taln"
+      ],
+      "started_at": "2026-10-23T00:04:57.131402+00:00",
+      "pid": 74782,
+      "completed": true
+    }
+  ],
+  "new_gpu_or_cloud_cpu_spend_usd": 0
+}

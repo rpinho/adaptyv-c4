@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/prepare_inputs.py", line 96, in <module>
+    if __name__=='__main__': main()
+  File "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/prepare_inputs.py", line 77, in main
+    assert delta<=0.000501, 'Coordinate change beyond PDB decimal rounding'
+AssertionError: Coordinate change beyond PDB decimal rounding

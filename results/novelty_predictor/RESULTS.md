@@ -1,16 +1,19 @@
 # CPU novelty predictor: current evidence and limits
 
-Current five-source sequence + exact structural comparison:
-[patent_extension/RESULTS.md](patent_extension/RESULTS.md). Public NCBI pataa was
-obtained and searched; it is not verified as the organizer's patent corpus.
-Retired local counts remain16 level2,47 level3,4 level4,6 coordinate-unavailable.
+Current three-method domain + broader structural-candidate comparison:
+[domain_consensus/RESULTS.md](domain_consensus/RESULTS.md), with full evidence in
+domain_consensus/parent_context_run/predictions.json. Retired provisional counts:
+20 level2,40 level3,7 level4,6 coordinate-unavailable. Five local4 calls arise
+from limited domain coverage despite matching domains; none proves a new fold.
+All 73 designs stay retired. Whole-chain alternative: patent_extension/RESULTS.md.
+Public NCBI pataa was obtained and searched; it is not verified as the organizer corpus.
 Exact organizer levels established:0. Updated sequence-source manifest:
 patent_extension/DATABASES.json. Earlier manifests are preserved as history.
 
 The exact-export correction and residual numerical disagreement are documented
 in exact_score/RESULTS.md. Four paired saved-monomer calls remain local3 in
-monomer_sensitivity/RESULTS.md. Domain-consensus CPU feasibility work is separate
-under domain_consensus/; no unmeasured consensus is assumed in these counts.
+monomer_sensitivity/RESULTS.md. Domain consensus is now measured on CPU, with an
+explicit indexing correction and faithful discontinuous-domain representation.
 
 Everything below describes earlier sequence-only/approximate-score checkpoints.
 Its missing-source statements and old counts are historical, not current results.

@@ -1,0 +1,2101 @@
+{
+  "source_report_sha256": "815d12f4c363d499aacb48a2810fd870c4c779c58d6d9d2e4f34523c18fb5cbc",
+  "protocol_sha256": "6f0e0003de8660505f0170cb0cfbfb03608daa1c850567f30f02aee3f6410d4b",
+  "coordinate_models": 68,
+  "unavailable": 6,
+  "source_backbone_or_sequence_repaired": false,
+  "inputs": [
+    {
+      "query": "q000001",
+      "name": "c4_tfr1_groove_human_forced_l59_f06cf87fd111f355_candidate1",
+      "sequence_sha256": "8fe6e19464f8270191c5f200e50c16a7fc3124deff63b51e3d9b8b8641a30066",
+      "length": 59,
+      "status": "coordinates_unavailable",
+      "reason": "No exact-named coordinate model found in local retired-pool Complexes; no sequence-to-structure inference run"
+    },
+    {
+      "query": "q000002",
+      "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate1",
+      "sequence_sha256": "19c467779adb9f680b0ae6b3617ac58b67b7f8ae3f8c8a19369947fb91a0ae6d",
+      "length": 78,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000002.pdb",
+      "sha256": "6836551094bef495c36dee29615a32b11c182f739db9f0599c2a6b0a8322167c",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate1",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_refolds/Complexes/c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate1.cif",
+        "sha256": "21ce741f197e4859bd4c3c3db30c05a998dc575f8773d4c16e8b2c642f81c68e",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 78,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 670,
+      "backbone_atoms": 312,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000003",
+      "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate2",
+      "sequence_sha256": "c456b40f81d0a4bc3f4fc5a05f2d4b051b865c9c11db7615ffe21320c0aeccc6",
+      "length": 78,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000003.pdb",
+      "sha256": "230946a4bd9f71188462fa7c5a753479dba08a069e41a0740eb0d0e18a10acd9",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate2",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate2.cif",
+        "sha256": "3282a3b1ea117397935b36ac3052cb5682cc8f0b66763566196e1e4c3558d6fc",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 78,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 665,
+      "backbone_atoms": 312,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000004",
+      "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate3",
+      "sequence_sha256": "2fafc962f7c6976ddb0fc18e0911bad2916ad622a329a2bafc9877814413c98b",
+      "length": 78,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000004.pdb",
+      "sha256": "6c7ed4e7642f2ce56d2f8a9d8b7a90ea6537f280ebd49d6e1b0487aea46054ef",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate3",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate3.cif",
+        "sha256": "954c236f45e9ae984f643206674b1bb7fad33e95b964a154368ff3f645003c01",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 78,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 669,
+      "backbone_atoms": 312,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000005",
+      "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate5",
+      "sequence_sha256": "e9b94fa8c509cd65afc1bbe2f9cdfb4caa86d47c6103e042572bf00be66478a9",
+      "length": 78,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000005.pdb",
+      "sha256": "ab85a2a1c3d542982974d6834e8a78d77e95fb7e7fb9f88d2bb55c45eadb7edc",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate5",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l78_cc1057879d35a8ec_candidate5.cif",
+        "sha256": "c3c2e1f413da8bb836cff45c6ee1526ecde9563c491699989c244ee09dbb440c",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 78,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 672,
+      "backbone_atoms": 312,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000006",
+      "name": "c4_tfr1_groove_human_forced_l99_2c4541b346f4959d_candidate1",
+      "sequence_sha256": "b384d5d0e93ef3ca1ec8ce6a2c31a1e9fd57bb8508d37f6e52d932c5f3234a3a",
+      "length": 99,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000006.pdb",
+      "sha256": "214393a825d974257f7d43dce17c8baff1e39909b49257bcf8fab97f28976c7a",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l99_2c4541b346f4959d_candidate1",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l99_2c4541b346f4959d_candidate1.cif",
+        "sha256": "1d805e94aa58ba59b6bbb57bf3efb29a77d111068952386887fc7cf108540312",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 99,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 820,
+      "backbone_atoms": 396,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000007",
+      "name": "c4_tfr1_groove_human_forced_l99_2c4541b346f4959d_candidate4",
+      "sequence_sha256": "f0a52fbd8d50ec39f2f1debb305d5a1cd5f52cedfe6f8cceb2a80ff33edcdf05",
+      "length": 99,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000007.pdb",
+      "sha256": "c2cd38fdcd71e18c038305798a15aa4bf962aea207e2fde9436d54736d65b576",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l99_2c4541b346f4959d_candidate4",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l99_2c4541b346f4959d_candidate4.cif",
+        "sha256": "b7f37d8b8b42dc43ee515b42139e60f7766fa7fe5e16aa04392ce412284edfca",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 99,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 824,
+      "backbone_atoms": 396,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000008",
+      "name": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c_candidate6",
+      "sequence_sha256": "ec1e7bdce4a6102f2ed5e35f055f6d6731c621bfec5da652e771e51643abb921",
+      "length": 98,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000008.pdb",
+      "sha256": "9f83d7ce01cedf42f3bebde1008b21ad21e3e2beb242a61acdd7e9cabc8f134d",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c_candidate6",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c_candidate6.cif",
+        "sha256": "ac2bd8df713722ef73ab3f0f6a1f00c5b79f160bdd5cba7945b480ffbf58d258",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 98,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 836,
+      "backbone_atoms": 392,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000009",
+      "name": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c_candidate8",
+      "sequence_sha256": "518686fabe922396d5a9c4191881d16012a22813e2755ca083816394c97f9aff",
+      "length": 98,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000009.pdb",
+      "sha256": "5e206205150355ce006f867c07d5d64a6d39520f99928a202ced597b7dae7c37",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c_candidate8",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c_candidate8.cif",
+        "sha256": "ef5ec948428b45a496275ef954fccae477a16cc2e059d54acfd0a5776bf01ba5",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 98,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 834,
+      "backbone_atoms": 392,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000010",
+      "name": "c4_tfr1_groove_human_forced_l99_2c4541b346f4959d_candidate7",
+      "sequence_sha256": "d96dcb373ea5b853523e1643652b671001455f83c0d833ad11fc984fa5f87b94",
+      "length": 99,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000010.pdb",
+      "sha256": "8f5a6e373112475c6695acafefead5e449a06c1b2e54a3bf599c0aa2bfb794ad",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l99_2c4541b346f4959d_candidate7",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l99_2c4541b346f4959d_candidate7.cif",
+        "sha256": "ea1f4ad0ad30cc35e07e1849b3e5abbc50881a8cbdb12fa25a87683d4d4c2fbd",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 99,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 828,
+      "backbone_atoms": 396,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000011",
+      "name": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c_candidate9",
+      "sequence_sha256": "f680dcaaaa49a224ff174db0ccb7e5998d9f1466f8554303e3dc4eb76545e33a",
+      "length": 98,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000011.pdb",
+      "sha256": "637a4ca84124d0fb32c4be688c48a2fadec1b395a7e9aa211a8b2e1008e28dac",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c_candidate9",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l98_ac2cbaba03c60f1c_candidate9.cif",
+        "sha256": "09cf96954cfa0b56a9e2a1b37d9cadcb390091eb2e99912e18296090d5e7d2b7",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 98,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 823,
+      "backbone_atoms": 392,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000012",
+      "name": "c4_tfr1_groove_human_forced_l72_d5e9e12c9e56fbea_candidate1",
+      "sequence_sha256": "f0c4d745bbc95ea371ff98c0b9d6a8e8b93ba7cac619d74120444655484348ab",
+      "length": 72,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000012.pdb",
+      "sha256": "0b69730df657c2c369a6445e6a7fc1b19738b49290292ded3213141cf0f8ca70",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l72_d5e9e12c9e56fbea_candidate1",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l72_d5e9e12c9e56fbea_candidate1.cif",
+        "sha256": "a91d1917b6a7d5be2089606e66f7a650b5a4205738bda698b42901b01d9efef0",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 72,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 596,
+      "backbone_atoms": 288,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000013",
+      "name": "c4_tfr1_groove_human_forced_l72_d5e9e12c9e56fbea_candidate3",
+      "sequence_sha256": "a886d610687913e97277fca911cc1e504d5fa03499eccc175e09fdc97a2e1f01",
+      "length": 72,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000013.pdb",
+      "sha256": "5d482ea1a8aaa552278d22b0a12cef2ea6781873eec01090c76750cb39bdb224",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l72_d5e9e12c9e56fbea_candidate3",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l72_d5e9e12c9e56fbea_candidate3.cif",
+        "sha256": "2c3159bdd62ff14fbef2db27ba49f2475407ebdea3693685ec23b00b8ee54616",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 72,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 602,
+      "backbone_atoms": 288,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000014",
+      "name": "c4_tfr1_groove_human_forced_l72_d5e9e12c9e56fbea_candidate4",
+      "sequence_sha256": "782ba01557a945fe818e398e4a3a93762844bc2f49c64262ec96c721d3f7c524",
+      "length": 72,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000014.pdb",
+      "sha256": "6d57aa930d9f883ce005a12b24bf4259361a5dbab987b577c6413e794911b917",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l72_d5e9e12c9e56fbea_candidate4",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l72_d5e9e12c9e56fbea_candidate4.cif",
+        "sha256": "7b49a08ad043a1e1c55569bbab2206e43795eb186745738a09a3b7541e18e70d",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 72,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 593,
+      "backbone_atoms": 288,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000015",
+      "name": "c4_tfr1_groove_human_forced_l84_9efe91791b587b17_candidate1",
+      "sequence_sha256": "5fede7c4002c0fd34ae15181d5bb74e5d8da44e80b4283c93a661294bbc368fd",
+      "length": 84,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000015.pdb",
+      "sha256": "34d123393b37a90323e1612b4a5a836b98485209fe55651c397bb4ccab1735f8",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l84_9efe91791b587b17_candidate1",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l84_9efe91791b587b17_candidate1.cif",
+        "sha256": "f70787b628e6a8575cf1cea39b34f72bdab5063baca70d88191df953da2cfd52",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 84,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 683,
+      "backbone_atoms": 336,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000016",
+      "name": "c4_tfr1_groove_human_forced_l84_9efe91791b587b17_candidate2",
+      "sequence_sha256": "6595cea3463d2d205aec4fdd78172d98b66a085a792eecfee673eeb91dbb6264",
+      "length": 84,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000016.pdb",
+      "sha256": "c4b96c2de27a5184e29843ef107d51da65f823e500d9b9c37c1515e43e1b7169",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l84_9efe91791b587b17_candidate2",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l84_9efe91791b587b17_candidate2.cif",
+        "sha256": "0b510ec961d717e4e9c81a520fa73f76483c0d52d6198596d2f2a70ddbe72833",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 84,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 676,
+      "backbone_atoms": 336,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000017",
+      "name": "c4_tfr1_groove_human_forced_l84_9efe91791b587b17_candidate3",
+      "sequence_sha256": "71326404bae2c8ae3d2b3c8e61dedfdefbe08ed5be2d12e7e4e37d47757e81b6",
+      "length": 84,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000017.pdb",
+      "sha256": "d9f4099422b3377e0d6bfeeb1d5a33360f38354f8c6ee5e920ca9b4f559879aa",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l84_9efe91791b587b17_candidate3",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l84_9efe91791b587b17_candidate3.cif",
+        "sha256": "eb689067fc6555dfd46cfafd38fffc49bdee4e52428326210847cbbebcf46bb9",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 84,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 692,
+      "backbone_atoms": 336,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000018",
+      "name": "c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1_candidate1",
+      "sequence_sha256": "c97fec0807e1a5e73ff723552ad45327f84c88333de830bd5f07c42f1c221c6b",
+      "length": 84,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000018.pdb",
+      "sha256": "2ccfc4f874376decdd8b497a865c5b65ba942a0d67a6d65f7a4e15db082adc13",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1_candidate1",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1_candidate1.cif",
+        "sha256": "9dfd8d34194c5ac91a1fe0053f71ab91c89b901b0b3756f3a4e63743f2bcb296",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 84,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 703,
+      "backbone_atoms": 336,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000019",
+      "name": "c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1_candidate2",
+      "sequence_sha256": "1c44d94c6d3909cba62249af5cba2d3e028ab64f95d9da38d656e3509fd87311",
+      "length": 84,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000019.pdb",
+      "sha256": "61c5fd543133ded4151e265f074756c1c04fb09cfac0b596cc70cc339d6babba",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1_candidate2",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1_candidate2.cif",
+        "sha256": "1eb543a200526730b993cd8af7ab1003b73a3abd4ac56eb8ac53f7016b89dd47",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 84,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 703,
+      "backbone_atoms": 336,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000020",
+      "name": "c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1_candidate4",
+      "sequence_sha256": "91af8d9036c2b4c9c3761b32974efcb05eca394561daaaa25757bcbfc3a3560d",
+      "length": 84,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000020.pdb",
+      "sha256": "d58766a560768101d06f84b8199c53c7398de5d96f123c4b033959573e81255b",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1_candidate4",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l84_fa5e4e94654ff9c1_candidate4.cif",
+        "sha256": "aa511c0b48778cbbc5a90721a1fa881032f7cd8cb2e71c69ae8e1519aecf839d",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 84,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 707,
+      "backbone_atoms": 336,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000021",
+      "name": "c4_tfr1_groove_human_forced_l100_af9c8433a94467eb_candidate4",
+      "sequence_sha256": "20236bc589b9b14e16bd4e7be574e22c900c336dfcd49a721f7be69ff46cbf1b",
+      "length": 100,
+      "status": "coordinates_unavailable",
+      "reason": "No exact-named coordinate model found in local retired-pool Complexes; no sequence-to-structure inference run"
+    },
+    {
+      "query": "q000022",
+      "name": "c4_tfr1_groove_human_forced_l100_af9c8433a94467eb_candidate6",
+      "sequence_sha256": "75b7d5937a9514d8d6a49935997ff046d11679463a50013be4c6d41bb9af11a2",
+      "length": 100,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000022.pdb",
+      "sha256": "2351c64f2a3ffeed62c2dca35d1b1d0560ff4476805e3c5310a65417126761a4",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l100_af9c8433a94467eb_candidate6",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l100_af9c8433a94467eb_candidate6.cif",
+        "sha256": "eb893650556f85c14a6c70639ddb6ab7ec8511e3293bf58fab7d172afd5bb26a",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 100,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 869,
+      "backbone_atoms": 400,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000023",
+      "name": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d_candidate1",
+      "sequence_sha256": "2716af4f70c1808c684508eda100674970c77a8cec224443b4d863c0139b30a8",
+      "length": 76,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000023.pdb",
+      "sha256": "54563277c7f04c494206faae48f2cc7af8d74b65e11ac13b729d9bbda925a0e9",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d_candidate1",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d_candidate1.cif",
+        "sha256": "4095967f2009b4f81d9449bbb776e5f521e44e3c397ef0d7259e67c0f865f186",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 76,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 658,
+      "backbone_atoms": 304,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000024",
+      "name": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d_candidate3",
+      "sequence_sha256": "12aa9ff2df3097b0bd887a34af65badc244716a6a9c67e2de19a6e9ea16a6e41",
+      "length": 76,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000024.pdb",
+      "sha256": "c11041c6d2b0264fa99fa55d4a9ff93eee1221f76e2b6d3babc50cdd2a5b0e2f",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d_candidate3",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d_candidate3.cif",
+        "sha256": "c4d22914080a6d9f098145cfb08398fd1030134390c480876c1074ae1d483de4",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 76,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 649,
+      "backbone_atoms": 304,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000025",
+      "name": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d_candidate4",
+      "sequence_sha256": "e0c32f799c685f987435f8bc4385db1e1397020e9227eba8835317bced737422",
+      "length": 76,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000025.pdb",
+      "sha256": "26e6c7905e1b455b219ad27b2d8901866e76286d3e1b622db271522cdc270107",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d_candidate4",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l76_06cf7c724b17b60d_candidate4.cif",
+        "sha256": "5f509b7c1b5d5f95c671ecdc32d3d585d292de25c9b762a8d27802440d080f04",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 76,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 648,
+      "backbone_atoms": 304,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000026",
+      "name": "c4_tfr1_groove_human_forced_l56_b9b1bd89e75cae01_candidate3",
+      "sequence_sha256": "d5b7ea9179525699e76e373eedf062cc01badd1b1d7ec90736aba7ac14a27f24",
+      "length": 56,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000026.pdb",
+      "sha256": "e01c9b78232e681c7a5da6c8e327518989e1227bf086effe84343d7380cde447",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l56_b9b1bd89e75cae01_candidate3",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l56_b9b1bd89e75cae01_candidate3.cif",
+        "sha256": "aff9f488002fc10c80a5739967e334e72b80807e0dc4657903839554159aca91",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 56,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 493,
+      "backbone_atoms": 224,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000027",
+      "name": "c4_tfr1_groove_human_forced_l56_b9b1bd89e75cae01_candidate6",
+      "sequence_sha256": "062df04ee0911bdb2ef5b010f48343af1753001942f357668f56be3a77f59ac8",
+      "length": 56,
+      "status": "coordinates_unavailable",
+      "reason": "No exact-named coordinate model found in local retired-pool Complexes; no sequence-to-structure inference run"
+    },
+    {
+      "query": "q000028",
+      "name": "c4_tfr1_groove_human_forced_l79_e4887d4268e16afe_candidate1",
+      "sequence_sha256": "e3540d12a46bc1ec22260b1efea3d5e079abb10b61ede8ade41a053c1fff157b",
+      "length": 79,
+      "status": "coordinates_unavailable",
+      "reason": "No exact-named coordinate model found in local retired-pool Complexes; no sequence-to-structure inference run"
+    },
+    {
+      "query": "q000029",
+      "name": "c4_tfr1_groove_human_forced_l60_63126a071c041270_candidate1",
+      "sequence_sha256": "3b170d40ca3f927fab726e52818fc6a2a4fe03907fc9c69ab2bca9e9fa789e08",
+      "length": 60,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000029.pdb",
+      "sha256": "d5cb78cb9262cb9669bde097b8bb3c7884e45b6c9ec7f98b991a04dcf997bb21",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l60_63126a071c041270_candidate1",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l60_63126a071c041270_candidate1.cif",
+        "sha256": "99a10667f7b13a7a2594d9a6eb0a90834b3db915bb4fc1b9aff31c9e7cbde803",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 60,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 506,
+      "backbone_atoms": 240,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000030",
+      "name": "c4_tfr1_groove_human_forced_l60_63126a071c041270_candidate2",
+      "sequence_sha256": "c9b2adc91bd91f6965bbd8653c79c4ef7130f05e96b500d859107e1edb87e0c2",
+      "length": 60,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000030.pdb",
+      "sha256": "1354313f20932b4154fdb9195ca7b64c0aa384eff7328bfffb9afc959a70e1c6",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l60_63126a071c041270_candidate2",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l60_63126a071c041270_candidate2.cif",
+        "sha256": "c79b278f580f2dec14c291ef69dee717832bfaa8e2ffcebbcd17ad21ce8a4a2c",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 60,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 502,
+      "backbone_atoms": 240,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000031",
+      "name": "c4_tfr1_groove_human_forced_l60_63126a071c041270_candidate3",
+      "sequence_sha256": "86b396a4d7c73f57e27027e3ad6b24cc79ecb129fad22f39a2f4031656e615f7",
+      "length": 60,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000031.pdb",
+      "sha256": "cf09e8630f352a7b88f7ea591749db7df703ccd89428a6390d4516cdc3c30363",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l60_63126a071c041270_candidate3",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l60_63126a071c041270_candidate3.cif",
+        "sha256": "60f5a058762e5ad94d24adc71de27207074b61dd6ffe73d8c4a6e2fb519072c9",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 60,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 516,
+      "backbone_atoms": 240,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000032",
+      "name": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1",
+      "sequence_sha256": "dd2318e08da81c0665ea55933528df8935d86cf054d67ba36e1d11aafa2a8a3c",
+      "length": 58,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000032.pdb",
+      "sha256": "9d8dc06715a11136d03110d071973b1e69d17b6afdeb70ac21725bf7b0f37cb8",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate1.cif",
+        "sha256": "8378780e51417aff422b461f40392322cf9b5f46698f56e5471789b5b2657d3a",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 58,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 483,
+      "backbone_atoms": 232,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000033",
+      "name": "c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e_candidate1",
+      "sequence_sha256": "579372f82106c42aea929bb0031493b573e870e66f6192caaa05909bce38405b",
+      "length": 95,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000033.pdb",
+      "sha256": "4d30b7c1df4f57aba50c3a3be5824babe379834f52f2f3711288c3340ed3bf4e",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e_candidate1",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e_candidate1.cif",
+        "sha256": "0004b065f208ed8104d6b638ad5607b955887ff96005d6e3e69927fa489bef18",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 95,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 801,
+      "backbone_atoms": 380,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000034",
+      "name": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate2",
+      "sequence_sha256": "cc2092d30aa2eae14057c5af76cdab8e67573d61a29d906009c574fb6c9cb571",
+      "length": 58,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000034.pdb",
+      "sha256": "6c49927eed7522a2b0db25112d124629a27b67cfb416e95b996f30a185cb0ef0",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate2",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate2.cif",
+        "sha256": "407a6481fd82e865aa8c50eeb9df24d73c5aaaa71c7a54bdc466870cc962d496",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 58,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 486,
+      "backbone_atoms": 232,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000035",
+      "name": "c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e_candidate2",
+      "sequence_sha256": "86ae7e1935c8958f10f59ba5f6380c7c70295918060f20527d274a7889a179cd",
+      "length": 95,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000035.pdb",
+      "sha256": "29b3cc8153e35169dc534626bfcea925c6b79c4bf3667db8dbc2e9fa1941e9f1",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e_candidate2",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e_candidate2.cif",
+        "sha256": "b1b14304e3dba516a3dba588bf4b45cbd538dea7a304fb3908a800edd81ec6ea",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 95,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 773,
+      "backbone_atoms": 380,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000036",
+      "name": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate3",
+      "sequence_sha256": "859758e2f1cb535511306e36a1e25f32985d878ec450f88f21121a530d885ad1",
+      "length": 58,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000036.pdb",
+      "sha256": "1a3222210494a99873a78b5492699bd4ceae5c42b8213f0e1aaa9036c8366e91",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate3",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l58_45377c7f5f47bd7d_candidate3.cif",
+        "sha256": "d995ad809948ad9de2df14582034eeebbd520dec3d006a7cff7039a57a7719df",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 58,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 478,
+      "backbone_atoms": 232,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000037",
+      "name": "c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e_candidate3",
+      "sequence_sha256": "3599423be7459521e1b0840dc95e6e6c40cd8a79d9273486efb759fbb9ac58c2",
+      "length": 95,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000037.pdb",
+      "sha256": "a792e34e75bf085da4f4c1ea32983d64865dfe3313d64d121aabeb0353d5febe",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e_candidate3",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l95_2aeadb4dd8ac935e_candidate3.cif",
+        "sha256": "381ee54c31cbe38f1c9f13c5cbe30e1e6a9b6472f2a4ba04722cd3af90778b7d",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 95,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 783,
+      "backbone_atoms": 380,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000038",
+      "name": "c4_tfr1_groove_human_forced_l80_24ee63503d07a260_candidate2",
+      "sequence_sha256": "99379359fb865db269b28079b5d58117d49160648f715471d9d1c78f27d765b3",
+      "length": 80,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000038.pdb",
+      "sha256": "cfbff6248a2deecde067f54ad9954f1699cb02767875f3be68d04ab2bbca6315",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l80_24ee63503d07a260_candidate2",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l80_24ee63503d07a260_candidate2.cif",
+        "sha256": "f6b76f88d03d897d1b2261085e25b63568c25cac2add987e4b2fbcfc11c1c092",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 80,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 653,
+      "backbone_atoms": 320,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000039",
+      "name": "c4_tfr1_groove_human_forced_l80_24ee63503d07a260_candidate3",
+      "sequence_sha256": "21e2c42230c74dc56fda62104d1dc9c8f6cf062d10c496ccb1466495e0a9b2c1",
+      "length": 80,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000039.pdb",
+      "sha256": "8ffbe77062703ad9cea3cfbe20730d61c83752cb51e09156e7e1d71f3a94df99",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l80_24ee63503d07a260_candidate3",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l80_24ee63503d07a260_candidate3.cif",
+        "sha256": "ce25b00d17a00580306e12d6d447c2f13d64fa9432051ece9ffe46c534ce4582",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 80,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 666,
+      "backbone_atoms": 320,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000040",
+      "name": "c4_tfr1_groove_human_forced_l80_24ee63503d07a260_candidate6",
+      "sequence_sha256": "740fe80e4e1f84fae0e0370760fd96ac00d191a00b0cce586ce4d856a54a19fe",
+      "length": 80,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000040.pdb",
+      "sha256": "341fb58a219d798ae34f13110e076313ea79150b87903dfc88cb7ad46a846a01",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l80_24ee63503d07a260_candidate6",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l80_24ee63503d07a260_candidate6.cif",
+        "sha256": "f305efdaf677d341bb643cb7e60297540266a0b4b425e9fe3d553bd410668b3a",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 80,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 677,
+      "backbone_atoms": 320,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000041",
+      "name": "c4_tfr1_groove_human_forced_l70_54a5b53444de2b49_candidate4",
+      "sequence_sha256": "645ed33fa27cb3781f88911e7fab49cedbee19bd014c20f479514b58a8b39ea9",
+      "length": 70,
+      "status": "coordinates_unavailable",
+      "reason": "No exact-named coordinate model found in local retired-pool Complexes; no sequence-to-structure inference run"
+    },
+    {
+      "query": "q000042",
+      "name": "c4_tfr1_groove_human_forced_l70_54a5b53444de2b49_candidate5",
+      "sequence_sha256": "ae15fef89aafd247bc9811150df089c1d69a696919d0c3cd17f5145e2dacba66",
+      "length": 70,
+      "status": "coordinates_unavailable",
+      "reason": "No exact-named coordinate model found in local retired-pool Complexes; no sequence-to-structure inference run"
+    },
+    {
+      "query": "q000043",
+      "name": "c4_tfr1_groove_human_forced_l70_54a5b53444de2b49_candidate8",
+      "sequence_sha256": "8bfe0963a51c8fcdfe2ccc2e2c4515e1cfbecadc5db515bf56bde47df9c548c1",
+      "length": 70,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000043.pdb",
+      "sha256": "87040cef5aeeca8fcb5c2be15f898cdf9da34a2af421891686ac9201fc41fe42",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l70_54a5b53444de2b49_candidate8",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l70_54a5b53444de2b49_candidate8.cif",
+        "sha256": "95a6736d3f1dacf8bf0eb370f5d8ae77b0d5e464dad2b911dcf180c8e373b247",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 70,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 604,
+      "backbone_atoms": 280,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000044",
+      "name": "c4_tfr1_groove_human_forced_l58_9f94b53776050aad_candidate3",
+      "sequence_sha256": "50968118b07699556691a0f74a187cd8c6d64c226185b615848d5ea83a46e5d4",
+      "length": 58,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000044.pdb",
+      "sha256": "07791a2ef79d7702b9498deb0aa30d1a8055ccaf5d1a9fbf9a1406361c94db13",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l58_9f94b53776050aad_candidate3",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l58_9f94b53776050aad_candidate3.cif",
+        "sha256": "c38eb2ffc12f38ec0b3e5d3d714ce2d00ac68e97c922f54ae875c546670b57e7",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 58,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 488,
+      "backbone_atoms": 232,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000045",
+      "name": "c4_tfr1_groove_human_forced_l58_9f94b53776050aad_candidate4",
+      "sequence_sha256": "72f4ad02d0037aa4ad05d15adcc8a528586e1d877c0862d705bccfe8c7f2b0f7",
+      "length": 58,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000045.pdb",
+      "sha256": "68ba7c83fe080af79ee3cee9ecc194b6d3036bdb17011c4344523b8d913b84b0",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l58_9f94b53776050aad_candidate4",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l58_9f94b53776050aad_candidate4.cif",
+        "sha256": "632beb7c354d757b46fdefdde0f3f1509abec4ba73bcdeb23ef4899ae79e74e9",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 58,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 488,
+      "backbone_atoms": 232,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000046",
+      "name": "c4_tfr1_groove_human_forced_l97_2e414f93ff62377a_candidate1",
+      "sequence_sha256": "30ab40db2f99c03681618aeab5d8ad0f9f22e46def735b1188a0a170d5100b58",
+      "length": 97,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000046.pdb",
+      "sha256": "b6231f71205ba43671e955ec185e1fe77199b6992f583db42491684a10b69061",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l97_2e414f93ff62377a_candidate1",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l97_2e414f93ff62377a_candidate1.cif",
+        "sha256": "2aa966e707bbc18ccab0f1c70dbdcb3d4fb2c98d080420888c4c895b0bb66bc1",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 97,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 823,
+      "backbone_atoms": 388,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000047",
+      "name": "c4_tfr1_groove_human_forced_l58_9f94b53776050aad_candidate5",
+      "sequence_sha256": "83b182242fdf835d4018976dc54c0c491032be8745dae6bb92c38cdc46a0f795",
+      "length": 58,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000047.pdb",
+      "sha256": "b5405987b59116886928f2fa0da2de3f1bee2ac7ef42799d18542737cf4914d3",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l58_9f94b53776050aad_candidate5",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l58_9f94b53776050aad_candidate5.cif",
+        "sha256": "a538ffb84f85881d6843a43eb88dda8a21d942cf39e9534062e68fc7e7144159",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 58,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 489,
+      "backbone_atoms": 232,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000048",
+      "name": "c4_tfr1_groove_human_forced_l97_2e414f93ff62377a_candidate2",
+      "sequence_sha256": "595790efe8386897c434b2b838c2f2ad2e1d51c93b3257206e8c5c549b8530b9",
+      "length": 97,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000048.pdb",
+      "sha256": "ea3e9da08f0b8964d47b3c4525a7dc6af8cb0d8c90fc35504a01d190d0526fdd",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l97_2e414f93ff62377a_candidate2",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l97_2e414f93ff62377a_candidate2.cif",
+        "sha256": "c27b387d98368590a322eb1d40657e6e41e5dc25ee5bc31021795e39e54ae916",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 97,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 817,
+      "backbone_atoms": 388,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000049",
+      "name": "c4_tfr1_groove_human_forced_l97_2e414f93ff62377a_candidate3",
+      "sequence_sha256": "ea1f9901cb2ca3e1994e8298cb20e77549f02063293be3c59f5348246a76bc07",
+      "length": 97,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000049.pdb",
+      "sha256": "d45c33999707df41c1964e360779ce2a7e21aba800849e8db5afa99cc5824faa",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l97_2e414f93ff62377a_candidate3",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l97_2e414f93ff62377a_candidate3.cif",
+        "sha256": "a1f028bc7858f0aeaba6c2ae5fe4df64f8920dbc2933ad53d958e98f8eba1fe0",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 97,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 818,
+      "backbone_atoms": 388,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000050",
+      "name": "c4_tfr1_groove_human_forced_l96_9003044e98f7dfc2_candidate1",
+      "sequence_sha256": "ac450298e1cba143cf0f6cf04c959ed618936552a4723f914553bd4580e03253",
+      "length": 96,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000050.pdb",
+      "sha256": "c0ed1b67374a908dcc4e88727bd032e27473c651e7611b6485ac2fd375bf2675",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l96_9003044e98f7dfc2_candidate1",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l96_9003044e98f7dfc2_candidate1.cif",
+        "sha256": "e0bdc0159708105625454c063bb651c98960fd99193d5822228d9b60d0bdce91",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 96,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 788,
+      "backbone_atoms": 384,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000051",
+      "name": "c4_tfr1_groove_human_forced_l59_a8117845ac23722c_candidate1",
+      "sequence_sha256": "ca956ae7c0524b2973555b1fdf3fa4f252a03d2b670ed9ef1a8838caf7c6a10b",
+      "length": 59,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000051.pdb",
+      "sha256": "1d492eee03f742a213dd7a4071e07547c260035c9024ef149a57fb8b8153d9f0",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l59_a8117845ac23722c_candidate1",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l59_a8117845ac23722c_candidate1.cif",
+        "sha256": "b3a502c295ab9055f517917daeac3efa1e8167378839628d11d71db8f3fffd9a",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 59,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 505,
+      "backbone_atoms": 236,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000052",
+      "name": "c4_tfr1_groove_human_forced_l59_a8117845ac23722c_candidate3",
+      "sequence_sha256": "bf1a706ed5db0e6d82f8f89637e1d73d99c0b5b5e0c37b56692f18b4ac665386",
+      "length": 59,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000052.pdb",
+      "sha256": "8e5bc14b369854d5fe67e75811fad85deab7894703f72e44c62e447f072bb13e",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l59_a8117845ac23722c_candidate3",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l59_a8117845ac23722c_candidate3.cif",
+        "sha256": "878d808cdef44d9b5ef53d9724e5623d8dcb3475f2a3e9c9a77448c184d26cee",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 59,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 513,
+      "backbone_atoms": 236,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000053",
+      "name": "c4_tfr1_groove_human_forced_l96_9003044e98f7dfc2_candidate6",
+      "sequence_sha256": "1f9e44d555d51b12d1803f6e22522d9bf095b1906adf72985896419120348c62",
+      "length": 96,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000053.pdb",
+      "sha256": "a3c2ad72d23491a35eb4772b91302ecd3416496d6e4b4f1154b510ad4ddbf004",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l96_9003044e98f7dfc2_candidate6",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l96_9003044e98f7dfc2_candidate6.cif",
+        "sha256": "6fa95dae0e615cf54b2f8dda1cce8ccbd3c9a07184ff1d1fc9c7caa1da61fb3d",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 96,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 784,
+      "backbone_atoms": 384,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000054",
+      "name": "c4_tfr1_groove_human_forced_l59_a8117845ac23722c_candidate5",
+      "sequence_sha256": "6a271ed10f4295d9ca77f581e632289042eea3e31cfcedf407e579590c0d2ca7",
+      "length": 59,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000054.pdb",
+      "sha256": "901a3ac4153e6e347ffc02823a88cb656475d51437d39ac199ad6d234d27608a",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l59_a8117845ac23722c_candidate5",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l59_a8117845ac23722c_candidate5.cif",
+        "sha256": "8160e2f7a668be9cd5c9c2fd396edb4ddc03b63d37fffcb395467df5c4cb584b",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 59,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 517,
+      "backbone_atoms": 236,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000055",
+      "name": "c4_tfr1_groove_human_forced_l96_9003044e98f7dfc2_candidate10",
+      "sequence_sha256": "5732d4b71664255a46bb9608192a6447853b0a19357d4b47c7fd767cda4db375",
+      "length": 96,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000055.pdb",
+      "sha256": "007028b43aae146f38ef5bcc9d5f4dc405d1b9c075719cdcc2fbecddefc686df",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l96_9003044e98f7dfc2_candidate10",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l96_9003044e98f7dfc2_candidate10.cif",
+        "sha256": "6185563d0e2e6396ce66fd5cae1e58bceb51e956c958b6843d6fb5f853a1a943",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 96,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 778,
+      "backbone_atoms": 384,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000056",
+      "name": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate6",
+      "sequence_sha256": "f73b1d02179877c7d744cf8e41e99d7a33bce35c34a5593dd70b3295edb47151",
+      "length": 63,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000056.pdb",
+      "sha256": "45005cecea1dce95b50510019676fc9f5c865e634a45ebac4eade61ad8511c74",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate6",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate6.cif",
+        "sha256": "bb8107f71cf3f278e949e1cca8c48c6e6723a40f6035eca6916e7314dbc0741c",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 63,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 528,
+      "backbone_atoms": 252,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000057",
+      "name": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate9",
+      "sequence_sha256": "19946c43e1948fdf075c5ab6cefbecc3ec0a6827ecf32bd44d4ab3b4d3fff0e3",
+      "length": 63,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000057.pdb",
+      "sha256": "9323d17e67bc934a2097d408dd45516d2dce1a8057b8d6d7b285ac22b599a536",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate9",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate9.cif",
+        "sha256": "bc3c1c27dac7e46fbb76a72f1caa01c09cd97c9f76122f72ef5a8e85a67a22c4",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 63,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 528,
+      "backbone_atoms": 252,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000058",
+      "name": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate10",
+      "sequence_sha256": "c5a0172c5bc940d8e04c5ce221331c6d3b48d9f0e1e6f2d2751ed1d65e4e6f84",
+      "length": 63,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000058.pdb",
+      "sha256": "aca63120a23a74353b6dfaf37b4d34ad50a530a97ee195f0feeecfa53a62cfd3",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate10",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l63_59b0f47ecf134650_candidate10.cif",
+        "sha256": "c8da701b364277d79a1600faf002f629e7cd33d586b1ce7b432f37404b2a8131",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 63,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 538,
+      "backbone_atoms": 252,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000059",
+      "name": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8_candidate1",
+      "sequence_sha256": "b86bcf710e4346915eb404eb23e26d4195ccb0c9eed3e44e91c130681f7b1560",
+      "length": 56,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000059.pdb",
+      "sha256": "e5d2bfa881c289ce104069a22e2e67915d9dc4efd133b6c91a12169ff10f097b",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8_candidate1",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8_candidate1.cif",
+        "sha256": "77fc846280a2ec30036dd5145320d4de5c5d0f8b981ddb84edb130403b6fbe21",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 56,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 479,
+      "backbone_atoms": 224,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000060",
+      "name": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8_candidate2",
+      "sequence_sha256": "99012adfc4c5833d6326359430bf9a672246968641c6f4e803f20705c12e7704",
+      "length": 56,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000060.pdb",
+      "sha256": "0c97e06b1cd18e7d2dc609e648214dd6b22fd66ab3c6fad5cfcd760a4b2609a3",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8_candidate2",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8_candidate2.cif",
+        "sha256": "d1f96a9a0a6c30153d23ff598402231ecdd4b1b3be1a6f19b84af35ab82a4667",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 56,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 484,
+      "backbone_atoms": 224,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000061",
+      "name": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8_candidate3",
+      "sequence_sha256": "45f85bcc55f05447f7b1e8d0f9c2327d7a0996768408ec42e9a1d517f69138f0",
+      "length": 56,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000061.pdb",
+      "sha256": "c1276a3e74722a911ebeb458365f9d61bc08c09fac6acc2cd3ff7474316a9678",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8_candidate3",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l56_8c4eb2498f38b9a8_candidate3.cif",
+        "sha256": "1083ffa804ff5619b8aa7ede6b2c3e83493c30904b596a6da2f87d7102a649b0",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 56,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 484,
+      "backbone_atoms": 224,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000062",
+      "name": "c4_tfr1_groove_human_forced_l80_92df4b35cf6da70a_candidate1",
+      "sequence_sha256": "09aaaf17156394023c1edc859599bfe15d0ba1d73d5ff832f55eaf957da3f021",
+      "length": 80,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000062.pdb",
+      "sha256": "44c81ce10519d659bed5af8cbb280e651bdf6d05e9f91811dfef4898abee1057",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l80_92df4b35cf6da70a_candidate1",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l80_92df4b35cf6da70a_candidate1.cif",
+        "sha256": "8cb5945d385739edd7d7afc6c43e59ad85082e4f969cce515b90458cda20a000",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 80,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 666,
+      "backbone_atoms": 320,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000063",
+      "name": "c4_tfr1_groove_human_forced_l80_92df4b35cf6da70a_candidate2",
+      "sequence_sha256": "8ac527af489ca61d9f4cb14f4f5fc4ba1e9d901deb16eb6acc52303f16b1b9ab",
+      "length": 80,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000063.pdb",
+      "sha256": "34ca4ab0bd8197ac040c589c004be39f00e2218a7f3d64d2b2a41e99eeb88f6f",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l80_92df4b35cf6da70a_candidate2",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l80_92df4b35cf6da70a_candidate2.cif",
+        "sha256": "1bd220a34ce1c9f4b2f9e527e6fd48f32566d73b619607a72dc778fc2bf395ac",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 80,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 661,
+      "backbone_atoms": 320,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000064",
+      "name": "c4_tfr1_groove_human_forced_l80_92df4b35cf6da70a_candidate4",
+      "sequence_sha256": "4b6fe8ae7d32c3ba73cdef63d36f51b010fb70bb19562f05aae615778ca4c639",
+      "length": 80,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000064.pdb",
+      "sha256": "567206b471b2bf71a7af1f1ce38fa03f3ad01a8d4e5daa01c422d6b466ffcfaa",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l80_92df4b35cf6da70a_candidate4",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l80_92df4b35cf6da70a_candidate4.cif",
+        "sha256": "d1b4e9fec4a8ed85a20368133df79dc409fa9eb8ae84133ba1e7b5f2471bc018",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 80,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 660,
+      "backbone_atoms": 320,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000065",
+      "name": "c4_tfr1_groove_human_forced_l99_ac96ee385dcb8613_candidate2",
+      "sequence_sha256": "2b07dc97c81eac3902592f1eae17c5cec4f7053586e13952d2e6df0e3f0c5d26",
+      "length": 99,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000065.pdb",
+      "sha256": "eb79420d527bb373512e39fba1a3c6633d72a0a8a66f98fd0362be23607f98b1",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l99_ac96ee385dcb8613_candidate2",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l99_ac96ee385dcb8613_candidate2.cif",
+        "sha256": "852875ea86211aca1d0518e328b7726b03b1c2f5cbaec31f46e4c43a13293052",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 99,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 796,
+      "backbone_atoms": 396,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000066",
+      "name": "c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0_candidate4",
+      "sequence_sha256": "1d65aa9654c352ac4e70cffbf130d69a228e269c11c8dfec49c57bf265fe88e3",
+      "length": 95,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000066.pdb",
+      "sha256": "92f2332e52cab2afca57f69db5d40bd2257f320d98b64c7ea3c1a49739f5f7ef",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0_candidate4",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0_candidate4.cif",
+        "sha256": "3063cc5f1fed1360479fa9bd583197a02a6feb8b50871172290b0cabf85f11cc",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 95,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 806,
+      "backbone_atoms": 380,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000067",
+      "name": "c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0_candidate5",
+      "sequence_sha256": "5a060fa33ef0d797aeaf63d21cbeb8de9404f45e641c34034f24622af598fe54",
+      "length": 95,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000067.pdb",
+      "sha256": "32028149b3fea8aeb897746e79aac44a781526ddc535c57463de0067e7beb8df",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0_candidate5",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0_candidate5.cif",
+        "sha256": "d5fa9eb030e55972ffff08242ec1ef0050487e54f173931693b063499399974e",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 95,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 804,
+      "backbone_atoms": 380,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000068",
+      "name": "c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0_candidate7",
+      "sequence_sha256": "25da9c00822ddbec6af4e40bbe8f3fa4076f4390d45e70cc2dd661efc1cb113e",
+      "length": 95,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000068.pdb",
+      "sha256": "d4abde82ba2445bd12880f539f2abe646a2718cc3834c5449b25dd1e4a81dd21",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0_candidate7",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l95_c6a5afd6447f1fd0_candidate7.cif",
+        "sha256": "8b53c005ee6f74e340cd8ee79244ed74c33250bc8f075c580c1ff22c2cc26690",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 95,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 799,
+      "backbone_atoms": 380,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000069",
+      "name": "c4_tfr1_groove_human_forced_l100_39ede5dc7779065e_candidate5",
+      "sequence_sha256": "dfafe797ea77105d035e725aac76854f250dbbf5050b1c76bb5a9992b372a7c8",
+      "length": 100,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000069.pdb",
+      "sha256": "cf0b8b6614e5b560218aaccd9cf8ddab3154d5a0b3406a5ca7aa570b5c10acb7",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l100_39ede5dc7779065e_candidate5",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l100_39ede5dc7779065e_candidate5.cif",
+        "sha256": "48df648e37488c46e2b2e1cf0de10c6feb6bc78d42dcc1df596a070ede8dd1da",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 100,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 819,
+      "backbone_atoms": 400,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000070",
+      "name": "c4_tfr1_groove_human_forced_l100_39ede5dc7779065e_candidate8",
+      "sequence_sha256": "95955315004176274c5cbe9647b917d8297bfee2950c67075495c2ba0f4635e8",
+      "length": 100,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000070.pdb",
+      "sha256": "33bef2be04fc7574a544f1fc9fb7ab42a8a1de048179df70bcddf6f9630281b4",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l100_39ede5dc7779065e_candidate8",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l100_39ede5dc7779065e_candidate8.cif",
+        "sha256": "5e6024f2175f53fc3ba2cb43bed75b7153dfd78f2127dc31a937c174c2486427",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 100,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 829,
+      "backbone_atoms": 400,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000071",
+      "name": "c4_tfr1_groove_human_forced_l99_e7484f3e947890e8_candidate1",
+      "sequence_sha256": "61a17a1ef52a9ab1b846aeb0a7d83319eb07c784bc0a874f31b21fb80fd6f0be",
+      "length": 99,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000071.pdb",
+      "sha256": "540ecba70aaa5bcffb1556d73816d6bf4c22405a679e0c7e21c92cd1effaf8d4",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l99_e7484f3e947890e8_candidate1",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l99_e7484f3e947890e8_candidate1.cif",
+        "sha256": "90d8e64e7b67cbc890cbc00b6759f6fe21d49647974492372c6252fc11147fd2",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 99,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 843,
+      "backbone_atoms": 396,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000072",
+      "name": "c4_tfr1_groove_human_forced_l99_e7484f3e947890e8_candidate2",
+      "sequence_sha256": "84b11e8fb87c38da1de4baa6fde162b69452e65715faef399099a39e5276ca44",
+      "length": 99,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000072.pdb",
+      "sha256": "7eb28f95d1a5db21edc87218370e53fee5f838ffa367376a5103e97e00bad74a",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l99_e7484f3e947890e8_candidate2",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l99_e7484f3e947890e8_candidate2.cif",
+        "sha256": "5c5da64e4d9c7100ae47fafe159280ce63603da02a884f50ca6af070c21f915d",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 99,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 846,
+      "backbone_atoms": 396,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000073",
+      "name": "c4_tfr1_groove_human_forced_l99_e7484f3e947890e8_candidate5",
+      "sequence_sha256": "92cb69e9bda4ac63eff66608182ae10fd1342fea2f7e26801064230feaf6f963",
+      "length": 99,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000073.pdb",
+      "sha256": "da85e63d48c5094912610917e136270b4af33d0317ab324c7c89556c779d5f54",
+      "source": {
+        "name": "c4_tfr1_groove_human_forced_l99_e7484f3e947890e8_candidate5",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/results/v3_all/Complexes/c4_tfr1_groove_human_forced_l99_e7484f3e947890e8_candidate5.cif",
+        "sha256": "a13afc6a44f06b5bd53e19c31862580ca5cbb59f8a58844e44af41e9aa1afa2c",
+        "chain": "C",
+        "domains": [
+          {
+            "start": 1,
+            "end": 99,
+            "source": "Whole-chain single-domain assumption for short minibinder; NOT three-predictor consensus"
+          }
+        ]
+      },
+      "atoms": 841,
+      "backbone_atoms": 396,
+      "max_ca_rounding_angstrom": 0.0005000000000023874,
+      "max_biopython_float32_parser_error_angstrom": 3.5400390601125764e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": true,
+      "missing_bfactor_defaulted_to_zero": false
+    },
+    {
+      "query": "q000074",
+      "name": "KNOWN_TFR1_POSITIVE_CONTROL",
+      "sequence_sha256": "439e6a3ac85d86bb4caf97c1942740a2c0ca1feb25ba7dfeab08d5ce369962a4",
+      "length": 195,
+      "status": "full_backbone_verified",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/full_backbones/q000074.pdb",
+      "sha256": "fb39cb753718ce9dd18450b0589c8581a47e2f1ea2b2b6308918f4fdf83662e9",
+      "source": {
+        "name": "KNOWN_TFR1_POSITIVE_CONTROL",
+        "status": "available",
+        "path": "/Users/ricardo/dev/adaptyv-c4/data/11qc.cif",
+        "sha256": "4eaa5db67ed83a896713c4b42d1dc214c778bdac240fdf3a9a82e86a66f79495",
+        "chain": "A",
+        "author_residue_range": [
+          189,
+          383
+        ],
+        "domains": [
+          {
+            "start": 1,
+            "end": 195,
+            "source": "Known native apical-domain control, human author189-383"
+          }
+        ]
+      },
+      "atoms": 1487,
+      "backbone_atoms": 780,
+      "max_ca_rounding_angstrom": 0.0,
+      "max_biopython_float32_parser_error_angstrom": 7.568359364995558e-06,
+      "numbering": "Author-to-query-position bijection; sequence order unchanged; chain A",
+      "missing_occupancy_defaulted_to_one": false,
+      "missing_bfactor_defaulted_to_zero": false
+    }
+  ]
+}

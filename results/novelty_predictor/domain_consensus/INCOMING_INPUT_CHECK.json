@@ -1,0 +1,21 @@
+{
+  "scope": "Read-only local other-lane output inventory; no cloud app/volume accessed",
+  "branch_commit": "bf87b0e4bc82ffe5ef002325f417eb7293051ada",
+  "inspected_roots": [
+    "results",
+    "data",
+    "outbox",
+    "outputs",
+    "artifacts",
+    "submission"
+  ],
+  "discovered_submission_file": "/Users/ricardo/.worktrees/adaptyv-c4/claude-submission/submission/FORMAT_TEST_do_not_submit.csv",
+  "file_sha256": "14de00ce6dce27d60796b41c028a8ca013623137541a0742587dbc09edb56a34",
+  "file_explicitly_labeled_do_not_submit": true,
+  "rows": 20,
+  "rows_matching_frozen_retired_analysis_sequences": 20,
+  "new_sequence_coordinate_package_found": false,
+  "cloud_state_established": false,
+  "action": "No new generator input screened or generated; format test is not a candidate package",
+  "new_gpu_or_cloud_cpu_spend_usd": 0
+}

@@ -1,0 +1,18 @@
+convertalis /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/novelty_run/structure/querydb /Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq results/novelty_predictor/domain_consensus/parent_context_run/structure/parent_tmaligned results/novelty_predictor/domain_consensus/parent_context_run/structure/parent_hits.tsv --threads 4 --exact-tmscore 1 --format-output query,target,qlen,tlen,qstart,qend,tstart,tend,alnlen,qtmscore,ttmscore,qaln,taln 
+
+MMseqs Version:        	463739e0014a1549a527de589102cde98f802f37
+Substitution matrix    	aa:3di.out,nucl:3di.out
+Alignment format       	0
+Format alignment output	query,target,qlen,tlen,qstart,qend,tstart,tend,alnlen,qtmscore,ttmscore,qaln,taln
+Gap open cost          	aa:10,nucl:10
+Gap extension cost     	aa:1,nucl:1
+Database output        	false
+Preload mode           	0
+Threads                	4
+Compressed             	0
+Verbosity              	3
+Exact TMscore          	1
+
+[=================================================================] 70 11s 614ms
+Time for merging to parent_hits.tsv: 0h 0m 0s 3ms
+Time for processing: 0h 0m 11s 912ms

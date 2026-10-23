@@ -1,0 +1,6 @@
+{
+  "cause": "Bio.PDB PDBParser stores float32 coordinates; comparing those to source at only 0.000501A mixed parser quantization with PDB decimal rounding",
+  "measured_parser_only_max_absolute_error_angstrom": 3.5400390601125764e-06,
+  "correction": "Check PDB text decimal rounding separately in float64 and bound parser float32 quantization independently; no coordinates or scientific threshold changed",
+  "retained_initial_folder": "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/rejected_float32_check"
+}

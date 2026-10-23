@@ -1,0 +1,10 @@
+tsv2db results/novelty_predictor/domain_consensus/parent_context_run/structure/parent_candidates.tsv results/novelty_predictor/domain_consensus/parent_context_run/structure/parent_prefilter --output-dbtype 7 
+
+MMseqs Version:           	463739e0014a1549a527de589102cde98f802f37
+Output database type      	7
+Compressed                	0
+Verbosity                 	3
+
+Output database type: Prefilter
+Time for merging to parent_prefilter: 0h 0m 0s 0ms
+Time for processing: 0h 0m 0s 9ms

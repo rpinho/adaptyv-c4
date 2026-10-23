@@ -1,0 +1,10 @@
+Processing chopping for q000074: 1-195
+Extracting residues 1:195 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/inputs/q000074.pdb
+Successfully created chopped PDB file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/inputs/q000074_chopped.pdb
+Running STRIDE on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/inputs/q000074_chopped.pdb for chain A
+Running UniDoc on /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/inputs/q000074_chopped.pdb
+UniDoc output: 1-195
+Found 1 domains: 1-195
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/inputs/q000074.pdb.ss
+Cleaned up temporary file: /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/inputs/q000074_chopped.pdb
+--------------------------------------------------------------

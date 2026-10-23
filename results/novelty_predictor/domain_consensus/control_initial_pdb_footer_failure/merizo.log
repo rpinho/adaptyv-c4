@@ -1,0 +1,1 @@
+{"runtime_device": "cpu", "method": "merizo", "torch": "2.0.1", "threads": 4, "seed": 0}

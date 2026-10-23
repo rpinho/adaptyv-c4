@@ -1,0 +1,277 @@
+{"runtime_device": "cpu", "method": "chainsaw", "torch": "2.0.1", "threads": 4, "seed": 0}
+10/22/2026 07:51:36 PM | INFO | Using device: cpu
+10/22/2026 07:51:36 PM | INFO | Learner kwargs: {'max_recycles': 1, 'save_val_best': True, 'x_has_padding_mask': False, 'remove_disordered_domain_threshold': 0.35, 'post_process_domains': True, 'min_ss_components': 2, 'min_domain_length': 30}
+10/22/2026 07:51:36 PM | INFO | Loading weights from: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/ted-pinned/programs/chainsaw/saved_models/secondary_structure_epoch17/version_2/weights.pt
+10/22/2026 07:51:36 PM | INFO | Making prediction for file q000058.pdb (chain 'q000058')
+10/22/2026 07:51:36 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000058_renum.pdb -rA
+10/22/2026 07:51:36 PM | INFO | Distance matrix shape: (1, 63, 63), SS matrix shape: (63, 63)
+10/22/2026 07:51:36 PM | INFO | Runtime: 0.114s
+10/22/2026 07:51:36 PM | INFO | Making prediction for file q000070.pdb (chain 'q000070')
+10/22/2026 07:51:36 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000070_renum.pdb -rA
+10/22/2026 07:51:36 PM | INFO | Distance matrix shape: (1, 100, 100), SS matrix shape: (100, 100)
+10/22/2026 07:51:36 PM | INFO | Runtime: 0.206s
+10/22/2026 07:51:36 PM | INFO | Making prediction for file q000064.pdb (chain 'q000064')
+10/22/2026 07:51:36 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000064_renum.pdb -rA
+10/22/2026 07:51:36 PM | INFO | Distance matrix shape: (1, 80, 80), SS matrix shape: (80, 80)
+10/22/2026 07:51:36 PM | INFO | Runtime: 0.125s
+10/22/2026 07:51:36 PM | INFO | Making prediction for file q000065.pdb (chain 'q000065')
+10/22/2026 07:51:36 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000065_renum.pdb -rA
+10/22/2026 07:51:36 PM | INFO | Distance matrix shape: (1, 99, 99), SS matrix shape: (99, 99)
+10/22/2026 07:51:36 PM | INFO | Runtime: 0.182s
+10/22/2026 07:51:36 PM | INFO | Making prediction for file q000071.pdb (chain 'q000071')
+10/22/2026 07:51:37 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000071_renum.pdb -rA
+10/22/2026 07:51:37 PM | INFO | Distance matrix shape: (1, 99, 99), SS matrix shape: (99, 99)
+10/22/2026 07:51:37 PM | INFO | Runtime: 0.183s
+10/22/2026 07:51:37 PM | INFO | Making prediction for file q000059.pdb (chain 'q000059')
+10/22/2026 07:51:37 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000059_renum.pdb -rA
+10/22/2026 07:51:37 PM | INFO | Distance matrix shape: (1, 56, 56), SS matrix shape: (56, 56)
+10/22/2026 07:51:37 PM | INFO | Runtime: 0.083s
+10/22/2026 07:51:37 PM | INFO | Making prediction for file q000067.pdb (chain 'q000067')
+10/22/2026 07:51:37 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000067_renum.pdb -rA
+10/22/2026 07:51:37 PM | INFO | Distance matrix shape: (1, 95, 95), SS matrix shape: (95, 95)
+10/22/2026 07:51:37 PM | INFO | Runtime: 0.187s
+10/22/2026 07:51:37 PM | INFO | Making prediction for file q000073.pdb (chain 'q000073')
+10/22/2026 07:51:37 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000073_renum.pdb -rA
+10/22/2026 07:51:37 PM | INFO | Distance matrix shape: (1, 99, 99), SS matrix shape: (99, 99)
+10/22/2026 07:51:37 PM | INFO | Runtime: 0.181s
+10/22/2026 07:51:37 PM | INFO | Making prediction for file q000072.pdb (chain 'q000072')
+10/22/2026 07:51:37 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000072_renum.pdb -rA
+10/22/2026 07:51:37 PM | INFO | Distance matrix shape: (1, 99, 99), SS matrix shape: (99, 99)
+10/22/2026 07:51:37 PM | INFO | Runtime: 0.195s
+10/22/2026 07:51:37 PM | INFO | Making prediction for file q000066.pdb (chain 'q000066')
+10/22/2026 07:51:37 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000066_renum.pdb -rA
+10/22/2026 07:51:37 PM | INFO | Distance matrix shape: (1, 95, 95), SS matrix shape: (95, 95)
+10/22/2026 07:51:38 PM | INFO | Runtime: 0.197s
+10/22/2026 07:51:38 PM | INFO | Making prediction for file q000062.pdb (chain 'q000062')
+10/22/2026 07:51:38 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000062_renum.pdb -rA
+10/22/2026 07:51:38 PM | INFO | Distance matrix shape: (1, 80, 80), SS matrix shape: (80, 80)
+10/22/2026 07:51:38 PM | INFO | Runtime: 0.145s
+10/22/2026 07:51:38 PM | INFO | Making prediction for file q000063.pdb (chain 'q000063')
+10/22/2026 07:51:38 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000063_renum.pdb -rA
+10/22/2026 07:51:38 PM | INFO | Distance matrix shape: (1, 80, 80), SS matrix shape: (80, 80)
+10/22/2026 07:51:38 PM | INFO | Runtime: 0.147s
+10/22/2026 07:51:38 PM | INFO | Making prediction for file q000061.pdb (chain 'q000061')
+10/22/2026 07:51:38 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000061_renum.pdb -rA
+10/22/2026 07:51:38 PM | INFO | Distance matrix shape: (1, 56, 56), SS matrix shape: (56, 56)
+10/22/2026 07:51:38 PM | INFO | Runtime: 0.082s
+10/22/2026 07:51:38 PM | INFO | Making prediction for file q000049.pdb (chain 'q000049')
+10/22/2026 07:51:38 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000049_renum.pdb -rA
+10/22/2026 07:51:38 PM | INFO | Distance matrix shape: (1, 97, 97), SS matrix shape: (97, 97)
+10/22/2026 07:51:38 PM | INFO | Runtime: 0.172s
+10/22/2026 07:51:38 PM | INFO | Making prediction for file q000048.pdb (chain 'q000048')
+10/22/2026 07:51:38 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000048_renum.pdb -rA
+10/22/2026 07:51:38 PM | INFO | Distance matrix shape: (1, 97, 97), SS matrix shape: (97, 97)
+10/22/2026 07:51:38 PM | INFO | Runtime: 0.204s
+10/22/2026 07:51:38 PM | INFO | Making prediction for file q000060.pdb (chain 'q000060')
+10/22/2026 07:51:38 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000060_renum.pdb -rA
+10/22/2026 07:51:38 PM | INFO | Distance matrix shape: (1, 56, 56), SS matrix shape: (56, 56)
+10/22/2026 07:51:38 PM | INFO | Runtime: 0.088s
+10/22/2026 07:51:38 PM | INFO | Making prediction for file q000074.pdb (chain 'q000074')
+10/22/2026 07:51:38 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000074_renum.pdb -rA
+10/22/2026 07:51:38 PM | INFO | Distance matrix shape: (1, 195, 195), SS matrix shape: (195, 195)
+10/22/2026 07:51:39 PM | INFO | Runtime: 0.731s
+10/22/2026 07:51:39 PM | INFO | Making prediction for file q000013.pdb (chain 'q000013')
+10/22/2026 07:51:39 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000013_renum.pdb -rA
+10/22/2026 07:51:39 PM | INFO | Distance matrix shape: (1, 72, 72), SS matrix shape: (72, 72)
+10/22/2026 07:51:39 PM | INFO | Runtime: 0.107s
+10/22/2026 07:51:39 PM | INFO | Making prediction for file q000007.pdb (chain 'q000007')
+10/22/2026 07:51:39 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000007_renum.pdb -rA
+10/22/2026 07:51:39 PM | INFO | Distance matrix shape: (1, 99, 99), SS matrix shape: (99, 99)
+10/22/2026 07:51:39 PM | INFO | Runtime: 0.178s
+10/22/2026 07:51:39 PM | INFO | Making prediction for file q000006.pdb (chain 'q000006')
+10/22/2026 07:51:39 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000006_renum.pdb -rA
+10/22/2026 07:51:39 PM | INFO | Distance matrix shape: (1, 99, 99), SS matrix shape: (99, 99)
+10/22/2026 07:51:40 PM | INFO | Runtime: 0.182s
+10/22/2026 07:51:40 PM | INFO | Making prediction for file q000012.pdb (chain 'q000012')
+10/22/2026 07:51:40 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000012_renum.pdb -rA
+10/22/2026 07:51:40 PM | INFO | Distance matrix shape: (1, 72, 72), SS matrix shape: (72, 72)
+10/22/2026 07:51:40 PM | INFO | Runtime: 0.106s
+10/22/2026 07:51:40 PM | INFO | Making prediction for file q000038.pdb (chain 'q000038')
+10/22/2026 07:51:40 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000038_renum.pdb -rA
+10/22/2026 07:51:40 PM | INFO | Distance matrix shape: (1, 80, 80), SS matrix shape: (80, 80)
+10/22/2026 07:51:40 PM | INFO | Runtime: 0.121s
+10/22/2026 07:51:40 PM | INFO | Making prediction for file q000004.pdb (chain 'q000004')
+10/22/2026 07:51:40 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000004_renum.pdb -rA
+10/22/2026 07:51:40 PM | INFO | Distance matrix shape: (1, 78, 78), SS matrix shape: (78, 78)
+10/22/2026 07:51:40 PM | INFO | Runtime: 0.118s
+10/22/2026 07:51:40 PM | INFO | Making prediction for file q000010.pdb (chain 'q000010')
+10/22/2026 07:51:40 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000010_renum.pdb -rA
+10/22/2026 07:51:40 PM | INFO | Distance matrix shape: (1, 99, 99), SS matrix shape: (99, 99)
+10/22/2026 07:51:40 PM | INFO | Runtime: 0.185s
+10/22/2026 07:51:40 PM | INFO | Making prediction for file q000011.pdb (chain 'q000011')
+10/22/2026 07:51:40 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000011_renum.pdb -rA
+10/22/2026 07:51:40 PM | INFO | Distance matrix shape: (1, 98, 98), SS matrix shape: (98, 98)
+10/22/2026 07:51:40 PM | INFO | Runtime: 0.173s
+10/22/2026 07:51:40 PM | INFO | Making prediction for file q000005.pdb (chain 'q000005')
+10/22/2026 07:51:40 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000005_renum.pdb -rA
+10/22/2026 07:51:40 PM | INFO | Distance matrix shape: (1, 78, 78), SS matrix shape: (78, 78)
+10/22/2026 07:51:40 PM | INFO | Runtime: 0.117s
+10/22/2026 07:51:40 PM | INFO | Making prediction for file q000039.pdb (chain 'q000039')
+10/22/2026 07:51:40 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000039_renum.pdb -rA
+10/22/2026 07:51:40 PM | INFO | Distance matrix shape: (1, 80, 80), SS matrix shape: (80, 80)
+10/22/2026 07:51:41 PM | INFO | Runtime: 0.121s
+10/22/2026 07:51:41 PM | INFO | Making prediction for file q000015.pdb (chain 'q000015')
+10/22/2026 07:51:41 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000015_renum.pdb -rA
+10/22/2026 07:51:41 PM | INFO | Distance matrix shape: (1, 84, 84), SS matrix shape: (84, 84)
+10/22/2026 07:51:41 PM | INFO | Runtime: 0.13s
+10/22/2026 07:51:41 PM | INFO | Making prediction for file q000029.pdb (chain 'q000029')
+10/22/2026 07:51:41 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000029_renum.pdb -rA
+10/22/2026 07:51:41 PM | INFO | Distance matrix shape: (1, 60, 60), SS matrix shape: (60, 60)
+10/22/2026 07:51:41 PM | INFO | Runtime: 0.088s
+10/22/2026 07:51:41 PM | INFO | Making prediction for file q000014.pdb (chain 'q000014')
+10/22/2026 07:51:41 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000014_renum.pdb -rA
+10/22/2026 07:51:41 PM | INFO | Distance matrix shape: (1, 72, 72), SS matrix shape: (72, 72)
+10/22/2026 07:51:41 PM | INFO | Runtime: 0.106s
+10/22/2026 07:51:41 PM | INFO | Making prediction for file q000016.pdb (chain 'q000016')
+10/22/2026 07:51:41 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000016_renum.pdb -rA
+10/22/2026 07:51:41 PM | INFO | Distance matrix shape: (1, 84, 84), SS matrix shape: (84, 84)
+10/22/2026 07:51:41 PM | INFO | Runtime: 0.13s
+10/22/2026 07:51:41 PM | INFO | Making prediction for file q000002.pdb (chain 'q000002')
+10/22/2026 07:51:41 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000002_renum.pdb -rA
+10/22/2026 07:51:41 PM | INFO | Distance matrix shape: (1, 78, 78), SS matrix shape: (78, 78)
+10/22/2026 07:51:41 PM | INFO | Runtime: 0.118s
+10/22/2026 07:51:41 PM | INFO | Making prediction for file q000003.pdb (chain 'q000003')
+10/22/2026 07:51:41 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000003_renum.pdb -rA
+10/22/2026 07:51:41 PM | INFO | Distance matrix shape: (1, 78, 78), SS matrix shape: (78, 78)
+10/22/2026 07:51:41 PM | INFO | Runtime: 0.118s
+10/22/2026 07:51:41 PM | INFO | Making prediction for file q000017.pdb (chain 'q000017')
+10/22/2026 07:51:41 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000017_renum.pdb -rA
+10/22/2026 07:51:41 PM | INFO | Distance matrix shape: (1, 84, 84), SS matrix shape: (84, 84)
+10/22/2026 07:51:41 PM | INFO | Runtime: 0.13s
+10/22/2026 07:51:41 PM | INFO | Making prediction for file q000032.pdb (chain 'q000032')
+10/22/2026 07:51:41 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000032_renum.pdb -rA
+10/22/2026 07:51:41 PM | INFO | Distance matrix shape: (1, 58, 58), SS matrix shape: (58, 58)
+10/22/2026 07:51:41 PM | INFO | Runtime: 0.083s
+10/22/2026 07:51:41 PM | INFO | Making prediction for file q000026.pdb (chain 'q000026')
+10/22/2026 07:51:41 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000026_renum.pdb -rA
+10/22/2026 07:51:41 PM | INFO | Distance matrix shape: (1, 56, 56), SS matrix shape: (56, 56)
+10/22/2026 07:51:41 PM | INFO | Runtime: 0.08s
+10/22/2026 07:51:41 PM | INFO | Making prediction for file q000033.pdb (chain 'q000033')
+10/22/2026 07:51:42 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000033_renum.pdb -rA
+10/22/2026 07:51:42 PM | INFO | Distance matrix shape: (1, 95, 95), SS matrix shape: (95, 95)
+10/22/2026 07:51:42 PM | INFO | Runtime: 0.159s
+10/22/2026 07:51:42 PM | INFO | Making prediction for file q000019.pdb (chain 'q000019')
+10/22/2026 07:51:42 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000019_renum.pdb -rA
+10/22/2026 07:51:42 PM | INFO | Distance matrix shape: (1, 84, 84), SS matrix shape: (84, 84)
+10/22/2026 07:51:42 PM | INFO | Runtime: 0.131s
+10/22/2026 07:51:42 PM | INFO | Making prediction for file q000025.pdb (chain 'q000025')
+10/22/2026 07:51:42 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000025_renum.pdb -rA
+10/22/2026 07:51:42 PM | INFO | Distance matrix shape: (1, 76, 76), SS matrix shape: (76, 76)
+10/22/2026 07:51:42 PM | INFO | Runtime: 0.113s
+10/22/2026 07:51:42 PM | INFO | Making prediction for file q000031.pdb (chain 'q000031')
+10/22/2026 07:51:42 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000031_renum.pdb -rA
+10/22/2026 07:51:42 PM | INFO | Distance matrix shape: (1, 60, 60), SS matrix shape: (60, 60)
+10/22/2026 07:51:42 PM | INFO | Runtime: 0.086s
+10/22/2026 07:51:42 PM | INFO | Making prediction for file q000030.pdb (chain 'q000030')
+10/22/2026 07:51:42 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000030_renum.pdb -rA
+10/22/2026 07:51:42 PM | INFO | Distance matrix shape: (1, 60, 60), SS matrix shape: (60, 60)
+10/22/2026 07:51:42 PM | INFO | Runtime: 0.085s
+10/22/2026 07:51:42 PM | INFO | Making prediction for file q000024.pdb (chain 'q000024')
+10/22/2026 07:51:42 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000024_renum.pdb -rA
+10/22/2026 07:51:42 PM | INFO | Distance matrix shape: (1, 76, 76), SS matrix shape: (76, 76)
+10/22/2026 07:51:42 PM | INFO | Runtime: 0.112s
+10/22/2026 07:51:42 PM | INFO | Making prediction for file q000018.pdb (chain 'q000018')
+10/22/2026 07:51:42 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000018_renum.pdb -rA
+10/22/2026 07:51:42 PM | INFO | Distance matrix shape: (1, 84, 84), SS matrix shape: (84, 84)
+10/22/2026 07:51:42 PM | INFO | Runtime: 0.13s
+10/22/2026 07:51:42 PM | INFO | Making prediction for file q000020.pdb (chain 'q000020')
+10/22/2026 07:51:42 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000020_renum.pdb -rA
+10/22/2026 07:51:42 PM | INFO | Distance matrix shape: (1, 84, 84), SS matrix shape: (84, 84)
+10/22/2026 07:51:42 PM | INFO | Runtime: 0.13s
+10/22/2026 07:51:42 PM | INFO | Making prediction for file q000034.pdb (chain 'q000034')
+10/22/2026 07:51:42 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000034_renum.pdb -rA
+10/22/2026 07:51:42 PM | INFO | Distance matrix shape: (1, 58, 58), SS matrix shape: (58, 58)
+10/22/2026 07:51:43 PM | INFO | Runtime: 0.083s
+10/22/2026 07:51:43 PM | INFO | Making prediction for file q000008.pdb (chain 'q000008')
+10/22/2026 07:51:43 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000008_renum.pdb -rA
+10/22/2026 07:51:43 PM | INFO | Distance matrix shape: (1, 98, 98), SS matrix shape: (98, 98)
+10/22/2026 07:51:43 PM | INFO | Runtime: 0.17s
+10/22/2026 07:51:43 PM | INFO | Making prediction for file q000009.pdb (chain 'q000009')
+10/22/2026 07:51:43 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000009_renum.pdb -rA
+10/22/2026 07:51:43 PM | INFO | Distance matrix shape: (1, 98, 98), SS matrix shape: (98, 98)
+10/22/2026 07:51:43 PM | INFO | Runtime: 0.171s
+10/22/2026 07:51:43 PM | INFO | Making prediction for file q000035.pdb (chain 'q000035')
+10/22/2026 07:51:43 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000035_renum.pdb -rA
+10/22/2026 07:51:43 PM | INFO | Distance matrix shape: (1, 95, 95), SS matrix shape: (95, 95)
+10/22/2026 07:51:43 PM | INFO | Runtime: 0.161s
+10/22/2026 07:51:43 PM | INFO | Making prediction for file q000037.pdb (chain 'q000037')
+10/22/2026 07:51:43 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000037_renum.pdb -rA
+10/22/2026 07:51:43 PM | INFO | Distance matrix shape: (1, 95, 95), SS matrix shape: (95, 95)
+10/22/2026 07:51:43 PM | INFO | Runtime: 0.162s
+10/22/2026 07:51:43 PM | INFO | Making prediction for file q000023.pdb (chain 'q000023')
+10/22/2026 07:51:43 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000023_renum.pdb -rA
+10/22/2026 07:51:43 PM | INFO | Distance matrix shape: (1, 76, 76), SS matrix shape: (76, 76)
+10/22/2026 07:51:43 PM | INFO | Runtime: 0.113s
+10/22/2026 07:51:43 PM | INFO | Making prediction for file q000022.pdb (chain 'q000022')
+10/22/2026 07:51:43 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000022_renum.pdb -rA
+10/22/2026 07:51:43 PM | INFO | Distance matrix shape: (1, 100, 100), SS matrix shape: (100, 100)
+10/22/2026 07:51:43 PM | INFO | Runtime: 0.18s
+10/22/2026 07:51:43 PM | INFO | Making prediction for file q000036.pdb (chain 'q000036')
+10/22/2026 07:51:43 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000036_renum.pdb -rA
+10/22/2026 07:51:44 PM | INFO | Distance matrix shape: (1, 58, 58), SS matrix shape: (58, 58)
+10/22/2026 07:51:44 PM | INFO | Runtime: 0.083s
+10/22/2026 07:51:44 PM | INFO | Making prediction for file q000051.pdb (chain 'q000051')
+10/22/2026 07:51:44 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000051_renum.pdb -rA
+10/22/2026 07:51:44 PM | INFO | Distance matrix shape: (1, 59, 59), SS matrix shape: (59, 59)
+10/22/2026 07:51:44 PM | INFO | Runtime: 0.085s
+10/22/2026 07:51:44 PM | INFO | Making prediction for file q000045.pdb (chain 'q000045')
+10/22/2026 07:51:44 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000045_renum.pdb -rA
+10/22/2026 07:51:44 PM | INFO | Distance matrix shape: (1, 58, 58), SS matrix shape: (58, 58)
+10/22/2026 07:51:44 PM | INFO | Runtime: 0.083s
+10/22/2026 07:51:44 PM | INFO | Making prediction for file q000044.pdb (chain 'q000044')
+10/22/2026 07:51:44 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000044_renum.pdb -rA
+10/22/2026 07:51:44 PM | INFO | Distance matrix shape: (1, 58, 58), SS matrix shape: (58, 58)
+10/22/2026 07:51:44 PM | INFO | Runtime: 0.084s
+10/22/2026 07:51:44 PM | INFO | Making prediction for file q000050.pdb (chain 'q000050')
+10/22/2026 07:51:44 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000050_renum.pdb -rA
+10/22/2026 07:51:44 PM | INFO | Distance matrix shape: (1, 96, 96), SS matrix shape: (96, 96)
+10/22/2026 07:51:44 PM | INFO | Runtime: 0.164s
+10/22/2026 07:51:44 PM | INFO | Making prediction for file q000046.pdb (chain 'q000046')
+10/22/2026 07:51:44 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000046_renum.pdb -rA
+10/22/2026 07:51:44 PM | INFO | Distance matrix shape: (1, 97, 97), SS matrix shape: (97, 97)
+10/22/2026 07:51:44 PM | INFO | Runtime: 0.212s
+10/22/2026 07:51:44 PM | INFO | Making prediction for file q000052.pdb (chain 'q000052')
+10/22/2026 07:51:44 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000052_renum.pdb -rA
+10/22/2026 07:51:44 PM | INFO | Distance matrix shape: (1, 59, 59), SS matrix shape: (59, 59)
+10/22/2026 07:51:44 PM | INFO | Runtime: 0.086s
+10/22/2026 07:51:44 PM | INFO | Making prediction for file q000053.pdb (chain 'q000053')
+10/22/2026 07:51:44 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000053_renum.pdb -rA
+10/22/2026 07:51:44 PM | INFO | Distance matrix shape: (1, 96, 96), SS matrix shape: (96, 96)
+10/22/2026 07:51:44 PM | INFO | Runtime: 0.163s
+10/22/2026 07:51:44 PM | INFO | Making prediction for file q000047.pdb (chain 'q000047')
+10/22/2026 07:51:44 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000047_renum.pdb -rA
+10/22/2026 07:51:44 PM | INFO | Distance matrix shape: (1, 58, 58), SS matrix shape: (58, 58)
+10/22/2026 07:51:45 PM | INFO | Runtime: 0.084s
+10/22/2026 07:51:45 PM | INFO | Making prediction for file q000043.pdb (chain 'q000043')
+10/22/2026 07:51:45 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000043_renum.pdb -rA
+10/22/2026 07:51:45 PM | INFO | Distance matrix shape: (1, 70, 70), SS matrix shape: (70, 70)
+10/22/2026 07:51:45 PM | INFO | Runtime: 0.103s
+10/22/2026 07:51:45 PM | INFO | Making prediction for file q000057.pdb (chain 'q000057')
+10/22/2026 07:51:45 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000057_renum.pdb -rA
+10/22/2026 07:51:45 PM | INFO | Distance matrix shape: (1, 63, 63), SS matrix shape: (63, 63)
+10/22/2026 07:51:45 PM | INFO | Runtime: 0.093s
+10/22/2026 07:51:45 PM | INFO | Making prediction for file q000056.pdb (chain 'q000056')
+10/22/2026 07:51:45 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000056_renum.pdb -rA
+10/22/2026 07:51:45 PM | INFO | Distance matrix shape: (1, 63, 63), SS matrix shape: (63, 63)
+10/22/2026 07:51:45 PM | INFO | Runtime: 0.091s
+10/22/2026 07:51:45 PM | INFO | Making prediction for file q000054.pdb (chain 'q000054')
+10/22/2026 07:51:45 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000054_renum.pdb -rA
+10/22/2026 07:51:45 PM | INFO | Distance matrix shape: (1, 59, 59), SS matrix shape: (59, 59)
+10/22/2026 07:51:45 PM | INFO | Runtime: 0.085s
+10/22/2026 07:51:45 PM | INFO | Making prediction for file q000040.pdb (chain 'q000040')
+10/22/2026 07:51:45 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000040_renum.pdb -rA
+10/22/2026 07:51:45 PM | INFO | Distance matrix shape: (1, 80, 80), SS matrix shape: (80, 80)
+10/22/2026 07:51:45 PM | INFO | Runtime: 0.122s
+10/22/2026 07:51:45 PM | INFO | Making prediction for file q000068.pdb (chain 'q000068')
+10/22/2026 07:51:45 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000068_renum.pdb -rA
+10/22/2026 07:51:45 PM | INFO | Distance matrix shape: (1, 95, 95), SS matrix shape: (95, 95)
+10/22/2026 07:51:45 PM | INFO | Runtime: 0.164s
+10/22/2026 07:51:45 PM | INFO | Making prediction for file q000069.pdb (chain 'q000069')
+10/22/2026 07:51:45 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000069_renum.pdb -rA
+10/22/2026 07:51:45 PM | INFO | Distance matrix shape: (1, 100, 100), SS matrix shape: (100, 100)
+10/22/2026 07:51:45 PM | INFO | Runtime: 0.18s
+10/22/2026 07:51:45 PM | INFO | Making prediction for file q000055.pdb (chain 'q000055')
+10/22/2026 07:51:45 PM | INFO | Running command: /Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/stride/stride /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/all/inputs/q000055_renum.pdb -rA
+10/22/2026 07:51:45 PM | INFO | Distance matrix shape: (1, 96, 96), SS matrix shape: (96, 96)
+10/22/2026 07:51:46 PM | INFO | Runtime: 0.167s
+10/22/2026 07:51:46 PM | INFO | DONE

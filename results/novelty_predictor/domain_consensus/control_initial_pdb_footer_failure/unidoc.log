@@ -1,0 +1,13 @@
+Processing chopping for q000074: 1-195
+Extracting residues 1:195 from /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/inputs/q000074.pdb
+Traceback (most recent call last):
+  File "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/unidoc/Run_UniDoc_from_scratch_structure_afdb.py", line 151, in <module>
+    main()
+  File "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/unidoc/Run_UniDoc_from_scratch_structure_afdb.py", line 73, in main
+    subprocess.check_output(f"{pdb_selres} -{resrng} {pdb_path} > {pdb_path_chopped} 2> /dev/null", shell=True)
+  File "/Users/ricardo/.local/share/uv/python/cpython-3.11.15-macos-aarch64-none/lib/python3.11/subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ricardo/.local/share/uv/python/cpython-3.11.15-macos-aarch64-none/lib/python3.11/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'pdb_selres -1:195 /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/inputs/q000074.pdb > /Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/inputs/q000074_chopped.pdb 2> /dev/null' returned non-zero exit status 1.

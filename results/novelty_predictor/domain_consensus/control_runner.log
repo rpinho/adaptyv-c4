@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/run_models.py", line 113, in <module>
+  File "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/run_models.py", line 93, in main
+    run('filter_'+method,[PY,SOURCE/'scripts/filter_domains.py',raw,'-o',filtered,
+  File "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/run_models.py", line 75, in run
+    'CUDA_VISIBLE_DEVICES':'','OMP_NUM_THREADS':'4','OPENBLAS_NUM_THREADS':'4','MKL_NUM_THREADS':'4','VECLIB_MAXIMUM_THREADS':'4'},
+  File "/Applications/Xcode-26.6.0.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/venv/bin/python', '/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/unidoc/Run_UniDoc_from_scratch_structure_afdb.py', '-l', '/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/targets.txt', '--out', '/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/raw_unidoc.txt', '--inherit_chopping', '/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/control/chopping_merizo.txt']' returned non-zero exit status 1.
