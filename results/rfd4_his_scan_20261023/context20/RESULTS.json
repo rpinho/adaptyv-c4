@@ -1,0 +1,1325 @@
+{
+  "state": "complete",
+  "inputs": 20,
+  "measured": 20,
+  "designs": [
+    {
+      "source_id": "tfr1_c200m_20261023__tfr1_apical_binder_126",
+      "shortlist_name": "tfr1_c200m_20261023__tfr1_apical_binder_126",
+      "fixture_name": "candidate_001",
+      "status": "measured",
+      "preparation": {
+        "source_sha256": "13186a8e4c16b5bbaad078039a8cf09a49925789527adc08bc25a5e2b2009047",
+        "crop_sha256": "dda2ed653bdeab56941c0e87f59f24be02538db7573d673bbb5b32f2ab1e6a5b",
+        "target_source_chain": "A",
+        "binder_source_chain": "B",
+        "mapped_target_residues": 195,
+        "author_range": [
+          189,
+          383
+        ],
+        "chain_identity_by_exact_sequence": true,
+        "source_coordinates_not_fitted_or_relaxed": true
+      },
+      "unchanged_gate": {
+        "design": "candidate_001",
+        "target_ca_rmsd": 0.272196239916971,
+        "aligned_target_residues": 195,
+        "restored_heavy_pair_clashes_under2A": 0,
+        "restored_clashing_residues": 0,
+        "restored_min_heavy_distance": 22.500661808337373,
+        "restored_backbone_pair_clashes_under2A": 0,
+        "restored_backbone_min_distance": 25.416425141654006,
+        "rigid_context_pass": true,
+        "source_sha256": "6471c6003714a9910b2e224db0fdf6a763c74845fd3ca8c3668bb2a73479aafa",
+        "clashing_residues": [],
+        "backbone_clashing_residues": []
+      },
+      "omitted_context_rigid_pass": true,
+      "full_native_staging_pass": true,
+      "staging": {
+        "residues": 195,
+        "author_range": [
+          189,
+          383
+        ],
+        "native_sequence_verified": true,
+        "minimum_peptide_CN_A": 1.2497555017471313,
+        "maximum_peptide_CN_A": 1.4629278182983398,
+        "stage": "restored_staging_only",
+        "source_sha256": "dda2ed653bdeab56941c0e87f59f24be02538db7573d673bbb5b32f2ab1e6a5b",
+        "native_template_sha256": "4eaa5db67ed83a896713c4b42d1dc214c778bdac240fdf3a9a82e86a66f79495",
+        "output_sha256": "418ee5f03c5892096a0d456a4b8bd775d181bdfd5a17fa77d5d0dd8ef766a3d4",
+        "alignment_residues": 195,
+        "domain_CA_rmsd_A": 0.2721962376067112,
+        "patch_CA_rmsd_A": 0.37078280057851687,
+        "maximum_domain_CA_displacement_A": 0.9663131424171918,
+        "minimum_binder_full_target_backbone_distance_A": 3.1999991584587297,
+        "observed_NAG_min_distance_A": 18.086062247478274,
+        "restored_target_residues": 1278,
+        "rotation_determinant": 1.0000000000000007,
+        "qualified_candidate": false,
+        "requires_native_full_context_refold": true,
+        "limitations": [
+          "Rigid context restoration is not native-complex prediction or binding validation",
+          "No pH scoring allowed before native refolding and existing admission gates",
+          "Observed NAG clearance checked; glycans are not retained in output PDB",
+          "Human only; residue121/unresolved glycans/assay tag absent"
+        ]
+      }
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_70",
+      "shortlist_name": "tfr1_his020_200m_20261023__tfr1_apical_his_70",
+      "fixture_name": "candidate_002",
+      "status": "measured",
+      "preparation": {
+        "source_sha256": "2286fcd1f71d17b5f089637889bc797749b7c66bbd3e9fe779a960c85b05cc92",
+        "crop_sha256": "fade042d400e820e55b06b07c48beb4ed69f1315a063572b80aac69a554b15a3",
+        "target_source_chain": "A",
+        "binder_source_chain": "B",
+        "mapped_target_residues": 195,
+        "author_range": [
+          189,
+          383
+        ],
+        "chain_identity_by_exact_sequence": true,
+        "source_coordinates_not_fitted_or_relaxed": true
+      },
+      "unchanged_gate": {
+        "design": "candidate_002",
+        "target_ca_rmsd": 0.3065813350924094,
+        "aligned_target_residues": 195,
+        "restored_heavy_pair_clashes_under2A": 0,
+        "restored_clashing_residues": 0,
+        "restored_min_heavy_distance": 17.707893457862035,
+        "restored_backbone_pair_clashes_under2A": 0,
+        "restored_backbone_min_distance": 25.546969318975496,
+        "rigid_context_pass": true,
+        "source_sha256": "38cc62b618e7245bb811f6db74dc7082563bcd5f14e2683d055c74f80e9eb732",
+        "clashing_residues": [],
+        "backbone_clashing_residues": []
+      },
+      "omitted_context_rigid_pass": true,
+      "full_native_staging_pass": true,
+      "staging": {
+        "residues": 195,
+        "author_range": [
+          189,
+          383
+        ],
+        "native_sequence_verified": true,
+        "minimum_peptide_CN_A": 1.2085895538330078,
+        "maximum_peptide_CN_A": 1.521191120147705,
+        "stage": "restored_staging_only",
+        "source_sha256": "fade042d400e820e55b06b07c48beb4ed69f1315a063572b80aac69a554b15a3",
+        "native_template_sha256": "4eaa5db67ed83a896713c4b42d1dc214c778bdac240fdf3a9a82e86a66f79495",
+        "output_sha256": "5b08cec1555348ded3bfb2db6a43de41720b349c44049082b83784608479dcdf",
+        "alignment_residues": 195,
+        "domain_CA_rmsd_A": 0.30658158473804903,
+        "patch_CA_rmsd_A": 0.30778296340761063,
+        "maximum_domain_CA_displacement_A": 1.394489478379342,
+        "minimum_binder_full_target_backbone_distance_A": 3.1423305000624078,
+        "observed_NAG_min_distance_A": 17.563257584531456,
+        "restored_target_residues": 1278,
+        "rotation_determinant": 0.9999999999999988,
+        "qualified_candidate": false,
+        "requires_native_full_context_refold": true,
+        "limitations": [
+          "Rigid context restoration is not native-complex prediction or binding validation",
+          "No pH scoring allowed before native refolding and existing admission gates",
+          "Observed NAG clearance checked; glycans are not retained in output PDB",
+          "Human only; residue121/unresolved glycans/assay tag absent"
+        ]
+      }
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_86",
+      "shortlist_name": "tfr1_his020_200m_20261023__tfr1_apical_his_86",
+      "fixture_name": "candidate_003",
+      "status": "measured",
+      "preparation": {
+        "source_sha256": "648853eda3e767d3467f6162c7026143987f6f1e628dba65e7820fea62afc346",
+        "crop_sha256": "49f14784ce4619853106e6af5575f1dbcd745122bf090539ac75b9d8687de50d",
+        "target_source_chain": "A",
+        "binder_source_chain": "B",
+        "mapped_target_residues": 195,
+        "author_range": [
+          189,
+          383
+        ],
+        "chain_identity_by_exact_sequence": true,
+        "source_coordinates_not_fitted_or_relaxed": true
+      },
+      "unchanged_gate": {
+        "design": "candidate_003",
+        "target_ca_rmsd": 0.30647260700483125,
+        "aligned_target_residues": 195,
+        "restored_heavy_pair_clashes_under2A": 0,
+        "restored_clashing_residues": 0,
+        "restored_min_heavy_distance": 23.69791466573197,
+        "restored_backbone_pair_clashes_under2A": 0,
+        "restored_backbone_min_distance": 28.475726229631356,
+        "rigid_context_pass": true,
+        "source_sha256": "2cc33bae45c3c90581468596814c568b1d0d89f680f8327c32d8d407485ddb0b",
+        "clashing_residues": [],
+        "backbone_clashing_residues": []
+      },
+      "omitted_context_rigid_pass": true,
+      "full_native_staging_pass": true,
+      "staging": {
+        "residues": 195,
+        "author_range": [
+          189,
+          383
+        ],
+        "native_sequence_verified": true,
+        "minimum_peptide_CN_A": 1.176452398300171,
+        "maximum_peptide_CN_A": 1.4824155569076538,
+        "stage": "restored_staging_only",
+        "source_sha256": "49f14784ce4619853106e6af5575f1dbcd745122bf090539ac75b9d8687de50d",
+        "native_template_sha256": "4eaa5db67ed83a896713c4b42d1dc214c778bdac240fdf3a9a82e86a66f79495",
+        "output_sha256": "9a2b9b7e19121dae3c162e6b9688746ca035abbbe9a8c0613bfadd3427f37246",
+        "alignment_residues": 195,
+        "domain_CA_rmsd_A": 0.30647211339016106,
+        "patch_CA_rmsd_A": 0.5650732676770162,
+        "maximum_domain_CA_displacement_A": 1.2893190551585294,
+        "minimum_binder_full_target_backbone_distance_A": 3.013480920822591,
+        "observed_NAG_min_distance_A": 17.739439948482506,
+        "restored_target_residues": 1278,
+        "rotation_determinant": 1.000000000000002,
+        "qualified_candidate": false,
+        "requires_native_full_context_refold": true,
+        "limitations": [
+          "Rigid context restoration is not native-complex prediction or binding validation",
+          "No pH scoring allowed before native refolding and existing admission gates",
+          "Observed NAG clearance checked; glycans are not retained in output PDB",
+          "Human only; residue121/unresolved glycans/assay tag absent"
+        ]
+      }
+    },
+    {
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_115",
+      "shortlist_name": "tfr1_his030_200m_20261023__tfr1_apical_his_115",
+      "fixture_name": "candidate_004",
+      "status": "measured",
+      "preparation": {
+        "source_sha256": "a6bae1eb9dcd7ba847591e15d2e4b5458b6610452793e265a8e8e72a328a5975",
+        "crop_sha256": "2a8d4158312edb2805c8c573fb61c86002c8c026ce370ea00b1764a9aa22b7dd",
+        "target_source_chain": "A",
+        "binder_source_chain": "B",
+        "mapped_target_residues": 195,
+        "author_range": [
+          189,
+          383
+        ],
+        "chain_identity_by_exact_sequence": true,
+        "source_coordinates_not_fitted_or_relaxed": true
+      },
+      "unchanged_gate": {
+        "design": "candidate_004",
+        "target_ca_rmsd": 0.3128650421146687,
+        "aligned_target_residues": 195,
+        "restored_heavy_pair_clashes_under2A": 0,
+        "restored_clashing_residues": 0,
+        "restored_min_heavy_distance": 19.871099439568336,
+        "restored_backbone_pair_clashes_under2A": 0,
+        "restored_backbone_min_distance": 25.264877101217984,
+        "rigid_context_pass": true,
+        "source_sha256": "58f26e2011d2c49e771ddb3d45f34642233da81b036cd147fce9deb942158cd2",
+        "clashing_residues": [],
+        "backbone_clashing_residues": []
+      },
+      "omitted_context_rigid_pass": true,
+      "full_native_staging_pass": true,
+      "staging": {
+        "residues": 195,
+        "author_range": [
+          189,
+          383
+        ],
+        "native_sequence_verified": true,
+        "minimum_peptide_CN_A": 1.1987284421920776,
+        "maximum_peptide_CN_A": 1.4672019481658936,
+        "stage": "restored_staging_only",
+        "source_sha256": "2a8d4158312edb2805c8c573fb61c86002c8c026ce370ea00b1764a9aa22b7dd",
+        "native_template_sha256": "4eaa5db67ed83a896713c4b42d1dc214c778bdac240fdf3a9a82e86a66f79495",
+        "output_sha256": "29db68f86c844c2d41e7e562ca879fc25f75d150b49d5bfc9a7a6a235bae06f1",
+        "alignment_residues": 195,
+        "domain_CA_rmsd_A": 0.3128652340240827,
+        "patch_CA_rmsd_A": 0.3571819387570856,
+        "maximum_domain_CA_displacement_A": 1.2611530334624,
+        "minimum_binder_full_target_backbone_distance_A": 5.66938023291043,
+        "observed_NAG_min_distance_A": 15.716077106155582,
+        "restored_target_residues": 1278,
+        "rotation_determinant": 1.0000000000000018,
+        "qualified_candidate": false,
+        "requires_native_full_context_refold": true,
+        "limitations": [
+          "Rigid context restoration is not native-complex prediction or binding validation",
+          "No pH scoring allowed before native refolding and existing admission gates",
+          "Observed NAG clearance checked; glycans are not retained in output PDB",
+          "Human only; residue121/unresolved glycans/assay tag absent"
+        ]
+      }
+    },
+    {
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_121",
+      "shortlist_name": "tfr1_his030_200m_20261023__tfr1_apical_his_121",
+      "fixture_name": "candidate_005",
+      "status": "measured",
+      "preparation": {
+        "source_sha256": "4ca83a40c1f248823f28f81983af39674532494fb22e8bf5a9670bfed3141942",
+        "crop_sha256": "6c9dbe09bb9f6f834700ea19832d097add9ee60869bb2f68a29dac81fbd7d3cc",
+        "target_source_chain": "A",
+        "binder_source_chain": "B",
+        "mapped_target_residues": 195,
+        "author_range": [
+          189,
+          383
+        ],
+        "chain_identity_by_exact_sequence": true,
+        "source_coordinates_not_fitted_or_relaxed": true
+      },
+      "unchanged_gate": {
+        "design": "candidate_005",
+        "target_ca_rmsd": 0.3340680831611677,
+        "aligned_target_residues": 195,
+        "restored_heavy_pair_clashes_under2A": 0,
+        "restored_clashing_residues": 0,
+        "restored_min_heavy_distance": 26.473612360914256,
+        "restored_backbone_pair_clashes_under2A": 0,
+        "restored_backbone_min_distance": 29.496226214265725,
+        "rigid_context_pass": true,
+        "source_sha256": "57ca9a2bd3e6a65a8c343fb39b41ae2a3469fa0535abbc1fb0e830077a83643a",
+        "clashing_residues": [],
+        "backbone_clashing_residues": []
+      },
+      "omitted_context_rigid_pass": true,
+      "full_native_staging_pass": true,
+      "staging": {
+        "residues": 195,
+        "author_range": [
+          189,
+          383
+        ],
+        "native_sequence_verified": true,
+        "minimum_peptide_CN_A": 1.1933554410934448,
+        "maximum_peptide_CN_A": 1.528026819229126,
+        "stage": "restored_staging_only",
+        "source_sha256": "6c9dbe09bb9f6f834700ea19832d097add9ee60869bb2f68a29dac81fbd7d3cc",
+        "native_template_sha256": "4eaa5db67ed83a896713c4b42d1dc214c778bdac240fdf3a9a82e86a66f79495",
+        "output_sha256": "411e53467e2ed8d138bb36585990f00f08fa1d86f70805b9cbeb2d19b229e6fb",
+        "alignment_residues": 195,
+        "domain_CA_rmsd_A": 0.33406816064746436,
+        "patch_CA_rmsd_A": 0.44680118429944854,
+        "maximum_domain_CA_displacement_A": 1.4261065111796263,
+        "minimum_binder_full_target_backbone_distance_A": 5.498983133858285,
+        "observed_NAG_min_distance_A": 16.9111002787819,
+        "restored_target_residues": 1278,
+        "rotation_determinant": 1.0000000000000007,
+        "qualified_candidate": false,
+        "requires_native_full_context_refold": true,
+        "limitations": [
+          "Rigid context restoration is not native-complex prediction or binding validation",
+          "No pH scoring allowed before native refolding and existing admission gates",
+          "Observed NAG clearance checked; glycans are not retained in output PDB",
+          "Human only; residue121/unresolved glycans/assay tag absent"
+        ]
+      }
+    },
+    {
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_144",
+      "shortlist_name": "tfr1_his030_200m_20261023__tfr1_apical_his_144",
+      "fixture_name": "candidate_006",
+      "status": "measured",
+      "preparation": {
+        "source_sha256": "fef09c2b8f321a136747b5e3fc20d8225f34af275e136f8959122d8c88b08b5a",
+        "crop_sha256": "285132b5304132f6117a6f3cd341b778f2d4195221dbd848cc1eff4704d1333d",
+        "target_source_chain": "A",
+        "binder_source_chain": "B",
+        "mapped_target_residues": 195,
+        "author_range": [
+          189,
+          383
+        ],
+        "chain_identity_by_exact_sequence": true,
+        "source_coordinates_not_fitted_or_relaxed": true
+      },
+      "unchanged_gate": {
+        "design": "candidate_006",
+        "target_ca_rmsd": 0.27784502521055393,
+        "aligned_target_residues": 195,
+        "restored_heavy_pair_clashes_under2A": 0,
+        "restored_clashing_residues": 0,
+        "restored_min_heavy_distance": 20.735808184282593,
+        "restored_backbone_pair_clashes_under2A": 0,
+        "restored_backbone_min_distance": 25.829375829841034,
+        "rigid_context_pass": true,
+        "source_sha256": "3746c07f74a13995c5ee538e8ead13066ddf8f464c358e54a4815ac9a7df4063",
+        "clashing_residues": [],
+        "backbone_clashing_residues": []
+      },
+      "omitted_context_rigid_pass": true,
+      "full_native_staging_pass": true,
+      "staging": {
+        "residues": 195,
+        "author_range": [
+          189,
+          383
+        ],
+        "native_sequence_verified": true,
+        "minimum_peptide_CN_A": 1.1884806156158447,
+        "maximum_peptide_CN_A": 1.4583178758621216,
+        "stage": "restored_staging_only",
+        "source_sha256": "285132b5304132f6117a6f3cd341b778f2d4195221dbd848cc1eff4704d1333d",
+        "native_template_sha256": "4eaa5db67ed83a896713c4b42d1dc214c778bdac240fdf3a9a82e86a66f79495",
+        "output_sha256": "31ed14279a1d79657b519286d389107d4cc2d42a946cfb844c4cb876a26646d0",
+        "alignment_residues": 195,
+        "domain_CA_rmsd_A": 0.27784478219315245,
+        "patch_CA_rmsd_A": 0.4295245466023588,
+        "maximum_domain_CA_displacement_A": 1.1949988340769393,
+        "minimum_binder_full_target_backbone_distance_A": 4.551122603828516,
+        "observed_NAG_min_distance_A": 12.05461629119269,
+        "restored_target_residues": 1278,
+        "rotation_determinant": 0.9999999999999991,
+        "qualified_candidate": false,
+        "requires_native_full_context_refold": true,
+        "limitations": [
+          "Rigid context restoration is not native-complex prediction or binding validation",
+          "No pH scoring allowed before native refolding and existing admission gates",
+          "Observed NAG clearance checked; glycans are not retained in output PDB",
+          "Human only; residue121/unresolved glycans/assay tag absent"
+        ]
+      }
+    },
+    {
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_169",
+      "shortlist_name": "tfr1_his030_200m_20261023__tfr1_apical_his_169",
+      "fixture_name": "candidate_007",
+      "status": "measured",
+      "preparation": {
+        "source_sha256": "0cf54af7ad1c56b2080509c398670ae706cb2b5a6da7f3964760a0f377e06ef5",
+        "crop_sha256": "d2790b9c9eee94a0e232e8e1fd89cd041549fe8b7774d6603ddd70b0ff9adec4",
+        "target_source_chain": "A",
+        "binder_source_chain": "B",
+        "mapped_target_residues": 195,
+        "author_range": [
+          189,
+          383
+        ],
+        "chain_identity_by_exact_sequence": true,
+        "source_coordinates_not_fitted_or_relaxed": true
+      },
+      "unchanged_gate": {
+        "design": "candidate_007",
+        "target_ca_rmsd": 0.25793849963756627,
+        "aligned_target_residues": 195,
+        "restored_heavy_pair_clashes_under2A": 0,
+        "restored_clashing_residues": 0,
+        "restored_min_heavy_distance": 25.430299959930526,
+        "restored_backbone_pair_clashes_under2A": 0,
+        "restored_backbone_min_distance": 27.92561122968145,
+        "rigid_context_pass": true,
+        "source_sha256": "43408c3dc6af536c6441ffc9786e44d086fc3f08eaaad36fed92a673b6aedce9",
+        "clashing_residues": [],
+        "backbone_clashing_residues": []
+      },
+      "omitted_context_rigid_pass": true,
+      "full_native_staging_pass": true,
+      "staging": {
+        "residues": 195,
+        "author_range": [
+          189,
+          383
+        ],
+        "native_sequence_verified": true,
+        "minimum_peptide_CN_A": 1.1569455862045288,
+        "maximum_peptide_CN_A": 1.4528427124023438,
+        "stage": "restored_staging_only",
+        "source_sha256": "d2790b9c9eee94a0e232e8e1fd89cd041549fe8b7774d6603ddd70b0ff9adec4",
+        "native_template_sha256": "4eaa5db67ed83a896713c4b42d1dc214c778bdac240fdf3a9a82e86a66f79495",
+        "output_sha256": "645ac2be2be296316b2311d0f184330e09ae9ee68146e2e1eee5ddc768fa292c",
+        "alignment_residues": 195,
+        "domain_CA_rmsd_A": 0.2579384247628605,
+        "patch_CA_rmsd_A": 0.46351181080621384,
+        "maximum_domain_CA_displacement_A": 0.8486458769382594,
+        "minimum_binder_full_target_backbone_distance_A": 3.1757155452761094,
+        "observed_NAG_min_distance_A": 17.05902136729782,
+        "restored_target_residues": 1278,
+        "rotation_determinant": 0.9999999999999997,
+        "qualified_candidate": false,
+        "requires_native_full_context_refold": true,
+        "limitations": [
+          "Rigid context restoration is not native-complex prediction or binding validation",
+          "No pH scoring allowed before native refolding and existing admission gates",
+          "Observed NAG clearance checked; glycans are not retained in output PDB",
+          "Human only; residue121/unresolved glycans/assay tag absent"
+        ]
+      }
+    },
+    {
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_23",
+      "shortlist_name": "tfr1_his030_200m_20261023__tfr1_apical_his_23",
+      "fixture_name": "candidate_008",
+      "status": "measured",
+      "preparation": {
+        "source_sha256": "456f8061b6a953819e97eb22c8fa499107b18a828477e6c306f3e7c4c9e552d1",
+        "crop_sha256": "dbf879fcf4ac610ebe366ef22f2ae70482846134e3f8f95c530dd4b44db90563",
+        "target_source_chain": "A",
+        "binder_source_chain": "B",
+        "mapped_target_residues": 195,
+        "author_range": [
+          189,
+          383
+        ],
+        "chain_identity_by_exact_sequence": true,
+        "source_coordinates_not_fitted_or_relaxed": true
+      },
+      "unchanged_gate": {
+        "design": "candidate_008",
+        "target_ca_rmsd": 0.27742163806616715,
+        "aligned_target_residues": 195,
+        "restored_heavy_pair_clashes_under2A": 0,
+        "restored_clashing_residues": 0,
+        "restored_min_heavy_distance": 19.958688655174633,
+        "restored_backbone_pair_clashes_under2A": 0,
+        "restored_backbone_min_distance": 24.066764871075527,
+        "rigid_context_pass": true,
+        "source_sha256": "4713e4b6c2cbe00ab8a17274835cc366cc85b399bbe9f2b71575db8a840f2640",
+        "clashing_residues": [],
+        "backbone_clashing_residues": []
+      },
+      "omitted_context_rigid_pass": true,
+      "full_native_staging_pass": true,
+      "staging": {
+        "residues": 195,
+        "author_range": [
+          189,
+          383
+        ],
+        "native_sequence_verified": true,
+        "minimum_peptide_CN_A": 1.2134157419204712,
+        "maximum_peptide_CN_A": 1.5256282091140747,
+        "stage": "restored_staging_only",
+        "source_sha256": "dbf879fcf4ac610ebe366ef22f2ae70482846134e3f8f95c530dd4b44db90563",
+        "native_template_sha256": "4eaa5db67ed83a896713c4b42d1dc214c778bdac240fdf3a9a82e86a66f79495",
+        "output_sha256": "a9f6e626e8c25be93de1d897b80c52769efb6e6fa909b085dd5e96b5d3cffd99",
+        "alignment_residues": 195,
+        "domain_CA_rmsd_A": 0.27742181636250196,
+        "patch_CA_rmsd_A": 0.5133385898685222,
+        "maximum_domain_CA_displacement_A": 1.1460329552975772,
+        "minimum_binder_full_target_backbone_distance_A": 3.3431227604900595,
+        "observed_NAG_min_distance_A": 17.22371187604999,
+        "restored_target_residues": 1278,
+        "rotation_determinant": 0.9999999999999996,
+        "qualified_candidate": false,
+        "requires_native_full_context_refold": true,
+        "limitations": [
+          "Rigid context restoration is not native-complex prediction or binding validation",
+          "No pH scoring allowed before native refolding and existing admission gates",
+          "Observed NAG clearance checked; glycans are not retained in output PDB",
+          "Human only; residue121/unresolved glycans/assay tag absent"
+        ]
+      }
+    },
+    {
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_64",
+      "shortlist_name": "tfr1_his030_200m_20261023__tfr1_apical_his_64",
+      "fixture_name": "candidate_009",
+      "status": "measured",
+      "preparation": {
+        "source_sha256": "170f91ffacdd7d04c82202aa156389ac2446fbda4b374fc198ded83948301b03",
+        "crop_sha256": "c000387658ff156a26073019a28f88de146ab455b271644242e459c1c11a49e3",
+        "target_source_chain": "A",
+        "binder_source_chain": "B",
+        "mapped_target_residues": 195,
+        "author_range": [
+          189,
+          383
+        ],
+        "chain_identity_by_exact_sequence": true,
+        "source_coordinates_not_fitted_or_relaxed": true
+      },
+      "unchanged_gate": {
+        "design": "candidate_009",
+        "target_ca_rmsd": 0.257687528454195,
+        "aligned_target_residues": 195,
+        "restored_heavy_pair_clashes_under2A": 0,
+        "restored_clashing_residues": 0,
+        "restored_min_heavy_distance": 24.375811098573045,
+        "restored_backbone_pair_clashes_under2A": 0,
+        "restored_backbone_min_distance": 29.528137239955484,
+        "rigid_context_pass": true,
+        "source_sha256": "7498121af3d32a7a7087224e2cd24127b702fd00582318f3f099b72ac00c0c4a",
+        "clashing_residues": [],
+        "backbone_clashing_residues": []
+      },
+      "omitted_context_rigid_pass": true,
+      "full_native_staging_pass": true,
+      "staging": {
+        "residues": 195,
+        "author_range": [
+          189,
+          383
+        ],
+        "native_sequence_verified": true,
+        "minimum_peptide_CN_A": 1.2014946937561035,
+        "maximum_peptide_CN_A": 1.489202618598938,
+        "stage": "restored_staging_only",
+        "source_sha256": "c000387658ff156a26073019a28f88de146ab455b271644242e459c1c11a49e3",
+        "native_template_sha256": "4eaa5db67ed83a896713c4b42d1dc214c778bdac240fdf3a9a82e86a66f79495",
+        "output_sha256": "812e885c12eb21c2f66ba3f8431bbc1c7a2b5cdb21242c9d4c69122178d5dd75",
+        "alignment_residues": 195,
+        "domain_CA_rmsd_A": 0.25768772161432274,
+        "patch_CA_rmsd_A": 0.49275318656299166,
+        "maximum_domain_CA_displacement_A": 0.9447001809175674,
+        "minimum_binder_full_target_backbone_distance_A": 5.117899843378805,
+        "observed_NAG_min_distance_A": 16.764612997727685,
+        "restored_target_residues": 1278,
+        "rotation_determinant": 1.0000000000000013,
+        "qualified_candidate": false,
+        "requires_native_full_context_refold": true,
+        "limitations": [
+          "Rigid context restoration is not native-complex prediction or binding validation",
+          "No pH scoring allowed before native refolding and existing admission gates",
+          "Observed NAG clearance checked; glycans are not retained in output PDB",
+          "Human only; residue121/unresolved glycans/assay tag absent"
+        ]
+      }
+    },
+    {
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_68",
+      "shortlist_name": "tfr1_his030_200m_20261023__tfr1_apical_his_68",
+      "fixture_name": "candidate_010",
+      "status": "measured",
+      "preparation": {
+        "source_sha256": "73c32199f36e8d26c67067a26cd74c260a1a9102219a14e4b1cdbe2ac24cb06b",
+        "crop_sha256": "367100a2051e65f4b2be76f2b323a3449cd40beab53f55aca90e51aab996452f",
+        "target_source_chain": "A",
+        "binder_source_chain": "B",
+        "mapped_target_residues": 195,
+        "author_range": [
+          189,
+          383
+        ],
+        "chain_identity_by_exact_sequence": true,
+        "source_coordinates_not_fitted_or_relaxed": true
+      },
+      "unchanged_gate": {
+        "design": "candidate_010",
+        "target_ca_rmsd": 0.26810976514387735,
+        "aligned_target_residues": 195,
+        "restored_heavy_pair_clashes_under2A": 0,
+        "restored_clashing_residues": 0,
+        "restored_min_heavy_distance": 23.675529993734745,
+        "restored_backbone_pair_clashes_under2A": 0,
+        "restored_backbone_min_distance": 25.437795566564912,
+        "rigid_context_pass": true,
+        "source_sha256": "dc672392738d71ab61eb58ace1c55d568c6de493ddb54ab09b825149c6f432bf",
+        "clashing_residues": [],
+        "backbone_clashing_residues": []
+      },
+      "omitted_context_rigid_pass": true,
+      "full_native_staging_pass": true,
+      "staging": {
+        "residues": 195,
+        "author_range": [
+          189,
+          383
+        ],
+        "native_sequence_verified": true,
+        "minimum_peptide_CN_A": 1.1275478601455688,
+        "maximum_peptide_CN_A": 1.4583722352981567,
+        "stage": "restored_staging_only",
+        "source_sha256": "367100a2051e65f4b2be76f2b323a3449cd40beab53f55aca90e51aab996452f",
+        "native_template_sha256": "4eaa5db67ed83a896713c4b42d1dc214c778bdac240fdf3a9a82e86a66f79495",
+        "output_sha256": "b1a0e6d8688dc403eb7f8ed0bf6d80f5f596cad1468bf376d24b752d39115420",
+        "alignment_residues": 195,
+        "domain_CA_rmsd_A": 0.2681096824771921,
+        "patch_CA_rmsd_A": 0.44587380910755986,
+        "maximum_domain_CA_displacement_A": 1.0915035558246116,
+        "minimum_binder_full_target_backbone_distance_A": 3.0950723160157243,
+        "observed_NAG_min_distance_A": 17.240980306118615,
+        "restored_target_residues": 1278,
+        "rotation_determinant": 0.9999999999999978,
+        "qualified_candidate": false,
+        "requires_native_full_context_refold": true,
+        "limitations": [
+          "Rigid context restoration is not native-complex prediction or binding validation",
+          "No pH scoring allowed before native refolding and existing admission gates",
+          "Observed NAG clearance checked; glycans are not retained in output PDB",
+          "Human only; residue121/unresolved glycans/assay tag absent"
+        ]
+      }
+    },
+    {
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_70",
+      "shortlist_name": "tfr1_his030_200m_20261023__tfr1_apical_his_70",
+      "fixture_name": "candidate_011",
+      "status": "measured",
+      "preparation": {
+        "source_sha256": "fdfb477b0a235a904df844e7599c4d59926c3027c14468d2085dd2745b37eb61",
+        "crop_sha256": "04cc60e06f032da5d0b41f999e38b3c6d1cabacdaada074b7d311aa3fa6efba6",
+        "target_source_chain": "A",
+        "binder_source_chain": "B",
+        "mapped_target_residues": 195,
+        "author_range": [
+          189,
+          383
+        ],
+        "chain_identity_by_exact_sequence": true,
+        "source_coordinates_not_fitted_or_relaxed": true
+      },
+      "unchanged_gate": {
+        "design": "candidate_011",
+        "target_ca_rmsd": 0.3016812664715214,
+        "aligned_target_residues": 195,
+        "restored_heavy_pair_clashes_under2A": 0,
+        "restored_clashing_residues": 0,
+        "restored_min_heavy_distance": 17.734370145997975,
+        "restored_backbone_pair_clashes_under2A": 0,
+        "restored_backbone_min_distance": 25.60976827388527,
+        "rigid_context_pass": true,
+        "source_sha256": "5dde6e42e45d4a23d7c29959083cdd3f01b7005e7423702bd2e2cbf3b2fc5783",
+        "clashing_residues": [],
+        "backbone_clashing_residues": []
+      },
+      "omitted_context_rigid_pass": true,
+      "full_native_staging_pass": true,
+      "staging": {
+        "residues": 195,
+        "author_range": [
+          189,
+          383
+        ],
+        "native_sequence_verified": true,
+        "minimum_peptide_CN_A": 1.1929540634155273,
+        "maximum_peptide_CN_A": 1.5106648206710815,
+        "stage": "restored_staging_only",
+        "source_sha256": "04cc60e06f032da5d0b41f999e38b3c6d1cabacdaada074b7d311aa3fa6efba6",
+        "native_template_sha256": "4eaa5db67ed83a896713c4b42d1dc214c778bdac240fdf3a9a82e86a66f79495",
+        "output_sha256": "4b96faab69274841100ad12b8385240f7bbf9c6c421ab64809f59dccd1be6dee",
+        "alignment_residues": 195,
+        "domain_CA_rmsd_A": 0.3016813604602605,
+        "patch_CA_rmsd_A": 0.2972539366320053,
+        "maximum_domain_CA_displacement_A": 1.3828427026020467,
+        "minimum_binder_full_target_backbone_distance_A": 3.15524261192072,
+        "observed_NAG_min_distance_A": 17.599694476117076,
+        "restored_target_residues": 1278,
+        "rotation_determinant": 0.9999999999999997,
+        "qualified_candidate": false,
+        "requires_native_full_context_refold": true,
+        "limitations": [
+          "Rigid context restoration is not native-complex prediction or binding validation",
+          "No pH scoring allowed before native refolding and existing admission gates",
+          "Observed NAG clearance checked; glycans are not retained in output PDB",
+          "Human only; residue121/unresolved glycans/assay tag absent"
+        ]
+      }
+    },
+    {
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_77",
+      "shortlist_name": "tfr1_his030_200m_20261023__tfr1_apical_his_77",
+      "fixture_name": "candidate_012",
+      "status": "measured",
+      "preparation": {
+        "source_sha256": "b80a3ccb766f6bffb93b01fe910a0c9a88af2faa2938faed2950f362b7961137",
+        "crop_sha256": "eced991899334eeed843b9e3f466be8cc00209bca73c0bdca5fda5a2a3ff30b8",
+        "target_source_chain": "A",
+        "binder_source_chain": "B",
+        "mapped_target_residues": 195,
+        "author_range": [
+          189,
+          383
+        ],
+        "chain_identity_by_exact_sequence": true,
+        "source_coordinates_not_fitted_or_relaxed": true
+      },
+      "unchanged_gate": {
+        "design": "candidate_012",
+        "target_ca_rmsd": 0.2698064044739348,
+        "aligned_target_residues": 195,
+        "restored_heavy_pair_clashes_under2A": 0,
+        "restored_clashing_residues": 0,
+        "restored_min_heavy_distance": 19.729215414979574,
+        "restored_backbone_pair_clashes_under2A": 0,
+        "restored_backbone_min_distance": 23.58033401805619,
+        "rigid_context_pass": true,
+        "source_sha256": "70b3b7aeddbdc9e26833ba49baed16461682d690e8965b3134d3de10990ec127",
+        "clashing_residues": [],
+        "backbone_clashing_residues": []
+      },
+      "omitted_context_rigid_pass": true,
+      "full_native_staging_pass": true,
+      "staging": {
+        "residues": 195,
+        "author_range": [
+          189,
+          383
+        ],
+        "native_sequence_verified": true,
+        "minimum_peptide_CN_A": 1.2076444625854492,
+        "maximum_peptide_CN_A": 1.5485464334487915,
+        "stage": "restored_staging_only",
+        "source_sha256": "eced991899334eeed843b9e3f466be8cc00209bca73c0bdca5fda5a2a3ff30b8",
+        "native_template_sha256": "4eaa5db67ed83a896713c4b42d1dc214c778bdac240fdf3a9a82e86a66f79495",
+        "output_sha256": "12b61c8f1371b99357eb4d4517685c2969dcc1a3fa43c56ebc9f36941a1053bf",
+        "alignment_residues": 195,
+        "domain_CA_rmsd_A": 0.26980631255761706,
+        "patch_CA_rmsd_A": 0.3973429748532194,
+        "maximum_domain_CA_displacement_A": 1.1305435707181346,
+        "minimum_binder_full_target_backbone_distance_A": 4.763267962070773,
+        "observed_NAG_min_distance_A": 16.555979248276543,
+        "restored_target_residues": 1278,
+        "rotation_determinant": 0.9999999999999993,
+        "qualified_candidate": false,
+        "requires_native_full_context_refold": true,
+        "limitations": [
+          "Rigid context restoration is not native-complex prediction or binding validation",
+          "No pH scoring allowed before native refolding and existing admission gates",
+          "Observed NAG clearance checked; glycans are not retained in output PDB",
+          "Human only; residue121/unresolved glycans/assay tag absent"
+        ]
+      }
+    },
+    {
+      "source_id": "tfr1_his200m_20261023__tfr1_apical_his_148",
+      "shortlist_name": "tfr1_his200m_20261023__tfr1_apical_his_148",
+      "fixture_name": "candidate_013",
+      "status": "measured",
+      "preparation": {
+        "source_sha256": "33dbc65b858187b11c959115097fbb8d21a2f33196079ada19d2313c3ac91c56",
+        "crop_sha256": "32ea4eec922929e4f2fbb3681600ad23c0fbb34a6240cbf0d7a2e18446a39769",
+        "target_source_chain": "A",
+        "binder_source_chain": "B",
+        "mapped_target_residues": 195,
+        "author_range": [
+          189,
+          383
+        ],
+        "chain_identity_by_exact_sequence": true,
+        "source_coordinates_not_fitted_or_relaxed": true
+      },
+      "unchanged_gate": {
+        "design": "candidate_013",
+        "target_ca_rmsd": 0.2999948647624627,
+        "aligned_target_residues": 195,
+        "restored_heavy_pair_clashes_under2A": 0,
+        "restored_clashing_residues": 0,
+        "restored_min_heavy_distance": 21.610288731728442,
+        "restored_backbone_pair_clashes_under2A": 0,
+        "restored_backbone_min_distance": 24.19182955149321,
+        "rigid_context_pass": true,
+        "source_sha256": "dceae56f478cf48069062ea263a9002e303dbf148d2a05184a6672603a9c9350",
+        "clashing_residues": [],
+        "backbone_clashing_residues": []
+      },
+      "omitted_context_rigid_pass": true,
+      "full_native_staging_pass": true,
+      "staging": {
+        "residues": 195,
+        "author_range": [
+          189,
+          383
+        ],
+        "native_sequence_verified": true,
+        "minimum_peptide_CN_A": 1.2279289960861206,
+        "maximum_peptide_CN_A": 1.5102529525756836,
+        "stage": "restored_staging_only",
+        "source_sha256": "32ea4eec922929e4f2fbb3681600ad23c0fbb34a6240cbf0d7a2e18446a39769",
+        "native_template_sha256": "4eaa5db67ed83a896713c4b42d1dc214c778bdac240fdf3a9a82e86a66f79495",
+        "output_sha256": "7395a89bd4762007dbd7ea5f5604687a9fb27d2781d98c29f1becc6c8c8f9d60",
+        "alignment_residues": 195,
+        "domain_CA_rmsd_A": 0.29999480085096375,
+        "patch_CA_rmsd_A": 0.4368552746106748,
+        "maximum_domain_CA_displacement_A": 1.2090686519672054,
+        "minimum_binder_full_target_backbone_distance_A": 3.271940588579911,
+        "observed_NAG_min_distance_A": 18.542335290211852,
+        "restored_target_residues": 1278,
+        "rotation_determinant": 1.0000000000000018,
+        "qualified_candidate": false,
+        "requires_native_full_context_refold": true,
+        "limitations": [
+          "Rigid context restoration is not native-complex prediction or binding validation",
+          "No pH scoring allowed before native refolding and existing admission gates",
+          "Observed NAG clearance checked; glycans are not retained in output PDB",
+          "Human only; residue121/unresolved glycans/assay tag absent"
+        ]
+      }
+    },
+    {
+      "source_id": "tfr1_his200m_20261023__tfr1_apical_his_68",
+      "shortlist_name": "tfr1_his200m_20261023__tfr1_apical_his_68",
+      "fixture_name": "candidate_014",
+      "status": "measured",
+      "preparation": {
+        "source_sha256": "a1b017bc2b4f42cb3f2f281c140f3062fdf7ad082db6283111c29b369bae18a0",
+        "crop_sha256": "c0e1654472008859d94f1b10114ff537c76cf894d687cb8fb6066333a1b3cbd6",
+        "target_source_chain": "A",
+        "binder_source_chain": "B",
+        "mapped_target_residues": 195,
+        "author_range": [
+          189,
+          383
+        ],
+        "chain_identity_by_exact_sequence": true,
+        "source_coordinates_not_fitted_or_relaxed": true
+      },
+      "unchanged_gate": {
+        "design": "candidate_014",
+        "target_ca_rmsd": 0.2857054060339566,
+        "aligned_target_residues": 195,
+        "restored_heavy_pair_clashes_under2A": 0,
+        "restored_clashing_residues": 0,
+        "restored_min_heavy_distance": 24.761380130151213,
+        "restored_backbone_pair_clashes_under2A": 0,
+        "restored_backbone_min_distance": 28.082877850024264,
+        "rigid_context_pass": true,
+        "source_sha256": "debcd9e6eda355be1a3ac5e0f6d5e96bf086ec9558016fc8ece44a1725fdfeee",
+        "clashing_residues": [],
+        "backbone_clashing_residues": []
+      },
+      "omitted_context_rigid_pass": true,
+      "full_native_staging_pass": true,
+      "staging": {
+        "residues": 195,
+        "author_range": [
+          189,
+          383
+        ],
+        "native_sequence_verified": true,
+        "minimum_peptide_CN_A": 1.0642993450164795,
+        "maximum_peptide_CN_A": 1.468966007232666,
+        "stage": "restored_staging_only",
+        "source_sha256": "c0e1654472008859d94f1b10114ff537c76cf894d687cb8fb6066333a1b3cbd6",
+        "native_template_sha256": "4eaa5db67ed83a896713c4b42d1dc214c778bdac240fdf3a9a82e86a66f79495",
+        "output_sha256": "af3ca63e840f3d354c2e45fe72619322d9c5a08d9c4e3eb286ce6001074b4fcd",
+        "alignment_residues": 195,
+        "domain_CA_rmsd_A": 0.28570527817450597,
+        "patch_CA_rmsd_A": 0.4433443972269834,
+        "maximum_domain_CA_displacement_A": 1.1116728033262446,
+        "minimum_binder_full_target_backbone_distance_A": 5.076064757893154,
+        "observed_NAG_min_distance_A": 16.597200564528226,
+        "restored_target_residues": 1278,
+        "rotation_determinant": 1.0000000000000033,
+        "qualified_candidate": false,
+        "requires_native_full_context_refold": true,
+        "limitations": [
+          "Rigid context restoration is not native-complex prediction or binding validation",
+          "No pH scoring allowed before native refolding and existing admission gates",
+          "Observed NAG clearance checked; glycans are not retained in output PDB",
+          "Human only; residue121/unresolved glycans/assay tag absent"
+        ]
+      }
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_13",
+      "shortlist_name": "tfr1_his020_200m_20261023__tfr1_apical_his_13",
+      "fixture_name": "candidate_015",
+      "status": "measured",
+      "preparation": {
+        "source_sha256": "fbecb6fc4201455fdf9a912d26bb61e80f784c9d49ff150631c7be7a90e12b27",
+        "crop_sha256": "e2749e68bbaa0e543aacf1b0bc3c13ae1a469b7c28b3a6ad7a912ab5ca4016d1",
+        "target_source_chain": "A",
+        "binder_source_chain": "B",
+        "mapped_target_residues": 195,
+        "author_range": [
+          189,
+          383
+        ],
+        "chain_identity_by_exact_sequence": true,
+        "source_coordinates_not_fitted_or_relaxed": true
+      },
+      "unchanged_gate": {
+        "design": "candidate_015",
+        "target_ca_rmsd": 0.22906335728111651,
+        "aligned_target_residues": 195,
+        "restored_heavy_pair_clashes_under2A": 0,
+        "restored_clashing_residues": 0,
+        "restored_min_heavy_distance": 23.096117586279842,
+        "restored_backbone_pair_clashes_under2A": 0,
+        "restored_backbone_min_distance": 27.84331120965968,
+        "rigid_context_pass": true,
+        "source_sha256": "97caef5aac43d787c31544ea6db2a228da9a53e828669f3430ddb96032320d6a",
+        "clashing_residues": [],
+        "backbone_clashing_residues": []
+      },
+      "omitted_context_rigid_pass": true,
+      "full_native_staging_pass": true,
+      "staging": {
+        "residues": 195,
+        "author_range": [
+          189,
+          383
+        ],
+        "native_sequence_verified": true,
+        "minimum_peptide_CN_A": 1.1427184343338013,
+        "maximum_peptide_CN_A": 1.4932526350021362,
+        "stage": "restored_staging_only",
+        "source_sha256": "e2749e68bbaa0e543aacf1b0bc3c13ae1a469b7c28b3a6ad7a912ab5ca4016d1",
+        "native_template_sha256": "4eaa5db67ed83a896713c4b42d1dc214c778bdac240fdf3a9a82e86a66f79495",
+        "output_sha256": "376f554aea0362c234e7e6e4318f2ea01b3d68150e70c9b6d7d1b5f1ccb204d8",
+        "alignment_residues": 195,
+        "domain_CA_rmsd_A": 0.22906356173816442,
+        "patch_CA_rmsd_A": 0.24663767516210083,
+        "maximum_domain_CA_displacement_A": 0.8539666652687061,
+        "minimum_binder_full_target_backbone_distance_A": 4.000948718004195,
+        "observed_NAG_min_distance_A": 17.31996902875036,
+        "restored_target_residues": 1278,
+        "rotation_determinant": 0.9999999999999981,
+        "qualified_candidate": false,
+        "requires_native_full_context_refold": true,
+        "limitations": [
+          "Rigid context restoration is not native-complex prediction or binding validation",
+          "No pH scoring allowed before native refolding and existing admission gates",
+          "Observed NAG clearance checked; glycans are not retained in output PDB",
+          "Human only; residue121/unresolved glycans/assay tag absent"
+        ]
+      }
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_147",
+      "shortlist_name": "tfr1_his020_200m_20261023__tfr1_apical_his_147",
+      "fixture_name": "candidate_016",
+      "status": "measured",
+      "preparation": {
+        "source_sha256": "a9fd6527af493049f43e477a16257188e17626e97dcc69cb4d4ba14d45917f5f",
+        "crop_sha256": "f9e4acb97003fd821fcc00e14c65130d5a817cb2222443e5cad60b75979b1feb",
+        "target_source_chain": "A",
+        "binder_source_chain": "B",
+        "mapped_target_residues": 195,
+        "author_range": [
+          189,
+          383
+        ],
+        "chain_identity_by_exact_sequence": true,
+        "source_coordinates_not_fitted_or_relaxed": true
+      },
+      "unchanged_gate": {
+        "design": "candidate_016",
+        "target_ca_rmsd": 0.2880771881733364,
+        "aligned_target_residues": 195,
+        "restored_heavy_pair_clashes_under2A": 0,
+        "restored_clashing_residues": 0,
+        "restored_min_heavy_distance": 19.994224864072137,
+        "restored_backbone_pair_clashes_under2A": 0,
+        "restored_backbone_min_distance": 25.119823801989053,
+        "rigid_context_pass": true,
+        "source_sha256": "58571f814a35edc3e052d40976c3f9be33c411729a0b8596ac12a998c5b0e046",
+        "clashing_residues": [],
+        "backbone_clashing_residues": []
+      },
+      "omitted_context_rigid_pass": true,
+      "full_native_staging_pass": true,
+      "staging": {
+        "residues": 195,
+        "author_range": [
+          189,
+          383
+        ],
+        "native_sequence_verified": true,
+        "minimum_peptide_CN_A": 1.191837191581726,
+        "maximum_peptide_CN_A": 1.4687166213989258,
+        "stage": "restored_staging_only",
+        "source_sha256": "f9e4acb97003fd821fcc00e14c65130d5a817cb2222443e5cad60b75979b1feb",
+        "native_template_sha256": "4eaa5db67ed83a896713c4b42d1dc214c778bdac240fdf3a9a82e86a66f79495",
+        "output_sha256": "6059ede34615369089c4f2cf4b3a6661b1de81010d8937d8d76f6b429b18d728",
+        "alignment_residues": 195,
+        "domain_CA_rmsd_A": 0.2880772191950301,
+        "patch_CA_rmsd_A": 0.4863438005014716,
+        "maximum_domain_CA_displacement_A": 1.2702731890806658,
+        "minimum_binder_full_target_backbone_distance_A": 4.046913390924452,
+        "observed_NAG_min_distance_A": 17.57463630598754,
+        "restored_target_residues": 1278,
+        "rotation_determinant": 0.9999999999999979,
+        "qualified_candidate": false,
+        "requires_native_full_context_refold": true,
+        "limitations": [
+          "Rigid context restoration is not native-complex prediction or binding validation",
+          "No pH scoring allowed before native refolding and existing admission gates",
+          "Observed NAG clearance checked; glycans are not retained in output PDB",
+          "Human only; residue121/unresolved glycans/assay tag absent"
+        ]
+      }
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_152",
+      "shortlist_name": "tfr1_his020_200m_20261023__tfr1_apical_his_152",
+      "fixture_name": "candidate_017",
+      "status": "measured",
+      "preparation": {
+        "source_sha256": "7e2e9c4079b3ffac09c997b78073cffe7a603d572bc7ef001ed138249aa42c70",
+        "crop_sha256": "f91db7c1d4582cd90a80c7404a5e97052406932b24c9137a84504db8a2abf434",
+        "target_source_chain": "A",
+        "binder_source_chain": "B",
+        "mapped_target_residues": 195,
+        "author_range": [
+          189,
+          383
+        ],
+        "chain_identity_by_exact_sequence": true,
+        "source_coordinates_not_fitted_or_relaxed": true
+      },
+      "unchanged_gate": {
+        "design": "candidate_017",
+        "target_ca_rmsd": 0.25366901451507573,
+        "aligned_target_residues": 195,
+        "restored_heavy_pair_clashes_under2A": 0,
+        "restored_clashing_residues": 0,
+        "restored_min_heavy_distance": 13.765709781934467,
+        "restored_backbone_pair_clashes_under2A": 0,
+        "restored_backbone_min_distance": 21.188993037131922,
+        "rigid_context_pass": true,
+        "source_sha256": "7d6f41275bb6606945525492625d80a633f74a1a3e954eb4c90916ed4cdb1602",
+        "clashing_residues": [],
+        "backbone_clashing_residues": []
+      },
+      "omitted_context_rigid_pass": true,
+      "full_native_staging_pass": true,
+      "staging": {
+        "residues": 195,
+        "author_range": [
+          189,
+          383
+        ],
+        "native_sequence_verified": true,
+        "minimum_peptide_CN_A": 1.2314403057098389,
+        "maximum_peptide_CN_A": 1.469828486442566,
+        "stage": "restored_staging_only",
+        "source_sha256": "f91db7c1d4582cd90a80c7404a5e97052406932b24c9137a84504db8a2abf434",
+        "native_template_sha256": "4eaa5db67ed83a896713c4b42d1dc214c778bdac240fdf3a9a82e86a66f79495",
+        "output_sha256": "b7886e14bb94d01ed53cb0bc8a18d99464df65aa482aebf692a35bb450f4d3db",
+        "alignment_residues": 195,
+        "domain_CA_rmsd_A": 0.2536690141851854,
+        "patch_CA_rmsd_A": 0.42287902757550444,
+        "maximum_domain_CA_displacement_A": 1.0007405010161194,
+        "minimum_binder_full_target_backbone_distance_A": 5.363805513382599,
+        "observed_NAG_min_distance_A": 18.882927047645513,
+        "restored_target_residues": 1278,
+        "rotation_determinant": 0.9999999999999986,
+        "qualified_candidate": false,
+        "requires_native_full_context_refold": true,
+        "limitations": [
+          "Rigid context restoration is not native-complex prediction or binding validation",
+          "No pH scoring allowed before native refolding and existing admission gates",
+          "Observed NAG clearance checked; glycans are not retained in output PDB",
+          "Human only; residue121/unresolved glycans/assay tag absent"
+        ]
+      }
+    },
+    {
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_1",
+      "shortlist_name": "tfr1_his030_200m_20261023__tfr1_apical_his_1",
+      "fixture_name": "candidate_018",
+      "status": "measured",
+      "preparation": {
+        "source_sha256": "312c7a62c2937ccc18987d50e0c9a4c279dee940a25d3bf3db8dcbed4b50ff66",
+        "crop_sha256": "09af14ba9a20c243585f239cba1ab6f15f05e819428494a525a433d640c07748",
+        "target_source_chain": "A",
+        "binder_source_chain": "B",
+        "mapped_target_residues": 195,
+        "author_range": [
+          189,
+          383
+        ],
+        "chain_identity_by_exact_sequence": true,
+        "source_coordinates_not_fitted_or_relaxed": true
+      },
+      "unchanged_gate": {
+        "design": "candidate_018",
+        "target_ca_rmsd": 0.3408231877923378,
+        "aligned_target_residues": 195,
+        "restored_heavy_pair_clashes_under2A": 0,
+        "restored_clashing_residues": 0,
+        "restored_min_heavy_distance": 15.250305786390264,
+        "restored_backbone_pair_clashes_under2A": 0,
+        "restored_backbone_min_distance": 20.969969070364392,
+        "rigid_context_pass": true,
+        "source_sha256": "c38ca0618fdb74510affbcf4ebe6fe9bed3f950bb7d731126ecd988db9f21156",
+        "clashing_residues": [],
+        "backbone_clashing_residues": []
+      },
+      "omitted_context_rigid_pass": true,
+      "full_native_staging_pass": true,
+      "staging": {
+        "residues": 195,
+        "author_range": [
+          189,
+          383
+        ],
+        "native_sequence_verified": true,
+        "minimum_peptide_CN_A": 1.2320315837860107,
+        "maximum_peptide_CN_A": 1.456831455230713,
+        "stage": "restored_staging_only",
+        "source_sha256": "09af14ba9a20c243585f239cba1ab6f15f05e819428494a525a433d640c07748",
+        "native_template_sha256": "4eaa5db67ed83a896713c4b42d1dc214c778bdac240fdf3a9a82e86a66f79495",
+        "output_sha256": "b70dd5e7784aa076be1a30d6e0f5fef1260fa0968c5c1a31fa04fc14b21f169a",
+        "alignment_residues": 195,
+        "domain_CA_rmsd_A": 0.340823284740604,
+        "patch_CA_rmsd_A": 0.43109821879672017,
+        "maximum_domain_CA_displacement_A": 1.4342863217272004,
+        "minimum_binder_full_target_backbone_distance_A": 4.784885444125506,
+        "observed_NAG_min_distance_A": 15.146582343827639,
+        "restored_target_residues": 1278,
+        "rotation_determinant": 0.9999999999999998,
+        "qualified_candidate": false,
+        "requires_native_full_context_refold": true,
+        "limitations": [
+          "Rigid context restoration is not native-complex prediction or binding validation",
+          "No pH scoring allowed before native refolding and existing admission gates",
+          "Observed NAG clearance checked; glycans are not retained in output PDB",
+          "Human only; residue121/unresolved glycans/assay tag absent"
+        ]
+      }
+    },
+    {
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_133",
+      "shortlist_name": "tfr1_his030_200m_20261023__tfr1_apical_his_133",
+      "fixture_name": "candidate_019",
+      "status": "measured",
+      "preparation": {
+        "source_sha256": "cc76a92a14f3bf0904a728b2ce6dd558c03ab0d2bca86e9b7380f86aff944b82",
+        "crop_sha256": "6236539e3b3e40f271a2e59acca9f63597f39d72c6753f8e293ac7ecd726a15f",
+        "target_source_chain": "A",
+        "binder_source_chain": "B",
+        "mapped_target_residues": 195,
+        "author_range": [
+          189,
+          383
+        ],
+        "chain_identity_by_exact_sequence": true,
+        "source_coordinates_not_fitted_or_relaxed": true
+      },
+      "unchanged_gate": {
+        "design": "candidate_019",
+        "target_ca_rmsd": 0.24899653892913567,
+        "aligned_target_residues": 195,
+        "restored_heavy_pair_clashes_under2A": 0,
+        "restored_clashing_residues": 0,
+        "restored_min_heavy_distance": 15.35149525225438,
+        "restored_backbone_pair_clashes_under2A": 0,
+        "restored_backbone_min_distance": 21.149003287160816,
+        "rigid_context_pass": true,
+        "source_sha256": "90c5e2464d3f1b9ab41a91fcf19d5feea2e649bd7616858d087791064f20759b",
+        "clashing_residues": [],
+        "backbone_clashing_residues": []
+      },
+      "omitted_context_rigid_pass": true,
+      "full_native_staging_pass": true,
+      "staging": {
+        "residues": 195,
+        "author_range": [
+          189,
+          383
+        ],
+        "native_sequence_verified": true,
+        "minimum_peptide_CN_A": 1.226294755935669,
+        "maximum_peptide_CN_A": 1.4504384994506836,
+        "stage": "restored_staging_only",
+        "source_sha256": "6236539e3b3e40f271a2e59acca9f63597f39d72c6753f8e293ac7ecd726a15f",
+        "native_template_sha256": "4eaa5db67ed83a896713c4b42d1dc214c778bdac240fdf3a9a82e86a66f79495",
+        "output_sha256": "7ea562ae2613e9c4b89ac22dc205c11f47542ddaa72bbc045170d47f59f0b880",
+        "alignment_residues": 195,
+        "domain_CA_rmsd_A": 0.248996291020373,
+        "patch_CA_rmsd_A": 0.3192387966015266,
+        "maximum_domain_CA_displacement_A": 0.9780395149595935,
+        "minimum_binder_full_target_backbone_distance_A": 3.5185462603120023,
+        "observed_NAG_min_distance_A": 17.248199241969296,
+        "restored_target_residues": 1278,
+        "rotation_determinant": 0.9999999999999993,
+        "qualified_candidate": false,
+        "requires_native_full_context_refold": true,
+        "limitations": [
+          "Rigid context restoration is not native-complex prediction or binding validation",
+          "No pH scoring allowed before native refolding and existing admission gates",
+          "Observed NAG clearance checked; glycans are not retained in output PDB",
+          "Human only; residue121/unresolved glycans/assay tag absent"
+        ]
+      }
+    },
+    {
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_142",
+      "shortlist_name": "tfr1_his030_200m_20261023__tfr1_apical_his_142",
+      "fixture_name": "candidate_020",
+      "status": "measured",
+      "preparation": {
+        "source_sha256": "4da208a23527219b464b8226bbdc09169de1c118c37cba6087d2d5750263a8a2",
+        "crop_sha256": "2ae3eb988a63c6541531482a35d64ddbf770f68318b995a89c9f7af6b893d0ec",
+        "target_source_chain": "A",
+        "binder_source_chain": "B",
+        "mapped_target_residues": 195,
+        "author_range": [
+          189,
+          383
+        ],
+        "chain_identity_by_exact_sequence": true,
+        "source_coordinates_not_fitted_or_relaxed": true
+      },
+      "unchanged_gate": {
+        "design": "candidate_020",
+        "target_ca_rmsd": 0.3467098698352178,
+        "aligned_target_residues": 195,
+        "restored_heavy_pair_clashes_under2A": 0,
+        "restored_clashing_residues": 0,
+        "restored_min_heavy_distance": 16.371386734157056,
+        "restored_backbone_pair_clashes_under2A": 0,
+        "restored_backbone_min_distance": 22.49095917237356,
+        "rigid_context_pass": true,
+        "source_sha256": "434f08493cec954779d6714175f82cb845de8caf55b53ca4b0a2b6d66cf5b543",
+        "clashing_residues": [],
+        "backbone_clashing_residues": []
+      },
+      "omitted_context_rigid_pass": true,
+      "full_native_staging_pass": true,
+      "staging": {
+        "residues": 195,
+        "author_range": [
+          189,
+          383
+        ],
+        "native_sequence_verified": true,
+        "minimum_peptide_CN_A": 1.2055118083953857,
+        "maximum_peptide_CN_A": 1.4878815412521362,
+        "stage": "restored_staging_only",
+        "source_sha256": "2ae3eb988a63c6541531482a35d64ddbf770f68318b995a89c9f7af6b893d0ec",
+        "native_template_sha256": "4eaa5db67ed83a896713c4b42d1dc214c778bdac240fdf3a9a82e86a66f79495",
+        "output_sha256": "63bcf547980dbfdaff68db374375dca8a248f1365808a50bf130d84645fbbda1",
+        "alignment_residues": 195,
+        "domain_CA_rmsd_A": 0.34670966473666504,
+        "patch_CA_rmsd_A": 0.44365397240932164,
+        "maximum_domain_CA_displacement_A": 1.5588657695228423,
+        "minimum_binder_full_target_backbone_distance_A": 4.280408635549269,
+        "observed_NAG_min_distance_A": 17.40071624576409,
+        "restored_target_residues": 1278,
+        "rotation_determinant": 0.999999999999999,
+        "qualified_candidate": false,
+        "requires_native_full_context_refold": true,
+        "limitations": [
+          "Rigid context restoration is not native-complex prediction or binding validation",
+          "No pH scoring allowed before native refolding and existing admission gates",
+          "Observed NAG clearance checked; glycans are not retained in output PDB",
+          "Human only; residue121/unresolved glycans/assay tag absent"
+        ]
+      }
+    }
+  ],
+  "omitted_context_rigid_pass": 20,
+  "full_native_staging_pass": 20,
+  "protected_source_sha256": {
+    "/Users/ricardo/dev/adaptyv-c4/scripts/audit_full_context.py": "2f8f453ac6e90cca7c29c03b58d61a9c5ecde0c533ff7f6b3bc42ccf0dd76251",
+    "/Users/ricardo/dev/adaptyv-c4/scripts/run_context_ensemble.py": "0f408034f943a03bb34558ce8222666af5fb9276d62397e39fc4738bab75b3d2",
+    "/Users/ricardo/dev/adaptyv-c4/scripts/restore_apical_context.py": "54cd8ec6ae4acc51b598c8cbaa13555e67bdb1e3a3b1bd295c29423f1011bb06",
+    "/Users/ricardo/dev/adaptyv-c4/scripts/postprocess_gpu_campaign.py": "e2a8b8e6a9bf01872e9d2a3c4867abe4e23367c5d8485c861369dbf93d227472"
+  },
+  "shortlist_sha256": "677e27667866f7841fcb729952732f0232d8fef0b39e20f511d08ef368e136ff",
+  "structures_sha256": "de0e4daeec7cd35cd5c51dc13038c446fa84ca69067568c042e8331150f9b0d8",
+  "organizer_acceptance_measured": false,
+  "independent_refolding_performed": false,
+  "new_gpu_spend_usd": 0,
+  "limitations": [
+    "Rigid context transfer is a diagnostic, not binding/pH or full-complex prediction",
+    "The unchanged audit human-text template includes historical-pool claims; use its numeric JSON and this report",
+    "Staging peptide/backbone/NAG checks remain unchanged; missing/inconclusive inputs are retained, not passed"
+  ]
+}

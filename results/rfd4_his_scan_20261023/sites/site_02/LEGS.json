@@ -1,0 +1,46 @@
+[
+  {
+    "leg": "WT",
+    "result": {
+      "interface_ddg": -0.8564924597740173
+    },
+    "saved_pdb": "/Users/ricardo/.cache/adaptyv-c4/his_scan_cpu/scored_poses/site_02/WT.pdb",
+    "sha256": "7cd97c4e12ed6284d643617f1a667debed0537eea96c88063e4b52002a2e83cf",
+    "maximum_backbone_displacement_A": 0.0006092538242228329,
+    "identities_verified": true,
+    "retained_native_target_residues": 1278
+  },
+  {
+    "leg": "ALA",
+    "result": {
+      "interface_ddg": -0.0043188538402318954
+    },
+    "saved_pdb": "/Users/ricardo/.cache/adaptyv-c4/his_scan_cpu/scored_poses/site_02/ALA.pdb",
+    "sha256": "4d5dce369e471a23f7b97517f40bdbb7093a0b26b1d165c0dbaf2371cd023d0d",
+    "maximum_backbone_displacement_A": 0.0006092538242228329,
+    "identities_verified": true,
+    "retained_native_target_residues": 1278
+  },
+  {
+    "leg": "GLN",
+    "result": {
+      "interface_ddg": 0.11691741645336151
+    },
+    "saved_pdb": "/Users/ricardo/.cache/adaptyv-c4/his_scan_cpu/scored_poses/site_02/GLN.pdb",
+    "sha256": "ce87ff117e967cb1809ef223bf9b3df629d36451b72168f1e2eaa15bd3d3ab59",
+    "maximum_backbone_displacement_A": 0.0006092538242228329,
+    "identities_verified": true,
+    "retained_native_target_residues": 1278
+  },
+  {
+    "leg": "HIS",
+    "result": {
+      "interface_ddg": -0.8564924597740173
+    },
+    "saved_pdb": "/Users/ricardo/.cache/adaptyv-c4/his_scan_cpu/scored_poses/site_02/HIS.pdb",
+    "sha256": "7cd97c4e12ed6284d643617f1a667debed0537eea96c88063e4b52002a2e83cf",
+    "maximum_backbone_displacement_A": 0.0006092538242228329,
+    "identities_verified": true,
+    "retained_native_target_residues": 1278
+  }
+]

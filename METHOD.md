@@ -1,5 +1,49 @@
 # Method: proton-coupled two-state design, with the numbers checked
 
+## Oct23 exact shortlist audit and CPU His-scan complete
+
+The exact final shortlist20 was independently rerun through the unchanged
+6W3H-validated omitted-context gate and existing full-native staging helper.
+20/20 pass both;0 omitted-context backbone pairs below2A; target CA fit
+0.2291–0.3467A. Every numeric gate row matches the earlier80-pose subset.
+Minimum omitted-protein backbone clearance20.970A; minimum full-native-target
+backbone clearance3.013A. Gate and staging source hashes remain unchanged.
+
+The actual upstream TMolMutationDdgMetric completed all10 preregistered
+contacting-His sites in the top5 designs, on local CPU:30 mutation deltas and
+40 scored WT/H-to-ALA/H-to-GLN/H-to-HIS control legs. Complete observed native
+receptor dimer1278 residues retained. Every leg retained expected residue
+identities; maximum measured backbone displacement0.0016735A, below the declared
+0.002A audit tolerance. Scored coordinate snapshots are preserved by fingerprint
+in the local cache. CPU runtime is pinned:TMol0.2.0, torch2.14.1, AtomWorks3.0.4;
+installed metric/helper bytes match the upstream source. Two instrumentation
+preflight failures are preserved separately and are not biological failures.
+
+Both His-removal deltas are positive at3/10 sites, belonging to original
+shortlist ranks1 and3. Other sites give mixed or negative signs. Maximum absolute
+H-to-HIS self-substitution delta0.35712 score units; do not assume a zero control.
+These numbers are relaxed SITE/receptor interaction-energy changes in TMol
+beta2016 score units, not calibrated kcal/mol, rigorous binding ddG, pKa, KD or
+pH selectivity. Neither pH nor protonation equilibrium was varied. No automatic
+functional pass threshold or new ranking was introduced.
+
+The unchanged canonical build_submission.py emitted the20-row CSV for Ricardo's
+review, preserving every original name, sequence and rank and attaching actual
+scan evidence. Other15 designs are explicitly not_scanned, with missing energy
+fields left blank. This establishes format readiness, not organizer novelty,
+independent refolding, expression/developability, mouse binding or biological
+qualification. Twin-Strep exclusion and upload replacement/accumulation remain
+for Ricardo to resolve. No account, upload or entry was created.
+
+Read outbox/adaptyv-c4-his-scan-review.html; CSV and complete numeric evidence:
+results/rfd4_his_scan_20261023/{submission_for_ricardo_review.csv,RESULTS.json}.
+The finite CPU controller and its awake keeper both exited. No GPU/cloud task
+was started; new GPU/cloud spend$0.00. Recorded Runpod$56.589988; own tracked
+prior estimate$73.311827 plus unreconciled Modal host charges, excluding the
+other lane and account-wide billing. Prior first-pair stopped/zero-task proof
+is retained; that app aged out of the current recently-stopped listing. The
+higher pair remains explicitly listed stopped with0 tasks. See RELEASE_CHECK.json.
+
 ## Oct23 generation and CPU review complete; all owned GPU apps released
 
 Four approved inline-geom arms completed200 outputs each,800 total and798

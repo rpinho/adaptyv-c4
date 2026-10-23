@@ -1,0 +1,20 @@
+{
+  "state": "failed",
+  "job": {
+    "source_id": "tfr1_c200m_20261023__tfr1_apical_binder_126",
+    "rank": 1,
+    "position": 47,
+    "chain": "C",
+    "wildtype": "HIS",
+    "ring_to_receptor_minimum_A": 3.071730136871338,
+    "mutation_selection": "chain_id == 'C' and res_id == 47",
+    "region_b": "chain_id == 'A' or chain_id == 'B'"
+  },
+  "plan_sha256": "63a037af9e1582fec373f3bce5827732215ee227afe6aa0c614dd19434819025",
+  "script_sha256": "3735bf965105a338888d56e5eb4e147cf34dc1b84386e3961e48a09e470e1137",
+  "device": "cpu",
+  "new_gpu_spend_usd": 0,
+  "error": "PackageNotFoundError('rfproteina')",
+  "traceback": "Traceback (most recent call last):\n  File \"/Users/ricardo/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/lib/python3.12/importlib/metadata/__init__.py\", line 397, in from_name\n    return next(cls.discover(name=name))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nStopIteration\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/Users/ricardo/dev/adaptyv-c4/results/generation_pivot/run_his_scan_cpu.py\", line 124, in worker\n    versions={x:metadata.version(x) for x in ('torch','tmol','atomworks','rfproteina')},\n                ^^^^^^^^^^^^^^^^^^^\n  File \"/Users/ricardo/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/lib/python3.12/importlib/metadata/__init__.py\", line 889, in version\n    return distribution(distribution_name).version\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/ricardo/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/lib/python3.12/importlib/metadata/__init__.py\", line 862, in distribution\n    return Distribution.from_name(distribution_name)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/ricardo/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/lib/python3.12/importlib/metadata/__init__.py\", line 399, in from_name\n    raise PackageNotFoundError(name)\nimportlib.metadata.PackageNotFoundError: No package metadata was found for rfproteina\n",
+  "elapsed_seconds": 4.5523756253533065
+}

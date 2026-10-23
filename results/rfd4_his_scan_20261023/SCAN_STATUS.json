@@ -1,0 +1,58 @@
+{
+  "state": "finished",
+  "planned_sites": 10,
+  "attempted": [
+    {
+      "index": 0,
+      "state": "complete",
+      "reused": false
+    },
+    {
+      "index": 1,
+      "state": "complete",
+      "reused": false
+    },
+    {
+      "index": 2,
+      "state": "complete",
+      "reused": false
+    },
+    {
+      "index": 3,
+      "state": "complete",
+      "reused": false
+    },
+    {
+      "index": 4,
+      "state": "complete",
+      "reused": false
+    },
+    {
+      "index": 5,
+      "state": "complete",
+      "reused": false
+    },
+    {
+      "index": 6,
+      "state": "complete",
+      "reused": false
+    },
+    {
+      "index": 7,
+      "state": "complete",
+      "reused": false
+    },
+    {
+      "index": 8,
+      "state": "complete",
+      "reused": false
+    },
+    {
+      "index": 9,
+      "state": "complete",
+      "reused": false
+    }
+  ],
+  "completed": 10,
+  "new_gpu_spend_usd": 0
+}

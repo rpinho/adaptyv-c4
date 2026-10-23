@@ -1,0 +1,225 @@
+{
+  "state": "complete",
+  "shortlist20_rows": 20,
+  "measured": 20,
+  "omitted_context_pass": 20,
+  "full_native_staging_pass": 20,
+  "total_omitted_backbone_pairs_under2A": 0,
+  "target_CA_RMSD_range_A": [
+    0.22906335728111651,
+    0.3467098698352178
+  ],
+  "minimum_omitted_backbone_distance_A": 20.969969070364392,
+  "minimum_full_target_backbone_distance_A": 3.013480920822591,
+  "same_numeric_gate_results_as_prior80_subset": true,
+  "gate_source_unchanged": {
+    "/Users/ricardo/dev/adaptyv-c4/scripts/audit_full_context.py": "2f8f453ac6e90cca7c29c03b58d61a9c5ecde0c533ff7f6b3bc42ccf0dd76251",
+    "/Users/ricardo/dev/adaptyv-c4/scripts/run_context_ensemble.py": "0f408034f943a03bb34558ce8222666af5fb9276d62397e39fc4738bab75b3d2",
+    "/Users/ricardo/dev/adaptyv-c4/scripts/restore_apical_context.py": "54cd8ec6ae4acc51b598c8cbaa13555e67bdb1e3a3b1bd295c29423f1011bb06",
+    "/Users/ricardo/dev/adaptyv-c4/scripts/postprocess_gpu_campaign.py": "e2a8b8e6a9bf01872e9d2a3c4867abe4e23367c5d8485c861369dbf93d227472"
+  },
+  "validated_control": "results/real_gate_control/RESULTS.json",
+  "designs": [
+    {
+      "source_id": "tfr1_c200m_20261023__tfr1_apical_binder_126",
+      "target_CA_RMSD_A": 0.272196239916971,
+      "omitted_backbone_pairs_under2A": 0,
+      "omitted_backbone_minimum_A": 25.416425141654006,
+      "full_target_backbone_minimum_A": 3.1999991584587297,
+      "observed_NAG_minimum_A": 18.086062247478274,
+      "omitted_pass": true,
+      "full_native_staging_pass": true
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_70",
+      "target_CA_RMSD_A": 0.3065813350924094,
+      "omitted_backbone_pairs_under2A": 0,
+      "omitted_backbone_minimum_A": 25.546969318975496,
+      "full_target_backbone_minimum_A": 3.1423305000624078,
+      "observed_NAG_minimum_A": 17.563257584531456,
+      "omitted_pass": true,
+      "full_native_staging_pass": true
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_86",
+      "target_CA_RMSD_A": 0.30647260700483125,
+      "omitted_backbone_pairs_under2A": 0,
+      "omitted_backbone_minimum_A": 28.475726229631356,
+      "full_target_backbone_minimum_A": 3.013480920822591,
+      "observed_NAG_minimum_A": 17.739439948482506,
+      "omitted_pass": true,
+      "full_native_staging_pass": true
+    },
+    {
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_115",
+      "target_CA_RMSD_A": 0.3128650421146687,
+      "omitted_backbone_pairs_under2A": 0,
+      "omitted_backbone_minimum_A": 25.264877101217984,
+      "full_target_backbone_minimum_A": 5.66938023291043,
+      "observed_NAG_minimum_A": 15.716077106155582,
+      "omitted_pass": true,
+      "full_native_staging_pass": true
+    },
+    {
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_121",
+      "target_CA_RMSD_A": 0.3340680831611677,
+      "omitted_backbone_pairs_under2A": 0,
+      "omitted_backbone_minimum_A": 29.496226214265725,
+      "full_target_backbone_minimum_A": 5.498983133858285,
+      "observed_NAG_minimum_A": 16.9111002787819,
+      "omitted_pass": true,
+      "full_native_staging_pass": true
+    },
+    {
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_144",
+      "target_CA_RMSD_A": 0.27784502521055393,
+      "omitted_backbone_pairs_under2A": 0,
+      "omitted_backbone_minimum_A": 25.829375829841034,
+      "full_target_backbone_minimum_A": 4.551122603828516,
+      "observed_NAG_minimum_A": 12.05461629119269,
+      "omitted_pass": true,
+      "full_native_staging_pass": true
+    },
+    {
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_169",
+      "target_CA_RMSD_A": 0.25793849963756627,
+      "omitted_backbone_pairs_under2A": 0,
+      "omitted_backbone_minimum_A": 27.92561122968145,
+      "full_target_backbone_minimum_A": 3.1757155452761094,
+      "observed_NAG_minimum_A": 17.05902136729782,
+      "omitted_pass": true,
+      "full_native_staging_pass": true
+    },
+    {
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_23",
+      "target_CA_RMSD_A": 0.27742163806616715,
+      "omitted_backbone_pairs_under2A": 0,
+      "omitted_backbone_minimum_A": 24.066764871075527,
+      "full_target_backbone_minimum_A": 3.3431227604900595,
+      "observed_NAG_minimum_A": 17.22371187604999,
+      "omitted_pass": true,
+      "full_native_staging_pass": true
+    },
+    {
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_64",
+      "target_CA_RMSD_A": 0.257687528454195,
+      "omitted_backbone_pairs_under2A": 0,
+      "omitted_backbone_minimum_A": 29.528137239955484,
+      "full_target_backbone_minimum_A": 5.117899843378805,
+      "observed_NAG_minimum_A": 16.764612997727685,
+      "omitted_pass": true,
+      "full_native_staging_pass": true
+    },
+    {
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_68",
+      "target_CA_RMSD_A": 0.26810976514387735,
+      "omitted_backbone_pairs_under2A": 0,
+      "omitted_backbone_minimum_A": 25.437795566564912,
+      "full_target_backbone_minimum_A": 3.0950723160157243,
+      "observed_NAG_minimum_A": 17.240980306118615,
+      "omitted_pass": true,
+      "full_native_staging_pass": true
+    },
+    {
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_70",
+      "target_CA_RMSD_A": 0.3016812664715214,
+      "omitted_backbone_pairs_under2A": 0,
+      "omitted_backbone_minimum_A": 25.60976827388527,
+      "full_target_backbone_minimum_A": 3.15524261192072,
+      "observed_NAG_minimum_A": 17.599694476117076,
+      "omitted_pass": true,
+      "full_native_staging_pass": true
+    },
+    {
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_77",
+      "target_CA_RMSD_A": 0.2698064044739348,
+      "omitted_backbone_pairs_under2A": 0,
+      "omitted_backbone_minimum_A": 23.58033401805619,
+      "full_target_backbone_minimum_A": 4.763267962070773,
+      "observed_NAG_minimum_A": 16.555979248276543,
+      "omitted_pass": true,
+      "full_native_staging_pass": true
+    },
+    {
+      "source_id": "tfr1_his200m_20261023__tfr1_apical_his_148",
+      "target_CA_RMSD_A": 0.2999948647624627,
+      "omitted_backbone_pairs_under2A": 0,
+      "omitted_backbone_minimum_A": 24.19182955149321,
+      "full_target_backbone_minimum_A": 3.271940588579911,
+      "observed_NAG_minimum_A": 18.542335290211852,
+      "omitted_pass": true,
+      "full_native_staging_pass": true
+    },
+    {
+      "source_id": "tfr1_his200m_20261023__tfr1_apical_his_68",
+      "target_CA_RMSD_A": 0.2857054060339566,
+      "omitted_backbone_pairs_under2A": 0,
+      "omitted_backbone_minimum_A": 28.082877850024264,
+      "full_target_backbone_minimum_A": 5.076064757893154,
+      "observed_NAG_minimum_A": 16.597200564528226,
+      "omitted_pass": true,
+      "full_native_staging_pass": true
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_13",
+      "target_CA_RMSD_A": 0.22906335728111651,
+      "omitted_backbone_pairs_under2A": 0,
+      "omitted_backbone_minimum_A": 27.84331120965968,
+      "full_target_backbone_minimum_A": 4.000948718004195,
+      "observed_NAG_minimum_A": 17.31996902875036,
+      "omitted_pass": true,
+      "full_native_staging_pass": true
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_147",
+      "target_CA_RMSD_A": 0.2880771881733364,
+      "omitted_backbone_pairs_under2A": 0,
+      "omitted_backbone_minimum_A": 25.119823801989053,
+      "full_target_backbone_minimum_A": 4.046913390924452,
+      "observed_NAG_minimum_A": 17.57463630598754,
+      "omitted_pass": true,
+      "full_native_staging_pass": true
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_152",
+      "target_CA_RMSD_A": 0.25366901451507573,
+      "omitted_backbone_pairs_under2A": 0,
+      "omitted_backbone_minimum_A": 21.188993037131922,
+      "full_target_backbone_minimum_A": 5.363805513382599,
+      "observed_NAG_minimum_A": 18.882927047645513,
+      "omitted_pass": true,
+      "full_native_staging_pass": true
+    },
+    {
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_1",
+      "target_CA_RMSD_A": 0.3408231877923378,
+      "omitted_backbone_pairs_under2A": 0,
+      "omitted_backbone_minimum_A": 20.969969070364392,
+      "full_target_backbone_minimum_A": 4.784885444125506,
+      "observed_NAG_minimum_A": 15.146582343827639,
+      "omitted_pass": true,
+      "full_native_staging_pass": true
+    },
+    {
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_133",
+      "target_CA_RMSD_A": 0.24899653892913567,
+      "omitted_backbone_pairs_under2A": 0,
+      "omitted_backbone_minimum_A": 21.149003287160816,
+      "full_target_backbone_minimum_A": 3.5185462603120023,
+      "observed_NAG_minimum_A": 17.248199241969296,
+      "omitted_pass": true,
+      "full_native_staging_pass": true
+    },
+    {
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_142",
+      "target_CA_RMSD_A": 0.3467098698352178,
+      "omitted_backbone_pairs_under2A": 0,
+      "omitted_backbone_minimum_A": 22.49095917237356,
+      "full_target_backbone_minimum_A": 4.280408635549269,
+      "observed_NAG_minimum_A": 17.40071624576409,
+      "omitted_pass": true,
+      "full_native_staging_pass": true
+    }
+  ],
+  "new_gpu_spend_usd": 0
+}

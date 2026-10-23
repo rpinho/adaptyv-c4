@@ -1,0 +1,11 @@
+{
+  "source_commit": "aaccdd2ad0720c180468df5f9cf037a713d403e5",
+  "installed_sources_byte_identical": {
+    "metrics/physics/tmol_block_pair_metric.py": "6448092a8dd1579f5ce353af1195767cbe844d34d99d40e75db81adf5b9b8d10",
+    "metrics/physics/tmol_ddg_core.py": "398832d94e2f28e5568e8591da06f41ce3ea7ceb61dcce27f8158a97c8822fa5"
+  },
+  "metric_semantics": "Relaxed site-to-opposite-region interaction-energy delta, not rigorous binding ddG or pH response",
+  "cpu_install_reference": "https://uw-ipd.github.io/tmol/latest/installation.html",
+  "cpu_install_log": "/tmp/adaptyv-c4-his-env.log",
+  "cpu_preflight_log": "/tmp/adaptyv-c4-his-preflight.log"
+}
