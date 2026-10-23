@@ -1,5 +1,42 @@
 # Method: proton-coupled two-state design, with the numbers checked
 
+## Oct23 measured generation and active higher-prior pair
+
+The first two200-design inline-geom arms completed and persisted400 unique
+sequences plus400 metric rows, with all three ranking geometry fields finite.
+Their wrapper blocked after generation in unbounded sampler cleanup; the
+completed app was explicitly stopped with --yes and stopped/zero-task state
+verified. No completed models were regenerated. Canonical CPU export recovered
+all sequences. Raw failure and complete recovery remain separately recorded in
+results/rfd4_geom_20261023/{STATUS,RECOVERY_COMPLETE,RELEASE_VERIFIED}.json.
+Sampler cleanup is now bounded and shell-free; app shutdown uses --yes plus
+state polling. The canonical emitter is unchanged.
+
+Canonical geometry ranking found171 declared families and selected20; all20
+passed the unchanged omitted-context gate and existing full-native staging.
+Only4 have His-ring/receptor proximity and3 His-N/basic-group proximity at4.5A;
+these are geometry descriptions, not pH predictions. First-pair review CSV and
+evidence are under results/rfd4_geom_20261023/review/. All20 are new sequences
+relative to the earlier novelty-screened cohort; no old point label transferred.
+No experimental binding/pH, independent refolding or organizer acceptance is
+established by this work.
+
+The additional0.20/0.30 pair is explicitly approved and running under
+results/rfd4_his_sweep_20261023/STATUS.json:200 designs per arm, inline geom,
+L40S$1.9512/GPU-hour plus host, max2 containers,9000s per call, no paid successor.
+CPU materialization independently verified10 hotspot atoms,780 target backbone
+atoms,195 residues; the two atom_site tables differ only in His probability.
+Both CPU preflight apps stopped. The final adaptive review policy, registered
+before inspecting higher-prior outcomes, retains20 geometry rows per arm and
+uses the same canonical ranker for explicit contact-hypothesis triage with a
+global family cap3. See results/generation_pivot/FINAL_REVIEW_POLICY.md.
+
+Recorded Runpod$56.589988; prior own Modal estimate$10.718947. First new pair's
+GPU-time upper estimate after verified release is$3.13, including cleanup delay;
+host charges remain unreconciled. The active higher pair accrues separately.
+These figures exclude Claude's prior lane and account-wide billing. Ricardo
+retains accounts and final submission. Nothing was uploaded to the portal.
+
 ## Oct23 measured completion; novelty work stops here
 
 Recovered cached exact-score export completed1469.78s; all3,523,855 requested

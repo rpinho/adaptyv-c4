@@ -1,0 +1,11 @@
+{
+  "observation": "External rebase onto rewritten origin removed tracked handoff/decisions docs and dropped the last recovery commit; preserved those doc removals and cherry-picked only the missing owned recovery/code/data commit",
+  "former_novelty_commit": "97831a9",
+  "current_novelty_commit": "126a675",
+  "recovered_commit": "a494846",
+  "novelty_report_blob_unchanged": true,
+  "current_invoker_matches_scoped_approval": true,
+  "current_launcher_matches_scoped_approval": true,
+  "project_method_file": "METHOD.md",
+  "running_gpu_jobs_not_restarted": true
+}
