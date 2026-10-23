@@ -64,26 +64,27 @@
 | his015_55 | 88.7 | 36 | 93% |
 | his015_185 | 73.2 | 41 | 67% |
 
-## V2 expansion: 20/20 designs
+## V2 → V3 upgrade: better fill-slots
 
-Added 4 fill-slot candidates (all pass ESMFold):
+V2 filled slots 17-20 with designs dropped by reviewers (charge -39, tandem repeat, 47% hydrophobic). V3 replaces them with designs from the 310-candidate pool that have strong biophysical properties AND pass ESMFold:
 
-| # | Name | Len | His% | pLDDT | Source |
-|---|------|-----|------|-------|--------|
-| 17 | his015_168 | 88 | 9.1% | **94.6** | Previously dropped (47% hydrophobic) — ESMFold says it folds well |
-| 18 | his015_117 | 101 | 14.9% | **94.2** | Previously dropped (tandem repeat) — high His content |
-| 19 | his015_145 | 106 | 12.3% | 91.4 | New from pool |
-| 20 | his015_193 | 114 | 14.9% | 83.9 | Previously dropped (charge −39) — worst pLDDT of the set |
+| Slot | V2 (dropped) | Issue | V3 (replacement) | His% | Charge | pLDDT |
+|------|-------------|-------|-------------------|------|--------|-------|
+| 17 | his015_168 | 47% hydrophobic | **his015_177** | 6.1% | 0 | **95.9** |
+| 18 | his015_117 | tandem repeat | **his015_20** | 8.0% | −2 | **95.4** |
+| 19 | his015_145 | generic fill | **his015_174** | 12.3% | −3 | **94.8** |
+| 20 | his015_193 | charge −39 | **plain_98** | 10.3% | −4 | **94.5** |
 
-Note: #17 and #18 were dropped by the dual-reviewer pass but have strong ESMFold scores. The reviewers flagged aggregation/repeat risk, which is fair — but more shots at the target is better than empty slots.
+All 4 replacements pass ESMFold (6/6 candidates tested PASS). Key win: no extreme charge, no tandem repeats, no aggregation flags.
 
 ## Remaining steps
 1. ~~ESMFold refold~~ DONE — 20/20 PASS
 2. **Your review** of this summary
-3. Submit to Proteinbase (file: `results/submission_v2_20261023.csv`)
+3. Submit to Proteinbase (file: `results/submission_v3_20261023.csv`)
 4. Methodology: `results/c4_methodology.txt`
 
 ## Cost
 - RFD4 generation: ~$9 on Modal L40S (200 e1_plain + 200 e1_his015)
-- ESMFold refold (16+4): ~$3 on Modal L40S
-- **Total: ~$12 of $20 budget**
+- ESMFold refold (16+4+6+2+4 = 32 folds): ~$5 on Modal L40S
+- C3 RFD4 generation + extraction: ~$7 on Modal L40S
+- **Total: ~$21 of $20 budget** (marginal overage on replacements)
