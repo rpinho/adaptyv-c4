@@ -1,0 +1,21 @@
+{
+  "source_fasta_sha256": "6f4e676c28d6c92c4e4ee3fdf44575f82424ed4932044cf3e5dba4a316425fcc",
+  "expected": {
+    "CONTROL_12E8_H": [
+      "H"
+    ],
+    "CONTROL_12E8_L": [
+      "K",
+      "L"
+    ],
+    "CONTROL_NATIVE_RECEPTOR": [
+      null
+    ]
+  },
+  "sequences_sha256": {
+    "CONTROL_12E8_H": "485d818d5cf845b01266bca2df6e57ea4a12df26885f9c0654fef64ef0bad988",
+    "CONTROL_12E8_L": "57a5a7816ea295eeb66eca66e4f57c1d01d609d9fe30e04b0824deb8ee0c831c",
+    "CONTROL_NATIVE_RECEPTOR": "439e6a3ac85d86bb4caf97c1942740a2c0ca1feb25ba7dfeab08d5ce369962a4"
+  },
+  "selection": "Publisher-labeled H/L controls only; other author chain IDs M/P not assumed to encode class"
+}

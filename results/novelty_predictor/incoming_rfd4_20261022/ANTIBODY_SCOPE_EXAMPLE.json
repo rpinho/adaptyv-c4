@@ -1,0 +1,13 @@
+{
+  "query_id": "q000129",
+  "design_name": "tfr1_apical_binder_34",
+  "database": "plabdab",
+  "target": "plabdab:29976:AF112402_1_AF112404_1:heavy_sequence",
+  "nident": 92,
+  "alignment_length": 113,
+  "query_length": 108,
+  "identity": 0.8141592920353983,
+  "query_coverage": 1.0,
+  "evalue": 4.871e-51,
+  "statement": "Actual qualifying heavy-sequence database match. This alone does not establish antibody typing or the applicable official novelty scale."
+}

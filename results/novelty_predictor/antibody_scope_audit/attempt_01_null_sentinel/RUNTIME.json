@@ -1,0 +1,51 @@
+{
+  "versions": {
+    "anarcii": "2.0.8",
+    "torch": "2.0.1",
+    "numpy": "1.24.3",
+    "biopython": "1.81",
+    "gemmi": "0.7.3",
+    "msgpack": "1.1.1",
+    "psutil": "7.0.0",
+    "sortedcontainers": "2.4.0"
+  },
+  "wheel_sha256": "6ac81caef04a9cad1af1ea320b35bdced620fe2bfdd0b8b17b98131495b584ca",
+  "weights": {
+    "models/tcr/tcr_4_1_128_512.pt": "837d02499d32e35384a5acace6c46909453846779bb694477ca9b98acd66cc38",
+    "models/tcr/tcr_4_2_128_512.pt": "f06bc6f114737d37ec56a6aa840d58623afd49ed78e9fd8ac5069cfc53ac2d4f",
+    "models/antibody/antibody_4_2_128_512.pt": "03e9d07d13a3ec98a9d9fe57a0b2ff0853218aa2d7bdd50a25b6d83ff2bea2e0",
+    "models/antibody/antibody_4_1_128_512.pt": "bc5d34fb37b634902903f1db0f28c3ce01745f1e2d99ca0ecf8b54ab5b19cd5b",
+    "models/shark/shark_4_2_128_512.pt": "45130f42b2b3f93ef3de449639195f2275a9dd43a4466514b6f78d78db554034",
+    "classifii/classifii.pt": "951944bf41f2715fdf7f4006c4c907adcb62b342b4831896ca01c4535bb9138e"
+  },
+  "source_files": {
+    "__init__.py": "0144744c0a402594d3bdf271cbf39cdf7d95e30f2828caeffadfd4e69347d4fa",
+    "cli.py": "a884e6e69a852e8c7c64edb4155eefda7e77aa29872f0fe9ffe3f17df0c5dbd5",
+    "output_data_processing/scheme_specific_function.py": "ae03a468876a19d2376921fcb4b5f4898e72ae28845c6709b90a45c3b53423fd",
+    "output_data_processing/schemes_utils.py": "f317a8fe25ff72613861a5ac93277d995bca3f92240dc0ef8878e03f69f394fe",
+    "output_data_processing/convert_to_legacy_format.py": "b6de9510251b50945d34391e3e81c3e8b2ef86d558469bdd44642aecd2cf6346",
+    "output_data_processing/__init__.py": "609800604c82f73a432110a71fad71694d28b38ddfc29d1727c4c53454936c6f",
+    "output_data_processing/schemes.py": "a1083141a2bb76e2cd742bfb9804557e44da1ec24bb435deda4a0efffd017d38",
+    "output_data_processing/schemes_constants.py": "ac1a43b0a63310624d082f4375c0371413577a02438c30030792c5315b9c18f2",
+    "input_data_processing/sequences.py": "96b8115a0de9add6ff591a8cf510b107a22a3e9086b66686a6750e6ac448d0f8",
+    "input_data_processing/tokeniser.py": "ee34eea811d5e246b03fcbdc9e3a0df81b8912392969dccd614cf9541864dc3d",
+    "input_data_processing/__init__.py": "0255df5ddc62b9cf9e84bc1b73bac72d6f3560a780655ea08a521f56fde2932c",
+    "input_data_processing/utils.py": "976bcb8c67f9541abc75b082fd5196ba98f75d742924f88d100bca0c155bf57b",
+    "pipeline/configuration.py": "1b3147d2d8d9668625dbf05b52499e4313d940ebdba025cd815cfdde8623e419",
+    "pipeline/constants.py": "c69093feff260905574b6afb6bb67f827a4fb2487359bc8c613678e419bfe79d",
+    "pipeline/__init__.py": "4e995f9021ddf27aa2b6b02bdcac03e17ba968c284fa4ee1c3c43aece703ef99",
+    "utils/__init__.py": "116edd8772f6b9cc225e0f5099d8fd265c668434702d4794d28b77f87ea02b3f",
+    "models/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "inference/model_runner.py": "1d393676406e6f3c625b2c88d51b95249579d62b08d11b965a739155c9a7dd39",
+    "inference/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "inference/model.py": "b014498c7b8dd9e52d44914745137455108bfae4988e3f132bc9260a73aeb893",
+    "inference/window_selector.py": "304561abfd5f36c96e2c64befd451b9a225cc9c12480eba7a0059507a190f9c4",
+    "inference/utils.py": "e75a806b1703b936933dd7c4f1e966fc32b453b1c2d5069017647dea64a5d456",
+    "inference/model_loader.py": "20e8e874e130f96ec7d503d74fdc5b36aa3726222f0f1b36170f2b0f1abfec15",
+    "classifii/__init__.py": "1c382731c8695b97dce52aebf5cfcdefb54a108828a60002533eb982ed9b5467",
+    "classifii/model.py": "ad9c002cd5cc5349e614f16a23e580c143a5c8b55a1d855e66d59a3b8ef183b5"
+  },
+  "classic_anarci_pinned_source": "79f6c575056dedef86cb8f405ebb039197923eec",
+  "classic_anarci_not_run": "Does not ship HMM/germlines; dynamic source build not executed",
+  "organizer_equivalence_established": false
+}

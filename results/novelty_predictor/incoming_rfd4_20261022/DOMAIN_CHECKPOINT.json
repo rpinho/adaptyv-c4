@@ -1,0 +1,20 @@
+{
+  "saved_at": "2026-10-23T01:58:19.052771+00:00",
+  "scope": "Interim whole-chain positive baseline and completed domain model census; not final domain novelty results",
+  "whole_chain_sequence_classes": {
+    "no_significant_hit": 310,
+    "high": 73,
+    "moderate": 17
+  },
+  "whole_chain_point_levels": {
+    "None": 259,
+    "2": 68,
+    "1": 73
+  },
+  "model_inputs": 400,
+  "all_original_backbone_inputs_unchanged": true,
+  "accepted_domain_inputs": 396,
+  "accepted_domains": 402,
+  "organizer_levels_established": 0,
+  "new_gpu_or_remote_cpu_spend_usd": 0
+}

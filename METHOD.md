@@ -1,5 +1,27 @@
 # Method: proton-coupled two-state design, with the numbers checked
 
+## Current CPU classification: measured bounds, then remaining full pairs
+
+Actual400-input bounded screen completed:73 local1/70 local2/257 unknown,
+zero organizer scores or qualified designs. Preserve those143 positive-bound
+point records unchanged. Full TM-align/exact export is now running locally
+on the domain plus whole-parent retrieval union:3,523,855 unique pairs.
+Ten unresolved domains have no candidates and retain unknown evidence.
+Eight-hour finite CPU limit; no GPU. Plan, native-source audit,96-pair exact
+seed check and automatic validated finalizer:adaptive_completion/.30 software
+checks pass, plus a real400-input simulated-empty-export negative control.
+
+Separate antibody reference analysis annotated107,440 canonical heavies,
+excluding1,902 noncanonical sequences.50 query H loops have both IMGT flanks.
+22/50 subset levels change with edit-distance normalization;49/50 scalar
+calls remain withheld under missing-reference completions and normalization
+sensitivity. One conditional4 has only two retrieved references. This does
+not establish organizer typing or a novelty-gate pass. Evidence/gaps:
+results/novelty_predictor/antibody_cdr_reference/. No sequence generation,
+functional improvement, ranking or qualification measured. Recorded Runpod
+$56.589988 +own Modal estimate$10.718947 =~$67.31; new GPU/cloud compute$0.00,
+separate generation/account billing excluded.
+
 ## Actual incoming400:CPU novelty evidence, partial alignment continuation
 
 Both saved RFD4 arms are now local and all400 sequences match verified chains.

@@ -1,0 +1,51 @@
+{
+  "created_at": "2026-10-23T01:09:18.497245+00:00",
+  "queries": 400,
+  "actual_sequence_hit_rows": 2390948,
+  "sources": [
+    {
+      "id": "swissprot",
+      "search_status": "completed",
+      "hit_rows": 15618,
+      "raw_hits_sha256": "f5d0dde75a6fdc972a83b3a4b4ad6df6b680088221e3dece4571ebb888029039",
+      "elapsed_seconds": 13.309394125,
+      "scope_complete": true
+    },
+    {
+      "id": "pdb",
+      "search_status": "completed",
+      "hit_rows": 672853,
+      "raw_hits_sha256": "08a28b960da5ebd0c634b3fde1ed726d78414867cf4fe5cd103a12e1e595da25",
+      "elapsed_seconds": 12.445538166999999,
+      "scope_complete": true
+    },
+    {
+      "id": "therapeutic_antibody",
+      "search_status": "completed",
+      "hit_rows": 145418,
+      "raw_hits_sha256": "767ebcfd69aa1e80bb7cdfdadf23f00be7c5d54aac6bc5100b552d0b3bf45d9b",
+      "elapsed_seconds": 2.7728630830000007,
+      "scope_complete": true
+    },
+    {
+      "id": "plabdab",
+      "search_status": "completed",
+      "hit_rows": 756197,
+      "raw_hits_sha256": "97636faba0b8df5667b00df86e2e7c3d9c65649f89035d1867b0427ec7647935",
+      "elapsed_seconds": 16.100605665999996,
+      "scope_complete": true
+    },
+    {
+      "id": "patents",
+      "search_status": "completed",
+      "hit_rows": 800862,
+      "raw_hits_sha256": "3b451d9b1f12ebb105da9ba7a59d56567d7daa36e5281f9c443a92b83e6222c9",
+      "elapsed_seconds": 59.878252208999996,
+      "scope_complete": false
+    }
+  ],
+  "raw_search_status_sha256": "4d5a4814a32f5f651866e54eb0242450612889e04b0a9c0f131b0e478541e664",
+  "conclusion": "Five actual searches complete. Counts are alignment records, not designs, qualified entries or a structural novelty result. Structural work remains active.",
+  "organizer_levels_established": 0,
+  "new_gpu_or_remote_cpu_spend_usd": 0
+}

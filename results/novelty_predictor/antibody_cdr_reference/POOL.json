@@ -1,0 +1,78 @@
+{
+  "state": "pool_prepared",
+  "database": "/Users/ricardo/.cache/adaptyv-c4/novelty_antibody_scope/cdr_reference.sqlite3",
+  "counts": {
+    "query": 50,
+    "target": 109495,
+    "candidate": 465683,
+    "heavy": 109342,
+    "association": 131168,
+    "query_heavy": 465546
+  },
+  "source_counts": {
+    "paired_rows": 176894,
+    "unpaired_rows": 673959,
+    "unpaired_chain_L": 287636,
+    "unpaired_chain_H": 386323
+  },
+  "association_routes": {
+    "paired_heavy": 28062,
+    "paired_light": 151,
+    "unpaired_H": 102955
+  },
+  "raw_plab_alignment_rows_scanned": 756197,
+  "input_csv_sha256": "9f428e60725384aa5bac645ce4532a1c86228170fa07bd22a685b2b302ae3063",
+  "query_annotation_raw_sha256": "804fe0d03433d7c3f99f2f4dd85c514f0f5d5396b325d9b47101e51ea39da302",
+  "sequence_hit_sha256": "97636faba0b8df5667b00df86e2e7c3d9c65649f89035d1867b0427ec7647935",
+  "reference_manifest_sha256": "dac0471efe750638c2bbcca79a21fb86ba046d1cd0b1514d8fb2428bae429848",
+  "source_fasta_sha256": "03c0386ab75e16fe2aae5681b1b6c975f3293d820b87c44ff027c8685ff9dc2c",
+  "source_downloads": {
+    "plabdab_paired": {
+      "database": "plabdab_paired",
+      "url": "https://opig.stats.ox.ac.uk/webapps/plabdab/static/downloads/paired_sequences.csv.gz",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/plabdab_paired.csv.gz",
+      "http_headers": {
+        "Server": "nginx/1.26.3",
+        "Date": "Thu, 22 Oct 2026 17:15:14 GMT",
+        "Content-Type": "text/csv; charset=utf-8",
+        "Content-Length": "11392439",
+        "Connection": "close",
+        "Content-Encoding": "gzip",
+        "Content-Disposition": "inline; filename=paired_sequences.csv.gz",
+        "Last-Modified": "Wed, 28 Aug 2024 23:20:12 GMT",
+        "Cache-Control": "no-cache",
+        "ETag": "\"1724887212.0-11392439-1915491820\""
+      },
+      "status": "downloaded",
+      "bytes": 11392439,
+      "sha256": "10f0fb3b82ddee09209adaff51340380294e3782ba90034af16c9f1d56c458a5"
+    },
+    "plabdab_unpaired": {
+      "database": "plabdab_unpaired",
+      "url": "https://opig.stats.ox.ac.uk/webapps/plabdab/static/downloads/unpaired_sequences.csv.gz",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/plabdab_unpaired.csv.gz",
+      "http_headers": {
+        "Server": "nginx/1.26.3",
+        "Date": "Thu, 22 Oct 2026 17:15:19 GMT",
+        "Content-Type": "text/csv; charset=utf-8",
+        "Content-Length": "43960421",
+        "Connection": "close",
+        "Content-Encoding": "gzip",
+        "Content-Disposition": "inline; filename=unpaired_sequences.csv.gz",
+        "Last-Modified": "Wed, 28 Aug 2024 15:06:36 GMT",
+        "Cache-Control": "no-cache",
+        "ETag": "\"1724857596.0-43960421-2708412111\""
+      },
+      "status": "downloaded",
+      "bytes": 43960421,
+      "sha256": "fc1b726b6bad656021d32b7fb120f78e976f2fb1b908e3b3e61f26528715b448"
+    }
+  },
+  "immutable_heavy_rows_sha256": "71dfb4f4229b995965c74f1f787815da635e046ee4dade12efdbf395dcc477b0",
+  "immutable_query_heavy_rows_sha256": "729bf140adb58fb609ef3c2b3b5607595698e922a9469a7114cfda06c24fee88",
+  "prepared_sqlite_sha256": "01137f1b637defb6aeef747e413347f004f8521e3435ea5636d3148e5baad024",
+  "script_sha256": "bbf9218848338a7d8cc87163eee623876f3da733780ed2a477d3d08686c4be63",
+  "selection": "All returned PLAbDab hits for all50 complete H annotations; all associated raw-source heavy sequences restored",
+  "organizer_typing_or_cdr_level_established": false,
+  "new_gpu_or_remote_cpu_spend_usd": 0
+}

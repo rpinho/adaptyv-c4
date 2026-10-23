@@ -1,0 +1,2443 @@
+{
+  "state": "prepared",
+  "created_at": "2026-10-23T02:51:15.867127+00:00",
+  "base_report": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/incoming_rfd4_20261022/run_bounded/parent_context/predictions.json",
+  "base_report_sha256": "3c9608aa7fcf8314bfa94ab4a3777e4d3aaad5c278ada97dfeafb912ed58ac13",
+  "source": {
+    "commit": "463739e0014a1549a527de589102cde98f802f37",
+    "binary_sha256": "07c05879cd5f3b2e37b26fde503e8bd458357de0ba05ca5c65b769bd55b8def3",
+    "source_files": {
+      "src/strucclustutils/tmalign.cpp": {
+        "git_blob": "e44fb28d1e3f77e8f86f2eaa8ee9b034e576daca",
+        "sha256": "8dfda425eb0e35ffbdf08c4665bd9dbcdbd8fe3fc9f33a54d98241b43ed0659b",
+        "url": "https://github.com/steineggerlab/foldseek/blob/463739e0014a1549a527de589102cde98f802f37/src/strucclustutils/tmalign.cpp"
+      },
+      "src/commons/TMaligner.cpp": {
+        "git_blob": "9c669f47f5562a899512ae0c9edc0172d0e7654c",
+        "sha256": "314f3d5f98a9e6880266023290230f3b9600a44f1be02e4fb7c20d16fa58f8b1",
+        "url": "https://github.com/steineggerlab/foldseek/blob/463739e0014a1549a527de589102cde98f802f37/src/commons/TMaligner.cpp"
+      },
+      "src/commons/TMaligner.h": {
+        "git_blob": "9c99fe4038c6469c60fc2372205dfa55eb99303e",
+        "sha256": "53aa7ed011cb88ed9b1a1e811baf9e8016db68c0b7e2eb5a60c47c3a0b9e4f91",
+        "url": "https://github.com/steineggerlab/foldseek/blob/463739e0014a1549a527de589102cde98f802f37/src/commons/TMaligner.h"
+      },
+      "lib/tmalign/TMalign.cpp": {
+        "git_blob": "78d0a4975e5b1e9e82a04898a50c400707fb8168",
+        "sha256": "43d08942a6631c39c963c79b522394bdf948f4f8a9b06fa4d39cceddc79a4683",
+        "url": "https://github.com/steineggerlab/foldseek/blob/463739e0014a1549a527de589102cde98f802f37/lib/tmalign/TMalign.cpp"
+      }
+    },
+    "rationale": "Native TM-align candidate parser reads target keys only; full pairwise align receives coordinates/sequences, not discovery seeds; no RNG found in the audited TMalign library."
+  },
+  "input_csv_sha256": "9f428e60725384aa5bac645ce4532a1c86228170fa07bd22a685b2b302ae3063",
+  "reference_database": {
+    "id": "Foldseek_public_PDB100_all_member_chains",
+    "prefix": "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+    "status": "available",
+    "scope_complete": false,
+    "source_url": "https://foldseek.steineggerlab.workers.dev/pdb100.tar.gz",
+    "version_url": "https://foldseek.steineggerlab.workers.dev/pdb100.version",
+    "archive_bytes": 2326827389,
+    "download_date": "2026-10-22",
+    "pdb_date": "2025-01-01",
+    "file_build_date": "2025-07-25",
+    "http_last_modified": "2025-12-19T12:46:03Z",
+    "version_text": "aefd75e0a5d6acbe8a2b7791b53eb479  pdb100.tar.gz\n250101\tPDB_DATE\n1815f0d76d7b5807e63b13f9d446dcef43c1f3b1\tFOLDSEEK_COMMIT\n",
+    "representatives": 324204,
+    "searched_chains": 1562678,
+    "scope": "Search full pdb_seq member-chain DB, not just 324204 representatives; historical snapshot. Organizer structural corpus/snapshot unspecified.",
+    "files": {
+      ".0": "fdcd08940cdf515b3806d8fb118fafd447954b65568f2ac51e102a58a4873a19",
+      ".1": "421f1cc9b114079deedec5f58a13e2a6b799852a08352f618cc91d49e3953cf7",
+      ".dbtype": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+      ".index": "8742e1be18ffb59d8bff1005291e171e25de6130cdc4bd5109bbf9cd6109c2de",
+      ".lookup": "91d62f5f28cfb5930de8f03b6a77b6d76b5e46a8249e64992b6afba41efc705a",
+      ".source": "a83bdefafcfb4cb3389d903100356e55c2c8ee45a26c725360cf13a3059c7ed1",
+      "_ca.0": "84042d15219607ed76430d1bf8abc6db3be69f9b1c9dde4ce69f88aa4e506262",
+      "_ca.1": "624a27feeee35e64317ad925534546bad7006236a297fe5952149b383f1fc40a",
+      "_ca.dbtype": "8fc6cb4a9816d75621652de783118eee13112cda196e61d1bde0460f29b26e3e",
+      "_ca.index": "45517f39d9078801a20bc70918975e6e7d7ad60122e1e55be97ea6f2c53e07c6",
+      "_h.0": "74c7d9f96fbe1431836d8ed7a2690080e90f5196151e3bd340c43a05fc8671fb",
+      "_h.1": "01a838a0b36748df3feb191770721ef766c963b1b3ef4595f90561ab6e7c3f38",
+      "_h.dbtype": "42f4aeb81c1ef81f771f3de8abca9dcf66901c575530e7672e4b1146474ae650",
+      "_h.index": "0d8c8ecf38999fbd9205dc4a247f1b84a2f25c5cac42e12ec6500d0697f54974",
+      "_ss.0": "8e3df38ac21d6907f9de79681a2b9abefb37ca7fd5bae58ddc8e312892b68135",
+      "_ss.1": "188475ae430196be698e7c7b6948ab6072cdc7a5a1a98e2b3a0427c676173341",
+      "_ss.dbtype": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+      "_ss.index": "8742e1be18ffb59d8bff1005291e171e25de6130cdc4bd5109bbf9cd6109c2de"
+    },
+    "searched_database_bytes": 3725663586
+  },
+  "query_db": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/incoming_rfd4_20261022/run_bounded/domain_search/structure/querydb",
+  "query_db_files": {
+    "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/incoming_rfd4_20261022/run_bounded/domain_search/structure/querydb": "f01800b9c236cdcfafcc82ec90014f527c3c994009a55832671ec945cda69146",
+    "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/incoming_rfd4_20261022/run_bounded/domain_search/structure/querydb.dbtype": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+    "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/incoming_rfd4_20261022/run_bounded/domain_search/structure/querydb.index": "46f4f74fefced7e2f606eac90022eb4056393c66d8cbfb9f3544707ac8ad8bf9",
+    "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/incoming_rfd4_20261022/run_bounded/domain_search/structure/querydb.lookup": "5ee79a14980ef6d779c570133caea7e9f401e1f618128f1564fcf1d8b2af2f42",
+    "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/incoming_rfd4_20261022/run_bounded/domain_search/structure/querydb.source": "d03f96eb645330aa4efa83e1faf65bbf172101322d8b3e29126ed6a00b500b58",
+    "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/incoming_rfd4_20261022/run_bounded/domain_search/structure/querydb_ca": "8d985654d4dcc2f9c0b529088ee8a1fda436cbd73d180ace3b2a43029455641c",
+    "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/incoming_rfd4_20261022/run_bounded/domain_search/structure/querydb_ca.dbtype": "8fc6cb4a9816d75621652de783118eee13112cda196e61d1bde0460f29b26e3e",
+    "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/incoming_rfd4_20261022/run_bounded/domain_search/structure/querydb_ca.index": "d2013724e9675a25257b2cd763128d839eeb473058ca0c1b8c9834343490b2a7",
+    "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/incoming_rfd4_20261022/run_bounded/domain_search/structure/querydb_h": "3cd652b7c1809a7b972c4fd2c339208ed3d05120549467698c2268f8bd3bb0a6",
+    "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/incoming_rfd4_20261022/run_bounded/domain_search/structure/querydb_h.dbtype": "42f4aeb81c1ef81f771f3de8abca9dcf66901c575530e7672e4b1146474ae650",
+    "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/incoming_rfd4_20261022/run_bounded/domain_search/structure/querydb_h.index": "04cd0a2447ed33170ba7562bfd84c5a26f67e8781c33217f2a904a74caab5f0d",
+    "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/incoming_rfd4_20261022/run_bounded/domain_search/structure/querydb_ss": "f47e0c0147546e1e593377ed5e2c90d9e2062024b5f7f1a22ba42e057a7d3963",
+    "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/incoming_rfd4_20261022/run_bounded/domain_search/structure/querydb_ss.dbtype": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+    "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/incoming_rfd4_20261022/run_bounded/domain_search/structure/querydb_ss.index": "46f4f74fefced7e2f606eac90022eb4056393c66d8cbfb9f3544707ac8ad8bf9"
+  },
+  "domain_discovery_files": {
+    "": "f64dd6602b318ed6b42a8b693901a92fd87174680043f5d6e2e2ebbbdbbdfbc8",
+    ".index": "886410aae1ffe5a3aeb645c26998d6a29391ba547c05f3a1430cf27586715af8",
+    ".dbtype": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910"
+  },
+  "parent_discovery_checkpoint_sha256": "32fef652fd79261e007521a67933e3edea403925506a7785b91fc93a465e10fd",
+  "query_domains": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/incoming_rfd4_20261022/run_bounded/domain_search/structure/query_domains.json",
+  "query_domains_sha256": "50ca32a871a101d8af989ce7969097645c9d23c92df37dc3c15ad090734717fa",
+  "preserved_proven_point_inputs": 143,
+  "unresolved_inputs": 257,
+  "inputs_with_unresolved_accepted_domains": 253,
+  "unresolved_query_domains": 259,
+  "no_accepted_domain_inputs": 4,
+  "original_selected_candidate_rows": 9582531,
+  "unique_candidate_pairs": 3523855,
+  "seed_tsv": "/Users/ricardo/.cache/adaptyv-c4/novelty_adaptive_completion/union_candidates.tsv",
+  "seed_tsv_sha256": "bd0f90c64c1cb387b983b686cf57b4ae293044dde7fd097392a1d24248304f68",
+  "per_domain": {
+    "q000001d001": {
+      "name": "tfr1_apical_binder_0",
+      "native_query_key": 0,
+      "own_discovery_rows": 771,
+      "parent_discovery_rows": 3968,
+      "unique_domain_targets": 394,
+      "unique_parent_targets": 2002,
+      "unique_union_targets": 2286
+    },
+    "q000002d001": {
+      "name": "tfr1_apical_binder_1",
+      "native_query_key": 1,
+      "own_discovery_rows": 244,
+      "parent_discovery_rows": 190,
+      "unique_domain_targets": 159,
+      "unique_parent_targets": 124,
+      "unique_union_targets": 161
+    },
+    "q000005d001": {
+      "name": "tfr1_apical_binder_101",
+      "native_query_key": 4,
+      "own_discovery_rows": 15075,
+      "parent_discovery_rows": 25449,
+      "unique_domain_targets": 8334,
+      "unique_parent_targets": 14718,
+      "unique_union_targets": 15510
+    },
+    "q000007d001": {
+      "name": "tfr1_apical_binder_103",
+      "native_query_key": 6,
+      "own_discovery_rows": 11735,
+      "parent_discovery_rows": 16277,
+      "unique_domain_targets": 6544,
+      "unique_parent_targets": 9006,
+      "unique_union_targets": 9560
+    },
+    "q000010d001": {
+      "name": "tfr1_apical_binder_106",
+      "native_query_key": 9,
+      "own_discovery_rows": 3454,
+      "parent_discovery_rows": 3094,
+      "unique_domain_targets": 1822,
+      "unique_parent_targets": 1659,
+      "unique_union_targets": 2015
+    },
+    "q000012d001": {
+      "name": "tfr1_apical_binder_108",
+      "native_query_key": 11,
+      "own_discovery_rows": 0,
+      "parent_discovery_rows": 0,
+      "unique_domain_targets": 0,
+      "unique_parent_targets": 0,
+      "unique_union_targets": 0
+    },
+    "q000013d001": {
+      "name": "tfr1_apical_binder_109",
+      "native_query_key": 12,
+      "own_discovery_rows": 71,
+      "parent_discovery_rows": 87,
+      "unique_domain_targets": 45,
+      "unique_parent_targets": 53,
+      "unique_union_targets": 67
+    },
+    "q000014d001": {
+      "name": "tfr1_apical_binder_11",
+      "native_query_key": 13,
+      "own_discovery_rows": 1041,
+      "parent_discovery_rows": 1069,
+      "unique_domain_targets": 577,
+      "unique_parent_targets": 585,
+      "unique_union_targets": 696
+    },
+    "q000015d001": {
+      "name": "tfr1_apical_binder_110",
+      "native_query_key": 14,
+      "own_discovery_rows": 413,
+      "parent_discovery_rows": 464,
+      "unique_domain_targets": 230,
+      "unique_parent_targets": 265,
+      "unique_union_targets": 271
+    },
+    "q000016d001": {
+      "name": "tfr1_apical_binder_111",
+      "native_query_key": 15,
+      "own_discovery_rows": 61475,
+      "parent_discovery_rows": 77980,
+      "unique_domain_targets": 34995,
+      "unique_parent_targets": 43006,
+      "unique_union_targets": 50154
+    },
+    "q000022d001": {
+      "name": "tfr1_apical_binder_117",
+      "native_query_key": 21,
+      "own_discovery_rows": 96470,
+      "parent_discovery_rows": 99257,
+      "unique_domain_targets": 52124,
+      "unique_parent_targets": 54381,
+      "unique_union_targets": 61996
+    },
+    "q000024d001": {
+      "name": "tfr1_apical_binder_119",
+      "native_query_key": 23,
+      "own_discovery_rows": 19605,
+      "parent_discovery_rows": 29158,
+      "unique_domain_targets": 13507,
+      "unique_parent_targets": 19673,
+      "unique_union_targets": 20546
+    },
+    "q000025d001": {
+      "name": "tfr1_apical_binder_12",
+      "native_query_key": 24,
+      "own_discovery_rows": 53592,
+      "parent_discovery_rows": 65874,
+      "unique_domain_targets": 33464,
+      "unique_parent_targets": 39133,
+      "unique_union_targets": 47432
+    },
+    "q000026d001": {
+      "name": "tfr1_apical_binder_120",
+      "native_query_key": 25,
+      "own_discovery_rows": 44220,
+      "parent_discovery_rows": 46146,
+      "unique_domain_targets": 27573,
+      "unique_parent_targets": 29077,
+      "unique_union_targets": 30721
+    },
+    "q000028d001": {
+      "name": "tfr1_apical_binder_122",
+      "native_query_key": 27,
+      "own_discovery_rows": 92,
+      "parent_discovery_rows": 99,
+      "unique_domain_targets": 60,
+      "unique_parent_targets": 67,
+      "unique_union_targets": 77
+    },
+    "q000029d001": {
+      "name": "tfr1_apical_binder_123",
+      "native_query_key": 28,
+      "own_discovery_rows": 26,
+      "parent_discovery_rows": 23589,
+      "unique_domain_targets": 13,
+      "unique_parent_targets": 13411,
+      "unique_union_targets": 13422
+    },
+    "q000029d002": {
+      "name": "tfr1_apical_binder_123",
+      "native_query_key": 29,
+      "own_discovery_rows": 5295,
+      "parent_discovery_rows": 23589,
+      "unique_domain_targets": 2671,
+      "unique_parent_targets": 13411,
+      "unique_union_targets": 15650
+    },
+    "q000030d001": {
+      "name": "tfr1_apical_binder_124",
+      "native_query_key": 30,
+      "own_discovery_rows": 978,
+      "parent_discovery_rows": 924,
+      "unique_domain_targets": 630,
+      "unique_parent_targets": 591,
+      "unique_union_targets": 658
+    },
+    "q000031d001": {
+      "name": "tfr1_apical_binder_125",
+      "native_query_key": 31,
+      "own_discovery_rows": 603,
+      "parent_discovery_rows": 686,
+      "unique_domain_targets": 356,
+      "unique_parent_targets": 406,
+      "unique_union_targets": 420
+    },
+    "q000032d001": {
+      "name": "tfr1_apical_binder_126",
+      "native_query_key": 32,
+      "own_discovery_rows": 2426,
+      "parent_discovery_rows": 3299,
+      "unique_domain_targets": 1263,
+      "unique_parent_targets": 1724,
+      "unique_union_targets": 1884
+    },
+    "q000035d001": {
+      "name": "tfr1_apical_binder_129",
+      "native_query_key": 35,
+      "own_discovery_rows": 12591,
+      "parent_discovery_rows": 28976,
+      "unique_domain_targets": 7397,
+      "unique_parent_targets": 16659,
+      "unique_union_targets": 18827
+    },
+    "q000036d001": {
+      "name": "tfr1_apical_binder_13",
+      "native_query_key": 36,
+      "own_discovery_rows": 31106,
+      "parent_discovery_rows": 30691,
+      "unique_domain_targets": 17729,
+      "unique_parent_targets": 17940,
+      "unique_union_targets": 19371
+    },
+    "q000037d001": {
+      "name": "tfr1_apical_binder_130",
+      "native_query_key": 37,
+      "own_discovery_rows": 0,
+      "parent_discovery_rows": 0,
+      "unique_domain_targets": 0,
+      "unique_parent_targets": 0,
+      "unique_union_targets": 0
+    },
+    "q000037d002": {
+      "name": "tfr1_apical_binder_130",
+      "native_query_key": 38,
+      "own_discovery_rows": 0,
+      "parent_discovery_rows": 0,
+      "unique_domain_targets": 0,
+      "unique_parent_targets": 0,
+      "unique_union_targets": 0
+    },
+    "q000038d001": {
+      "name": "tfr1_apical_binder_131",
+      "native_query_key": 39,
+      "own_discovery_rows": 19,
+      "parent_discovery_rows": 219,
+      "unique_domain_targets": 13,
+      "unique_parent_targets": 142,
+      "unique_union_targets": 143
+    },
+    "q000039d001": {
+      "name": "tfr1_apical_binder_132",
+      "native_query_key": 40,
+      "own_discovery_rows": 706,
+      "parent_discovery_rows": 1371,
+      "unique_domain_targets": 386,
+      "unique_parent_targets": 750,
+      "unique_union_targets": 827
+    },
+    "q000040d001": {
+      "name": "tfr1_apical_binder_133",
+      "native_query_key": 41,
+      "own_discovery_rows": 4388,
+      "parent_discovery_rows": 4139,
+      "unique_domain_targets": 2352,
+      "unique_parent_targets": 2177,
+      "unique_union_targets": 2951
+    },
+    "q000041d001": {
+      "name": "tfr1_apical_binder_134",
+      "native_query_key": 42,
+      "own_discovery_rows": 7063,
+      "parent_discovery_rows": 6831,
+      "unique_domain_targets": 3826,
+      "unique_parent_targets": 3910,
+      "unique_union_targets": 5031
+    },
+    "q000042d001": {
+      "name": "tfr1_apical_binder_135",
+      "native_query_key": 43,
+      "own_discovery_rows": 7,
+      "parent_discovery_rows": 6,
+      "unique_domain_targets": 6,
+      "unique_parent_targets": 5,
+      "unique_union_targets": 6
+    },
+    "q000043d001": {
+      "name": "tfr1_apical_binder_136",
+      "native_query_key": 44,
+      "own_discovery_rows": 14785,
+      "parent_discovery_rows": 12424,
+      "unique_domain_targets": 9200,
+      "unique_parent_targets": 7876,
+      "unique_union_targets": 10742
+    },
+    "q000044d001": {
+      "name": "tfr1_apical_binder_137",
+      "native_query_key": 45,
+      "own_discovery_rows": 34981,
+      "parent_discovery_rows": 49597,
+      "unique_domain_targets": 25254,
+      "unique_parent_targets": 38168,
+      "unique_union_targets": 42614
+    },
+    "q000045d001": {
+      "name": "tfr1_apical_binder_138",
+      "native_query_key": 46,
+      "own_discovery_rows": 37338,
+      "parent_discovery_rows": 32312,
+      "unique_domain_targets": 20958,
+      "unique_parent_targets": 18182,
+      "unique_union_targets": 22370
+    },
+    "q000046d001": {
+      "name": "tfr1_apical_binder_139",
+      "native_query_key": 47,
+      "own_discovery_rows": 65919,
+      "parent_discovery_rows": 81141,
+      "unique_domain_targets": 35602,
+      "unique_parent_targets": 43499,
+      "unique_union_targets": 47636
+    },
+    "q000047d001": {
+      "name": "tfr1_apical_binder_14",
+      "native_query_key": 48,
+      "own_discovery_rows": 144,
+      "parent_discovery_rows": 82,
+      "unique_domain_targets": 83,
+      "unique_parent_targets": 46,
+      "unique_union_targets": 84
+    },
+    "q000048d001": {
+      "name": "tfr1_apical_binder_140",
+      "native_query_key": 49,
+      "own_discovery_rows": 451,
+      "parent_discovery_rows": 521,
+      "unique_domain_targets": 288,
+      "unique_parent_targets": 336,
+      "unique_union_targets": 388
+    },
+    "q000049d001": {
+      "name": "tfr1_apical_binder_141",
+      "native_query_key": 50,
+      "own_discovery_rows": 63,
+      "parent_discovery_rows": 41,
+      "unique_domain_targets": 39,
+      "unique_parent_targets": 26,
+      "unique_union_targets": 49
+    },
+    "q000050d001": {
+      "name": "tfr1_apical_binder_142",
+      "native_query_key": 51,
+      "own_discovery_rows": 13923,
+      "parent_discovery_rows": 13537,
+      "unique_domain_targets": 8224,
+      "unique_parent_targets": 8024,
+      "unique_union_targets": 8698
+    },
+    "q000053d001": {
+      "name": "tfr1_apical_binder_145",
+      "native_query_key": 54,
+      "own_discovery_rows": 6993,
+      "parent_discovery_rows": 5652,
+      "unique_domain_targets": 3620,
+      "unique_parent_targets": 2952,
+      "unique_union_targets": 4228
+    },
+    "q000054d001": {
+      "name": "tfr1_apical_binder_146",
+      "native_query_key": 55,
+      "own_discovery_rows": 3399,
+      "parent_discovery_rows": 3808,
+      "unique_domain_targets": 2031,
+      "unique_parent_targets": 2229,
+      "unique_union_targets": 2700
+    },
+    "q000056d001": {
+      "name": "tfr1_apical_binder_148",
+      "native_query_key": 57,
+      "own_discovery_rows": 18486,
+      "parent_discovery_rows": 15823,
+      "unique_domain_targets": 12415,
+      "unique_parent_targets": 10604,
+      "unique_union_targets": 12930
+    },
+    "q000057d001": {
+      "name": "tfr1_apical_binder_149",
+      "native_query_key": 58,
+      "own_discovery_rows": 98795,
+      "parent_discovery_rows": 99159,
+      "unique_domain_targets": 55628,
+      "unique_parent_targets": 55674,
+      "unique_union_targets": 59213
+    },
+    "q000059d001": {
+      "name": "tfr1_apical_binder_150",
+      "native_query_key": 59,
+      "own_discovery_rows": 16745,
+      "parent_discovery_rows": 67012,
+      "unique_domain_targets": 10173,
+      "unique_parent_targets": 40429,
+      "unique_union_targets": 46376
+    },
+    "q000061d001": {
+      "name": "tfr1_apical_binder_152",
+      "native_query_key": 61,
+      "own_discovery_rows": 295,
+      "parent_discovery_rows": 549,
+      "unique_domain_targets": 193,
+      "unique_parent_targets": 418,
+      "unique_union_targets": 430
+    },
+    "q000063d001": {
+      "name": "tfr1_apical_binder_154",
+      "native_query_key": 63,
+      "own_discovery_rows": 243,
+      "parent_discovery_rows": 252,
+      "unique_domain_targets": 152,
+      "unique_parent_targets": 162,
+      "unique_union_targets": 180
+    },
+    "q000065d001": {
+      "name": "tfr1_apical_binder_156",
+      "native_query_key": 65,
+      "own_discovery_rows": 6324,
+      "parent_discovery_rows": 7386,
+      "unique_domain_targets": 3324,
+      "unique_parent_targets": 3871,
+      "unique_union_targets": 4079
+    },
+    "q000066d001": {
+      "name": "tfr1_apical_binder_157",
+      "native_query_key": 66,
+      "own_discovery_rows": 0,
+      "parent_discovery_rows": 0,
+      "unique_domain_targets": 0,
+      "unique_parent_targets": 0,
+      "unique_union_targets": 0
+    },
+    "q000067d001": {
+      "name": "tfr1_apical_binder_158",
+      "native_query_key": 67,
+      "own_discovery_rows": 14684,
+      "parent_discovery_rows": 13635,
+      "unique_domain_targets": 7788,
+      "unique_parent_targets": 7339,
+      "unique_union_targets": 9505
+    },
+    "q000069d001": {
+      "name": "tfr1_apical_binder_16",
+      "native_query_key": 69,
+      "own_discovery_rows": 6866,
+      "parent_discovery_rows": 7839,
+      "unique_domain_targets": 3855,
+      "unique_parent_targets": 4428,
+      "unique_union_targets": 5211
+    },
+    "q000071d001": {
+      "name": "tfr1_apical_binder_161",
+      "native_query_key": 71,
+      "own_discovery_rows": 6751,
+      "parent_discovery_rows": 7880,
+      "unique_domain_targets": 3789,
+      "unique_parent_targets": 4648,
+      "unique_union_targets": 6219
+    },
+    "q000073d001": {
+      "name": "tfr1_apical_binder_163",
+      "native_query_key": 73,
+      "own_discovery_rows": 63798,
+      "parent_discovery_rows": 84132,
+      "unique_domain_targets": 34933,
+      "unique_parent_targets": 48823,
+      "unique_union_targets": 53963
+    },
+    "q000076d001": {
+      "name": "tfr1_apical_binder_166",
+      "native_query_key": 76,
+      "own_discovery_rows": 2504,
+      "parent_discovery_rows": 2933,
+      "unique_domain_targets": 1667,
+      "unique_parent_targets": 2021,
+      "unique_union_targets": 2266
+    },
+    "q000077d001": {
+      "name": "tfr1_apical_binder_167",
+      "native_query_key": 77,
+      "own_discovery_rows": 1291,
+      "parent_discovery_rows": 2106,
+      "unique_domain_targets": 705,
+      "unique_parent_targets": 1201,
+      "unique_union_targets": 1268
+    },
+    "q000078d001": {
+      "name": "tfr1_apical_binder_168",
+      "native_query_key": 78,
+      "own_discovery_rows": 32326,
+      "parent_discovery_rows": 52264,
+      "unique_domain_targets": 21443,
+      "unique_parent_targets": 31907,
+      "unique_union_targets": 35760
+    },
+    "q000079d001": {
+      "name": "tfr1_apical_binder_169",
+      "native_query_key": 79,
+      "own_discovery_rows": 42168,
+      "parent_discovery_rows": 45052,
+      "unique_domain_targets": 26181,
+      "unique_parent_targets": 26529,
+      "unique_union_targets": 36197
+    },
+    "q000080d001": {
+      "name": "tfr1_apical_binder_17",
+      "native_query_key": 80,
+      "own_discovery_rows": 75598,
+      "parent_discovery_rows": 73188,
+      "unique_domain_targets": 39746,
+      "unique_parent_targets": 38278,
+      "unique_union_targets": 40449
+    },
+    "q000082d001": {
+      "name": "tfr1_apical_binder_171",
+      "native_query_key": 82,
+      "own_discovery_rows": 81,
+      "parent_discovery_rows": 99,
+      "unique_domain_targets": 41,
+      "unique_parent_targets": 53,
+      "unique_union_targets": 69
+    },
+    "q000085d001": {
+      "name": "tfr1_apical_binder_174",
+      "native_query_key": 85,
+      "own_discovery_rows": 65719,
+      "parent_discovery_rows": 96547,
+      "unique_domain_targets": 37394,
+      "unique_parent_targets": 52576,
+      "unique_union_targets": 59706
+    },
+    "q000086d001": {
+      "name": "tfr1_apical_binder_175",
+      "native_query_key": 86,
+      "own_discovery_rows": 151,
+      "parent_discovery_rows": 176,
+      "unique_domain_targets": 103,
+      "unique_parent_targets": 126,
+      "unique_union_targets": 168
+    },
+    "q000087d001": {
+      "name": "tfr1_apical_binder_176",
+      "native_query_key": 87,
+      "own_discovery_rows": 3634,
+      "parent_discovery_rows": 4732,
+      "unique_domain_targets": 1896,
+      "unique_parent_targets": 2582,
+      "unique_union_targets": 2669
+    },
+    "q000088d001": {
+      "name": "tfr1_apical_binder_177",
+      "native_query_key": 88,
+      "own_discovery_rows": 26557,
+      "parent_discovery_rows": 26112,
+      "unique_domain_targets": 16368,
+      "unique_parent_targets": 15901,
+      "unique_union_targets": 21043
+    },
+    "q000089d001": {
+      "name": "tfr1_apical_binder_178",
+      "native_query_key": 89,
+      "own_discovery_rows": 66,
+      "parent_discovery_rows": 59,
+      "unique_domain_targets": 36,
+      "unique_parent_targets": 32,
+      "unique_union_targets": 42
+    },
+    "q000092d001": {
+      "name": "tfr1_apical_binder_180",
+      "native_query_key": 92,
+      "own_discovery_rows": 54977,
+      "parent_discovery_rows": 54537,
+      "unique_domain_targets": 29457,
+      "unique_parent_targets": 29557,
+      "unique_union_targets": 32392
+    },
+    "q000097d001": {
+      "name": "tfr1_apical_binder_185",
+      "native_query_key": 97,
+      "own_discovery_rows": 49184,
+      "parent_discovery_rows": 67414,
+      "unique_domain_targets": 28876,
+      "unique_parent_targets": 40312,
+      "unique_union_targets": 45068
+    },
+    "q000098d001": {
+      "name": "tfr1_apical_binder_186",
+      "native_query_key": 98,
+      "own_discovery_rows": 3208,
+      "parent_discovery_rows": 2513,
+      "unique_domain_targets": 1729,
+      "unique_parent_targets": 1366,
+      "unique_union_targets": 1774
+    },
+    "q000099d001": {
+      "name": "tfr1_apical_binder_187",
+      "native_query_key": 99,
+      "own_discovery_rows": 49,
+      "parent_discovery_rows": 67,
+      "unique_domain_targets": 25,
+      "unique_parent_targets": 40,
+      "unique_union_targets": 43
+    },
+    "q000100d001": {
+      "name": "tfr1_apical_binder_188",
+      "native_query_key": 100,
+      "own_discovery_rows": 3643,
+      "parent_discovery_rows": 6086,
+      "unique_domain_targets": 1858,
+      "unique_parent_targets": 3162,
+      "unique_union_targets": 3529
+    },
+    "q000102d001": {
+      "name": "tfr1_apical_binder_19",
+      "native_query_key": 102,
+      "own_discovery_rows": 6680,
+      "parent_discovery_rows": 6316,
+      "unique_domain_targets": 3812,
+      "unique_parent_targets": 3602,
+      "unique_union_targets": 3922
+    },
+    "q000103d001": {
+      "name": "tfr1_apical_binder_190",
+      "native_query_key": 103,
+      "own_discovery_rows": 224,
+      "parent_discovery_rows": 216,
+      "unique_domain_targets": 138,
+      "unique_parent_targets": 124,
+      "unique_union_targets": 175
+    },
+    "q000105d001": {
+      "name": "tfr1_apical_binder_192",
+      "native_query_key": 105,
+      "own_discovery_rows": 312,
+      "parent_discovery_rows": 1326,
+      "unique_domain_targets": 172,
+      "unique_parent_targets": 699,
+      "unique_union_targets": 709
+    },
+    "q000107d001": {
+      "name": "tfr1_apical_binder_194",
+      "native_query_key": 107,
+      "own_discovery_rows": 831,
+      "parent_discovery_rows": 487,
+      "unique_domain_targets": 470,
+      "unique_parent_targets": 272,
+      "unique_union_targets": 480
+    },
+    "q000109d001": {
+      "name": "tfr1_apical_binder_196",
+      "native_query_key": 109,
+      "own_discovery_rows": 390,
+      "parent_discovery_rows": 472,
+      "unique_domain_targets": 213,
+      "unique_parent_targets": 260,
+      "unique_union_targets": 349
+    },
+    "q000111d001": {
+      "name": "tfr1_apical_binder_198",
+      "native_query_key": 111,
+      "own_discovery_rows": 17021,
+      "parent_discovery_rows": 15362,
+      "unique_domain_targets": 9324,
+      "unique_parent_targets": 8574,
+      "unique_union_targets": 9977
+    },
+    "q000112d001": {
+      "name": "tfr1_apical_binder_199",
+      "native_query_key": 112,
+      "own_discovery_rows": 25840,
+      "parent_discovery_rows": 50617,
+      "unique_domain_targets": 14672,
+      "unique_parent_targets": 30293,
+      "unique_union_targets": 33900
+    },
+    "q000114d001": {
+      "name": "tfr1_apical_binder_20",
+      "native_query_key": 114,
+      "own_discovery_rows": 6666,
+      "parent_discovery_rows": 35386,
+      "unique_domain_targets": 3537,
+      "unique_parent_targets": 19342,
+      "unique_union_targets": 19896
+    },
+    "q000115d001": {
+      "name": "tfr1_apical_binder_21",
+      "native_query_key": 115,
+      "own_discovery_rows": 98881,
+      "parent_discovery_rows": 99179,
+      "unique_domain_targets": 56706,
+      "unique_parent_targets": 54925,
+      "unique_union_targets": 60658
+    },
+    "q000116d001": {
+      "name": "tfr1_apical_binder_22",
+      "native_query_key": 116,
+      "own_discovery_rows": 1123,
+      "parent_discovery_rows": 1311,
+      "unique_domain_targets": 667,
+      "unique_parent_targets": 812,
+      "unique_union_targets": 921
+    },
+    "q000117d001": {
+      "name": "tfr1_apical_binder_23",
+      "native_query_key": 117,
+      "own_discovery_rows": 1445,
+      "parent_discovery_rows": 1339,
+      "unique_domain_targets": 876,
+      "unique_parent_targets": 836,
+      "unique_union_targets": 1023
+    },
+    "q000118d001": {
+      "name": "tfr1_apical_binder_24",
+      "native_query_key": 118,
+      "own_discovery_rows": 24704,
+      "parent_discovery_rows": 26474,
+      "unique_domain_targets": 13980,
+      "unique_parent_targets": 15523,
+      "unique_union_targets": 18240
+    },
+    "q000122d001": {
+      "name": "tfr1_apical_binder_28",
+      "native_query_key": 122,
+      "own_discovery_rows": 25556,
+      "parent_discovery_rows": 28763,
+      "unique_domain_targets": 14057,
+      "unique_parent_targets": 15951,
+      "unique_union_targets": 16371
+    },
+    "q000125d001": {
+      "name": "tfr1_apical_binder_30",
+      "native_query_key": 124,
+      "own_discovery_rows": 97,
+      "parent_discovery_rows": 183,
+      "unique_domain_targets": 53,
+      "unique_parent_targets": 105,
+      "unique_union_targets": 120
+    },
+    "q000127d001": {
+      "name": "tfr1_apical_binder_32",
+      "native_query_key": 126,
+      "own_discovery_rows": 89320,
+      "parent_discovery_rows": 94409,
+      "unique_domain_targets": 51628,
+      "unique_parent_targets": 53681,
+      "unique_union_targets": 61051
+    },
+    "q000128d001": {
+      "name": "tfr1_apical_binder_33",
+      "native_query_key": 127,
+      "own_discovery_rows": 122,
+      "parent_discovery_rows": 266,
+      "unique_domain_targets": 83,
+      "unique_parent_targets": 190,
+      "unique_union_targets": 199
+    },
+    "q000134d001": {
+      "name": "tfr1_apical_binder_39",
+      "native_query_key": 133,
+      "own_discovery_rows": 34245,
+      "parent_discovery_rows": 43027,
+      "unique_domain_targets": 19827,
+      "unique_parent_targets": 25529,
+      "unique_union_targets": 29193
+    },
+    "q000138d001": {
+      "name": "tfr1_apical_binder_42",
+      "native_query_key": 137,
+      "own_discovery_rows": 14687,
+      "parent_discovery_rows": 36506,
+      "unique_domain_targets": 7579,
+      "unique_parent_targets": 18677,
+      "unique_union_targets": 19430
+    },
+    "q000139d001": {
+      "name": "tfr1_apical_binder_43",
+      "native_query_key": 138,
+      "own_discovery_rows": 7154,
+      "parent_discovery_rows": 8786,
+      "unique_domain_targets": 3866,
+      "unique_parent_targets": 4776,
+      "unique_union_targets": 5624
+    },
+    "q000140d001": {
+      "name": "tfr1_apical_binder_44",
+      "native_query_key": 139,
+      "own_discovery_rows": 0,
+      "parent_discovery_rows": 0,
+      "unique_domain_targets": 0,
+      "unique_parent_targets": 0,
+      "unique_union_targets": 0
+    },
+    "q000141d001": {
+      "name": "tfr1_apical_binder_45",
+      "native_query_key": 140,
+      "own_discovery_rows": 960,
+      "parent_discovery_rows": 1519,
+      "unique_domain_targets": 592,
+      "unique_parent_targets": 918,
+      "unique_union_targets": 978
+    },
+    "q000142d001": {
+      "name": "tfr1_apical_binder_46",
+      "native_query_key": 141,
+      "own_discovery_rows": 50368,
+      "parent_discovery_rows": 63441,
+      "unique_domain_targets": 27685,
+      "unique_parent_targets": 35901,
+      "unique_union_targets": 38313
+    },
+    "q000144d001": {
+      "name": "tfr1_apical_binder_48",
+      "native_query_key": 143,
+      "own_discovery_rows": 66,
+      "parent_discovery_rows": 59,
+      "unique_domain_targets": 39,
+      "unique_parent_targets": 34,
+      "unique_union_targets": 43
+    },
+    "q000145d001": {
+      "name": "tfr1_apical_binder_49",
+      "native_query_key": 144,
+      "own_discovery_rows": 1366,
+      "parent_discovery_rows": 1043,
+      "unique_domain_targets": 880,
+      "unique_parent_targets": 668,
+      "unique_union_targets": 956
+    },
+    "q000147d001": {
+      "name": "tfr1_apical_binder_50",
+      "native_query_key": 146,
+      "own_discovery_rows": 44117,
+      "parent_discovery_rows": 65540,
+      "unique_domain_targets": 28021,
+      "unique_parent_targets": 40828,
+      "unique_union_targets": 50010
+    },
+    "q000149d001": {
+      "name": "tfr1_apical_binder_52",
+      "native_query_key": 148,
+      "own_discovery_rows": 402,
+      "parent_discovery_rows": 531,
+      "unique_domain_targets": 231,
+      "unique_parent_targets": 308,
+      "unique_union_targets": 344
+    },
+    "q000150d001": {
+      "name": "tfr1_apical_binder_53",
+      "native_query_key": 149,
+      "own_discovery_rows": 17644,
+      "parent_discovery_rows": 19132,
+      "unique_domain_targets": 9577,
+      "unique_parent_targets": 10496,
+      "unique_union_targets": 12885
+    },
+    "q000151d001": {
+      "name": "tfr1_apical_binder_54",
+      "native_query_key": 150,
+      "own_discovery_rows": 96784,
+      "parent_discovery_rows": 97061,
+      "unique_domain_targets": 70526,
+      "unique_parent_targets": 70027,
+      "unique_union_targets": 72147
+    },
+    "q000152d001": {
+      "name": "tfr1_apical_binder_55",
+      "native_query_key": 151,
+      "own_discovery_rows": 495,
+      "parent_discovery_rows": 438,
+      "unique_domain_targets": 274,
+      "unique_parent_targets": 261,
+      "unique_union_targets": 312
+    },
+    "q000153d001": {
+      "name": "tfr1_apical_binder_56",
+      "native_query_key": 152,
+      "own_discovery_rows": 134,
+      "parent_discovery_rows": 210,
+      "unique_domain_targets": 90,
+      "unique_parent_targets": 130,
+      "unique_union_targets": 130
+    },
+    "q000154d001": {
+      "name": "tfr1_apical_binder_57",
+      "native_query_key": 153,
+      "own_discovery_rows": 547,
+      "parent_discovery_rows": 1981,
+      "unique_domain_targets": 297,
+      "unique_parent_targets": 1024,
+      "unique_union_targets": 1160
+    },
+    "q000155d001": {
+      "name": "tfr1_apical_binder_58",
+      "native_query_key": 154,
+      "own_discovery_rows": 33226,
+      "parent_discovery_rows": 32981,
+      "unique_domain_targets": 20042,
+      "unique_parent_targets": 21019,
+      "unique_union_targets": 26493
+    },
+    "q000159d001": {
+      "name": "tfr1_apical_binder_61",
+      "native_query_key": 158,
+      "own_discovery_rows": 74918,
+      "parent_discovery_rows": 92052,
+      "unique_domain_targets": 47974,
+      "unique_parent_targets": 53221,
+      "unique_union_targets": 62498
+    },
+    "q000159d002": {
+      "name": "tfr1_apical_binder_61",
+      "native_query_key": 159,
+      "own_discovery_rows": 0,
+      "parent_discovery_rows": 92052,
+      "unique_domain_targets": 0,
+      "unique_parent_targets": 53221,
+      "unique_union_targets": 53221
+    },
+    "q000160d001": {
+      "name": "tfr1_apical_binder_62",
+      "native_query_key": 160,
+      "own_discovery_rows": 11776,
+      "parent_discovery_rows": 19282,
+      "unique_domain_targets": 7232,
+      "unique_parent_targets": 10694,
+      "unique_union_targets": 12531
+    },
+    "q000161d001": {
+      "name": "tfr1_apical_binder_63",
+      "native_query_key": 161,
+      "own_discovery_rows": 322,
+      "parent_discovery_rows": 319,
+      "unique_domain_targets": 170,
+      "unique_parent_targets": 167,
+      "unique_union_targets": 171
+    },
+    "q000163d001": {
+      "name": "tfr1_apical_binder_65",
+      "native_query_key": 163,
+      "own_discovery_rows": 111,
+      "parent_discovery_rows": 130,
+      "unique_domain_targets": 68,
+      "unique_parent_targets": 79,
+      "unique_union_targets": 89
+    },
+    "q000165d001": {
+      "name": "tfr1_apical_binder_67",
+      "native_query_key": 165,
+      "own_discovery_rows": 3591,
+      "parent_discovery_rows": 3888,
+      "unique_domain_targets": 1947,
+      "unique_parent_targets": 2104,
+      "unique_union_targets": 2164
+    },
+    "q000167d001": {
+      "name": "tfr1_apical_binder_69",
+      "native_query_key": 167,
+      "own_discovery_rows": 10485,
+      "parent_discovery_rows": 9748,
+      "unique_domain_targets": 5557,
+      "unique_parent_targets": 5165,
+      "unique_union_targets": 6183
+    },
+    "q000168d001": {
+      "name": "tfr1_apical_binder_7",
+      "native_query_key": 168,
+      "own_discovery_rows": 1211,
+      "parent_discovery_rows": 1949,
+      "unique_domain_targets": 614,
+      "unique_parent_targets": 983,
+      "unique_union_targets": 1035
+    },
+    "q000170d001": {
+      "name": "tfr1_apical_binder_71",
+      "native_query_key": 170,
+      "own_discovery_rows": 8416,
+      "parent_discovery_rows": 10629,
+      "unique_domain_targets": 4687,
+      "unique_parent_targets": 5981,
+      "unique_union_targets": 7062
+    },
+    "q000173d001": {
+      "name": "tfr1_apical_binder_74",
+      "native_query_key": 173,
+      "own_discovery_rows": 6064,
+      "parent_discovery_rows": 8702,
+      "unique_domain_targets": 3436,
+      "unique_parent_targets": 4956,
+      "unique_union_targets": 5557
+    },
+    "q000178d001": {
+      "name": "tfr1_apical_binder_79",
+      "native_query_key": 178,
+      "own_discovery_rows": 1452,
+      "parent_discovery_rows": 2524,
+      "unique_domain_targets": 791,
+      "unique_parent_targets": 1336,
+      "unique_union_targets": 1752
+    },
+    "q000179d001": {
+      "name": "tfr1_apical_binder_8",
+      "native_query_key": 179,
+      "own_discovery_rows": 70147,
+      "parent_discovery_rows": 88086,
+      "unique_domain_targets": 39207,
+      "unique_parent_targets": 49211,
+      "unique_union_targets": 53510
+    },
+    "q000180d001": {
+      "name": "tfr1_apical_binder_80",
+      "native_query_key": 180,
+      "own_discovery_rows": 41,
+      "parent_discovery_rows": 62,
+      "unique_domain_targets": 23,
+      "unique_parent_targets": 31,
+      "unique_union_targets": 34
+    },
+    "q000181d001": {
+      "name": "tfr1_apical_binder_81",
+      "native_query_key": 181,
+      "own_discovery_rows": 56090,
+      "parent_discovery_rows": 69639,
+      "unique_domain_targets": 33937,
+      "unique_parent_targets": 42717,
+      "unique_union_targets": 47385
+    },
+    "q000183d001": {
+      "name": "tfr1_apical_binder_83",
+      "native_query_key": 183,
+      "own_discovery_rows": 1404,
+      "parent_discovery_rows": 1467,
+      "unique_domain_targets": 757,
+      "unique_parent_targets": 791,
+      "unique_union_targets": 907
+    },
+    "q000184d001": {
+      "name": "tfr1_apical_binder_84",
+      "native_query_key": 184,
+      "own_discovery_rows": 615,
+      "parent_discovery_rows": 859,
+      "unique_domain_targets": 337,
+      "unique_parent_targets": 485,
+      "unique_union_targets": 583
+    },
+    "q000187d001": {
+      "name": "tfr1_apical_binder_87",
+      "native_query_key": 187,
+      "own_discovery_rows": 4820,
+      "parent_discovery_rows": 41249,
+      "unique_domain_targets": 2909,
+      "unique_parent_targets": 24019,
+      "unique_union_targets": 25022
+    },
+    "q000188d001": {
+      "name": "tfr1_apical_binder_88",
+      "native_query_key": 188,
+      "own_discovery_rows": 33830,
+      "parent_discovery_rows": 77299,
+      "unique_domain_targets": 20168,
+      "unique_parent_targets": 45106,
+      "unique_union_targets": 50568
+    },
+    "q000193d001": {
+      "name": "tfr1_apical_binder_92",
+      "native_query_key": 193,
+      "own_discovery_rows": 537,
+      "parent_discovery_rows": 672,
+      "unique_domain_targets": 326,
+      "unique_parent_targets": 412,
+      "unique_union_targets": 425
+    },
+    "q000194d001": {
+      "name": "tfr1_apical_binder_93",
+      "native_query_key": 194,
+      "own_discovery_rows": 5251,
+      "parent_discovery_rows": 4367,
+      "unique_domain_targets": 2968,
+      "unique_parent_targets": 2464,
+      "unique_union_targets": 3017
+    },
+    "q000195d001": {
+      "name": "tfr1_apical_binder_94",
+      "native_query_key": 195,
+      "own_discovery_rows": 2732,
+      "parent_discovery_rows": 4072,
+      "unique_domain_targets": 1571,
+      "unique_parent_targets": 2427,
+      "unique_union_targets": 2882
+    },
+    "q000196d001": {
+      "name": "tfr1_apical_binder_95",
+      "native_query_key": 196,
+      "own_discovery_rows": 29752,
+      "parent_discovery_rows": 41942,
+      "unique_domain_targets": 16535,
+      "unique_parent_targets": 24169,
+      "unique_union_targets": 26739
+    },
+    "q000197d001": {
+      "name": "tfr1_apical_binder_96",
+      "native_query_key": 197,
+      "own_discovery_rows": 78000,
+      "parent_discovery_rows": 91803,
+      "unique_domain_targets": 46428,
+      "unique_parent_targets": 51360,
+      "unique_union_targets": 62888
+    },
+    "q000201d001": {
+      "name": "tfr1_apical_his_0",
+      "native_query_key": 201,
+      "own_discovery_rows": 2915,
+      "parent_discovery_rows": 3294,
+      "unique_domain_targets": 1578,
+      "unique_parent_targets": 1738,
+      "unique_union_targets": 2694
+    },
+    "q000202d001": {
+      "name": "tfr1_apical_his_1",
+      "native_query_key": 202,
+      "own_discovery_rows": 1043,
+      "parent_discovery_rows": 703,
+      "unique_domain_targets": 560,
+      "unique_parent_targets": 400,
+      "unique_union_targets": 581
+    },
+    "q000205d001": {
+      "name": "tfr1_apical_his_101",
+      "native_query_key": 205,
+      "own_discovery_rows": 21136,
+      "parent_discovery_rows": 32355,
+      "unique_domain_targets": 11845,
+      "unique_parent_targets": 18228,
+      "unique_union_targets": 21075
+    },
+    "q000207d001": {
+      "name": "tfr1_apical_his_103",
+      "native_query_key": 207,
+      "own_discovery_rows": 8778,
+      "parent_discovery_rows": 9206,
+      "unique_domain_targets": 4675,
+      "unique_parent_targets": 5020,
+      "unique_union_targets": 5275
+    },
+    "q000210d001": {
+      "name": "tfr1_apical_his_106",
+      "native_query_key": 210,
+      "own_discovery_rows": 1697,
+      "parent_discovery_rows": 1610,
+      "unique_domain_targets": 928,
+      "unique_parent_targets": 904,
+      "unique_union_targets": 1009
+    },
+    "q000212d001": {
+      "name": "tfr1_apical_his_108",
+      "native_query_key": 212,
+      "own_discovery_rows": 2,
+      "parent_discovery_rows": 2,
+      "unique_domain_targets": 2,
+      "unique_parent_targets": 2,
+      "unique_union_targets": 2
+    },
+    "q000213d001": {
+      "name": "tfr1_apical_his_109",
+      "native_query_key": 213,
+      "own_discovery_rows": 261,
+      "parent_discovery_rows": 244,
+      "unique_domain_targets": 161,
+      "unique_parent_targets": 149,
+      "unique_union_targets": 172
+    },
+    "q000215d001": {
+      "name": "tfr1_apical_his_110",
+      "native_query_key": 214,
+      "own_discovery_rows": 439,
+      "parent_discovery_rows": 380,
+      "unique_domain_targets": 251,
+      "unique_parent_targets": 236,
+      "unique_union_targets": 366
+    },
+    "q000216d001": {
+      "name": "tfr1_apical_his_111",
+      "native_query_key": 215,
+      "own_discovery_rows": 89646,
+      "parent_discovery_rows": 92922,
+      "unique_domain_targets": 47847,
+      "unique_parent_targets": 50040,
+      "unique_union_targets": 62246
+    },
+    "q000220d001": {
+      "name": "tfr1_apical_his_115",
+      "native_query_key": 219,
+      "own_discovery_rows": 69820,
+      "parent_discovery_rows": 65945,
+      "unique_domain_targets": 38604,
+      "unique_parent_targets": 35786,
+      "unique_union_targets": 40882
+    },
+    "q000222d001": {
+      "name": "tfr1_apical_his_117",
+      "native_query_key": 221,
+      "own_discovery_rows": 65676,
+      "parent_discovery_rows": 85440,
+      "unique_domain_targets": 35038,
+      "unique_parent_targets": 46850,
+      "unique_union_targets": 49426
+    },
+    "q000223d001": {
+      "name": "tfr1_apical_his_118",
+      "native_query_key": 222,
+      "own_discovery_rows": 240,
+      "parent_discovery_rows": 901,
+      "unique_domain_targets": 134,
+      "unique_parent_targets": 529,
+      "unique_union_targets": 578
+    },
+    "q000225d001": {
+      "name": "tfr1_apical_his_12",
+      "native_query_key": 224,
+      "own_discovery_rows": 71278,
+      "parent_discovery_rows": 80893,
+      "unique_domain_targets": 40968,
+      "unique_parent_targets": 46095,
+      "unique_union_targets": 50389
+    },
+    "q000226d001": {
+      "name": "tfr1_apical_his_120",
+      "native_query_key": 225,
+      "own_discovery_rows": 26232,
+      "parent_discovery_rows": 15811,
+      "unique_domain_targets": 16887,
+      "unique_parent_targets": 9260,
+      "unique_union_targets": 18642
+    },
+    "q000227d001": {
+      "name": "tfr1_apical_his_121",
+      "native_query_key": 226,
+      "own_discovery_rows": 36254,
+      "parent_discovery_rows": 73667,
+      "unique_domain_targets": 21788,
+      "unique_parent_targets": 41125,
+      "unique_union_targets": 44409
+    },
+    "q000228d001": {
+      "name": "tfr1_apical_his_122",
+      "native_query_key": 227,
+      "own_discovery_rows": 1834,
+      "parent_discovery_rows": 3393,
+      "unique_domain_targets": 977,
+      "unique_parent_targets": 1927,
+      "unique_union_targets": 2084
+    },
+    "q000230d001": {
+      "name": "tfr1_apical_his_124",
+      "native_query_key": 229,
+      "own_discovery_rows": 166,
+      "parent_discovery_rows": 136,
+      "unique_domain_targets": 94,
+      "unique_parent_targets": 77,
+      "unique_union_targets": 96
+    },
+    "q000231d001": {
+      "name": "tfr1_apical_his_125",
+      "native_query_key": 230,
+      "own_discovery_rows": 417,
+      "parent_discovery_rows": 518,
+      "unique_domain_targets": 257,
+      "unique_parent_targets": 316,
+      "unique_union_targets": 401
+    },
+    "q000232d001": {
+      "name": "tfr1_apical_his_126",
+      "native_query_key": 231,
+      "own_discovery_rows": 341,
+      "parent_discovery_rows": 349,
+      "unique_domain_targets": 199,
+      "unique_parent_targets": 218,
+      "unique_union_targets": 239
+    },
+    "q000233d001": {
+      "name": "tfr1_apical_his_127",
+      "native_query_key": 232,
+      "own_discovery_rows": 93572,
+      "parent_discovery_rows": 96099,
+      "unique_domain_targets": 54443,
+      "unique_parent_targets": 56309,
+      "unique_union_targets": 64416
+    },
+    "q000234d001": {
+      "name": "tfr1_apical_his_128",
+      "native_query_key": 233,
+      "own_discovery_rows": 281,
+      "parent_discovery_rows": 503,
+      "unique_domain_targets": 183,
+      "unique_parent_targets": 313,
+      "unique_union_targets": 344
+    },
+    "q000235d001": {
+      "name": "tfr1_apical_his_129",
+      "native_query_key": 234,
+      "own_discovery_rows": 24317,
+      "parent_discovery_rows": 26297,
+      "unique_domain_targets": 15863,
+      "unique_parent_targets": 16631,
+      "unique_union_targets": 20840
+    },
+    "q000236d001": {
+      "name": "tfr1_apical_his_13",
+      "native_query_key": 235,
+      "own_discovery_rows": 30331,
+      "parent_discovery_rows": 34123,
+      "unique_domain_targets": 17415,
+      "unique_parent_targets": 20043,
+      "unique_union_targets": 25471
+    },
+    "q000237d001": {
+      "name": "tfr1_apical_his_130",
+      "native_query_key": 236,
+      "own_discovery_rows": 0,
+      "parent_discovery_rows": 0,
+      "unique_domain_targets": 0,
+      "unique_parent_targets": 0,
+      "unique_union_targets": 0
+    },
+    "q000237d002": {
+      "name": "tfr1_apical_his_130",
+      "native_query_key": 237,
+      "own_discovery_rows": 0,
+      "parent_discovery_rows": 0,
+      "unique_domain_targets": 0,
+      "unique_parent_targets": 0,
+      "unique_union_targets": 0
+    },
+    "q000238d001": {
+      "name": "tfr1_apical_his_131",
+      "native_query_key": 238,
+      "own_discovery_rows": 44,
+      "parent_discovery_rows": 234,
+      "unique_domain_targets": 24,
+      "unique_parent_targets": 152,
+      "unique_union_targets": 163
+    },
+    "q000239d001": {
+      "name": "tfr1_apical_his_132",
+      "native_query_key": 239,
+      "own_discovery_rows": 3809,
+      "parent_discovery_rows": 4340,
+      "unique_domain_targets": 2148,
+      "unique_parent_targets": 2524,
+      "unique_union_targets": 2900
+    },
+    "q000240d001": {
+      "name": "tfr1_apical_his_133",
+      "native_query_key": 240,
+      "own_discovery_rows": 9416,
+      "parent_discovery_rows": 12493,
+      "unique_domain_targets": 5264,
+      "unique_parent_targets": 7068,
+      "unique_union_targets": 7633
+    },
+    "q000241d001": {
+      "name": "tfr1_apical_his_134",
+      "native_query_key": 241,
+      "own_discovery_rows": 8013,
+      "parent_discovery_rows": 8799,
+      "unique_domain_targets": 4818,
+      "unique_parent_targets": 5303,
+      "unique_union_targets": 6471
+    },
+    "q000242d001": {
+      "name": "tfr1_apical_his_135",
+      "native_query_key": 242,
+      "own_discovery_rows": 50,
+      "parent_discovery_rows": 47,
+      "unique_domain_targets": 36,
+      "unique_parent_targets": 34,
+      "unique_union_targets": 36
+    },
+    "q000243d001": {
+      "name": "tfr1_apical_his_136",
+      "native_query_key": 243,
+      "own_discovery_rows": 23782,
+      "parent_discovery_rows": 29900,
+      "unique_domain_targets": 13949,
+      "unique_parent_targets": 17160,
+      "unique_union_targets": 21145
+    },
+    "q000244d001": {
+      "name": "tfr1_apical_his_137",
+      "native_query_key": 244,
+      "own_discovery_rows": 23701,
+      "parent_discovery_rows": 22848,
+      "unique_domain_targets": 13048,
+      "unique_parent_targets": 12559,
+      "unique_union_targets": 15089
+    },
+    "q000245d001": {
+      "name": "tfr1_apical_his_138",
+      "native_query_key": 245,
+      "own_discovery_rows": 1909,
+      "parent_discovery_rows": 1554,
+      "unique_domain_targets": 995,
+      "unique_parent_targets": 865,
+      "unique_union_targets": 1231
+    },
+    "q000246d001": {
+      "name": "tfr1_apical_his_139",
+      "native_query_key": 246,
+      "own_discovery_rows": 83666,
+      "parent_discovery_rows": 92844,
+      "unique_domain_targets": 44521,
+      "unique_parent_targets": 49891,
+      "unique_union_targets": 54221
+    },
+    "q000247d001": {
+      "name": "tfr1_apical_his_14",
+      "native_query_key": 247,
+      "own_discovery_rows": 945,
+      "parent_discovery_rows": 1123,
+      "unique_domain_targets": 621,
+      "unique_parent_targets": 756,
+      "unique_union_targets": 886
+    },
+    "q000248d001": {
+      "name": "tfr1_apical_his_140",
+      "native_query_key": 248,
+      "own_discovery_rows": 382,
+      "parent_discovery_rows": 390,
+      "unique_domain_targets": 320,
+      "unique_parent_targets": 332,
+      "unique_union_targets": 369
+    },
+    "q000249d001": {
+      "name": "tfr1_apical_his_141",
+      "native_query_key": 249,
+      "own_discovery_rows": 0,
+      "parent_discovery_rows": 477,
+      "unique_domain_targets": 0,
+      "unique_parent_targets": 256,
+      "unique_union_targets": 256
+    },
+    "q000250d001": {
+      "name": "tfr1_apical_his_142",
+      "native_query_key": 250,
+      "own_discovery_rows": 16001,
+      "parent_discovery_rows": 18221,
+      "unique_domain_targets": 9511,
+      "unique_parent_targets": 10849,
+      "unique_union_targets": 11918
+    },
+    "q000253d001": {
+      "name": "tfr1_apical_his_145",
+      "native_query_key": 253,
+      "own_discovery_rows": 9404,
+      "parent_discovery_rows": 9260,
+      "unique_domain_targets": 4918,
+      "unique_parent_targets": 4873,
+      "unique_union_targets": 5955
+    },
+    "q000254d001": {
+      "name": "tfr1_apical_his_146",
+      "native_query_key": 254,
+      "own_discovery_rows": 2870,
+      "parent_discovery_rows": 4733,
+      "unique_domain_targets": 1602,
+      "unique_parent_targets": 2790,
+      "unique_union_targets": 3180
+    },
+    "q000256d001": {
+      "name": "tfr1_apical_his_148",
+      "native_query_key": 256,
+      "own_discovery_rows": 10181,
+      "parent_discovery_rows": 7668,
+      "unique_domain_targets": 5746,
+      "unique_parent_targets": 4409,
+      "unique_union_targets": 6210
+    },
+    "q000257d001": {
+      "name": "tfr1_apical_his_149",
+      "native_query_key": 257,
+      "own_discovery_rows": 37917,
+      "parent_discovery_rows": 57083,
+      "unique_domain_targets": 22100,
+      "unique_parent_targets": 34249,
+      "unique_union_targets": 38782
+    },
+    "q000258d001": {
+      "name": "tfr1_apical_his_15",
+      "native_query_key": 258,
+      "own_discovery_rows": 0,
+      "parent_discovery_rows": 0,
+      "unique_domain_targets": 0,
+      "unique_parent_targets": 0,
+      "unique_union_targets": 0
+    },
+    "q000258d002": {
+      "name": "tfr1_apical_his_15",
+      "native_query_key": 259,
+      "own_discovery_rows": 0,
+      "parent_discovery_rows": 0,
+      "unique_domain_targets": 0,
+      "unique_parent_targets": 0,
+      "unique_union_targets": 0
+    },
+    "q000259d001": {
+      "name": "tfr1_apical_his_150",
+      "native_query_key": 260,
+      "own_discovery_rows": 8710,
+      "parent_discovery_rows": 9708,
+      "unique_domain_targets": 4957,
+      "unique_parent_targets": 5514,
+      "unique_union_targets": 6304
+    },
+    "q000260d001": {
+      "name": "tfr1_apical_his_151",
+      "native_query_key": 261,
+      "own_discovery_rows": 2419,
+      "parent_discovery_rows": 3844,
+      "unique_domain_targets": 1319,
+      "unique_parent_targets": 2021,
+      "unique_union_targets": 2420
+    },
+    "q000261d001": {
+      "name": "tfr1_apical_his_152",
+      "native_query_key": 262,
+      "own_discovery_rows": 438,
+      "parent_discovery_rows": 541,
+      "unique_domain_targets": 269,
+      "unique_parent_targets": 328,
+      "unique_union_targets": 388
+    },
+    "q000262d001": {
+      "name": "tfr1_apical_his_153",
+      "native_query_key": 263,
+      "own_discovery_rows": 196,
+      "parent_discovery_rows": 198,
+      "unique_domain_targets": 140,
+      "unique_parent_targets": 148,
+      "unique_union_targets": 172
+    },
+    "q000263d001": {
+      "name": "tfr1_apical_his_154",
+      "native_query_key": 264,
+      "own_discovery_rows": 689,
+      "parent_discovery_rows": 828,
+      "unique_domain_targets": 442,
+      "unique_parent_targets": 554,
+      "unique_union_targets": 573
+    },
+    "q000265d001": {
+      "name": "tfr1_apical_his_156",
+      "native_query_key": 266,
+      "own_discovery_rows": 7888,
+      "parent_discovery_rows": 9079,
+      "unique_domain_targets": 4196,
+      "unique_parent_targets": 5023,
+      "unique_union_targets": 5180
+    },
+    "q000266d001": {
+      "name": "tfr1_apical_his_157",
+      "native_query_key": 267,
+      "own_discovery_rows": 0,
+      "parent_discovery_rows": 0,
+      "unique_domain_targets": 0,
+      "unique_parent_targets": 0,
+      "unique_union_targets": 0
+    },
+    "q000267d001": {
+      "name": "tfr1_apical_his_158",
+      "native_query_key": 268,
+      "own_discovery_rows": 110,
+      "parent_discovery_rows": 106,
+      "unique_domain_targets": 60,
+      "unique_parent_targets": 61,
+      "unique_union_targets": 98
+    },
+    "q000269d001": {
+      "name": "tfr1_apical_his_16",
+      "native_query_key": 270,
+      "own_discovery_rows": 8458,
+      "parent_discovery_rows": 29225,
+      "unique_domain_targets": 5298,
+      "unique_parent_targets": 16174,
+      "unique_union_targets": 17967
+    },
+    "q000271d001": {
+      "name": "tfr1_apical_his_161",
+      "native_query_key": 272,
+      "own_discovery_rows": 12573,
+      "parent_discovery_rows": 11926,
+      "unique_domain_targets": 7579,
+      "unique_parent_targets": 6939,
+      "unique_union_targets": 8040
+    },
+    "q000272d001": {
+      "name": "tfr1_apical_his_162",
+      "native_query_key": 273,
+      "own_discovery_rows": 1878,
+      "parent_discovery_rows": 2580,
+      "unique_domain_targets": 989,
+      "unique_parent_targets": 1347,
+      "unique_union_targets": 1548
+    },
+    "q000273d001": {
+      "name": "tfr1_apical_his_163",
+      "native_query_key": 274,
+      "own_discovery_rows": 20602,
+      "parent_discovery_rows": 23116,
+      "unique_domain_targets": 12473,
+      "unique_parent_targets": 13493,
+      "unique_union_targets": 13978
+    },
+    "q000276d001": {
+      "name": "tfr1_apical_his_166",
+      "native_query_key": 277,
+      "own_discovery_rows": 1580,
+      "parent_discovery_rows": 2167,
+      "unique_domain_targets": 874,
+      "unique_parent_targets": 1238,
+      "unique_union_targets": 1384
+    },
+    "q000277d001": {
+      "name": "tfr1_apical_his_167",
+      "native_query_key": 278,
+      "own_discovery_rows": 987,
+      "parent_discovery_rows": 1210,
+      "unique_domain_targets": 585,
+      "unique_parent_targets": 739,
+      "unique_union_targets": 826
+    },
+    "q000278d001": {
+      "name": "tfr1_apical_his_168",
+      "native_query_key": 279,
+      "own_discovery_rows": 2305,
+      "parent_discovery_rows": 1665,
+      "unique_domain_targets": 1425,
+      "unique_parent_targets": 1012,
+      "unique_union_targets": 1608
+    },
+    "q000279d001": {
+      "name": "tfr1_apical_his_169",
+      "native_query_key": 280,
+      "own_discovery_rows": 47639,
+      "parent_discovery_rows": 38157,
+      "unique_domain_targets": 27187,
+      "unique_parent_targets": 22495,
+      "unique_union_targets": 34935
+    },
+    "q000281d001": {
+      "name": "tfr1_apical_his_170",
+      "native_query_key": 282,
+      "own_discovery_rows": 925,
+      "parent_discovery_rows": 827,
+      "unique_domain_targets": 542,
+      "unique_parent_targets": 484,
+      "unique_union_targets": 557
+    },
+    "q000282d001": {
+      "name": "tfr1_apical_his_171",
+      "native_query_key": 283,
+      "own_discovery_rows": 56,
+      "parent_discovery_rows": 41,
+      "unique_domain_targets": 35,
+      "unique_parent_targets": 24,
+      "unique_union_targets": 41
+    },
+    "q000285d001": {
+      "name": "tfr1_apical_his_174",
+      "native_query_key": 286,
+      "own_discovery_rows": 20350,
+      "parent_discovery_rows": 36229,
+      "unique_domain_targets": 11767,
+      "unique_parent_targets": 23324,
+      "unique_union_targets": 26657
+    },
+    "q000286d001": {
+      "name": "tfr1_apical_his_175",
+      "native_query_key": 287,
+      "own_discovery_rows": 80,
+      "parent_discovery_rows": 105,
+      "unique_domain_targets": 45,
+      "unique_parent_targets": 64,
+      "unique_union_targets": 66
+    },
+    "q000287d001": {
+      "name": "tfr1_apical_his_176",
+      "native_query_key": 288,
+      "own_discovery_rows": 307,
+      "parent_discovery_rows": 309,
+      "unique_domain_targets": 199,
+      "unique_parent_targets": 198,
+      "unique_union_targets": 218
+    },
+    "q000288d001": {
+      "name": "tfr1_apical_his_177",
+      "native_query_key": 289,
+      "own_discovery_rows": 5670,
+      "parent_discovery_rows": 5512,
+      "unique_domain_targets": 3568,
+      "unique_parent_targets": 3490,
+      "unique_union_targets": 4249
+    },
+    "q000289d001": {
+      "name": "tfr1_apical_his_178",
+      "native_query_key": 290,
+      "own_discovery_rows": 830,
+      "parent_discovery_rows": 1581,
+      "unique_domain_targets": 435,
+      "unique_parent_targets": 813,
+      "unique_union_targets": 930
+    },
+    "q000291d001": {
+      "name": "tfr1_apical_his_18",
+      "native_query_key": 292,
+      "own_discovery_rows": 94623,
+      "parent_discovery_rows": 99226,
+      "unique_domain_targets": 51513,
+      "unique_parent_targets": 53840,
+      "unique_union_targets": 61234
+    },
+    "q000292d001": {
+      "name": "tfr1_apical_his_180",
+      "native_query_key": 293,
+      "own_discovery_rows": 73027,
+      "parent_discovery_rows": 78106,
+      "unique_domain_targets": 38726,
+      "unique_parent_targets": 40899,
+      "unique_union_targets": 42919
+    },
+    "q000293d001": {
+      "name": "tfr1_apical_his_181",
+      "native_query_key": 294,
+      "own_discovery_rows": 775,
+      "parent_discovery_rows": 714,
+      "unique_domain_targets": 466,
+      "unique_parent_targets": 429,
+      "unique_union_targets": 488
+    },
+    "q000294d001": {
+      "name": "tfr1_apical_his_182",
+      "native_query_key": 295,
+      "own_discovery_rows": 8299,
+      "parent_discovery_rows": 8328,
+      "unique_domain_targets": 5438,
+      "unique_parent_targets": 5439,
+      "unique_union_targets": 5927
+    },
+    "q000296d001": {
+      "name": "tfr1_apical_his_184",
+      "native_query_key": 297,
+      "own_discovery_rows": 4411,
+      "parent_discovery_rows": 4769,
+      "unique_domain_targets": 2372,
+      "unique_parent_targets": 2686,
+      "unique_union_targets": 3486
+    },
+    "q000298d001": {
+      "name": "tfr1_apical_his_186",
+      "native_query_key": 299,
+      "own_discovery_rows": 1559,
+      "parent_discovery_rows": 1963,
+      "unique_domain_targets": 831,
+      "unique_parent_targets": 1060,
+      "unique_union_targets": 1076
+    },
+    "q000299d001": {
+      "name": "tfr1_apical_his_187",
+      "native_query_key": 300,
+      "own_discovery_rows": 199,
+      "parent_discovery_rows": 155,
+      "unique_domain_targets": 109,
+      "unique_parent_targets": 92,
+      "unique_union_targets": 161
+    },
+    "q000300d001": {
+      "name": "tfr1_apical_his_188",
+      "native_query_key": 301,
+      "own_discovery_rows": 401,
+      "parent_discovery_rows": 1297,
+      "unique_domain_targets": 279,
+      "unique_parent_targets": 769,
+      "unique_union_targets": 928
+    },
+    "q000302d001": {
+      "name": "tfr1_apical_his_19",
+      "native_query_key": 303,
+      "own_discovery_rows": 6471,
+      "parent_discovery_rows": 6316,
+      "unique_domain_targets": 3766,
+      "unique_parent_targets": 3701,
+      "unique_union_targets": 3958
+    },
+    "q000303d001": {
+      "name": "tfr1_apical_his_190",
+      "native_query_key": 304,
+      "own_discovery_rows": 174,
+      "parent_discovery_rows": 361,
+      "unique_domain_targets": 98,
+      "unique_parent_targets": 198,
+      "unique_union_targets": 216
+    },
+    "q000307d001": {
+      "name": "tfr1_apical_his_194",
+      "native_query_key": 308,
+      "own_discovery_rows": 32,
+      "parent_discovery_rows": 36,
+      "unique_domain_targets": 16,
+      "unique_parent_targets": 18,
+      "unique_union_targets": 25
+    },
+    "q000308d001": {
+      "name": "tfr1_apical_his_195",
+      "native_query_key": 309,
+      "own_discovery_rows": 93066,
+      "parent_discovery_rows": 96583,
+      "unique_domain_targets": 51653,
+      "unique_parent_targets": 54543,
+      "unique_union_targets": 64129
+    },
+    "q000309d001": {
+      "name": "tfr1_apical_his_196",
+      "native_query_key": 310,
+      "own_discovery_rows": 1049,
+      "parent_discovery_rows": 1209,
+      "unique_domain_targets": 580,
+      "unique_parent_targets": 651,
+      "unique_union_targets": 713
+    },
+    "q000311d001": {
+      "name": "tfr1_apical_his_198",
+      "native_query_key": 312,
+      "own_discovery_rows": 16398,
+      "parent_discovery_rows": 14237,
+      "unique_domain_targets": 9732,
+      "unique_parent_targets": 8185,
+      "unique_union_targets": 10322
+    },
+    "q000312d001": {
+      "name": "tfr1_apical_his_199",
+      "native_query_key": 313,
+      "own_discovery_rows": 32210,
+      "parent_discovery_rows": 40017,
+      "unique_domain_targets": 18636,
+      "unique_parent_targets": 24948,
+      "unique_union_targets": 29424
+    },
+    "q000314d001": {
+      "name": "tfr1_apical_his_20",
+      "native_query_key": 315,
+      "own_discovery_rows": 165,
+      "parent_discovery_rows": 105,
+      "unique_domain_targets": 129,
+      "unique_parent_targets": 80,
+      "unique_union_targets": 150
+    },
+    "q000315d001": {
+      "name": "tfr1_apical_his_21",
+      "native_query_key": 316,
+      "own_discovery_rows": 99321,
+      "parent_discovery_rows": 99454,
+      "unique_domain_targets": 55184,
+      "unique_parent_targets": 55260,
+      "unique_union_targets": 59090
+    },
+    "q000316d001": {
+      "name": "tfr1_apical_his_22",
+      "native_query_key": 317,
+      "own_discovery_rows": 863,
+      "parent_discovery_rows": 1109,
+      "unique_domain_targets": 594,
+      "unique_parent_targets": 756,
+      "unique_union_targets": 857
+    },
+    "q000317d001": {
+      "name": "tfr1_apical_his_23",
+      "native_query_key": 318,
+      "own_discovery_rows": 121,
+      "parent_discovery_rows": 105,
+      "unique_domain_targets": 74,
+      "unique_parent_targets": 67,
+      "unique_union_targets": 87
+    },
+    "q000318d001": {
+      "name": "tfr1_apical_his_24",
+      "native_query_key": 319,
+      "own_discovery_rows": 40842,
+      "parent_discovery_rows": 39057,
+      "unique_domain_targets": 22003,
+      "unique_parent_targets": 21797,
+      "unique_union_targets": 26193
+    },
+    "q000319d001": {
+      "name": "tfr1_apical_his_25",
+      "native_query_key": 320,
+      "own_discovery_rows": 9806,
+      "parent_discovery_rows": 14418,
+      "unique_domain_targets": 5488,
+      "unique_parent_targets": 7812,
+      "unique_union_targets": 8316
+    },
+    "q000320d001": {
+      "name": "tfr1_apical_his_26",
+      "native_query_key": 321,
+      "own_discovery_rows": 13294,
+      "parent_discovery_rows": 14533,
+      "unique_domain_targets": 6887,
+      "unique_parent_targets": 7591,
+      "unique_union_targets": 8144
+    },
+    "q000322d001": {
+      "name": "tfr1_apical_his_28",
+      "native_query_key": 323,
+      "own_discovery_rows": 31323,
+      "parent_discovery_rows": 32500,
+      "unique_domain_targets": 20126,
+      "unique_parent_targets": 21713,
+      "unique_union_targets": 27201
+    },
+    "q000325d001": {
+      "name": "tfr1_apical_his_30",
+      "native_query_key": 326,
+      "own_discovery_rows": 226,
+      "parent_discovery_rows": 130,
+      "unique_domain_targets": 135,
+      "unique_parent_targets": 79,
+      "unique_union_targets": 166
+    },
+    "q000327d001": {
+      "name": "tfr1_apical_his_32",
+      "native_query_key": 328,
+      "own_discovery_rows": 25070,
+      "parent_discovery_rows": 56342,
+      "unique_domain_targets": 15133,
+      "unique_parent_targets": 36114,
+      "unique_union_targets": 41616
+    },
+    "q000328d001": {
+      "name": "tfr1_apical_his_33",
+      "native_query_key": 329,
+      "own_discovery_rows": 809,
+      "parent_discovery_rows": 762,
+      "unique_domain_targets": 482,
+      "unique_parent_targets": 499,
+      "unique_union_targets": 605
+    },
+    "q000330d001": {
+      "name": "tfr1_apical_his_35",
+      "native_query_key": 331,
+      "own_discovery_rows": 1571,
+      "parent_discovery_rows": 1565,
+      "unique_domain_targets": 833,
+      "unique_parent_targets": 828,
+      "unique_union_targets": 846
+    },
+    "q000334d001": {
+      "name": "tfr1_apical_his_39",
+      "native_query_key": 335,
+      "own_discovery_rows": 33380,
+      "parent_discovery_rows": 38450,
+      "unique_domain_targets": 18873,
+      "unique_parent_targets": 21798,
+      "unique_union_targets": 25747
+    },
+    "q000336d001": {
+      "name": "tfr1_apical_his_40",
+      "native_query_key": 337,
+      "own_discovery_rows": 3731,
+      "parent_discovery_rows": 5031,
+      "unique_domain_targets": 2103,
+      "unique_parent_targets": 2840,
+      "unique_union_targets": 3156
+    },
+    "q000338d001": {
+      "name": "tfr1_apical_his_42",
+      "native_query_key": 339,
+      "own_discovery_rows": 136,
+      "parent_discovery_rows": 226,
+      "unique_domain_targets": 73,
+      "unique_parent_targets": 119,
+      "unique_union_targets": 148
+    },
+    "q000339d001": {
+      "name": "tfr1_apical_his_43",
+      "native_query_key": 340,
+      "own_discovery_rows": 13467,
+      "parent_discovery_rows": 11276,
+      "unique_domain_targets": 7325,
+      "unique_parent_targets": 6195,
+      "unique_union_targets": 8490
+    },
+    "q000340d001": {
+      "name": "tfr1_apical_his_44",
+      "native_query_key": 341,
+      "own_discovery_rows": 3927,
+      "parent_discovery_rows": 6928,
+      "unique_domain_targets": 2012,
+      "unique_parent_targets": 3701,
+      "unique_union_targets": 3754
+    },
+    "q000341d001": {
+      "name": "tfr1_apical_his_45",
+      "native_query_key": 342,
+      "own_discovery_rows": 1742,
+      "parent_discovery_rows": 2636,
+      "unique_domain_targets": 951,
+      "unique_parent_targets": 1441,
+      "unique_union_targets": 1477
+    },
+    "q000342d001": {
+      "name": "tfr1_apical_his_46",
+      "native_query_key": 343,
+      "own_discovery_rows": 38481,
+      "parent_discovery_rows": 43090,
+      "unique_domain_targets": 21480,
+      "unique_parent_targets": 24047,
+      "unique_union_targets": 26306
+    },
+    "q000344d001": {
+      "name": "tfr1_apical_his_48",
+      "native_query_key": 345,
+      "own_discovery_rows": 132,
+      "parent_discovery_rows": 138,
+      "unique_domain_targets": 74,
+      "unique_parent_targets": 78,
+      "unique_union_targets": 79
+    },
+    "q000345d001": {
+      "name": "tfr1_apical_his_49",
+      "native_query_key": 346,
+      "own_discovery_rows": 1595,
+      "parent_discovery_rows": 1998,
+      "unique_domain_targets": 1026,
+      "unique_parent_targets": 1262,
+      "unique_union_targets": 1393
+    },
+    "q000347d001": {
+      "name": "tfr1_apical_his_50",
+      "native_query_key": 348,
+      "own_discovery_rows": 12303,
+      "parent_discovery_rows": 8058,
+      "unique_domain_targets": 6664,
+      "unique_parent_targets": 4283,
+      "unique_union_targets": 7477
+    },
+    "q000349d001": {
+      "name": "tfr1_apical_his_52",
+      "native_query_key": 350,
+      "own_discovery_rows": 2155,
+      "parent_discovery_rows": 1950,
+      "unique_domain_targets": 1092,
+      "unique_parent_targets": 987,
+      "unique_union_targets": 1135
+    },
+    "q000350d001": {
+      "name": "tfr1_apical_his_53",
+      "native_query_key": 351,
+      "own_discovery_rows": 2959,
+      "parent_discovery_rows": 6399,
+      "unique_domain_targets": 1633,
+      "unique_parent_targets": 3526,
+      "unique_union_targets": 3934
+    },
+    "q000351d001": {
+      "name": "tfr1_apical_his_54",
+      "native_query_key": 352,
+      "own_discovery_rows": 62045,
+      "parent_discovery_rows": 62558,
+      "unique_domain_targets": 45943,
+      "unique_parent_targets": 44031,
+      "unique_union_targets": 54706
+    },
+    "q000352d001": {
+      "name": "tfr1_apical_his_55",
+      "native_query_key": 353,
+      "own_discovery_rows": 68,
+      "parent_discovery_rows": 76,
+      "unique_domain_targets": 38,
+      "unique_parent_targets": 43,
+      "unique_union_targets": 52
+    },
+    "q000353d001": {
+      "name": "tfr1_apical_his_56",
+      "native_query_key": 354,
+      "own_discovery_rows": 121,
+      "parent_discovery_rows": 203,
+      "unique_domain_targets": 80,
+      "unique_parent_targets": 146,
+      "unique_union_targets": 148
+    },
+    "q000359d001": {
+      "name": "tfr1_apical_his_61",
+      "native_query_key": 359,
+      "own_discovery_rows": 95151,
+      "parent_discovery_rows": 99433,
+      "unique_domain_targets": 50879,
+      "unique_parent_targets": 52525,
+      "unique_union_targets": 60616
+    },
+    "q000359d002": {
+      "name": "tfr1_apical_his_61",
+      "native_query_key": 360,
+      "own_discovery_rows": 0,
+      "parent_discovery_rows": 99433,
+      "unique_domain_targets": 0,
+      "unique_parent_targets": 52525,
+      "unique_union_targets": 52525
+    },
+    "q000360d001": {
+      "name": "tfr1_apical_his_62",
+      "native_query_key": 361,
+      "own_discovery_rows": 7019,
+      "parent_discovery_rows": 14141,
+      "unique_domain_targets": 4235,
+      "unique_parent_targets": 8941,
+      "unique_union_targets": 9663
+    },
+    "q000361d001": {
+      "name": "tfr1_apical_his_63",
+      "native_query_key": 362,
+      "own_discovery_rows": 281,
+      "parent_discovery_rows": 300,
+      "unique_domain_targets": 143,
+      "unique_parent_targets": 153,
+      "unique_union_targets": 154
+    },
+    "q000362d001": {
+      "name": "tfr1_apical_his_64",
+      "native_query_key": 363,
+      "own_discovery_rows": 1935,
+      "parent_discovery_rows": 2233,
+      "unique_domain_targets": 1240,
+      "unique_parent_targets": 1430,
+      "unique_union_targets": 1611
+    },
+    "q000363d001": {
+      "name": "tfr1_apical_his_65",
+      "native_query_key": 364,
+      "own_discovery_rows": 45,
+      "parent_discovery_rows": 58,
+      "unique_domain_targets": 25,
+      "unique_parent_targets": 33,
+      "unique_union_targets": 34
+    },
+    "q000365d001": {
+      "name": "tfr1_apical_his_67",
+      "native_query_key": 366,
+      "own_discovery_rows": 3385,
+      "parent_discovery_rows": 3330,
+      "unique_domain_targets": 1869,
+      "unique_parent_targets": 1849,
+      "unique_union_targets": 1931
+    },
+    "q000366d001": {
+      "name": "tfr1_apical_his_68",
+      "native_query_key": 367,
+      "own_discovery_rows": 4328,
+      "parent_discovery_rows": 5232,
+      "unique_domain_targets": 2323,
+      "unique_parent_targets": 2832,
+      "unique_union_targets": 2982
+    },
+    "q000367d001": {
+      "name": "tfr1_apical_his_69",
+      "native_query_key": 368,
+      "own_discovery_rows": 10437,
+      "parent_discovery_rows": 9935,
+      "unique_domain_targets": 5677,
+      "unique_parent_targets": 5359,
+      "unique_union_targets": 6843
+    },
+    "q000370d001": {
+      "name": "tfr1_apical_his_71",
+      "native_query_key": 371,
+      "own_discovery_rows": 13684,
+      "parent_discovery_rows": 15808,
+      "unique_domain_targets": 7859,
+      "unique_parent_targets": 9139,
+      "unique_union_targets": 11095
+    },
+    "q000372d001": {
+      "name": "tfr1_apical_his_73",
+      "native_query_key": 373,
+      "own_discovery_rows": 1578,
+      "parent_discovery_rows": 1801,
+      "unique_domain_targets": 1019,
+      "unique_parent_targets": 1144,
+      "unique_union_targets": 1176
+    },
+    "q000373d001": {
+      "name": "tfr1_apical_his_74",
+      "native_query_key": 374,
+      "own_discovery_rows": 4672,
+      "parent_discovery_rows": 5417,
+      "unique_domain_targets": 2584,
+      "unique_parent_targets": 2976,
+      "unique_union_targets": 3354
+    },
+    "q000374d001": {
+      "name": "tfr1_apical_his_75",
+      "native_query_key": 375,
+      "own_discovery_rows": 2734,
+      "parent_discovery_rows": 6038,
+      "unique_domain_targets": 1453,
+      "unique_parent_targets": 3378,
+      "unique_union_targets": 3570
+    },
+    "q000377d001": {
+      "name": "tfr1_apical_his_78",
+      "native_query_key": 378,
+      "own_discovery_rows": 77868,
+      "parent_discovery_rows": 100911,
+      "unique_domain_targets": 43223,
+      "unique_parent_targets": 54086,
+      "unique_union_targets": 60224
+    },
+    "q000378d001": {
+      "name": "tfr1_apical_his_79",
+      "native_query_key": 379,
+      "own_discovery_rows": 10216,
+      "parent_discovery_rows": 11171,
+      "unique_domain_targets": 5556,
+      "unique_parent_targets": 6250,
+      "unique_union_targets": 6923
+    },
+    "q000379d001": {
+      "name": "tfr1_apical_his_8",
+      "native_query_key": 380,
+      "own_discovery_rows": 28215,
+      "parent_discovery_rows": 76036,
+      "unique_domain_targets": 16545,
+      "unique_parent_targets": 42743,
+      "unique_union_targets": 44895
+    },
+    "q000380d001": {
+      "name": "tfr1_apical_his_80",
+      "native_query_key": 381,
+      "own_discovery_rows": 71,
+      "parent_discovery_rows": 73,
+      "unique_domain_targets": 36,
+      "unique_parent_targets": 37,
+      "unique_union_targets": 39
+    },
+    "q000381d001": {
+      "name": "tfr1_apical_his_81",
+      "native_query_key": 382,
+      "own_discovery_rows": 14,
+      "parent_discovery_rows": 11,
+      "unique_domain_targets": 7,
+      "unique_parent_targets": 7,
+      "unique_union_targets": 13
+    },
+    "q000382d001": {
+      "name": "tfr1_apical_his_82",
+      "native_query_key": 383,
+      "own_discovery_rows": 837,
+      "parent_discovery_rows": 985,
+      "unique_domain_targets": 428,
+      "unique_parent_targets": 519,
+      "unique_union_targets": 698
+    },
+    "q000383d001": {
+      "name": "tfr1_apical_his_83",
+      "native_query_key": 384,
+      "own_discovery_rows": 989,
+      "parent_discovery_rows": 1032,
+      "unique_domain_targets": 546,
+      "unique_parent_targets": 566,
+      "unique_union_targets": 619
+    },
+    "q000385d001": {
+      "name": "tfr1_apical_his_85",
+      "native_query_key": 386,
+      "own_discovery_rows": 2064,
+      "parent_discovery_rows": 1645,
+      "unique_domain_targets": 1313,
+      "unique_parent_targets": 1108,
+      "unique_union_targets": 1548
+    },
+    "q000386d001": {
+      "name": "tfr1_apical_his_86",
+      "native_query_key": 387,
+      "own_discovery_rows": 41190,
+      "parent_discovery_rows": 54306,
+      "unique_domain_targets": 24672,
+      "unique_parent_targets": 32517,
+      "unique_union_targets": 39457
+    },
+    "q000387d001": {
+      "name": "tfr1_apical_his_87",
+      "native_query_key": 388,
+      "own_discovery_rows": 4198,
+      "parent_discovery_rows": 53850,
+      "unique_domain_targets": 2397,
+      "unique_parent_targets": 30454,
+      "unique_union_targets": 32386
+    },
+    "q000390d001": {
+      "name": "tfr1_apical_his_9",
+      "native_query_key": 391,
+      "own_discovery_rows": 2029,
+      "parent_discovery_rows": 2557,
+      "unique_domain_targets": 1165,
+      "unique_parent_targets": 1488,
+      "unique_union_targets": 2280
+    },
+    "q000393d001": {
+      "name": "tfr1_apical_his_92",
+      "native_query_key": 394,
+      "own_discovery_rows": 648,
+      "parent_discovery_rows": 742,
+      "unique_domain_targets": 391,
+      "unique_parent_targets": 465,
+      "unique_union_targets": 504
+    },
+    "q000394d001": {
+      "name": "tfr1_apical_his_93",
+      "native_query_key": 395,
+      "own_discovery_rows": 5456,
+      "parent_discovery_rows": 6873,
+      "unique_domain_targets": 2956,
+      "unique_parent_targets": 3622,
+      "unique_union_targets": 3880
+    },
+    "q000395d001": {
+      "name": "tfr1_apical_his_94",
+      "native_query_key": 396,
+      "own_discovery_rows": 2774,
+      "parent_discovery_rows": 4869,
+      "unique_domain_targets": 1612,
+      "unique_parent_targets": 3006,
+      "unique_union_targets": 3718
+    },
+    "q000396d001": {
+      "name": "tfr1_apical_his_95",
+      "native_query_key": 397,
+      "own_discovery_rows": 11109,
+      "parent_discovery_rows": 9967,
+      "unique_domain_targets": 6130,
+      "unique_parent_targets": 5577,
+      "unique_union_targets": 6751
+    },
+    "q000398d001": {
+      "name": "tfr1_apical_his_97",
+      "native_query_key": 399,
+      "own_discovery_rows": 66312,
+      "parent_discovery_rows": 85300,
+      "unique_domain_targets": 40937,
+      "unique_parent_targets": 49651,
+      "unique_union_targets": 58894
+    }
+  },
+  "elapsed_seconds": 7.001147125,
+  "script_sha256": "d00805ae699927624a4459acfe7bca8914f52002f88fba1c72a10183fc1e1ae6",
+  "new_gpu_or_remote_cpu_spend_usd": 0,
+  "policy": "All independent-domain plus complete whole-parent discovery targets for unresolved inputs, unique per query/target. Retain proven points unchanged."
+}

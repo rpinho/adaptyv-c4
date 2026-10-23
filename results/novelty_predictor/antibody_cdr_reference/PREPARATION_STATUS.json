@@ -1,0 +1,14 @@
+{
+  "state": "complete",
+  "started_at": "2026-10-23T02:02:36.126872+00:00",
+  "new_gpu_or_remote_cpu_spend_usd": 0,
+  "counts": {
+    "query": 50,
+    "target": 109495,
+    "candidate": 465683,
+    "heavy": 109342,
+    "association": 131168,
+    "query_heavy": 465546
+  },
+  "finished_at": "2026-10-23T02:02:46.255274+00:00"
+}

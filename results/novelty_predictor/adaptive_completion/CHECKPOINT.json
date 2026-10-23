@@ -1,0 +1,19 @@
+{
+  "recorded_at": "2026-10-23T03:19:44.498700+00:00",
+  "branch": "codex/install-two-state-switch",
+  "full_remaining_status": "running",
+  "native_process": "64419 64406 395.7 15:40",
+  "completed_bounded_counts": {
+    "local1": 73,
+    "local2": 70,
+    "unestablished": 257
+  },
+  "software_tests_passed": 30,
+  "antibody_report_validation": "complete",
+  "protected_files_unchanged": true,
+  "recorded_runpod_usd": 56.5899880444631,
+  "own_modal_estimate_usd": 10.718947158590089,
+  "own_total_usd": 67.30893520305318,
+  "new_gpu_or_remote_cpu_spend_usd": 0,
+  "account_wide_bill_verified": false
+}

@@ -1,0 +1,1208 @@
+[
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_6",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:31:20-04:00",
+    "size": 34
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_5",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:31:20-04:00",
+    "size": 34
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_4",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:31:20-04:00",
+    "size": 34
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_3",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:31:20-04:00",
+    "size": 34
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_2",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:31:19-04:00",
+    "size": 34
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_1",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:31:19-04:00",
+    "size": 34
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_0",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:31:19-04:00",
+    "size": 34
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_7",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:31:21-04:00",
+    "size": 34
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_9",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:32:46-04:00",
+    "size": 34
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_8",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:32:46-04:00",
+    "size": 34
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_15",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:32:48-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_14",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:32:48-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_13",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:32:47-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_12",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:32:47-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_11",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:32:47-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_10",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:32:47-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_19",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:35:34-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_18",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:35:34-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_17",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:35:34-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_16",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:35:33-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_23",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:35:35-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_22",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:35:35-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_21",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:35:35-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_20",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:35:34-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_27",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:37:01-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_26",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:37:01-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_25",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:37:01-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_24",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:37:01-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_31",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:37:02-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_30",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:37:02-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_29",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:37:02-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_28",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:37:02-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_39",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:38:47-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_38",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:38:47-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_37",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:38:47-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_36",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:38:46-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_35",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:38:46-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_34",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:38:46-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_33",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:38:45-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_32",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:38:45-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_45",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:40:31-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_44",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:40:31-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_43",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:40:31-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_42",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:40:31-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_41",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:40:30-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_40",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:40:30-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_47",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:40:32-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_46",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:40:32-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_55",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:42:16-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_54",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:42:16-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_53",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:42:16-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_52",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:42:16-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_51",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:42:15-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_50",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:42:15-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_49",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:42:15-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_48",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:42:15-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_59",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:44:00-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_58",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:44:00-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_57",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:43:59-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_56",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:43:59-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_63",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:44:01-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_62",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:44:01-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_61",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:44:01-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_60",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:44:00-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_65",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:45:27-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_64",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:45:27-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_71",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:45:29-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_70",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:45:28-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_69",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:45:28-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_68",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:45:28-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_67",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:45:28-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_66",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:45:27-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_76",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:46:55-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_75",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:46:55-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_74",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:46:55-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_73",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:46:55-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_72",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:46:54-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_79",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:46:56-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_78",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:46:56-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_77",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:46:56-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_84",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:48:23-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_83",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:48:23-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_82",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:48:22-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_81",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:48:22-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_80",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:48:22-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_87",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:48:24-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_86",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:48:23-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_85",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:48:23-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_90",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:49:50-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_89",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:49:50-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_88",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:49:49-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_95",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:49:51-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_94",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:49:51-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_93",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:49:51-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_92",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:49:51-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_91",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:49:50-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_99",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:51:35-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_98",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:51:35-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_97",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:51:35-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_96",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:51:34-04:00",
+    "size": 35
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_103",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:51:36-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_102",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:51:36-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_101",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:51:36-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_100",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:51:36-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_108",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:53:03-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_107",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:53:03-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_106",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:53:03-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_105",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:53:02-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_104",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:53:02-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_111",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:53:04-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_110",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:53:04-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_109",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:53:04-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_114",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:54:30-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_113",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:54:30-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_112",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:54:30-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_119",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:54:32-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_118",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:54:32-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_117",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:54:31-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_116",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:54:31-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_115",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:54:31-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_127",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:56:17-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_126",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:56:17-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_125",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:56:16-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_124",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:56:16-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_123",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:56:16-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_122",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:56:15-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_121",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:56:15-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_120",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:56:15-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_135",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:57:44-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_134",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:57:44-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_133",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:57:44-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_132",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:57:43-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_131",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:57:43-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_130",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:57:43-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_129",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:57:43-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_128",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:57:42-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_140",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:59:11-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_139",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:59:11-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_138",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:59:11-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_137",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:59:10-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_136",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:59:10-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_143",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:59:12-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_142",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:59:12-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_141",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:59:11-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_149",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:00:39-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_148",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:00:39-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_147",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:00:39-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_146",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:00:38-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_145",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:00:38-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_144",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:00:38-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_151",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:00:40-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_150",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:00:40-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_159",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:02:07-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_158",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:02:07-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_157",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:02:07-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_156",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:02:06-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_155",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:02:06-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_154",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:02:06-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_153",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:02:05-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_152",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:02:05-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_165",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:03:34-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_164",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:03:34-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_163",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:03:34-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_162",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:03:33-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_161",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:03:33-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_160",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:03:33-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_167",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:03:35-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_166",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:03:35-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_175",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:05:20-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_174",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:05:20-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_173",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:05:20-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_172",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:05:19-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_171",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:05:19-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_170",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:05:19-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_169",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:05:19-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_168",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:05:18-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_179",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:07:04-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_178",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:07:04-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_177",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:07:04-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_176",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:07:03-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_183",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:07:06-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_182",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:07:05-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_181",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:07:05-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_180",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:07:05-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_191",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:08:51-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_190",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:08:51-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_189",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:08:50-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_188",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:08:50-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_187",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:08:50-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_186",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:08:49-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_185",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:08:49-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_184",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:08:49-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/foldseek_input_chains",
+    "type": "dir",
+    "created_modified": "2026-10-22 14:31:19-04:00",
+    "size": 8
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_199",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:10:19-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_198",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:10:18-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_197",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:10:18-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_196",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:10:18-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_195",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:10:17-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_194",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:10:17-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_193",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:10:17-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200/inference_samples/tfr1_apical_binder_192",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:10:17-04:00",
+    "size": 36
+  }
+]

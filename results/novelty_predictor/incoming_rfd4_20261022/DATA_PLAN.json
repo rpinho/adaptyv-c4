@@ -1,0 +1,7 @@
+{
+  "input_rows": 400,
+  "selection": "All 200 rows from each existing arm, no functional or score-based preselection",
+  "analysis": "CPU sequence and structure novelty only; no generation, mutation, ranking or submission",
+  "coordinate_cache": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022",
+  "source": "Modal volume rfd4-runs; original arm exports retained byte-for-byte"
+}

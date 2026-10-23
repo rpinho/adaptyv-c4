@@ -1,0 +1,9 @@
+{
+  "created_at": "2026-10-23T01:05:23.499181+00:00",
+  "existing_cpu_controller_pid": 660,
+  "detached_report_watcher_pid": 4320,
+  "idle_sleep_assertion_pid": 4321,
+  "idle_sleep_assertion_limit_seconds": 43200,
+  "scope": "Finite existing local CPU batch; detached observer writes measured report on completion. No new analysis, generator, GPU, cloud worker or repeated batch.",
+  "limits": "No guarantee through reboot, process termination, quota exhaustion or scientific failure; no autonomous model continuation is asserted without an active Goal."
+}

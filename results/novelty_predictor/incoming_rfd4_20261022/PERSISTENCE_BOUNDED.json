@@ -1,0 +1,17 @@
+{
+  "created_at": "2026-10-23T01:39:00.129293+00:00",
+  "workflow_directory": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/incoming_rfd4_20261022/run_bounded",
+  "controller_pid": 29371,
+  "detached_reporter_pid": 31623,
+  "sleep_assertion_pid": 31624,
+  "sleep_assertion_limit_seconds": 43200,
+  "coverage_policy": "BOUNDED_POLICY.md; actual positive evidence, unfinished alignments withheld",
+  "new_gpu_or_remote_cpu_spend_usd": 0,
+  "source_sha256": {
+    "scripts/novelty_level_predictor.py": "595a18618f6666962ce99e2bea4fce37da418d57849ac65665e8b5fef5cb247e",
+    "scripts/run_cpu_novelty.py": "ba67eee3e99cefa8358343883398074e3d1125073d620f60b939b932194ebc1c",
+    "scripts/augment_novelty_parent_context.py": "01a72cb1d6434b72f6a3911900657d3cd0be1a0a08c14a7f89aa031bce22b18a",
+    "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/incoming_rfd4_20261022/finish_reporting.py": "e052195a3337725a60812e7fa2150cd108146be0812998644377b992cb3a19e0",
+    "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/incoming_rfd4_20261022/watch_reporting.py": "a4f41d3a5b4601aa4d2ab51da3d5d36937cc1edd41ba156eef89261f17dd782e"
+  }
+}

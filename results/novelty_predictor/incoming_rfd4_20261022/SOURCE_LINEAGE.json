@@ -1,0 +1,10 @@
+{
+  "wrapper_revision": "6e4cbc8",
+  "whole_chain_predictor_revision": "6e4cbc8",
+  "subsequent_predictor_revision": "6353dc8",
+  "change": "Only clear inherited intervals when new structure/domain evidence is missing; no numeric threshold or scientific search parameter changed",
+  "started_source_receipt": "PERSISTENCE_BOUNDED.json",
+  "whole_chain_recorded_predictor_sha256": "595a18618f6666962ce99e2bea4fce37da418d57849ac65665e8b5fef5cb247e",
+  "whole_chain_git_source_sha256": "595a18618f6666962ce99e2bea4fce37da418d57849ac65665e8b5fef5cb247e",
+  "current_predictor_sha256": "55d3ce5e276a5a98074e74bd765c0d8c37dfe196152a8595060528bfb265234e"
+}

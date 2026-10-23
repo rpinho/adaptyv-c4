@@ -1,0 +1,70 @@
+{
+  "state": "complete",
+  "validated_at": "2026-10-23T02:04:16.165189+00:00",
+  "inputs": 400,
+  "final_report": "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/incoming_rfd4_20261022/run_bounded/parent_context/predictions.json",
+  "final_report_sha256": "3c9608aa7fcf8314bfa94ab4a3777e4d3aaad5c278ada97dfeafb912ed58ac13",
+  "all_order_sequence_hash_and_length_checks_passed": true,
+  "csv_and_json_levels_agree": true,
+  "all_local_rules_recomputed": true,
+  "all_five_sequence_raw_hashes_verified": true,
+  "protected_files_unchanged": true,
+  "groups": {
+    "tfr1_c200": {
+      "inputs": 200,
+      "local_levels": {
+        "unestablished": 120,
+        "2": 40,
+        "1": 40
+      },
+      "sequence_classes": {
+        "no_significant_hit": 147,
+        "high": 40,
+        "moderate": 13
+      },
+      "structural_classes": {
+        "unestablished": 122,
+        "high": 78
+      },
+      "best_sequence_hit_databases": {
+        "no_significant_hit": 147,
+        "patents": 32,
+        "plabdab": 14,
+        "pdb": 4,
+        "therapeutic_antibody": 2,
+        "swissprot": 1
+      }
+    },
+    "tfr1_his200": {
+      "inputs": 200,
+      "local_levels": {
+        "unestablished": 137,
+        "2": 30,
+        "1": 33
+      },
+      "sequence_classes": {
+        "no_significant_hit": 163,
+        "high": 33,
+        "moderate": 4
+      },
+      "structural_classes": {
+        "unestablished": 137,
+        "high": 63
+      },
+      "best_sequence_hit_databases": {
+        "no_significant_hit": 163,
+        "patents": 28,
+        "plabdab": 8,
+        "pdb": 1
+      }
+    }
+  },
+  "organizer_levels_established": 0,
+  "binding_or_assay_success_established": false,
+  "new_gpu_or_remote_cpu_spend_usd": 0,
+  "recorded_spend": {
+    "runpod": 56.5899880444631,
+    "own_modal_estimate": 10.718947158590089
+  },
+  "caveat": "General scale only; antibody/CDR typing, organizer corpora/domain policy and independently predicted monomer structures are unestablished."
+}

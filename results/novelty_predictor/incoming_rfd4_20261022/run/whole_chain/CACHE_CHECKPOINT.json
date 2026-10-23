@@ -1,0 +1,10 @@
+{
+  "state": "completed_sequence_searches",
+  "created_at": "2026-10-23T01:30:51.738479+00:00",
+  "input_csv_sha256": "9f428e60725384aa5bac645ce4532a1c86228170fa07bd22a685b2b302ae3063",
+  "query_fasta_sha256": "8f39e6f2634a6fe9a1bc8a0880e1228f56b2fb2d0f90418240b7a0008b4ad996",
+  "database_manifest_sha256": "dac0471efe750638c2bbcca79a21fb86ba046d1cd0b1514d8fb2428bae429848",
+  "mmseqs_version": "18-8cc5c",
+  "mmseqs_binary_sha256": "ba9ca12f2497a599efcc3759fe1d1234cb09554350dbd929dbab0c341441b96e",
+  "search_status_sha256": "4d5a4814a32f5f651866e54eb0242450612889e04b0a9c0f131b0e478541e664"
+}

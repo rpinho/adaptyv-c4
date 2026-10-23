@@ -1,0 +1,171 @@
+{
+  "state": "passed",
+  "source": {
+    "commit": "463739e0014a1549a527de589102cde98f802f37",
+    "binary_sha256": "07c05879cd5f3b2e37b26fde503e8bd458357de0ba05ca5c65b769bd55b8def3",
+    "source_files": {
+      "src/strucclustutils/tmalign.cpp": {
+        "git_blob": "e44fb28d1e3f77e8f86f2eaa8ee9b034e576daca",
+        "sha256": "8dfda425eb0e35ffbdf08c4665bd9dbcdbd8fe3fc9f33a54d98241b43ed0659b",
+        "url": "https://github.com/steineggerlab/foldseek/blob/463739e0014a1549a527de589102cde98f802f37/src/strucclustutils/tmalign.cpp"
+      },
+      "src/commons/TMaligner.cpp": {
+        "git_blob": "9c669f47f5562a899512ae0c9edc0172d0e7654c",
+        "sha256": "314f3d5f98a9e6880266023290230f3b9600a44f1be02e4fb7c20d16fa58f8b1",
+        "url": "https://github.com/steineggerlab/foldseek/blob/463739e0014a1549a527de589102cde98f802f37/src/commons/TMaligner.cpp"
+      },
+      "src/commons/TMaligner.h": {
+        "git_blob": "9c99fe4038c6469c60fc2372205dfa55eb99303e",
+        "sha256": "53aa7ed011cb88ed9b1a1e811baf9e8016db68c0b7e2eb5a60c47c3a0b9e4f91",
+        "url": "https://github.com/steineggerlab/foldseek/blob/463739e0014a1549a527de589102cde98f802f37/src/commons/TMaligner.h"
+      },
+      "lib/tmalign/TMalign.cpp": {
+        "git_blob": "78d0a4975e5b1e9e82a04898a50c400707fb8168",
+        "sha256": "43d08942a6631c39c963c79b522394bdf948f4f8a9b06fa4d39cceddc79a4683",
+        "url": "https://github.com/steineggerlab/foldseek/blob/463739e0014a1549a527de589102cde98f802f37/lib/tmalign/TMalign.cpp"
+      }
+    },
+    "rationale": "Native TM-align candidate parser reads target keys only; full pairwise align receives coordinates/sequences, not discovery seeds; no RNG found in the audited TMalign library."
+  },
+  "queries": [
+    "q000001d001",
+    "q000002d001",
+    "q000003d001",
+    "q000004d001",
+    "q000005d001",
+    "q000006d001",
+    "q000007d001",
+    "q000008d001"
+  ],
+  "unique_pairs": 96,
+  "exact_query_and_target_tm_scores_equal": true,
+  "tolerance": 0,
+  "steps": [
+    {
+      "command": [
+        "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+        "tsv2db",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/adaptive_completion/seed_check/duplicated_original.tsv",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/adaptive_completion/seed_check/original_prefilter",
+        "--output-dbtype",
+        "5"
+      ],
+      "started_at": "2026-10-23T02:44:16.554608+00:00",
+      "pid": 57114,
+      "completed": true,
+      "elapsed_seconds": 0.017164708
+    },
+    {
+      "command": [
+        "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+        "tmalign",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/incoming_rfd4_20261022/run_bounded/domain_search/structure/querydb",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/adaptive_completion/seed_check/original_prefilter",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/adaptive_completion/seed_check/original_aligned",
+        "--threads",
+        "4",
+        "--tmalign-fast",
+        "0",
+        "--tmscore-threshold",
+        "0",
+        "--tmscore-threshold-mode",
+        "1",
+        "--tmalign-hit-order",
+        "1",
+        "-a",
+        "1"
+      ],
+      "started_at": "2026-10-23T02:44:16.572145+00:00",
+      "pid": 57115,
+      "completed": true,
+      "elapsed_seconds": 0.742640666
+    },
+    {
+      "command": [
+        "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+        "convertalis",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/incoming_rfd4_20261022/run_bounded/domain_search/structure/querydb",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/adaptive_completion/seed_check/original_aligned",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/adaptive_completion/seed_check/original_hits.tsv",
+        "--threads",
+        "4",
+        "--exact-tmscore",
+        "1",
+        "--format-output",
+        "query,target,qlen,tlen,qstart,qend,tstart,tend,alnlen,qtmscore,ttmscore,qaln,taln"
+      ],
+      "started_at": "2026-10-23T02:44:17.315175+00:00",
+      "pid": 57119,
+      "completed": true,
+      "elapsed_seconds": 0.5080508330000001
+    },
+    {
+      "command": [
+        "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+        "tsv2db",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/adaptive_completion/seed_check/unique_zero_seed.tsv",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/adaptive_completion/seed_check/deduplicated_prefilter",
+        "--output-dbtype",
+        "7"
+      ],
+      "started_at": "2026-10-23T02:44:17.824688+00:00",
+      "pid": 57125,
+      "completed": true,
+      "elapsed_seconds": 0.009110790999999896
+    },
+    {
+      "command": [
+        "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+        "tmalign",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/incoming_rfd4_20261022/run_bounded/domain_search/structure/querydb",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/adaptive_completion/seed_check/deduplicated_prefilter",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/adaptive_completion/seed_check/deduplicated_aligned",
+        "--threads",
+        "4",
+        "--tmalign-fast",
+        "0",
+        "--tmscore-threshold",
+        "0",
+        "--tmscore-threshold-mode",
+        "1",
+        "--tmalign-hit-order",
+        "1",
+        "-a",
+        "1"
+      ],
+      "started_at": "2026-10-23T02:44:17.834034+00:00",
+      "pid": 57126,
+      "completed": true,
+      "elapsed_seconds": 0.2512384999999999
+    },
+    {
+      "command": [
+        "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+        "convertalis",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/incoming_rfd4_20261022/run_bounded/domain_search/structure/querydb",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/adaptive_completion/seed_check/deduplicated_aligned",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/adaptive_completion/seed_check/deduplicated_hits.tsv",
+        "--threads",
+        "4",
+        "--exact-tmscore",
+        "1",
+        "--format-output",
+        "query,target,qlen,tlen,qstart,qend,tstart,tend,alnlen,qtmscore,ttmscore,qaln,taln"
+      ],
+      "started_at": "2026-10-23T02:44:18.085802+00:00",
+      "pid": 57129,
+      "completed": true,
+      "elapsed_seconds": 0.283343667
+    }
+  ],
+  "raw_hits_sha256": {
+    "original": "16bfcb7fc1a4ab9398d49a8734afb8f938c0473685f7e0ee3bd9543126df1491",
+    "deduplicated": "cc41a1d8c41025e0c1bf31c516c77823794009c1fa4d87af91ff2ae8735b91aa"
+  },
+  "scope": "Deterministic first8 nonempty domain queries, first12 candidate rows, deliberately duplicated; no global numerical-equivalence claim beyond this fixture and source audit",
+  "new_gpu_or_remote_cpu_spend_usd": 0
+}

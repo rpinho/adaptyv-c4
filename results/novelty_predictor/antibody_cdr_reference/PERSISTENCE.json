@@ -1,0 +1,8 @@
+{
+  "created_at": "2026-10-23T02:08:04.461877+00:00",
+  "detached_annotation_pid": 44623,
+  "idle_sleep_assertion_pid": 44624,
+  "limit_seconds": 28800,
+  "scope": "Existing public reference sequence annotation, one local CPU thread, finite/resumable SQLite checkpoints. No generator, GPU, cloud worker or submission.",
+  "new_gpu_or_remote_cpu_spend_usd": 0
+}

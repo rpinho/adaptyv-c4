@@ -1,0 +1,86 @@
+[
+  {
+    "filename": "cifs_dry_run",
+    "type": "dir",
+    "created_modified": "2026-10-22 11:40:13-04:00",
+    "size": 22
+  },
+  {
+    "filename": "smoke",
+    "type": "dir",
+    "created_modified": "2026-10-22 11:45:00-04:00",
+    "size": 34
+  },
+  {
+    "filename": "baseline_pdl1",
+    "type": "dir",
+    "created_modified": "2026-10-22 11:48:19-04:00",
+    "size": 34
+  },
+  {
+    "filename": "tfr1_probe",
+    "type": "dir",
+    "created_modified": "2026-10-22 11:52:16-04:00",
+    "size": 34
+  },
+  {
+    "filename": "cifs_dry_run_tfr1_apical_his",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:06:43-04:00",
+    "size": 19
+  },
+  {
+    "filename": "tfr1_c200",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:10:20-04:00",
+    "size": 34
+  },
+  {
+    "filename": "tfr1_his200",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:51:21-04:00",
+    "size": 34
+  },
+  {
+    "filename": "tfr1_c200_debug_eval",
+    "type": "dir",
+    "created_modified": "2026-10-22 19:05:06-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_c200_eval_inputs",
+    "type": "dir",
+    "created_modified": "2026-10-22 19:17:50-04:00",
+    "size": 7090
+  },
+  {
+    "filename": "tfr1_c200_eval",
+    "type": "dir",
+    "created_modified": "2026-10-22 15:29:17-04:00",
+    "size": 36
+  },
+  {
+    "filename": "tfr1_metrictest",
+    "type": "dir",
+    "created_modified": "2026-10-22 19:32:05-04:00",
+    "size": 34
+  },
+  {
+    "filename": "tfr1_his200_sequences.csv",
+    "type": "file",
+    "created_modified": "2026-10-22 19:23:14-04:00",
+    "size": 24805
+  },
+  {
+    "filename": "tfr1_c200_sequences.csv",
+    "type": "file",
+    "created_modified": "2026-10-22 19:21:25-04:00",
+    "size": 25373
+  },
+  {
+    "filename": "tfr1_c200_debug.log",
+    "type": "file",
+    "created_modified": "2026-10-22 19:05:04-04:00",
+    "size": 60025
+  }
+]

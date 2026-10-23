@@ -1,0 +1,9 @@
+{
+  "created_at": "2026-10-23T03:04:02.210716+00:00",
+  "detached_controller_pid": 64406,
+  "idle_sleep_assertion_pid": 64407,
+  "idle_sleep_assertion_limit_seconds": 32400,
+  "full_alignment_budget_seconds": 28800,
+  "scope": "Existing remaining unique query/reference pairs only; four local CPU threads, no GPU or remote worker. Callback writes measured completion report.",
+  "new_gpu_or_remote_cpu_spend_usd": 0
+}

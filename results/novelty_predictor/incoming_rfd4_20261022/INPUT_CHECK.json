@@ -1,0 +1,1613 @@
+{
+  "verified_at": "2026-10-23T00:52:45.849814+00:00",
+  "csv_rows": 400,
+  "sequence_unique": 400,
+  "all_full_sequence_matched": true,
+  "chain_counts": {
+    "B": 400
+  },
+  "coordinate_inputs": 400,
+  "other_downloaded_cifs_not_used": [
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_36_chain.cif",
+      "bytes": 74537
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_85_chain.cif",
+      "bytes": 110037
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_114_chain.cif",
+      "bytes": 90122
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_3_chain.cif",
+      "bytes": 107511
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_100_chain.cif",
+      "bytes": 122147
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_58_chain.cif",
+      "bytes": 82117
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_91_chain.cif",
+      "bytes": 116891
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_22_chain.cif",
+      "bytes": 109693
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_121_chain.cif",
+      "bytes": 87922
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_79_chain.cif",
+      "bytes": 68930
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_192_chain.cif",
+      "bytes": 69319
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_17_chain.cif",
+      "bytes": 97626
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_186_chain.cif",
+      "bytes": 112723
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_135_chain.cif",
+      "bytes": 80234
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_163_chain.cif",
+      "bytes": 89802
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_119_chain.cif",
+      "bytes": 89199
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_88_chain.cif",
+      "bytes": 85549
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_41_chain.cif",
+      "bytes": 117372
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_55_chain.cif",
+      "bytes": 81894
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_177_chain.cif",
+      "bytes": 90382
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_74_chain.cif",
+      "bytes": 92518
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_156_chain.cif",
+      "bytes": 75216
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_142_chain.cif",
+      "bytes": 115655
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_138_chain.cif",
+      "bytes": 109446
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_60_chain.cif",
+      "bytes": 101081
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_194_chain.cif",
+      "bytes": 79096
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_127_chain.cif",
+      "bytes": 87713
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_133_chain.cif",
+      "bytes": 78793
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_11_chain.cif",
+      "bytes": 78175
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_149_chain.cif",
+      "bytes": 88385
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_180_chain.cif",
+      "bytes": 100940
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_83_chain.cif",
+      "bytes": 76033
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_112_chain.cif",
+      "bytes": 107229
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_5_chain.cif",
+      "bytes": 96036
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_30_chain.cif",
+      "bytes": 77679
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_168_chain.cif",
+      "bytes": 103884
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_24_chain.cif",
+      "bytes": 96119
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_106_chain.cif",
+      "bytes": 86386
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_97_chain.cif",
+      "bytes": 85487
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_199_chain.cif",
+      "bytes": 78443
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_150_chain.cif",
+      "bytes": 89669
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_72_chain.cif",
+      "bytes": 88715
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_66_chain.cif",
+      "bytes": 79552
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_144_chain.cif",
+      "bytes": 111342
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_8_chain.cif",
+      "bytes": 88781
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_47_chain.cif",
+      "bytes": 109894
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_165_chain.cif",
+      "bytes": 108616
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_29_chain.cif",
+      "bytes": 68252
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_171_chain.cif",
+      "bytes": 76925
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_53_chain.cif",
+      "bytes": 82056
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_101_chain.cif",
+      "bytes": 75207
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_59_chain.cif",
+      "bytes": 74301
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_90_chain.cif",
+      "bytes": 120225
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_23_chain.cif",
+      "bytes": 117278
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_37_chain.cif",
+      "bytes": 70653
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_84_chain.cif",
+      "bytes": 82178
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_115_chain.cif",
+      "bytes": 117763
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_2_chain.cif",
+      "bytes": 124935
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_16_chain.cif",
+      "bytes": 83775
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_187_chain.cif",
+      "bytes": 75844
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_134_chain.cif",
+      "bytes": 108310
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_120_chain.cif",
+      "bytes": 121196
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_78_chain.cif",
+      "bytes": 108899
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_193_chain.cif",
+      "bytes": 125671
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_54_chain.cif",
+      "bytes": 112563
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_176_chain.cif",
+      "bytes": 77607
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_162_chain.cif",
+      "bytes": 73558
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_118_chain.cif",
+      "bytes": 77926
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_89_chain.cif",
+      "bytes": 76441
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_40_chain.cif",
+      "bytes": 128320
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_143_chain.cif",
+      "bytes": 98078
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_139_chain.cif",
+      "bytes": 79531
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_61_chain.cif",
+      "bytes": 114133
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_75_chain.cif",
+      "bytes": 111140
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_157_chain.cif",
+      "bytes": 67798
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_132_chain.cif",
+      "bytes": 73740
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_10_chain.cif",
+      "bytes": 90053
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_148_chain.cif",
+      "bytes": 70468
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_181_chain.cif",
+      "bytes": 99144
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_195_chain.cif",
+      "bytes": 85621
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_126_chain.cif",
+      "bytes": 74706
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_25_chain.cif",
+      "bytes": 95121
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_107_chain.cif",
+      "bytes": 116482
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_96_chain.cif",
+      "bytes": 104704
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_82_chain.cif",
+      "bytes": 105846
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_113_chain.cif",
+      "bytes": 66184
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_4_chain.cif",
+      "bytes": 120601
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_31_chain.cif",
+      "bytes": 69933
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_169_chain.cif",
+      "bytes": 84884
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_67_chain.cif",
+      "bytes": 101374
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_145_chain.cif",
+      "bytes": 83053
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_198_chain.cif",
+      "bytes": 124217
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_151_chain.cif",
+      "bytes": 82357
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_73_chain.cif",
+      "bytes": 71616
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_28_chain.cif",
+      "bytes": 91597
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_170_chain.cif",
+      "bytes": 69328
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_52_chain.cif",
+      "bytes": 75056
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_9_chain.cif",
+      "bytes": 65456
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_46_chain.cif",
+      "bytes": 95666
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_164_chain.cif",
+      "bytes": 107999
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_123_chain.cif",
+      "bytes": 92902
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_159_chain.cif",
+      "bytes": 78908
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_190_chain.cif",
+      "bytes": 82642
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_184_chain.cif",
+      "bytes": 85417
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_15_chain.cif",
+      "bytes": 52328
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_137_chain.cif",
+      "bytes": 118242
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_34_chain.cif",
+      "bytes": 109823
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_116_chain.cif",
+      "bytes": 104058
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_1_chain.cif",
+      "bytes": 78745
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_87_chain.cif",
+      "bytes": 96025
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_93_chain.cif",
+      "bytes": 92487
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_102_chain.cif",
+      "bytes": 87291
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_20_chain.cif",
+      "bytes": 76489
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_178_chain.cif",
+      "bytes": 102368
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_76_chain.cif",
+      "bytes": 88836
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_154_chain.cif",
+      "bytes": 80858
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_18_chain.cif",
+      "bytes": 94679
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_189_chain.cif",
+      "bytes": 88961
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_140_chain.cif",
+      "bytes": 79354
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_62_chain.cif",
+      "bytes": 67465
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_39_chain.cif",
+      "bytes": 76737
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_161_chain.cif",
+      "bytes": 102626
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_43_chain.cif",
+      "bytes": 81525
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_57_chain.cif",
+      "bytes": 115849
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_175_chain.cif",
+      "bytes": 92384
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_110_chain.cif",
+      "bytes": 96741
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_7_chain.cif",
+      "bytes": 78821
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_48_chain.cif",
+      "bytes": 82049
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_81_chain.cif",
+      "bytes": 90991
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_32_chain.cif",
+      "bytes": 88125
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_26_chain.cif",
+      "bytes": 78626
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_95_chain.cif",
+      "bytes": 105840
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_104_chain.cif",
+      "bytes": 121543
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_196_chain.cif",
+      "bytes": 78177
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_125_chain.cif",
+      "bytes": 91209
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_131_chain.cif",
+      "bytes": 77587
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_69_chain.cif",
+      "bytes": 93747
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_182_chain.cif",
+      "bytes": 118127
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_13_chain.cif",
+      "bytes": 87796
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_45_chain.cif",
+      "bytes": 97557
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_167_chain.cif",
+      "bytes": 70707
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_173_chain.cif",
+      "bytes": 126139
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_109_chain.cif",
+      "bytes": 81133
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_98_chain.cif",
+      "bytes": 103202
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_51_chain.cif",
+      "bytes": 75222
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_152_chain.cif",
+      "bytes": 100063
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_128_chain.cif",
+      "bytes": 110080
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_70_chain.cif",
+      "bytes": 116834
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_64_chain.cif",
+      "bytes": 104985
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_146_chain.cif",
+      "bytes": 77123
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_185_chain.cif",
+      "bytes": 97525
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_14_chain.cif",
+      "bytes": 95007
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_136_chain.cif",
+      "bytes": 77748
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_122_chain.cif",
+      "bytes": 96387
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_158_chain.cif",
+      "bytes": 86276
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_191_chain.cif",
+      "bytes": 112573
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_92_chain.cif",
+      "bytes": 104820
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_103_chain.cif",
+      "bytes": 85010
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_21_chain.cif",
+      "bytes": 87634
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_179_chain.cif",
+      "bytes": 82794
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_35_chain.cif",
+      "bytes": 80365
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_117_chain.cif",
+      "bytes": 93370
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_0_chain.cif",
+      "bytes": 72371
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_86_chain.cif",
+      "bytes": 99942
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_19_chain.cif",
+      "bytes": 125746
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_188_chain.cif",
+      "bytes": 80086
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_141_chain.cif",
+      "bytes": 72290
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_63_chain.cif",
+      "bytes": 73022
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_77_chain.cif",
+      "bytes": 106839
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_155_chain.cif",
+      "bytes": 103646
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_56_chain.cif",
+      "bytes": 80826
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_174_chain.cif",
+      "bytes": 84741
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_38_chain.cif",
+      "bytes": 122825
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_160_chain.cif",
+      "bytes": 123739
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_42_chain.cif",
+      "bytes": 85037
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_27_chain.cif",
+      "bytes": 113169
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_94_chain.cif",
+      "bytes": 82134
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_105_chain.cif",
+      "bytes": 116903
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_111_chain.cif",
+      "bytes": 81215
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_6_chain.cif",
+      "bytes": 103536
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_49_chain.cif",
+      "bytes": 83907
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_80_chain.cif",
+      "bytes": 82774
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_33_chain.cif",
+      "bytes": 89255
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_130_chain.cif",
+      "bytes": 78271
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_68_chain.cif",
+      "bytes": 91546
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_183_chain.cif",
+      "bytes": 119876
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_12_chain.cif",
+      "bytes": 115667
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_197_chain.cif",
+      "bytes": 99974
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_124_chain.cif",
+      "bytes": 78878
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_172_chain.cif",
+      "bytes": 128867
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_108_chain.cif",
+      "bytes": 65046
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_99_chain.cif",
+      "bytes": 125697
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_50_chain.cif",
+      "bytes": 79093
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_44_chain.cif",
+      "bytes": 70362
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_166_chain.cif",
+      "bytes": 88635
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_65_chain.cif",
+      "bytes": 69563
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_147_chain.cif",
+      "bytes": 120709
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_153_chain.cif",
+      "bytes": 77285
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_129_chain.cif",
+      "bytes": 72886
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_c200/inference_samples/foldseek_input_chains/ea859cab/tfr1_apical_binder/tfr1_apical_binder_71_chain.cif",
+      "bytes": 85767
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_69_chain.cif",
+      "bytes": 98286
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_111_chain.cif",
+      "bytes": 67416
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_13_chain.cif",
+      "bytes": 87335
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_105_chain.cif",
+      "bytes": 119391
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_26_chain.cif",
+      "bytes": 91565
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_124_chain.cif",
+      "bytes": 76206
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_197_chain.cif",
+      "bytes": 100800
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_95_chain.cif",
+      "bytes": 111862
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_81_chain.cif",
+      "bytes": 95783
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_48_chain.cif",
+      "bytes": 84320
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_183_chain.cif",
+      "bytes": 125375
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_130_chain.cif",
+      "bytes": 83819
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_32_chain.cif",
+      "bytes": 84047
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_166_chain.cif",
+      "bytes": 92435
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_64_chain.cif",
+      "bytes": 102539
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_108_chain.cif",
+      "bytes": 54550
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_70_chain.cif",
+      "bytes": 119237
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_172_chain.cif",
+      "bytes": 126969
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_6_chain.cif",
+      "bytes": 103406
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_129_chain.cif",
+      "bytes": 81646
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_51_chain.cif",
+      "bytes": 75139
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_98_chain.cif",
+      "bytes": 101590
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_153_chain.cif",
+      "bytes": 93730
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_147_chain.cif",
+      "bytes": 120101
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_45_chain.cif",
+      "bytes": 105620
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_93_chain.cif",
+      "bytes": 87954
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_158_chain.cif",
+      "bytes": 83212
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_191_chain.cif",
+      "bytes": 110272
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_122_chain.cif",
+      "bytes": 94638
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_20_chain.cif",
+      "bytes": 92306
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_34_chain.cif",
+      "bytes": 108124
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_136_chain.cif",
+      "bytes": 93616
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_185_chain.cif",
+      "bytes": 100877
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_87_chain.cif",
+      "bytes": 94369
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_15_chain.cif",
+      "bytes": 55098
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_117_chain.cif",
+      "bytes": 73736
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_179_chain.cif",
+      "bytes": 90929
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_103_chain.cif",
+      "bytes": 88276
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_155_chain.cif",
+      "bytes": 103895
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_57_chain.cif",
+      "bytes": 118912
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_0_chain.cif",
+      "bytes": 75739
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_39_chain.cif",
+      "bytes": 75097
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_43_chain.cif",
+      "bytes": 80679
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_188_chain.cif",
+      "bytes": 79659
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_141_chain.cif",
+      "bytes": 67551
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_18_chain.cif",
+      "bytes": 88798
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_62_chain.cif",
+      "bytes": 73609
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_160_chain.cif",
+      "bytes": 118881
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_174_chain.cif",
+      "bytes": 100423
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_76_chain.cif",
+      "bytes": 77571
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_104_chain.cif",
+      "bytes": 120529
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_68_chain.cif",
+      "bytes": 98951
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_12_chain.cif",
+      "bytes": 110209
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_110_chain.cif",
+      "bytes": 100898
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_182_chain.cif",
+      "bytes": 122723
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_80_chain.cif",
+      "bytes": 78072
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_49_chain.cif",
+      "bytes": 81327
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_33_chain.cif",
+      "bytes": 86091
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_131_chain.cif",
+      "bytes": 79946
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_125_chain.cif",
+      "bytes": 90742
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_27_chain.cif",
+      "bytes": 112209
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_94_chain.cif",
+      "bytes": 84965
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_196_chain.cif",
+      "bytes": 82373
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_109_chain.cif",
+      "bytes": 86149
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_173_chain.cif",
+      "bytes": 126047
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_71_chain.cif",
+      "bytes": 89388
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_65_chain.cif",
+      "bytes": 73986
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_167_chain.cif",
+      "bytes": 80560
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_44_chain.cif",
+      "bytes": 79885
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_146_chain.cif",
+      "bytes": 79226
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_7_chain.cif",
+      "bytes": 76978
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_128_chain.cif",
+      "bytes": 112491
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_152_chain.cif",
+      "bytes": 111583
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_50_chain.cif",
+      "bytes": 83576
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_99_chain.cif",
+      "bytes": 122741
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_137_chain.cif",
+      "bytes": 119256
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_35_chain.cif",
+      "bytes": 97194
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_86_chain.cif",
+      "bytes": 88785
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_184_chain.cif",
+      "bytes": 78287
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_159_chain.cif",
+      "bytes": 75124
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_190_chain.cif",
+      "bytes": 85524
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_92_chain.cif",
+      "bytes": 120943
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_21_chain.cif",
+      "bytes": 90484
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_123_chain.cif",
+      "bytes": 86333
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_178_chain.cif",
+      "bytes": 98936
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_102_chain.cif",
+      "bytes": 84710
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_116_chain.cif",
+      "bytes": 105255
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_14_chain.cif",
+      "bytes": 104424
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_38_chain.cif",
+      "bytes": 125483
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_189_chain.cif",
+      "bytes": 92198
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_140_chain.cif",
+      "bytes": 75653
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_42_chain.cif",
+      "bytes": 84631
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_56_chain.cif",
+      "bytes": 84327
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_154_chain.cif",
+      "bytes": 81208
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_1_chain.cif",
+      "bytes": 82468
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_77_chain.cif",
+      "bytes": 101686
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_175_chain.cif",
+      "bytes": 82971
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_19_chain.cif",
+      "bytes": 125363
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_161_chain.cif",
+      "bytes": 107613
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_63_chain.cif",
+      "bytes": 71113
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_24_chain.cif",
+      "bytes": 100692
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_126_chain.cif",
+      "bytes": 76622
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_9_chain.cif",
+      "bytes": 72880
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_195_chain.cif",
+      "bytes": 85669
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_97_chain.cif",
+      "bytes": 95055
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_83_chain.cif",
+      "bytes": 72951
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_148_chain.cif",
+      "bytes": 90251
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_181_chain.cif",
+      "bytes": 94986
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_132_chain.cif",
+      "bytes": 75552
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_30_chain.cif",
+      "bytes": 70928
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_169_chain.cif",
+      "bytes": 95314
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_113_chain.cif",
+      "bytes": 68848
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_11_chain.cif",
+      "bytes": 76062
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_107_chain.cif",
+      "bytes": 116561
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_4_chain.cif",
+      "bytes": 121360
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_29_chain.cif",
+      "bytes": 66113
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_53_chain.cif",
+      "bytes": 100117
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_198_chain.cif",
+      "bytes": 121483
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_151_chain.cif",
+      "bytes": 80998
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_145_chain.cif",
+      "bytes": 82821
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_47_chain.cif",
+      "bytes": 99647
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_164_chain.cif",
+      "bytes": 107709
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_66_chain.cif",
+      "bytes": 71482
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_72_chain.cif",
+      "bytes": 87459
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_170_chain.cif",
+      "bytes": 77044
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_17_chain.cif",
+      "bytes": 102820
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_115_chain.cif",
+      "bytes": 106691
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_79_chain.cif",
+      "bytes": 70214
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_101_chain.cif",
+      "bytes": 79956
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_91_chain.cif",
+      "bytes": 112534
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_58_chain.cif",
+      "bytes": 85822
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_193_chain.cif",
+      "bytes": 124237
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_120_chain.cif",
+      "bytes": 120752
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_22_chain.cif",
+      "bytes": 114935
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_36_chain.cif",
+      "bytes": 74195
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_134_chain.cif",
+      "bytes": 111416
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_187_chain.cif",
+      "bytes": 76740
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_85_chain.cif",
+      "bytes": 105134
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_118_chain.cif",
+      "bytes": 85796
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_60_chain.cif",
+      "bytes": 102855
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_162_chain.cif",
+      "bytes": 72192
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_176_chain.cif",
+      "bytes": 74644
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_74_chain.cif",
+      "bytes": 90869
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_157_chain.cif",
+      "bytes": 70147
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_55_chain.cif",
+      "bytes": 82682
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_2_chain.cif",
+      "bytes": 127095
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_139_chain.cif",
+      "bytes": 82382
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_41_chain.cif",
+      "bytes": 120625
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_88_chain.cif",
+      "bytes": 90133
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_143_chain.cif",
+      "bytes": 99962
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_149_chain.cif",
+      "bytes": 85428
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_180_chain.cif",
+      "bytes": 100354
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_82_chain.cif",
+      "bytes": 108484
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_31_chain.cif",
+      "bytes": 71905
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_133_chain.cif",
+      "bytes": 83577
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_127_chain.cif",
+      "bytes": 91909
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_8_chain.cif",
+      "bytes": 82615
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_25_chain.cif",
+      "bytes": 91197
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_96_chain.cif",
+      "bytes": 95211
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_194_chain.cif",
+      "bytes": 84476
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_106_chain.cif",
+      "bytes": 80929
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_168_chain.cif",
+      "bytes": 107711
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_10_chain.cif",
+      "bytes": 80298
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_112_chain.cif",
+      "bytes": 113531
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_46_chain.cif",
+      "bytes": 91333
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_144_chain.cif",
+      "bytes": 109558
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_28_chain.cif",
+      "bytes": 88278
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_5_chain.cif",
+      "bytes": 90298
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_199_chain.cif",
+      "bytes": 77945
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_150_chain.cif",
+      "bytes": 91570
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_52_chain.cif",
+      "bytes": 72329
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_171_chain.cif",
+      "bytes": 81320
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_73_chain.cif",
+      "bytes": 86936
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_67_chain.cif",
+      "bytes": 103912
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_165_chain.cif",
+      "bytes": 94361
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_78_chain.cif",
+      "bytes": 98566
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_100_chain.cif",
+      "bytes": 122313
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_114_chain.cif",
+      "bytes": 88377
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_16_chain.cif",
+      "bytes": 81456
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_135_chain.cif",
+      "bytes": 75457
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_37_chain.cif",
+      "bytes": 68395
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_84_chain.cif",
+      "bytes": 74093
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_186_chain.cif",
+      "bytes": 109873
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_192_chain.cif",
+      "bytes": 78883
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_90_chain.cif",
+      "bytes": 117423
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_59_chain.cif",
+      "bytes": 76835
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_23_chain.cif",
+      "bytes": 107700
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_121_chain.cif",
+      "bytes": 84823
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_75_chain.cif",
+      "bytes": 108500
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_177_chain.cif",
+      "bytes": 92975
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_119_chain.cif",
+      "bytes": 106212
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_163_chain.cif",
+      "bytes": 90914
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_61_chain.cif",
+      "bytes": 112702
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_138_chain.cif",
+      "bytes": 116528
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_142_chain.cif",
+      "bytes": 121031
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_40_chain.cif",
+      "bytes": 119395
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_89_chain.cif",
+      "bytes": 80117
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_54_chain.cif",
+      "bytes": 109156
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_156_chain.cif",
+      "bytes": 78583
+    },
+    {
+      "path": "/Users/ricardo/.cache/adaptyv-c4/novelty/incoming_rfd4_20261022/tfr1_his200/inference_samples/foldseek_input_chains/47c65ec0/tfr1_apical_his/tfr1_apical_his_3_chain.cif",
+      "bytes": 106961
+    }
+  ],
+  "selection_policy": "All rows, exactly one filename-matched full generated CIF then exactly one full sequence-matched chain. No target-chain letter assumption."
+}

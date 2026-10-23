@@ -1,0 +1,156 @@
+{
+  "state": "complete",
+  "phase": "all",
+  "controller_pid": 32038,
+  "inputs": 400,
+  "steps": [
+    {
+      "name": "chainsaw",
+      "command": [
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/venv/bin/python",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/cpu_entry.py",
+        "chainsaw",
+        "--structure_directory",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/workflow_runtime/60c6cdf5ab5149dd98b660a4ce71f2c7/models/inputs",
+        "--output",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/workflow_runtime/60c6cdf5ab5149dd98b660a4ce71f2c7/models/raw_chainsaw.txt",
+        "--save_dir",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/workflow_runtime/60c6cdf5ab5149dd98b660a4ce71f2c7/models/chainsaw_cache"
+      ],
+      "started_at": "2026-10-23T01:40:05.879630+00:00",
+      "pid": 32039,
+      "completed": true,
+      "elapsed_seconds": 133.097013584
+    },
+    {
+      "name": "filter_chainsaw",
+      "command": [
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/venv/bin/python",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/ted-pinned/scripts/filter_domains.py",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/workflow_runtime/60c6cdf5ab5149dd98b660a4ce71f2c7/models/raw_chainsaw.txt",
+        "-o",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/workflow_runtime/60c6cdf5ab5149dd98b660a4ce71f2c7/models/chopping_chainsaw.txt",
+        "--offset_resi",
+        "1"
+      ],
+      "started_at": "2026-10-23T01:42:18.976744+00:00",
+      "pid": 33714,
+      "completed": true,
+      "elapsed_seconds": 0.03709679199999982,
+      "verified_rows": 400
+    },
+    {
+      "name": "merizo",
+      "command": [
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/venv/bin/python",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/domain_consensus/cpu_entry.py",
+        "merizo",
+        "-l",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/workflow_runtime/60c6cdf5ab5149dd98b660a4ce71f2c7/models/targets.txt",
+        "--out",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/workflow_runtime/60c6cdf5ab5149dd98b660a4ce71f2c7/models/raw_merizo.txt",
+        "-d",
+        "cpu"
+      ],
+      "started_at": "2026-10-23T01:42:19.017243+00:00",
+      "pid": 33715,
+      "completed": true,
+      "elapsed_seconds": 135.58586291700001
+    },
+    {
+      "name": "filter_merizo",
+      "command": [
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/venv/bin/python",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/ted-pinned/scripts/filter_domains.py",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/workflow_runtime/60c6cdf5ab5149dd98b660a4ce71f2c7/models/raw_merizo.txt",
+        "-o",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/workflow_runtime/60c6cdf5ab5149dd98b660a4ce71f2c7/models/chopping_merizo.txt",
+        "--offset_resi",
+        "0"
+      ],
+      "started_at": "2026-10-23T01:44:34.602652+00:00",
+      "pid": 34386,
+      "completed": true,
+      "elapsed_seconds": 0.0405424579999476,
+      "verified_rows": 400
+    },
+    {
+      "name": "unidoc",
+      "command": [
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/venv/bin/python",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/native_build/unidoc/Run_UniDoc_from_scratch_structure_afdb.py",
+        "-l",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/workflow_runtime/60c6cdf5ab5149dd98b660a4ce71f2c7/models/targets.txt",
+        "--out",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/workflow_runtime/60c6cdf5ab5149dd98b660a4ce71f2c7/models/raw_unidoc.txt",
+        "--inherit_chopping",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/workflow_runtime/60c6cdf5ab5149dd98b660a4ce71f2c7/models/chopping_merizo.txt"
+      ],
+      "started_at": "2026-10-23T01:44:34.645189+00:00",
+      "pid": 34387,
+      "completed": true,
+      "elapsed_seconds": 25.204438125000024
+    },
+    {
+      "name": "filter_unidoc",
+      "command": [
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/venv/bin/python",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/ted-pinned/scripts/filter_domains.py",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/workflow_runtime/60c6cdf5ab5149dd98b660a4ce71f2c7/models/raw_unidoc.txt",
+        "-o",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/workflow_runtime/60c6cdf5ab5149dd98b660a4ce71f2c7/models/chopping_unidoc.txt",
+        "--offset_resi",
+        "0"
+      ],
+      "started_at": "2026-10-23T01:44:59.849905+00:00",
+      "pid": 37660,
+      "completed": true,
+      "elapsed_seconds": 0.02241075000000592,
+      "verified_rows": 400
+    },
+    {
+      "name": "consensus",
+      "command": [
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/venv/bin/python",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/consensus_indexing_compat/get_consensus.py",
+        "-c",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/workflow_runtime/60c6cdf5ab5149dd98b660a4ce71f2c7/models/chopping_merizo.txt",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/workflow_runtime/60c6cdf5ab5149dd98b660a4ce71f2c7/models/chopping_chainsaw.txt",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/workflow_runtime/60c6cdf5ab5149dd98b660a4ce71f2c7/models/chopping_unidoc.txt",
+        "-o",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/workflow_runtime/60c6cdf5ab5149dd98b660a4ce71f2c7/models/raw_consensus.tsv"
+      ],
+      "started_at": "2026-10-23T01:44:59.876845+00:00",
+      "pid": 37661,
+      "completed": true,
+      "elapsed_seconds": 1.2038208750000194
+    },
+    {
+      "name": "filter_consensus",
+      "command": [
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/venv/bin/python",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/consensus_indexing_compat/filter_domains_consensus.py",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/workflow_runtime/60c6cdf5ab5149dd98b660a4ce71f2c7/models/raw_consensus.tsv",
+        "-o",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_domain_source_audit/workflow_runtime/60c6cdf5ab5149dd98b660a4ce71f2c7/models/consensus.tsv"
+      ],
+      "started_at": "2026-10-23T01:45:01.081126+00:00",
+      "pid": 37671,
+      "completed": true,
+      "elapsed_seconds": 0.0776665840000419
+    }
+  ],
+  "new_gpu_or_cloud_cpu_spend_usd": 0,
+  "original_inputs_unchanged": true,
+  "outputs_sha256": {
+    "chopping_chainsaw.txt": "7fb26f7a9168f6ceea2ea6e20f8dd6b27ef95c0b9aca0b19031e80f9300f6d83",
+    "chopping_merizo.txt": "150fe05edd1a443780efc232d21022e7afb7ef7cd157fdaf2cd836af1c759111",
+    "raw_merizo.txt": "e20934cc0bf79138de90a089cbc5542520e3d3ea6c4cd8b5d0f81735a5a98669",
+    "targets.txt": "ad71a1fd2f728d2c99c28e393ab27ffca993ad952aec9d1fb1b5d6955afc52e4",
+    "raw_unidoc.txt": "5a7772810c6608037f57366e506200f92b4c9fcfd230d03d6f9ba50fc2ad1891",
+    "chopping_unidoc.txt": "5a7772810c6608037f57366e506200f92b4c9fcfd230d03d6f9ba50fc2ad1891",
+    "consensus.changed.txt": "a1b49bf6bc99b877a12aad30238d372da3a9d123cc63d6adac592f705185b413",
+    "raw_chainsaw.txt": "54cbdce0d30a4ad470b4a058430f98a68015e418f89337bec950c91a2e15d714"
+  },
+  "consensus_sha256": "02328645f4442fe42759e2fc5136ce2d79d62fec8923723e82b6fa6011acc388"
+}

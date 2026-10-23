@@ -1,0 +1,27 @@
+{
+  "state": "complete",
+  "pid": 44623,
+  "started_at": "2026-10-23T02:08:05.343557+00:00",
+  "cpu": true,
+  "numerical_threads": 1,
+  "seed": 0,
+  "mode": "accuracy",
+  "seq_type": "antibody",
+  "chunk_size": 128,
+  "max_run_seconds": 28800,
+  "reference_length_limit": 2000,
+  "pool_sha256": "e7dfdb454227eabf92c42e277406d7ae2b312dac2d1cc0a5e42f313d946a4068",
+  "script_sha256": "21ef9601e34b820aec5e6891765edffd066a0069dfa383fc6711163e6a5a5d17",
+  "new_gpu_or_remote_cpu_spend_usd": 0,
+  "generates_or_mutates_sequences": false,
+  "states": {
+    "done": 107440,
+    "excluded_noncanonical": 1902
+  },
+  "last_chunk_seconds": 1.8029652498662472,
+  "last_reference_id": 109342,
+  "elapsed_seconds": 1904.4321408332326,
+  "updated_at": "2026-10-23T02:39:49.569567+00:00",
+  "valid_complete_h_loops": 105529,
+  "finished_at": "2026-10-23T02:39:49.853682+00:00"
+}

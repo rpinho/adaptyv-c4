@@ -321,8 +321,8 @@ def ca_residues(path, chain):
     return [(n, aa[comp], xyz, comp) for n, comp, xyz, _ in records]
 
 
-def parse_structure_hits(path, domains):
-    hits = {q: [] for q in domains}
+def iter_structure_hits(path, domains):
+    """Validate each real alignment without retaining a large result set."""
     with Path(path).open(newline='') as f:
         for fields in csv.reader(f, delimiter='\t'):
             if len(fields) != len(FOLDSEEK_FIELDS):
@@ -337,7 +337,12 @@ def parse_structure_hits(path, domains):
                 raise ValueError('Wrong query domain length or TM-score normalization')
             if not 1 <= r['qstart'] <= r['qend'] <= r['qlen']:
                 raise ValueError('Invalid structural alignment coordinates')
-            hits[r['query']].append(r)
+            yield r
+
+
+def parse_structure_hits(path, domains):
+    hits = {q: [] for q in domains}
+    for r in iter_structure_hits(path,domains):hits[r['query']].append(r)
     # Two discovery modes may return the same target. A repeated hit is not
     # independent evidence or additional domain coverage; retain its best qTM.
     for q, hs in hits.items():

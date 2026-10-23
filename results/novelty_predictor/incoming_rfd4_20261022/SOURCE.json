@@ -1,0 +1,30 @@
+{
+  "read_utc": "2026-10-23T00:49:05.923497+00:00",
+  "handoff_sha256": "6655d3f6888ec7a1caa6d4fa4dd1da09db344cf1dff59cfb1135e3f43ee7c842",
+  "claude_branch_commit": "e8fdfa984561b7f024c6357ddbb75d1cd767ba57",
+  "data_method": "Modal Volume read-only ls/get; no app invocation, generator or remote worker launched",
+  "recorded_spend": {
+    "runpod": 56.5899880444631,
+    "own_modal_estimate": 10.718947158590089,
+    "separate_lane_handoff_estimate": 15,
+    "new_gpu_or_remote_cpu": 0
+  },
+  "local_handoff_matches_committed": true,
+  "reference_files": {
+    "scripts/run_cpu_novelty.py": "2c098db8d3d0d1700cb9cea371d27e46bbc16cbf1dc037d4d2850addd9a18409",
+    "scripts/novelty_level_predictor.py": "50d8ea6c0a647c1ebf0802a1c4ae53301dadf38181c197632fc0b36f9e0696cf",
+    "results/novelty_predictor/patent_extension/DATABASES.json": "dac0471efe750638c2bbcca79a21fb86ba046d1cd0b1514d8fb2428bae429848",
+    "results/novelty_predictor/structural/DATABASE.json": "b8ce72bd9b017e6f61c2d7d2ac5b065a3aeeba72de0ef8fbd214cfe927e6d679"
+  },
+  "invocation": [
+    ".venv/bin/python",
+    "scripts/run_cpu_novelty.py",
+    "results/novelty_predictor/incoming_rfd4_20261022/analysis_inputs.csv",
+    "--structures",
+    "results/novelty_predictor/incoming_rfd4_20261022/coordinates_verified.json",
+    "--timeout-structure",
+    "1200",
+    "--out",
+    "results/novelty_predictor/incoming_rfd4_20261022/run"
+  ]
+}

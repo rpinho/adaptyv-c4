@@ -1,0 +1,12 @@
+{
+  "state": "report_complete",
+  "pid": 31623,
+  "started_at": "2026-10-23T01:39:00.158252+00:00",
+  "deadline": "2026-10-23T13:39:00.158096+00:00",
+  "launches_gpu_or_remote_compute": false,
+  "launches_or_repeats_analysis": false,
+  "updated_at": "2026-10-23T02:04:16.184465+00:00",
+  "workflow_state": "complete",
+  "workflow_controller_pid": 29371,
+  "current_step": "parent_context"
+}

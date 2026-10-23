@@ -1,0 +1,41 @@
+{
+  "state": "failed",
+  "controller_pid": 660,
+  "inputs": 400,
+  "coordinate_inputs": 400,
+  "started_at": "2026-10-23T00:53:31.151104+00:00",
+  "steps": [
+    {
+      "name": "whole_chain",
+      "command": [
+        "/Users/ricardo/dev/adaptyv-c4/.venv/bin/python",
+        "/Users/ricardo/dev/adaptyv-c4/scripts/novelty_level_predictor.py",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/incoming_rfd4_20261022/analysis_inputs.csv",
+        "--databases",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/DATABASES.json",
+        "--mmseqs",
+        "mmseqs",
+        "--threads",
+        "4",
+        "--timeout-per-database",
+        "600",
+        "--out",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/incoming_rfd4_20261022/run/whole_chain",
+        "--structures",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/incoming_rfd4_20261022/run/whole_chain_structures.json",
+        "--structure-database",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/structural/DATABASE.json",
+        "--foldseek",
+        "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+        "--timeout-structure",
+        "1200"
+      ],
+      "started_at": "2026-10-23T00:53:31.154080+00:00",
+      "pid": 886
+    }
+  ],
+  "new_gpu_or_cloud_cpu_spend_usd": 0,
+  "design_csv_sha256": "9f428e60725384aa5bac645ce4532a1c86228170fa07bd22a685b2b302ae3063",
+  "workflow_sha256": "2c098db8d3d0d1700cb9cea371d27e46bbc16cbf1dc037d4d2850addd9a18409",
+  "error": "CalledProcessError(1, ['/Users/ricardo/dev/adaptyv-c4/.venv/bin/python', '/Users/ricardo/dev/adaptyv-c4/scripts/novelty_level_predictor.py', '/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/incoming_rfd4_20261022/analysis_inputs.csv', '--databases', '/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/patent_extension/DATABASES.json', '--mmseqs', 'mmseqs', '--threads', '4', '--timeout-per-database', '600', '--out', '/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/incoming_rfd4_20261022/run/whole_chain', '--structures', '/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/incoming_rfd4_20261022/run/whole_chain_structures.json', '--structure-database', '/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/structural/DATABASE.json', '--foldseek', '/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek', '--timeout-structure', '1200'])"
+}

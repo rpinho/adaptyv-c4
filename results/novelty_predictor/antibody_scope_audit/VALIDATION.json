@@ -1,0 +1,623 @@
+{
+  "state": "complete",
+  "all_400_outputs_present": true,
+  "assigned_annotations_verified": 85,
+  "all_assigned_numbered_sequences_equal_reported_source_span": true,
+  "all_assigned_labels_unique_and_within_imgt_1_to_128": true,
+  "groups": {
+    "tfr1_c200": {
+      "unassigned": 151,
+      "H": 34,
+      "L": 5,
+      "K": 10
+    },
+    "tfr1_his200": {
+      "unassigned": 164,
+      "H": 25,
+      "L": 5,
+      "K": 6
+    }
+  },
+  "checks": [
+    {
+      "name": "tfr1_apical_binder_100",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_binder_104",
+      "chain_type": "L",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_binder_105",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_binder_107",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_binder_112",
+      "chain_type": "L",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_binder_115",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_binder_116",
+      "chain_type": "K",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_binder_128",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_binder_143",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": false
+    },
+    {
+      "name": "tfr1_apical_binder_144",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_binder_147",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_binder_155",
+      "chain_type": "K",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_binder_160",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_binder_164",
+      "chain_type": "K",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_binder_165",
+      "chain_type": "K",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_binder_172",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_binder_173",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_binder_18",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": false
+    },
+    {
+      "name": "tfr1_apical_binder_182",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_binder_183",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_binder_189",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_binder_191",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_binder_193",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_binder_197",
+      "chain_type": "L",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_binder_2",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_binder_25",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": false
+    },
+    {
+      "name": "tfr1_apical_binder_27",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_binder_3",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_binder_34",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_binder_38",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_binder_4",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_binder_40",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_binder_41",
+      "chain_type": "K",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_binder_47",
+      "chain_type": "L",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_binder_5",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_binder_6",
+      "chain_type": "L",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_binder_60",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": false
+    },
+    {
+      "name": "tfr1_apical_binder_64",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_binder_70",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_binder_75",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_binder_77",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_binder_78",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_binder_82",
+      "chain_type": "K",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_binder_85",
+      "chain_type": "K",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_binder_86",
+      "chain_type": "K",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_binder_90",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_binder_91",
+      "chain_type": "K",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_binder_98",
+      "chain_type": "K",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_binder_99",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_his_100",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_his_104",
+      "chain_type": "L",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_his_105",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_his_107",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_his_112",
+      "chain_type": "K",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_his_116",
+      "chain_type": "K",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_his_119",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": false
+    },
+    {
+      "name": "tfr1_apical_his_144",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_his_147",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_his_155",
+      "chain_type": "L",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_his_160",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_his_164",
+      "chain_type": "K",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_his_17",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": false
+    },
+    {
+      "name": "tfr1_apical_his_172",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_his_173",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_his_18",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": false
+    },
+    {
+      "name": "tfr1_apical_his_183",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_his_191",
+      "chain_type": "K",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_his_193",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_his_197",
+      "chain_type": "L",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_his_2",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_his_27",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_his_3",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_his_34",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_his_38",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_his_4",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_his_41",
+      "chain_type": "K",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_his_47",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": false
+    },
+    {
+      "name": "tfr1_apical_his_6",
+      "chain_type": "L",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_his_60",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_his_70",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_his_77",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": false
+    },
+    {
+      "name": "tfr1_apical_his_90",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_his_91",
+      "chain_type": "L",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_his_98",
+      "chain_type": "K",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    },
+    {
+      "name": "tfr1_apical_his_99",
+      "chain_type": "H",
+      "exact_numbered_source_span": true,
+      "unique_imgt_labels": true,
+      "cdr3_flanks_present": true
+    }
+  ],
+  "runtime_sha256": "6b3a2bfa86da4fc7b32ad88640c588129faea65fb65eb7e7fec83c4665c4e520",
+  "raw_sha256": "804fe0d03433d7c3f99f2f4dd85c514f0f5d5396b325d9b47101e51ea39da302",
+  "controls_passed": true,
+  "organizer_types_established": 0,
+  "antibody_novelty_levels_established": 0
+}

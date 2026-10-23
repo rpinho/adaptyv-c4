@@ -1,0 +1,14 @@
+{
+  "state": "automatic_finalizer_ready",
+  "recorded_at": "2026-10-23T03:18:23.953354+00:00",
+  "script_sha256": "7888c1388e4ed1df86178fe871ff3e3eb28bab31e9758260c964fdc91950a08a",
+  "native_helper_sha256": "81e547597a4af347ba1e179f4ae0fc1bc26bed6fde733f03b82f95cecb8d1829",
+  "predictor_sha256": "284377195e8a5e8fbbd0a3c87fe6e13f81697c86050f932f7d9243ea63e5919a",
+  "test_log_sha256": "0ef60c73bbd36d89050f9c015c1c47afc4db50d3813716b738ad8042c7f1837f",
+  "negative_control": "results/novelty_predictor/adaptive_completion/FINALIZER_CONTROL.json",
+  "negative_control_note": "Software fixture, not a completed native run",
+  "controller_pid": 64406,
+  "callback_timeout_seconds": 1800,
+  "new_gpu_or_remote_cpu_spend_usd": 0,
+  "negative_control_sha256": "2fe834022507c5a2c7574c64f631acf047793768433883b6e9c633be040bfb27"
+}

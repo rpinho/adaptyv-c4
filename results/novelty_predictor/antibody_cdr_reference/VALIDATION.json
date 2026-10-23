@@ -1,0 +1,23 @@
+{
+  "state": "complete",
+  "queries": 50,
+  "annotated_canonical_references": 107440,
+  "excluded_noncanonical_references": 1902,
+  "independently_recomputed_best_identities": 200,
+  "conditional_level_counts": {
+    "None": 49,
+    "4": 1
+  },
+  "primary_measured_subset_level_counts": {
+    "2": 11,
+    "3": 34,
+    "4": 5
+  },
+  "queries_with_normalizer_sensitive_subset_levels": 22,
+  "organizer_levels_established": 0,
+  "source_and_immutable_pool_hashes_verified": true,
+  "predictions_sha256": "8409c09d8741eb38e50d421fc82a2feb7a5b51e5069b7e1490558621a69c975c",
+  "evidence_csv_sha256": "cdfc0a79f8155541d26a280ff2407726fb70d51843b74fdc3688b39cd51339a4",
+  "report_builder_sha256": "7e157824fc630eb1a6d57c63072086af21fa0c749c026a05d0ca4bca08b12de8",
+  "new_gpu_or_remote_cpu_spend_usd": 0
+}
