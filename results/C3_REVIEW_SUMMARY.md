@@ -52,12 +52,18 @@ Codex did structural analysis (BioPython SASA, distance-to-groove) on the top 3 
 | c3_v_l65_E5Q | #2 | E5Q | 65 | 84.2 | -3 |
 | c3_v_l65_E5Q_E53Q | #2 | E5Q+E53Q | 65 | 84.8 | -2 |
 
-## RFD4 generation (in progress)
+## RFD4 designs (2 selected)
 
-200 de novo binders being generated via RFD4-Proteina on Modal (PDB 6X18, chain F/R29-145, same groove hotspots). Will fill the last 2 slots when done.
+200 de novo binders generated via RFD4-Proteina on Modal (PDB 6X18, chain F/label numbering, same groove hotspots). 104 extracted, filtered (no Cys, 45-100 residues), ranked by charge neutrality + length. Top picks validated via ESMFold:
+
+| Design | Len | Net Charge | Refold pLDDT | Status |
+|--------|-----|-----------|-------------|--------|
+| c3_glp1r_ecd_96 | 72 | 0 | 83.8 | PASS |
+| c3_glp1r_ecd_22 | 65 | -1 | 89.6 | PASS |
+
+Rejected: c3_glp1r_ecd_61 (charge 0, pLDDT 64.7 MARGINAL), c3_glp1r_ecd_94 (pLDDT 61.5 MARGINAL).
 
 ## Submission files
 
-- `results/c3_submission_v2_dry_run_20261023.csv` — **18 designs** (9 BindCraft + 9 variants)
+- `results/c3_submission_v3_20261023.csv` — **20 designs** (9 BindCraft + 9 variants + 2 RFD4)
 - `results/c3_methodology.txt` — for Proteinbase submission form
-- Final version (with RFD4 picks) will be `c3_submission_v3`
