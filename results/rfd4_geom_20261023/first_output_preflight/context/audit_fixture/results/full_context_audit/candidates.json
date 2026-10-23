@@ -1,0 +1,16 @@
+[
+  {
+    "design": "candidate_001",
+    "target_ca_rmsd": 0.27821457274869277,
+    "aligned_target_residues": 195,
+    "restored_heavy_pair_clashes_under2A": 0,
+    "restored_clashing_residues": 0,
+    "restored_min_heavy_distance": 22.587845269637256,
+    "restored_backbone_pair_clashes_under2A": 0,
+    "restored_backbone_min_distance": 28.211431826729743,
+    "rigid_context_pass": true,
+    "source_sha256": "235141825b3585e449c9631660a15b99017c94997d04508f7a4c9fa4006002ed",
+    "clashing_residues": [],
+    "backbone_clashing_residues": []
+  }
+]

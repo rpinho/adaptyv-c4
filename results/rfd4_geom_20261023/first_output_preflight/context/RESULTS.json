@@ -1,0 +1,90 @@
+{
+  "state": "complete",
+  "inputs": 1,
+  "measured": 1,
+  "designs": [
+    {
+      "source_id": "plain_0_preflight",
+      "shortlist_name": "first_output_mapping_preflight_only",
+      "fixture_name": "candidate_001",
+      "status": "measured",
+      "preparation": {
+        "source_sha256": "eef5b50d3436a2aaf486e5faf029d820634de41c02fb60c917f2929ed62778be",
+        "crop_sha256": "7b33cfb377b646525555aef328e11201e2400ed61064d81d0a6f8fe602f9f15f",
+        "target_source_chain": "A",
+        "binder_source_chain": "B",
+        "mapped_target_residues": 195,
+        "author_range": [
+          189,
+          383
+        ],
+        "chain_identity_by_exact_sequence": true,
+        "source_coordinates_not_fitted_or_relaxed": true
+      },
+      "unchanged_gate": {
+        "design": "candidate_001",
+        "target_ca_rmsd": 0.27821457274869277,
+        "aligned_target_residues": 195,
+        "restored_heavy_pair_clashes_under2A": 0,
+        "restored_clashing_residues": 0,
+        "restored_min_heavy_distance": 22.587845269637256,
+        "restored_backbone_pair_clashes_under2A": 0,
+        "restored_backbone_min_distance": 28.211431826729743,
+        "rigid_context_pass": true,
+        "source_sha256": "235141825b3585e449c9631660a15b99017c94997d04508f7a4c9fa4006002ed",
+        "clashing_residues": [],
+        "backbone_clashing_residues": []
+      },
+      "omitted_context_rigid_pass": true,
+      "full_native_staging_pass": true,
+      "staging": {
+        "residues": 195,
+        "author_range": [
+          189,
+          383
+        ],
+        "native_sequence_verified": true,
+        "minimum_peptide_CN_A": 1.2259060144424438,
+        "maximum_peptide_CN_A": 1.5511068105697632,
+        "stage": "restored_staging_only",
+        "source_sha256": "7b33cfb377b646525555aef328e11201e2400ed61064d81d0a6f8fe602f9f15f",
+        "native_template_sha256": "4eaa5db67ed83a896713c4b42d1dc214c778bdac240fdf3a9a82e86a66f79495",
+        "output_sha256": "3a9923baf55f8ff3c6a158bca81a7f4b9c08ec9c2ed43c75893bc609b0d097fc",
+        "alignment_residues": 195,
+        "domain_CA_rmsd_A": 0.278214720223835,
+        "patch_CA_rmsd_A": 0.5155431691835145,
+        "maximum_domain_CA_displacement_A": 1.1628132525803034,
+        "minimum_binder_full_target_backbone_distance_A": 3.300487995517016,
+        "observed_NAG_min_distance_A": 18.36891828407163,
+        "restored_target_residues": 1278,
+        "rotation_determinant": 1.000000000000001,
+        "qualified_candidate": false,
+        "requires_native_full_context_refold": true,
+        "limitations": [
+          "Rigid context restoration is not native-complex prediction or binding validation",
+          "No pH scoring allowed before native refolding and existing admission gates",
+          "Observed NAG clearance checked; glycans are not retained in output PDB",
+          "Human only; residue121/unresolved glycans/assay tag absent"
+        ]
+      }
+    }
+  ],
+  "omitted_context_rigid_pass": 1,
+  "full_native_staging_pass": 1,
+  "protected_source_sha256": {
+    "/Users/ricardo/dev/adaptyv-c4/scripts/audit_full_context.py": "2f8f453ac6e90cca7c29c03b58d61a9c5ecde0c533ff7f6b3bc42ccf0dd76251",
+    "/Users/ricardo/dev/adaptyv-c4/scripts/run_context_ensemble.py": "0f408034f943a03bb34558ce8222666af5fb9276d62397e39fc4738bab75b3d2",
+    "/Users/ricardo/dev/adaptyv-c4/scripts/restore_apical_context.py": "54cd8ec6ae4acc51b598c8cbaa13555e67bdb1e3a3b1bd295c29423f1011bb06",
+    "/Users/ricardo/dev/adaptyv-c4/scripts/postprocess_gpu_campaign.py": "e2a8b8e6a9bf01872e9d2a3c4867abe4e23367c5d8485c861369dbf93d227472"
+  },
+  "shortlist_sha256": "705f5f3064d928b92fe3a2336a3a0e5a14a595160ccf33a119c8e4c0c982450f",
+  "structures_sha256": "f8f295740b130b33b4daa8df89d0225930daca9ae628b0acd1ef08cc621af5ae",
+  "organizer_acceptance_measured": false,
+  "independent_refolding_performed": false,
+  "new_gpu_spend_usd": 0,
+  "limitations": [
+    "Rigid context transfer is a diagnostic, not binding/pH or full-complex prediction",
+    "The unchanged audit human-text template includes historical-pool claims; use its numeric JSON and this report",
+    "Staging peptide/backbone/NAG checks remain unchanged; missing/inconclusive inputs are retained, not passed"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "state": "static_config_variants_prepared",
+  "parent_sha256": "e9f563813a9f947f84dc5ebbc40a35970bc2423b87408622f873f6174db0cc80",
+  "variants": [
+    {
+      "path": "/Users/ricardo/.worktrees/adaptyv-c4/claude-submission/configs/rfd4/tfr1_apical_his020.yaml",
+      "sha256": "7aa8b68b61eb6d3301611b07a7135d318e87b01e379fdd43a20fa1a30693821b",
+      "his_prior": 0.2,
+      "one_noncomment_value_changed": true,
+      "materialized_cif_validation": "pending before paid run",
+      "wired_into_generator_image": false
+    },
+    {
+      "path": "/Users/ricardo/.worktrees/adaptyv-c4/claude-submission/configs/rfd4/tfr1_apical_his030.yaml",
+      "sha256": "1758656f5c67430e27f06f171e627cf4d125006807dd03fd343b72c75d85602a",
+      "his_prior": 0.3,
+      "one_noncomment_value_changed": true,
+      "materialized_cif_validation": "pending before paid run",
+      "wired_into_generator_image": false
+    }
+  ],
+  "current_paid_campaign_unchanged": true,
+  "new_gpu_or_remote_cpu_spend_usd": 0
+}
