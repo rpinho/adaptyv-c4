@@ -124,6 +124,19 @@ excluded for SSSS poly-Ser; his015_96 passed all filters with excellent fold qua
 
 **File**: `results/submission_v8_20261023.csv`
 
+## His distribution analysis (Codex, v8)
+
+Mid-chain His (middle 60% of sequence) as proxy for interface-contact potential:
+
+| Rating | Count | Best examples |
+|--------|-------|---------------|
+| GOOD (>60% mid-chain) | 10 | c4_v_58_4x (86.7%), c4_v_185_4x (77.8%), his015_148 (70.0%) |
+| OK (40-60%) | 8 | his015_96 (57.1%), his015_131 (53.3%), c4_v_62_max (50.0%) |
+| CONCERN (<40%) | 2 | apical_his_148 (33.3%, non-switching control), his015_115 (36.4%) |
+
+Note: sequence-position heuristic only — does not validate interface contact or exclude burial.
+Top candidates for actual pH-switching: c4_v_58_4x, c4_v_185_4x, his015_148, his015_61, his015_140.
+
 ## Cost
 - RFD4 generation: ~$9 on Modal L40S (200 e1_plain + 200 e1_his015)
 - C3 RFD4 generation: ~$7 on Modal L40S (200 designs)
