@@ -27,6 +27,7 @@ SPEC_MAP = {
     "apical": "tfr1_apical_binder.yaml",
     "e1_plain": "tfr1_e1_plain.yaml",
     "e1_his015": "tfr1_e1_his015.yaml",
+    "c3_glp1r": "c3_glp1r_ecd.yaml",
 }
 
 app = modal.App("rfd4-tfr1")
@@ -45,6 +46,8 @@ image = (
     .add_local_file(str(SPECS_DIR / "tfr1_apical_binder.yaml"), f"{INPUTS}/tfr1_apical_binder.yaml")
     .add_local_file(str(SPECS_DIR / "tfr1_e1_plain.yaml"), f"{INPUTS}/tfr1_e1_plain.yaml")
     .add_local_file(str(SPECS_DIR / "tfr1_e1_his015.yaml"), f"{INPUTS}/tfr1_e1_his015.yaml")
+    .add_local_file(str(SPECS_DIR / "c3_glp1r_ecd.yaml"), f"{INPUTS}/c3_glp1r_ecd.yaml")
+    .add_local_file(str(pathlib.Path("/Users/ricardo/dev/adaptyv-c4/data/6x18.cif")), f"{INPUTS}/6x18.cif")
 )
 
 VOLUMES = {"/cache/huggingface": hf_cache, RUNS: runs_vol}
