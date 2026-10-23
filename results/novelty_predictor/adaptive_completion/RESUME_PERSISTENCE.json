@@ -1,0 +1,8 @@
+{
+  "recorded_at": "2026-10-23T10:43:36.608774+00:00",
+  "controller_pid": 78667,
+  "sleep_assertion_pid": 78668,
+  "export_timeout_seconds": 7200,
+  "mode": "export_only",
+  "new_gpu_or_remote_cpu_spend_usd": 0
+}

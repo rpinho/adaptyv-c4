@@ -1,0 +1,68 @@
+{
+  "state": "running",
+  "steps": [
+    {
+      "command": [
+        "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+        "tsv2db",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_adaptive_completion/union_candidates.tsv",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_adaptive_completion/full_remaining/union_prefilter",
+        "--output-dbtype",
+        "7"
+      ],
+      "started_at": "2026-10-23T03:04:04.129401+00:00",
+      "pid": 64417,
+      "completed": true,
+      "elapsed_seconds": 0.3115881249999999
+    },
+    {
+      "command": [
+        "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+        "tmalign",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/incoming_rfd4_20261022/run_bounded/domain_search/structure/querydb",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_adaptive_completion/full_remaining/union_prefilter",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_adaptive_completion/full_remaining/full_aligned",
+        "--threads",
+        "4",
+        "--tmalign-fast",
+        "0",
+        "--tmscore-threshold",
+        "0",
+        "--tmscore-threshold-mode",
+        "1",
+        "--tmalign-hit-order",
+        "1",
+        "--max-accept",
+        "2147483647",
+        "--max-rejected",
+        "2147483647",
+        "-a",
+        "1"
+      ],
+      "started_at": "2026-10-23T03:04:04.441490+00:00",
+      "pid": 64419,
+      "completed": true,
+      "elapsed_seconds": 6912.94800925
+    },
+    {
+      "command": [
+        "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+        "convertalis",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/incoming_rfd4_20261022/run_bounded/domain_search/structure/querydb",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_adaptive_completion/full_remaining/full_aligned",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_adaptive_completion/full_remaining/hits.tsv",
+        "--threads",
+        "4",
+        "--exact-tmscore",
+        "1",
+        "--format-output",
+        "query,target,qlen,tlen,qstart,qend,tstart,tend,alnlen,qtmscore,ttmscore,qaln,taln"
+      ],
+      "started_at": "2026-10-23T04:59:17.351885+00:00",
+      "pid": 99544
+    }
+  ],
+  "new_gpu_or_remote_cpu_spend_usd": 0
+}
