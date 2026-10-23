@@ -48,8 +48,10 @@ def main():
     def save():(output/'STATUS.json').write_text(json.dumps(state,indent=2)+'\n')
     save();app_id=None;started=time.monotonic();error=None
     try:
-        spec=importlib.util.spec_from_file_location('canonical_rfd4_runner',SOURCE)
-        module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+        spec=importlib.util.spec_from_file_location('modal_rfd4',SOURCE)
+        module=importlib.util.module_from_spec(spec)
+        sys.path.insert(0,str(SOURCE.parent));sys.modules['modal_rfd4']=module
+        spec.loader.exec_module(module)
         # Reuse the canonical App and Function, with bounded invocation resources.
         with module.modal.enable_output(),module.app.run(detach=False):
             app_id=module.app.app_id;state['apps_started']=[app_id];save()

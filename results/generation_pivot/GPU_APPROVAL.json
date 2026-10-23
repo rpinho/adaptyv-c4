@@ -17,6 +17,7 @@
   "requires_validated_novelty_report_commit": true,
   "requires_app_shutdown": true,
   "higher_histidine_sweeps_approved": false,
-  "model_invoker_sha256": "f61c7967d8692cad28a8ddce49dcc20da758016a16f2ab43b35efd58e61f8fdb",
-  "new_gpu_or_remote_cpu_spend_usd": 0
+  "model_invoker_sha256": "549b335cb640faa9a293d6a6744c38e223e5efec700bdb003b77b0ea0a9af721",
+  "new_gpu_or_remote_cpu_spend_usd": 0,
+  "invoker_revision_note": "Local module registration corrected; same approved source, arms, rate and timeouts"
 }

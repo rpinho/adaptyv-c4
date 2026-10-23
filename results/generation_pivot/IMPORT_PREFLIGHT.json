@@ -1,0 +1,8 @@
+{
+  "state": "passed",
+  "canonical_module": "modal_rfd4",
+  "source_path": "/Users/ricardo/.worktrees/adaptyv-c4/claude-submission/modal_rfd4.py",
+  "local_sdk_import_and_options_only": true,
+  "app_started": false,
+  "gpu_started": false
+}
