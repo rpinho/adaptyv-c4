@@ -1,0 +1,12 @@
+{
+  "recorded_at": "2026-10-23T11:17:10.741545+00:00",
+  "source_branch": "claude/submission-and-control",
+  "commit": "e6c5ef24099948fb2716209ce8ea6b557602dbb1",
+  "canonical_ranker_sha256": "4a6e3524a26d3b4e40469e44f66f209cd8e8532ddeff38a0e426b703b1da8f00",
+  "policy": "rfd4-geom ordinal triage, no weighted confidence score",
+  "geometry_tests_passed": 3,
+  "emitter_regression_tests_passed": 20,
+  "join_tests_passed": 2,
+  "submission_emitter_unchanged": true,
+  "ranking_outputs_produced": false
+}
