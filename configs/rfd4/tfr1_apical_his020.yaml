@@ -1,0 +1,31 @@
+# Derived from tfr1_apical_his.yaml. Only the His prior changes to 0.20.
+# Model conditioning is soft; actual composition and geometry must be measured.
+tfr1_apical_his:
+  input: 11qc.cif
+
+  contig: "E1:60-130, /0, A68-262"
+
+  conditions:
+    C_CRDGRP:
+      1:
+        - select: "sel('A/*/[68-262]') and is_protein_backbone and not has_nan_coord()"
+
+    C_SEQ:
+      true:
+        - select: "sel('A/*/[68-262]')"
+
+    C_HOT:
+      true:
+        - select: "sel('A/*/84/[CD,NZ]')"
+        - select: "sel('A/*/85/[CG,ND2]')"
+        - select: "sel('A/*/87/[CZ,NH1]')"
+        - select: "sel('A/*/88/[CG,CD1]')"
+        - select: "sel('A/*/89/[CB,CG1]')"
+
+    C_SEQ_PROB_HIS:
+      0.20:
+        - select: "sel('*/E1')"
+
+    C_SEQ_PROB_CYS:
+      0.0:
+        - select: "sel('*/E1')"
