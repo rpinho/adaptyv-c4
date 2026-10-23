@@ -64,7 +64,19 @@ Dropped: ecd_96 (TM-like: GRAVY +0.72, 55.6% hydrophobic, max 19-mer window +2.3
 **Strengths**: No poly-AA ≥4, no exact ≥6-res repeats, zero Cys, good E. coli expression predicted.
 **Weaknesses**: (1) Effective diversity = 8 independent backbones (point mutants correlated); (2) Missing Trp/Tyr-enriched groove complementarity; (3) No agonism potential — all ECD binders without TMD-reaching extension.
 
+## V4 → V5: aromatic complementarity upgrade
+
+Fable flagged missing Trp/Tyr for W33/W39/Y69 groove stacking, and recommended trading redundant l100 variants for fresh backbones. Dropped 2 of 3 single l100 variants (kept double E79Q_E93Q), added 2 WY-rich RFD4 designs:
+
+| Slot | V4 design | WY% | V5 replacement | WY% | pLDDT | Charge |
+|------|-----------|-----|----------------|-----|-------|--------|
+| 9 | c3_v_l100_E93Q (single variant) | 5.0% | **c3_glp1r_ecd_29** | **9.4%** | **93.5** | −3 |
+| 10 | c3_v_l100_E79Q (single variant) | 5.0% | **c3_glp1r_ecd_12** | **12.0%** | **84.2** | −4 |
+
+ecd_12 has 2W+8Y (12% aromatic) — the highest groove-complementarity in the set.
+Mean portfolio WY improved from 5.5% → 6.3%. Independent backbones: 10 (up from 8).
+
 ## Submission files
 
-- **`results/c3_submission_v4_20261023.csv`** — 20 designs (8 BindCraft + 9 variants + 3 RFD4)
+- **`results/c3_submission_v5_20261023.csv`** — 20 designs (8 BindCraft + 7 variants + 5 RFD4)
 - `results/c3_methodology.txt` — for Proteinbase submission form
