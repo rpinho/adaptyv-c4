@@ -13,8 +13,9 @@
    - 10 designs ranked
 2. **ESMFold** independent refold (Modal L40S GPU, `facebook/esmfold_v1`)
 3. **Quality gates**: refold FAIL → drop; >10 all-atom clashes → drop
+4. **Fable review** (v4): 2 designs dropped, 2 replaced from RFD4 pool
 
-## Results: 9 of 10 pass
+## Results: 9 of 10 pass (BindCraft)
 
 | Rank | Design | Len | iPTM | pLDDT | Refold | Hotspot | Clashes | Charge | Note |
 |------|--------|-----|------|-------|--------|---------|---------|--------|------|
@@ -26,19 +27,13 @@
 | 8 | l52_6950ff | 52 | 0.78 | 0.88 | 85.4 | 0.60 | 2 | -6.0 | Compact, clean |
 | 6 | l99_e26aff | 99 | 0.79 | 0.88 | 82.1 | 0.67 | 4 | -4.9 | Solid all-round |
 | 9 | l100_4bd789 | 100 | 0.76 | 0.83 | 85.6 | 0.80 | 4 | -9.9 | Lowest iPTM, extreme charge |
-| 7 | l52_fff0d0 | 52 | 0.81 | 0.89 | **68.4** | 0.73 | 4 | -5.8 | MARGINAL refold (38% >70) |
+| 7 | l52_fff0d0 | 52 | 0.81 | 0.89 | **68.4** | 0.73 | 4 | -5.8 | **DROPPED v4** — MARGINAL refold |
 
 **Dropped**: Rank #4 (l53_aaac96) — 13 all-atom clashes
 
-## Flags
-
-- **Rank #7** (l52_fff0d0): MARGINAL ESMFold refold (68.4, only 38.5% residues >pLDDT 70). BindCraft scores are decent (iPTM 0.81, pLDDT 0.89) but the independent fold doesn't confirm the structure well. Consider dropping.
-- **Rank #9** (l100_4bd789): Lowest iPTM (0.76), lowest BindCraft pLDDT (0.83), extreme negative charge (-9.9). Still passes ESMFold (85.6). Codex analysis recommended dropping if constrained.
-- All 10 designs contact all 6 key groove residues (W33, W39, R40, E68, Y69, W91).
-
 ## V2: Point-mutation variants (Codex analysis)
 
-Codex did structural analysis (BioPython SASA, distance-to-groove) on the top 3 parents and proposed 9 interface-edge mutations — all E→Q or Q→K/F→Y to improve charge neutrality and contacts. All 9 variants pass ESMFold (pLDDT 84.2–89.6, matching parents).
+9 interface-edge mutations (E→Q, Q→K, F→Y) on top 3 parents. All pass ESMFold.
 
 | Variant | Parent | Mutations | Len | Refold pLDDT | Charge |
 |---------|--------|-----------|-----|-------------|--------|
@@ -52,18 +47,24 @@ Codex did structural analysis (BioPython SASA, distance-to-groove) on the top 3 
 | c3_v_l65_E5Q | #2 | E5Q | 65 | 84.2 | -3 |
 | c3_v_l65_E5Q_E53Q | #2 | E5Q+E53Q | 65 | 84.8 | -2 |
 
-## RFD4 designs (2 selected)
+## RFD4 designs (3 selected after Fable review)
 
-200 de novo binders generated via RFD4-Proteina on Modal (PDB 6X18, chain F/label numbering, same groove hotspots). 104 extracted, filtered (no Cys, 45-100 residues), ranked by charge neutrality + length. Top picks validated via ESMFold:
+200 de novo binders generated via RFD4-Proteina on Modal. Pool screened for TM-like artifacts, charged fraction, diversity.
 
-| Design | Len | Net Charge | Refold pLDDT | Status |
-|--------|-----|-----------|-------------|--------|
-| c3_glp1r_ecd_96 | 72 | 0 | 83.8 | PASS |
-| c3_glp1r_ecd_22 | 65 | -1 | 89.6 | PASS |
+| Design | Len | Charge | GRAVY | Charged% | Refold pLDDT | Status |
+|--------|-----|--------|-------|----------|-------------|--------|
+| c3_glp1r_ecd_22 | 65 | -1 | -0.65 | 26% | 89.6 | PASS |
+| c3_glp1r_ecd_172 | 67 | 0 | -0.47 | 28% | 89.3 | PASS (v4 NEW) |
+| c3_glp1r_ecd_171 | 68 | -4 | -0.49 | 41% | 88.7 | PASS (v4 NEW) |
 
-Rejected: c3_glp1r_ecd_61 (charge 0, pLDDT 64.7 MARGINAL), c3_glp1r_ecd_94 (pLDDT 61.5 MARGINAL).
+Dropped: ecd_96 (TM-like: GRAVY +0.72, 55.6% hydrophobic, max 19-mer window +2.32, 11% charged — will partition to membranes), ecd_61 (MARGINAL pLDDT 64.7), ecd_94 (MARGINAL pLDDT 61.5).
+
+## V4 Fable assessment
+
+**Strengths**: No poly-AA ≥4, no exact ≥6-res repeats, zero Cys, good E. coli expression predicted.
+**Weaknesses**: (1) Effective diversity = 8 independent backbones (point mutants correlated); (2) Missing Trp/Tyr-enriched groove complementarity; (3) No agonism potential — all ECD binders without TMD-reaching extension.
 
 ## Submission files
 
-- `results/c3_submission_v3_20261023.csv` — **20 designs** (9 BindCraft + 9 variants + 2 RFD4)
+- **`results/c3_submission_v4_20261023.csv`** — 20 designs (8 BindCraft + 9 variants + 3 RFD4)
 - `results/c3_methodology.txt` — for Proteinbase submission form
