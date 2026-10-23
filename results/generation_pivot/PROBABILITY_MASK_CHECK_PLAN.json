@@ -1,0 +1,18 @@
+{
+  "scope": "Existing emitted metrics only, no new generation or novelty search",
+  "when_available": "Inspect actual switch-arm zero/one condition counts against target baseline and binder lengths",
+  "baseline_control_zero_conditions": [
+    "5265.0",
+    "5265.0",
+    "5265.0",
+    "5265.0"
+  ],
+  "baseline_control_one_conditions": [
+    "195.0",
+    "195.0",
+    "195.0",
+    "195.0"
+  ],
+  "reason": "Materialized expandable segment has one placeholder; do not infer realized mask coverage from its atom count",
+  "coverage_runtime_established": false
+}

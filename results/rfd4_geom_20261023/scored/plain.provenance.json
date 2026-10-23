@@ -1,0 +1,15 @@
+{
+  "state": "complete",
+  "arm": "tfr1_c200m_20261023",
+  "inputs": 200,
+  "metric_records": 200,
+  "missing_metric_ids": [],
+  "input_sequence_sha256": "5b18ac7cafe051653460164d4ddb8a7e42b8352b29ed8349119ac6a36da2044b",
+  "input_metrics_sha256": "b6bd324add0bf95333457d7106c155b2b01f60d72a1891129f09a7a31ce0ed16",
+  "output_sha256": "5c93dc99247ede3d0e1d2bb279cdf65c389678adca1246e9cc2bef9d11bf2c81",
+  "script_sha256": "a1a678de81a100ea63b32afd61cd414f5e69cdaf96f133b920f03f7d854d12a5",
+  "sequence_order_preserved": true,
+  "ranking_performed": false,
+  "organizer_acceptance_measured": false,
+  "submission_format_emitted": false
+}

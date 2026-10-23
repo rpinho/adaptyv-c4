@@ -1,0 +1,23 @@
+{
+  "approved_by": "Ricardo",
+  "recorded_at": "2026-10-23T11:51:09.155145+00:00",
+  "source": "Explicit answer to additional-sweep price question in this conversation",
+  "answer": "Yes\u2014run both higher-prior arms",
+  "approved_arms": [
+    "tfr1_his020_200m_20261023",
+    "tfr1_his030_200m_20261023"
+  ],
+  "gpu": "L40S",
+  "gpu_usd_per_hour": 1.9512,
+  "cpu_ram_additional": true,
+  "replicates_each": 200,
+  "max_seconds_per_arm": 9000,
+  "max_gpu_containers": 2,
+  "requires_initial_pair_finished_stopped_and_ranked": true,
+  "requires_app_shutdown": true,
+  "model_invoker_sha256": "d5c80dbf522266486bddf0f7657939ebeaf0b4ac86351f36a9dae4f5bda32aa9",
+  "launcher_sha256": "904c84ed7dc14b7e4cd2efae02e7b2bacc32ceda28e4480345c78dc7021adc4d",
+  "cpu_validation_sha256": "682900280e8386468f47612bd2f1c27443a2ba55c8ee5198a3b9d40c615b936a",
+  "additional_runs_beyond_these_two_approved": false,
+  "operational_revision_note": "Same approved arms/rate/limits; sampler cleanup bounded, explicit noninteractive app stop and verified release, completed-output recovery accepted"
+}

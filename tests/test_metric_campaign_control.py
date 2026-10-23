@@ -43,7 +43,7 @@ class MetricCampaignControl(unittest.TestCase):
             with patch.object(runner,'ROOT',root),patch.object(runner,'SOURCE',source),patch.object(runner,'EXPECTED_SOURCE',runner.sha(source)),patch.object(sys,'argv',['runner','--execute']),patch.object(runner.importlib.util,'spec_from_file_location',return_value=spec),patch.object(runner.importlib.util,'module_from_spec',return_value=module),patch.object(runner.subprocess,'check_output',return_value=report.read_bytes()),patch.object(runner.subprocess,'run',side_effect=command) as remote:
                 with self.assertRaisesRegex(RuntimeError,'injected remote failure'):runner.main()
                 self.assertEqual(function.spawn.call_count,2)
-                self.assertEqual(remote.call_args_list[0].args[0][-2:],['stop','ap-owned-test'])
+                self.assertEqual(remote.call_args_list[0].args[0][-3:],['stop','--yes','ap-owned-test'])
                 state=json.loads((root/'results/rfd4_geom_20261023/STATUS.json').read_text())
                 self.assertEqual(state['state'],'failed')
                 self.assertTrue(state['app_stop_confirmed'])

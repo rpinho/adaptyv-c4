@@ -1,0 +1,22 @@
+{
+  "recorded_at": "2026-10-23T11:58:31.495937+00:00",
+  "app_id": "ap-MLsDay51dMvQnlyUqCMuwc",
+  "noninteractive_yes_flag": true,
+  "owned_app_snapshot": [
+    {
+      "app_id": "ap-MLsDay51dMvQnlyUqCMuwc",
+      "description": "rfd4-tfr1",
+      "state": "stopped",
+      "tasks": "0",
+      "created_at": "2026-10-23 07:10:16-04:00",
+      "stopped_at": "2026-10-23 07:58:23-04:00"
+    }
+  ],
+  "allocation_release_verified": true,
+  "committed_metric_rows": {
+    "plain": 200,
+    "his": 200
+  },
+  "reason": "Generation finished; sampler cleanup blocked wrapper. Explicit app stop releases the allocation.",
+  "recorded_runpod_usd": 56.5899880444631
+}

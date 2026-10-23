@@ -59,8 +59,17 @@ def main():
         assert json.loads(checked_inputs.read_text())['state']=='passed_cpu_materialization'
         first=ROOT/'results/rfd4_geom_20261023'
         completed=json.loads((first/'STATUS.json').read_text())
-        assert completed['state']=='outputs_ready_for_local_validation' and completed['app_stop_confirmed']
-        snapshot=json.loads((first/'apps_after_stop.json').read_text())
+        if completed['state']=='outputs_ready_for_local_validation':
+            assert completed['app_stop_confirmed']
+            snapshot=json.loads((first/'apps_after_stop.json').read_text())
+        else:
+            recovery=json.loads((first/'RECOVERY_COMPLETE.json').read_text())
+            assert recovery['state']=='complete' and recovery['metric_rows']==400 and recovery['sequence_rows']==400
+            assert recovery['original_status_sha256']==sha(first/'STATUS.json')
+            release=json.loads((first/'RELEASE_VERIFIED.json').read_text())
+            assert release['allocation_release_verified'] and recovery['release_sha256']==sha(first/'RELEASE_VERIFIED.json')
+            for path,fingerprint in recovery['data_files_sha256'].items():assert sha(first/path)==fingerprint
+            snapshot=release['owned_app_snapshot']
         assert apps_released(snapshot,completed['apps_started']),'Initial GPU allocations must be released first'
         with (first/'ranking/shortlist.csv').open(newline='') as stream:
             assert list(csv.DictReader(stream)),'Rank the first measured arms before this sweep'
@@ -105,22 +114,25 @@ def main():
             stopped=False
             for attempt in range(3):
                 try:
-                    result=subprocess.run([str(MODAL),'app','stop',app_id],capture_output=True,text=True,timeout=60)
+                    result=subprocess.run([str(MODAL),'app','stop','--yes',app_id],capture_output=True,text=True,timeout=60)
                     (output/('stop_'+str(attempt)+'.log')).write_text(result.stdout+result.stderr)
-                    if result.returncode==0:stopped=True;break
+                    if result.returncode==0:
+                        for poll in range(6):
+                            snapshot=subprocess.run([str(MODAL),'app','list','--json'],capture_output=True,text=True,timeout=30)
+                            (output/'apps_after_stop.json').write_text(snapshot.stdout)
+                            if snapshot.returncode==0:
+                                rows=json.loads(snapshot.stdout)
+                                if apps_released(rows,[app_id]):
+                                    stopped=True
+                                    state['app_absent_from_active_listing']=not any(r.get('app_id')==app_id for r in rows)
+                                    break
+                            time.sleep(3)
+                        if stopped:break
                 except Exception as stop_error:
                     (output/('stop_'+str(attempt)+'.log')).write_text(repr(stop_error))
                 time.sleep(5)
             state['app_stop_confirmed']=stopped
-            try:
-                snapshot=subprocess.run([str(MODAL),'app','list','--json'],capture_output=True,text=True,timeout=60)
-                (output/'apps_after_stop.json').write_text(snapshot.stdout)
-                if snapshot.returncode==0:
-                    found=[row for row in json.loads(snapshot.stdout) if row.get('app_id')==app_id]
-                    state['app_absent_from_active_listing']=not found
-                    state['app_allocation_release_verified']=stopped and apps_released(json.loads(snapshot.stdout),[app_id])
-            except Exception as snapshot_error:
-                state['release_snapshot_error']=repr(snapshot_error)
+            state['app_allocation_release_verified']=stopped
             if not stopped and error is None:error=RuntimeError('App stop was not confirmed')
         state.update(finished_at=datetime.now(timezone.utc).isoformat(),elapsed_wall_seconds=time.monotonic()-started,
                      account_wide_bill_verified=False,recorded_prior_runpod_usd=56.5899880444631,

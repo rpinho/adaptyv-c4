@@ -18,8 +18,9 @@
   "max_concurrent_gpu_containers": 2,
   "gpu_usd_per_hour": 1.9512,
   "cpu_ram_additional": true,
-  "launcher_sha256": "94240d0ce29415253de456d10af0a132dfc25313e7f83c010e05d9318c59535b",
+  "launcher_sha256": "904c84ed7dc14b7e4cd2efae02e7b2bacc32ceda28e4480345c78dc7021adc4d",
   "cpu_validation_sha256": "682900280e8386468f47612bd2f1c27443a2ba55c8ee5198a3b9d40c615b936a",
-  "approval_state": "pending",
-  "invocation": "results/generation_pivot/run_metric_arms.py --sweep higher-his --execute"
+  "approval_state": "approved_by_Ricardo",
+  "invocation": "results/generation_pivot/run_metric_arms.py --sweep higher-his --execute",
+  "operational_fix": "Bounded direct-process sampler cleanup; generation function and all inputs unchanged"
 }
