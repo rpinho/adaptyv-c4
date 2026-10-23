@@ -36,8 +36,28 @@
 - **Rank #9** (l100_4bd789): Lowest iPTM (0.76), lowest BindCraft pLDDT (0.83), extreme negative charge (-9.9). Still passes ESMFold (85.6). Codex analysis recommended dropping if constrained.
 - All 10 designs contact all 6 key groove residues (W33, W39, R40, E68, Y69, W91).
 
-## Submission file
+## V2: Point-mutation variants (Codex analysis)
 
-`results/c3_submission_dry_run_20261023.csv` — 9 designs, ready for review.
+Codex did structural analysis (BioPython SASA, distance-to-groove) on the top 3 parents and proposed 9 interface-edge mutations — all E→Q or Q→K/F→Y to improve charge neutrality and contacts. All 9 variants pass ESMFold (pLDDT 84.2–89.6, matching parents).
 
-To generate final: `python3 -I scripts/build_c3_submission.py` (without --dry-run)
+| Variant | Parent | Mutations | Len | Refold pLDDT | Charge |
+|---------|--------|-----------|-----|-------------|--------|
+| c3_v_l57_Q18K | #3 | Q18K | 57 | 86.6 | -1 |
+| c3_v_l57_F38Y | #3 | F38Y | 57 | 87.1 | -2 |
+| c3_v_l57_Q18K_F38Y | #3 | Q18K+F38Y | 57 | 86.6 | -1 |
+| c3_v_l100_E93Q | #5 | E93Q | 100 | 89.6 | -6 |
+| c3_v_l100_E79Q | #5 | E79Q | 100 | 89.6 | -6 |
+| c3_v_l100_E79Q_E93Q | #5 | E79Q+E93Q | 100 | 89.5 | -5 |
+| c3_v_l65_E53Q | #2 | E53Q | 65 | 84.7 | -3 |
+| c3_v_l65_E5Q | #2 | E5Q | 65 | 84.2 | -3 |
+| c3_v_l65_E5Q_E53Q | #2 | E5Q+E53Q | 65 | 84.8 | -2 |
+
+## RFD4 generation (in progress)
+
+200 de novo binders being generated via RFD4-Proteina on Modal (PDB 6X18, chain F/R29-145, same groove hotspots). Will fill the last 2 slots when done.
+
+## Submission files
+
+- `results/c3_submission_v2_dry_run_20261023.csv` — **18 designs** (9 BindCraft + 9 variants)
+- `results/c3_methodology.txt` — for Proteinbase submission form
+- Final version (with RFD4 picks) will be `c3_submission_v3`
