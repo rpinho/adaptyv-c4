@@ -1,4 +1,16 @@
 venv/
+.venv/
+.venv-*/
 __pycache__/
 *.pyc
+*.egg-info/
 data/*.cif
+
+# Strategy / internal coordination (kept locally, not published)
+WIN_PLAN.md
+COMPETITION_INTEL.md
+HANDOFF_CODEX.md
+HANDOFF_FROM_CLAUDE.md
+NEXT_MOVES.md
+SUBMISSION_STATUS.md
+DECISIONS.md
