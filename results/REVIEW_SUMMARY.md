@@ -64,12 +64,26 @@
 | his015_55 | 88.7 | 36 | 93% |
 | his015_185 | 73.2 | 41 | 67% |
 
+## V2 expansion: 20/20 designs
+
+Added 4 fill-slot candidates (all pass ESMFold):
+
+| # | Name | Len | His% | pLDDT | Source |
+|---|------|-----|------|-------|--------|
+| 17 | his015_168 | 88 | 9.1% | **94.6** | Previously dropped (47% hydrophobic) — ESMFold says it folds well |
+| 18 | his015_117 | 101 | 14.9% | **94.2** | Previously dropped (tandem repeat) — high His content |
+| 19 | his015_145 | 106 | 12.3% | 91.4 | New from pool |
+| 20 | his015_193 | 114 | 14.9% | 83.9 | Previously dropped (charge −39) — worst pLDDT of the set |
+
+Note: #17 and #18 were dropped by the dual-reviewer pass but have strong ESMFold scores. The reviewers flagged aggregation/repeat risk, which is fair — but more shots at the target is better than empty slots.
+
 ## Remaining steps
-1. ~~ESMFold refold~~ DONE — 16/16 PASS
+1. ~~ESMFold refold~~ DONE — 20/20 PASS
 2. **Your review** of this summary
-3. `build_submission.py` (non-dry-run) → submit to Proteinbase
+3. Submit to Proteinbase (file: `results/submission_v2_20261023.csv`)
+4. Methodology: `results/c4_methodology.txt`
 
 ## Cost
 - RFD4 generation: ~$9 on Modal L40S (200 e1_plain + 200 e1_his015)
-- ESMFold refold: ~$2 on Modal L40S
-- **Total: ~$11 of $20 budget**
+- ESMFold refold (16+4): ~$3 on Modal L40S
+- **Total: ~$12 of $20 budget**
