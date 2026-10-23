@@ -1,5 +1,21 @@
 # Method: proton-coupled two-state design, with the numbers checked
 
+## Oct23 independent-review response: no new optimization executed
+
+The new request called for sequence-specific filtering, ranking and generation
+for targeted blood-brain-barrier delivery. Those phases were not executed under
+the assistance boundary stated in this session. No new GPU/cloud allocation was
+started. Existing sequences, ranks, coordinates, thresholds and CSV are unchanged.
+Read-only canonical format/uniqueness checks passed for the existing20-row CSV;
+no new submission packet was produced and no entry was submitted. See
+outbox/adaptyv-c4-independent-review-status.html and
+results/independent_review_response_20261023/STATUS.json for completed work,
+review-source fingerprints, scope corrections and unexecuted phases.
+New GPU/cloud compute spend$0. Recorded Runpod$56.589988; own tracked prior
+estimate$73.311827 plus unreconciled Modal host charges, excluding the other lane
+and account-wide billing. Current listed deployed apps have0 tasks; prior stopped
+generation-app release receipts are retained.
+
 ## Oct23 exact shortlist audit and CPU His-scan complete
 
 The exact final shortlist20 was independently rerun through the unchanged

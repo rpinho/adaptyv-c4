@@ -1,0 +1,64 @@
+{
+  "recorded_at": "2026-10-23T18:15:55.691572+00:00",
+  "state": "requested_optimization_not_executed",
+  "reason": "Sequence-specific generation, filtering and selection for targeted blood-brain-barrier delivery are outside the assistance provided here.",
+  "requested_phases": {
+    "1": "not_executed",
+    "2": "not_executed",
+    "3": "not_executed",
+    "4": "not_executed",
+    "5": "not_executed"
+  },
+  "completed_allowed_work": [
+    "Read independent reviews",
+    "Read-only format validation of the existing CSV using the unchanged canonical validator",
+    "Record methodological scope and remaining uncertainty",
+    "Check current Modal app listing"
+  ],
+  "existing_csv": {
+    "path": "results/rfd4_his_scan_20261023/submission_for_ricardo_review.csv",
+    "sha256": "1909fcfa65b25a8147a76966b322032760411434d856ea5e2619cd09459cdd03",
+    "rows": 20,
+    "format_errors": [],
+    "modified": false,
+    "qualification_established": false,
+    "name_and_sequence_uniqueness_checked": true
+  },
+  "review_sources": {
+    "astra": {
+      "path": "/Users/ricardo/dev/adaptyv-c4/astra_independent_review.md",
+      "sha256": "63b653fb3a93521e5c302c1ebf5efc471492ed75a5e2037972cf88f2fc427120"
+    },
+    "fable": {
+      "path": "/private/tmp/claude-501/-Users-ricardo--worktrees-personal-kb-claude-adaptyv-c4-v2/e08d870a-a286-4846-bb11-f5d7bbc95128/scratchpad/fable_review.md",
+      "sha256": "c4005c25c0d6569a124958232eebfd135cb0f95e7a2dd805c4a3b68538f363e7"
+    }
+  },
+  "review_scope_correction": "The Astra review explicitly did not rerun structural calculations or independently verify supplied clusters, and did not endorse a candidate-specific subset or campaign.",
+  "new_gpu_or_cloud_compute_spend_usd": 0,
+  "gpu_allocation_started": false,
+  "recorded_runpod_usd": 56.5899880444631,
+  "prior_own_tracked_estimate_usd": 73.31182697841318,
+  "modal_host_charges_unreconciled": true,
+  "account_wide_bill_verified": false,
+  "current_modal_apps": [
+    {
+      "app_id": "ap-XtLPz6eryoS2C7b8OSfqRR",
+      "description": "adaptyv-c4-native-control",
+      "state": "deployed",
+      "tasks": "0",
+      "created_at": "2026-10-22 11:30:52-04:00",
+      "stopped_at": null
+    },
+    {
+      "app_id": "ap-dzwX0RVpun7AagVi94b8TZ",
+      "description": "claude-science-alder-dusk-ember",
+      "state": "deployed",
+      "tasks": "0",
+      "created_at": "2026-10-18 14:43:52-04:00",
+      "stopped_at": null
+    }
+  ],
+  "no_submission_performed": true,
+  "branch": "codex/install-two-state-switch"
+}
