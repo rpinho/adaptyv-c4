@@ -1,0 +1,187 @@
+{
+  "structures": [
+    {
+      "name": "tfr1_his200m_20261023__tfr1_apical_his_124",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/rfd4_coordinates/b3451dd026c6af8b5adc654bccc75b0809d249467bb89004660ac7424e0bfef0.cif",
+      "sha256": "b3451dd026c6af8b5adc654bccc75b0809d249467bb89004660ac7424e0bfef0",
+      "source_arm": "tfr1_his200m_20261023",
+      "source_design_id": "tfr1_apical_his_124",
+      "remote_path": "tfr1_his200m_20261023/inference_samples/tfr1_apical_his_124/tfr1_apical_his_124_generated.cif",
+      "status": "available"
+    },
+    {
+      "name": "tfr1_his200m_20261023__tfr1_apical_his_148",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/rfd4_coordinates/33dbc65b858187b11c959115097fbb8d21a2f33196079ada19d2313c3ac91c56.cif",
+      "sha256": "33dbc65b858187b11c959115097fbb8d21a2f33196079ada19d2313c3ac91c56",
+      "source_arm": "tfr1_his200m_20261023",
+      "source_design_id": "tfr1_apical_his_148",
+      "remote_path": "tfr1_his200m_20261023/inference_samples/tfr1_apical_his_148/tfr1_apical_his_148_generated.cif",
+      "status": "available"
+    },
+    {
+      "name": "tfr1_his200m_20261023__tfr1_apical_his_179",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/rfd4_coordinates/ee03fc93652605be2f65374ea7c1f217b3cca78ea8bc99eb4cc04194d37ee422.cif",
+      "sha256": "ee03fc93652605be2f65374ea7c1f217b3cca78ea8bc99eb4cc04194d37ee422",
+      "source_arm": "tfr1_his200m_20261023",
+      "source_design_id": "tfr1_apical_his_179",
+      "remote_path": "tfr1_his200m_20261023/inference_samples/tfr1_apical_his_179/tfr1_apical_his_179_generated.cif",
+      "status": "available"
+    },
+    {
+      "name": "tfr1_his200m_20261023__tfr1_apical_his_21",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/rfd4_coordinates/2ee0ebb875d6fa47c5f7607a741dec4cbedf1e3402560654dcfc1626d516ef06.cif",
+      "sha256": "2ee0ebb875d6fa47c5f7607a741dec4cbedf1e3402560654dcfc1626d516ef06",
+      "source_arm": "tfr1_his200m_20261023",
+      "source_design_id": "tfr1_apical_his_21",
+      "remote_path": "tfr1_his200m_20261023/inference_samples/tfr1_apical_his_21/tfr1_apical_his_21_generated.cif",
+      "status": "available"
+    },
+    {
+      "name": "tfr1_his200m_20261023__tfr1_apical_his_45",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/rfd4_coordinates/9b10377d614386d2a3ce7a847297d3a207cc1e13d5cadc044a1b962fcf4f8604.cif",
+      "sha256": "9b10377d614386d2a3ce7a847297d3a207cc1e13d5cadc044a1b962fcf4f8604",
+      "source_arm": "tfr1_his200m_20261023",
+      "source_design_id": "tfr1_apical_his_45",
+      "remote_path": "tfr1_his200m_20261023/inference_samples/tfr1_apical_his_45/tfr1_apical_his_45_generated.cif",
+      "status": "available"
+    },
+    {
+      "name": "tfr1_his200m_20261023__tfr1_apical_his_57",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/rfd4_coordinates/e25466cb64684e77cab0f02f71fb8477b2c14d6fd313ae11ba7939ab9f7ea920.cif",
+      "sha256": "e25466cb64684e77cab0f02f71fb8477b2c14d6fd313ae11ba7939ab9f7ea920",
+      "source_arm": "tfr1_his200m_20261023",
+      "source_design_id": "tfr1_apical_his_57",
+      "remote_path": "tfr1_his200m_20261023/inference_samples/tfr1_apical_his_57/tfr1_apical_his_57_generated.cif",
+      "status": "available"
+    },
+    {
+      "name": "tfr1_his200m_20261023__tfr1_apical_his_68",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/rfd4_coordinates/a1b017bc2b4f42cb3f2f281c140f3062fdf7ad082db6283111c29b369bae18a0.cif",
+      "sha256": "a1b017bc2b4f42cb3f2f281c140f3062fdf7ad082db6283111c29b369bae18a0",
+      "source_arm": "tfr1_his200m_20261023",
+      "source_design_id": "tfr1_apical_his_68",
+      "remote_path": "tfr1_his200m_20261023/inference_samples/tfr1_apical_his_68/tfr1_apical_his_68_generated.cif",
+      "status": "available"
+    },
+    {
+      "name": "tfr1_his200m_20261023__tfr1_apical_his_82",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/rfd4_coordinates/816b6eba1d49a6860f5cc08d4bcab51b13781d8dfbcec5e85479926badcd99c5.cif",
+      "sha256": "816b6eba1d49a6860f5cc08d4bcab51b13781d8dfbcec5e85479926badcd99c5",
+      "source_arm": "tfr1_his200m_20261023",
+      "source_design_id": "tfr1_apical_his_82",
+      "remote_path": "tfr1_his200m_20261023/inference_samples/tfr1_apical_his_82/tfr1_apical_his_82_generated.cif",
+      "status": "available"
+    },
+    {
+      "name": "tfr1_c200m_20261023__tfr1_apical_binder_126",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/rfd4_coordinates/13186a8e4c16b5bbaad078039a8cf09a49925789527adc08bc25a5e2b2009047.cif",
+      "sha256": "13186a8e4c16b5bbaad078039a8cf09a49925789527adc08bc25a5e2b2009047",
+      "source_arm": "tfr1_c200m_20261023",
+      "source_design_id": "tfr1_apical_binder_126",
+      "remote_path": "tfr1_c200m_20261023/inference_samples/tfr1_apical_binder_126/tfr1_apical_binder_126_generated.cif",
+      "status": "available"
+    },
+    {
+      "name": "tfr1_c200m_20261023__tfr1_apical_binder_138",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/rfd4_coordinates/6b4b3f272d3dd2e7f402d350fd58bb3c9d638db202629da0fe29a7a441762f20.cif",
+      "sha256": "6b4b3f272d3dd2e7f402d350fd58bb3c9d638db202629da0fe29a7a441762f20",
+      "source_arm": "tfr1_c200m_20261023",
+      "source_design_id": "tfr1_apical_binder_138",
+      "remote_path": "tfr1_c200m_20261023/inference_samples/tfr1_apical_binder_138/tfr1_apical_binder_138_generated.cif",
+      "status": "available"
+    },
+    {
+      "name": "tfr1_c200m_20261023__tfr1_apical_binder_177",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/rfd4_coordinates/20a41a1cce441b221acfd77b8acf83c36b3f596ad5ce2bab27330ee60f463fe8.cif",
+      "sha256": "20a41a1cce441b221acfd77b8acf83c36b3f596ad5ce2bab27330ee60f463fe8",
+      "source_arm": "tfr1_c200m_20261023",
+      "source_design_id": "tfr1_apical_binder_177",
+      "remote_path": "tfr1_c200m_20261023/inference_samples/tfr1_apical_binder_177/tfr1_apical_binder_177_generated.cif",
+      "status": "available"
+    },
+    {
+      "name": "tfr1_c200m_20261023__tfr1_apical_binder_186",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/rfd4_coordinates/36b5291d6ea9367c68ef905949c6c48460cf23bb7154f47ce7d77b4bf553252d.cif",
+      "sha256": "36b5291d6ea9367c68ef905949c6c48460cf23bb7154f47ce7d77b4bf553252d",
+      "source_arm": "tfr1_c200m_20261023",
+      "source_design_id": "tfr1_apical_binder_186",
+      "remote_path": "tfr1_c200m_20261023/inference_samples/tfr1_apical_binder_186/tfr1_apical_binder_186_generated.cif",
+      "status": "available"
+    },
+    {
+      "name": "tfr1_c200m_20261023__tfr1_apical_binder_187",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/rfd4_coordinates/4e7794389912afe05a18e374bff16c758d7c35050c33ed337aa288e273cd85c1.cif",
+      "sha256": "4e7794389912afe05a18e374bff16c758d7c35050c33ed337aa288e273cd85c1",
+      "source_arm": "tfr1_c200m_20261023",
+      "source_design_id": "tfr1_apical_binder_187",
+      "remote_path": "tfr1_c200m_20261023/inference_samples/tfr1_apical_binder_187/tfr1_apical_binder_187_generated.cif",
+      "status": "available"
+    },
+    {
+      "name": "tfr1_c200m_20261023__tfr1_apical_binder_58",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/rfd4_coordinates/cbd6f28c0b10cd8d0ed570a9e50784f7715511e6c73ef841e364288b545266f4.cif",
+      "sha256": "cbd6f28c0b10cd8d0ed570a9e50784f7715511e6c73ef841e364288b545266f4",
+      "source_arm": "tfr1_c200m_20261023",
+      "source_design_id": "tfr1_apical_binder_58",
+      "remote_path": "tfr1_c200m_20261023/inference_samples/tfr1_apical_binder_58/tfr1_apical_binder_58_generated.cif",
+      "status": "available"
+    },
+    {
+      "name": "tfr1_c200m_20261023__tfr1_apical_binder_94",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/rfd4_coordinates/c5ff54f20260f798e06ff6f89e80e5def89f1ce833fbc7a919b94f8cc16561ef.cif",
+      "sha256": "c5ff54f20260f798e06ff6f89e80e5def89f1ce833fbc7a919b94f8cc16561ef",
+      "source_arm": "tfr1_c200m_20261023",
+      "source_design_id": "tfr1_apical_binder_94",
+      "remote_path": "tfr1_c200m_20261023/inference_samples/tfr1_apical_binder_94/tfr1_apical_binder_94_generated.cif",
+      "status": "available"
+    },
+    {
+      "name": "tfr1_his200m_20261023__tfr1_apical_his_1",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/rfd4_coordinates/1dd9a07d80e1edb98bc01898befd89e91525de5e99d73a6d188ac24a831576d9.cif",
+      "sha256": "1dd9a07d80e1edb98bc01898befd89e91525de5e99d73a6d188ac24a831576d9",
+      "source_arm": "tfr1_his200m_20261023",
+      "source_design_id": "tfr1_apical_his_1",
+      "remote_path": "tfr1_his200m_20261023/inference_samples/tfr1_apical_his_1/tfr1_apical_his_1_generated.cif",
+      "status": "available"
+    },
+    {
+      "name": "tfr1_his200m_20261023__tfr1_apical_his_115",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/rfd4_coordinates/f728ab9b38620502b41df12bda82520443e3996af502970b4433c47cba619d95.cif",
+      "sha256": "f728ab9b38620502b41df12bda82520443e3996af502970b4433c47cba619d95",
+      "source_arm": "tfr1_his200m_20261023",
+      "source_design_id": "tfr1_apical_his_115",
+      "remote_path": "tfr1_his200m_20261023/inference_samples/tfr1_apical_his_115/tfr1_apical_his_115_generated.cif",
+      "status": "available"
+    },
+    {
+      "name": "tfr1_his200m_20261023__tfr1_apical_his_121",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/rfd4_coordinates/bc784c16817a363087c70bb78aac1a7ec0efa7efa97a4cdbc332ff08ec0bfa4d.cif",
+      "sha256": "bc784c16817a363087c70bb78aac1a7ec0efa7efa97a4cdbc332ff08ec0bfa4d",
+      "source_arm": "tfr1_his200m_20261023",
+      "source_design_id": "tfr1_apical_his_121",
+      "remote_path": "tfr1_his200m_20261023/inference_samples/tfr1_apical_his_121/tfr1_apical_his_121_generated.cif",
+      "status": "available"
+    },
+    {
+      "name": "tfr1_his200m_20261023__tfr1_apical_his_133",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/rfd4_coordinates/eb501d463fc16d11feb34a435f0378a981f6ea3da7847a9c4b27a3cfbdfd91d2.cif",
+      "sha256": "eb501d463fc16d11feb34a435f0378a981f6ea3da7847a9c4b27a3cfbdfd91d2",
+      "source_arm": "tfr1_his200m_20261023",
+      "source_design_id": "tfr1_apical_his_133",
+      "remote_path": "tfr1_his200m_20261023/inference_samples/tfr1_apical_his_133/tfr1_apical_his_133_generated.cif",
+      "status": "available"
+    },
+    {
+      "name": "tfr1_his200m_20261023__tfr1_apical_his_136",
+      "path": "/Users/ricardo/.cache/adaptyv-c4/rfd4_coordinates/943831a8657e35a38c02165a45e5b8486c38575a46da643934d49c3bc7a03607.cif",
+      "sha256": "943831a8657e35a38c02165a45e5b8486c38575a46da643934d49c3bc7a03607",
+      "source_arm": "tfr1_his200m_20261023",
+      "source_design_id": "tfr1_apical_his_136",
+      "remote_path": "tfr1_his200m_20261023/inference_samples/tfr1_apical_his_136/tfr1_apical_his_136_generated.cif",
+      "status": "available"
+    }
+  ],
+  "scope": "Read-only Volume API, no App or Function invoked",
+  "shortlist_sha256": "5f50bf1084b97b523c418d94051667c4b361125374e2f201b9485de5628f68c5",
+  "new_gpu_or_remote_cpu_spend_usd": 0
+}
