@@ -75,6 +75,10 @@ image = (
     .add_local_file(str(SPEC), f"{INPUTS}/tfr1_apical_binder.yaml")
     .add_local_file(str(SPEC.parent / "tfr1_apical_his.yaml"),
                     f"{INPUTS}/tfr1_apical_his.yaml")
+    .add_local_file(str(SPEC.parent / "tfr1_apical_his020.yaml"),
+                    f"{INPUTS}/tfr1_apical_his020.yaml")
+    .add_local_file(str(SPEC.parent / "tfr1_apical_his030.yaml"),
+                    f"{INPUTS}/tfr1_apical_his030.yaml")
 )
 
 VOLUMES = {"/cache/huggingface": hf_cache, RUNS: runs_vol}
