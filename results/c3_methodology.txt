@@ -1,0 +1,7 @@
+We used BindCraft with forced targeting to design de novo single-chain binders against the GLP1R extracellular domain (ECD). Our target structure was derived from PDB 6X18 (GLP1R bound to GLP-1), using only the ECD (chain A). Hotspot residues were selected to cover the hydrophobic groove that natively accommodates GLP-1's N-terminal helix (residues W33, W39, R40, E68, Y69, W91 and surrounding positions A67-A69, A88-A91, A121, A123, A128, A137-A145).
+
+The BindCraft campaign explored binder lengths from 45 to 100 residues over up to 3000 trajectories, producing 10 ranked designs. All designs achieved full contact with the 6 key groove residues, with hotspot contact fractions ranging from 0.53 to 0.80.
+
+Each design was independently validated using ESMFold (facebook/esmfold_v1) single-sequence structure prediction as a quality gate: 9 of 10 designs achieved mean pLDDT ≥ 70 (range 82.1–89.6), confirming that the designed sequences fold into well-defined structures without relying on MSA or template information. One design was dropped for excessive steric clashes (13 all-atom clashes).
+
+Key metrics across the 9 submitted designs: iPTM 0.76–0.85, AF2 pLDDT 0.83–0.93, ESMFold refold pLDDT 68.4–89.6, lengths 52–100 residues. The top design (l57_fbcf76, 57 residues) achieved iPTM 0.85, pLDDT 0.93, and ESMFold refold pLDDT 87.2 with near-neutral net charge (-1.9).

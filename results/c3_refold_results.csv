@@ -1,0 +1,11 @@
+name,length,mean_plddt,min_plddt,plddt_gt70_frac,status
+c3_glp1r_ecd_groove_forced_l70_7781febdb550d4cc_seq0,70,84.0,38.0,0.9,PASS
+c3_glp1r_ecd_groove_forced_l65_8f7b6371c70f2194_seq0,65,84.8,57.0,0.969,PASS
+c3_glp1r_ecd_groove_forced_l57_fbcf76afc72c5634_seq0,57,87.2,61.0,0.982,PASS
+c3_glp1r_ecd_groove_forced_l53_aaac968cf877e992_seq0,53,86.2,46.0,0.943,PASS
+c3_glp1r_ecd_groove_forced_l100_c674f8d0ef12ceeb_seq0,100,89.6,69.0,0.98,PASS
+c3_glp1r_ecd_groove_forced_l99_e26affcf9b8831e4_seq0,99,82.1,48.0,0.869,PASS
+c3_glp1r_ecd_groove_forced_l52_fff0d06c20420a2a_seq0,52,68.4,58.0,0.385,MARGINAL
+c3_glp1r_ecd_groove_forced_l52_6950ff1aa272d608_seq0,52,85.4,74.0,1.0,PASS
+c3_glp1r_ecd_groove_forced_l100_4bd789837d72a97c_seq0,100,85.6,67.0,0.97,PASS
+c3_glp1r_ecd_groove_forced_l78_3d63fdd6f96e0ecc_seq0,78,87.3,59.0,0.974,PASS
