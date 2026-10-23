@@ -172,6 +172,8 @@ def main(argv=None):
                         structural_similarity=None,
                         structure_evidence=dict(status='no_accepted_consensus_domain',whole_chain_baseline_report=str(final)),
                         explanation='No high/medium consensus domain; numeric structural novelty withheld',organizer_level_established=False)
+                    design.pop('local_level_interval_with_unfinished_alignments',None)
+                    design.pop('possible_levels_if_structure_policy_accepted',None)
                 folder=out/'consensus_unestablished';folder.mkdir();n.save_report(withheld,folder)
                 final=folder/'predictions.json'
         report=json.loads(final.read_text())

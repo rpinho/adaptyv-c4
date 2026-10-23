@@ -459,6 +459,8 @@ def run_structural_half(records, report, args):
                      predicted_level=None, level_status='unestablished_missing_coordinates_or_domains',
                      structural_similarity=None,
                      prediction_confidence='unestablished: coordinates unavailable', organizer_level_established=False)
+            r.pop('local_level_interval_with_unfinished_alignments',None)
+            r.pop('possible_levels_if_structure_policy_accepted',None)
             continue
         matches = [dict(**domain_coordinates(d),tm_score=(d['best_hit'] or {}).get('qtmscore',0.),
                         normalization='query_domain_length') for d in e['domains']]

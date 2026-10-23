@@ -202,12 +202,18 @@ elif sys.argv[1] == 'convertalis':
             report=dict(designs=[dict(name='fixture',sequence_evidence_class='no_significant_hit',
                                      sequence_database_gaps=['patents']),
                                 dict(name='missing',sequence_evidence_class='no_significant_hit',
-                                     sequence_database_gaps=['patents'],local_predicted_level=2,predicted_level=2)])
+                                     sequence_database_gaps=['patents'],local_predicted_level=2,predicted_level=2,
+                                     structural_similarity=dict(category='high'),
+                                     local_level_interval_with_unfinished_alignments=[2],
+                                     possible_levels_if_structure_policy_accepted=[2])])
             novelty.run_structural_half(records,report,args)
             self.assertEqual(report['designs'][0]['local_predicted_level'],3)
             self.assertEqual(report['designs'][0]['structural_similarity']['category'],'moderate')
             self.assertIsNone(report['designs'][1]['local_predicted_level'])
             self.assertIsNone(report['designs'][1]['predicted_level'])
+            self.assertIsNone(report['designs'][1]['structural_similarity'])
+            self.assertNotIn('local_level_interval_with_unfinished_alignments',report['designs'][1])
+            self.assertNotIn('possible_levels_if_structure_policy_accepted',report['designs'][1])
 
 
 if __name__ == '__main__': unittest.main()
