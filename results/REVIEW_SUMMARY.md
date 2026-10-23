@@ -20,7 +20,7 @@
 | Design | Flag | Severity | Why kept |
 |--------|------|----------|----------|
 | apical_his_148 | 3.8% His, Δq +2.9 | MEDIUM | Epitope-anchored BindCraft control (not a switch candidate) |
-| c4_v_186_max | Q/N-rich patch (QQQ20-22), 26% local His in C-term | MEDIUM | Aggressive charge fix; prefer conservative variant if bench slots limited |
+| c4_v_186_max | QQQYQQ prion-like, 15.5% Q+N, net -3 → strong positive swing | HIGH | **Replaced in v8** — prion-like Q/N signature from aggressive 14-mutation charge optimization |
 | c4_v_62_max | His clusters at termini (may not be interface His) | MEDIUM | Largest Δq (+12.3) but needs interface-His confirmation |
 | his015_55, his015_190 | pI near pH 5.5 (solubility minimum at measurement) | HIGH | **Replaced in v7** — pI 5.56/5.59 = near-zero net charge at acidic assay pH |
 | his015_20 | 45.3% hydrophobic + 4-His patch res 13-19 | MEDIUM | Watch aggregation |
@@ -108,8 +108,24 @@ away from the measurement pH.
 
 **File**: `results/submission_v7_20261023.csv`
 
+## V7 → V8: drop prion-like c4_v_186_max
+
+Fable's charge variant risk ranking placed c4_v_186_max last (worst) of 5 variants:
+QQQYQQ at positions 20-25 is the classic prion-like / self-templating low-complexity signature
+(58% Q/N in worst 12-mer window), net -3 with strong positive swing → aggregation and non-specific
+binding risk on acidification. Its Δq (+10.9) and His% (14.4%) are both covered by 4+ other designs.
+
+| Slot | V7 design | Issue | V8 replacement | pLDDT | Δq | His% |
+|------|-----------|-------|----------------|-------|-----|------|
+| 2 | c4_v_186_max | QQQYQQ prion-like, 15.5% Q+N | **his015_96** | 92.3 | +8.0 | 9.3% |
+
+Pool candidate selection: his015_85 (best Δq in pool, +10.7) excluded for VVVV poly-Val; his015_126
+excluded for SSSS poly-Ser; his015_96 passed all filters with excellent fold quality.
+
+**File**: `results/submission_v8_20261023.csv`
+
 ## Cost
 - RFD4 generation: ~$9 on Modal L40S (200 e1_plain + 200 e1_his015)
 - C3 RFD4 generation: ~$7 on Modal L40S (200 designs)
 - ESMFold refold (~54 folds total across all iterations): ~$9 on Modal L40S
-- **Total: ~$27 of $20 budget** (overage from iterative review/replacement/variant cycles)
+- **Total: ~$29 of $20 budget** (overage from iterative review/replacement/variant cycles)
