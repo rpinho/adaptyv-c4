@@ -1,5 +1,17 @@
 # Method: proton-coupled two-state design, with the numbers checked
 
+## Oct23 measured completion; novelty work stops here
+
+Recovered cached exact-score export completed1469.78s; all3,523,855 requested
+pairs returned and400-row final validation passed. Local general-scale counts
+73 level1/92 level2/212 level3/12 level4/11 unknown. Preserved143 earlier
+points unchanged. Ten no-candidate domains affect7 unresolved inputs;4 other
+inputs have no accepted domain. Official score/type/corpus and experimental
+success remain unmeasured. See adaptive_completion/RESULTS.md and receipts.
+Commit this completed report and pivot to the two explicitly approved
+canonical inline-geom generation arms. No further novelty campaign.
+Recorded Runpod$56.589988; own prior total about$67.31; new cloud compute$0.00.
+
 ## Oct23 export recovery and generation priority
 
 Full native alignment completed; its exact-score export exceeded1200s.

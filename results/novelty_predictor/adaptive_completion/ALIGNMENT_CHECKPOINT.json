@@ -1,0 +1,102 @@
+{
+  "state": "alignments_complete",
+  "pid": 78667,
+  "started_at": "2026-10-23T10:43:36.635279+00:00",
+  "new_gpu_or_remote_cpu_spend_usd": 0,
+  "generator": false,
+  "numerical_threads": 4,
+  "resumed_export_only": true,
+  "prior_elapsed_seconds": 8115.182556416,
+  "reused_alignment_files": {
+    "/Users/ricardo/.cache/adaptyv-c4/novelty_adaptive_completion/full_remaining/full_aligned": "446ce78e54444dc3b4c13ce495174b30bb4cb537550d2d3f23f00ca9c42d63db",
+    "/Users/ricardo/.cache/adaptyv-c4/novelty_adaptive_completion/full_remaining/full_aligned.dbtype": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910",
+    "/Users/ricardo/.cache/adaptyv-c4/novelty_adaptive_completion/full_remaining/full_aligned.index": "241695630a177de32d49b72d90b7539aea9fc36a03fb2ad1d0cdb250c83f4ae8"
+  },
+  "current_stage": 2,
+  "steps": [
+    {
+      "command": [
+        "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+        "tsv2db",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_adaptive_completion/union_candidates.tsv",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_adaptive_completion/full_remaining/union_prefilter",
+        "--output-dbtype",
+        "7"
+      ],
+      "started_at": "2026-10-23T03:04:04.129401+00:00",
+      "pid": 64417,
+      "completed": true,
+      "elapsed_seconds": 0.3115881249999999
+    },
+    {
+      "command": [
+        "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+        "tmalign",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/incoming_rfd4_20261022/run_bounded/domain_search/structure/querydb",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_adaptive_completion/full_remaining/union_prefilter",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_adaptive_completion/full_remaining/full_aligned",
+        "--threads",
+        "4",
+        "--tmalign-fast",
+        "0",
+        "--tmscore-threshold",
+        "0",
+        "--tmscore-threshold-mode",
+        "1",
+        "--tmalign-hit-order",
+        "1",
+        "--max-accept",
+        "2147483647",
+        "--max-rejected",
+        "2147483647",
+        "-a",
+        "1"
+      ],
+      "started_at": "2026-10-23T03:04:04.441490+00:00",
+      "pid": 64419,
+      "completed": true,
+      "elapsed_seconds": 6912.94800925
+    },
+    {
+      "command": [
+        "/Users/ricardo/.local/opt/foldseek/foldseek/bin/foldseek",
+        "convertalis",
+        "/Users/ricardo/dev/adaptyv-c4/results/novelty_predictor/incoming_rfd4_20261022/run_bounded/domain_search/structure/querydb",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_structures/pdb_seq",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_adaptive_completion/full_remaining/full_aligned",
+        "/Users/ricardo/.cache/adaptyv-c4/novelty_adaptive_completion/full_remaining/hits_reexport.tsv",
+        "--threads",
+        "4",
+        "--exact-tmscore",
+        "1",
+        "--format-output",
+        "query,target,qlen,tlen,qstart,qend,tstart,tend,alnlen,qtmscore,ttmscore,qaln,taln"
+      ],
+      "started_at": "2026-10-23T10:43:38.232477+00:00",
+      "pid": 78682,
+      "completed": true,
+      "elapsed_seconds": 1469.781367667
+    }
+  ],
+  "rule_compatibility": {
+    "reference_revision": "6353dc8",
+    "semantic_rule_hash": "94ed9f86eba7fa130484ffb5a9ab75c66bcee4b36505406bb9db1f5e381a8469",
+    "checked_functions": [
+      "apply_positive_evidence_bounds",
+      "domain_coordinates",
+      "domain_intervals",
+      "domain_positions",
+      "general_level",
+      "possible_levels",
+      "sequence_class",
+      "structural_class"
+    ],
+    "current_predictor_sha256": "284377195e8a5e8fbbd0a3c87fe6e13f81697c86050f932f7d9243ea63e5919a"
+  },
+  "candidate_union_sha256": "631fa2b88e38696698573a48c4567ba687e3fc56cc6c03eb6fc4c93ad70a8c0e",
+  "unique_candidate_pairs": 3523855,
+  "raw_hits": "/Users/ricardo/.cache/adaptyv-c4/novelty_adaptive_completion/full_remaining/hits_reexport.tsv",
+  "raw_hits_sha256": "22c5fc59335893ea4fb0244c3a4cee3c3c01ef5af56a04892040c1177eb79fc5",
+  "elapsed_seconds": 1471.811186
+}

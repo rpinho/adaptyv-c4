@@ -1,0 +1,68 @@
+{
+  "state": "complete",
+  "designs": 400,
+  "by_arm": {
+    "tfr1_c200": {
+      "3": 95,
+      "2": 53,
+      "1": 40,
+      "None": 6,
+      "4": 6
+    },
+    "tfr1_his200": {
+      "3": 117,
+      "2": 39,
+      "1": 33,
+      "None": 5,
+      "4": 6
+    }
+  },
+  "local_level_counts": {
+    "3": 212,
+    "2": 92,
+    "1": 73,
+    "None": 11,
+    "4": 12
+  },
+  "scope_counts": {
+    "full_declared_candidate_union": 246,
+    "point_proven_by_existing_positive_evidence_best_TM_not_exhaustive": 143,
+    "incomplete_declared_candidate_union": 7,
+    "no_accepted_domain_unestablished": 4
+  },
+  "preserved_points": 143,
+  "requested_native_pairs": 3523855,
+  "exported_native_rows": 3523855,
+  "incomplete_domains": [
+    "q000012d001",
+    "q000037d001",
+    "q000037d002",
+    "q000066d001",
+    "q000140d001",
+    "q000237d001",
+    "q000237d002",
+    "q000258d001",
+    "q000258d002",
+    "q000266d001"
+  ],
+  "no_retrieved_candidate_domains": [
+    "q000012d001",
+    "q000037d001",
+    "q000037d002",
+    "q000066d001",
+    "q000140d001",
+    "q000237d001",
+    "q000237d002",
+    "q000258d001",
+    "q000258d002",
+    "q000266d001"
+  ],
+  "organizer_levels_established": 0,
+  "qualified_designs": 0,
+  "protected_files_unchanged": true,
+  "json_csv_input_order_verified": true,
+  "predictions_sha256": "ba97a422fd7d79e1a812e14d9b50c7ce4bb6fce7739a5d40885984b6b0b9a6c4",
+  "evidence_csv_sha256": "57f3075f2237d302db898a824dcf42d0274e0d499c9e46a5a96190ea65b62a8f",
+  "finalizer_elapsed_seconds": 17.101287875,
+  "new_gpu_or_remote_cpu_spend_usd": 0
+}
