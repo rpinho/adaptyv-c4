@@ -1,0 +1,22 @@
+{
+  "approved_by": "Ricardo",
+  "recorded_at": "2026-10-23T10:58:52.612878+00:00",
+  "source": "Explicit answer to quoted-price question in this conversation",
+  "answer": "Yes\u2014run both arms after the commit",
+  "gpu": "L40S",
+  "gpu_usd_per_hour": 1.9512,
+  "cpu_ram_additional": true,
+  "arms": [
+    "tfr1_c200m_20261023",
+    "tfr1_his200m_20261023"
+  ],
+  "designs_per_arm": 200,
+  "metrics": "geom",
+  "max_seconds_per_arm": 9000,
+  "max_concurrent_gpu_containers": 2,
+  "requires_validated_novelty_report_commit": true,
+  "requires_app_shutdown": true,
+  "higher_histidine_sweeps_approved": false,
+  "model_invoker_sha256": "f61c7967d8692cad28a8ddce49dcc20da758016a16f2ab43b35efd58e61f8fdb",
+  "new_gpu_or_remote_cpu_spend_usd": 0
+}

@@ -10,7 +10,7 @@ clean. Launcher SHA256:
 `3554f595c0c20a98aff02356d81800828d22619e569acda99777a4f1b348e609`.
 Do not build another generator or exporter. Ricardo retains accounts/submission.
 
-First paid stage, pending Ricardo's yes after pricing: the two existing 200-input
+First paid stage, approved by Ricardo after pricing in GPU_APPROVAL.json: the two existing 200-input
 arms, batch8, seed42, inline `geom`, unchanged input specs. Fresh destinations
 `tfr1_c200m_20261023` and `tfr1_his200m_20261023` are absent from the volume
 listing. The read-only Modal app listing showed no running generation app.

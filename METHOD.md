@@ -10,7 +10,8 @@ alignment or declare resolved levels before validation. After committing
 this report, stop expanding novelty work and follow the existing generation
 handoff. Read-only geometry preflight and bounded invocation are prepared
 under results/generation_pivot/. GPU yes-after-quote remains required and
-pending. Runpod$56.589988 +own Modal estimate$10.718947 =~$67.31; new cloud
+approved for the two named arms after the validated report commit; see
+generation_pivot/GPU_APPROVAL.json. Runpod$56.589988 +own Modal estimate$10.718947 =~$67.31; new cloud
 compute$0.00, other-lane/account-wide billing excluded.
 
 ## Current CPU classification: measured bounds, then remaining full pairs
