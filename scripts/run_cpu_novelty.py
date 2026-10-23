@@ -95,8 +95,15 @@ def main(argv=None):
     ap.add_argument('--structure-database',type=Path,default=ROOT/'results/novelty_predictor/structural/DATABASE.json')
     ap.add_argument('--foldseek',default=str(Path.home()/'.local/opt/foldseek/foldseek/bin/foldseek'))
     ap.add_argument('--mmseqs',default='mmseqs')
+    ap.add_argument('--timeout-structure',type=int,default=300,
+        help='Seconds per structural search/alignment stage; increase for larger saved batches')
+    ap.add_argument('--reuse-whole-chain-searches',type=Path,
+        help='Reuse completed fingerprinted sequence/discovery checkpoints after an interrupted alignment')
+    ap.add_argument('--positive-evidence-only',action='store_true',
+        help='Bound alignment work and withhold conclusions not fixed by positive evidence')
     ap.add_argument('--out',type=Path,required=True)
     args=ap.parse_args(argv)
+    if args.timeout_structure<=0:ap.error('--timeout-structure must be positive')
     records=n.load_designs(args.designs)
     if args.out.exists():raise FileExistsError('Fresh output directory required')
     specs=normalize_structures(records,args.structures)
@@ -123,7 +130,12 @@ def main(argv=None):
             '--timeout-per-database','600','--out',out/'whole_chain']
         if available:
             command += ['--structures',parent_manifest,'--structure-database',args.structure_database.resolve(),
-                        '--foldseek',args.foldseek,'--timeout-structure','300']
+                        '--foldseek',args.foldseek,'--timeout-structure',str(args.timeout_structure)]
+        if args.reuse_whole_chain_searches:
+            if not available:raise ValueError('Whole-chain checkpoint reuse requires coordinates')
+            command += ['--cached-sequence-searches',args.reuse_whole_chain_searches.resolve(),
+                '--cached-structural-discovery',args.reuse_whole_chain_searches.resolve()/'structure']
+        if args.positive_evidence_only:command += ['--positive-evidence-only']
         run('whole_chain',command)
         final=out/'whole_chain/predictions.json'
         if available:
@@ -146,10 +158,11 @@ def main(argv=None):
             if domains_available:
                 run('domain_search',[sys.executable,ROOT/'scripts/novelty_level_predictor.py',args.designs.resolve(),
                     '--sequence-report',final,'--structures',domain_manifest,'--structure-database',args.structure_database.resolve(),
-                    '--foldseek',args.foldseek,'--threads','4','--timeout-structure','300','--out',out/'domain_search'])
+                    '--foldseek',args.foldseek,'--threads','4','--timeout-structure',str(args.timeout_structure),'--out',out/'domain_search']
+                    +(['--positive-evidence-only'] if args.positive_evidence_only else []))
                 run('parent_context',[sys.executable,ROOT/'scripts/augment_novelty_parent_context.py',
                     '--base-report',out/'domain_search/predictions.json','--parent-report',final,
-                    '--foldseek',args.foldseek,'--threads','4','--timeout-stage','300','--out',out/'parent_context'])
+                    '--foldseek',args.foldseek,'--threads','4','--timeout-stage',str(args.timeout_structure),'--out',out/'parent_context'])
                 final=out/'parent_context/predictions.json'
             else:
                 withheld=json.loads(final.read_text())

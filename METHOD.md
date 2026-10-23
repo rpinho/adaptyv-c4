@@ -1,5 +1,21 @@
 # Method: proton-coupled two-state design, with the numbers checked
 
+## Actual incoming400:CPU novelty evidence, partial alignment continuation
+
+Both saved RFD4 arms are now local and all400 sequences match verified chains.
+Five sequence searches completed. The16,451,768-record structural discovery
+exceeded the original exhaustive alignment's1200-second stage budget. Its
+failed run is retained, not described as a complete result. A separate bounded
+positive-evidence continuation reuses verified completed work and withholds
+conclusions that unfinished comparisons could change. Policy, active status
+and receipts:results/novelty_predictor/incoming_rfd4_20261022/.
+
+CPU ANARCII annotation and controls completed separately;85 assigned variable
+domains among400, not official structural types or antibody novelty levels.
+See results/novelty_predictor/antibody_scope_audit/RESULTS.md. No generator,
+mutation, account or submission action. Recorded Runpod56.589988 +own Modal
+estimate10.718947 =~67.31; new GPU/cloud compute0.00, separate lane excluded.
+
 ## Arbitrary-input CPU novelty workflow verified
 
 scripts/run_cpu_novelty.py now accepts CSV+saved PDB/CIF coordinates and performs

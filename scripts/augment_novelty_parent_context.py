@@ -139,6 +139,8 @@ def main(argv=None):
         design.update(structural_similarity=measured,local_predicted_level=level,predicted_level=level,
             possible_levels_if_structure_policy_accepted=n.possible_levels(observed,design['sequence_database_gaps'],measured['category']),
             local_gate_assessment='provisional_local_level_'+str(level),organizer_level_established=False)
+        if base['structural_search'].get('positive_evidence_only'):
+            n.apply_positive_evidence_bounds(design)
     for q,old_hits in base_hits.items():
         if old_hits and hits[q][0]['qtmscore']<old_hits[0]['qtmscore']:raise ValueError('Original best evidence was lost')
     provenance=dict(base_report_sha256=n.digest(args.base_report),parent_report_sha256=n.digest(args.parent_report),

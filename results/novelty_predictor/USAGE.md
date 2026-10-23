@@ -13,6 +13,24 @@ and the existing pinned local reference databases/domain tools. Final JSON/CSV
 paths are written to the output directory's STATUS.json. The CSV is an analysis
 report, not a competition submission.
 
+For larger saved batches, `--timeout-structure 1200` increases each structural
+search/alignment stage's execution budget from the default 300 seconds. It does
+not change references, scientific thresholds or search settings.
+
+Interrupted large jobs can reuse **completed**, fingerprinted raw sequence and
+discovery checkpoints with `--reuse-whole-chain-searches PATH`. This requires
+CACHE_CHECKPOINT.json and structure/DISCOVERY_CHECKPOINT.json; input, tool,
+reference, coordinate and native DB fingerprints must agree. Partial TM-align
+output is never labeled complete. Sequence evidence is now saved in
+whole_chain/sequence_checkpoint/ before a structural stage begins.
+
+`--positive-evidence-only` is a separate partial mode for large candidate pools.
+It seeks exact positive matches in bounded alignment passes and emits a local
+point only when measured positive resemblance already fixes that level for
+every possible completion. Otherwise the numeric level is withheld. A missing
+match never certifies local3/4 or a new fold. Full mode remains the default.
+See incoming_rfd4_20261022/BOUNDED_POLICY.md for the complete scope and gaps.
+
 Input CSV headers: `name,sequence`. Names must be unique; sequences must use the
 20 canonical uppercase amino acids. If molecule_class is present it must be
 single_chain. The general novelty scale is supported; antibody typing and the

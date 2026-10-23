@@ -47,6 +47,7 @@ FOLDSEEK_MAX_SEQS = 50000
 FOLDSEEK_EVALUE = 10.0  # permissive candidate discovery; final rule uses TM only
 FOLDSEEK_SENSITIVITY = 9.5
 FOLDSEEK_EXACT_TM_SCORE = 1  # convertalis otherwise recomputes approximate TM, even after tmalign
+POSITIVE_EVIDENCE_MAX_REJECTED = 64  # bounded work, never a negative/no-fold conclusion
 
 
 def digest(path):
@@ -58,6 +59,48 @@ def digest(path):
 
 def write_json(path, value):
     Path(path).write_text(json.dumps(value, indent=2, allow_nan=False) + '\n')
+
+
+def verify_sequence_cache(folder, args, query_fasta, binary, version):
+    """Reuse completed searches only when inputs, references, tool and flags agree."""
+    folder = folder.resolve()
+    checkpoint = folder/'CACHE_CHECKPOINT.json'
+    saved = json.loads(checkpoint.read_text())
+    checks = dict(input_csv_sha256=digest(args.designs),
+        query_fasta_sha256=digest(query_fasta), database_manifest_sha256=digest(args.databases),
+        mmseqs_version=version, mmseqs_binary_sha256=digest(binary),
+        search_status_sha256=digest(folder/'search_status.json'))
+    if saved.get('state') != 'completed_sequence_searches' or any(saved.get(k) != v for k,v in checks.items()):
+        raise ValueError('Sequence cache input, source, tool or metadata differs')
+    if digest(folder/'queries.fasta') != checks['query_fasta_sha256']:
+        raise ValueError('Cached sequence queries differ')
+    records = json.loads((folder/'search_status.json').read_text())
+    if len({r['id'] for r in records}) != len(records):raise ValueError('Duplicate cached database')
+    return folder, {r['id']:r for r in records}, checkpoint
+
+
+def verify_discovery_cache(folder, args, domains, query_folder, binary, modes):
+    """A discovery checkpoint never declares a partial alignment complete."""
+    folder = folder.resolve(); checkpoint = folder/'DISCOVERY_CHECKPOINT.json'
+    saved = json.loads(checkpoint.read_text())
+    checks = dict(input_csv_sha256=digest(args.designs),
+        structure_database_manifest_sha256=digest(args.structure_database),
+        foldseek_version=subprocess.check_output([binary,'version'],text=True).strip(),
+        foldseek_binary_sha256=digest(binary), prefilter_modes=modes,
+        max_seqs=args.structure_max_seqs, sensitivity=FOLDSEEK_SENSITIVITY, evalue=FOLDSEEK_EVALUE)
+    if saved.get('state') != 'completed_discovery_only' or any(saved.get(k) != v for k,v in checks.items()):
+        raise ValueError('Discovery cache input, reference, tool or search settings differ')
+    if json.loads((folder/'query_domains.json').read_text()) != domains:
+        raise ValueError('Cached query domains differ')
+    if digest(folder/'query_domains.json') != saved['query_domains_sha256']:
+        raise ValueError('Cached domain metadata fingerprint differs')
+    generated = {p.name:digest(p) for p in query_folder.glob('*.pdb')}
+    if generated != saved['query_files']:raise ValueError('Cached query coordinates differ')
+    actual = {str(p.relative_to(folder)):digest(p) for pattern in
+        ('querydb*','discovered','discovered.index','discovered.dbtype')
+        for p in folder.glob(pattern) if p.is_file()}
+    if actual != saved['files']:raise ValueError('Cached native query/discovery DB differs')
+    return folder/'querydb', folder/'discovered', checkpoint
 
 
 def sequence_class(identity):
@@ -157,6 +200,41 @@ def possible_levels(observed_class, missing_databases, structure=None):
     seq_classes = order[order.index(observed_class):] if missing_databases else (observed_class,)
     structure_classes = (structure,) if structure else order
     return sorted({general_level(s, t) for s, t in itertools.product(seq_classes, structure_classes)})
+
+
+def apply_positive_evidence_bounds(result):
+    """A partial alignment set proves lower bounds, never absence of a known fold.
+
+    Emit a numeric local level only when every completion of the unfinished
+    comparisons gives that same level under the fixed declared domain policy.
+    """
+    sim = result.get('structural_similarity')
+    if not sim or not result.get('structure_evidence',{}).get('domains'):
+        result.update(local_predicted_level=None,predicted_level=None)
+        return
+    lower = sim.get('lower_bound_category',sim['category'])
+    coverage = sim['domain_segmentation_coverage']
+    if lower == 'high': categories = ['high']
+    elif lower == 'moderate': categories = ['moderate','high']
+    else:
+        categories = ['low']
+        if coverage > STRUCTURE_MODERATE_COVERAGE:categories.append('moderate')
+        if coverage >= STRUCTURE_HIGH_COVERAGE:categories.append('high')
+    seq = result['sequence_evidence_class']
+    if seq == 'no_significant_hit':seq='low'
+    levels=sorted({general_level(seq,c) for c in categories})
+    level=levels[0] if len(levels)==1 and lower in ('moderate','high') else None
+    sim.update(lower_bound_category=lower,possible_categories=categories,
+        category=categories[0] if len(categories)==1 else 'unestablished',
+        evidence_status='positive_bounds_only_not_exhaustive_best_TM')
+    result.update(local_predicted_level=level,predicted_level=level,
+        local_level_interval_with_unfinished_alignments=levels,
+        structure_status='bounded_positive_evidence_no_exhaustive_best_score',
+        level_status='provisional_local_prediction_supported_by_bounds' if level is not None else 'unestablished_unfinished_alignments',
+        local_gate_assessment='provisional_local_level_'+str(level) if level is not None else 'unestablished',
+        possible_levels_if_structure_policy_accepted=sorted({x for c in categories for x in possible_levels(seq,result['sequence_database_gaps'],c)}),
+        prediction_confidence='low: bounded positive evidence; unfinished comparisons, provided coordinates, domain policy and reference/typing gaps',
+        explanation='A local point is stated only if every possible completion of unfinished alignments gives it under the declared domains. Otherwise it is withheld. Coverage-limited calls reflect that domain policy, not proof of a new fold.')
 
 
 def load_designs(path):
@@ -322,28 +400,52 @@ def run_structural_half(records, report, args):
     querydb, found, realigned = out/'querydb', out/'discovered', out/'tmaligned'
     # No GPU inference or GPU search; explicit 4G search memory and <=4 threads.
     modes = [0,1] if args.structure_prefilter_mode == 'union' else [int(args.structure_prefilter_mode)]
-    commands = [[binary,'createdb',str(folder),str(querydb),'--threads',str(args.threads)]]
-    for mode in modes:
-        discovery = out/f'discovered_mode{mode}'
-        commands.append([binary,'search',str(querydb),str(base),str(discovery),str(out/f'tmp_mode{mode}'),
-         '--threads',str(args.threads),'--gpu','0','--split-memory-limit','4G',
-         '-s',str(FOLDSEEK_SENSITIVITY),'-e',str(FOLDSEEK_EVALUE),
-         '--max-seqs',str(args.structure_max_seqs),
-         '--prefilter-mode',str(mode),'-a','1'])
-    commands.append([binary,'mergedbs',str(querydb),str(found),
-                     *[str(out/f'discovered_mode{mode}') for mode in modes]])
-    commands.extend([
-        [binary,'tmalign',str(querydb),str(base),str(found),str(realigned),
-         '--threads',str(args.threads),'--tmalign-fast','0','--tmscore-threshold','0',
-         '--tmscore-threshold-mode','1','--tmalign-hit-order','1','-a','1'],
-        [binary,'convertalis',str(querydb),str(base),str(realigned),str(out/'hits.tsv'),
-         '--threads',str(args.threads),'--exact-tmscore',str(FOLDSEEK_EXACT_TM_SCORE),
-         '--format-output',','.join(FOLDSEEK_FIELDS)]])
+    cached = getattr(args,'cached_structural_discovery',None)
+    discovery_checkpoint = None
+    if cached:
+        querydb,found,discovery_checkpoint = verify_discovery_cache(cached,args,domains,folder,binary,modes)
+        commands = []
+    else:
+        commands = [[binary,'createdb',str(folder),str(querydb),'--threads',str(args.threads)]]
+        for mode in modes:
+            discovery = out/f'discovered_mode{mode}'
+            commands.append([binary,'search',str(querydb),str(base),str(discovery),str(out/f'tmp_mode{mode}'),
+             '--threads',str(args.threads),'--gpu','0','--split-memory-limit','4G',
+             '-s',str(FOLDSEEK_SENSITIVITY),'-e',str(FOLDSEEK_EVALUE),
+             '--max-seqs',str(args.structure_max_seqs),
+             '--prefilter-mode',str(mode),'-a','1'])
+        commands.append([binary,'mergedbs',str(querydb),str(found),
+                         *[str(out/f'discovered_mode{mode}') for mode in modes]])
+    positive_only=getattr(args,'positive_evidence_only',False)
+    positive_files=[]
+    if positive_only:
+        for label,threshold in [('high',STRUCTURE_HIGH_TM),('moderate',STRUCTURE_MODERATE_TM)]:
+            aligned=out/('positive_'+label);tsv=out/('positive_'+label+'.tsv');positive_files.append(tsv)
+            commands.extend([
+                [binary,'tmalign',str(querydb),str(base),str(found),str(aligned),
+                 '--threads',str(args.threads),'--tmalign-fast','0','--tmscore-threshold',str(threshold),
+                 '--tmscore-threshold-mode','1','--tmalign-hit-order','1',
+                 '--max-accept','1','--max-rejected',str(POSITIVE_EVIDENCE_MAX_REJECTED),'-a','1'],
+                [binary,'convertalis',str(querydb),str(base),str(aligned),str(tsv),
+                 '--threads',str(args.threads),'--exact-tmscore',str(FOLDSEEK_EXACT_TM_SCORE),
+                 '--format-output',','.join(FOLDSEEK_FIELDS)]])
+    else:
+        commands.extend([
+            [binary,'tmalign',str(querydb),str(base),str(found),str(realigned),
+             '--threads',str(args.threads),'--tmalign-fast','0','--tmscore-threshold','0',
+             '--tmscore-threshold-mode','1','--tmalign-hit-order','1','-a','1'],
+            [binary,'convertalis',str(querydb),str(base),str(realigned),str(out/'hits.tsv'),
+             '--threads',str(args.threads),'--exact-tmscore',str(FOLDSEEK_EXACT_TM_SCORE),
+             '--format-output',','.join(FOLDSEEK_FIELDS)]])
     start = time.monotonic()
     for i, cmd in enumerate(commands):
         with (out/f'stage_{i}.log').open('w') as log:
             subprocess.run(cmd, stdout=log, stderr=subprocess.STDOUT, check=True,
                 timeout=args.timeout_structure, env={**os.environ,'CUDA_VISIBLE_DEVICES':'','OMP_NUM_THREADS':str(args.threads)})
+    if positive_only:
+        with (out/'hits.tsv').open('wb') as stream:
+            for path in positive_files:
+                with path.open('rb') as source:shutil.copyfileobj(source,stream)
     hits = parse_structure_hits(out/'hits.tsv', domains)
     for q, d in domains.items():
         hs = hits[q]
@@ -355,6 +457,7 @@ def run_structural_half(records, report, args):
         if e['status'] == 'coordinates_unavailable':
             r.update(structure_status=e['status'], local_predicted_level=None,
                      predicted_level=None, level_status='unestablished_missing_coordinates_or_domains',
+                     structural_similarity=None,
                      prediction_confidence='unestablished: coordinates unavailable', organizer_level_established=False)
             continue
         matches = [dict(**domain_coordinates(d),tm_score=(d['best_hit'] or {}).get('qtmscore',0.),
@@ -379,11 +482,17 @@ def run_structural_half(records, report, args):
             prediction_confidence='low: public historical PDB snapshot; provided coordinates; declared domains; organizer consensus/versions and patent corpus unverified; no-hit sequence class is provisional',
             local_gate_assessment='provisional_local_level_'+str(local),
             explanation='Level applies only to searched databases, supplied coordinates and declared domain segmentation. Not an organizer score; see confidence and possible_levels.')
+        if positive_only:apply_positive_evidence_bounds(r)
     report.update(status='cpu_sequence_and_structure_screen_complete_with_scope_caveats',
         structure_database=db, structure_manifest_sha256=digest(args.structures),
         domain_segmentation_provenance=structures.get('segmentation_provenance'),
         foldseek_version=subprocess.check_output([binary,'version'],text=True).strip(),
         structural_search=dict(commands=commands, elapsed_seconds=time.monotonic()-start,
+            reused_discovery_checkpoint=str(discovery_checkpoint) if discovery_checkpoint else None,
+            reused_discovery_checkpoint_sha256=digest(discovery_checkpoint) if discovery_checkpoint else None,
+            positive_evidence_only=positive_only,
+            bounded_rejected_alignments_per_query_per_pass=POSITIVE_EVIDENCE_MAX_REJECTED if positive_only else None,
+            best_score_scope='Best observed only; exhaustive best is unestablished' if positive_only else 'Best among all returned discovery candidates',
             query_domains=len(domains), hit_rows=sum(map(len,hits.values())),
             raw_alignment_rows=sum(1 for _ in (out/'hits.tsv').open()),
             repeated_targets='Deduplicated per query, retaining maximum query-normalized TM',
@@ -406,6 +515,10 @@ def main(argv=None):
     ap.add_argument('designs', type=Path)
     ap.add_argument('--databases', type=Path, help='Explicit sequence provenance/scope manifest')
     ap.add_argument('--sequence-report', type=Path, help='Reuse fingerprint-verified existing sequence evidence')
+    ap.add_argument('--cached-sequence-searches', type=Path, help='Reuse a verified completed raw sequence-search checkpoint')
+    ap.add_argument('--cached-structural-discovery', type=Path, help='Reuse verified native query/discovery DBs; never partial TM-align')
+    ap.add_argument('--positive-evidence-only', action='store_true',
+                    help='Bound exact alignment work; withhold levels not fixed by measured positive evidence/domain coverage')
     ap.add_argument('--structures', type=Path, help='Sequence-matched coordinate + disjoint domain manifest')
     ap.add_argument('--structure-database', type=Path, help='Foldseek DB prefix, date, size and fingerprints')
     ap.add_argument('--foldseek', default='foldseek')
@@ -424,6 +537,8 @@ def main(argv=None):
     if not 1 <= args.structure_max_seqs <= 50000: ap.error('Structural candidate cap must be1–50000')
     if args.timeout_structure <= 0: ap.error('Structural stage timeout must be positive')
     if bool(args.structures) != bool(args.structure_database): ap.error('Provide both structural manifests')
+    if args.cached_structural_discovery and not args.structures:ap.error('Discovery reuse requires structures')
+    if args.cached_sequence_searches and args.sequence_report:ap.error('Choose raw search reuse or a sequence report')
     records = load_designs(args.designs)
     if args.sequence_report:
         report = json.loads(args.sequence_report.read_text())
@@ -451,6 +566,8 @@ def main(argv=None):
     query_fasta = args.out / 'queries.fasta'
     query_fasta.write_text(''.join(f'>{q}\n{r["sequence"]}\n' for q, r in queries.items()))
     version = subprocess.check_output([binary, 'version'], text=True).strip()
+    cached_sequences = (verify_sequence_cache(args.cached_sequence_searches,args,query_fasta,binary,version)
+                        if args.cached_sequence_searches else None)
     all_hits = {q: [] for q in queries}
     search_records, unavailable = [], []
     for d in dbs:
@@ -470,15 +587,32 @@ def main(argv=None):
                    '--split-memory-limit', MMSEQS_MEMORY_LIMIT, '--remove-tmp-files', '1',
                    '--format-output', ','.join(FIELDS)]
             rec['command'] = cmd; start = time.monotonic()
-            with (args.out / (d['id'] + '.search.log')).open('w') as log:
-                subprocess.run(cmd, stdout=log, stderr=subprocess.STDOUT, check=True,
-                    timeout=args.timeout_per_database, env={**os.environ, 'CUDA_VISIBLE_DEVICES': ''})
+            if cached_sequences:
+                cache_folder, previous, checkpoint = cached_sequences
+                old = previous[d['id']]
+                if old.get('search_status') != 'completed' or any(old.get(k)!=v for k,v in d.items()):
+                    raise ValueError('Cached sequence database metadata differs')
+                old_cmd=old['command']
+                if old_cmd[:2]!=cmd[:2] or old_cmd[3]!=cmd[3] or old_cmd[6:]!=cmd[6:]:
+                    raise ValueError('Cached sequence search flags differ')
+                tsv=cache_folder/(d['id']+'.hits.tsv')
+                if digest(tsv)!=old['raw_hits_sha256']:raise ValueError('Cached sequence hits fingerprint differs')
+                rec.update(old, reused_from=str(cache_folder), raw_hits_path=str(tsv),
+                    cache_checkpoint_sha256=digest(checkpoint), command_executed_this_run=False)
+            else:
+                with (args.out / (d['id'] + '.search.log')).open('w') as log:
+                    subprocess.run(cmd, stdout=log, stderr=subprocess.STDOUT, check=True,
+                        timeout=args.timeout_per_database, env={**os.environ, 'CUDA_VISIBLE_DEVICES': ''})
             matched = parse_hits(tsv, d['id'], queries)
             for q in queries: all_hits[q].extend(matched[q])
             rec.update(search_status='completed', elapsed_seconds=time.monotonic()-start,
                        hit_rows=sum(map(len, matched.values())), raw_hits_sha256=digest(tsv))
+            if cached_sequences:
+                rec['cache_validation_seconds']=rec['elapsed_seconds']
+                rec['elapsed_seconds']=old['elapsed_seconds']
             if not d.get('scope_complete', False): unavailable.append(d['id'])
         except (OSError, ValueError, subprocess.SubprocessError) as exc:
+            if cached_sequences:raise
             rec.update(search_status='failed', error=repr(exc)); unavailable.append(d['id'])
         search_records.append(rec)
         write_json(args.out / 'search_status.json', search_records)
@@ -514,6 +648,10 @@ def main(argv=None):
                      'No organizer database snapshots or alignment parameters published',
                      'No antibody typing or antibody-specific CDR novelty scoring',
                      'No-hit search is not measured zero identity or proof of novelty'])
+    checkpoint_folder=args.out/'sequence_checkpoint';checkpoint_folder.mkdir()
+    save_report(report,checkpoint_folder)
+    del all_hits
+    if 'matched' in locals():del matched
     if args.structures: run_structural_half(records,report,args)
     save_report(report,args.out)
 
