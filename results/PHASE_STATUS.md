@@ -86,8 +86,49 @@ Output: `results/clash_recheck_04A.csv`, `results/clash_filtered_shortlist.csv`
 - Dry-run validated: `results/submission_dry_run_20261023.csv`
 - Selection JSON: `results/combined_selection_20261023.json`
 
+### Independent reviews (Fable + Astra):
+Both reviewers converged on dropping 3 designs:
+- `his015_193`: net charge -39, 38.6% D/E, likely disordered — **DROPPED**
+- `his015_117`: internal tandem repeat, 45% hydrophobic — **DROPPED**
+- `his015_168`: 47% hydrophobic, aggregation risk — **DROPPED**
+
+Additional flags (kept with caveats):
+- `plain_170`: 25-residue repeat, but only plain-arm design (control)
+- `his015_62`: charge -16, borderline
+- `apical_his_70`: VHH with 2 Cys (needs oxidizing expression), only 1 His
+
+**Post-review: 19 → 16 designs (2 E2 + 14 E1)**
+
+## Phase 6: REFOLD QUALITY GATE — DONE ✅
+
+ESMFold single-sequence refold on Modal GPU (L40S):
+- Model: `facebook/esmfold_v1` via HuggingFace transformers
+- **ALL 16 designs PASS** (pLDDT ≥ 70)
+
+| Design | pLDDT | Min | >70% |
+|--------|-------|-----|------|
+| his015_62 | **95.7** | 85 | 100% |
+| plain_170 | **95.3** | 84 | 100% |
+| his015_61 | **94.2** | 76 | 100% |
+| his015_140 | **94.2** | 81 | 100% |
+| his015_190 | **93.9** | 83 | 100% |
+| his015_115 | **93.8** | 87 | 100% |
+| his015_14 | **93.7** | 78 | 100% |
+| his015_197 | **93.7** | 75 | 100% |
+| his015_26 | **93.0** | 81 | 100% |
+| his015_186 | **92.0** | 79 | 100% |
+| apical_his_70 | **91.2** | 55 | 97% |
+| his015_57 | **91.1** | 74 | 100% |
+| apical_his_148 | **90.5** | 44 | 96% |
+| his015_148 | **89.8** | 65 | 99% |
+| his015_55 | **88.7** | 36 | 93% |
+| his015_185 | **73.2** | 41 | 67% |
+
+Total cost: ~$11 ($9 generation + ~$2 refold) of $20 budget.
+
 ### Remaining before final submission:
 1. ~~Deploy E1 Modal image~~ DONE
-2. ESMFold refold on all 19 designs (quality gate, needs GPU)
-3. Ricardo review + approval
-4. Final `build_submission.py` run (non-dry-run)
+2. ~~Independent reviews (Fable + Astra)~~ DONE — 3 designs dropped
+3. ~~ESMFold refold quality gate~~ DONE — 16/16 PASS
+4. **Ricardo review + approval** ← NEXT
+5. Final `build_submission.py` run (non-dry-run)

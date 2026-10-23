@@ -1,0 +1,17 @@
+name,length,mean_plddt,min_plddt,plddt_gt70_frac,status
+tfr1_his200m_20261023__tfr1_apical_his_148,78,90.5,44.0,0.962,PASS
+tfr1_his030_200m_20261023__tfr1_apical_his_70,117,91.2,55.0,0.974,PASS
+tfr1_e1_his015_186,97,92.0,79.0,1.0,PASS
+tfr1_e1_plain_170,88,95.3,84.0,1.0,PASS
+tfr1_e1_his015_115,74,93.8,87.0,1.0,PASS
+tfr1_e1_his015_148,88,89.8,65.0,0.989,PASS
+tfr1_e1_his015_57,84,91.1,74.0,1.0,PASS
+tfr1_e1_his015_26,82,93.0,81.0,1.0,PASS
+tfr1_e1_his015_61,98,94.2,76.0,1.0,PASS
+tfr1_e1_his015_55,93,88.7,36.0,0.925,PASS
+tfr1_e1_his015_14,99,93.7,78.0,1.0,PASS
+tfr1_e1_his015_190,89,93.9,83.0,1.0,PASS
+tfr1_e1_his015_197,91,93.7,75.0,1.0,PASS
+tfr1_e1_his015_185,85,73.2,41.0,0.671,PASS
+tfr1_e1_his015_62,111,95.7,85.0,1.0,PASS
+tfr1_e1_his015_140,80,94.2,81.0,1.0,PASS
