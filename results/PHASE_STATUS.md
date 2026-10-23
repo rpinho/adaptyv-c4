@@ -65,17 +65,29 @@ Common clash partner: A/208 (Arg329 author) — its sidechain collides in 6/7 cl
 
 Output: `results/clash_recheck_04A.csv`, `results/clash_filtered_shortlist.csv`
 
-## Phase 5: REBUILD — PARTIAL
+## Phase 5: REBUILD — DONE (dry-run submission ready)
 
-Clash-filtered shortlist has only 3 E2 (apical) designs. Insufficient for a competitive submission alone. The E1 generation is now critical to fill the remaining slots.
+### E1 generation complete (400 designs):
+- e1_plain: 200 designs, His% 0-11.4% (mean 2.7%)
+- e1_his015: 200 designs, His% 0-35.1% (mean 9.5%)
+- Cost: ~$9 on Modal L40S (within $20 budget)
 
-### Viable E2 designs (post-clash):
-1. his030_his_133 — 46.6% His (EXCEEDS 15% cap, has poly-His tract)
-2. his200m_his_148 — 3.8% His
-3. his030_his_70 — 0.9% His (cleanest pass)
+### E1 filtering pipeline:
+- 400 total → 375 (His cap 15%) → 374 (no poly-His ≥4) → 310 (no Cys)
+- Diversity filter (≥30% Hamming): 17 diverse E1 candidates selected
+- 16 from his015, 1 from plain (His prior worked as intended)
 
-### Action items for completion:
-1. Deploy E1 Modal image and run 200+200 designs (~$10-15 GPU)
-2. Run ESMFold refold on all surviving designs (E2 + E1)
-3. Apply 15% His cap → rank 1 (46.6% His) likely eliminated
-4. Combine E1 + E2 survivors into final submission via build_submission.py
+### E2 survivors (post-clash, post-His-cap):
+- his030_his_133: 46.6% His → **EXCLUDED** (poly-His)
+- his200m_his_148: 3.8% His, 1 minor clash → INCLUDED
+- his030_his_70: 0.9% His, clean pass → INCLUDED
+
+### Combined submission: 19 designs (2 E2 + 17 E1)
+- Dry-run validated: `results/submission_dry_run_20261023.csv`
+- Selection JSON: `results/combined_selection_20261023.json`
+
+### Remaining before final submission:
+1. ~~Deploy E1 Modal image~~ DONE
+2. ESMFold refold on all 19 designs (quality gate, needs GPU)
+3. Ricardo review + approval
+4. Final `build_submission.py` run (non-dry-run)

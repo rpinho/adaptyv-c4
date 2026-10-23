@@ -120,8 +120,15 @@ def generate(spec: str = "apical", num_replicates: int = 8, batch_size: int = 1,
 
 
 @app.function(image=image, volumes=VOLUMES, timeout=1800, cpu=2.0)
-def fetch(path: str = ""):
-    """List or dump what is on the runs volume."""
+def fetch(path: str = "", cat_file: str = ""):
+    """List or dump what is on the runs volume. cat_file prints a file's contents."""
+    if cat_file:
+        full = f"{RUNS}/{cat_file}"
+        if os.path.exists(full):
+            print(pathlib.Path(full).read_text())
+        else:
+            print(f"NOT FOUND: {full}")
+        return
     sh(f"find {RUNS}/{path} -maxdepth 4 | head -100", cwd="/", check=False)
     sh(f"du -sh {RUNS}/*", cwd="/", check=False)
 
@@ -130,7 +137,6 @@ def fetch(path: str = ""):
 def inspect_cif(path: str):
     """Print chain IDs and residue ranges from a generated CIF."""
     import biotite.structure.io.pdbx as pdbx
-    import biotite.structure as struc
     full = f"{RUNS}/{path}"
     print(f"Reading {full}")
     f = pdbx.CIFFile.read(full)
@@ -148,3 +154,99 @@ def inspect_cif(path: str):
         rids = sorted(chains[cid])
         print(f"  chain {cid}: {len(rids)} residues, range {rids[0]}-{rids[-1]}")
     print(f"Total CA atoms: {len(ca)}")
+
+
+@app.function(image=image, volumes=VOLUMES, timeout=600, cpu=2.0)
+def count_designs(run_name: str):
+    """Count generated CIF files and print metrics summary."""
+    import csv
+    base = f"{RUNS}/{run_name}"
+    rc, out = sh(f"find {base}/inference_samples -name '*_generated.cif' | wc -l",
+                 cwd="/", check=False)
+    print(f"Generated designs: {out.strip()}")
+    metrics = f"{base}/inference_metrics/per_example_metrics.csv"
+    if os.path.exists(metrics):
+        with open(metrics) as f:
+            reader = csv.DictReader(f)
+            rows = list(reader)
+        print(f"Metrics rows: {len(rows)}")
+        if rows:
+            print(f"Columns: {list(rows[0].keys())}")
+            for r in rows[:3]:
+                print(f"  {r.get('example_id', '?')}: " +
+                      ", ".join(f"{k}={v}" for k, v in list(r.items())[:8]))
+    else:
+        print("No metrics file found")
+
+
+@app.function(image=image, volumes=VOLUMES, timeout=1800, cpu=2.0, memory=8192)
+def extract_sequences(run_name: str):
+    """Extract binder (chain C) sequences from all generated CIFs. Returns CSV text."""
+    import biotite.structure.io.pdbx as pdbx
+    import biotite.structure as struc
+    import glob
+    import csv
+    import io
+
+    base = f"{RUNS}/{run_name}/inference_samples"
+    cifs = sorted(glob.glob(f"{base}/*/{run_name}_*_generated.cif"))
+    print(f"Found {len(cifs)} CIF files")
+
+    AA3TO1 = {
+        'ALA': 'A', 'CYS': 'C', 'ASP': 'D', 'GLU': 'E', 'PHE': 'F',
+        'GLY': 'G', 'HIS': 'H', 'ILE': 'I', 'LYS': 'K', 'LEU': 'L',
+        'MET': 'M', 'ASN': 'N', 'PRO': 'P', 'GLN': 'Q', 'ARG': 'R',
+        'SER': 'S', 'THR': 'T', 'VAL': 'V', 'TRP': 'W', 'TYR': 'Y',
+    }
+
+    rows = []
+    for cif_path in cifs:
+        name = pathlib.Path(cif_path).parent.name
+        try:
+            f = pdbx.CIFFile.read(cif_path)
+            arr = pdbx.get_structure(f.block, model=1)
+            ca = arr[(arr.atom_name == "CA")]
+            chains = {}
+            for a in ca:
+                chains.setdefault(a.chain_id, []).append(a)
+            for cid in sorted(chains):
+                atoms = chains[cid]
+                seq = "".join(AA3TO1.get(a.res_name, "X") for a in atoms)
+                n_res = len(atoms)
+                his_count = seq.count("H")
+                his_frac = his_count / n_res if n_res > 0 else 0
+                rows.append({
+                    "design": name,
+                    "chain": cid,
+                    "n_residues": n_res,
+                    "sequence": seq,
+                    "his_count": his_count,
+                    "his_fraction": f"{his_frac:.3f}",
+                })
+        except Exception as e:
+            print(f"ERROR reading {cif_path}: {e}")
+            rows.append({"design": name, "chain": "ERR", "n_residues": 0,
+                         "sequence": str(e), "his_count": 0, "his_fraction": "0"})
+
+    buf = io.StringIO()
+    writer = csv.DictWriter(buf, fieldnames=["design", "chain", "n_residues",
+                                              "sequence", "his_count", "his_fraction"])
+    writer.writeheader()
+    writer.writerows(rows)
+    csv_text = buf.getvalue()
+
+    out_path = f"{RUNS}/{run_name}_sequences.csv"
+    pathlib.Path(out_path).write_text(csv_text)
+    runs_vol.commit()
+
+    binder_rows = [r for r in rows if r["chain"] == "C"]
+    print(f"Total rows: {len(rows)}, binder (chain C) rows: {len(binder_rows)}")
+    if binder_rows:
+        lengths = [int(r["n_residues"]) for r in binder_rows]
+        his_fracs = [float(r["his_fraction"]) for r in binder_rows]
+        print(f"Binder lengths: min={min(lengths)}, max={max(lengths)}, "
+              f"mean={sum(lengths)/len(lengths):.1f}")
+        print(f"His fraction: min={min(his_fracs):.3f}, max={max(his_fracs):.3f}, "
+              f"mean={sum(his_fracs)/len(his_fracs):.3f}")
+    print(f"Saved to {out_path}")
+    return csv_text
