@@ -173,50 +173,107 @@ Bottom 2: c4_v_185_4x (0.423, pLDDT=77.6 ⚠), apical_his_148 (0.413, only 3 His
 **c4_v_185_4x flagged for replacement** — pLDDT below 80 suggests unreliable fold.
 Replacement candidate: his015_176 (121 res, 13 His, Δq=9.8).
 
-## Boltz-2 complex prediction (IN PROGRESS — all 20 designs)
+## Boltz-2 complex prediction (COMPLETE — 20/20 designs)
 
-Running Boltz-2 on ALL 20 designs (not just top 5) per Fable+Astra recommendation.
-Target: TfR1 apical domain (154 res), binder as chain A.
+Boltz-2 on ALL 20 v8 designs. Target: TfR1 apical domain (154 res, chain B), binder chain A.
+Modal L40S, --use_msa_server, --diffusion_samples 1, --recycling_steps 3.
 
-### Early results (5/20 completed)
+### Full ipTM ranking
 
-| Rank | Design | Size | ipTM | pTM | Confidence | Verdict |
-|------|--------|------|------|-----|------------|---------|
-| 1 | **his015_148** | 88 | **0.924** | 0.930 | 0.798 | Very strong |
-| 2 | **his015_115** | 74 | **0.895** | 0.927 | 0.747 | Very strong |
-| 3 | his200m | 78 | 0.741 | 0.834 | 0.757 | Strong |
-| 4 | his015_57 | 84 | 0.507 | — | — | Possible |
-| 5 | his015_96 | 107 | 0.422 | 0.622 | 0.640 | Possible |
+| Rank | Design | ipTM | pTM | Conf | cpLDDT |
+|------|--------|------|-----|------|--------|
+| 1 | **c4_v_185_4x** | **0.929** | 0.943 | 0.692 | 0.633 |
+| 2 | **his015_148** | **0.924** | 0.930 | 0.798 | 0.767 |
+| 3 | **plain_98** | **0.923** | 0.948 | 0.751 | 0.708 |
+| 4 | **c4_v_58_4x** | **0.916** | 0.944 | 0.751 | 0.710 |
+| 5 | **his015_115** | **0.895** | 0.927 | 0.747 | 0.711 |
+| 6 | **his015_20** | **0.894** | 0.899 | 0.736 | 0.696 |
+| 7 | c4_v_62_max | 0.865 | 0.915 | 0.785 | 0.765 |
+| 8 | c4_v_33_4x_v2 | 0.819 | 0.876 | 0.729 | 0.707 |
+| 9 | his200m | 0.741 | 0.834 | 0.757 | 0.761 |
+| 10 | his015_61 | 0.724 | 0.859 | 0.725 | 0.725 |
+| 11 | his015_64 | 0.712 | 0.793 | 0.723 | 0.726 |
+| 12 | his015_131 | 0.691 | 0.797 | 0.702 | 0.705 |
+| 13 | his015_145 | 0.621 | 0.742 | 0.694 | 0.712 |
+| 14 | his015_14 | 0.593 | 0.711 | 0.678 | 0.699 |
+| 15 | his015_57 | 0.507 | 0.666 | 0.676 | 0.719 |
+| 16 | his015_26 | 0.470 | 0.559 | 0.643 | 0.686 |
+| 17 | his015_174 | 0.427 | 0.708 | 0.594 | 0.635 |
+| 18 | his015_96 | 0.422 | 0.622 | 0.640 | 0.695 |
+| 19 | his015_140 | 0.390 | 0.591 | 0.629 | 0.689 |
+| 20 | his015_41 | 0.361 | 0.545 | 0.618 | 0.683 |
 
-**Benchmark**: actimo-labs (gold standard, TNF-alpha) achieved ipTM 0.294–0.650 (median 0.411).
-Three of our first 5 designs EXCEED their best score.
+**Stats**: ipTM ≥0.7: 11/20. ipTM ≥0.35: 20/20. Median: 0.724. Mean: 0.691.
+**Benchmark**: actimo-labs (gold standard) ipTM 0.294–0.650 (median 0.411). Our median 0.724 vs their 0.411.
+
+### c4_v_185_4x reversal
+
+Previously flagged for replacement (pLDDT=77.6, pI=5.5). Now scores HIGHEST ipTM (0.929).
+May be an intrinsically disordered binder that folds upon binding — low monomer pLDDT is
+consistent with this. **KEEP, do not replace.**
 
 ### Fable caution (FABLE_BOLTZ2_CONSULTATION.md)
 - ipTM >0.7 for de novo binders is unusual — TfR1 well-represented in Boltz-2 training (HFE, transferrin)
 - Potential structural mimicry → BLAST top scorers against PDB
 - Run multi-seed (--diffusion_samples 5) to check variance; >0.15 variance = noise
 - Use ipTM ≥0.35 threshold for complex PROPKA analysis
-- Compact designs scoring higher is expected (fewer degrees of freedom)
+
+## Complex PROPKA ΔΔG_switch analysis (COMPLETE)
+
+True pH-switch metric: pKa_bound (from complex PROPKA) vs pKa_free (extracted binder PROPKA).
+ΔΔG_switch = Wyman linkage on **interface His only** (within 5Å of target).
+Benchmark: actimo-labs ΔΔG 2.84–4.56 kcal/mol.
+
+### Combined ranking (ipTM + ΔΔG_switch)
+
+| Design | ipTM | iHis | ΔΔG_sw | His707 | Tier |
+|--------|------|------|--------|--------|------|
+| **c4_v_58_4x** | 0.916 | 6 | **3.958** | 0 | **S — best combined** |
+| **plain_98** | 0.923 | 5 | **2.953** | 8 | **A — strong both axes** |
+| **his015_20** | 0.894 | 3 | **2.620** | 0 | A |
+| **his015_131** | 0.691 | 8 | **5.703** | 2 | A — best ΔΔG, lower ipTM |
+| **c4_v_33_4x_v2** | 0.819 | 4 | 2.456 | 5 | A |
+| **his015_115** | 0.895 | 6 | 2.063 | 4 | B — strong binding, moderate switch |
+| **c4_v_185_4x** | 0.929 | 5 | 1.782 | 0 | B — highest ipTM, moderate switch |
+| **his015_148** | 0.924 | 4 | 1.578 | 0 | B — 2nd ipTM, moderate switch |
+| c4_v_62_max | 0.865 | 4 | 1.556 | 3 | B |
+| his015_61 | 0.724 | 5 | 3.483 | 0 | B — good switch, ok binding |
+| his015_145 | 0.621 | 6 | 3.566 | 8 | B — good switch + His707, low ipTM |
+| his015_41 | 0.361 | 5 | 3.285 | 8 | C — good switch but low ipTM |
+| his015_140 | 0.390 | 4 | 2.860 | 0 | C |
+| his015_57 | 0.507 | 3 | 2.117 | 0 | C |
+| his015_14 | 0.593 | 2 | 1.296 | 0 | C |
+| his015_174 | 0.427 | 2 | 1.360 | 0 | C |
+| his200m | 0.741 | 1 | 0.518 | 1 | D — weak switch |
+| his015_64 | 0.712 | 4 | 0.390 | 2 | D |
+| his015_26 | 0.470 | 1 | 0.017 | 6 | D — near-zero switch |
+| **his015_96** | 0.422 | 1 | **-0.293** | 1 | **F — WRONG direction** |
+
+### Key findings
+1. **ipTM and ΔΔG_switch are weakly correlated** — different properties, as expected
+2. **c4_v_58_4x is the standout**: ipTM 0.916 AND ΔΔG 3.958 (actimo-labs competitive)
+3. **his015_131 is the best pH-switcher** (ΔΔG 5.703, exceeds actimo-labs max) but lower ipTM
+4. **his015_96 has NEGATIVE ΔΔG** — switches in the wrong direction; replace candidate
+5. **7 designs exceed actimo-labs ΔΔG minimum (2.84)**: 131, 58_4x, 145, 61, 41, plain_98, 140
+6. **His707 contacts don't predict switch quality** — his015_26 has 6 contacts but ΔΔG=0.017
 
 ### Consultant findings (Fable + Astra)
-1. **ΔΔG_monomer is a His counter (R²=0.80)** — not a switch metric
-2. **No binding evidence existed before Boltz-2** — ESMFold is monomer-only
-3. **Need complex PROPKA for true ΔΔG_switch** — pKa_bound vs pKa_free per interface His
-4. **Mechanistic inversion**: His707 at pH 5.5 is protonated (+); binder should present D/E opposite it, not His
+1. **ΔΔG_monomer is a His counter (R²=0.80)** — complex PROPKA is the real metric
+2. **Mechanistic inversion**: His707 at pH 5.5 is protonated (+); binder should present D/E opposite it, not His
+3. **Interface His driving switch**: designs with >4 interface His and pKa shifts >1.0 per His are strongest
 
-### Next steps (after Boltz-2 completes)
-1. Download complex PDBs from Modal volume
-2. Run complex PROPKA: pKa_bound (complex) vs pKa_free (extracted binder)
-3. Identify interface His (within 5Å of target)
-4. Check His707 contacts (which binder residues contact target His)
-5. Compute true ΔΔG_switch (interface His only, Wyman linkage)
-6. Replace c4_v_185_4x (pLDDT=77.6 + pI=5.5) with his015_118
-7. Re-rank portfolio by ipTM + ΔΔG_switch + His707 contact
+## Next steps (Nov 1 deadline, 9 days remaining)
+1. **BLAST check**: Verify top scorers (c4_v_185_4x, his015_148, plain_98) aren't PDB mimics
+2. **Multi-seed validation**: Boltz-2 with --diffusion_samples 5 for top 5 by ipTM
+3. **Replace his015_96**: negative ΔΔG_switch — replace with best available pool design
+4. **Consider replacing his015_26, his015_64, his200m**: near-zero ΔΔG_switch
+5. **Charge-cap check**: c4_v_62_max q(5.5)=+8.2 — may need non-interface H→Q/N
+6. **Iterate**: new RFdiffusion round targeting designs with sparse His placement (actimo-labs style)
 
 ## Cost
 - RFD4 generation: ~$9 on Modal L40S (200 e1_plain + 200 e1_his015)
 - C3 RFD4 generation: ~$7 on Modal L40S (200 designs)
 - ESMFold refold (~54 folds total across all iterations): ~$9 on Modal L40S
 - ESMFold + PROPKA (C4 v8, 20 designs): ~$2 on Modal L40S
-- Boltz-2 complex prediction (20 designs, in progress): ~$5-8 estimated
+- Boltz-2 complex prediction (20 designs): ~$8 on Modal L40S
 - **Total: ~$38+ of $20 budget** (overage from iterative pipeline development)

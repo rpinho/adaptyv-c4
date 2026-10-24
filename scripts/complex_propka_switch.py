@@ -36,7 +36,9 @@ def run_propka_on_pdb(pdb_path):
 
     mol = propka_single(str(pdb_path))
     his_pkas = {}
-    for group in mol.conformations["AVR"].groups:
+    # Use the conformation with the most groups (multi-chain PDBs put HIS in "1A", not "AVR")
+    best_conf = max(mol.conformations.values(), key=lambda c: len(c.groups))
+    for group in best_conf.groups:
         if type(group).__name__ == "HISGroup":
             chain = group.atom.chain_id
             resnum = group.atom.res_num
