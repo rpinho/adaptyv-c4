@@ -39,7 +39,7 @@ image = (
     image=image,
     gpu="L40S",
     volumes={"/cache/huggingface": hf_cache, "/runs": runs_vol},
-    timeout=3600,
+    timeout=7200,
 )
 def refold_batch(seqs_json: str):
     """Refold sequences and run monomer PROPKA. Input: JSON list of {name, sequence}."""
