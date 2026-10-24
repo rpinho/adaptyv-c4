@@ -55,9 +55,10 @@ def wyman_L(his_pkas_free: dict, his_pkas_complex: dict):
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("--refold", required=True)
-    p.add_argument("--boltz", required=True)
+    p.add_argument("--boltz", required=True, nargs="+", help="One or more Boltz-2 JSON files")
     p.add_argument("--out", default="")
     p.add_argument("--gate", type=float, default=2.0)
+    p.add_argument("--iptm-gate", type=float, default=0.0, help="ipTM floor (Fable: 0.75)")
     args = p.parse_args()
 
     with open(args.refold) as f:
@@ -65,8 +66,10 @@ def main():
     if isinstance(refold_data, dict):
         refold_data = refold_data.get("results", [])
 
-    with open(args.boltz) as f:
-        boltz_data = json.load(f)
+    boltz_data = []
+    for bp in args.boltz:
+        with open(bp) as f:
+            boltz_data.extend(json.load(f))
 
     refold_map = {r["name"]: r for r in refold_data}
 
@@ -117,14 +120,19 @@ def main():
 
     passing = []
     for s in scored:
-        gate = "✓" if s["switch_ok"] else "✗"
+        l_ok = s["L"] >= args.gate
+        iptm_ok = s["iptm"] >= args.iptm_gate if args.iptm_gate > 0 else True
+        both_ok = l_ok and iptm_ok
+        gate = "✓" if both_ok else ("L" if l_ok else ("i" if iptm_ok else "✗"))
         print(f"{s['name']:<40s} {s['length']:4d} {s['n_his']:3d} "
               f"{s['mean_plddt']:6.1f} {s['iptm']:6.3f} "
               f"{s['L']:6.2f} {s['total_ddg']:7.3f} {gate:>5s}")
-        if s["switch_ok"]:
+        s["switch_ok"] = both_ok
+        if both_ok:
             passing.append(s)
 
-    print(f"\n{len(passing)}/{len(scored)} pass L ≥ {args.gate} gate")
+    print(f"\n{len(passing)}/{len(scored)} pass L ≥ {args.gate}" +
+          (f" AND ipTM ≥ {args.iptm_gate}" if args.iptm_gate > 0 else ""))
 
     if args.out:
         with open(args.out, "w") as f:
