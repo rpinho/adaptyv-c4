@@ -1,0 +1,24 @@
+tfr1_c4_acid_site1:
+  input: 11qc.cif
+  contig: "60-100, /0, A555-620, /0, B555-575"
+  conditions:
+    C_CRDGRP:
+      1:
+        - select: "sel('A/*/[555-620]') and is_protein_backbone and not has_nan_coord()"
+        - select: "sel('B/*/[555-575]') and is_protein_backbone and not has_nan_coord()"
+    C_SEQ:
+      true:
+        - select: "sel('A/*/[555-620]')"
+        - select: "sel('B/*/[555-575]')"
+    C_SEQ_PROB_HIS:
+      0.15:
+        - select: "sel('C')"
+    C_SEQ_PROB_CYS:
+      0.0:
+        - select: "sel('C')"
+    C_HOT:
+      true:
+        - select: "sel('A/*/573/[CD,OE1,OE2]')"
+        - select: "sel('A/*/593/[CD,OE1,OE2]')"
+        - select: "sel('A/*/607/[CD,OE1,OE2]')"
+        - select: "sel('A/*/561/[CD,OE1,OE2]')"

@@ -28,6 +28,8 @@ SPEC_MAP = {
     "e1_plain": "tfr1_e1_plain.yaml",
     "e1_his015": "tfr1_e1_his015.yaml",
     "c3_glp1r": "c3_glp1r_ecd.yaml",
+    "c4_acid1": "tfr1_c4_acid_site1.yaml",
+    "c4_acid2": "tfr1_c4_acid_site2.yaml",
 }
 
 app = modal.App("rfd4-tfr1")
@@ -47,6 +49,8 @@ image = (
     .add_local_file(str(SPECS_DIR / "tfr1_e1_plain.yaml"), f"{INPUTS}/tfr1_e1_plain.yaml")
     .add_local_file(str(SPECS_DIR / "tfr1_e1_his015.yaml"), f"{INPUTS}/tfr1_e1_his015.yaml")
     .add_local_file(str(SPECS_DIR / "c3_glp1r_ecd.yaml"), f"{INPUTS}/c3_glp1r_ecd.yaml")
+    .add_local_file(str(SPECS_DIR / "tfr1_c4_acid_site1.yaml"), f"{INPUTS}/tfr1_c4_acid_site1.yaml")
+    .add_local_file(str(SPECS_DIR / "tfr1_c4_acid_site2.yaml"), f"{INPUTS}/tfr1_c4_acid_site2.yaml")
     .add_local_file(str(pathlib.Path("/Users/ricardo/dev/adaptyv-c4/data/6x18.cif")), f"{INPUTS}/6x18.cif")
 )
 
