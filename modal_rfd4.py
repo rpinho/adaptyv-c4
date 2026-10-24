@@ -136,7 +136,7 @@ def fetch(path: str = "", cat_file: str = ""):
         else:
             print(f"NOT FOUND: {full}")
         return
-    sh(f"find {RUNS}/{path} -maxdepth 4 | head -100", cwd="/", check=False)
+    sh(f"find {RUNS}/{path} -maxdepth 6 | head -200", cwd="/", check=False)
     sh(f"du -sh {RUNS}/*", cwd="/", check=False)
 
 
@@ -196,8 +196,12 @@ def extract_sequences(run_name: str):
     import io
 
     base = f"{RUNS}/{run_name}/inference_samples"
-    cifs = sorted(glob.glob(f"{base}/*/{run_name}_*_generated.cif"))
-    print(f"Found {len(cifs)} CIF files")
+    cifs = sorted(glob.glob(f"{base}/**/*_generated.cif", recursive=True))
+    if not cifs:
+        cifs = sorted(glob.glob(f"{base}/**/*_chain.cif", recursive=True))
+        print(f"No _generated.cif found; using {len(cifs)} _chain.cif files")
+    else:
+        print(f"Found {len(cifs)} _generated.cif files")
 
     AA3TO1 = {
         'ALA': 'A', 'CYS': 'C', 'ASP': 'D', 'GLU': 'E', 'PHE': 'F',
@@ -208,7 +212,8 @@ def extract_sequences(run_name: str):
 
     rows = []
     for cif_path in cifs:
-        name = pathlib.Path(cif_path).parent.name
+        stem = pathlib.Path(cif_path).stem
+        name = stem.replace("_generated", "").replace("_chain", "")
         try:
             f = pdbx.CIFFile.read(cif_path)
             arr = pdbx.get_structure(f.block, model=1)
