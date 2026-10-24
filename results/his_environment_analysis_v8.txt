@@ -1,0 +1,132 @@
+His environment analysis for 20 C4 v8 designs
+========================================================================================================================
+
+Design                          Len  His     %  Surf  Bur  Acid  Mid  Mid% Pairs  DE-p  Coop    Δq
+------------------------------------------------------------------------------------------------------------------------
+c4_v_62_max                     111   16  14.4     5    2     6    8  50.0     7    12    14  12.1
+c4_v_58_4x                      111   15  13.5     6    1     2   13  86.7     7     9    14  11.5
+tfr1_e1_his015_131               95   15  15.8     5    1     8    8  53.3     7    12    14  11.5
+tfr1_e1_his015_145              106   13  12.3     4    0     6    7  53.8     6    12    12  10.1
+c4_v_33_4x_v2                    85   13  15.3     1    1     6    8  61.5     6    13    12  10.0
+tfr1_e1_his015_64               116   13  11.2     2    4     5   10  76.9     6    10    12  10.0
+tfr1_e1_his015_115               74   11  14.9     5    2     4    4  36.4     5     8    10   8.7
+tfr1_e1_his015_61                98   12  12.2     3    4     5    8  66.7     5     9    10   9.3
+tfr1_e1_his015_41               118   13  11.0     7    1     2    8  61.5     5     9    10  10.2
+tfr1_e1_his015_57                84   10  11.9     1    3     2    5  50.0     4     8     8   7.9
+tfr1_e1_his015_26                82   10  12.2     5    2     2    5  50.0     4     6     8   7.7
+tfr1_e1_his015_14                99   12  12.1     4    2     4    7  58.3     4     8     8   9.3
+tfr1_e1_his015_140               80    9  11.2     4    0     4    7  77.8     4     6     8   7.1
+tfr1_e1_his015_174               73    9  12.3     6    0     2    5  55.6     4     3     8   6.9
+tfr1_e1_plain_98                107   11  10.3     6    0     4    7  63.6     4     9     8   8.7
+tfr1_e1_his015_96               107   10   9.3     5    1     2    5  50.0     3     7     6   7.9
+tfr1_e1_his015_148               88   10  11.4     5    0     5    7  70.0     3     6     6   7.9
+c4_v_185_4x                      85    9  10.6     3    2     4    7  77.8     3     6     6   7.3
+tfr1_e1_his015_20                75    6   8.0     2    1     0    4  66.7     2     2     4   4.9
+tfr1_his200m_20261023__tfr1_apical_his_148   78    3   3.8     2    1     0    0   0.0     1     2     2   2.8
+
+
+DETAILED His ENVIRONMENT — top 5 by cooperative score:
+========================================================================================================================
+
+c4_v_62_max (len=111, 16 His, Δq=12.1):
+  H  3 [N-term] S-H-E KD=-1.50 env=SURFACE    near_DE=1 near_KR=2 His_nbrs=[7,8] DE_close=[E4]
+  H  7 [N-term] L-H-H KD=-0.70 env=ACIDIC     near_DE=2 near_KR=3 His_nbrs=[3,8,15] DE_close=[E4,E11]
+  H  8 [N-term] H-H-L KD=-0.70 env=ACIDIC     near_DE=2 near_KR=2 His_nbrs=[3,7,15] DE_close=[E4,E11]
+  H 15 [N-term] T-H-L KD=+1.09 env=BURIED     near_DE=2 near_KR=0 His_nbrs=[7,8] DE_close=[E11,E18]
+  H 31 [   mid] E-H-A KD=-1.46 env=ACIDIC     near_DE=2 near_KR=1 His_nbrs=[38] DE_close=[E30,E34]
+  H 38 [   mid] E-H-F KD=+0.09 env=ACIDIC     near_DE=2 near_KR=1 His_nbrs=[31,44] DE_close=[E34,E37]
+  H 44 [   mid] S-H-E KD=-1.27 env=ACIDIC     near_DE=2 near_KR=1 His_nbrs=[38,48] DE_close=[E45,E46]
+  H 48 [   mid] Q-H-T KD=-1.11 env=ACIDIC     near_DE=3 near_KR=1 His_nbrs=[44,55,56] DE_close=[E45,E46,E52]
+  H 55 [   mid] A-H-H KD=-0.23 env=HYDROPHOBIC near_DE=1 near_KR=1 His_nbrs=[48,56,62] DE_close=[E52]
+  H 56 [   mid] H-H-M KD=+0.04 env=HYDROPHOBIC near_DE=1 near_KR=1 His_nbrs=[48,55,62] DE_close=[E52]
+  H 62 [   mid] L-H-A KD=+0.44 env=HYDROPHOBIC near_DE=0 near_KR=0 His_nbrs=[55,56] DE_close=[none]
+  H 83 [   mid] L-H-T KD=+1.23 env=BURIED     near_DE=1 near_KR=0 His_nbrs=[none] DE_close=[D80]
+  H 94 [C-term] S-H-P KD=-1.33 env=SURFACE    near_DE=0 near_KR=2 His_nbrs=[97,98,102] DE_close=[none]
+  H 97 [C-term] S-H-H KD=-2.46 env=SURFACE    near_DE=0 near_KR=3 His_nbrs=[94,98,102] DE_close=[none]
+  H 98 [C-term] H-H-R KD=-1.60 env=SURFACE    near_DE=0 near_KR=4 His_nbrs=[94,97,102] DE_close=[none]
+  H102 [C-term] F-H-E KD=-0.06 env=SURFACE    near_DE=1 near_KR=2 His_nbrs=[94,97,98] DE_close=[E103]
+
+c4_v_58_4x (len=111, 15 His, Δq=11.5):
+  H 24 [   mid] S-H-L KD=-0.67 env=HYDROPHOBIC near_DE=0 near_KR=1 His_nbrs=[26,31] DE_close=[none]
+  H 26 [   mid] L-H-N KD=-0.79 env=HYDROPHOBIC near_DE=0 near_KR=1 His_nbrs=[24,31] DE_close=[none]
+  H 31 [   mid] F-H-D KD=-0.57 env=SURFACE    near_DE=1 near_KR=0 His_nbrs=[24,26] DE_close=[D32]
+  H 43 [   mid] F-H-A KD=+0.10 env=HYDROPHOBIC near_DE=1 near_KR=1 His_nbrs=[46] DE_close=[D45]
+  H 46 [   mid] D-H-S KD=-0.47 env=HYDROPHOBIC near_DE=1 near_KR=2 His_nbrs=[43,54] DE_close=[D45]
+  H 54 [   mid] A-H-H KD=+0.54 env=BURIED     near_DE=0 near_KR=3 His_nbrs=[46,55,58,60] DE_close=[none]
+  H 55 [   mid] H-H-F KD=-0.19 env=HYDROPHOBIC near_DE=0 near_KR=2 His_nbrs=[54,58,60] DE_close=[none]
+  H 58 [   mid] A-H-S KD=-0.94 env=SURFACE    near_DE=0 near_KR=3 His_nbrs=[54,55,60] DE_close=[none]
+  H 60 [   mid] S-H-S KD=-1.49 env=SURFACE    near_DE=1 near_KR=1 His_nbrs=[54,55,58,68] DE_close=[D63]
+  H 68 [   mid] S-H-F KD=+0.03 env=SURFACE    near_DE=0 near_KR=2 His_nbrs=[60,72] DE_close=[none]
+  H 72 [   mid] T-H-F KD=-0.27 env=HYDROPHOBIC near_DE=1 near_KR=2 His_nbrs=[68] DE_close=[E75]
+  H 82 [   mid] L-H-E KD=-1.23 env=SURFACE    near_DE=1 near_KR=3 His_nbrs=[85] DE_close=[E83]
+  H 85 [   mid] F-H-M KD=-1.36 env=ACIDIC     near_DE=2 near_KR=1 His_nbrs=[82] DE_close=[E83,D88]
+  H107 [C-term] L-H-E KD=-1.53 env=ACIDIC     near_DE=2 near_KR=2 His_nbrs=[109] DE_close=[E104,E108]
+  H109 [C-term] E-H-F KD=-0.68 env=SURFACE    near_DE=1 near_KR=2 His_nbrs=[107] DE_close=[E108]
+
+tfr1_e1_his015_131 (len=95, 15 His, Δq=11.5):
+  H 11 [N-term] D-H-A KD=-0.36 env=ACIDIC     near_DE=2 near_KR=0 His_nbrs=[17,19] DE_close=[D10,E13]
+  H 17 [N-term] L-H-E KD=-1.01 env=ACIDIC     near_DE=2 near_KR=2 His_nbrs=[11,19] DE_close=[E13,E18]
+  H 19 [N-term] E-H-R KD=-1.37 env=HYDROPHOBIC near_DE=1 near_KR=2 His_nbrs=[11,17,26] DE_close=[E18]
+  H 26 [   mid] D-H-E KD=-1.70 env=ACIDIC     near_DE=3 near_KR=1 His_nbrs=[19,30] DE_close=[D25,E27,E29]
+  H 30 [   mid] E-H-L KD=-0.93 env=ACIDIC     near_DE=2 near_KR=1 His_nbrs=[26,36] DE_close=[E27,E29]
+  H 36 [   mid] L-H-S KD=-0.24 env=SURFACE    near_DE=0 near_KR=1 His_nbrs=[30,41,42,44] DE_close=[none]
+  H 41 [   mid] S-H-H KD=-1.61 env=SURFACE    near_DE=0 near_KR=3 His_nbrs=[36,42,44] DE_close=[none]
+  H 42 [   mid] H-H-S KD=-1.61 env=SURFACE    near_DE=0 near_KR=3 His_nbrs=[36,41,44] DE_close=[none]
+  H 44 [   mid] S-H-L KD=-0.66 env=SURFACE    near_DE=1 near_KR=2 His_nbrs=[36,41,42,52] DE_close=[E48]
+  H 52 [   mid] A-H-I KD=+1.39 env=BURIED     near_DE=2 near_KR=0 His_nbrs=[44] DE_close=[E48,E49]
+  H 63 [   mid] V-H-N KD=-1.29 env=SURFACE    near_DE=1 near_KR=0 His_nbrs=[none] DE_close=[E65]
+  H 83 [C-term] L-H-H KD=-0.69 env=ACIDIC     near_DE=2 near_KR=1 His_nbrs=[84,91] DE_close=[E81,E87]
+  H 84 [C-term] H-H-V KD=-0.96 env=ACIDIC     near_DE=3 near_KR=1 His_nbrs=[83,91,92] DE_close=[E81,E87,D88]
+  H 91 [C-term] K-H-H KD=-2.00 env=ACIDIC     near_DE=3 near_KR=2 His_nbrs=[83,84,92] DE_close=[E87,D88,E94]
+  H 92 [C-term] H-H-W KD=-1.10 env=ACIDIC     near_DE=2 near_KR=2 His_nbrs=[84,91] DE_close=[D88,E94]
+
+tfr1_e1_his015_145 (len=106, 13 His, Δq=10.1):
+  H  9 [N-term] Y-H-P KD=-0.66 env=HYDROPHOBIC near_DE=1 near_KR=1 His_nbrs=[13] DE_close=[D12]
+  H 13 [N-term] D-H-T KD=-2.44 env=ACIDIC     near_DE=2 near_KR=2 His_nbrs=[9] DE_close=[D12,D16]
+  H 28 [   mid] R-H-G KD=-1.21 env=HYDROPHOBIC near_DE=1 near_KR=1 His_nbrs=[33] DE_close=[E26]
+  H 33 [   mid] V-H-T KD=-1.06 env=ACIDIC     near_DE=2 near_KR=0 His_nbrs=[28,40] DE_close=[E35,E36]
+  H 40 [   mid] F-H-A KD=-0.04 env=ACIDIC     near_DE=2 near_KR=1 His_nbrs=[33,42] DE_close=[E36,D44]
+  H 42 [   mid] A-H-L KD=-0.33 env=ACIDIC     near_DE=2 near_KR=1 His_nbrs=[40] DE_close=[D44,D46]
+  H 55 [   mid] V-H-E KD=-1.93 env=ACIDIC     near_DE=2 near_KR=1 His_nbrs=[57] DE_close=[E53,E56]
+  H 57 [   mid] E-H-N KD=-1.56 env=ACIDIC     near_DE=3 near_KR=1 His_nbrs=[55] DE_close=[E53,E56,D60]
+  H 66 [   mid] L-H-Y KD=+0.36 env=HYDROPHOBIC near_DE=0 near_KR=0 His_nbrs=[none] DE_close=[none]
+  H 87 [C-term] F-H-K KD=-1.83 env=SURFACE    near_DE=1 near_KR=4 His_nbrs=[90,92] DE_close=[E91]
+  H 90 [C-term] T-H-E KD=-2.64 env=SURFACE    near_DE=1 near_KR=3 His_nbrs=[87,92,96] DE_close=[E91]
+  H 92 [C-term] E-H-S KD=-1.49 env=SURFACE    near_DE=1 near_KR=3 His_nbrs=[87,90,96] DE_close=[E91]
+  H 96 [C-term] I-H-D KD=-0.13 env=SURFACE    near_DE=1 near_KR=1 His_nbrs=[90,92] DE_close=[D97]
+
+c4_v_33_4x_v2 (len=85, 13 His, Δq=10.0):
+  H  3 [N-term] L-H-H KD=+0.20 env=SURFACE    near_DE=1 near_KR=2 His_nbrs=[4,6] DE_close=[E7]
+  H  4 [N-term] H-H-V KD=-0.33 env=HYDROPHOBIC near_DE=1 near_KR=2 His_nbrs=[3,6] DE_close=[E7]
+  H  6 [N-term] V-H-E KD=-0.33 env=HYDROPHOBIC near_DE=1 near_KR=2 His_nbrs=[3,4,14] DE_close=[E7]
+  H 14 [N-term] I-H-K KD=-0.13 env=HYDROPHOBIC near_DE=1 near_KR=2 His_nbrs=[6,20,22] DE_close=[E18]
+  H 20 [   mid] V-H-P KD=-1.14 env=HYDROPHOBIC near_DE=1 near_KR=2 His_nbrs=[14,22,26] DE_close=[E18]
+  H 22 [   mid] P-H-L KD=+0.17 env=HYDROPHOBIC near_DE=1 near_KR=2 His_nbrs=[14,20,26] DE_close=[E18]
+  H 26 [   mid] F-H-V KD=+1.00 env=BURIED     near_DE=1 near_KR=1 His_nbrs=[20,22] DE_close=[D29]
+  H 37 [   mid] E-H-H KD=-0.04 env=ACIDIC     near_DE=2 near_KR=1 His_nbrs=[38] DE_close=[E36,E41]
+  H 38 [   mid] H-H-A KD=-1.19 env=ACIDIC     near_DE=3 near_KR=1 His_nbrs=[37] DE_close=[E36,E41,D42]
+  H 56 [   mid] L-H-E KD=-0.93 env=ACIDIC     near_DE=2 near_KR=1 His_nbrs=[59,62] DE_close=[E57,E58]
+  H 59 [   mid] E-H-L KD=-1.94 env=ACIDIC     near_DE=3 near_KR=2 His_nbrs=[56,62] DE_close=[E57,E58,E63]
+  H 62 [   mid] S-H-E KD=-1.59 env=ACIDIC     near_DE=2 near_KR=1 His_nbrs=[56,59] DE_close=[E58,E63]
+  H 77 [C-term] Y-H-D KD=-1.93 env=ACIDIC     near_DE=2 near_KR=1 His_nbrs=[none] DE_close=[D74,D78]
+
+
+RISK FLAGS:
+--------------------------------------------------------------------------------
+  tfr1_his200m_20261023__tfr1_apical_his_148: 1 buried His (may not contact target); only 0.0% mid-chain His (terminal His less likely at interface)
+  tfr1_e1_his015_96: 1 buried His (may not contact target)
+  tfr1_e1_his015_115: 2 buried His (may not contact target); 8/11 His near D/E (intramolecular pairing risk); only 36.4% mid-chain His (terminal His less likely at interface)
+  tfr1_e1_his015_57: 3 buried His (may not contact target); 8/10 His near D/E (intramolecular pairing risk)
+  tfr1_e1_his015_26: 2 buried His (may not contact target)
+  tfr1_e1_his015_61: 4 buried His (may not contact target); 9/12 His near D/E (intramolecular pairing risk)
+  tfr1_e1_his015_14: 2 buried His (may not contact target)
+  c4_v_185_4x: 2 buried His (may not contact target)
+  c4_v_62_max: 2 buried His (may not contact target); 12/16 His near D/E (intramolecular pairing risk)
+  tfr1_e1_his015_20: 1 buried His (may not contact target)
+  tfr1_e1_plain_98: 9/11 His near D/E (intramolecular pairing risk)
+  c4_v_58_4x: 1 buried His (may not contact target)
+  tfr1_e1_his015_131: 1 buried His (may not contact target); >50% His in acidic environment (intramolecular D/E pairing); 12/15 His near D/E (intramolecular pairing risk)
+  tfr1_e1_his015_145: 12/13 His near D/E (intramolecular pairing risk)
+  c4_v_33_4x_v2: 1 buried His (may not contact target); 13/13 His near D/E (intramolecular pairing risk)
+  tfr1_e1_his015_64: 4 buried His (may not contact target); 10/13 His near D/E (intramolecular pairing risk)
+  tfr1_e1_his015_41: 1 buried His (may not contact target)
