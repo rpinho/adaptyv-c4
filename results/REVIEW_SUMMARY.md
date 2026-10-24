@@ -173,15 +173,50 @@ Bottom 2: c4_v_185_4x (0.423, pLDDT=77.6 ⚠), apical_his_148 (0.413, only 3 His
 **c4_v_185_4x flagged for replacement** — pLDDT below 80 suggests unreliable fold.
 Replacement candidate: his015_176 (121 res, 13 His, Δq=9.8).
 
-## Next: Boltz-2 complex prediction (in progress)
+## Boltz-2 complex prediction (IN PROGRESS — all 20 designs)
 
-Running Boltz-2 on top 5 designs to get ipTM scores and complex structures.
-Complex PDBs will enable PROPKA interface analysis → actual ΔΔG_bind comparable to competitors.
+Running Boltz-2 on ALL 20 designs (not just top 5) per Fable+Astra recommendation.
+Target: TfR1 apical domain (154 res), binder as chain A.
+
+### Early results (5/20 completed)
+
+| Rank | Design | Size | ipTM | pTM | Confidence | Verdict |
+|------|--------|------|------|-----|------------|---------|
+| 1 | **his015_148** | 88 | **0.924** | 0.930 | 0.798 | Very strong |
+| 2 | **his015_115** | 74 | **0.895** | 0.927 | 0.747 | Very strong |
+| 3 | his200m | 78 | 0.741 | 0.834 | 0.757 | Strong |
+| 4 | his015_57 | 84 | 0.507 | — | — | Possible |
+| 5 | his015_96 | 107 | 0.422 | 0.622 | 0.640 | Possible |
+
+**Benchmark**: actimo-labs (gold standard, TNF-alpha) achieved ipTM 0.294–0.650 (median 0.411).
+Three of our first 5 designs EXCEED their best score.
+
+### Fable caution (FABLE_BOLTZ2_CONSULTATION.md)
+- ipTM >0.7 for de novo binders is unusual — TfR1 well-represented in Boltz-2 training (HFE, transferrin)
+- Potential structural mimicry → BLAST top scorers against PDB
+- Run multi-seed (--diffusion_samples 5) to check variance; >0.15 variance = noise
+- Use ipTM ≥0.35 threshold for complex PROPKA analysis
+- Compact designs scoring higher is expected (fewer degrees of freedom)
+
+### Consultant findings (Fable + Astra)
+1. **ΔΔG_monomer is a His counter (R²=0.80)** — not a switch metric
+2. **No binding evidence existed before Boltz-2** — ESMFold is monomer-only
+3. **Need complex PROPKA for true ΔΔG_switch** — pKa_bound vs pKa_free per interface His
+4. **Mechanistic inversion**: His707 at pH 5.5 is protonated (+); binder should present D/E opposite it, not His
+
+### Next steps (after Boltz-2 completes)
+1. Download complex PDBs from Modal volume
+2. Run complex PROPKA: pKa_bound (complex) vs pKa_free (extracted binder)
+3. Identify interface His (within 5Å of target)
+4. Check His707 contacts (which binder residues contact target His)
+5. Compute true ΔΔG_switch (interface His only, Wyman linkage)
+6. Replace c4_v_185_4x (pLDDT=77.6 + pI=5.5) with his015_118
+7. Re-rank portfolio by ipTM + ΔΔG_switch + His707 contact
 
 ## Cost
 - RFD4 generation: ~$9 on Modal L40S (200 e1_plain + 200 e1_his015)
 - C3 RFD4 generation: ~$7 on Modal L40S (200 designs)
 - ESMFold refold (~54 folds total across all iterations): ~$9 on Modal L40S
 - ESMFold + PROPKA (C4 v8, 20 designs): ~$2 on Modal L40S
-- Boltz-2 complex prediction (5 designs, in progress): ~$2-5 estimated
-- **Total: ~$33+ of $20 budget** (overage from iterative pipeline development)
+- Boltz-2 complex prediction (20 designs, in progress): ~$5-8 estimated
+- **Total: ~$38+ of $20 budget** (overage from iterative pipeline development)
