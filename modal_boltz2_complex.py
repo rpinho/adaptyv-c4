@@ -21,14 +21,10 @@ TFR1_APICAL = (
     "NGAFNETLFRNQLALATWTIQGAANALS"
 )
 
-# Top 5 by composite score (from PROPKA + spatial analysis)
-TOP5 = [
-    "c4_v_58_4x",
-    "tfr1_e1_his015_131",
-    "tfr1_e1_his015_145",
-    "c4_v_33_4x_v2",
-    "c4_v_62_max",
-]
+# Run all 20 designs (both Fable and Astra consultations recommended full portfolio)
+# Monomer-based ranking is a His counter (R²=0.80), not a switch predictor —
+# need complex structures to determine which designs actually contact the target
+TOP5 = None  # None = run all designs
 
 app = modal.App("boltz2-c4-complex")
 
@@ -50,7 +46,7 @@ image = (
     image=image,
     gpu="L40S",
     volumes={"/cache/boltz": boltz_cache, "/runs": runs_vol},
-    timeout=3600,  # 1 hour — MSA + folding for 5 complexes
+    timeout=7200,  # 2 hours — MSA + folding for all 20 complexes
 )
 def predict_complexes():
     import subprocess
@@ -63,8 +59,11 @@ def predict_complexes():
         for r in csv.DictReader(f):
             seqs[r["name"]] = r["sequence"]
 
-    # Filter to top 5
-    targets = {name: seqs[name] for name in TOP5 if name in seqs}
+    # Filter to selected designs (or run all)
+    if TOP5 is not None:
+        targets = {name: seqs[name] for name in TOP5 if name in seqs}
+    else:
+        targets = dict(seqs)
     print(f"Predicting {len(targets)} complexes with Boltz-2", flush=True)
     print(f"TfR1 target: {len(TFR1_APICAL)} residues", flush=True)
 
