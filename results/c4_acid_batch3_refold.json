@@ -1,0 +1,573 @@
+[
+  {
+    "name": "tfr1_c4_acid_site2_155",
+    "sequence": "SFETLLSETSAAVSAEDKDKLEEVVEDAKTLSDEELETFIDFLSEKGKEVSSKEFQHFVEEKLVELRALLLHRKFHH",
+    "length": 77,
+    "n_his": 4,
+    "mean_plddt": 94.1,
+    "plddt_gt70_frac": 0.987,
+    "status": "PASS",
+    "his_pkas": {
+      "57": 6.91,
+      "72": 6.1,
+      "76": 6.22,
+      "77": 7.0
+    },
+    "avg_his_pka": 99.0
+  },
+  {
+    "name": "tfr1_c4_acid_site1_40",
+    "sequence": "SAESIISQILSLHSQQDDLVPSLQSADSTVRMAAESKWHRLSSQVNDKITSLAHLFGIHDPHKIATLAGLFPYLYATNKLYTWLTDTA",
+    "length": 88,
+    "n_his": 5,
+    "mean_plddt": 92.8,
+    "plddt_gt70_frac": 1.0,
+    "status": "PASS",
+    "his_pkas": {
+      "13": 5.55,
+      "39": 6.36,
+      "54": 5.86,
+      "59": 6.24,
+      "62": 6.38
+    },
+    "avg_his_pka": 99.0
+  },
+  {
+    "name": "tfr1_c4_acid_site1_198",
+    "sequence": "SEHESALHHAVAIIRGLLHQLKQGKLSREKLIEIVVQQTGLSKDEVTTLLEQELDAYEFLLRNQAAKVKREKATARSESL",
+    "length": 80,
+    "n_his": 4,
+    "mean_plddt": 92.7,
+    "plddt_gt70_frac": 1.0,
+    "status": "PASS",
+    "his_pkas": {
+      "3": 6.52,
+      "8": 6.47,
+      "9": 6.16,
+      "19": 6.05
+    },
+    "avg_his_pka": 99.0
+  },
+  {
+    "name": "tfr1_c4_acid_site2_42",
+    "sequence": "TAFEEKMEDPEFRAEAEKIAELIHLSNTGFKLLSQSEFDEAIATFTELLENAETQEQEDYAESNLTLAHSLRDAD",
+    "length": 75,
+    "n_his": 2,
+    "mean_plddt": 92.7,
+    "plddt_gt70_frac": 1.0,
+    "status": "PASS",
+    "his_pkas": {
+      "24": 6.54,
+      "69": 5.99
+    },
+    "avg_his_pka": 99.0
+  },
+  {
+    "name": "tfr1_c4_acid_site1_35",
+    "sequence": "LPDFVKEQVEKHNKIWESLTAIQEQKGYFTAEDLQTVLTAIHGTKPPPSAVNVMLKELEDLGFVTEVASGKYMLDMDKVEQAKEDFLEKELRDWES",
+    "length": 96,
+    "n_his": 2,
+    "mean_plddt": 92.5,
+    "plddt_gt70_frac": 1.0,
+    "status": "PASS",
+    "his_pkas": {
+      "12": 5.1,
+      "42": 5.88
+    },
+    "avg_his_pka": 99.0
+  },
+  {
+    "name": "tfr1_c4_acid_site1_197",
+    "sequence": "MKLHVSVQHNRDGHSSILAVAPQGAKVLKFTLWKDGQMVDEKSPDDHGTVLFNDVPPGEYTVVAHLENGSELQDSVTVSS",
+    "length": 80,
+    "n_his": 5,
+    "mean_plddt": 92.4,
+    "plddt_gt70_frac": 1.0,
+    "status": "PASS",
+    "his_pkas": {
+      "4": 6.27,
+      "9": 6.18,
+      "14": 6.93,
+      "47": 6.59,
+      "65": 5.95
+    },
+    "avg_his_pka": 99.0
+  },
+  {
+    "name": "tfr1_c4_acid_site2_182",
+    "sequence": "SSVINTDTLRLIRTTATNLSTKFHLTEDQARLLLSLLLSTHRMDDVDDIKDHISEFEEKANLTLTDDQKDELLSSILELHDKERE",
+    "length": 85,
+    "n_his": 4,
+    "mean_plddt": 92.0,
+    "plddt_gt70_frac": 0.976,
+    "status": "PASS",
+    "his_pkas": {
+      "24": 6.31,
+      "41": 5.83,
+      "52": 7.26,
+      "80": 6.34
+    },
+    "avg_his_pka": 99.0
+  },
+  {
+    "name": "tfr1_c4_acid_site2_113",
+    "sequence": "SSFEDFYDSFIEEVANALPDKKQQLLDLFDDFKEDYKQAVADTSSASKETQMETVDSLWSSFHTKLHDLLY",
+    "length": 71,
+    "n_his": 2,
+    "mean_plddt": 91.8,
+    "plddt_gt70_frac": 1.0,
+    "status": "PASS",
+    "his_pkas": {
+      "63": 6.15,
+      "67": 6.42
+    },
+    "avg_his_pka": 99.0
+  },
+  {
+    "name": "tfr1_c4_acid_site2_1",
+    "sequence": "LDHILTEVETAISKGFAMVKEETLYFLEKNTNYTEEEKQHMWESFTKKMDEAEEKTISEWHERLTEHFES",
+    "length": 70,
+    "n_his": 4,
+    "mean_plddt": 91.7,
+    "plddt_gt70_frac": 1.0,
+    "status": "PASS",
+    "his_pkas": {
+      "3": 6.41,
+      "40": 6.5,
+      "61": 6.35,
+      "67": 6.34
+    },
+    "avg_his_pka": 99.0
+  },
+  {
+    "name": "tfr1_c4_acid_site2_5",
+    "sequence": "VYDKIMHYYGHILTEEEKEEIEALLSRYEESEDKTEKMMIATKITHIVAVAHARWLHDFLMETATEEE",
+    "length": 68,
+    "n_his": 5,
+    "mean_plddt": 91.4,
+    "plddt_gt70_frac": 0.985,
+    "status": "PASS",
+    "his_pkas": {
+      "7": 6.33,
+      "11": 6.04,
+      "46": 6.3,
+      "52": 6.22,
+      "57": 6.44
+    },
+    "avg_his_pka": 99.0
+  },
+  {
+    "name": "tfr1_c4_acid_site1_94",
+    "sequence": "SVTVLEHLKKDIQHTYRTDGMTLDLFYHFSLQGLRNLFDHEILSEEDYEVLTHFLTTEYEKDHMTLEELYEAFVTKLDDMISS",
+    "length": 83,
+    "n_his": 6,
+    "mean_plddt": 95.2,
+    "plddt_gt70_frac": 1.0,
+    "status": "PASS",
+    "his_pkas": {
+      "7": 7.01,
+      "14": 6.35,
+      "28": 6.28,
+      "40": 7.2,
+      "53": 6.31,
+      "63": 6.42
+    },
+    "avg_his_pka": 99.0
+  },
+  {
+    "name": "tfr1_c4_acid_site2_16",
+    "sequence": "SHVRSTVEHHLRKGSYYAEEGHYDEAVSEFSEAVTLAIESGDEHLERNVFLHLQELAEHDPHLETAIKEDPLLNAFMVKWRHKSTEEAEELSDSLHELA",
+    "length": 99,
+    "n_his": 10,
+    "mean_plddt": 94.2,
+    "plddt_gt70_frac": 1.0,
+    "status": "PASS",
+    "his_pkas": {
+      "2": 6.32,
+      "9": 5.73,
+      "10": 6.92,
+      "22": 6.64,
+      "44": 6.32,
+      "52": 5.23,
+      "59": 7.42,
+      "62": 6.48,
+      "82": 6.89,
+      "96": 7.11
+    },
+    "avg_his_pka": 99.0
+  },
+  {
+    "name": "tfr1_c4_acid_site1_127",
+    "sequence": "FTSTEILTMLHFLEEHAPTLFRHILSMWYFKKKKLDPTKYYTSSEISDLVDEMHTEYRENRDEIFEEIISDDELTALVIKLYNEHLEDKAHE",
+    "length": 92,
+    "n_his": 6,
+    "mean_plddt": 92.9,
+    "plddt_gt70_frac": 1.0,
+    "status": "PASS",
+    "his_pkas": {
+      "11": 5.72,
+      "16": 6.37,
+      "23": 5.95,
+      "54": 6.06,
+      "85": 5.89,
+      "91": 6.43
+    },
+    "avg_his_pka": 99.0
+  },
+  {
+    "name": "tfr1_c4_acid_site2_178",
+    "sequence": "SLYDDVLSNLLEDEDAFMMALLVLAHNEDLDESTREHFESLAHSFATLRRSDTPTAHTELHSLIEEHAHEVAHHYTHYLLDRIDDLENNA",
+    "length": 90,
+    "n_his": 10,
+    "mean_plddt": 92.9,
+    "plddt_gt70_frac": 1.0,
+    "status": "PASS",
+    "his_pkas": {
+      "26": 7.16,
+      "37": 6.52,
+      "43": 6.28,
+      "57": 6.52,
+      "61": 6.43,
+      "67": 5.87,
+      "69": 6.23,
+      "73": 5.89,
+      "74": 5.4,
+      "77": 6.32
+    },
+    "avg_his_pka": 99.0
+  },
+  {
+    "name": "tfr1_c4_acid_site1_77",
+    "sequence": "SSEKDDLETHLSAFLEDFYRQHHSRLETELRAAETHLAATTDPHSMAHWHNHIGALRHRLGQPEEAEASYERALELDPDFHEAARNLAILRALS",
+    "length": 94,
+    "n_his": 10,
+    "mean_plddt": 92.7,
+    "plddt_gt70_frac": 1.0,
+    "status": "PASS",
+    "his_pkas": {
+      "10": 6.62,
+      "22": 5.8,
+      "23": 6.48,
+      "36": 6.21,
+      "44": 6.69,
+      "48": 5.93,
+      "50": 4.92,
+      "52": 5.84,
+      "58": 5.98,
+      "81": 6.52
+    },
+    "avg_his_pka": 99.0
+  },
+  {
+    "name": "tfr1_c4_acid_site2_142",
+    "sequence": "SVTEKLTTLTEKFTELSESAEEHWTTAKETVEKAKTDPDLLSSLLTEHHLPSDSDANDLAMHLTHSLVDTFSHHKLDIWHEVFDE",
+    "length": 85,
+    "n_his": 8,
+    "mean_plddt": 92.5,
+    "plddt_gt70_frac": 1.0,
+    "status": "PASS",
+    "his_pkas": {
+      "23": 6.34,
+      "48": 6.0,
+      "49": 6.36,
+      "62": 5.68,
+      "65": 6.37,
+      "73": 7.29,
+      "74": 6.2,
+      "80": 7.06
+    },
+    "avg_his_pka": 99.0
+  },
+  {
+    "name": "tfr1_c4_acid_site1_13",
+    "sequence": "VHLTPEEVAFLEEVMDKGHAYVHEHLDEFLEHVSEISSLLSKMDTAYEEEDWESLDEHAEHLEEELHTLFVKALGEETTEKYLHLIKDQVLSS",
+    "length": 93,
+    "n_his": 9,
+    "mean_plddt": 92.2,
+    "plddt_gt70_frac": 0.989,
+    "status": "PASS",
+    "his_pkas": {
+      "2": 6.42,
+      "19": 6.35,
+      "23": 6.22,
+      "25": 6.46,
+      "32": 7.36,
+      "58": 5.95,
+      "61": 6.7,
+      "67": 6.38,
+      "84": 6.59
+    },
+    "avg_his_pka": 99.0
+  },
+  {
+    "name": "tfr1_c4_acid_site2_13",
+    "sequence": "ERHLTFEETLALLRHEFSHFLSDDQIDAHEATASHHADTFHTSLLEAGVDEATAKRNAQLLFLDTFWTLSFESMSTEDQDDLADILHDVIDSS",
+    "length": 93,
+    "n_his": 8,
+    "mean_plddt": 92.1,
+    "plddt_gt70_frac": 0.978,
+    "status": "PASS",
+    "his_pkas": {
+      "3": 6.33,
+      "15": 6.5,
+      "19": 6.17,
+      "29": 5.54,
+      "35": 6.39,
+      "36": 6.04,
+      "41": 6.21,
+      "87": 6.3
+    },
+    "avg_his_pka": 99.0
+  },
+  {
+    "name": "tfr1_c4_acid_site1_95",
+    "sequence": "ALEHFEEHREEMAEELEEHEAELEAERLERFKEALKTYLLEHPEKLPEAKEYLEHAEVDNEFAEVVGELRWKYQVHDGEEAFRIVETVVSEVEAEL",
+    "length": 96,
+    "n_his": 6,
+    "mean_plddt": 92.0,
+    "plddt_gt70_frac": 0.99,
+    "status": "PASS",
+    "his_pkas": {
+      "4": 6.35,
+      "8": 6.53,
+      "19": 6.46,
+      "42": 6.88,
+      "55": 6.55,
+      "76": 6.19
+    },
+    "avg_his_pka": 99.0
+  },
+  {
+    "name": "tfr1_c4_acid_site1_194",
+    "sequence": "SHWERHHHHELDEALEAFEAKHPTVVSQMLSAAEHYEETGDYETFKAEALELTHSLSREEKELLAEILRREGHHDAAAVLLNLIEE",
+    "length": 86,
+    "n_his": 10,
+    "mean_plddt": 91.9,
+    "plddt_gt70_frac": 0.942,
+    "status": "PASS",
+    "his_pkas": {
+      "2": 6.36,
+      "6": 6.73,
+      "7": 6.71,
+      "8": 6.33,
+      "9": 6.97,
+      "22": 6.7,
+      "35": 6.6,
+      "54": 6.31,
+      "73": 6.69,
+      "74": 6.24
+    },
+    "avg_his_pka": 99.0
+  },
+  {
+    "name": "tfr1_c4_acid_site2_34",
+    "sequence": "STHTKGLEELHHAFSEAFETHKHIFHSTLHEHLPDTSSVSDGLESISEAHSYSELYSSVTELLSPFSHDTQAEVMIAIEMAMHESFA",
+    "length": 87,
+    "n_his": 11,
+    "mean_plddt": 92.9,
+    "plddt_gt70_frac": 1.0,
+    "status": "PASS",
+    "his_pkas": {
+      "3": 6.34,
+      "11": 6.28,
+      "12": 6.52,
+      "21": 6.23,
+      "23": 6.29,
+      "26": 5.45,
+      "30": 6.44,
+      "32": 7.12,
+      "50": 6.45,
+      "68": 6.38,
+      "83": 6.46
+    },
+    "avg_his_pka": 99.0
+  },
+  {
+    "name": "tfr1_c4_acid_site1_25",
+    "sequence": "HHLTHHQLHQLAHLTFHLHLLAETFPKYEPHYETFVTGLHEALTDEEWETFSHHFHSLLSAH",
+    "length": 62,
+    "n_his": 14,
+    "mean_plddt": 92.4,
+    "plddt_gt70_frac": 0.984,
+    "status": "PASS",
+    "his_pkas": {
+      "1": 6.66,
+      "2": 6.57,
+      "5": 6.07,
+      "6": 6.25,
+      "9": 5.48,
+      "13": 5.91,
+      "17": 6.2,
+      "19": 6.24,
+      "31": 6.25,
+      "40": 6.3,
+      "53": 6.24,
+      "54": 5.04,
+      "56": 6.93,
+      "62": 6.36
+    },
+    "avg_his_pka": 99.0
+  },
+  {
+    "name": "tfr1_c4_acid_site1_136",
+    "sequence": "SHEEHLLSLMKKHRHDPEYQHLAKQIREHDLHHHSHLELAEEAEEEGDHAAAEHHHHLAEEHHHHRKHLEEELHTYLHAH",
+    "length": 80,
+    "n_his": 23,
+    "mean_plddt": 91.2,
+    "plddt_gt70_frac": 1.0,
+    "status": "PASS",
+    "his_pkas": {
+      "2": 6.33,
+      "5": 6.14,
+      "13": 6.73,
+      "15": 6.07,
+      "21": 6.4,
+      "29": 5.52,
+      "32": 6.3,
+      "33": 5.55,
+      "34": 6.56,
+      "36": 5.42,
+      "49": 7.1,
+      "54": 6.2,
+      "55": 5.84,
+      "56": 6.39,
+      "57": 6.92,
+      "62": 4.88,
+      "63": 5.23,
+      "64": 6.18,
+      "65": 6.25,
+      "68": 6.84,
+      "74": 5.99,
+      "78": 5.46,
+      "80": 6.97
+    },
+    "avg_his_pka": 99.0
+  },
+  {
+    "name": "tfr1_c4_acid_site2_198",
+    "sequence": "SESESTHSHVMLLLKLSHLEVMLLEAYYASEAGKHDEAAHMLEHVKAEYEELDSEQQEHLLEHIQLHHPEFYHWAKDTLS",
+    "length": 80,
+    "n_his": 11,
+    "mean_plddt": 91.2,
+    "plddt_gt70_frac": 1.0,
+    "status": "PASS",
+    "his_pkas": {
+      "7": 6.3,
+      "9": 6.22,
+      "18": 6.35,
+      "35": 6.31,
+      "40": 6.45,
+      "44": 6.81,
+      "59": 6.79,
+      "63": 6.28,
+      "67": 6.08,
+      "68": 6.58,
+      "73": 6.28
+    },
+    "avg_his_pka": 99.0
+  },
+  {
+    "name": "tfr1_c4_acid_site2_40",
+    "sequence": "SMHSFHLSQHLHHLRDEHMTAYMQEDADHLETVLHEALDSYKELLEDPDLTSEQHDAVEHIIESLEKQIHVLETQGFDAYKEFITHSH",
+    "length": 88,
+    "n_his": 13,
+    "mean_plddt": 91.2,
+    "plddt_gt70_frac": 0.977,
+    "status": "PASS",
+    "his_pkas": {
+      "3": 6.92,
+      "6": 6.02,
+      "10": 6.21,
+      "12": 6.09,
+      "13": 6.97,
+      "18": 5.05,
+      "29": 6.63,
+      "35": 7.3,
+      "55": 6.59,
+      "60": 7.42,
+      "70": 6.32,
+      "86": 7.18,
+      "88": 6.38
+    },
+    "avg_his_pka": 99.0
+  },
+  {
+    "name": "tfr1_c4_acid_site1_155",
+    "sequence": "IPSGPDITKLSVSERYHFLLTKTHEERVHLLHLLNDKQLEELLAYAEEKNDHELSHMIHTELDERRHLRHSHEEHRH",
+    "length": 77,
+    "n_his": 12,
+    "mean_plddt": 91.0,
+    "plddt_gt70_frac": 0.948,
+    "status": "PASS",
+    "his_pkas": {
+      "17": 6.11,
+      "24": 6.63,
+      "29": 6.16,
+      "32": 6.68,
+      "52": 6.41,
+      "56": 6.21,
+      "59": 6.29,
+      "67": 6.18,
+      "70": 6.49,
+      "72": 6.32,
+      "75": 7.13,
+      "77": 6.32
+    },
+    "avg_his_pka": 99.0
+  },
+  {
+    "name": "tfr1_c4_acid_site1_12",
+    "sequence": "DAEIHSLEDELHTLTSEHMTALGFEHHAHKHHDHTAAHHFHEESHSLHHRMNAVQAELTRLQLPHLPPHRREVAEHELAFYDEFH",
+    "length": 85,
+    "n_his": 19,
+    "mean_plddt": 90.8,
+    "plddt_gt70_frac": 1.0,
+    "status": "PASS",
+    "his_pkas": {
+      "5": 6.58,
+      "12": 6.4,
+      "18": 5.65,
+      "26": 5.82,
+      "27": 5.76,
+      "29": 6.45,
+      "31": 6.27,
+      "32": 6.33,
+      "34": 6.29,
+      "38": 6.49,
+      "39": 6.53,
+      "41": 6.84,
+      "45": 5.7,
+      "48": 6.05,
+      "49": 6.24,
+      "65": 6.18,
+      "69": 6.21,
+      "76": 6.58,
+      "85": 5.88
+    },
+    "avg_his_pka": 99.0
+  },
+  {
+    "name": "tfr1_c4_acid_site1_0",
+    "sequence": "SDDEVFTLMHEINHHLLLGLNHLRLHEYDEALSHFQEVLHHLETHKDSILDYLHSFAKDDTELRLLEITFEHMIHSLKTLISSLES",
+    "length": 86,
+    "n_his": 12,
+    "mean_plddt": 90.3,
+    "plddt_gt70_frac": 1.0,
+    "status": "PASS",
+    "his_pkas": {
+      "10": 6.16,
+      "14": 6.22,
+      "15": 6.06,
+      "22": 7.16,
+      "26": 6.3,
+      "34": 5.39,
+      "40": 6.47,
+      "41": 5.73,
+      "45": 6.08,
+      "54": 6.68,
+      "72": 6.29,
+      "75": 6.17
+    },
+    "avg_his_pka": 99.0
+  }
+]

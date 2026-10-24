@@ -1,0 +1,2324 @@
+[
+  {
+    "name": "tfr1_c4_acid_site1_0",
+    "sequence": "SDDEVFTLMHEINHHLLLGLNHLRLHEYDEALSHFQEVLHHLETHKDSILDYLHSFAKDDTELRLLEITFEHMIHSLKTLISSLES",
+    "length": 86,
+    "n_his": 12
+  },
+  {
+    "name": "tfr1_c4_acid_site1_1",
+    "sequence": "ETEEILTELASVEEQLAAIRDPANRRALAAIPQGDAHLHPGLFTPEELEEFTALYARRNELVDQLLHLRA",
+    "length": 70,
+    "n_his": 3
+  },
+  {
+    "name": "tfr1_c4_acid_site1_10",
+    "sequence": "VEEREAESIEHFLTPEQLEELDTAVEHAKEFVDEHPETVETLHTTMRELQEEHHHIAESFA",
+    "length": 61,
+    "n_his": 7
+  },
+  {
+    "name": "tfr1_c4_acid_site1_100",
+    "sequence": "SPGDSPTFEVDPYHWLKEHWHKLTEEEKAAIHSLWKQAFDLQMEDPFDATKFKELNEEFDTLVNEIYDRLS",
+    "length": 71,
+    "n_his": 4
+  },
+  {
+    "name": "tfr1_c4_acid_site1_101",
+    "sequence": "DPEMDELEHQAHTLHEEALTLLHEAAHLLGYDPDEVAARWETAMHEAHEYIHTDEYAEEAAKETS",
+    "length": 65,
+    "n_his": 8
+  },
+  {
+    "name": "tfr1_c4_acid_site1_102",
+    "sequence": "SLHALVEEWKTLYKEYDPSDYEKHHFDTMDVPELHAYMESASGLTLTDDEFTQALKDNVAAMKHDHDDAVERRAHYHAHLESLH",
+    "length": 84,
+    "n_his": 10
+  },
+  {
+    "name": "tfr1_c4_acid_site1_103",
+    "sequence": "STVDTVLSILHEMAHLHGDMSDKSTFLSYLHQITDTLEASDETKELLEHMETEHDPVHLESSFLSFIHQLVHEHPHVISEVRDTLLSQVRHAVDEYFDEK",
+    "length": 100,
+    "n_his": 12
+  },
+  {
+    "name": "tfr1_c4_acid_site1_104",
+    "sequence": "DLEKFLEWAQIHPDDTHSFSELEHTISEELKERWQEAFEERIKQVTDPHTLELLEEASELKELNEEEEELEEELEEAEEELEEAEE",
+    "length": 86,
+    "n_his": 4
+  },
+  {
+    "name": "tfr1_c4_acid_site1_105",
+    "sequence": "HLTLAEAESLHDHLTSTIHHLQAHYESLPLPHPFKELGEQLSALKHSLGLSDSTNAYDHAHTNPDIHSLAEQWLALEASL",
+    "length": 80,
+    "n_his": 11
+  },
+  {
+    "name": "tfr1_c4_acid_site1_106",
+    "sequence": "SLHEEHHHHLLDHHHHLHHEHHEHLHHVHDELHHLLGDDDFTHYLTEALAFDPWHDGLTEHEAREAWEHVSKHL",
+    "length": 74,
+    "n_his": 24
+  },
+  {
+    "name": "tfr1_c4_acid_site1_107",
+    "sequence": "SAPHASAIDYLKSLASQFRTAAAELRATGHPTDEHWADQLEAIAADIDDYIALLESDPTVRAQAEHLYDEMRARWDDVVASWREVDPHF",
+    "length": 89,
+    "n_his": 5
+  },
+  {
+    "name": "tfr1_c4_acid_site1_108",
+    "sequence": "HEEHETLHEEHETLHEEHETLHEDHEKAHEEHKEEIEEKLEEDWEKAHEEHKEEIEEKLEEDWE",
+    "length": 64,
+    "n_his": 12
+  },
+  {
+    "name": "tfr1_c4_acid_site1_109",
+    "sequence": "SPLETALHHLHHHLTALHDAFDADSDLTDAQIDHFVSDIDHAIHAVQHELEHFPFHTPEHLEAKAHRESLTAAERHAHNEETAHLL",
+    "length": 86,
+    "n_his": 17
+  },
+  {
+    "name": "tfr1_c4_acid_site1_11",
+    "sequence": "TLEEALAELPDTPDAESLKSAIRHYAETSDPEPVLTTLHHILSDHHSHSLAEKHIAHMRFHLEHPELALHEHH",
+    "length": 73,
+    "n_his": 13
+  },
+  {
+    "name": "tfr1_c4_acid_site1_110",
+    "sequence": "HDTTHGASSFTELHDLATELTTELHEYKAETSDTDLQHMIDDFLHVLPHAIHLLEDYHAA",
+    "length": 60,
+    "n_his": 9
+  },
+  {
+    "name": "tfr1_c4_acid_site1_111",
+    "sequence": "SLSYDPHYHKHADVEEIKKYEEEFDEKIKPFFESEEYQEFVEESKKEFHEALEELKEHLEEEEEEEEEEEE",
+    "length": 71,
+    "n_his": 5
+  },
+  {
+    "name": "tfr1_c4_acid_site1_112",
+    "sequence": "SLTEQLILAIKAVRERHGLTQAEFAEKLDVSPSYISALERGEVTPEMALDVALKVLDHFGHDTTLEEARSNLSHHIHDEREAER",
+    "length": 84,
+    "n_his": 6
+  },
+  {
+    "name": "tfr1_c4_acid_site1_113",
+    "sequence": "SEPASSFKGPADPDHMTTEEKVEFTEKHHETYSIVFTLMSLYHTLFHEEKTEEEIWEAVYTKADELLDESE",
+    "length": 71,
+    "n_his": 5
+  },
+  {
+    "name": "tfr1_c4_acid_site1_114",
+    "sequence": "AESHYHSVESIEEQIADLERRISEHKTELSELKTRLESAAPEEKPLIEEKIALLENEIYLFEHQIEELEEELAELE",
+    "length": 76,
+    "n_his": 4
+  },
+  {
+    "name": "tfr1_c4_acid_site1_115",
+    "sequence": "TAQEHLEEAVHHATHHLTDEELDTLRDEFFEAVNALPEEHKEAYREDLLEQVFEAVTTYFEEKE",
+    "length": 64,
+    "n_his": 6
+  },
+  {
+    "name": "tfr1_c4_acid_site1_116",
+    "sequence": "SKDEFYDHLLHHLQDHLEPLESHMVDFVTDERKEHPDEYSSLEDQITTILRKHNPTALEEFHKHKHRINLKQLKLALTNLKEAYH",
+    "length": 85,
+    "n_his": 11
+  },
+  {
+    "name": "tfr1_c4_acid_site1_117",
+    "sequence": "SKPTFLSSSSTSSSVTLHWSSVSGATHYNVFLFRKENTKEWSVVSIHGPLSSTSYTFHGLRPLHTYHFEVLASDSSDNYHLSSLYEVTT",
+    "length": 89,
+    "n_his": 7
+  },
+  {
+    "name": "tfr1_c4_acid_site1_118",
+    "sequence": "DHEMETLSTDPRTQSFYEMSEEDLFAYAENLLSPVEEELEEINEINQKVEEENRSFTTEEFHRLHELRDSILEKLS",
+    "length": 76,
+    "n_his": 3
+  },
+  {
+    "name": "tfr1_c4_acid_site1_119",
+    "sequence": "SSHEEEMDELEEEALELLHEADELRETLIEHADDPEHLRKLDELSHEAAEYGRELRLENPSMSQKEIDEKVEAYYTTLLDEYL",
+    "length": 83,
+    "n_his": 5
+  },
+  {
+    "name": "tfr1_c4_acid_site1_12",
+    "sequence": "DAEIHSLEDELHTLTSEHMTALGFEHHAHKHHDHTAAHHFHEESHSLHHRMNAVQAELTRLQLPHLPPHRREVAEHELAFYDEFH",
+    "length": 85,
+    "n_his": 19
+  },
+  {
+    "name": "tfr1_c4_acid_site1_121",
+    "sequence": "HWWKQGPHPPSRTQPAHLTSEHLSIIHEIAHVLVLMHEAYEEHGVDHPLVDEHAEHLEKLLEKLYAS",
+    "length": 67,
+    "n_his": 11
+  },
+  {
+    "name": "tfr1_c4_acid_site1_122",
+    "sequence": "SHTKETLHHLLDLLIHRYEEATEEDLLHYAEHHAEAQHHYRGEHLDVETLLQELREKRDHVLAHEEEYREAIDFYAEH",
+    "length": 78,
+    "n_his": 13
+  },
+  {
+    "name": "tfr1_c4_acid_site1_123",
+    "sequence": "HHEQLDTLDEELITFLKEHAETEEEREFVTELETLSHDEQLTAFRHWLKTVAHEFDDTYHEEITATTEELMELSRTEQLEWAHELLDYAHEELDELD",
+    "length": 97,
+    "n_his": 9
+  },
+  {
+    "name": "tfr1_c4_acid_site1_124",
+    "sequence": "IHVDFDHELHSTEANPLAREWDRKNAEKFEERRQKLMEEREEEEEEEEEEEEEEEEEEEEEEEE",
+    "length": 64,
+    "n_his": 3
+  },
+  {
+    "name": "tfr1_c4_acid_site1_125",
+    "sequence": "TVTLSASSSHVLVGQSVTFTATHSSFSTFTFLFTRSSSRGHLSDTSSSSPGSSVTWTPSHAGTYTVEAFAPNSSAHSKPLTVTVT",
+    "length": 85,
+    "n_his": 5
+  },
+  {
+    "name": "tfr1_c4_acid_site1_126",
+    "sequence": "SHLEHYLHEQLHYYTTRLDEDEFTERDLFELFHARHRATQEHLHDLVADFDTLIDQIRAKHPEFASHIDALEHDFPAAFTSFFGRDFPNP",
+    "length": 90,
+    "n_his": 11
+  },
+  {
+    "name": "tfr1_c4_acid_site1_127",
+    "sequence": "FTSTEILTMLHFLEEHAPTLFRHILSMWYFKKKKLDPTKYYTSSEISDLVDEMHTEYRENRDEIFEEIISDDELTALVIKLYNEHLEDKAHE",
+    "length": 92,
+    "n_his": 6
+  },
+  {
+    "name": "tfr1_c4_acid_site1_128",
+    "sequence": "HHLEELEEELEELEHLETKFEELHERLEEEWDEKMKEAKEELELELKIVKMHKEGKTHEEIAKELEVSVPYVKRVVKHHLENEEAQEELEEEEE",
+    "length": 94,
+    "n_his": 8
+  },
+  {
+    "name": "tfr1_c4_acid_site1_129",
+    "sequence": "SAYEVHLEKLKNELAEAETEEEKLEIEHRILELEFEETDDHDKKLEIIHKMHELEHTYREKYSDHIEEKLKEEREKAKEEAEEEEEEEE",
+    "length": 89,
+    "n_his": 7
+  },
+  {
+    "name": "tfr1_c4_acid_site1_13",
+    "sequence": "VHLTPEEVAFLEEVMDKGHAYVHEHLDEFLEHVSEISSLLSKMDTAYEEEDWESLDEHAEHLEEELHTLFVKALGEETTEKYLHLIKDQVLSS",
+    "length": 93,
+    "n_his": 9
+  },
+  {
+    "name": "tfr1_c4_acid_site1_130",
+    "sequence": "SLEEEIDSIITDMETLLSSYHVPQNATTMTHEEAEEAVELGHTYSAAQLLDLGHQSLTLLERLEHVYEEAES",
+    "length": 72,
+    "n_his": 5
+  },
+  {
+    "name": "tfr1_c4_acid_site1_131",
+    "sequence": "HHVEHLVHHFNEDYFRLLNHFLITQDTTTFLTDLESLIRKYFPHVSDETVSTFLSDVESLIHKYFPFHDEENQHHFLHAMDKLVNEFLFHVLS",
+    "length": 93,
+    "n_his": 13
+  },
+  {
+    "name": "tfr1_c4_acid_site1_132",
+    "sequence": "AHHHHHLAKEWEATDHYKAWEAERMPHVEEAHAEYEELSPEEKLHHLHHLMDEFVEELETLLGDDADDWEKEHLHLLK",
+    "length": 78,
+    "n_his": 14
+  },
+  {
+    "name": "tfr1_c4_acid_site1_133",
+    "sequence": "KHLVTIRLTPELKETFELLAKEHNRTLSEEVTQHLEDYIAHLKDPLSATEWEELEEEAEHVVESAHELLESAEELKE",
+    "length": 77,
+    "n_his": 6
+  },
+  {
+    "name": "tfr1_c4_acid_site1_134",
+    "sequence": "FTLEEALAAMEKYLEETPAVIAELEAEHFDAEWVSQLEHLYHFAKTYYEERHSHAAEIFATLETDAEFYHS",
+    "length": 71,
+    "n_his": 6
+  },
+  {
+    "name": "tfr1_c4_acid_site1_135",
+    "sequence": "DAHDTLLHFVDTFVHTHAHLLEEHGHHAEAEALHTRYEHFLETYEKRREAEHTAFVEVNLAHPEHNASDLSDEELDAFTKLVDKRIHELL",
+    "length": 90,
+    "n_his": 14
+  },
+  {
+    "name": "tfr1_c4_acid_site1_136",
+    "sequence": "SHEEHLLSLMKKHRHDPEYQHLAKQIREHDLHHHSHLELAEEAEEEGDHAAAEHHHHLAEEHHHHRKHLEEELHTYLHAH",
+    "length": 80,
+    "n_his": 23
+  },
+  {
+    "name": "tfr1_c4_acid_site1_137",
+    "sequence": "ATEELEHRTHLLEQLDTVRKEFPDYAEEEYTPTDQEKVEMLEAEIRMVEKQLAEETDPERKLQLTHELESLKNRLAEL",
+    "length": 78,
+    "n_his": 3
+  },
+  {
+    "name": "tfr1_c4_acid_site1_138",
+    "sequence": "SLEEEAMALFEEWADENHLTEEQREHGRTVVRLAVHAHEFREEHPHLSHALMWYYNFEDFVHSFLHHFLH",
+    "length": 70,
+    "n_his": 11
+  },
+  {
+    "name": "tfr1_c4_acid_site1_139",
+    "sequence": "LVEETHHFLEHVHEIHETLHELHDEYHKDEPDEDKIDDLVTTLDDHLTTLEHTHHHRKEEVLEEEQEHKEEIESH",
+    "length": 75,
+    "n_his": 15
+  },
+  {
+    "name": "tfr1_c4_acid_site1_14",
+    "sequence": "SELEQKIEHVKHEINVLSNEHETALEKKDFDRAAELETKIEEKTEELAKLLVEKEEKGEELTFAERLGLKFYFEKKNEEASSELSSALSSA",
+    "length": 91,
+    "n_his": 3
+  },
+  {
+    "name": "tfr1_c4_acid_site1_140",
+    "sequence": "YLESVEERLEHAEEIIEEAQEALEELDEEGVNEELMEESEEFETYLEEEKFEEIKELLHEEKIPLHGKKEIIEHVLSSSYAVEYYEEFKE",
+    "length": 90,
+    "n_his": 4
+  },
+  {
+    "name": "tfr1_c4_acid_site1_141",
+    "sequence": "SIFDTALTTATELVDTAHKLGITLHASVHTHHFDDGSHFHELLIKPSRPLTEEEEQALAPFLLELTRLTPHLTLDQLTAVAHHINSLSA",
+    "length": 89,
+    "n_his": 10
+  },
+  {
+    "name": "tfr1_c4_acid_site1_142",
+    "sequence": "AHLHTLAHQVHHALHDLHHATHDFLDAMHDHYHATPFTAPQDHSAEAVHAAEHRLQHATSHDPAMSHLLTKAHHLHHLVHDFHHA",
+    "length": 85,
+    "n_his": 25
+  },
+  {
+    "name": "tfr1_c4_acid_site1_143",
+    "sequence": "PSHGTLPAFAKPKTVEEQAAEVLERLSTTLHLTDSEHASLEATLHHLVSSFKAALSSDSSAMYDFQTDLTHFFHDITLLFHEKF",
+    "length": 84,
+    "n_his": 8
+  },
+  {
+    "name": "tfr1_c4_acid_site1_144",
+    "sequence": "THTHMDELHTEQELMTPEQKRMAELDFDHDLLHKTIAEMGLDDYVHMLEDTKERTIQAMEDHHELDHHIDDQRAFMDDYINDVRNL",
+    "length": 86,
+    "n_his": 10
+  },
+  {
+    "name": "tfr1_c4_acid_site1_145",
+    "sequence": "HENNPALTDFYATQHTEAEELHHELEELTHEERLELLLHSVTTFIEELETAIEEAEEEEADPEFIEGLETLLHHLHHLRDDLESILS",
+    "length": 87,
+    "n_his": 10
+  },
+  {
+    "name": "tfr1_c4_acid_site1_146",
+    "sequence": "EAEEEAEEAEEEAEEEAEREEELEESFERHKAFREETMHLTPEELIELAKEIITEAEEEYEEYLEH",
+    "length": 66,
+    "n_his": 3
+  },
+  {
+    "name": "tfr1_c4_acid_site1_147",
+    "sequence": "TVLDHFYDLLAKYGLSEEEAEAHIDAYSANPASDAELHSLAEHYDETAPPPSAETLADVEAFYHFLRHHLLTS",
+    "length": 73,
+    "n_his": 7
+  },
+  {
+    "name": "tfr1_c4_acid_site1_148",
+    "sequence": "SKEHLLHELSHSVNDIIHLMKKHHIDKILFYRYSSEFDGYEAFLFDATKDDSAMRKTFHTFSNSETLDDFKKQVDVALEVPDFNFDTMLSTLKDWIASH",
+    "length": 99,
+    "n_his": 8
+  },
+  {
+    "name": "tfr1_c4_acid_site1_149",
+    "sequence": "SALATLKARFSAAFAADSARQLERLLAFHEEHPDSKPFDAEARAQVEAAHARAAAHTHAAALTRMDEGDPAFLHLVTEAVELFERFHA",
+    "length": 88,
+    "n_his": 7
+  },
+  {
+    "name": "tfr1_c4_acid_site1_15",
+    "sequence": "SMDEHLHHMHDEVEPHRESFITLYEEHEDDFEAMAATMKEHGDEYIAAMKEKAQPLIDAGMSEKEALMKVVHEHY",
+    "length": 75,
+    "n_his": 9
+  },
+  {
+    "name": "tfr1_c4_acid_site1_150",
+    "sequence": "DHLSPLEHMKSLITTLIHEFGHPDADHLIDELEEVHTFAELDDFLSSVALHHPELFEYIVSHLPHLSVSHPEHRHAMEERLHEIHHHHE",
+    "length": 89,
+    "n_his": 18
+  },
+  {
+    "name": "tfr1_c4_acid_site1_151",
+    "sequence": "LHHALHHLHHSLHDLETAFEEEDEEEIETEMEHLESDIHTVQHLLWEHLTPEEQALFEEIHSLFHHAVTPHPSEIPSHLLHRWETYVHHLEHS",
+    "length": 93,
+    "n_his": 20
+  },
+  {
+    "name": "tfr1_c4_acid_site1_152",
+    "sequence": "SEEEFYHEVETAISTLLHHGRHHTSEETAHELALEEAHEIGLTEEEAHARAEAAEAAFHASL",
+    "length": 62,
+    "n_his": 9
+  },
+  {
+    "name": "tfr1_c4_acid_site1_153",
+    "sequence": "AKAHYEEEILEASDDQLTALASREVRLHLETSSHTPSASVILALITAGATFTDEQKSHLLTVIETELDSHS",
+    "length": 71,
+    "n_his": 5
+  },
+  {
+    "name": "tfr1_c4_acid_site1_154",
+    "sequence": "PWHHLESPALHEKSHERFHALPAWSPENQHELVEHIIAELEEALETTELTDEEREQLEELISHLKD",
+    "length": 66,
+    "n_his": 8
+  },
+  {
+    "name": "tfr1_c4_acid_site1_155",
+    "sequence": "IPSGPDITKLSVSERYHFLLTKTHEERVHLLHLLNDKQLEELLAYAEEKNDHELSHMIHTELDERRHLRHSHEEHRH",
+    "length": 77,
+    "n_his": 12
+  },
+  {
+    "name": "tfr1_c4_acid_site1_156",
+    "sequence": "DLQERVETDIRISVRLKGEELNWSEEFQESLAEDMIHFVFSIMRAHQALEETDSLDDAEPELQDLVETGEPVLESLQPIREEAAEEEHHLHE",
+    "length": 92,
+    "n_his": 5
+  },
+  {
+    "name": "tfr1_c4_acid_site1_157",
+    "sequence": "SRHRVLKTPLTGKQIKAKRLSLGMTQEELAEKVGVTKSLISKWETGSSEPTHHQNDTLHRVFDSAEEDLNSEA",
+    "length": 73,
+    "n_his": 4
+  },
+  {
+    "name": "tfr1_c4_acid_site1_158",
+    "sequence": "TKEEEQLAAHEADLEKRLELTEEEVTAQFEEGKTLAIEFFLETLRREHPHLSSEEMTHLEEHVTHTITHTFETFKTLFLHELTKKKEELEEEAE",
+    "length": 94,
+    "n_his": 8
+  },
+  {
+    "name": "tfr1_c4_acid_site1_159",
+    "sequence": "SMYSAEQYYELGNSHFEKHEYDKALLHYEKAVSLESSQKYLEARDLVKGKLTPSVEEKLHEHHEHLD",
+    "length": 67,
+    "n_his": 7
+  },
+  {
+    "name": "tfr1_c4_acid_site1_16",
+    "sequence": "QPLTEAEKHFNLGHKLMGEGKFDEAISSFEKALELNPDFASAYFSLGLAYLLKEEFDEAVASFTKALELDPHHSAAHFWLHKLEEDPEEALRLAQKLFN",
+    "length": 99,
+    "n_his": 6
+  },
+  {
+    "name": "tfr1_c4_acid_site1_160",
+    "sequence": "HANHDHVSYADTSSPAKTPEEFLALIHEMLEEETDPDVLEIVKTVEHAFLEHLEHHEHLSH",
+    "length": 61,
+    "n_his": 10
+  },
+  {
+    "name": "tfr1_c4_acid_site1_161",
+    "sequence": "HIHGTDLPAHMRSPTTTEEIRELTDEELEETIHRNTKALEILEHLHTDEDFHHSVSHELHFAEHVLHLLRSEHDRRHS",
+    "length": 78,
+    "n_his": 14
+  },
+  {
+    "name": "tfr1_c4_acid_site1_162",
+    "sequence": "SYYSATKEELEYVLEVYKENHHLSPDLYAFLSSKTFEELVALQEEGEKKRLEHWASLQPPP",
+    "length": 61,
+    "n_his": 3
+  },
+  {
+    "name": "tfr1_c4_acid_site1_163",
+    "sequence": "VAALAASNAAAAAHDHLGYRAVLTPDQVAASDALADAVLALPPDEAVAHLEAHLDALHAHYDTLHAHHTAFETEHPDYAAAWHAAHS",
+    "length": 87,
+    "n_his": 12
+  },
+  {
+    "name": "tfr1_c4_acid_site1_164",
+    "sequence": "HHFTEEEWAFFEEHLPHVVHHLLHHVKSFDPHWEEHEEHAHHLHEHKHTLHHLHHEVHHLNHELHHLHHELHHLHHELHHLH",
+    "length": 82,
+    "n_his": 34
+  },
+  {
+    "name": "tfr1_c4_acid_site1_165",
+    "sequence": "THAASEEHTRQTHAASEEHTHFEEVLALSPQQKHDHVSHLLSRFKAAYEEFHDSLTPEQQHLFLDLIHDLETLETYYHSLI",
+    "length": 81,
+    "n_his": 12
+  },
+  {
+    "name": "tfr1_c4_acid_site1_166",
+    "sequence": "HLTHHHDHWHHERDDAATHKHHARTDPHVQASIRAHNAATVREVATSHGLSEDETDEVISRVNHAHPHHHITTFDAKLWVSQYLEERESS",
+    "length": 90,
+    "n_his": 18
+  },
+  {
+    "name": "tfr1_c4_acid_site1_167",
+    "sequence": "SVTEEELEHAIALGKSALHYTKSHKEEMEAYYEHAKAHLPAGHTLPRNYEELVAVLEDSIAALEEELSE",
+    "length": 69,
+    "n_his": 6
+  },
+  {
+    "name": "tfr1_c4_acid_site1_168",
+    "sequence": "SYHYTDEEAETIEDTVSDLITDKIKEEGLDPEEVLPHLHKLAKHESHELDFSKLSTKELELLSKALKPEIEDLEERVKFFEELLEFLE",
+    "length": 88,
+    "n_his": 5
+  },
+  {
+    "name": "tfr1_c4_acid_site1_169",
+    "sequence": "STVHLTPEQLALVTRRKENFHALSSSQQSSFLSHVASALSRMHFYYETQGLDSTEFTEAAEELESLFNSLD",
+    "length": 71,
+    "n_his": 4
+  },
+  {
+    "name": "tfr1_c4_acid_site1_17",
+    "sequence": "SHHHSSSSHHHSLSHHHHSHSHSHHHFVHEQLSLLHHAHEIHTLLHHLHHAYEAYHADPHSPEHAHHLDSATHDLEHALRHLEHHMHRHMDWHLHLDP",
+    "length": 98,
+    "n_his": 38
+  },
+  {
+    "name": "tfr1_c4_acid_site1_170",
+    "sequence": "TPHEEALTELHAMSDEEKLHKMKTVLHDFQSVHEHLDDYHLTPEEEEEFEHLLHNIETAVHTYEEAVEHLE",
+    "length": 71,
+    "n_his": 11
+  },
+  {
+    "name": "tfr1_c4_acid_site1_171",
+    "sequence": "SHMHELEKEFDAEHFNAEEEEELQTEYEEFQKLTPEERATHLLELAEEWHELLEEIETEFEESEAE",
+    "length": 66,
+    "n_his": 5
+  },
+  {
+    "name": "tfr1_c4_acid_site1_172",
+    "sequence": "LDSYKRSAHEFRDRMTERLNELLTSTSHLSHTQLSHLMHALLHKFPELEKFVNTDHLDSLTFSIFSASLKRILFSFSEDKVTEISTFILTYVSS",
+    "length": 94,
+    "n_his": 7
+  },
+  {
+    "name": "tfr1_c4_acid_site1_173",
+    "sequence": "HVTEALTEDEILDRWHKLLSELDWDDIEKDIREIEHKHNVSEEDINFHLAVLHTVLTTMKESLSEMEENHMTFSEFRHHFTHTVAHHLTDLVTDWLS",
+    "length": 97,
+    "n_his": 12
+  },
+  {
+    "name": "tfr1_c4_acid_site1_174",
+    "sequence": "DEEAYEEKKDELSEFLDENSHLSSSEQAEELFRMLSDHSEEEVDALLHHTRQFQSFWEEMKAEHPEFVAAARKRFEEELASH",
+    "length": 82,
+    "n_his": 6
+  },
+  {
+    "name": "tfr1_c4_acid_site1_175",
+    "sequence": "DKDEFFEDVHDHVEDLVEDGNDFLKDLHEDEGTLEEAMEFYEEQREHQEENFETFMEEAAEKLEE",
+    "length": 65,
+    "n_his": 4
+  },
+  {
+    "name": "tfr1_c4_acid_site1_176",
+    "sequence": "ERQMLVHFPELTDEYHEMSLDELEAKAETLLHSVEEAGLLQPAMEAKHALEAGDFDTAEEIRQENRDRLIEWALS",
+    "length": 75,
+    "n_his": 4
+  },
+  {
+    "name": "tfr1_c4_acid_site1_177",
+    "sequence": "HHEEIETLKTEILTFIHTLHEKYEEHGLEGITEEDVEEFEKRLNELYETAVGMSYQEFAELSDDERLEVLEEMGVPEHVLEEIKEQLEEQH",
+    "length": 91,
+    "n_his": 7
+  },
+  {
+    "name": "tfr1_c4_acid_site1_178",
+    "sequence": "SHSEPFTPVFDVDGPDVPPFELTDEQYEHYMTIVTSIASELTEMEEAYEEEDWDSLDHEASELEKHLNQLHHDFDDFGKYIVQRTRDSSH",
+    "length": 90,
+    "n_his": 7
+  },
+  {
+    "name": "tfr1_c4_acid_site1_179",
+    "sequence": "STELDHLADSLTAGAPPDPPMTLKEAAERFNSTLTHPSSHEDLKHRVLEALHFLETTYHEHGLHELAEMAHHLITYVNMPHEEGAHYLAEKLHEHH",
+    "length": 96,
+    "n_his": 15
+  },
+  {
+    "name": "tfr1_c4_acid_site1_18",
+    "sequence": "SHVIHTSTSDERHEELKHHNLSQRLDYMKHLHSDISDAISDLEDELPSAEDPDTVTEFIHGLEDLKDSVHHDIHDFQEYVEFKEHESSDHAS",
+    "length": 92,
+    "n_his": 13
+  },
+  {
+    "name": "tfr1_c4_acid_site1_180",
+    "sequence": "SHHLRHRLHHASHEVAEKAWESVKHSIHNSMTAHEAAHLFDTAALHIFETEFPEEAAAYHELFH",
+    "length": 64,
+    "n_his": 13
+  },
+  {
+    "name": "tfr1_c4_acid_site1_181",
+    "sequence": "DELHHASEAVHYSAKLTIDLLAEKHSSHLTADEHDSIMLATLKKYPSYATFLEKLFDSIASYDPHAVVMARETLSELKSKL",
+    "length": 81,
+    "n_his": 7
+  },
+  {
+    "name": "tfr1_c4_acid_site1_182",
+    "sequence": "MHLSTPLRESLIHLDVLIHSIHDEHLRTDMETLFKRLLVAIHREDTDEATTIVHEMHDLSHQIEDEHLREEIQSVLTEIHDLLHS",
+    "length": 85,
+    "n_his": 12
+  },
+  {
+    "name": "tfr1_c4_acid_site1_183",
+    "sequence": "HVISGTHVHHFRHVQPDDSDALKDYIHHINTAQSFHQNHQYDEALEEIEKARAAAHLLPEHDRHSALFALDEAEDVIRAVKD",
+    "length": 82,
+    "n_his": 12
+  },
+  {
+    "name": "tfr1_c4_acid_site1_184",
+    "sequence": "TLESTLHHLESTLHHLESLHAHWHEEHAAAATRRAHENAVLRSVLKHLGSHATVKEIETAVNAAL",
+    "length": 65,
+    "n_his": 11
+  },
+  {
+    "name": "tfr1_c4_acid_site1_185",
+    "sequence": "SHEHEDHEKYPFSVTKNTYSTLIDEHFSEEEKAEAYSFLDKVEHIHETSHTEDEFMEDLLPLLREHHHTASKLRSFLLTDLHESVHDYFEEKE",
+    "length": 93,
+    "n_his": 12
+  },
+  {
+    "name": "tfr1_c4_acid_site1_186",
+    "sequence": "EHHKINEILHEIDHEDDPDRKLELRIEHNEEISEYFEPKIYPEHESFADHVLSMSPDDAVSFVEHHIEEAHELREHLLE",
+    "length": 79,
+    "n_his": 11
+  },
+  {
+    "name": "tfr1_c4_acid_site1_187",
+    "sequence": "EYEEDLALLEEWMDENHVSEEMRHHYRTVFHHAFHADTFKEEHPEEWSARADEIYEKYNSPELKEAAREYHESHS",
+    "length": 75,
+    "n_his": 9
+  },
+  {
+    "name": "tfr1_c4_acid_site1_188",
+    "sequence": "SAVVEDLHESLHVLYDWALEQEGEERMEAFTFLTFFALLFHFHHLEDKIEEEEPDIYHEVKHHFNSLTPEQKTHLREMLLHGLEHFHERERNHHHHLHH",
+    "length": 99,
+    "n_his": 18
+  },
+  {
+    "name": "tfr1_c4_acid_site1_189",
+    "sequence": "SPYPELNYSDEFLEEQETLHNESHHMTHEQRTEKKHEILDELFDGLFEEKDFVEEILDEW",
+    "length": 60,
+    "n_his": 5
+  },
+  {
+    "name": "tfr1_c4_acid_site1_19",
+    "sequence": "AHEELHEHLEEMHEKAHEEEHLVKKHAEEFDAKHAATFEERRQEHFQTLREEGHAWLVEMLLRFVEADQTADWSLLPF",
+    "length": 78,
+    "n_his": 10
+  },
+  {
+    "name": "tfr1_c4_acid_site1_190",
+    "sequence": "HLTELHEMLEEWHEHLEEWDTHLEEEHEVWEKAVEAKFAEDWDTYQHLLHLSDTELQESKEEFETWLEEQE",
+    "length": 71,
+    "n_his": 8
+  },
+  {
+    "name": "tfr1_c4_acid_site1_191",
+    "sequence": "PSDFISKELLHQMPQSEFEELLPQFSHEEQEEIKERREKEHEEAEERLEERHEELEEEHEELHEELEELHEELEELHE",
+    "length": 78,
+    "n_his": 8
+  },
+  {
+    "name": "tfr1_c4_acid_site1_192",
+    "sequence": "HSAHHAAHSAHHHAHHERDETADHLIAIERMEPHDRFHELHSVYHSNTEAHDRFHTFLEEFDEFLTLLHEWFEDQAH",
+    "length": 77,
+    "n_his": 18
+  },
+  {
+    "name": "tfr1_c4_acid_site1_193",
+    "sequence": "HGTSAFEEEQEAESRHLAEKYPTLAHDLMEISFHLHDHDFVEDVFSRLREMHEKEFHSEEHELAAELYEHLVS",
+    "length": 73,
+    "n_his": 10
+  },
+  {
+    "name": "tfr1_c4_acid_site1_194",
+    "sequence": "SHWERHHHHELDEALEAFEAKHPTVVSQMLSAAEHYEETGDYETFKAEALELTHSLSREEKELLAEILRREGHHDAAAVLLNLIEE",
+    "length": 86,
+    "n_his": 10
+  },
+  {
+    "name": "tfr1_c4_acid_site1_195",
+    "sequence": "SHTHLHHLESEMLDHFHHELLHLLGEDELHHRLDALAHLTEEEFLEEMKPHEAEIKAASEKHRARFTKASTESIEHFLS",
+    "length": 79,
+    "n_his": 14
+  },
+  {
+    "name": "tfr1_c4_acid_site1_196",
+    "sequence": "FTDEQYDEIHHHVSTFIDDYEHHHKDHPRPVFPVLTSDQQEAVSSIMHDHIAEHGTEATELGTMRAIQKKTGLSFYQIQPFVAKHFFKMREEYFNSL",
+    "length": 97,
+    "n_his": 11
+  },
+  {
+    "name": "tfr1_c4_acid_site1_197",
+    "sequence": "MKLHVSVQHNRDGHSSILAVAPQGAKVLKFTLWKDGQMVDEKSPDDHGTVLFNDVPPGEYTVVAHLENGSELQDSVTVSS",
+    "length": 80,
+    "n_his": 5
+  },
+  {
+    "name": "tfr1_c4_acid_site1_198",
+    "sequence": "SEHESALHHAVAIIRGLLHQLKQGKLSREKLIEIVVQQTGLSKDEVTTLLEQELDAYEFLLRNQAAKVKREKATARSESL",
+    "length": 80,
+    "n_his": 4
+  },
+  {
+    "name": "tfr1_c4_acid_site1_199",
+    "sequence": "LHEVLDLVNSYSDKIEKITAETHGKNVAKHLAEDEGISWRKADFLVRIHIHLKDGKTLSEALEAVAKEYGISVDSLISELLS",
+    "length": 82,
+    "n_his": 5
+  },
+  {
+    "name": "tfr1_c4_acid_site1_2",
+    "sequence": "SAEAADAWEALLEEHRDELLAKMEAAHEAGEDHRTVEVEFLRELREEHADLHDAYVAYVETLAEETESLLHEWLEEHS",
+    "length": 78,
+    "n_his": 7
+  },
+  {
+    "name": "tfr1_c4_acid_site1_20",
+    "sequence": "SSSDMALAEEHHVSVSTITSLKSHLEHEHIPEHQWSQIIHDHFHPAELRERWQELTEELHETPEFQALLAEYEALPLEERLTFYHELLEDFLTELEELL",
+    "length": 99,
+    "n_his": 11
+  },
+  {
+    "name": "tfr1_c4_acid_site1_22",
+    "sequence": "SDDHTPPAEYQNLSMDQLLDEFHAFITRFRDDAHALGDTDVASAAETLEEAATAFLEDHDHVEDTKSALHNFAVALKKYVDSLKHS",
+    "length": 86,
+    "n_his": 7
+  },
+  {
+    "name": "tfr1_c4_acid_site1_23",
+    "sequence": "HDHHHEHVDHYKDAAHDEKTDMEALARDFVNEHFDELTEIFNSVTVHSSDEEKDTANSHLTTLVKEYLTKHHLADEFSSSQKMEDLEFYIRLEYAKKSS",
+    "length": 99,
+    "n_his": 12
+  },
+  {
+    "name": "tfr1_c4_acid_site1_24",
+    "sequence": "HPDLEFVATLTEEEKHTYRTHLLTEVHDAVTEYFDDVHSGEYEPHEHSMEEVEEAEREMLEKHLS",
+    "length": 65,
+    "n_his": 8
+  },
+  {
+    "name": "tfr1_c4_acid_site1_25",
+    "sequence": "HHLTHHQLHQLAHLTFHLHLLAETFPKYEPHYETFVTGLHEALTDEEWETFSHHFHSLLSAH",
+    "length": 62,
+    "n_his": 14
+  },
+  {
+    "name": "tfr1_c4_acid_site1_26",
+    "sequence": "HHTEEELFESFSIFFHQTAKELAEKYNVHYDVALASLWTEAENLSSDYAISDEYKDEVKSRVSSKESELLSELHSKL",
+    "length": 77,
+    "n_his": 5
+  },
+  {
+    "name": "tfr1_c4_acid_site1_27",
+    "sequence": "HHYHHHQHHHHHHSEHMTEHQLDEHYHHVMHANAHALHHDEHDHTLHSFAHHLHHSIHHLKHHAHHLHHSLHH",
+    "length": 73,
+    "n_his": 37
+  },
+  {
+    "name": "tfr1_c4_acid_site1_28",
+    "sequence": "HFTEEQYEEAEHHIHTLLDSVHHHFDAKAKRITLIMEVLEVTEEEAEALHPVYLEMLAEHGHAIHSKFLKEHLLEHLHSL",
+    "length": 80,
+    "n_his": 14
+  },
+  {
+    "name": "tfr1_c4_acid_site1_29",
+    "sequence": "FSAHLDHAHDLLTLAEEMLDEIHTEARAAGFDVDDIIAHHHEIPYDTSPVPGAPHFSLDYDPANDLALATWTLHRGLHELHEA",
+    "length": 83,
+    "n_his": 11
+  },
+  {
+    "name": "tfr1_c4_acid_site1_3",
+    "sequence": "PHQLSEDDYLALVKEIRENPHASDTDLATKYNVSVTVVHQIREAVLNEEETVHHLQEHKDEFVHELHTLEEEVIHLEEENTHLEEELHH",
+    "length": 89,
+    "n_his": 12
+  },
+  {
+    "name": "tfr1_c4_acid_site1_30",
+    "sequence": "PHHHHSDAETQAAEDHLATHGLARLRHHAESALATLRELLDEEEALEHPDPHLTAHLREEIEDEELLLEAIDAHEAGDHHTAMDLAETYHSRRNHHYF",
+    "length": 98,
+    "n_his": 17
+  },
+  {
+    "name": "tfr1_c4_acid_site1_31",
+    "sequence": "SDRLRQLARVAQGVSDLHTAVDLLSEAGLSDDQIIDVLTKLATGAELTDDESRTLGEVASRVSAFFSELDEHAESHDQDFAPH",
+    "length": 83,
+    "n_his": 4
+  },
+  {
+    "name": "tfr1_c4_acid_site1_32",
+    "sequence": "SKEEQEEEATELLEEFHEDWLESDEAEEMEELFEEYEEALEAEDWTKVEELEEKLHELSVKHAEEAAELLAEHFA",
+    "length": 75,
+    "n_his": 4
+  },
+  {
+    "name": "tfr1_c4_acid_site1_33",
+    "sequence": "SLVDYVEEKYPEKLEEYEELSPEEQAELKHTFDALEDATAFFTELDEEVHAYLEDKNLSFDEVVETGRHVHVPKHVREAFDAR",
+    "length": 83,
+    "n_his": 5
+  },
+  {
+    "name": "tfr1_c4_acid_site1_34",
+    "sequence": "SAKTVILNELTLSHHNKFVITKHPDGSFTVEFWEQRGDDSEWHLMSHHEFSTRDEAFSWLVSFVEPHVHSRSRDKVFTFIREKLSSL",
+    "length": 87,
+    "n_his": 8
+  },
+  {
+    "name": "tfr1_c4_acid_site1_35",
+    "sequence": "LPDFVKEQVEKHNKIWESLTAIQEQKGYFTAEDLQTVLTAIHGTKPPPSAVNVMLKELEDLGFVTEVASGKYMLDMDKVEQAKEDFLEKELRDWES",
+    "length": 96,
+    "n_his": 2
+  },
+  {
+    "name": "tfr1_c4_acid_site1_36",
+    "sequence": "SEHEHFLEELEKTLEHDKETFPEMSDELLERFREQAIETHELYEEIKDDSTALHEYKTELLKQVHEAVTEYFEE",
+    "length": 74,
+    "n_his": 6
+  },
+  {
+    "name": "tfr1_c4_acid_site1_37",
+    "sequence": "STADEEMLTLEDEYRDLSKTESESHALKHFNDSMHALFDELGLKAENTARWDDAHAALDEDDWDYLTEQLTTLLEEHHH",
+    "length": 79,
+    "n_his": 7
+  },
+  {
+    "name": "tfr1_c4_acid_site1_38",
+    "sequence": "FHERMHHLLSFAHKFFDLTHPLYELLHEGHTLSELSTELDTFETELEALLEEFDEHFDMHSRREEAETLQTEYEEHREALE",
+    "length": 81,
+    "n_his": 10
+  },
+  {
+    "name": "tfr1_c4_acid_site1_39",
+    "sequence": "FTKTRLPELTQEELEAIAHAALHSSEEPLREAGSLLMTSLRGESYDSDTAETIIRNLISFHHTHRHELL",
+    "length": 69,
+    "n_his": 6
+  },
+  {
+    "name": "tfr1_c4_acid_site1_4",
+    "sequence": "SAALAKLVADNKAAAAKLSPLTPEQQATADHLVAHLFSMSPDDAVAHLTTVFDDALTERETALS",
+    "length": 64,
+    "n_his": 3
+  },
+  {
+    "name": "tfr1_c4_acid_site1_40",
+    "sequence": "SAESIISQILSLHSQQDDLVPSLQSADSTVRMAAESKWHRLSSQVNDKITSLAHLFGIHDPHKIATLAGLFPYLYATNKLYTWLTDTA",
+    "length": 88,
+    "n_his": 5
+  },
+  {
+    "name": "tfr1_c4_acid_site1_41",
+    "sequence": "SHEEHQERDELSIHIEDYILHLLREEKELSYDELLEKLKTHFPDEEHLETHLHYSLHRLISYNLIEKEDNGKYKLVDSTALQEKFEKNSEEFNEELHEFV",
+    "length": 100,
+    "n_his": 10
+  },
+  {
+    "name": "tfr1_c4_acid_site1_42",
+    "sequence": "FHDLMDFLEDHLDDLEEHLHDFREEHKDNPELHHLHHEAEHMEELHEELEHLSPFEEQLALATWTLHHALHDFFS",
+    "length": 75,
+    "n_his": 15
+  },
+  {
+    "name": "tfr1_c4_acid_site1_43",
+    "sequence": "THDETLDFFLEVYEEVKDVHPDDVPDVKAEREAFDAKHHDHFMARHEHLMSLREDHHHHHH",
+    "length": 61,
+    "n_his": 13
+  },
+  {
+    "name": "tfr1_c4_acid_site1_44",
+    "sequence": "DTFEEHVDTFVDQLADFLTSDFDKSKAKQIAPETTMKELEEEFDATPAFQQFEKERAPEAHTHQHEFREHLHELHEHLEELHEHLH",
+    "length": 86,
+    "n_his": 11
+  },
+  {
+    "name": "tfr1_c4_acid_site1_45",
+    "sequence": "SSPPHLTREEYLHLIKEHEEEFDKWMYENEKLLPWQKFLHEFHEKHGWKHSHLLQDLFVHVVSFFLLFLFLFF",
+    "length": 73,
+    "n_his": 9
+  },
+  {
+    "name": "tfr1_c4_acid_site1_46",
+    "sequence": "DHEHEELLEHQAEQLEDKAYREALSEDLEERVHESLTPEQLQFREERQHELFEYFEHMREEELAE",
+    "length": 65,
+    "n_his": 6
+  },
+  {
+    "name": "tfr1_c4_acid_site1_47",
+    "sequence": "ETADLWSKLSTVLSERERAFHEGDYPTYLALSKEALSLAQKLELPDSVVDLLSEQAHLTEAEFLELWEHEQKTIATFREEEE",
+    "length": 82,
+    "n_his": 3
+  },
+  {
+    "name": "tfr1_c4_acid_site1_49",
+    "sequence": "WDYYQEAPLDDLISEVPHLIASSIHHLLWMGVLHHREEEALHKAKELLTRLREVDSDLLSETLDFLELFFDEEHDPHVKSLLHDVISYGHSLL",
+    "length": 93,
+    "n_his": 10
+  },
+  {
+    "name": "tfr1_c4_acid_site1_5",
+    "sequence": "HAATAARLRAENAAAAARPLAPLTPEQQATSDHLAAFYFSMSPDDAAAHLAHHIAHLTHHHHHFLAAH",
+    "length": 68,
+    "n_his": 12
+  },
+  {
+    "name": "tfr1_c4_acid_site1_50",
+    "sequence": "SPLEELHDHLHTRHTEHLEFAATPEAQEAHREANAEAAARLTAEDAAEAEANYQQLLRELE",
+    "length": 61,
+    "n_his": 6
+  },
+  {
+    "name": "tfr1_c4_acid_site1_51",
+    "sequence": "SLSEAIKWLKSQPLEYAHEKIDELYETLSEDPTLSSEQLEEEREEAHEQMEEFHALSDEELEELLEEIEHFEEKYS",
+    "length": 76,
+    "n_his": 4
+  },
+  {
+    "name": "tfr1_c4_acid_site1_52",
+    "sequence": "HQDELDHLADEALELLSHFEDEVEEGQELIEDPEALLERFKEEMKTFLEEGFITEETYEDYIAFAEEYIEEGRVSFH",
+    "length": 77,
+    "n_his": 4
+  },
+  {
+    "name": "tfr1_c4_acid_site1_53",
+    "sequence": "HYSEILKSRAVHLHEEGMTYTEIARELHVSTGSVSAWVKQAHETEKRDKEKAALESAAEH",
+    "length": 60,
+    "n_his": 6
+  },
+  {
+    "name": "tfr1_c4_acid_site1_54",
+    "sequence": "TPWEEALEAYEALSEEEKTAITEKVESKNSEVLTLFNEALPHMEELKHLLEEGHTVHEVPEEADALEEALQPLKETIHSIPQDEREAYSFKIELEYRES",
+    "length": 99,
+    "n_his": 5
+  },
+  {
+    "name": "tfr1_c4_acid_site1_55",
+    "sequence": "WLEEALEEALENPNPPSVPKDVVHAFDETITEKQIRENVAHFLTDEEVEELLAAHKAEDTETMMKLADIFYERSGASEP",
+    "length": 79,
+    "n_his": 3
+  },
+  {
+    "name": "tfr1_c4_acid_site1_56",
+    "sequence": "SELERLQHTLHDMKEQKEELIQQEIRTLKSWNHDSTATEDQIEELAVDIYEANIHHLEDKIHELETEEEEETEEEE",
+    "length": 76,
+    "n_his": 6
+  },
+  {
+    "name": "tfr1_c4_acid_site1_57",
+    "sequence": "TETKDYSDEFHTEEEERVHAHEEFWTELDELSHEEKLHVLHHLGDELSDLAHEIITFAKETYEDHNEE",
+    "length": 68,
+    "n_his": 9
+  },
+  {
+    "name": "tfr1_c4_acid_site1_58",
+    "sequence": "ETDDFLKQQERSVKLWMEMYEQGDLEGMVASKMAQFERAGLHFHHDYVKAKIKELISLYEKT",
+    "length": 62,
+    "n_his": 3
+  },
+  {
+    "name": "tfr1_c4_acid_site1_59",
+    "sequence": "ETELMEELSRESYEWYVEELSKHPRYKLPLTKEEIETLISETQESVETLNPEEKHKVNTIIHLLKHKYSHV",
+    "length": 71,
+    "n_his": 5
+  },
+  {
+    "name": "tfr1_c4_acid_site1_6",
+    "sequence": "SDSFWTIEQELSSLVWTMSDQGKTDDEIKQAASEFINSHELTEEQKAELRTHVEEILTAIHSADDDSSHLLSEHKEHLH",
+    "length": 79,
+    "n_his": 7
+  },
+  {
+    "name": "tfr1_c4_acid_site1_60",
+    "sequence": "SHHEDYYRELAEEDGMSDEEIDESVEAQMEIEHKLLLERLDHLEELLDHEEFLHKHLFGSHPTWDELFHERREHLETLKEEHHEELEAAA",
+    "length": 90,
+    "n_his": 12
+  },
+  {
+    "name": "tfr1_c4_acid_site1_61",
+    "sequence": "LLTHLLLYLAAVLLAIAVSLLHRHLHHKEDLARDRANFGKTRTYSFREQLAFATWTLLRALLL",
+    "length": 63,
+    "n_his": 5
+  },
+  {
+    "name": "tfr1_c4_acid_site1_62",
+    "sequence": "SMKELEEEWDSEHADFEEERRELHHEYEELSPEEKRHAHIEMLKTILEEMSELEHLLETDEEKELWSELETHLHHLLHHLE",
+    "length": 81,
+    "n_his": 11
+  },
+  {
+    "name": "tfr1_c4_acid_site1_63",
+    "sequence": "SSSSETVTVTGAIHSTATYETYTVTVTLFLDGSSVATDSTSVSRGKSYEVHLHATLHLLTHYELVVHVFDPAGSTFAEQHTSFLYRPSPS",
+    "length": 90,
+    "n_his": 7
+  },
+  {
+    "name": "tfr1_c4_acid_site1_64",
+    "sequence": "SVSHVLTETTHYFAEKTRELAEFLAEKGLSSDEIEEVLEDFEHDFNHELLESLPAHVAEKYMHHPLSLTLEEAELVQSTAKHIADTLYDDYVTKYS",
+    "length": 96,
+    "n_his": 8
+  },
+  {
+    "name": "tfr1_c4_acid_site1_65",
+    "sequence": "DPFFHLLHHLYDDYLDFISHFYDDETMHEFEHRVEEHLEFHEEHHDELAHEWHHSFSRDAHKVEHFPLTDEEQETADELYDPFVDWFDHEMD",
+    "length": 92,
+    "n_his": 16
+  },
+  {
+    "name": "tfr1_c4_acid_site1_66",
+    "sequence": "SSLHSEKLSLLHSLHDLAHEIIDTADEYYHAWNAHDHTTAHHLEHELHDHQHELHTLSHEFHTVESEIHHHEHEHHHHHHHHHHHHHHHHH",
+    "length": 91,
+    "n_his": 37
+  },
+  {
+    "name": "tfr1_c4_acid_site1_67",
+    "sequence": "SPYLDKITELMSHLSEHANHYAFELRAIAVDFERNYHTAPAHHRMTADEVKTQMTSVLTSALEDEHLSTAEKDTIHTIFDLASEFIDSIAES",
+    "length": 92,
+    "n_his": 8
+  },
+  {
+    "name": "tfr1_c4_acid_site1_68",
+    "sequence": "SHVSFHLDEAEHHLSHSELPEAVDHLAKALGHLAVDLGVEDEVTEALKQLPPHASQLDRFATILDVLHSHATDALTREDLARASRILDDLESALS",
+    "length": 95,
+    "n_his": 10
+  },
+  {
+    "name": "tfr1_c4_acid_site1_69",
+    "sequence": "DDLELHEHHAELGHAIDEHLAAEAHMSLAELRAHLRAEERHWQELHEPRRLALVEEHAARALELGQPELAAQLREAGETDDLEYAHLVRELAAIEEEHE",
+    "length": 99,
+    "n_his": 12
+  },
+  {
+    "name": "tfr1_c4_acid_site1_7",
+    "sequence": "SAAADRRSKLSSEVIAHNLTMKQVFEEHKSLLLGTKVSFEGKQGIVTDAHFNSDTGVFRLILENESLPEDQRSITLNSHQFEELVSSVIQSLS",
+    "length": 93,
+    "n_his": 4
+  },
+  {
+    "name": "tfr1_c4_acid_site1_70",
+    "sequence": "LTINELYEKNDKDLTDEERETLLEHNNAVLRDFGVPESLIEKRHSSDEPLTEEETKILLEAGERIIEHAKTTYEEFEEE",
+    "length": 79,
+    "n_his": 3
+  },
+  {
+    "name": "tfr1_c4_acid_site1_71",
+    "sequence": "AHQEELDTLAEEALTLVSEAEAFLVERYGPDALEHMKETREHHATLQTEVTTLQTEVTTLQTEVTTLQTEVTT",
+    "length": 73,
+    "n_his": 4
+  },
+  {
+    "name": "tfr1_c4_acid_site1_72",
+    "sequence": "SAEVENSVLLHLLNAEKKVLSLDEIAEGTGFSRSTVSSALSNLEEKGYVEEVAHGHYQLGEKGWEIKEHRLETVQEAKEHFWESL",
+    "length": 85,
+    "n_his": 5
+  },
+  {
+    "name": "tfr1_c4_acid_site1_73",
+    "sequence": "HHHHHDSHATERMEHYHHLSSEEKHDYEHHVLHEVDEALHELEHEDPELYDRAMHHVEDFVEEELH",
+    "length": 66,
+    "n_his": 18
+  },
+  {
+    "name": "tfr1_c4_acid_site1_74",
+    "sequence": "HLETLSAHIHTHRADFHAREAETAAYKAAHPDAYLAELVAANAAAAARTHPVSAADAALADHVLA",
+    "length": 65,
+    "n_his": 8
+  },
+  {
+    "name": "tfr1_c4_acid_site1_75",
+    "sequence": "SELEDLKREFHSLYTQLSSALSQRDFHRAAEISHTLATLLTKLHVLAGATHSMDDILTFEKELHAEARA",
+    "length": 69,
+    "n_his": 6
+  },
+  {
+    "name": "tfr1_c4_acid_site1_76",
+    "sequence": "STLLQHHIDFVESLHSLSEETKTHVIEKLKELDSSSSTFEVEASKAFFHSLTEDEYMAVLRELLSQDSEKWRHLEP",
+    "length": 76,
+    "n_his": 6
+  },
+  {
+    "name": "tfr1_c4_acid_site1_77",
+    "sequence": "SSEKDDLETHLSAFLEDFYRQHHSRLETELRAAETHLAATTDPHSMAHWHNHIGALRHRLGQPEEAEASYERALELDPDFHEAARNLAILRALS",
+    "length": 94,
+    "n_his": 10
+  },
+  {
+    "name": "tfr1_c4_acid_site1_78",
+    "sequence": "SHVEKAKEELLEKIDHLIDSFHHVFHNDEKTDELHDFKDSLLEKSLDEVEDTHDEVHTEFHELVDEYEENSDAVDPEELAFHFVKFVISSLVLLYKEL",
+    "length": 98,
+    "n_his": 10
+  },
+  {
+    "name": "tfr1_c4_acid_site1_79",
+    "sequence": "HRMEILEHIAHTLTKMHTAYEEEDWDAVEEHAEELEALLSELEEALDPDLKHEYETSFTETVNTMVLEGRLDEAIAHLEEIARRNPVFKDFADSMISKLE",
+    "length": 100,
+    "n_his": 7
+  },
+  {
+    "name": "tfr1_c4_acid_site1_8",
+    "sequence": "SVAEEYIDSVLEHKEEAREHAIAEYKKAGHDEDVAEMLADNNLDWLEEVRESGKSADEVKHELLEELHEEVHEWAEEEDVDLTELITETLEEL",
+    "length": 93,
+    "n_his": 6
+  },
+  {
+    "name": "tfr1_c4_acid_site1_80",
+    "sequence": "HHERFMEDHPELLTSSAVFHLEKALTALDQGDPDSASAHLFEARLHLKTLVDLNVPGASEALFHVEKALTALDQGDPDSASEHVHKALEHL",
+    "length": 91,
+    "n_his": 10
+  },
+  {
+    "name": "tfr1_c4_acid_site1_81",
+    "sequence": "SREEELDELEEHLTELKEHLEEHPERKAEVREEEQEHHEELTEELEHLEEELEELEEELEELE",
+    "length": 63,
+    "n_his": 6
+  },
+  {
+    "name": "tfr1_c4_acid_site1_82",
+    "sequence": "ALTHEERVAYLHHLAEELEAAAEELEAEGAPEHWVDSLRFLAHAAEDVAAFYEEHPDETDAAYHHHLAEAHALVAEQPEARREELLAEHEERLAKIRAAL",
+    "length": 100,
+    "n_his": 11
+  },
+  {
+    "name": "tfr1_c4_acid_site1_83",
+    "sequence": "SRYERQLKGAEENIHRDWEKFFEDAEHYLTEASHDYRSRGDHTMAEHADTLLHSLETLKPWVLERQRQLLAD",
+    "length": 72,
+    "n_his": 6
+  },
+  {
+    "name": "tfr1_c4_acid_site1_84",
+    "sequence": "SEELADYILSLHPDEALELLETIINHLYEHRLSHFSPEEQEHLKHLWELSVQVVQELGVDASPSEVTKRYLELLH",
+    "length": 75,
+    "n_his": 7
+  },
+  {
+    "name": "tfr1_c4_acid_site1_85",
+    "sequence": "HEHEEAVQRAKEDERAWEEMHSGDGSQTMTDEEISEGLDDLIHALEHALHVVETAIREEEAKAHPDEALIERLHHLRDSIEHMIHDITTLKDSL",
+    "length": 94,
+    "n_his": 11
+  },
+  {
+    "name": "tfr1_c4_acid_site1_86",
+    "sequence": "SHHMDSLLHHLEHLEHDHSHLFHSMRHHSESLETLQSEHPTLYHQLGMAHDHFLLAVAESDWDAASHHADEIDDLLDELDSL",
+    "length": 82,
+    "n_his": 17
+  },
+  {
+    "name": "tfr1_c4_acid_site1_87",
+    "sequence": "HHHLDEAVHHLEEAHEYYEEEDWDEVEHEVTEAIDHVTSFFKEWLSEDEFEKRLKHREEALPSIREELHELA",
+    "length": 72,
+    "n_his": 10
+  },
+  {
+    "name": "tfr1_c4_acid_site1_88",
+    "sequence": "SEEDLYEHYKDRILAAETLEEFLQVTAEAAVHLSESWMHKLQHDPEVQAKTEHFMTEGKETHTPEELMQLGSEILTEATDTYHESHH",
+    "length": 87,
+    "n_his": 9
+  },
+  {
+    "name": "tfr1_c4_acid_site1_89",
+    "sequence": "SLEDLTEMEQDIIILRYLHDRTFKEIAERFGISTGTVSSILKKHGIDTKAQGLTLATEIMEHRATTHDELMTEKEELETELH",
+    "length": 82,
+    "n_his": 5
+  },
+  {
+    "name": "tfr1_c4_acid_site1_9",
+    "sequence": "SHRLHLLLENHDALHELAHHLSHAHSAVEEHGLDGAEHELEELEESLEHVFSLLEVDREWAAQPAVH",
+    "length": 67,
+    "n_his": 12
+  },
+  {
+    "name": "tfr1_c4_acid_site1_90",
+    "sequence": "TTLPPVTKLDPVHITAHSFHEALDKLNTELQSMPPSTTRTFHITFPHDHLTFHDVHHMASSIRKLVHQNDAIVQDLHITHEDNHVHITLTVYKKP",
+    "length": 95,
+    "n_his": 14
+  },
+  {
+    "name": "tfr1_c4_acid_site1_91",
+    "sequence": "SAESDKFHREAYHEHAKEMYEAGEVTEEQYEEYLAHYEKHKHKTRSQIVEEVLEAVDEYHEEKE",
+    "length": 64,
+    "n_his": 7
+  },
+  {
+    "name": "tfr1_c4_acid_site1_92",
+    "sequence": "HHWHHVHHLWHHLHHHWHHSHHHWEHHHHEEEEATAHLTPFERRLHYLHDSPLSDLETQLEHWESHSDVPSHVIDQLRTLVTERQETRFRNQLALATWT",
+    "length": 99,
+    "n_his": 26
+  },
+  {
+    "name": "tfr1_c4_acid_site1_93",
+    "sequence": "EYHEAQEHYASKPLKENEEEFDEEMHEYKLTHHPEELEHEHEHAEHHQEHIEHEHHLHEHHE",
+    "length": 62,
+    "n_his": 17
+  },
+  {
+    "name": "tfr1_c4_acid_site1_94",
+    "sequence": "SVTVLEHLKKDIQHTYRTDGMTLDLFYHFSLQGLRNLFDHEILSEEDYEVLTHFLTTEYEKDHMTLEELYEAFVTKLDDMISS",
+    "length": 83,
+    "n_his": 6
+  },
+  {
+    "name": "tfr1_c4_acid_site1_95",
+    "sequence": "ALEHFEEHREEMAEELEEHEAELEAERLERFKEALKTYLLEHPEKLPEAKEYLEHAEVDNEFAEVVGELRWKYQVHDGEEAFRIVETVVSEVEAEL",
+    "length": 96,
+    "n_his": 6
+  },
+  {
+    "name": "tfr1_c4_acid_site1_96",
+    "sequence": "TEFHETKLTEFLEEFETLVEGDSELEALVTEVLSSDEAAEVSKETREEFDREHHTLFTKLHHESLSELSEYLH",
+    "length": 73,
+    "n_his": 6
+  },
+  {
+    "name": "tfr1_c4_acid_site1_98",
+    "sequence": "SAVDEALTHLTHEVSHFLHHAEMYYETGDETHLALAETHLAAAHEAKDHLFELVVAHAESHGLHDTAAHMREHRAESLAASEHFFAHEFHADLAHEAARL",
+    "length": 100,
+    "n_his": 18
+  },
+  {
+    "name": "tfr1_c4_acid_site1_99",
+    "sequence": "SKDTFFDHVTHTVEHLLHHRHEHFLHDHHIAPDDTAAQVVALMEHYDYPLSLAEAVVAGTQHHLPHD",
+    "length": 67,
+    "n_his": 14
+  },
+  {
+    "name": "tfr1_c4_acid_site2_0",
+    "sequence": "SFTEFYNTFIKESHSGADPEVQEFFNEVLELTPHERQIFAMAYEAAFTERLDEVLDYLKDHLNDEELELFHHFYDQSVEIFSYVSS",
+    "length": 86,
+    "n_his": 5
+  },
+  {
+    "name": "tfr1_c4_acid_site2_1",
+    "sequence": "LDHILTEVETAISKGFAMVKEETLYFLEKNTNYTEEEKQHMWESFTKKMDEAEEKTISEWHERLTEHFES",
+    "length": 70,
+    "n_his": 4
+  },
+  {
+    "name": "tfr1_c4_acid_site2_10",
+    "sequence": "HTWEENEEHEEHENAYMEHLEYTLEKVSELHDLNLHETLEKTAEQYREKITELEEEITELE",
+    "length": 61,
+    "n_his": 6
+  },
+  {
+    "name": "tfr1_c4_acid_site2_100",
+    "sequence": "SLDELHHHLEEYHLFLHVLSNETKLEEYLTLRDSYYATKVPEVLSLPPHEREHAANEHTSEFRNLALEKFS",
+    "length": 71,
+    "n_his": 8
+  },
+  {
+    "name": "tfr1_c4_acid_site2_101",
+    "sequence": "SVEAKERHRAEHAASTFIELVTEEGLDLETAMEIFEEAIEHHTKVLTEARSLEGEDRAIYLSEHL",
+    "length": 65,
+    "n_his": 5
+  },
+  {
+    "name": "tfr1_c4_acid_site2_102",
+    "sequence": "EEQEREERFLDFVRLVAGSFADTLISVYKMRSQGKTNKEIAETLHISVSTVKKWVHHLEEMEAAFEEKHKHYNHAMKTLHESLS",
+    "length": 84,
+    "n_his": 7
+  },
+  {
+    "name": "tfr1_c4_acid_site2_103",
+    "sequence": "SVEELKSEIHHQLHSLMHFLHVLSHMDEEDRNKYYRDESSDEELETIIHHVHEAHSAFEEEHYHTALHHLEEAFSLAKSPELESMLSHLIDQFHELISLL",
+    "length": 100,
+    "n_his": 16
+  },
+  {
+    "name": "tfr1_c4_acid_site2_104",
+    "sequence": "FLELLDEHEEEDEHFFEHLHETIQFHHENTELFTDEEIETFVSEMEEMYNEMHSLFTPEQKQHLEELRAESSELQEELHTLRNELE",
+    "length": 86,
+    "n_his": 9
+  },
+  {
+    "name": "tfr1_c4_acid_site2_105",
+    "sequence": "HTEVTSQEILDHISWVVEKEAFPLHFVEKITEAFAAGEEIEEVFEVFSSEYREHLESMGVEHDVIDRLMDVVKDHYEDAH",
+    "length": 80,
+    "n_his": 7
+  },
+  {
+    "name": "tfr1_c4_acid_site2_106",
+    "sequence": "SFGEEWEEHFLKPFEEHDPELAEEIHETLHHEREHLHEEAEHMEELKEKYGDSYFEELHEELEEHKEEFHEHLE",
+    "length": 74,
+    "n_his": 12
+  },
+  {
+    "name": "tfr1_c4_acid_site2_107",
+    "sequence": "SSSHVESVLSEAESLAKAGHWHEAATLLEEALESHPDNLHLHAALLSVYDVLYRDTGDDSYLQSRDKVAHHLFHLNHDTYHDVISAQES",
+    "length": 89,
+    "n_his": 11
+  },
+  {
+    "name": "tfr1_c4_acid_site2_108",
+    "sequence": "HELHTYHTEVEEYQHEEEDEEDEMFHEFHHELDELHDEAWAWLKEHNPELYEEQLEKEEELAHH",
+    "length": 64,
+    "n_his": 11
+  },
+  {
+    "name": "tfr1_c4_acid_site2_109",
+    "sequence": "SPAEEELHEKLAADTRHFRRSWLYEASAPVIEMLKEDPDRTNKEIAEKLGISEASVKNSISFIFEELDVENRVQAIVKWEELRESL",
+    "length": 86,
+    "n_his": 2
+  },
+  {
+    "name": "tfr1_c4_acid_site2_11",
+    "sequence": "AKAHRLAAEKALYEERMAWSTDEKLAYLEALETDFLAYLEEHPEDDDAKHALHMVRTRISQLKFLKSLEEDHS",
+    "length": 73,
+    "n_his": 5
+  },
+  {
+    "name": "tfr1_c4_acid_site2_110",
+    "sequence": "SLEENLHHALHELHELAEETYETALHKSEALSTNDEKLTLVEEAWHDFNEKAWEIVNSHF",
+    "length": 60,
+    "n_his": 7
+  },
+  {
+    "name": "tfr1_c4_acid_site2_111",
+    "sequence": "HTTHATEVTEHEEEEAAENAAAVHDLAAGKETDAVHEFLDESSELLTHIHDNLPDLEAKVHVLEKQVTELE",
+    "length": 71,
+    "n_his": 8
+  },
+  {
+    "name": "tfr1_c4_acid_site2_112",
+    "sequence": "SSLRSHVKTLLHESYEDLLTHAHLTDEELDRLHTFYSETLDFVDTLNEHQLHLLHEHLESVHTIDRLFVAHYAHHSLDFIDHHS",
+    "length": 84,
+    "n_his": 15
+  },
+  {
+    "name": "tfr1_c4_acid_site2_113",
+    "sequence": "SSFEDFYDSFIEEVANALPDKKQQLLDLFDDFKEDYKQAVADTSSASKETQMETVDSLWSSFHTKLHDLLY",
+    "length": 71,
+    "n_his": 2
+  },
+  {
+    "name": "tfr1_c4_acid_site2_114",
+    "sequence": "SLHLTDVEYLEKEIHMMEKTIDSLESTLSTLRKHRDETHDPVMKLGYEHLIEAYEVLLHQKKHHLSDLKNNLSSTK",
+    "length": 76,
+    "n_his": 8
+  },
+  {
+    "name": "tfr1_c4_acid_site2_115",
+    "sequence": "EVETLQTHLSEALSTIGHSHPHDHEAIETESSHALHHYFDSLEPVYTHLHETLKPHVDHLHALE",
+    "length": 64,
+    "n_his": 13
+  },
+  {
+    "name": "tfr1_c4_acid_site2_116",
+    "sequence": "SEMTEHLHLLTDILSERTLTQEEIDAAIRYFAHLLNHHPELHDDVLSSLSTLKEAHPTQAQTILSELLDKVHDTEVKDKLRALLS",
+    "length": 85,
+    "n_his": 8
+  },
+  {
+    "name": "tfr1_c4_acid_site2_117",
+    "sequence": "SAHTSKLNKQRHEAQDHVNTALEHLDEIVEKHTFSSLTVDEMKRRLHTYSDTAEISPLSPDIDPFEYFNLLRMLLHKHLTGEISDPLSV",
+    "length": 89,
+    "n_his": 8
+  },
+  {
+    "name": "tfr1_c4_acid_site2_118",
+    "sequence": "VPHTPAQGPLADAIRRRVDAGEDFEAIEADLNALIDAAHALHDAISALEENPEDPTLFQDALDALHAFDEAAEALM",
+    "length": 76,
+    "n_his": 4
+  },
+  {
+    "name": "tfr1_c4_acid_site2_119",
+    "sequence": "EELEERSTELEERSTELDSLSSSLRHFDSEFSDSISFIHQAVDINHTAYMEKRPLTDDEIESIISLLSKVEEMDSFVDEIKEL",
+    "length": 83,
+    "n_his": 3
+  },
+  {
+    "name": "tfr1_c4_acid_site2_12",
+    "sequence": "HPSYLSDLETFRSIASRLEDTARERFSFLSDDEIHTLTTMFSLWVSKEEKNEYFTFEEATTYLESYIPLLQKITDHVASEASDLS",
+    "length": 85,
+    "n_his": 3
+  },
+  {
+    "name": "tfr1_c4_acid_site2_120",
+    "sequence": "HELEALQMMLEEAEKLWEEALTLWEEKFEATEDPEEQEKLLEELETATERFTEYVHEMEDSIHSLEES",
+    "length": 68,
+    "n_his": 3
+  },
+  {
+    "name": "tfr1_c4_acid_site2_121",
+    "sequence": "SEKVMTLDEQFAHVRSLFGPDADTIIETAERLADSDLSLSEAHAMLLSHAYPVAVEAVMHKIMSEEE",
+    "length": 67,
+    "n_his": 4
+  },
+  {
+    "name": "tfr1_c4_acid_site2_122",
+    "sequence": "SEVDEILEDLDERLHHMDEIIEYAEEQLPSLKEEKLKVTIHEGNKSETVLLHEYVEEKVHEFKDIKHNIENELSKPVD",
+    "length": 78,
+    "n_his": 6
+  },
+  {
+    "name": "tfr1_c4_acid_site2_123",
+    "sequence": "SIHFSDELPFTSEDLYHQLHFEHPTHDDDFLKDLAHHIFTTMWNHFSEDHDAALDFVHSYTRLMDDSLDELREAGLDVETPETATEFVDMLHRLTES",
+    "length": 97,
+    "n_his": 11
+  },
+  {
+    "name": "tfr1_c4_acid_site2_124",
+    "sequence": "VNTSPPHPAAFASHEERLDFAHDVLTDVVDTLETTTLTDEEQEHFDELLDVLHRAADHLDEPLE",
+    "length": 64,
+    "n_his": 6
+  },
+  {
+    "name": "tfr1_c4_acid_site2_125",
+    "sequence": "SEEEDAEHHLTVLNAAATIITLRFFKDKGFISEHQFETLTSALLDSFPELESVLHYNDDQSAAHMKEYMTALDDYRKTYHKEWVP",
+    "length": 85,
+    "n_his": 6
+  },
+  {
+    "name": "tfr1_c4_acid_site2_126",
+    "sequence": "HSAELEHFEALHFVEEEINKLVSEDKWEEALELIETLEEHDPHMALFFLEHLIAKALVKEKYDFAEELIETLEEHDPHMADFYREILIGK",
+    "length": 90,
+    "n_his": 8
+  },
+  {
+    "name": "tfr1_c4_acid_site2_127",
+    "sequence": "HPHVEMEELKDLVRRAYVLGHPLTDSLDDDLSALRDHYKPKLDEAKAEEDWDLYDELLDEYEDDVDDLVTDFVESLTEEQLDELTDFVEEKL",
+    "length": 92,
+    "n_his": 4
+  },
+  {
+    "name": "tfr1_c4_acid_site2_128",
+    "sequence": "EEEEEEEEEEEEEEEEEEEEEEEEREEEEEEYEEKMEEREEEIEELEEEVREELEEEGKAEKYTEHYVHLVALHRYYTEKFEEFEEELEELLEE",
+    "length": 94,
+    "n_his": 3
+  },
+  {
+    "name": "tfr1_c4_acid_site2_129",
+    "sequence": "SAFVDKYVSDVLDFIKHHAEDAHLSEEKQEFLLSQWETNYTTSVEHVLDEQHTFYHEAMADPHLTDEKRASLETQHTEHHSRMEDYVAS",
+    "length": 89,
+    "n_his": 10
+  },
+  {
+    "name": "tfr1_c4_acid_site2_13",
+    "sequence": "ERHLTFEETLALLRHEFSHFLSDDQIDAHEATASHHADTFHTSLLEAGVDEATAKRNAQLLFLDTFWTLSFESMSTEDQDDLADILHDVIDSS",
+    "length": 93,
+    "n_his": 8
+  },
+  {
+    "name": "tfr1_c4_acid_site2_130",
+    "sequence": "YHYSEQFDFELSQEHLLHRMKEHTDYLKNHGAEVLEHDENSPEKLEENFTDLWNWLSPENKEFIRSLVEELL",
+    "length": 72,
+    "n_his": 6
+  },
+  {
+    "name": "tfr1_c4_acid_site2_131",
+    "sequence": "STELTHLTVDYIHKASELPVDSDERLLLDKDFVEKWLSLLEFDETSYKVLLKMHHSTIDFYHSLRKQNLTSDEIHSLIHHHWSDLHDELEEEL",
+    "length": 93,
+    "n_his": 10
+  },
+  {
+    "name": "tfr1_c4_acid_site2_132",
+    "sequence": "SLDESLKTLAEEYEHSLFEEHLTFLEEHGVDAVLEETEERLTHFHEILEYAEEEGADPETLEELTEIYDHVVEDIATH",
+    "length": 78,
+    "n_his": 7
+  },
+  {
+    "name": "tfr1_c4_acid_site2_133",
+    "sequence": "MKSTTIRLPSHLLESVKRAAKETGTSVAAEVRSLLDAYFRSMDPDSAAASRAAESTFHSAVNSLSTLGHTLKSLEDH",
+    "length": 77,
+    "n_his": 4
+  },
+  {
+    "name": "tfr1_c4_acid_site2_134",
+    "sequence": "RDDAITANASRDPLTVLRALISYLTEQGQHEAAELHSTYLDALEAEDSDAALTAMHTLDTYRTERMTKLAS",
+    "length": 71,
+    "n_his": 3
+  },
+  {
+    "name": "tfr1_c4_acid_site2_135",
+    "sequence": "SLADFKTLVRSAHVEAYNHFAADLEAAGAHDAAHALREQLAAAESYGEKADALDAELAEAEAAGDLDAVAALREEAHTVAADYESYLEAS",
+    "length": 90,
+    "n_his": 5
+  },
+  {
+    "name": "tfr1_c4_acid_site2_136",
+    "sequence": "ASTPLEEYLDHIFDSVEEHGPLEHVYHFLKTDYEEHIAELEEFLEEAEEAEDHEMAEKFSHAIHEYESLLEHLEEAHEEA",
+    "length": 80,
+    "n_his": 10
+  },
+  {
+    "name": "tfr1_c4_acid_site2_137",
+    "sequence": "SLTPFDFSEEVTKAASIILEHFNLSHFDASFLHALATATVYYDFLDDDEKDIYDSVMEALAKDPHGVVAAAEELSEAH",
+    "length": 78,
+    "n_his": 5
+  },
+  {
+    "name": "tfr1_c4_acid_site2_139",
+    "sequence": "SWKDYEPEPYDAFMEFLKHLKMIFEDFKEESEKQWEHMSPESKEYWEEKHKFYEENKEEFEKWLKEQTELEESLL",
+    "length": 75,
+    "n_his": 3
+  },
+  {
+    "name": "tfr1_c4_acid_site2_14",
+    "sequence": "SSSTHIEELKRHDRAKAAEILDLFLAGDHEAFLEALEEHPEYEDLLLAEASRRHYDTGTVDADHARHLIHVLDEYRHRATSRLTTDFGNAE",
+    "length": 91,
+    "n_his": 9
+  },
+  {
+    "name": "tfr1_c4_acid_site2_140",
+    "sequence": "STLLAEGSISTHISAHTHANVTVPMPSTVPAGTRVAVKYRYKLPGTEWSEWILIPATVASDGTVEIPFYNAHPESETYTFQYEVYTFEAP",
+    "length": 90,
+    "n_his": 4
+  },
+  {
+    "name": "tfr1_c4_acid_site2_141",
+    "sequence": "LSTEILVHTIKKEWDELSSSQQHLLLEHLDYLEEHNFSESAAQDVFHHLETHHPHARQLVELLELFLTLHRLDSDASLTLLHELKTDFA",
+    "length": 89,
+    "n_his": 11
+  },
+  {
+    "name": "tfr1_c4_acid_site2_142",
+    "sequence": "SVTEKLTTLTEKFTELSESAEEHWTTAKETVEKAKTDPDLLSSLLTEHHLPSDSDANDLAMHLTHSLVDTFSHHKLDIWHEVFDE",
+    "length": 85,
+    "n_his": 8
+  },
+  {
+    "name": "tfr1_c4_acid_site2_143",
+    "sequence": "SSISEIKSLLEQLDPTQLQVVEALLETMDSDQFWEHLDDLVSYLEKFVAADMWYQRFFAEDPDYFTHKHKDFLSDNLSLLDTLT",
+    "length": 84,
+    "n_his": 3
+  },
+  {
+    "name": "tfr1_c4_acid_site2_144",
+    "sequence": "AHHFRSSHLTHLRHFLEATGLSDSDLDHYMDQLETVFTEYADAADTYEALPVKTEDDKVSAMHLVDDFHHTVDDIFHDALDTAAAS",
+    "length": 86,
+    "n_his": 10
+  },
+  {
+    "name": "tfr1_c4_acid_site2_145",
+    "sequence": "SVTELKAAEHHLAATLTTYGAHLLLLAVAKVFDQPEVAEQAEAELEKLLTELEADAKTLGKENWLEDVLHKKHEAATHFAHHLTHLK",
+    "length": 87,
+    "n_his": 9
+  },
+  {
+    "name": "tfr1_c4_acid_site2_147",
+    "sequence": "DMERYYRGLVDLMDSFHEHYFPEMDRVYETSVATAHKFGKTEHLDEVTAMYETYRSTMHDSVEDHKAHAESML",
+    "length": 73,
+    "n_his": 7
+  },
+  {
+    "name": "tfr1_c4_acid_site2_148",
+    "sequence": "SSAATHTHVRETHETTFKEEMTPILKAAGFSDEEIDEFFKIHDDFHNDLVTLAEEFDEELATSSDPDAVKTKYFTKSNDLWDTFFTDLHTLFDTHMEKY",
+    "length": 99,
+    "n_his": 7
+  },
+  {
+    "name": "tfr1_c4_acid_site2_149",
+    "sequence": "SSDAEMAEEMTFLYFHRDELQDPIVLDYFSSSEDFYTSLRSDVSAEEDLHHLADMVTEHAEVHFTDFIKKHGAQNFVEALDRELQRLK",
+    "length": 88,
+    "n_his": 6
+  },
+  {
+    "name": "tfr1_c4_acid_site2_15",
+    "sequence": "KHPLAFEVWKHHDHESHHQLEYMQEVGIETWAADVKPYVEAYTTWFHEEREKHPLAFEVWKHHDPHWHHFEYFFD",
+    "length": 75,
+    "n_his": 13
+  },
+  {
+    "name": "tfr1_c4_acid_site2_150",
+    "sequence": "MFDEVISLLKEIHSLVHDDDEQKMLESFISHLKELHEDDKITYVMSVIHILRVLFHTNHDIMDLLDKIEDLVKPHYEEKEKNHADFFRS",
+    "length": 89,
+    "n_his": 9
+  },
+  {
+    "name": "tfr1_c4_acid_site2_151",
+    "sequence": "SHLEETEFDIDEAISEFLELAEEAKTDEELADELKPHVEHLVETLETELEEAKEVVEHLKELSKEEQFELMSAYERELLGHETFEEEMSELTE",
+    "length": 93,
+    "n_his": 5
+  },
+  {
+    "name": "tfr1_c4_acid_site2_152",
+    "sequence": "HHLPQPTMKEIEERYAAAGDTGKLLYALALKYRELVTAGELEDYDKVVEILEEIDSLEDELH",
+    "length": 62,
+    "n_his": 3
+  },
+  {
+    "name": "tfr1_c4_acid_site2_153",
+    "sequence": "SDEEEDFFFDLYESIVFPAFDNASSETQLEFLEQMEEELEEVLSHPRATDLVKERWTRHLESLTTRYEELQ",
+    "length": 71,
+    "n_his": 2
+  },
+  {
+    "name": "tfr1_c4_acid_site2_154",
+    "sequence": "TTEHVEELLEEEDEYFEEEINKDHKRPVPHVTHYFEDLATTHHEAVHHAVESGKAKEDLEEEAERK",
+    "length": 66,
+    "n_his": 8
+  },
+  {
+    "name": "tfr1_c4_acid_site2_155",
+    "sequence": "SFETLLSETSAAVSAEDKDKLEEVVEDAKTLSDEELETFIDFLSEKGKEVSSKEFQHFVEEKLVELRALLLHRKFHH",
+    "length": 77,
+    "n_his": 4
+  },
+  {
+    "name": "tfr1_c4_acid_site2_156",
+    "sequence": "HSWEHWHPHDFVLALLTDEEIAFLRELSEHSVEELLSHLHHLETEIENADMEEEEREELLHLVEGRISQLEHFGEEILSGMRTLVEEQEEEH",
+    "length": 92,
+    "n_his": 11
+  },
+  {
+    "name": "tfr1_c4_acid_site2_157",
+    "sequence": "DPLTRAKDSLLKVHGVGKQLAEAFIHYYIEDLTDEETAEKLGISEDSLKSKISKVGGHAKILSEAATIYQESS",
+    "length": 73,
+    "n_his": 3
+  },
+  {
+    "name": "tfr1_c4_acid_site2_158",
+    "sequence": "SDHDTYAVNYVLGEDVPDDVHEHFKTNDTTANEERLTELTDELDSLTSDVAKLSSEEQLHVLTLLHHTLTEHHHLLHHQHEAHANSHHHEDFHL",
+    "length": 94,
+    "n_his": 17
+  },
+  {
+    "name": "tfr1_c4_acid_site2_159",
+    "sequence": "SIFQPTAEQEREYQLLRTQHLVVVMKEHLGMTEEEIAELLQVSPATVRYHLSEGRKNVDALHSHLSS",
+    "length": 67,
+    "n_his": 5
+  },
+  {
+    "name": "tfr1_c4_acid_site2_16",
+    "sequence": "SHVRSTVEHHLRKGSYYAEEGHYDEAVSEFSEAVTLAIESGDEHLERNVFLHLQELAEHDPHLETAIKEDPLLNAFMVKWRHKSTEEAEELSDSLHELA",
+    "length": 99,
+    "n_his": 10
+  },
+  {
+    "name": "tfr1_c4_acid_site2_160",
+    "sequence": "EHETRLHEAETELHTRLHTASEETKATFAELKEEVAELEEEVAELEEEVAELEEEVAELEE",
+    "length": 61,
+    "n_his": 4
+  },
+  {
+    "name": "tfr1_c4_acid_site2_161",
+    "sequence": "MIDSFSEKDELTLSFEVILHDHRLSDDVKILATVLLHLLQEDEDDAVETAKLLTHLGASASEIIEAARKWLSGESHHD",
+    "length": 78,
+    "n_his": 6
+  },
+  {
+    "name": "tfr1_c4_acid_site2_162",
+    "sequence": "SLDEFNEDLEKFNEQLAEAQANFENFLNLPEDDQLLISQLRMELGTAFSDLHQEHIELAKE",
+    "length": 61,
+    "n_his": 2
+  },
+  {
+    "name": "tfr1_c4_acid_site2_163",
+    "sequence": "LSTEEITLHDFLHHPDDVRELVHAARETLPFLDDEERDELDEALDRIEDLVDSAEHFREDLDTFLSEHDMTEEEFEEEYDHMIESLH",
+    "length": 87,
+    "n_his": 8
+  },
+  {
+    "name": "tfr1_c4_acid_site2_164",
+    "sequence": "HDHDIDDAITDFLHHLDELHHALPSYEAQKTADIEAYHEMSSEEKTSLHESVEHHSHSFLHHFSHSIHHTADDLTHTSEHET",
+    "length": 82,
+    "n_his": 18
+  },
+  {
+    "name": "tfr1_c4_acid_site2_165",
+    "sequence": "STEHTEHLTELEEEHEEHEELLAEQREHFEENREEWRTEYSDFVSHHLDHLHDEHPTFTEEDKENVFELLMESFDEVMDSM",
+    "length": 81,
+    "n_his": 10
+  },
+  {
+    "name": "tfr1_c4_acid_site2_166",
+    "sequence": "STTALLRKWREQAKPLVRERASAHGFTEDEIDTYLHRALDDAQEWVQHRGVDTSDFHEFVDMALTYFGMYVKDPDAVPMWKALLRHLHSS",
+    "length": 90,
+    "n_his": 6
+  },
+  {
+    "name": "tfr1_c4_acid_site2_167",
+    "sequence": "SLSSSETLSDQQLLDRWHELHHHFHEWVDMLHYYLEHGNPTQQEEAREKLALWEEVEEAMETLETEMES",
+    "length": 69,
+    "n_his": 7
+  },
+  {
+    "name": "tfr1_c4_acid_site2_168",
+    "sequence": "SEESEEEFEEAIEHFHEALDHLHDHFFPPKPPKTLKQQAEDHFHLGNSYYYREEYETAVEHYEKAIELYPEFTDLVAPHLNEALAKLH",
+    "length": 88,
+    "n_his": 10
+  },
+  {
+    "name": "tfr1_c4_acid_site2_169",
+    "sequence": "EELEEHLEHLEEVHEQLEHDHEHLAHYEEKMTTAHELLTRVTEAGNAGDTEAVEEAWADYFTFLMEPVLEA",
+    "length": 71,
+    "n_his": 8
+  },
+  {
+    "name": "tfr1_c4_acid_site2_17",
+    "sequence": "THPLPDTPEARHKHTEAHHTLHHRLHHHSEETREHFEEEKRHLVNKAVHYLVHEHKTVAEAAEELGISETHLNHVFKEVFGMTPSEYLSHIRSGELSP",
+    "length": 98,
+    "n_his": 18
+  },
+  {
+    "name": "tfr1_c4_acid_site2_170",
+    "sequence": "SELEEHVDHHMEEHEEHVEETFETAKDQYTDEQLEEQREKWETLAEHLHKAYELLKEEKYEEAIDYLHELY",
+    "length": 71,
+    "n_his": 8
+  },
+  {
+    "name": "tfr1_c4_acid_site2_171",
+    "sequence": "SSSVATSEQIAEVNHRWEMMKTDAMTLLMSTDQDEHGLDVVMEFVAEKFKAMYHEFPQAMDFLELD",
+    "length": 66,
+    "n_his": 3
+  },
+  {
+    "name": "tfr1_c4_acid_site2_172",
+    "sequence": "DHAHREHLASRFFHTAEHLEEEEMYLEALEFYFLALRFAEDDDFKELIVEKLEELLEHLDSEQLEIAEKMVEELPPHLSSYKTRLLTAIAEKRE",
+    "length": 94,
+    "n_his": 7
+  },
+  {
+    "name": "tfr1_c4_acid_site2_173",
+    "sequence": "DDLVNEVLHLLVDEAFRAYLLEESEHFEHLKHIIHSFADDFPEYEHFVHLLEKKVSEADSMHKSERLFHGHVAGHDLIEPVHALQKSLAEDGHIHDD",
+    "length": 97,
+    "n_his": 14
+  },
+  {
+    "name": "tfr1_c4_acid_site2_174",
+    "sequence": "DSETRTKLLNAVASLEPNQRTIKNIAQHLGVSEDTVKSWVKKHFGSMSALLAAAEAHQEDYESHLRTFRSDLDTWRSDQEAH",
+    "length": 82,
+    "n_his": 5
+  },
+  {
+    "name": "tfr1_c4_acid_site2_175",
+    "sequence": "SDEETESLEKFEANVTEWTDKFAHASPEEQEHMLRAAHLAFTDHMPHMYYEDMEKKDMEELEEHR",
+    "length": 65,
+    "n_his": 6
+  },
+  {
+    "name": "tfr1_c4_acid_site2_176",
+    "sequence": "SAHEALEKAHTYLERLFTAHEAEDSDAAVAIMREWESEAFDSEYLEHLLNAVHRIQAGEDMDTVLTEFYTWEADH",
+    "length": 75,
+    "n_his": 6
+  },
+  {
+    "name": "tfr1_c4_acid_site2_177",
+    "sequence": "MFDDLMDELEDLQEKMEHMTDDEAEQAMEDFIHKWETHRESYYEIPGTEALMEEAETEVHELEEEFENEAKNPTEAEHEHLESLHRATSRL",
+    "length": 91,
+    "n_his": 7
+  },
+  {
+    "name": "tfr1_c4_acid_site2_178",
+    "sequence": "SLYDDVLSNLLEDEDAFMMALLVLAHNEDLDESTREHFESLAHSFATLRRSDTPTAHTELHSLIEEHAHEVAHHYTHYLLDRIDDLENNA",
+    "length": 90,
+    "n_his": 10
+  },
+  {
+    "name": "tfr1_c4_acid_site2_179",
+    "sequence": "EEETLLSEFKEHAHHFLDTVLEEALDPDHPHHFLGTAETWHEHLALLEENVEERNDPEEKEMLEHYEDEILDYITDVEEDPLTALHNRIAEYKEAI",
+    "length": 96,
+    "n_his": 10
+  },
+  {
+    "name": "tfr1_c4_acid_site2_18",
+    "sequence": "HTAKDDKHSTEVIEFANSLTPEEYLHFLENLHHDFSTLLHDMESLLTVIENSTLSQDEKDMLKHNVERHIHTLKTLISDVSTMITEQKDSMT",
+    "length": 92,
+    "n_his": 9
+  },
+  {
+    "name": "tfr1_c4_acid_site2_180",
+    "sequence": "HFYHELMEEELAKMKTHVEETENPEDEERYLLLKHRHEELVTSVEEGKALEELHEMVDEYEEAL",
+    "length": 64,
+    "n_his": 6
+  },
+  {
+    "name": "tfr1_c4_acid_site2_181",
+    "sequence": "SSSPFSPEVEALSHKFIEEWTAIEERYEAGEIDQEEALEQTLTLFETFKEEYEKLDVDPTYKHMHLHHLETHIALLKLALE",
+    "length": 81,
+    "n_his": 6
+  },
+  {
+    "name": "tfr1_c4_acid_site2_182",
+    "sequence": "SSVINTDTLRLIRTTATNLSTKFHLTEDQARLLLSLLLSTHRMDDVDDIKDHISEFEEKANLTLTDDQKDELLSSILELHDKERE",
+    "length": 85,
+    "n_his": 4
+  },
+  {
+    "name": "tfr1_c4_acid_site2_183",
+    "sequence": "SHLTSTELHELLESWHEKIHAEHERLHAEAETLHEEHEREMAHMSEEEKAELSHRLDLSALETWLEHGHISQEDYEFLKSLL",
+    "length": 82,
+    "n_his": 12
+  },
+  {
+    "name": "tfr1_c4_acid_site2_184",
+    "sequence": "TEHSEHLTHHSEELTEHHEEHSEQLTEDHEEFLENYHSYPESFREEYHSNRAEFREHLHEWVESL",
+    "length": 65,
+    "n_his": 12
+  },
+  {
+    "name": "tfr1_c4_acid_site2_185",
+    "sequence": "SSTKEEILTEAEEKIEEHLTHLKESLETLVEEELISEELAEQILHEVEEMEETALETLEENLDEDLDEYLEREEEKSEELYESLTETLEELEE",
+    "length": 93,
+    "n_his": 3
+  },
+  {
+    "name": "tfr1_c4_acid_site2_186",
+    "sequence": "EEEELLEELLELIENVESEEPEGDLEEIEKEGFEKGLEFVEEHKDYLSEDDYTILMLTSEDDWHDLLTEYFEEKAEEEE",
+    "length": 79,
+    "n_his": 2
+  },
+  {
+    "name": "tfr1_c4_acid_site2_187",
+    "sequence": "SHFLEDLHSLLEHVDDPEAKTHIERHIEYAEALQQPADKFTAAMEALAEKPWVKEFKAEAQAEAEHMHEHDTLAD",
+    "length": 75,
+    "n_his": 8
+  },
+  {
+    "name": "tfr1_c4_acid_site2_189",
+    "sequence": "SHEESLEHHIESLHHHFHHHHHHLLELMKETDPTLHEEYVHHLHSSHHLEHHLKELGFHG",
+    "length": 60,
+    "n_his": 21
+  },
+  {
+    "name": "tfr1_c4_acid_site2_19",
+    "sequence": "MIDEVREAVTEEAEAFQALKESEHSSLATHESAHESALAAHEKLVEVAHYIPEKEAELPDDELTPTAKTHLKVDLERL",
+    "length": 78,
+    "n_his": 6
+  },
+  {
+    "name": "tfr1_c4_acid_site2_190",
+    "sequence": "EKEYDWSDEETLSHLKDVYDSVVDSIDEHLDTDNSHHHDVDDSVLDYLEDVEHRLEYFEHTLEEAESLIEE",
+    "length": 71,
+    "n_his": 7
+  },
+  {
+    "name": "tfr1_c4_acid_site2_191",
+    "sequence": "HPYNAEYHEKMKEAFEKQMEVVETEDPEVLEAYLEDVDERLEEAEEIFEEAEEEIEEAEEEIEEAEEEIEEAEEEIEE",
+    "length": 78,
+    "n_his": 2
+  },
+  {
+    "name": "tfr1_c4_acid_site2_192",
+    "sequence": "TTLDHELSHVEHHIHHLFHSHHHLHHHLHDLLHSTYSDSPEDLETLHELHTEHHHHHHELHEEEHTLHHEKLHEEAE",
+    "length": 77,
+    "n_his": 28
+  },
+  {
+    "name": "tfr1_c4_acid_site2_193",
+    "sequence": "SAHLSEALSMSATEAYHKGNEFLSEGRFREAAQYYFVAMLKDSDLEDKILFLAKMKNSTLYHYLLAAFHAVDY",
+    "length": 73,
+    "n_his": 4
+  },
+  {
+    "name": "tfr1_c4_acid_site2_194",
+    "sequence": "SERQGVLHRISTLISNLKMFFDSSEAEDVIFHLEKAHSALETEDYDTALFHLHKALDIASSHDDLLESVDTLESLISEVLTLKEES",
+    "length": 86,
+    "n_his": 6
+  },
+  {
+    "name": "tfr1_c4_acid_site2_195",
+    "sequence": "HHYTTEEFHEKHHHMTEKAHEHLTHYHEHLMHEAEHVHLERHLTHEEAEEREHTHNEETHHHLHHFYHHLDTLHELSHH",
+    "length": 79,
+    "n_his": 28
+  },
+  {
+    "name": "tfr1_c4_acid_site2_196",
+    "sequence": "SDPVLTDLHHRHEDPRDYEITEEILHATNVALMLALKPHAEDFVEDHHDEILSLTEDDAHLADHHLASLAAHHNSHFLTHYEEHKEEYETLANELLS",
+    "length": 97,
+    "n_his": 15
+  },
+  {
+    "name": "tfr1_c4_acid_site2_197",
+    "sequence": "SQKDVREVQSFLRTHREEIIDDIMSLVAQGKSELEIAEMLMKKFKSHNPLLYTVFIDLAHAAHQGETALKMALDNIISYP",
+    "length": 80,
+    "n_his": 4
+  },
+  {
+    "name": "tfr1_c4_acid_site2_198",
+    "sequence": "SESESTHSHVMLLLKLSHLEVMLLEAYYASEAGKHDEAAHMLEHVKAEYEELDSEQQEHLLEHIQLHHPEFYHWAKDTLS",
+    "length": 80,
+    "n_his": 11
+  },
+  {
+    "name": "tfr1_c4_acid_site2_199",
+    "sequence": "AAEAMEELERHNFLFSIHLEWLTTGEHDLSELSEEEQTAMETYFSLLEPLWELSEEVRSLLLESAHQVHHHELEFFHEKMES",
+    "length": 82,
+    "n_his": 8
+  },
+  {
+    "name": "tfr1_c4_acid_site2_2",
+    "sequence": "HTIEDPVTLTDEEHDFLHHFYDHAINFAVQDEGEDEVDFQKEAVQNVHYAFLKSLHEEGFITEEEYEEGKEILATFFS",
+    "length": 78,
+    "n_his": 7
+  },
+  {
+    "name": "tfr1_c4_acid_site2_20",
+    "sequence": "SSLESARLFLAEKFHLPYHTIEHMSESIRNAVSLLEWALEHHLPFHVVLHMVESAHTFDAKILKALKEEDLDELKTLHYEMWPWHHFLDRVEEKIKELE",
+    "length": 99,
+    "n_his": 11
+  },
+  {
+    "name": "tfr1_c4_acid_site2_21",
+    "sequence": "PLTKHYTSDELEEMAKHVVELMLSYGADYETALRVAKRLATDLHLNETQRELFLSHFKEHWEAH",
+    "length": 64,
+    "n_his": 6
+  },
+  {
+    "name": "tfr1_c4_acid_site2_22",
+    "sequence": "LSFYTKSPSQLTLEEATQVRMELSHLLGVDLSSVESIERVIAAADQAAPHFERARLASTMDDIVKETLMAAHILEDAGVDLSFIDP",
+    "length": 86,
+    "n_his": 3
+  },
+  {
+    "name": "tfr1_c4_acid_site2_23",
+    "sequence": "SHEESLLTHLHELHNSHFSEFQTEAEELVDTLRAEGASEKEIEYELAELVQHHIHSFTHHALELMEESELPLDEALPLVLHHVHHFAEDLYTYALELLS",
+    "length": 99,
+    "n_his": 14
+  },
+  {
+    "name": "tfr1_c4_acid_site2_24",
+    "sequence": "SELADHWFESIEAEAWTLFEEATDTHIEKHGAAAAAAEIATVKTRLETYLTDFKTHLHTHIDEAL",
+    "length": 65,
+    "n_his": 6
+  },
+  {
+    "name": "tfr1_c4_acid_site2_25",
+    "sequence": "SLFDELLAEADALHSLPEDEILPAARSIVDKSSSLSKDEQHHLAHHLLDVMTDIHFHHWSES",
+    "length": 62,
+    "n_his": 8
+  },
+  {
+    "name": "tfr1_c4_acid_site2_26",
+    "sequence": "LEELKKEMELKAAEELFDEVNHFVGTKLTEIFNEAKEKTVDEINTEVDELLTTAHDEAREKRETLETEIDDEIEDLE",
+    "length": 77,
+    "n_his": 2
+  },
+  {
+    "name": "tfr1_c4_acid_site2_27",
+    "sequence": "EEVETLEEEVETLEEEVETLEEEVETLEKHVEDLEEYLSQGDPVERLTERLEAFFDFVDTIHEEAEEIREENE",
+    "length": 73,
+    "n_his": 2
+  },
+  {
+    "name": "tfr1_c4_acid_site2_28",
+    "sequence": "STSEQEMLELQLRAREDLSVFNKYVVQMKKEHPLDSFYQHLYEVAIEFSLTKEYFNNDSWFDNFMTYAKEEIEAHLESSN",
+    "length": 80,
+    "n_his": 3
+  },
+  {
+    "name": "tfr1_c4_acid_site2_29",
+    "sequence": "FDETLTELDERHTHFETLLSEAKALFDSDEELDSAIHTYFTEEDEKASAAHDPEEDLHRITTHHEERFAELPRATSRLTTDFG",
+    "length": 83,
+    "n_his": 7
+  },
+  {
+    "name": "tfr1_c4_acid_site2_30",
+    "sequence": "SLEERLENATEGAEFLLHHMEEEREKHKKELDDFIESLSDEEAVEYYNKQYPHLPPAETKEEVLEHLTRHHETAEHLWEHFLTTVKEEIEHGLENLKE",
+    "length": 98,
+    "n_his": 10
+  },
+  {
+    "name": "tfr1_c4_acid_site2_31",
+    "sequence": "LTLDEILEHIHSAHSGDTSGHQAQSWYVSSVWSTFYSKAFSGHVEEAVDTFLENVYEYHEIPENHRPAVHEYVDFVMEHAFYH",
+    "length": 83,
+    "n_his": 10
+  },
+  {
+    "name": "tfr1_c4_acid_site2_32",
+    "sequence": "EHEEHLEELEEEHTEVTETPEYQEHHSLVTKLHHLYHHMETPEDHDEFHHLFHELVTLYTERFETFHEQLEELLT",
+    "length": 75,
+    "n_his": 14
+  },
+  {
+    "name": "tfr1_c4_acid_site2_33",
+    "sequence": "SLEEKLEAERRTLEEQLAEETDPIKRRELQVDLLDDISDLETEEYEITVTSAEEQIAEETDPVKKHELEEELHEFKERHAELH",
+    "length": 83,
+    "n_his": 4
+  },
+  {
+    "name": "tfr1_c4_acid_site2_34",
+    "sequence": "STHTKGLEELHHAFSEAFETHKHIFHSTLHEHLPDTSSVSDGLESISEAHSYSELYSSVTELLSPFSHDTQAEVMIAIEMAMHESFA",
+    "length": 87,
+    "n_his": 11
+  },
+  {
+    "name": "tfr1_c4_acid_site2_35",
+    "sequence": "HRSAELSHFSSLVSQVLTWYDDARSLLEAEDLSTAPPLHSSWSTPQKTYLEHLWDFLVDLAKTVDVDTALEVLTLLHTSFTDLSSDPFNAHLHYVF",
+    "length": 96,
+    "n_his": 7
+  },
+  {
+    "name": "tfr1_c4_acid_site2_36",
+    "sequence": "SLEKEELLEELDSAIKFAEEKGYSDEAIDFYREKMLEALDFLEEVVETHDASMLEHYEERFEQASELFKMMEEE",
+    "length": 74,
+    "n_his": 2
+  },
+  {
+    "name": "tfr1_c4_acid_site2_37",
+    "sequence": "HLTHEEYHAKERELREERHEYYEHLNDEEKDFFHDYADHVLEELDKESREHQEYMDSLTEEEIKEKLDFYLDKLDEFLE",
+    "length": 79,
+    "n_his": 8
+  },
+  {
+    "name": "tfr1_c4_acid_site2_38",
+    "sequence": "AETLLSEVKTRYEDYLTTSNTELKEFLESEHLDQEDIDHILTLHTQSAKEVFDSEVHHFELKESGFYESLDTHLEELEDSL",
+    "length": 81,
+    "n_his": 6
+  },
+  {
+    "name": "tfr1_c4_acid_site2_39",
+    "sequence": "HQTAEEAVEAISRTAHHFKDHLTDEEKDALTTAVTLAEQGKLSEAADLHFKVLSAVTSRMFHEFIDSHS",
+    "length": 69,
+    "n_his": 7
+  },
+  {
+    "name": "tfr1_c4_acid_site2_4",
+    "sequence": "SHLDEVVAEVKDTFGHYFDDELKILTEAVASGQVTEDEVVSYLEKILDSHHDFVDHLEDNVAEL",
+    "length": 64,
+    "n_his": 5
+  },
+  {
+    "name": "tfr1_c4_acid_site2_40",
+    "sequence": "SMHSFHLSQHLHHLRDEHMTAYMQEDADHLETVLHEALDSYKELLEDPDLTSEQHDAVEHIIESLEKQIHVLETQGFDAYKEFITHSH",
+    "length": 88,
+    "n_his": 13
+  },
+  {
+    "name": "tfr1_c4_acid_site2_41",
+    "sequence": "DHFWEEYIHLLEDIIHEYEEAIHEHEEELHELEEELEETEDPEEKETLEEEIHELEEDIHFLEEELHEHEELLHELEHRIEHAEEIREEHEELDEERKEE",
+    "length": 100,
+    "n_his": 14
+  },
+  {
+    "name": "tfr1_c4_acid_site2_42",
+    "sequence": "TAFEEKMEDPEFRAEAEKIAELIHLSNTGFKLLSQSEFDEAIATFTELLENAETQEQEDYAESNLTLAHSLRDAD",
+    "length": 75,
+    "n_his": 2
+  },
+  {
+    "name": "tfr1_c4_acid_site2_44",
+    "sequence": "SEPHKTLEEVYEEAVARWETIRDEAPPELAAAVSKMLSLRDSPASLEKYDAYHSVFEEIEKHHDIPQELKDIFHTANDHLAEPVHF",
+    "length": 86,
+    "n_his": 7
+  },
+  {
+    "name": "tfr1_c4_acid_site2_45",
+    "sequence": "IDLSSFLDPRELMVEDLKVLKDAFDDDEFHTAVDTAIAELLAAHDSDLPTVYRNSYRSLKHLADSLNLSPKSH",
+    "length": 73,
+    "n_his": 4
+  },
+  {
+    "name": "tfr1_c4_acid_site2_47",
+    "sequence": "SREQQLAEIGSTALTIHDTQGLDAAVDYVITKLRETSPTFDDFYTDLLNELELDDDQVSRYKHAIYTVFMESYFLYLEKEAS",
+    "length": 82,
+    "n_his": 2
+  },
+  {
+    "name": "tfr1_c4_acid_site2_49",
+    "sequence": "EEEKLSSMTVDELLDEMFTAIEEEDPELYFKVLSALIKKTMEDHSYTSEELYEMMLTFHEKVHDYFHTHHTNHETEDYITELRDALHTHHEQH",
+    "length": 93,
+    "n_his": 11
+  },
+  {
+    "name": "tfr1_c4_acid_site2_5",
+    "sequence": "VYDKIMHYYGHILTEEEKEEIEALLSRYEESEDKTEKMMIATKITHIVAVAHARWLHDFLMETATEEE",
+    "length": 68,
+    "n_his": 5
+  },
+  {
+    "name": "tfr1_c4_acid_site2_50",
+    "sequence": "EEHEELLEEAEEDLHERLEEMHEETKEFFEEEKEKHPELVEEQEERETLSALLENLKLRKQ",
+    "length": 61,
+    "n_his": 4
+  },
+  {
+    "name": "tfr1_c4_acid_site2_51",
+    "sequence": "SSEEEWVHTRSEELLEEINHAVETSENLEELEENVSEILEKFHLPHWAADEDRISEMIESHREIAEHLGVDYADPH",
+    "length": 76,
+    "n_his": 7
+  },
+  {
+    "name": "tfr1_c4_acid_site2_52",
+    "sequence": "SASDFFDHQVTPEQRAAMDKASKETAERAEEIFHLVVNEGHHLSDVYRTRFENHHPDDSELVDLMMTYFENTMEKHD",
+    "length": 77,
+    "n_his": 7
+  },
+  {
+    "name": "tfr1_c4_acid_site2_53",
+    "sequence": "HAKIMKAVEISITSESYEEYKEKLEETFGDEAHFFLPQWFGNIDEAHTLMLENYNEQLSE",
+    "length": 60,
+    "n_his": 3
+  },
+  {
+    "name": "tfr1_c4_acid_site2_54",
+    "sequence": "SATLDKFKELVQQLDLSELARLDVFIYEVYLHKRFKPDDHESLETFTSRFLSSIHENSSVFSQLVSMITDADLDTLLDYHDILHDHIHDRFSVHPQTHL",
+    "length": 99,
+    "n_his": 9
+  },
+  {
+    "name": "tfr1_c4_acid_site2_55",
+    "sequence": "HHHHRMKEAEEFYEEIENLPLSERLHSLHHLREEAETLLSETEDPEDKEKIHHVIHMVDDKITELKFVEKVKQEQEEES",
+    "length": 79,
+    "n_his": 10
+  },
+  {
+    "name": "tfr1_c4_acid_site2_56",
+    "sequence": "QSHLLEEVLHSVHSTFEDARDEEHARNAPDTDHHIAIATERFDLYLDFVHTASEEEDHVHLILEHAYHSMLHHWLS",
+    "length": 76,
+    "n_his": 13
+  },
+  {
+    "name": "tfr1_c4_acid_site2_58",
+    "sequence": "MAEMREHLTTHFTHLRETFPGADPSVFDHLEHWHHEYLDALEHDDRDTALSLELHMRHHYGH",
+    "length": 62,
+    "n_his": 12
+  },
+  {
+    "name": "tfr1_c4_acid_site2_59",
+    "sequence": "DLHHAEETISRIWHERSHMYSTLVSLGRKSLVLQAVDEVMEEQLDFAYKFGASQEDIDLFTERMEEFKNSL",
+    "length": 71,
+    "n_his": 4
+  },
+  {
+    "name": "tfr1_c4_acid_site2_6",
+    "sequence": "HHIHQTKTHVPSDHVLHIHDESLLPSHEYEVHVIDTATHKALKIEHVTADSSHHLTVHVPSHVPAGTEVTVTWFLHPPP",
+    "length": 79,
+    "n_his": 16
+  },
+  {
+    "name": "tfr1_c4_acid_site2_60",
+    "sequence": "SHFEDLLEEAVRLAKESGFSDDWIEEEVAKAEARYDDFMEHVEEIAAELKEKYGDELTDEEIHAIAHMLALEDLHDEYHEEHDTLTEEHD",
+    "length": 90,
+    "n_his": 8
+  },
+  {
+    "name": "tfr1_c4_acid_site2_61",
+    "sequence": "LHHIEDRALTWDEFEELWHSLTDEQKSALTSHRHHLWDEAHDMHTHMSHLKHHHPELYEHLMS",
+    "length": 63,
+    "n_his": 14
+  },
+  {
+    "name": "tfr1_c4_acid_site2_62",
+    "sequence": "SSFMREASYHSDPVVQEFYHLLDSFSHSLLTAVQERESHVSVADVIEMEYSTFAPVMDTFKSDHKDTLEKYATEATEHEHH",
+    "length": 81,
+    "n_his": 8
+  },
+  {
+    "name": "tfr1_c4_acid_site2_63",
+    "sequence": "MVVTKEELHSFVSSLATPYLSELEVSEADQEDFVSDVVDEAMSESDSSLRVTSAVKIVAHKLVERFGGEAVLMAMTVVLSEHTDDLHEEF",
+    "length": 90,
+    "n_his": 4
+  },
+  {
+    "name": "tfr1_c4_acid_site2_64",
+    "sequence": "SAEQLDEDIAENITVVVSYYHQHVHELSEDLQDESRLAMDSFLESYSRTYKSLSGEDMPPITLLEREVTEEEAEEAVENLHHLHVELLEHLHHLAE",
+    "length": 96,
+    "n_his": 9
+  },
+  {
+    "name": "tfr1_c4_acid_site2_65",
+    "sequence": "SEADERLEEQTERNEPFKDTDEYKERMEEAEHELTERLEHLHEETEEHFEEAKEHYAEHKDEHRALTDEEEEEWDTHVEEFWEHLDHLHETH",
+    "length": 92,
+    "n_his": 12
+  },
+  {
+    "name": "tfr1_c4_acid_site2_66",
+    "sequence": "SEDELHTEIDDVLDEMDDISHDYNTKLSEIFTTSKNFDEFLEKHEPLHEEYSEKMHALKDKIDTLQTKQDELMTEQHTLETEVHELEDELH",
+    "length": 91,
+    "n_his": 8
+  },
+  {
+    "name": "tfr1_c4_acid_site2_67",
+    "sequence": "SPHLHRIRELEDLYHHYMDEVQSLAPDEYSKALELFEDEDKALEFIAATPTLASDSHTEAVWTSEEIISKILEHLFIMKRVNDSLAEPVDLH",
+    "length": 92,
+    "n_his": 7
+  },
+  {
+    "name": "tfr1_c4_acid_site2_68",
+    "sequence": "EEHLAKAFLLARAHLAVDSDDFDEIIEHYLEDHPELKPLYEHFLTKFHEILEDHPWHEYDKKMLEFLLSHSHDVDELMSWLPFFKHALEEVLKSR",
+    "length": 95,
+    "n_his": 11
+  },
+  {
+    "name": "tfr1_c4_acid_site2_69",
+    "sequence": "SAESKAFFQSHHLELVLPFARLYVQSKGITTDSDKEALMLYFLAVGDMLYEEEMYNDAVDIYSTGLELFNDSSFAERLSKAFEKLPPSMQDAWIQALSE",
+    "length": 99,
+    "n_his": 2
+  },
+  {
+    "name": "tfr1_c4_acid_site2_7",
+    "sequence": "SQAHVEHLLRVSFSKAAEETSHFLTPEQATETMEALMKAGWSEESLEEVVEMYFNQEKSWDEIAEKHQRSEEEVKTALFKYLAVSFFNEHLNS",
+    "length": 93,
+    "n_his": 5
+  },
+  {
+    "name": "tfr1_c4_acid_site2_70",
+    "sequence": "SHADSLRTLAEEFEEWAEKTFDEVKEVLLEHWEEDFEGYTVTEEAHEKLAEALTDLEENFAEYQQEHRDFATFLLEEAE",
+    "length": 79,
+    "n_his": 4
+  },
+  {
+    "name": "tfr1_c4_acid_site2_72",
+    "sequence": "STHSHFHSMAAIAATRVVLHTLTAKDPGDTAQEIIDFIVRHHDEITSGLHKLIAEYGATTTSELLTKLHTGVYTHQLDFLYSVHS",
+    "length": 85,
+    "n_his": 10
+  },
+  {
+    "name": "tfr1_c4_acid_site2_73",
+    "sequence": "SEEAEELNEAFDEYKNLASEYKDAVSAGDWDKAEELRDKGFELNLKIRHLASHFDLTDEDKEFRVH",
+    "length": 66,
+    "n_his": 3
+  },
+  {
+    "name": "tfr1_c4_acid_site2_74",
+    "sequence": "HPLYQQALEDAEDYFSALASRVSAALGSTSVEDVDGDMLMELASTLELHVDDVSLALSKLLHESR",
+    "length": 65,
+    "n_his": 3
+  },
+  {
+    "name": "tfr1_c4_acid_site2_75",
+    "sequence": "EFHEWLHEAWEHFEHWHELPEEAQELLLHEIHHHLEEDHEFAETPEGKAALEREHERHHEHQEEYLESL",
+    "length": 69,
+    "n_his": 14
+  },
+  {
+    "name": "tfr1_c4_acid_site2_76",
+    "sequence": "SSFAQQVSVLKHLFPSHADEIDSMASEILSAPDSETMAHDYDTFIKKVGTFFVETGGLDAAMTYVKAMEEYFDSFL",
+    "length": 76,
+    "n_his": 3
+  },
+  {
+    "name": "tfr1_c4_acid_site2_77",
+    "sequence": "SDELEDMLHHHHHAWHDAFEAGKHLKHLLETDTDAGLLYLEEKTDEIIEEEDFYKLHAWHHVVEELRLHYHDNEELEEALHHHLHRLTTKLEEL",
+    "length": 94,
+    "n_his": 17
+  },
+  {
+    "name": "tfr1_c4_acid_site2_78",
+    "sequence": "SLLEHILSKHHTALDSLSSEAKTHLDDPTPFIEFVHAYFAFKVAFALDYDEEIVHAAHSLKTAAHTFLSHYHDDPLAVEWAEDALTAATSALESVASH",
+    "length": 98,
+    "n_his": 11
+  },
+  {
+    "name": "tfr1_c4_acid_site2_79",
+    "sequence": "SSHDHFLLLRIKHLLLEAHAHLLRAKHYYEQEDHETAEAERSMAIAFLHTAHELSKFLQDEDLRSSVQDSLDTIISQADAKEFDSAISSLEKLLDFIDSH",
+    "length": 100,
+    "n_his": 10
+  },
+  {
+    "name": "tfr1_c4_acid_site2_8",
+    "sequence": "SLNFHELYHFYHVEVKKEAKLLHEKHPDLSEHHLVEELLLSSIHILADALTKEDTQDEAEDYIKKNLSDYVHEHEDEIISTVREKQHEENEAH",
+    "length": 93,
+    "n_his": 12
+  },
+  {
+    "name": "tfr1_c4_acid_site2_80",
+    "sequence": "SFHEFVEEKKSETLDFLNEKFDHLHKFFPDSEHEIEDLKEEFMLMLENIISNALEKEDEDEFLSDLDLFHFIVDKTIDNLISLHHFFHSHL",
+    "length": 91,
+    "n_his": 9
+  },
+  {
+    "name": "tfr1_c4_acid_site2_81",
+    "sequence": "SVTPAPADPTHRAYAEALHHAVTTHHEHGLAEAKAMLEKYGADKIAEMQAEHRAWEREHAHLV",
+    "length": 63,
+    "n_his": 9
+  },
+  {
+    "name": "tfr1_c4_acid_site2_82",
+    "sequence": "SKLHEQRHSSHVTEHLFSRFKEHLKPFNLSEDEHELLFKHALIEAILKIKEAQPDLELPDHVKHAIDHFHEHGSMGLDAFSPETLEAVSRFADSLASEVL",
+    "length": 100,
+    "n_his": 12
+  },
+  {
+    "name": "tfr1_c4_acid_site2_83",
+    "sequence": "TTEKMEEAHEELMEKLTEEHDKWKNFYDDTKSRYEAGEITKEEVAQLMIDFEHEELDKFSIDPDADTEELDF",
+    "length": 72,
+    "n_his": 3
+  },
+  {
+    "name": "tfr1_c4_acid_site2_84",
+    "sequence": "HPSQTKLEDLVSKYKALTGSEDLSSIQHFAHHASEMMVSKPPGTILTEDEAKTVLSLAELHEVTNFADSIKSLLE",
+    "length": 75,
+    "n_his": 5
+  },
+  {
+    "name": "tfr1_c4_acid_site2_85",
+    "sequence": "HHHRHHEAEETLTHRLDHLTDETQEHFEKLKAEHPELVERENQHMEEIFADPEKWKHMEEDVLHFAHTLQHHVMSDEHHEYITHVLDEHEEAHH",
+    "length": 94,
+    "n_his": 21
+  },
+  {
+    "name": "tfr1_c4_acid_site2_86",
+    "sequence": "SAATHAHEHLHLTPTQRALFHEAEAAMPTTPAEIATRMDETAAFLDSLAAEAEAEGFPELAAHFRTHAVHAREHAEVARLAE",
+    "length": 82,
+    "n_his": 9
+  },
+  {
+    "name": "tfr1_c4_acid_site2_87",
+    "sequence": "GYVSMIAAKASKIIKEKADSEGLIAALKDAIAYLEEKINEKEDLRLEQLLHSLKIELDYREHFIPETEDLHL",
+    "length": 72,
+    "n_his": 3
+  },
+  {
+    "name": "tfr1_c4_acid_site2_88",
+    "sequence": "SLKASALMLLDYLHEKELESYESVFLSVLKKMFEGKTFEEAVDETLLEIKELHSSLGLSQDSIDFLLSKFKEMLEKHKDTLLSIFQS",
+    "length": 87,
+    "n_his": 3
+  },
+  {
+    "name": "tfr1_c4_acid_site2_89",
+    "sequence": "MRPPFSQDELNHLKHLAFTEDKSFKQIAEELQTSQVAVEENLFLLVKRGEVSEEQLHDYMKKHSASWLNSEKRSEDIEFFSE",
+    "length": 82,
+    "n_his": 4
+  },
+  {
+    "name": "tfr1_c4_acid_site2_9",
+    "sequence": "TELEELEKEYEEQIDGLNSFRLALLNFAHDNLSTTEYETFSTELDEALSPFYTLLEENYEERKAHLE",
+    "length": 67,
+    "n_his": 2
+  },
+  {
+    "name": "tfr1_c4_acid_site2_90",
+    "sequence": "SNVSRMLHLLRPIVDKFLPELTPDLEEAEELHDSSSMMDRHKAAHLISKIIDHIIDLALRSAKTNDQLQEVAEIVHLRDQTKKWNAMHEFLERNA",
+    "length": 95,
+    "n_his": 7
+  },
+  {
+    "name": "tfr1_c4_acid_site2_91",
+    "sequence": "FREKIAAEPDELLLTLEMESEHLHDAPESIKEALSFYLSKQDHFFDELSETVEHLEEEAEELSE",
+    "length": 64,
+    "n_his": 4
+  },
+  {
+    "name": "tfr1_c4_acid_site2_92",
+    "sequence": "ETEEEEAEERDEYDEKESHTSKVLDKADELVSEEKFDEAISLLEDEISKHPHNLTFRTKLIVVLSEAGKLDEAVSHLEHLMTDLDDMLHHYEDEVETLT",
+    "length": 99,
+    "n_his": 7
+  },
+  {
+    "name": "tfr1_c4_acid_site2_93",
+    "sequence": "HHEEVAHHLNSIDLELAEHPEKYHELLHEHSHYFYENAHMAHKIFVEEKTLEEVIWESLTED",
+    "length": 62,
+    "n_his": 11
+  },
+  {
+    "name": "tfr1_c4_acid_site2_94",
+    "sequence": "SSESEEEFLSSISHLHHALDLAKSAYEAEDWDLFETDAEHALHHLDVHLDNLGITDEELSEMVEEHMSFQDFVTMKIQEHLDS",
+    "length": 83,
+    "n_his": 9
+  },
+  {
+    "name": "tfr1_c4_acid_site2_95",
+    "sequence": "SHHHHEAHHSMDDFFDELFHKWDVKHHIVSTTSTYVNDLLTEHPHISLHDLQTHVNSHLETELHKHHHVLTEEEQDELRELFTTYIVEKWKEHQAH",
+    "length": 96,
+    "n_his": 20
+  },
+  {
+    "name": "tfr1_c4_acid_site2_96",
+    "sequence": "HDDHVHSHLDHFEDKLNYWKDVLDYAETEMEHSSDDFLDAKPSGENQPLSIRESYEDLTAQYEAIIKEFSEPT",
+    "length": 73,
+    "n_his": 6
+  },
+  {
+    "name": "tfr1_c4_acid_site2_97",
+    "sequence": "SHEHHELLEDVHDHLHEAHEHLLEDAHHMEELSEEHSTEELEEHHFEETLAATLSLLHELGVPEDATVDELLDALVSYTEFAEELQEAEEELAEERLE",
+    "length": 98,
+    "n_his": 14
+  },
+  {
+    "name": "tfr1_c4_acid_site2_98",
+    "sequence": "SSFHLSAFLSLLHLHLHELHLALSSSPSSEWSKLVAHAVLSFVLSFLHLVSFHHIVTSVADHFHDDHTSASHHVSLLLSLLHLSLLSVFHVASSVIDHLF",
+    "length": 100,
+    "n_his": 17
+  },
+  {
+    "name": "tfr1_c4_acid_site2_99",
+    "sequence": "SLAEMAEEMEEVEHRTLHETLDAFEHHHAELSTALSETPEDDLEARHKLRTAIDDLHDRLDNALAKD",
+    "length": 67,
+    "n_his": 7
+  }
+]
