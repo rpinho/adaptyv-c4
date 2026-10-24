@@ -1,0 +1,30 @@
+[
+  {
+    "name": "tfr1_e1_his015_105",
+    "iptm": 0.884,
+    "ptm": 0.904,
+    "length": 78,
+    "note": "Generated with wrong-direction objective; ipTM unreliable for TfR1"
+  },
+  {
+    "name": "tfr1_e1_his015_118",
+    "iptm": 0.906,
+    "ptm": 0.906,
+    "length": 66,
+    "note": "Generated with wrong-direction objective; ipTM unreliable for TfR1"
+  },
+  {
+    "name": "tfr1_e1_his015_176",
+    "iptm": 0.543,
+    "ptm": 0.626,
+    "length": 121,
+    "note": "Generated with wrong-direction objective; ipTM unreliable for TfR1"
+  },
+  {
+    "name": "tfr1_e1_his015_60",
+    "iptm": 0.251,
+    "ptm": 0.528,
+    "length": 95,
+    "note": "Generated with wrong-direction objective; ipTM unreliable for TfR1"
+  }
+]
