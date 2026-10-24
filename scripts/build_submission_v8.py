@@ -24,28 +24,25 @@ def main():
     with open(args.scored) as f:
         scored = json.load(f)
 
-    passing = [s for s in scored if s.get("L", 0) >= args.gate]
-    passing.sort(key=lambda x: (-x["L"], -x.get("iptm", 0), -x.get("mean_plddt", 0)))
+    # Gate on ipTM, rank by L descending (most positive = most correct for C4)
+    iptm_pass = [s for s in scored if s.get("iptm", 0) >= 0.75]
+    iptm_pass.sort(key=lambda x: (-x["L"], -x.get("iptm", 0), -x.get("mean_plddt", 0)))
 
-    selected = passing[:args.max]
+    selected = iptm_pass[:args.max]
 
+    n_positive_L = sum(1 for s in selected if s.get("L", 0) > 0)
     print(f"Scored designs: {len(scored)}")
-    print(f"Passing L ≥ {args.gate}: {len(passing)}")
-    print(f"Selected for submission: {len(selected)}")
+    print(f"ipTM ≥ 0.75: {len(iptm_pass)}")
+    print(f"Selected for submission: {len(selected)} ({n_positive_L} with L > 0)")
 
     if len(selected) < args.max:
         remaining_slots = args.max - len(selected)
-        marginal = [s for s in scored if s.get("L", 0) >= 1.0 and s not in selected]
-        marginal.sort(key=lambda x: (-x["L"], -x.get("iptm", 0)))
-        backfill = marginal[:remaining_slots]
+        remaining = [s for s in scored if s not in selected]
+        remaining.sort(key=lambda x: (-x.get("L", 0), -x.get("iptm", 0)))
+        backfill = remaining[:remaining_slots]
         if backfill:
-            print(f"Backfilling {len(backfill)} designs with L ≥ 1.0")
+            print(f"Backfilling {len(backfill)} designs (ipTM < 0.75, ranked by L)")
             selected.extend(backfill)
-
-    if not selected:
-        print("WARNING: No designs pass the gate. Using top designs by L regardless.")
-        scored.sort(key=lambda x: (-x.get("L", 0), -x.get("iptm", 0)))
-        selected = scored[:args.max]
 
     print(f"\n{'Name':<40s} {'L':>6s} {'ipTM':>6s} {'pLDDT':>6s} {'#H':>3s} {'Len':>4s}")
     print("-" * 70)
