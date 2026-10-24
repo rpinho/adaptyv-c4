@@ -281,14 +281,51 @@ Multi-seed validation showed ipTM varies 0.2-0.6 per design for TfR1 (training-s
 2. **Mechanistic inversion**: His707 at pH 5.5 is protonated (+); binder should present D/E opposite it, not His
 3. **Interface His driving switch**: designs with >4 interface His and pKa shifts >1.0 per His are strongest
 
+## ⚠️ CRITICAL: ΔΔG_switch sign inversion (Fable, verified 2026-10-23)
+
+**THE ENTIRE C4 SCORING PIPELINE IS INVERTED.** All three scoring scripts optimize for C3's
+endosomal-release mechanism (bind at pH 7.4, release at pH 5.5), not C4's conditional-binding
+objective (bind at pH 5.5, no binding at pH 7.4).
+
+### Evidence
+- `switch_sites.py:18`: "a switch position must be elevated-pKa when free AND depressed when bound" → C3
+- `ph_linkage.py:128`: gate is `L <= -2` (weaker binding at low pH) → C3
+- `complex_propka_switch.py`: ranks descending by ddg_switch; positive = pKa depression = C3
+
+### What C4 actually needs
+- His pKa RAISED on binding (proton uptake: nearby target carboxylates at interface)
+- Gate: L ≥ +2 (stronger binding at low pH = pH 5.5)
+- Rank by most NEGATIVE ddg_switch (or flip sign)
+
+### Corrected ranking (sign-flipped)
+| Rank | Design | corrected_ΔΔG | uptake_His | Note |
+|------|--------|---------------|------------|------|
+| 1 | **his015_96** | **+0.293** | 1 | **ONLY correct-direction design** |
+| 2 | his015_26 | -0.017 | 0 | near-zero |
+| 3 | his015_64 | -0.390 | 1 | weak wrong |
+| 4 | his200m | -0.518 | 0 | |
+| … | (16 more) | -1.3 to -5.7 | 0-1 | all strongly wrong direction |
+| 20 | his015_131 | **-5.703** | 0 | 15,000× selectivity FOR pH 7.4 |
+
+**0/20 designs reach actimo-labs benchmark (+2.84 to +4.56 kcal/mol).**
+The designs we planned to DELETE (his015_96, 26, 64, his200m) are actually the LEAST wrong.
+
+### Root cause
+Generation pipeline (`switch_sites.py`) targets cation-rich epitopes on TfR1 → depresses
+bound-state pKa. C4 requires targeting ACIDIC patches (Asp/Glu) → raises bound-state pKa.
+
+See: `results/consultations/FABLE_SIGN_INVERSION_CONSULTATION.md`
+
 ## Next steps (Nov 1 deadline, 9 days remaining)
-1. ~~Multi-seed validation~~ — DONE. All 4 tested unreliable. ipTM demoted to weak signal.
-2. **BLAST check**: RID DS28UNZP014 pending — verify top scorers aren't PDB mimics
-3. **Replace his015_96**: negative ΔΔG_switch — replace with best available pool design
-4. **Replace his015_26, his015_64, his200m**: near-zero ΔΔG_switch (pool: his015_105, 118, 176, 60)
-5. **Charge-cap check**: c4_v_62_max q(5.5)=+8.2 — may need non-interface H→Q/N
-6. **Iterate**: new RFdiffusion round targeting sparse His placement (actimo-labs style, 2-3 cooperative His)
-7. **Fable consultation**: review multi-seed findings + revised ranking strategy
+1. ~~Multi-seed validation~~ — DONE. ipTM unreliable for TfR1.
+2. ~~Fable consultation~~ — DONE. **Sign inversion confirmed.**
+3. **FIX THE OBJECTIVE**: flip switch_sites.py, ph_linkage.py gate, ranking direction
+4. **Calibrate against actimo-labs**: run their sequences through corrected pipeline (must get L ≈ +2 to +3)
+5. **Re-target epitope**: identify acidic patch on TfR1 apical domain for His placement
+6. **Regenerate**: new RFdiffusion round with corrected objective, sparse His (2-3), target carboxylates
+7. **BLAST check**: RID DS355YBZ014 pending (structural mimicry check)
+8. **Scramble control**: predict scrambled binder sequences → calibrate ipTM noise floor
+9. **Keep his015_96**: only correct-direction design (L=+0.21), include as positive-direction reference
 
 ## Cost
 - RFD4 generation: ~$9 on Modal L40S (200 e1_plain + 200 e1_his015)
