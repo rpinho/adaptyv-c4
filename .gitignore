@@ -23,3 +23,4 @@ results/native_domain_v16/driver.lock
 results/domain_hard_refold_v17/driver.lock
 results/diffusion_v18/driver.lock
 data/*.cif
+*.pka
