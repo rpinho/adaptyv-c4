@@ -125,7 +125,7 @@ def score_one(pdb, binder_chain, target_chain, ph_low, ph_high, min_shift, verbo
         res = dict(design=os.path.basename(pdb), L=round(L, 3),
                    n_groups=len(rows), n_binder_his=len(binder_his),
                    n_target_his=len(target_his),
-                   switch_ok=bool(L <= -2.0), rows=rows)
+                   switch_ok=bool(L >= 2.0), rows=rows)
         if verbose:
             print("%-44s L=%+.2f  groups=%d  binderHis=%d  targetHis=%d  %s"
                   % (res["design"], L, len(rows), len(binder_his), len(target_his),
@@ -146,7 +146,7 @@ def main():
     ap.add_argument("path", help="a complex PDB, or a directory of them")
     ap.add_argument("--binder-chain", default="B")
     ap.add_argument("--target-chain", default="A")
-    ap.add_argument("--ph-low", type=float, default=6.0)
+    ap.add_argument("--ph-low", type=float, default=5.5)
     ap.add_argument("--ph-high", type=float, default=7.4)
     ap.add_argument("--min-shift", type=float, default=0.1)
     ap.add_argument("--csv")
@@ -161,18 +161,18 @@ def main():
     if not pdbs:
         raise SystemExit("no PDB files found at %s" % a.path)
 
-    print("proton linkage L = log10 Ka(%.1f) - log10 Ka(%.1f); the pH gate needs L <= -2\n"
+    print("proton linkage L = log10 Ka(%.1f) - log10 Ka(%.1f); C4 gate needs L >= +2\n"
           % (a.ph_low, a.ph_high))
     results = [r for r in (score_one(p, a.binder_chain, a.target_chain,
                                      a.ph_low, a.ph_high, a.min_shift) for p in pdbs) if r]
     if not results:
         raise SystemExit("nothing scored")
-    results.sort(key=lambda r: r["L"])
-    print("\nranked (most pH-selective first):")
+    results.sort(key=lambda r: r["L"], reverse=True)
+    print("\nranked (most pH-selective first, C4 = L most positive):")
     for r in results:
         print("  %-44s L=%+.2f %s" % (r["design"], r["L"], "PASS" if r["switch_ok"] else ""))
     passing = [r for r in results if r["switch_ok"]]
-    print("\n%d of %d designs clear L <= -2" % (len(passing), len(results)))
+    print("\n%d of %d designs clear L >= +2" % (len(passing), len(results)))
 
     if a.csv:
         with open(a.csv, "w", newline="") as fh:

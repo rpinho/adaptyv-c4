@@ -154,8 +154,12 @@ def analyze_design(name, complex_pdb):
     free_pkas = run_propka_on_pdb(free_binder_path)
     binder_his_free = {r: pka for (c, r), pka in free_pkas.items() if c == "A"}
 
-    # 3. Interface His
-    interface_his = find_interface_his(complex_pdb) or list(binder_his_bound.keys())
+    # 3. Interface His (None = BioPython missing; [] = no interface His found)
+    interface_his_result = find_interface_his(complex_pdb)
+    if interface_his_result is None:
+        interface_his = list(binder_his_bound.keys())
+    else:
+        interface_his = interface_his_result
 
     # 4. His707 contacts
     his707_contacts = find_his707_contacts(complex_pdb)
@@ -163,9 +167,10 @@ def analyze_design(name, complex_pdb):
     # 5. Compute ΔΔG_switch for interface His only
     his_analysis = []
     total_ddg = 0.0
-    for resnum in sorted(set(binder_his_bound.keys()) | set(binder_his_free.keys())):
-        pka_b = binder_his_bound.get(resnum, 6.5)
-        pka_f = binder_his_free.get(resnum, 6.5)
+    common_his = sorted(set(binder_his_bound.keys()) & set(binder_his_free.keys()))
+    for resnum in common_his:
+        pka_b = binder_his_bound[resnum]
+        pka_f = binder_his_free[resnum]
         dpka = pka_b - pka_f
         is_interface = resnum in interface_his
         ddg_bound = wyman_linkage_ddg(pka_b)
@@ -188,7 +193,8 @@ def analyze_design(name, complex_pdb):
     result["his_analysis"] = his_analysis
     result["interface_his_count"] = sum(1 for h in his_analysis if h["interface"])
     result["total_his_count"] = len(his_analysis)
-    result["ddg_switch_interface"] = round(total_ddg, 3)
+    # C4: positive = proton UPTAKE on binding = correct (bind at pH 5.5)
+    result["ddg_switch_interface"] = round(-total_ddg, 3)
     result["his707_contacts"] = his707_contacts
     result["target_his_bound"] = {str(k): round(v, 2) for k, v in target_his_bound.items()}
 
@@ -250,7 +256,7 @@ def main():
 
     # Summary ranking
     print(f"\n\n{'='*100}")
-    print("COMPLEX PROPKA RANKING — ΔΔG_switch (interface His only)")
+    print("COMPLEX PROPKA RANKING — C4 ΔΔG_switch (positive = proton uptake = correct)")
     print(f"{'='*100}")
     print(f"{'Design':<40s} {'ipTM':>6s} {'iHis':>5s} {'ΔΔG_sw':>8s} {'His707':>7s}")
     print("-" * 100)
