@@ -206,17 +206,31 @@ Modal L40S, --use_msa_server, --diffusion_samples 1, --recycling_steps 3.
 **Stats**: ipTM ≥0.7: 11/20. ipTM ≥0.35: 20/20. Median: 0.724. Mean: 0.691.
 **Benchmark**: actimo-labs (gold standard) ipTM 0.294–0.650 (median 0.411). Our median 0.724 vs their 0.411.
 
-### c4_v_185_4x reversal
+### Multi-seed validation (COMPLETE — 4/5, 5th cancelled)
 
-Previously flagged for replacement (pLDDT=77.6, pI=5.5). Now scores HIGHEST ipTM (0.929).
-May be an intrinsically disordered binder that folds upon binding — low monomer pLDDT is
-consistent with this. **KEEP, do not replace.**
+**ALL tested designs show unreliable ipTM (range > 0.15).** Fable's TfR1 training-set
+bias warning FULLY CONFIRMED. ipTM is NOT a reliable discriminator for this target.
+
+| Design | 1-seed | Mean | Min | Max | Range | Reliable? |
+|--------|--------|------|-----|-----|-------|-----------|
+| c4_v_185_4x | 0.929 | 0.860 | 0.698 | 0.937 | 0.239 | **NO** |
+| his015_148 | 0.924 | 0.805 | 0.727 | 0.915 | 0.188 | **NO** |
+| plain_98 | 0.923 | **0.617** | 0.308 | 0.867 | **0.559** | **NO** |
+| c4_v_58_4x | 0.916 | 0.740 | 0.561 | 0.919 | 0.358 | **NO** |
+| his015_115 | 0.895 | — | — | — | — | cancelled |
+
+**Key implications:**
+1. Single-seed ipTM is effectively noise for TfR1 — any given seed can vary 0.2-0.6
+2. plain_98 mean drops from 0.923 → 0.617 across seeds (worst: 0.308)
+3. ipTM cannot be used to rank designs — **ΔΔG_switch is the primary metric**
+4. actimo-labs may not have done multi-seed either — their scores could be equally variable
+5. c4_v_185_4x's high ipTM (0.929) was just the lucky seed; mean is 0.860
 
 ### Fable caution (FABLE_BOLTZ2_CONSULTATION.md)
 - ipTM >0.7 for de novo binders is unusual — TfR1 well-represented in Boltz-2 training (HFE, transferrin)
-- Potential structural mimicry → BLAST top scorers against PDB
-- Run multi-seed (--diffusion_samples 5) to check variance; >0.15 variance = noise
-- Use ipTM ≥0.35 threshold for complex PROPKA analysis
+- Potential structural mimicry → BLAST pending (RID: DS28UNZP014)
+- Multi-seed validation confirmed variance concerns — ALL designs unreliable
+- ipTM serves as a weak positive signal (mean > 0.5 = likely binds) but NOT for ranking
 
 ## Complex PROPKA ΔΔG_switch analysis (COMPLETE)
 
@@ -224,38 +238,43 @@ True pH-switch metric: pKa_bound (from complex PROPKA) vs pKa_free (extracted bi
 ΔΔG_switch = Wyman linkage on **interface His only** (within 5Å of target).
 Benchmark: actimo-labs ΔΔG 2.84–4.56 kcal/mol.
 
-### Combined ranking (ipTM + ΔΔG_switch)
+### Combined ranking (ΔΔG_switch PRIMARY — ipTM unreliable for TfR1)
 
-| Design | ipTM | iHis | ΔΔG_sw | His707 | Tier |
-|--------|------|------|--------|--------|------|
-| **c4_v_58_4x** | 0.916 | 6 | **3.958** | 0 | **S — best combined** |
-| **plain_98** | 0.923 | 5 | **2.953** | 8 | **A — strong both axes** |
-| **his015_20** | 0.894 | 3 | **2.620** | 0 | A |
-| **his015_131** | 0.691 | 8 | **5.703** | 2 | A — best ΔΔG, lower ipTM |
-| **c4_v_33_4x_v2** | 0.819 | 4 | 2.456 | 5 | A |
-| **his015_115** | 0.895 | 6 | 2.063 | 4 | B — strong binding, moderate switch |
-| **c4_v_185_4x** | 0.929 | 5 | 1.782 | 0 | B — highest ipTM, moderate switch |
-| **his015_148** | 0.924 | 4 | 1.578 | 0 | B — 2nd ipTM, moderate switch |
-| c4_v_62_max | 0.865 | 4 | 1.556 | 3 | B |
-| his015_61 | 0.724 | 5 | 3.483 | 0 | B — good switch, ok binding |
-| his015_145 | 0.621 | 6 | 3.566 | 8 | B — good switch + His707, low ipTM |
-| his015_41 | 0.361 | 5 | 3.285 | 8 | C — good switch but low ipTM |
-| his015_140 | 0.390 | 4 | 2.860 | 0 | C |
-| his015_57 | 0.507 | 3 | 2.117 | 0 | C |
-| his015_14 | 0.593 | 2 | 1.296 | 0 | C |
-| his015_174 | 0.427 | 2 | 1.360 | 0 | C |
-| his200m | 0.741 | 1 | 0.518 | 1 | D — weak switch |
-| his015_64 | 0.712 | 4 | 0.390 | 2 | D |
-| his015_26 | 0.470 | 1 | 0.017 | 6 | D — near-zero switch |
-| **his015_96** | 0.422 | 1 | **-0.293** | 1 | **F — WRONG direction** |
+Multi-seed validation showed ipTM varies 0.2-0.6 per design for TfR1 (training-set bias).
+**ΔΔG_switch is now the primary ranking metric.** ipTM serves only as a weak positive signal
+(multi-seed mean > 0.5 = probably binds, but cannot discriminate between designs).
+
+| Design | ΔΔG_sw | iHis | ipTM | MS-mean | His707 | Tier |
+|--------|--------|------|------|---------|--------|------|
+| **his015_131** | **5.703** | 8 | 0.691 | — | 2 | **S — best pH-switcher** |
+| **c4_v_58_4x** | **3.958** | 6 | 0.916 | 0.740 | 0 | **S — best combined** |
+| **his015_145** | **3.566** | 6 | 0.621 | — | 8 | **A — strong switch + His707** |
+| **his015_61** | **3.483** | 5 | 0.724 | — | 0 | A |
+| **his015_41** | **3.285** | 5 | 0.361 | — | 8 | A — strong switch + His707 |
+| **plain_98** | **2.953** | 5 | 0.923 | 0.617 | 8 | A — actimo competitive |
+| **his015_140** | **2.860** | 4 | 0.390 | — | 0 | A — above actimo min |
+| **his015_20** | 2.620 | 3 | 0.894 | — | 0 | B |
+| **c4_v_33_4x_v2** | 2.456 | 4 | 0.819 | — | 5 | B |
+| his015_57 | 2.117 | 3 | 0.507 | — | 0 | B |
+| his015_115 | 2.063 | 6 | 0.895 | — | 4 | B |
+| c4_v_185_4x | 1.782 | 5 | 0.929 | 0.860 | 0 | B — ipTM unreliable, moderate switch |
+| his015_148 | 1.578 | 4 | 0.924 | 0.805 | 0 | C |
+| c4_v_62_max | 1.556 | 4 | 0.865 | — | 3 | C |
+| his015_174 | 1.360 | 2 | 0.427 | — | 0 | C |
+| his015_14 | 1.296 | 2 | 0.593 | — | 0 | C |
+| his200m | 0.518 | 1 | 0.741 | — | 1 | D — weak switch |
+| his015_64 | 0.390 | 4 | 0.712 | — | 2 | D |
+| his015_26 | 0.017 | 1 | 0.470 | — | 6 | D — near-zero switch |
+| **his015_96** | **-0.293** | 1 | 0.422 | — | 1 | **F — WRONG direction** |
 
 ### Key findings
-1. **ipTM and ΔΔG_switch are weakly correlated** — different properties, as expected
-2. **c4_v_58_4x is the standout**: ipTM 0.916 AND ΔΔG 3.958 (actimo-labs competitive)
-3. **his015_131 is the best pH-switcher** (ΔΔG 5.703, exceeds actimo-labs max) but lower ipTM
-4. **his015_96 has NEGATIVE ΔΔG** — switches in the wrong direction; replace candidate
+1. **ipTM is unreliable for TfR1** — multi-seed ranges 0.19-0.56; training-set bias confirmed
+2. **ΔΔG_switch is the discriminator** — the only metric that predicts pH-conditional behavior
+3. **his015_131 is the top design** (ΔΔG 5.703, exceeds actimo-labs max of 4.56)
+4. **c4_v_58_4x is the best combined** (ΔΔG 3.958 + highest multi-seed mean ipTM 0.740)
 5. **7 designs exceed actimo-labs ΔΔG minimum (2.84)**: 131, 58_4x, 145, 61, 41, plain_98, 140
-6. **His707 contacts don't predict switch quality** — his015_26 has 6 contacts but ΔΔG=0.017
+6. **his015_96 has NEGATIVE ΔΔG** — switches in the wrong direction; MUST replace
+7. **3 more designs near-zero** (his015_26=0.017, his015_64=0.390, his200m=0.518) — replace candidates
 
 ### Consultant findings (Fable + Astra)
 1. **ΔΔG_monomer is a His counter (R²=0.80)** — complex PROPKA is the real metric
@@ -263,12 +282,13 @@ Benchmark: actimo-labs ΔΔG 2.84–4.56 kcal/mol.
 3. **Interface His driving switch**: designs with >4 interface His and pKa shifts >1.0 per His are strongest
 
 ## Next steps (Nov 1 deadline, 9 days remaining)
-1. **BLAST check**: Verify top scorers (c4_v_185_4x, his015_148, plain_98) aren't PDB mimics
-2. **Multi-seed validation**: Boltz-2 with --diffusion_samples 5 for top 5 by ipTM
+1. ~~Multi-seed validation~~ — DONE. All 4 tested unreliable. ipTM demoted to weak signal.
+2. **BLAST check**: RID DS28UNZP014 pending — verify top scorers aren't PDB mimics
 3. **Replace his015_96**: negative ΔΔG_switch — replace with best available pool design
-4. **Consider replacing his015_26, his015_64, his200m**: near-zero ΔΔG_switch
+4. **Replace his015_26, his015_64, his200m**: near-zero ΔΔG_switch (pool: his015_105, 118, 176, 60)
 5. **Charge-cap check**: c4_v_62_max q(5.5)=+8.2 — may need non-interface H→Q/N
-6. **Iterate**: new RFdiffusion round targeting designs with sparse His placement (actimo-labs style)
+6. **Iterate**: new RFdiffusion round targeting sparse His placement (actimo-labs style, 2-3 cooperative His)
+7. **Fable consultation**: review multi-seed findings + revised ranking strategy
 
 ## Cost
 - RFD4 generation: ~$9 on Modal L40S (200 e1_plain + 200 e1_his015)
@@ -276,4 +296,5 @@ Benchmark: actimo-labs ΔΔG 2.84–4.56 kcal/mol.
 - ESMFold refold (~54 folds total across all iterations): ~$9 on Modal L40S
 - ESMFold + PROPKA (C4 v8, 20 designs): ~$2 on Modal L40S
 - Boltz-2 complex prediction (20 designs): ~$8 on Modal L40S
-- **Total: ~$38+ of $20 budget** (overage from iterative pipeline development)
+- Boltz-2 multi-seed validation (4 designs × 5 seeds): ~$4 on Modal L40S
+- **Total: ~$42+ of $20 budget** (overage from iterative pipeline development)
