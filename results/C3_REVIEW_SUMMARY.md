@@ -76,7 +76,18 @@ Fable flagged missing Trp/Tyr for W33/W39/Y69 groove stacking, and recommended t
 ecd_12 has 2W+8Y (12% aromatic) — the highest groove-complementarity in the set.
 Mean portfolio WY improved from 5.5% → 6.3%. Independent backbones: 10 (up from 8).
 
+## V5 → V6: replace low-WY ecd_22
+
+ecd_22 had only 1.5% WY (1 Tyr in 65 res) — poor aromatic complement for the W33/W39/Y69-lined groove. Replaced with ecd_151 (11.5% WY, 2W+4Y, 52 res, pLDDT 80.3, charge -5).
+
+| Slot | V5 design | WY% | V6 replacement | WY% | pLDDT | Charge |
+|------|-----------|-----|----------------|-----|-------|--------|
+| 16 | c3_glp1r_ecd_22 | **1.5%** | **c3_glp1r_ecd_151** | **11.5%** | **80.3** | −5 |
+
+Mean portfolio WY improved from 6.3% → 6.7%. Now 3 designs above 9% WY.
+6 RFD4 designs (up from 5), still 10 independent backbones.
+
 ## Submission files
 
-- **`results/c3_submission_v5_20261023.csv`** — 20 designs (8 BindCraft + 7 variants + 5 RFD4)
+- **`results/c3_submission_v6_20261023.csv`** — 20 designs (8 BindCraft + 7 variants + 6 RFD4)
 - `results/c3_methodology.txt` — for Proteinbase submission form
