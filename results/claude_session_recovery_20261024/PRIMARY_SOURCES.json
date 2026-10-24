@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-10-24T12:08:43.480641+00:00",
+  "sources": [
+    {
+      "title": "Boltz official prediction documentation",
+      "url": "https://github.com/jwohlwend/boltz/blob/main/docs/prediction.md",
+      "supports": "ipTM is an interface structural-confidence quantity; confidence and affinity outputs are distinct"
+    },
+    {
+      "title": "PROPKA authors\u2019 repository and method references",
+      "url": "https://github.com/jensengroup/propka",
+      "supports": "PROPKA provides structure-based empirical pKa predictions"
+    },
+    {
+      "title": "Raghavan et al., Biochemistry 1995",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/7578107/",
+      "supports": "Experimental pH dependence of the natural FcRn/IgG interaction"
+    },
+    {
+      "title": "Baker and Murphy, Biophysical Journal 1996",
+      "url": "https://doi.org/10.1016/S0006-3495(96)79403-1",
+      "supports": "Experimental protonation-binding linkage depends on the stated thermodynamic observables"
+    }
+  ]
+}

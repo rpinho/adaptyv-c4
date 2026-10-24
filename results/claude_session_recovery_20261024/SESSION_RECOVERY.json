@@ -1,0 +1,158 @@
+{
+  "recorded_at": "2026-10-24T12:07:35.697387+00:00",
+  "state": "recovered_and_methodological_review_continued",
+  "claude_session_title": "claude-adaptyv-c4-v2",
+  "claude_session_id": "e08d870a-a286-4846-bb11-f5d7bbc95128",
+  "codex_thread_id": "01a15f2f-94e9-77c3-a384-0a24d7871728",
+  "match_basis": "Same Adaptyv project and known continuation from older claude-adaptyv-c4; Codex on-disk title differs, so literal same-title match is not claimed",
+  "last_session_timestamp": "2026-10-24T03:05:12.116Z",
+  "last_visible_work": "Post-compaction messages report a scoring-convention correction, withdraw earlier success claims, and end in a credit-limit error",
+  "read_scope": "Visible user/assistant text, latest compaction context, file-edit provenance, task notification and existing artifact metadata; hidden thinking and credentials not extracted",
+  "visible_message_counts": {
+    "main_user": 93,
+    "main_assistant": 900,
+    "control_worker_user": 2,
+    "control_worker_assistant": 16
+  },
+  "sources": {
+    "/Users/ricardo/.claude/projects/-Users-ricardo--worktrees-personal-kb-claude-adaptyv-c4-v2/e08d870a-a286-4846-bb11-f5d7bbc95128.jsonl": {
+      "sha256": "5ec3666839be2a4ab9e5a0127e2f92c6847edeea001bb51732bce87e53912d5b",
+      "bytes": 47682333
+    },
+    "/Users/ricardo/.claude/projects/-Users-ricardo--worktrees-personal-kb-claude-adaptyv-c4-v2/e08d870a-a286-4846-bb11-f5d7bbc95128/subagents/agent-a6b3554ee0247d0a6.jsonl": {
+      "sha256": "e3d0e6a00ec2a3bafa4883d20551eba61372c4664dc79da32023f27f98864b93",
+      "bytes": 888350
+    }
+  },
+  "concurrent_edit_events": [
+    {
+      "actor": "main",
+      "time": "2026-10-24T02:42:44.979Z",
+      "operation": "Write",
+      "file": "score_c4_acid.py"
+    },
+    {
+      "actor": "main",
+      "time": "2026-10-24T02:47:18.994Z",
+      "operation": "Write",
+      "file": "build_submission_v8.py"
+    },
+    {
+      "actor": "main",
+      "time": "2026-10-24T02:55:30.976Z",
+      "operation": "Edit",
+      "file": "score_c4_acid.py"
+    },
+    {
+      "actor": "main",
+      "time": "2026-10-24T02:55:39.876Z",
+      "operation": "Edit",
+      "file": "score_c4_acid.py"
+    },
+    {
+      "actor": "control_worker",
+      "time": "2026-10-24T03:03:26.641Z",
+      "operation": "Edit",
+      "file": "score_c4_acid.py"
+    },
+    {
+      "actor": "main",
+      "time": "2026-10-24T03:03:43.014Z",
+      "operation": "Edit",
+      "file": "score_c4_acid.py"
+    },
+    {
+      "actor": "main",
+      "time": "2026-10-24T03:03:47.324Z",
+      "operation": "Edit",
+      "file": "score_c4_acid.py"
+    },
+    {
+      "actor": "main",
+      "time": "2026-10-24T03:05:00.687Z",
+      "operation": "Edit",
+      "file": "build_submission_v8.py"
+    }
+  ],
+  "user_working_changes_preserved": [
+    {
+      "path": "results/c4_acid_scored_batch1.json",
+      "sha256": "5a37e6aacad501d9ba2c42c71392f242665b6e49d760d6147d377f27bb0ff6c1",
+      "snapshot": "/Users/ricardo/.cache/adaptyv-c4/session_recovery_20261024/workingtree_snapshot/results/c4_acid_scored_batch1.json",
+      "modified_by_recovery": false
+    },
+    {
+      "path": "scripts/build_submission_v8.py",
+      "sha256": "93cf06c58de61a59384170739a0cc1db8ea18d455b00f0ac4117647ece47a435",
+      "snapshot": "/Users/ricardo/.cache/adaptyv-c4/session_recovery_20261024/workingtree_snapshot/scripts/build_submission_v8.py",
+      "modified_by_recovery": false
+    },
+    {
+      "path": "scripts/score_c4_acid.py",
+      "sha256": "c8ae81fe9b0d4aed3ca3b83d0680d3489f699221e76ed013f2431fd2770b571e",
+      "snapshot": "/Users/ricardo/.cache/adaptyv-c4/session_recovery_20261024/workingtree_snapshot/scripts/score_c4_acid.py",
+      "modified_by_recovery": false
+    }
+  ],
+  "artifact_presence": [
+    {
+      "path": "results/c4_acid_boltz2_batch1.json",
+      "present": true,
+      "sha256": "fdd0f124ea1d20793702c17a01411fc5a278caa207a8bba37794252f4626efdf"
+    },
+    {
+      "path": "results/c4_acid_boltz2_batch2.json",
+      "present": true,
+      "sha256": "9243518250954ec775ac3b573f6b301267c985d9a1c51310a32718eb7422e520"
+    },
+    {
+      "path": "results/c4_acid_boltz2.json",
+      "present": true,
+      "sha256": "9243518250954ec775ac3b573f6b301267c985d9a1c51310a32718eb7422e520"
+    },
+    {
+      "path": "results/c4_acid_scored_combined.json",
+      "present": true,
+      "sha256": "cc5ef331afb02bec5bc48cf72c88264d386db8dacb410b4bf4994c39152e3884"
+    },
+    {
+      "path": "scripts/fcrn_positive_control.py",
+      "present": true,
+      "sha256": "6bdfe3f6ee56a3c37e2ff953215d1b70628a32b5ba53b73f31945cdc9c750ce0"
+    }
+  ],
+  "production_scoring_executed": false,
+  "candidates_reranked": false,
+  "designs_generated": false,
+  "source_files_changed": false,
+  "portal_or_account_actions": false,
+  "current_modal_apps": [
+    {
+      "app_id": "ap-XtLPz6eryoS2C7b8OSfqRR",
+      "description": "adaptyv-c4-native-control",
+      "state": "deployed",
+      "tasks": "0",
+      "created_at": "2026-10-22 11:30:52-04:00",
+      "stopped_at": null
+    },
+    {
+      "app_id": "ap-dzwX0RVpun7AagVi94b8TZ",
+      "description": "claude-science-alder-dusk-ember",
+      "state": "deployed",
+      "tasks": "0",
+      "created_at": "2026-10-18 14:43:52-04:00",
+      "stopped_at": null
+    }
+  ],
+  "new_gpu_or_cloud_compute_spend_usd": 0,
+  "recorded_prior_runpod_usd": 56.5899880444631,
+  "prior_own_lane_estimate_usd": 73.31182697841318,
+  "current_total_spend_unreconciled": true,
+  "additional_spend_in_claude_summary": "Approximately $45+ claimed; scope and invoice not verified, so not added to prior estimate",
+  "unfinished_control_status": "Credit-limit failure recorded for the worker; no standalone FcRn result receipt found in results inventory, so calibration is not certified",
+  "continuation_scope": "Session recovery, provenance, confidence-metric interpretation and high-level methodological literature review; no targeted BBB binder optimization resumed",
+  "publication_performed": false,
+  "raw_transcript_copied_into_repository": false,
+  "recovery_report": "outbox/adaptyv-c4-claude-recovery-20261024.html",
+  "recovery_report_sha256": "0851f90772200b7eb8ec595e53e2282653e4491b228f44f2ec5e8f97cc18f325"
+}
