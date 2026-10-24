@@ -37,7 +37,7 @@ image = (
         "boltz[cuda]",
         "pyyaml",
     )
-    .env({"BOLTZ_CACHE": "/cache/boltz"})
+    .env({"BOLTZ_CACHE": "/cache/boltz", "REBUILD": "v2"})
     .add_local_file(str(CSV_PATH), "/workspace/sequences.csv")
 )
 
@@ -51,6 +51,7 @@ image = (
 def predict_complexes():
     import subprocess
     import os
+    import shutil
     import yaml
 
     # Load sequences
@@ -119,10 +120,17 @@ def predict_complexes():
             results.append({"name": name, "error": "timeout"})
             continue
 
-        # Parse confidence output
-        pred_dir = out_dir / "predictions" / name
-        conf_files = list(pred_dir.glob("confidence_*.json")) if pred_dir.exists() else []
-        pdb_files = list(pred_dir.glob("*.pdb")) if pred_dir.exists() else []
+        # Boltz-2 output: {out_dir}/boltz_results_{name}/predictions/{name}/
+        pred_dir = out_dir / f"boltz_results_{name}" / "predictions" / name
+        if not pred_dir.exists():
+            # Fallback: search recursively
+            print(f"  Expected {pred_dir} not found, searching...", flush=True)
+            for p in sorted(out_dir.rglob("*")):
+                print(f"    {p.relative_to(out_dir)}", flush=True)
+            pred_dir = out_dir  # rglob from out_dir
+
+        conf_files = list(pred_dir.rglob("confidence*.json"))
+        pdb_files = list(pred_dir.rglob("*.pdb"))
 
         if conf_files:
             with open(conf_files[0]) as f:
@@ -137,7 +145,6 @@ def predict_complexes():
 
             # Copy PDB and confidence to volume
             if pdb_files:
-                import shutil
                 dest = out_base / f"{name}_complex.pdb"
                 shutil.copy2(pdb_files[0], dest)
                 print(f"  Saved complex PDB to {dest}", flush=True)
