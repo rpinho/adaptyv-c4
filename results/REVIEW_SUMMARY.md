@@ -316,16 +316,19 @@ bound-state pKa. C4 requires targeting ACIDIC patches (Asp/Glu) → raises bound
 
 See: `results/consultations/FABLE_SIGN_INVERSION_CONSULTATION.md`
 
-## Next steps (Nov 1 deadline, 9 days remaining)
+## Next steps (Nov 1 deadline, 8 days remaining)
 1. ~~Multi-seed validation~~ — DONE. ipTM unreliable for TfR1.
 2. ~~Fable consultation~~ — DONE. **Sign inversion confirmed.**
-3. **FIX THE OBJECTIVE**: flip switch_sites.py, ph_linkage.py gate, ranking direction
-4. **Calibrate against actimo-labs**: run their sequences through corrected pipeline (must get L ≈ +2 to +3)
-5. **Re-target epitope**: identify acidic patch on TfR1 apical domain for His placement
-6. **Regenerate**: new RFdiffusion round with corrected objective, sparse His (2-3), target carboxylates
-7. **BLAST check**: RID DS355YBZ014 pending (structural mimicry check)
-8. **Scramble control**: predict scrambled binder sequences → calibrate ipTM noise floor
-9. **Keep his015_96**: only correct-direction design (L=+0.21), include as positive-direction reference
+3. ~~FIX THE OBJECTIVE~~ — DONE. switch_sites.py, ph_linkage.py, complex_propka_switch.py all corrected.
+4. **Calibrate against actimo-labs**: ESMFold+PROPKA running on Modal (10 of 20 seqs)
+5. ~~Re-target epitope~~ — DONE. TfR1 acidic surface mapped (1CX8 crystal + 11QC CIF).
+   - Site 1: E561, E573, E593, E607 (conserved Glu cluster, 11QC numbering)
+   - Site 2: D538, E561, E573 (Asp+Glu mixed patch)
+6. **Regenerate (IN PROGRESS)**: RFD4 preflight running for c4_acid1 spec
+   - Two new hotspot configs targeting carboxylate patches
+   - Will generate 200+ backbones per site after preflight validates
+7. **BLAST check**: RID DS355YBZ014 still WAITING
+8. **Keep his015_96**: only correct-direction design (L=+0.21), include as positive reference
 
 ## Cost
 - RFD4 generation: ~$9 on Modal L40S (200 e1_plain + 200 e1_his015)
@@ -334,4 +337,5 @@ See: `results/consultations/FABLE_SIGN_INVERSION_CONSULTATION.md`
 - ESMFold + PROPKA (C4 v8, 20 designs): ~$2 on Modal L40S
 - Boltz-2 complex prediction (20 designs): ~$8 on Modal L40S
 - Boltz-2 multi-seed validation (4 designs × 5 seeds): ~$4 on Modal L40S
-- **Total: ~$42+ of $20 budget** (overage from iterative pipeline development)
+- Actimo calibration + C4 acid preflight: ~$3 (estimated)
+- **Total: ~$45+ of $20 budget** (overage from iterative pipeline development + sign fix)
