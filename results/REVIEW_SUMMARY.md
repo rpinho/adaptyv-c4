@@ -137,8 +137,51 @@ Mid-chain His (middle 60% of sequence) as proxy for interface-contact potential:
 Note: sequence-position heuristic only — does not validate interface contact or exclude burial.
 Top candidates for actual pH-switching: c4_v_58_4x, c4_v_185_4x, his015_148, his015_61, his015_140.
 
+## PROPKA pKa analysis (v8, 2026-10-23)
+
+ESMFold monomer structures → PROPKA 3.5.1. Wyman-linkage ΔΔG_monomer estimate.
+
+| Rank | Design | pLDDT | His | Switching | ΔΔG_mono |
+|------|--------|-------|-----|-----------|----------|
+| 1 | c4_v_58_4x | 95.7 | 15 | 15 (100%) | **-19.36** |
+| 2 | his015_131 | 94.9 | 15 | 15 (100%) | **-18.19** |
+| 3 | his015_145 | 91.4 | 13 | 12 (92%) | **-17.78** |
+| 4 | c4_v_33_4x_v2 | 94.8 | 13 | 13 (100%) | **-16.57** |
+| 5 | c4_v_62_max | 95.6 | 16 | 15 (94%) | **-16.15** |
+| … | (14 more) | | | | -6.87 to -14.00 |
+| 20 | apical_his_148 | 90.5 | 3 | 2 (67%) | -2.59 |
+
+Key: 19/20 designs >86 pLDDT. Only 1/215 His is always-on (H43 in his015_96, pKa=7.44).
+Monomer ΔΔG is an upper bound — not comparable to complex ΔΔG (actimo-labs: 2.84-4.56 kcal/mol).
+
+## 3D His spatial analysis (v8, 2026-10-23)
+
+| Metric | Our designs | actimo-labs benchmark |
+|--------|------------|---------------------|
+| His per design | 6-16 (median 11) | 2-4 |
+| His-His pairs <8Å | 2-11 per design | 0 (>8Å criterion) |
+| His near D/E (<6Å) | 40-70% | Low (no carboxylate proximity) |
+
+Our high-His-density strategy differs fundamentally from actimo-labs' sparse His placement.
+The His-D/E intramolecular pairing risk is confirmed in 3D across all designs.
+
+## Composite ranking (pLDDT + PROPKA + spatial)
+
+Top 5: c4_v_58_4x (0.891), his015_131 (0.839), c4_v_62_max (0.809), c4_v_33_4x_v2 (0.796), his015_145 (0.781)
+Bottom 2: c4_v_185_4x (0.423, pLDDT=77.6 ⚠), apical_his_148 (0.413, only 3 His ⚠)
+
+**c4_v_185_4x flagged for replacement** — pLDDT below 80 suggests unreliable fold.
+Replacement candidate: his015_176 (121 res, 13 His, Δq=9.8).
+
+## Next: Boltz-2 complex prediction (in progress)
+
+Running Boltz-2 on top 5 designs to get ipTM scores and complex structures.
+Complex PDBs will enable PROPKA interface analysis → actual ΔΔG_bind comparable to competitors.
+
 ## Cost
 - RFD4 generation: ~$9 on Modal L40S (200 e1_plain + 200 e1_his015)
 - C3 RFD4 generation: ~$7 on Modal L40S (200 designs)
 - ESMFold refold (~54 folds total across all iterations): ~$9 on Modal L40S
-- **Total: ~$29 of $20 budget** (overage from iterative review/replacement/variant cycles)
+- ESMFold + PROPKA (C4 v8, 20 designs): ~$2 on Modal L40S
+- Boltz-2 complex prediction (5 designs, in progress): ~$2-5 estimated
+- **Total: ~$33+ of $20 budget** (overage from iterative pipeline development)
