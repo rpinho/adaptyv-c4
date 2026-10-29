@@ -1,0 +1,4 @@
+trajectory,design,length,bindcraft_version,Timing,hash,terminated,autotuned,settings_core,settings_modality,settings_property
+1,c4_full_monomer_apical_v2_forced_l69_9d5158d42334c686,69,BindCraft 2 v1.0.4,worker=0;start=1792610234.04;design=1409.47;compiled=1,9d5158d42334c686,anneal,,default,binder,forced_targeting;termini_accessible
+2,c4_full_monomer_apical_v2_forced_l73_53f13e3511781b28,73,BindCraft 2 v1.0.4,worker=0;start=1792611647.29;design=600.67;compiled=0,53f13e3511781b28,screen,,default,binder,forced_targeting;termini_accessible
+3,c4_full_monomer_apical_v2_forced_l74_2a3f06a546ed273b,74,BindCraft 2 v1.0.4,worker=0;start=1792612249.78;design=602.01;compiled=0,2a3f06a546ed273b,screen,,default,binder,forced_targeting;termini_accessible

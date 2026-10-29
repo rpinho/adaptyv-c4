@@ -1,0 +1,33 @@
+{
+ "created_at_utc": "2026-10-26T14:35:03Z",
+ "purpose": "Measure the effect of this lane's interpretive choices on the v4 seat set",
+ "S1_N_for_first_seat": {
+  "granted_N": 1.0,
+  "S_as_built": 42.9846,
+  "S_if_N_0.5": 37.9846,
+  "gap_to_second_seat_as_built": 10.0289,
+  "first_seat_still_first": true,
+  "reading": "The first seat wins on D=1.0 (20 points, fixed by rule for the first pick) plus C; the N grant is not what selects it. Even at N=0.5 it stays ahead of seat 2."
+ },
+ "S2_N_cap": {
+  "n_seats_with_N_1": 2,
+  "n_seats_with_N_0.5": 7,
+  "n_seats_with_N_0": 11,
+  "note": "N=1 arises only for the two generation methods present (site1/site2), so at most 2 seats can earn it; the rest are 0.5 or 0."
+ },
+ "N_is_screening_coverage": {
+  "n_eligible": 49,
+  "n_eligible_in_novelty_set": 11,
+  "n_eligible_not_screened": 38,
+  "n_seats_in_novelty_set": 9,
+  "n_seats_not_screened": 11,
+  "novelty_pool_size": 32,
+  "reading": "N=0 for a seat means 'nobody screened this design', not 'this design is not novel'. Of the 20 seats, most score N=0 for that reason alone. Any use of S to claim one seat is more novel than another is unsupported by this data."
+ },
+ "max_S_achievable": 45.0,
+ "observed_top_S": 42.9846,
+ "fraction_of_max_S_used": 0.9552,
+ "inputs": {
+  "ranking": "results/c4_ranking_v4_acid_off_20261026/v4_ranking_acid_off.json"
+ }
+}

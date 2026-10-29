@@ -1,0 +1,175 @@
+{
+  "designs": [
+    {
+      "name": "tfr1_his200m_20261023__tfr1_apical_his_148",
+      "sequence": "SSESTVEFKGHTIYVHTFSTLEEALDFYNSLPDSYTRRLFKNSAGEYVVLYTEDSGPSYDSLLEDYAESKGWKPFEHP",
+      "molecule_class": "single_chain",
+      "recommendation_status": "recommended",
+      "epitope": "E2_apical",
+      "his_fraction": 0.038461538461538464,
+      "clash_verdict": "MARGINAL_single_minor_clash"
+    },
+    {
+      "name": "tfr1_his030_200m_20261023__tfr1_apical_his_70",
+      "sequence": "EVQLVQSGGGLVQPGGSLRLSCAASGNGYTFTDYAMHWFRQAPGKEREWVGWIYPYNGNTNYADSVKGRFTITADTSKNTAYLQMNSLRAEDTAVYYCARGGEYSDYWGQGTQVTVS",
+      "molecule_class": "single_chain",
+      "recommendation_status": "recommended",
+      "epitope": "E2_apical",
+      "his_fraction": 0.008547008547008548,
+      "clash_verdict": "PASS"
+    },
+    {
+      "name": "tfr1_e1_his015_186",
+      "sequence": "HITAEQLLTYGPEKLLDLLEEEYEEGGDKDFILGRLHVIEKDLERFKHHLEEHYEHAMEHTHDPEMKEHLTHEFEEHMDHVDHLLSRVHTLKDKVEA",
+      "molecule_class": "single_chain",
+      "recommendation_status": "recommended",
+      "epitope": "E1_his707",
+      "his_fraction": 0.144,
+      "source": "e1_his015"
+    },
+    {
+      "name": "tfr1_e1_his015_117",
+      "sequence": "SDAAFHLEEAKHHLEEALHFLSEDPPDVDDAVFHIEKAITHIDFALAHVKDTHSDAAFHIEEAKHHSEEALHFLSEDDVDDAVFHIEKAITHIDFALAHLK",
+      "molecule_class": "single_chain",
+      "recommendation_status": "recommended",
+      "epitope": "E1_his707",
+      "his_fraction": 0.149,
+      "source": "e1_his015"
+    },
+    {
+      "name": "tfr1_e1_plain_170",
+      "sequence": "SSYERVLHHLVTAKSNLEKGHPDEALHFVEKAINHLPEDASEKLHEYLLTAKSNLEKGHPDEALHFVEKAINHLLSEHPELESEYESM",
+      "molecule_class": "single_chain",
+      "recommendation_status": "recommended",
+      "epitope": "E1_his707",
+      "his_fraction": 0.114,
+      "source": "e1_plain"
+    },
+    {
+      "name": "tfr1_e1_his015_115",
+      "sequence": "EHHLHAILEKKGNHWHYQVFQDGELVFKGEGFGSREHALATMHHDIERRFGKILEEELLEETEDHLHFHIVAQP",
+      "molecule_class": "single_chain",
+      "recommendation_status": "recommended",
+      "epitope": "E1_his707",
+      "his_fraction": 0.149,
+      "source": "e1_his015"
+    },
+    {
+      "name": "tfr1_e1_his015_148",
+      "sequence": "TDKYYETVHQIPDEFHVTAVLILQFFLEHPDETFTLDEILEHLKKKYPHLRFHHHTVSKALEYLVEKHLLETSKDSAGHTLYKLNKDF",
+      "molecule_class": "single_chain",
+      "recommendation_status": "recommended",
+      "epitope": "E1_his707",
+      "his_fraction": 0.114,
+      "source": "e1_his015"
+    },
+    {
+      "name": "tfr1_e1_his015_57",
+      "sequence": "SLHHLISETAEEIAHLVYEHRSTDRYFSIISSVLLKHFSSLLTEDQIHSLALEIERALRHHIFDKDKIKEIVFSELHSFLSDHL",
+      "molecule_class": "single_chain",
+      "recommendation_status": "recommended",
+      "epitope": "E1_his707",
+      "his_fraction": 0.119,
+      "source": "e1_his015"
+    },
+    {
+      "name": "tfr1_e1_his015_26",
+      "sequence": "SAHHERTMAILHILQSHGPLTAFQLLEHLRKDYPHLQISDATLYHTLFHLREDGLIESTVKPHTLTTYYALTEKGREFLDSH",
+      "molecule_class": "single_chain",
+      "recommendation_status": "recommended",
+      "epitope": "E1_his707",
+      "his_fraction": 0.122,
+      "source": "e1_his015"
+    },
+    {
+      "name": "tfr1_e1_his015_61",
+      "sequence": "SLATKTRATDHLSNMLHSLASEILSKKGETAAQFFAEKVKAYVETHHHDILHISFHKHPDGSFSFHVLPHSTATDDQVHSAVDEITAYATSLHDEILS",
+      "molecule_class": "single_chain",
+      "recommendation_status": "recommended",
+      "epitope": "E1_his707",
+      "his_fraction": 0.122,
+      "source": "e1_his015"
+    },
+    {
+      "name": "tfr1_e1_his015_55",
+      "sequence": "SLTQAEYDILEAIHFLSHHNNTEFVHVSDVLKETNRLRMAKGHSPLTEDEFLTHLHTLHDKGLIEFDPSDSLLVRLTDKGYAAFHHFTGESLL",
+      "molecule_class": "single_chain",
+      "recommendation_status": "recommended",
+      "epitope": "E1_his707",
+      "his_fraction": 0.108,
+      "source": "e1_his015"
+    },
+    {
+      "name": "tfr1_e1_his015_14",
+      "sequence": "SHRIQDLVTALEALPHDDREELHSLASEYLDSLSHEDHFTRSHSSAKLEAYARHLAANYPTFKAFLEKHYPHFLSDEFVSSNTLTHFAKDVVTAHSLLH",
+      "molecule_class": "single_chain",
+      "recommendation_status": "recommended",
+      "epitope": "E1_his707",
+      "his_fraction": 0.121,
+      "source": "e1_his015"
+    },
+    {
+      "name": "tfr1_e1_his015_190",
+      "sequence": "TLHVTEPAPDEWHGAVNVYLHKGSHLLALSFFRSGKYSLSHRHGSTLDYFHGLTRAEVIHHLSEFLDISPATAEDIVDELELAADKYFA",
+      "molecule_class": "single_chain",
+      "recommendation_status": "recommended",
+      "epitope": "E1_his707",
+      "his_fraction": 0.101,
+      "source": "e1_his015"
+    },
+    {
+      "name": "tfr1_e1_his015_197",
+      "sequence": "STELHHYLDDIESSLLKAKSAETETDRNHFIDEALHKVHELREKAPEFSHYLDDIESSLLKAKSAETETDRNHFIDEALHKVHELREKVGE",
+      "molecule_class": "single_chain",
+      "recommendation_status": "recommended",
+      "epitope": "E1_his707",
+      "his_fraction": 0.099,
+      "source": "e1_his015"
+    },
+    {
+      "name": "tfr1_e1_his015_185",
+      "sequence": "SSSLEDLHLHLEVFILAGEELDSMLLHYLSHHYHLTEEEIKEHWKAKLNELHITDEFFAQKRQERKEHWEEYLSEVLTGLEEYFS",
+      "molecule_class": "single_chain",
+      "recommendation_status": "recommended",
+      "epitope": "E1_his707",
+      "his_fraction": 0.106,
+      "source": "e1_his015"
+    },
+    {
+      "name": "tfr1_e1_his015_62",
+      "sequence": "SSHERLHHLMEVFTHLVESAFADDETTFKEHATEFKEHFLALSHEEQHTFLEAAHHMFPSLHATLTEALEMLEAGESSSDVLHTVLYGVANLSHPSHHRTFHEIVDEVMNS",
+      "molecule_class": "single_chain",
+      "recommendation_status": "recommended",
+      "epitope": "E1_his707",
+      "his_fraction": 0.144,
+      "source": "e1_his015"
+    },
+    {
+      "name": "tfr1_e1_his015_193",
+      "sequence": "EYEEALEEVEELTDEEIEELAEEIEEHLEEEYEEHEVPENVIEFYHELQEKHILLHNKLLATDDHEEKHHLEEELHHLTELFTKLLEAYHHYLETHDHEHLDEKIEELHEELHS",
+      "molecule_class": "single_chain",
+      "recommendation_status": "recommended",
+      "epitope": "E1_his707",
+      "his_fraction": 0.149,
+      "source": "e1_his015"
+    },
+    {
+      "name": "tfr1_e1_his015_140",
+      "sequence": "SHWKHILATAKENWESGDLFSLSLKEQLYAHAYSYSVAHHLNEDQSIELLKHVDTYHKEHPSHSTTEFFDFLKSKIADLK",
+      "molecule_class": "single_chain",
+      "recommendation_status": "recommended",
+      "epitope": "E1_his707",
+      "his_fraction": 0.113,
+      "source": "e1_his015"
+    },
+    {
+      "name": "tfr1_e1_his015_168",
+      "sequence": "SAAERWALHYYHMAKHLGLSEAEAEEVGAIALMWFDSDLTLTQVTHAFDVLHAINKSQIDEAKHYLSIFKMKHSDLLSHYLSLFRELL",
+      "molecule_class": "single_chain",
+      "recommendation_status": "recommended",
+      "epitope": "E1_his707",
+      "his_fraction": 0.091,
+      "source": "e1_his015"
+    }
+  ]
+}

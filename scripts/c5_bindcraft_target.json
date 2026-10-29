@@ -1,0 +1,26 @@
+{
+  "design_path": "/root/c5_design/output",
+  "binder_name": "c5_kras",
+  "chains": "A,B,C",
+  "lengths": [70, 80, 90, 100, 110],
+  "number_of_final_designs": 50,
+  "templates": [
+    {
+      "template_name": "g12d",
+      "template_pdb": "/root/c5_design/targets/state1_g12d_complex.pdb",
+      "template_hostspot_residues": "A69,A155,C7,C8",
+      "template_targeting_strategy": "target",
+      "template_mpnn_filters_path": "",
+      "loss_weighting": "1",
+      "note": "v2 hotspots: groove RIM (A69 Ala, A155 Gln) + exposed peptide (C7 Gly, C8 Val). v1 hotspots (A70,A114,A147,A156,C5,C6,C7,C8) were all buried in the groove floor — Fable measured neighbor counts 29-41, unreachable by miniprotein."
+    },
+    {
+      "template_name": "wt",
+      "template_pdb": "/root/c5_design/targets/state2_wt_complex.pdb",
+      "template_hostspot_residues": "A69,A155,C7,C8",
+      "template_targeting_strategy": "detarget",
+      "template_mpnn_filters_path": "",
+      "loss_weighting": "1"
+    }
+  ]
+}

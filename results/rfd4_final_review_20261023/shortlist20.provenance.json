@@ -1,0 +1,967 @@
+{
+  "generated_utc": "2026-10-23T13:17:05.741038+00:00",
+  "generator": "scripts/rank_candidates.py",
+  "inputs": [
+    "results/rfd4_final_review_20261023/analysis_pool/annotated80.csv"
+  ],
+  "gates_file": null,
+  "gates_enforced": false,
+  "gates_not_evaluable": [],
+  "mandatory_gates_not_evaluable": [],
+  "ranking_policy": "rfd4-hypothesis",
+  "ranking_weights": {},
+  "geometry_order": [
+    {
+      "field": "hotspot_obedience",
+      "higher_is_better": true
+    },
+    {
+      "field": "clash_fraction_1p5A",
+      "higher_is_better": false
+    },
+    {
+      "field": "bad_bond_fraction",
+      "higher_is_better": false
+    }
+  ],
+  "hypothesis_rule": "His-N/basic-group proximity, then His-ring/receptor proximity, then geometry; not a pH/affinity prediction",
+  "ranking_is_official_acceptance": false,
+  "diversity": {
+    "cluster_identity": 0.6,
+    "max_per_cluster": 3,
+    "min_alignment": 20,
+    "families_found": 62,
+    "slots_held_back_by_cap": 0
+  },
+  "counts": {
+    "loaded": 80,
+    "unique": 80,
+    "shortlisted": 20,
+    "deferred": 60,
+    "ranking_incomplete": 0
+  },
+  "shortlist": [
+    {
+      "rank": 1,
+      "name": "tfr1_c200m_20261023__tfr1_apical_binder_126",
+      "sequence": "SMTVSVSVDADVNVTSTLQNAIDAVNGTTVTVVNGTIASDNMLDSLHDTAVDEGYKIETSISGTTVNVLISLV",
+      "length": 73,
+      "source_file": "results/rfd4_final_review_20261023/analysis_pool/annotated80.csv",
+      "source_id": "tfr1_c200m_20261023__tfr1_apical_binder_126",
+      "cluster": 0,
+      "rank_score": null,
+      "rank_components": {
+        "hotspot_obedience": 1.0,
+        "clash_fraction_1p5A": 0.0,
+        "bad_bond_fraction": 0.0,
+        "his_nitrogens_near_basic_4p5A": 1.0,
+        "his_rings_near_target_4p5A": 1.0
+      },
+      "hypothesis_basis": "His-N/basic-group proximity hypothesis",
+      "gates_passed": [],
+      "gates_failed": [],
+      "gates_not_evaluable": [],
+      "metrics": {
+        "hotspot_obedience": "1.0",
+        "clash_fraction_1p5A": "0.0",
+        "bad_bond_fraction": "0.0",
+        "his_nitrogens_near_basic_4p5A": "1",
+        "his_rings_near_target_4p5A": "1"
+      }
+    },
+    {
+      "rank": 2,
+      "name": "tfr1_his020_200m_20261023__tfr1_apical_his_70",
+      "sequence": "EVQLVESGGGLVQPGGSLRLSCAASGNGYTFTDYAMHWFRQAPGKEREWVGWIYPYNGNTNYADSVKGRFTITADTSKSTAYLQMNSLRAEDTAVYYCARGGEYSDYWGQGTQVTVS",
+      "length": 117,
+      "source_file": "results/rfd4_final_review_20261023/analysis_pool/annotated80.csv",
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_70",
+      "cluster": 1,
+      "rank_score": null,
+      "rank_components": {
+        "hotspot_obedience": 1.0,
+        "clash_fraction_1p5A": 0.0,
+        "bad_bond_fraction": 0.0,
+        "his_nitrogens_near_basic_4p5A": 1.0,
+        "his_rings_near_target_4p5A": 1.0
+      },
+      "hypothesis_basis": "His-N/basic-group proximity hypothesis",
+      "gates_passed": [],
+      "gates_failed": [],
+      "gates_not_evaluable": [],
+      "metrics": {
+        "hotspot_obedience": "1.0",
+        "clash_fraction_1p5A": "0.0",
+        "bad_bond_fraction": "0.0",
+        "his_nitrogens_near_basic_4p5A": "1",
+        "his_rings_near_target_4p5A": "1"
+      }
+    },
+    {
+      "rank": 3,
+      "name": "tfr1_his020_200m_20261023__tfr1_apical_his_86",
+      "sequence": "NTLTLTLSQTSYTVSEGKSVTISWELHSNSTDNVLYLHVTVKKDGTTVKEEELDPFTHSVTLSNLTPADSGTYTLKVELVTEHQTLSAEKTFTLTVH",
+      "length": 97,
+      "source_file": "results/rfd4_final_review_20261023/analysis_pool/annotated80.csv",
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_86",
+      "cluster": 2,
+      "rank_score": null,
+      "rank_components": {
+        "hotspot_obedience": 1.0,
+        "clash_fraction_1p5A": 0.0,
+        "bad_bond_fraction": 0.0,
+        "his_nitrogens_near_basic_4p5A": 1.0,
+        "his_rings_near_target_4p5A": 2.0
+      },
+      "hypothesis_basis": "His-N/basic-group proximity hypothesis",
+      "gates_passed": [],
+      "gates_failed": [],
+      "gates_not_evaluable": [],
+      "metrics": {
+        "hotspot_obedience": "1.0",
+        "clash_fraction_1p5A": "0.0",
+        "bad_bond_fraction": "0.0",
+        "his_nitrogens_near_basic_4p5A": "1",
+        "his_rings_near_target_4p5A": "2"
+      }
+    },
+    {
+      "rank": 4,
+      "name": "tfr1_his030_200m_20261023__tfr1_apical_his_115",
+      "sequence": "SFHVHEFHYHMENSHGNSLSLHVHEHHLHSDQTFYLHLTSKEEHDFRFQYYFNSEKKADFNIKDSSSHHYEDHGYVHFSHSGDMSDLSHHFEYYFHYDPDFGHDHVFEAGEFS",
+      "length": 113,
+      "source_file": "results/rfd4_final_review_20261023/analysis_pool/annotated80.csv",
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_115",
+      "cluster": 3,
+      "rank_score": null,
+      "rank_components": {
+        "hotspot_obedience": 1.0,
+        "clash_fraction_1p5A": 0.0,
+        "bad_bond_fraction": 0.0,
+        "his_nitrogens_near_basic_4p5A": 1.0,
+        "his_rings_near_target_4p5A": 3.0
+      },
+      "hypothesis_basis": "His-N/basic-group proximity hypothesis",
+      "gates_passed": [],
+      "gates_failed": [],
+      "gates_not_evaluable": [],
+      "metrics": {
+        "hotspot_obedience": "1.0",
+        "clash_fraction_1p5A": "0.0",
+        "bad_bond_fraction": "0.0",
+        "his_nitrogens_near_basic_4p5A": "1",
+        "his_rings_near_target_4p5A": "3"
+      }
+    },
+    {
+      "rank": 5,
+      "name": "tfr1_his030_200m_20261023__tfr1_apical_his_121",
+      "sequence": "EVELSMDETHFHRGDHVTFHVHVPSSFSVLHVHLHIFDPAGNLVLEQHMHKVDDTHFTHHFEIPHHWPSGVYTAFAEVHTSSATHFSDPLHFTVHE",
+      "length": 96,
+      "source_file": "results/rfd4_final_review_20261023/analysis_pool/annotated80.csv",
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_121",
+      "cluster": 4,
+      "rank_score": null,
+      "rank_components": {
+        "hotspot_obedience": 1.0,
+        "clash_fraction_1p5A": 0.0,
+        "bad_bond_fraction": 0.0,
+        "his_nitrogens_near_basic_4p5A": 1.0,
+        "his_rings_near_target_4p5A": 3.0
+      },
+      "hypothesis_basis": "His-N/basic-group proximity hypothesis",
+      "gates_passed": [],
+      "gates_failed": [],
+      "gates_not_evaluable": [],
+      "metrics": {
+        "hotspot_obedience": "1.0",
+        "clash_fraction_1p5A": "0.0",
+        "bad_bond_fraction": "0.0",
+        "his_nitrogens_near_basic_4p5A": "1",
+        "his_rings_near_target_4p5A": "3"
+      }
+    },
+    {
+      "rank": 6,
+      "name": "tfr1_his030_200m_20261023__tfr1_apical_his_144",
+      "sequence": "SGMSLRLSAAASGYSISSFNTMGWYRQAPGKERELVATISSGGSTYYADSVKGRFTISRDNAKNTIYLQMNSLRPEDTAVYYSAAHHSSIDYLDFWGQGTQVTVS",
+      "length": 105,
+      "source_file": "results/rfd4_final_review_20261023/analysis_pool/annotated80.csv",
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_144",
+      "cluster": 1,
+      "rank_score": null,
+      "rank_components": {
+        "hotspot_obedience": 1.0,
+        "clash_fraction_1p5A": 0.0,
+        "bad_bond_fraction": 0.0,
+        "his_nitrogens_near_basic_4p5A": 1.0,
+        "his_rings_near_target_4p5A": 1.0
+      },
+      "hypothesis_basis": "His-N/basic-group proximity hypothesis",
+      "gates_passed": [],
+      "gates_failed": [],
+      "gates_not_evaluable": [],
+      "metrics": {
+        "hotspot_obedience": "1.0",
+        "clash_fraction_1p5A": "0.0",
+        "bad_bond_fraction": "0.0",
+        "his_nitrogens_near_basic_4p5A": "1",
+        "his_rings_near_target_4p5A": "1"
+      }
+    },
+    {
+      "rank": 7,
+      "name": "tfr1_his030_200m_20261023__tfr1_apical_his_169",
+      "sequence": "DFTLHVHVDGKTLHASWTHPDDFYVHSVKIYKNGELVHETHDHHHHHHTYHDPDMEPGDVYTVEVTFKDHHGNEHTVSDTITVS",
+      "length": 84,
+      "source_file": "results/rfd4_final_review_20261023/analysis_pool/annotated80.csv",
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_169",
+      "cluster": 5,
+      "rank_score": null,
+      "rank_components": {
+        "hotspot_obedience": 1.0,
+        "clash_fraction_1p5A": 0.0,
+        "bad_bond_fraction": 0.0,
+        "his_nitrogens_near_basic_4p5A": 1.0,
+        "his_rings_near_target_4p5A": 3.0
+      },
+      "hypothesis_basis": "His-N/basic-group proximity hypothesis",
+      "gates_passed": [],
+      "gates_failed": [],
+      "gates_not_evaluable": [],
+      "metrics": {
+        "hotspot_obedience": "1.0",
+        "clash_fraction_1p5A": "0.0",
+        "bad_bond_fraction": "0.0",
+        "his_nitrogens_near_basic_4p5A": "1",
+        "his_rings_near_target_4p5A": "3"
+      }
+    },
+    {
+      "rank": 8,
+      "name": "tfr1_his030_200m_20261023__tfr1_apical_his_23",
+      "sequence": "HEHHHHFHHAHHAIHHHDFDTAKHHIDHLHHHHHHHHDFHHHTHHLLHLLHHHTHHHHHTHHDFLHAIHHYLHHLHHHDLTHHEEHEHLHHLHHLAHHHHHDDFTFYLLDKLHETHHHH",
+      "length": 119,
+      "source_file": "results/rfd4_final_review_20261023/analysis_pool/annotated80.csv",
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_23",
+      "cluster": 6,
+      "rank_score": null,
+      "rank_components": {
+        "hotspot_obedience": 1.0,
+        "clash_fraction_1p5A": 0.0,
+        "bad_bond_fraction": 0.0,
+        "his_nitrogens_near_basic_4p5A": 1.0,
+        "his_rings_near_target_4p5A": 5.0
+      },
+      "hypothesis_basis": "His-N/basic-group proximity hypothesis",
+      "gates_passed": [],
+      "gates_failed": [],
+      "gates_not_evaluable": [],
+      "metrics": {
+        "hotspot_obedience": "1.0",
+        "clash_fraction_1p5A": "0.0",
+        "bad_bond_fraction": "0.0",
+        "his_nitrogens_near_basic_4p5A": "1",
+        "his_rings_near_target_4p5A": "5"
+      }
+    },
+    {
+      "rank": 9,
+      "name": "tfr1_his030_200m_20261023__tfr1_apical_his_64",
+      "sequence": "SFLDEITHLEHVVFHHFHHSAHKHHLTHEEYHSFHHFLHDFFHHLKHREYWHDYDIDFSKIHSVHEALTTLEHLMHHHYHHHHHFLHDLFHHVHSELS",
+      "length": 98,
+      "source_file": "results/rfd4_final_review_20261023/analysis_pool/annotated80.csv",
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_64",
+      "cluster": 6,
+      "rank_score": null,
+      "rank_components": {
+        "hotspot_obedience": 1.0,
+        "clash_fraction_1p5A": 0.0,
+        "bad_bond_fraction": 0.0,
+        "his_nitrogens_near_basic_4p5A": 1.0,
+        "his_rings_near_target_4p5A": 4.0
+      },
+      "hypothesis_basis": "His-N/basic-group proximity hypothesis",
+      "gates_passed": [],
+      "gates_failed": [],
+      "gates_not_evaluable": [],
+      "metrics": {
+        "hotspot_obedience": "1.0",
+        "clash_fraction_1p5A": "0.0",
+        "bad_bond_fraction": "0.0",
+        "his_nitrogens_near_basic_4p5A": "1",
+        "his_rings_near_target_4p5A": "4"
+      }
+    },
+    {
+      "rank": 10,
+      "name": "tfr1_his030_200m_20261023__tfr1_apical_his_68",
+      "sequence": "SHHHLEHHVHHFLHHFEHHDYHHAHDELHHILHLLHLHDSFVHAHTHDELDSVYHDLHHHILHHLHLSSHEKSTLHHALHFFLHHHHHDLDH",
+      "length": 92,
+      "source_file": "results/rfd4_final_review_20261023/analysis_pool/annotated80.csv",
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_68",
+      "cluster": 7,
+      "rank_score": null,
+      "rank_components": {
+        "hotspot_obedience": 1.0,
+        "clash_fraction_1p5A": 0.0,
+        "bad_bond_fraction": 0.0,
+        "his_nitrogens_near_basic_4p5A": 2.0,
+        "his_rings_near_target_4p5A": 3.0
+      },
+      "hypothesis_basis": "His-N/basic-group proximity hypothesis",
+      "gates_passed": [],
+      "gates_failed": [],
+      "gates_not_evaluable": [],
+      "metrics": {
+        "hotspot_obedience": "1.0",
+        "clash_fraction_1p5A": "0.0",
+        "bad_bond_fraction": "0.0",
+        "his_nitrogens_near_basic_4p5A": "2",
+        "his_rings_near_target_4p5A": "3"
+      }
+    },
+    {
+      "rank": 11,
+      "name": "tfr1_his030_200m_20261023__tfr1_apical_his_70",
+      "sequence": "EVQLVQSGGGLVQPGGSLRLSCAASGNGYTFTDYAMHWFRQAPGKEREWVGWIYPYNGNTNYADSVKGRFTITADTSKNTAYLQMNSLRAEDTAVYYCARGGEYSDYWGQGTQVTVS",
+      "length": 117,
+      "source_file": "results/rfd4_final_review_20261023/analysis_pool/annotated80.csv",
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_70",
+      "cluster": 1,
+      "rank_score": null,
+      "rank_components": {
+        "hotspot_obedience": 1.0,
+        "clash_fraction_1p5A": 0.0,
+        "bad_bond_fraction": 0.0,
+        "his_nitrogens_near_basic_4p5A": 1.0,
+        "his_rings_near_target_4p5A": 1.0
+      },
+      "hypothesis_basis": "His-N/basic-group proximity hypothesis",
+      "gates_passed": [],
+      "gates_failed": [],
+      "gates_not_evaluable": [],
+      "metrics": {
+        "hotspot_obedience": "1.0",
+        "clash_fraction_1p5A": "0.0",
+        "bad_bond_fraction": "0.0",
+        "his_nitrogens_near_basic_4p5A": "1",
+        "his_rings_near_target_4p5A": "1"
+      }
+    },
+    {
+      "rank": 12,
+      "name": "tfr1_his030_200m_20261023__tfr1_apical_his_77",
+      "sequence": "HSHHTLHHILHLLHHSHSVDEFTHHLHHHHFEVHHYSLTLDELEHHLHEHPHFHHHHHHFHSSSHYHLFYIHDPHTHHTYHLIVEEEHHHLHLVAHHVH",
+      "length": 99,
+      "source_file": "results/rfd4_final_review_20261023/analysis_pool/annotated80.csv",
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_77",
+      "cluster": 8,
+      "rank_score": null,
+      "rank_components": {
+        "hotspot_obedience": 1.0,
+        "clash_fraction_1p5A": 0.0,
+        "bad_bond_fraction": 0.0,
+        "his_nitrogens_near_basic_4p5A": 2.0,
+        "his_rings_near_target_4p5A": 7.0
+      },
+      "hypothesis_basis": "His-N/basic-group proximity hypothesis",
+      "gates_passed": [],
+      "gates_failed": [],
+      "gates_not_evaluable": [],
+      "metrics": {
+        "hotspot_obedience": "1.0",
+        "clash_fraction_1p5A": "0.0",
+        "bad_bond_fraction": "0.0",
+        "his_nitrogens_near_basic_4p5A": "2",
+        "his_rings_near_target_4p5A": "7"
+      }
+    },
+    {
+      "rank": 13,
+      "name": "tfr1_his200m_20261023__tfr1_apical_his_148",
+      "sequence": "SSESTVEFKGHTIYVHTFSTLEEALDFYNSLPDSYTRRLFKNSAGEYVVLYTEDSGPSYDSLLEDYAESKGWKPFEHP",
+      "length": 78,
+      "source_file": "results/rfd4_final_review_20261023/analysis_pool/annotated80.csv",
+      "source_id": "tfr1_his200m_20261023__tfr1_apical_his_148",
+      "cluster": 9,
+      "rank_score": null,
+      "rank_components": {
+        "hotspot_obedience": 1.0,
+        "clash_fraction_1p5A": 0.0,
+        "bad_bond_fraction": 0.0,
+        "his_nitrogens_near_basic_4p5A": 1.0,
+        "his_rings_near_target_4p5A": 1.0
+      },
+      "hypothesis_basis": "His-N/basic-group proximity hypothesis",
+      "gates_passed": [],
+      "gates_failed": [],
+      "gates_not_evaluable": [],
+      "metrics": {
+        "hotspot_obedience": "1.0",
+        "clash_fraction_1p5A": "0.0",
+        "bad_bond_fraction": "0.0",
+        "his_nitrogens_near_basic_4p5A": "1",
+        "his_rings_near_target_4p5A": "1"
+      }
+    },
+    {
+      "rank": 14,
+      "name": "tfr1_his200m_20261023__tfr1_apical_his_68",
+      "sequence": "SKDELKTLVHEMVTAMEEKDTSTFMDKYHELVNKLNISYPSDEDASLDSHLTVVDDVEDKLHHIFKDDSDMQDYITSVSTYMKELVRNDFNH",
+      "length": 92,
+      "source_file": "results/rfd4_final_review_20261023/analysis_pool/annotated80.csv",
+      "source_id": "tfr1_his200m_20261023__tfr1_apical_his_68",
+      "cluster": 10,
+      "rank_score": null,
+      "rank_components": {
+        "hotspot_obedience": 1.0,
+        "clash_fraction_1p5A": 0.0,
+        "bad_bond_fraction": 0.0,
+        "his_nitrogens_near_basic_4p5A": 1.0,
+        "his_rings_near_target_4p5A": 3.0
+      },
+      "hypothesis_basis": "His-N/basic-group proximity hypothesis",
+      "gates_passed": [],
+      "gates_failed": [],
+      "gates_not_evaluable": [],
+      "metrics": {
+        "hotspot_obedience": "1.0",
+        "clash_fraction_1p5A": "0.0",
+        "bad_bond_fraction": "0.0",
+        "his_nitrogens_near_basic_4p5A": "1",
+        "his_rings_near_target_4p5A": "3"
+      }
+    },
+    {
+      "rank": 15,
+      "name": "tfr1_his020_200m_20261023__tfr1_apical_his_13",
+      "sequence": "STTYTAEQVRMAIHSLRDILSDDTYELVYNHLHTKLHLADDDTSTTFTAEQVRMAIHSLRDILSDDTYELVYNHLHTKLH",
+      "length": 80,
+      "source_file": "results/rfd4_final_review_20261023/analysis_pool/annotated80.csv",
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_13",
+      "cluster": 11,
+      "rank_score": null,
+      "rank_components": {
+        "hotspot_obedience": 0.9,
+        "clash_fraction_1p5A": 0.0,
+        "bad_bond_fraction": 0.0,
+        "his_nitrogens_near_basic_4p5A": 1.0,
+        "his_rings_near_target_4p5A": 1.0
+      },
+      "hypothesis_basis": "His-N/basic-group proximity hypothesis",
+      "gates_passed": [],
+      "gates_failed": [],
+      "gates_not_evaluable": [],
+      "metrics": {
+        "hotspot_obedience": "0.9",
+        "clash_fraction_1p5A": "0.0",
+        "bad_bond_fraction": "0.0",
+        "his_nitrogens_near_basic_4p5A": "1",
+        "his_rings_near_target_4p5A": "1"
+      }
+    },
+    {
+      "rank": 16,
+      "name": "tfr1_his020_200m_20261023__tfr1_apical_his_147",
+      "sequence": "SSHLEHAHHHLEHAHTHFEEGDYESALHELEHASHHLLHYAQDEHMSDELQSHLEHAHHHLEHAHTHFEEGDYESALHELEHASHHLHHAENLAEEEHHHELASLLHELHTLVSELIEKLL",
+      "length": 121,
+      "source_file": "results/rfd4_final_review_20261023/analysis_pool/annotated80.csv",
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_147",
+      "cluster": 12,
+      "rank_score": null,
+      "rank_components": {
+        "hotspot_obedience": 0.9,
+        "clash_fraction_1p5A": 0.0,
+        "bad_bond_fraction": 0.0,
+        "his_nitrogens_near_basic_4p5A": 5.0,
+        "his_rings_near_target_4p5A": 5.0
+      },
+      "hypothesis_basis": "His-N/basic-group proximity hypothesis",
+      "gates_passed": [],
+      "gates_failed": [],
+      "gates_not_evaluable": [],
+      "metrics": {
+        "hotspot_obedience": "0.9",
+        "clash_fraction_1p5A": "0.0",
+        "bad_bond_fraction": "0.0",
+        "his_nitrogens_near_basic_4p5A": "5",
+        "his_rings_near_target_4p5A": "5"
+      }
+    },
+    {
+      "rank": 17,
+      "name": "tfr1_his020_200m_20261023__tfr1_apical_his_152",
+      "sequence": "SLDDERMELQEKLEKLEKEDHDLFKEIMITTLKKFAEKYPHLKSSLDDLISELETEDLHLWEILNKVHDIIHEKISDETMQHHVWDDFFTILDETYHDHTS",
+      "length": 101,
+      "source_file": "results/rfd4_final_review_20261023/analysis_pool/annotated80.csv",
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_152",
+      "cluster": 13,
+      "rank_score": null,
+      "rank_components": {
+        "hotspot_obedience": 0.9,
+        "clash_fraction_1p5A": 0.0,
+        "bad_bond_fraction": 0.0,
+        "his_nitrogens_near_basic_4p5A": 1.0,
+        "his_rings_near_target_4p5A": 3.0
+      },
+      "hypothesis_basis": "His-N/basic-group proximity hypothesis",
+      "gates_passed": [],
+      "gates_failed": [],
+      "gates_not_evaluable": [],
+      "metrics": {
+        "hotspot_obedience": "0.9",
+        "clash_fraction_1p5A": "0.0",
+        "bad_bond_fraction": "0.0",
+        "his_nitrogens_near_basic_4p5A": "1",
+        "his_rings_near_target_4p5A": "3"
+      }
+    },
+    {
+      "rank": 18,
+      "name": "tfr1_his030_200m_20261023__tfr1_apical_his_1",
+      "sequence": "SHHEEDLLHHLKEELAHLTEHDIDDHYHHDLHEGLHHEDAEHLHHLRLEMLHAYHEEDDDLLMHHHHEYSHLYNHIYH",
+      "length": 78,
+      "source_file": "results/rfd4_final_review_20261023/analysis_pool/annotated80.csv",
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_1",
+      "cluster": 6,
+      "rank_score": null,
+      "rank_components": {
+        "hotspot_obedience": 0.9,
+        "clash_fraction_1p5A": 0.0,
+        "bad_bond_fraction": 0.0,
+        "his_nitrogens_near_basic_4p5A": 1.0,
+        "his_rings_near_target_4p5A": 5.0
+      },
+      "hypothesis_basis": "His-N/basic-group proximity hypothesis",
+      "gates_passed": [],
+      "gates_failed": [],
+      "gates_not_evaluable": [],
+      "metrics": {
+        "hotspot_obedience": "0.9",
+        "clash_fraction_1p5A": "0.0",
+        "bad_bond_fraction": "0.0",
+        "his_nitrogens_near_basic_4p5A": "1",
+        "his_rings_near_target_4p5A": "5"
+      }
+    },
+    {
+      "rank": 19,
+      "name": "tfr1_his030_200m_20261023__tfr1_apical_his_133",
+      "sequence": "DHHTAHHFFHHIHHHLHHHSHTDHHFEVHHHHVHDIKHHLDDFLHHAHLHHHIHHFYDHDLDAWILHVHASHP",
+      "length": 73,
+      "source_file": "results/rfd4_final_review_20261023/analysis_pool/annotated80.csv",
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_133",
+      "cluster": 14,
+      "rank_score": null,
+      "rank_components": {
+        "hotspot_obedience": 0.9,
+        "clash_fraction_1p5A": 0.0,
+        "bad_bond_fraction": 0.0,
+        "his_nitrogens_near_basic_4p5A": 2.0,
+        "his_rings_near_target_4p5A": 6.0
+      },
+      "hypothesis_basis": "His-N/basic-group proximity hypothesis",
+      "gates_passed": [],
+      "gates_failed": [],
+      "gates_not_evaluable": [],
+      "metrics": {
+        "hotspot_obedience": "0.9",
+        "clash_fraction_1p5A": "0.0",
+        "bad_bond_fraction": "0.0",
+        "his_nitrogens_near_basic_4p5A": "2",
+        "his_rings_near_target_4p5A": "6"
+      }
+    },
+    {
+      "rank": 20,
+      "name": "tfr1_his030_200m_20261023__tfr1_apical_his_142",
+      "sequence": "HHHTEHELEDYVLSLFNDENWHEHHVDGHHIDWLLRFLPDHLHHLPSGYTHVFHHHHHTYFSEVLEHKNHKFLLAHRFDEELSESEAHHLHHKFRHQHHHEIHHLMDEMVEHHHSHH",
+      "length": 117,
+      "source_file": "results/rfd4_final_review_20261023/analysis_pool/annotated80.csv",
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_142",
+      "cluster": 8,
+      "rank_score": null,
+      "rank_components": {
+        "hotspot_obedience": 0.9,
+        "clash_fraction_1p5A": 0.0,
+        "bad_bond_fraction": 0.0,
+        "his_nitrogens_near_basic_4p5A": 1.0,
+        "his_rings_near_target_4p5A": 2.0
+      },
+      "hypothesis_basis": "His-N/basic-group proximity hypothesis",
+      "gates_passed": [],
+      "gates_failed": [],
+      "gates_not_evaluable": [],
+      "metrics": {
+        "hotspot_obedience": "0.9",
+        "clash_fraction_1p5A": "0.0",
+        "bad_bond_fraction": "0.0",
+        "his_nitrogens_near_basic_4p5A": "1",
+        "his_rings_near_target_4p5A": "2"
+      }
+    }
+  ],
+  "deferred": [
+    {
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_152",
+      "cluster": 15,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_168",
+      "cluster": 16,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_c200m_20261023__tfr1_apical_binder_186",
+      "cluster": 17,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_134",
+      "cluster": 18,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_168",
+      "cluster": 19,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_184",
+      "cluster": 20,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_193",
+      "cluster": 1,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_21",
+      "cluster": 21,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_68",
+      "cluster": 22,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_161",
+      "cluster": 23,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_184",
+      "cluster": 24,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_c200m_20261023__tfr1_apical_binder_108",
+      "cluster": 25,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_c200m_20261023__tfr1_apical_binder_156",
+      "cluster": 26,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_120",
+      "cluster": 27,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_139",
+      "cluster": 21,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_141",
+      "cluster": 28,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_106",
+      "cluster": 14,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_138",
+      "cluster": 29,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_156",
+      "cluster": 30,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_158",
+      "cluster": 31,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his200m_20261023__tfr1_apical_his_155",
+      "cluster": 32,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his200m_20261023__tfr1_apical_his_156",
+      "cluster": 26,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_c200m_20261023__tfr1_apical_binder_138",
+      "cluster": 33,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_c200m_20261023__tfr1_apical_binder_177",
+      "cluster": 34,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_c200m_20261023__tfr1_apical_binder_187",
+      "cluster": 35,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_c200m_20261023__tfr1_apical_binder_58",
+      "cluster": 36,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_c200m_20261023__tfr1_apical_binder_94",
+      "cluster": 37,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_78",
+      "cluster": 38,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his200m_20261023__tfr1_apical_his_124",
+      "cluster": 39,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his200m_20261023__tfr1_apical_his_179",
+      "cluster": 40,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his200m_20261023__tfr1_apical_his_21",
+      "cluster": 21,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his200m_20261023__tfr1_apical_his_45",
+      "cluster": 41,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his200m_20261023__tfr1_apical_his_57",
+      "cluster": 42,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his200m_20261023__tfr1_apical_his_82",
+      "cluster": 43,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_c200m_20261023__tfr1_apical_binder_12",
+      "cluster": 44,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_c200m_20261023__tfr1_apical_binder_120",
+      "cluster": 45,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_c200m_20261023__tfr1_apical_binder_123",
+      "cluster": 46,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_c200m_20261023__tfr1_apical_binder_125",
+      "cluster": 47,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_c200m_20261023__tfr1_apical_binder_129",
+      "cluster": 21,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_c200m_20261023__tfr1_apical_binder_132",
+      "cluster": 48,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_c200m_20261023__tfr1_apical_binder_136",
+      "cluster": 49,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_c200m_20261023__tfr1_apical_binder_137",
+      "cluster": 50,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_c200m_20261023__tfr1_apical_binder_144",
+      "cluster": 1,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_c200m_20261023__tfr1_apical_binder_166",
+      "cluster": 51,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_c200m_20261023__tfr1_apical_binder_168",
+      "cluster": 21,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_10",
+      "cluster": 21,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_106",
+      "cluster": 52,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_118",
+      "cluster": 53,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_145",
+      "cluster": 54,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_149",
+      "cluster": 21,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his200m_20261023__tfr1_apical_his_1",
+      "cluster": 28,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his200m_20261023__tfr1_apical_his_115",
+      "cluster": 55,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his200m_20261023__tfr1_apical_his_121",
+      "cluster": 21,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his200m_20261023__tfr1_apical_his_133",
+      "cluster": 56,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his200m_20261023__tfr1_apical_his_136",
+      "cluster": 57,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his200m_20261023__tfr1_apical_his_14",
+      "cluster": 58,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his200m_20261023__tfr1_apical_his_144",
+      "cluster": 1,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his200m_20261023__tfr1_apical_his_146",
+      "cluster": 59,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his200m_20261023__tfr1_apical_his_150",
+      "cluster": 60,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his200m_20261023__tfr1_apical_his_153",
+      "cluster": 61,
+      "rank_score": null,
+      "reason": "below the row cap"
+    }
+  ]
+}

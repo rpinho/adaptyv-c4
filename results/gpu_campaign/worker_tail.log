@@ -1,0 +1,74 @@
+compiled graphs cached in /workspace/runs/c4_full_context_apical_v1/compile_cache/NVIDIA_A100_SXM4_80GB
+campaign preflight: design model_1_multimer_v3,model_2_multimer_v3,model_3_multimer_v3,model_4_multimer_v3,model_5_multimer_v3 | validation model_1_ptm,model_2_ptm | redesign negative/v_48_020 | targets hTfR1_full_dimer | output /workspace/runs/c4_full_context_apical_v1
+campaign metadata: BindCraft 2 v1.0.4 | settings /workspace/runs/campaign.json | written /workspace/runs/c4_full_context_apical_v1/campaign_metadata.json
+BindCraft 2 v1.0.4
+campaign c4_full_context_apical_v1
+binder length 65 to 75, drawn per trajectory
+target hTfR1_full_dimer (target) | 1278 residues | hotspots A205,A206,A208,A209,A210
+losses binder_contacts=1.0 binder_helicity=-0.3 binder_pae=0.4 c_terminus_away=0.5 compactness=0.5 interface_contacts=1.0 interface_pae=0.1 iptm_loss=0.05 n_terminus_away=0.5 plddt_loss=0.1 target_rmsd=1.0 termini_angle=0.1
+features forced targeting: everything outside the default Angstrom of the hotspots rebuilt as lysine
+filters Backbone_Clashes <= 0, Binder_RMSD <= 3.5, Hotspot_Contact_Fraction >= 0.5, Interface_Residues >= 7, Unbound_Binder_pLDDT >= 0.7, i_pAE <= 0.35, i_pTM >= 0.7, pTM >= 0.55
+results /workspace/runs/c4_full_context_apical_v1 | 3_Ranked/!_Ranked.csv rewritten as each design is accepted | summary.csv written when the campaign ends
+1374 padded residues need more than this worker may allocate at subbatch size None; trying a narrower shard
+1374 padded residues need more than this worker may allocate at subbatch size 256; trying a narrower shard
+1374 padded residues need more than this worker may allocate at subbatch size 128; trying a narrower shard
+1374 padded residues need more than this worker may allocate at subbatch size 64; trying a narrower shard
+cudnn attention needs more than this worker may allocate at every subbatch size at 1374 padded residues; using the chunked route for this shape instead
+Traceback (most recent call last):
+  File "/workspace/src/BindCraft2/.venv/bin/bindcraft", line 6, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/workspace/src/BindCraft2/bindcraft/cli.py", line 256, in main
+    return design(settings_paths[0], preset_assignments + assignments, metadata_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/src/BindCraft2/bindcraft/cli.py", line 209, in design
+    status = launch_campaign(settings_path, assignments, metadata_path=metadata_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/src/BindCraft2/bindcraft/campaign.py", line 309, in launch_campaign
+    run_campaign(settings, project_folder, af2_weights=af2_weights, mpnn_weights=mpnn_weights, metadata=metadata)
+  File "/workspace/src/BindCraft2/bindcraft/campaign.py", line 281, in run_campaign
+    return run_campaign_arm(settings, project_folder, alphafold_model, validation_model, mpnn_model, key, max_trajectories, build_validation_model, autotune=settings.get('autotune', True), metadata=metadata)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/src/BindCraft2/bindcraft/campaign.py", line 179, in run_campaign_arm
+    attention_route = resolved_attention_route(design_settings, alphafold_model, trajectory_random_key)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/src/BindCraft2/bindcraft/campaign.py", line 107, in resolved_attention_route
+    alphafold_model.sequence_gradients(protein_states, losses, model=alphafold_model.models[0], compile_only=True)
+  File "/workspace/src/BindCraft2/bindcraft/af2.py", line 544, in sequence_gradients
+    compiled_sequence_gradients, attention_backend, subbatch_size = self._widest_shard_that_fits(model, complex_shapes, reference_shapes, losses, gradient_arguments, shape_signature, attention_backend, residue_total)
+                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/src/BindCraft2/bindcraft/af2.py", line 458, in _widest_shard_that_fits
+    return self._fall_back_to_chunked(model, complex_shapes, reference_shapes, losses, gradient_arguments, shape_signature, residue_total, ladder[-1], 'needs more than this worker may allocate at every subbatch size'), ATTENTION_FALLBACK_BACKEND, ladder[-1]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/src/BindCraft2/bindcraft/af2.py", line 446, in _fall_back_to_chunked
+    compiled_gradient.lower(*gradient_arguments).compile()
+  File "/workspace/src/BindCraft2/.venv/lib/python3.12/site-packages/jax/_src/stages.py", line 661, in compile
+    return Compiled(self._lowering.compile(**kw), self._lowering.const_args,
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/src/BindCraft2/.venv/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py", line 1257, in compile
+    executable = UnloadedMeshExecutable.from_hlo(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/src/BindCraft2/.venv/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py", line 1754, in from_hlo
+    xla_executable = _cached_compilation(
+                     ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/src/BindCraft2/.venv/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py", line 1534, in _cached_compilation
+    xla_executable = compiler.compile_or_get_cached(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/src/BindCraft2/.venv/lib/python3.12/site-packages/jax/_src/compiler.py", line 509, in compile_or_get_cached
+    return _compile_and_write_cache(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/src/BindCraft2/.venv/lib/python3.12/site-packages/jax/_src/compiler.py", line 774, in _compile_and_write_cache
+    executable = backend_compile_and_load(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/src/BindCraft2/.venv/lib/python3.12/site-packages/jax/_src/profiler.py", line 420, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/src/BindCraft2/.venv/lib/python3.12/site-packages/jax/_src/compiler.py", line 405, in backend_compile_and_load
+    raise e
+  File "/workspace/src/BindCraft2/.venv/lib/python3.12/site-packages/jax/_src/compiler.py", line 395, in backend_compile_and_load
+    return backend.compile_and_load(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+jax.errors.JaxRuntimeError: NOT_FOUND: All configs failed during profiling or were excluded from selection.
+Failures (2):
+EXECUTION FAILED: RESOURCE_EXHAUSTED: Out of memory while trying to allocate 21.62GiB with allocator GPU_0_bfc on device 0. [tf-allocator-allocation-error='']
+EXECUTION FAILED: RESOURCE_EXHAUSTED: Out of memory while trying to allocate 21.62GiB with allocator GPU_0_bfc on device 0. [tf-allocator-allocation-error='']

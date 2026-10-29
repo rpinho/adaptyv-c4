@@ -1,0 +1,32 @@
+{
+  "state": "cpu_materialization_passed",
+  "parent_sha256": "e9f563813a9f947f84dc5ebbc40a35970bc2423b87408622f873f6174db0cc80",
+  "variants": [
+    {
+      "path": "/Users/ricardo/.worktrees/adaptyv-c4/claude-submission/configs/rfd4/tfr1_apical_his020.yaml",
+      "sha256": "7aa8b68b61eb6d3301611b07a7135d318e87b01e379fdd43a20fa1a30693821b",
+      "his_prior": 0.2,
+      "one_noncomment_value_changed": true,
+      "materialized_cif_validation": "passed; HIGHER_PRIOR_VALIDATION.json",
+      "wired_into_generator_image": true
+    },
+    {
+      "path": "/Users/ricardo/.worktrees/adaptyv-c4/claude-submission/configs/rfd4/tfr1_apical_his030.yaml",
+      "sha256": "1758656f5c67430e27f06f171e627cf4d125006807dd03fd343b72c75d85602a",
+      "his_prior": 0.3,
+      "one_noncomment_value_changed": true,
+      "materialized_cif_validation": "passed; HIGHER_PRIOR_VALIDATION.json",
+      "wired_into_generator_image": true
+    }
+  ],
+  "current_paid_campaign_unchanged": true,
+  "new_gpu_or_remote_cpu_spend_usd": 0,
+  "future_launcher_sha256": "904c84ed7dc14b7e4cd2efae02e7b2bacc32ceda28e4480345c78dc7021adc4d",
+  "active_campaign_deployed_launcher_sha256": "3554f595c0c20a98aff02356d81800828d22619e569acda99777a4f1b348e609",
+  "function_bodies_and_decorators_unchanged": false,
+  "active_deployment_not_reloaded": true,
+  "changed_python_functions": [
+    "sh_timed"
+  ],
+  "generation_dry_run_and_export_bodies_unchanged": true
+}

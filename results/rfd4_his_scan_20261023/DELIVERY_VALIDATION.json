@@ -1,0 +1,17 @@
+{
+  "state": "complete",
+  "html_sha256": "ccf979554c5b6b0825c71480e4041988fee06e64eb3e4e291a89a9c019d72af6",
+  "table_rows_including_header": 11,
+  "all_local_links_exist": true,
+  "html_source_checked": true,
+  "visual_render_verified": false,
+  "submission_csv_sha256": "1909fcfa65b25a8147a76966b322032760411434d856ea5e2619cd09459cdd03",
+  "rows": 20,
+  "scanned_designs": 5,
+  "unscanned_designs": 15,
+  "scan_completed": 10,
+  "scan_planned": 10,
+  "score_legs_verified": 40,
+  "unchanged_emitter": true,
+  "no_submission_performed": true
+}

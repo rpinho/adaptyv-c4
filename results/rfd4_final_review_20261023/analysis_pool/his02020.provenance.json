@@ -1,0 +1,1607 @@
+{
+  "generated_utc": "2026-10-23T13:09:44.418947+00:00",
+  "generator": "scripts/rank_candidates.py",
+  "inputs": [
+    "results/rfd4_his_sweep_20261023/scored/his020.csv"
+  ],
+  "gates_file": null,
+  "gates_enforced": false,
+  "gates_not_evaluable": [],
+  "mandatory_gates_not_evaluable": [],
+  "ranking_policy": "rfd4-geom",
+  "ranking_weights": {},
+  "geometry_order": [
+    {
+      "field": "hotspot_obedience.hotspot_obedience",
+      "higher_is_better": true
+    },
+    {
+      "field": "clash_metrics.frac_atoms_clashing_1p5A",
+      "higher_is_better": false
+    },
+    {
+      "field": "bond_length_metrics.bond_length.frac_unreasonable",
+      "higher_is_better": false
+    }
+  ],
+  "hypothesis_rule": null,
+  "ranking_is_official_acceptance": false,
+  "diversity": {
+    "cluster_identity": 0.6,
+    "max_per_cluster": 3,
+    "min_alignment": 20,
+    "families_found": 135,
+    "slots_held_back_by_cap": 0
+  },
+  "counts": {
+    "loaded": 200,
+    "unique": 200,
+    "shortlisted": 20,
+    "deferred": 180,
+    "ranking_incomplete": 0
+  },
+  "shortlist": [
+    {
+      "rank": 1,
+      "name": "tfr1_his020_200m_20261023__tfr1_apical_his_134",
+      "sequence": "SMTYEDDLHHHIDSDDSDSTIVDKLIREALHEIGYHLGIQEHDRNIHIHSIEKVSDTHYTFHASVNDHSFSGSITKLSDTKWLLKVEDHTTHDLHEFEFDLEKQNFVQTVHH",
+      "length": 112,
+      "source_file": "results/rfd4_his_sweep_20261023/scored/his020.csv",
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_134",
+      "cluster": 0,
+      "rank_score": null,
+      "rank_components": {
+        "hotspot_obedience.hotspot_obedience": 1.0,
+        "clash_metrics.frac_atoms_clashing_1p5A": 0.0,
+        "bond_length_metrics.bond_length.frac_unreasonable": 0.0
+      },
+      "hypothesis_basis": null,
+      "gates_passed": [],
+      "gates_failed": [],
+      "gates_not_evaluable": [],
+      "metrics": {
+        "hotspot_obedience.hotspot_obedience": "1.0",
+        "clash_metrics.frac_atoms_clashing_1p5A": "0.0",
+        "bond_length_metrics.bond_length.frac_unreasonable": "0.0"
+      }
+    },
+    {
+      "rank": 2,
+      "name": "tfr1_his020_200m_20261023__tfr1_apical_his_168",
+      "sequence": "SDDALVDKLLDKLVELLPSLTDEQQDSLKTIFSHLVHDEDDEASTAVSELASTMTDDELEDLIKASWHLYKSSSGDEEDIAFHFHSLLMDEYEKRFGHDAALAFSASLAS",
+      "length": 110,
+      "source_file": "results/rfd4_his_sweep_20261023/scored/his020.csv",
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_168",
+      "cluster": 1,
+      "rank_score": null,
+      "rank_components": {
+        "hotspot_obedience.hotspot_obedience": 1.0,
+        "clash_metrics.frac_atoms_clashing_1p5A": 0.0,
+        "bond_length_metrics.bond_length.frac_unreasonable": 0.0
+      },
+      "hypothesis_basis": null,
+      "gates_passed": [],
+      "gates_failed": [],
+      "gates_not_evaluable": [],
+      "metrics": {
+        "hotspot_obedience.hotspot_obedience": "1.0",
+        "clash_metrics.frac_atoms_clashing_1p5A": "0.0",
+        "bond_length_metrics.bond_length.frac_unreasonable": "0.0"
+      }
+    },
+    {
+      "rank": 3,
+      "name": "tfr1_his020_200m_20261023__tfr1_apical_his_184",
+      "sequence": "SPTFDFHFENLTSTEQHIVKEAIHEFYKHSDSHFTVHVKKEGNTFHIHIHEHSSNETVSFTIPASKLTKDHLLDHLHGHF",
+      "length": 80,
+      "source_file": "results/rfd4_his_sweep_20261023/scored/his020.csv",
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_184",
+      "cluster": 2,
+      "rank_score": null,
+      "rank_components": {
+        "hotspot_obedience.hotspot_obedience": 1.0,
+        "clash_metrics.frac_atoms_clashing_1p5A": 0.0,
+        "bond_length_metrics.bond_length.frac_unreasonable": 0.0
+      },
+      "hypothesis_basis": null,
+      "gates_passed": [],
+      "gates_failed": [],
+      "gates_not_evaluable": [],
+      "metrics": {
+        "hotspot_obedience.hotspot_obedience": "1.0",
+        "clash_metrics.frac_atoms_clashing_1p5A": "0.0",
+        "bond_length_metrics.bond_length.frac_unreasonable": "0.0"
+      }
+    },
+    {
+      "rank": 4,
+      "name": "tfr1_his020_200m_20261023__tfr1_apical_his_193",
+      "sequence": "SEVQLVESGGGLVQPGGSLRLSCAASGFTFSSYGMHWFRQAPGKEREWVAYISYDGSNKYYADSVKGRFTISRDNAKNTLYLQMNSLRAEDTAVYYCARSRFSHYPYHHAFDYWGQGTQVTVSS",
+      "length": 124,
+      "source_file": "results/rfd4_his_sweep_20261023/scored/his020.csv",
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_193",
+      "cluster": 3,
+      "rank_score": null,
+      "rank_components": {
+        "hotspot_obedience.hotspot_obedience": 1.0,
+        "clash_metrics.frac_atoms_clashing_1p5A": 0.0,
+        "bond_length_metrics.bond_length.frac_unreasonable": 0.0
+      },
+      "hypothesis_basis": null,
+      "gates_passed": [],
+      "gates_failed": [],
+      "gates_not_evaluable": [],
+      "metrics": {
+        "hotspot_obedience.hotspot_obedience": "1.0",
+        "clash_metrics.frac_atoms_clashing_1p5A": "0.0",
+        "bond_length_metrics.bond_length.frac_unreasonable": "0.0"
+      }
+    },
+    {
+      "rank": 5,
+      "name": "tfr1_his020_200m_20261023__tfr1_apical_his_21",
+      "sequence": "PPHVHIDLPDEVSVHEGQNLAIPVTVTNASSDITFSVSLEKDGSPFPFSVTPVERDGDTYSFSVVLSNLTSSDSGTYKLTVTATDSLGTTTSTKTFTLTVL",
+      "length": 101,
+      "source_file": "results/rfd4_his_sweep_20261023/scored/his020.csv",
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_21",
+      "cluster": 4,
+      "rank_score": null,
+      "rank_components": {
+        "hotspot_obedience.hotspot_obedience": 1.0,
+        "clash_metrics.frac_atoms_clashing_1p5A": 0.0,
+        "bond_length_metrics.bond_length.frac_unreasonable": 0.0
+      },
+      "hypothesis_basis": null,
+      "gates_passed": [],
+      "gates_failed": [],
+      "gates_not_evaluable": [],
+      "metrics": {
+        "hotspot_obedience.hotspot_obedience": "1.0",
+        "clash_metrics.frac_atoms_clashing_1p5A": "0.0",
+        "bond_length_metrics.bond_length.frac_unreasonable": "0.0"
+      }
+    },
+    {
+      "rank": 6,
+      "name": "tfr1_his020_200m_20261023__tfr1_apical_his_68",
+      "sequence": "SKDEIKSLVDKMWDAHEHHDTSSYSDHFFELENKLGVSYDQDASDSLDEAKRVADTVFDKLRSLFKDDSDMMTKIDTLESYHHHYVEDYYSH",
+      "length": 92,
+      "source_file": "results/rfd4_his_sweep_20261023/scored/his020.csv",
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_68",
+      "cluster": 5,
+      "rank_score": null,
+      "rank_components": {
+        "hotspot_obedience.hotspot_obedience": 1.0,
+        "clash_metrics.frac_atoms_clashing_1p5A": 0.0,
+        "bond_length_metrics.bond_length.frac_unreasonable": 0.0
+      },
+      "hypothesis_basis": null,
+      "gates_passed": [],
+      "gates_failed": [],
+      "gates_not_evaluable": [],
+      "metrics": {
+        "hotspot_obedience.hotspot_obedience": "1.0",
+        "clash_metrics.frac_atoms_clashing_1p5A": "0.0",
+        "bond_length_metrics.bond_length.frac_unreasonable": "0.0"
+      }
+    },
+    {
+      "rank": 7,
+      "name": "tfr1_his020_200m_20261023__tfr1_apical_his_70",
+      "sequence": "EVQLVESGGGLVQPGGSLRLSCAASGNGYTFTDYAMHWFRQAPGKEREWVGWIYPYNGNTNYADSVKGRFTITADTSKSTAYLQMNSLRAEDTAVYYCARGGEYSDYWGQGTQVTVS",
+      "length": 117,
+      "source_file": "results/rfd4_his_sweep_20261023/scored/his020.csv",
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_70",
+      "cluster": 3,
+      "rank_score": null,
+      "rank_components": {
+        "hotspot_obedience.hotspot_obedience": 1.0,
+        "clash_metrics.frac_atoms_clashing_1p5A": 0.0,
+        "bond_length_metrics.bond_length.frac_unreasonable": 0.0
+      },
+      "hypothesis_basis": null,
+      "gates_passed": [],
+      "gates_failed": [],
+      "gates_not_evaluable": [],
+      "metrics": {
+        "hotspot_obedience.hotspot_obedience": "1.0",
+        "clash_metrics.frac_atoms_clashing_1p5A": "0.0",
+        "bond_length_metrics.bond_length.frac_unreasonable": "0.0"
+      }
+    },
+    {
+      "rank": 8,
+      "name": "tfr1_his020_200m_20261023__tfr1_apical_his_78",
+      "sequence": "SVTLTSPSAVTVTEGETATLTLTVTNNGTSPSTLTVDWYKDGTSISDINDSRFSTSSTVVTLSPGESKTFTLTINSVTSADAGTYHATVSSGTSTSTSSSTTLTVLS",
+      "length": 107,
+      "source_file": "results/rfd4_his_sweep_20261023/scored/his020.csv",
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_78",
+      "cluster": 6,
+      "rank_score": null,
+      "rank_components": {
+        "hotspot_obedience.hotspot_obedience": 1.0,
+        "clash_metrics.frac_atoms_clashing_1p5A": 0.0,
+        "bond_length_metrics.bond_length.frac_unreasonable": 0.0
+      },
+      "hypothesis_basis": null,
+      "gates_passed": [],
+      "gates_failed": [],
+      "gates_not_evaluable": [],
+      "metrics": {
+        "hotspot_obedience.hotspot_obedience": "1.0",
+        "clash_metrics.frac_atoms_clashing_1p5A": "0.0",
+        "bond_length_metrics.bond_length.frac_unreasonable": "0.0"
+      }
+    },
+    {
+      "rank": 9,
+      "name": "tfr1_his020_200m_20261023__tfr1_apical_his_86",
+      "sequence": "NTLTLTLSQTSYTVSEGKSVTISWELHSNSTDNVLYLHVTVKKDGTTVKEEELDPFTHSVTLSNLTPADSGTYTLKVELVTEHQTLSAEKTFTLTVH",
+      "length": 97,
+      "source_file": "results/rfd4_his_sweep_20261023/scored/his020.csv",
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_86",
+      "cluster": 7,
+      "rank_score": null,
+      "rank_components": {
+        "hotspot_obedience.hotspot_obedience": 1.0,
+        "clash_metrics.frac_atoms_clashing_1p5A": 0.0,
+        "bond_length_metrics.bond_length.frac_unreasonable": 0.0
+      },
+      "hypothesis_basis": null,
+      "gates_passed": [],
+      "gates_failed": [],
+      "gates_not_evaluable": [],
+      "metrics": {
+        "hotspot_obedience.hotspot_obedience": "1.0",
+        "clash_metrics.frac_atoms_clashing_1p5A": "0.0",
+        "bond_length_metrics.bond_length.frac_unreasonable": "0.0"
+      }
+    },
+    {
+      "rank": 10,
+      "name": "tfr1_his020_200m_20261023__tfr1_apical_his_10",
+      "sequence": "VPSNVSVPSSVPKGSNVTVTWSDSSSASSYTVYVEDTSGNTVHSYSSVSSTSYTFSSSSLSLGTYLVKVQDSSGYTSDPASFTVTS",
+      "length": 86,
+      "source_file": "results/rfd4_his_sweep_20261023/scored/his020.csv",
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_10",
+      "cluster": 6,
+      "rank_score": null,
+      "rank_components": {
+        "hotspot_obedience.hotspot_obedience": 0.9,
+        "clash_metrics.frac_atoms_clashing_1p5A": 0.0,
+        "bond_length_metrics.bond_length.frac_unreasonable": 0.0
+      },
+      "hypothesis_basis": null,
+      "gates_passed": [],
+      "gates_failed": [],
+      "gates_not_evaluable": [],
+      "metrics": {
+        "hotspot_obedience.hotspot_obedience": "0.9",
+        "clash_metrics.frac_atoms_clashing_1p5A": "0.0",
+        "bond_length_metrics.bond_length.frac_unreasonable": "0.0"
+      }
+    },
+    {
+      "rank": 11,
+      "name": "tfr1_his020_200m_20261023__tfr1_apical_his_106",
+      "sequence": "SAVEDKLKSILTEASKLSLDDRISYLEEKLSEESNDVVKLFLKYFIASLKEDEDEATHYYEHLDKHHPHLLHDLLDYFDDLES",
+      "length": 83,
+      "source_file": "results/rfd4_his_sweep_20261023/scored/his020.csv",
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_106",
+      "cluster": 8,
+      "rank_score": null,
+      "rank_components": {
+        "hotspot_obedience.hotspot_obedience": 0.9,
+        "clash_metrics.frac_atoms_clashing_1p5A": 0.0,
+        "bond_length_metrics.bond_length.frac_unreasonable": 0.0
+      },
+      "hypothesis_basis": null,
+      "gates_passed": [],
+      "gates_failed": [],
+      "gates_not_evaluable": [],
+      "metrics": {
+        "hotspot_obedience.hotspot_obedience": "0.9",
+        "clash_metrics.frac_atoms_clashing_1p5A": "0.0",
+        "bond_length_metrics.bond_length.frac_unreasonable": "0.0"
+      }
+    },
+    {
+      "rank": 12,
+      "name": "tfr1_his020_200m_20261023__tfr1_apical_his_118",
+      "sequence": "SYLIKEPLTEDQKDTLKTRFMEDLHFSEDTAQELITFLETAYENKQEITVKDLMEEFHLSEDTAMKVLDIVKEVLD",
+      "length": 76,
+      "source_file": "results/rfd4_his_sweep_20261023/scored/his020.csv",
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_118",
+      "cluster": 9,
+      "rank_score": null,
+      "rank_components": {
+        "hotspot_obedience.hotspot_obedience": 0.9,
+        "clash_metrics.frac_atoms_clashing_1p5A": 0.0,
+        "bond_length_metrics.bond_length.frac_unreasonable": 0.0
+      },
+      "hypothesis_basis": null,
+      "gates_passed": [],
+      "gates_failed": [],
+      "gates_not_evaluable": [],
+      "metrics": {
+        "hotspot_obedience.hotspot_obedience": "0.9",
+        "clash_metrics.frac_atoms_clashing_1p5A": "0.0",
+        "bond_length_metrics.bond_length.frac_unreasonable": "0.0"
+      }
+    },
+    {
+      "rank": 13,
+      "name": "tfr1_his020_200m_20261023__tfr1_apical_his_120",
+      "sequence": "SRMLLSKITVSEAHDFMSENASYYKGSFNATVDHVAHDSASNTYSLVLLAHKADVESLNLQVDDVVLLQPHTDPDTFYLGQIHDIEDDPEDSDHVYIYLHSKSELFHELREYEDKEVTVFVYSHQAAS",
+      "length": 128,
+      "source_file": "results/rfd4_his_sweep_20261023/scored/his020.csv",
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_120",
+      "cluster": 10,
+      "rank_score": null,
+      "rank_components": {
+        "hotspot_obedience.hotspot_obedience": 0.9,
+        "clash_metrics.frac_atoms_clashing_1p5A": 0.0,
+        "bond_length_metrics.bond_length.frac_unreasonable": 0.0
+      },
+      "hypothesis_basis": null,
+      "gates_passed": [],
+      "gates_failed": [],
+      "gates_not_evaluable": [],
+      "metrics": {
+        "hotspot_obedience.hotspot_obedience": "0.9",
+        "clash_metrics.frac_atoms_clashing_1p5A": "0.0",
+        "bond_length_metrics.bond_length.frac_unreasonable": "0.0"
+      }
+    },
+    {
+      "rank": 14,
+      "name": "tfr1_his020_200m_20261023__tfr1_apical_his_13",
+      "sequence": "STTYTAEQVRMAIHSLRDILSDDTYELVYNHLHTKLHLADDDTSTTFTAEQVRMAIHSLRDILSDDTYELVYNHLHTKLH",
+      "length": 80,
+      "source_file": "results/rfd4_his_sweep_20261023/scored/his020.csv",
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_13",
+      "cluster": 11,
+      "rank_score": null,
+      "rank_components": {
+        "hotspot_obedience.hotspot_obedience": 0.9,
+        "clash_metrics.frac_atoms_clashing_1p5A": 0.0,
+        "bond_length_metrics.bond_length.frac_unreasonable": 0.0
+      },
+      "hypothesis_basis": null,
+      "gates_passed": [],
+      "gates_failed": [],
+      "gates_not_evaluable": [],
+      "metrics": {
+        "hotspot_obedience.hotspot_obedience": "0.9",
+        "clash_metrics.frac_atoms_clashing_1p5A": "0.0",
+        "bond_length_metrics.bond_length.frac_unreasonable": "0.0"
+      }
+    },
+    {
+      "rank": 15,
+      "name": "tfr1_his020_200m_20261023__tfr1_apical_his_139",
+      "sequence": "SAPSNLSATSSGSSVNLTWTAPSTSVTSYVVHYKKSGESEKEVTTSSTSITLTNLSSGTYTFTVTAHNSSSSATSSPVTVTVS",
+      "length": 83,
+      "source_file": "results/rfd4_his_sweep_20261023/scored/his020.csv",
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_139",
+      "cluster": 4,
+      "rank_score": null,
+      "rank_components": {
+        "hotspot_obedience.hotspot_obedience": 0.9,
+        "clash_metrics.frac_atoms_clashing_1p5A": 0.0,
+        "bond_length_metrics.bond_length.frac_unreasonable": 0.0
+      },
+      "hypothesis_basis": null,
+      "gates_passed": [],
+      "gates_failed": [],
+      "gates_not_evaluable": [],
+      "metrics": {
+        "hotspot_obedience.hotspot_obedience": "0.9",
+        "clash_metrics.frac_atoms_clashing_1p5A": "0.0",
+        "bond_length_metrics.bond_length.frac_unreasonable": "0.0"
+      }
+    },
+    {
+      "rank": 16,
+      "name": "tfr1_his020_200m_20261023__tfr1_apical_his_141",
+      "sequence": "SLEDKISEIEDKLEELSEELDELEEKYENGEISEEEFEEKKDELDEEHDELLEEYEELLE",
+      "length": 60,
+      "source_file": "results/rfd4_his_sweep_20261023/scored/his020.csv",
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_141",
+      "cluster": 12,
+      "rank_score": null,
+      "rank_components": {
+        "hotspot_obedience.hotspot_obedience": 0.9,
+        "clash_metrics.frac_atoms_clashing_1p5A": 0.0,
+        "bond_length_metrics.bond_length.frac_unreasonable": 0.0
+      },
+      "hypothesis_basis": null,
+      "gates_passed": [],
+      "gates_failed": [],
+      "gates_not_evaluable": [],
+      "metrics": {
+        "hotspot_obedience.hotspot_obedience": "0.9",
+        "clash_metrics.frac_atoms_clashing_1p5A": "0.0",
+        "bond_length_metrics.bond_length.frac_unreasonable": "0.0"
+      }
+    },
+    {
+      "rank": 17,
+      "name": "tfr1_his020_200m_20261023__tfr1_apical_his_145",
+      "sequence": "SNVFYEHVDSTTAHLFVSKHATKDQIKAAFEDLHDEKITHLYLHYHKDLHQENYEFIWDMAKKYHIKILDTEEFS",
+      "length": 75,
+      "source_file": "results/rfd4_his_sweep_20261023/scored/his020.csv",
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_145",
+      "cluster": 13,
+      "rank_score": null,
+      "rank_components": {
+        "hotspot_obedience.hotspot_obedience": 0.9,
+        "clash_metrics.frac_atoms_clashing_1p5A": 0.0,
+        "bond_length_metrics.bond_length.frac_unreasonable": 0.0
+      },
+      "hypothesis_basis": null,
+      "gates_passed": [],
+      "gates_failed": [],
+      "gates_not_evaluable": [],
+      "metrics": {
+        "hotspot_obedience.hotspot_obedience": "0.9",
+        "clash_metrics.frac_atoms_clashing_1p5A": "0.0",
+        "bond_length_metrics.bond_length.frac_unreasonable": "0.0"
+      }
+    },
+    {
+      "rank": 18,
+      "name": "tfr1_his020_200m_20261023__tfr1_apical_his_147",
+      "sequence": "SSHLEHAHHHLEHAHTHFEEGDYESALHELEHASHHLLHYAQDEHMSDELQSHLEHAHHHLEHAHTHFEEGDYESALHELEHASHHLHHAENLAEEEHHHELASLLHELHTLVSELIEKLL",
+      "length": 121,
+      "source_file": "results/rfd4_his_sweep_20261023/scored/his020.csv",
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_147",
+      "cluster": 14,
+      "rank_score": null,
+      "rank_components": {
+        "hotspot_obedience.hotspot_obedience": 0.9,
+        "clash_metrics.frac_atoms_clashing_1p5A": 0.0,
+        "bond_length_metrics.bond_length.frac_unreasonable": 0.0
+      },
+      "hypothesis_basis": null,
+      "gates_passed": [],
+      "gates_failed": [],
+      "gates_not_evaluable": [],
+      "metrics": {
+        "hotspot_obedience.hotspot_obedience": "0.9",
+        "clash_metrics.frac_atoms_clashing_1p5A": "0.0",
+        "bond_length_metrics.bond_length.frac_unreasonable": "0.0"
+      }
+    },
+    {
+      "rank": 19,
+      "name": "tfr1_his020_200m_20261023__tfr1_apical_his_149",
+      "sequence": "SDSVTISSITESSLGTLTVTVTYSHSSPVTSVTVHLKDSSGNTLDSSTISTNGATSGTVTATLTIPSSHDLNSTYYITATATDSSGNTVTSDPVSYSYS",
+      "length": 99,
+      "source_file": "results/rfd4_his_sweep_20261023/scored/his020.csv",
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_149",
+      "cluster": 6,
+      "rank_score": null,
+      "rank_components": {
+        "hotspot_obedience.hotspot_obedience": 0.9,
+        "clash_metrics.frac_atoms_clashing_1p5A": 0.0,
+        "bond_length_metrics.bond_length.frac_unreasonable": 0.0
+      },
+      "hypothesis_basis": null,
+      "gates_passed": [],
+      "gates_failed": [],
+      "gates_not_evaluable": [],
+      "metrics": {
+        "hotspot_obedience.hotspot_obedience": "0.9",
+        "clash_metrics.frac_atoms_clashing_1p5A": "0.0",
+        "bond_length_metrics.bond_length.frac_unreasonable": "0.0"
+      }
+    },
+    {
+      "rank": 20,
+      "name": "tfr1_his020_200m_20261023__tfr1_apical_his_152",
+      "sequence": "SLDDERMELQEKLEKLEKEDHDLFKEIMITTLKKFAEKYPHLKSSLDDLISELETEDLHLWEILNKVHDIIHEKISDETMQHHVWDDFFTILDETYHDHTS",
+      "length": 101,
+      "source_file": "results/rfd4_his_sweep_20261023/scored/his020.csv",
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_152",
+      "cluster": 15,
+      "rank_score": null,
+      "rank_components": {
+        "hotspot_obedience.hotspot_obedience": 0.9,
+        "clash_metrics.frac_atoms_clashing_1p5A": 0.0,
+        "bond_length_metrics.bond_length.frac_unreasonable": 0.0
+      },
+      "hypothesis_basis": null,
+      "gates_passed": [],
+      "gates_failed": [],
+      "gates_not_evaluable": [],
+      "metrics": {
+        "hotspot_obedience.hotspot_obedience": "0.9",
+        "clash_metrics.frac_atoms_clashing_1p5A": "0.0",
+        "bond_length_metrics.bond_length.frac_unreasonable": "0.0"
+      }
+    }
+  ],
+  "deferred": [
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_157",
+      "cluster": 16,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_161",
+      "cluster": 17,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_169",
+      "cluster": 18,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_175",
+      "cluster": 19,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_182",
+      "cluster": 20,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_196",
+      "cluster": 21,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_197",
+      "cluster": 22,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_32",
+      "cluster": 23,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_45",
+      "cluster": 24,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_46",
+      "cluster": 25,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_55",
+      "cluster": 26,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_58",
+      "cluster": 27,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_62",
+      "cluster": 28,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_73",
+      "cluster": 29,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_80",
+      "cluster": 30,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_81",
+      "cluster": 31,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_99",
+      "cluster": 3,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_1",
+      "cluster": 32,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_100",
+      "cluster": 3,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_107",
+      "cluster": 3,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_114",
+      "cluster": 6,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_116",
+      "cluster": 33,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_117",
+      "cluster": 34,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_119",
+      "cluster": 35,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_12",
+      "cluster": 36,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_122",
+      "cluster": 37,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_124",
+      "cluster": 38,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_125",
+      "cluster": 39,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_126",
+      "cluster": 40,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_128",
+      "cluster": 41,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_136",
+      "cluster": 42,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_137",
+      "cluster": 43,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_14",
+      "cluster": 44,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_142",
+      "cluster": 45,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_144",
+      "cluster": 3,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_153",
+      "cluster": 46,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_154",
+      "cluster": 47,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_158",
+      "cluster": 48,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_159",
+      "cluster": 49,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_16",
+      "cluster": 50,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_160",
+      "cluster": 3,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_166",
+      "cluster": 51,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_170",
+      "cluster": 52,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_174",
+      "cluster": 53,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_18",
+      "cluster": 6,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_181",
+      "cluster": 54,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_185",
+      "cluster": 55,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_187",
+      "cluster": 9,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_188",
+      "cluster": 56,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_19",
+      "cluster": 57,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_199",
+      "cluster": 58,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_22",
+      "cluster": 59,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_23",
+      "cluster": 60,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_24",
+      "cluster": 61,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_26",
+      "cluster": 62,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_27",
+      "cluster": 6,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_33",
+      "cluster": 63,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_36",
+      "cluster": 4,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_39",
+      "cluster": 64,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_43",
+      "cluster": 4,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_44",
+      "cluster": 65,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_53",
+      "cluster": 66,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_57",
+      "cluster": 67,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_59",
+      "cluster": 68,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_60",
+      "cluster": 69,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_65",
+      "cluster": 70,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_67",
+      "cluster": 57,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_69",
+      "cluster": 4,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_71",
+      "cluster": 4,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_75",
+      "cluster": 46,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_76",
+      "cluster": 4,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_79",
+      "cluster": 71,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_8",
+      "cluster": 72,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_82",
+      "cluster": 73,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_89",
+      "cluster": 74,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_9",
+      "cluster": 75,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_91",
+      "cluster": 33,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_92",
+      "cluster": 76,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_94",
+      "cluster": 77,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_0",
+      "cluster": 78,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_101",
+      "cluster": 79,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_108",
+      "cluster": 16,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_111",
+      "cluster": 4,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_112",
+      "cluster": 4,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_113",
+      "cluster": 80,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_121",
+      "cluster": 81,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_123",
+      "cluster": 82,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_127",
+      "cluster": 83,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_135",
+      "cluster": 12,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_140",
+      "cluster": 84,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_146",
+      "cluster": 85,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_151",
+      "cluster": 86,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_156",
+      "cluster": 87,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_162",
+      "cluster": 88,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_17",
+      "cluster": 22,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_171",
+      "cluster": 89,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_172",
+      "cluster": 3,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_173",
+      "cluster": 3,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_179",
+      "cluster": 90,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_183",
+      "cluster": 91,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_186",
+      "cluster": 92,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_189",
+      "cluster": 69,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_190",
+      "cluster": 63,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_191",
+      "cluster": 4,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_194",
+      "cluster": 93,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_198",
+      "cluster": 49,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_2",
+      "cluster": 3,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_20",
+      "cluster": 94,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_25",
+      "cluster": 95,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_28",
+      "cluster": 83,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_3",
+      "cluster": 96,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_47",
+      "cluster": 83,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_49",
+      "cluster": 97,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_51",
+      "cluster": 35,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_54",
+      "cluster": 55,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_56",
+      "cluster": 98,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_6",
+      "cluster": 4,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_61",
+      "cluster": 4,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_63",
+      "cluster": 99,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_74",
+      "cluster": 100,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_85",
+      "cluster": 101,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_90",
+      "cluster": 3,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_95",
+      "cluster": 3,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_96",
+      "cluster": 102,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_97",
+      "cluster": 4,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_98",
+      "cluster": 4,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_102",
+      "cluster": 103,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_103",
+      "cluster": 41,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_104",
+      "cluster": 4,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_105",
+      "cluster": 3,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_109",
+      "cluster": 57,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_11",
+      "cluster": 30,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_129",
+      "cluster": 104,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_130",
+      "cluster": 16,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_131",
+      "cluster": 105,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_132",
+      "cluster": 106,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_133",
+      "cluster": 107,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_143",
+      "cluster": 102,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_15",
+      "cluster": 108,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_150",
+      "cluster": 109,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_163",
+      "cluster": 4,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_164",
+      "cluster": 4,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_165",
+      "cluster": 110,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_167",
+      "cluster": 111,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_176",
+      "cluster": 112,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_29",
+      "cluster": 57,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_30",
+      "cluster": 113,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_31",
+      "cluster": 114,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_35",
+      "cluster": 115,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_37",
+      "cluster": 4,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_38",
+      "cluster": 3,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_4",
+      "cluster": 3,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_40",
+      "cluster": 49,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_41",
+      "cluster": 79,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_48",
+      "cluster": 116,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_50",
+      "cluster": 117,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_52",
+      "cluster": 118,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_64",
+      "cluster": 119,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_72",
+      "cluster": 120,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_77",
+      "cluster": 3,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_83",
+      "cluster": 121,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_84",
+      "cluster": 122,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_87",
+      "cluster": 123,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_110",
+      "cluster": 124,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_115",
+      "cluster": 125,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_138",
+      "cluster": 126,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_148",
+      "cluster": 127,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_155",
+      "cluster": 3,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_192",
+      "cluster": 128,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_195",
+      "cluster": 4,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_42",
+      "cluster": 129,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_5",
+      "cluster": 4,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_66",
+      "cluster": 130,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_93",
+      "cluster": 114,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_177",
+      "cluster": 131,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_178",
+      "cluster": 132,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_180",
+      "cluster": 133,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_34",
+      "cluster": 3,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_7",
+      "cluster": 134,
+      "rank_score": null,
+      "reason": "below the row cap"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_88",
+      "cluster": 103,
+      "rank_score": null,
+      "reason": "below the row cap"
+    }
+  ]
+}

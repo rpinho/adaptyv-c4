@@ -1,0 +1,14 @@
+{
+  "residues": 195,
+  "author_range": [
+    189,
+    383
+  ],
+  "native_sequence_verified": true,
+  "minimum_peptide_CN_A": 1.3222365379333496,
+  "maximum_peptide_CN_A": 1.3485761880874634,
+  "stage": "reduced_search_input",
+  "source_sha256": "b34e2885ae49ad16b464883405660ed5aa0c1c1ba21a6faf66be1b26ab5fb128",
+  "output_sha256": "03abdb9bc5536396de3489e7a6cf3eec88066a1a5f36d5d1d78b7342ec1ec0b2",
+  "requires_native_full_context_refold": true
+}

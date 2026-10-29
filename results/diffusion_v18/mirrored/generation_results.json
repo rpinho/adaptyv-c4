@@ -1,0 +1,12 @@
+{
+  "status": "completed",
+  "backbone_file": "backbone_20261022.pdb",
+  "backbone_sha256": "5e49621780781dbc1a424796044eac44427e842adc570e8c0183dfeee9c845c2",
+  "backbone_count": 1,
+  "diffusion_steps": 50,
+  "revision": "86507b6538f51fce57b5a72477165f03999ed7ae",
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "elapsed_seconds": 60.87708806991577,
+  "qualified_candidates": 0,
+  "interpretation": "Poly-glycine backbone only; CPU native-context audit then sequence design required"
+}

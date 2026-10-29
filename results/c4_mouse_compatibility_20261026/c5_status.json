@@ -1,0 +1,16 @@
+{
+  "checked_at_utc": "2026-10-26T12:46:00Z",
+  "source": "https://proteinbase.com/competitions/anthropic-adaptyv-2026",
+  "tool": "web.open",
+  "checks_this_run": 1,
+  "verbatim": [
+    "CHALLENGE 05",
+    "Not yet announced",
+    "Oct 26 \u2013 Nov 8"
+  ],
+  "status": "No target announced; constraints template left unchanged",
+  "note": "Timestamp is the local recording time after the single read; not server publication time.",
+  "observed_excerpt_file": "results/c4_mouse_compatibility_20261026/c5_page_excerpt.txt",
+  "observed_excerpt_sha256": "23dfab4d56be0f43b6f7494117fba8bdbf0a0a49a25048d6ec44017a2c45f7cf",
+  "snapshot_scope": "Exact observed text excerpt from single web.open extraction; not original HTML bytes."
+}

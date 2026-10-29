@@ -1,0 +1,7 @@
+RFD4-PROTEINA / HUMAN TfR1 — WORKFLOW FOR RICARDO REVIEW
+
+Four 200-design generation arms were geometrically ranked. The exact final shortlist20 was rerun through the unchanged 6W3H-validated omitted-context audit and the stricter full-native staging helper. All20 passed, with no omitted-context backbone pairs below2A.
+
+The upstream TMolMutationDdgMetric ran on CPU for 10/10 registered contacting-His sites from the top5 designs. Each site used an8A repacking/minimization shell, two relaxation repeats and matched WT/H-to-ALA/H-to-GLN/H-to-HIS control legs. The complete1278-residue observed receptor dimer was retained. Backbone and residue identities were verified for every scored leg. Positive deltas mean that a substitution worsened that modeled site/receptor interaction. Units are TMol beta2016 score units.
+
+These are mutation-energy hypotheses, not measured pH sensitivity, a rigorous binding free energy, pKa or KD. Self-substitution deviations are reported without assuming zero. No energy threshold was added and the original20 sequences/rank order are preserved. Other15 designs have no mutation-scan evidence; their CSV fields explicitly say not_scanned. The canonical build_submission.py validates format only. Organizer novelty/typing, biological qualification, mouse affinity, independent refolding and expression remain unmeasured. All sequences exclude the Twin-Strep tag, an inference requiring confirmation. Ricardo resolves tag and replace-versus-accumulate questions and performs any actual upload/submission. This packet has not been submitted.

@@ -1,0 +1,46 @@
+{
+  "iptm": 0.77,
+  "ptm": 0.8,
+  "mean_plddt": 90.9,
+  "best_model": "model_1",
+  "n_models": 5,
+  "all_models": [
+    {
+      "model": "model_1",
+      "rank": 1,
+      "iptm": 0.77,
+      "ptm": 0.8,
+      "mean_plddt": 90.9
+    },
+    {
+      "model": "model_2",
+      "rank": 2,
+      "iptm": 0.74,
+      "ptm": 0.77,
+      "mean_plddt": 90.57
+    },
+    {
+      "model": "model_5",
+      "rank": 3,
+      "iptm": 0.7,
+      "ptm": 0.74,
+      "mean_plddt": 89.14
+    },
+    {
+      "model": "model_4",
+      "rank": 4,
+      "iptm": 0.68,
+      "ptm": 0.73,
+      "mean_plddt": 90.54
+    },
+    {
+      "model": "model_3",
+      "rank": 5,
+      "iptm": 0.66,
+      "ptm": 0.71,
+      "mean_plddt": 89.68
+    }
+  ],
+  "wall_s": 456.8,
+  "fasta_sha256": "cd1faac9393907bf2fb6055f8f69f319bb1c387fe7263b982d9b5fd9dbba283f"
+}

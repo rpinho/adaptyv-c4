@@ -1,0 +1,18 @@
+{
+  "spawn_intent": 1792681897.2010229,
+  "pid": 24795,
+  "status": "cancelled",
+  "call_id": "fc-01M5J2NVDNPF7AE51SZ8X8P9GK",
+  "submitted": 1792681897.378211,
+  "last_mirror_error": "NotFoundError('No such file or directory')",
+  "function_stats": {
+    "backlog": 0,
+    "num_total_runners": 0,
+    "num_running_inputs": 0,
+    "input_headroom": 0
+  },
+  "checked": 1792682201.302539,
+  "cancelled": 1792682201.0522811,
+  "gpu_released_verified": true,
+  "released": 1792682308.142263
+}

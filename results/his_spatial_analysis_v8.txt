@@ -1,0 +1,386 @@
+3D His spatial analysis for 20 C4 v8 PDB files
+========================================================================================================================
+
+Design                                    His  D/E  HH<8Å  minHH  H-DE<6Å  Surf  Core
+------------------------------------------------------------------------------------------------------------------------
+tfr1_his200m_20261023__tfr1_apical_his_148    3   14      0   16.2        3     2     0
+tfr1_e1_his015_26                          10   10      2    3.8        5     3     1
+tfr1_e1_his015_57                          10   14      2    3.7        6     7     0
+tfr1_e1_his015_14                          12   15      3    6.9        5     6     1
+tfr1_e1_his015_148                         10   15      3    3.8        6     4     0
+tfr1_e1_his015_20                           6   10      3    3.8        2     5     0
+tfr1_e1_his015_41                          13   19      3    3.8        5     3     1
+tfr1_e1_his015_145                         13   17      4    5.3        9     9     1
+tfr1_e1_his015_174                          9    8      4    3.8        4     6     0
+tfr1_e1_his015_64                          13   13      4    3.8        6     9     3
+tfr1_e1_his015_96                          10   14      4    3.8        6     7     0
+tfr1_e1_plain_98                           11   16      4    3.8        7     8     1
+c4_v_185_4x                                 9   16      5    3.9        5     3     3
+tfr1_e1_his015_140                          9   12      5    3.8        4     7     1
+c4_v_33_4x_v2                              13   12      6    3.8       10     9     0
+tfr1_e1_his015_131                         15   14      7    3.7       11    11     0
+tfr1_e1_his015_61                          12   13      7    3.7        7     3     2
+tfr1_e1_his015_115                         11   15      9    3.8        8     4     2
+c4_v_58_4x                                 15   16     10    3.8        9    10     0
+c4_v_62_max                                16   11     11    3.7       11     8     1
+
+
+HIS-HIS CLOSE PAIRS (<8Å) — actimo-labs criterion: prefer >8Å separation
+========================================================================================================================
+
+c4_v_62_max (11 close pairs):
+  H3-H7: 6.1Å [NEAR]
+  H7-H8: 3.7Å [CLOSE]
+  H15-H31: 6.7Å [NEAR]
+  H44-H48: 6.2Å [NEAR]
+  H55-H56: 3.8Å [CLOSE]
+  H55-H62: 5.5Å [NEAR]
+  H56-H62: 7.8Å [NEAR]
+  H94-H97: 5.4Å [NEAR]
+  H94-H98: 6.6Å [NEAR]
+  H97-H98: 3.9Å [CLOSE]
+  H98-H102: 5.9Å [NEAR]
+
+c4_v_58_4x (10 close pairs):
+  H24-H26: 5.4Å [NEAR]
+  H26-H31: 6.9Å [NEAR]
+  H43-H46: 4.9Å [CLOSE]
+  H54-H55: 3.8Å [CLOSE]
+  H54-H58: 6.3Å [NEAR]
+  H55-H58: 5.5Å [NEAR]
+  H58-H60: 6.0Å [NEAR]
+  H68-H72: 6.0Å [NEAR]
+  H82-H85: 5.1Å [NEAR]
+  H107-H109: 5.6Å [NEAR]
+
+tfr1_e1_his015_115 (9 close pairs):
+  H2-H3: 3.8Å [CLOSE]
+  H3-H5: 7.0Å [NEAR]
+  H3-H69: 7.1Å [NEAR]
+  H5-H67: 7.2Å [NEAR]
+  H5-H69: 4.9Å [CLOSE]
+  H14-H16: 6.7Å [NEAR]
+  H43-H44: 3.8Å [CLOSE]
+  H65-H67: 6.7Å [NEAR]
+  H67-H69: 7.0Å [NEAR]
+
+tfr1_e1_his015_131 (7 close pairs):
+  H17-H19: 5.4Å [NEAR]
+  H26-H30: 6.3Å [NEAR]
+  H41-H42: 3.7Å [CLOSE]
+  H41-H44: 6.3Å [NEAR]
+  H42-H44: 5.4Å [NEAR]
+  H83-H84: 3.8Å [CLOSE]
+  H91-H92: 3.8Å [CLOSE]
+
+tfr1_e1_his015_61 (7 close pairs):
+  H46-H47: 3.7Å [CLOSE]
+  H46-H48: 6.1Å [NEAR]
+  H47-H48: 3.8Å [CLOSE]
+  H48-H52: 6.5Å [NEAR]
+  H52-H66: 7.9Å [NEAR]
+  H52-H70: 7.1Å [NEAR]
+  H56-H58: 6.4Å [NEAR]
+
+c4_v_33_4x_v2 (6 close pairs):
+  H3-H4: 3.8Å [CLOSE]
+  H3-H6: 5.1Å [NEAR]
+  H4-H6: 5.3Å [NEAR]
+  H20-H22: 5.7Å [NEAR]
+  H37-H38: 3.8Å [CLOSE]
+  H56-H59: 5.1Å [NEAR]
+
+c4_v_185_4x (5 close pairs):
+  H8-H10: 5.4Å [NEAR]
+  H27-H31: 6.2Å [NEAR]
+  H31-H32: 3.9Å [CLOSE]
+  H31-H34: 5.0Å [NEAR]
+  H32-H34: 5.6Å [NEAR]
+
+tfr1_e1_his015_140 (5 close pairs):
+  H2-H5: 5.3Å [NEAR]
+  H39-H40: 3.8Å [CLOSE]
+  H57-H60: 5.1Å [NEAR]
+  H57-H63: 7.6Å [NEAR]
+  H60-H63: 5.5Å [NEAR]
+
+tfr1_e1_his015_145 (4 close pairs):
+  H40-H42: 5.3Å [NEAR]
+  H55-H57: 5.4Å [NEAR]
+  H90-H92: 6.4Å [NEAR]
+
+tfr1_e1_his015_174 (4 close pairs):
+  H18-H19: 3.8Å [CLOSE]
+  H18-H22: 7.8Å [NEAR]
+  H22-H42: 7.7Å [NEAR]
+  H60-H62: 6.5Å [NEAR]
+
+tfr1_e1_his015_64 (4 close pairs):
+  H33-H34: 3.8Å [CLOSE]
+  H76-H77: 3.8Å [CLOSE]
+  H76-H78: 5.5Å [NEAR]
+  H77-H78: 3.8Å [CLOSE]
+
+tfr1_e1_his015_96 (4 close pairs):
+  H8-H106: 7.1Å [NEAR]
+  H58-H60: 5.6Å [NEAR]
+  H83-H84: 3.8Å [CLOSE]
+  H89-H90: 3.8Å [CLOSE]
+
+tfr1_e1_plain_98 (4 close pairs):
+  H25-H26: 3.8Å [CLOSE]
+  H26-H71: 7.7Å [NEAR]
+  H58-H61: 5.5Å [NEAR]
+  H106-H107: 3.8Å [CLOSE]
+
+tfr1_e1_his015_14 (3 close pairs):
+  H23-H95: 6.9Å [NEAR]
+  H95-H99: 7.0Å [NEAR]
+
+tfr1_e1_his015_148 (3 close pairs):
+  H53-H54: 3.8Å [CLOSE]
+  H53-H55: 5.4Å [NEAR]
+  H54-H55: 3.8Å [CLOSE]
+
+tfr1_e1_his015_20 (3 close pairs):
+  H13-H15: 6.5Å [NEAR]
+  H15-H19: 7.1Å [NEAR]
+  H18-H19: 3.8Å [CLOSE]
+
+tfr1_e1_his015_41 (3 close pairs):
+  H58-H59: 3.8Å [CLOSE]
+  H80-H84: 5.7Å [NEAR]
+  H116-H117: 3.8Å [CLOSE]
+
+tfr1_e1_his015_26 (2 close pairs):
+  H3-H4: 3.8Å [CLOSE]
+  H45-H49: 6.5Å [NEAR]
+
+tfr1_e1_his015_57 (2 close pairs):
+  H3-H4: 3.7Å [CLOSE]
+  H60-H61: 3.7Å [CLOSE]
+
+
+HIS-D/E CONTACTS (<6Å) — intramolecular salt bridge risk
+========================================================================================================================
+
+c4_v_62_max (11/16 His near D/E):
+  H3-GLU4: 3.8Å
+  H7-GLU4: 5.0Å
+  H8-GLU11: 5.1Å
+  H15-GLU18: 5.0Å
+  H31-GLU30: 3.8Å
+  H31-GLU34: 5.0Å
+  H38-GLU37: 3.8Å
+  H44-GLU45: 3.8Å
+  H44-GLU46: 5.4Å
+  H48-GLU45: 5.1Å
+  H48-GLU46: 5.3Å
+  H55-GLU52: 5.0Å
+  H83-ASP80: 5.0Å
+  H102-GLU103: 3.8Å
+
+tfr1_e1_his015_131 (11/15 His near D/E):
+  H11-ASP10: 3.8Å
+  H11-GLU13: 5.3Å
+  H17-GLU18: 3.8Å
+  H19-GLU18: 3.8Å
+  H26-ASP25: 3.7Å
+  H26-GLU27: 3.8Å
+  H26-GLU29: 5.2Å
+  H30-GLU27: 5.4Å
+  H30-GLU29: 3.8Å
+  H52-GLU48: 5.9Å
+  H52-GLU49: 4.9Å
+  H63-GLU65: 5.9Å
+  H83-GLU81: 5.6Å
+  H84-GLU87: 5.0Å
+  H91-GLU87: 5.9Å
+  H91-ASP88: 5.2Å
+  H91-GLU94: 5.4Å
+  H92-GLU94: 5.8Å
+
+c4_v_33_4x_v2 (10/13 His near D/E):
+  H4-GLU7: 5.0Å
+  H6-GLU7: 3.8Å
+  H20-GLU18: 5.5Å
+  H26-ASP29: 5.0Å
+  H37-GLU36: 3.8Å
+  H38-GLU36: 5.5Å
+  H38-GLU41: 4.9Å
+  H38-ASP42: 5.8Å
+  H56-GLU57: 3.8Å
+  H56-GLU58: 5.3Å
+  H59-GLU57: 5.3Å
+  H59-GLU58: 3.8Å
+  H62-GLU63: 3.8Å
+  H77-ASP74: 5.2Å
+  H77-ASP78: 3.8Å
+
+c4_v_58_4x (9/15 His near D/E):
+  H31-ASP32: 3.8Å
+  H43-ASP45: 5.4Å
+  H46-ASP45: 3.8Å
+  H54-GLU7: 5.7Å
+  H72-GLU75: 5.0Å
+  H82-GLU83: 3.8Å
+  H85-GLU83: 5.2Å
+  H107-GLU104: 5.1Å
+  H107-GLU108: 3.9Å
+  H109-GLU108: 3.8Å
+
+tfr1_e1_his015_145 (9/13 His near D/E):
+  H9-GLU36: 5.6Å
+  H13-ASP12: 3.8Å
+  H13-ASP16: 5.8Å
+  H28-GLU26: 5.2Å
+  H42-ASP44: 5.4Å
+  H55-GLU53: 5.3Å
+  H55-GLU56: 3.8Å
+  H57-GLU56: 3.8Å
+  H90-GLU91: 3.8Å
+  H92-GLU91: 3.7Å
+  H96-ASP97: 3.8Å
+
+tfr1_e1_his015_115 (8/11 His near D/E):
+  H2-GLU1: 3.8Å
+  H16-GLU9: 5.2Å
+  H16-GLU30: 4.4Å
+  H37-GLU36: 3.7Å
+  H43-ASP45: 5.4Å
+  H44-ASP45: 3.8Å
+  H44-GLU47: 5.2Å
+  H65-GLU9: 4.6Å
+  H65-GLU61: 5.7Å
+  H65-GLU63: 5.9Å
+  H65-ASP64: 3.8Å
+  H67-GLU60: 4.9Å
+  H69-GLU56: 5.9Å
+  H69-GLU57: 5.0Å
+
+tfr1_e1_his015_61 (7/12 His near D/E):
+  H11-ASP10: 3.8Å
+  H46-GLU44: 5.9Å
+  H47-GLU44: 5.7Å
+  H47-ASP49: 5.4Å
+  H48-GLU44: 4.6Å
+  H48-ASP49: 3.8Å
+  H58-ASP60: 5.5Å
+  H79-ASP76: 5.2Å
+  H93-ASP94: 3.8Å
+  H93-GLU95: 5.4Å
+
+tfr1_e1_plain_98 (7/11 His near D/E):
+  H18-GLU19: 3.8Å
+  H25-GLU24: 3.8Å
+  H25-GLU28: 5.2Å
+  H26-GLU24: 5.6Å
+  H26-GLU28: 5.4Å
+  H40-GLU39: 3.8Å
+  H40-GLU43: 5.5Å
+  H89-GLU88: 3.8Å
+  H106-GLU104: 5.3Å
+  H107-GLU104: 5.2Å
+
+tfr1_e1_his015_148 (6/10 His near D/E):
+  H9-GLU6: 5.6Å
+  H16-ASP13: 4.8Å
+  H16-GLU14: 5.9Å
+  H29-GLU28: 3.8Å
+  H29-ASP31: 5.8Å
+  H29-GLU32: 5.6Å
+  H42-GLU41: 3.8Å
+  H68-GLU66: 5.4Å
+  H79-ASP75: 5.3Å
+
+tfr1_e1_his015_57 (6/10 His near D/E):
+  H15-GLU12: 5.2Å
+  H20-GLU19: 3.7Å
+  H48-ASP45: 5.1Å
+  H61-ASP64: 5.9Å
+  H77-GLU75: 5.5Å
+  H83-ASP82: 3.8Å
+
+tfr1_e1_his015_64 (6/13 His near D/E):
+  H34-ASP37: 5.1Å
+  H58-GLU62: 5.8Å
+  H76-GLU74: 5.3Å
+  H77-GLU74: 5.1Å
+  H78-GLU74: 5.8Å
+  H78-ASP80: 5.4Å
+  H101-GLU100: 3.7Å
+
+tfr1_e1_his015_96 (6/10 His near D/E):
+  H22-GLU19: 5.7Å
+  H43-ASP42: 3.7Å
+  H58-GLU56: 5.6Å
+  H58-ASP61: 5.4Å
+  H60-ASP61: 3.8Å
+  H83-GLU82: 3.7Å
+  H106-GLU105: 3.8Å
+
+c4_v_185_4x (5/9 His near D/E):
+  H8-GLU5: 4.9Å
+  H8-ASP6: 5.4Å
+  H10-GLU12: 5.4Å
+  H43-GLU42: 3.8Å
+  H52-GLU50: 5.1Å
+  H68-GLU67: 3.9Å
+  H68-GLU70: 5.6Å
+  H68-GLU71: 5.1Å
+
+tfr1_e1_his015_14 (5/12 His near D/E):
+  H16-ASP17: 3.9Å
+  H16-ASP18: 5.5Å
+  H23-GLU20: 5.0Å
+  H23-GLU21: 5.4Å
+  H35-GLU36: 3.9Å
+  H35-ASP37: 5.4Å
+  H38-ASP37: 3.9Å
+  H69-GLU67: 5.9Å
+
+tfr1_e1_his015_26 (5/10 His near D/E):
+  H3-GLU5: 5.4Å
+  H4-GLU5: 3.8Å
+  H28-GLU27: 3.8Å
+  H28-ASP32: 5.7Å
+  H49-GLU52: 4.9Å
+  H82-ASP80: 5.2Å
+
+tfr1_e1_his015_41 (5/13 His near D/E):
+  H29-GLU26: 5.1Å
+  H70-GLU73: 5.1Å
+  H80-ASP77: 5.0Å
+  H95-GLU92: 5.3Å
+  H109-ASP106: 5.0Å
+  H109-GLU107: 5.3Å
+  H109-GLU110: 3.8Å
+
+tfr1_e1_his015_140 (4/9 His near D/E):
+  H52-ASP54: 5.4Å
+  H57-ASP54: 5.3Å
+  H57-GLU59: 5.5Å
+  H60-GLU59: 3.8Å
+  H63-GLU67: 5.9Å
+
+tfr1_e1_his015_174 (4/9 His near D/E):
+  H18-ASP48: 5.6Å
+  H22-ASP25: 5.5Å
+  H42-GLU51: 4.9Å
+  H62-ASP65: 5.6Å
+
+tfr1_his200m_20261023__tfr1_apical_his_148 (3/3 His near D/E):
+  H11-GLU7: 5.4Å
+  H16-GLU3: 4.6Å
+  H77-GLU76: 3.8Å
+
+tfr1_e1_his015_20 (2/6 His near D/E):
+  H42-GLU41: 3.8Å
+  H42-GLU44: 5.5Å
+  H60-GLU59: 3.8Å
+
+
+COMPOSITE QUALITY RANKING
+========================================================================================================================
+Score = switching_his (from PROPKA) - close_hh_pairs - his_with_de*0.5
+Higher = better pH-switch potential with less intramolecular interference

@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"detail\": \"There are not enough free GPUs on the host machine to start this pod.\",\n  \"status\": 400,\n  \"title\": \"Bad Request\",\n  \"hint\": \"Capacity, not input: the request is valid but no machine can take it right now. Don't change the payload shape. Retry with another GPU type, data center, cloud, CUDA version or count, or try again later. For a stopped Pod, its host's GPUs are taken; that Pod can only start once they free up.\"\n}"
+    }
+  ],
+  "isError": true
+}

@@ -1,0 +1,8 @@
+{
+  "attempt": 4,
+  "run_name": "c4_diffusion_v18_retry4",
+  "state": "CPU_metadata_and_bootstrap_check_before_GPU",
+  "prior_attempts_released_verified": true,
+  "science_unchanged": true,
+  "selection_unchanged": "Same first backbone seed20261022; no backbone/model step produced by prior attempts"
+}

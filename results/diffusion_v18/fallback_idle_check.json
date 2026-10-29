@@ -1,0 +1,29 @@
+{
+  "checked": 1792682260.292851,
+  "functions": {
+    "run_campaign": {
+      "backlog": 0,
+      "num_total_runners": 0,
+      "num_running_inputs": 0,
+      "input_headroom": 0
+    },
+    "frame_diagnostic": {
+      "backlog": 0,
+      "num_total_runners": 0,
+      "num_running_inputs": 0,
+      "input_headroom": 0
+    },
+    "sequence_refold": {
+      "backlog": 0,
+      "num_total_runners": 0,
+      "num_running_inputs": 0,
+      "input_headroom": 0
+    },
+    "diffusion_generate": {
+      "backlog": 1,
+      "num_total_runners": 0,
+      "num_running_inputs": 0,
+      "input_headroom": 0
+    }
+  }
+}

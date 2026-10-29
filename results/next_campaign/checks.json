@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "parents": 15,
+  "scenarios": 216,
+  "unique_parent_ids": true,
+  "existing_source_and_variant_paths": true,
+  "best_candidate_counterfactuals_match_plan": true
+}

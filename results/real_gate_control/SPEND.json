@@ -1,0 +1,11 @@
+{
+  "modal_our_lane_usd": 10.718947158590089,
+  "runpod_posted_usd": 56.5899880444631,
+  "combined_usd": 67.30893520305318,
+  "new_control_gpu_spend_usd": 0,
+  "exclusions": [
+    "other generator lane",
+    "CPU builds and storage",
+    "consultations"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "status": "worker_failed",
+  "started": 1792683191.7758572,
+  "container": "ta-01M5J3X2FF6K4BD4J70E9R6A9R",
+  "worker_limit_seconds": 1800,
+  "requested_runtime_upper_usd_per_hour": 3.198528,
+  "gpu": "NVIDIA A100-SXM4-40GB, 40960 MiB, 610.57.04",
+  "elapsed_seconds": 36.649131059646606,
+  "worker_pid": 6,
+  "returncode": 1,
+  "finished": 1792683228.4249868
+}

@@ -1,0 +1,10 @@
+test_assessable_denominator_derived_from_actual_image (test_epitope_fragment_map_20261026.FragmentMappingRegression) ... ok
+test_gap_boundary_and_c_terminal_binder_control (test_epitope_fragment_map_20261026.FragmentMappingRegression) ... ok
+test_insertion_codes_fail_explicitly (test_epitope_fragment_map_20261026.FragmentMappingRegression) ... ok
+test_real_submitted_structures_sequence_identity_and_patch_immunity (test_epitope_fragment_map_20261026.FragmentMappingRegression) ... ok
+test_submitted_bytes_and_claim_scope_unchanged (test_epitope_fragment_map_20261026.FragmentMappingRegression) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 7.114s
+
+OK

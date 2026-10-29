@@ -1,0 +1,18 @@
+{
+  "spawn_intent": 1792682432.409027,
+  "pid": 27264,
+  "status": "remote_failed",
+  "call_id": "fc-01M5J3662QYJJA1V821H49K17J",
+  "submitted": 1792682432.5842519,
+  "last_mirror_error": "NotFoundError('No such file or directory')",
+  "function_stats": {
+    "backlog": 0,
+    "num_total_runners": 0,
+    "num_running_inputs": 0,
+    "input_headroom": 0
+  },
+  "checked": 1792682705.9762719,
+  "error": "RemoteError('')",
+  "gpu_released_verified": true,
+  "released": 1792682706.048492
+}

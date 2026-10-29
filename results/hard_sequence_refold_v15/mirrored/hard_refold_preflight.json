@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "sequence_lengths": [
+    69,
+    67
+  ],
+  "binder_atoms_all_zero": true,
+  "binder_masks_all_false": true,
+  "binder_flags": "SEQUENCE only",
+  "hard_one_hot_sequences": true,
+  "target_residues": 639,
+  "target_native_identity_verified": true,
+  "held_out_models": [
+    "model_1_ptm",
+    "model_2_ptm"
+  ],
+  "recycles": 3,
+  "designed_coordinates_supplied": false,
+  "interface": "bindcraft.MPNN_stage.predict_validation_ensemble",
+  "scope": "Complete639-residue native monomer prediction; restore/check dimer B afterward; not dimer-aware refolding",
+  "monomer_output_chain": "A",
+  "complex_output_chains": "A target/B binder",
+  "worker_sha256": "2db197cb99a918571ca01d2bdf6f071a2ec7994adae5dee68eda456f94e2ea3f",
+  "manifest_sha256": "57abe8b559d7595a451c11064dfdc3dccc373bbcbd8b2e0c70a53f8c69efd91a"
+}

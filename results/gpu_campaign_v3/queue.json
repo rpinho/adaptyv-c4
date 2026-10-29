@@ -1,0 +1,16 @@
+{
+  "status": "cancelled_after_failure",
+  "cancel_reason": "Ricardo authorized alternate providers and paying more; migrating to existing Modal account",
+  "pid": 1770,
+  "started": 1792616864.222629,
+  "pod": "2p9x2qea1ietbw",
+  "attempts": 2,
+  "max_hourly_usd": 1.79,
+  "prior_compute_estimate": 1.7952,
+  "total_compute_cap_usd": 3.58,
+  "wait_deadline": 1792638464.222629,
+  "last_attempt": 1792617467.430015,
+  "reason": "host GPU occupied; no compute started",
+  "next_attempt": 1792617466.613028,
+  "error": "RuntimeError('get-pod failed: {\\n  \"detail\": \"authentication failed\",\\n  \"status\": 500,\\n  \"title\": \"Internal Server Error\",\\n  \"hint\": \"Upstream Runpod error: retry once; if it persists, report it as an API-side failure.\"\\n}')"
+}

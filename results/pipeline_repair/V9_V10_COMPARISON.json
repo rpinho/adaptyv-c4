@@ -1,0 +1,33 @@
+{
+  "initial_sequence_array_hashes_equal": true,
+  "target_input_file_hashes_equal": true,
+  "initial_physical_predictions_bitwise_equal": false,
+  "initial_patch_distance_difference_A": 0.2946022743261665,
+  "interpretation": "Matched declared settings and initial sequence arrays, not a bitwise paired forward or replicated hit-rate comparison. No raw-total-loss comparison across distinct objective cutoffs.",
+  "v9": {
+    "accepted": 0,
+    "calls": 50,
+    "closest_patch_A": 38.5117998247099
+  },
+  "v10": {
+    "accepted": 0,
+    "calls": 50,
+    "closest_patch_A": 38.80640209903606
+  },
+  "v10_first_to_last_weighted_component_reduction": {
+    "binder_contacts": 0.6399216651916504,
+    "binder_helicity": -0.1496071219444275,
+    "binder_pae": 0.05428214371204376,
+    "c_terminus_away": 0.0,
+    "compactness": 4.114247351884842,
+    "interface_contacts": 0.9141159057617188,
+    "interface_pae": 0.00771959125995636,
+    "iptm_loss": 0.0033933818340301514,
+    "n_terminus_away": 0.0,
+    "plddt_loss": 0.009659409523010254,
+    "target_rmsd": -0.08526895940303802,
+    "termini_angle": -0.0010789856314659119
+  },
+  "v10_max_component_sum_error": 1.8142163753509521e-06,
+  "limitation": "Component reductions describe numeric losses, not parameter-gradient magnitude/direction or experimental binding."
+}

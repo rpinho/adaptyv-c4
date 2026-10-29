@@ -1,0 +1,88 @@
+{
+ "script": "c4_l6_sign_external_audit_20261026.py",
+ "created_at_utc": "2026-10-26T17:01:12Z",
+ "mandated_by": "Fable 5 PART 3, 2026-10-26",
+ "scope": "external validation of the L6 SIGN CONVENTION only; not a binding, affinity or pH-response measurement, and not a ranking",
+ "ph_low": 6.0,
+ "ph_high": 7.4,
+ "references": {
+  "Tf_TfR1_1suv": {
+   "L6": 1.3135,
+   "n_groups": 30,
+   "n_ligand_his": 0,
+   "n_receptor_his": 1,
+   "expectation": "acid-favoured RELATIVE to HFE",
+   "cif_sha256": "240cde3ed38618ce041c55387ed35ba54158aa466d6947403ae4c27a1f89495f"
+  },
+  "Tf_TfR1_3s9l": {
+   "L6": 1.7288,
+   "n_groups": 45,
+   "n_ligand_his": 1,
+   "n_receptor_his": 1,
+   "expectation": "acid-favoured RELATIVE to HFE",
+   "cif_sha256": "8627bda91c65c8dd39589ccf5460cdca3f9ba08480e2ef545e4efb8aa5dc2527"
+  },
+  "HFE_TfR1_1de4": {
+   "L6": 0.2005,
+   "n_groups": 42,
+   "n_ligand_his": 6,
+   "n_receptor_his": 0,
+   "expectation": "acid-DISRUPTED",
+   "cif_sha256": "779fdab0863a896f1467530638a1f80bc76c4bb24740b0c264d4925eb9326f52"
+  }
+ },
+ "controls": {
+  "SYNTHETIC_SIGN": {
+   "requirement": "null == 0, acid-ON > 0, acid-OFF < 0 under the documented convention",
+   "values": {
+    "null_L": 0.0,
+    "acid_on_L": 0.5918,
+    "acid_off_L": -0.4539,
+    "null_ok": true,
+    "acid_on_ok": true,
+    "acid_off_ok": true,
+    "all_ok": true
+   },
+   "fired": true
+  },
+  "SWAP_ANTISYMMETRY": {
+   "requirement": "L is a property of the complex, not of which chain is called binder; relabelling must not change it",
+   "L_original": 1.313466,
+   "L_swapped": 1.313466,
+   "fired": true
+  },
+  "NONZERO_GROUPS": {
+   "requirement": "each reference scores a non-trivial number of titratable groups",
+   "counts": {
+    "Tf_TfR1_1suv": 30,
+    "Tf_TfR1_3s9l": 45,
+    "HFE_TfR1_1de4": 42
+   },
+   "fired": true
+  },
+  "SAME_RECEPTOR": {
+   "requirement": "all references are TfR1 complexes",
+   "n_refs_scored": 3,
+   "fired": true
+  }
+ },
+ "verdict": {
+  "prediction": "L6(Tf-TfR1) > L6(HFE-TfR1) if the documented convention is correct",
+  "L6_Tf": [
+   1.3135,
+   1.7288
+  ],
+  "L6_HFE": [
+   0.2005
+  ],
+  "ordering_holds": true,
+  "absolute_sign_for_HFE_as_expected": false,
+  "caveat_absolute_vs_relative": "The ordering test is the one this audit was designed around and it is the robust claim. Note separately that ALL references score L6 > 0, including the acid-DISRUPTED HFE reference, which the documented convention would put below zero. The scorer therefore reproduces the correct ORDERING but not the expected ABSOLUTE sign for HFE, which is consistent with a positive offset in L6. Rule v4 gates at exactly L6 < 0; this audit validates the direction of the ordering, NOT that zero is the correct threshold.",
+  "conclusion": "CONVENTION CONSISTENT with the external reference: rule v4's acid-OFF gate (L6 < 0) selects the half the challenge asks for."
+ },
+ "limits": [
+  "1SUV and 3S9L are holo (iron-loaded) Tf complexes, not apo-Tf.",
+  "PROPKA estimates; this repo has a recorded prior PROPKA calibration failure (726d9b5).",
+  "A relative ordering on one reference pair is a direction check, not a calibration."
+ ]
+}

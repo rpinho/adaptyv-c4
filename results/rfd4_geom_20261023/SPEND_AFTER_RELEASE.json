@@ -1,0 +1,13 @@
+{
+  "recorded_at": "2026-10-23T12:00:08.571927+00:00",
+  "released_at": "2026-10-23T07:58:23-04:00",
+  "recorded_runpod_usd": 56.5899880444631,
+  "prior_own_modal_estimate_usd": 10.718947158590089,
+  "current_pair_gpu_time_cost_upper_estimate_usd": 3.12968044272,
+  "prior_total_plus_gpu_upper_estimate_usd": 70.43861564577318,
+  "host_cpu_ram_build_charges_unreconciled": true,
+  "account_wide_bill_verified": false,
+  "allocation_release_verified": true,
+  "scope": "Two maximum GPUs over whole controller-to-confirmed-stop interval; includes sampler cleanup delay",
+  "committed_metric_rows": 400
+}

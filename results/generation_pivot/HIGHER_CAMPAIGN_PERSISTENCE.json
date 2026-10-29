@@ -1,0 +1,16 @@
+{
+  "recorded_at": "2026-10-23T12:11:00.308808+00:00",
+  "controller_pid": 28406,
+  "sleep_assertion_pid": 28407,
+  "approved_arms": [
+    "tfr1_his020_200m_20261023",
+    "tfr1_his030_200m_20261023"
+  ],
+  "gpu_price_per_hour": 1.9512,
+  "max_gpu_containers": 2,
+  "per_arm_timeout_seconds": 9000,
+  "approval_sha256": "d7f26099efcdb40259017b9998165ca5fb5a888cec89968471fc18b5af2b529e",
+  "recorded_runpod_usd": 56.5899880444631,
+  "first_pair_gpu_upper_estimate_usd": 3.12968044272,
+  "host_charges_unreconciled": true
+}

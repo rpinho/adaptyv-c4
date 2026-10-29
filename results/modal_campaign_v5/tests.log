@@ -1,0 +1,56 @@
+test_capacity_failure_never_launches_workers (test_capacity_queue.CapacityQueueTests.test_capacity_failure_never_launches_workers) ... ok
+test_existing_running_pod_is_left_alone (test_capacity_queue.CapacityQueueTests.test_existing_running_pod_is_left_alone) ... ok
+test_missing_gpu_after_start_stops_the_pod (test_capacity_queue.CapacityQueueTests.test_missing_gpu_after_start_stops_the_pod) ... ok
+test_price_above_quote_never_starts_pod (test_capacity_queue.CapacityQueueTests.test_price_above_quote_never_starts_pod) ... ok
+test_crop_cannot_enter_full_context_linkage (test_context_inputs.ContextAdmissionTests.test_crop_cannot_enter_full_context_linkage) ... ok
+test_lysinated_target_is_rejected (test_context_inputs.ContextAdmissionTests.test_lysinated_target_is_rejected) ... ok
+test_monomer_fallback_restores_the_opposite_subunit (test_context_inputs.ContextAdmissionTests.test_monomer_fallback_restores_the_opposite_subunit) ... ok
+test_native_full_target_is_preserved (test_context_inputs.ContextAdmissionTests.test_native_full_target_is_preserved) ... ok
+test_missing_initial_monitor_file_waits_then_runs_after_verified_stop (test_gpu_continuation.ContinuationTests.test_missing_initial_monitor_file_waits_then_runs_after_verified_stop) ... ok
+test_unverified_stop_never_launches_scoring (test_gpu_continuation.ContinuationTests.test_unverified_stop_never_launches_scoring) ... ok
+test_budget_cap_stops_even_with_worker_alive (test_gpu_supervisor.ShutdownTests.test_budget_cap_stops_even_with_worker_alive) ... ok
+test_initial_read_failure_still_attempts_stop (test_gpu_supervisor.ShutdownTests.test_initial_read_failure_still_attempts_stop) ... ok
+test_mirror_failure_does_not_prevent_stop (test_gpu_supervisor.ShutdownTests.test_mirror_failure_does_not_prevent_stop) ... ok
+test_worker_exit_stops_pod_and_reads_back (test_gpu_supervisor.ShutdownTests.test_worker_exit_stops_pod_and_reads_back) ... ok
+test_free_state_failure_cannot_produce_partial_score (test_install_switch.LinkageFailureTests.test_free_state_failure_cannot_produce_partial_score) ... incomplete free-state PROPKA results for /var/folders/7p/z8kq6zz94wj03gxlv_ltjtch0000gn/T/tmpfzthbuf7/input.pdb
+incomplete free-state PROPKA results for /var/folders/7p/z8kq6zz94wj03gxlv_ltjtch0000gn/T/tmpfzthbuf7/input.pdb
+ok
+test_suppressed_histidine_never_becomes_a_complete_gate_score (test_install_switch.LinkageFailureTests.test_suppressed_histidine_never_becomes_a_complete_gate_score) ... ok
+test_campaign_covers_25_ranked_backbones_best_L_first (test_install_switch.RankingTests.test_campaign_covers_25_ranked_backbones_best_L_first) ... ok
+test_maps_pdb_number_instead_of_pose_index (test_install_switch.RankingTests.test_maps_pdb_number_instead_of_pose_index) ... ok
+test_missing_fragment_assignment_fails (test_install_switch.RankingTests.test_missing_fragment_assignment_fails) ... ok
+test_no_pair_is_not_a_successful_mutation (test_install_switch.RankingTests.test_no_pair_is_not_a_successful_mutation) ... ok
+test_real_c4_keeps_native_histidine_and_scorer_order (test_install_switch.RankingTests.test_real_c4_keeps_native_histidine_and_scorer_order) ... ok
+test_declared_changes_preserve_all_gates_and_target_hotspots (test_local_frame.FrameAndPolicyTests.test_declared_changes_preserve_all_gates_and_target_hotspots) ... ok
+test_fold_failures_change_config_and_exhaust_without_repeating (test_local_frame.FrameAndPolicyTests.test_fold_failures_change_config_and_exhaust_without_repeating) ... ok
+test_full_receptor_geometry_and_atom_identity_survive_placement (test_local_frame.FrameAndPolicyTests.test_full_receptor_geometry_and_atom_identity_survive_placement) ... ok
+test_initial_point_inside_full_receptor_is_rejected (test_local_frame.FrameAndPolicyTests.test_initial_point_inside_full_receptor_is_rejected) ... ok
+test_later_stage_failure_requires_different_diagnosis (test_local_frame.FrameAndPolicyTests.test_later_stage_failure_requires_different_diagnosis) ... ok
+test_profile_names_and_gate_override_are_not_arbitrary (test_local_frame.FrameAndPolicyTests.test_profile_names_and_gate_override_are_not_arbitrary) ... ok
+test_budget_reserves_complete_call_before_any_gpu_allocation (test_modal_adaptive.AdaptiveSafetyTests.test_budget_reserves_complete_call_before_any_gpu_allocation) ... {"status": "runtime_budget_reserve_reached", "profile": "c4_local_frame_v5", "completed": [], "accepted": 0, "runtime_estimate_upper_usd": 25, "updated": 1792627672.750656}
+ok
+test_driver_exception_cancels_exact_call_and_verifies_actual_release (test_modal_adaptive.AdaptiveSafetyTests.test_driver_exception_cancels_exact_call_and_verifies_actual_release) ... {"started": 1792627672.751457, "profile": "c4_local_frame_v5", "completed": [], "accepted": 0, "runtime_estimate_upper_usd": 3.1319149497777934, "budget_usd": 27.9, "max_batches": 6, "status": "stopped_on_driver_exception", "current_batch": 1, "current_run": "c4_local_frame_v5", "error": "RuntimeError('mirror failure')", "emergency_release": {"gpu_released_verified": true, "call_id": "fc-exact-test"}, "updated": 1792627672.751776}
+ok
+test_finished_search_never_restarts_itself (test_modal_adaptive.AdaptiveSafetyTests.test_finished_search_never_restarts_itself) ... {"status": "declared_fold_hypotheses_exhausted"}
+ok
+test_cancel_terminates_container_and_failed_release_blocks_cpu (test_modal_driver.ModalDriverTests.test_cancel_terminates_container_and_failed_release_blocks_cpu) ... {"spawn_intent": 1792627672.753439, "pid": 37237, "status": "submitted", "call_id": "fc-test", "submitted": 1792627672.753577}
+{"spawn_intent": 1792627672.753439, "pid": 37237, "status": "REQUIRES_CONTAINER_SHUTDOWN", "call_id": "fc-test", "submitted": 1792627672.753577, "cancelled": 1792627672.753778, "function_stats": {"backlog": 0, "num_total_runners": 1, "num_running_inputs": 0, "input_headroom": 0}, "checked": 1792627672.753851, "gpu_released_verified": false}
+ok
+test_result_waits_for_container_shutdown_before_cpu (test_modal_driver.ModalDriverTests.test_result_waits_for_container_shutdown_before_cpu) ... {"spawn_intent": 1792627672.7552772, "pid": 37237, "status": "submitted", "call_id": "fc-test", "submitted": 1792627672.755475}
+{"spawn_intent": 1792627672.7552772, "pid": 37237, "status": "returned", "call_id": "fc-test", "submitted": 1792627672.755475, "result": {"status": "completed"}, "returned": 1792627672.7556522, "function_stats": {"backlog": 0, "num_total_runners": 0, "num_running_inputs": 0, "input_headroom": 0}, "checked": 1792627672.75571, "gpu_released_verified": true, "released": 1792627672.755889, "cpu_followup_returncode": 0}
+ok
+test_series_root_cancel_also_terminates_a_later_batch (test_modal_driver.ModalDriverTests.test_series_root_cancel_also_terminates_a_later_batch) ... {"spawn_intent": 1792627672.757238, "pid": 37237, "status": "submitted", "call_id": "fc-test", "submitted": 1792627672.757355}
+{"spawn_intent": 1792627672.757238, "pid": 37237, "status": "cancelled", "call_id": "fc-test", "submitted": 1792627672.757355, "cancelled": 1792627672.757532, "function_stats": {"backlog": 0, "num_total_runners": 0, "num_running_inputs": 0, "input_headroom": 0}, "checked": 1792627672.757586, "gpu_released_verified": true, "released": 1792627672.757728, "cpu_followup_returncode": 0}
+ok
+test_uncertain_previous_spawn_never_spawns_again (test_modal_driver.ModalDriverTests.test_uncertain_previous_spawn_never_spawns_again) ... ok
+test_exactly_three_unique_seed_batches_then_stop (test_modal_series.SeriesTests.test_exactly_three_unique_seed_batches_then_stop) ... {"started": 1792627672.7594721, "finished_batches": [0, 1, 2], "max_batches": 3, "runtime_upper_hourly_usd": 4.649328, "runtime_envelope_usd": 27.895967999999996, "pid": 37237, "status": "series_completed", "current_batch": 2, "current_run": "test_run_replicate_3", "batch_runtime_estimates_upper_usd": {"0": 1, "1": 1, "2": 1}, "runtime_estimate_upper_usd": 3, "updated": 1792627672.7597492}
+ok
+test_no_next_allocation_without_verified_release (test_modal_series.SeriesTests.test_no_next_allocation_without_verified_release) ... {"started": 1792627672.7601018, "finished_batches": [], "max_batches": 3, "runtime_upper_hourly_usd": 4.649328, "runtime_envelope_usd": 27.895967999999996, "pid": 37237, "status": "stopped_on_execution_failure", "current_batch": 0, "current_run": "test_run", "batch_runtime_estimates_upper_usd": {"0": 1}, "runtime_estimate_upper_usd": 1, "last_result": {"gpu_released_verified": false, "status": "returned", "result": {"status": "completed"}, "cpu_followup_returncode": 0, "compute_estimate_upper_usd": 1}, "updated": 1792627672.7602}
+ok
+test_resuming_never_repeats_completed_batch (test_modal_series.SeriesTests.test_resuming_never_repeats_completed_batch) ... {"finished_batches": [0, 1, 2], "pid": 37237, "status": "series_completed", "current_batch": 2, "current_run": "test_run_replicate_3", "batch_runtime_estimates_upper_usd": {"1": 1, "2": 1}, "runtime_estimate_upper_usd": 2, "updated": 1792627672.760791}
+ok
+
+----------------------------------------------------------------------
+Ran 37 tests in 1.314s
+
+OK

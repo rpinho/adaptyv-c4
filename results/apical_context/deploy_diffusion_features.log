@@ -1,0 +1,118 @@
+Building image im-vfAwzjG1iJgJTYGsaGH4JG
+
+=> Step 0: FROM base
+
+=> Step 1: COPY . /
+Saving image...
+Image saved, took 852.62ms
+
+Built image im-vfAwzjG1iJgJTYGsaGH4JG in 2.92s
+
+
+Building image im-i6F3CnGcjyV3VgElwo2VAS
+
+=> Step 0: FROM base
+
+=> Step 1: COPY . /
+Saving image...
+Image saved, took 1.22s
+
+Built image im-i6F3CnGcjyV3VgElwo2VAS in 3.17s
+
+
+Building image im-8aw77lhQLodexT9LFq330q
+
+=> Step 0: FROM base
+
+=> Step 1: RUN cd /app/RFdiffusion && /app/RFdiffusion/.venv/bin/python /opt/c4/rfdiffusion_preflight.py /opt/c4/rfdiffusion_preflight.json
+/app/RFdiffusion/.venv/lib/python3.9/site-packages/torch/amp/autocast_mode.py:198: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+Reading models from /opt/rfd-models
+This is inf_conf.ckpt_path
+/opt/rfd-models/Complex_base_ckpt.pt
+Assembling -model, -diffuser and -preprocess configs from checkpoint
+USING MODEL CONFIG: self._conf[model][n_extra_block] = 4
+USING MODEL CONFIG: self._conf[model][n_main_block] = 32
+USING MODEL CONFIG: self._conf[model][n_ref_block] = 4
+USING MODEL CONFIG: self._conf[model][d_msa] = 256
+USING MODEL CONFIG: self._conf[model][d_msa_full] = 64
+USING MODEL CONFIG: self._conf[model][d_pair] = 128
+USING MODEL CONFIG: self._conf[model][d_templ] = 64
+USING MODEL CONFIG: self._conf[model][n_head_msa] = 8
+USING MODEL CONFIG: self._conf[model][n_head_pair] = 4
+USING MODEL CONFIG: self._conf[model][n_head_templ] = 4
+USING MODEL CONFIG: self._conf[model][d_hidden] = 32
+USING MODEL CONFIG: self._conf[model][d_hidden_templ] = 32
+USING MODEL CONFIG: self._conf[model][p_drop] = 0.15
+USING MODEL CONFIG: self._conf[model][SE3_param_full] = {'num_layers': 1, 'num_channels': 32, 'num_degrees': 2, 'n_heads': 4, 'div': 4, 'l0_in_features': 8, 'l0_out_features': 8, 'l1_in_features': 3, 'l1_out_features': 2, 'num_edge_features': 32}
+USING MODEL CONFIG: self._conf[model][SE3_param_topk] = {'num_layers': 1, 'num_channels': 32, 'num_degrees': 2, 'n_heads': 4, 'div': 4, 'l0_in_features': 64, 'l0_out_features': 64, 'l1_in_features': 3, 'l1_out_features': 2, 'num_edge_features': 64}
+USING MODEL CONFIG: self._conf[model][freeze_track_motif] = False
+USING MODEL CONFIG: self._conf[model][use_motif_timestep] = True
+USING MODEL CONFIG: self._conf[diffuser][T] = 50
+USING MODEL CONFIG: self._conf[diffuser][b_0] = 0.01
+USING MODEL CONFIG: self._conf[diffuser][b_T] = 0.07
+USING MODEL CONFIG: self._conf[diffuser][schedule_type] = linear
+USING MODEL CONFIG: self._conf[diffuser][so3_type] = igso3
+USING MODEL CONFIG: self._conf[diffuser][crd_scale] = 0.25
+USING MODEL CONFIG: self._conf[diffuser][so3_schedule_type] = linear
+USING MODEL CONFIG: self._conf[diffuser][min_b] = 1.5
+USING MODEL CONFIG: self._conf[diffuser][max_b] = 2.5
+USING MODEL CONFIG: self._conf[diffuser][min_sigma] = 0.02
+USING MODEL CONFIG: self._conf[diffuser][max_sigma] = 1.5
+USING MODEL CONFIG: self._conf[preprocess][sidechain_input] = False
+USING MODEL CONFIG: self._conf[preprocess][motif_sidechain_input] = True
+USING MODEL CONFIG: self._conf[preprocess][d_t1d] = 24
+USING MODEL CONFIG: self._conf[preprocess][d_t2d] = 44
+USING MODEL CONFIG: self._conf[preprocess][prob_self_cond] = 0.5
+USING MODEL CONFIG: self._conf[preprocess][str_self_cond] = True
+USING MODEL CONFIG: self._conf[preprocess][predict_previous] = False
+WARNING: You are changing diffuser.T from the value this model was trained with. Are you sure you know what you are doing?
+Successful diffuser __init__
+With this beta schedule (linear schedule, beta_0 = 0.04, beta_T = 0.28), alpha_bar_T = 0.00013696048699785024
+{"status": "passed", "scope": "CPU preparation/features/writer only; no neural forward", "revision": "86507b6538f51fce57b5a72477165f03999ed7ae", "target_sha256": "03abdb9bc5536396de3489e7a6cf3eec88066a1a5f36d5d1d78b7342ec1ec0b2", "checkpoint": "/opt/rfd-models/Complex_base_ckpt.pt", "checkpoint_sha256": "76e4e260aefee3b582bd76b77ab95d2592e64f00c51bf344968ab9239f3250bc", "target_residues": 195, "binder_residues": 69, "seed": 20261022, "hotspot_author_ids": [205, 206, 208, 209, 210], "actual_hotspot_tensor_indices": [85, 86, 88, 89, 90], "fixed_target_sequence_and_structure": true, "hotspot_receptor_local_indices": [16, 17, 19, 20, 21], "diffusion_steps": 50, "final_step": 1, "partial_T": null, "actual_output_target_chain": "A", "actual_output_target_author_range": [189, 383], "actual_output_binder_chain": "B", "actual_output_binder_author_range": [1, 69], "legacy_contig_output_mapping_not_used": true, "torch": "1.12.1+cu116", "cuda_build": "11.6", "worker_sha256": "84bda1f30be41bc0d9526b658050cff1ae4bc5d764dd0722b26630cffbb951e2"}
+Saving image...
+Image saved, took 3.29s
+
+Built image im-8aw77lhQLodexT9LFq330q in 55.52s
+
+
+✓ Created objects.
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/modal_campaign.py
+├── ✓ Uploaded 
+│   /Users/ricardo/dev/adaptyv-c4/results/gpu_campaign_v3/campaign.json
+├── ✓ Uploaded 
+│   /Users/ricardo/dev/adaptyv-c4/results/apical_context/native_189_383_search_o
+│   nly.pdb
+├── ✓ Uploaded 
+│   /Users/ricardo/dev/adaptyv-c4/results/gpu_campaign_v2/human_11qc_full_monome
+│   r.pdb
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/rfdiffusion_preflight.py
+├── ✓ Uploaded 
+│   /Users/ricardo/dev/adaptyv-c4/results/gpu_campaign_v2/mirrored/campaign_meta
+│   data.json
+├── ✓ Uploaded 
+│   /Users/ricardo/dev/adaptyv-c4/results/modal_campaign_v5/human_11qc_local_fra
+│   me.pdb
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/modal_search_policy.py
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/frame_guard.py
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/patch_frame_guard.py
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/validate_frame_guard.py
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/frame_gpu_diagnostic.py
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/monitored_design.py
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/hard_sequence_refold.py
+├── ✓ Uploaded 
+│   /Users/ricardo/dev/adaptyv-c4/results/hard_sequence_refold_v15/manifest.json
+├── ✓ Uploaded 
+│   /Users/ricardo/dev/adaptyv-c4/results/apical_context/PREPARED_INPUT.json
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/cif2pdb.py
+├── ✓ Uploaded 
+│   /Users/ricardo/dev/adaptyv-c4/results/domain_hard_refold_v17/manifest.json
+├── ✓ Created Function run_campaign.
+├── ✓ Created Function frame_diagnostic.
+├── ✓ Created Function sequence_refold.
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/diffusion_worker.py
+└── ✓ Created Function diffusion_generate.
+✓ App deployed in 69.854s! 🎉
+
+View Deployment: 
+https://modal.com/apps/pinho-ricardo/main/deployed/adaptyv-c4-native-control

@@ -1,0 +1,27 @@
+{
+  "verdict": "FAIL",
+  "timestamp_utc": "2026-10-27T22:16:04Z",
+  "pod_id": "unknown",
+  "settings": {
+    "predictor": "colabfold_alphafold2_multimer_v3",
+    "model_type": "alphafold2_multimer_v3",
+    "num_recycle": 3,
+    "num_models": 5,
+    "rank": "multimer",
+    "msa_mode": "mmseqs2_uniref_env"
+  },
+  "results": {
+    "control_tcr_vs_g12d": {
+      "iptm": 0.84,
+      "ptm": 0.86
+    },
+    "control_tcr_vs_pepfree": {
+      "iptm": 0.77,
+      "ptm": 0.8
+    },
+    "control_tcr_vs_wt": {
+      "iptm": 0.84,
+      "ptm": 0.85
+    }
+  }
+}

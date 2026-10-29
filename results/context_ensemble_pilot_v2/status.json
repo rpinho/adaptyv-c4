@@ -1,0 +1,27 @@
+{
+  "status": "partial",
+  "pid": 76344,
+  "started": 1792608935.523987,
+  "wall_cap_seconds": 1800.0,
+  "max_parents": 1,
+  "seeds": 1,
+  "models_scored": 0,
+  "triplets": [],
+  "errors": [
+    {
+      "parent": 1,
+      "reason": "restored target steric clash; deferred"
+    }
+  ],
+  "new_gpu_spend_usd": 0,
+  "script_sha256": "265fff1ff405bcbd4cc13f4ffec858fb3e59afbac37705da49f1054d0c13b481",
+  "limitations": [
+    "fixed backbone",
+    "no modeled glycans or tag",
+    "empirical independent-site pKas",
+    "local repack binding-energy proxy, not IAM or experimental affinity",
+    "replica robustness, not equilibrium ensemble"
+  ],
+  "finished": 1792608938.7075148,
+  "elapsed_seconds": 3.183527708053589
+}

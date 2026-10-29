@@ -1,0 +1,91 @@
+{
+  "state": "complete",
+  "arms": [
+    {
+      "arm": "plain",
+      "his_prior": null,
+      "design_rows": 200,
+      "finite_geometry_rows": {
+        "hotspot_obedience.hotspot_obedience": 200,
+        "clash_metrics.frac_atoms_clashing_1p5A": 200,
+        "bond_length_metrics.bond_length.frac_unreasonable": 200
+      },
+      "his_at_least3": 7,
+      "mean_his_count": 0.66,
+      "median_his_percent": 0.0,
+      "cys_present": 61,
+      "target_sequence_violation_rows": 0,
+      "pre_oracle_true": 0,
+      "checkpoint_paths": [
+        "nvidia/RFD4-Proteina"
+      ],
+      "expanded_cys_mask_positions_match_binder_length": false
+    },
+    {
+      "arm": "his010",
+      "his_prior": 0.1,
+      "design_rows": 200,
+      "finite_geometry_rows": {
+        "hotspot_obedience.hotspot_obedience": 200,
+        "clash_metrics.frac_atoms_clashing_1p5A": 200,
+        "bond_length_metrics.bond_length.frac_unreasonable": 200
+      },
+      "his_at_least3": 33,
+      "mean_his_count": 1.28,
+      "median_his_percent": 1.105006105006105,
+      "cys_present": 21,
+      "target_sequence_violation_rows": 0,
+      "pre_oracle_true": 0,
+      "checkpoint_paths": [
+        "nvidia/RFD4-Proteina"
+      ],
+      "expanded_cys_mask_positions_match_binder_length": true
+    },
+    {
+      "arm": "his020",
+      "his_prior": 0.2,
+      "design_rows": 200,
+      "finite_geometry_rows": {
+        "hotspot_obedience.hotspot_obedience": 200,
+        "clash_metrics.frac_atoms_clashing_1p5A": 200,
+        "bond_length_metrics.bond_length.frac_unreasonable": 200
+      },
+      "his_at_least3": 135,
+      "mean_his_count": 6.325,
+      "median_his_percent": 5.321533923303835,
+      "cys_present": 16,
+      "target_sequence_violation_rows": 0,
+      "pre_oracle_true": 0,
+      "checkpoint_paths": [
+        "nvidia/RFD4-Proteina"
+      ],
+      "expanded_cys_mask_positions_match_binder_length": true
+    },
+    {
+      "arm": "his030",
+      "his_prior": 0.3,
+      "design_rows": 200,
+      "finite_geometry_rows": {
+        "hotspot_obedience.hotspot_obedience": 200,
+        "clash_metrics.frac_atoms_clashing_1p5A": 200,
+        "bond_length_metrics.bond_length.frac_unreasonable": 200
+      },
+      "his_at_least3": 183,
+      "mean_his_count": 24.97,
+      "median_his_percent": 28.945878623188406,
+      "cys_present": 10,
+      "target_sequence_violation_rows": 0,
+      "pre_oracle_true": 0,
+      "checkpoint_paths": [
+        "nvidia/RFD4-Proteina"
+      ],
+      "expanded_cys_mask_positions_match_binder_length": true
+    }
+  ],
+  "generated_rows": 800,
+  "unique_sequences": 798,
+  "pH_selectivity_measured": false,
+  "organizer_novelty_measured": false,
+  "scope": "Observed generation composition and inline metrics; these are not experimental or benchmark pass rates",
+  "recorded_runpod_usd": 56.5899880444631
+}

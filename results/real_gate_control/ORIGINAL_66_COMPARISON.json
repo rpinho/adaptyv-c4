@@ -1,0 +1,20 @@
+{
+  "total": 66,
+  "well_aligned": 65,
+  "all_backbone_pair_count_range": [
+    51,
+    330
+  ],
+  "all_minimum_range": [
+    0.13998352282825752,
+    0.6377489617309668
+  ],
+  "well_aligned_backbone_pair_count_range": [
+    54,
+    330
+  ],
+  "well_aligned_minimum_range": [
+    0.13998352282825752,
+    0.6377489617309668
+  ]
+}

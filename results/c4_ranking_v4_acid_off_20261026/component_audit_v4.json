@@ -1,0 +1,195 @@
+{
+ "created_at_utc": "2026-10-26T14:34:46Z",
+ "purpose": "Effective component weights and the direct seat-set comparison",
+ "component_audit": {
+  "P": {
+   "weight": 30,
+   "seats_min": 0.0,
+   "seats_max": 0.0,
+   "seats_median": 0.0,
+   "n_distinct_values": 1,
+   "constant_across_seats": true,
+   "weight_points_that_can_discriminate": 0
+  },
+  "M": {
+   "weight": 25,
+   "seats_min": 0.0,
+   "seats_max": 0.0,
+   "seats_median": 0.0,
+   "n_distinct_values": 1,
+   "constant_across_seats": true,
+   "weight_points_that_can_discriminate": 0
+  },
+  "D": {
+   "weight": 20,
+   "seats_min": 0.3429,
+   "seats_max": 1.0,
+   "seats_median": 0.5644,
+   "n_distinct_values": 18,
+   "constant_across_seats": false,
+   "weight_points_that_can_discriminate": 20
+  },
+  "C": {
+   "weight": 15,
+   "seats_min": 0.3066,
+   "seats_max": 0.9622,
+   "seats_median": 0.6562,
+   "n_distinct_values": 20,
+   "constant_across_seats": false,
+   "weight_points_that_can_discriminate": 15
+  },
+  "N": {
+   "weight": 10,
+   "seats_min": 0.0,
+   "seats_max": 1.0,
+   "seats_median": 0.0,
+   "n_distinct_values": 3,
+   "constant_across_seats": false,
+   "weight_points_that_can_discriminate": 10
+  },
+  "effective_weights": {
+   "total_weight": 100,
+   "inert_weight_points": 55,
+   "live_weight_points": 45,
+   "inert_fraction": 0.55,
+   "reading": "S is effectively 20D + 15C + 10N on this pool: P cannot exceed 0 (no controlled second pH estimator) and M is 0 for every acid-OFF design (mouse audit covers the incumbent acid-ON 20 only). The rule's two heaviest components are silent here."
+  }
+ },
+ "direct_acidOFF_vs_acidON": {
+  "core_apolar_frac": {
+   "acidOFF_median": 0.8944,
+   "acidON_median": 0.8462,
+   "median_diff": 0.0483,
+   "p": 0.31158,
+   "higher_is_better": true,
+   "acidOFF_better": true,
+   "p_bonferroni_13": 1.0
+  },
+  "core_charged_frac": {
+   "acidOFF_median": 0.0,
+   "acidON_median": 0.0357,
+   "median_diff": -0.0357,
+   "p": 0.10309,
+   "higher_is_better": false,
+   "acidOFF_better": true,
+   "p_bonferroni_13": 1.0
+  },
+  "n_buried_acidic": {
+   "acidOFF_median": 0.0,
+   "acidON_median": 0.0,
+   "median_diff": 0.0,
+   "p": 1.0,
+   "higher_is_better": false,
+   "acidOFF_better": true,
+   "p_bonferroni_13": 1.0
+  },
+  "buried_frac_of_binder": {
+   "acidOFF_median": 0.1257,
+   "acidON_median": 0.122,
+   "median_diff": 0.0037,
+   "p": 0.86426,
+   "higher_is_better": true,
+   "acidOFF_better": true,
+   "p_bonferroni_13": 1.0
+  },
+  "iface_apolar_frac": {
+   "acidOFF_median": 0.6539,
+   "acidON_median": 0.6284,
+   "median_diff": 0.0255,
+   "p": 0.07105,
+   "higher_is_better": true,
+   "acidOFF_better": true,
+   "p_bonferroni_13": 0.9236
+  },
+  "bsa_total_A2": {
+   "acidOFF_median": 1073.25,
+   "acidON_median": 1041.6,
+   "median_diff": 31.65,
+   "p": 0.76031,
+   "higher_is_better": true,
+   "acidOFF_better": true,
+   "p_bonferroni_13": 1.0
+  },
+  "bsa_apolar_A2": {
+   "acidOFF_median": 701.0,
+   "acidON_median": 660.8,
+   "median_diff": 40.2,
+   "p": 0.56637,
+   "higher_is_better": true,
+   "acidOFF_better": true,
+   "p_bonferroni_13": 1.0
+  },
+  "entropy_bits": {
+   "acidOFF_median": 3.5679,
+   "acidON_median": 3.5725,
+   "median_diff": -0.0046,
+   "p": 0.91265,
+   "higher_is_better": true,
+   "acidOFF_better": false,
+   "p_bonferroni_13": 1.0
+  },
+  "max_homopolymer_run": {
+   "acidOFF_median": 3.0,
+   "acidON_median": 3.0,
+   "median_diff": 0.0,
+   "p": 1.0,
+   "higher_is_better": false,
+   "acidOFF_better": true,
+   "p_bonferroni_13": 1.0
+  },
+  "frac_acidic_DE": {
+   "acidOFF_median": 0.2152,
+   "acidON_median": 0.2779,
+   "median_diff": -0.0626,
+   "p": 0.0359,
+   "higher_is_better": false,
+   "acidOFF_better": true,
+   "p_bonferroni_13": 0.46668
+  },
+  "frac_his": {
+   "acidOFF_median": 0.0832,
+   "acidON_median": 0.0767,
+   "median_diff": 0.0066,
+   "p": 0.56667,
+   "higher_is_better": false,
+   "acidOFF_better": false,
+   "p_bonferroni_13": 1.0
+  },
+  "frac_apolar": {
+   "acidOFF_median": 0.4011,
+   "acidON_median": 0.3582,
+   "median_diff": 0.0429,
+   "p": 0.15849,
+   "higher_is_better": true,
+   "acidOFF_better": true,
+   "p_bonferroni_13": 1.0
+  },
+  "n_distinct_aa": {
+   "acidOFF_median": 16.5,
+   "acidON_median": 16.5,
+   "median_diff": 0.0,
+   "p": 1.0,
+   "higher_is_better": true,
+   "acidOFF_better": false,
+   "p_bonferroni_13": 1.0
+  }
+ },
+ "direct_tally": {
+  "n_metrics": 13,
+  "n_significant_raw_p05": 1,
+  "significant_metrics": [
+   "frac_acidic_DE"
+  ],
+  "n_significant_acidOFF_better": 1,
+  "n_significant_acidOFF_worse": 0,
+  "n_metrics_acidOFF_directionally_better": 10,
+  "n_metrics_acidOFF_directionally_worse": 3,
+  "n_significant_bonferroni13": 0,
+  "bonferroni_metrics": [],
+  "incumbent_format": "acid-OFF seats vs acid-ON seats: better on 1, worse on 0 at raw p<0.05, 0 after Bonferroni"
+ },
+ "inputs": {
+  "ranking_sha256": "75236da7cc1ae106c5649cc310a347e8564c4fbd525cfc7f4779abba6d613b3f",
+  "metrics_sha256": "5d4452a9c234fc097b560226d101c8f54fa924e25cedd1c44c01b3e0822215cf"
+ }
+}

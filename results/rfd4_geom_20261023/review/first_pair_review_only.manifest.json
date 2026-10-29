@@ -1,0 +1,165 @@
+{
+  "generated_utc": "2026-10-23T12:32:01.552026+00:00",
+  "sha256_shortlist_in": "f0cc6e90574f04a74d401a33d0fd3326dc6b8e52e204d26b4d6525b75a76299f",
+  "sha256_submission_out": "c711efce903e5f56cdc235c76687d0020aa3550a8a6c79cf2eea01b8059f735e",
+  "generator": "scripts/build_submission.py",
+  "is_format_test": false,
+  "source_shortlist": "results/rfd4_geom_20261023/review/annotated.csv",
+  "track": "3",
+  "row_cap": 20,
+  "rows": 20,
+  "row_order_is_rank": true,
+  "columns": [
+    "name",
+    "sequence",
+    "molecule_class",
+    "source_arm",
+    "his_prior",
+    "n_his",
+    "n_cys",
+    "hotspot_obedience",
+    "clash_fraction_1p5A",
+    "bad_bond_fraction",
+    "native_context_staging_pass",
+    "target_fit_CA_RMSD_A",
+    "omitted_backbone_pairs_under2A",
+    "native_backbone_minimum_A",
+    "observed_NAG_minimum_A",
+    "his_rings_near_target_4p5A",
+    "his_nitrogens_near_basic_4p5A",
+    "his_nitrogens_near_acidic_4p5A",
+    "pH_binding_evidence",
+    "organizer_acceptance"
+  ],
+  "twin_strep_tag": "excluded",
+  "twin_strep_status": "UNVERIFIED -- the challenge page says only that the C-terminal Twin-Strep tag 'must not be part of the binding'; the authenticated submit page does not mention it. Excluding it is supported by the selection prompt's 'novelty is judged on the binding part alone, so padding, linkers and extra domains do not help', but is still an inference",
+  "resubmit_interval_hours": 24,
+  "novelty_level_min": 3,
+  "novelty_screen": "enforced server-side after upload; this emitter cannot predict it",
+  "unverified_spec_items": [
+    "whether the Twin-Strep tag belongs in the submitted sequence",
+    "name charset and length is our own convention (the form documents only that name is a unique identifier)"
+  ],
+  "designs": [
+    {
+      "rank": 1,
+      "name": "tfr1_his200m_20261023__tfr1_apical_his_124",
+      "length": 67,
+      "molecule_class": "single_chain"
+    },
+    {
+      "rank": 2,
+      "name": "tfr1_his200m_20261023__tfr1_apical_his_148",
+      "length": 78,
+      "molecule_class": "single_chain"
+    },
+    {
+      "rank": 3,
+      "name": "tfr1_his200m_20261023__tfr1_apical_his_179",
+      "length": 93,
+      "molecule_class": "single_chain"
+    },
+    {
+      "rank": 4,
+      "name": "tfr1_his200m_20261023__tfr1_apical_his_21",
+      "length": 101,
+      "molecule_class": "single_chain"
+    },
+    {
+      "rank": 5,
+      "name": "tfr1_his200m_20261023__tfr1_apical_his_45",
+      "length": 97,
+      "molecule_class": "single_chain"
+    },
+    {
+      "rank": 6,
+      "name": "tfr1_his200m_20261023__tfr1_apical_his_57",
+      "length": 121,
+      "molecule_class": "single_chain"
+    },
+    {
+      "rank": 7,
+      "name": "tfr1_his200m_20261023__tfr1_apical_his_68",
+      "length": 92,
+      "molecule_class": "single_chain"
+    },
+    {
+      "rank": 8,
+      "name": "tfr1_his200m_20261023__tfr1_apical_his_82",
+      "length": 101,
+      "molecule_class": "single_chain"
+    },
+    {
+      "rank": 9,
+      "name": "tfr1_c200m_20261023__tfr1_apical_binder_126",
+      "length": 73,
+      "molecule_class": "single_chain"
+    },
+    {
+      "rank": 10,
+      "name": "tfr1_c200m_20261023__tfr1_apical_binder_138",
+      "length": 115,
+      "molecule_class": "single_chain"
+    },
+    {
+      "rank": 11,
+      "name": "tfr1_c200m_20261023__tfr1_apical_binder_177",
+      "length": 84,
+      "molecule_class": "single_chain"
+    },
+    {
+      "rank": 12,
+      "name": "tfr1_c200m_20261023__tfr1_apical_binder_186",
+      "length": 130,
+      "molecule_class": "single_chain"
+    },
+    {
+      "rank": 13,
+      "name": "tfr1_c200m_20261023__tfr1_apical_binder_187",
+      "length": 69,
+      "molecule_class": "single_chain"
+    },
+    {
+      "rank": 14,
+      "name": "tfr1_c200m_20261023__tfr1_apical_binder_58",
+      "length": 84,
+      "molecule_class": "single_chain"
+    },
+    {
+      "rank": 15,
+      "name": "tfr1_c200m_20261023__tfr1_apical_binder_94",
+      "length": 72,
+      "molecule_class": "single_chain"
+    },
+    {
+      "rank": 16,
+      "name": "tfr1_his200m_20261023__tfr1_apical_his_1",
+      "length": 78,
+      "molecule_class": "single_chain"
+    },
+    {
+      "rank": 17,
+      "name": "tfr1_his200m_20261023__tfr1_apical_his_115",
+      "length": 113,
+      "molecule_class": "single_chain"
+    },
+    {
+      "rank": 18,
+      "name": "tfr1_his200m_20261023__tfr1_apical_his_121",
+      "length": 96,
+      "molecule_class": "single_chain"
+    },
+    {
+      "rank": 19,
+      "name": "tfr1_his200m_20261023__tfr1_apical_his_133",
+      "length": 73,
+      "molecule_class": "single_chain"
+    },
+    {
+      "rank": 20,
+      "name": "tfr1_his200m_20261023__tfr1_apical_his_136",
+      "length": 85,
+      "molecule_class": "single_chain"
+    }
+  ]
+}

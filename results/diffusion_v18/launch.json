@@ -1,0 +1,9 @@
+{
+  "pid": 36142,
+  "started_at": "2026-10-22T15:38:39.488809+00:00",
+  "run": "c4_diffusion_v18_retry4",
+  "resource_attempt": 4,
+  "actual_cpu_bootstrap_and_mapping_serialization_passed": true,
+  "hourly_requested_upper_usd": 3.198528,
+  "prior_modal_submission_upper_usd": 10.573699854725266
+}

@@ -1,0 +1,77 @@
+{
+ "script": "c4_l6_testretest_20261026.py",
+ "created_at_utc": "2026-10-26T18:34:19Z",
+ "mandated_by": "Opus 5.5 and Fable 5, 2026-10-26 reviewer round",
+ "scope": "test-retest stability of L6 under perturbations that should not change it; not a binding, affinity or pH measurement and not a ranking",
+ "perturbations": {
+  "rigid": "global rotation + translation (control)",
+  "jitter_A_rms": [
+   0.05,
+   0.1,
+   0.25
+  ]
+ },
+ "inputs": [
+  {
+   "path": "results/c4_linkage_apical_20261025/linkage_apical.json",
+   "sha256": "f36cc0780430a00b16b9ca98b033c3d349e9361654a37d76bdb7536089579737"
+  }
+ ],
+ "controls": {
+  "NULL_ZERO_JITTER": {
+   "requirement": "zero-magnitude jitter reproduces L6 exactly",
+   "base": -2.4162848321573245,
+   "repeat": -2.4162848321573245,
+   "fired": true
+  },
+  "RIGID_INVARIANCE": {
+   "requirement": "a rigid-body transform leaves L6 unchanged to within the PDB coordinate write precision (tolerance 0.02)",
+   "base": -2.4162848321573245,
+   "transformed": -2.4164169975994754,
+   "delta_write_precision_floor": 0.000132,
+   "fired": true
+  },
+  "JITTER_MONOTONIC": {
+   "requirement": "median sigma increases with jitter magnitude",
+   "medians": {
+    "0.05": 0.0605,
+    "0.1": 0.1578,
+    "0.25": 0.2976
+   },
+   "fired": true
+  },
+  "STRATIFIED_PORTION_REPRESENTATIVE": {
+   "requirement": "the stratified portion (excluding the deliberately oversampled near-gate designs) reproduces the pool median L6 within 0.30",
+   "stratified_median": -0.6626,
+   "pool_median": -0.5083,
+   "n_stratified": 50,
+   "n_near_gate": 20,
+   "fired": true
+  }
+ },
+ "summary": {
+  "n_designs": 70,
+  "n_reps_per_jitter": 8,
+  "jitter_0.05A": {
+   "median_sd": 0.0605,
+   "p90_sd": 0.2111,
+   "max_sd": 0.6124,
+   "designs_with_any_sign_flip": 17,
+   "designs_where_sd_exceeds_absL6": 14
+  },
+  "jitter_0.1A": {
+   "median_sd": 0.1578,
+   "p90_sd": 0.3465,
+   "max_sd": 0.7476,
+   "designs_with_any_sign_flip": 19,
+   "designs_where_sd_exceeds_absL6": 23
+  },
+  "jitter_0.25A": {
+   "median_sd": 0.2976,
+   "p90_sd": 0.5459,
+   "max_sd": 0.9886,
+   "designs_with_any_sign_flip": 31,
+   "designs_where_sd_exceeds_absL6": 26
+  }
+ }
+}

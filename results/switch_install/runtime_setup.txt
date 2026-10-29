@@ -1,0 +1,16 @@
+# CPU runtime, separate from the existing .venv (Python 3.9 / PROPKA 3.5.1)
+uv venv --python 3.11 .venv-rosetta
+uv pip install --python .venv-rosetta/bin/python 'pyrosetta==2026.29+releasequarterly.80a0635615' 'propka==3.5.1' 'numpy==2.4.6' --find-links https://west.rosettacommons.org/pyrosetta/quarterly/release/
+
+# Standard-library-only plans, one pair per ranked backbone
+.venv/bin/python scripts/run_switch_campaign.py --plan-only --max-pairs 3 --out-dir results/switch_install/planning
+
+# Real CPU modelling and complete-target linkage; resume completed matching manifests
+.venv-rosetta/bin/python -u scripts/run_switch_campaign.py --max-pairs 3 --out-dir results/switch_install/campaign
+.venv-rosetta/bin/python scripts/summarize_switch_campaign.py results/switch_install/campaign
+
+# Regression checks
+.venv/bin/python -m unittest discover -s tests -v
+
+# Verify every saved sequence, frozen backbone, energy gate and linkage sum
+.venv-rosetta/bin/python scripts/verify_switch_outputs.py results/switch_install/campaign

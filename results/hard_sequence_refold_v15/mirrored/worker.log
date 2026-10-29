@@ -1,0 +1,8 @@
+REFOLD_JOB {"sequence": "v9", "phase": "monomer", "checkpoint": "model_1_ptm", "binder_pLDDT": 0.8294123532115549, "geometry_passed": true}
+REFOLD_JOB {"sequence": "v9", "phase": "monomer", "checkpoint": "model_2_ptm", "binder_pLDDT": 0.9345331563465837, "geometry_passed": true}
+REFOLD_JOB {"sequence": "seed23", "phase": "monomer", "checkpoint": "model_1_ptm", "binder_pLDDT": 0.7959670228744621, "geometry_passed": true}
+REFOLD_JOB {"sequence": "seed23", "phase": "monomer", "checkpoint": "model_2_ptm", "binder_pLDDT": 0.8441961447694408, "geometry_passed": true}
+REFOLD_JOB {"sequence": "v9", "phase": "complex", "checkpoint": "model_1_ptm", "binder_pLDDT": 0.8044783637143563, "geometry_passed": true}
+REFOLD_JOB {"sequence": "v9", "phase": "complex", "checkpoint": "model_2_ptm", "binder_pLDDT": 0.8719615253849305, "geometry_passed": true}
+REFOLD_JOB {"sequence": "seed23", "phase": "complex", "checkpoint": "model_1_ptm", "binder_pLDDT": 0.5805332491646952, "geometry_passed": true}
+REFOLD_JOB {"sequence": "seed23", "phase": "complex", "checkpoint": "model_2_ptm", "binder_pLDDT": 0.6140775738367393, "geometry_passed": true}

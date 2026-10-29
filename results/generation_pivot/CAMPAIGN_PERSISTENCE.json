@@ -1,0 +1,18 @@
+{
+  "recorded_at": "2026-10-23T11:10:15.771508+00:00",
+  "controller_pid": 1285,
+  "sleep_assertion_pid": 1286,
+  "novelty_commit": "97831a9",
+  "approved_arms": [
+    "tfr1_c200m_20261023",
+    "tfr1_his200m_20261023"
+  ],
+  "gpu_price_per_hour": 1.9512,
+  "max_gpu_containers": 2,
+  "per_arm_timeout_seconds": 9000,
+  "approval_sha256": "5e30d2504011f716c9da091663c296445729af296a638752026be04425d7ce37",
+  "runpod_spend_usd": 56.5899880444631,
+  "prior_own_modal_estimate_usd": 10.718947158590089,
+  "current_campaign_actual_spend": "pending",
+  "account_wide_bill_verified": false
+}

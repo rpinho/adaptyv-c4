@@ -1,0 +1,64 @@
+Reading models from /opt/rfd-models
+This is inf_conf.ckpt_path
+/opt/rfd-models/Complex_base_ckpt.pt
+Assembling -model, -diffuser and -preprocess configs from checkpoint
+USING MODEL CONFIG: self._conf[model][n_extra_block] = 4
+USING MODEL CONFIG: self._conf[model][n_main_block] = 32
+USING MODEL CONFIG: self._conf[model][n_ref_block] = 4
+USING MODEL CONFIG: self._conf[model][d_msa] = 256
+USING MODEL CONFIG: self._conf[model][d_msa_full] = 64
+USING MODEL CONFIG: self._conf[model][d_pair] = 128
+USING MODEL CONFIG: self._conf[model][d_templ] = 64
+USING MODEL CONFIG: self._conf[model][n_head_msa] = 8
+USING MODEL CONFIG: self._conf[model][n_head_pair] = 4
+USING MODEL CONFIG: self._conf[model][n_head_templ] = 4
+USING MODEL CONFIG: self._conf[model][d_hidden] = 32
+USING MODEL CONFIG: self._conf[model][d_hidden_templ] = 32
+USING MODEL CONFIG: self._conf[model][p_drop] = 0.15
+USING MODEL CONFIG: self._conf[model][SE3_param_full] = {'num_layers': 1, 'num_channels': 32, 'num_degrees': 2, 'n_heads': 4, 'div': 4, 'l0_in_features': 8, 'l0_out_features': 8, 'l1_in_features': 3, 'l1_out_features': 2, 'num_edge_features': 32}
+USING MODEL CONFIG: self._conf[model][SE3_param_topk] = {'num_layers': 1, 'num_channels': 32, 'num_degrees': 2, 'n_heads': 4, 'div': 4, 'l0_in_features': 64, 'l0_out_features': 64, 'l1_in_features': 3, 'l1_out_features': 2, 'num_edge_features': 64}
+USING MODEL CONFIG: self._conf[model][freeze_track_motif] = False
+USING MODEL CONFIG: self._conf[model][use_motif_timestep] = True
+USING MODEL CONFIG: self._conf[diffuser][T] = 50
+USING MODEL CONFIG: self._conf[diffuser][b_0] = 0.01
+USING MODEL CONFIG: self._conf[diffuser][b_T] = 0.07
+USING MODEL CONFIG: self._conf[diffuser][schedule_type] = linear
+USING MODEL CONFIG: self._conf[diffuser][so3_type] = igso3
+USING MODEL CONFIG: self._conf[diffuser][crd_scale] = 0.25
+USING MODEL CONFIG: self._conf[diffuser][so3_schedule_type] = linear
+USING MODEL CONFIG: self._conf[diffuser][min_b] = 1.5
+USING MODEL CONFIG: self._conf[diffuser][max_b] = 2.5
+USING MODEL CONFIG: self._conf[diffuser][min_sigma] = 0.02
+USING MODEL CONFIG: self._conf[diffuser][max_sigma] = 1.5
+USING MODEL CONFIG: self._conf[preprocess][sidechain_input] = False
+USING MODEL CONFIG: self._conf[preprocess][motif_sidechain_input] = True
+USING MODEL CONFIG: self._conf[preprocess][d_t1d] = 24
+USING MODEL CONFIG: self._conf[preprocess][d_t2d] = 44
+USING MODEL CONFIG: self._conf[preprocess][prob_self_cond] = 0.5
+USING MODEL CONFIG: self._conf[preprocess][str_self_cond] = True
+USING MODEL CONFIG: self._conf[preprocess][predict_previous] = False
+WARNING: You are changing diffuser.T from the value this model was trained with. Are you sure you know what you are doing?
+Successful diffuser __init__
+With this beta schedule (linear schedule, beta_0 = 0.04, beta_T = 0.28), alpha_bar_T = 0.00013696048699785024
+Traceback (most recent call last):
+  File "/opt/c4/diffusion_worker.py", line 55, in <module>
+    if __name__=='__main__':main(sys.argv[1])
+  File "/opt/c4/diffusion_worker.py", line 34, in main
+    (root/'tensor_mapping.json').write_text(json.dumps(mapping,indent=2)+'\n')
+  File "/root/.local/share/uv/python/cpython-3.9.23-linux-x86_64-gnu/lib/python3.9/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/root/.local/share/uv/python/cpython-3.9.23-linux-x86_64-gnu/lib/python3.9/json/encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "/root/.local/share/uv/python/cpython-3.9.23-linux-x86_64-gnu/lib/python3.9/json/encoder.py", line 429, in _iterencode
+    yield from _iterencode_list(o, _current_indent_level)
+  File "/root/.local/share/uv/python/cpython-3.9.23-linux-x86_64-gnu/lib/python3.9/json/encoder.py", line 325, in _iterencode_list
+    yield from chunks
+  File "/root/.local/share/uv/python/cpython-3.9.23-linux-x86_64-gnu/lib/python3.9/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/root/.local/share/uv/python/cpython-3.9.23-linux-x86_64-gnu/lib/python3.9/json/encoder.py", line 325, in _iterencode_list
+    yield from chunks
+  File "/root/.local/share/uv/python/cpython-3.9.23-linux-x86_64-gnu/lib/python3.9/json/encoder.py", line 438, in _iterencode
+    o = _default(o)
+  File "/root/.local/share/uv/python/cpython-3.9.23-linux-x86_64-gnu/lib/python3.9/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type int64 is not JSON serializable

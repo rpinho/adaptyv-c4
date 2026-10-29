@@ -1,0 +1,30 @@
+{
+  "intent": 1792670935.6487648,
+  "prelaunch_stats": {
+    "run_campaign": {
+      "backlog": 0,
+      "num_total_runners": 0,
+      "num_running_inputs": 0,
+      "input_headroom": 0
+    },
+    "frame_diagnostic": {
+      "backlog": 0,
+      "num_total_runners": 0,
+      "num_running_inputs": 0,
+      "input_headroom": 0
+    }
+  },
+  "prior_modal_runtime_estimate_usd": 6.384988167371454,
+  "planning_reserve_usd": 17.43498,
+  "max_batches": 5,
+  "seeds": [
+    20261022,
+    20261023,
+    20261024,
+    20261025,
+    20261026
+  ],
+  "price_upper_hourly": 4.649328,
+  "pid": 71597,
+  "launched": 1792670935.656496
+}

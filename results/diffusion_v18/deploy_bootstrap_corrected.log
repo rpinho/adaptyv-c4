@@ -1,0 +1,1162 @@
+Building image im-1aNheG4x78yHa2Ak5pj9tQ
+
+=> Step 0: FROM base
+
+=> Step 1: ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/sbin:/usr/bin:/sbin:/bin
+Saving image...
+Image saved, took 750.38ms
+
+Built image im-1aNheG4x78yHa2Ak5pj9tQ in 2.21s
+
+
+Building image im-y6WJZkrY3u5vXHEHEi8ai1
+
+=> Step 0: FROM base
+
+=> Step 1: RUN python -c 'import sys; assert sys.version_info[:2] == (3,11)' 
+Building image im-LYiPp9YNKNwVshOY7wHfOV
+
+=> Step 0: FROM base
+
+=> Step 1: COPY . /
+Saving image...
+Saving image...
+Image saved, took 851.78ms
+
+Built image im-LYiPp9YNKNwVshOY7wHfOV in 1.67s
+
+
+Image saved, took 1.18s
+
+Built image im-y6WJZkrY3u5vXHEHEi8ai1 in 2.85s
+
+
+Building image im-NVimNaMhfTpVrFZeUYc2JI
+
+=> Step 0: FROM base
+
+=> Step 1: COPY . /
+Saving image...
+Building image im-KDGSWjPgk8hzaPQ3LOFgMt
+Image saved, took 602.87ms
+
+Built image im-NVimNaMhfTpVrFZeUYc2JI in 1.20s
+
+
+
+=> Step 0: FROM base
+
+=> Step 1: RUN apt-get update
+Get:1 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64  InRelease [1578 B]
+Building image im-0iomF0Y1Sh5558Euqy7ziJ
+Get:2 http://archive.ubuntu.com/ubuntu focal InRelease [265 kB]
+Get:3 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64  Packages [2831 kB]
+Get:4 http://security.ubuntu.com/ubuntu focal-security InRelease [128 kB]
+
+=> Step 0: FROM base
+Get:5 http://archive.ubuntu.com/ubuntu focal-updates InRelease [128 kB]
+
+=> Step 1: RUN JAX_PLATFORMS=cpu python /opt/c4/hard_sequence_refold.py --preflight /opt/c4/hard_refold_manifest.json /opt/c4/hard_refold_preflight.json
+Get:6 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [4368 kB]
+Get:7 http://archive.ubuntu.com/ubuntu focal-backports InRelease [128 kB]
+Get:8 http://archive.ubuntu.com/ubuntu focal/universe amd64 Packages [11.3 MB]
+Get:9 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [4710 kB]
+Get:10 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [32.5 kB]
+Get:11 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [1300 kB]
+Get:12 http://archive.ubuntu.com/ubuntu focal/main amd64 Packages [1275 kB]
+Get:13 http://archive.ubuntu.com/ubuntu focal/restricted amd64 Packages [33.4 kB]
+Get:14 http://archive.ubuntu.com/ubuntu focal/multiverse amd64 Packages [177 kB]
+Get:15 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [4850 kB]
+Get:16 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [4904 kB]
+Get:17 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [36.2 kB]
+Get:18 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [1588 kB]
+Get:19 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 Packages [54.7 kB]
+Get:20 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [28.4 kB]
+Fetched 38.2 MB in 4s (9498 kB/s)
+Reading package lists...
+
+=> Step 2: RUN apt-get install -y git curl ca-certificates
+Reading package lists...
+Building dependency tree...
+Reading state information...
+ca-certificates is already the newest version (20240203~20.04.1).
+curl is already the newest version (7.68.0-1ubuntu2.25).
+git is already the newest version (1:2.25.1-1ubuntu3.14).
+0 upgraded, 0 newly installed, 0 to remove and 51 not upgraded.
+{"status": "passed", "sequence_lengths": [69, 67], "binder_atoms_all_zero": true, "binder_masks_all_false": true, "binder_flags": "SEQUENCE only", "hard_one_hot_sequences": true, "target_residues": 639, "target_native_identity_verified": true, "prediction_models": ["model_1_ptm", "model_2_ptm"], "recycles": 3, "designed_coordinates_supplied": false, "checkpoint_scope": "Held-out AF2 monomer family from original multimer design; same architecture lineage", "interface": "bindcraft.MPNN_stage.predict_validation_ensemble", "scope": "Complete639-residue native monomer prediction; restore/check dimer B afterward; not dimer-aware refolding", "monomer_output_chain": "A", "complex_output_chains": "A target/B binder", "worker_sha256": "0302e037be4b00144ff1b9491695162878548c89703d2e67084645408a950d46", "manifest_sha256": "57abe8b559d7595a451c11064dfdc3dccc373bbcbd8b2e0c70a53f8c69efd91a"}
+Saving image...
+Image saved, took 1.26s
+
+Built image im-KDGSWjPgk8hzaPQ3LOFgMt in 10.19s
+
+
+Building image im-cuUfNwmh6yOk01xuyeSRzA
+
+=> Step 0: FROM base
+
+=> Step 1: RUN git init /app/RFdiffusion && cd /app/RFdiffusion && git remote add c4 https://github.com/RosettaCommons/RFdiffusion.git && git fetch --depth 1 c4 86507b6538f51fce57b5a72477165f03999ed7ae && git checkout --force --detach FETCH_HEAD
+Reinitialized existing Git repository in /app/RFdiffusion/.git/
+Saving image...
+From https://github.com/RosettaCommons/RFdiffusion
+ * branch            86507b6538f51fce57b5a72477165f03999ed7ae -> FETCH_HEAD
+HEAD is now at 86507b6 Fix github workflow tests (#458)
+
+=> Step 2: RUN /app/RFdiffusion/.venv/bin/python -m ensurepip
+Image saved, took 1.19s
+
+Built image im-0iomF0Y1Sh5558Euqy7ziJ in 13.25s
+
+
+Looking in links: /tmp/tmp6hwzoejx
+Processing /tmp/tmp6hwzoejx/setuptools-58.1.0-py3-none-any.whl
+Processing /tmp/tmp6hwzoejx/pip-23.0.1-py3-none-any.whl
+Installing collected packages: setuptools, pip
+Successfully installed pip-23.0.1 setuptools-58.1.0
+
+=> Step 3: RUN /app/RFdiffusion/.venv/bin/python -m pip install numpy==1.26.4 biopython==1.85
+Looking in indexes: http://pypi-mirror.modal.local:5555/simple
+Collecting numpy==1.26.4
+  Downloading http://pypi-mirror.modal.local:5555/simple/numpy/numpy-1.26.4-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 18.2/18.2 MB 427.9 MB/s eta 0:00:00
+Collecting biopython==1.85
+  Downloading http://pypi-mirror.modal.local:5555/simple/biopython/biopython-1.85-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.2/3.2 MB 94.6 MB/s eta 0:00:00
+Building image im-Jz5pWyJ8htSux9HVZRwy5Q
+Installing collected packages: numpy, biopython
+  Attempting uninstall: numpy
+    Found existing installation: numpy 1.26.3
+    Uninstalling numpy-1.26.3:
+
+=> Step 0: FROM base
+
+=> Step 1: COPY . /
+      Successfully uninstalled numpy-1.26.3
+Saving image...
+Image saved, took 1.35s
+
+Built image im-Jz5pWyJ8htSux9HVZRwy5Q in 2.39s
+
+
+Successfully installed biopython-1.85 numpy-1.26.4
+
+[notice] A new release of pip is available: 23.0.1 -> 26.0.1
+[notice] To update, run: /app/RFdiffusion/.venv/bin/python -m pip install --upgrade pip
+Building image im-7DQm5K05IHshQ5I5bWplAd
+
+=> Step 4: RUN mkdir -p /opt/rfd-models && curl --fail --location --retry 2 https://files.ipd.uw.edu/pub/RFdiffusion/e29311f6f1bf1af907f9ef9f44b8328b/Complex_base_ckpt.pt -o /opt/rfd-models/Complex_base_ckpt.pt
+
+=> Step 0: FROM base
+
+=> Step 1: COPY . /
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0Saving image...
+
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A  3  461M    3 17.6M    0     0  9485k      0  0:00:49  0:00:01  0:00:48 17.7MImage saved, took 1.29s
+
+Built image im-7DQm5K05IHshQ5I5bWplAd in 2.58s
+
+
+
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A 10  461M   10 47.7M    0     0  16.4M      0  0:00:28  0:00:02  0:00:26 23.9MBuilding image im-FZj9PwuPGm7HiAqBON99qK
+
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A 17  461M   17 78.4M    0     0  20.0M      0  0:00:23  0:00:03  0:00:20 26.1M
+=> Step 0: FROM base
+
+=> Step 1: COPY . /
+
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A 23  461M   23  109M    0     0  22.1M      0  0:00:20  0:00:04  0:00:16 27.2MSaving image...
+Image saved, took 684.41ms
+
+Built image im-FZj9PwuPGm7HiAqBON99qK in 1.93s
+
+
+
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A 30  461M   30  139M    0     0  23.5M      0  0:00:19  0:00:05  0:00:14 27.8M
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A 36  461M   36  170M    0     0  24.6M      0  0:00:18  0:00:06  0:00:12 30.5MBuilding image im-Db6VSZSM6CLdIpdimrO9L8
+
+=> Step 0: FROM base
+
+=> Step 1: RUN python -c "import sys,json;sys.path.insert(0,'/opt/c4');import search_policy as p;config=p.make_config(json.load(open('/opt/c4/campaign.json')),p.DOMAIN,{'campaign_seed':20261021},'/tmp/domain-preflight-only');json.dump(config,open('/opt/c4/domain_preflight.json','w'))"
+
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A 43  461M   43  200M    0     0  25.3M      0  0:00:18  0:00:07  0:00:11 30.5M
+=> Step 2: RUN JAX_PLATFORMS=cpu python /opt/c4/monitored_design.py --preflight /opt/c4/domain_preflight.json /opt/c4/domain_prepared_frame_preflight.json
+
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A 50  461M   50  231M    0     0  25.9M      0  0:00:17  0:00:08  0:00:09 30.5M
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A 56  461M   56  261M    0     0  26.3M      0  0:00:17  0:00:09  0:00:08 30.5M
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A 63  461M   63  292M    0     0  26.7M      0  0:00:17  0:00:10  0:00:07 30.5M
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A 68  461M   68  317M    0     0  26.5M      0  0:00:17  0:00:11  0:00:06 29.2M
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A 75  461M   75  346M    0     0  26.8M      0  0:00:17  0:00:12  0:00:05 29.0M
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A 81  461M   81  377M    0     0  27.0M      0  0:00:17  0:00:13  0:00:04 29.1M
+[1A {"status": "passed", "devices": ["cpu:0"], "chains": {"binder": {"residues": 69, "fully_observed_backbone_residues": 0}, "target_hTfR1_native_apical_189_383": {"residues": 195, "fully_observed_backbone_residues": 195, "hotspot_author_ids": [205, 206, 208, 209, 210], "sequence_differences_from_native_reference": 0}}, "af2_sha256": "fc5e8aa9528d79b569a00d0cbab0c3fed283bdb9fb8df2ee940f8256d2c1a2bf", "forced_targeting": false, "effective_plddt_loss_weight": 0.1, "campaign_seed": 20261021, "target_scope": "Reduced native contiguous apical domain; no full-context qualification.", "native_domain_input_sha256": "03abdb9bc5536396de3489e7a6cf3eec88066a1a5f36d5d1d78b7342ec1ec0b2", "output_roundtrip_author_range": [189, 383], "output_roundtrip_residues": 195, "output_roundtrip_sequence_verified": true, "output_roundtrip_reader": "cif2pdb(auth IDs) -> Protein(PDB); direct CIF label IDs may restart at1", "full_native_context": false}
+88  461M   88  407M    0     0  27.3M      0  0:00:16  0:00:14  0:00:02 29.3M
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A 94  461M   94  437M    0     0  27.5M      0  0:00:16  0:00:15  0:00:01 29.2MSaving image...
+
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A
+[1A100  461M  100  461M    0     0  27.6M      0  0:00:16  0:00:16 --:--:-- 30.4M
+
+=> Step 5: RUN test $(stat -c %s /opt/rfd-models/Complex_base_ckpt.pt) -eq 483619179 && sha256sum /opt/rfd-models/Complex_base_ckpt.pt
+Image saved, took 1.30s
+
+Built image im-Db6VSZSM6CLdIpdimrO9L8 in 10.13s
+
+
+76e4e260aefee3b582bd76b77ab95d2592e64f00c51bf344968ab9239f3250bc  /opt/rfd-models/Complex_base_ckpt.pt
+
+=> Step 6: RUN /app/RFdiffusion/.venv/bin/python -m pip freeze > /opt/rfd-runtime-freeze.txt
+Building image im-FGB2cFj9uxSY1eIhcrXMMH
+Saving image...
+
+=> Step 0: FROM base
+
+=> Step 1: COPY . /
+Saving image...
+Image saved, took 1.61s
+
+Built image im-cuUfNwmh6yOk01xuyeSRzA in 32.19s
+
+
+Image saved, took 921.05ms
+
+Built image im-FGB2cFj9uxSY1eIhcrXMMH in 1.98s
+
+
+Building image im-7hjsTqVnXcXHhWU4g5Tkl2
+Building image im-OAZQfpOUA7pg28dFsOdyEv
+
+=> Step 0: FROM base
+
+=> Step 1: ENV DGLBACKEND=pytorch
+
+=> Step 2: ENV PYTHONUNBUFFERED=1
+
+=> Step 3: ENV OMP_NUM_THREADS=4
+
+=> Step 4: ENV PYTHONPATH=/app/RFdiffusion
+
+=> Step 0: FROM base
+
+=> Step 1: RUN JAX_PLATFORMS=cpu python /opt/c4/hard_sequence_refold.py --preflight /opt/c4/domain_refold_manifest.json /opt/c4/domain_refold_preflight.json
+Saving image...
+Image saved, took 585.72ms
+
+Built image im-7hjsTqVnXcXHhWU4g5Tkl2 in 2.60s
+
+
+Building image im-KJSdTgeFs770a4jfrCRkBI
+
+=> Step 0: FROM base
+
+=> Step 1: COPY . /
+Saving image...
+{"status": "passed", "sequence_lengths": [69], "binder_atoms_all_zero": true, "binder_masks_all_false": true, "binder_flags": "SEQUENCE only", "hard_one_hot_sequences": true, "target_residues": 639, "target_native_identity_verified": true, "prediction_models": ["model_1_ptm", "model_2_ptm"], "recycles": 3, "designed_coordinates_supplied": false, "checkpoint_scope": "AF2 monomer checkpoints may already have selected accepted domain designs; additional native-context test, not independent architecture", "interface": "bindcraft.MPNN_stage.predict_validation_ensemble", "scope": "Complete639-residue native monomer prediction; restore/check dimer B afterward; not dimer-aware refolding", "monomer_output_chain": "A", "complex_output_chains": "A target/B binder", "worker_sha256": "0302e037be4b00144ff1b9491695162878548c89703d2e67084645408a950d46", "manifest_sha256": "b9ab3fe423cf3abcade30cb984c90a7a21d6deb401e3fb1efad56455c72ad1a7"}
+Image saved, took 3.21s
+
+Built image im-KJSdTgeFs770a4jfrCRkBI in 7.94s
+
+
+Saving image...
+Image saved, took 710.42ms
+
+Built image im-OAZQfpOUA7pg28dFsOdyEv in 13.38s
+
+
+Building image im-FHxxvtwu3fjW2RJkA8RJnL
+
+=> Step 0: FROM base
+
+=> Step 1: COPY . /
+Saving image...
+Image saved, took 589.18ms
+
+Built image im-FHxxvtwu3fjW2RJkA8RJnL in 2.76s
+
+
+Building image im-OFhbMPMTkiLP1JDMIPKxs1
+
+=> Step 0: FROM base
+
+=> Step 1: COPY . /
+Saving image...
+Image saved, took 1.69s
+
+Built image im-OFhbMPMTkiLP1JDMIPKxs1 in 3.21s
+
+
+Building image im-GQkvxHbp2rUJO5Fi6YesYV
+
+=> Step 0: FROM base
+
+=> Step 1: RUN cd /app/RFdiffusion && /app/RFdiffusion/.venv/bin/python /opt/c4/rfdiffusion_preflight.py /opt/c4/rfdiffusion_preflight.json
+/app/RFdiffusion/.venv/lib/python3.9/site-packages/torch/amp/autocast_mode.py:198: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+Reading models from /opt/rfd-models
+This is inf_conf.ckpt_path
+/opt/rfd-models/Complex_base_ckpt.pt
+Assembling -model, -diffuser and -preprocess configs from checkpoint
+USING MODEL CONFIG: self._conf[model][n_extra_block] = 4
+USING MODEL CONFIG: self._conf[model][n_main_block] = 32
+USING MODEL CONFIG: self._conf[model][n_ref_block] = 4
+USING MODEL CONFIG: self._conf[model][d_msa] = 256
+USING MODEL CONFIG: self._conf[model][d_msa_full] = 64
+USING MODEL CONFIG: self._conf[model][d_pair] = 128
+USING MODEL CONFIG: self._conf[model][d_templ] = 64
+USING MODEL CONFIG: self._conf[model][n_head_msa] = 8
+USING MODEL CONFIG: self._conf[model][n_head_pair] = 4
+USING MODEL CONFIG: self._conf[model][n_head_templ] = 4
+USING MODEL CONFIG: self._conf[model][d_hidden] = 32
+USING MODEL CONFIG: self._conf[model][d_hidden_templ] = 32
+USING MODEL CONFIG: self._conf[model][p_drop] = 0.15
+USING MODEL CONFIG: self._conf[model][SE3_param_full] = {'num_layers': 1, 'num_channels': 32, 'num_degrees': 2, 'n_heads': 4, 'div': 4, 'l0_in_features': 8, 'l0_out_features': 8, 'l1_in_features': 3, 'l1_out_features': 2, 'num_edge_features': 32}
+USING MODEL CONFIG: self._conf[model][SE3_param_topk] = {'num_layers': 1, 'num_channels': 32, 'num_degrees': 2, 'n_heads': 4, 'div': 4, 'l0_in_features': 64, 'l0_out_features': 64, 'l1_in_features': 3, 'l1_out_features': 2, 'num_edge_features': 64}
+USING MODEL CONFIG: self._conf[model][freeze_track_motif] = False
+USING MODEL CONFIG: self._conf[model][use_motif_timestep] = True
+USING MODEL CONFIG: self._conf[diffuser][T] = 50
+USING MODEL CONFIG: self._conf[diffuser][b_0] = 0.01
+USING MODEL CONFIG: self._conf[diffuser][b_T] = 0.07
+USING MODEL CONFIG: self._conf[diffuser][schedule_type] = linear
+USING MODEL CONFIG: self._conf[diffuser][so3_type] = igso3
+USING MODEL CONFIG: self._conf[diffuser][crd_scale] = 0.25
+USING MODEL CONFIG: self._conf[diffuser][so3_schedule_type] = linear
+USING MODEL CONFIG: self._conf[diffuser][min_b] = 1.5
+USING MODEL CONFIG: self._conf[diffuser][max_b] = 2.5
+USING MODEL CONFIG: self._conf[diffuser][min_sigma] = 0.02
+USING MODEL CONFIG: self._conf[diffuser][max_sigma] = 1.5
+USING MODEL CONFIG: self._conf[preprocess][sidechain_input] = False
+USING MODEL CONFIG: self._conf[preprocess][motif_sidechain_input] = True
+USING MODEL CONFIG: self._conf[preprocess][d_t1d] = 24
+USING MODEL CONFIG: self._conf[preprocess][d_t2d] = 44
+USING MODEL CONFIG: self._conf[preprocess][prob_self_cond] = 0.5
+USING MODEL CONFIG: self._conf[preprocess][str_self_cond] = True
+USING MODEL CONFIG: self._conf[preprocess][predict_previous] = False
+WARNING: You are changing diffuser.T from the value this model was trained with. Are you sure you know what you are doing?
+Successful diffuser __init__
+With this beta schedule (linear schedule, beta_0 = 0.04, beta_T = 0.28), alpha_bar_T = 0.00013696048699785024
+{"status": "passed", "scope": "CPU preparation/features/writer only; no neural forward", "revision": "86507b6538f51fce57b5a72477165f03999ed7ae", "target_sha256": "03abdb9bc5536396de3489e7a6cf3eec88066a1a5f36d5d1d78b7342ec1ec0b2", "checkpoint": "/opt/rfd-models/Complex_base_ckpt.pt", "checkpoint_sha256": "76e4e260aefee3b582bd76b77ab95d2592e64f00c51bf344968ab9239f3250bc", "target_residues": 195, "binder_residues": 69, "seed": 20261022, "hotspot_author_ids": [205, 206, 208, 209, 210], "actual_hotspot_tensor_indices": [85, 86, 88, 89, 90], "fixed_target_sequence_and_structure": true, "hotspot_receptor_local_indices": [16, 17, 19, 20, 21], "diffusion_steps": 50, "final_step": 1, "partial_T": null, "actual_output_target_chain": "A", "actual_output_target_author_range": [189, 383], "actual_output_binder_chain": "B", "actual_output_binder_author_range": [1, 69], "legacy_contig_output_mapping_not_used": true, "torch": "1.12.1+cu116", "cuda_build": "11.6", "worker_sha256": "84bda1f30be41bc0d9526b658050cff1ae4bc5d764dd0722b26630cffbb951e2"}
+Saving image...
+Image saved, took 2.04s
+
+Built image im-GQkvxHbp2rUJO5Fi6YesYV in 55.53s
+
+
+✓ Created objects.
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/modal_campaign.py
+├── ✓ Uploaded 
+│   /Users/ricardo/dev/adaptyv-c4/results/gpu_campaign_v3/campaign.json
+├── ✓ Uploaded 
+│   /Users/ricardo/dev/adaptyv-c4/results/gpu_campaign_v2/human_11qc_full_monome
+│   r.pdb
+├── ✓ Uploaded 
+│   /Users/ricardo/dev/adaptyv-c4/results/gpu_campaign_v2/mirrored/campaign_meta
+│   data.json
+├── ✓ Uploaded 
+│   /Users/ricardo/dev/adaptyv-c4/results/modal_campaign_v5/human_11qc_local_fra
+│   me.pdb
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/modal_search_policy.py
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/frame_guard.py
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/patch_frame_guard.py
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/validate_frame_guard.py
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/frame_gpu_diagnostic.py
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/monitored_design.py
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/hard_sequence_refold.py
+├── ✓ Uploaded 
+│   /Users/ricardo/dev/adaptyv-c4/results/hard_sequence_refold_v15/manifest.json
+├── ✓ Uploaded 
+│   /Users/ricardo/dev/adaptyv-c4/results/apical_context/native_189_383_search_o
+│   nly.pdb
+├── ✓ Uploaded 
+│   /Users/ricardo/dev/adaptyv-c4/results/apical_context/PREPARED_INPUT.json
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/cif2pdb.py
+├── ✓ Uploaded 
+│   /Users/ricardo/dev/adaptyv-c4/results/domain_hard_refold_v17/manifest.json
+├── ✓ Created Function run_campaign.
+├── ✓ Created Function frame_diagnostic.
+├── ✓ Created Function sequence_refold.
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/rfdiffusion_preflight.py
+├── ✓ Uploaded /Users/ricardo/dev/adaptyv-c4/scripts/diffusion_worker.py
+├── ✓ Created Function diffusion_generate.
+└── ✓ Created Function diffusion_runtime_check.
+✓ App deployed in 137.939s! 🎉
+
+View Deployment: 
+https://modal.com/apps/pinho-ricardo/main/deployed/adaptyv-c4-native-control

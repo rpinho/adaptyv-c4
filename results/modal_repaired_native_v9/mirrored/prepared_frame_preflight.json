@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "devices": [
+    "cpu:0"
+  ],
+  "chains": {
+    "binder": {
+      "residues": 69,
+      "fully_observed_backbone_residues": 0
+    },
+    "target_hTfR1_full_monomer": {
+      "residues": 639,
+      "fully_observed_backbone_residues": 639
+    }
+  },
+  "af2_sha256": "fc5e8aa9528d79b569a00d0cbab0c3fed283bdb9fb8df2ee940f8256d2c1a2bf",
+  "target_scope": "Real first native-target/binder preparation; no model forward, sequence gradient or binding claim"
+}

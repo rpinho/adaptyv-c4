@@ -1,0 +1,34 @@
+usage: install_switch.py [-h] --out-dir OUT_DIR [--target-chain TARGET_CHAIN]
+                         [--binder-chain BINDER_CHAIN]
+                         [--max-positions MAX_POSITIONS]
+                         [--sites-per-variant SITES_PER_VARIANT]
+                         [--max-pairs MAX_PAIRS] [--max-ddg MAX_DDG]
+                         [--seed SEED] [--plan-only]
+                         pdb
+
+Install ranked two-state histidine sites and matched glutamine controls.
+Candidate order and exclusions come exclusively from
+switch_sites.score_design. The default models one pair from an eight-site
+shortlist. Existing histidines can occupy a site: HH retains them and QQ
+removes their titration. Pair estimates only order modelling work; relaxed
+PROPKA linkage, including acids, decides the pH gate. --plan-only needs only
+Python's standard library. Modelling needs PyRosetta on CPU. The complex is
+first repacked/minimised with a fixed backbone. The reference and both twins
+then undergo the same fixed-backbone local repack/minimise. Rosetta ddG is a
+structural filter in REU, not a pH-specific binding measurement.
+
+positional arguments:
+  pdb
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --out-dir OUT_DIR
+  --target-chain TARGET_CHAIN
+                        all target chains, e.g. AB
+  --binder-chain BINDER_CHAIN
+  --max-positions MAX_POSITIONS
+  --sites-per-variant SITES_PER_VARIANT
+  --max-pairs MAX_PAIRS
+  --max-ddg MAX_DDG
+  --seed SEED
+  --plan-only

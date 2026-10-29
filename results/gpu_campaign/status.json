@@ -1,0 +1,30 @@
+{
+  "status": "running_preflight",
+  "pod_id": "yy6bbyxlp7vwi7",
+  "hourly_usd": 1.8,
+  "price_source": "Runpod live pod list $1.80/hr",
+  "authorization": "Ricardo 2026-10-21: keep going; permission; funds for GPUs; make better models",
+  "max_billed_seconds": 7160,
+  "max_compute_usd": 3.58,
+  "stop_rule": "Stop pod by compute cap $3.58 or campaign completion/failure; original two remain stopped",
+  "other_pod": "z4yt9vbn9sssti remains stopped",
+  "historical_billing": {
+    "balance": 132.71,
+    "idle_hourly": 0.019,
+    "oct21_gpu": 39.088,
+    "oct20_gpu": 11.753,
+    "oct19_gpu": 0.745,
+    "oct21_storage": 0.532,
+    "oct20_storage": 0.132,
+    "oct19_storage": 0.019,
+    "reporting_lag": "1 hour",
+    "source": "fresh Runpod console billing 2026-10-21"
+  },
+  "new_session_gpu_spend": 0,
+  "created": 1792609044.455559,
+  "start_attempt": "GPU no longer available on original host",
+  "migration_attempt": "There are no instances currently available",
+  "pod_compute_started": false,
+  "migrated_pod_id": "2p9x2qea1ietbw",
+  "started_before_utc_epoch": 1792609218.2056751
+}

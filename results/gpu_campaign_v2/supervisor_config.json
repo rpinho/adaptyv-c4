@@ -1,0 +1,11 @@
+{
+  "state_dir": "results/gpu_campaign_v2",
+  "pod": "2p9x2qea1ietbw",
+  "worker_pid": 794,
+  "ssh_host": "157.157.221.29",
+  "ssh_port": 13191,
+  "remote_project": "/workspace/runs/c4_full_monomer_apical_v2",
+  "remote_log": "/workspace/logs/c4_full_monomer_apical_v2.log",
+  "prior_estimated_compute_usd": 0.3855,
+  "total_compute_cap_usd": 3.58
+}

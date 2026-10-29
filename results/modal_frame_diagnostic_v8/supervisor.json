@@ -1,0 +1,34 @@
+{
+  "spawn_intent": 1792628805.6307662,
+  "pid": 43681,
+  "status": "returned",
+  "call_id": "fc-01M5GG1MCW8TB2BP8RN6B9B6FP",
+  "submitted": 1792628806.1327639,
+  "last_mirror_error": "NotFoundError('No such file or directory')",
+  "function_stats": {
+    "backlog": 0,
+    "num_total_runners": 0,
+    "num_running_inputs": 0,
+    "input_headroom": 0
+  },
+  "checked": 1792628934.080811,
+  "remote": {
+    "status": "completed",
+    "started": 1792628811.9258249,
+    "returncode": 0,
+    "finished": 1792628914.4186902,
+    "elapsed_seconds": 102.49286532402039
+  },
+  "compute_estimate_upper_usd": 0.13236748570866583,
+  "estimate_excludes": "image build, container startup/teardown, storage, other apps",
+  "result": {
+    "status": "completed",
+    "started": 1792628811.9258249,
+    "returncode": 0,
+    "finished": 1792628914.4186902,
+    "elapsed_seconds": 102.49286532402039
+  },
+  "returned": 1792628931.189579,
+  "gpu_released_verified": true,
+  "released": 1792628934.147143
+}

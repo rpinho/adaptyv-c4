@@ -1,0 +1,5922 @@
+{
+  "inputs": [
+    {
+      "path": "data/P02786.txt",
+      "sha256": "10146384989397c524f3f7a04f6c9e65396dd1d3e83a5d945fd71570280ceb09"
+    },
+    {
+      "path": "data/Q62351.txt",
+      "sha256": "351c6ada7ed4f293c81f26d8e07c388b9d23019dfb8fea09f6197b3db25a4c86"
+    },
+    {
+      "path": "data/11qc.cif",
+      "sha256": "4eaa5db67ed83a896713c4b42d1dc214c778bdac240fdf3a9a82e86a66f79495"
+    },
+    {
+      "path": "data/AF-Q62351.pdb",
+      "sha256": "2d68254a883f74fe38534b65a72c658ef7ae5bb22f0d27ea8c1826950e133574"
+    },
+    {
+      "path": "targets/E1_mouse_his710.pdb",
+      "sha256": "cd669acebac0e1e5f66eaf8c3e947225938f5efd2b11d92c692851a4840b01fa"
+    }
+  ],
+  "method": {
+    "alignment": "Full-length global affine-gap BLOSUM62 from local UniProt flatfile sequences",
+    "gap_open": -10,
+    "gap_extend": -0.5,
+    "score": 3100.5,
+    "optimal_alignments": 6,
+    "numbering": "Human auth=UniProt; all 11qc A protein atom author/label pairs verified auth-label=121; mouse=UniProt/AF PDB",
+    "domain_human_auth": [
+      189,
+      383
+    ],
+    "neighbourhood": "Other same-chain protein residues with any heavy atom within <=8 A of any hotspot heavy atom, human 11qc A; all domains included; hotspot excluded",
+    "patch_scan": "Centres: identical apical residues RSA>=0.2; patch: identical RSA>=0.2 residues within CA10 A; >=5 residues. Rank by invariant fraction of union of their 8 A environments, then exposed conserved area. RSA from native dimer+observed glycans, 1.4 A probe, 200 points, Wilke maxima. Conservation-only ranking; no binding claim."
+  },
+  "apical_identity": {
+    "identical": 146,
+    "human_length": 195,
+    "fraction": 0.7487179487179487
+  },
+  "ectodomain_identity": {
+    "human_auth": [
+      121,
+      760
+    ],
+    "mouse_assay": [
+      123,
+      763
+    ],
+    "human_positions": 640,
+    "identical": 499,
+    "fraction_human_denominator": 0.7796875,
+    "note": "Sequence-derived identity on this full ectodomain span, not the challenge approximately86% claim for its modelled region"
+  },
+  "hotspots": [
+    {
+      "human_auth": 205,
+      "human_label": 84,
+      "human_aa": "K",
+      "mouse_uniprot_options": [
+        208
+      ],
+      "mouse_aa_options": [
+        "S"
+      ],
+      "identical": false,
+      "mapping_ambiguous": false,
+      "neighbour_count": 15,
+      "substitution_count_range": [
+        6,
+        7
+      ],
+      "deletion_count_range": [
+        0,
+        1
+      ],
+      "nonidentical_count": 7,
+      "changed_residues": [
+        {
+          "human_auth": 204,
+          "human_label": 83,
+          "human_aa": "D",
+          "mouse_uniprot_options": [
+            207
+          ],
+          "mouse_aa_options": [
+            "Q"
+          ],
+          "identical": false,
+          "mapping_ambiguous": false
+        },
+        {
+          "human_auth": 208,
+          "human_label": 87,
+          "human_aa": "R",
+          "mouse_uniprot_options": [
+            211
+          ],
+          "mouse_aa_options": [
+            "N"
+          ],
+          "identical": false,
+          "mapping_ambiguous": false
+        },
+        {
+          "human_auth": 210,
+          "human_label": 89,
+          "human_aa": "V",
+          "mouse_uniprot_options": [
+            null,
+            213
+          ],
+          "mouse_aa_options": [
+            "-",
+            "D"
+          ],
+          "identical": false,
+          "mapping_ambiguous": true
+        },
+        {
+          "human_auth": 229,
+          "human_label": 108,
+          "human_aa": "T",
+          "mouse_uniprot_options": [
+            231
+          ],
+          "mouse_aa_options": [
+            "S"
+          ],
+          "identical": false,
+          "mapping_ambiguous": false
+        },
+        {
+          "human_auth": 369,
+          "human_label": 248,
+          "human_aa": "E",
+          "mouse_uniprot_options": [
+            371
+          ],
+          "mouse_aa_options": [
+            "Q"
+          ],
+          "identical": false,
+          "mapping_ambiguous": false
+        },
+        {
+          "human_auth": 370,
+          "human_label": 249,
+          "human_aa": "S",
+          "mouse_uniprot_options": [
+            372
+          ],
+          "mouse_aa_options": [
+            "N"
+          ],
+          "identical": false,
+          "mapping_ambiguous": false
+        },
+        {
+          "human_auth": 371,
+          "human_label": 250,
+          "human_aa": "K",
+          "mouse_uniprot_options": [
+            373
+          ],
+          "mouse_aa_options": [
+            "Q"
+          ],
+          "identical": false,
+          "mapping_ambiguous": false
+        }
+      ],
+      "chemistry": "Nonconservative K->S: long basic cationic side chain -> short polar hydroxyl; formal charge +1->0"
+    },
+    {
+      "human_auth": 206,
+      "human_label": 85,
+      "human_aa": "N",
+      "mouse_uniprot_options": [
+        209
+      ],
+      "mouse_aa_options": [
+        "N"
+      ],
+      "identical": true,
+      "mapping_ambiguous": false,
+      "neighbour_count": 8,
+      "substitution_count_range": [
+        4,
+        4
+      ],
+      "deletion_count_range": [
+        0,
+        0
+      ],
+      "nonidentical_count": 4,
+      "changed_residues": [
+        {
+          "human_auth": 204,
+          "human_label": 83,
+          "human_aa": "D",
+          "mouse_uniprot_options": [
+            207
+          ],
+          "mouse_aa_options": [
+            "Q"
+          ],
+          "identical": false,
+          "mapping_ambiguous": false
+        },
+        {
+          "human_auth": 205,
+          "human_label": 84,
+          "human_aa": "K",
+          "mouse_uniprot_options": [
+            208
+          ],
+          "mouse_aa_options": [
+            "S"
+          ],
+          "identical": false,
+          "mapping_ambiguous": false
+        },
+        {
+          "human_auth": 208,
+          "human_label": 87,
+          "human_aa": "R",
+          "mouse_uniprot_options": [
+            211
+          ],
+          "mouse_aa_options": [
+            "N"
+          ],
+          "identical": false,
+          "mapping_ambiguous": false
+        },
+        {
+          "human_auth": 370,
+          "human_label": 249,
+          "human_aa": "S",
+          "mouse_uniprot_options": [
+            372
+          ],
+          "mouse_aa_options": [
+            "N"
+          ],
+          "identical": false,
+          "mapping_ambiguous": false
+        }
+      ],
+      "chemistry": "Identical N: polar amide, neutral"
+    },
+    {
+      "human_auth": 208,
+      "human_label": 87,
+      "human_aa": "R",
+      "mouse_uniprot_options": [
+        211
+      ],
+      "mouse_aa_options": [
+        "N"
+      ],
+      "identical": false,
+      "mapping_ambiguous": false,
+      "neighbour_count": 12,
+      "substitution_count_range": [
+        4,
+        5
+      ],
+      "deletion_count_range": [
+        0,
+        1
+      ],
+      "nonidentical_count": 5,
+      "changed_residues": [
+        {
+          "human_auth": 201,
+          "human_label": 80,
+          "human_aa": "I",
+          "mouse_uniprot_options": [
+            204
+          ],
+          "mouse_aa_options": [
+            "T"
+          ],
+          "identical": false,
+          "mapping_ambiguous": false
+        },
+        {
+          "human_auth": 204,
+          "human_label": 83,
+          "human_aa": "D",
+          "mouse_uniprot_options": [
+            207
+          ],
+          "mouse_aa_options": [
+            "Q"
+          ],
+          "identical": false,
+          "mapping_ambiguous": false
+        },
+        {
+          "human_auth": 205,
+          "human_label": 84,
+          "human_aa": "K",
+          "mouse_uniprot_options": [
+            208
+          ],
+          "mouse_aa_options": [
+            "S"
+          ],
+          "identical": false,
+          "mapping_ambiguous": false
+        },
+        {
+          "human_auth": 210,
+          "human_label": 89,
+          "human_aa": "V",
+          "mouse_uniprot_options": [
+            null,
+            213
+          ],
+          "mouse_aa_options": [
+            "-",
+            "D"
+          ],
+          "identical": false,
+          "mapping_ambiguous": true
+        },
+        {
+          "human_auth": 211,
+          "human_label": 90,
+          "human_aa": "Y",
+          "mouse_uniprot_options": [
+            null,
+            213,
+            214
+          ],
+          "mouse_aa_options": [
+            "-",
+            "D",
+            "P"
+          ],
+          "identical": false,
+          "mapping_ambiguous": true
+        }
+      ],
+      "chemistry": "Nonconservative R->N: basic guanidinium -> neutral polar amide; formal charge +1->0"
+    },
+    {
+      "human_auth": 209,
+      "human_label": 88,
+      "human_aa": "L",
+      "mouse_uniprot_options": [
+        212
+      ],
+      "mouse_aa_options": [
+        "L"
+      ],
+      "identical": true,
+      "mapping_ambiguous": false,
+      "neighbour_count": 15,
+      "substitution_count_range": [
+        7,
+        7
+      ],
+      "deletion_count_range": [
+        1,
+        1
+      ],
+      "nonidentical_count": 8,
+      "changed_residues": [
+        {
+          "human_auth": 199,
+          "human_label": 78,
+          "human_aa": "S",
+          "mouse_uniprot_options": [
+            202
+          ],
+          "mouse_aa_options": [
+            "M"
+          ],
+          "identical": false,
+          "mapping_ambiguous": false
+        },
+        {
+          "human_auth": 201,
+          "human_label": 80,
+          "human_aa": "I",
+          "mouse_uniprot_options": [
+            204
+          ],
+          "mouse_aa_options": [
+            "T"
+          ],
+          "identical": false,
+          "mapping_ambiguous": false
+        },
+        {
+          "human_auth": 204,
+          "human_label": 83,
+          "human_aa": "D",
+          "mouse_uniprot_options": [
+            207
+          ],
+          "mouse_aa_options": [
+            "Q"
+          ],
+          "identical": false,
+          "mapping_ambiguous": false
+        },
+        {
+          "human_auth": 205,
+          "human_label": 84,
+          "human_aa": "K",
+          "mouse_uniprot_options": [
+            208
+          ],
+          "mouse_aa_options": [
+            "S"
+          ],
+          "identical": false,
+          "mapping_ambiguous": false
+        },
+        {
+          "human_auth": 208,
+          "human_label": 87,
+          "human_aa": "R",
+          "mouse_uniprot_options": [
+            211
+          ],
+          "mouse_aa_options": [
+            "N"
+          ],
+          "identical": false,
+          "mapping_ambiguous": false
+        },
+        {
+          "human_auth": 210,
+          "human_label": 89,
+          "human_aa": "V",
+          "mouse_uniprot_options": [
+            null,
+            213
+          ],
+          "mouse_aa_options": [
+            "-",
+            "D"
+          ],
+          "identical": false,
+          "mapping_ambiguous": true
+        },
+        {
+          "human_auth": 211,
+          "human_label": 90,
+          "human_aa": "Y",
+          "mouse_uniprot_options": [
+            null,
+            213,
+            214
+          ],
+          "mouse_aa_options": [
+            "-",
+            "D",
+            "P"
+          ],
+          "identical": false,
+          "mapping_ambiguous": true
+        },
+        {
+          "human_auth": 212,
+          "human_label": 91,
+          "human_aa": "L",
+          "mouse_uniprot_options": [
+            null,
+            214
+          ],
+          "mouse_aa_options": [
+            "-",
+            "P"
+          ],
+          "identical": false,
+          "mapping_ambiguous": true
+        }
+      ],
+      "chemistry": "Identical L: aliphatic hydrophobe, neutral"
+    },
+    {
+      "human_auth": 210,
+      "human_label": 89,
+      "human_aa": "V",
+      "mouse_uniprot_options": [
+        null,
+        213
+      ],
+      "mouse_aa_options": [
+        "-",
+        "D"
+      ],
+      "identical": false,
+      "mapping_ambiguous": true,
+      "neighbour_count": 15,
+      "substitution_count_range": [
+        8,
+        9
+      ],
+      "deletion_count_range": [
+        0,
+        1
+      ],
+      "nonidentical_count": 9,
+      "changed_residues": [
+        {
+          "human_auth": 201,
+          "human_label": 80,
+          "human_aa": "I",
+          "mouse_uniprot_options": [
+            204
+          ],
+          "mouse_aa_options": [
+            "T"
+          ],
+          "identical": false,
+          "mapping_ambiguous": false
+        },
+        {
+          "human_auth": 204,
+          "human_label": 83,
+          "human_aa": "D",
+          "mouse_uniprot_options": [
+            207
+          ],
+          "mouse_aa_options": [
+            "Q"
+          ],
+          "identical": false,
+          "mapping_ambiguous": false
+        },
+        {
+          "human_auth": 205,
+          "human_label": 84,
+          "human_aa": "K",
+          "mouse_uniprot_options": [
+            208
+          ],
+          "mouse_aa_options": [
+            "S"
+          ],
+          "identical": false,
+          "mapping_ambiguous": false
+        },
+        {
+          "human_auth": 208,
+          "human_label": 87,
+          "human_aa": "R",
+          "mouse_uniprot_options": [
+            211
+          ],
+          "mouse_aa_options": [
+            "N"
+          ],
+          "identical": false,
+          "mapping_ambiguous": false
+        },
+        {
+          "human_auth": 211,
+          "human_label": 90,
+          "human_aa": "Y",
+          "mouse_uniprot_options": [
+            null,
+            213,
+            214
+          ],
+          "mouse_aa_options": [
+            "-",
+            "D",
+            "P"
+          ],
+          "identical": false,
+          "mapping_ambiguous": true
+        },
+        {
+          "human_auth": 212,
+          "human_label": 91,
+          "human_aa": "L",
+          "mouse_uniprot_options": [
+            null,
+            214
+          ],
+          "mouse_aa_options": [
+            "-",
+            "P"
+          ],
+          "identical": false,
+          "mapping_ambiguous": true
+        },
+        {
+          "human_auth": 348,
+          "human_label": 227,
+          "human_aa": "N",
+          "mouse_uniprot_options": [
+            350
+          ],
+          "mouse_aa_options": [
+            "K"
+          ],
+          "identical": false,
+          "mapping_ambiguous": false
+        },
+        {
+          "human_auth": 370,
+          "human_label": 249,
+          "human_aa": "S",
+          "mouse_uniprot_options": [
+            372
+          ],
+          "mouse_aa_options": [
+            "N"
+          ],
+          "identical": false,
+          "mapping_ambiguous": false
+        },
+        {
+          "human_auth": 371,
+          "human_label": 250,
+          "human_aa": "K",
+          "mouse_uniprot_options": [
+            373
+          ],
+          "mouse_aa_options": [
+            "Q"
+          ],
+          "identical": false,
+          "mapping_ambiguous": false
+        }
+      ],
+      "chemistry": "Ambiguous gap or nonconservative V->D: aliphatic hydrophobe -> acidic carboxylate; formal charge 0->-1 if D"
+    }
+  ],
+  "fit": {
+    "unambiguous_pairs": 192,
+    "CA_rmsd_A": 1.7188661970909282
+  },
+  "mouse_trim": {
+    "residues": 110,
+    "hotspot_coverage": {
+      "205": [],
+      "206": [],
+      "208": [],
+      "209": [],
+      "210": []
+    },
+    "warning": "His710-centred discontinuous crop does not cover this epitope; full AF mouse model used"
+  },
+  "top_conserved_surface_patches": [
+    {
+      "center": {
+        "human_auth": 266,
+        "human_label": 145,
+        "human_aa": "E",
+        "mouse_uniprot_options": [
+          268
+        ],
+        "mouse_aa_options": [
+          "E"
+        ],
+        "identical": true,
+        "mapping_ambiguous": false
+      },
+      "conserved_surface": [
+        {
+          "human_auth": 240,
+          "human_label": 119,
+          "human_aa": "K",
+          "mouse_uniprot_options": [
+            242
+          ],
+          "mouse_aa_options": [
+            "K"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.619010178051038
+        },
+        {
+          "human_auth": 262,
+          "human_label": 141,
+          "human_aa": "I",
+          "mouse_uniprot_options": [
+            264
+          ],
+          "mouse_aa_options": [
+            "I"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.20190202678909247
+        },
+        {
+          "human_auth": 266,
+          "human_label": 145,
+          "human_aa": "E",
+          "mouse_uniprot_options": [
+            268
+          ],
+          "mouse_aa_options": [
+            "E"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.3115532367695997
+        },
+        {
+          "human_auth": 269,
+          "human_label": 148,
+          "human_aa": "A",
+          "mouse_uniprot_options": [
+            271
+          ],
+          "mouse_aa_options": [
+            "A"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.272042928124366
+        },
+        {
+          "human_auth": 303,
+          "human_label": 182,
+          "human_aa": "L",
+          "mouse_uniprot_options": [
+            305
+          ],
+          "mouse_aa_options": [
+            "L"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.3696588599946953
+        }
+      ],
+      "substituted_surface": [
+        {
+          "human_auth": 261,
+          "human_label": 140,
+          "human_aa": "K",
+          "mouse_uniprot_options": [
+            263
+          ],
+          "mouse_aa_options": [
+            "E"
+          ],
+          "identical": false,
+          "mapping_ambiguous": false
+        },
+        {
+          "human_auth": 272,
+          "human_label": 151,
+          "human_aa": "E",
+          "mouse_uniprot_options": [
+            274
+          ],
+          "mouse_aa_options": [
+            "Q"
+          ],
+          "identical": false,
+          "mapping_ambiguous": false
+        }
+      ],
+      "environment_changed": 7,
+      "environment_size": 59,
+      "environment_conservation": 0.8813559322033898,
+      "conserved_surface_sasa_A2": 364.7324416840939,
+      "per_residue_neighbourhood": [
+        {
+          "human_auth": 240,
+          "neighbour_count": 20,
+          "substitution_count_range": [
+            2,
+            2
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 2,
+          "changed_residues": [
+            {
+              "human_auth": 245,
+              "human_label": 124,
+              "human_aa": "D",
+              "mouse_uniprot_options": [
+                247
+              ],
+              "mouse_aa_options": [
+                "E"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 274,
+              "human_label": 153,
+              "human_aa": "L",
+              "mouse_uniprot_options": [
+                276
+              ],
+              "mouse_aa_options": [
+                "F"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        },
+        {
+          "human_auth": 262,
+          "neighbour_count": 25,
+          "substitution_count_range": [
+            2,
+            2
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 2,
+          "changed_residues": [
+            {
+              "human_auth": 261,
+              "human_label": 140,
+              "human_aa": "K",
+              "mouse_uniprot_options": [
+                263
+              ],
+              "mouse_aa_options": [
+                "E"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 536,
+              "human_label": 415,
+              "human_aa": "T",
+              "mouse_uniprot_options": [
+                539
+              ],
+              "mouse_aa_options": [
+                "S"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        },
+        {
+          "human_auth": 266,
+          "neighbour_count": 27,
+          "substitution_count_range": [
+            4,
+            4
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 4,
+          "changed_residues": [
+            {
+              "human_auth": 261,
+              "human_label": 140,
+              "human_aa": "K",
+              "mouse_uniprot_options": [
+                263
+              ],
+              "mouse_aa_options": [
+                "E"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 272,
+              "human_label": 151,
+              "human_aa": "E",
+              "mouse_uniprot_options": [
+                274
+              ],
+              "mouse_aa_options": [
+                "Q"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 536,
+              "human_label": 415,
+              "human_aa": "T",
+              "mouse_uniprot_options": [
+                539
+              ],
+              "mouse_aa_options": [
+                "S"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 537,
+              "human_label": 416,
+              "human_aa": "L",
+              "mouse_uniprot_options": [
+                540
+              ],
+              "mouse_aa_options": [
+                "F"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        },
+        {
+          "human_auth": 269,
+          "neighbour_count": 26,
+          "substitution_count_range": [
+            2,
+            2
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 2,
+          "changed_residues": [
+            {
+              "human_auth": 272,
+              "human_label": 151,
+              "human_aa": "E",
+              "mouse_uniprot_options": [
+                274
+              ],
+              "mouse_aa_options": [
+                "Q"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 274,
+              "human_label": 153,
+              "human_aa": "L",
+              "mouse_uniprot_options": [
+                276
+              ],
+              "mouse_aa_options": [
+                "F"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        },
+        {
+          "human_auth": 303,
+          "neighbour_count": 28,
+          "substitution_count_range": [
+            3,
+            3
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 3,
+          "changed_residues": [
+            {
+              "human_auth": 222,
+              "human_label": 101,
+              "human_aa": "Y",
+              "mouse_uniprot_options": [
+                224
+              ],
+              "mouse_aa_options": [
+                "F"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 272,
+              "human_label": 151,
+              "human_aa": "E",
+              "mouse_uniprot_options": [
+                274
+              ],
+              "mouse_aa_options": [
+                "Q"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 537,
+              "human_label": 416,
+              "human_aa": "L",
+              "mouse_uniprot_options": [
+                540
+              ],
+              "mouse_aa_options": [
+                "F"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "center": {
+        "human_auth": 273,
+        "human_label": 152,
+        "human_aa": "S",
+        "mouse_uniprot_options": [
+          275
+        ],
+        "mouse_aa_options": [
+          "S"
+        ],
+        "identical": true,
+        "mapping_ambiguous": false
+      },
+      "conserved_surface": [
+        {
+          "human_auth": 240,
+          "human_label": 119,
+          "human_aa": "K",
+          "mouse_uniprot_options": [
+            242
+          ],
+          "mouse_aa_options": [
+            "K"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.619010178051038
+        },
+        {
+          "human_auth": 251,
+          "human_label": 130,
+          "human_aa": "N",
+          "mouse_uniprot_options": [
+            253
+          ],
+          "mouse_aa_options": [
+            "N"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.2543847780361939
+        },
+        {
+          "human_auth": 269,
+          "human_label": 148,
+          "human_aa": "A",
+          "mouse_uniprot_options": [
+            271
+          ],
+          "mouse_aa_options": [
+            "A"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.272042928124366
+        },
+        {
+          "human_auth": 273,
+          "human_label": 152,
+          "human_aa": "S",
+          "mouse_uniprot_options": [
+            275
+          ],
+          "mouse_aa_options": [
+            "S"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.5497914834322252
+        },
+        {
+          "human_auth": 275,
+          "human_label": 154,
+          "human_aa": "N",
+          "mouse_uniprot_options": [
+            277
+          ],
+          "mouse_aa_options": [
+            "N"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.5041522848511151
+        }
+      ],
+      "substituted_surface": [
+        {
+          "human_auth": 272,
+          "human_label": 151,
+          "human_aa": "E",
+          "mouse_uniprot_options": [
+            274
+          ],
+          "mouse_aa_options": [
+            "Q"
+          ],
+          "identical": false,
+          "mapping_ambiguous": false
+        },
+        {
+          "human_auth": 274,
+          "human_label": 153,
+          "human_aa": "L",
+          "mouse_uniprot_options": [
+            276
+          ],
+          "mouse_aa_options": [
+            "F"
+          ],
+          "identical": false,
+          "mapping_ambiguous": false
+        }
+      ],
+      "environment_changed": 6,
+      "environment_size": 47,
+      "environment_conservation": 0.8723404255319149,
+      "conserved_surface_sasa_A2": 414.3123469431083,
+      "per_residue_neighbourhood": [
+        {
+          "human_auth": 240,
+          "neighbour_count": 20,
+          "substitution_count_range": [
+            2,
+            2
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 2,
+          "changed_residues": [
+            {
+              "human_auth": 245,
+              "human_label": 124,
+              "human_aa": "D",
+              "mouse_uniprot_options": [
+                247
+              ],
+              "mouse_aa_options": [
+                "E"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 274,
+              "human_label": 153,
+              "human_aa": "L",
+              "mouse_uniprot_options": [
+                276
+              ],
+              "mouse_aa_options": [
+                "F"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        },
+        {
+          "human_auth": 251,
+          "neighbour_count": 15,
+          "substitution_count_range": [
+            5,
+            5
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 5,
+          "changed_residues": [
+            {
+              "human_auth": 248,
+              "human_label": 127,
+              "human_aa": "T",
+              "mouse_uniprot_options": [
+                250
+              ],
+              "mouse_aa_options": [
+                "Y"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 249,
+              "human_label": 128,
+              "human_aa": "P",
+              "mouse_uniprot_options": [
+                251
+              ],
+              "mouse_aa_options": [
+                "S"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 254,
+              "human_label": 133,
+              "human_aa": "I",
+              "mouse_uniprot_options": [
+                256
+              ],
+              "mouse_aa_options": [
+                "L"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 272,
+              "human_label": 151,
+              "human_aa": "E",
+              "mouse_uniprot_options": [
+                274
+              ],
+              "mouse_aa_options": [
+                "Q"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 274,
+              "human_label": 153,
+              "human_aa": "L",
+              "mouse_uniprot_options": [
+                276
+              ],
+              "mouse_aa_options": [
+                "F"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        },
+        {
+          "human_auth": 269,
+          "neighbour_count": 26,
+          "substitution_count_range": [
+            2,
+            2
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 2,
+          "changed_residues": [
+            {
+              "human_auth": 272,
+              "human_label": 151,
+              "human_aa": "E",
+              "mouse_uniprot_options": [
+                274
+              ],
+              "mouse_aa_options": [
+                "Q"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 274,
+              "human_label": 153,
+              "human_aa": "L",
+              "mouse_uniprot_options": [
+                276
+              ],
+              "mouse_aa_options": [
+                "F"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        },
+        {
+          "human_auth": 273,
+          "neighbour_count": 15,
+          "substitution_count_range": [
+            2,
+            2
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 2,
+          "changed_residues": [
+            {
+              "human_auth": 272,
+              "human_label": 151,
+              "human_aa": "E",
+              "mouse_uniprot_options": [
+                274
+              ],
+              "mouse_aa_options": [
+                "Q"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 274,
+              "human_label": 153,
+              "human_aa": "L",
+              "mouse_uniprot_options": [
+                276
+              ],
+              "mouse_aa_options": [
+                "F"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        },
+        {
+          "human_auth": 275,
+          "neighbour_count": 18,
+          "substitution_count_range": [
+            4,
+            4
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 4,
+          "changed_residues": [
+            {
+              "human_auth": 249,
+              "human_label": 128,
+              "human_aa": "P",
+              "mouse_uniprot_options": [
+                251
+              ],
+              "mouse_aa_options": [
+                "S"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 254,
+              "human_label": 133,
+              "human_aa": "I",
+              "mouse_uniprot_options": [
+                256
+              ],
+              "mouse_aa_options": [
+                "L"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 272,
+              "human_label": 151,
+              "human_aa": "E",
+              "mouse_uniprot_options": [
+                274
+              ],
+              "mouse_aa_options": [
+                "Q"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 274,
+              "human_label": 153,
+              "human_aa": "L",
+              "mouse_uniprot_options": [
+                276
+              ],
+              "mouse_aa_options": [
+                "F"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "center": {
+        "human_auth": 240,
+        "human_label": 119,
+        "human_aa": "K",
+        "mouse_uniprot_options": [
+          242
+        ],
+        "mouse_aa_options": [
+          "K"
+        ],
+        "identical": true,
+        "mapping_ambiguous": false
+      },
+      "conserved_surface": [
+        {
+          "human_auth": 240,
+          "human_label": 119,
+          "human_aa": "K",
+          "mouse_uniprot_options": [
+            242
+          ],
+          "mouse_aa_options": [
+            "K"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.619010178051038
+        },
+        {
+          "human_auth": 241,
+          "human_label": 120,
+          "human_aa": "K",
+          "mouse_uniprot_options": [
+            243
+          ],
+          "mouse_aa_options": [
+            "K"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.6021967202766906
+        },
+        {
+          "human_auth": 244,
+          "human_label": 123,
+          "human_aa": "E",
+          "mouse_uniprot_options": [
+            246
+          ],
+          "mouse_aa_options": [
+            "E"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.6106328292156291
+        },
+        {
+          "human_auth": 266,
+          "human_label": 145,
+          "human_aa": "E",
+          "mouse_uniprot_options": [
+            268
+          ],
+          "mouse_aa_options": [
+            "E"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.3115532367695997
+        },
+        {
+          "human_auth": 269,
+          "human_label": 148,
+          "human_aa": "A",
+          "mouse_uniprot_options": [
+            271
+          ],
+          "mouse_aa_options": [
+            "A"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.272042928124366
+        },
+        {
+          "human_auth": 273,
+          "human_label": 152,
+          "human_aa": "S",
+          "mouse_uniprot_options": [
+            275
+          ],
+          "mouse_aa_options": [
+            "S"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.5497914834322252
+        }
+      ],
+      "substituted_surface": [
+        {
+          "human_auth": 245,
+          "human_label": 124,
+          "human_aa": "D",
+          "mouse_uniprot_options": [
+            247
+          ],
+          "mouse_aa_options": [
+            "E"
+          ],
+          "identical": false,
+          "mapping_ambiguous": false
+        }
+      ],
+      "environment_changed": 8,
+      "environment_size": 51,
+      "environment_conservation": 0.8431372549019608,
+      "conserved_surface_sasa_A2": 614.1635383800881,
+      "per_residue_neighbourhood": [
+        {
+          "human_auth": 240,
+          "neighbour_count": 20,
+          "substitution_count_range": [
+            2,
+            2
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 2,
+          "changed_residues": [
+            {
+              "human_auth": 245,
+              "human_label": 124,
+              "human_aa": "D",
+              "mouse_uniprot_options": [
+                247
+              ],
+              "mouse_aa_options": [
+                "E"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 274,
+              "human_label": 153,
+              "human_aa": "L",
+              "mouse_uniprot_options": [
+                276
+              ],
+              "mouse_aa_options": [
+                "F"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        },
+        {
+          "human_auth": 241,
+          "neighbour_count": 14,
+          "substitution_count_range": [
+            1,
+            1
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 1,
+          "changed_residues": [
+            {
+              "human_auth": 245,
+              "human_label": 124,
+              "human_aa": "D",
+              "mouse_uniprot_options": [
+                247
+              ],
+              "mouse_aa_options": [
+                "E"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        },
+        {
+          "human_auth": 244,
+          "neighbour_count": 14,
+          "substitution_count_range": [
+            4,
+            4
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 4,
+          "changed_residues": [
+            {
+              "human_auth": 245,
+              "human_label": 124,
+              "human_aa": "D",
+              "mouse_uniprot_options": [
+                247
+              ],
+              "mouse_aa_options": [
+                "E"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 247,
+              "human_label": 126,
+              "human_aa": "Y",
+              "mouse_uniprot_options": [
+                249
+              ],
+              "mouse_aa_options": [
+                "S"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 248,
+              "human_label": 127,
+              "human_aa": "T",
+              "mouse_uniprot_options": [
+                250
+              ],
+              "mouse_aa_options": [
+                "Y"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 274,
+              "human_label": 153,
+              "human_aa": "L",
+              "mouse_uniprot_options": [
+                276
+              ],
+              "mouse_aa_options": [
+                "F"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        },
+        {
+          "human_auth": 266,
+          "neighbour_count": 27,
+          "substitution_count_range": [
+            4,
+            4
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 4,
+          "changed_residues": [
+            {
+              "human_auth": 261,
+              "human_label": 140,
+              "human_aa": "K",
+              "mouse_uniprot_options": [
+                263
+              ],
+              "mouse_aa_options": [
+                "E"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 272,
+              "human_label": 151,
+              "human_aa": "E",
+              "mouse_uniprot_options": [
+                274
+              ],
+              "mouse_aa_options": [
+                "Q"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 536,
+              "human_label": 415,
+              "human_aa": "T",
+              "mouse_uniprot_options": [
+                539
+              ],
+              "mouse_aa_options": [
+                "S"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 537,
+              "human_label": 416,
+              "human_aa": "L",
+              "mouse_uniprot_options": [
+                540
+              ],
+              "mouse_aa_options": [
+                "F"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        },
+        {
+          "human_auth": 269,
+          "neighbour_count": 26,
+          "substitution_count_range": [
+            2,
+            2
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 2,
+          "changed_residues": [
+            {
+              "human_auth": 272,
+              "human_label": 151,
+              "human_aa": "E",
+              "mouse_uniprot_options": [
+                274
+              ],
+              "mouse_aa_options": [
+                "Q"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 274,
+              "human_label": 153,
+              "human_aa": "L",
+              "mouse_uniprot_options": [
+                276
+              ],
+              "mouse_aa_options": [
+                "F"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        },
+        {
+          "human_auth": 273,
+          "neighbour_count": 15,
+          "substitution_count_range": [
+            2,
+            2
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 2,
+          "changed_residues": [
+            {
+              "human_auth": 272,
+              "human_label": 151,
+              "human_aa": "E",
+              "mouse_uniprot_options": [
+                274
+              ],
+              "mouse_aa_options": [
+                "Q"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 274,
+              "human_label": 153,
+              "human_aa": "L",
+              "mouse_uniprot_options": [
+                276
+              ],
+              "mouse_aa_options": [
+                "F"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "center": {
+        "human_auth": 275,
+        "human_label": 154,
+        "human_aa": "N",
+        "mouse_uniprot_options": [
+          277
+        ],
+        "mouse_aa_options": [
+          "N"
+        ],
+        "identical": true,
+        "mapping_ambiguous": false
+      },
+      "conserved_surface": [
+        {
+          "human_auth": 251,
+          "human_label": 130,
+          "human_aa": "N",
+          "mouse_uniprot_options": [
+            253
+          ],
+          "mouse_aa_options": [
+            "N"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.2543847780361939
+        },
+        {
+          "human_auth": 269,
+          "human_label": 148,
+          "human_aa": "A",
+          "mouse_uniprot_options": [
+            271
+          ],
+          "mouse_aa_options": [
+            "A"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.272042928124366
+        },
+        {
+          "human_auth": 273,
+          "human_label": 152,
+          "human_aa": "S",
+          "mouse_uniprot_options": [
+            275
+          ],
+          "mouse_aa_options": [
+            "S"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.5497914834322252
+        },
+        {
+          "human_auth": 275,
+          "human_label": 154,
+          "human_aa": "N",
+          "mouse_uniprot_options": [
+            277
+          ],
+          "mouse_aa_options": [
+            "N"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.5041522848511151
+        },
+        {
+          "human_auth": 277,
+          "human_label": 156,
+          "human_aa": "I",
+          "mouse_uniprot_options": [
+            279
+          ],
+          "mouse_aa_options": [
+            "I"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.22167473253566172
+        }
+      ],
+      "substituted_surface": [
+        {
+          "human_auth": 249,
+          "human_label": 128,
+          "human_aa": "P",
+          "mouse_uniprot_options": [
+            251
+          ],
+          "mouse_aa_options": [
+            "S"
+          ],
+          "identical": false,
+          "mapping_ambiguous": false
+        },
+        {
+          "human_auth": 272,
+          "human_label": 151,
+          "human_aa": "E",
+          "mouse_uniprot_options": [
+            274
+          ],
+          "mouse_aa_options": [
+            "Q"
+          ],
+          "identical": false,
+          "mapping_ambiguous": false
+        },
+        {
+          "human_auth": 274,
+          "human_label": 153,
+          "human_aa": "L",
+          "mouse_uniprot_options": [
+            276
+          ],
+          "mouse_aa_options": [
+            "F"
+          ],
+          "identical": false,
+          "mapping_ambiguous": false
+        }
+      ],
+      "environment_changed": 8,
+      "environment_size": 51,
+      "environment_conservation": 0.8431372549019608,
+      "conserved_surface_sasa_A2": 311.8958672325887,
+      "per_residue_neighbourhood": [
+        {
+          "human_auth": 251,
+          "neighbour_count": 15,
+          "substitution_count_range": [
+            5,
+            5
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 5,
+          "changed_residues": [
+            {
+              "human_auth": 248,
+              "human_label": 127,
+              "human_aa": "T",
+              "mouse_uniprot_options": [
+                250
+              ],
+              "mouse_aa_options": [
+                "Y"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 249,
+              "human_label": 128,
+              "human_aa": "P",
+              "mouse_uniprot_options": [
+                251
+              ],
+              "mouse_aa_options": [
+                "S"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 254,
+              "human_label": 133,
+              "human_aa": "I",
+              "mouse_uniprot_options": [
+                256
+              ],
+              "mouse_aa_options": [
+                "L"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 272,
+              "human_label": 151,
+              "human_aa": "E",
+              "mouse_uniprot_options": [
+                274
+              ],
+              "mouse_aa_options": [
+                "Q"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 274,
+              "human_label": 153,
+              "human_aa": "L",
+              "mouse_uniprot_options": [
+                276
+              ],
+              "mouse_aa_options": [
+                "F"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        },
+        {
+          "human_auth": 269,
+          "neighbour_count": 26,
+          "substitution_count_range": [
+            2,
+            2
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 2,
+          "changed_residues": [
+            {
+              "human_auth": 272,
+              "human_label": 151,
+              "human_aa": "E",
+              "mouse_uniprot_options": [
+                274
+              ],
+              "mouse_aa_options": [
+                "Q"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 274,
+              "human_label": 153,
+              "human_aa": "L",
+              "mouse_uniprot_options": [
+                276
+              ],
+              "mouse_aa_options": [
+                "F"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        },
+        {
+          "human_auth": 273,
+          "neighbour_count": 15,
+          "substitution_count_range": [
+            2,
+            2
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 2,
+          "changed_residues": [
+            {
+              "human_auth": 272,
+              "human_label": 151,
+              "human_aa": "E",
+              "mouse_uniprot_options": [
+                274
+              ],
+              "mouse_aa_options": [
+                "Q"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 274,
+              "human_label": 153,
+              "human_aa": "L",
+              "mouse_uniprot_options": [
+                276
+              ],
+              "mouse_aa_options": [
+                "F"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        },
+        {
+          "human_auth": 275,
+          "neighbour_count": 18,
+          "substitution_count_range": [
+            4,
+            4
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 4,
+          "changed_residues": [
+            {
+              "human_auth": 249,
+              "human_label": 128,
+              "human_aa": "P",
+              "mouse_uniprot_options": [
+                251
+              ],
+              "mouse_aa_options": [
+                "S"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 254,
+              "human_label": 133,
+              "human_aa": "I",
+              "mouse_uniprot_options": [
+                256
+              ],
+              "mouse_aa_options": [
+                "L"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 272,
+              "human_label": 151,
+              "human_aa": "E",
+              "mouse_uniprot_options": [
+                274
+              ],
+              "mouse_aa_options": [
+                "Q"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 274,
+              "human_label": 153,
+              "human_aa": "L",
+              "mouse_uniprot_options": [
+                276
+              ],
+              "mouse_aa_options": [
+                "F"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        },
+        {
+          "human_auth": 277,
+          "neighbour_count": 28,
+          "substitution_count_range": [
+            6,
+            6
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 6,
+          "changed_residues": [
+            {
+              "human_auth": 226,
+              "human_label": 105,
+              "human_aa": "A",
+              "mouse_uniprot_options": [
+                228
+              ],
+              "mouse_aa_options": [
+                "T"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 227,
+              "human_label": 106,
+              "human_aa": "T",
+              "mouse_uniprot_options": [
+                229
+              ],
+              "mouse_aa_options": [
+                "E"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 229,
+              "human_label": 108,
+              "human_aa": "T",
+              "mouse_uniprot_options": [
+                231
+              ],
+              "mouse_aa_options": [
+                "S"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 254,
+              "human_label": 133,
+              "human_aa": "I",
+              "mouse_uniprot_options": [
+                256
+              ],
+              "mouse_aa_options": [
+                "L"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 272,
+              "human_label": 151,
+              "human_aa": "E",
+              "mouse_uniprot_options": [
+                274
+              ],
+              "mouse_aa_options": [
+                "Q"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 274,
+              "human_label": 153,
+              "human_aa": "L",
+              "mouse_uniprot_options": [
+                276
+              ],
+              "mouse_aa_options": [
+                "F"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "center": {
+        "human_auth": 269,
+        "human_label": 148,
+        "human_aa": "A",
+        "mouse_uniprot_options": [
+          271
+        ],
+        "mouse_aa_options": [
+          "A"
+        ],
+        "identical": true,
+        "mapping_ambiguous": false
+      },
+      "conserved_surface": [
+        {
+          "human_auth": 240,
+          "human_label": 119,
+          "human_aa": "K",
+          "mouse_uniprot_options": [
+            242
+          ],
+          "mouse_aa_options": [
+            "K"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.619010178051038
+        },
+        {
+          "human_auth": 266,
+          "human_label": 145,
+          "human_aa": "E",
+          "mouse_uniprot_options": [
+            268
+          ],
+          "mouse_aa_options": [
+            "E"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.3115532367695997
+        },
+        {
+          "human_auth": 269,
+          "human_label": 148,
+          "human_aa": "A",
+          "mouse_uniprot_options": [
+            271
+          ],
+          "mouse_aa_options": [
+            "A"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.272042928124366
+        },
+        {
+          "human_auth": 273,
+          "human_label": 152,
+          "human_aa": "S",
+          "mouse_uniprot_options": [
+            275
+          ],
+          "mouse_aa_options": [
+            "S"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.5497914834322252
+        },
+        {
+          "human_auth": 275,
+          "human_label": 154,
+          "human_aa": "N",
+          "mouse_uniprot_options": [
+            277
+          ],
+          "mouse_aa_options": [
+            "N"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.5041522848511151
+        },
+        {
+          "human_auth": 303,
+          "human_label": 182,
+          "human_aa": "L",
+          "mouse_uniprot_options": [
+            305
+          ],
+          "mouse_aa_options": [
+            "L"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.3696588599946953
+        },
+        {
+          "human_auth": 331,
+          "human_label": 210,
+          "human_aa": "N",
+          "mouse_uniprot_options": [
+            333
+          ],
+          "mouse_aa_options": [
+            "N"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.4649300644466508
+        }
+      ],
+      "substituted_surface": [
+        {
+          "human_auth": 272,
+          "human_label": 151,
+          "human_aa": "E",
+          "mouse_uniprot_options": [
+            274
+          ],
+          "mouse_aa_options": [
+            "Q"
+          ],
+          "identical": false,
+          "mapping_ambiguous": false
+        },
+        {
+          "human_auth": 274,
+          "human_label": 153,
+          "human_aa": "L",
+          "mouse_uniprot_options": [
+            276
+          ],
+          "mouse_aa_options": [
+            "F"
+          ],
+          "identical": false,
+          "mapping_ambiguous": false
+        }
+      ],
+      "environment_changed": 12,
+      "environment_size": 70,
+      "environment_conservation": 0.8285714285714285,
+      "conserved_surface_sasa_A2": 599.1464804517019,
+      "per_residue_neighbourhood": [
+        {
+          "human_auth": 240,
+          "neighbour_count": 20,
+          "substitution_count_range": [
+            2,
+            2
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 2,
+          "changed_residues": [
+            {
+              "human_auth": 245,
+              "human_label": 124,
+              "human_aa": "D",
+              "mouse_uniprot_options": [
+                247
+              ],
+              "mouse_aa_options": [
+                "E"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 274,
+              "human_label": 153,
+              "human_aa": "L",
+              "mouse_uniprot_options": [
+                276
+              ],
+              "mouse_aa_options": [
+                "F"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        },
+        {
+          "human_auth": 266,
+          "neighbour_count": 27,
+          "substitution_count_range": [
+            4,
+            4
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 4,
+          "changed_residues": [
+            {
+              "human_auth": 261,
+              "human_label": 140,
+              "human_aa": "K",
+              "mouse_uniprot_options": [
+                263
+              ],
+              "mouse_aa_options": [
+                "E"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 272,
+              "human_label": 151,
+              "human_aa": "E",
+              "mouse_uniprot_options": [
+                274
+              ],
+              "mouse_aa_options": [
+                "Q"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 536,
+              "human_label": 415,
+              "human_aa": "T",
+              "mouse_uniprot_options": [
+                539
+              ],
+              "mouse_aa_options": [
+                "S"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 537,
+              "human_label": 416,
+              "human_aa": "L",
+              "mouse_uniprot_options": [
+                540
+              ],
+              "mouse_aa_options": [
+                "F"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        },
+        {
+          "human_auth": 269,
+          "neighbour_count": 26,
+          "substitution_count_range": [
+            2,
+            2
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 2,
+          "changed_residues": [
+            {
+              "human_auth": 272,
+              "human_label": 151,
+              "human_aa": "E",
+              "mouse_uniprot_options": [
+                274
+              ],
+              "mouse_aa_options": [
+                "Q"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 274,
+              "human_label": 153,
+              "human_aa": "L",
+              "mouse_uniprot_options": [
+                276
+              ],
+              "mouse_aa_options": [
+                "F"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        },
+        {
+          "human_auth": 273,
+          "neighbour_count": 15,
+          "substitution_count_range": [
+            2,
+            2
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 2,
+          "changed_residues": [
+            {
+              "human_auth": 272,
+              "human_label": 151,
+              "human_aa": "E",
+              "mouse_uniprot_options": [
+                274
+              ],
+              "mouse_aa_options": [
+                "Q"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 274,
+              "human_label": 153,
+              "human_aa": "L",
+              "mouse_uniprot_options": [
+                276
+              ],
+              "mouse_aa_options": [
+                "F"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        },
+        {
+          "human_auth": 275,
+          "neighbour_count": 18,
+          "substitution_count_range": [
+            4,
+            4
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 4,
+          "changed_residues": [
+            {
+              "human_auth": 249,
+              "human_label": 128,
+              "human_aa": "P",
+              "mouse_uniprot_options": [
+                251
+              ],
+              "mouse_aa_options": [
+                "S"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 254,
+              "human_label": 133,
+              "human_aa": "I",
+              "mouse_uniprot_options": [
+                256
+              ],
+              "mouse_aa_options": [
+                "L"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 272,
+              "human_label": 151,
+              "human_aa": "E",
+              "mouse_uniprot_options": [
+                274
+              ],
+              "mouse_aa_options": [
+                "Q"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 274,
+              "human_label": 153,
+              "human_aa": "L",
+              "mouse_uniprot_options": [
+                276
+              ],
+              "mouse_aa_options": [
+                "F"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        },
+        {
+          "human_auth": 303,
+          "neighbour_count": 28,
+          "substitution_count_range": [
+            3,
+            3
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 3,
+          "changed_residues": [
+            {
+              "human_auth": 222,
+              "human_label": 101,
+              "human_aa": "Y",
+              "mouse_uniprot_options": [
+                224
+              ],
+              "mouse_aa_options": [
+                "F"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 272,
+              "human_label": 151,
+              "human_aa": "E",
+              "mouse_uniprot_options": [
+                274
+              ],
+              "mouse_aa_options": [
+                "Q"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 537,
+              "human_label": 416,
+              "human_aa": "L",
+              "mouse_uniprot_options": [
+                540
+              ],
+              "mouse_aa_options": [
+                "F"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        },
+        {
+          "human_auth": 331,
+          "neighbour_count": 21,
+          "substitution_count_range": [
+            5,
+            5
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 5,
+          "changed_residues": [
+            {
+              "human_auth": 222,
+              "human_label": 101,
+              "human_aa": "Y",
+              "mouse_uniprot_options": [
+                224
+              ],
+              "mouse_aa_options": [
+                "F"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 225,
+              "human_label": 104,
+              "human_aa": "A",
+              "mouse_uniprot_options": [
+                227
+              ],
+              "mouse_aa_options": [
+                "P"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 226,
+              "human_label": 105,
+              "human_aa": "A",
+              "mouse_uniprot_options": [
+                228
+              ],
+              "mouse_aa_options": [
+                "T"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 272,
+              "human_label": 151,
+              "human_aa": "E",
+              "mouse_uniprot_options": [
+                274
+              ],
+              "mouse_aa_options": [
+                "Q"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 325,
+              "human_label": 204,
+              "human_aa": "R",
+              "mouse_uniprot_options": [
+                327
+              ],
+              "mouse_aa_options": [
+                "Q"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "center": {
+        "human_auth": 381,
+        "human_label": 260,
+        "human_aa": "L",
+        "mouse_uniprot_options": [
+          383
+        ],
+        "mouse_aa_options": [
+          "L"
+        ],
+        "identical": true,
+        "mapping_ambiguous": false
+      },
+      "conserved_surface": [
+        {
+          "human_auth": 189,
+          "human_label": 68,
+          "human_aa": "K",
+          "mouse_uniprot_options": [
+            191
+          ],
+          "mouse_aa_options": [
+            "K"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.3338968004311552
+        },
+        {
+          "human_auth": 193,
+          "human_label": 72,
+          "human_aa": "K",
+          "mouse_uniprot_options": [
+            195
+          ],
+          "mouse_aa_options": [
+            "K"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.40553017142964815
+        },
+        {
+          "human_auth": 380,
+          "human_label": 259,
+          "human_aa": "V",
+          "mouse_uniprot_options": [
+            382
+          ],
+          "mouse_aa_options": [
+            "V"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.30884744605618547
+        },
+        {
+          "human_auth": 381,
+          "human_label": 260,
+          "human_aa": "L",
+          "mouse_uniprot_options": [
+            383
+          ],
+          "mouse_aa_options": [
+            "L"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.44460969587927646
+        },
+        {
+          "human_auth": 382,
+          "human_label": 261,
+          "human_aa": "K",
+          "mouse_uniprot_options": [
+            384
+          ],
+          "mouse_aa_options": [
+            "K"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.4143148365754153
+        },
+        {
+          "human_auth": 383,
+          "human_label": 262,
+          "human_aa": "E",
+          "mouse_uniprot_options": [
+            385
+          ],
+          "mouse_aa_options": [
+            "E"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.36202040102268124
+        }
+      ],
+      "substituted_surface": [
+        {
+          "human_auth": 194,
+          "human_label": 73,
+          "human_aa": "D",
+          "mouse_uniprot_options": [
+            196
+          ],
+          "mouse_aa_options": [
+            "S"
+          ],
+          "identical": false,
+          "mapping_ambiguous": false
+        }
+      ],
+      "environment_changed": 13,
+      "environment_size": 58,
+      "environment_conservation": 0.7758620689655172,
+      "conserved_surface_sasa_A2": 496.11962070451636,
+      "per_residue_neighbourhood": [
+        {
+          "human_auth": 189,
+          "neighbour_count": 28,
+          "substitution_count_range": [
+            4,
+            4
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 4,
+          "changed_residues": [
+            {
+              "human_auth": 187,
+              "human_label": 66,
+              "human_aa": "F",
+              "mouse_uniprot_options": [
+                189
+              ],
+              "mouse_aa_options": [
+                "Y"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 222,
+              "human_label": 101,
+              "human_aa": "Y",
+              "mouse_uniprot_options": [
+                224
+              ],
+              "mouse_aa_options": [
+                "F"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 384,
+              "human_label": 263,
+              "human_aa": "I",
+              "mouse_uniprot_options": [
+                386
+              ],
+              "mouse_aa_options": [
+                "R"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 385,
+              "human_label": 264,
+              "human_aa": "K",
+              "mouse_uniprot_options": [
+                387
+              ],
+              "mouse_aa_options": [
+                "R"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        },
+        {
+          "human_auth": 193,
+          "neighbour_count": 25,
+          "substitution_count_range": [
+            7,
+            7
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 7,
+          "changed_residues": [
+            {
+              "human_auth": 194,
+              "human_label": 73,
+              "human_aa": "D",
+              "mouse_uniprot_options": [
+                196
+              ],
+              "mouse_aa_options": [
+                "S"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 196,
+              "human_label": 75,
+              "human_aa": "A",
+              "mouse_uniprot_options": [
+                199
+              ],
+              "mouse_aa_options": [
+                "G"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 215,
+              "human_label": 94,
+              "human_aa": "N",
+              "mouse_uniprot_options": [
+                217
+              ],
+              "mouse_aa_options": [
+                "S"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 217,
+              "human_label": 96,
+              "human_aa": "G",
+              "mouse_uniprot_options": [
+                219
+              ],
+              "mouse_aa_options": [
+                "E"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 296,
+              "human_label": 175,
+              "human_aa": "S",
+              "mouse_uniprot_options": [
+                298
+              ],
+              "mouse_aa_options": [
+                "A"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 378,
+              "human_label": 257,
+              "human_aa": "S",
+              "mouse_uniprot_options": [
+                380
+              ],
+              "mouse_aa_options": [
+                "K"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 412,
+              "human_label": 291,
+              "human_aa": "W",
+              "mouse_uniprot_options": [
+                414
+              ],
+              "mouse_aa_options": [
+                "L"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        },
+        {
+          "human_auth": 380,
+          "neighbour_count": 21,
+          "substitution_count_range": [
+            5,
+            5
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 5,
+          "changed_residues": [
+            {
+              "human_auth": 194,
+              "human_label": 73,
+              "human_aa": "D",
+              "mouse_uniprot_options": [
+                196
+              ],
+              "mouse_aa_options": [
+                "S"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 196,
+              "human_label": 75,
+              "human_aa": "A",
+              "mouse_uniprot_options": [
+                199
+              ],
+              "mouse_aa_options": [
+                "G"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 222,
+              "human_label": 101,
+              "human_aa": "Y",
+              "mouse_uniprot_options": [
+                224
+              ],
+              "mouse_aa_options": [
+                "F"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 225,
+              "human_label": 104,
+              "human_aa": "A",
+              "mouse_uniprot_options": [
+                227
+              ],
+              "mouse_aa_options": [
+                "P"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 378,
+              "human_label": 257,
+              "human_aa": "S",
+              "mouse_uniprot_options": [
+                380
+              ],
+              "mouse_aa_options": [
+                "K"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        },
+        {
+          "human_auth": 381,
+          "neighbour_count": 22,
+          "substitution_count_range": [
+            6,
+            6
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 6,
+          "changed_residues": [
+            {
+              "human_auth": 194,
+              "human_label": 73,
+              "human_aa": "D",
+              "mouse_uniprot_options": [
+                196
+              ],
+              "mouse_aa_options": [
+                "S"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 222,
+              "human_label": 101,
+              "human_aa": "Y",
+              "mouse_uniprot_options": [
+                224
+              ],
+              "mouse_aa_options": [
+                "F"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 225,
+              "human_label": 104,
+              "human_aa": "A",
+              "mouse_uniprot_options": [
+                227
+              ],
+              "mouse_aa_options": [
+                "P"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 325,
+              "human_label": 204,
+              "human_aa": "R",
+              "mouse_uniprot_options": [
+                327
+              ],
+              "mouse_aa_options": [
+                "Q"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 378,
+              "human_label": 257,
+              "human_aa": "S",
+              "mouse_uniprot_options": [
+                380
+              ],
+              "mouse_aa_options": [
+                "K"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 384,
+              "human_label": 263,
+              "human_aa": "I",
+              "mouse_uniprot_options": [
+                386
+              ],
+              "mouse_aa_options": [
+                "R"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        },
+        {
+          "human_auth": 382,
+          "neighbour_count": 21,
+          "substitution_count_range": [
+            4,
+            4
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 4,
+          "changed_residues": [
+            {
+              "human_auth": 187,
+              "human_label": 66,
+              "human_aa": "F",
+              "mouse_uniprot_options": [
+                189
+              ],
+              "mouse_aa_options": [
+                "Y"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 222,
+              "human_label": 101,
+              "human_aa": "Y",
+              "mouse_uniprot_options": [
+                224
+              ],
+              "mouse_aa_options": [
+                "F"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 384,
+              "human_label": 263,
+              "human_aa": "I",
+              "mouse_uniprot_options": [
+                386
+              ],
+              "mouse_aa_options": [
+                "R"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 385,
+              "human_label": 264,
+              "human_aa": "K",
+              "mouse_uniprot_options": [
+                387
+              ],
+              "mouse_aa_options": [
+                "R"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        },
+        {
+          "human_auth": 383,
+          "neighbour_count": 20,
+          "substitution_count_range": [
+            3,
+            3
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 3,
+          "changed_residues": [
+            {
+              "human_auth": 187,
+              "human_label": 66,
+              "human_aa": "F",
+              "mouse_uniprot_options": [
+                189
+              ],
+              "mouse_aa_options": [
+                "Y"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 384,
+              "human_label": 263,
+              "human_aa": "I",
+              "mouse_uniprot_options": [
+                386
+              ],
+              "mouse_aa_options": [
+                "R"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 385,
+              "human_label": 264,
+              "human_aa": "K",
+              "mouse_uniprot_options": [
+                387
+              ],
+              "mouse_aa_options": [
+                "R"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "center": {
+        "human_auth": 382,
+        "human_label": 261,
+        "human_aa": "K",
+        "mouse_uniprot_options": [
+          384
+        ],
+        "mouse_aa_options": [
+          "K"
+        ],
+        "identical": true,
+        "mapping_ambiguous": false
+      },
+      "conserved_surface": [
+        {
+          "human_auth": 189,
+          "human_label": 68,
+          "human_aa": "K",
+          "mouse_uniprot_options": [
+            191
+          ],
+          "mouse_aa_options": [
+            "K"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.3338968004311552
+        },
+        {
+          "human_auth": 193,
+          "human_label": 72,
+          "human_aa": "K",
+          "mouse_uniprot_options": [
+            195
+          ],
+          "mouse_aa_options": [
+            "K"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.40553017142964815
+        },
+        {
+          "human_auth": 380,
+          "human_label": 259,
+          "human_aa": "V",
+          "mouse_uniprot_options": [
+            382
+          ],
+          "mouse_aa_options": [
+            "V"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.30884744605618547
+        },
+        {
+          "human_auth": 381,
+          "human_label": 260,
+          "human_aa": "L",
+          "mouse_uniprot_options": [
+            383
+          ],
+          "mouse_aa_options": [
+            "L"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.44460969587927646
+        },
+        {
+          "human_auth": 382,
+          "human_label": 261,
+          "human_aa": "K",
+          "mouse_uniprot_options": [
+            384
+          ],
+          "mouse_aa_options": [
+            "K"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.4143148365754153
+        },
+        {
+          "human_auth": 383,
+          "human_label": 262,
+          "human_aa": "E",
+          "mouse_uniprot_options": [
+            385
+          ],
+          "mouse_aa_options": [
+            "E"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.36202040102268124
+        }
+      ],
+      "substituted_surface": [],
+      "environment_changed": 13,
+      "environment_size": 58,
+      "environment_conservation": 0.7758620689655172,
+      "conserved_surface_sasa_A2": 496.11962070451636,
+      "per_residue_neighbourhood": [
+        {
+          "human_auth": 189,
+          "neighbour_count": 28,
+          "substitution_count_range": [
+            4,
+            4
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 4,
+          "changed_residues": [
+            {
+              "human_auth": 187,
+              "human_label": 66,
+              "human_aa": "F",
+              "mouse_uniprot_options": [
+                189
+              ],
+              "mouse_aa_options": [
+                "Y"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 222,
+              "human_label": 101,
+              "human_aa": "Y",
+              "mouse_uniprot_options": [
+                224
+              ],
+              "mouse_aa_options": [
+                "F"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 384,
+              "human_label": 263,
+              "human_aa": "I",
+              "mouse_uniprot_options": [
+                386
+              ],
+              "mouse_aa_options": [
+                "R"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 385,
+              "human_label": 264,
+              "human_aa": "K",
+              "mouse_uniprot_options": [
+                387
+              ],
+              "mouse_aa_options": [
+                "R"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        },
+        {
+          "human_auth": 193,
+          "neighbour_count": 25,
+          "substitution_count_range": [
+            7,
+            7
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 7,
+          "changed_residues": [
+            {
+              "human_auth": 194,
+              "human_label": 73,
+              "human_aa": "D",
+              "mouse_uniprot_options": [
+                196
+              ],
+              "mouse_aa_options": [
+                "S"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 196,
+              "human_label": 75,
+              "human_aa": "A",
+              "mouse_uniprot_options": [
+                199
+              ],
+              "mouse_aa_options": [
+                "G"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 215,
+              "human_label": 94,
+              "human_aa": "N",
+              "mouse_uniprot_options": [
+                217
+              ],
+              "mouse_aa_options": [
+                "S"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 217,
+              "human_label": 96,
+              "human_aa": "G",
+              "mouse_uniprot_options": [
+                219
+              ],
+              "mouse_aa_options": [
+                "E"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 296,
+              "human_label": 175,
+              "human_aa": "S",
+              "mouse_uniprot_options": [
+                298
+              ],
+              "mouse_aa_options": [
+                "A"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 378,
+              "human_label": 257,
+              "human_aa": "S",
+              "mouse_uniprot_options": [
+                380
+              ],
+              "mouse_aa_options": [
+                "K"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 412,
+              "human_label": 291,
+              "human_aa": "W",
+              "mouse_uniprot_options": [
+                414
+              ],
+              "mouse_aa_options": [
+                "L"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        },
+        {
+          "human_auth": 380,
+          "neighbour_count": 21,
+          "substitution_count_range": [
+            5,
+            5
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 5,
+          "changed_residues": [
+            {
+              "human_auth": 194,
+              "human_label": 73,
+              "human_aa": "D",
+              "mouse_uniprot_options": [
+                196
+              ],
+              "mouse_aa_options": [
+                "S"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 196,
+              "human_label": 75,
+              "human_aa": "A",
+              "mouse_uniprot_options": [
+                199
+              ],
+              "mouse_aa_options": [
+                "G"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 222,
+              "human_label": 101,
+              "human_aa": "Y",
+              "mouse_uniprot_options": [
+                224
+              ],
+              "mouse_aa_options": [
+                "F"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 225,
+              "human_label": 104,
+              "human_aa": "A",
+              "mouse_uniprot_options": [
+                227
+              ],
+              "mouse_aa_options": [
+                "P"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 378,
+              "human_label": 257,
+              "human_aa": "S",
+              "mouse_uniprot_options": [
+                380
+              ],
+              "mouse_aa_options": [
+                "K"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        },
+        {
+          "human_auth": 381,
+          "neighbour_count": 22,
+          "substitution_count_range": [
+            6,
+            6
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 6,
+          "changed_residues": [
+            {
+              "human_auth": 194,
+              "human_label": 73,
+              "human_aa": "D",
+              "mouse_uniprot_options": [
+                196
+              ],
+              "mouse_aa_options": [
+                "S"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 222,
+              "human_label": 101,
+              "human_aa": "Y",
+              "mouse_uniprot_options": [
+                224
+              ],
+              "mouse_aa_options": [
+                "F"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 225,
+              "human_label": 104,
+              "human_aa": "A",
+              "mouse_uniprot_options": [
+                227
+              ],
+              "mouse_aa_options": [
+                "P"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 325,
+              "human_label": 204,
+              "human_aa": "R",
+              "mouse_uniprot_options": [
+                327
+              ],
+              "mouse_aa_options": [
+                "Q"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 378,
+              "human_label": 257,
+              "human_aa": "S",
+              "mouse_uniprot_options": [
+                380
+              ],
+              "mouse_aa_options": [
+                "K"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 384,
+              "human_label": 263,
+              "human_aa": "I",
+              "mouse_uniprot_options": [
+                386
+              ],
+              "mouse_aa_options": [
+                "R"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        },
+        {
+          "human_auth": 382,
+          "neighbour_count": 21,
+          "substitution_count_range": [
+            4,
+            4
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 4,
+          "changed_residues": [
+            {
+              "human_auth": 187,
+              "human_label": 66,
+              "human_aa": "F",
+              "mouse_uniprot_options": [
+                189
+              ],
+              "mouse_aa_options": [
+                "Y"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 222,
+              "human_label": 101,
+              "human_aa": "Y",
+              "mouse_uniprot_options": [
+                224
+              ],
+              "mouse_aa_options": [
+                "F"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 384,
+              "human_label": 263,
+              "human_aa": "I",
+              "mouse_uniprot_options": [
+                386
+              ],
+              "mouse_aa_options": [
+                "R"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 385,
+              "human_label": 264,
+              "human_aa": "K",
+              "mouse_uniprot_options": [
+                387
+              ],
+              "mouse_aa_options": [
+                "R"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        },
+        {
+          "human_auth": 383,
+          "neighbour_count": 20,
+          "substitution_count_range": [
+            3,
+            3
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 3,
+          "changed_residues": [
+            {
+              "human_auth": 187,
+              "human_label": 66,
+              "human_aa": "F",
+              "mouse_uniprot_options": [
+                189
+              ],
+              "mouse_aa_options": [
+                "Y"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 384,
+              "human_label": 263,
+              "human_aa": "I",
+              "mouse_uniprot_options": [
+                386
+              ],
+              "mouse_aa_options": [
+                "R"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 385,
+              "human_label": 264,
+              "human_aa": "K",
+              "mouse_uniprot_options": [
+                387
+              ],
+              "mouse_aa_options": [
+                "R"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "center": {
+        "human_auth": 380,
+        "human_label": 259,
+        "human_aa": "V",
+        "mouse_uniprot_options": [
+          382
+        ],
+        "mouse_aa_options": [
+          "V"
+        ],
+        "identical": true,
+        "mapping_ambiguous": false
+      },
+      "conserved_surface": [
+        {
+          "human_auth": 193,
+          "human_label": 72,
+          "human_aa": "K",
+          "mouse_uniprot_options": [
+            195
+          ],
+          "mouse_aa_options": [
+            "K"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.40553017142964815
+        },
+        {
+          "human_auth": 195,
+          "human_label": 74,
+          "human_aa": "S",
+          "mouse_uniprot_options": [
+            197
+          ],
+          "mouse_aa_options": [
+            "S"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.71609580502296
+        },
+        {
+          "human_auth": 224,
+          "human_label": 103,
+          "human_aa": "K",
+          "mouse_uniprot_options": [
+            226
+          ],
+          "mouse_aa_options": [
+            "K"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.34170943551096844
+        },
+        {
+          "human_auth": 380,
+          "human_label": 259,
+          "human_aa": "V",
+          "mouse_uniprot_options": [
+            382
+          ],
+          "mouse_aa_options": [
+            "V"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.30884744605618547
+        },
+        {
+          "human_auth": 381,
+          "human_label": 260,
+          "human_aa": "L",
+          "mouse_uniprot_options": [
+            383
+          ],
+          "mouse_aa_options": [
+            "L"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.44460969587927646
+        },
+        {
+          "human_auth": 382,
+          "human_label": 261,
+          "human_aa": "K",
+          "mouse_uniprot_options": [
+            384
+          ],
+          "mouse_aa_options": [
+            "K"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.4143148365754153
+        }
+      ],
+      "substituted_surface": [
+        {
+          "human_auth": 194,
+          "human_label": 73,
+          "human_aa": "D",
+          "mouse_uniprot_options": [
+            196
+          ],
+          "mouse_aa_options": [
+            "S"
+          ],
+          "identical": false,
+          "mapping_ambiguous": false
+        },
+        {
+          "human_auth": 225,
+          "human_label": 104,
+          "human_aa": "A",
+          "mouse_uniprot_options": [
+            227
+          ],
+          "mouse_aa_options": [
+            "P"
+          ],
+          "identical": false,
+          "mapping_ambiguous": false
+        }
+      ],
+      "environment_changed": 17,
+      "environment_size": 60,
+      "environment_conservation": 0.7166666666666667,
+      "conserved_surface_sasa_A2": 528.2277029338532,
+      "per_residue_neighbourhood": [
+        {
+          "human_auth": 193,
+          "neighbour_count": 25,
+          "substitution_count_range": [
+            7,
+            7
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 7,
+          "changed_residues": [
+            {
+              "human_auth": 194,
+              "human_label": 73,
+              "human_aa": "D",
+              "mouse_uniprot_options": [
+                196
+              ],
+              "mouse_aa_options": [
+                "S"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 196,
+              "human_label": 75,
+              "human_aa": "A",
+              "mouse_uniprot_options": [
+                199
+              ],
+              "mouse_aa_options": [
+                "G"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 215,
+              "human_label": 94,
+              "human_aa": "N",
+              "mouse_uniprot_options": [
+                217
+              ],
+              "mouse_aa_options": [
+                "S"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 217,
+              "human_label": 96,
+              "human_aa": "G",
+              "mouse_uniprot_options": [
+                219
+              ],
+              "mouse_aa_options": [
+                "E"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 296,
+              "human_label": 175,
+              "human_aa": "S",
+              "mouse_uniprot_options": [
+                298
+              ],
+              "mouse_aa_options": [
+                "A"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 378,
+              "human_label": 257,
+              "human_aa": "S",
+              "mouse_uniprot_options": [
+                380
+              ],
+              "mouse_aa_options": [
+                "K"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 412,
+              "human_label": 291,
+              "human_aa": "W",
+              "mouse_uniprot_options": [
+                414
+              ],
+              "mouse_aa_options": [
+                "L"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        },
+        {
+          "human_auth": 195,
+          "neighbour_count": 9,
+          "substitution_count_range": [
+            3,
+            3
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 3,
+          "changed_residues": [
+            {
+              "human_auth": 194,
+              "human_label": 73,
+              "human_aa": "D",
+              "mouse_uniprot_options": [
+                196
+              ],
+              "mouse_aa_options": [
+                "S"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 196,
+              "human_label": 75,
+              "human_aa": "A",
+              "mouse_uniprot_options": [
+                199
+              ],
+              "mouse_aa_options": [
+                "G"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 378,
+              "human_label": 257,
+              "human_aa": "S",
+              "mouse_uniprot_options": [
+                380
+              ],
+              "mouse_aa_options": [
+                "K"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        },
+        {
+          "human_auth": 224,
+          "neighbour_count": 27,
+          "substitution_count_range": [
+            8,
+            8
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 8,
+          "changed_residues": [
+            {
+              "human_auth": 222,
+              "human_label": 101,
+              "human_aa": "Y",
+              "mouse_uniprot_options": [
+                224
+              ],
+              "mouse_aa_options": [
+                "F"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 225,
+              "human_label": 104,
+              "human_aa": "A",
+              "mouse_uniprot_options": [
+                227
+              ],
+              "mouse_aa_options": [
+                "P"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 226,
+              "human_label": 105,
+              "human_aa": "A",
+              "mouse_uniprot_options": [
+                228
+              ],
+              "mouse_aa_options": [
+                "T"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 227,
+              "human_label": 106,
+              "human_aa": "T",
+              "mouse_uniprot_options": [
+                229
+              ],
+              "mouse_aa_options": [
+                "E"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 272,
+              "human_label": 151,
+              "human_aa": "E",
+              "mouse_uniprot_options": [
+                274
+              ],
+              "mouse_aa_options": [
+                "Q"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 325,
+              "human_label": 204,
+              "human_aa": "R",
+              "mouse_uniprot_options": [
+                327
+              ],
+              "mouse_aa_options": [
+                "Q"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 376,
+              "human_label": 255,
+              "human_aa": "T",
+              "mouse_uniprot_options": [
+                378
+              ],
+              "mouse_aa_options": [
+                "I"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 378,
+              "human_label": 257,
+              "human_aa": "S",
+              "mouse_uniprot_options": [
+                380
+              ],
+              "mouse_aa_options": [
+                "K"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        },
+        {
+          "human_auth": 380,
+          "neighbour_count": 21,
+          "substitution_count_range": [
+            5,
+            5
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 5,
+          "changed_residues": [
+            {
+              "human_auth": 194,
+              "human_label": 73,
+              "human_aa": "D",
+              "mouse_uniprot_options": [
+                196
+              ],
+              "mouse_aa_options": [
+                "S"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 196,
+              "human_label": 75,
+              "human_aa": "A",
+              "mouse_uniprot_options": [
+                199
+              ],
+              "mouse_aa_options": [
+                "G"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 222,
+              "human_label": 101,
+              "human_aa": "Y",
+              "mouse_uniprot_options": [
+                224
+              ],
+              "mouse_aa_options": [
+                "F"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 225,
+              "human_label": 104,
+              "human_aa": "A",
+              "mouse_uniprot_options": [
+                227
+              ],
+              "mouse_aa_options": [
+                "P"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 378,
+              "human_label": 257,
+              "human_aa": "S",
+              "mouse_uniprot_options": [
+                380
+              ],
+              "mouse_aa_options": [
+                "K"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        },
+        {
+          "human_auth": 381,
+          "neighbour_count": 22,
+          "substitution_count_range": [
+            6,
+            6
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 6,
+          "changed_residues": [
+            {
+              "human_auth": 194,
+              "human_label": 73,
+              "human_aa": "D",
+              "mouse_uniprot_options": [
+                196
+              ],
+              "mouse_aa_options": [
+                "S"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 222,
+              "human_label": 101,
+              "human_aa": "Y",
+              "mouse_uniprot_options": [
+                224
+              ],
+              "mouse_aa_options": [
+                "F"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 225,
+              "human_label": 104,
+              "human_aa": "A",
+              "mouse_uniprot_options": [
+                227
+              ],
+              "mouse_aa_options": [
+                "P"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 325,
+              "human_label": 204,
+              "human_aa": "R",
+              "mouse_uniprot_options": [
+                327
+              ],
+              "mouse_aa_options": [
+                "Q"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 378,
+              "human_label": 257,
+              "human_aa": "S",
+              "mouse_uniprot_options": [
+                380
+              ],
+              "mouse_aa_options": [
+                "K"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 384,
+              "human_label": 263,
+              "human_aa": "I",
+              "mouse_uniprot_options": [
+                386
+              ],
+              "mouse_aa_options": [
+                "R"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        },
+        {
+          "human_auth": 382,
+          "neighbour_count": 21,
+          "substitution_count_range": [
+            4,
+            4
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 4,
+          "changed_residues": [
+            {
+              "human_auth": 187,
+              "human_label": 66,
+              "human_aa": "F",
+              "mouse_uniprot_options": [
+                189
+              ],
+              "mouse_aa_options": [
+                "Y"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 222,
+              "human_label": 101,
+              "human_aa": "Y",
+              "mouse_uniprot_options": [
+                224
+              ],
+              "mouse_aa_options": [
+                "F"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 384,
+              "human_label": 263,
+              "human_aa": "I",
+              "mouse_uniprot_options": [
+                386
+              ],
+              "mouse_aa_options": [
+                "R"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 385,
+              "human_label": 264,
+              "human_aa": "K",
+              "mouse_uniprot_options": [
+                387
+              ],
+              "mouse_aa_options": [
+                "R"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "center": {
+        "human_auth": 193,
+        "human_label": 72,
+        "human_aa": "K",
+        "mouse_uniprot_options": [
+          195
+        ],
+        "mouse_aa_options": [
+          "K"
+        ],
+        "identical": true,
+        "mapping_ambiguous": false
+      },
+      "conserved_surface": [
+        {
+          "human_auth": 193,
+          "human_label": 72,
+          "human_aa": "K",
+          "mouse_uniprot_options": [
+            195
+          ],
+          "mouse_aa_options": [
+            "K"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.40553017142964815
+        },
+        {
+          "human_auth": 195,
+          "human_label": 74,
+          "human_aa": "S",
+          "mouse_uniprot_options": [
+            197
+          ],
+          "mouse_aa_options": [
+            "S"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.71609580502296
+        },
+        {
+          "human_auth": 197,
+          "human_label": 76,
+          "human_aa": "Q",
+          "mouse_uniprot_options": [
+            200
+          ],
+          "mouse_aa_options": [
+            "Q"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.5779570970395644
+        },
+        {
+          "human_auth": 380,
+          "human_label": 259,
+          "human_aa": "V",
+          "mouse_uniprot_options": [
+            382
+          ],
+          "mouse_aa_options": [
+            "V"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.30884744605618547
+        },
+        {
+          "human_auth": 381,
+          "human_label": 260,
+          "human_aa": "L",
+          "mouse_uniprot_options": [
+            383
+          ],
+          "mouse_aa_options": [
+            "L"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.44460969587927646
+        },
+        {
+          "human_auth": 382,
+          "human_label": 261,
+          "human_aa": "K",
+          "mouse_uniprot_options": [
+            384
+          ],
+          "mouse_aa_options": [
+            "K"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.4143148365754153
+        }
+      ],
+      "substituted_surface": [
+        {
+          "human_auth": 194,
+          "human_label": 73,
+          "human_aa": "D",
+          "mouse_uniprot_options": [
+            196
+          ],
+          "mouse_aa_options": [
+            "S"
+          ],
+          "identical": false,
+          "mapping_ambiguous": false
+        },
+        {
+          "human_auth": 196,
+          "human_label": 75,
+          "human_aa": "A",
+          "mouse_uniprot_options": [
+            199
+          ],
+          "mouse_aa_options": [
+            "G"
+          ],
+          "identical": false,
+          "mapping_ambiguous": false
+        },
+        {
+          "human_auth": 217,
+          "human_label": 96,
+          "human_aa": "G",
+          "mouse_uniprot_options": [
+            219
+          ],
+          "mouse_aa_options": [
+            "E"
+          ],
+          "identical": false,
+          "mapping_ambiguous": false
+        }
+      ],
+      "environment_changed": 15,
+      "environment_size": 49,
+      "environment_conservation": 0.6938775510204082,
+      "conserved_surface_sasa_A2": 577.6246229871665,
+      "per_residue_neighbourhood": [
+        {
+          "human_auth": 193,
+          "neighbour_count": 25,
+          "substitution_count_range": [
+            7,
+            7
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 7,
+          "changed_residues": [
+            {
+              "human_auth": 194,
+              "human_label": 73,
+              "human_aa": "D",
+              "mouse_uniprot_options": [
+                196
+              ],
+              "mouse_aa_options": [
+                "S"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 196,
+              "human_label": 75,
+              "human_aa": "A",
+              "mouse_uniprot_options": [
+                199
+              ],
+              "mouse_aa_options": [
+                "G"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 215,
+              "human_label": 94,
+              "human_aa": "N",
+              "mouse_uniprot_options": [
+                217
+              ],
+              "mouse_aa_options": [
+                "S"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 217,
+              "human_label": 96,
+              "human_aa": "G",
+              "mouse_uniprot_options": [
+                219
+              ],
+              "mouse_aa_options": [
+                "E"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 296,
+              "human_label": 175,
+              "human_aa": "S",
+              "mouse_uniprot_options": [
+                298
+              ],
+              "mouse_aa_options": [
+                "A"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 378,
+              "human_label": 257,
+              "human_aa": "S",
+              "mouse_uniprot_options": [
+                380
+              ],
+              "mouse_aa_options": [
+                "K"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 412,
+              "human_label": 291,
+              "human_aa": "W",
+              "mouse_uniprot_options": [
+                414
+              ],
+              "mouse_aa_options": [
+                "L"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        },
+        {
+          "human_auth": 195,
+          "neighbour_count": 9,
+          "substitution_count_range": [
+            3,
+            3
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 3,
+          "changed_residues": [
+            {
+              "human_auth": 194,
+              "human_label": 73,
+              "human_aa": "D",
+              "mouse_uniprot_options": [
+                196
+              ],
+              "mouse_aa_options": [
+                "S"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 196,
+              "human_label": 75,
+              "human_aa": "A",
+              "mouse_uniprot_options": [
+                199
+              ],
+              "mouse_aa_options": [
+                "G"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 378,
+              "human_label": 257,
+              "human_aa": "S",
+              "mouse_uniprot_options": [
+                380
+              ],
+              "mouse_aa_options": [
+                "K"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        },
+        {
+          "human_auth": 197,
+          "neighbour_count": 15,
+          "substitution_count_range": [
+            6,
+            6
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 6,
+          "changed_residues": [
+            {
+              "human_auth": 194,
+              "human_label": 73,
+              "human_aa": "D",
+              "mouse_uniprot_options": [
+                196
+              ],
+              "mouse_aa_options": [
+                "S"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 196,
+              "human_label": 75,
+              "human_aa": "A",
+              "mouse_uniprot_options": [
+                199
+              ],
+              "mouse_aa_options": [
+                "G"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 199,
+              "human_label": 78,
+              "human_aa": "S",
+              "mouse_uniprot_options": [
+                202
+              ],
+              "mouse_aa_options": [
+                "M"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 215,
+              "human_label": 94,
+              "human_aa": "N",
+              "mouse_uniprot_options": [
+                217
+              ],
+              "mouse_aa_options": [
+                "S"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 376,
+              "human_label": 255,
+              "human_aa": "T",
+              "mouse_uniprot_options": [
+                378
+              ],
+              "mouse_aa_options": [
+                "I"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 378,
+              "human_label": 257,
+              "human_aa": "S",
+              "mouse_uniprot_options": [
+                380
+              ],
+              "mouse_aa_options": [
+                "K"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        },
+        {
+          "human_auth": 380,
+          "neighbour_count": 21,
+          "substitution_count_range": [
+            5,
+            5
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 5,
+          "changed_residues": [
+            {
+              "human_auth": 194,
+              "human_label": 73,
+              "human_aa": "D",
+              "mouse_uniprot_options": [
+                196
+              ],
+              "mouse_aa_options": [
+                "S"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 196,
+              "human_label": 75,
+              "human_aa": "A",
+              "mouse_uniprot_options": [
+                199
+              ],
+              "mouse_aa_options": [
+                "G"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 222,
+              "human_label": 101,
+              "human_aa": "Y",
+              "mouse_uniprot_options": [
+                224
+              ],
+              "mouse_aa_options": [
+                "F"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 225,
+              "human_label": 104,
+              "human_aa": "A",
+              "mouse_uniprot_options": [
+                227
+              ],
+              "mouse_aa_options": [
+                "P"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 378,
+              "human_label": 257,
+              "human_aa": "S",
+              "mouse_uniprot_options": [
+                380
+              ],
+              "mouse_aa_options": [
+                "K"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        },
+        {
+          "human_auth": 381,
+          "neighbour_count": 22,
+          "substitution_count_range": [
+            6,
+            6
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 6,
+          "changed_residues": [
+            {
+              "human_auth": 194,
+              "human_label": 73,
+              "human_aa": "D",
+              "mouse_uniprot_options": [
+                196
+              ],
+              "mouse_aa_options": [
+                "S"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 222,
+              "human_label": 101,
+              "human_aa": "Y",
+              "mouse_uniprot_options": [
+                224
+              ],
+              "mouse_aa_options": [
+                "F"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 225,
+              "human_label": 104,
+              "human_aa": "A",
+              "mouse_uniprot_options": [
+                227
+              ],
+              "mouse_aa_options": [
+                "P"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 325,
+              "human_label": 204,
+              "human_aa": "R",
+              "mouse_uniprot_options": [
+                327
+              ],
+              "mouse_aa_options": [
+                "Q"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 378,
+              "human_label": 257,
+              "human_aa": "S",
+              "mouse_uniprot_options": [
+                380
+              ],
+              "mouse_aa_options": [
+                "K"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 384,
+              "human_label": 263,
+              "human_aa": "I",
+              "mouse_uniprot_options": [
+                386
+              ],
+              "mouse_aa_options": [
+                "R"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        },
+        {
+          "human_auth": 382,
+          "neighbour_count": 21,
+          "substitution_count_range": [
+            4,
+            4
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 4,
+          "changed_residues": [
+            {
+              "human_auth": 187,
+              "human_label": 66,
+              "human_aa": "F",
+              "mouse_uniprot_options": [
+                189
+              ],
+              "mouse_aa_options": [
+                "Y"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 222,
+              "human_label": 101,
+              "human_aa": "Y",
+              "mouse_uniprot_options": [
+                224
+              ],
+              "mouse_aa_options": [
+                "F"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 384,
+              "human_label": 263,
+              "human_aa": "I",
+              "mouse_uniprot_options": [
+                386
+              ],
+              "mouse_aa_options": [
+                "R"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 385,
+              "human_label": 264,
+              "human_aa": "K",
+              "mouse_uniprot_options": [
+                387
+              ],
+              "mouse_aa_options": [
+                "R"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "center": {
+        "human_auth": 277,
+        "human_label": 156,
+        "human_aa": "I",
+        "mouse_uniprot_options": [
+          279
+        ],
+        "mouse_aa_options": [
+          "I"
+        ],
+        "identical": true,
+        "mapping_ambiguous": false
+      },
+      "conserved_surface": [
+        {
+          "human_auth": 231,
+          "human_label": 110,
+          "human_aa": "K",
+          "mouse_uniprot_options": [
+            233
+          ],
+          "mouse_aa_options": [
+            "K"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.34311583069678103
+        },
+        {
+          "human_auth": 251,
+          "human_label": 130,
+          "human_aa": "N",
+          "mouse_uniprot_options": [
+            253
+          ],
+          "mouse_aa_options": [
+            "N"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.2543847780361939
+        },
+        {
+          "human_auth": 275,
+          "human_label": 154,
+          "human_aa": "N",
+          "mouse_uniprot_options": [
+            277
+          ],
+          "mouse_aa_options": [
+            "N"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.5041522848511151
+        },
+        {
+          "human_auth": 277,
+          "human_label": 156,
+          "human_aa": "I",
+          "mouse_uniprot_options": [
+            279
+          ],
+          "mouse_aa_options": [
+            "I"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.22167473253566172
+        },
+        {
+          "human_auth": 331,
+          "human_label": 210,
+          "human_aa": "N",
+          "mouse_uniprot_options": [
+            333
+          ],
+          "mouse_aa_options": [
+            "N"
+          ],
+          "identical": true,
+          "mapping_ambiguous": false,
+          "rsa": 0.4649300644466508
+        }
+      ],
+      "substituted_surface": [
+        {
+          "human_auth": 226,
+          "human_label": 105,
+          "human_aa": "A",
+          "mouse_uniprot_options": [
+            228
+          ],
+          "mouse_aa_options": [
+            "T"
+          ],
+          "identical": false,
+          "mapping_ambiguous": false
+        },
+        {
+          "human_auth": 227,
+          "human_label": 106,
+          "human_aa": "T",
+          "mouse_uniprot_options": [
+            229
+          ],
+          "mouse_aa_options": [
+            "E"
+          ],
+          "identical": false,
+          "mapping_ambiguous": false
+        },
+        {
+          "human_auth": 229,
+          "human_label": 108,
+          "human_aa": "T",
+          "mouse_uniprot_options": [
+            231
+          ],
+          "mouse_aa_options": [
+            "S"
+          ],
+          "identical": false,
+          "mapping_ambiguous": false
+        },
+        {
+          "human_auth": 272,
+          "human_label": 151,
+          "human_aa": "E",
+          "mouse_uniprot_options": [
+            274
+          ],
+          "mouse_aa_options": [
+            "Q"
+          ],
+          "identical": false,
+          "mapping_ambiguous": false
+        },
+        {
+          "human_auth": 274,
+          "human_label": 153,
+          "human_aa": "L",
+          "mouse_uniprot_options": [
+            276
+          ],
+          "mouse_aa_options": [
+            "F"
+          ],
+          "identical": false,
+          "mapping_ambiguous": false
+        }
+      ],
+      "environment_changed": 18,
+      "environment_size": 58,
+      "environment_conservation": 0.6896551724137931,
+      "conserved_surface_sasa_A2": 363.22134818408784,
+      "per_residue_neighbourhood": [
+        {
+          "human_auth": 231,
+          "neighbour_count": 27,
+          "substitution_count_range": [
+            11,
+            11
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 11,
+          "changed_residues": [
+            {
+              "human_auth": 205,
+              "human_label": 84,
+              "human_aa": "K",
+              "mouse_uniprot_options": [
+                208
+              ],
+              "mouse_aa_options": [
+                "S"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 229,
+              "human_label": 108,
+              "human_aa": "T",
+              "mouse_uniprot_options": [
+                231
+              ],
+              "mouse_aa_options": [
+                "S"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 248,
+              "human_label": 127,
+              "human_aa": "T",
+              "mouse_uniprot_options": [
+                250
+              ],
+              "mouse_aa_options": [
+                "Y"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 249,
+              "human_label": 128,
+              "human_aa": "P",
+              "mouse_uniprot_options": [
+                251
+              ],
+              "mouse_aa_options": [
+                "S"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 254,
+              "human_label": 133,
+              "human_aa": "I",
+              "mouse_uniprot_options": [
+                256
+              ],
+              "mouse_aa_options": [
+                "L"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 365,
+              "human_label": 244,
+              "human_aa": "M",
+              "mouse_uniprot_options": [
+                367
+              ],
+              "mouse_aa_options": [
+                "L"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 366,
+              "human_label": 245,
+              "human_aa": "V",
+              "mouse_uniprot_options": [
+                368
+              ],
+              "mouse_aa_options": [
+                "E"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 367,
+              "human_label": 246,
+              "human_aa": "T",
+              "mouse_uniprot_options": [
+                369
+              ],
+              "mouse_aa_options": [
+                "L"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 369,
+              "human_label": 248,
+              "human_aa": "E",
+              "mouse_uniprot_options": [
+                371
+              ],
+              "mouse_aa_options": [
+                "Q"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 370,
+              "human_label": 249,
+              "human_aa": "S",
+              "mouse_uniprot_options": [
+                372
+              ],
+              "mouse_aa_options": [
+                "N"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 371,
+              "human_label": 250,
+              "human_aa": "K",
+              "mouse_uniprot_options": [
+                373
+              ],
+              "mouse_aa_options": [
+                "Q"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        },
+        {
+          "human_auth": 251,
+          "neighbour_count": 15,
+          "substitution_count_range": [
+            5,
+            5
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 5,
+          "changed_residues": [
+            {
+              "human_auth": 248,
+              "human_label": 127,
+              "human_aa": "T",
+              "mouse_uniprot_options": [
+                250
+              ],
+              "mouse_aa_options": [
+                "Y"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 249,
+              "human_label": 128,
+              "human_aa": "P",
+              "mouse_uniprot_options": [
+                251
+              ],
+              "mouse_aa_options": [
+                "S"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 254,
+              "human_label": 133,
+              "human_aa": "I",
+              "mouse_uniprot_options": [
+                256
+              ],
+              "mouse_aa_options": [
+                "L"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 272,
+              "human_label": 151,
+              "human_aa": "E",
+              "mouse_uniprot_options": [
+                274
+              ],
+              "mouse_aa_options": [
+                "Q"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 274,
+              "human_label": 153,
+              "human_aa": "L",
+              "mouse_uniprot_options": [
+                276
+              ],
+              "mouse_aa_options": [
+                "F"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        },
+        {
+          "human_auth": 275,
+          "neighbour_count": 18,
+          "substitution_count_range": [
+            4,
+            4
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 4,
+          "changed_residues": [
+            {
+              "human_auth": 249,
+              "human_label": 128,
+              "human_aa": "P",
+              "mouse_uniprot_options": [
+                251
+              ],
+              "mouse_aa_options": [
+                "S"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 254,
+              "human_label": 133,
+              "human_aa": "I",
+              "mouse_uniprot_options": [
+                256
+              ],
+              "mouse_aa_options": [
+                "L"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 272,
+              "human_label": 151,
+              "human_aa": "E",
+              "mouse_uniprot_options": [
+                274
+              ],
+              "mouse_aa_options": [
+                "Q"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 274,
+              "human_label": 153,
+              "human_aa": "L",
+              "mouse_uniprot_options": [
+                276
+              ],
+              "mouse_aa_options": [
+                "F"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        },
+        {
+          "human_auth": 277,
+          "neighbour_count": 28,
+          "substitution_count_range": [
+            6,
+            6
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 6,
+          "changed_residues": [
+            {
+              "human_auth": 226,
+              "human_label": 105,
+              "human_aa": "A",
+              "mouse_uniprot_options": [
+                228
+              ],
+              "mouse_aa_options": [
+                "T"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 227,
+              "human_label": 106,
+              "human_aa": "T",
+              "mouse_uniprot_options": [
+                229
+              ],
+              "mouse_aa_options": [
+                "E"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 229,
+              "human_label": 108,
+              "human_aa": "T",
+              "mouse_uniprot_options": [
+                231
+              ],
+              "mouse_aa_options": [
+                "S"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 254,
+              "human_label": 133,
+              "human_aa": "I",
+              "mouse_uniprot_options": [
+                256
+              ],
+              "mouse_aa_options": [
+                "L"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 272,
+              "human_label": 151,
+              "human_aa": "E",
+              "mouse_uniprot_options": [
+                274
+              ],
+              "mouse_aa_options": [
+                "Q"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 274,
+              "human_label": 153,
+              "human_aa": "L",
+              "mouse_uniprot_options": [
+                276
+              ],
+              "mouse_aa_options": [
+                "F"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        },
+        {
+          "human_auth": 331,
+          "neighbour_count": 21,
+          "substitution_count_range": [
+            5,
+            5
+          ],
+          "deletion_count_range": [
+            0,
+            0
+          ],
+          "nonidentical_count": 5,
+          "changed_residues": [
+            {
+              "human_auth": 222,
+              "human_label": 101,
+              "human_aa": "Y",
+              "mouse_uniprot_options": [
+                224
+              ],
+              "mouse_aa_options": [
+                "F"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 225,
+              "human_label": 104,
+              "human_aa": "A",
+              "mouse_uniprot_options": [
+                227
+              ],
+              "mouse_aa_options": [
+                "P"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 226,
+              "human_label": 105,
+              "human_aa": "A",
+              "mouse_uniprot_options": [
+                228
+              ],
+              "mouse_aa_options": [
+                "T"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 272,
+              "human_label": 151,
+              "human_aa": "E",
+              "mouse_uniprot_options": [
+                274
+              ],
+              "mouse_aa_options": [
+                "Q"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            },
+            {
+              "human_auth": 325,
+              "human_label": 204,
+              "human_aa": "R",
+              "mouse_uniprot_options": [
+                327
+              ],
+              "mouse_aa_options": [
+                "Q"
+              ],
+              "identical": false,
+              "mapping_ambiguous": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "verdict": "Partially conserved only: 2/5 identities; two charge-losing substitutions and one ambiguous nonconserved indel/substitution. As-is cross-reactivity remains unestablished.",
+  "limitations": [
+    "Sequence/geometry and exposure only, no binding or cross-reactivity measurement",
+    "Human local neighbourhood, not a mouse side-chain recognition model",
+    "Observed glycan atoms only, no complete assay glycans or tags",
+    "All equally optimal alignments retained; human210 cannot be assigned uniquely from these sequences/settings"
+  ]
+}

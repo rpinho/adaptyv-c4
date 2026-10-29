@@ -1,0 +1,10 @@
+rank,name,binder_chain,binder_residues,interface_contacts,clashes_04A,max_overlap_A,his_antiswitch_count,verdict
+1,tfr1_his020_200m_20261023__tfr1_apical_his_86,C,97,68,20,2.41,1,FAIL_severe_clash+antiswitch
+2,tfr1_c200m_20261023__tfr1_apical_binder_126,C,73,28,6,2.18,0,FAIL_severe_clash
+3,tfr1_his030_200m_20261023__tfr1_apical_his_133,C,73,38,0,0.0,1,MARGINAL_antiswitch_borderline
+4,tfr1_his030_200m_20261023__tfr1_apical_his_115,C,113,33,4,0.96,1,FAIL_moderate_clash+antiswitch
+5,tfr1_his020_200m_20261023__tfr1_apical_his_152,C,101,52,18,2.38,2,FAIL_severe_clash+antiswitch
+6,tfr1_his200m_20261023__tfr1_apical_his_148,C,78,40,1,0.49,0,MARGINAL_single_minor_clash
+7,tfr1_his200m_20261023__tfr1_apical_his_68,C,92,18,2,0.87,0,FAIL_moderate_clash
+8,tfr1_his020_200m_20261023__tfr1_apical_his_13,C,80,48,5,0.59,1,FAIL_moderate_clash+antiswitch
+9,tfr1_his030_200m_20261023__tfr1_apical_his_70,C,117,31,0,0.0,0,PASS

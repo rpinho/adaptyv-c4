@@ -1,0 +1,13 @@
+{"spawn_intent": 1792681897.2010229, "pid": 24795, "status": "submitted", "call_id": "fc-01M5J2NVDNPF7AE51SZ8X8P9GK", "submitted": 1792681897.378211}
+Traceback (most recent call last):
+  File "/Users/ricardo/dev/adaptyv-c4/scripts/run_diffusion_probe.py", line 25, in <module>
+    driver.atomic(STATE/'emergency_release.json',abort_after_driver_error(STATE,function_name='diffusion_generate'))
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ricardo/dev/adaptyv-c4/scripts/drive_modal_adaptive.py", line 34, in abort_after_driver_error
+    stats=function.get_current_stats()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ricardo/dev/adaptyv-c4/.venv-modal/lib/python3.11/site-packages/modal/_object.py", line 48, in wrapped
+    await self.hydrate()
+  File "/Users/ricardo/dev/adaptyv-c4/.venv-modal/lib/python3.11/site-packages/modal/_functions.py", line 1451, in _load_remote
+    raise NotFoundError(msg) from None
+modal.exception.NotFoundError: Lookup failed for Function 'diffusion_generate' from the 'adaptyv-c4-native-control' app: App 'adaptyv-c4-native-control' not found in environment 'main'.

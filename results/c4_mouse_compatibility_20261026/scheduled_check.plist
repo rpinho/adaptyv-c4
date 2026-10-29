@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.ricardo.adaptyv-c4-cpu-review</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/Applications/Xcode-26.6.0.app/Contents/Developer/usr/bin/python3</string>
+		<string>/Users/ricardo/dev/adaptyv-c4/scripts/c4_cpu_monitor_20261026.py</string>
+	</array>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>StandardErrorPath</key>
+	<string>/Users/ricardo/dev/adaptyv-c4/results/c4_mouse_compatibility_20261026/monitor_launchd_error.log</string>
+	<key>StandardOutPath</key>
+	<string>/Users/ricardo/dev/adaptyv-c4/results/c4_mouse_compatibility_20261026/monitor_launchd.log</string>
+	<key>StartInterval</key>
+	<integer>21600</integer>
+	<key>WorkingDirectory</key>
+	<string>/Users/ricardo/dev/adaptyv-c4</string>
+</dict>
+</plist>

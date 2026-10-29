@@ -1,0 +1,93 @@
+{
+  "status": "completed",
+  "started": 1792680880.6534057,
+  "prediction_jobs": 2,
+  "prediction_jobs_scheduled": 2,
+  "models": [
+    "model_1_ptm",
+    "model_2_ptm"
+  ],
+  "network_evaluations_per_prediction": 4,
+  "scope": "Complete639-residue native monomer prediction; restore/check dimer B afterward; not dimer-aware refolding",
+  "sequences": [
+    {
+      "name": "domain_primary",
+      "sequence_sha256": "cd66fa39ff0067a905e807155f9de499e21d85298001412dd9000fc650796a6e",
+      "monomer": {
+        "models": [
+          {
+            "checkpoint": "model_1_ptm",
+            "binder_pLDDT": 0.7216721220292907,
+            "geometry": {
+              "ranges_A": {
+                "N_CA": [
+                  1.4490028899212037,
+                  1.4710752869924775
+                ],
+                "CA_C": [
+                  1.5103103424884043,
+                  1.5389038623826539
+                ],
+                "C_O": [
+                  1.224046982605243,
+                  1.2420400855925504
+                ],
+                "peptide_C_N": [
+                  1.1975465121449536,
+                  1.5360583113291053
+                ],
+                "adjacent_CA": [
+                  3.6751694205540226,
+                  3.995934031064291
+                ]
+              },
+              "nonadjacent_backbone_min_A": 2.7430915755040997,
+              "passed": true,
+              "failed": []
+            },
+            "pTM": 0.4527168571949005
+          },
+          {
+            "checkpoint": "model_2_ptm",
+            "binder_pLDDT": 0.6899574813635453,
+            "geometry": {
+              "ranges_A": {
+                "N_CA": [
+                  1.4496345848825145,
+                  1.4715782692534782
+                ],
+                "CA_C": [
+                  1.5137109369959807,
+                  1.5328037397812873
+                ],
+                "C_O": [
+                  1.22382111558024,
+                  1.2425375391241957
+                ],
+                "peptide_C_N": [
+                  1.1799740474885803,
+                  1.4997965356799234
+                ],
+                "adjacent_CA": [
+                  3.6897245905993956,
+                  3.9522680024615298
+                ]
+              },
+              "nonadjacent_backbone_min_A": 2.5352022493065656,
+              "passed": true,
+              "failed": []
+            },
+            "pTM": 0.4101009666919708
+          }
+        ],
+        "mutual_internal_fold_CA_rmsd_A": 1.1626774283670633,
+        "monomer_advance": false
+      }
+    }
+  ],
+  "qualification": "Diagnostic only; no automatic generator/native admission or pH scoring",
+  "max_prediction_jobs": 4,
+  "checkpoint_scope": "AF2 monomer checkpoints may already have selected accepted domain designs; additional native-context test, not independent architecture",
+  "finished": 1792680925.4075596,
+  "plausible_monomer_sequences": 0
+}

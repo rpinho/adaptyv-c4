@@ -1,0 +1,50 @@
+{
+  "spawn_intent": 1792680864.131449,
+  "pid": 19888,
+  "status": "returned",
+  "call_id": "fc-01M5J1PAHZRDJR31H4XGP4N14G",
+  "submitted": 1792680864.380924,
+  "last_mirror_error": "NotFoundError('No such file or directory')",
+  "function_stats": {
+    "backlog": 0,
+    "num_total_runners": 0,
+    "num_running_inputs": 0,
+    "input_headroom": 0
+  },
+  "checked": 1792680965.782916,
+  "remote": {
+    "status": "completed",
+    "started": 1792680869.9781525,
+    "gpu": "NVIDIA H100 80GB HBM3, 81559 MiB, 610.57.04",
+    "container": "ta-01M5J1PATS14JMMX36VJ7P0XSR",
+    "worker_limit_seconds": 1800,
+    "checkpoints": {
+      "params_model_1_ptm.npz": "5e564f79af5bcd54ccef6e2a6bb0ff01015d01650ebc41d4575e35f0de9ecc84",
+      "params_model_2_ptm.npz": "23645d9a82c4af2ed54cd48a7b3c1c2575dc6aa9fe931adb4d7203ca5f0dc398"
+    },
+    "elapsed_seconds": 68.33291292190552,
+    "worker_pid": 31,
+    "returncode": 0,
+    "finished": 1792680938.3110647
+  },
+  "compute_estimate_upper_usd": 0.08825059038038252,
+  "estimate_excludes": "image build, container startup/teardown, storage, other apps",
+  "result": {
+    "status": "completed",
+    "started": 1792680869.9781525,
+    "gpu": "NVIDIA H100 80GB HBM3, 81559 MiB, 610.57.04",
+    "container": "ta-01M5J1PATS14JMMX36VJ7P0XSR",
+    "worker_limit_seconds": 1800,
+    "checkpoints": {
+      "params_model_1_ptm.npz": "5e564f79af5bcd54ccef6e2a6bb0ff01015d01650ebc41d4575e35f0de9ecc84",
+      "params_model_2_ptm.npz": "23645d9a82c4af2ed54cd48a7b3c1c2575dc6aa9fe931adb4d7203ca5f0dc398"
+    },
+    "elapsed_seconds": 68.33291292190552,
+    "worker_pid": 31,
+    "returncode": 0,
+    "finished": 1792680938.3110647
+  },
+  "returned": 1792680960.237903,
+  "gpu_released_verified": true,
+  "released": 1792680965.850933
+}

@@ -15,14 +15,13 @@ its titration crosses. A large dpKa that starts and ends below the window is wor
     binder His free pKa 6.0, driven to 2.0  ->  -0.28   (what burial alone buys)
     binder His free pKa 7.4, driven to 3.5  ->  -1.12   (4x more, same burial)
 
-So a switch position must be elevated-pKa when free AND depressed when bound. Ranking by
-interface burial - what install_switch.py did - only optimises the second half.
+C4 direction: a switch position must have its pKa RAISED on binding (proton uptake).
+The bound-state pKa is raised by target carboxylates (Asp/Glu salt bridges) and lowered
+by target cations (Arg/Lys). This scores both states from coordinates alone:
 
-A histidine's pKa is raised by nearby carboxylates and by solvent exposure, and depressed
-by desolvation and by nearby cations. This scores both states from coordinates alone:
-
-    free state (binder alone)   : exposed + acidic neighbours  -> high pKa
-    bound state (complex)       : buried  + basic  neighbours  -> low  pKa
+    free state (binder alone)   : exposed, normal pKa ~6.5
+    bound state (complex)       : near target D/E -> high pKa (good for C4)
+                                  near target R/K -> low  pKa (bad  for C4)
 
 No mutation modelling and no PyRosetta, so it runs on CPU while the GPUs design. Its output
 is the prioritised position list to hand to install_switch.py, which then does the
@@ -38,22 +37,23 @@ ACID = {"ASP", "GLU"}
 BASE = {"LYS", "ARG"}
 ANCHOR_AA = {"TRP", "PHE", "TYR", "LEU", "ILE", "MET", "VAL"}
 SKIP_AA = {"GLY", "PRO", "CYS"}
-PH_LOW, PH_HIGH = 6.0, 7.4
+PH_LOW, PH_HIGH = 5.5, 7.4
 # a bare histidine in water; propka3's model value
 HIS_MODEL_PKA = 6.5
 # propka-style empirical weights, used here only to RANK positions, never as a pKa claim
-W_ACID_FREE = 0.45     # per carboxylate within 8 A, raises the free-state pKa
-W_BASE_BOUND = -0.40   # per cation within 8 A in the complex, lowers the bound pKa
+W_ACID_BOUND = 0.45    # per target carboxylate within 8 A, raises the BOUND-state pKa (C4)
+W_BASE_BOUND = -0.40   # per target cation within 8 A, lowers the bound pKa (BAD for C4)
 W_DESOLV = -2.60       # per unit of fractional burial gained on binding
 
 
 def atoms(path):
     out = []
-    for line in open(path):
-        if line.startswith("ATOM"):
-            out.append((line[21], int(line[22:26]), line[17:20].strip(),
-                        line[12:16].strip(),
-                        float(line[30:38]), float(line[38:46]), float(line[46:54])))
+    with open(path) as fh:
+        for line in fh:
+            if line.startswith("ATOM"):
+                out.append((line[21], int(line[22:26]), line[17:20].strip(),
+                            line[12:16].strip(),
+                            float(line[30:38]), float(line[38:46]), float(line[46:54])))
     return out
 
 
@@ -133,14 +133,13 @@ def score_design(path, binder_chain, target_chain):
         b_bound = burial(c, res, {key})
         d_burial = b_bound - b_free
 
-        acids_free = neighbour_count(c, binder, {key}, 8.0, ACID)
-        bases_bound = neighbour_count(c, res, {key}, 8.0, BASE)
+        acids_target = neighbour_count(c, target, set(), 8.0, ACID)
         bases_target = neighbour_count(c, target, set(), 8.0, BASE)
 
-        # a ranking estimate, NOT a pKa prediction: free state raised by its own
-        # carboxylates and by exposure, bound state lowered by desolvation and cations
-        pka_free_est = HIS_MODEL_PKA + W_ACID_FREE * acids_free + W_DESOLV * b_free * 0.35
-        pka_bound_est = pka_free_est + W_DESOLV * max(0.0, d_burial) + W_BASE_BOUND * bases_target
+        # C4: reward positions where bound-state pKa is RAISED by target carboxylates
+        # (proton uptake → bind at pH 5.5); penalize nearby target cations
+        pka_free_est = HIS_MODEL_PKA + W_DESOLV * b_free * 0.35
+        pka_bound_est = pka_free_est + W_DESOLV * max(0.0, d_burial) + W_ACID_BOUND * acids_target + W_BASE_BOUND * bases_target
         est = contribution(pka_free_est, pka_bound_est)
 
         flag = ""
@@ -152,11 +151,11 @@ def score_design(path, binder_chain, target_chain):
                          resname=name,
                          burial_free=round(b_free, 3), burial_bound=round(b_bound, 3),
                          d_burial=round(d_burial, 3),
-                         acids_near_free=acids_free, bases_near_target=bases_target,
+                         acids_near_target=acids_target, bases_near_target=bases_target,
                          pka_free_est=round(pka_free_est, 2),
                          pka_bound_est=round(pka_bound_est, 2),
                          est_contribution=round(est, 3), note=flag))
-    rows.sort(key=lambda r: (r["note"] != "", r["est_contribution"]))
+    rows.sort(key=lambda r: (r["note"] != "", -r["est_contribution"]))
     return rows
 
 
@@ -174,9 +173,9 @@ def main():
     if not pdbs:
         raise SystemExit("no PDB files at %s" % a.path)
 
-    print("Two-state switch ranking. A position is good when it is EXPOSED with acidic")
-    print("neighbours in the free binder (high pKa) and BURIED against the target's cations")
-    print("when bound (low pKa). est_contribution is a RANKING, not a pKa prediction -")
+    print("Two-state switch ranking (C4 direction). A position is good when the")
+    print("BOUND-state pKa is RAISED by nearby target carboxylates (Asp/Glu).")
+    print("est_contribution is a RANKING, not a pKa prediction -")
     print("propka3 via ph_linkage.py is what decides a design.\n")
 
     allrows = []
@@ -191,15 +190,15 @@ def main():
         for r in usable[:a.top]:
             print("  %s%-5d %-5s %6.2f %6.2f %7.2f %6d %6d %8.2f %8.2f %+8.3f"
                   % (r["chain"], r["resnum"], r["resname"], r["burial_free"],
-                     r["burial_bound"], r["d_burial"], r["acids_near_free"],
+                     r["burial_bound"], r["d_burial"], r["acids_near_target"],
                      r["bases_near_target"], r["pka_free_est"], r["pka_bound_est"],
                      r["est_contribution"]))
         if usable:
             best = usable[:2]
             print("  best pair, if both installed: est L = %+.2f  %s"
                   % (sum(r["est_contribution"] for r in best),
-                     "" if sum(r["est_contribution"] for r in best) <= -2
-                     else "(short of the -2 gate on its own; needs a third site or a"
+                     "PASS" if sum(r["est_contribution"] for r in best) >= 2
+                     else "(short of the +2 gate; needs a third site or a"
                           " charge-compensated interface)"))
         print()
 

@@ -1,0 +1,9 @@
+{
+  "reason": "Exact queued-call cancellation did not clear backlog; no runner/forward observed. Stopping only the project app before redeployment to compatible A100 pools.",
+  "prior_call_id": "fc-01M5J2NVDNPF7AE51SZ8X8P9GK",
+  "prior_app_id": "ap-vvLxr0G2LUAslohqPX2OIu",
+  "requested_at": 1792682306.7722602,
+  "no_other_apps_targeted": true,
+  "actual_gpu_runtime_observed": 0,
+  "next_allocation_requires": "Fresh all-function idle snapshot and no prior remote output directory"
+}

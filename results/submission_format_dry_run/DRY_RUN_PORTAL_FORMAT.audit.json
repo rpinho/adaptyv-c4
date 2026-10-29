@@ -1,0 +1,10 @@
+{
+  "status": "format_dry_run_not_for_upload",
+  "row_count": 2,
+  "rank_order": "Input order preserved; best first",
+  "selection_sha256": "e0849746f8f42da23dbd7188d6b6dda62c70cfb2b0db83033a735fd40fdad7a4",
+  "csv_sha256": "5a923d498322324c90254c6ba1c56e3687c1f81df807fc2513a4183851f66720",
+  "eligibility_scope": "Format/count/sequence checks only. Novelty, diversity, evidence and organizer eligibility require separate review.",
+  "submitted": false,
+  "account_created": false
+}

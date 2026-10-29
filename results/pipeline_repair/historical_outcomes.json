@@ -1,0 +1,34 @@
+{
+  "c4_native_apical_ablation_v3": {
+    "generator_accepted_rows": 0,
+    "native_context_admitted_trajectory_ids": [],
+    "engineering_advance_trajectory_ids": [],
+    "followup_completed_without_errors": true,
+    "rejected_records": [],
+    "interpretation": "Native-context structural and pH proxies only; not binding, affinity, diversity or experimental validation"
+  },
+  "c4_native_apical_ablation_v3_replicate_2": {
+    "generator_accepted_rows": 0,
+    "native_context_admitted_trajectory_ids": [],
+    "engineering_advance_trajectory_ids": [],
+    "followup_completed_without_errors": true,
+    "rejected_records": [],
+    "interpretation": "Native-context structural and pH proxies only; not binding, affinity, diversity or experimental validation"
+  },
+  "c4_native_apical_ablation_v3_replicate_3": {
+    "generator_accepted_rows": 0,
+    "native_context_admitted_trajectory_ids": [],
+    "engineering_advance_trajectory_ids": [],
+    "followup_completed_without_errors": true,
+    "rejected_records": [],
+    "interpretation": "Native-context structural and pH proxies only; not binding, affinity, diversity or experimental validation"
+  },
+  "c4_local_frame_v5": {
+    "generator_accepted_rows": 0,
+    "native_context_admitted_trajectory_ids": [],
+    "engineering_advance_trajectory_ids": [],
+    "followup_completed_without_errors": true,
+    "rejected_records": [],
+    "interpretation": "Native-context structural and pH proxies only; not binding, affinity, diversity or experimental validation"
+  }
+}

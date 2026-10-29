@@ -1,0 +1,49 @@
+{
+  "status": "completed",
+  "models": [
+    {
+      "source": "/Users/ricardo/dev/adaptyv-c4/results/hard_sequence_refold_v15/mirrored/seed23_complex_model_1_ptm.cif",
+      "submission_recommended": false,
+      "status": "structural_rejection",
+      "reason": "binder/full-target backbone clash 0.340 A"
+    },
+    {
+      "source": "/Users/ricardo/dev/adaptyv-c4/results/hard_sequence_refold_v15/mirrored/seed23_complex_model_2_ptm.cif",
+      "submission_recommended": false,
+      "audit": {
+        "source": "/Users/ricardo/dev/adaptyv-c4/results/hard_sequence_refold_v15/seed23_complex_model_2_ptm_raw.pdb",
+        "source_sha256": "f686237c019bf57e44e8087754753b11b0f8ccbbbc5a8bfde652bd85452946c3",
+        "canonical_sha256": "81385dafb961c52600b63c571b1905d0b22cb66071c4bca5a077525bd10b15da",
+        "binder_residues": 67,
+        "minimum_binder_target_backbone_distance": 2.4314156950104127,
+        "opposite_subunit_restored": true,
+        "opposite_subunit_fit_rmsd": 0.20930540133338593,
+        "target_subunit_backbone_min_distance": 4.031599254010343,
+        "observed_NAG_min_distance": 18.15683651334359,
+        "glycan_template_fit_rmsd": 0.20930540133338593,
+        "target_sequence_verified": true,
+        "limitations": [
+          "glycans and assay tag absent",
+          "human only; mouse cross-reactivity unverified"
+        ]
+      },
+      "status": "native_context_staging_passed"
+    },
+    {
+      "source": "/Users/ricardo/dev/adaptyv-c4/results/hard_sequence_refold_v15/mirrored/v9_complex_model_1_ptm.cif",
+      "submission_recommended": false,
+      "status": "structural_rejection",
+      "reason": "binder/full-target backbone clash 0.343 A"
+    },
+    {
+      "source": "/Users/ricardo/dev/adaptyv-c4/results/hard_sequence_refold_v15/mirrored/v9_complex_model_2_ptm.cif",
+      "submission_recommended": false,
+      "status": "structural_rejection",
+      "reason": "binder/full-target backbone clash 0.635 A"
+    }
+  ],
+  "expected_complex_jobs": 4,
+  "qualified_candidates": 0,
+  "new_gpu_spend_usd": 0,
+  "interpretation": "Structural diagnostic only; all final quality/pose/novelty criteria require review before pH/submission"
+}

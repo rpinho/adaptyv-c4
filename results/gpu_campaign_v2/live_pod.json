@@ -1,0 +1,14 @@
+{
+  "cost": 1.79,
+  "createdAt": "2026-10-21T18:59:24.789Z",
+  "gpu": {
+    "count": 1,
+    "id": "NVIDIA A100-SXM4-80GB",
+    "memory": 125,
+    "vcpuCount": 32
+  },
+  "id": "2p9x2qea1ietbw",
+  "name": "adaptyv-c3-glp1r-migration",
+  "startedAt": "2026-10-21T19:14:09.967Z",
+  "status": "EXITED"
+}

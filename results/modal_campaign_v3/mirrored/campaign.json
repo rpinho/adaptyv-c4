@@ -1,0 +1,169 @@
+{
+  "modality": "binder",
+  "campaign_name": "c4_native_apical_ablation_v3",
+  "project_folder": "/results/c4_native_apical_ablation_v3/campaign",
+  "binder_lengths": [
+    65,
+    75
+  ],
+  "number_of_final_designs": 2,
+  "max_trajectories": 2,
+  "campaign_seed": 20261021,
+  "forced_targeting": false,
+  "termini_accessible": true,
+  "min_hotspot_contact_final": 0.5,
+  "save_failed_refolds": true,
+  "save_failed_trajectories": true,
+  "save_binder_monomers": true,
+  "relax_accepted_designs": false,
+  "sequence_candidates": 4,
+  "kept_sequences": 2,
+  "use_remat": true,
+  "design_recycles": 1,
+  "validation_recycles": 3,
+  "targets": [
+    {
+      "name": "hTfR1_full_monomer",
+      "target_path": "/opt/c4/target.pdb",
+      "chains": "A",
+      "hotspots": "A205,A206,A208,A209,A210",
+      "weight": 1.0
+    }
+  ],
+  "save_design_trajectory": true,
+  "filters": {
+    "Backbone_Clashes": {
+      "higher": false,
+      "threshold": 0
+    },
+    "Binder_RMSD": {
+      "higher": false,
+      "threshold": 3.5
+    },
+    "C_Terminus_Away_Cosine": {
+      "higher": true,
+      "mandatory": true,
+      "threshold": 0.0
+    },
+    "Epitope_Residues_Contacted": {
+      "higher": true,
+      "mandatory": false,
+      "threshold": 0.0
+    },
+    "Hotspot_Contact_Fraction": {
+      "higher": true,
+      "mandatory": true,
+      "threshold": 0.5
+    },
+    "Interface_BuriedArea": {
+      "higher": true,
+      "mandatory": false,
+      "threshold": 0.0
+    },
+    "Interface_BuriedArea_Fraction": {
+      "higher": true,
+      "mandatory": false,
+      "threshold": 0.0
+    },
+    "Interface_Residues": {
+      "higher": true,
+      "threshold": 7
+    },
+    "N_Terminus_Away_Cosine": {
+      "higher": true,
+      "mandatory": true,
+      "threshold": 0.0
+    },
+    "Off_Epitope_Contact_Fraction": {
+      "higher": false,
+      "mandatory": false,
+      "threshold": 1.0
+    },
+    "Receptor_Chains_Contacted": {
+      "higher": true,
+      "mandatory": false,
+      "threshold": 0.0
+    },
+    "SS_pLDDT": {
+      "higher": true,
+      "mandatory": false,
+      "threshold": 0.0
+    },
+    "Target_pLDDT": {
+      "higher": true,
+      "mandatory": false,
+      "threshold": 0.0
+    },
+    "Termini_Away_Cosine": {
+      "higher": true,
+      "mandatory": true,
+      "threshold": 0.0
+    },
+    "Unbound_Binder_pLDDT": {
+      "higher": true,
+      "threshold": 0.7
+    },
+    "i_pAE": {
+      "higher": false,
+      "threshold": 0.35
+    },
+    "i_pTM": {
+      "higher": true,
+      "threshold": 0.7
+    },
+    "pTM": {
+      "higher": true,
+      "threshold": 0.55
+    }
+  },
+  "losses": {
+    "binder_contacts": {
+      "params": {
+        "chain": "binder",
+        "prediction_state": "complex"
+      }
+    },
+    "binder_helicity": {
+      "params": {
+        "chain": "binder",
+        "prediction_state": "complex"
+      }
+    },
+    "binder_pae": {
+      "params": {
+        "chain": "binder",
+        "prediction_state": "complex"
+      }
+    },
+    "compactness": {
+      "params": {
+        "chain": "binder",
+        "prediction_state": "complex"
+      }
+    },
+    "interface_contacts": {
+      "params": {
+        "contacts_per_residue": 2,
+        "cutoff": 20.0
+      }
+    },
+    "plddt_loss": {
+      "params": {
+        "chain": "binder",
+        "prediction_state": "complex"
+      }
+    }
+  },
+  "weights_binder_contacts": 1.0,
+  "weights_binder_helicity": -0.3,
+  "weights_binder_pae": 0.4,
+  "weights_c_terminus_away": 0.5,
+  "weights_compactness": 0.5,
+  "weights_interface_contacts": 1.0,
+  "weights_interface_pae": 0.1,
+  "weights_iptm_loss": 0.05,
+  "weights_n_terminus_away": 0.5,
+  "weights_plddt_loss": 0.1,
+  "weights_target_rmsd": 1.0,
+  "weights_termini_angle": 0.1
+}

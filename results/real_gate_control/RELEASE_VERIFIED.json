@@ -1,0 +1,54 @@
+{
+  "checked_at": 1792683881.599774,
+  "owned_modal_functions": {
+    "run_campaign": {
+      "backlog": 0,
+      "num_total_runners": 0,
+      "num_running_inputs": 0,
+      "input_headroom": 0
+    },
+    "frame_diagnostic": {
+      "backlog": 0,
+      "num_total_runners": 0,
+      "num_running_inputs": 0,
+      "input_headroom": 0
+    },
+    "sequence_refold": {
+      "backlog": 0,
+      "num_total_runners": 0,
+      "num_running_inputs": 0,
+      "input_headroom": 0
+    },
+    "diffusion_generate": {
+      "backlog": 0,
+      "num_total_runners": 0,
+      "num_running_inputs": 0,
+      "input_headroom": 0
+    },
+    "diffusion_runtime_check": {
+      "backlog": 0,
+      "num_total_runners": 0,
+      "num_running_inputs": 0,
+      "input_headroom": 0
+    }
+  },
+  "all_owned_allocations_released": true,
+  "no_successors_authorized": true,
+  "other_generator_app_not_touched": true,
+  "runpod_current_pods": [
+    {
+      "id": "2p9x2qea1ietbw",
+      "status": "EXITED"
+    },
+    {
+      "id": "z4yt9vbn9sssti",
+      "status": "EXITED"
+    },
+    {
+      "id": "yy6bbyxlp7vwi7",
+      "status": "EXITED"
+    }
+  ],
+  "runpod_no_next_page": true,
+  "prior_local_driver_pid_36142_absent": true
+}

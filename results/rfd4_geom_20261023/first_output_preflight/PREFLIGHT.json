@@ -1,0 +1,15 @@
+{
+  "scope": "Deterministic first-index output mapping preflight, not a ranked shortlist or acceptance claim",
+  "source_cif_sha256": "eef5b50d3436a2aaf486e5faf029d820634de41c02fb60c917f2929ed62778be",
+  "previous_cif_sha256": "e21394da51f541c5baeb646faa8a2fa02a6e1d8182d612970f9a83a76ba4e47a",
+  "exact_previous_file_match": false,
+  "target_exact_native_sequence": true,
+  "binder_length": 66,
+  "context_status": "measured",
+  "omitted_context_rigid_pass": 1,
+  "full_native_staging_pass": 1,
+  "new_gpu_spend_from_preflight_usd": 0,
+  "adapter_sha256": "c5812cec915e312e787c028ff4ae68c8c41c8e08219edb118de69df02cc7e5af",
+  "recorded_runpod_usd": 56.5899880444631,
+  "separate_generation_spend_checkpoint": "results/rfd4_geom_20261023/SPEND_CHECKPOINT.json"
+}

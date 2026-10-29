@@ -1,0 +1,5 @@
+name,length,mean_plddt,min_plddt,plddt_gt70_frac,status
+tfr1_e1_his015_117,101,94.2,63.0,0.96,PASS
+tfr1_e1_his015_193,114,83.9,52.0,0.886,PASS
+tfr1_e1_his015_168,88,94.6,85.0,1.0,PASS
+tfr1_e1_his015_145,106,91.4,63.0,0.962,PASS

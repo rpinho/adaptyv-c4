@@ -1,0 +1,130 @@
+{
+ "created_at_utc": "2026-10-26T14:29:37Z",
+ "purpose": "Positive control: my implementation must reproduce the incumbent result",
+ "reference": "results/c4_independent_check_20261026/analysis.json Q2_v4_vs_unselected",
+ "reference_sha256": "9318d3ca26b66edf4a3bdaa073b80aee41974c7c2df5fe65a41c14f436314fdb",
+ "n_v4": 20,
+ "n_rest": 322,
+ "my_result": {
+  "core_apolar_frac": {
+   "v4_median": 0.8462,
+   "rest_median": 0.8787,
+   "median_diff": -0.0325,
+   "p": 0.41498,
+   "higher_is_better": true,
+   "v4_better": false
+  },
+  "core_charged_frac": {
+   "v4_median": 0.0357,
+   "rest_median": 0.0,
+   "median_diff": 0.0357,
+   "p": 0.0329,
+   "higher_is_better": false,
+   "v4_better": false
+  },
+  "n_buried_acidic": {
+   "v4_median": 0.0,
+   "rest_median": 0.0,
+   "median_diff": 0.0,
+   "p": 1.0,
+   "higher_is_better": false,
+   "v4_better": true
+  },
+  "buried_frac_of_binder": {
+   "v4_median": 0.122,
+   "rest_median": 0.1269,
+   "median_diff": -0.0049,
+   "p": 0.81831,
+   "higher_is_better": true,
+   "v4_better": false
+  },
+  "iface_apolar_frac": {
+   "v4_median": 0.6284,
+   "rest_median": 0.6531,
+   "median_diff": -0.0247,
+   "p": 0.06935,
+   "higher_is_better": true,
+   "v4_better": false
+  },
+  "bsa_total_A2": {
+   "v4_median": 1041.6,
+   "rest_median": 1074.8,
+   "median_diff": -33.2,
+   "p": 0.69087,
+   "higher_is_better": true,
+   "v4_better": false
+  },
+  "bsa_apolar_A2": {
+   "v4_median": 660.8,
+   "rest_median": 705.7,
+   "median_diff": -44.9,
+   "p": 0.33368,
+   "higher_is_better": true,
+   "v4_better": false
+  },
+  "entropy_bits": {
+   "v4_median": 3.5725,
+   "rest_median": 3.5716,
+   "median_diff": 0.0009,
+   "p": 0.99085,
+   "higher_is_better": true,
+   "v4_better": true
+  },
+  "max_homopolymer_run": {
+   "v4_median": 3.0,
+   "rest_median": 3.0,
+   "median_diff": 0.0,
+   "p": 1.0,
+   "higher_is_better": false,
+   "v4_better": true
+  },
+  "frac_acidic_DE": {
+   "v4_median": 0.2779,
+   "rest_median": 0.2333,
+   "median_diff": 0.0446,
+   "p": 0.04965,
+   "higher_is_better": false,
+   "v4_better": false
+  },
+  "frac_his": {
+   "v4_median": 0.0767,
+   "rest_median": 0.0955,
+   "median_diff": -0.0189,
+   "p": 0.16749,
+   "higher_is_better": false,
+   "v4_better": true
+  },
+  "frac_apolar": {
+   "v4_median": 0.3582,
+   "rest_median": 0.383,
+   "median_diff": -0.0248,
+   "p": 0.13304,
+   "higher_is_better": true,
+   "v4_better": false
+  },
+  "n_distinct_aa": {
+   "v4_median": 16.5,
+   "rest_median": 16.0,
+   "median_diff": 0.5,
+   "p": 0.55122,
+   "higher_is_better": true,
+   "v4_better": true
+  }
+ },
+ "reproduced": {
+  "n_metrics_matching": 13,
+  "n_metrics_disagreeing": 0,
+  "disagreements": [],
+  "my_n_metrics_directionally_better": 5,
+  "my_n_metrics_directionally_worse": 8,
+  "my_n_significant_raw_p05": 2,
+  "my_significant_metrics": [
+   "core_charged_frac",
+   "frac_acidic_DE"
+  ],
+  "my_n_significant_better": 0,
+  "my_n_significant_worse": 2,
+  "reference_claim": "better on none, worse on two (significant at raw p<0.05)",
+  "matches_reference_claim": true
+ }
+}

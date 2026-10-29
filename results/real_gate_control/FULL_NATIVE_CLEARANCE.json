@@ -1,0 +1,22 @@
+[
+  {
+    "design": "assembly1_FcA_TfRD_nativeA",
+    "full_native_backbone_minimum_A": 2.6716819581552103,
+    "method": "Existing min_dist() helper on full restored artifact; supplementary, not audit reimplementation"
+  },
+  {
+    "design": "assembly1_FcA_TfRD_nativeB",
+    "full_native_backbone_minimum_A": 2.5878138974484246,
+    "method": "Existing min_dist() helper on full restored artifact; supplementary, not audit reimplementation"
+  },
+  {
+    "design": "assembly2_FcB_TfRC_nativeA",
+    "full_native_backbone_minimum_A": 2.8843267500371517,
+    "method": "Existing min_dist() helper on full restored artifact; supplementary, not audit reimplementation"
+  },
+  {
+    "design": "assembly2_FcB_TfRC_nativeB",
+    "full_native_backbone_minimum_A": 2.8988650829296785,
+    "method": "Existing min_dist() helper on full restored artifact; supplementary, not audit reimplementation"
+  }
+]

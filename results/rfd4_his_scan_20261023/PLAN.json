@@ -1,0 +1,148 @@
+{
+  "recorded_at": "2026-10-23T14:11:19.712059+00:00",
+  "state": "registered_before_scoring",
+  "scope": "Top five ranked designs; every His ring within4.5A of the full observed native receptor",
+  "jobs": [
+    {
+      "source_id": "tfr1_c200m_20261023__tfr1_apical_binder_126",
+      "rank": 1,
+      "position": 47,
+      "chain": "C",
+      "wildtype": "HIS",
+      "ring_to_receptor_minimum_A": 3.071730136871338,
+      "mutation_selection": "chain_id == 'C' and res_id == 47",
+      "region_b": "chain_id == 'A' or chain_id == 'B'"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_70",
+      "rank": 2,
+      "position": 37,
+      "chain": "C",
+      "wildtype": "HIS",
+      "ring_to_receptor_minimum_A": 3.165761709213257,
+      "mutation_selection": "chain_id == 'C' and res_id == 37",
+      "region_b": "chain_id == 'A' or chain_id == 'B'"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_86",
+      "rank": 3,
+      "position": 27,
+      "chain": "C",
+      "wildtype": "HIS",
+      "ring_to_receptor_minimum_A": 2.938793420791626,
+      "mutation_selection": "chain_id == 'C' and res_id == 27",
+      "region_b": "chain_id == 'A' or chain_id == 'B'"
+    },
+    {
+      "source_id": "tfr1_his020_200m_20261023__tfr1_apical_his_86",
+      "rank": 3,
+      "position": 58,
+      "chain": "C",
+      "wildtype": "HIS",
+      "ring_to_receptor_minimum_A": 3.7765862941741943,
+      "mutation_selection": "chain_id == 'C' and res_id == 58",
+      "region_b": "chain_id == 'A' or chain_id == 'B'"
+    },
+    {
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_115",
+      "rank": 4,
+      "position": 37,
+      "chain": "C",
+      "wildtype": "HIS",
+      "ring_to_receptor_minimum_A": 4.408536911010742,
+      "mutation_selection": "chain_id == 'C' and res_id == 37",
+      "region_b": "chain_id == 'A' or chain_id == 'B'"
+    },
+    {
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_115",
+      "rank": 4,
+      "position": 44,
+      "chain": "C",
+      "wildtype": "HIS",
+      "ring_to_receptor_minimum_A": 2.5742006301879883,
+      "mutation_selection": "chain_id == 'C' and res_id == 44",
+      "region_b": "chain_id == 'A' or chain_id == 'B'"
+    },
+    {
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_115",
+      "rank": 4,
+      "position": 96,
+      "chain": "C",
+      "wildtype": "HIS",
+      "ring_to_receptor_minimum_A": 2.9025962352752686,
+      "mutation_selection": "chain_id == 'C' and res_id == 96",
+      "region_b": "chain_id == 'A' or chain_id == 'B'"
+    },
+    {
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_121",
+      "rank": 5,
+      "position": 16,
+      "chain": "C",
+      "wildtype": "HIS",
+      "ring_to_receptor_minimum_A": 3.67543888092041,
+      "mutation_selection": "chain_id == 'C' and res_id == 16",
+      "region_b": "chain_id == 'A' or chain_id == 'B'"
+    },
+    {
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_121",
+      "rank": 5,
+      "position": 20,
+      "chain": "C",
+      "wildtype": "HIS",
+      "ring_to_receptor_minimum_A": 3.741481065750122,
+      "mutation_selection": "chain_id == 'C' and res_id == 20",
+      "region_b": "chain_id == 'A' or chain_id == 'B'"
+    },
+    {
+      "source_id": "tfr1_his030_200m_20261023__tfr1_apical_his_121",
+      "rank": 5,
+      "position": 60,
+      "chain": "C",
+      "wildtype": "HIS",
+      "ring_to_receptor_minimum_A": 2.632202625274658,
+      "mutation_selection": "chain_id == 'C' and res_id == 60",
+      "region_b": "chain_id == 'A' or chain_id == 'B'"
+    }
+  ],
+  "designs": 5,
+  "sites": 10,
+  "mutate_to": [
+    "ALA",
+    "GLN",
+    "HIS"
+  ],
+  "interpretation": {
+    "ALA": "His removal and sidechain truncation",
+    "GLN": "Non-titratable polar substitution, not an isosteric control",
+    "HIS": "Self-substitution numerical/repacking control, not a pH state"
+  },
+  "metric": "rfproteina.metrics.physics.tmol_block_pair_metric.TMolMutationDdgMetric",
+  "device": "cpu",
+  "threads": 4,
+  "shell_radius_A": 8,
+  "num_repeats": 2,
+  "seed": 20261023,
+  "site_timeout_seconds": 1800,
+  "relaxation": "Exact upstream backbone-fixed shell repack and torsional minimization; WT and mutations use matched protocol",
+  "sign": "delta = mutated site/receptor interaction energy minus relaxed WT site/receptor interaction energy; positive means mutation worsened this modeled interaction",
+  "units": "TMol beta2016 score units; not calibrated kcal/mol or a rigorous bound-minus-unbound binding ddG",
+  "decision_rule": "Descriptive evidence only; no acceptance threshold or automatic pH-selectivity label; preserve every failure and self-control result",
+  "not_measured": [
+    "pH-dependent protonation",
+    "pKa",
+    "KD",
+    "pH selectivity",
+    "experimental binding",
+    "organizer novelty"
+  ],
+  "new_gpu_spend_usd": 0,
+  "recorded_runpod_usd": 56.5899880444631,
+  "own_tracked_estimate_before_this_task_usd": 73.31182697841318,
+  "sources": {
+    "results/rfd4_final_review_20261023/shortlist20.csv": "677e27667866f7841fcb729952732f0232d8fef0b39e20f511d08ef368e136ff",
+    "results/rfd4_final_review_20261023/analysis_pool/annotated80.evidence.json": "5870863f7ba13edfeb4af91594a00dbd65d5f6a671fe47bcdafb7000daaf8502",
+    "results/rfd4_his_scan_20261023/context20/RESULTS.json": "d80fe12da11ce1202657ff371f840de695b9d5adcdf13781574ab11b66ca99c4"
+  },
+  "upstream_commit": "aaccdd2ad0720c180468df5f9cf037a713d403e5",
+  "technical_reference": "https://uw-ipd.github.io/tmol/latest/installation.html"
+}

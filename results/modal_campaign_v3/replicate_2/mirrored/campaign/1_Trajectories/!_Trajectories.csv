@@ -1,0 +1,3 @@
+trajectory,design,length,bindcraft_version,Timing,hash,terminated,autotuned,settings_core,settings_modality,settings_property
+1,c4_native_apical_ablation_v3_replicate_2_denovo_l69_957ed9d7eb7dee73,69,BindCraft 2 v1.0.4,worker=0;start=1792619689.55;design=286.37;compiled=1,957ed9d7eb7dee73,screen,,default,binder,termini_accessible
+2,c4_native_apical_ablation_v3_replicate_2_denovo_l70_a77bcfb92cf77a96,70,BindCraft 2 v1.0.4,worker=0;start=1792619978.08;design=283.08;compiled=0,a77bcfb92cf77a96,screen,,default,binder,termini_accessible

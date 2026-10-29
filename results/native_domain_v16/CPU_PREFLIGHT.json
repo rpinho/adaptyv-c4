@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "devices": [
+    "cpu:0"
+  ],
+  "chains": {
+    "binder": {
+      "residues": 69,
+      "fully_observed_backbone_residues": 0
+    },
+    "target_hTfR1_native_apical_189_383": {
+      "residues": 195,
+      "fully_observed_backbone_residues": 195,
+      "hotspot_author_ids": [
+        205,
+        206,
+        208,
+        209,
+        210
+      ],
+      "sequence_differences_from_native_reference": 0
+    }
+  },
+  "af2_sha256": "fc5e8aa9528d79b569a00d0cbab0c3fed283bdb9fb8df2ee940f8256d2c1a2bf",
+  "forced_targeting": false,
+  "effective_plddt_loss_weight": 0.1,
+  "campaign_seed": 20261021,
+  "target_scope": "Reduced native contiguous apical domain; no full-context qualification.",
+  "native_domain_input_sha256": "03abdb9bc5536396de3489e7a6cf3eec88066a1a5f36d5d1d78b7342ec1ec0b2",
+  "output_roundtrip_author_range": [
+    189,
+    383
+  ],
+  "output_roundtrip_residues": 195,
+  "output_roundtrip_sequence_verified": true,
+  "output_roundtrip_reader": "cif2pdb(auth IDs) -> Protein(PDB); direct CIF label IDs may restart at1",
+  "full_native_context": false
+}

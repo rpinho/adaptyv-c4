@@ -1,0 +1,8 @@
+# Fixed-column scientific outputs intentionally retain their column padding.
+*.pdb -whitespace
+*.pka -whitespace
+*.log -whitespace
+# Preserve raw upstream mmCIF headers (including legal trailing whitespace).
+*.cif -whitespace
+# Python's CSV writer emits the standard CRLF record separator.
+*.csv whitespace=cr-at-eol

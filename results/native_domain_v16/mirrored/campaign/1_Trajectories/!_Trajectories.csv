@@ -1,0 +1,2 @@
+trajectory,design,length,bindcraft_version,Timing,hash,terminated,autotuned,settings_core,settings_modality,settings_property
+1,c4_native_domain_v16_denovo_l69_ea0a7aa81143f838,69,BindCraft 2 v1.0.4,worker=0;start=1792680700.83;design=51.11;compiled=1,ea0a7aa81143f838,screen,,default,binder,termini_accessible

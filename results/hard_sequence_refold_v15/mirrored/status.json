@@ -1,0 +1,15 @@
+{
+  "status": "completed",
+  "started": 1792679347.8159585,
+  "gpu": "NVIDIA H100 80GB HBM3, 81559 MiB, 610.57.04",
+  "container": "ta-01M5J07W93W6EWYNXK7NJZAMPR",
+  "worker_limit_seconds": 1800,
+  "checkpoints": {
+    "params_model_1_ptm.npz": "5e564f79af5bcd54ccef6e2a6bb0ff01015d01650ebc41d4575e35f0de9ecc84",
+    "params_model_2_ptm.npz": "23645d9a82c4af2ed54cd48a7b3c1c2575dc6aa9fe931adb4d7203ca5f0dc398"
+  },
+  "elapsed_seconds": 149.85857367515564,
+  "worker_pid": 31,
+  "returncode": 0,
+  "finished": 1792679497.6745317
+}

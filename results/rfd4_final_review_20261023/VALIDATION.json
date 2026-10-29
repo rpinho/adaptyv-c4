@@ -1,0 +1,78 @@
+{
+  "state": "complete",
+  "recorded_at": "2026-10-23T13:21:47.138328+00:00",
+  "generated_rows": 800,
+  "unique_generated_sequences": 798,
+  "reviewed_rows": 80,
+  "ranked_rows": 20,
+  "unique_review_sequences": 20,
+  "selected_arms": {
+    "tfr1_c200m_20261023": 1,
+    "tfr1_his020_200m_20261023": 5,
+    "tfr1_his030_200m_20261023": 12,
+    "tfr1_his200m_20261023": 2
+  },
+  "selected_hypotheses": {
+    "His-N/basic-group proximity hypothesis": 20
+  },
+  "selected_sequence_families": 15,
+  "maximum_selected_per_family": 3,
+  "omitted_context_pass": 80,
+  "full_native_staging_pass": 80,
+  "target_fit_rmsd_range_A": [
+    0.21273140894129616,
+    0.3467098698352178
+  ],
+  "selected_his_fraction_at_least_0p30": 7,
+  "fraction_0p30_is_descriptive_review_flag_not_a_gate": true,
+  "overlap_runtime_parity": {
+    "designs": 20,
+    "maximum_numeric_difference": 3.996924487381648e-06,
+    "passed": true
+  },
+  "canonical_emitter_sha256": "2fcc3614328d5a6195a614a7ce0d9be84b97867d36410bdb3a8eea1678f4c26f",
+  "canonical_emitter_unchanged": true,
+  "submission_csv_sha256": "ca80734f6fd190d0076268180a39cc95ef4525b99529217cd35645b55539166b",
+  "canonical_manifest_sha256": "668015b0032b19ef348610e167bb71dfd3be92ca7b335e427af98c1f78f74dd9",
+  "annotated_input_sha256": "ca80734f6fd190d0076268180a39cc95ef4525b99529217cd35645b55539166b",
+  "exact_annotation_rank_and_sequence_parity": true,
+  "source_context_sha256": "940a5fe8bc2050ec29c85a71a7efaac8e0b02c1fc81d6e7bd00417e72fb5d71a",
+  "source_rank_provenance_sha256": "cc86967e25dff42a1c145a63a6dd1cfb7360b5b0cbd834544b1272d981da6ae7",
+  "protected_gate_sources_unchanged": true,
+  "owned_generation_apps": [
+    {
+      "app_id": "ap-3oixAY66KO1YAveVPzHW1T",
+      "description": "rfd4-tfr1",
+      "state": "stopped",
+      "tasks": "0",
+      "created_at": "2026-10-23 08:11:00-04:00",
+      "stopped_at": "2026-10-23 08:55:11-04:00"
+    },
+    {
+      "app_id": "ap-MLsDay51dMvQnlyUqCMuwc",
+      "description": "rfd4-tfr1",
+      "state": "stopped",
+      "tasks": "0",
+      "created_at": "2026-10-23 07:10:16-04:00",
+      "stopped_at": "2026-10-23 07:58:23-04:00"
+    }
+  ],
+  "spend": {
+    "recorded_at": "2026-10-23T13:01:28.019701+00:00",
+    "recorded_runpod_usd": 56.5899880444631,
+    "prior_own_modal_estimate_usd": 10.718947158590089,
+    "first_pair_gpu_upper_usd": 3.12968044272,
+    "higher_pair_gpu_upper_usd": 2.8732113326399995,
+    "new_generation_gpu_upper_total_usd": 6.002891775359999,
+    "prior_total_plus_new_gpu_upper_usd": 73.31182697841318,
+    "host_cpu_ram_build_charges_unreconciled": true,
+    "account_wide_bill_verified": false,
+    "all_owned_generation_apps_stopped": true
+  },
+  "submission_performed": false,
+  "pH_selectivity_measured": false,
+  "affinity_measured": false,
+  "independent_refold_performed": false,
+  "organizer_novelty_measured": false,
+  "new_gpu_or_remote_cpu_spend_for_packaging_usd": 0
+}

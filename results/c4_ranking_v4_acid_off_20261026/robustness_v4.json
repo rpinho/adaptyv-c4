@@ -1,0 +1,968 @@
+{
+ "created_at_utc": "2026-10-26T14:34:26Z",
+ "purpose": "Is the v4 null a median artifact? And is the corrected set different from the set it replaces?",
+ "inputs": {
+  "metrics_sha256": "5d4452a9c234fc097b560226d101c8f54fa924e25cedd1c44c01b3e0822215cf",
+  "ranking_sha256": "75236da7cc1ae106c5649cc310a347e8564c4fbd525cfc7f4779abba6d613b3f"
+ },
+ "statistics": {
+  "median": "see falsification_v4.json",
+  "mean": "difference of means",
+  "cliffs_delta": "P(a>b)-P(a<b); |d|<0.147 negligible, <0.33 small",
+  "auc": "P(random seat > random rejected)"
+ },
+ "n_permutations": 20000,
+ "controls": {
+  "mean": {
+   "noise_p": 0.94385,
+   "noise_silent": true,
+   "planted_p": 4.999750012499375e-05,
+   "planted_fires": true
+  },
+  "cliffs_delta": {
+   "noise_p": 0.9838,
+   "noise_silent": true,
+   "planted_p": 4.999750012499375e-05,
+   "planted_fires": true
+  },
+  "auc": {
+   "noise_p": 0.98565,
+   "noise_silent": true,
+   "planted_p": 4.999750012499375e-05,
+   "planted_fires": true
+  }
+ },
+ "all_controls_fired": true,
+ "families": {
+  "A_vs_all_v4_ineligible": {
+   "n_seats": 20,
+   "n_comparison": 293,
+   "per_metric": {
+    "core_apolar_frac": {
+     "higher_is_better": true,
+     "stats": {
+      "mean": {
+       "value": 0.03682,
+       "p": 0.25789
+      },
+      "cliffs_delta": {
+       "value": 0.11601,
+       "p": 0.38443
+      },
+      "auc": {
+       "value": 0.558,
+       "p": 0.38213
+      }
+     },
+     "seats_better": {
+      "mean": true,
+      "cliffs_delta": true,
+      "auc": true
+     },
+     "min_p_across_stats": 0.25789
+    },
+    "core_charged_frac": {
+     "higher_is_better": false,
+     "stats": {
+      "mean": {
+       "value": -0.01363,
+       "p": 0.34708
+      },
+      "cliffs_delta": {
+       "value": -0.07734,
+       "p": 0.48278
+      },
+      "auc": {
+       "value": 0.46133,
+       "p": 0.48713
+      }
+     },
+     "seats_better": {
+      "mean": true,
+      "cliffs_delta": true,
+      "auc": true
+     },
+     "min_p_across_stats": 0.34708
+    },
+    "n_buried_acidic": {
+     "higher_is_better": false,
+     "stats": {
+      "mean": {
+       "value": 0.01109,
+       "p": 1.0
+      },
+      "cliffs_delta": {
+       "value": 0.03328,
+       "p": 0.77856
+      },
+      "auc": {
+       "value": 0.51664,
+       "p": 0.77871
+      }
+     },
+     "seats_better": {
+      "mean": false,
+      "cliffs_delta": false,
+      "auc": false
+     },
+     "min_p_across_stats": 0.77856
+    },
+    "buried_frac_of_binder": {
+     "higher_is_better": true,
+     "stats": {
+      "mean": {
+       "value": 0.00371,
+       "p": 0.81996
+      },
+      "cliffs_delta": {
+       "value": 0.02457,
+       "p": 0.85696
+      },
+      "auc": {
+       "value": 0.51229,
+       "p": 0.85616
+      }
+     },
+     "seats_better": {
+      "mean": true,
+      "cliffs_delta": true,
+      "auc": true
+     },
+     "min_p_across_stats": 0.81996
+    },
+    "iface_apolar_frac": {
+     "higher_is_better": true,
+     "stats": {
+      "mean": {
+       "value": 0.0139,
+       "p": 0.21189
+      },
+      "cliffs_delta": {
+       "value": 0.13993,
+       "p": 0.29774
+      },
+      "auc": {
+       "value": 0.56997,
+       "p": 0.29459
+      }
+     },
+     "seats_better": {
+      "mean": true,
+      "cliffs_delta": true,
+      "auc": true
+     },
+     "min_p_across_stats": 0.21189
+    },
+    "bsa_total_A2": {
+     "higher_is_better": true,
+     "stats": {
+      "mean": {
+       "value": -42.14273,
+       "p": 0.54977
+      },
+      "cliffs_delta": {
+       "value": -0.06519,
+       "p": 0.62852
+      },
+      "auc": {
+       "value": 0.46741,
+       "p": 0.63027
+      }
+     },
+     "seats_better": {
+      "mean": false,
+      "cliffs_delta": false,
+      "auc": false
+     },
+     "min_p_across_stats": 0.54977
+    },
+    "bsa_apolar_A2": {
+     "higher_is_better": true,
+     "stats": {
+      "mean": {
+       "value": -11.68422,
+       "p": 0.80561
+      },
+      "cliffs_delta": {
+       "value": -0.02782,
+       "p": 0.83386
+      },
+      "auc": {
+       "value": 0.48609,
+       "p": 0.83751
+      }
+     },
+     "seats_better": {
+      "mean": false,
+      "cliffs_delta": false,
+      "auc": false
+     },
+     "min_p_across_stats": 0.80561
+    },
+    "entropy_bits": {
+     "higher_is_better": true,
+     "stats": {
+      "mean": {
+       "value": -0.00095,
+       "p": 0.9888
+      },
+      "cliffs_delta": {
+       "value": 0.03362,
+       "p": 0.80281
+      },
+      "auc": {
+       "value": 0.51681,
+       "p": 0.79951
+      }
+     },
+     "seats_better": {
+      "mean": false,
+      "cliffs_delta": true,
+      "auc": true
+     },
+     "min_p_across_stats": 0.79951
+    },
+    "max_homopolymer_run": {
+     "higher_is_better": false,
+     "stats": {
+      "mean": {
+       "value": 1.11485,
+       "p": 0.0408
+      },
+      "cliffs_delta": {
+       "value": 0.18584,
+       "p": 0.13104
+      },
+      "auc": {
+       "value": 0.59292,
+       "p": 0.13314
+      }
+     },
+     "seats_better": {
+      "mean": false,
+      "cliffs_delta": false,
+      "auc": false
+     },
+     "min_p_across_stats": 0.0408
+    },
+    "frac_acidic_DE": {
+     "higher_is_better": false,
+     "stats": {
+      "mean": {
+       "value": -0.00848,
+       "p": 0.68097
+      },
+      "cliffs_delta": {
+       "value": -0.11792,
+       "p": 0.37833
+      },
+      "auc": {
+       "value": 0.44104,
+       "p": 0.38123
+      }
+     },
+     "seats_better": {
+      "mean": true,
+      "cliffs_delta": true,
+      "auc": true
+     },
+     "min_p_across_stats": 0.37833
+    },
+    "frac_his": {
+     "higher_is_better": false,
+     "stats": {
+      "mean": {
+       "value": -0.01883,
+       "p": 0.20659
+      },
+      "cliffs_delta": {
+       "value": -0.12304,
+       "p": 0.36218
+      },
+      "auc": {
+       "value": 0.43848,
+       "p": 0.35988
+      }
+     },
+     "seats_better": {
+      "mean": true,
+      "cliffs_delta": true,
+      "auc": true
+     },
+     "min_p_across_stats": 0.20659
+    },
+    "frac_apolar": {
+     "higher_is_better": true,
+     "stats": {
+      "mean": {
+       "value": 0.01369,
+       "p": 0.38108
+      },
+      "cliffs_delta": {
+       "value": 0.14863,
+       "p": 0.26979
+      },
+      "auc": {
+       "value": 0.57432,
+       "p": 0.26869
+      }
+     },
+     "seats_better": {
+      "mean": true,
+      "cliffs_delta": true,
+      "auc": true
+     },
+     "min_p_across_stats": 0.26869
+    },
+    "n_distinct_aa": {
+     "higher_is_better": true,
+     "stats": {
+      "mean": {
+       "value": 0.05188,
+       "p": 0.94145
+      },
+      "cliffs_delta": {
+       "value": 0.02235,
+       "p": 0.86356
+      },
+      "auc": {
+       "value": 0.51118,
+       "p": 0.86441
+      }
+     },
+     "seats_better": {
+      "mean": true,
+      "cliffs_delta": true,
+      "auc": true
+     },
+     "min_p_across_stats": 0.86356
+    }
+   },
+   "min_p_over_all_metric_stat_combinations": 0.0408,
+   "n_metrics_sig_raw_p05_any_stat": 1,
+   "n_metrics_sig_bonferroni13_any_stat": 0,
+   "bonferroni_also_over_3_stats_39_tests": 1.0,
+   "max_abs_cliffs_delta": 0.1858
+  },
+  "B_vs_eligible_unseated": {
+   "n_seats": 20,
+   "n_comparison": 29,
+   "per_metric": {
+    "core_apolar_frac": {
+     "higher_is_better": true,
+     "stats": {
+      "mean": {
+       "value": 0.04053,
+       "p": 0.23464
+      },
+      "cliffs_delta": {
+       "value": 0.15862,
+       "p": 0.35608
+      },
+      "auc": {
+       "value": 0.57931,
+       "p": 0.34918
+      }
+     },
+     "seats_better": {
+      "mean": true,
+      "cliffs_delta": true,
+      "auc": true
+     },
+     "min_p_across_stats": 0.23464
+    },
+    "core_charged_frac": {
+     "higher_is_better": false,
+     "stats": {
+      "mean": {
+       "value": -0.01871,
+       "p": 0.33623
+      },
+      "cliffs_delta": {
+       "value": -0.08621,
+       "p": 0.52627
+      },
+      "auc": {
+       "value": 0.4569,
+       "p": 0.52912
+      }
+     },
+     "seats_better": {
+      "mean": true,
+      "cliffs_delta": true,
+      "auc": true
+     },
+     "min_p_across_stats": 0.33623
+    },
+    "n_buried_acidic": {
+     "higher_is_better": false,
+     "stats": {
+      "mean": {
+       "value": 0.00862,
+       "p": 1.0
+      },
+      "cliffs_delta": {
+       "value": 0.00862,
+       "p": 1.0
+      },
+      "auc": {
+       "value": 0.50431,
+       "p": 1.0
+      }
+     },
+     "seats_better": {
+      "mean": false,
+      "cliffs_delta": false,
+      "auc": false
+     },
+     "min_p_across_stats": 1.0
+    },
+    "buried_frac_of_binder": {
+     "higher_is_better": true,
+     "stats": {
+      "mean": {
+       "value": -0.01392,
+       "p": 0.47058
+      },
+      "cliffs_delta": {
+       "value": -0.13103,
+       "p": 0.44488
+      },
+      "auc": {
+       "value": 0.43448,
+       "p": 0.44778
+      }
+     },
+     "seats_better": {
+      "mean": false,
+      "cliffs_delta": false,
+      "auc": false
+     },
+     "min_p_across_stats": 0.44488
+    },
+    "iface_apolar_frac": {
+     "higher_is_better": true,
+     "stats": {
+      "mean": {
+       "value": 0.00174,
+       "p": 0.89611
+      },
+      "cliffs_delta": {
+       "value": 0.03276,
+       "p": 0.85601
+      },
+      "auc": {
+       "value": 0.51638,
+       "p": 0.84966
+      }
+     },
+     "seats_better": {
+      "mean": true,
+      "cliffs_delta": true,
+      "auc": true
+     },
+     "min_p_across_stats": 0.84966
+    },
+    "bsa_total_A2": {
+     "higher_is_better": true,
+     "stats": {
+      "mean": {
+       "value": -32.67793,
+       "p": 0.69357
+      },
+      "cliffs_delta": {
+       "value": -0.01379,
+       "p": 0.94545
+      },
+      "auc": {
+       "value": 0.4931,
+       "p": 0.9427
+      }
+     },
+     "seats_better": {
+      "mean": false,
+      "cliffs_delta": false,
+      "auc": false
+     },
+     "min_p_across_stats": 0.69357
+    },
+    "bsa_apolar_A2": {
+     "higher_is_better": true,
+     "stats": {
+      "mean": {
+       "value": -14.34397,
+       "p": 0.79241
+      },
+      "cliffs_delta": {
+       "value": -0.03448,
+       "p": 0.85081
+      },
+      "auc": {
+       "value": 0.48276,
+       "p": 0.84856
+      }
+     },
+     "seats_better": {
+      "mean": false,
+      "cliffs_delta": false,
+      "auc": false
+     },
+     "min_p_across_stats": 0.79241
+    },
+    "entropy_bits": {
+     "higher_is_better": true,
+     "stats": {
+      "mean": {
+       "value": -0.02812,
+       "p": 0.76051
+      },
+      "cliffs_delta": {
+       "value": -0.04483,
+       "p": 0.79621
+      },
+      "auc": {
+       "value": 0.47759,
+       "p": 0.80271
+      }
+     },
+     "seats_better": {
+      "mean": false,
+      "cliffs_delta": false,
+      "auc": false
+     },
+     "min_p_across_stats": 0.76051
+    },
+    "max_homopolymer_run": {
+     "higher_is_better": false,
+     "stats": {
+      "mean": {
+       "value": 1.60172,
+       "p": 0.005
+      },
+      "cliffs_delta": {
+       "value": 0.39655,
+       "p": 0.01225
+      },
+      "auc": {
+       "value": 0.69828,
+       "p": 0.0108
+      }
+     },
+     "seats_better": {
+      "mean": false,
+      "cliffs_delta": false,
+      "auc": false
+     },
+     "min_p_across_stats": 0.005
+    },
+    "frac_acidic_DE": {
+     "higher_is_better": false,
+     "stats": {
+      "mean": {
+       "value": 0.02162,
+       "p": 0.41533
+      },
+      "cliffs_delta": {
+       "value": 0.11034,
+       "p": 0.52117
+      },
+      "auc": {
+       "value": 0.55517,
+       "p": 0.51972
+      }
+     },
+     "seats_better": {
+      "mean": false,
+      "cliffs_delta": false,
+      "auc": false
+     },
+     "min_p_across_stats": 0.41533
+    },
+    "frac_his": {
+     "higher_is_better": false,
+     "stats": {
+      "mean": {
+       "value": -0.0307,
+       "p": 0.023
+      },
+      "cliffs_delta": {
+       "value": -0.38621,
+       "p": 0.02155
+      },
+      "auc": {
+       "value": 0.3069,
+       "p": 0.0212
+      }
+     },
+     "seats_better": {
+      "mean": true,
+      "cliffs_delta": true,
+      "auc": true
+     },
+     "min_p_across_stats": 0.0212
+    },
+    "frac_apolar": {
+     "higher_is_better": true,
+     "stats": {
+      "mean": {
+       "value": -0.00123,
+       "p": 0.9497
+      },
+      "cliffs_delta": {
+       "value": 0.02931,
+       "p": 0.86881
+      },
+      "auc": {
+       "value": 0.51466,
+       "p": 0.86556
+      }
+     },
+     "seats_better": {
+      "mean": false,
+      "cliffs_delta": true,
+      "auc": true
+     },
+     "min_p_across_stats": 0.86556
+    },
+    "n_distinct_aa": {
+     "higher_is_better": true,
+     "stats": {
+      "mean": {
+       "value": 0.12414,
+       "p": 0.83801
+      },
+      "cliffs_delta": {
+       "value": 0.02759,
+       "p": 0.87311
+      },
+      "auc": {
+       "value": 0.51379,
+       "p": 0.87231
+      }
+     },
+     "seats_better": {
+      "mean": true,
+      "cliffs_delta": true,
+      "auc": true
+     },
+     "min_p_across_stats": 0.83801
+    }
+   },
+   "min_p_over_all_metric_stat_combinations": 0.005,
+   "n_metrics_sig_raw_p05_any_stat": 2,
+   "n_metrics_sig_bonferroni13_any_stat": 0,
+   "bonferroni_also_over_3_stats_39_tests": 0.195,
+   "max_abs_cliffs_delta": 0.3966
+  },
+  "DIRECT_acidOFF_vs_acidoN_seats": {
+   "n_seats": 20,
+   "n_comparison": 20,
+   "per_metric": {
+    "core_apolar_frac": {
+     "higher_is_better": true,
+     "stats": {
+      "mean": {
+       "value": 0.06618,
+       "p": 0.08985
+      },
+      "cliffs_delta": {
+       "value": 0.27368,
+       "p": 0.14439
+      },
+      "auc": {
+       "value": 0.63684,
+       "p": 0.14669
+      }
+     },
+     "seats_better": {
+      "mean": true,
+      "cliffs_delta": true,
+      "auc": true
+     },
+     "min_p_across_stats": 0.08985
+    },
+    "core_charged_frac": {
+     "higher_is_better": false,
+     "stats": {
+      "mean": {
+       "value": -0.04753,
+       "p": 0.05265
+      },
+      "cliffs_delta": {
+       "value": -0.28158,
+       "p": 0.0869
+      },
+      "auc": {
+       "value": 0.35921,
+       "p": 0.09
+      }
+     },
+     "seats_better": {
+      "mean": true,
+      "cliffs_delta": true,
+      "auc": true
+     },
+     "min_p_across_stats": 0.05265
+    },
+    "n_buried_acidic": {
+     "higher_is_better": false,
+     "stats": {
+      "mean": {
+       "value": -0.1,
+       "p": 0.73516
+      },
+      "cliffs_delta": {
+       "value": -0.1,
+       "p": 0.73341
+      },
+      "auc": {
+       "value": 0.45,
+       "p": 0.73121
+      }
+     },
+     "seats_better": {
+      "mean": true,
+      "cliffs_delta": true,
+      "auc": true
+     },
+     "min_p_across_stats": 0.73121
+    },
+    "buried_frac_of_binder": {
+     "higher_is_better": true,
+     "stats": {
+      "mean": {
+       "value": -0.0124,
+       "p": 0.60022
+      },
+      "cliffs_delta": {
+       "value": -0.04,
+       "p": 0.83516
+      },
+      "auc": {
+       "value": 0.48,
+       "p": 0.83711
+      }
+     },
+     "seats_better": {
+      "mean": false,
+      "cliffs_delta": false,
+      "auc": false
+     },
+     "min_p_across_stats": 0.60022
+    },
+    "iface_apolar_frac": {
+     "higher_is_better": true,
+     "stats": {
+      "mean": {
+       "value": 0.03644,
+       "p": 0.0125
+      },
+      "cliffs_delta": {
+       "value": 0.4,
+       "p": 0.0294
+      },
+      "auc": {
+       "value": 0.7,
+       "p": 0.03045
+      }
+     },
+     "seats_better": {
+      "mean": true,
+      "cliffs_delta": true,
+      "auc": true
+     },
+     "min_p_across_stats": 0.0125
+    },
+    "bsa_total_A2": {
+     "higher_is_better": true,
+     "stats": {
+      "mean": {
+       "value": -39.47,
+       "p": 0.61797
+      },
+      "cliffs_delta": {
+       "value": -0.02,
+       "p": 0.92465
+      },
+      "auc": {
+       "value": 0.49,
+       "p": 0.92435
+      }
+     },
+     "seats_better": {
+      "mean": false,
+      "cliffs_delta": false,
+      "auc": false
+     },
+     "min_p_across_stats": 0.61797
+    },
+    "bsa_apolar_A2": {
+     "higher_is_better": true,
+     "stats": {
+      "mean": {
+       "value": 13.345,
+       "p": 0.80741
+      },
+      "cliffs_delta": {
+       "value": 0.075,
+       "p": 0.69777
+      },
+      "auc": {
+       "value": 0.5375,
+       "p": 0.69672
+      }
+     },
+     "seats_better": {
+      "mean": true,
+      "cliffs_delta": true,
+      "auc": true
+     },
+     "min_p_across_stats": 0.69672
+    },
+    "entropy_bits": {
+     "higher_is_better": true,
+     "stats": {
+      "mean": {
+       "value": -0.04632,
+       "p": 0.66787
+      },
+      "cliffs_delta": {
+       "value": -0.03,
+       "p": 0.88176
+      },
+      "auc": {
+       "value": 0.485,
+       "p": 0.88246
+      }
+     },
+     "seats_better": {
+      "mean": false,
+      "cliffs_delta": false,
+      "auc": false
+     },
+     "min_p_across_stats": 0.66787
+    },
+    "max_homopolymer_run": {
+     "higher_is_better": false,
+     "stats": {
+      "mean": {
+       "value": 1.0,
+       "p": 0.62547
+      },
+      "cliffs_delta": {
+       "value": 0.0175,
+       "p": 0.9026
+      },
+      "auc": {
+       "value": 0.50875,
+       "p": 0.90585
+      }
+     },
+     "seats_better": {
+      "mean": false,
+      "cliffs_delta": false,
+      "auc": false
+     },
+     "min_p_across_stats": 0.62547
+    },
+    "frac_acidic_DE": {
+     "higher_is_better": false,
+     "stats": {
+      "mean": {
+       "value": -0.02832,
+       "p": 0.37533
+      },
+      "cliffs_delta": {
+       "value": -0.3125,
+       "p": 0.09285
+      },
+      "auc": {
+       "value": 0.34375,
+       "p": 0.09145
+      }
+     },
+     "seats_better": {
+      "mean": true,
+      "cliffs_delta": true,
+      "auc": true
+     },
+     "min_p_across_stats": 0.09145
+    },
+    "frac_his": {
+     "higher_is_better": false,
+     "stats": {
+      "mean": {
+       "value": -0.00385,
+       "p": 0.80891
+      },
+      "cliffs_delta": {
+       "value": 0.0475,
+       "p": 0.80761
+      },
+      "auc": {
+       "value": 0.52375,
+       "p": 0.80641
+      }
+     },
+     "seats_better": {
+      "mean": true,
+      "cliffs_delta": false,
+      "auc": false
+     },
+     "min_p_across_stats": 0.80641
+    },
+    "frac_apolar": {
+     "higher_is_better": true,
+     "stats": {
+      "mean": {
+       "value": 0.03036,
+       "p": 0.18384
+      },
+      "cliffs_delta": {
+       "value": 0.27,
+       "p": 0.15189
+      },
+      "auc": {
+       "value": 0.635,
+       "p": 0.15639
+      }
+     },
+     "seats_better": {
+      "mean": true,
+      "cliffs_delta": true,
+      "auc": true
+     },
+     "min_p_across_stats": 0.15189
+    },
+    "n_distinct_aa": {
+     "higher_is_better": true,
+     "stats": {
+      "mean": {
+       "value": -0.4,
+       "p": 0.44223
+      },
+      "cliffs_delta": {
+       "value": -0.12,
+       "p": 0.51507
+      },
+      "auc": {
+       "value": 0.44,
+       "p": 0.51837
+      }
+     },
+     "seats_better": {
+      "mean": false,
+      "cliffs_delta": false,
+      "auc": false
+     },
+     "min_p_across_stats": 0.44223
+    }
+   },
+   "min_p_over_all_metric_stat_combinations": 0.0125,
+   "n_metrics_sig_raw_p05_any_stat": 1,
+   "n_metrics_sig_bonferroni13_any_stat": 0,
+   "bonferroni_also_over_3_stats_39_tests": 0.4875,
+   "max_abs_cliffs_delta": 0.4
+  }
+ }
+}

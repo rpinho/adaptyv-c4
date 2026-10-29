@@ -1,0 +1,509 @@
+SpeedInsights
+PostHogProvider
+ThemeProvider
+QueryProvider
+ScrollReset
+default
+OutletBoundary
+ViewportBoundary
+MetadataBoundary
+Root
+List
+Item
+Viewport
+Popover
+PopoverTrigger
+PopoverContent
+Avatar
+AvatarFallback
+PopoverClose
+Separator
+style
+font
+crossOrigin
+type
+font/woff2
+myBkxTpRicJ8AhG1dqQIZ
+competitions
+anthropic-adaptyv-2026
+challenges
+pmhc
+children
+__PAGE__
+link
+rel
+stylesheet
+href
+precedence
+next
+nonce
+script
+script-0
+src
+async
+script-1
+script-2
+script-3
+script-4
+script-5
+script-6
+script-7
+html
+lang
+suppressHydrationWarning
+body
+attribute
+data-theme
+defaultTheme
+dark-blue
+enableSystem
+themes
+light
+dark
+div
+parallelRouterKey
+error
+errorStyles
+errorScripts
+template
+templateStyles
+templateScripts
+notFound
+title
+404: This page could not be found.
+fontFamily
+system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"
+height
+textAlign
+center
+display
+flexDirection
+column
+alignItems
+justifyContent
+dangerouslySetInnerHTML
+__html
+next-error-h1
+inline-block
+margin
+padding
+fontSize
+fontWeight
+verticalAlign
+top
+lineHeight
+This page could not be found.
+forbidden
+unauthorized
+footer
+mt-16 bg-secondary
+span
+Created by
+target
+_blank
+noopener noreferrer
+Adaptyv Bio
+width
+viewBox
+fill
+none
+xmlns
+h-6 w-auto
+path
+white
+mailto:proteinbase@adaptyvbio.com
+Contact
+ref
+name
+Next.MetadataOutlet
+container mx-auto py-8 space-y-16
+hidden
+Next.Metadata
+meta
+next-size-adjust
+content
+header
+sticky top-0 z-50 bg-secondary/85 backdrop-blur-xl supports-[backdrop-filter]:bg-secondary/60
+url(#paint0_linear_1913_3964)
+url(#paint1_linear_1913_3964)
+defs
+linearGradient
+paint0_linear_1913_3964
+gradientUnits
+userSpaceOnUse
+stop
+offset
+stopColor
+paint1_linear_1913_3964
+data-slot
+navigation-menu
+data-viewport
+navigation-menu-list
+navigation-menu-item
+relative
+data-active
+stroke
+currentColor
+strokeWidth
+strokeLinecap
+round
+strokeLinejoin
+true
+rect
+6d4xhi
+1fpvtg
+Proteins
+1wduqc
+kqbvx6
+Collections
+hh9hay
+d0xqtd
+Design Methods
+Targets
+circle
+1mglay
+line
+l9bcsi
+13hhkx
+17hqa7
+lmptdp
+57wxv0
+Competitions
+navigation-menu-viewport
+Publish
+Download
+asChild
+button
+pointer-events-none
+align
+start
+relative w-full
+h-9 w-9 cursor-pointer
+lucide lucide-user h-4 w-4
+975kel
+end
+1bsop3
+Sign in
+1yyitq
+nufk8
+1bvyxn
+1shjgl
+Create account
+charSet
+utf-8
+viewport
+width=device-width, initial-scale=1
+main
+← Anthropic × Adaptyv Competition
+section
+relative z-10 min-w-0
+CHALLENGE
+Submissions open
+mt-7 max-w-[620px] text-[40px] font-medium leading-[1.05] tracking-[-0.04em] sm:text-[52px]
+KRAS G12D pMHC
+KRAS G12D peptide VVVGADGVGK on HLA-A*11:01
+mt-7 max-w-[520px] text-[17px] font-medium leading-[1.6]
+Design a mutation-specific pMHC binder
+Cells that carry the KRAS G12D mutation can show T cells a ten-residue piece of the mutant protein, VVVGADGVGK, in the groove of the MHC molecule HLA-A*11:01. The wild-type stretch, VVVGAGGVGK, has a glycine where the mutant has an aspartate, so the two peptides differ at one position of ten and sit in the same groove. This challenge asks for three things: bind the G12D complex, do not bind the wild-type one, and do not bind the same HLA with no peptide in it.
+Submit designs
+lucide lucide-arrow-up-right ml-2 size-4
+1tivn9
+1vkiza
+Join our Slack
+HeroDataBackground
+HeroProtein
+TargetInformation
+Submissions are open until Sunday, November 8, 23:59 AoE.
+relative mx-auto w-full max-w-[540px] lg:-mx-8 lg:w-[calc(100%+64px)] lg:max-w-none
+structure
+9f173095cef238c74ad7b41fd78c387a/hero
+viewportClassName
+lg:aspect-auto lg:h-[440px]
+label
+Experimental structure of the KRAS G12D peptide VVVGADGVGK on HLA-A*11:01 with β2-microglobulin, PDB 7OW6 with its T-cell receptor removed, rendered as ASCII ribbons in the Proteinbase logo colors, with the peptide highlighted.
+KRAS G12D peptide on HLA-A*11:01 · PDB 7OW6
+target-information
+Target information
+Design against the whole peptide-MHC complex: the HLA-A*11:01 heavy chain, β2-microglobulin and a ten-residue peptide held in the groove. We recommend targeting the peptide and the groove around it, the surface a T-cell receptor reads. The rest of the complex is the same for both peptides, and the same again with no peptide, so a binder that sits there cannot tell them apart.
+targets
+kras-g12d
+chainName
+HLA-A*11:01 heavy chain
+accession
+uniprotUrl
+residues
+sequence
+GSHSMRYFYTSVSRPGRGEPRFIAVGYVDDTQFVRFDSDAASQRMEPRAPWIEQEGPEYWDQETRNVKAQSQTDRVDLGTLRGYYNQSEDGSHTIQIMYGCDVGPDGRFLRGYRQDAYDGKDYIALNEDLRSWTAADMAAQITKRKWEAAHAAEQQRAYLEGRCVEWLRRYLENGKETLQRTDPPKTHMTHHPISDHEATLRCWALGFYPAEITLTWQRDGEDQTQDTELVETRPAGDGTFQKWAAVVVPSGEEQRYTCHVQHEGLPKPLTLRWELSSQPT
+chains
+β2-microglobulin
+IQRTPKIQVYSRHPAENGKSNFLNCYVSGFHPSDIEVDLLKNGERIEKVEHSDLSFSKDWSFYLLYYTEFTPTEKDEYACRVNHVTLSQPKIVKWDRDM
+KRAS G12D peptide
+VVVGADGVGK
+form
+To bind
+details
+Assay construct
+value
+Complex of the three chains · tags not shown
+Allele
+A*11:01:01:01 · IPD-IMGT/HLA HLA00043
+Mutation
+KRAS Gly12 to Asp · peptide position 6
+Recommended epitope
+The peptide and the groove around it
+Structure reference
+7OW6 · Chains A–C · TCR removed
+url
+referenceUrl
+PDB 7OW6 · TCR removed
+wild-type
+Wild-type KRAS pMHC
+Wild-type KRAS peptide
+VVVGAGGVGK
+Not to bind
+Same HLA and β2-microglobulin · wild-type KRAS peptide
+Differs from G12D
+Peptide position 6 (KRAS residue 12): glycine for aspartate
+7OW5 · Chains A–C · TCR removed
+PDB 7OW5 · TCR removed
+peptide-free
+Peptide-free MHC
+Same HLA and β2-microglobulin · no peptide
+No peptide in the groove
+7OW6 · Chains A–B · peptide and TCR removed
+PDB 7OW6 · peptide and TCR removed
+Three
+objectives
+This challenge consists of 3 main objectives, and each will be accounted for when selecting the best designs.
+human
+min-w-0
+Binding affinity
+Design a binder against the KRAS G12D peptide presented by HLA-A*11:01. We recommend targeting the peptide and the groove around it, which is the surface a T-cell receptor reads and the only part that differs from the same HLA carrying another peptide.
+We'll measure its binding affinity using the complex of HLA-A*11:01, β2-microglobulin and VVVGADGVGK.
+role
+img
+A designed binder bound to human KRAS G12D pMHC.
+transform
+translate(56 14)
+fillOpacity
+strokeOpacity
+translate(0 0)
+text
+textAnchor
+middle
+fill-muted-foreground font-mono text-[8px] uppercase tracking-[0.12em]
+human KRAS G12D pMHC
+specificity
+Mutation specificity
+On top of that, your binder must not bind the same HLA-A*11:01 carrying the wild-type KRAS peptide VVVGAGGVGK. The two peptides are identical except at position 6, residue 12 of KRAS, where the mutant has an aspartate and the wild type a glycine.
+A binder that cannot tell them apart cannot single out cells that carry the mutation. For this, we will measure binding against the wild-type complex in the same conditions as the G12D one.
+A binder seated in the KRAS G12D pMHC pocket and lifted away from the wild-type KRAS pMHC pocket.
+translate(0 14)
+ranking
+How designs are ranked
+Every tested design is measured against all three targets in the same conditions: the KRAS G12D complex, the wild-type KRAS complex and the HLA-A*11:01 with β2-microglobulin that carries no peptide, with the design immobilised and the target in solution. A design counts as binding a target when its sensorgram gives a fittable curve and a KD, or, where the curve cannot be fitted, when the association shift clears 300% over the negative control. Otherwise we call it no detectable binding.
+A measurable KD against the KRAS G12D complex and no detectable binding to the wild-type KRAS complex. Designs that bind both rank after these, by the ratio of their KD for the wild-type complex to their KD for the G12D complex, largest first.
+Peptide-dependent binding
+A measurable KD against the KRAS G12D complex and no detectable binding to the peptide-free HLA-A*11:01 with β2-microglobulin. Designs that bind it rank after these, by the ratio of their KD for the peptide-free target to their KD for the G12D complex, largest first. A binder that reads the HLA or the β2-microglobulin instead of the peptide binds all three targets and ranks there.
+Affinity
+Lowest KD against the KRAS G12D complex. A design that binds the peptide and the groove around it has an advantage. Tell us which surface you target and link your evidence. If you don't, we take it from a predicted complex. A design that binds somewhere else is still measured and ranked.
+The winner has to clear all three steps, with ties settled in this order, and each step also awards an honourable mention to the best design that did not win.
+Timeline
+Oct 26 – Nov 8, 2026
+open
+step
+now
+Design, review, and submit. Submissions close Sunday, November 8 at 23:59 Anywhere on Earth (AoE).
+lucide lucide-arrow-up-right size-3
+closed
+Submissions closed
+The window is closed. No further designs are accepted for this challenge.
+selection
+Selection in progress
+Anthropic and Adaptyv select designs for synthesis using a Claude-based workflow, published after the competition.
+lab
+Wet-lab validation in progress
+Selected designs go to Adaptyv's automated lab for experimental validation.
+results
+Submission requirements
+Length
+10–250 amino acids
+Format
+Single chain protein, nanobody, scFv, or Fab
+Designs per participant
+Up to 40 for Track 1, up to 20 for Tracks 2 and 3
+Design
+De novo designs only
+translate(112 14)
+translate(0 -16)
+strokeDasharray
+wild-type KRAS pMHC
+dependence
+Finally, your binder must not bind the same HLA-A*11:01 and β2-microglobulin when the groove holds no peptide. A binder that sticks to the heavy chain or to β2-microglobulin binds every peptide on this HLA, those of healthy cells included, and tells us nothing about the peptide it was made for.
+For this, we will measure binding against the peptide-free HLA-A*11:01 with β2-microglobulin in the same conditions as the other two.
+A binder seated in the KRAS G12D pMHC pocket and lifted away from the peptide-free MHC pocket.
+peptide-free MHC
+Read the selection prompt
+lucide lucide-arrow-up-right size-3.5
+Results published
+Every measurement, including the failures, is on Proteinbase with sequences and methods.
+CopyFaqButton
+faq
+faq-title
+Frequently asked questions
+faqs
+number
+question
+What classes of molecules can be designed and submitted?
+answer
+De novo proteins (including minibinders, larger proteins, and microbinders), nanobodies, and antibodies can be submitted. Importantly:
+- For single chain proteins, the minimum length is 10 amino acids and the maximum length is 250 amino acids.
+- For nanobodies/antibodies, we consider a design to be a nanobody/antibody if it is annotated as such by a tool like [ANARCI](https://github.com/oxpig/ANARCI). We advise participants who seek to design nanobodies and antibodies to use common framework regions as a starting point. For scFvs we may reformat to our preferred linker.
+How will different classes of molecules be evaluated?
+What criteria will be used to determine the winners of the competition?
+How many designs should I submit?
+If you are part of track 1, you should submit at least 20 designs and at most 40 designs. If you are part of tracks 2 or 3, you should submit at most 20 designs.
+How and where should I submit my designs? Should I submit any additional information with my designs? Can I submit anonymously?
+When will problems be released? When should I submit my designs?
+How many designs will be screened?
+Per problem we expect to screen ~1500 designs (50% for Track 1, 25% for Track 2, and 25% for Track 3)
+How will you select which designs are screened?
+How will I know if my designs were selected for screening?
+Once designs have been selected for a problem and DNA has been ordered, we will release a Collection on [Proteinbase](https://proteinbase.com/) containing the designs that were selected. We estimate this Collection will be available one week after the final competition challenge.
+How do I submit my designs?
+You’ll first need to create a [Proteinbase account](https://proteinbase.com) (either an individual one or one for your team). Following this, you can directly submit a CSV with your sequences and fill in the submission form with your workflow details
+What if I want to submit anonymously?
+This is allowed and you’ll only need to create an anonymous Proteinbase account. It is highly recommended to reveal your identity/company/university afterwards, but we understand that there are circumstances where this would not be possible.
+What experimental data will be generated? When and how will experimental data be released?
+Do I have to use Claude? Can I use other AI tools?
+While we strongly encourage participants, especially those in Tracks 1 and 2, to use Claude, you may use other AI tools. Any AI tools or design models used can be disclosed in the submission form.
+What happens to unused Claude or Modal credits after the competition?
+Unused credits expire at the end of the competition. Claude Max plans will expire approximately three months after the competition begins. We want to see what you can do with this compute so please use it!
+What tools and resources may I use for design?
+Neither Anthropic nor Adaptyv seek to impose any additional restrictions on tools that can be used. As long as you can access the tool appropriately (e.g. you are not violating licenses), you may use the tool. You may use both externally available tools such as open-source folding and design models, or internal-only tools. For any commercially-licensed tools (e.g., Rosetta), we require that you own that specific license beforehand.
+
+In addition to the Claude and Modal credits provided for this competition, you may use any other resources (e.g. in-house GPU clusters) you have access to.
+Who owns the IP for all designs and validated sequences?
+All validated sequences and experimental results will be released publicly in Proteinbase which is under an ODC-BY license. Submitted designs that were not selected or validated but are in a public Proteinbase Collection are still under the same ODC-BY license. Additional details on publication can be found in Section 6 of the [Official Competition Terms](https://proteinbase.com/competitions/anthropic-adaptyv-2026/terms).
+Should I disclose any proprietary methods or tools?
+We recommend that all participants describe in detail the methods and tools they are using, linking to any papers, articles, technical reports that they based their work on. These details will be used when selecting designs to be validated, ensuring novel methods without prior experimental validation will be fairly represented in the competition. This information will be made public in the Proteinbase Collection, thus we understand if there are details that you will not prefer disclosing (e.g. a proprietary tool).
+How will the data generated in this competition be used by Anthropic and Adaptyv?
+The goal of the competition is to advance the field of protein design and thus data and methodology generated and shared during this competition will be made publicly available on Proteinbase and accessible broadly for downstream uses. This was done previously with the [RBX1 competition](https://proteinbase.com/collections/gem-x-adaptyv-rbx1-binder-design-competition-submission-1-MrOsueW5Hi). 
+
+Inputs to and outputs from Claude will be governed by the Terms of Service applicable to the participant’s  Anthropic account.
+Are there any resources you recommend we review?
+What if I have more questions?
+[Join us on the Proteinbase Slack channel](https://join.slack.com/t/proteinbase/shared_invite/zt-4ds9ggmk4-ZfBhjp6TTeBY99cwkA_h4A)!
+mb-4 last:mb-0
+We recommend providing this FAQs list to your Claudes. We expect to update this document throughout the competition as more FAQs emerge.
+faq-1
+summary
+qrunsl
+De novo proteins (including minibinders, larger proteins, and microbinders), nanobodies, and antibodies can be submitted. Importantly:
+mb-4 list-disc space-y-2 pl-5
+For single chain proteins, the minimum length is 10 amino acids and the maximum length is 250 amino acids.
+For nanobodies/antibodies, we consider a design to be a nanobody/antibody if it is annotated as such by a tool like
+ANARCI
+faq-2
+We will stratify performance into five molecule categories:
+mb-4 list-decimal space-y-2 pl-5
+Protein minibinders: Proteins consisting of between 40 and 100 amino acids (inclusive)
+Nanobodies
+Antibodies (formatted as either scFv or Fab, see Question 5)
+faq-3
+Each challenge page has a section called
+strong
+strong-0
+that states the exact measurements and rules for that challenge, so you know what you are optimising for before you design. Each challenge has
+strong-1
+one winner, which has to meet every objective
+of the challenge, and
+strong-2
+one honourable mention per objective
+A design counts as binding in a condition when its sensorgram gives a fittable curve and a KD, or, where the curve cannot be fitted, when the association shift clears 300% over the negative control. Challenges with other objectives (receptor activation for GLP1R, peptide specificity for the peptide-MHC challenge) state their own rules on their page. The primary goal of the competition is to show frontier protein design capabilities, which is why the winner has to meet the hard objectives and not only bind tightly.
+faq-4
+faq-5
+Submit your designs as a CSV ordered by how you would rank your molecules (top row higher) with, at minimum, the following columns:
+name: a unique identifier
+sequence: the sequence of the designed protein
+molecule_class: one of “protein”, “nanobody”, “scfv”, “fab_kappa”, “fab_lambda”
+We encourage participants to submit as much information as they are comfortable sharing, including metrics (e.g. ipTM, ipSAE, self-consistency, physics-based metrics, sequences liability scores), structure models from design and folding models, and methodologies (e.g. AI models, design models, folding models, strategies, provenance on how designs were generated). Participants are welcome to upload data to a shared repository (e.g. Google Drive, GitHub) and provide a link with their submission. One option is to ask your Claudes to write a methods paper and create a metadata package for submission.  Please note that all data and methodology submitted may be made publicly available.
+As described below in FAQ 8, for Tracks 2 and 3, we will provide the additional information you submit to Claude to help select designs. We expect that with more information, Claude can make more informed decisions. Please note that any use of embedded instructions or prompt injection may be deemed grounds for disqualification.
+You can submit anonymously by making an anonymous Proteinbase account. If you later choose to deanonymize, you can. See FAQ 11 for more information.
+Submit from the page of the challenge you are entering, linked from the
+faq-6
+faq-7
+faq-8
+There are some hard criteria or filters that will be used for all designs:
+They must meet the criteria described in FAQs 1 and 2 for protein length and “nanobodyness/antibodyness”. They must also be unique (don’t submit the same design multiple times).
+They must be de novo and zero-shot, defined as not having relied on an initial binder as a starting point and having adequate sequence- and structural-diversity (CDR sequence-diversity in the case of nanobodies/antibodies) from known proteins. You may not take an existing binder and modify it. Designs must be produced from scratch. You are encouraged to otherwise use any data available to you. For example, you may take known binders and use them to evaluate/calibrate design filtering metrics or to fine-tune/train models. We recommend you read Adaptyv’s
+latest blog post on novelty.
+Beyond the hard criteria, designs will be selected as follows:
+For Track 1 participants, their top 20 designs that pass filtering will be screened. We encourage Track 1 participants to send their sequences already ordered by the ranking method they (preferably) describe in their methods.
+For Track 2 and 3 participants, all submitted designs will be pooled together along with submitted information and provided to Claude along with a design selection prompt written in advance by Anthropic and Adaptyv. The prompt will make selections based on predicted design quality and novelty, as well as method novelty. Per problem, a total of ~375 designs will be selected for each of tracks 2 and 3.
+The selection prompt is public: read it, with the parameters of each challenge, on the
+selection page
+faq-9
+Once designs have been selected for a problem and DNA has been ordered, we will release a Collection on
+Proteinbase
+containing the designs that were selected. We estimate this Collection will be available one week after the final competition challenge.
+faq-10
+You’ll first need to create a
+Proteinbase account
+(either an individual one or one for your team). Following this, you can directly submit a CSV with your sequences and fill in the submission form with your workflow details
+faq-11
+faq-12
+This competition measures binding and affinity, but with twists. In addition to binding against the human target, for some targets we plan to measure binding in acidic pH environments as well as against the mouse ortholog to measure cross-reactivity. For the peptide-MHC complex we will screen against relevant off-targets. For the GPCR we measure binding, and confirmed binders are then tested in a functional assay for receptor activation. A design has to be a confirmed agonist to count. Specific conditions per challenge will be communicated in each challenge’s competition page once it is launched.
+Data will be released on
+Proteinbase Slack channel
+faq-13
+faq-14
+faq-15
+Neither Anthropic nor Adaptyv seek to impose any additional restrictions on tools that can be used. As long as you can access the tool appropriately (e.g. you are not violating licenses), you may use the tool. You may use both externally available tools such as open-source folding and design models, or internal-only tools. For any commercially-licensed tools (e.g., Rosetta), we require that you own that specific license beforehand.
+In addition to the Claude and Modal credits provided for this competition, you may use any other resources (e.g. in-house GPU clusters) you have access to.
+faq-16
+All validated sequences and experimental results will be released publicly in Proteinbase which is under an ODC-BY license. Submitted designs that were not selected or validated but are in a public Proteinbase Collection are still under the same ODC-BY license. Additional details on publication can be found in Section 6 of the
+Official Competition Terms
+faq-17
+faq-18
+The goal of the competition is to advance the field of protein design and thus data and methodology generated and shared during this competition will be made publicly available on Proteinbase and accessible broadly for downstream uses. This was done previously with the
+RBX1 competition
+Inputs to and outputs from Claude will be governed by the Terms of Service applicable to the participant’s  Anthropic account.
+faq-19
+Some resources from our teams that we can point you to are:
+Adaptyv’s blog
+, which includes posts about protein design, past competitions, and experimental validation, as well as the
+EGFR competition post-analysis paper
+, which hosts a large corpus of protein design data, including from past competitions
+Anthropic’s blog post on protein design
+, which covers Claude’s ability to design de novo protein binders (
+technical report
+experimental data for the protein design campaign
+Anthropic’s blog post on uplifting biomolecular modeling
+, which includes inference-optimized versions of popular open-source protein folding and design models (
+code
+We strongly recommend you use the inference-optimized models to maximize GPU compute and review the significantly simplified binder design prompt in the technical report.
+faq-20
+Join us on the Proteinbase Slack channel
+IconMark
+Challenge 05: KRAS G12D pMHC | Proteinbase
+description
+canonical
+property
+og:title
+Challenge 05: KRAS G12D pMHC
+og:description
+og:url
+og:site_name
+og:image
+og:type
+website
+twitter:card
+summary_large_image
+twitter:title
+twitter:description
+twitter:image
+icon
+sizes
+image/x-icon
+image/png

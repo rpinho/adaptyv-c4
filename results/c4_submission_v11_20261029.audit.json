@@ -1,0 +1,169 @@
+{
+  "created_utc": "2026-10-28T22:50Z",
+  "source": "results/c4_full_rescore_20261027/pulled_scores \u2014 341 scored designs, construct C_homodimer (P02786-1 121-760 x2), target_sha256 5345f9f5...",
+  "rule": "(1) mean of 5 AF2 models iPTM >= 0.826 AND 5-model iPTM range <= 0.03 (pose-consistency, not peak score); (2) sequence-liability clean: no poly-AA run >=4, no exact internal repeat >=6 res, no 20-mer window with <=5 distinct residues, no His>=5 run; (3) zero overlap with v10; (4) greedy max-min 4-mer diversity with score tilt",
+  "n": 20,
+  "overlap_with_v10": 0,
+  "rows": [
+    {
+      "name": "tfr1_c4_acid_site1_93",
+      "mean_iptm": 0.85,
+      "best_iptm": 0.86,
+      "model_range": 0.02,
+      "plddt": 90.57,
+      "length": 62
+    },
+    {
+      "name": "tfr1_c4_acid_site2_91",
+      "mean_iptm": 0.846,
+      "best_iptm": 0.86,
+      "model_range": 0.02,
+      "plddt": 90.48,
+      "length": 64
+    },
+    {
+      "name": "tfr1_c4_acid_site1_75",
+      "mean_iptm": 0.84,
+      "best_iptm": 0.85,
+      "model_range": 0.02,
+      "plddt": 90.18,
+      "length": 69
+    },
+    {
+      "name": "tfr1_c4_acid_site2_74",
+      "mean_iptm": 0.838,
+      "best_iptm": 0.85,
+      "model_range": 0.02,
+      "plddt": 89.55,
+      "length": 65
+    },
+    {
+      "name": "tfr1_c4_acid_site1_50",
+      "mean_iptm": 0.838,
+      "best_iptm": 0.85,
+      "model_range": 0.02,
+      "plddt": 89.66,
+      "length": 61
+    },
+    {
+      "name": "tfr1_c4_acid_site1_6",
+      "mean_iptm": 0.836,
+      "best_iptm": 0.84,
+      "model_range": 0.01,
+      "plddt": 89.77,
+      "length": 79
+    },
+    {
+      "name": "tfr1_c4_acid_site2_101",
+      "mean_iptm": 0.834,
+      "best_iptm": 0.85,
+      "model_range": 0.02,
+      "plddt": 89.7,
+      "length": 65
+    },
+    {
+      "name": "tfr1_c4_acid_site2_115",
+      "mean_iptm": 0.834,
+      "best_iptm": 0.84,
+      "model_range": 0.01,
+      "plddt": 89.23,
+      "length": 64
+    },
+    {
+      "name": "tfr1_c4_acid_site1_99",
+      "mean_iptm": 0.834,
+      "best_iptm": 0.85,
+      "model_range": 0.02,
+      "plddt": 89.8,
+      "length": 67
+    },
+    {
+      "name": "tfr1_c4_acid_site1_91",
+      "mean_iptm": 0.834,
+      "best_iptm": 0.84,
+      "model_range": 0.02,
+      "plddt": 89.85,
+      "length": 64
+    },
+    {
+      "name": "tfr1_c4_acid_site2_161",
+      "mean_iptm": 0.832,
+      "best_iptm": 0.84,
+      "model_range": 0.02,
+      "plddt": 88.88,
+      "length": 78
+    },
+    {
+      "name": "tfr1_c4_acid_site2_167",
+      "mean_iptm": 0.832,
+      "best_iptm": 0.84,
+      "model_range": 0.02,
+      "plddt": 89.41,
+      "length": 69
+    },
+    {
+      "name": "tfr1_c4_acid_site1_9",
+      "mean_iptm": 0.832,
+      "best_iptm": 0.84,
+      "model_range": 0.02,
+      "plddt": 89.88,
+      "length": 67
+    },
+    {
+      "name": "tfr1_c4_acid_site2_58",
+      "mean_iptm": 0.83,
+      "best_iptm": 0.84,
+      "model_range": 0.02,
+      "plddt": 89.68,
+      "length": 62
+    },
+    {
+      "name": "tfr1_c4_acid_site1_46",
+      "mean_iptm": 0.83,
+      "best_iptm": 0.84,
+      "model_range": 0.02,
+      "plddt": 89.35,
+      "length": 65
+    },
+    {
+      "name": "tfr1_c4_acid_site2_63",
+      "mean_iptm": 0.83,
+      "best_iptm": 0.84,
+      "model_range": 0.02,
+      "plddt": 90.31,
+      "length": 90
+    },
+    {
+      "name": "tfr1_c4_acid_site1_61",
+      "mean_iptm": 0.83,
+      "best_iptm": 0.84,
+      "model_range": 0.02,
+      "plddt": 89.98,
+      "length": 63
+    },
+    {
+      "name": "tfr1_c4_acid_site1_11",
+      "mean_iptm": 0.83,
+      "best_iptm": 0.84,
+      "model_range": 0.02,
+      "plddt": 89.77,
+      "length": 73
+    },
+    {
+      "name": "tfr1_c4_acid_site2_93",
+      "mean_iptm": 0.83,
+      "best_iptm": 0.84,
+      "model_range": 0.02,
+      "plddt": 89.25,
+      "length": 62
+    },
+    {
+      "name": "tfr1_c4_acid_site2_162",
+      "mean_iptm": 0.83,
+      "best_iptm": 0.84,
+      "model_range": 0.03,
+      "plddt": 89.55,
+      "length": 61
+    }
+  ]
+}

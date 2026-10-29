@@ -1,0 +1,440 @@
+{
+  "models": 72,
+  "max_backbone_displacement_A": 0,
+  "checks": [
+    {
+      "seed": 202610210,
+      "label": "HH",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610210,
+      "label": "H4Q",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610210,
+      "label": "H46Q",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610210,
+      "label": "QQ",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610210,
+      "label": "A45D",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610210,
+      "label": "A45E",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610210,
+      "label": "K3D",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610210,
+      "label": "K3E",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610210,
+      "label": "L1D",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610210,
+      "label": "L1E",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610210,
+      "label": "I47D",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610210,
+      "label": "I47E",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610210,
+      "label": "I5D",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610210,
+      "label": "I5E",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610210,
+      "label": "R49D",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610210,
+      "label": "R49E",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610210,
+      "label": "E7D",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610210,
+      "label": "M43D",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610210,
+      "label": "M43E",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610210,
+      "label": "V8D",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610210,
+      "label": "V8E",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610210,
+      "label": "L50D",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610210,
+      "label": "L50E",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610210,
+      "label": "D42E",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610211,
+      "label": "HH",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610211,
+      "label": "H4Q",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610211,
+      "label": "H46Q",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610211,
+      "label": "QQ",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610211,
+      "label": "A45D",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610211,
+      "label": "A45E",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610211,
+      "label": "K3D",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610211,
+      "label": "K3E",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610211,
+      "label": "L1D",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610211,
+      "label": "L1E",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610211,
+      "label": "I47D",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610211,
+      "label": "I47E",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610211,
+      "label": "I5D",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610211,
+      "label": "I5E",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610211,
+      "label": "R49D",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610211,
+      "label": "R49E",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610211,
+      "label": "E7D",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610211,
+      "label": "M43D",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610211,
+      "label": "M43E",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610211,
+      "label": "V8D",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610211,
+      "label": "V8E",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610211,
+      "label": "L50D",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610211,
+      "label": "L50E",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610211,
+      "label": "D42E",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610212,
+      "label": "HH",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610212,
+      "label": "H4Q",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610212,
+      "label": "H46Q",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610212,
+      "label": "QQ",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610212,
+      "label": "A45D",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610212,
+      "label": "A45E",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610212,
+      "label": "K3D",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610212,
+      "label": "K3E",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610212,
+      "label": "L1D",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610212,
+      "label": "L1E",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610212,
+      "label": "I47D",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610212,
+      "label": "I47E",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610212,
+      "label": "I5D",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610212,
+      "label": "I5E",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610212,
+      "label": "R49D",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610212,
+      "label": "R49E",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610212,
+      "label": "E7D",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610212,
+      "label": "M43D",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610212,
+      "label": "M43E",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610212,
+      "label": "V8D",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610212,
+      "label": "V8E",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610212,
+      "label": "L50D",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610212,
+      "label": "L50E",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    },
+    {
+      "seed": 202610212,
+      "label": "D42E",
+      "sha256_ok": true,
+      "mutation_identity_ok": true
+    }
+  ],
+  "status_sha256": "48c0bc67f5d733d7580066a12a215c6ea8de373366f69bbdb16bbbc66317b0c7",
+  "summary_script_sha256": "95b1d23add43de75713a7fb0aec60ec46e42d25b5a76f56fabdd2a90a8befe12"
+}

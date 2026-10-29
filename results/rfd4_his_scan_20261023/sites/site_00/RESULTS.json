@@ -1,0 +1,84 @@
+{
+  "state": "complete",
+  "job": {
+    "source_id": "tfr1_c200m_20261023__tfr1_apical_binder_126",
+    "rank": 1,
+    "position": 47,
+    "chain": "C",
+    "wildtype": "HIS",
+    "ring_to_receptor_minimum_A": 3.071730136871338,
+    "mutation_selection": "chain_id == 'C' and res_id == 47",
+    "region_b": "chain_id == 'A' or chain_id == 'B'"
+  },
+  "plan_sha256": "63a037af9e1582fec373f3bce5827732215ee227afe6aa0c614dd19434819025",
+  "script_sha256": "d80ae7aa14461f0ebe06d30e0c112584e9ff9211e48ceceb71c5214cb7ce4518",
+  "device": "cpu",
+  "new_gpu_spend_usd": 0,
+  "source_pdb_sha256": "418ee5f03c5892096a0d456a4b8bd775d181bdfd5a17fa77d5d0dd8ef766a3d4",
+  "versions": {
+    "torch": "2.14.1",
+    "tmol": "0.2.0",
+    "atomworks": "3.0.4",
+    "rfd4-proteina": "0.0.3"
+  },
+  "cuda_available": false,
+  "native_target_residues": 1278,
+  "results": {
+    "interface_ddg_wt__C47": -1.4407010078430176,
+    "interface_ddg_mut__C47__ALA": -0.8198286294937134,
+    "interface_ddg_delta__C47__ALA": 0.6208723783493042,
+    "interface_ddg_mut__C47__GLN": -0.8517490029335022,
+    "interface_ddg_delta__C47__GLN": 0.5889520049095154,
+    "interface_ddg_mut__C47__HIS": -1.4407010078430176,
+    "interface_ddg_delta__C47__HIS": 0.0
+  },
+  "scored_legs": [
+    {
+      "leg": "WT",
+      "result": {
+        "interface_ddg": -1.4407010078430176
+      },
+      "saved_pdb": "/Users/ricardo/.cache/adaptyv-c4/his_scan_cpu/scored_poses/site_00/WT.pdb",
+      "sha256": "3484841621b70566ef62e00cf7f2be4c6b4b1a6ad6ee1fa552949c16e579877a",
+      "maximum_backbone_displacement_A": 0.001106761978007853,
+      "identities_verified": true,
+      "retained_native_target_residues": 1278
+    },
+    {
+      "leg": "ALA",
+      "result": {
+        "interface_ddg": -0.8198286294937134
+      },
+      "saved_pdb": "/Users/ricardo/.cache/adaptyv-c4/his_scan_cpu/scored_poses/site_00/ALA.pdb",
+      "sha256": "124f523cd42b079d3c8d926122950c95a3a86c8f4f146dbc21b2170d4aa6c47b",
+      "maximum_backbone_displacement_A": 0.000827534357085824,
+      "identities_verified": true,
+      "retained_native_target_residues": 1278
+    },
+    {
+      "leg": "GLN",
+      "result": {
+        "interface_ddg": -0.8517490029335022
+      },
+      "saved_pdb": "/Users/ricardo/.cache/adaptyv-c4/his_scan_cpu/scored_poses/site_00/GLN.pdb",
+      "sha256": "2fe34baf97978a1a1ac1794e8ad0bc44da2014d2dc45782a0a23131ad84b6af0",
+      "maximum_backbone_displacement_A": 0.000827534357085824,
+      "identities_verified": true,
+      "retained_native_target_residues": 1278
+    },
+    {
+      "leg": "HIS",
+      "result": {
+        "interface_ddg": -1.4407010078430176
+      },
+      "saved_pdb": "/Users/ricardo/.cache/adaptyv-c4/his_scan_cpu/scored_poses/site_00/HIS.pdb",
+      "sha256": "3484841621b70566ef62e00cf7f2be4c6b4b1a6ad6ee1fa552949c16e579877a",
+      "maximum_backbone_displacement_A": 0.001106761978007853,
+      "identities_verified": true,
+      "retained_native_target_residues": 1278
+    }
+  ],
+  "elapsed_seconds": 90.92596458271146,
+  "pH_selectivity_measured": false,
+  "rigorous_binding_ddg_measured": false
+}

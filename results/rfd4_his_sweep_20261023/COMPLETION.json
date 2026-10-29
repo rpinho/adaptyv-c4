@@ -1,0 +1,31 @@
+{
+  "state": "complete",
+  "recorded_at": "2026-10-23T13:22:21.748786+00:00",
+  "counts": {
+    "his020": {
+      "sequence_rows": 200,
+      "metric_rows": 200,
+      "joined_rows": 200
+    },
+    "his030": {
+      "sequence_rows": 200,
+      "metric_rows": 200,
+      "joined_rows": 200
+    }
+  },
+  "sha256": {
+    "raw_metrics/his020.csv": "c70a95a6d510e16c1abe54fe495383ac336cb2dae8a583d5761860da925dbc20",
+    "raw_metrics/his030.csv": "7d8a656286599c1ada41d1bdc31c4f5c7db4d1179ec8194712f4be73a30e23da",
+    "raw_sequences/his020.csv": "45c16f12b9982e4ba68958053faa309317cd3729beef78a1f7e739e515df5b2a",
+    "raw_sequences/his030.csv": "39d6a17dd2963b39ed6f9646c236679a13c49875cb29aeb768438ca6a4d3cfa9",
+    "scored/his020.csv": "86e08b08b1b2245ad6651f1824cde605f1d28c8686ab7ce3c3b79c0485c43ee2",
+    "scored/his020.provenance.json": "c1d514695a1f496ebe718f8b692f67470ed2119de045949e0311d455d343503b",
+    "scored/his030.csv": "e63a85388dc240d6bc8541b6c301ec828d0675f86c6082b828bcaa8d82fcf387",
+    "scored/his030.provenance.json": "a4f617350dd27653d6e4d46e32f951d5cbcd4e9f1cb1a380b300bcedc4e732cb"
+  },
+  "release_verified": true,
+  "raw_status_preserved": true,
+  "raw_status_correction": "Already-stopped CLI exit was a cleanup reporting error; RELEASE_VERIFIED.json is positive stopped/zero-task evidence",
+  "final_review": "results/rfd4_final_review_20261023/VALIDATION.json",
+  "new_gpu_spend_usd": 0
+}

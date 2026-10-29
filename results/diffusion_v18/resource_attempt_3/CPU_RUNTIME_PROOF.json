@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "modal_runner_python": [
+    3,
+    11
+  ],
+  "runner_executable": "/usr/local/bin/python",
+  "rf_runtime": {
+    "python": [
+      3,
+      9
+    ],
+    "torch": "1.12.1+cu116",
+    "cuda_available": false
+  },
+  "scope": "Actual serverless CPU bootstrap; no GPU requested"
+}

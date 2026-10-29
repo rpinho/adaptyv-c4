@@ -1,0 +1,72 @@
+{
+  "status": "completed",
+  "observed_gradient_calls": 50,
+  "first": {
+    "step": 1,
+    "unix": 1792667907.5629318,
+    "loss": 15.677413940429688,
+    "binder_CA_count": 69,
+    "unique_binder_CA_coordinates": 69,
+    "adjacent_CA_min_A": 2.1413486120851513,
+    "adjacent_CA_max_A": 4.23786900356845,
+    "minimum_hotspot_to_binder_CA_A": 38.5117998247099,
+    "initial_sequence_array_sha256": "ed0c428b6962f8cf6e5ed7a96c810357036457fee1e586d66d991cb5b45e668a",
+    "initial_sequence_array_shape": [
+      69,
+      20
+    ],
+    "initial_sequence_array_dtype": "float16",
+    "gradient_norm": 38.5871802709579
+  },
+  "last": {
+    "step": 50,
+    "unix": 1792668179.6684682,
+    "loss": 11.455370903015137,
+    "binder_CA_count": 69,
+    "unique_binder_CA_coordinates": 69,
+    "adjacent_CA_min_A": 1.9904710743078509,
+    "adjacent_CA_max_A": 4.3319379075831925,
+    "minimum_hotspot_to_binder_CA_A": 54.7465441584219,
+    "gradient_norm": 5.407290792758147
+  },
+  "lowest_loss_round": {
+    "step": 24,
+    "unix": 1792668036.0968869,
+    "loss": 10.23795223236084,
+    "binder_CA_count": 69,
+    "unique_binder_CA_coordinates": 69,
+    "adjacent_CA_min_A": 3.392181742279775,
+    "adjacent_CA_max_A": 4.177138533508914,
+    "minimum_hotspot_to_binder_CA_A": 52.11079765791295,
+    "gradient_norm": 213.11489027311018
+  },
+  "closest_patch_round": {
+    "step": 1,
+    "unix": 1792667907.5629318,
+    "loss": 15.677413940429688,
+    "binder_CA_count": 69,
+    "unique_binder_CA_coordinates": 69,
+    "adjacent_CA_min_A": 2.1413486120851513,
+    "adjacent_CA_max_A": 4.23786900356845,
+    "minimum_hotspot_to_binder_CA_A": 38.5117998247099,
+    "initial_sequence_array_sha256": "ed0c428b6962f8cf6e5ed7a96c810357036457fee1e586d66d991cb5b45e668a",
+    "initial_sequence_array_shape": [
+      69,
+      20
+    ],
+    "initial_sequence_array_dtype": "float16",
+    "gradient_norm": 38.5871802709579
+  },
+  "minimum_adjacent_CA_across_rounds_A": 0.3763201048164481,
+  "accepted_designs": 0,
+  "screen_rejection": {
+    "pLDDT": 0.54,
+    "i_pTM": 0.17,
+    "reason": "pLDDT"
+  },
+  "gpu_released_verified": true,
+  "limitation": "Finite noncollapsed optimization is software evidence only; no qualified candidate. Best-loss saved output may differ from final round.",
+  "cpu_followup_returncode": 0,
+  "conservative_runtime_estimate_usd": 0.5836718690972709,
+  "cumulative_modal_runtime_estimate_usd": 4.636855696904325
+}

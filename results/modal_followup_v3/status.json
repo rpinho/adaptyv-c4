@@ -1,0 +1,13 @@
+{
+  "status": "no_accepted_scaffolds",
+  "started": 1792619574.8190951,
+  "models_scored": 0,
+  "designs": [],
+  "errors": [],
+  "new_gpu_spend_usd": 0,
+  "script_sha256": "38ae098cc2a5d4f8befdebf6772cb0a9b79561f78e9dfaefd541be483ae69d04",
+  "max_parents": 2,
+  "max_pairs_per_parent": 1,
+  "seeds": 5,
+  "interpretation": "CPU structural/PROPKA proxies; not experimentally validated binding"
+}

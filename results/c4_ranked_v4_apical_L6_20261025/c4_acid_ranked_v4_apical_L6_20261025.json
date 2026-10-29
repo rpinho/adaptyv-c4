@@ -1,0 +1,420 @@
+{
+ "artifact": "EVIDENCE ONLY \u2014 not a submission; no promotion; not frozen; Ricardo approval required",
+ "defect_class": "MEMBERSHIP (acid-ON L6 gate computed on the surrogate construct)",
+ "distinct_from": {
+  "record": "results/decisions/20261025-1103-c4-wrong-construct-screen.md",
+  "that_defect": "v2 screened clashes on the 154-residue stitched surrogate; v3 fixed the screen directory only",
+  "this_defect": "v3 still filtered/ranked membership on surrogate-construct L6, so its acid-ON gate and its order are computed on the wrong construct"
+ },
+ "what_changed_vs_v3": "ONLY the membership gate and ranking key: surrogate L6 -> apical 195-residue L6 (results/c4_linkage_apical_20261025/linkage_apical.json). Same iPTM floor, same apical PDB screen, same thresholds, same slots.",
+ "control": {
+  "what": "v3 algorithm on v3's own inputs (surrogate-L6 pool + apical PDB dir)",
+  "names_reproduced": true,
+  "names_in_order": true,
+  "dmin_reproduced": true,
+  "dmin_max_abs_delta_A": 0.0,
+  "n_control": 20,
+  "n_shipped_v3": 20,
+  "shipped_v3_csv_order_matches_json": true,
+  "overlap_with_shipped_v3": [
+   "tfr1_c4_acid_site1_14",
+   "tfr1_c4_acid_site1_144",
+   "tfr1_c4_acid_site1_169",
+   "tfr1_c4_acid_site1_194",
+   "tfr1_c4_acid_site1_199",
+   "tfr1_c4_acid_site1_24",
+   "tfr1_c4_acid_site1_42",
+   "tfr1_c4_acid_site1_56",
+   "tfr1_c4_acid_site1_67",
+   "tfr1_c4_acid_site1_7",
+   "tfr1_c4_acid_site1_79",
+   "tfr1_c4_acid_site2_1",
+   "tfr1_c4_acid_site2_120",
+   "tfr1_c4_acid_site2_137",
+   "tfr1_c4_acid_site2_177",
+   "tfr1_c4_acid_site2_181",
+   "tfr1_c4_acid_site2_47",
+   "tfr1_c4_acid_site2_62",
+   "tfr1_c4_acid_site2_74",
+   "tfr1_c4_acid_site2_99"
+  ]
+ },
+ "apical_l6_source": {
+  "artifact": "results/c4_linkage_apical_20261025/linkage_apical.json",
+  "sha256": "f36cc0780430a00b16b9ca98b033c3d349e9361654a37d76bdb7536089579737",
+  "n_records": 342,
+  "target": "P02786_189-383_contiguous",
+  "target_len": 195,
+  "verified_this_run": "scripts/c4_linkage_apical_recompute_20261025.py (verify mode) reproduced 342/342 within 0.0006; positive 111/342"
+ },
+ "selection_rule": "iPTM>=0.60 AND apical L6>0, ranked by apical L6 desc then iPTM desc then name, take 20",
+ "n_iptm_eligible": 116,
+ "n_eligible_acid_on_apical": 40,
+ "n_eligible_acid_on_surrogate_v3_pool": 33,
+ "excluded_no_apical_complex": [
+  "tfr1_c4_acid_site1_41"
+ ],
+ "slots_requested": 20,
+ "slots_filled": 20,
+ "shortfall": 0,
+ "padded": false,
+ "clash_gate_A": 2.0,
+ "pdb_source": "results/c4_apical_pdb_audit_20261025/all343 (chain B = 195)",
+ "seat_change_vs_v3": {
+  "n_changed": 12,
+  "n_retained": 8,
+  "added": [
+   "tfr1_c4_acid_site1_123",
+   "tfr1_c4_acid_site2_176",
+   "tfr1_c4_acid_site1_145",
+   "tfr1_c4_acid_site2_108",
+   "tfr1_c4_acid_site2_172",
+   "tfr1_c4_acid_site2_152",
+   "tfr1_c4_acid_site2_12",
+   "tfr1_c4_acid_site1_73",
+   "tfr1_c4_acid_site1_185",
+   "tfr1_c4_acid_site2_174",
+   "tfr1_c4_acid_site1_174",
+   "tfr1_c4_acid_site1_40"
+  ],
+  "dropped": [
+   "tfr1_c4_acid_site2_177",
+   "tfr1_c4_acid_site1_67",
+   "tfr1_c4_acid_site2_181",
+   "tfr1_c4_acid_site1_42",
+   "tfr1_c4_acid_site2_74",
+   "tfr1_c4_acid_site2_99",
+   "tfr1_c4_acid_site1_7",
+   "tfr1_c4_acid_site2_137",
+   "tfr1_c4_acid_site1_169",
+   "tfr1_c4_acid_site2_47",
+   "tfr1_c4_acid_site1_199",
+   "tfr1_c4_acid_site2_62"
+  ]
+ },
+ "seat_change_vs_v2": {
+  "n_changed": 15,
+  "n_retained": 5
+ },
+ "chosen_by_apical_L6": [
+  {
+   "rank": 1,
+   "name": "tfr1_c4_acid_site1_123",
+   "L6_apical": 3.3368,
+   "L6_surrogate": -1.4112,
+   "L6_sign_flip": true,
+   "iptm": 0.706,
+   "d_min_A": 2.071,
+   "margin_A": 0.071,
+   "in_preview": false,
+   "in_v3": false
+  },
+  {
+   "rank": 2,
+   "name": "tfr1_c4_acid_site2_176",
+   "L6_apical": 3.2942,
+   "L6_surrogate": -1.277,
+   "L6_sign_flip": true,
+   "iptm": 0.701,
+   "d_min_A": 2.009,
+   "margin_A": 0.009,
+   "in_preview": false,
+   "in_v3": false
+  },
+  {
+   "rank": 3,
+   "name": "tfr1_c4_acid_site1_194",
+   "L6_apical": 2.9096,
+   "L6_surrogate": 1.2256,
+   "L6_sign_flip": false,
+   "iptm": 0.728,
+   "d_min_A": 2.231,
+   "margin_A": 0.231,
+   "in_preview": false,
+   "in_v3": true
+  },
+  {
+   "rank": 4,
+   "name": "tfr1_c4_acid_site2_120",
+   "L6_apical": 2.8809,
+   "L6_surrogate": 1.3995,
+   "L6_sign_flip": false,
+   "iptm": 0.808,
+   "d_min_A": 2.097,
+   "margin_A": 0.097,
+   "in_preview": false,
+   "in_v3": true
+  },
+  {
+   "rank": 5,
+   "name": "tfr1_c4_acid_site1_145",
+   "L6_apical": 1.5494,
+   "L6_surrogate": -0.9799,
+   "L6_sign_flip": true,
+   "iptm": 0.772,
+   "d_min_A": 2.356,
+   "margin_A": 0.356,
+   "in_preview": false,
+   "in_v3": false
+  },
+  {
+   "rank": 6,
+   "name": "tfr1_c4_acid_site2_108",
+   "L6_apical": 1.4993,
+   "L6_surrogate": -0.3927,
+   "L6_sign_flip": true,
+   "iptm": 0.691,
+   "d_min_A": 2.008,
+   "margin_A": 0.008,
+   "in_preview": false,
+   "in_v3": false
+  },
+  {
+   "rank": 7,
+   "name": "tfr1_c4_acid_site2_172",
+   "L6_apical": 1.453,
+   "L6_surrogate": -1.0997,
+   "L6_sign_flip": true,
+   "iptm": 0.763,
+   "d_min_A": 2.702,
+   "margin_A": 0.702,
+   "in_preview": false,
+   "in_v3": false
+  },
+  {
+   "rank": 8,
+   "name": "tfr1_c4_acid_site2_152",
+   "L6_apical": 1.4106,
+   "L6_surrogate": -0.5321,
+   "L6_sign_flip": true,
+   "iptm": 0.63,
+   "d_min_A": 2.043,
+   "margin_A": 0.043,
+   "in_preview": false,
+   "in_v3": false
+  },
+  {
+   "rank": 9,
+   "name": "tfr1_c4_acid_site1_79",
+   "L6_apical": 1.1375,
+   "L6_surrogate": 0.2751,
+   "L6_sign_flip": false,
+   "iptm": 0.677,
+   "d_min_A": 2.119,
+   "margin_A": 0.119,
+   "in_preview": false,
+   "in_v3": true
+  },
+  {
+   "rank": 10,
+   "name": "tfr1_c4_acid_site2_12",
+   "L6_apical": 1.1079,
+   "L6_surrogate": -0.0583,
+   "L6_sign_flip": true,
+   "iptm": 0.901,
+   "d_min_A": 2.017,
+   "margin_A": 0.017,
+   "in_preview": false,
+   "in_v3": false
+  },
+  {
+   "rank": 11,
+   "name": "tfr1_c4_acid_site1_14",
+   "L6_apical": 1.075,
+   "L6_surrogate": 1.1219,
+   "L6_sign_flip": false,
+   "iptm": 0.683,
+   "d_min_A": 2.397,
+   "margin_A": 0.397,
+   "in_preview": false,
+   "in_v3": true
+  },
+  {
+   "rank": 12,
+   "name": "tfr1_c4_acid_site1_73",
+   "L6_apical": 0.9814,
+   "L6_surrogate": -1.0164,
+   "L6_sign_flip": true,
+   "iptm": 0.781,
+   "d_min_A": 2.046,
+   "margin_A": 0.046,
+   "in_preview": false,
+   "in_v3": false
+  },
+  {
+   "rank": 13,
+   "name": "tfr1_c4_acid_site1_185",
+   "L6_apical": 0.9216,
+   "L6_surrogate": -2.2627,
+   "L6_sign_flip": true,
+   "iptm": 0.636,
+   "d_min_A": 2.183,
+   "margin_A": 0.183,
+   "in_preview": false,
+   "in_v3": false
+  },
+  {
+   "rank": 14,
+   "name": "tfr1_c4_acid_site2_174",
+   "L6_apical": 0.6613,
+   "L6_surrogate": -0.9608,
+   "L6_sign_flip": true,
+   "iptm": 0.652,
+   "d_min_A": 2.34,
+   "margin_A": 0.34,
+   "in_preview": false,
+   "in_v3": false
+  },
+  {
+   "rank": 15,
+   "name": "tfr1_c4_acid_site1_144",
+   "L6_apical": 0.6345,
+   "L6_surrogate": 0.538,
+   "L6_sign_flip": false,
+   "iptm": 0.604,
+   "d_min_A": 2.372,
+   "margin_A": 0.372,
+   "in_preview": true,
+   "in_v3": true
+  },
+  {
+   "rank": 16,
+   "name": "tfr1_c4_acid_site1_174",
+   "L6_apical": 0.6173,
+   "L6_surrogate": -0.181,
+   "L6_sign_flip": true,
+   "iptm": 0.653,
+   "d_min_A": 2.024,
+   "margin_A": 0.024,
+   "in_preview": true,
+   "in_v3": false
+  },
+  {
+   "rank": 17,
+   "name": "tfr1_c4_acid_site1_40",
+   "L6_apical": 0.6017,
+   "L6_surrogate": -0.3427,
+   "L6_sign_flip": true,
+   "iptm": 0.82,
+   "d_min_A": 2.458,
+   "margin_A": 0.458,
+   "in_preview": false,
+   "in_v3": false
+  },
+  {
+   "rank": 18,
+   "name": "tfr1_c4_acid_site2_1",
+   "L6_apical": 0.5255,
+   "L6_surrogate": 0.008,
+   "L6_sign_flip": false,
+   "iptm": 0.706,
+   "d_min_A": 2.121,
+   "margin_A": 0.121,
+   "in_preview": true,
+   "in_v3": true
+  },
+  {
+   "rank": 19,
+   "name": "tfr1_c4_acid_site1_24",
+   "L6_apical": 0.4616,
+   "L6_surrogate": 0.0129,
+   "L6_sign_flip": false,
+   "iptm": 0.704,
+   "d_min_A": 2.438,
+   "margin_A": 0.438,
+   "in_preview": false,
+   "in_v3": true
+  },
+  {
+   "rank": 20,
+   "name": "tfr1_c4_acid_site1_56",
+   "L6_apical": 0.4102,
+   "L6_surrogate": 0.796,
+   "L6_sign_flip": false,
+   "iptm": 0.609,
+   "d_min_A": 2.631,
+   "margin_A": 0.631,
+   "in_preview": true,
+   "in_v3": true
+  }
+ ],
+ "margin_summary": {
+  "borderline_2.0-2.2": 11,
+  "above_2.2": 9,
+  "min_A": 2.008,
+  "max_A": 2.702
+ },
+ "survivors_acid_on_apical_of_v3_roster": 10,
+ "diversity_rejections": [
+  {
+   "name": "tfr1_c4_acid_site1_137",
+   "why": "rank-001 clash",
+   "n_clash_pairs": 1
+  },
+  {
+   "name": "tfr1_c4_acid_site1_121",
+   "why": "rank-001 clash",
+   "n_clash_pairs": 1
+  },
+  {
+   "name": "tfr1_c4_acid_site2_73",
+   "why": "rank-001 clash",
+   "n_clash_pairs": 1
+  },
+  {
+   "name": "tfr1_c4_acid_site2_121",
+   "why": "rank-001 clash",
+   "n_clash_pairs": 1
+  },
+  {
+   "name": "tfr1_c4_acid_site2_52",
+   "why": "rank-001 clash",
+   "n_clash_pairs": 3
+  },
+  {
+   "name": "tfr1_c4_acid_site1_66",
+   "why": "rank-001 clash",
+   "n_clash_pairs": 1
+  },
+  {
+   "name": "tfr1_c4_acid_site1_72",
+   "why": "rank-001 clash",
+   "n_clash_pairs": 1
+  },
+  {
+   "name": "tfr1_c4_acid_site2_91",
+   "why": "rank-001 clash",
+   "n_clash_pairs": 1
+  },
+  {
+   "name": "tfr1_c4_acid_site2_18",
+   "why": "rank-001 clash",
+   "n_clash_pairs": 1
+  },
+  {
+   "name": "tfr1_c4_acid_site2_171",
+   "why": "rank-001 clash",
+   "n_clash_pairs": 1
+  },
+  {
+   "name": "tfr1_c4_acid_site2_197",
+   "why": "rank-001 clash",
+   "n_clash_pairs": 1
+  },
+  {
+   "name": "tfr1_c4_acid_site2_14",
+   "why": "rank-001 clash",
+   "n_clash_pairs": 1
+  }
+ ],
+ "caveats": [
+  "SELECTION ARTIFACT: acid-ON rate and mean L6 are guaranteed by ranking on apical L6",
+  "modelled PROPKA readout on predicted complexes, not experimental evidence",
+  "cannot establish pH-conditional binding, activation, or release",
+  "domain-only / non-native target construct",
+  "2.0 A heavy-atom screen is atom-type-blind and permissive",
+  "v2 and v3 are preserved unchanged; this is a new versioned artifact",
+  "Ricardo approval required before any use"
+ ],
+ "artifact_sha256": "489e95fdca8e4d032acec444a42dc2387c122a168c674b0b32145010c100068b"
+}

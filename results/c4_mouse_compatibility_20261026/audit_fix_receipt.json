@@ -1,0 +1,45 @@
+{
+  "recorded_at_utc": "2026-10-26T12:56:01Z",
+  "scope": "Narrow mapping repair only; no submitted C3 file or historical JSON rewritten",
+  "files": {
+    "results/c3_sprint_8h_20261025/c3_candidate_D_swap18_20261025.csv": "ba5e3789c0dfdf8cf44e087f0d281b37335fe71fd370d0b64d11ea09d6d1f4d2",
+    "results/c3_sprint_8h_20261025/independent/METHODOLOGY_D_swap18_20261025.txt": "6da47973814530c4aae581fe4a5c41edb5c1b159990e87a4598ee954e12d49db",
+    "results/c3_sprint_8h_20261025/epitope_agonist_audit.json": "ea3f121c92542857324909ab5f17a8fa3f7983343be753b56527b601c3deb88d",
+    "results/c3_sprint_8h_20261025/epitope_agonist_audit.py": "2cc483881630bfbc678129b59d9d3041045fe1d278a70919a59e15b7165647ea",
+    "tests/test_epitope_fragment_map_20261026.py": "ae936652b4fd63a68a2acf1a9bb3f1276bcc463fb1b0c6ba0f7b458948346f90"
+  },
+  "verification": {
+    "test_command": "python3 -m unittest discover -s tests -p test_epitope_fragment_map_20261026.py -v",
+    "tests_passed": 5,
+    "true_structure_identity_old": 101,
+    "true_structure_identity_new": 111,
+    "target_positions": 111,
+    "submitted_designs_verified_by_sequence_sha256": 18,
+    "raw_vs_corrected_patch_Jaccard_pairs_unchanged": 153,
+    "per_design_on_site_counts_unchanged": 18,
+    "site_full_assessable_outside": [
+      52,
+      22,
+      30
+    ],
+    "old_site_full_assessable_outside": [
+      52,
+      19,
+      33
+    ],
+    "synthetic_C_terminal_patch": [
+      107,
+      110,
+      111
+    ],
+    "correct_native_site_contacts": [
+      150,
+      153,
+      154
+    ],
+    "old_native_site_contacts": [
+      147
+    ]
+  },
+  "important": "Assessable coverage fractions change, not submitted methodology numbers. The methodology contains no assessable fraction or 6X18 mapping claim. Synthetic C-terminal negative control catches the defect; old mapping still mislabels one contact to147 rather than returning zero."
+}

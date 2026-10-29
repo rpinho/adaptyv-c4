@@ -1,0 +1,63 @@
+{
+  "state": "complete",
+  "recorded_at": "2026-10-23T12:09:38.310858+00:00",
+  "metric_rows": 400,
+  "sequence_rows": 400,
+  "original_status_sha256": "21b24301b5ad3ffcded8a2912f2f44acafdff0826f39349b3e5a6082007fcf20",
+  "release_sha256": "983e359815a157d6b70a604164d0a119c25ff695a86b32dbc45b30fe3cf01b97",
+  "data_files_sha256": {
+    "raw_sequences/plain.csv": "5b18ac7cafe051653460164d4ddb8a7e42b8352b29ed8349119ac6a36da2044b",
+    "raw_sequences/his.csv": "8501479521084feee8acb16480c6e4bd172293b9dd0a9811a2044b983c69939c",
+    "raw_metrics/plain.csv": "b6bd324add0bf95333457d7106c155b2b01f60d72a1891129f09a7a31ce0ed16",
+    "raw_metrics/his.csv": "e60d3cd58c4f6a17f9138fa89a3a51a2476c91ce4cce2d15be1015fdc443acd1",
+    "scored/plain.csv": "5c93dc99247ede3d0e1d2bb279cdf65c389678adca1246e9cc2bef9d11bf2c81",
+    "scored/his.csv": "3f45f75562d59abcf247bcfaf1f0cadd1386e32aa70a26b3bf64bc03cd90b541"
+  },
+  "arms": {
+    "plain": {
+      "sequences": 200,
+      "metric_rows": 200,
+      "finite_geometry_fields": {
+        "hotspot_obedience.hotspot_obedience": 200,
+        "clash_metrics.frac_atoms_clashing_1p5A": 200,
+        "bond_length_metrics.bond_length.frac_unreasonable": 200
+      },
+      "his_at_least3": 7,
+      "mean_his_count": 0.66,
+      "median_his_percent": 0.0,
+      "cys_present": 61,
+      "expanded_cys_condition_positions_match_binder_length": false,
+      "checkpoint_paths": [
+        "nvidia/RFD4-Proteina"
+      ],
+      "pre_oracle_pass_values": [
+        "1.0"
+      ]
+    },
+    "his": {
+      "sequences": 200,
+      "metric_rows": 200,
+      "finite_geometry_fields": {
+        "hotspot_obedience.hotspot_obedience": 200,
+        "clash_metrics.frac_atoms_clashing_1p5A": 200,
+        "bond_length_metrics.bond_length.frac_unreasonable": 200
+      },
+      "his_at_least3": 33,
+      "mean_his_count": 1.28,
+      "median_his_percent": 1.105006105006105,
+      "cys_present": 21,
+      "expanded_cys_condition_positions_match_binder_length": true,
+      "checkpoint_paths": [
+        "nvidia/RFD4-Proteina"
+      ],
+      "pre_oracle_pass_values": [
+        "1.0"
+      ]
+    }
+  },
+  "reason": "Model generation completed and persisted; original calls were stopped during post-generation sampler cleanup. Canonical CPU export recovered all sequences.",
+  "diagnosis_scope": "Sampler blocking inferred from unbounded shell-child stdout.read, complete model logs and absent timing output; no remote stack dump captured",
+  "organizer_acceptance_measured": false,
+  "recorded_runpod_usd": 56.5899880444631,
+  "new_gpu_generation_in_recovery": false
+}

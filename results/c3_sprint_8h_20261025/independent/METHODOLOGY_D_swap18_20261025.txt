@@ -1,0 +1,24 @@
+DESIGN COHORT METHODOLOGY — 18 computational binder candidates
+File: c3_candidate_D_swap18_20261025.csv | sha256 ba5e3789c0dfdf8cf44e087f0d281b37335fe71fd370d0b64d11ea09d6d1f4d2 | 18 rows
+
+GENERATION
+All 18 sequences are computationally generated designs from a single round-3 RFdiffusion (RFD4-Proteina) campaign; they are not natural sequences and not variants of a known binder. They span 18 distinct designed backbones, 52-100 residues, standard 20 amino acids only. One design (p4_H8_81_100_910228_sd1) contains a five-residue alanine run. Descriptions below derive from the project's existing round-3 provenance records.
+
+SEQUENCE-BOUND STRUCTURAL EVIDENCE
+Each design was re-predicted as a binder-target complex with AlphaFold2-Multimer v3 (five models, three recycles). The binder chain sequence was extracted from the predicted structures and compared with the shipped file: 90 of 90 rank structures (18 designs x 5 models) carry exactly the submitted sequence. The measurements below therefore describe the molecules in this file, not merely similarly named designs.
+
+SCREENING AND SEQUENCE-BOUND CHECKS
+1. Inter-chain clash: zero heavy-atom pairs under 2.0 A, required on all five models, not the top-ranked model alone. 18/18 pass; every design also has zero clashing alternate models.
+2. Independent refold: 18/18 pass.
+3. Complex ipTM: 18/18 at or above 0.850, measured as the minimum across all five models. Minimum 0.86, median 0.90, maximum 0.93. No design sits on the 0.85 floor.
+4. Pairwise redundancy: all 153 pairs measured, none at or above TM 0.65 together with coverage 0.80. Closest pair TM 0.6135 (coverage 1.00).
+5. Sequence novelty: all 18 screened against four reference databases; zero reported hits under the screening settings. Controls behaved as required (positive control fired; shuffled negative control silent).
+
+INTERPRETATION AND LIMITS
+Hypothesis, not established mechanism: these binders are proposed to engage the ECD groove of the target. Predicted groove contact is a hypothesis about binding, not a demonstration of it.
+
+Agonism is UNPROVEN. Nothing here tests whether any design activates or blocks the receptor. Absence of matches in four databases is not proof of unseen-sequence novelty: unrepresented or unseen natural binders cannot be excluded.
+
+STANDING RISK: all 18 designs come from a single generation lineage (one RFD4 campaign). Their errors are correlated. Agreement among them is therefore not independent confirmation, and a shared failure mode would affect the cohort as a unit.
+
+Experimental success is UNPROVEN. These are computational predictions; binding, affinity and function remain to be measured.

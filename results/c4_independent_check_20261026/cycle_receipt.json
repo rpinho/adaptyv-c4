@@ -1,0 +1,25 @@
+{
+ "created_at_utc": "2026-10-26T13:27:45Z",
+ "cycle": "C4 independent check (Claude orchestrator takeover)",
+ "gpu_spend_usd": 0.0,
+ "llm_api_spend_usd": 0.0,
+ "submission_or_organiser_contact": "none",
+ "new_ranking_built": false,
+ "frozen_files_touched": "none",
+ "artifacts": {
+  "results/c4_independent_check_20261026/independent_metrics.json": "5d4452a9c234fc097b560226d101c8f54fa924e25cedd1c44c01b3e0822215cf",
+  "results/c4_independent_check_20261026/independent_metrics.csv": "e0121bb85247e5352cbc98d5b84cc30b4d6e12da2bdc26e7839a58435a036e2c",
+  "results/c4_independent_check_20261026/analysis.json": "9318d3ca26b66edf4a3bdaa073b80aee41974c7c2df5fe65a41c14f436314fdb",
+  "results/c4_independent_check_20261026/FINDING_L6_SIGN.md": "eaf7b78c16a4308d2b4bba7b168f0350fe5e8fa3fbfab1d78b4cae5a17e4e167",
+  "scripts/c4_independent_foldability_20261026.py": "6908bd49b2ad13cd2077d5af3579806126c1fc41f2f09b46f009b5ea06714192",
+  "scripts/c4_independent_analysis_20261026.py": "cd565a6527d8ee09a64bca0978544acf175a244a8a0e08d816b01db214b9db7b"
+ },
+ "inputs": {
+  "linkage_apical.json": "f36cc0780430a00b16b9ca98b033c3d349e9361654a37d76bdb7536089579737",
+  "v4_json": "1a251c820fb1b6cad79c7ba60f6cfdde8583029b1b49b79dfd02396d2f65cdb7",
+  "v4_csv": "489e95fdca8e4d032acec444a42dc2387c122a168c674b0b32145010c100068b",
+  "c4_acid_off_scored.json": "0b9dacb335664037eb65386a7b1c6633da755394e1be79b1d2601ecb6657539d"
+ },
+ "controls_all_fired": true,
+ "sequence_hash_join": "20/20 v4 CSV == extracted chain A == mouse audit hash"
+}

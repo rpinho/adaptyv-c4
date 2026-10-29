@@ -113,8 +113,11 @@ def score_one(pdb, binder_chain, target_chain, ph_low, ph_high, min_shift, verbo
         tp = os.path.join(td, "target.pdb")
         split_chains(pdb, set(binder_chain), bp)
         split_chains(pdb, set(target_chain), tp)
-        fb = run_propka(bp, td) or {}
-        ft = run_propka(tp, td) or {}
+        fb = run_propka(bp, td)
+        ft = run_propka(tp, td)
+        if not fb or not ft:
+            sys.stderr.write("incomplete free-state PROPKA results for %s\n" % pdb)
+            return None
         free = dict(fb); free.update(ft)
         L, rows = linkage(cx, free, ph_low, ph_high, min_shift)
         binder_his = [r for r in rows if r["resname"] == "HIS" and r["chain"] in binder_chain]
@@ -143,7 +146,7 @@ def main():
     ap.add_argument("path", help="a complex PDB, or a directory of them")
     ap.add_argument("--binder-chain", default="B")
     ap.add_argument("--target-chain", default="A")
-    ap.add_argument("--ph-low", type=float, default=6.0)
+    ap.add_argument("--ph-low", type=float, default=5.5)
     ap.add_argument("--ph-high", type=float, default=7.4)
     ap.add_argument("--min-shift", type=float, default=0.1)
     ap.add_argument("--csv")
@@ -158,14 +161,14 @@ def main():
     if not pdbs:
         raise SystemExit("no PDB files found at %s" % a.path)
 
-    print("proton linkage L = log10 Ka(%.1f) - log10 Ka(%.1f); the pH gate needs L <= -2\n"
+    print("proton linkage L = log10 Ka(%.1f) - log10 Ka(%.1f); C4 gate needs L <= -2 (100-fold weaker at the lower pH)\n"
           % (a.ph_low, a.ph_high))
     results = [r for r in (score_one(p, a.binder_chain, a.target_chain,
                                      a.ph_low, a.ph_high, a.min_shift) for p in pdbs) if r]
     if not results:
         raise SystemExit("nothing scored")
     results.sort(key=lambda r: r["L"])
-    print("\nranked (most pH-selective first):")
+    print("\nranked (most pH-selective first, C4 = L most negative):")
     for r in results:
         print("  %-44s L=%+.2f %s" % (r["design"], r["L"], "PASS" if r["switch_ok"] else ""))
     passing = [r for r in results if r["switch_ok"]]

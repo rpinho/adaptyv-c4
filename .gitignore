@@ -5,12 +5,40 @@ __pycache__/
 *.pyc
 *.egg-info/
 data/*.cif
+*.pka
+results/modal_campaign_v3/**/driver.lock
+results/modal_campaign_v3/series.lock
+results/modal_campaign_v4/**/driver.lock
+results/modal_campaign_v4/series.lock
+results/modal_campaign_v5/**/driver.lock
+results/modal_campaign_v5/search.lock
+results/modal_frame_diagnostic_v8/driver.lock
+results/modal_repaired_native_v9/driver.lock
+results/modal_interface8_v10/driver.lock
+results/modal_forced_native_restore_v11/driver.lock
+results/modal_forced_confidence_v12/driver.lock
+results/modal_native_replicates_v14/**/driver.lock
+results/modal_native_replicates_v14/series.lock
+results/hard_sequence_refold_v15/driver.lock
+results/native_domain_v16/driver.lock
+results/domain_hard_refold_v17/driver.lock
+results/diffusion_v18/driver.lock
 
-# Strategy / internal coordination (kept locally, not published)
+# Agent working files (not for public repo)
+HANDOFF_*.md
+MISSION_*.md
+MORNING_*.md
+SPRINT_*.md
+STATE.md
 WIN_PLAN.md
 COMPETITION_INTEL.md
-HANDOFF_CODEX.md
-HANDOFF_FROM_CLAUDE.md
 NEXT_MOVES.md
 SUBMISSION_STATUS.md
 DECISIONS.md
+C5_CONSTRAINTS_20261027.md
+*_CHECKPOINT_DONE
+*_SWITCH_DONE
+results/decisions/raw_*/
+results/decisions/*-outcome.md
+.canary_ops_*/
+error.log

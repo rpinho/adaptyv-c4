@@ -1,0 +1,70 @@
+# C5 RFdiffusion (RFD4) configuration
+# Target: KRAS G12D pMHC (HLA-A*11:01 + β2m + peptide VVVGADGVGK)
+# PDB: state1_g12d_complex.pdb (chain A=HLA 276 res, B=β2m 99 res, C=peptide 10 res)
+# Goal: design mutation-specific binders centered on P6 (Asp6, the G12D mutation site)
+#
+# Kimi K3.1 Pro consultation (2026-10-28): 70% JDI partial diffusion, 20% de novo, 10% salvage
+# C6 MUST be in hotspots — without it we risk optimizing generic HLA/scaffold binding.
+# Don't maximize groove coverage — peptide-centered footprint with enough rim contact.
+#
+# Hotspot branches (Kimi's recommendation):
+#   C6 (Asp, the mutation site) + A69 (Ala, groove rim)
+#   C6 + A155 (Gln, groove rim)
+#   C6 + C7 (Gly, adjacent exposed peptide)
+#
+# NOT using buried groove floor residues (A70/A114/A147/A156) —
+# these are unreachable by a miniprotein approaching from above.
+
+# --- DE NOVO DIFFUSION TRACK (20% of compute) ---
+de_novo:
+  inference:
+    input_pdb: targets/c5_pmhc/state1_g12d_complex.pdb
+    num_designs: 200
+    output_prefix: c5_rfd4_designs/denovo/c5_denovo
+
+  contigmap:
+    contigs:
+      - "A1-276/0 B1-99/0 C1-10/0 90-150"
+
+  # Three hotspot branches — run ~67 designs each
+  hotspot_branches:
+    - name: c6_a69
+      hotspot_res: ["C6", "A69"]
+    - name: c6_a155
+      hotspot_res: ["C6", "A155"]
+    - name: c6_c7
+      hotspot_res: ["C6", "C7"]
+
+  denoiser:
+    noise_scale_ca: 1.0
+    noise_scale_frame: 1.0
+
+# --- JDI PARTIAL DIFFUSION TRACK (70% of compute) ---
+# Start from the 7OW6 JDI TCR backbone — it already has the difficult
+# TCR-like registration over the pMHC groove.
+partial_diffusion:
+  inference:
+    input_pdb: targets/c5_pmhc/state1_g12d_complex.pdb
+    # JDI binder backbone extracted from 7OW6 (chains D+E of the TCR)
+    # Must be prepared separately: extract TCR, trim to binder-sized fragment
+    num_designs: 700
+    output_prefix: c5_rfd4_designs/partial/c5_partial
+
+  # Conservative arm (low noise, preserve global docking + CDR geometry)
+  conservative:
+    partial_T: 15
+    num_designs: 400
+    output_prefix: c5_rfd4_designs/partial/c5_conservative
+
+  # Exploratory arm (moderate noise, allow local CDR rearrangement)
+  exploratory:
+    partial_T: 30
+    num_designs: 300
+    output_prefix: c5_rfd4_designs/partial/c5_exploratory
+
+  # For partial diffusion the known JDI pose dominates — don't overconstrain
+  # with a large hotspot list. Omit hotspots or use minimal anchoring.
+
+  denoiser:
+    noise_scale_ca: 1.0
+    noise_scale_frame: 1.0

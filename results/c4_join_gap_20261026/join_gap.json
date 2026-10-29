@@ -1,0 +1,52 @@
+{
+ "created_at_utc": "2026-10-26T15:03:10Z",
+ "method": "binder chain sha256 compared across construct sets; join key sha256(sequence), never name",
+ "set_rebuild": {
+  "path": "results/c4_rebuild_20261024/remote_pdbs",
+  "n": 343,
+  "receptor_lens": {
+   "154": 343
+  }
+ },
+ "set_apical_audit": {
+  "path": "results/c4_apical_pdb_audit_20261025/all343",
+  "n": 342,
+  "receptor_lens": {
+   "195": 342
+  }
+ },
+ "distinct_binders": {
+  "rebuild": 343,
+  "apical_audit": 342
+ },
+ "binder_sha_intersection": 342,
+ "only_in_rebuild": 1,
+ "only_in_apical_audit": 0,
+ "extra_designs": [
+  "tfr1_c4_acid_site1_41_complex.pdb"
+ ],
+ "extra_reconciliation": {
+  "consolidated_records": 343,
+  "valid_with_iptm": 342,
+  "errors": [
+   {
+    "name": "tfr1_c4_acid_site1_41",
+    "error": "timeout"
+   }
+  ],
+  "linkage_apical_n": 342,
+  "accounting": "343 records - 1 timeout = 342 scored = linkage_apical n",
+  "retry_log_evidence": "Retrying ONLY tfr1_c4_acid_site1_41 (100 res) vs contiguous apical 195-mer; 342 valid designs untouched"
+ },
+ "skipped_field_landmine": {
+  "meaning": "modal_boltz2_apical.py:191 sets skipped=True on the CACHE-REUSE path, so True means reused, not excluded",
+  "records_skipped_true_with_valid_iptm": 341,
+  "affected_results": "none - verified 342 valid names == linkage n",
+  "action": "do not treat skipped as an exclusion filter without reading the cache path"
+ },
+ "controls": {
+  "negative": "sets have different receptor lengths (154 vs 195) so the match cannot be a file-identity artifact",
+  "distinctness": "342 distinct binder sha in each set, so the intersection is not one file counted repeatedly"
+ },
+ "gpu_spend_usd": 0.0
+}

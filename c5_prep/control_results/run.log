@@ -1,0 +1,25 @@
+C5 positive-control validation: 3 predictions
+Settings: {"predictor": "colabfold_alphafold2_multimer_v3", "model_type": "alphafold2_multimer_v3", "num_recycle": 3, "num_models": 5, "rank": "multimer", "msa_mode": "mmseqs2_uniref_env"}
+
+  control_tcr_vs_g12d.fasta: OK: 5 chains, 811 aa, hash verified
+  control_tcr_vs_pepfree.fasta: OK: 4 chains, 801 aa, hash verified
+  control_tcr_vs_wt.fasta: OK: 5 chains, 811 aa, hash verified
+
+FOLD control_tcr_vs_g12d...
+  OK: ipTM=0.8400 pTM=0.8600 pLDDT=91.7 wall=449s
+
+FOLD control_tcr_vs_pepfree...
+  OK: ipTM=0.7700 pTM=0.8000 pLDDT=90.9 wall=457s
+
+FOLD control_tcr_vs_wt...
+  OK: ipTM=0.8400 pTM=0.8500 pLDDT=90.9 wall=694s
+
+============================================================
+CONTROL VALIDATION RESULTS
+============================================================
+  G12D (bind): ipTM=0.8400, pTM=0.8600
+  WT (no bind): ipTM=0.8400, pTM=0.8500
+  PepFree (no bind): ipTM=0.7700, pTM=0.8000
+
+VERDICT: FAIL — pipeline cannot discriminate G12D from controls
+  DO NOT USE THIS PIPELINE FOR DESIGN RANKING

@@ -1,0 +1,48 @@
+[
+  {
+    "name": "c4_v_185_4x",
+    "single_seed_iptm": 0.929,
+    "mean_iptm": 0.860,
+    "min_iptm": 0.698,
+    "max_iptm": 0.937,
+    "range_iptm": 0.239,
+    "reliable": false,
+    "n_seeds": 5
+  },
+  {
+    "name": "tfr1_e1_his015_148",
+    "single_seed_iptm": 0.924,
+    "mean_iptm": 0.805,
+    "min_iptm": 0.727,
+    "max_iptm": 0.915,
+    "range_iptm": 0.188,
+    "reliable": false,
+    "n_seeds": 5
+  },
+  {
+    "name": "tfr1_e1_plain_98",
+    "single_seed_iptm": 0.923,
+    "mean_iptm": 0.617,
+    "min_iptm": 0.308,
+    "max_iptm": 0.867,
+    "range_iptm": 0.559,
+    "reliable": false,
+    "n_seeds": 5
+  },
+  {
+    "name": "c4_v_58_4x",
+    "single_seed_iptm": 0.916,
+    "mean_iptm": 0.740,
+    "min_iptm": 0.561,
+    "max_iptm": 0.919,
+    "range_iptm": 0.358,
+    "reliable": false,
+    "n_seeds": 5
+  },
+  {
+    "name": "tfr1_e1_his015_115",
+    "single_seed_iptm": 0.895,
+    "status": "cancelled",
+    "note": "Local client disconnected during Boltz-2 prediction"
+  }
+]

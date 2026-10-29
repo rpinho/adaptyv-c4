@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"community\": true,\n  \"id\": \"NVIDIA A100-SXM4-80GB\",\n  \"manufacturer\": \"NVIDIA\",\n  \"maxCount\": {\n    \"community\": 8,\n    \"secure\": 8\n  },\n  \"memory\": 80,\n  \"name\": \"A100 SXM\",\n  \"pool\": \"AMPERE_80\",\n  \"price\": {\n    \"community\": 1.39,\n    \"secure\": 1.79,\n    \"serverless\": 2.72\n  },\n  \"secure\": true\n}"
+    }
+  ],
+  "isError": false
+}

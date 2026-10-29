@@ -1,0 +1,20 @@
+{
+  "checked": 1792670992.045453,
+  "queue_status": "active",
+  "pid": 71597,
+  "call_id": "fc-01M5HR7B9KNAFWX9SEFFPR7HT9",
+  "supervisor_checked": 1792670969.713175,
+  "function_stats": {
+    "backlog": 0,
+    "num_total_runners": 1,
+    "num_running_inputs": 1,
+    "input_headroom": 0
+  },
+  "worker_status": "modeling",
+  "gpu": "NVIDIA H100 80GB HBM3, 81559 MiB, 610.57.04",
+  "observed_gradient_calls": 0,
+  "cumulative_modal_runtime_upper_usd": 6.4569049288280205,
+  "runpod_including_historical_estimate_usd": 35.6652,
+  "consultation_reported_usd": 1.1922999,
+  "setup_storage_unreconciled": true
+}

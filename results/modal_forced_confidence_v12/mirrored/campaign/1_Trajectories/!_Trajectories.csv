@@ -1,0 +1,2 @@
+trajectory,design,length,bindcraft_version,Timing,hash,terminated,autotuned,settings_core,settings_modality,settings_property
+1,c4_forced_confidence_v12_forced_l69_decb03c77250a7d5,69,BindCraft 2 v1.0.4,worker=0;start=1792669960.31;design=309.73;compiled=1,decb03c77250a7d5,screen,,default,binder,forced_targeting;termini_accessible

@@ -1,0 +1,22 @@
+{
+  "cost": 1.79,
+  "createdAt": "2026-10-21T18:59:24.789Z",
+  "gpu": {
+    "count": 1,
+    "id": "NVIDIA A100-SXM4-80GB",
+    "memory": 125,
+    "vcpuCount": 32
+  },
+  "id": "2p9x2qea1ietbw",
+  "ssh": {
+    "direct": null,
+    "proxy": {
+      "command": "ssh 2p9x2qea1ietbw-64410a9f@ssh.runpod.io",
+      "host": "ssh.runpod.io",
+      "port": 22,
+      "username": "2p9x2qea1ietbw-64410a9f"
+    }
+  },
+  "startedAt": "2026-10-21T19:14:09.967Z",
+  "status": "EXITED"
+}

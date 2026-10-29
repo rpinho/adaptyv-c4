@@ -1,0 +1,128 @@
+{
+  "status": "completed",
+  "observed_gradient_calls": 50,
+  "first": {
+    "step": 1,
+    "unix": 1792668470.2628372,
+    "loss": 17.181760787963867,
+    "binder_CA_count": 69,
+    "unique_binder_CA_coordinates": 69,
+    "adjacent_CA_min_A": 1.6844004669812058,
+    "adjacent_CA_max_A": 4.16325178717555,
+    "minimum_hotspot_to_binder_CA_A": 38.80640209903606,
+    "weighted_loss_components": {
+      "binder_contacts": 4.782772064208984,
+      "binder_helicity": -0.4825313985347748,
+      "binder_pae": 0.30074718594551086,
+      "c_terminus_away": 0.0,
+      "compactness": 3.9611945152282715,
+      "interface_contacts": 8.085101127624512,
+      "interface_pae": 0.09469901770353317,
+      "iptm_loss": 0.043074797838926315,
+      "n_terminus_away": 0.0,
+      "plddt_loss": 0.078154556453228,
+      "target_rmsd": 0.20250947773456573,
+      "termini_angle": 0.11603980511426926
+    },
+    "initial_sequence_array_sha256": "ed0c428b6962f8cf6e5ed7a96c810357036457fee1e586d66d991cb5b45e668a",
+    "initial_sequence_array_shape": [
+      69,
+      20
+    ],
+    "initial_sequence_array_dtype": "float16",
+    "gradient_norm": 13.185975750660786
+  },
+  "last": {
+    "step": 50,
+    "unix": 1792668742.964358,
+    "loss": 11.67437744140625,
+    "binder_CA_count": 69,
+    "unique_binder_CA_coordinates": 69,
+    "adjacent_CA_min_A": 1.798725270200052,
+    "adjacent_CA_max_A": 4.24612070196138,
+    "minimum_hotspot_to_binder_CA_A": 48.77935267295357,
+    "weighted_loss_components": {
+      "binder_contacts": 4.142850399017334,
+      "binder_helicity": -0.3329242765903473,
+      "binder_pae": 0.2464650422334671,
+      "c_terminus_away": 0.0,
+      "compactness": -0.15305283665657043,
+      "interface_contacts": 7.170985221862793,
+      "interface_pae": 0.08697942644357681,
+      "iptm_loss": 0.039681416004896164,
+      "n_terminus_away": 0.0,
+      "plddt_loss": 0.06849514693021774,
+      "target_rmsd": 0.28777843713760376,
+      "termini_angle": 0.11711879074573517
+    },
+    "gradient_norm": 10.95713313286663
+  },
+  "lowest_loss_round": {
+    "step": 49,
+    "unix": 1792668737.4340692,
+    "loss": 11.332472801208496,
+    "binder_CA_count": 69,
+    "unique_binder_CA_coordinates": 69,
+    "adjacent_CA_min_A": 0.7832104309197896,
+    "adjacent_CA_max_A": 4.227428862223024,
+    "minimum_hotspot_to_binder_CA_A": 45.97566242746842,
+    "weighted_loss_components": {
+      "binder_contacts": 4.095527172088623,
+      "binder_helicity": -0.3360276222229004,
+      "binder_pae": 0.24624252319335938,
+      "c_terminus_away": 0.0,
+      "compactness": -0.33704373240470886,
+      "interface_contacts": 7.168443202972412,
+      "interface_pae": 0.08752185851335526,
+      "iptm_loss": 0.040152858942747116,
+      "n_terminus_away": 0.0,
+      "plddt_loss": 0.06898254156112671,
+      "target_rmsd": 0.2391929179430008,
+      "termini_angle": 0.05948192998766899
+    },
+    "gradient_norm": 0.9578358432933631
+  },
+  "closest_patch_round": {
+    "step": 1,
+    "unix": 1792668470.2628372,
+    "loss": 17.181760787963867,
+    "binder_CA_count": 69,
+    "unique_binder_CA_coordinates": 69,
+    "adjacent_CA_min_A": 1.6844004669812058,
+    "adjacent_CA_max_A": 4.16325178717555,
+    "minimum_hotspot_to_binder_CA_A": 38.80640209903606,
+    "weighted_loss_components": {
+      "binder_contacts": 4.782772064208984,
+      "binder_helicity": -0.4825313985347748,
+      "binder_pae": 0.30074718594551086,
+      "c_terminus_away": 0.0,
+      "compactness": 3.9611945152282715,
+      "interface_contacts": 8.085101127624512,
+      "interface_pae": 0.09469901770353317,
+      "iptm_loss": 0.043074797838926315,
+      "n_terminus_away": 0.0,
+      "plddt_loss": 0.078154556453228,
+      "target_rmsd": 0.20250947773456573,
+      "termini_angle": 0.11603980511426926
+    },
+    "initial_sequence_array_sha256": "ed0c428b6962f8cf6e5ed7a96c810357036457fee1e586d66d991cb5b45e668a",
+    "initial_sequence_array_shape": [
+      69,
+      20
+    ],
+    "initial_sequence_array_dtype": "float16",
+    "gradient_norm": 13.185975750660786
+  },
+  "minimum_adjacent_CA_across_rounds_A": 0.5244422493006856,
+  "accepted_designs": 0,
+  "screen_rejection": {
+    "pLDDT": 0.31,
+    "i_pTM": 0.2,
+    "reason": "pLDDT"
+  },
+  "gpu_released_verified": true,
+  "limitation": "One stricter proximity-objective test; no qualified candidate. Scalar loss components do not measure gradient dominance. Raw losses across different cutoffs are different objectives.",
+  "cpu_followup_returncode": 0,
+  "conservative_runtime_estimate_usd": 0.581580016199522,
+  "cumulative_modal_runtime_estimate_usd": 5.2184357131038475
+}

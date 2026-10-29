@@ -1,0 +1,21 @@
+{
+  "status": "failed_preflight",
+  "pid": 76230,
+  "started": 1792608894.72929,
+  "wall_cap_seconds": 1800.0,
+  "max_parents": 1,
+  "seeds": 1,
+  "models_scored": 0,
+  "triplets": [],
+  "errors": [],
+  "new_gpu_spend_usd": 0,
+  "script_sha256": "f97b604fcc48a54eb0476bcba2e3595d04f010280777b975a652de447fc20a2c",
+  "limitations": [
+    "fixed backbone",
+    "no modeled glycans or tag",
+    "empirical independent-site pKas",
+    "local repack binding-energy proxy, not IAM or experimental affinity",
+    "replica robustness, not equilibrium ensemble"
+  ],
+  "reason": "Strict 1A target alignment gate; no Rosetta models attempted. Superseded by v2 context audit."
+}

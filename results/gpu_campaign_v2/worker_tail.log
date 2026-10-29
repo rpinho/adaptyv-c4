@@ -1,0 +1,29 @@
+compiled graphs cached in /workspace/runs/c4_full_monomer_apical_v2/compile_cache/NVIDIA_A100_SXM4_80GB
+campaign preflight: design model_1_multimer_v3,model_2_multimer_v3,model_3_multimer_v3,model_4_multimer_v3,model_5_multimer_v3 | validation model_1_ptm,model_2_ptm | redesign negative/v_48_020 | targets hTfR1_full_monomer | output /workspace/runs/c4_full_monomer_apical_v2
+campaign metadata: BindCraft 2 v1.0.4 | settings /workspace/runs/c4_full_monomer_apical_v2.json | written /workspace/runs/c4_full_monomer_apical_v2/campaign_metadata.json
+BindCraft 2 v1.0.4
+campaign c4_full_monomer_apical_v2
+binder length 65 to 75, drawn per trajectory
+target hTfR1_full_monomer (target) | 639 residues | hotspots A205,A206,A208,A209,A210
+losses binder_contacts=1.0 binder_helicity=-0.3 binder_pae=0.4 c_terminus_away=0.5 compactness=0.5 interface_contacts=1.0 interface_pae=0.1 iptm_loss=0.05 n_terminus_away=0.5 plddt_loss=0.1 target_rmsd=1.0 termini_angle=0.1
+features forced targeting: everything outside the default Angstrom of the hotspots rebuilt as lysine
+filters Backbone_Clashes <= 0, Binder_RMSD <= 3.5, Hotspot_Contact_Fraction >= 0.5, Interface_Residues >= 7, Unbound_Binder_pLDDT >= 0.7, i_pAE <= 0.35, i_pTM >= 0.7, pTM >= 0.55
+results /workspace/runs/c4_full_monomer_apical_v2 | 3_Ranked/!_Ranked.csv rewritten as each design is accepted | summary.csv written when the campaign ends
+
+=== trajectory 1 | c4_full_monomer_apical_v2_forced_l69_9d5158d42334c686 | accepted 0/2 ===
+forced targeting epitope=30 lysinated=371 residues=639
+  passed screen design stage  i_pTM=0.25    pLDDT=0.72  
+  passed refine design stage  i_pTM=0.24    pLDDT=0.72  
+  rejected at anneal design stage  i_pTM=0.31    pLDDT=0.8    due to [i_pTM]
+
+=== trajectory 2 | c4_full_monomer_apical_v2_forced_l73_53f13e3511781b28 | accepted 0/2 ===
+forced targeting epitope=30 lysinated=371 residues=639
+  rejected at screen design stage  i_pTM=0.15    pLDDT=0.44   due to [pLDDT]
+
+=== trajectory 3 | c4_full_monomer_apical_v2_forced_l74_2a3f06a546ed273b | accepted 0/2 ===
+forced targeting epitope=30 lysinated=371 residues=639
+  rejected at screen design stage  i_pTM=0.17    pLDDT=0.53   due to [pLDDT]
+
+campaign stopped: 3 trajectories ran and none were accepted, so the settings rather than the budget are what to change
+
+campaign done: 0 accepted design(s) after 3 trajectories, ranked by i_pDAE

@@ -1,0 +1,806 @@
+{
+  "state": "complete",
+  "rows": 20,
+  "order_preserved": true,
+  "descriptive_contact_cutoff_A": 4.5,
+  "source_shortlist_sha256": "5f50bf1084b97b523c418d94051667c4b361125374e2f201b9485de5628f68c5",
+  "context_report_sha256": "3926ebccfe0b8f73cb536d052703f6507d9ff49198896d8e060e7c21cb4c159a",
+  "output_sha256": "f0cc6e90574f04a74d401a33d0fd3326dc6b8e52e204d26b4d6525b75a76299f",
+  "script_sha256": "ff72f2f8d49dcd4facd371fa60228baa00611beb087d0078ec257e6fc68d4f9a",
+  "designs": [
+    {
+      "source_id": "tfr1_his200m_20261023__tfr1_apical_his_124",
+      "histidines": [
+        {
+          "position": 50,
+          "missing_ring_atoms": [],
+          "ring_to_target_minimum_A": 10.130205154418945,
+          "ring_to_target_nearest_residue": {
+            "chain": "A",
+            "number": 370,
+            "name": "SER",
+            "atom": "CB"
+          },
+          "nitrogen_to_basic_minimum_A": 13.022844314575195,
+          "nitrogen_to_basic_nearest_residue": {
+            "chain": "A",
+            "number": 371,
+            "name": "LYS",
+            "atom": "NZ"
+          },
+          "nitrogen_to_acidic_minimum_A": 12.732789993286133,
+          "nitrogen_to_acidic_nearest_residue": {
+            "chain": "A",
+            "number": 204,
+            "name": "ASP",
+            "atom": "OD1"
+          }
+        },
+        {
+          "position": 51,
+          "missing_ring_atoms": [],
+          "ring_to_target_minimum_A": 12.415838241577148,
+          "ring_to_target_nearest_residue": {
+            "chain": "A",
+            "number": 208,
+            "name": "ARG",
+            "atom": "NH1"
+          },
+          "nitrogen_to_basic_minimum_A": 13.7515869140625,
+          "nitrogen_to_basic_nearest_residue": {
+            "chain": "A",
+            "number": 208,
+            "name": "ARG",
+            "atom": "NH1"
+          },
+          "nitrogen_to_acidic_minimum_A": 14.10582160949707,
+          "nitrogen_to_acidic_nearest_residue": {
+            "chain": "A",
+            "number": 204,
+            "name": "ASP",
+            "atom": "OD2"
+          }
+        }
+      ],
+      "prior_matching_design": null
+    },
+    {
+      "source_id": "tfr1_his200m_20261023__tfr1_apical_his_148",
+      "histidines": [
+        {
+          "position": 11,
+          "missing_ring_atoms": [],
+          "ring_to_target_minimum_A": 13.651924133300781,
+          "ring_to_target_nearest_residue": {
+            "chain": "A",
+            "number": 211,
+            "name": "TYR",
+            "atom": "CD2"
+          },
+          "nitrogen_to_basic_minimum_A": 15.414563179016113,
+          "nitrogen_to_basic_nearest_residue": {
+            "chain": "A",
+            "number": 344,
+            "name": "LYS",
+            "atom": "NZ"
+          },
+          "nitrogen_to_acidic_minimum_A": 17.089405059814453,
+          "nitrogen_to_acidic_nearest_residue": {
+            "chain": "A",
+            "number": 343,
+            "name": "GLU",
+            "atom": "OE1"
+          }
+        },
+        {
+          "position": 16,
+          "missing_ring_atoms": [],
+          "ring_to_target_minimum_A": 14.284811019897461,
+          "ring_to_target_nearest_residue": {
+            "chain": "A",
+            "number": 210,
+            "name": "VAL",
+            "atom": "O"
+          },
+          "nitrogen_to_basic_minimum_A": 16.06915283203125,
+          "nitrogen_to_basic_nearest_residue": {
+            "chain": "A",
+            "number": 208,
+            "name": "ARG",
+            "atom": "NE"
+          },
+          "nitrogen_to_acidic_minimum_A": 18.755760192871094,
+          "nitrogen_to_acidic_nearest_residue": {
+            "chain": "A",
+            "number": 204,
+            "name": "ASP",
+            "atom": "OD2"
+          }
+        },
+        {
+          "position": 77,
+          "missing_ring_atoms": [],
+          "ring_to_target_minimum_A": 3.294640064239502,
+          "ring_to_target_nearest_residue": {
+            "chain": "A",
+            "number": 208,
+            "name": "ARG",
+            "atom": "NH2"
+          },
+          "nitrogen_to_basic_minimum_A": 3.606194257736206,
+          "nitrogen_to_basic_nearest_residue": {
+            "chain": "A",
+            "number": 208,
+            "name": "ARG",
+            "atom": "NH2"
+          },
+          "nitrogen_to_acidic_minimum_A": 8.290740966796875,
+          "nitrogen_to_acidic_nearest_residue": {
+            "chain": "A",
+            "number": 204,
+            "name": "ASP",
+            "atom": "OD2"
+          }
+        }
+      ],
+      "prior_matching_design": null
+    },
+    {
+      "source_id": "tfr1_his200m_20261023__tfr1_apical_his_179",
+      "histidines": [],
+      "prior_matching_design": null
+    },
+    {
+      "source_id": "tfr1_his200m_20261023__tfr1_apical_his_21",
+      "histidines": [],
+      "prior_matching_design": null
+    },
+    {
+      "source_id": "tfr1_his200m_20261023__tfr1_apical_his_45",
+      "histidines": [],
+      "prior_matching_design": null
+    },
+    {
+      "source_id": "tfr1_his200m_20261023__tfr1_apical_his_57",
+      "histidines": [
+        {
+          "position": 24,
+          "missing_ring_atoms": [],
+          "ring_to_target_minimum_A": 11.544698715209961,
+          "ring_to_target_nearest_residue": {
+            "chain": "A",
+            "number": 371,
+            "name": "LYS",
+            "atom": "NZ"
+          },
+          "nitrogen_to_basic_minimum_A": 11.544698715209961,
+          "nitrogen_to_basic_nearest_residue": {
+            "chain": "A",
+            "number": 371,
+            "name": "LYS",
+            "atom": "NZ"
+          },
+          "nitrogen_to_acidic_minimum_A": 13.936952590942383,
+          "nitrogen_to_acidic_nearest_residue": {
+            "chain": "A",
+            "number": 350,
+            "name": "GLU",
+            "atom": "OE2"
+          }
+        }
+      ],
+      "prior_matching_design": null
+    },
+    {
+      "source_id": "tfr1_his200m_20261023__tfr1_apical_his_68",
+      "histidines": [
+        {
+          "position": 10,
+          "missing_ring_atoms": [],
+          "ring_to_target_minimum_A": 20.198511123657227,
+          "ring_to_target_nearest_residue": {
+            "chain": "A",
+            "number": 208,
+            "name": "ARG",
+            "atom": "NH2"
+          },
+          "nitrogen_to_basic_minimum_A": 20.225276947021484,
+          "nitrogen_to_basic_nearest_residue": {
+            "chain": "A",
+            "number": 208,
+            "name": "ARG",
+            "atom": "NH2"
+          },
+          "nitrogen_to_acidic_minimum_A": 23.34003257751465,
+          "nitrogen_to_acidic_nearest_residue": {
+            "chain": "A",
+            "number": 204,
+            "name": "ASP",
+            "atom": "OD2"
+          }
+        },
+        {
+          "position": 29,
+          "missing_ring_atoms": [],
+          "ring_to_target_minimum_A": 3.223123073577881,
+          "ring_to_target_nearest_residue": {
+            "chain": "A",
+            "number": 208,
+            "name": "ARG",
+            "atom": "NH2"
+          },
+          "nitrogen_to_basic_minimum_A": 3.223123073577881,
+          "nitrogen_to_basic_nearest_residue": {
+            "chain": "A",
+            "number": 208,
+            "name": "ARG",
+            "atom": "NH2"
+          },
+          "nitrogen_to_acidic_minimum_A": 7.383739471435547,
+          "nitrogen_to_acidic_nearest_residue": {
+            "chain": "A",
+            "number": 204,
+            "name": "ASP",
+            "atom": "OD2"
+          }
+        },
+        {
+          "position": 50,
+          "missing_ring_atoms": [],
+          "ring_to_target_minimum_A": 3.9292819499969482,
+          "ring_to_target_nearest_residue": {
+            "chain": "A",
+            "number": 208,
+            "name": "ARG",
+            "atom": "CD"
+          },
+          "nitrogen_to_basic_minimum_A": 5.037453651428223,
+          "nitrogen_to_basic_nearest_residue": {
+            "chain": "A",
+            "number": 208,
+            "name": "ARG",
+            "atom": "NE"
+          },
+          "nitrogen_to_acidic_minimum_A": 7.475155353546143,
+          "nitrogen_to_acidic_nearest_residue": {
+            "chain": "A",
+            "number": 204,
+            "name": "ASP",
+            "atom": "OD2"
+          }
+        },
+        {
+          "position": 62,
+          "missing_ring_atoms": [],
+          "ring_to_target_minimum_A": 19.234006881713867,
+          "ring_to_target_nearest_residue": {
+            "chain": "A",
+            "number": 208,
+            "name": "ARG",
+            "atom": "NH2"
+          },
+          "nitrogen_to_basic_minimum_A": 19.31199836730957,
+          "nitrogen_to_basic_nearest_residue": {
+            "chain": "A",
+            "number": 208,
+            "name": "ARG",
+            "atom": "NH2"
+          },
+          "nitrogen_to_acidic_minimum_A": 22.749147415161133,
+          "nitrogen_to_acidic_nearest_residue": {
+            "chain": "A",
+            "number": 204,
+            "name": "ASP",
+            "atom": "OD2"
+          }
+        },
+        {
+          "position": 63,
+          "missing_ring_atoms": [],
+          "ring_to_target_minimum_A": 22.049163818359375,
+          "ring_to_target_nearest_residue": {
+            "chain": "A",
+            "number": 208,
+            "name": "ARG",
+            "atom": "NH2"
+          },
+          "nitrogen_to_basic_minimum_A": 22.06406593322754,
+          "nitrogen_to_basic_nearest_residue": {
+            "chain": "A",
+            "number": 208,
+            "name": "ARG",
+            "atom": "NH2"
+          },
+          "nitrogen_to_acidic_minimum_A": 26.908781051635742,
+          "nitrogen_to_acidic_nearest_residue": {
+            "chain": "A",
+            "number": 204,
+            "name": "ASP",
+            "atom": "OD2"
+          }
+        },
+        {
+          "position": 92,
+          "missing_ring_atoms": [],
+          "ring_to_target_minimum_A": 3.400094509124756,
+          "ring_to_target_nearest_residue": {
+            "chain": "A",
+            "number": 211,
+            "name": "TYR",
+            "atom": "CB"
+          },
+          "nitrogen_to_basic_minimum_A": 8.230672836303711,
+          "nitrogen_to_basic_nearest_residue": {
+            "chain": "A",
+            "number": 344,
+            "name": "LYS",
+            "atom": "NZ"
+          },
+          "nitrogen_to_acidic_minimum_A": 10.460582733154297,
+          "nitrogen_to_acidic_nearest_residue": {
+            "chain": "A",
+            "number": 214,
+            "name": "GLU",
+            "atom": "OE2"
+          }
+        }
+      ],
+      "prior_matching_design": null
+    },
+    {
+      "source_id": "tfr1_his200m_20261023__tfr1_apical_his_82",
+      "histidines": [],
+      "prior_matching_design": null
+    },
+    {
+      "source_id": "tfr1_c200m_20261023__tfr1_apical_binder_126",
+      "histidines": [
+        {
+          "position": 47,
+          "missing_ring_atoms": [],
+          "ring_to_target_minimum_A": 3.071730136871338,
+          "ring_to_target_nearest_residue": {
+            "chain": "A",
+            "number": 209,
+            "name": "LEU",
+            "atom": "O"
+          },
+          "nitrogen_to_basic_minimum_A": 4.4893598556518555,
+          "nitrogen_to_basic_nearest_residue": {
+            "chain": "A",
+            "number": 208,
+            "name": "ARG",
+            "atom": "NE"
+          },
+          "nitrogen_to_acidic_minimum_A": 6.364503860473633,
+          "nitrogen_to_acidic_nearest_residue": {
+            "chain": "A",
+            "number": 204,
+            "name": "ASP",
+            "atom": "OD2"
+          }
+        }
+      ],
+      "prior_matching_design": null
+    },
+    {
+      "source_id": "tfr1_c200m_20261023__tfr1_apical_binder_138",
+      "histidines": [
+        {
+          "position": 103,
+          "missing_ring_atoms": [],
+          "ring_to_target_minimum_A": 6.3742475509643555,
+          "ring_to_target_nearest_residue": {
+            "chain": "A",
+            "number": 347,
+            "name": "GLY",
+            "atom": "O"
+          },
+          "nitrogen_to_basic_minimum_A": 9.142319679260254,
+          "nitrogen_to_basic_nearest_residue": {
+            "chain": "A",
+            "number": 371,
+            "name": "LYS",
+            "atom": "NZ"
+          },
+          "nitrogen_to_acidic_minimum_A": 10.082195281982422,
+          "nitrogen_to_acidic_nearest_residue": {
+            "chain": "A",
+            "number": 350,
+            "name": "GLU",
+            "atom": "OE2"
+          }
+        },
+        {
+          "position": 115,
+          "missing_ring_atoms": [],
+          "ring_to_target_minimum_A": 9.820003509521484,
+          "ring_to_target_nearest_residue": {
+            "chain": "A",
+            "number": 208,
+            "name": "ARG",
+            "atom": "NE"
+          },
+          "nitrogen_to_basic_minimum_A": 10.215572357177734,
+          "nitrogen_to_basic_nearest_residue": {
+            "chain": "A",
+            "number": 208,
+            "name": "ARG",
+            "atom": "NE"
+          },
+          "nitrogen_to_acidic_minimum_A": 14.576451301574707,
+          "nitrogen_to_acidic_nearest_residue": {
+            "chain": "A",
+            "number": 204,
+            "name": "ASP",
+            "atom": "OD2"
+          }
+        }
+      ],
+      "prior_matching_design": null
+    },
+    {
+      "source_id": "tfr1_c200m_20261023__tfr1_apical_binder_177",
+      "histidines": [
+        {
+          "position": 78,
+          "missing_ring_atoms": [],
+          "ring_to_target_minimum_A": 7.236671447753906,
+          "ring_to_target_nearest_residue": {
+            "chain": "A",
+            "number": 371,
+            "name": "LYS",
+            "atom": "NZ"
+          },
+          "nitrogen_to_basic_minimum_A": 7.5231451988220215,
+          "nitrogen_to_basic_nearest_residue": {
+            "chain": "A",
+            "number": 371,
+            "name": "LYS",
+            "atom": "NZ"
+          },
+          "nitrogen_to_acidic_minimum_A": 10.046579360961914,
+          "nitrogen_to_acidic_nearest_residue": {
+            "chain": "A",
+            "number": 204,
+            "name": "ASP",
+            "atom": "OD1"
+          }
+        }
+      ],
+      "prior_matching_design": null
+    },
+    {
+      "source_id": "tfr1_c200m_20261023__tfr1_apical_binder_186",
+      "histidines": [
+        {
+          "position": 59,
+          "missing_ring_atoms": [],
+          "ring_to_target_minimum_A": 7.0764851570129395,
+          "ring_to_target_nearest_residue": {
+            "chain": "A",
+            "number": 210,
+            "name": "VAL",
+            "atom": "O"
+          },
+          "nitrogen_to_basic_minimum_A": 12.134909629821777,
+          "nitrogen_to_basic_nearest_residue": {
+            "chain": "A",
+            "number": 208,
+            "name": "ARG",
+            "atom": "NE"
+          },
+          "nitrogen_to_acidic_minimum_A": 13.082419395446777,
+          "nitrogen_to_acidic_nearest_residue": {
+            "chain": "A",
+            "number": 204,
+            "name": "ASP",
+            "atom": "OD2"
+          }
+        },
+        {
+          "position": 113,
+          "missing_ring_atoms": [],
+          "ring_to_target_minimum_A": 3.1509203910827637,
+          "ring_to_target_nearest_residue": {
+            "chain": "A",
+            "number": 209,
+            "name": "LEU",
+            "atom": "O"
+          },
+          "nitrogen_to_basic_minimum_A": 5.270885944366455,
+          "nitrogen_to_basic_nearest_residue": {
+            "chain": "A",
+            "number": 208,
+            "name": "ARG",
+            "atom": "NH1"
+          },
+          "nitrogen_to_acidic_minimum_A": 4.362049579620361,
+          "nitrogen_to_acidic_nearest_residue": {
+            "chain": "A",
+            "number": 204,
+            "name": "ASP",
+            "atom": "OD2"
+          }
+        }
+      ],
+      "prior_matching_design": null
+    },
+    {
+      "source_id": "tfr1_c200m_20261023__tfr1_apical_binder_187",
+      "histidines": [],
+      "prior_matching_design": null
+    },
+    {
+      "source_id": "tfr1_c200m_20261023__tfr1_apical_binder_58",
+      "histidines": [
+        {
+          "position": 20,
+          "missing_ring_atoms": [],
+          "ring_to_target_minimum_A": 11.912660598754883,
+          "ring_to_target_nearest_residue": {
+            "chain": "A",
+            "number": 370,
+            "name": "SER",
+            "atom": "CB"
+          },
+          "nitrogen_to_basic_minimum_A": 14.250970840454102,
+          "nitrogen_to_basic_nearest_residue": {
+            "chain": "A",
+            "number": 205,
+            "name": "LYS",
+            "atom": "NZ"
+          },
+          "nitrogen_to_acidic_minimum_A": 13.087733268737793,
+          "nitrogen_to_acidic_nearest_residue": {
+            "chain": "A",
+            "number": 369,
+            "name": "GLU",
+            "atom": "OE1"
+          }
+        }
+      ],
+      "prior_matching_design": null
+    },
+    {
+      "source_id": "tfr1_c200m_20261023__tfr1_apical_binder_94",
+      "histidines": [],
+      "prior_matching_design": null
+    },
+    {
+      "source_id": "tfr1_his200m_20261023__tfr1_apical_his_1",
+      "histidines": [],
+      "prior_matching_design": null
+    },
+    {
+      "source_id": "tfr1_his200m_20261023__tfr1_apical_his_115",
+      "histidines": [
+        {
+          "position": 58,
+          "missing_ring_atoms": [],
+          "ring_to_target_minimum_A": 12.073103904724121,
+          "ring_to_target_nearest_residue": {
+            "chain": "A",
+            "number": 371,
+            "name": "LYS",
+            "atom": "NZ"
+          },
+          "nitrogen_to_basic_minimum_A": 12.814131736755371,
+          "nitrogen_to_basic_nearest_residue": {
+            "chain": "A",
+            "number": 371,
+            "name": "LYS",
+            "atom": "NZ"
+          },
+          "nitrogen_to_acidic_minimum_A": 14.229788780212402,
+          "nitrogen_to_acidic_nearest_residue": {
+            "chain": "A",
+            "number": 350,
+            "name": "GLU",
+            "atom": "OE2"
+          }
+        },
+        {
+          "position": 82,
+          "missing_ring_atoms": [],
+          "ring_to_target_minimum_A": 16.7857608795166,
+          "ring_to_target_nearest_residue": {
+            "chain": "A",
+            "number": 370,
+            "name": "SER",
+            "atom": "OG"
+          },
+          "nitrogen_to_basic_minimum_A": 17.654977798461914,
+          "nitrogen_to_basic_nearest_residue": {
+            "chain": "A",
+            "number": 371,
+            "name": "LYS",
+            "atom": "NZ"
+          },
+          "nitrogen_to_acidic_minimum_A": 18.573101043701172,
+          "nitrogen_to_acidic_nearest_residue": {
+            "chain": "A",
+            "number": 204,
+            "name": "ASP",
+            "atom": "OD1"
+          }
+        }
+      ],
+      "prior_matching_design": null
+    },
+    {
+      "source_id": "tfr1_his200m_20261023__tfr1_apical_his_121",
+      "histidines": [
+        {
+          "position": 19,
+          "missing_ring_atoms": [],
+          "ring_to_target_minimum_A": 9.606464385986328,
+          "ring_to_target_nearest_residue": {
+            "chain": "A",
+            "number": 370,
+            "name": "SER",
+            "atom": "CB"
+          },
+          "nitrogen_to_basic_minimum_A": 12.54694652557373,
+          "nitrogen_to_basic_nearest_residue": {
+            "chain": "A",
+            "number": 371,
+            "name": "LYS",
+            "atom": "NZ"
+          },
+          "nitrogen_to_acidic_minimum_A": 12.430129051208496,
+          "nitrogen_to_acidic_nearest_residue": {
+            "chain": "A",
+            "number": 350,
+            "name": "GLU",
+            "atom": "OE2"
+          }
+        }
+      ],
+      "prior_matching_design": null
+    },
+    {
+      "source_id": "tfr1_his200m_20261023__tfr1_apical_his_133",
+      "histidines": [
+        {
+          "position": 64,
+          "missing_ring_atoms": [],
+          "ring_to_target_minimum_A": 7.598065376281738,
+          "ring_to_target_nearest_residue": {
+            "chain": "A",
+            "number": 370,
+            "name": "SER",
+            "atom": "CB"
+          },
+          "nitrogen_to_basic_minimum_A": 9.615528106689453,
+          "nitrogen_to_basic_nearest_residue": {
+            "chain": "A",
+            "number": 208,
+            "name": "ARG",
+            "atom": "NH1"
+          },
+          "nitrogen_to_acidic_minimum_A": 8.540729522705078,
+          "nitrogen_to_acidic_nearest_residue": {
+            "chain": "A",
+            "number": 204,
+            "name": "ASP",
+            "atom": "OD1"
+          }
+        }
+      ],
+      "prior_matching_design": null
+    },
+    {
+      "source_id": "tfr1_his200m_20261023__tfr1_apical_his_136",
+      "histidines": [
+        {
+          "position": 22,
+          "missing_ring_atoms": [],
+          "ring_to_target_minimum_A": 8.127962112426758,
+          "ring_to_target_nearest_residue": {
+            "chain": "A",
+            "number": 209,
+            "name": "LEU",
+            "atom": "CD2"
+          },
+          "nitrogen_to_basic_minimum_A": 13.68266773223877,
+          "nitrogen_to_basic_nearest_residue": {
+            "chain": "A",
+            "number": 208,
+            "name": "ARG",
+            "atom": "NE"
+          },
+          "nitrogen_to_acidic_minimum_A": 15.810722351074219,
+          "nitrogen_to_acidic_nearest_residue": {
+            "chain": "A",
+            "number": 204,
+            "name": "ASP",
+            "atom": "OD2"
+          }
+        },
+        {
+          "position": 46,
+          "missing_ring_atoms": [],
+          "ring_to_target_minimum_A": 16.686370849609375,
+          "ring_to_target_nearest_residue": {
+            "chain": "A",
+            "number": 208,
+            "name": "ARG",
+            "atom": "NH1"
+          },
+          "nitrogen_to_basic_minimum_A": 16.987659454345703,
+          "nitrogen_to_basic_nearest_residue": {
+            "chain": "A",
+            "number": 208,
+            "name": "ARG",
+            "atom": "NH1"
+          },
+          "nitrogen_to_acidic_minimum_A": 17.824604034423828,
+          "nitrogen_to_acidic_nearest_residue": {
+            "chain": "A",
+            "number": 204,
+            "name": "ASP",
+            "atom": "OD2"
+          }
+        },
+        {
+          "position": 60,
+          "missing_ring_atoms": [],
+          "ring_to_target_minimum_A": 13.793564796447754,
+          "ring_to_target_nearest_residue": {
+            "chain": "A",
+            "number": 210,
+            "name": "VAL",
+            "atom": "O"
+          },
+          "nitrogen_to_basic_minimum_A": 16.056228637695312,
+          "nitrogen_to_basic_nearest_residue": {
+            "chain": "A",
+            "number": 208,
+            "name": "ARG",
+            "atom": "NE"
+          },
+          "nitrogen_to_acidic_minimum_A": 17.170623779296875,
+          "nitrogen_to_acidic_nearest_residue": {
+            "chain": "A",
+            "number": 204,
+            "name": "ASP",
+            "atom": "OD2"
+          }
+        },
+        {
+          "position": 64,
+          "missing_ring_atoms": [],
+          "ring_to_target_minimum_A": 15.903368949890137,
+          "ring_to_target_nearest_residue": {
+            "chain": "A",
+            "number": 208,
+            "name": "ARG",
+            "atom": "NH1"
+          },
+          "nitrogen_to_basic_minimum_A": 15.903368949890137,
+          "nitrogen_to_basic_nearest_residue": {
+            "chain": "A",
+            "number": 208,
+            "name": "ARG",
+            "atom": "NH1"
+          },
+          "nitrogen_to_acidic_minimum_A": 16.378862380981445,
+          "nitrogen_to_acidic_nearest_residue": {
+            "chain": "A",
+            "number": 204,
+            "name": "ASP",
+            "atom": "OD2"
+          }
+        }
+      ],
+      "prior_matching_design": null
+    }
+  ],
+  "limitations": [
+    "Contact counts and His priors do not establish protonation, affinity or pH selectivity",
+    "Uses observed native sidechain rotamers in rigid staging; no refolding, relaxation or pKa calculation",
+    "Prior novelty is conditional evidence from an earlier conformer, not an organizer score"
+  ],
+  "new_gpu_spend_usd": 0
+}

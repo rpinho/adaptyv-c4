@@ -1,0 +1,31 @@
+{
+  "source": "results/gpu_campaign_v2/human_11qc_full_monomer.pdb",
+  "context": "results/gpu_campaign/human_11qc_full_dimer.pdb",
+  "destination": "results/modal_campaign_v5/human_11qc_local_frame.pdb",
+  "source_sha256": "2dec4e9519ca821fbec2b8d619934c947a29188d7427d1bb95c054178bc80abc",
+  "destination_sha256": "b34e2885ae49ad16b464883405660ed5aa0c1c1ba21a6faf66be1b26ab5fb128",
+  "source_hotspot_centroid": [
+    92.9222,
+    135.3856,
+    93.2078
+  ],
+  "source_receptor_centroid": [
+    109.39519248826285,
+    128.6713145539905,
+    132.2278403755868
+  ],
+  "old_origin_to_hotspot_A": 188.81602135687532,
+  "translation": [
+    87.16021206731283,
+    137.73414910205838,
+    79.55921720987897
+  ],
+  "new_origin_to_hotspot_A": 15.0,
+  "new_origin_full_context_atom_clearance_A": 7.955359854658987,
+  "atoms": 5057,
+  "residues": 639,
+  "non_coordinate_columns_identical": true,
+  "max_coordinate_rounding_A": 0.0003382071857871986,
+  "max_CA_pair_distance_change_A": 4.263256414560601e-14,
+  "limitation": "Placement is an initialization hypothesis; not evidence of affinity or a corrected v3 failure cause"
+}

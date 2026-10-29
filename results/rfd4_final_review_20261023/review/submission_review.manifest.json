@@ -1,0 +1,173 @@
+{
+  "generated_utc": "2026-10-23T13:21:47.128962+00:00",
+  "sha256_shortlist_in": "ca80734f6fd190d0076268180a39cc95ef4525b99529217cd35645b55539166b",
+  "sha256_submission_out": "ca80734f6fd190d0076268180a39cc95ef4525b99529217cd35645b55539166b",
+  "generator": "scripts/build_submission.py",
+  "is_format_test": false,
+  "source_shortlist": "results/rfd4_final_review_20261023/review/annotated20.csv",
+  "track": "3",
+  "row_cap": 20,
+  "rows": 20,
+  "row_order_is_rank": true,
+  "columns": [
+    "name",
+    "sequence",
+    "molecule_class",
+    "rank",
+    "cluster",
+    "rank_score",
+    "source_id",
+    "source_arm",
+    "his_prior",
+    "n_his",
+    "n_cys",
+    "hotspot_obedience",
+    "clash_fraction_1p5A",
+    "bad_bond_fraction",
+    "native_context_staging_pass",
+    "target_fit_CA_RMSD_A",
+    "omitted_backbone_pairs_under2A",
+    "native_backbone_minimum_A",
+    "observed_NAG_minimum_A",
+    "prior_local_general_novelty_same_sequence",
+    "novelty_evidence_scope",
+    "pH_binding_evidence",
+    "organizer_acceptance",
+    "his_rings_near_target_4p5A",
+    "his_nitrogens_near_basic_4p5A",
+    "his_nitrogens_near_acidic_4p5A",
+    "hypothesis_basis",
+    "his_fraction"
+  ],
+  "twin_strep_tag": "excluded",
+  "twin_strep_status": "UNVERIFIED -- the challenge page says only that the C-terminal Twin-Strep tag 'must not be part of the binding'; the authenticated submit page does not mention it. Excluding it is supported by the selection prompt's 'novelty is judged on the binding part alone, so padding, linkers and extra domains do not help', but is still an inference",
+  "resubmit_interval_hours": 24,
+  "novelty_level_min": 3,
+  "novelty_screen": "enforced server-side after upload; this emitter cannot predict it",
+  "unverified_spec_items": [
+    "whether the Twin-Strep tag belongs in the submitted sequence",
+    "name charset and length is our own convention (the form documents only that name is a unique identifier)"
+  ],
+  "designs": [
+    {
+      "rank": 1,
+      "name": "tfr1_c200m_20261023__tfr1_apical_binder_126",
+      "length": 73,
+      "molecule_class": "single_chain"
+    },
+    {
+      "rank": 2,
+      "name": "tfr1_his020_200m_20261023__tfr1_apical_his_70",
+      "length": 117,
+      "molecule_class": "single_chain"
+    },
+    {
+      "rank": 3,
+      "name": "tfr1_his020_200m_20261023__tfr1_apical_his_86",
+      "length": 97,
+      "molecule_class": "single_chain"
+    },
+    {
+      "rank": 4,
+      "name": "tfr1_his030_200m_20261023__tfr1_apical_his_115",
+      "length": 113,
+      "molecule_class": "single_chain"
+    },
+    {
+      "rank": 5,
+      "name": "tfr1_his030_200m_20261023__tfr1_apical_his_121",
+      "length": 96,
+      "molecule_class": "single_chain"
+    },
+    {
+      "rank": 6,
+      "name": "tfr1_his030_200m_20261023__tfr1_apical_his_144",
+      "length": 105,
+      "molecule_class": "single_chain"
+    },
+    {
+      "rank": 7,
+      "name": "tfr1_his030_200m_20261023__tfr1_apical_his_169",
+      "length": 84,
+      "molecule_class": "single_chain"
+    },
+    {
+      "rank": 8,
+      "name": "tfr1_his030_200m_20261023__tfr1_apical_his_23",
+      "length": 119,
+      "molecule_class": "single_chain"
+    },
+    {
+      "rank": 9,
+      "name": "tfr1_his030_200m_20261023__tfr1_apical_his_64",
+      "length": 98,
+      "molecule_class": "single_chain"
+    },
+    {
+      "rank": 10,
+      "name": "tfr1_his030_200m_20261023__tfr1_apical_his_68",
+      "length": 92,
+      "molecule_class": "single_chain"
+    },
+    {
+      "rank": 11,
+      "name": "tfr1_his030_200m_20261023__tfr1_apical_his_70",
+      "length": 117,
+      "molecule_class": "single_chain"
+    },
+    {
+      "rank": 12,
+      "name": "tfr1_his030_200m_20261023__tfr1_apical_his_77",
+      "length": 99,
+      "molecule_class": "single_chain"
+    },
+    {
+      "rank": 13,
+      "name": "tfr1_his200m_20261023__tfr1_apical_his_148",
+      "length": 78,
+      "molecule_class": "single_chain"
+    },
+    {
+      "rank": 14,
+      "name": "tfr1_his200m_20261023__tfr1_apical_his_68",
+      "length": 92,
+      "molecule_class": "single_chain"
+    },
+    {
+      "rank": 15,
+      "name": "tfr1_his020_200m_20261023__tfr1_apical_his_13",
+      "length": 80,
+      "molecule_class": "single_chain"
+    },
+    {
+      "rank": 16,
+      "name": "tfr1_his020_200m_20261023__tfr1_apical_his_147",
+      "length": 121,
+      "molecule_class": "single_chain"
+    },
+    {
+      "rank": 17,
+      "name": "tfr1_his020_200m_20261023__tfr1_apical_his_152",
+      "length": 101,
+      "molecule_class": "single_chain"
+    },
+    {
+      "rank": 18,
+      "name": "tfr1_his030_200m_20261023__tfr1_apical_his_1",
+      "length": 78,
+      "molecule_class": "single_chain"
+    },
+    {
+      "rank": 19,
+      "name": "tfr1_his030_200m_20261023__tfr1_apical_his_133",
+      "length": 73,
+      "molecule_class": "single_chain"
+    },
+    {
+      "rank": 20,
+      "name": "tfr1_his030_200m_20261023__tfr1_apical_his_142",
+      "length": 117,
+      "molecule_class": "single_chain"
+    }
+  ]
+}

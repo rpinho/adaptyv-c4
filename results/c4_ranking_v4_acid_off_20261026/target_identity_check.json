@@ -1,0 +1,36 @@
+{
+ "created_at_utc": "2026-10-26T14:37:21Z",
+ "purpose": "Verify rule v4's eligibility clause 'exact human P02786 189-383 target identity' against the apical complexes actually scored. This clause gates every seat.",
+ "rule_clause": "actual binder sequence matched to structure and exact human P02786 189-383 target identity",
+ "target": {
+  "accession": "P02786",
+  "residues": "189-383 (1-based inclusive)",
+  "length": 195,
+  "sha256": "439e6a3ac85d86bb4caf97c1942740a2c0ca1feb25ba7dfeab08d5ce369962a4"
+ },
+ "result": {
+  "n_complexes": 342,
+  "n_receptor_chain_exact": 342,
+  "n_mismatch": 0,
+  "mismatches": [],
+  "receptor_chain_lengths": {
+   "195": 342
+  }
+ },
+ "pass": true,
+ "negative_controls": {
+  "P02786_189_343_155aa": {
+   "len": 155,
+   "matches": false
+  },
+  "P02786_1_195": {
+   "len": 195,
+   "matches": false
+  },
+  "P02786_260_414": {
+   "len": 155,
+   "matches": false
+  }
+ },
+ "note": "Receptor = chain B in every apical complex; binder = chain A. Compared by extracted CA sequence, not by file naming."
+}

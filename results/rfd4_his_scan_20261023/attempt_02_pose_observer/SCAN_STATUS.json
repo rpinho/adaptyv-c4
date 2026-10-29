@@ -1,0 +1,13 @@
+{
+  "state": "running",
+  "planned_sites": 10,
+  "attempted": [
+    {
+      "index": 0,
+      "state": "failed",
+      "reused": false
+    }
+  ],
+  "completed": 0,
+  "new_gpu_spend_usd": 0
+}

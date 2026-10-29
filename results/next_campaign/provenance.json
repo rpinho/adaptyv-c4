@@ -1,0 +1,9 @@
+{
+  "source": "/Users/ricardo/dev/adaptyv-c4/results/switch_install/campaign/campaign.json",
+  "source_sha256": "a0938982cd5d91341e6309842e8baa009cc7dab4fa2abf35ee107c8ccfe818f5",
+  "script_sha256": "f7b5ec06f9f221ce80dc207868f7d2c9986890d8b3c35b1eff61be12dfa25352",
+  "parent_ids": 15,
+  "sensitivity_scenarios": 216,
+  "modelling_performed": false,
+  "runpod_new_gpu_spend_usd": 0
+}

@@ -1,0 +1,519 @@
+{
+ "created_at_utc": "2026-10-26T14:30:16Z",
+ "question": "Does the direction-correct (ACID-OFF) v4 ranking beat the pool it rejects on metrics that entered none of its selection?",
+ "inputs": {
+  "ranking": {
+   "path": "results/c4_ranking_v4_acid_off_20261026/v4_ranking_acid_off.json",
+   "sha256": "75236da7cc1ae106c5649cc310a347e8564c4fbd525cfc7f4779abba6d613b3f"
+  },
+  "metrics": {
+   "path": "results/c4_independent_check_20261026/independent_metrics.json",
+   "sha256": "5d4452a9c234fc097b560226d101c8f54fa924e25cedd1c44c01b3e0822215cf"
+  }
+ },
+ "method": {
+  "n_permutations": 20000,
+  "seed": 20261026,
+  "statistic": "two-sided permutation on difference of medians (same as incumbent)",
+  "metrics": [
+   "core_apolar_frac",
+   "core_charged_frac",
+   "n_buried_acidic",
+   "buried_frac_of_binder",
+   "iface_apolar_frac",
+   "bsa_total_A2",
+   "bsa_apolar_A2",
+   "entropy_bits",
+   "max_homopolymer_run",
+   "frac_acidic_DE",
+   "frac_his",
+   "frac_apolar",
+   "n_distinct_aa"
+  ],
+  "bonferroni": "13 metrics per family; alpha=0.05/13=0.003846",
+  "join": "sha256(sequence), never name",
+  "comparison_groups": {
+   "A_all_v4_ineligible": 293,
+   "B_eligible_but_unseated": 29,
+   "n_seats": 20,
+   "n_pool": 342
+  }
+ },
+ "controls": {
+  "SHUFFLE_labels_go_silent": {
+   "metric": "frac_his",
+   "n_random_relabelings": 200,
+   "n_permutations_per_shuffle": 2000,
+   "fraction_with_p_below_0.05": 0.06,
+   "expected_under_correct_calibration": 0.05,
+   "median_null_p": 0.4783,
+   "binomial_95pct_band_for_200_at_0.05": [
+    0.021,
+    0.089
+   ],
+   "fired_correctly": true,
+   "reading": "random relabeling of seat membership fires at the nominal rate, so the observed p-values are not an artifact of the test"
+  },
+  "PLANTED_signal_fires": {
+   "definition": "1.0 for v4 seats, 0.0 otherwise (perfect separation by construction)",
+   "median_diff": 1.0,
+   "perm_p_two_sided": 4.999750012499375e-05,
+   "p_floor": 4.999750012499375e-05,
+   "fired_correctly": true
+  },
+  "NOISE_signal_silent": {
+   "definition": "N(0,1) noise, independent of seat membership",
+   "median_diff": -0.3564,
+   "perm_p_two_sided": 0.25174,
+   "fired_correctly": true
+  },
+  "SEATS_are_acid_OFF": {
+   "n_seats": 20,
+   "n_with_L6_lt_0": 20,
+   "fired_correctly": true
+  }
+ },
+ "all_controls_fired": true,
+ "result_A_vs_all_ineligible": {
+  "core_apolar_frac": {
+   "a_median": 0.8944,
+   "b_median": 0.875,
+   "median_diff_a_minus_b": 0.0194,
+   "perm_p_two_sided": 0.62662,
+   "higher_is_better": true,
+   "a_better": true,
+   "p_bonferroni_13": 1.0,
+   "significant_bonferroni_13": false
+  },
+  "core_charged_frac": {
+   "a_median": 0.0,
+   "b_median": 0.0,
+   "median_diff_a_minus_b": 0.0,
+   "perm_p_two_sided": 1.0,
+   "higher_is_better": false,
+   "a_better": true,
+   "p_bonferroni_13": 1.0,
+   "significant_bonferroni_13": false
+  },
+  "n_buried_acidic": {
+   "a_median": 0.0,
+   "b_median": 0.0,
+   "median_diff_a_minus_b": 0.0,
+   "perm_p_two_sided": 1.0,
+   "higher_is_better": false,
+   "a_better": true,
+   "p_bonferroni_13": 1.0,
+   "significant_bonferroni_13": false
+  },
+  "buried_frac_of_binder": {
+   "a_median": 0.1257,
+   "b_median": 0.1236,
+   "median_diff_a_minus_b": 0.0021,
+   "perm_p_two_sided": 0.9261,
+   "higher_is_better": true,
+   "a_better": true,
+   "p_bonferroni_13": 1.0,
+   "significant_bonferroni_13": false
+  },
+  "iface_apolar_frac": {
+   "a_median": 0.6539,
+   "b_median": 0.6503,
+   "median_diff_a_minus_b": 0.0036,
+   "perm_p_two_sided": 0.80151,
+   "higher_is_better": true,
+   "a_better": true,
+   "p_bonferroni_13": 1.0,
+   "significant_bonferroni_13": false
+  },
+  "bsa_total_A2": {
+   "a_median": 1073.25,
+   "b_median": 1072.5,
+   "median_diff_a_minus_b": 0.75,
+   "perm_p_two_sided": 0.9947,
+   "higher_is_better": true,
+   "a_better": true,
+   "p_bonferroni_13": 1.0,
+   "significant_bonferroni_13": false
+  },
+  "bsa_apolar_A2": {
+   "a_median": 701.0,
+   "b_median": 703.2,
+   "median_diff_a_minus_b": -2.2,
+   "perm_p_two_sided": 0.96365,
+   "higher_is_better": true,
+   "a_better": false,
+   "p_bonferroni_13": 1.0,
+   "significant_bonferroni_13": false
+  },
+  "entropy_bits": {
+   "a_median": 3.5679,
+   "b_median": 3.5692,
+   "median_diff_a_minus_b": -0.0013,
+   "perm_p_two_sided": 0.9868,
+   "higher_is_better": true,
+   "a_better": false,
+   "p_bonferroni_13": 1.0,
+   "significant_bonferroni_13": false
+  },
+  "max_homopolymer_run": {
+   "a_median": 3.0,
+   "b_median": 3.0,
+   "median_diff_a_minus_b": 0.0,
+   "perm_p_two_sided": 1.0,
+   "higher_is_better": false,
+   "a_better": true,
+   "p_bonferroni_13": 1.0,
+   "significant_bonferroni_13": false
+  },
+  "frac_acidic_DE": {
+   "a_median": 0.2152,
+   "b_median": 0.2414,
+   "median_diff_a_minus_b": -0.0262,
+   "perm_p_two_sided": 0.24639,
+   "higher_is_better": false,
+   "a_better": true,
+   "p_bonferroni_13": 1.0,
+   "significant_bonferroni_13": false
+  },
+  "frac_his": {
+   "a_median": 0.0832,
+   "b_median": 0.0938,
+   "median_diff_a_minus_b": -0.0106,
+   "perm_p_two_sided": 0.46193,
+   "higher_is_better": false,
+   "a_better": true,
+   "p_bonferroni_13": 1.0,
+   "significant_bonferroni_13": false
+  },
+  "frac_apolar": {
+   "a_median": 0.4011,
+   "b_median": 0.3793,
+   "median_diff_a_minus_b": 0.0218,
+   "perm_p_two_sided": 0.20379,
+   "higher_is_better": true,
+   "a_better": true,
+   "p_bonferroni_13": 1.0,
+   "significant_bonferroni_13": false
+  },
+  "n_distinct_aa": {
+   "a_median": 16.5,
+   "b_median": 16.0,
+   "median_diff_a_minus_b": 0.5,
+   "perm_p_two_sided": 0.53167,
+   "higher_is_better": true,
+   "a_better": true,
+   "p_bonferroni_13": 1.0,
+   "significant_bonferroni_13": false
+  }
+ },
+ "summary_A": {
+  "label": "v4 seats vs all v4-ineligible",
+  "n_metrics": 13,
+  "n_significant_bonferroni": 0,
+  "significant_metrics": [],
+  "n_a_better": 11,
+  "a_better_metrics": [
+   "core_apolar_frac",
+   "core_charged_frac",
+   "n_buried_acidic",
+   "buried_frac_of_binder",
+   "iface_apolar_frac",
+   "bsa_total_A2",
+   "max_homopolymer_run",
+   "frac_acidic_DE",
+   "frac_his",
+   "frac_apolar",
+   "n_distinct_aa"
+  ],
+  "n_a_worse": 2,
+  "a_worse_metrics": [
+   "bsa_apolar_A2",
+   "entropy_bits"
+  ],
+  "min_p_raw": 0.20379,
+  "n_p_below_0.05_raw": 0
+ },
+ "result_B_vs_unseated_eligible": {
+  "core_apolar_frac": {
+   "a_median": 0.8944,
+   "b_median": 0.8333,
+   "median_diff_a_minus_b": 0.0611,
+   "perm_p_two_sided": 0.28854,
+   "higher_is_better": true,
+   "a_better": true,
+   "p_bonferroni_13": 1.0,
+   "significant_bonferroni_13": false
+  },
+  "core_charged_frac": {
+   "a_median": 0.0,
+   "b_median": 0.0,
+   "median_diff_a_minus_b": 0.0,
+   "perm_p_two_sided": 1.0,
+   "higher_is_better": false,
+   "a_better": true,
+   "p_bonferroni_13": 1.0,
+   "significant_bonferroni_13": false
+  },
+  "n_buried_acidic": {
+   "a_median": 0.0,
+   "b_median": 0.0,
+   "median_diff_a_minus_b": 0.0,
+   "perm_p_two_sided": 1.0,
+   "higher_is_better": false,
+   "a_better": true,
+   "p_bonferroni_13": 1.0,
+   "significant_bonferroni_13": false
+  },
+  "buried_frac_of_binder": {
+   "a_median": 0.1257,
+   "b_median": 0.1562,
+   "median_diff_a_minus_b": -0.0305,
+   "perm_p_two_sided": 0.31733,
+   "higher_is_better": true,
+   "a_better": false,
+   "p_bonferroni_13": 1.0,
+   "significant_bonferroni_13": false
+  },
+  "iface_apolar_frac": {
+   "a_median": 0.6539,
+   "b_median": 0.6515,
+   "median_diff_a_minus_b": 0.0024,
+   "perm_p_two_sided": 0.84671,
+   "higher_is_better": true,
+   "a_better": true,
+   "p_bonferroni_13": 1.0,
+   "significant_bonferroni_13": false
+  },
+  "bsa_total_A2": {
+   "a_median": 1073.25,
+   "b_median": 1075.7,
+   "median_diff_a_minus_b": -2.45,
+   "perm_p_two_sided": 0.994,
+   "higher_is_better": true,
+   "a_better": false,
+   "p_bonferroni_13": 1.0,
+   "significant_bonferroni_13": false
+  },
+  "bsa_apolar_A2": {
+   "a_median": 701.0,
+   "b_median": 724.7,
+   "median_diff_a_minus_b": -23.7,
+   "perm_p_two_sided": 0.74926,
+   "higher_is_better": true,
+   "a_better": false,
+   "p_bonferroni_13": 1.0,
+   "significant_bonferroni_13": false
+  },
+  "entropy_bits": {
+   "a_median": 3.5679,
+   "b_median": 3.6405,
+   "median_diff_a_minus_b": -0.0726,
+   "perm_p_two_sided": 0.30893,
+   "higher_is_better": true,
+   "a_better": false,
+   "p_bonferroni_13": 1.0,
+   "significant_bonferroni_13": false
+  },
+  "max_homopolymer_run": {
+   "a_median": 3.0,
+   "b_median": 2.0,
+   "median_diff_a_minus_b": 1.0,
+   "perm_p_two_sided": 0.38053,
+   "higher_is_better": false,
+   "a_better": false,
+   "p_bonferroni_13": 1.0,
+   "significant_bonferroni_13": false
+  },
+  "frac_acidic_DE": {
+   "a_median": 0.2152,
+   "b_median": 0.2179,
+   "median_diff_a_minus_b": -0.0027,
+   "perm_p_two_sided": 0.87071,
+   "higher_is_better": false,
+   "a_better": true,
+   "p_bonferroni_13": 1.0,
+   "significant_bonferroni_13": false
+  },
+  "frac_his": {
+   "a_median": 0.0832,
+   "b_median": 0.1053,
+   "median_diff_a_minus_b": -0.0221,
+   "perm_p_two_sided": 0.0349,
+   "higher_is_better": false,
+   "a_better": true,
+   "p_bonferroni_13": 0.45368,
+   "significant_bonferroni_13": false
+  },
+  "frac_apolar": {
+   "a_median": 0.4011,
+   "b_median": 0.3867,
+   "median_diff_a_minus_b": 0.0144,
+   "perm_p_two_sided": 0.51232,
+   "higher_is_better": true,
+   "a_better": true,
+   "p_bonferroni_13": 1.0,
+   "significant_bonferroni_13": false
+  },
+  "n_distinct_aa": {
+   "a_median": 16.5,
+   "b_median": 17.0,
+   "median_diff_a_minus_b": -0.5,
+   "perm_p_two_sided": 1.0,
+   "higher_is_better": true,
+   "a_better": false,
+   "p_bonferroni_13": 1.0,
+   "significant_bonferroni_13": false
+  }
+ },
+ "summary_B": {
+  "label": "v4 seats vs eligible-but-unseated",
+  "n_metrics": 13,
+  "n_significant_bonferroni": 0,
+  "significant_metrics": [],
+  "n_a_better": 7,
+  "a_better_metrics": [
+   "core_apolar_frac",
+   "core_charged_frac",
+   "n_buried_acidic",
+   "iface_apolar_frac",
+   "frac_acidic_DE",
+   "frac_his",
+   "frac_apolar"
+  ],
+  "n_a_worse": 6,
+  "a_worse_metrics": [
+   "buried_frac_of_binder",
+   "bsa_total_A2",
+   "bsa_apolar_A2",
+   "entropy_bits",
+   "max_homopolymer_run",
+   "n_distinct_aa"
+  ],
+  "min_p_raw": 0.0349,
+  "n_p_below_0.05_raw": 1
+ },
+ "within_eligible_L6_rank_vs_signal": {
+  "core_apolar_frac": {
+   "spearman_rho_vs_L6": 0.2449,
+   "perm_p_vs_L6": 0.09035,
+   "spearman_rho_vs_iptm": 0.2427,
+   "perm_p_vs_iptm": 0.09275,
+   "n": 49
+  },
+  "core_charged_frac": {
+   "spearman_rho_vs_L6": 0.0435,
+   "perm_p_vs_L6": 0.76146,
+   "spearman_rho_vs_iptm": -0.0312,
+   "perm_p_vs_iptm": 0.83161,
+   "n": 49
+  },
+  "n_buried_acidic": {
+   "spearman_rho_vs_L6": -0.0034,
+   "perm_p_vs_L6": 0.9901,
+   "spearman_rho_vs_iptm": -0.0235,
+   "perm_p_vs_iptm": 0.88621,
+   "n": 49
+  },
+  "buried_frac_of_binder": {
+   "spearman_rho_vs_L6": -0.1858,
+   "perm_p_vs_L6": 0.19959,
+   "spearman_rho_vs_iptm": 0.0014,
+   "perm_p_vs_iptm": 0.99345,
+   "n": 49
+  },
+  "iface_apolar_frac": {
+   "spearman_rho_vs_L6": -0.0013,
+   "perm_p_vs_L6": 0.9935,
+   "spearman_rho_vs_iptm": 0.1519,
+   "perm_p_vs_iptm": 0.30023,
+   "n": 49
+  },
+  "bsa_total_A2": {
+   "spearman_rho_vs_L6": -0.1452,
+   "perm_p_vs_L6": 0.31633,
+   "spearman_rho_vs_iptm": -0.2169,
+   "perm_p_vs_iptm": 0.13299,
+   "n": 49
+  },
+  "bsa_apolar_A2": {
+   "spearman_rho_vs_L6": -0.1697,
+   "perm_p_vs_L6": 0.24114,
+   "spearman_rho_vs_iptm": -0.1922,
+   "perm_p_vs_iptm": 0.18339,
+   "n": 49
+  },
+  "entropy_bits": {
+   "spearman_rho_vs_L6": -0.1571,
+   "perm_p_vs_L6": 0.28224,
+   "spearman_rho_vs_iptm": -0.1109,
+   "perm_p_vs_iptm": 0.44348,
+   "n": 49
+  },
+  "max_homopolymer_run": {
+   "spearman_rho_vs_L6": 0.0591,
+   "perm_p_vs_L6": 0.69002,
+   "spearman_rho_vs_iptm": 0.1329,
+   "perm_p_vs_iptm": 0.35763,
+   "n": 49
+  },
+  "frac_acidic_DE": {
+   "spearman_rho_vs_L6": 0.0924,
+   "perm_p_vs_L6": 0.52692,
+   "spearman_rho_vs_iptm": 0.0598,
+   "perm_p_vs_iptm": 0.68152,
+   "n": 49
+  },
+  "frac_his": {
+   "spearman_rho_vs_L6": -0.3675,
+   "perm_p_vs_L6": 0.0103,
+   "spearman_rho_vs_iptm": -0.2052,
+   "perm_p_vs_iptm": 0.15774,
+   "n": 49
+  },
+  "frac_apolar": {
+   "spearman_rho_vs_L6": 0.1873,
+   "perm_p_vs_L6": 0.19929,
+   "spearman_rho_vs_iptm": 0.1713,
+   "perm_p_vs_iptm": 0.23279,
+   "n": 49
+  },
+  "n_distinct_aa": {
+   "spearman_rho_vs_L6": -0.1494,
+   "perm_p_vs_L6": 0.30223,
+   "spearman_rho_vs_iptm": -0.1264,
+   "perm_p_vs_iptm": 0.38098,
+   "n": 49
+  }
+ },
+ "seat_roster": [
+  "tfr1_c4_acid_site1_67",
+  "tfr1_c4_acid_site2_74",
+  "tfr1_c4_acid_site1_125",
+  "tfr1_c4_acid_site2_66",
+  "tfr1_c4_acid_site1_7",
+  "tfr1_c4_acid_site1_177",
+  "tfr1_c4_acid_site2_169",
+  "tfr1_c4_acid_site1_0",
+  "tfr1_c4_acid_site2_92",
+  "tfr1_c4_acid_site2_177",
+  "tfr1_c4_acid_site2_24",
+  "tfr1_c4_acid_site1_147",
+  "tfr1_c4_acid_site1_49",
+  "tfr1_c4_acid_site1_149",
+  "tfr1_c4_acid_site1_161",
+  "tfr1_c4_acid_site2_181",
+  "tfr1_c4_acid_site2_100",
+  "tfr1_c4_acid_site1_113",
+  "tfr1_c4_acid_site2_128",
+  "tfr1_c4_acid_site2_25"
+ ],
+ "verdict": {
+  "A": "b",
+  "B": "b",
+  "legend": {
+   "a": "v4 seats measurably better",
+   "b": "statistically indistinguishable",
+   "c": "v4 seats worse"
+  }
+ }
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "design": "assembly1_FcA_TfRD_nativeA",
+    "target_ca_rmsd": 3.708717416188307,
+    "aligned_target_residues": 147,
+    "restored_heavy_pair_clashes_under2A": 0,
+    "restored_clashing_residues": 0,
+    "restored_min_heavy_distance": 6.926462163749608,
+    "restored_backbone_pair_clashes_under2A": 0,
+    "restored_backbone_min_distance": 12.985303971316029,
+    "rigid_context_pass": true,
+    "source_sha256": "fd8d3746adcb549d4a524ecb595c67815bae368c6ee146e806b5875c4d528d1d",
+    "clashing_residues": [],
+    "backbone_clashing_residues": []
+  },
+  {
+    "design": "assembly1_FcA_TfRD_nativeB",
+    "target_ca_rmsd": 3.708313966862232,
+    "aligned_target_residues": 147,
+    "restored_heavy_pair_clashes_under2A": 0,
+    "restored_clashing_residues": 0,
+    "restored_min_heavy_distance": 6.9631799326056285,
+    "restored_backbone_pair_clashes_under2A": 0,
+    "restored_backbone_min_distance": 12.991108306354521,
+    "rigid_context_pass": true,
+    "source_sha256": "5995195883ba88fed1275c67a36f9a2818bf0468035fc645dfbf47d634362a2c",
+    "clashing_residues": [],
+    "backbone_clashing_residues": []
+  },
+  {
+    "design": "assembly2_FcB_TfRC_nativeA",
+    "target_ca_rmsd": 0.9627170603027164,
+    "aligned_target_residues": 144,
+    "restored_heavy_pair_clashes_under2A": 0,
+    "restored_clashing_residues": 0,
+    "restored_min_heavy_distance": 4.500240282122188,
+    "restored_backbone_pair_clashes_under2A": 0,
+    "restored_backbone_min_distance": 10.716968643712695,
+    "rigid_context_pass": true,
+    "source_sha256": "9580ed1194f8757e51bafb36cccda7d31f3ab742d5c8a9dfde8e85b68113863d",
+    "clashing_residues": [],
+    "backbone_clashing_residues": []
+  },
+  {
+    "design": "assembly2_FcB_TfRC_nativeB",
+    "target_ca_rmsd": 0.9496012255446286,
+    "aligned_target_residues": 144,
+    "restored_heavy_pair_clashes_under2A": 0,
+    "restored_clashing_residues": 0,
+    "restored_min_heavy_distance": 4.535389943171032,
+    "restored_backbone_pair_clashes_under2A": 0,
+    "restored_backbone_min_distance": 10.736501280544575,
+    "rigid_context_pass": true,
+    "source_sha256": "ed0d28260a3ea18fd503b9f568c8ecea61390456c1d028bfffbe9d11f8709b49",
+    "clashing_residues": [],
+    "backbone_clashing_residues": []
+  }
+]

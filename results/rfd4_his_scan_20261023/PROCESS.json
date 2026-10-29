@@ -1,0 +1,7 @@
+{
+  "controller_pid": 62227,
+  "caffeinate_pid": 62451,
+  "recorded_at": "2026-10-23T14:17:47.085254+00:00",
+  "gpu_used": false,
+  "reason": "Keep the Mini awake for this finite local CPU scan; caffeinate exits with its controller"
+}

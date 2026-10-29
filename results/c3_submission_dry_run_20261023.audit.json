@@ -1,0 +1,8 @@
+{
+  "status": "c3_dry_run",
+  "row_count": 9,
+  "designs_dropped": 1,
+  "source": "results/pods/c3_glp1r/3_Ranked/!_Ranked.csv",
+  "refold_source": "results/c3_refold_results.csv",
+  "csv_sha256": "390d68e9ccc4aae200426415bc6175e48aae57b7bb19e7f93958e1801ce2aeba"
+}
