@@ -67,3 +67,10 @@
 4. **IDEA 4** (9-mer vs 10-mer) — challenge target is 10-mer per 7OW6
 5. **IDEA 5** (prescreen benchmark) — TODO: validate against known binders
 6. **IDEA 10** (design diversity) — VALIDATED: already executing multi-source strategy
+
+## IDEA 11: D6 aspartate is BURIED, not exposed — salt bridge is with MHC, not available for binder
+- **Source:** Claude Science structural analysis of 7OW6 (session 7cb19b28, 2026-10-30)
+- **MEASURED:** Asp6 side chain SASA = 7.9 Å² in 7OW6 (vs Val6 SASA = 83.0 Å² in G12V/7STF). Asp6 carboxylate is captured by HLA Arg114 (2.95-3.04 Å polar contacts) and HLA Gln70 (3.08 Å). Nearest TCR atom to Asp6 side chain = 5.73 Å (too far for contact).
+- **Implication:** The D6-only hotspot strategy CANNOT work by direct salt bridge to Asp6 — the carboxylate is occupied by the MHC. BUT our D6-only designs ARE selective (delta +0.140), so they achieve selectivity through an INDIRECT mechanism: the Asp6→Arg114 salt bridge changes the peptide conformation and groove shape (positions 4-5-7 SASA differ between G12D and G12V), which the binder reads.
+- **Revised design logic:** Don't target D6 directly. Target the CONFORMATIONAL CONSEQUENCE of D6: the altered backbone and side chain positions of neighboring residues (positions 5, 7, 8) that differ between G12D and WT due to the D6-Arg114 interaction. The "upward-facing" hotspot set (C5, C7, C8) may be better than D6-focused.
+- **Status:** CRITICAL — revises understanding of the selectivity mechanism
