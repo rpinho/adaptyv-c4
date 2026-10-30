@@ -1,0 +1,19 @@
+c3_ecd111_e3_subB_65_80:
+  input: ../../data/c3_ecd111_af2m_target_20261025.cif
+  contig: "65-80, /0, F1-111"
+  conditions:
+    C_CRDGRP:
+      1:
+        - select: "sel('F/*/[1-111]') and is_protein_backbone and not has_nan_coord()"
+    C_SEQ:
+      true:
+        - select: "sel('F/*/[1-111]')"
+    C_SEQ_PROB_CYS:
+      0.0:
+        - select: "sel('A')"
+    C_HOT:
+      true:
+        - select: "sel('F/*/41/[OH]')"
+        - select: "sel('F/*/60/[OH]')"
+        - select: "sel('F/*/63/[CE2,NE1]')"
+        - select: "sel('F/*/93/[NH1,NH2]')"

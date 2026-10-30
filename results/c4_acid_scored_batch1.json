@@ -1,617 +1,958 @@
 [
   {
-    "name": "tfr1_c4_acid_site1_82",
-    "sequence": "ALTHEERVAYLHHLAEELEAAAEELEAEGAPEHWVDSLRFLAHAAEDVAAFYEEHPDETDAAYHHHLAEAHALVAEQPEARREELLAEHEERLAKIRAAL",
-    "length": 100,
-    "n_his": 11,
-    "mean_plddt": 73.2,
-    "iptm": 0.9555612802505493,
-    "ptm": 0.8522868156433105,
-    "confidence": 0.7810595631599426,
-    "avg_free_pka": 6.66,
-    "avg_complex_pka": 5.55,
-    "L": 5.41,
-    "total_ddg": 7.371,
-    "switch_ok": true,
+    "name": "tfr1_c4_acid_site2_9",
+    "sequence": "TELEELEKEYEEQIDGLNSFRLALLNFAHDNLSTTEYETFSTELDEALSPFYTLLEENYEERKAHLE",
+    "length": 67,
+    "n_his": 2,
+    "mean_plddt": 94.2,
+    "iptm": 0.8941201567649841,
+    "ptm": 0.9219119548797607,
+    "confidence": 0.714178740978241,
+    "avg_free_pka": 6.73,
+    "avg_complex_pka": 7.12,
+    "L": 0.56,
+    "total_ddg": -0.757,
+    "switch_ok": false,
     "per_his": {
-      "A4": {
-        "pka_free": 6.58,
-        "pka_bound": 6.24,
-        "delta_pka": -0.34,
-        "ddg": 0.368
-      },
-      "A12": {
-        "pka_free": 7.8,
-        "pka_bound": 7.56,
-        "delta_pka": -0.24,
-        "ddg": 0.111
-      },
-      "A13": {
-        "pka_free": 6.94,
-        "pka_bound": 6.56,
-        "delta_pka": -0.38,
-        "ddg": 0.393
-      },
-      "A33": {
-        "pka_free": 6.09,
-        "pka_bound": 6.13,
-        "delta_pka": 0.04,
-        "ddg": -0.041
-      },
-      "A43": {
-        "pka_free": 6.56,
-        "pka_bound": 6.64,
-        "delta_pka": 0.08,
-        "ddg": -0.086
-      },
-      "A55": {
-        "pka_free": 7.25,
-        "pka_bound": 5.69,
-        "delta_pka": -1.56,
-        "ddg": 1.537
-      },
-      "A64": {
-        "pka_free": 6.13,
-        "pka_bound": 5.85,
-        "delta_pka": -0.28,
-        "ddg": 0.273
+      "A29": {
+        "pka_free": 7.0,
+        "pka_bound": 6.97,
+        "delta_pka": -0.03,
+        "ddg": 0.028
       },
       "A65": {
-        "pka_free": 6.88,
-        "pka_bound": 4.3,
-        "delta_pka": -2.58,
-        "ddg": 1.713
-      },
-      "A66": {
-        "pka_free": 6.55,
-        "pka_bound": 3.09,
-        "delta_pka": -3.46,
-        "ddg": 1.401
-      },
-      "A71": {
-        "pka_free": 6.29,
-        "pka_bound": 5.57,
-        "delta_pka": -0.72,
-        "ddg": 0.67
-      },
-      "A89": {
-        "pka_free": 6.21,
-        "pka_bound": 3.42,
-        "delta_pka": -2.79,
-        "ddg": 1.031
+        "pka_free": 6.47,
+        "pka_bound": 7.28,
+        "delta_pka": 0.81,
+        "ddg": -0.785
       }
     }
   },
   {
-    "name": "tfr1_c4_acid_site1_170",
-    "sequence": "TPHEEALTELHAMSDEEKLHKMKTVLHDFQSVHEHLDDYHLTPEEEEEFEHLLHNIETAVHTYEEAVEHLE",
-    "length": 71,
-    "n_his": 11,
-    "mean_plddt": 89.8,
-    "iptm": 0.9636012315750122,
-    "ptm": 0.9402064681053162,
-    "confidence": 0.759074330329895,
-    "avg_free_pka": 6.69,
-    "avg_complex_pka": 6.25,
-    "L": 3.12,
-    "total_ddg": 4.252,
-    "switch_ok": true,
+    "name": "tfr1_c4_acid_site2_4",
+    "sequence": "SHLDEVVAEVKDTFGHYFDDELKILTEAVASGQVTEDEVVSYLEKILDSHHDFVDHLEDNVAEL",
+    "length": 64,
+    "n_his": 5,
+    "mean_plddt": 83.9,
+    "iptm": 0.9592760801315308,
+    "ptm": 0.9296863079071045,
+    "confidence": 0.7674156427383423,
+    "avg_free_pka": 6.64,
+    "avg_complex_pka": 6.45,
+    "L": -0.49,
+    "total_ddg": 0.667,
+    "switch_ok": false,
     "per_his": {
-      "A3": {
-        "pka_free": 6.29,
-        "pka_bound": 5.58,
-        "delta_pka": -0.71,
-        "ddg": 0.663
-      },
-      "A11": {
-        "pka_free": 6.1,
-        "pka_bound": 4.94,
-        "delta_pka": -1.16,
-        "ddg": 0.78
-      },
-      "A20": {
-        "pka_free": 6.24,
-        "pka_bound": 6.27,
-        "delta_pka": 0.03,
-        "ddg": -0.032
-      },
-      "A27": {
-        "pka_free": 6.56,
-        "pka_bound": 6.53,
-        "delta_pka": -0.03,
-        "ddg": 0.033
-      },
-      "A33": {
-        "pka_free": 7.25,
-        "pka_bound": 6.32,
-        "delta_pka": -0.93,
-        "ddg": 0.925
-      },
-      "A35": {
-        "pka_free": 7.43,
-        "pka_bound": 6.38,
-        "delta_pka": -1.05,
-        "ddg": 0.988
-      },
-      "A40": {
+      "A2": {
         "pka_free": 6.36,
-        "pka_bound": 6.34,
-        "delta_pka": -0.02,
-        "ddg": 0.022
+        "pka_bound": 6.9,
+        "delta_pka": 0.54,
+        "ddg": -0.572
+      },
+      "A16": {
+        "pka_free": 7.01,
+        "pka_bound": 6.48,
+        "delta_pka": -0.53,
+        "ddg": 0.546
+      },
+      "A50": {
+        "pka_free": 6.05,
+        "pka_bound": 5.13,
+        "delta_pka": -0.92,
+        "ddg": 0.664
       },
       "A51": {
-        "pka_free": 6.58,
-        "pka_bound": 6.78,
-        "delta_pka": 0.2,
-        "ddg": -0.212
+        "pka_free": 6.56,
+        "pka_bound": 6.91,
+        "delta_pka": 0.35,
+        "ddg": -0.364
       },
-      "A54": {
-        "pka_free": 6.39,
-        "pka_bound": 6.3,
-        "delta_pka": -0.09,
-        "ddg": 0.097
-      },
-      "A61": {
-        "pka_free": 7.01,
-        "pka_bound": 6.76,
-        "delta_pka": -0.25,
-        "ddg": 0.247
-      },
-      "A69": {
-        "pka_free": 7.34,
-        "pka_bound": 6.55,
-        "delta_pka": -0.79,
-        "ddg": 0.742
+      "A56": {
+        "pka_free": 7.24,
+        "pka_bound": 6.81,
+        "delta_pka": -0.43,
+        "ddg": 0.393
       }
     }
   },
   {
-    "name": "tfr1_c4_acid_site2_108",
-    "sequence": "HELHTYHTEVEEYQHEEEDEEDEMFHEFHHELDELHDEAWAWLKEHNPELYEEQLEKEEELAHH",
-    "length": 64,
-    "n_his": 11,
-    "mean_plddt": 87.9,
-    "iptm": 0.5990977883338928,
-    "ptm": 0.6927172541618347,
-    "confidence": 0.6037031412124634,
-    "avg_free_pka": 6.75,
-    "avg_complex_pka": 6.18,
-    "L": 3.07,
-    "total_ddg": 4.183,
-    "switch_ok": true,
+    "name": "tfr1_c4_acid_site1_3",
+    "sequence": "PHQLSEDDYLALVKEIRENPHASDTDLATKYNVSVTVVHQIREAVLNEEETVHHLQEHKDEFVHELHTLEEEVIHLEEENTHLEEELHH",
+    "length": 89,
+    "n_his": 12,
+    "mean_plddt": 89.9,
+    "iptm": 0.9255906343460083,
+    "ptm": 0.9317154288291931,
+    "confidence": 0.7837411761283875,
+    "avg_free_pka": 6.64,
+    "avg_complex_pka": 6.57,
+    "L": -0.69,
+    "total_ddg": 0.94,
+    "switch_ok": false,
     "per_his": {
-      "A1": {
-        "pka_free": 6.45,
-        "pka_bound": 6.27,
+      "A2": {
+        "pka_free": 6.36,
+        "pka_bound": 6.18,
         "delta_pka": -0.18,
-        "ddg": 0.195
+        "ddg": 0.193
       },
-      "A4": {
-        "pka_free": 6.35,
-        "pka_bound": 4.34,
-        "delta_pka": -2.01,
-        "ddg": 1.147
-      },
-      "A7": {
-        "pka_free": 6.46,
-        "pka_bound": 6.32,
-        "delta_pka": -0.14,
-        "ddg": 0.152
-      },
-      "A15": {
-        "pka_free": 6.77,
-        "pka_bound": 6.92,
-        "delta_pka": 0.15,
-        "ddg": -0.151
-      },
-      "A26": {
-        "pka_free": 6.39,
-        "pka_bound": 5.78,
-        "delta_pka": -0.61,
-        "ddg": 0.612
-      },
-      "A29": {
-        "pka_free": 6.59,
-        "pka_bound": 3.92,
-        "delta_pka": -2.67,
-        "ddg": 1.432
-      },
-      "A30": {
-        "pka_free": 6.82,
-        "pka_bound": 6.9,
-        "delta_pka": 0.08,
-        "ddg": -0.08
-      },
-      "A36": {
-        "pka_free": 7.53,
-        "pka_bound": 7.4,
-        "delta_pka": -0.13,
-        "ddg": 0.08
-      },
-      "A46": {
-        "pka_free": 6.76,
-        "pka_bound": 6.74,
+      "A21": {
+        "pka_free": 6.29,
+        "pka_bound": 6.27,
         "delta_pka": -0.02,
         "ddg": 0.021
       },
-      "A63": {
-        "pka_free": 7.08,
-        "pka_bound": 7.18,
-        "delta_pka": 0.1,
-        "ddg": -0.086
+      "A39": {
+        "pka_free": 6.87,
+        "pka_bound": 7.28,
+        "delta_pka": 0.41,
+        "ddg": -0.363
       },
-      "A64": {
-        "pka_free": 7.0,
-        "pka_bound": 6.18,
-        "delta_pka": -0.82,
-        "ddg": 0.86
-      }
-    }
-  },
-  {
-    "name": "tfr1_c4_acid_site1_178",
-    "sequence": "SHSEPFTPVFDVDGPDVPPFELTDEQYEHYMTIVTSIASELTEMEEAYEEEDWDSLDHEASELEKHLNQLHHDFDDFGKYIVQRTRDSSH",
-    "length": 90,
-    "n_his": 7,
-    "mean_plddt": 76.0,
-    "iptm": 0.8114379048347473,
-    "ptm": 0.7631167769432068,
-    "confidence": 0.663895308971405,
-    "avg_free_pka": 6.75,
-    "avg_complex_pka": 6.1,
-    "L": 2.83,
-    "total_ddg": 3.854,
-    "switch_ok": true,
-    "per_his": {
-      "A2": {
-        "pka_free": 6.45,
-        "pka_bound": 6.01,
-        "delta_pka": -0.44,
-        "ddg": 0.464
+      "A53": {
+        "pka_free": 6.7,
+        "pka_bound": 6.62,
+        "delta_pka": -0.08,
+        "ddg": 0.085
       },
-      "A29": {
-        "pka_free": 7.06,
-        "pka_bound": 6.84,
-        "delta_pka": -0.22,
-        "ddg": 0.211
+      "A54": {
+        "pka_free": 7.1,
+        "pka_bound": 6.16,
+        "delta_pka": -0.94,
+        "ddg": 0.972
       },
       "A58": {
-        "pka_free": 6.79,
-        "pka_bound": 6.73,
-        "delta_pka": -0.06,
-        "ddg": 0.062
-      },
-      "A66": {
         "pka_free": 6.56,
-        "pka_bound": 5.82,
-        "delta_pka": -0.74,
-        "ddg": 0.762
+        "pka_bound": 6.55,
+        "delta_pka": -0.01,
+        "ddg": 0.011
       },
-      "A71": {
-        "pka_free": 6.61,
-        "pka_bound": 4.41,
-        "delta_pka": -2.2,
-        "ddg": 1.423
+      "A64": {
+        "pka_free": 6.33,
+        "pka_bound": 6.41,
+        "delta_pka": 0.08,
+        "ddg": -0.087
       },
-      "A72": {
-        "pka_free": 6.8,
-        "pka_bound": 6.47,
-        "delta_pka": -0.33,
-        "ddg": 0.352
+      "A67": {
+        "pka_free": 6.86,
+        "pka_bound": 6.77,
+        "delta_pka": -0.09,
+        "ddg": 0.092
       },
-      "A90": {
-        "pka_free": 7.0,
-        "pka_bound": 6.44,
-        "delta_pka": -0.56,
-        "ddg": 0.581
+      "A75": {
+        "pka_free": 6.68,
+        "pka_bound": 6.66,
+        "delta_pka": -0.02,
+        "ddg": 0.021
+      },
+      "A82": {
+        "pka_free": 6.46,
+        "pka_bound": 6.62,
+        "delta_pka": 0.16,
+        "ddg": -0.173
+      },
+      "A88": {
+        "pka_free": 6.34,
+        "pka_bound": 6.92,
+        "delta_pka": 0.58,
+        "ddg": -0.613
+      },
+      "A89": {
+        "pka_free": 7.14,
+        "pka_bound": 6.37,
+        "delta_pka": -0.77,
+        "ddg": 0.782
       }
     }
   },
   {
-    "name": "tfr1_c4_acid_site1_87",
-    "sequence": "HHHLDEAVHHLEEAHEYYEEEDWDEVEHEVTEAIDHVTSFFKEWLSEDEFEKRLKHREEALPSIREELHELA",
-    "length": 72,
-    "n_his": 10,
-    "mean_plddt": 88.8,
-    "iptm": 0.9732300639152527,
-    "ptm": 0.9410849809646606,
-    "confidence": 0.8175800442695618,
-    "avg_free_pka": 6.81,
-    "avg_complex_pka": 6.42,
-    "L": 2.78,
-    "total_ddg": 3.783,
-    "switch_ok": true,
+    "name": "tfr1_c4_acid_site2_152",
+    "sequence": "HHLPQPTMKEIEERYAAAGDTGKLLYALALKYRELVTAGELEDYDKVVEILEEIDSLEDELH",
+    "length": 62,
+    "n_his": 3,
+    "mean_plddt": 70.4,
+    "iptm": 0.8923314809799194,
+    "ptm": 0.9059889316558838,
+    "confidence": 0.7429585456848145,
+    "avg_free_pka": 6.66,
+    "avg_complex_pka": 6.35,
+    "L": -0.7,
+    "total_ddg": 0.953,
+    "switch_ok": false,
+    "per_his": {
+      "A1": {
+        "pka_free": 6.47,
+        "pka_bound": 6.4,
+        "delta_pka": -0.07,
+        "ddg": 0.076
+      },
+      "A2": {
+        "pka_free": 6.43,
+        "pka_bound": 6.15,
+        "delta_pka": -0.28,
+        "ddg": 0.3
+      },
+      "A62": {
+        "pka_free": 7.08,
+        "pka_bound": 6.51,
+        "delta_pka": -0.57,
+        "ddg": 0.577
+      }
+    }
+  },
+  {
+    "name": "tfr1_c4_acid_site1_22",
+    "sequence": "SDDHTPPAEYQNLSMDQLLDEFHAFITRFRDDAHALGDTDVASAAETLEEAATAFLEDHDHVEDTKSALHNFAVALKKYVDSLKHS",
+    "length": 86,
+    "n_his": 7,
+    "mean_plddt": 75.1,
+    "iptm": 0.8950577974319458,
+    "ptm": 0.8483670353889465,
+    "confidence": 0.7106911540031433,
+    "avg_free_pka": 6.62,
+    "avg_complex_pka": 6.46,
+    "L": -0.86,
+    "total_ddg": 1.167,
+    "switch_ok": false,
+    "per_his": {
+      "A4": {
+        "pka_free": 6.36,
+        "pka_bound": 7.17,
+        "delta_pka": 0.81,
+        "ddg": -0.818
+      },
+      "A23": {
+        "pka_free": 6.75,
+        "pka_bound": 6.08,
+        "delta_pka": -0.67,
+        "ddg": 0.716
+      },
+      "A34": {
+        "pka_free": 6.21,
+        "pka_bound": 6.17,
+        "delta_pka": -0.04,
+        "ddg": 0.042
+      },
+      "A59": {
+        "pka_free": 6.38,
+        "pka_bound": 6.39,
+        "delta_pka": 0.01,
+        "ddg": -0.011
+      },
+      "A61": {
+        "pka_free": 7.19,
+        "pka_bound": 6.92,
+        "delta_pka": -0.27,
+        "ddg": 0.243
+      },
+      "A70": {
+        "pka_free": 6.31,
+        "pka_bound": 6.16,
+        "delta_pka": -0.15,
+        "ddg": 0.159
+      },
+      "A85": {
+        "pka_free": 7.14,
+        "pka_bound": 6.32,
+        "delta_pka": -0.82,
+        "ddg": 0.836
+      }
+    }
+  },
+  {
+    "name": "tfr1_c4_acid_site1_7",
+    "sequence": "SAAADRRSKLSSEVIAHNLTMKQVFEEHKSLLLGTKVSFEGKQGIVTDAHFNSDTGVFRLILENESLPEDQRSITLNSHQFEELVSSVIQSLS",
+    "length": 93,
+    "n_his": 4,
+    "mean_plddt": 87.2,
+    "iptm": 0.7005215287208557,
+    "ptm": 0.726682186126709,
+    "confidence": 0.6847845911979675,
+    "avg_free_pka": 6.71,
+    "avg_complex_pka": 6.41,
+    "L": -0.9,
+    "total_ddg": 1.227,
+    "switch_ok": false,
+    "per_his": {
+      "A17": {
+        "pka_free": 6.26,
+        "pka_bound": 6.26,
+        "delta_pka": 0.0,
+        "ddg": 0.0
+      },
+      "A28": {
+        "pka_free": 6.88,
+        "pka_bound": 6.65,
+        "delta_pka": -0.23,
+        "ddg": 0.238
+      },
+      "A50": {
+        "pka_free": 6.76,
+        "pka_bound": 6.01,
+        "delta_pka": -0.75,
+        "ddg": 0.796
+      },
+      "A79": {
+        "pka_free": 6.92,
+        "pka_bound": 6.73,
+        "delta_pka": -0.19,
+        "ddg": 0.193
+      }
+    }
+  },
+  {
+    "name": "tfr1_c4_acid_site2_33",
+    "sequence": "SLEEKLEAERRTLEEQLAEETDPIKRRELQVDLLDDISDLETEEYEITVTSAEEQIAEETDPVKKHELEEELHEFKERHAELH",
+    "length": 83,
+    "n_his": 4,
+    "mean_plddt": 88.1,
+    "iptm": 0.8931313753128052,
+    "ptm": 0.9220729470252991,
+    "confidence": 0.7480612993240356,
+    "avg_free_pka": 6.61,
+    "avg_complex_pka": 6.05,
+    "L": -1.19,
+    "total_ddg": 1.627,
+    "switch_ok": false,
+    "per_his": {
+      "A66": {
+        "pka_free": 7.01,
+        "pka_bound": 6.79,
+        "delta_pka": -0.22,
+        "ddg": 0.216
+      },
+      "A73": {
+        "pka_free": 6.9,
+        "pka_bound": 6.78,
+        "delta_pka": -0.12,
+        "ddg": 0.121
+      },
+      "A79": {
+        "pka_free": 5.49,
+        "pka_bound": 4.51,
+        "delta_pka": -0.98,
+        "ddg": 0.339
+      },
+      "A83": {
+        "pka_free": 7.03,
+        "pka_bound": 6.12,
+        "delta_pka": -0.91,
+        "ddg": 0.95
+      }
+    }
+  },
+  {
+    "name": "tfr1_c4_acid_site2_12",
+    "sequence": "HPSYLSDLETFRSIASRLEDTARERFSFLSDDEIHTLTTMFSLWVSKEEKNEYFTFEEATTYLESYIPLLQKITDHVASEASDLS",
+    "length": 85,
+    "n_his": 3,
+    "mean_plddt": 77.8,
+    "iptm": 0.9528011679649353,
+    "ptm": 0.938237726688385,
+    "confidence": 0.7670950293540955,
+    "avg_free_pka": 6.75,
+    "avg_complex_pka": 6.11,
+    "L": -1.3,
+    "total_ddg": 1.773,
+    "switch_ok": false,
     "per_his": {
       "A1": {
         "pka_free": 6.44,
-        "pka_bound": 6.64,
-        "delta_pka": 0.2,
-        "ddg": -0.216
-      },
-      "A2": {
-        "pka_free": 6.69,
-        "pka_bound": 5.84,
-        "delta_pka": -0.85,
-        "ddg": 0.883
-      },
-      "A3": {
-        "pka_free": 7.29,
-        "pka_bound": 6.32,
-        "delta_pka": -0.97,
-        "ddg": 0.956
-      },
-      "A9": {
-        "pka_free": 6.89,
-        "pka_bound": 7.05,
-        "delta_pka": 0.16,
-        "ddg": -0.152
-      },
-      "A10": {
-        "pka_free": 7.59,
-        "pka_bound": 7.33,
-        "delta_pka": -0.26,
-        "ddg": 0.161
-      },
-      "A15": {
-        "pka_free": 6.71,
-        "pka_bound": 5.95,
-        "delta_pka": -0.76,
-        "ddg": 0.802
-      },
-      "A28": {
-        "pka_free": 6.85,
-        "pka_bound": 6.9,
-        "delta_pka": 0.05,
-        "ddg": -0.05
-      },
-      "A36": {
-        "pka_free": 6.02,
-        "pka_bound": 5.54,
-        "delta_pka": -0.48,
-        "ddg": 0.411
-      },
-      "A56": {
-        "pka_free": 7.11,
-        "pka_bound": 5.57,
-        "delta_pka": -1.54,
-        "ddg": 1.513
-      },
-      "A69": {
-        "pka_free": 6.55,
-        "pka_bound": 7.07,
-        "delta_pka": 0.52,
-        "ddg": -0.525
-      }
-    }
-  },
-  {
-    "name": "tfr1_c4_acid_site2_132",
-    "sequence": "SLDESLKTLAEEYEHSLFEEHLTFLEEHGVDAVLEETEERLTHFHEILEYAEEEGADPETLEELTEIYDHVVEDIATH",
-    "length": 78,
-    "n_his": 7,
-    "mean_plddt": 79.8,
-    "iptm": 0.3306424617767334,
-    "ptm": 0.5071861743927002,
-    "confidence": 0.5013535618782043,
-    "avg_free_pka": 6.66,
-    "avg_complex_pka": 6.11,
-    "L": 2.69,
-    "total_ddg": 3.663,
-    "switch_ok": true,
-    "per_his": {
-      "A15": {
-        "pka_free": 6.71,
-        "pka_bound": 6.66,
-        "delta_pka": -0.05,
-        "ddg": 0.053
-      },
-      "A21": {
-        "pka_free": 6.52,
-        "pka_bound": 5.49,
-        "delta_pka": -1.03,
-        "ddg": 0.975
-      },
-      "A28": {
-        "pka_free": 6.36,
-        "pka_bound": 6.89,
-        "delta_pka": 0.53,
-        "ddg": -0.562
-      },
-      "A43": {
-        "pka_free": 6.43,
-        "pka_bound": 5.43,
-        "delta_pka": -1.0,
-        "ddg": 0.915
-      },
-      "A45": {
-        "pka_free": 6.77,
-        "pka_bound": 6.44,
-        "delta_pka": -0.33,
-        "ddg": 0.353
-      },
-      "A70": {
-        "pka_free": 6.66,
-        "pka_bound": 6.28,
-        "delta_pka": -0.38,
-        "ddg": 0.411
-      },
-      "A78": {
-        "pka_free": 7.15,
-        "pka_bound": 5.61,
-        "delta_pka": -1.54,
-        "ddg": 1.518
-      }
-    }
-  },
-  {
-    "name": "tfr1_c4_acid_site2_106",
-    "sequence": "SFGEEWEEHFLKPFEEHDPELAEEIHETLHHEREHLHEEAEHMEELKEKYGDSYFEELHEELEEHKEEFHEHLE",
-    "length": 74,
-    "n_his": 12,
-    "mean_plddt": 81.1,
-    "iptm": 0.6987573504447937,
-    "ptm": 0.7866101861000061,
-    "confidence": 0.5515092015266418,
-    "avg_free_pka": 6.62,
-    "avg_complex_pka": 6.36,
-    "L": 2.57,
-    "total_ddg": 3.51,
-    "switch_ok": true,
-    "per_his": {
-      "A9": {
-        "pka_free": 6.28,
-        "pka_bound": 5.84,
-        "delta_pka": -0.44,
-        "ddg": 0.441
-      },
-      "A17": {
-        "pka_free": 6.62,
-        "pka_bound": 7.14,
-        "delta_pka": 0.52,
-        "ddg": -0.511
-      },
-      "A26": {
-        "pka_free": 6.87,
-        "pka_bound": 6.41,
-        "delta_pka": -0.46,
-        "ddg": 0.488
-      },
-      "A30": {
-        "pka_free": 6.76,
-        "pka_bound": 6.13,
-        "delta_pka": -0.63,
-        "ddg": 0.675
-      },
-      "A31": {
-        "pka_free": 6.35,
-        "pka_bound": 6.44,
-        "delta_pka": 0.09,
-        "ddg": -0.098
+        "pka_bound": 6.47,
+        "delta_pka": 0.03,
+        "ddg": -0.033
       },
       "A35": {
-        "pka_free": 6.87,
-        "pka_bound": 4.9,
-        "delta_pka": -1.97,
-        "ddg": 1.608
-      },
-      "A37": {
-        "pka_free": 6.98,
-        "pka_bound": 6.01,
-        "delta_pka": -0.97,
-        "ddg": 1.015
-      },
-      "A42": {
-        "pka_free": 6.73,
-        "pka_bound": 5.89,
+        "pka_free": 7.31,
+        "pka_bound": 6.47,
         "delta_pka": -0.84,
-        "ddg": 0.88
+        "ddg": 0.807
       },
-      "A59": {
-        "pka_free": 6.56,
-        "pka_bound": 8.08,
-        "delta_pka": 1.52,
-        "ddg": -1.065
-      },
-      "A65": {
-        "pka_free": 6.76,
-        "pka_bound": 7.53,
-        "delta_pka": 0.77,
-        "ddg": -0.64
-      },
-      "A70": {
-        "pka_free": 6.32,
-        "pka_bound": 5.84,
-        "delta_pka": -0.48,
-        "ddg": 0.484
-      },
-      "A72": {
-        "pka_free": 6.33,
-        "pka_bound": 6.11,
-        "delta_pka": -0.22,
-        "ddg": 0.233
+      "A76": {
+        "pka_free": 6.49,
+        "pka_bound": 5.4,
+        "delta_pka": -1.09,
+        "ddg": 0.998
       }
     }
   },
   {
-    "name": "tfr1_c4_acid_site2_156",
-    "sequence": "HSWEHWHPHDFVLALLTDEEIAFLRELSEHSVEELLSHLHHLETEIENADMEEEEREELLHLVEGRISQLEHFGEEILSGMRTLVEEQEEEH",
-    "length": 92,
-    "n_his": 11,
-    "mean_plddt": 74.7,
-    "iptm": 0.7263545989990234,
-    "ptm": 0.786588191986084,
-    "confidence": 0.6423618197441101,
+    "name": "tfr1_c4_acid_site1_1",
+    "sequence": "ETEEILTELASVEEQLAAIRDPANRRALAAIPQGDAHLHPGLFTPEELEEFTALYARRNELVDQLLHLRA",
+    "length": 70,
+    "n_his": 3,
+    "mean_plddt": 81.4,
+    "iptm": 0.5610617399215698,
+    "ptm": 0.5942162871360779,
+    "confidence": 0.5566039085388184,
     "avg_free_pka": 6.68,
-    "avg_complex_pka": 6.37,
-    "L": 2.46,
-    "total_ddg": 3.36,
-    "switch_ok": true,
+    "avg_complex_pka": 6.06,
+    "L": -1.38,
+    "total_ddg": 1.875,
+    "switch_ok": false,
     "per_his": {
-      "A1": {
-        "pka_free": 6.46,
-        "pka_bound": 6.43,
-        "delta_pka": -0.03,
-        "ddg": 0.033
+      "A37": {
+        "pka_free": 6.4,
+        "pka_bound": 5.96,
+        "delta_pka": -0.44,
+        "ddg": 0.458
       },
-      "A5": {
-        "pka_free": 6.37,
-        "pka_bound": 6.31,
-        "delta_pka": -0.06,
-        "ddg": 0.065
+      "A39": {
+        "pka_free": 6.36,
+        "pka_bound": 6.17,
+        "delta_pka": -0.19,
+        "ddg": 0.203
       },
-      "A7": {
-        "pka_free": 6.49,
-        "pka_bound": 6.26,
-        "delta_pka": -0.23,
-        "ddg": 0.249
+      "A67": {
+        "pka_free": 7.27,
+        "pka_bound": 6.06,
+        "delta_pka": -1.21,
+        "ddg": 1.213
+      }
+    }
+  },
+  {
+    "name": "tfr1_c4_acid_site1_119",
+    "sequence": "SSHEEEMDELEEEALELLHEADELRETLIEHADDPEHLRKLDELSHEAAEYGRELRLENPSMSQKEIDEKVEAYYTTLLDEYL",
+    "length": 83,
+    "n_his": 5,
+    "mean_plddt": 90.8,
+    "iptm": 0.9085544347763062,
+    "ptm": 0.9176899194717407,
+    "confidence": 0.7606968283653259,
+    "avg_free_pka": 6.81,
+    "avg_complex_pka": 6.4,
+    "L": -1.45,
+    "total_ddg": 1.975,
+    "switch_ok": false,
+    "per_his": {
+      "A3": {
+        "pka_free": 6.34,
+        "pka_bound": 6.83,
+        "delta_pka": 0.49,
+        "ddg": -0.523
       },
+      "A19": {
+        "pka_free": 6.98,
+        "pka_bound": 7.05,
+        "delta_pka": 0.07,
+        "ddg": -0.065
+      },
+      "A31": {
+        "pka_free": 7.27,
+        "pka_bound": 6.17,
+        "delta_pka": -1.1,
+        "ddg": 1.1
+      },
+      "A37": {
+        "pka_free": 6.34,
+        "pka_bound": 5.53,
+        "delta_pka": -0.81,
+        "ddg": 0.752
+      },
+      "A46": {
+        "pka_free": 7.12,
+        "pka_bound": 6.42,
+        "delta_pka": -0.7,
+        "ddg": 0.71
+      }
+    }
+  },
+  {
+    "name": "tfr1_c4_acid_site2_185",
+    "sequence": "SSTKEEILTEAEEKIEEHLTHLKESLETLVEEELISEELAEQILHEVEEMEETALETLEENLDEDLDEYLEREEEKSEELYESLTETLEELEE",
+    "length": 93,
+    "n_his": 3,
+    "mean_plddt": 89.7,
+    "iptm": 0.9038700461387634,
+    "ptm": 0.9194542765617371,
+    "confidence": 0.6842623949050903,
+    "avg_free_pka": 6.73,
+    "avg_complex_pka": 5.23,
+    "L": -1.54,
+    "total_ddg": 2.104,
+    "switch_ok": false,
+    "per_his": {
+      "A18": {
+        "pka_free": 6.38,
+        "pka_bound": 2.72,
+        "delta_pka": -3.66,
+        "ddg": 1.218
+      },
+      "A21": {
+        "pka_free": 6.8,
+        "pka_bound": 5.97,
+        "delta_pka": -0.83,
+        "ddg": 0.877
+      },
+      "A45": {
+        "pka_free": 7.01,
+        "pka_bound": 7.0,
+        "delta_pka": -0.01,
+        "ddg": 0.009
+      }
+    }
+  },
+  {
+    "name": "tfr1_c4_acid_site2_27",
+    "sequence": "EEVETLEEEVETLEEEVETLEEEVETLEKHVEDLEEYLSQGDPVERLTERLEAFFDFVDTIHEEAEEIREENE",
+    "length": 73,
+    "n_his": 2,
+    "mean_plddt": 89.2,
+    "iptm": 0.5213706493377686,
+    "ptm": 0.6365419030189514,
+    "confidence": 0.6304755806922913,
+    "avg_free_pka": 6.88,
+    "avg_complex_pka": 5.55,
+    "L": -1.68,
+    "total_ddg": 2.287,
+    "switch_ok": false,
+    "per_his": {
+      "A30": {
+        "pka_free": 6.95,
+        "pka_bound": 4.86,
+        "delta_pka": -2.09,
+        "ddg": 1.697
+      },
+      "A62": {
+        "pka_free": 6.8,
+        "pka_bound": 6.25,
+        "delta_pka": -0.55,
+        "ddg": 0.59
+      }
+    }
+  },
+  {
+    "name": "tfr1_c4_acid_site2_87",
+    "sequence": "GYVSMIAAKASKIIKEKADSEGLIAALKDAIAYLEEKINEKEDLRLEQLLHSLKIELDYREHFIPETEDLHL",
+    "length": 72,
+    "n_his": 3,
+    "mean_plddt": 86.4,
+    "iptm": 0.9613953828811646,
+    "ptm": 0.9242535829544067,
+    "confidence": 0.7874943614006042,
+    "avg_free_pka": 6.71,
+    "avg_complex_pka": 5.78,
+    "L": -1.72,
+    "total_ddg": 2.34,
+    "switch_ok": false,
+    "per_his": {
+      "A51": {
+        "pka_free": 6.2,
+        "pka_bound": 4.98,
+        "delta_pka": -1.22,
+        "ddg": 0.872
+      },
+      "A62": {
+        "pka_free": 7.53,
+        "pka_bound": 5.92,
+        "delta_pka": -1.61,
+        "ddg": 1.523
+      },
+      "A71": {
+        "pka_free": 6.4,
+        "pka_bound": 6.45,
+        "delta_pka": 0.05,
+        "ddg": -0.054
+      }
+    }
+  },
+  {
+    "name": "tfr1_c4_acid_site2_92",
+    "sequence": "ETEEEEAEERDEYDEKESHTSKVLDKADELVSEEKFDEAISLLEDEISKHPHNLTFRTKLIVVLSEAGKLDEAVSHLEHLMTDLDDMLHHYEDEVETLT",
+    "length": 99,
+    "n_his": 7,
+    "mean_plddt": 90.4,
+    "iptm": 0.7903158068656921,
+    "ptm": 0.7701403498649597,
+    "confidence": 0.7828077673912048,
+    "avg_free_pka": 6.68,
+    "avg_complex_pka": 6.24,
+    "L": -1.75,
+    "total_ddg": 2.391,
+    "switch_ok": false,
+    "per_his": {
+      "A19": {
+        "pka_free": 7.1,
+        "pka_bound": 6.25,
+        "delta_pka": -0.85,
+        "ddg": 0.876
+      },
+      "A50": {
+        "pka_free": 5.99,
+        "pka_bound": 5.99,
+        "delta_pka": 0.0,
+        "ddg": 0.0
+      },
+      "A52": {
+        "pka_free": 6.32,
+        "pka_bound": 7.06,
+        "delta_pka": 0.74,
+        "ddg": -0.766
+      },
+      "A76": {
+        "pka_free": 5.67,
+        "pka_bound": 4.7,
+        "delta_pka": -0.97,
+        "ddg": 0.441
+      },
+      "A79": {
+        "pka_free": 7.09,
+        "pka_bound": 6.14,
+        "delta_pka": -0.95,
+        "ddg": 0.984
+      },
+      "A89": {
+        "pka_free": 7.72,
+        "pka_bound": 7.13,
+        "delta_pka": -0.59,
+        "ddg": 0.381
+      },
+      "A90": {
+        "pka_free": 6.89,
+        "pka_bound": 6.44,
+        "delta_pka": -0.45,
+        "ddg": 0.475
+      }
+    }
+  },
+  {
+    "name": "tfr1_c4_acid_site2_89",
+    "sequence": "MRPPFSQDELNHLKHLAFTEDKSFKQIAEELQTSQVAVEENLFLLVKRGEVSEEQLHDYMKKHSASWLNSEKRSEDIEFFSE",
+    "length": 82,
+    "n_his": 4,
+    "mean_plddt": 79.6,
+    "iptm": 0.9162759780883789,
+    "ptm": 0.9149779677391052,
+    "confidence": 0.7418375611305237,
+    "avg_free_pka": 6.76,
+    "avg_complex_pka": 6.09,
+    "L": -1.8,
+    "total_ddg": 2.46,
+    "switch_ok": false,
+    "per_his": {
+      "A12": {
+        "pka_free": 6.36,
+        "pka_bound": 6.11,
+        "delta_pka": -0.25,
+        "ddg": 0.265
+      },
+      "A15": {
+        "pka_free": 6.59,
+        "pka_bound": 6.58,
+        "delta_pka": -0.01,
+        "ddg": 0.011
+      },
+      "A57": {
+        "pka_free": 7.42,
+        "pka_bound": 5.19,
+        "delta_pka": -2.23,
+        "ddg": 1.968
+      },
+      "A63": {
+        "pka_free": 6.66,
+        "pka_bound": 6.46,
+        "delta_pka": -0.2,
+        "ddg": 0.216
+      }
+    }
+  },
+  {
+    "name": "tfr1_c4_acid_site2_63",
+    "sequence": "MVVTKEELHSFVSSLATPYLSELEVSEADQEDFVSDVVDEAMSESDSSLRVTSAVKIVAHKLVERFGGEAVLMAMTVVLSEHTDDLHEEF",
+    "length": 90,
+    "n_his": 4,
+    "mean_plddt": 91.9,
+    "iptm": 0.940876841545105,
+    "ptm": 0.93839031457901,
+    "confidence": 0.7145798802375793,
+    "avg_free_pka": 6.83,
+    "avg_complex_pka": 6.14,
+    "L": -1.86,
+    "total_ddg": 2.534,
+    "switch_ok": false,
+    "per_his": {
       "A9": {
+        "pka_free": 7.16,
+        "pka_bound": 6.02,
+        "delta_pka": -1.14,
+        "ddg": 1.166
+      },
+      "A60": {
+        "pka_free": 6.53,
+        "pka_bound": 6.49,
+        "delta_pka": -0.04,
+        "ddg": 0.043
+      },
+      "A82": {
+        "pka_free": 7.28,
+        "pka_bound": 6.84,
+        "delta_pka": -0.44,
+        "ddg": 0.393
+      },
+      "A87": {
         "pka_free": 6.33,
-        "pka_bound": 5.9,
-        "delta_pka": -0.43,
-        "ddg": 0.439
+        "pka_bound": 5.19,
+        "delta_pka": -1.14,
+        "ddg": 0.932
+      }
+    }
+  },
+  {
+    "name": "tfr1_c4_acid_site2_50",
+    "sequence": "EEHEELLEEAEEDLHERLEEMHEETKEFFEEEKEKHPELVEEQEERETLSALLENLKLRKQ",
+    "length": 61,
+    "n_his": 4,
+    "mean_plddt": 89.0,
+    "iptm": 0.8362025022506714,
+    "ptm": 0.8675379753112793,
+    "confidence": 0.638883113861084,
+    "avg_free_pka": 6.63,
+    "avg_complex_pka": 5.92,
+    "L": -1.91,
+    "total_ddg": 2.609,
+    "switch_ok": false,
+    "per_his": {
+      "A3": {
+        "pka_free": 6.39,
+        "pka_bound": 6.14,
+        "delta_pka": -0.25,
+        "ddg": 0.267
+      },
+      "A15": {
+        "pka_free": 7.26,
+        "pka_bound": 6.2,
+        "delta_pka": -1.06,
+        "ddg": 1.061
+      },
+      "A22": {
+        "pka_free": 5.92,
+        "pka_bound": 5.09,
+        "delta_pka": -0.83,
+        "ddg": 0.552
+      },
+      "A36": {
+        "pka_free": 6.94,
+        "pka_bound": 6.25,
+        "delta_pka": -0.69,
+        "ddg": 0.729
+      }
+    }
+  },
+  {
+    "name": "tfr1_c4_acid_site2_135",
+    "sequence": "SLADFKTLVRSAHVEAYNHFAADLEAAGAHDAAHALREQLAAAESYGEKADALDAELAEAEAAGDLDAVAALREEAHTVAADYESYLEAS",
+    "length": 90,
+    "n_his": 5,
+    "mean_plddt": 87.1,
+    "iptm": 0.8171066045761108,
+    "ptm": 0.8430591821670532,
+    "confidence": 0.6934686899185181,
+    "avg_free_pka": 6.8,
+    "avg_complex_pka": 6.03,
+    "L": -1.97,
+    "total_ddg": 2.682,
+    "switch_ok": false,
+    "per_his": {
+      "A13": {
+        "pka_free": 6.24,
+        "pka_bound": 3.93,
+        "delta_pka": -2.31,
+        "ddg": 1.053
+      },
+      "A19": {
+        "pka_free": 6.95,
+        "pka_bound": 6.53,
+        "delta_pka": -0.42,
+        "ddg": 0.435
       },
       "A30": {
-        "pka_free": 6.69,
-        "pka_bound": 6.63,
-        "delta_pka": -0.06,
-        "ddg": 0.064
+        "pka_free": 7.15,
+        "pka_bound": 6.41,
+        "delta_pka": -0.74,
+        "ddg": 0.747
       },
-      "A38": {
-        "pka_free": 6.58,
-        "pka_bound": 5.6,
-        "delta_pka": -0.98,
-        "ddg": 0.963
+      "A34": {
+        "pka_free": 6.66,
+        "pka_bound": 6.97,
+        "delta_pka": 0.31,
+        "ddg": -0.315
       },
-      "A40": {
-        "pka_free": 6.88,
-        "pka_bound": 6.6,
-        "delta_pka": -0.28,
-        "ddg": 0.291
+      "A77": {
+        "pka_free": 7.02,
+        "pka_bound": 6.29,
+        "delta_pka": -0.73,
+        "ddg": 0.762
+      }
+    }
+  },
+  {
+    "name": "tfr1_c4_acid_site2_51",
+    "sequence": "SSEEEWVHTRSEELLEEINHAVETSENLEELEENVSEILEKFHLPHWAADEDRISEMIESHREIAEHLGVDYADPH",
+    "length": 76,
+    "n_his": 7,
+    "mean_plddt": 71.7,
+    "iptm": 0.9238552451133728,
+    "ptm": 0.9372920989990234,
+    "confidence": 0.7213249206542969,
+    "avg_free_pka": 6.64,
+    "avg_complex_pka": 6.03,
+    "L": -2.1,
+    "total_ddg": 2.857,
+    "switch_ok": false,
+    "per_his": {
+      "A8": {
+        "pka_free": 6.82,
+        "pka_bound": 7.0,
+        "delta_pka": 0.18,
+        "ddg": -0.176
       },
-      "A41": {
-        "pka_free": 6.86,
-        "pka_bound": 6.48,
-        "delta_pka": -0.38,
-        "ddg": 0.402
+      "A20": {
+        "pka_free": 6.42,
+        "pka_bound": 6.42,
+        "delta_pka": 0.0,
+        "ddg": 0.0
+      },
+      "A43": {
+        "pka_free": 6.46,
+        "pka_bound": 6.3,
+        "delta_pka": -0.16,
+        "ddg": 0.174
+      },
+      "A46": {
+        "pka_free": 6.3,
+        "pka_bound": 6.0,
+        "delta_pka": -0.3,
+        "ddg": 0.311
       },
       "A61": {
-        "pka_free": 6.46,
-        "pka_bound": 6.58,
+        "pka_free": 6.97,
+        "pka_bound": 3.72,
+        "delta_pka": -3.25,
+        "ddg": 1.827
+      },
+      "A67": {
+        "pka_free": 7.12,
+        "pka_bound": 6.45,
+        "delta_pka": -0.67,
+        "ddg": 0.678
+      },
+      "A76": {
+        "pka_free": 6.39,
+        "pka_bound": 6.35,
+        "delta_pka": -0.04,
+        "ddg": 0.043
+      }
+    }
+  },
+  {
+    "name": "tfr1_c4_acid_site1_47",
+    "sequence": "ETADLWSKLSTVLSERERAFHEGDYPTYLALSKEALSLAQKLELPDSVVDLLSEQAHLTEAEFLELWEHEQKTIATFREEEE",
+    "length": 82,
+    "n_his": 3,
+    "mean_plddt": 94.1,
+    "iptm": 0.9400198459625244,
+    "ptm": 0.9512124061584473,
+    "confidence": 0.7713413834571838,
+    "avg_free_pka": 7.05,
+    "avg_complex_pka": 5.78,
+    "L": -2.11,
+    "total_ddg": 2.876,
+    "switch_ok": false,
+    "per_his": {
+      "A21": {
+        "pka_free": 7.85,
+        "pka_bound": 4.57,
+        "delta_pka": -3.28,
+        "ddg": 2.348
+      },
+      "A57": {
+        "pka_free": 7.01,
+        "pka_bound": 6.94,
+        "delta_pka": -0.07,
+        "ddg": 0.066
+      },
+      "A69": {
+        "pka_free": 6.3,
+        "pka_bound": 5.84,
+        "delta_pka": -0.46,
+        "ddg": 0.462
+      }
+    }
+  },
+  {
+    "name": "tfr1_c4_acid_site2_136",
+    "sequence": "ASTPLEEYLDHIFDSVEEHGPLEHVYHFLKTDYEEHIAELEEFLEEAEEAEDHEMAEKFSHAIHEYESLLEHLEEAHEEA",
+    "length": 80,
+    "n_his": 10,
+    "mean_plddt": 88.0,
+    "iptm": 0.7926707863807678,
+    "ptm": 0.8349648118019104,
+    "confidence": 0.6409766674041748,
+    "avg_free_pka": 6.68,
+    "avg_complex_pka": 6.35,
+    "L": -2.17,
+    "total_ddg": 2.954,
+    "switch_ok": false,
+    "per_his": {
+      "A11": {
+        "pka_free": 6.44,
+        "pka_bound": 6.34,
+        "delta_pka": -0.1,
+        "ddg": 0.109
+      },
+      "A19": {
+        "pka_free": 6.6,
+        "pka_bound": 6.51,
+        "delta_pka": -0.09,
+        "ddg": 0.097
+      },
+      "A24": {
+        "pka_free": 6.01,
+        "pka_bound": 4.91,
+        "delta_pka": -1.1,
+        "ddg": 0.697
+      },
+      "A27": {
+        "pka_free": 6.2,
+        "pka_bound": 6.22,
+        "delta_pka": 0.02,
+        "ddg": -0.021
+      },
+      "A36": {
+        "pka_free": 7.51,
+        "pka_bound": 7.63,
         "delta_pka": 0.12,
-        "ddg": -0.13
+        "ddg": -0.065
+      },
+      "A53": {
+        "pka_free": 6.43,
+        "pka_bound": 6.42,
+        "delta_pka": -0.01,
+        "ddg": 0.011
+      },
+      "A61": {
+        "pka_free": 6.81,
+        "pka_bound": 6.12,
+        "delta_pka": -0.69,
+        "ddg": 0.736
+      },
+      "A64": {
+        "pka_free": 7.01,
+        "pka_bound": 6.6,
+        "delta_pka": -0.41,
+        "ddg": 0.416
       },
       "A72": {
-        "pka_free": 7.03,
-        "pka_bound": 6.61,
-        "delta_pka": -0.42,
-        "ddg": 0.424
+        "pka_free": 7.36,
+        "pka_bound": 6.45,
+        "delta_pka": -0.91,
+        "ddg": 0.865
       },
-      "A92": {
-        "pka_free": 7.31,
-        "pka_bound": 6.7,
-        "delta_pka": -0.61,
-        "ddg": 0.56
+      "A77": {
+        "pka_free": 6.4,
+        "pka_bound": 6.3,
+        "delta_pka": -0.1,
+        "ddg": 0.108
       }
     }
   },
@@ -626,9 +967,9 @@
     "confidence": 0.7042618989944458,
     "avg_free_pka": 6.73,
     "avg_complex_pka": 6.43,
-    "L": 2.31,
+    "L": -2.31,
     "total_ddg": 3.155,
-    "switch_ok": true,
+    "switch_ok": false,
     "per_his": {
       "A2": {
         "pka_free": 6.62,
@@ -717,959 +1058,618 @@
     }
   },
   {
-    "name": "tfr1_c4_acid_site2_136",
-    "sequence": "ASTPLEEYLDHIFDSVEEHGPLEHVYHFLKTDYEEHIAELEEFLEEAEEAEDHEMAEKFSHAIHEYESLLEHLEEAHEEA",
-    "length": 80,
-    "n_his": 10,
-    "mean_plddt": 88.0,
-    "iptm": 0.7926707863807678,
-    "ptm": 0.8349648118019104,
-    "confidence": 0.6409766674041748,
+    "name": "tfr1_c4_acid_site2_156",
+    "sequence": "HSWEHWHPHDFVLALLTDEEIAFLRELSEHSVEELLSHLHHLETEIENADMEEEEREELLHLVEGRISQLEHFGEEILSGMRTLVEEQEEEH",
+    "length": 92,
+    "n_his": 11,
+    "mean_plddt": 74.7,
+    "iptm": 0.7263545989990234,
+    "ptm": 0.786588191986084,
+    "confidence": 0.6423618197441101,
     "avg_free_pka": 6.68,
-    "avg_complex_pka": 6.35,
-    "L": 2.17,
-    "total_ddg": 2.954,
-    "switch_ok": true,
-    "per_his": {
-      "A11": {
-        "pka_free": 6.44,
-        "pka_bound": 6.34,
-        "delta_pka": -0.1,
-        "ddg": 0.109
-      },
-      "A19": {
-        "pka_free": 6.6,
-        "pka_bound": 6.51,
-        "delta_pka": -0.09,
-        "ddg": 0.097
-      },
-      "A24": {
-        "pka_free": 6.01,
-        "pka_bound": 4.91,
-        "delta_pka": -1.1,
-        "ddg": 0.697
-      },
-      "A27": {
-        "pka_free": 6.2,
-        "pka_bound": 6.22,
-        "delta_pka": 0.02,
-        "ddg": -0.021
-      },
-      "A36": {
-        "pka_free": 7.51,
-        "pka_bound": 7.63,
-        "delta_pka": 0.12,
-        "ddg": -0.065
-      },
-      "A53": {
-        "pka_free": 6.43,
-        "pka_bound": 6.42,
-        "delta_pka": -0.01,
-        "ddg": 0.011
-      },
-      "A61": {
-        "pka_free": 6.81,
-        "pka_bound": 6.12,
-        "delta_pka": -0.69,
-        "ddg": 0.736
-      },
-      "A64": {
-        "pka_free": 7.01,
-        "pka_bound": 6.6,
-        "delta_pka": -0.41,
-        "ddg": 0.416
-      },
-      "A72": {
-        "pka_free": 7.36,
-        "pka_bound": 6.45,
-        "delta_pka": -0.91,
-        "ddg": 0.865
-      },
-      "A77": {
-        "pka_free": 6.4,
-        "pka_bound": 6.3,
-        "delta_pka": -0.1,
-        "ddg": 0.108
-      }
-    }
-  },
-  {
-    "name": "tfr1_c4_acid_site1_47",
-    "sequence": "ETADLWSKLSTVLSERERAFHEGDYPTYLALSKEALSLAQKLELPDSVVDLLSEQAHLTEAEFLELWEHEQKTIATFREEEE",
-    "length": 82,
-    "n_his": 3,
-    "mean_plddt": 94.1,
-    "iptm": 0.9400198459625244,
-    "ptm": 0.9512124061584473,
-    "confidence": 0.7713413834571838,
-    "avg_free_pka": 7.05,
-    "avg_complex_pka": 5.78,
-    "L": 2.11,
-    "total_ddg": 2.876,
-    "switch_ok": true,
-    "per_his": {
-      "A21": {
-        "pka_free": 7.85,
-        "pka_bound": 4.57,
-        "delta_pka": -3.28,
-        "ddg": 2.348
-      },
-      "A57": {
-        "pka_free": 7.01,
-        "pka_bound": 6.94,
-        "delta_pka": -0.07,
-        "ddg": 0.066
-      },
-      "A69": {
-        "pka_free": 6.3,
-        "pka_bound": 5.84,
-        "delta_pka": -0.46,
-        "ddg": 0.462
-      }
-    }
-  },
-  {
-    "name": "tfr1_c4_acid_site2_51",
-    "sequence": "SSEEEWVHTRSEELLEEINHAVETSENLEELEENVSEILEKFHLPHWAADEDRISEMIESHREIAEHLGVDYADPH",
-    "length": 76,
-    "n_his": 7,
-    "mean_plddt": 71.7,
-    "iptm": 0.9238552451133728,
-    "ptm": 0.9372920989990234,
-    "confidence": 0.7213249206542969,
-    "avg_free_pka": 6.64,
-    "avg_complex_pka": 6.03,
-    "L": 2.1,
-    "total_ddg": 2.857,
-    "switch_ok": true,
-    "per_his": {
-      "A8": {
-        "pka_free": 6.82,
-        "pka_bound": 7.0,
-        "delta_pka": 0.18,
-        "ddg": -0.176
-      },
-      "A20": {
-        "pka_free": 6.42,
-        "pka_bound": 6.42,
-        "delta_pka": 0.0,
-        "ddg": 0.0
-      },
-      "A43": {
-        "pka_free": 6.46,
-        "pka_bound": 6.3,
-        "delta_pka": -0.16,
-        "ddg": 0.174
-      },
-      "A46": {
-        "pka_free": 6.3,
-        "pka_bound": 6.0,
-        "delta_pka": -0.3,
-        "ddg": 0.311
-      },
-      "A61": {
-        "pka_free": 6.97,
-        "pka_bound": 3.72,
-        "delta_pka": -3.25,
-        "ddg": 1.827
-      },
-      "A67": {
-        "pka_free": 7.12,
-        "pka_bound": 6.45,
-        "delta_pka": -0.67,
-        "ddg": 0.678
-      },
-      "A76": {
-        "pka_free": 6.39,
-        "pka_bound": 6.35,
-        "delta_pka": -0.04,
-        "ddg": 0.043
-      }
-    }
-  },
-  {
-    "name": "tfr1_c4_acid_site2_135",
-    "sequence": "SLADFKTLVRSAHVEAYNHFAADLEAAGAHDAAHALREQLAAAESYGEKADALDAELAEAEAAGDLDAVAALREEAHTVAADYESYLEAS",
-    "length": 90,
-    "n_his": 5,
-    "mean_plddt": 87.1,
-    "iptm": 0.8171066045761108,
-    "ptm": 0.8430591821670532,
-    "confidence": 0.6934686899185181,
-    "avg_free_pka": 6.8,
-    "avg_complex_pka": 6.03,
-    "L": 1.97,
-    "total_ddg": 2.682,
+    "avg_complex_pka": 6.37,
+    "L": -2.46,
+    "total_ddg": 3.36,
     "switch_ok": false,
     "per_his": {
-      "A13": {
-        "pka_free": 6.24,
-        "pka_bound": 3.93,
-        "delta_pka": -2.31,
-        "ddg": 1.053
+      "A1": {
+        "pka_free": 6.46,
+        "pka_bound": 6.43,
+        "delta_pka": -0.03,
+        "ddg": 0.033
       },
-      "A19": {
-        "pka_free": 6.95,
-        "pka_bound": 6.53,
-        "delta_pka": -0.42,
-        "ddg": 0.435
+      "A5": {
+        "pka_free": 6.37,
+        "pka_bound": 6.31,
+        "delta_pka": -0.06,
+        "ddg": 0.065
+      },
+      "A7": {
+        "pka_free": 6.49,
+        "pka_bound": 6.26,
+        "delta_pka": -0.23,
+        "ddg": 0.249
+      },
+      "A9": {
+        "pka_free": 6.33,
+        "pka_bound": 5.9,
+        "delta_pka": -0.43,
+        "ddg": 0.439
       },
       "A30": {
-        "pka_free": 7.15,
-        "pka_bound": 6.41,
-        "delta_pka": -0.74,
-        "ddg": 0.747
+        "pka_free": 6.69,
+        "pka_bound": 6.63,
+        "delta_pka": -0.06,
+        "ddg": 0.064
       },
-      "A34": {
-        "pka_free": 6.66,
-        "pka_bound": 6.97,
-        "delta_pka": 0.31,
-        "ddg": -0.315
+      "A38": {
+        "pka_free": 6.58,
+        "pka_bound": 5.6,
+        "delta_pka": -0.98,
+        "ddg": 0.963
       },
-      "A77": {
-        "pka_free": 7.02,
-        "pka_bound": 6.29,
-        "delta_pka": -0.73,
-        "ddg": 0.762
+      "A40": {
+        "pka_free": 6.88,
+        "pka_bound": 6.6,
+        "delta_pka": -0.28,
+        "ddg": 0.291
+      },
+      "A41": {
+        "pka_free": 6.86,
+        "pka_bound": 6.48,
+        "delta_pka": -0.38,
+        "ddg": 0.402
+      },
+      "A61": {
+        "pka_free": 6.46,
+        "pka_bound": 6.58,
+        "delta_pka": 0.12,
+        "ddg": -0.13
+      },
+      "A72": {
+        "pka_free": 7.03,
+        "pka_bound": 6.61,
+        "delta_pka": -0.42,
+        "ddg": 0.424
+      },
+      "A92": {
+        "pka_free": 7.31,
+        "pka_bound": 6.7,
+        "delta_pka": -0.61,
+        "ddg": 0.56
       }
     }
   },
   {
-    "name": "tfr1_c4_acid_site2_50",
-    "sequence": "EEHEELLEEAEEDLHERLEEMHEETKEFFEEEKEKHPELVEEQEERETLSALLENLKLRKQ",
-    "length": 61,
-    "n_his": 4,
-    "mean_plddt": 89.0,
-    "iptm": 0.8362025022506714,
-    "ptm": 0.8675379753112793,
-    "confidence": 0.638883113861084,
-    "avg_free_pka": 6.63,
-    "avg_complex_pka": 5.92,
-    "L": 1.91,
-    "total_ddg": 2.609,
-    "switch_ok": false,
-    "per_his": {
-      "A3": {
-        "pka_free": 6.39,
-        "pka_bound": 6.14,
-        "delta_pka": -0.25,
-        "ddg": 0.267
-      },
-      "A15": {
-        "pka_free": 7.26,
-        "pka_bound": 6.2,
-        "delta_pka": -1.06,
-        "ddg": 1.061
-      },
-      "A22": {
-        "pka_free": 5.92,
-        "pka_bound": 5.09,
-        "delta_pka": -0.83,
-        "ddg": 0.552
-      },
-      "A36": {
-        "pka_free": 6.94,
-        "pka_bound": 6.25,
-        "delta_pka": -0.69,
-        "ddg": 0.729
-      }
-    }
-  },
-  {
-    "name": "tfr1_c4_acid_site2_63",
-    "sequence": "MVVTKEELHSFVSSLATPYLSELEVSEADQEDFVSDVVDEAMSESDSSLRVTSAVKIVAHKLVERFGGEAVLMAMTVVLSEHTDDLHEEF",
-    "length": 90,
-    "n_his": 4,
-    "mean_plddt": 91.9,
-    "iptm": 0.940876841545105,
-    "ptm": 0.93839031457901,
-    "confidence": 0.7145798802375793,
-    "avg_free_pka": 6.83,
-    "avg_complex_pka": 6.14,
-    "L": 1.86,
-    "total_ddg": 2.534,
+    "name": "tfr1_c4_acid_site2_106",
+    "sequence": "SFGEEWEEHFLKPFEEHDPELAEEIHETLHHEREHLHEEAEHMEELKEKYGDSYFEELHEELEEHKEEFHEHLE",
+    "length": 74,
+    "n_his": 12,
+    "mean_plddt": 81.1,
+    "iptm": 0.6987573504447937,
+    "ptm": 0.7866101861000061,
+    "confidence": 0.5515092015266418,
+    "avg_free_pka": 6.62,
+    "avg_complex_pka": 6.36,
+    "L": -2.57,
+    "total_ddg": 3.51,
     "switch_ok": false,
     "per_his": {
       "A9": {
-        "pka_free": 7.16,
-        "pka_bound": 6.02,
-        "delta_pka": -1.14,
-        "ddg": 1.166
-      },
-      "A60": {
-        "pka_free": 6.53,
-        "pka_bound": 6.49,
-        "delta_pka": -0.04,
-        "ddg": 0.043
-      },
-      "A82": {
-        "pka_free": 7.28,
-        "pka_bound": 6.84,
+        "pka_free": 6.28,
+        "pka_bound": 5.84,
         "delta_pka": -0.44,
-        "ddg": 0.393
-      },
-      "A87": {
-        "pka_free": 6.33,
-        "pka_bound": 5.19,
-        "delta_pka": -1.14,
-        "ddg": 0.932
-      }
-    }
-  },
-  {
-    "name": "tfr1_c4_acid_site2_89",
-    "sequence": "MRPPFSQDELNHLKHLAFTEDKSFKQIAEELQTSQVAVEENLFLLVKRGEVSEEQLHDYMKKHSASWLNSEKRSEDIEFFSE",
-    "length": 82,
-    "n_his": 4,
-    "mean_plddt": 79.6,
-    "iptm": 0.9162759780883789,
-    "ptm": 0.9149779677391052,
-    "confidence": 0.7418375611305237,
-    "avg_free_pka": 6.76,
-    "avg_complex_pka": 6.09,
-    "L": 1.8,
-    "total_ddg": 2.46,
-    "switch_ok": false,
-    "per_his": {
-      "A12": {
-        "pka_free": 6.36,
-        "pka_bound": 6.11,
-        "delta_pka": -0.25,
-        "ddg": 0.265
-      },
-      "A15": {
-        "pka_free": 6.59,
-        "pka_bound": 6.58,
-        "delta_pka": -0.01,
-        "ddg": 0.011
-      },
-      "A57": {
-        "pka_free": 7.42,
-        "pka_bound": 5.19,
-        "delta_pka": -2.23,
-        "ddg": 1.968
-      },
-      "A63": {
-        "pka_free": 6.66,
-        "pka_bound": 6.46,
-        "delta_pka": -0.2,
-        "ddg": 0.216
-      }
-    }
-  },
-  {
-    "name": "tfr1_c4_acid_site2_92",
-    "sequence": "ETEEEEAEERDEYDEKESHTSKVLDKADELVSEEKFDEAISLLEDEISKHPHNLTFRTKLIVVLSEAGKLDEAVSHLEHLMTDLDDMLHHYEDEVETLT",
-    "length": 99,
-    "n_his": 7,
-    "mean_plddt": 90.4,
-    "iptm": 0.7903158068656921,
-    "ptm": 0.7701403498649597,
-    "confidence": 0.7828077673912048,
-    "avg_free_pka": 6.68,
-    "avg_complex_pka": 6.24,
-    "L": 1.75,
-    "total_ddg": 2.391,
-    "switch_ok": false,
-    "per_his": {
-      "A19": {
-        "pka_free": 7.1,
-        "pka_bound": 6.25,
-        "delta_pka": -0.85,
-        "ddg": 0.876
-      },
-      "A50": {
-        "pka_free": 5.99,
-        "pka_bound": 5.99,
-        "delta_pka": 0.0,
-        "ddg": 0.0
-      },
-      "A52": {
-        "pka_free": 6.32,
-        "pka_bound": 7.06,
-        "delta_pka": 0.74,
-        "ddg": -0.766
-      },
-      "A76": {
-        "pka_free": 5.67,
-        "pka_bound": 4.7,
-        "delta_pka": -0.97,
         "ddg": 0.441
       },
-      "A79": {
-        "pka_free": 7.09,
-        "pka_bound": 6.14,
-        "delta_pka": -0.95,
-        "ddg": 0.984
+      "A17": {
+        "pka_free": 6.62,
+        "pka_bound": 7.14,
+        "delta_pka": 0.52,
+        "ddg": -0.511
       },
-      "A89": {
-        "pka_free": 7.72,
-        "pka_bound": 7.13,
-        "delta_pka": -0.59,
-        "ddg": 0.381
+      "A26": {
+        "pka_free": 6.87,
+        "pka_bound": 6.41,
+        "delta_pka": -0.46,
+        "ddg": 0.488
       },
-      "A90": {
-        "pka_free": 6.89,
-        "pka_bound": 6.44,
-        "delta_pka": -0.45,
-        "ddg": 0.475
-      }
-    }
-  },
-  {
-    "name": "tfr1_c4_acid_site2_87",
-    "sequence": "GYVSMIAAKASKIIKEKADSEGLIAALKDAIAYLEEKINEKEDLRLEQLLHSLKIELDYREHFIPETEDLHL",
-    "length": 72,
-    "n_his": 3,
-    "mean_plddt": 86.4,
-    "iptm": 0.9613953828811646,
-    "ptm": 0.9242535829544067,
-    "confidence": 0.7874943614006042,
-    "avg_free_pka": 6.71,
-    "avg_complex_pka": 5.78,
-    "L": 1.72,
-    "total_ddg": 2.34,
-    "switch_ok": false,
-    "per_his": {
-      "A51": {
-        "pka_free": 6.2,
-        "pka_bound": 4.98,
-        "delta_pka": -1.22,
-        "ddg": 0.872
-      },
-      "A62": {
-        "pka_free": 7.53,
-        "pka_bound": 5.92,
-        "delta_pka": -1.61,
-        "ddg": 1.523
-      },
-      "A71": {
-        "pka_free": 6.4,
-        "pka_bound": 6.45,
-        "delta_pka": 0.05,
-        "ddg": -0.054
-      }
-    }
-  },
-  {
-    "name": "tfr1_c4_acid_site2_27",
-    "sequence": "EEVETLEEEVETLEEEVETLEEEVETLEKHVEDLEEYLSQGDPVERLTERLEAFFDFVDTIHEEAEEIREENE",
-    "length": 73,
-    "n_his": 2,
-    "mean_plddt": 89.2,
-    "iptm": 0.5213706493377686,
-    "ptm": 0.6365419030189514,
-    "confidence": 0.6304755806922913,
-    "avg_free_pka": 6.88,
-    "avg_complex_pka": 5.55,
-    "L": 1.68,
-    "total_ddg": 2.287,
-    "switch_ok": false,
-    "per_his": {
       "A30": {
-        "pka_free": 6.95,
-        "pka_bound": 4.86,
-        "delta_pka": -2.09,
-        "ddg": 1.697
-      },
-      "A62": {
-        "pka_free": 6.8,
-        "pka_bound": 6.25,
-        "delta_pka": -0.55,
-        "ddg": 0.59
-      }
-    }
-  },
-  {
-    "name": "tfr1_c4_acid_site2_185",
-    "sequence": "SSTKEEILTEAEEKIEEHLTHLKESLETLVEEELISEELAEQILHEVEEMEETALETLEENLDEDLDEYLEREEEKSEELYESLTETLEELEE",
-    "length": 93,
-    "n_his": 3,
-    "mean_plddt": 89.7,
-    "iptm": 0.9038700461387634,
-    "ptm": 0.9194542765617371,
-    "confidence": 0.6842623949050903,
-    "avg_free_pka": 6.73,
-    "avg_complex_pka": 5.23,
-    "L": 1.54,
-    "total_ddg": 2.104,
-    "switch_ok": false,
-    "per_his": {
-      "A18": {
-        "pka_free": 6.38,
-        "pka_bound": 2.72,
-        "delta_pka": -3.66,
-        "ddg": 1.218
-      },
-      "A21": {
-        "pka_free": 6.8,
-        "pka_bound": 5.97,
-        "delta_pka": -0.83,
-        "ddg": 0.877
-      },
-      "A45": {
-        "pka_free": 7.01,
-        "pka_bound": 7.0,
-        "delta_pka": -0.01,
-        "ddg": 0.009
-      }
-    }
-  },
-  {
-    "name": "tfr1_c4_acid_site1_119",
-    "sequence": "SSHEEEMDELEEEALELLHEADELRETLIEHADDPEHLRKLDELSHEAAEYGRELRLENPSMSQKEIDEKVEAYYTTLLDEYL",
-    "length": 83,
-    "n_his": 5,
-    "mean_plddt": 90.8,
-    "iptm": 0.9085544347763062,
-    "ptm": 0.9176899194717407,
-    "confidence": 0.7606968283653259,
-    "avg_free_pka": 6.81,
-    "avg_complex_pka": 6.4,
-    "L": 1.45,
-    "total_ddg": 1.975,
-    "switch_ok": false,
-    "per_his": {
-      "A3": {
-        "pka_free": 6.34,
-        "pka_bound": 6.83,
-        "delta_pka": 0.49,
-        "ddg": -0.523
-      },
-      "A19": {
-        "pka_free": 6.98,
-        "pka_bound": 7.05,
-        "delta_pka": 0.07,
-        "ddg": -0.065
+        "pka_free": 6.76,
+        "pka_bound": 6.13,
+        "delta_pka": -0.63,
+        "ddg": 0.675
       },
       "A31": {
-        "pka_free": 7.27,
-        "pka_bound": 6.17,
-        "delta_pka": -1.1,
-        "ddg": 1.1
+        "pka_free": 6.35,
+        "pka_bound": 6.44,
+        "delta_pka": 0.09,
+        "ddg": -0.098
+      },
+      "A35": {
+        "pka_free": 6.87,
+        "pka_bound": 4.9,
+        "delta_pka": -1.97,
+        "ddg": 1.608
       },
       "A37": {
-        "pka_free": 6.34,
-        "pka_bound": 5.53,
-        "delta_pka": -0.81,
-        "ddg": 0.752
+        "pka_free": 6.98,
+        "pka_bound": 6.01,
+        "delta_pka": -0.97,
+        "ddg": 1.015
       },
-      "A46": {
-        "pka_free": 7.12,
-        "pka_bound": 6.42,
-        "delta_pka": -0.7,
-        "ddg": 0.71
+      "A42": {
+        "pka_free": 6.73,
+        "pka_bound": 5.89,
+        "delta_pka": -0.84,
+        "ddg": 0.88
+      },
+      "A59": {
+        "pka_free": 6.56,
+        "pka_bound": 8.08,
+        "delta_pka": 1.52,
+        "ddg": -1.065
+      },
+      "A65": {
+        "pka_free": 6.76,
+        "pka_bound": 7.53,
+        "delta_pka": 0.77,
+        "ddg": -0.64
+      },
+      "A70": {
+        "pka_free": 6.32,
+        "pka_bound": 5.84,
+        "delta_pka": -0.48,
+        "ddg": 0.484
+      },
+      "A72": {
+        "pka_free": 6.33,
+        "pka_bound": 6.11,
+        "delta_pka": -0.22,
+        "ddg": 0.233
       }
     }
   },
   {
-    "name": "tfr1_c4_acid_site1_1",
-    "sequence": "ETEEILTELASVEEQLAAIRDPANRRALAAIPQGDAHLHPGLFTPEELEEFTALYARRNELVDQLLHLRA",
-    "length": 70,
-    "n_his": 3,
-    "mean_plddt": 81.4,
-    "iptm": 0.5610617399215698,
-    "ptm": 0.5942162871360779,
-    "confidence": 0.5566039085388184,
-    "avg_free_pka": 6.68,
-    "avg_complex_pka": 6.06,
-    "L": 1.38,
-    "total_ddg": 1.875,
+    "name": "tfr1_c4_acid_site2_132",
+    "sequence": "SLDESLKTLAEEYEHSLFEEHLTFLEEHGVDAVLEETEERLTHFHEILEYAEEEGADPETLEELTEIYDHVVEDIATH",
+    "length": 78,
+    "n_his": 7,
+    "mean_plddt": 79.8,
+    "iptm": 0.3306424617767334,
+    "ptm": 0.5071861743927002,
+    "confidence": 0.5013535618782043,
+    "avg_free_pka": 6.66,
+    "avg_complex_pka": 6.11,
+    "L": -2.69,
+    "total_ddg": 3.663,
     "switch_ok": false,
     "per_his": {
-      "A37": {
-        "pka_free": 6.4,
-        "pka_bound": 5.96,
-        "delta_pka": -0.44,
-        "ddg": 0.458
+      "A15": {
+        "pka_free": 6.71,
+        "pka_bound": 6.66,
+        "delta_pka": -0.05,
+        "ddg": 0.053
       },
-      "A39": {
+      "A21": {
+        "pka_free": 6.52,
+        "pka_bound": 5.49,
+        "delta_pka": -1.03,
+        "ddg": 0.975
+      },
+      "A28": {
         "pka_free": 6.36,
-        "pka_bound": 6.17,
-        "delta_pka": -0.19,
-        "ddg": 0.203
+        "pka_bound": 6.89,
+        "delta_pka": 0.53,
+        "ddg": -0.562
       },
-      "A67": {
-        "pka_free": 7.27,
-        "pka_bound": 6.06,
-        "delta_pka": -1.21,
-        "ddg": 1.213
+      "A43": {
+        "pka_free": 6.43,
+        "pka_bound": 5.43,
+        "delta_pka": -1.0,
+        "ddg": 0.915
+      },
+      "A45": {
+        "pka_free": 6.77,
+        "pka_bound": 6.44,
+        "delta_pka": -0.33,
+        "ddg": 0.353
+      },
+      "A70": {
+        "pka_free": 6.66,
+        "pka_bound": 6.28,
+        "delta_pka": -0.38,
+        "ddg": 0.411
+      },
+      "A78": {
+        "pka_free": 7.15,
+        "pka_bound": 5.61,
+        "delta_pka": -1.54,
+        "ddg": 1.518
       }
     }
   },
   {
-    "name": "tfr1_c4_acid_site2_12",
-    "sequence": "HPSYLSDLETFRSIASRLEDTARERFSFLSDDEIHTLTTMFSLWVSKEEKNEYFTFEEATTYLESYIPLLQKITDHVASEASDLS",
-    "length": 85,
-    "n_his": 3,
-    "mean_plddt": 77.8,
-    "iptm": 0.9528011679649353,
-    "ptm": 0.938237726688385,
-    "confidence": 0.7670950293540955,
-    "avg_free_pka": 6.75,
-    "avg_complex_pka": 6.11,
-    "L": 1.3,
-    "total_ddg": 1.773,
+    "name": "tfr1_c4_acid_site1_87",
+    "sequence": "HHHLDEAVHHLEEAHEYYEEEDWDEVEHEVTEAIDHVTSFFKEWLSEDEFEKRLKHREEALPSIREELHELA",
+    "length": 72,
+    "n_his": 10,
+    "mean_plddt": 88.8,
+    "iptm": 0.9732300639152527,
+    "ptm": 0.9410849809646606,
+    "confidence": 0.8175800442695618,
+    "avg_free_pka": 6.81,
+    "avg_complex_pka": 6.42,
+    "L": -2.78,
+    "total_ddg": 3.783,
     "switch_ok": false,
     "per_his": {
       "A1": {
         "pka_free": 6.44,
-        "pka_bound": 6.47,
-        "delta_pka": 0.03,
-        "ddg": -0.033
+        "pka_bound": 6.64,
+        "delta_pka": 0.2,
+        "ddg": -0.216
       },
-      "A35": {
-        "pka_free": 7.31,
-        "pka_bound": 6.47,
-        "delta_pka": -0.84,
-        "ddg": 0.807
+      "A2": {
+        "pka_free": 6.69,
+        "pka_bound": 5.84,
+        "delta_pka": -0.85,
+        "ddg": 0.883
       },
-      "A76": {
-        "pka_free": 6.49,
-        "pka_bound": 5.4,
-        "delta_pka": -1.09,
-        "ddg": 0.998
-      }
-    }
-  },
-  {
-    "name": "tfr1_c4_acid_site2_33",
-    "sequence": "SLEEKLEAERRTLEEQLAEETDPIKRRELQVDLLDDISDLETEEYEITVTSAEEQIAEETDPVKKHELEEELHEFKERHAELH",
-    "length": 83,
-    "n_his": 4,
-    "mean_plddt": 88.1,
-    "iptm": 0.8931313753128052,
-    "ptm": 0.9220729470252991,
-    "confidence": 0.7480612993240356,
-    "avg_free_pka": 6.61,
-    "avg_complex_pka": 6.05,
-    "L": 1.19,
-    "total_ddg": 1.627,
-    "switch_ok": false,
-    "per_his": {
-      "A66": {
-        "pka_free": 7.01,
-        "pka_bound": 6.79,
-        "delta_pka": -0.22,
-        "ddg": 0.216
+      "A3": {
+        "pka_free": 7.29,
+        "pka_bound": 6.32,
+        "delta_pka": -0.97,
+        "ddg": 0.956
       },
-      "A73": {
-        "pka_free": 6.9,
-        "pka_bound": 6.78,
-        "delta_pka": -0.12,
-        "ddg": 0.121
+      "A9": {
+        "pka_free": 6.89,
+        "pka_bound": 7.05,
+        "delta_pka": 0.16,
+        "ddg": -0.152
       },
-      "A79": {
-        "pka_free": 5.49,
-        "pka_bound": 4.51,
-        "delta_pka": -0.98,
-        "ddg": 0.339
+      "A10": {
+        "pka_free": 7.59,
+        "pka_bound": 7.33,
+        "delta_pka": -0.26,
+        "ddg": 0.161
       },
-      "A83": {
-        "pka_free": 7.03,
-        "pka_bound": 6.12,
-        "delta_pka": -0.91,
-        "ddg": 0.95
-      }
-    }
-  },
-  {
-    "name": "tfr1_c4_acid_site1_7",
-    "sequence": "SAAADRRSKLSSEVIAHNLTMKQVFEEHKSLLLGTKVSFEGKQGIVTDAHFNSDTGVFRLILENESLPEDQRSITLNSHQFEELVSSVIQSLS",
-    "length": 93,
-    "n_his": 4,
-    "mean_plddt": 87.2,
-    "iptm": 0.7005215287208557,
-    "ptm": 0.726682186126709,
-    "confidence": 0.6847845911979675,
-    "avg_free_pka": 6.71,
-    "avg_complex_pka": 6.41,
-    "L": 0.9,
-    "total_ddg": 1.227,
-    "switch_ok": false,
-    "per_his": {
-      "A17": {
-        "pka_free": 6.26,
-        "pka_bound": 6.26,
-        "delta_pka": 0.0,
-        "ddg": 0.0
+      "A15": {
+        "pka_free": 6.71,
+        "pka_bound": 5.95,
+        "delta_pka": -0.76,
+        "ddg": 0.802
       },
       "A28": {
-        "pka_free": 6.88,
-        "pka_bound": 6.65,
-        "delta_pka": -0.23,
-        "ddg": 0.238
+        "pka_free": 6.85,
+        "pka_bound": 6.9,
+        "delta_pka": 0.05,
+        "ddg": -0.05
       },
-      "A50": {
-        "pka_free": 6.76,
-        "pka_bound": 6.01,
-        "delta_pka": -0.75,
-        "ddg": 0.796
+      "A36": {
+        "pka_free": 6.02,
+        "pka_bound": 5.54,
+        "delta_pka": -0.48,
+        "ddg": 0.411
       },
-      "A79": {
-        "pka_free": 6.92,
-        "pka_bound": 6.73,
-        "delta_pka": -0.19,
-        "ddg": 0.193
+      "A56": {
+        "pka_free": 7.11,
+        "pka_bound": 5.57,
+        "delta_pka": -1.54,
+        "ddg": 1.513
+      },
+      "A69": {
+        "pka_free": 6.55,
+        "pka_bound": 7.07,
+        "delta_pka": 0.52,
+        "ddg": -0.525
       }
     }
   },
   {
-    "name": "tfr1_c4_acid_site1_22",
-    "sequence": "SDDHTPPAEYQNLSMDQLLDEFHAFITRFRDDAHALGDTDVASAAETLEEAATAFLEDHDHVEDTKSALHNFAVALKKYVDSLKHS",
-    "length": 86,
+    "name": "tfr1_c4_acid_site1_178",
+    "sequence": "SHSEPFTPVFDVDGPDVPPFELTDEQYEHYMTIVTSIASELTEMEEAYEEEDWDSLDHEASELEKHLNQLHHDFDDFGKYIVQRTRDSSH",
+    "length": 90,
     "n_his": 7,
-    "mean_plddt": 75.1,
-    "iptm": 0.8950577974319458,
-    "ptm": 0.8483670353889465,
-    "confidence": 0.7106911540031433,
-    "avg_free_pka": 6.62,
-    "avg_complex_pka": 6.46,
-    "L": 0.86,
-    "total_ddg": 1.167,
+    "mean_plddt": 76.0,
+    "iptm": 0.8114379048347473,
+    "ptm": 0.7631167769432068,
+    "confidence": 0.663895308971405,
+    "avg_free_pka": 6.75,
+    "avg_complex_pka": 6.1,
+    "L": -2.83,
+    "total_ddg": 3.854,
     "switch_ok": false,
     "per_his": {
-      "A4": {
-        "pka_free": 6.36,
-        "pka_bound": 7.17,
-        "delta_pka": 0.81,
-        "ddg": -0.818
+      "A2": {
+        "pka_free": 6.45,
+        "pka_bound": 6.01,
+        "delta_pka": -0.44,
+        "ddg": 0.464
       },
-      "A23": {
-        "pka_free": 6.75,
-        "pka_bound": 6.08,
-        "delta_pka": -0.67,
-        "ddg": 0.716
+      "A29": {
+        "pka_free": 7.06,
+        "pka_bound": 6.84,
+        "delta_pka": -0.22,
+        "ddg": 0.211
       },
-      "A34": {
-        "pka_free": 6.21,
-        "pka_bound": 6.17,
-        "delta_pka": -0.04,
-        "ddg": 0.042
+      "A58": {
+        "pka_free": 6.79,
+        "pka_bound": 6.73,
+        "delta_pka": -0.06,
+        "ddg": 0.062
       },
-      "A59": {
-        "pka_free": 6.38,
-        "pka_bound": 6.39,
-        "delta_pka": 0.01,
-        "ddg": -0.011
+      "A66": {
+        "pka_free": 6.56,
+        "pka_bound": 5.82,
+        "delta_pka": -0.74,
+        "ddg": 0.762
       },
-      "A61": {
-        "pka_free": 7.19,
-        "pka_bound": 6.92,
-        "delta_pka": -0.27,
-        "ddg": 0.243
+      "A71": {
+        "pka_free": 6.61,
+        "pka_bound": 4.41,
+        "delta_pka": -2.2,
+        "ddg": 1.423
       },
-      "A70": {
-        "pka_free": 6.31,
-        "pka_bound": 6.16,
-        "delta_pka": -0.15,
-        "ddg": 0.159
+      "A72": {
+        "pka_free": 6.8,
+        "pka_bound": 6.47,
+        "delta_pka": -0.33,
+        "ddg": 0.352
       },
-      "A85": {
-        "pka_free": 7.14,
-        "pka_bound": 6.32,
-        "delta_pka": -0.82,
-        "ddg": 0.836
+      "A90": {
+        "pka_free": 7.0,
+        "pka_bound": 6.44,
+        "delta_pka": -0.56,
+        "ddg": 0.581
       }
     }
   },
   {
-    "name": "tfr1_c4_acid_site2_152",
-    "sequence": "HHLPQPTMKEIEERYAAAGDTGKLLYALALKYRELVTAGELEDYDKVVEILEEIDSLEDELH",
-    "length": 62,
-    "n_his": 3,
-    "mean_plddt": 70.4,
-    "iptm": 0.8923314809799194,
-    "ptm": 0.9059889316558838,
-    "confidence": 0.7429585456848145,
-    "avg_free_pka": 6.66,
-    "avg_complex_pka": 6.35,
-    "L": 0.7,
-    "total_ddg": 0.953,
+    "name": "tfr1_c4_acid_site2_108",
+    "sequence": "HELHTYHTEVEEYQHEEEDEEDEMFHEFHHELDELHDEAWAWLKEHNPELYEEQLEKEEELAHH",
+    "length": 64,
+    "n_his": 11,
+    "mean_plddt": 87.9,
+    "iptm": 0.5990977883338928,
+    "ptm": 0.6927172541618347,
+    "confidence": 0.6037031412124634,
+    "avg_free_pka": 6.75,
+    "avg_complex_pka": 6.18,
+    "L": -3.07,
+    "total_ddg": 4.183,
     "switch_ok": false,
     "per_his": {
       "A1": {
-        "pka_free": 6.47,
-        "pka_bound": 6.4,
-        "delta_pka": -0.07,
-        "ddg": 0.076
-      },
-      "A2": {
-        "pka_free": 6.43,
-        "pka_bound": 6.15,
-        "delta_pka": -0.28,
-        "ddg": 0.3
-      },
-      "A62": {
-        "pka_free": 7.08,
-        "pka_bound": 6.51,
-        "delta_pka": -0.57,
-        "ddg": 0.577
-      }
-    }
-  },
-  {
-    "name": "tfr1_c4_acid_site1_3",
-    "sequence": "PHQLSEDDYLALVKEIRENPHASDTDLATKYNVSVTVVHQIREAVLNEEETVHHLQEHKDEFVHELHTLEEEVIHLEEENTHLEEELHH",
-    "length": 89,
-    "n_his": 12,
-    "mean_plddt": 89.9,
-    "iptm": 0.9255906343460083,
-    "ptm": 0.9317154288291931,
-    "confidence": 0.7837411761283875,
-    "avg_free_pka": 6.64,
-    "avg_complex_pka": 6.57,
-    "L": 0.69,
-    "total_ddg": 0.94,
-    "switch_ok": false,
-    "per_his": {
-      "A2": {
-        "pka_free": 6.36,
-        "pka_bound": 6.18,
-        "delta_pka": -0.18,
-        "ddg": 0.193
-      },
-      "A21": {
-        "pka_free": 6.29,
+        "pka_free": 6.45,
         "pka_bound": 6.27,
+        "delta_pka": -0.18,
+        "ddg": 0.195
+      },
+      "A4": {
+        "pka_free": 6.35,
+        "pka_bound": 4.34,
+        "delta_pka": -2.01,
+        "ddg": 1.147
+      },
+      "A7": {
+        "pka_free": 6.46,
+        "pka_bound": 6.32,
+        "delta_pka": -0.14,
+        "ddg": 0.152
+      },
+      "A15": {
+        "pka_free": 6.77,
+        "pka_bound": 6.92,
+        "delta_pka": 0.15,
+        "ddg": -0.151
+      },
+      "A26": {
+        "pka_free": 6.39,
+        "pka_bound": 5.78,
+        "delta_pka": -0.61,
+        "ddg": 0.612
+      },
+      "A29": {
+        "pka_free": 6.59,
+        "pka_bound": 3.92,
+        "delta_pka": -2.67,
+        "ddg": 1.432
+      },
+      "A30": {
+        "pka_free": 6.82,
+        "pka_bound": 6.9,
+        "delta_pka": 0.08,
+        "ddg": -0.08
+      },
+      "A36": {
+        "pka_free": 7.53,
+        "pka_bound": 7.4,
+        "delta_pka": -0.13,
+        "ddg": 0.08
+      },
+      "A46": {
+        "pka_free": 6.76,
+        "pka_bound": 6.74,
         "delta_pka": -0.02,
         "ddg": 0.021
       },
-      "A39": {
-        "pka_free": 6.87,
-        "pka_bound": 7.28,
-        "delta_pka": 0.41,
-        "ddg": -0.363
-      },
-      "A53": {
-        "pka_free": 6.7,
-        "pka_bound": 6.62,
-        "delta_pka": -0.08,
-        "ddg": 0.085
-      },
-      "A54": {
-        "pka_free": 7.1,
-        "pka_bound": 6.16,
-        "delta_pka": -0.94,
-        "ddg": 0.972
-      },
-      "A58": {
-        "pka_free": 6.56,
-        "pka_bound": 6.55,
-        "delta_pka": -0.01,
-        "ddg": 0.011
+      "A63": {
+        "pka_free": 7.08,
+        "pka_bound": 7.18,
+        "delta_pka": 0.1,
+        "ddg": -0.086
       },
       "A64": {
-        "pka_free": 6.33,
-        "pka_bound": 6.41,
-        "delta_pka": 0.08,
-        "ddg": -0.087
-      },
-      "A67": {
-        "pka_free": 6.86,
-        "pka_bound": 6.77,
-        "delta_pka": -0.09,
-        "ddg": 0.092
-      },
-      "A75": {
-        "pka_free": 6.68,
-        "pka_bound": 6.66,
-        "delta_pka": -0.02,
-        "ddg": 0.021
-      },
-      "A82": {
-        "pka_free": 6.46,
-        "pka_bound": 6.62,
-        "delta_pka": 0.16,
-        "ddg": -0.173
-      },
-      "A88": {
-        "pka_free": 6.34,
-        "pka_bound": 6.92,
-        "delta_pka": 0.58,
-        "ddg": -0.613
-      },
-      "A89": {
-        "pka_free": 7.14,
-        "pka_bound": 6.37,
-        "delta_pka": -0.77,
-        "ddg": 0.782
+        "pka_free": 7.0,
+        "pka_bound": 6.18,
+        "delta_pka": -0.82,
+        "ddg": 0.86
       }
     }
   },
   {
-    "name": "tfr1_c4_acid_site2_4",
-    "sequence": "SHLDEVVAEVKDTFGHYFDDELKILTEAVASGQVTEDEVVSYLEKILDSHHDFVDHLEDNVAEL",
-    "length": 64,
-    "n_his": 5,
-    "mean_plddt": 83.9,
-    "iptm": 0.9592760801315308,
-    "ptm": 0.9296863079071045,
-    "confidence": 0.7674156427383423,
-    "avg_free_pka": 6.64,
-    "avg_complex_pka": 6.45,
-    "L": 0.49,
-    "total_ddg": 0.667,
+    "name": "tfr1_c4_acid_site1_170",
+    "sequence": "TPHEEALTELHAMSDEEKLHKMKTVLHDFQSVHEHLDDYHLTPEEEEEFEHLLHNIETAVHTYEEAVEHLE",
+    "length": 71,
+    "n_his": 11,
+    "mean_plddt": 89.8,
+    "iptm": 0.9636012315750122,
+    "ptm": 0.9402064681053162,
+    "confidence": 0.759074330329895,
+    "avg_free_pka": 6.69,
+    "avg_complex_pka": 6.25,
+    "L": -3.12,
+    "total_ddg": 4.252,
     "switch_ok": false,
     "per_his": {
-      "A2": {
+      "A3": {
+        "pka_free": 6.29,
+        "pka_bound": 5.58,
+        "delta_pka": -0.71,
+        "ddg": 0.663
+      },
+      "A11": {
+        "pka_free": 6.1,
+        "pka_bound": 4.94,
+        "delta_pka": -1.16,
+        "ddg": 0.78
+      },
+      "A20": {
+        "pka_free": 6.24,
+        "pka_bound": 6.27,
+        "delta_pka": 0.03,
+        "ddg": -0.032
+      },
+      "A27": {
+        "pka_free": 6.56,
+        "pka_bound": 6.53,
+        "delta_pka": -0.03,
+        "ddg": 0.033
+      },
+      "A33": {
+        "pka_free": 7.25,
+        "pka_bound": 6.32,
+        "delta_pka": -0.93,
+        "ddg": 0.925
+      },
+      "A35": {
+        "pka_free": 7.43,
+        "pka_bound": 6.38,
+        "delta_pka": -1.05,
+        "ddg": 0.988
+      },
+      "A40": {
         "pka_free": 6.36,
-        "pka_bound": 6.9,
-        "delta_pka": 0.54,
-        "ddg": -0.572
-      },
-      "A16": {
-        "pka_free": 7.01,
-        "pka_bound": 6.48,
-        "delta_pka": -0.53,
-        "ddg": 0.546
-      },
-      "A50": {
-        "pka_free": 6.05,
-        "pka_bound": 5.13,
-        "delta_pka": -0.92,
-        "ddg": 0.664
+        "pka_bound": 6.34,
+        "delta_pka": -0.02,
+        "ddg": 0.022
       },
       "A51": {
-        "pka_free": 6.56,
-        "pka_bound": 6.91,
-        "delta_pka": 0.35,
-        "ddg": -0.364
+        "pka_free": 6.58,
+        "pka_bound": 6.78,
+        "delta_pka": 0.2,
+        "ddg": -0.212
       },
-      "A56": {
-        "pka_free": 7.24,
-        "pka_bound": 6.81,
-        "delta_pka": -0.43,
-        "ddg": 0.393
+      "A54": {
+        "pka_free": 6.39,
+        "pka_bound": 6.3,
+        "delta_pka": -0.09,
+        "ddg": 0.097
+      },
+      "A61": {
+        "pka_free": 7.01,
+        "pka_bound": 6.76,
+        "delta_pka": -0.25,
+        "ddg": 0.247
+      },
+      "A69": {
+        "pka_free": 7.34,
+        "pka_bound": 6.55,
+        "delta_pka": -0.79,
+        "ddg": 0.742
       }
     }
   },
   {
-    "name": "tfr1_c4_acid_site2_9",
-    "sequence": "TELEELEKEYEEQIDGLNSFRLALLNFAHDNLSTTEYETFSTELDEALSPFYTLLEENYEERKAHLE",
-    "length": 67,
-    "n_his": 2,
-    "mean_plddt": 94.2,
-    "iptm": 0.8941201567649841,
-    "ptm": 0.9219119548797607,
-    "confidence": 0.714178740978241,
-    "avg_free_pka": 6.73,
-    "avg_complex_pka": 7.12,
-    "L": -0.56,
-    "total_ddg": -0.757,
+    "name": "tfr1_c4_acid_site1_82",
+    "sequence": "ALTHEERVAYLHHLAEELEAAAEELEAEGAPEHWVDSLRFLAHAAEDVAAFYEEHPDETDAAYHHHLAEAHALVAEQPEARREELLAEHEERLAKIRAAL",
+    "length": 100,
+    "n_his": 11,
+    "mean_plddt": 73.2,
+    "iptm": 0.9555612802505493,
+    "ptm": 0.8522868156433105,
+    "confidence": 0.7810595631599426,
+    "avg_free_pka": 6.66,
+    "avg_complex_pka": 5.55,
+    "L": -5.41,
+    "total_ddg": 7.371,
     "switch_ok": false,
     "per_his": {
-      "A29": {
-        "pka_free": 7.0,
-        "pka_bound": 6.97,
-        "delta_pka": -0.03,
-        "ddg": 0.028
+      "A4": {
+        "pka_free": 6.58,
+        "pka_bound": 6.24,
+        "delta_pka": -0.34,
+        "ddg": 0.368
+      },
+      "A12": {
+        "pka_free": 7.8,
+        "pka_bound": 7.56,
+        "delta_pka": -0.24,
+        "ddg": 0.111
+      },
+      "A13": {
+        "pka_free": 6.94,
+        "pka_bound": 6.56,
+        "delta_pka": -0.38,
+        "ddg": 0.393
+      },
+      "A33": {
+        "pka_free": 6.09,
+        "pka_bound": 6.13,
+        "delta_pka": 0.04,
+        "ddg": -0.041
+      },
+      "A43": {
+        "pka_free": 6.56,
+        "pka_bound": 6.64,
+        "delta_pka": 0.08,
+        "ddg": -0.086
+      },
+      "A55": {
+        "pka_free": 7.25,
+        "pka_bound": 5.69,
+        "delta_pka": -1.56,
+        "ddg": 1.537
+      },
+      "A64": {
+        "pka_free": 6.13,
+        "pka_bound": 5.85,
+        "delta_pka": -0.28,
+        "ddg": 0.273
       },
       "A65": {
-        "pka_free": 6.47,
-        "pka_bound": 7.28,
-        "delta_pka": 0.81,
-        "ddg": -0.785
+        "pka_free": 6.88,
+        "pka_bound": 4.3,
+        "delta_pka": -2.58,
+        "ddg": 1.713
+      },
+      "A66": {
+        "pka_free": 6.55,
+        "pka_bound": 3.09,
+        "delta_pka": -3.46,
+        "ddg": 1.401
+      },
+      "A71": {
+        "pka_free": 6.29,
+        "pka_bound": 5.57,
+        "delta_pka": -0.72,
+        "ddg": 0.67
+      },
+      "A89": {
+        "pka_free": 6.21,
+        "pka_bound": 3.42,
+        "delta_pka": -2.79,
+        "ddg": 1.031
       }
     }
   }

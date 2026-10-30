@@ -1,0 +1,461 @@
+{
+ "question": "Does the ranked d_min / clash screen reproduce on the correct 195-residue apical structures?",
+ "finding": "the shipped structural screen read 154-residue-surrogate PDBs while iPTM/L6 came from the 195-residue apical run",
+ "clash_gate_A": 2.0,
+ "controls": {
+  "reproduction": "20/20",
+  "binder_identity": "20/20"
+ },
+ "n_pass_surrogate": 20,
+ "n_pass_apical": 14,
+ "flagged_apical": [
+  "tfr1_c4_acid_site2_171",
+  "tfr1_c4_acid_site2_14",
+  "tfr1_c4_acid_site1_6",
+  "tfr1_c4_acid_site1_35",
+  "tfr1_c4_acid_site1_20",
+  "tfr1_c4_acid_site1_158"
+ ],
+ "rows": [
+  {
+   "rank": 1,
+   "name": "tfr1_c4_acid_site2_120",
+   "ranked_d_min_A": 2.353,
+   "d_min_surrogate154_A": 2.353,
+   "d_min_apical195_A": 2.097,
+   "shift_A": -0.256,
+   "clash_pairs_surrogate154": 0,
+   "clash_pairs_apical195": 0,
+   "pass_surrogate": true,
+   "pass_apical": true,
+   "chains_surrogate": {
+    "A": 68,
+    "B": 154
+   },
+   "chains_apical": {
+    "A": 68,
+    "B": 195
+   },
+   "binder_sequence_identical": true,
+   "shipped_dmin_reproduced_from_surrogate": true
+  },
+  {
+   "rank": 2,
+   "name": "tfr1_c4_acid_site2_177",
+   "ranked_d_min_A": 2.024,
+   "d_min_surrogate154_A": 2.024,
+   "d_min_apical195_A": 2.245,
+   "shift_A": 0.221,
+   "clash_pairs_surrogate154": 0,
+   "clash_pairs_apical195": 0,
+   "pass_surrogate": true,
+   "pass_apical": true,
+   "chains_surrogate": {
+    "A": 91,
+    "B": 154
+   },
+   "chains_apical": {
+    "A": 91,
+    "B": 195
+   },
+   "binder_sequence_identical": true,
+   "shipped_dmin_reproduced_from_surrogate": true
+  },
+  {
+   "rank": 3,
+   "name": "tfr1_c4_acid_site1_67",
+   "ranked_d_min_A": 2.282,
+   "d_min_surrogate154_A": 2.282,
+   "d_min_apical195_A": 2.579,
+   "shift_A": 0.297,
+   "clash_pairs_surrogate154": 0,
+   "clash_pairs_apical195": 0,
+   "pass_surrogate": true,
+   "pass_apical": true,
+   "chains_surrogate": {
+    "A": 92,
+    "B": 154
+   },
+   "chains_apical": {
+    "A": 92,
+    "B": 195
+   },
+   "binder_sequence_identical": true,
+   "shipped_dmin_reproduced_from_surrogate": true
+  },
+  {
+   "rank": 4,
+   "name": "tfr1_c4_acid_site2_181",
+   "ranked_d_min_A": 2.447,
+   "d_min_surrogate154_A": 2.447,
+   "d_min_apical195_A": 2.314,
+   "shift_A": -0.133,
+   "clash_pairs_surrogate154": 0,
+   "clash_pairs_apical195": 0,
+   "pass_surrogate": true,
+   "pass_apical": true,
+   "chains_surrogate": {
+    "A": 81,
+    "B": 154
+   },
+   "chains_apical": {
+    "A": 81,
+    "B": 195
+   },
+   "binder_sequence_identical": true,
+   "shipped_dmin_reproduced_from_surrogate": true
+  },
+  {
+   "rank": 5,
+   "name": "tfr1_c4_acid_site1_14",
+   "ranked_d_min_A": 2.346,
+   "d_min_surrogate154_A": 2.346,
+   "d_min_apical195_A": 2.397,
+   "shift_A": 0.051,
+   "clash_pairs_surrogate154": 0,
+   "clash_pairs_apical195": 0,
+   "pass_surrogate": true,
+   "pass_apical": true,
+   "chains_surrogate": {
+    "A": 91,
+    "B": 154
+   },
+   "chains_apical": {
+    "A": 91,
+    "B": 195
+   },
+   "binder_sequence_identical": true,
+   "shipped_dmin_reproduced_from_surrogate": true
+  },
+  {
+   "rank": 6,
+   "name": "tfr1_c4_acid_site1_42",
+   "ranked_d_min_A": 2.118,
+   "d_min_surrogate154_A": 2.118,
+   "d_min_apical195_A": 2.39,
+   "shift_A": 0.272,
+   "clash_pairs_surrogate154": 0,
+   "clash_pairs_apical195": 0,
+   "pass_surrogate": true,
+   "pass_apical": true,
+   "chains_surrogate": {
+    "A": 75,
+    "B": 154
+   },
+   "chains_apical": {
+    "A": 75,
+    "B": 195
+   },
+   "binder_sequence_identical": true,
+   "shipped_dmin_reproduced_from_surrogate": true
+  },
+  {
+   "rank": 7,
+   "name": "tfr1_c4_acid_site2_74",
+   "ranked_d_min_A": 2.01,
+   "d_min_surrogate154_A": 2.01,
+   "d_min_apical195_A": 2.437,
+   "shift_A": 0.427,
+   "clash_pairs_surrogate154": 0,
+   "clash_pairs_apical195": 0,
+   "pass_surrogate": true,
+   "pass_apical": true,
+   "chains_surrogate": {
+    "A": 65,
+    "B": 154
+   },
+   "chains_apical": {
+    "A": 65,
+    "B": 195
+   },
+   "binder_sequence_identical": true,
+   "shipped_dmin_reproduced_from_surrogate": true
+  },
+  {
+   "rank": 8,
+   "name": "tfr1_c4_acid_site2_171",
+   "ranked_d_min_A": 2.008,
+   "d_min_surrogate154_A": 2.008,
+   "d_min_apical195_A": 1.925,
+   "shift_A": -0.083,
+   "clash_pairs_surrogate154": 0,
+   "clash_pairs_apical195": 1,
+   "pass_surrogate": true,
+   "pass_apical": false,
+   "chains_surrogate": {
+    "A": 66,
+    "B": 154
+   },
+   "chains_apical": {
+    "A": 66,
+    "B": 195
+   },
+   "binder_sequence_identical": true,
+   "shipped_dmin_reproduced_from_surrogate": true
+  },
+  {
+   "rank": 9,
+   "name": "tfr1_c4_acid_site2_14",
+   "ranked_d_min_A": 2.11,
+   "d_min_surrogate154_A": 2.11,
+   "d_min_apical195_A": 1.711,
+   "shift_A": -0.399,
+   "clash_pairs_surrogate154": 0,
+   "clash_pairs_apical195": 1,
+   "pass_surrogate": true,
+   "pass_apical": false,
+   "chains_surrogate": {
+    "A": 91,
+    "B": 154
+   },
+   "chains_apical": {
+    "A": 91,
+    "B": 195
+   },
+   "binder_sequence_identical": true,
+   "shipped_dmin_reproduced_from_surrogate": true
+  },
+  {
+   "rank": 10,
+   "name": "tfr1_c4_acid_site1_6",
+   "ranked_d_min_A": 2.115,
+   "d_min_surrogate154_A": 2.115,
+   "d_min_apical195_A": 1.935,
+   "shift_A": -0.18,
+   "clash_pairs_surrogate154": 0,
+   "clash_pairs_apical195": 1,
+   "pass_surrogate": true,
+   "pass_apical": false,
+   "chains_surrogate": {
+    "A": 79,
+    "B": 154
+   },
+   "chains_apical": {
+    "A": 79,
+    "B": 195
+   },
+   "binder_sequence_identical": true,
+   "shipped_dmin_reproduced_from_surrogate": true
+  },
+  {
+   "rank": 11,
+   "name": "tfr1_c4_acid_site1_144",
+   "ranked_d_min_A": 2.131,
+   "d_min_surrogate154_A": 2.131,
+   "d_min_apical195_A": 2.372,
+   "shift_A": 0.241,
+   "clash_pairs_surrogate154": 0,
+   "clash_pairs_apical195": 0,
+   "pass_surrogate": true,
+   "pass_apical": true,
+   "chains_surrogate": {
+    "A": 86,
+    "B": 154
+   },
+   "chains_apical": {
+    "A": 86,
+    "B": 195
+   },
+   "binder_sequence_identical": true,
+   "shipped_dmin_reproduced_from_surrogate": true
+  },
+  {
+   "rank": 12,
+   "name": "tfr1_c4_acid_site1_7",
+   "ranked_d_min_A": 2.242,
+   "d_min_surrogate154_A": 2.242,
+   "d_min_apical195_A": 2.281,
+   "shift_A": 0.039,
+   "clash_pairs_surrogate154": 0,
+   "clash_pairs_apical195": 0,
+   "pass_surrogate": true,
+   "pass_apical": true,
+   "chains_surrogate": {
+    "A": 93,
+    "B": 154
+   },
+   "chains_apical": {
+    "A": 93,
+    "B": 195
+   },
+   "binder_sequence_identical": true,
+   "shipped_dmin_reproduced_from_surrogate": true
+  },
+  {
+   "rank": 13,
+   "name": "tfr1_c4_acid_site1_35",
+   "ranked_d_min_A": 2.274,
+   "d_min_surrogate154_A": 2.274,
+   "d_min_apical195_A": 1.797,
+   "shift_A": -0.477,
+   "clash_pairs_surrogate154": 0,
+   "clash_pairs_apical195": 2,
+   "pass_surrogate": true,
+   "pass_apical": false,
+   "chains_surrogate": {
+    "A": 96,
+    "B": 154
+   },
+   "chains_apical": {
+    "A": 96,
+    "B": 195
+   },
+   "binder_sequence_identical": true,
+   "shipped_dmin_reproduced_from_surrogate": true
+  },
+  {
+   "rank": 14,
+   "name": "tfr1_c4_acid_site1_79",
+   "ranked_d_min_A": 2.208,
+   "d_min_surrogate154_A": 2.208,
+   "d_min_apical195_A": 2.119,
+   "shift_A": -0.089,
+   "clash_pairs_surrogate154": 0,
+   "clash_pairs_apical195": 0,
+   "pass_surrogate": true,
+   "pass_apical": true,
+   "chains_surrogate": {
+    "A": 100,
+    "B": 154
+   },
+   "chains_apical": {
+    "A": 100,
+    "B": 195
+   },
+   "binder_sequence_identical": true,
+   "shipped_dmin_reproduced_from_surrogate": true
+  },
+  {
+   "rank": 15,
+   "name": "tfr1_c4_acid_site2_47",
+   "ranked_d_min_A": 2.388,
+   "d_min_surrogate154_A": 2.388,
+   "d_min_apical195_A": 2.434,
+   "shift_A": 0.046,
+   "clash_pairs_surrogate154": 0,
+   "clash_pairs_apical195": 0,
+   "pass_surrogate": true,
+   "pass_apical": true,
+   "chains_surrogate": {
+    "A": 82,
+    "B": 154
+   },
+   "chains_apical": {
+    "A": 82,
+    "B": 195
+   },
+   "binder_sequence_identical": true,
+   "shipped_dmin_reproduced_from_surrogate": true
+  },
+  {
+   "rank": 16,
+   "name": "tfr1_c4_acid_site1_161",
+   "ranked_d_min_A": 2.1,
+   "d_min_surrogate154_A": 2.1,
+   "d_min_apical195_A": 2.15,
+   "shift_A": 0.05,
+   "clash_pairs_surrogate154": 0,
+   "clash_pairs_apical195": 0,
+   "pass_surrogate": true,
+   "pass_apical": true,
+   "chains_surrogate": {
+    "A": 78,
+    "B": 154
+   },
+   "chains_apical": {
+    "A": 78,
+    "B": 195
+   },
+   "binder_sequence_identical": true,
+   "shipped_dmin_reproduced_from_surrogate": true
+  },
+  {
+   "rank": 17,
+   "name": "tfr1_c4_acid_site1_20",
+   "ranked_d_min_A": 2.093,
+   "d_min_surrogate154_A": 2.093,
+   "d_min_apical195_A": 1.799,
+   "shift_A": -0.294,
+   "clash_pairs_surrogate154": 0,
+   "clash_pairs_apical195": 3,
+   "pass_surrogate": true,
+   "pass_apical": false,
+   "chains_surrogate": {
+    "A": 99,
+    "B": 154
+   },
+   "chains_apical": {
+    "A": 99,
+    "B": 195
+   },
+   "binder_sequence_identical": true,
+   "shipped_dmin_reproduced_from_surrogate": true
+  },
+  {
+   "rank": 18,
+   "name": "tfr1_c4_acid_site1_158",
+   "ranked_d_min_A": 2.252,
+   "d_min_surrogate154_A": 2.252,
+   "d_min_apical195_A": 1.654,
+   "shift_A": -0.598,
+   "clash_pairs_surrogate154": 0,
+   "clash_pairs_apical195": 1,
+   "pass_surrogate": true,
+   "pass_apical": false,
+   "chains_surrogate": {
+    "A": 94,
+    "B": 154
+   },
+   "chains_apical": {
+    "A": 94,
+    "B": 195
+   },
+   "binder_sequence_identical": true,
+   "shipped_dmin_reproduced_from_surrogate": true
+  },
+  {
+   "rank": 19,
+   "name": "tfr1_c4_acid_site2_62",
+   "ranked_d_min_A": 2.195,
+   "d_min_surrogate154_A": 2.195,
+   "d_min_apical195_A": 2.627,
+   "shift_A": 0.432,
+   "clash_pairs_surrogate154": 0,
+   "clash_pairs_apical195": 0,
+   "pass_surrogate": true,
+   "pass_apical": true,
+   "chains_surrogate": {
+    "A": 81,
+    "B": 154
+   },
+   "chains_apical": {
+    "A": 81,
+    "B": 195
+   },
+   "binder_sequence_identical": true,
+   "shipped_dmin_reproduced_from_surrogate": true
+  },
+  {
+   "rank": 20,
+   "name": "tfr1_c4_acid_site2_1",
+   "ranked_d_min_A": 2.171,
+   "d_min_surrogate154_A": 2.171,
+   "d_min_apical195_A": 2.121,
+   "shift_A": -0.05,
+   "clash_pairs_surrogate154": 0,
+   "clash_pairs_apical195": 0,
+   "pass_surrogate": true,
+   "pass_apical": true,
+   "chains_surrogate": {
+    "A": 70,
+    "B": 154
+   },
+   "chains_apical": {
+    "A": 70,
+    "B": 195
+   },
+   "binder_sequence_identical": true,
+   "shipped_dmin_reproduced_from_surrogate": true
+  }
+ ]
+}

@@ -85,9 +85,45 @@ ecd_22 had only 1.5% WY (1 Tyr in 65 res) — poor aromatic complement for the W
 | 16 | c3_glp1r_ecd_22 | **1.5%** | **c3_glp1r_ecd_151** | **11.5%** | **80.3** | −5 |
 
 Mean portfolio WY improved from 6.3% → 6.7%. Now 3 designs above 9% WY.
-6 RFD4 designs (up from 5), still 10 independent backbones.
+5 RFD4 designs in the actual v6 CSV; still 10 independent backbones.
 
 ## Submission files
 
-- **`results/c3_submission_v6_20261023.csv`** — 20 designs (8 BindCraft + 7 variants + 6 RFD4)
+- **`results/c3_submission_v6_20261023.csv`** — 20 designs (8 BindCraft + 7 variants + 5 RFD4)
 - `results/c3_methodology.txt` — for Proteinbase submission form
+
+## V6 → V7 → V8 (round 2; supersedes the composition lines above)
+
+The sections above describe v6 and stop there. Current state:
+
+| file | composition | status |
+|---|---|---|
+| `results/c3_submission_v6_20261023.csv` | 20 = 8 BindCraft + 7 variants + 5 RFD4 | frozen fallback, `8e9b2d74…`, untouched |
+| `results/c3_submission_v7_20261025.csv` | 20 = 8 BindCraft + 1 variant + 11 RFD4 | frozen fallback, `1d99f843…`, untouched |
+| `results/c3_submission_v8_20261025.csv` | 20 = 8 BindCraft + 0 variants + 12 RFD4 (11 round-1 + 1 round-2) | **current best**, `631ed0bf…`, NOT submitted |
+
+**V7** filled five of six empty variant slots with RFD4 round-1 designs and kept one variant slot
+open as the round-2 trigger.
+
+**V8** closed that slot: `B_26102611_s1` (iPTM 0.930) replaces `c3_v_l65_E5Q`, so the portfolio now carries zero point-mutation variants. The other 19 rows
+are byte-identical to v7 and in v7 order. Independently re-verified by two implementations that
+share no code with the gate (`scripts/c3_v8_qc_20261025.py`, 31/31 checks, 10/10 negative
+controls; `scripts/c3_v8_audit_bundle_20261025.py`, 5/5 audits).
+
+**Diversity claim, stated precisely.** Under the binding unit (global connected components over
+all measured designs), v8 represents **16** independent backbone clusters versus **15** for v7 —
+a genuine +1. Two other formulations, reported only as sensitivity, give 16→18 (direct singleton
+rows) and 18→19 (components restricted to the submitted rows). Those numbers are *not*
+interchangeable with 15→16; do not quote them as if they shared a baseline.
+
+**Eligibility of the added design.** iPTM 0.930, refold and structural checks pass with **zero**
+heavy-atom pairs < 2.0 Å in the AF2M complex, all four soluble filters pass, and it is
+near-identical to no retained row.
+
+**Agonism is still not claimed.** These are GLP1R ECD groove binders targeting the site that
+accommodates GLP-1's C-terminal helix. Binding is modelled; receptor activation is not
+demonstrated by any evidence in this repo. The challenge scores a plain binder, so this is a
+known upside gap, not a defect in the file.
+
+**Provenance.** Round-2 evidence, the frozen E2 manifest, the gate, and all decisions are indexed
+in `results/c3_v8_audit_20261025/provenance_manifest.json`.

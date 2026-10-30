@@ -1,0 +1,25 @@
+{
+  "iptm": 0.81,
+  "ptm": 0.88,
+  "mean_plddt": 88.12,
+  "best_model": "model_1",
+  "all_models": [
+    {
+      "model": "model_1",
+      "rank": 999,
+      "iptm": 0.81,
+      "ptm": 0.88,
+      "mean_plddt": 88.12
+    },
+    {
+      "model": "model_2",
+      "rank": 999,
+      "iptm": 0.81,
+      "ptm": 0.88,
+      "mean_plddt": 88.5
+    }
+  ],
+  "wall_s": 7201.4,
+  "construct": "C_homodimer",
+  "target_sha256": "5345f9f5333fd71cdc0ccfdccab7ef27645c89a437e871af6672470a98b16f93"
+}

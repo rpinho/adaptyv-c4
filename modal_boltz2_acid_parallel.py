@@ -161,8 +161,19 @@ def main(refold_json: str = "", max_designs: int = 30):
         [(r["name"], r["sequence"]) for r in selected]
     ))
 
-    tag = refold_json.replace(".json", "").split("_")[-1] if "_batch" in refold_json else "batch1"
-    out = f"/Users/ricardo/dev/adaptyv-c4/results/c4_acid_boltz2_{tag}.json"
+    basename = pathlib.Path(refold_json).stem
+    if "_batch" in basename:
+        tag = basename.split("_")[-1]
+    elif "_chunk" in basename:
+        for part in basename.split("_"):
+            if part.startswith("chunk"):
+                tag = part
+                break
+        else:
+            tag = "batch1"
+    else:
+        tag = "batch1"
+    out = f"results/c4_acid_boltz2_{tag}.json"
     with open(out, "w") as f:
         json.dump(results, f, indent=2)
     print(f"\nSaved {len(results)} results to {out}")

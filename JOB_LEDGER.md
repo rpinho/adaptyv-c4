@@ -73,7 +73,7 @@ folded into this ledger's manual checkpoints. If a loop is wanted, it must be la
 
 ## Concurrent-session finding (2026-10-25 12:20)
 
-Three Codex sessions had cwd `/Users/ricardo/dev/adaptyv-c4` and wrote in the same 20-minute window:
+Three Codex sessions had cwd `.` and wrote in the same 20-minute window:
 the then-canonical session `01a173a5` (now advisory), plus `01a173cc` (12:02) and `01a173ca` (12:00). They produced the
 cycle-3 tie-break block, `scripts/c3_build_b_plddt_20261025.py`, and
 `scripts/c3_sprint_watch_daemon.py` concurrently with this session's work.
@@ -369,3 +369,51 @@ binder matches input, and ≤6 min/design. STOP on NaN / chain B ≠ 195 / OOM /
 2026-10-24 assistance-scope blocker does not apply to a C4 correct-construct run.
 **Nothing started. Worker A takes the disjoint $0 infra checks (colabfold version, MSA cache, image contents).**
 | C4-V3-AF2m-full | STOPPED-INCOMPLETE | pod z4yt9vbn9sssti | 19:05-19:22 ET | crash loop; 3/20 scored (canary only) | artifacts: volume c4canary_artifacts.tar.gz |
+
+## 2026-10-26T14:30:16Z — C4 rule-v4 adversarial audit (this thread, 01a170d2)
+
+**Status: DONE (evidence only). $0 CPU. No GPU, no Modal, no RunPod, no network, no ranking built.**
+
+Artifacts (all new, nothing overwritten):
+`results/c4_rule_v4_adversarial_audit_20261026/FINDING.md` (sha `1e53b448`),
+`results/c4_rule_v4_adversarial_audit_20261026/l6_chain_decomposition.json` (sha `aa0ef8a4`, 342 records),
+`scripts/c4_l6_chain_decomposition_20261026.py` (sha `a7314484`).
+
+Three answers requested:
+1. **End-to-end sign HOLDS.** PROPKA parse -> `term()` -> `linkage()` -> JSON `L6` -> gate: no abs(), no
+   negation, no normalisation, no bound/free reordering. Recomputed one complex (`L=-1.86532` vs shipped
+   `-1.8653`) and all 342 (per-chain sum reconciles to shipped `L6` at max delta **0.0**). Sign controls fire.
+   The chain-label inversion (`score(pdb,"B","A")` on files with A=binder) is confirmed harmless — labels
+   only name temp files and the linkage sums both chains.
+2. **One additional inverted term, NOT on v4's data path:** `scripts/score_c4_acid.py` has default
+   `--gate 2.0` with `L >= gate`, and its L uses the same convention (positive = acid-ON; verified
+   arithmetically: +0.3781 acid-ON / -0.3781 acid-OFF). So its default gate selects acid-ON designs.
+   v4's real implementation (`c4_v4_score_20261026.py:230`) correctly gates `L6 < 0`. `score_acid_off.py`
+   is internally consistent with acid-OFF. Third live code path carrying the same inversion in two days.
+3. **Verdict: safe to RANK under, NOT safe to describe as establishing anything. Needs one amendment.**
+
+New measurements (mine, this turn):
+- Per-chain decomposition of all 342 `L6`: **55/231 acid-OFF designs (23.8%) get their sign from the FIXED
+  RECEPTOR**, binder side positive. Under full v4 eligibility (49): **12 (24.5%)**. In the current 20 seats:
+  **5/20** (`site2_169`, `site2_92`, `site1_149`, `site2_181`, `site2_100`). Receptor dominates magnitude in
+  39.5% of the pool.
+- **Cross-estimator agreement: 52.05%, phi = -0.0269, permutation p = 0.609 (20k shuffles).** The L6 gate and
+  the repo's independent acid-OFF scorer (`c4_acid_off_scored.json`) are **uncorrelated**. Neither estimator
+  is corroborated.
+- Construct instability: **105/342 (30.7%) flip L6 sign** between the His707 design target and the apical
+  construct; median |dL6| 0.876 vs median |L6| 0.896. Of the 76 direction+confidence-eligible, 59 (77.6%) are
+  also negative on the design target — so the pool is not wholesale direction-wrong, but nothing survives to
+  the real 640-aa dimer (unmodelled, zero co-folding runs).
+- `S` is not pH-informed: `P = 0.0` and `M = 0.0` for all 20 seats, so max attainable `S` is 45 (observed
+  17.57-42.98). The pH judgement is carried entirely by the binary membership filter.
+
+Corroborating pre-existing evidence I did not compute but cite: `falsification_v4.json` (14:29:08Z) finds
+**0 of 13** independent metrics significant under Bonferroni, against both the ineligible pool and the
+eligible-but-unseated, with all three controls firing correctly.
+
+**Recommended amendment (declined to write it — rule changes are Ricardo's):** gate on `L6_binder < 0` in
+addition to `L6 < 0`, and restate the v4 rationale so a correct sign is not presented as validation.
+Field already produced by `scripts/c4_l6_chain_decomposition_20261026.py`. No GPU needed.
+
+Nothing submitted, uploaded or sent. Frozen files re-verified untouched: v8 `631ed0bf`, submission_v9
+`31d98a41`. No C3 work touched; C3 stays closed and submitted.

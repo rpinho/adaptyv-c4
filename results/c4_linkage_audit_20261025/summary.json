@@ -1,0 +1,51 @@
+{
+  "audit": "c4_linkage_audit_20261025",
+  "method": "Wyman linkage, bound complex vs isolated chains",
+  "ph_pairs": {
+    "L_5.5_7.4": "log10 Ka(5.5)-log10 Ka(7.4)",
+    "L_6.0_7.4": "log10 Ka(6.0)-log10 Ka(7.4)"
+  },
+  "sign_convention": "positive L = tighter binding at the lower pH = C4 acid-conditional direction",
+  "controls": {
+    "null_L": 0.0,
+    "acid_on_L": 0.5918,
+    "acid_off_L": -0.4539,
+    "null_ok": true,
+    "acid_on_ok": true,
+    "acid_off_ok": true,
+    "all_ok": true
+  },
+  "n_preview": 20,
+  "n_scored": 20,
+  "n_missing_pdb": 0,
+  "missing_pdb": [],
+  "n_positive_L6": 11,
+  "n_negative_L6": 9,
+  "n_positive_L55": 10,
+  "n_negative_L55": 10,
+  "positive_designs": [
+    "tfr1_c4_acid_site2_1",
+    "tfr1_c4_acid_site1_156",
+    "tfr1_c4_acid_site2_171",
+    "tfr1_c4_acid_site1_1",
+    "tfr1_c4_acid_site1_144",
+    "tfr1_c4_acid_site2_74",
+    "tfr1_c4_acid_site2_62",
+    "tfr1_c4_acid_site1_56",
+    "tfr1_c4_acid_site1_137",
+    "tfr1_c4_acid_site2_155",
+    "tfr1_c4_acid_site2_137"
+  ],
+  "negative_designs": [
+    "tfr1_c4_acid_site2_197",
+    "tfr1_c4_acid_site2_73",
+    "tfr1_c4_acid_site1_143",
+    "tfr1_c4_acid_site2_169",
+    "tfr1_c4_acid_site2_4",
+    "tfr1_c4_acid_site1_174",
+    "tfr1_c4_acid_site2_92",
+    "tfr1_c4_acid_site1_177",
+    "tfr1_c4_acid_site2_52"
+  ],
+  "interpretation": "PROPKA bound-vs-free linkage on model structures; detects sign contradictions, does not establish experimental pH-conditional binding or release. Elevated bound pKa alone is not sufficient evidence of switching."
+}

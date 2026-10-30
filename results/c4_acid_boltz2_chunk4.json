@@ -1,0 +1,158 @@
+[
+  {
+    "name": "tfr1_c4_acid_site1_177",
+    "sequence": "HHEEIETLKTEILTFIHTLHEKYEEHGLEGITEEDVEEFEKRLNELYETAVGMSYQEFAELSDDERLEVLEEMGVPEHVLEEIKEQLEEQH",
+    "iptm": 0.976,
+    "n_elevated_complex": 3
+  },
+  {
+    "name": "tfr1_c4_acid_site1_62",
+    "sequence": "SMKELEEEWDSEHADFEEERRELHHEYEELSPEEKRHAHIEMLKTILEEMSELEHLLETDEEKELWSELETHLHHLLHHLE",
+    "iptm": 0.972,
+    "n_elevated_complex": 0
+  },
+  {
+    "name": "tfr1_c4_acid_site2_199",
+    "sequence": "AAEAMEELERHNFLFSIHLEWLTTGEHDLSELSEEEQTAMETYFSLLEPLWELSEEVRSLLLESAHQVHHHELEFFHEKMES",
+    "iptm": 0.968,
+    "n_elevated_complex": 0
+  },
+  {
+    "name": "tfr1_c4_acid_site1_84",
+    "sequence": "SEELADYILSLHPDEALELLETIINHLYEHRLSHFSPEEQEHLKHLWELSVQVVQELGVDASPSEVTKRYLELLH",
+    "iptm": 0.96,
+    "n_elevated_complex": 0
+  },
+  {
+    "name": "tfr1_c4_acid_site1_165",
+    "sequence": "THAASEEHTRQTHAASEEHTHFEEVLALSPQQKHDHVSHLLSRFKAAYEEFHDSLTPEQQHLFLDLIHDLETLETYYHSLI",
+    "iptm": 0.96,
+    "n_elevated_complex": 5
+  },
+  {
+    "name": "tfr1_c4_acid_site1_158",
+    "sequence": "TKEEEQLAAHEADLEKRLELTEEEVTAQFEEGKTLAIEFFLETLRREHPHLSSEEMTHLEEHVTHTITHTFETFKTLFLHELTKKKEELEEEAE",
+    "iptm": 0.959,
+    "n_elevated_complex": 0
+  },
+  {
+    "name": "tfr1_c4_acid_site2_11",
+    "sequence": "AKAHRLAAEKALYEERMAWSTDEKLAYLEALETDFLAYLEEHPEDDDAKHALHMVRTRISQLKFLKSLEEDHS",
+    "iptm": 0.955,
+    "n_elevated_complex": 1
+  },
+  {
+    "name": "tfr1_c4_acid_site2_32",
+    "sequence": "EHEEHLEELEEEHTEVTETPEYQEHHSLVTKLHHLYHHMETPEDHDEFHHLFHELVTLYTERFETFHEQLEELLT",
+    "iptm": 0.951,
+    "n_elevated_complex": 1
+  },
+  {
+    "name": "tfr1_c4_acid_site1_9",
+    "sequence": "SHRLHLLLENHDALHELAHHLSHAHSAVEEHGLDGAEHELEELEESLEHVFSLLEVDREWAAQPAVH",
+    "iptm": 0.949,
+    "n_elevated_complex": 2
+  },
+  {
+    "name": "tfr1_c4_acid_site1_74",
+    "sequence": "HLETLSAHIHTHRADFHAREAETAAYKAAHPDAYLAELVAANAAAAARTHPVSAADAALADHVLA",
+    "iptm": 0.948,
+    "n_elevated_complex": 0
+  },
+  {
+    "name": "tfr1_c4_acid_site2_195",
+    "sequence": "HHYTTEEFHEKHHHMTEKAHEHLTHYHEHLMHEAEHVHLERHLTHEEAEEREHTHNEETHHHLHHFYHHLDTLHELSHH",
+    "iptm": 0.945,
+    "n_elevated_complex": 4
+  },
+  {
+    "name": "tfr1_c4_acid_site2_36",
+    "sequence": "SLEKEELLEELDSAIKFAEEKGYSDEAIDFYREKMLEALDFLEEVVETHDASMLEHYEERFEQASELFKMMEEE",
+    "iptm": 0.941,
+    "n_elevated_complex": 0
+  },
+  {
+    "name": "tfr1_c4_acid_site2_70",
+    "sequence": "SHADSLRTLAEEFEEWAEKTFDEVKEVLLEHWEEDFEGYTVTEEAHEKLAEALTDLEENFAEYQQEHRDFATFLLEEAE",
+    "iptm": 0.914,
+    "n_elevated_complex": 2
+  },
+  {
+    "name": "tfr1_c4_acid_site2_90",
+    "sequence": "SNVSRMLHLLRPIVDKFLPELTPDLEEAEELHDSSSMMDRHKAAHLISKIIDHIIDLALRSAKTNDQLQEVAEIVHLRDQTKKWNAMHEFLERNA",
+    "iptm": 0.901,
+    "n_elevated_complex": 0
+  },
+  {
+    "name": "tfr1_c4_acid_site2_35",
+    "sequence": "HRSAELSHFSSLVSQVLTWYDDARSLLEAEDLSTAPPLHSSWSTPQKTYLEHLWDFLVDLAKTVDVDTALEVLTLLHTSFTDLSSDPFNAHLHYVF",
+    "iptm": 0.884,
+    "n_elevated_complex": 1
+  },
+  {
+    "name": "tfr1_c4_acid_site2_86",
+    "sequence": "SAATHAHEHLHLTPTQRALFHEAEAAMPTTPAEIATRMDETAAFLDSLAAEAEAEGFPELAAHFRTHAVHAREHAEVARLAE",
+    "iptm": 0.882,
+    "n_elevated_complex": 1
+  },
+  {
+    "name": "tfr1_c4_acid_site2_109",
+    "sequence": "SPAEEELHEKLAADTRHFRRSWLYEASAPVIEMLKEDPDRTNKEIAEKLGISEASVKNSISFIFEELDVENRVQAIVKWEELRESL",
+    "iptm": 0.875,
+    "n_elevated_complex": 1
+  },
+  {
+    "name": "tfr1_c4_acid_site1_11",
+    "sequence": "TLEEALAELPDTPDAESLKSAIRHYAETSDPEPVLTTLHHILSDHHSHSLAEKHIAHMRFHLEHPELALHEHH",
+    "iptm": 0.861,
+    "n_elevated_complex": 3
+  },
+  {
+    "name": "tfr1_c4_acid_site2_161",
+    "sequence": "MIDSFSEKDELTLSFEVILHDHRLSDDVKILATVLLHLLQEDEDDAVETAKLLTHLGASASEIIEAARKWLSGESHHD",
+    "iptm": 0.859,
+    "n_elevated_complex": 1
+  },
+  {
+    "name": "tfr1_c4_acid_site2_17",
+    "sequence": "THPLPDTPEARHKHTEAHHTLHHRLHHHSEETREHFEEEKRHLVNKAVHYLVHEHKTVAEAAEELGISETHLNHVFKEVFGMTPSEYLSHIRSGELSP",
+    "iptm": 0.852,
+    "n_elevated_complex": 4
+  },
+  {
+    "name": "tfr1_c4_acid_site1_143",
+    "sequence": "PSHGTLPAFAKPKTVEEQAAEVLERLSTTLHLTDSEHASLEATLHHLVSSFKAALSSDSSAMYDFQTDLTHFFHDITLLFHEKF",
+    "iptm": 0.838,
+    "n_elevated_complex": 2
+  },
+  {
+    "name": "tfr1_c4_acid_site2_10",
+    "sequence": "HTWEENEEHEEHENAYMEHLEYTLEKVSELHDLNLHETLEKTAEQYREKITELEEEITELE",
+    "iptm": 0.699,
+    "n_elevated_complex": 2
+  },
+  {
+    "name": "tfr1_c4_acid_site1_112",
+    "sequence": "SLTEQLILAIKAVRERHGLTQAEFAEKLDVSPSYISALERGEVTPEMALDVALKVLDHFGHDTTLEEARSNLSHHIHDEREAER",
+    "iptm": 0.691,
+    "n_elevated_complex": 1
+  },
+  {
+    "name": "tfr1_c4_acid_site2_184",
+    "sequence": "TEHSEHLTHHSEELTEHHEEHSEQLTEDHEEFLENYHSYPESFREEYHSNRAEFREHLHEWVESL",
+    "iptm": 0.589,
+    "n_elevated_complex": 2
+  },
+  {
+    "name": "tfr1_c4_acid_site1_34",
+    "sequence": "SAKTVILNELTLSHHNKFVITKHPDGSFTVEFWEQRGDDSEWHLMSHHEFSTRDEAFSWLVSFVEPHVHSRSRDKVFTFIREKLSSL",
+    "iptm": 0.522,
+    "n_elevated_complex": 1
+  },
+  {
+    "name": "tfr1_c4_acid_site2_99",
+    "sequence": "SLAEMAEEMEEVEHRTLHETLDAFEHHHAELSTALSETPEDDLEARHKLRTAIDDLHDRLDNALAKD",
+    "iptm": 0.503,
+    "n_elevated_complex": 1
+  }
+]
